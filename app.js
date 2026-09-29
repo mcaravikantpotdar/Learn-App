@@ -47,15 +47,50 @@ class ConceptBuilder {
 
     async loadLesson() {
         try {
-            // Fetching the JSON from the directory you specified
-            const response = await fetch('jsons/Class-11/Comp.Sc./fundamentals-of-computer.json');
-            if (!response.ok) throw new Error('Failed to load JSON');
+            // 1. Detect repo owner and repo name dynamically from GitHub Pages URL
+            const hostname = window.location.hostname;
+            const pathname = window.location.pathname.split('/').filter(Boolean);
             
+            let targetJsonUrl = '';
+
+            if (hostname.includes('github.io') && pathname.length > 0) {
+                const owner = hostname.split('.')[0];
+                const repo = pathname[0]; 
+                const apiFolderUrl = `https://api.github.com/repos/${owner}/${repo}/contents/jsons/Class-11/Comp.Sc.`;
+
+                // 2. Scan the directory via GitHub API
+                const dirResponse = await fetch(apiFolderUrl);
+                let files;
+                
+                if (!dirResponse.ok) {
+                    // Fallback attempt without trailing dot if folder naming differs
+                    const altApiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/jsons/Class-11/Comp.Sc`;
+                    const altRes = await fetch(altApiUrl);
+                    if (!altRes.ok) throw new Error(`GitHub API directory scan failed: ${dirResponse.status}`);
+                    files = await altRes.json();
+                } else {
+                    files = await dirResponse.json();
+                }
+
+                // 3. Find the first JSON file regardless of its exact filename
+                const jsonFile = files.find(file => file.name.toLowerCase().endsWith('.json'));
+                if (!jsonFile) throw new Error("No .json file found in jsons/Class-11/Comp.Sc./");
+
+                targetJsonUrl = jsonFile.download_url; // Direct raw CDN link
+            } else {
+                // Local fallback (e.g., Live Server)
+                targetJsonUrl = 'jsons/Class-11/Comp.Sc./fundamentals-of-computer.json';
+            }
+
+            // 4. Fetch the discovered JSON
+            const response = await fetch(targetJsonUrl);
+            if (!response.ok) throw new Error(`HTTP error ${response.status}`);
+
             this.lessonData = await response.json();
             this.renderUnit();
         } catch (error) {
-            console.error("Error loading lesson:", error);
-            this.el.title.innerText = "Error Loading Lesson File. Check Console.";
+            console.error("Auto-discovery failed:", error);
+            this.el.title.innerText = `Error Loading Lesson File: ${error.message}. Check Console.`;
         }
     }
 
@@ -233,8 +268,6 @@ class ConceptBuilder {
         // Disable buttons on success
         this.el.btnSubmit.disabled = true;
         this.el.btnHint.disabled = true;
-        
-        // Optionally: Add a "Next Lesson" button logic here later
     }
 
     updateMasteryDisplay() {
