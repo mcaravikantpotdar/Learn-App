@@ -1,195 +1,218 @@
-/* Base Variables & Reset */
-:root {
-    --bg-main: #0f172a;
-    --bg-card: #1e293b;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --accent-blue: #38bdf8;
-    --accent-green: #4ade80;
-    --accent-red: #f87171;
-    --border-color: #334155;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/* =========================================
+   1. GLOBAL RESET & BASICS
+   ========================================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    background-color: var(--bg-main);
-    color: var(--text-main);
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #f1f5f9; /* Slate 100 */
+    color: #1e293b;      /* Slate 800 */
+    line-height: 1.5;
+    min-height: 100vh;
 }
 
-.app-container {
-    width: 100%;
-    max-width: 800px;
+.screen {
+    display: none;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.screen.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================
+   2. HEADER & STATS (From Multi-Class-Quiz)
+   ========================================= */
+.quiz-header {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.chapter-title { font-size: 18px; font-weight: 800; color: #1e293b; margin: 10px 0; }
+.quiz-stats-row { display: flex; justify-content: space-between; align-items: center; }
+.header-left, .header-right { display: flex; gap: 10px; align-items: center; }
+
+.stat-badge {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 5px 12px;
+    text-align: center;
+    min-width: 70px;
+}
+.stat-badge.score-badge { background: #eff6ff; border-color: #bfdbfe; }
+.stat-label { display: block; font-size: 10px; font-weight: 700; color: #64748b; text-transform: uppercase; }
+.stat-value { font-size: 16px; font-weight: 800; color: #0f172a; }
+
+/* =========================================
+   3. UNIT NAVIGATION GRID
+   ========================================= */
+.question-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+    gap: 8px;
+    margin-bottom: 25px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.question-number {
+    position: relative;
+    height: 54px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-}
-
-/* Header */
-.top-nav {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: var(--bg-card);
-    padding: 12px 20px;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
+    justify-content: center;
+    transition: all 0.1s;
 }
 
-.brand { font-weight: bold; color: var(--accent-blue); }
+.q-number { font-size: 13px; font-weight: 700; color: #64748b; line-height: 1.2; }
+.marks { font-size: 9px; font-weight: 800; color: #94a3b8; position: absolute; bottom: 4px; }
 
-.lang-toggle { display: flex; gap: 8px; }
+.question-number:hover { border-color: #3b82f6; }
+.question-number.current { background: #eff6ff; border-color: #3b82f6; transform: scale(1.05); box-shadow: 0 4px 6px rgba(37,99,235,0.2); }
+.question-number.correct { background: #dcfce7; border-color: #22c55e; }
+.question-number.correct .marks { color: #15803d; }
+.question-number.attempted { background: #fef08a; border-color: #eab308; } 
+.question-number.attempted .marks { color: #a16207; }
 
+/* =========================================
+   4. LEARNING CARD & MEDIA
+   ========================================= */
+.question-area {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.lang-toggle-container { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; }
 .lang-btn {
-    background: transparent;
-    border: 1px solid var(--border-color);
-    color: var(--text-muted);
-    padding: 6px 12px;
-    border-radius: 4px;
+    background: white;
+    border: 2px solid #e2e8f0;
+    color: #64748b;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.2s;
 }
+.lang-btn.active { background: #2563eb; color: white; border-color: #2563eb; box-shadow: 0 4px 6px rgba(37,99,235,0.2); }
 
-.lang-btn.active {
-    background: var(--accent-blue);
-    color: var(--bg-main);
-    border-color: var(--accent-blue);
-    font-weight: bold;
-}
-
-.score-display { font-weight: bold; color: var(--accent-green); }
-
-/* Lesson Card & Media */
-.lesson-card {
-    background-color: var(--bg-card);
-    padding: 24px;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-}
-
-#lesson-title { margin-bottom: 16px; font-size: 1.25rem; }
-
-.theory-content { line-height: 1.6; color: #cbd5e1; }
+.lesson-card { margin-bottom: 25px; }
+#lesson-title { font-size: 18px; color: #1e293b; margin-bottom: 12px; }
+.theory-content { font-size: 15px; color: #475569; line-height: 1.6; }
 
 .media-viewport {
     position: relative;
     width: 100%;
     margin: 16px 0 8px 0;
     aspect-ratio: 16 / 9;
-    background: #000;
+    background: #0f172a;
     border-radius: 8px;
     overflow: hidden;
 }
+.media-viewport svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.media-caption { font-size: 12px; color: #64748b; text-align: center; margin-bottom: 16px; font-style: italic; }
 
-.media-viewport svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+/* =========================================
+   5. FRAGMENT BUILDER (ASSEMBLY & POOL)
+   ========================================= */
+.prompt-bar { font-weight: 700; color: #2563eb; margin-bottom: 12px; font-size: 15px; }
 
-.media-caption {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    text-align: center;
-    margin-bottom: 16px;
-    font-style: italic;
-}
-
-/* Challenge Board */
-.challenge-board {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.prompt-bar {
-    font-weight: 600;
-    color: var(--accent-blue);
-}
-
-/* Assembly & Pool Zones */
 .assembly-line {
     min-height: 80px;
-    background-color: rgba(255, 255, 255, 0.03);
-    border: 2px dashed var(--border-color);
-    border-radius: 8px;
+    background-color: #f8fafc;
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
     padding: 16px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     gap: 10px;
+    margin-bottom: 15px;
+    transition: border-color 0.2s;
 }
+.assembly-line.success-lock { border: 2px solid #22c55e; background-color: #f0fdf4; }
 
 .fragment-pool {
     min-height: 120px;
-    background-color: var(--bg-card);
-    border-radius: 8px;
+    background-color: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
     padding: 16px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    border: 1px solid var(--border-color);
 }
 
-/* Interactive Fragments (Chips) */
+/* Fragment Chips */
 .fragment-chip {
-    background-color: #334155;
-    color: var(--text-main);
+    background-color: white;
+    color: #334155;
     padding: 10px 16px;
     border-radius: 20px;
-    font-size: 0.95rem;
+    font-size: 15px;
+    font-weight: 500;
     cursor: pointer;
     user-select: none;
-    border: 1px solid #475569;
-    transition: transform 0.1s, background-color 0.2s;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.1s, background-color 0.2s, box-shadow 0.2s;
 }
+.fragment-chip:hover { transform: translateY(-2px); box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-color: #94a3b8; }
 
-.fragment-chip:hover {
-    background-color: #475569;
-    transform: translateY(-2px);
+.assembly-line .fragment-chip { background-color: #2563eb; color: white; border-color: #1d4ed8; }
+.assembly-line .fragment-chip:hover { background-color: #1e40af; }
+.assembly-line.success-lock .fragment-chip { background-color: #22c55e; border-color: #166534; cursor: default; transform: none; }
+
+/* =========================================
+   6. CONTROLS & FEEDBACK
+   ========================================= */
+.quiz-controls { display: flex; justify-content: space-between; margin-top: 25px; padding-top: 20px; border-top: 1px solid #f1f5f9; }
+
+.btn-primary { background: #2563eb; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+.btn-primary:hover:not(:disabled) { background: #1d4ed8; transform: translateY(-1px); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.btn-primary:disabled { background: #cbd5e1; cursor: not-allowed; }
+
+.btn-secondary { background: white; color: #475569; border: 1px solid #cbd5e1; padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+.btn-secondary:hover:not(:disabled) { background: #f1f5f9; border-color: #94a3b8; }
+.btn-secondary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-icon { background: white; border: 1px solid #e2e8f0; color: #475569; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; }
+.btn-icon:hover { background: #f8fafc; border-color: #3b82f6; color: #2563eb; }
+.btn-danger-text { color: #dc2626 !important; border-color: #fecaca !important; }
+.btn-danger-text:hover { background: #fef2f2 !important; }
+
+.feedback-banner { margin-top: 20px; padding: 16px; border-radius: 8px; font-size: 15px; line-height: 1.5; animation: slideIn 0.3s; }
+@keyframes slideIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+.feedback-banner.success { background-color: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+.feedback-banner.error { background-color: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+.feedback-banner.secondary { background-color: #f0f9ff; color: #075985; border: 1px solid #bae6fd; }
+
+@media (max-width: 768px) {
+    .quiz-stats-row { flex-direction: row; flex-wrap: wrap; justify-content: space-around; gap: 10px; }
+    .quiz-controls { flex-direction: column; gap: 15px; }
+    .quiz-controls > div { display: flex; flex-direction: column; gap: 8px; width: 100%; }
+    .quiz-controls button { width: 100%; }
 }
-
-.assembly-line .fragment-chip {
-    background-color: var(--accent-blue);
-    color: var(--bg-main);
-    border-color: var(--accent-blue);
-    font-weight: 500;
-}
-
-.assembly-line .fragment-chip:hover {
-    background-color: #0284c7;
-}
-
-/* Buttons & Feedback */
-.action-bar { display: flex; justify-content: flex-end; gap: 12px; }
-
-.action-btn {
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-}
-
-.action-btn:disabled { opacity: 0.5; cursor: not-allowed; }
-.action-btn.primary { background-color: var(--accent-green); color: var(--bg-main); }
-.action-btn.secondary { background-color: transparent; color: var(--text-muted); border: 1px solid var(--border-color); }
-
-.feedback-banner {
-    padding: 16px;
-    border-radius: 8px;
-    font-weight: 500;
-    line-height: 1.5;
-}
-.feedback-banner.success { background-color: rgba(74, 222, 128, 0.15); color: var(--accent-green); border: 1px solid var(--accent-green); }
-.feedback-banner.error { background-color: rgba(248, 113, 113, 0.15); color: var(--accent-red); border: 1px solid var(--accent-red); }
