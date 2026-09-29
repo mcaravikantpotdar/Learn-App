@@ -108,9 +108,19 @@ class ConceptApp {
     }
     triggerMathRender() {
         if (window.renderMathInElement) {
-            document.querySelectorAll('.math-render').forEach(el => {
-                renderMathInElement(el, { delimiters: [ {left: "$$", right: "$$", display: true}, {left: "$", right: "$", display: false} ] });
-            });
+            try {
+                document.querySelectorAll('.math-render').forEach(el => {
+                    renderMathInElement(el, { 
+                        delimiters: [ 
+                            {left: "$$", right: "$$", display: true}, 
+                            {left: "$", right: "$", display: false} 
+                        ],
+                        throwOnError: false // Prevents silent crashes if math syntax is slightly off
+                    });
+                });
+            } catch (err) {
+                console.warn("KaTeX rendering encountered an issue:", err);
+            }
         }
     }
 
@@ -211,7 +221,9 @@ class ConceptApp {
             // Header Info
             this.el.displayStudentName.innerText = `👤 ${this.studentInfo.name}`;
             this.el.displaySchoolInfo.innerText = `${this.studentInfo.class} • ${this.studentInfo.subject}`;
-            this.el.chapterTitle.innerText = this.lessonData.metadata.chapter_title[this.currentLang] || this.lessonData.metadata.chapter_title.en;
+            
+            const metaTitle = this.lessonData.metadata.chapter_title;
+            this.el.chapterTitle.innerText = metaTitle[this.currentLang] || metaTitle.en || metaTitle;
             this.el.totalUnitsNum.innerText = this.lessonData.learning_units.length;
             this.el.maxScore.innerText = this.lessonData.learning_units.length * 20;
 
@@ -230,17 +242,26 @@ class ConceptApp {
         this.lessonData.learning_units.forEach(unit => {
             const uid = unit.unit_id;
             this.masteryScores[uid] = { en: 0, hi: 0 };
+            
+            // Backwards compatibility layer for older JSON variations
+            const chalEn = unit.challenges.en || unit.challenges.english || unit.challenges;
+            const chalHi = unit.challenges.hi || unit.challenges.hindi || unit.challenges;
+
             this.unitStates[uid] = {
-                en: this.createLangState(unit.challenges.en),
-                hi: this.createLangState(unit.challenges.hi)
+                en: this.createLangState(chalEn),
+                hi: this.createLangState(chalHi)
             };
         });
     }
 
     createLangState(challenge) {
+        // Schema resiliency for target arrays
+        const targets = challenge.target_sequence || challenge.fragments || [];
+        const distractors = challenge.distractors || [];
+        
         let allFragments = [
-            ...challenge.target_sequence.map(f => ({ ...f, isTarget: true })),
-            ...challenge.distractors.map(f => ({ ...f, isTarget: false }))
+            ...targets.map(f => ({ ...f, isTarget: true })),
+            ...distractors.map(f => ({ ...f, isTarget: false }))
         ];
         return { bank: this.shuffleArray(allFragments), assembly: [], isSolved: false, attempts: 0, hintUsed: false };
     }
@@ -277,7 +298,9 @@ class ConceptApp {
         this.currentLang = lang;
         this.el['btn-en'].classList.toggle('active', lang === 'en');
         this.el['btn-hi'].classList.toggle('active', lang === 'hi');
-        this.el.chapterTitle.innerText = this.lessonData.metadata.chapter_title[lang] || this.lessonData.metadata.chapter_title.en;
+        
+        const metaTitle = this.lessonData.metadata.chapter_title;
+        this.el.chapterTitle.innerText = metaTitle[lang] || metaTitle.en || metaTitle;
         this.showUnit(this.currentUnitIndex);
     }
 
@@ -289,23 +312,29 @@ class ConceptApp {
         this.el.currentUnitNum.innerText = index + 1;
         this.renderGrid();
 
-        this.el['lesson-title'].innerText = unit.instruction.title[this.currentLang];
-        this.el.theory.innerHTML = unit.instruction.theory[this.currentLang]; // innerHTML for safe formatting tags
+        // Title and Theory (Schema resilient)
+        const instTitle = unit.instruction.title || unit.title;
+        this.el['lesson-title'].innerText = instTitle[this.currentLang] || instTitle.en || instTitle;
         
+        const instTheory = unit.instruction.theory || unit.theory || unit.instruction.text;
+        this.el['lesson-theory'].innerHTML = instTheory[this.currentLang] || instTheory.en || instTheory; 
+        
+        // Media (Schema resilient)
         if (unit.instruction.media && unit.instruction.media.svg_code) {
-            this.el.mediaContainer.style.display = 'block';
-            this.el.mediaContainer.innerHTML = unit.instruction.media.svg_code;
-            this.el['media-caption'].innerText = unit.instruction.media.caption[this.currentLang];
+            this.el['media-container'].style.display = 'block';
+            this.el['media-container'].innerHTML = unit.instruction.media.svg_code; // SVG parsing
+            this.el['media-caption'].innerText = unit.instruction.media.caption[this.currentLang] || unit.instruction.media.caption.en || '';
         } else {
-            this.el.mediaContainer.style.display = 'none';
+            this.el['media-container'].style.display = 'none';
             this.el['media-caption'].innerText = '';
         }
 
-        const challenge = unit.challenges[this.currentLang];
-        this.el['challenge-prompt'].innerText = challenge.prompt;
+        const challenge = unit.challenges[this.currentLang] || unit.challenges.en || unit.challenges;
+        this.el['challenge-prompt'].innerText = challenge.prompt || "Assemble the correct sequence.";
         this.el['feedback-banner'].style.display = 'none';
         this.el['target-zone'].classList.remove('success-lock');
 
+        // Render fragments first, THEN trigger Math Rendering
         this.renderFragments(state);
         this.triggerMathRender();
 
@@ -314,7 +343,8 @@ class ConceptApp {
         
         if (state.isSolved) {
             this.el['target-zone'].classList.add('success-lock');
-            this.showFeedback(`🎉 <strong>Solved! (+${this.masteryScores[unit.unit_id][this.currentLang]} pts)</strong><br><br><em>Takeaway:</em> ${unit.key_takeaway[this.currentLang]}`, 'success');
+            const takeaway = unit.key_takeaway[this.currentLang] || unit.key_takeaway.en || unit.key_takeaway;
+            this.showFeedback(`🎉 <strong>Solved! (+${this.masteryScores[unit.unit_id][this.currentLang]} pts)</strong><br><br><em>Takeaway:</em> ${takeaway}`, 'success');
             this.el['btn-submit'].disabled = true;
             this.el.hintBtn.disabled = true;
         }
@@ -327,7 +357,7 @@ class ConceptApp {
         state.bank.forEach(frag => {
             const chip = document.createElement('div');
             chip.className = 'fragment-chip';
-            chip.innerHTML = frag.text;
+            chip.innerHTML = frag.text; // Allows bolding, spans, or math inside chips
             if (!state.isSolved) chip.onclick = () => this.moveFragment(frag, 'bank', 'assembly');
             this.el['fragment-bank'].appendChild(chip);
         });
@@ -349,6 +379,8 @@ class ConceptApp {
             this.el['btn-submit'].disabled = state.assembly.length === 0;
             this.el.hintBtn.disabled = state.hintUsed;
         }
+        
+        // Re-trigger math render because new DOM elements were added
         this.triggerMathRender();
     }
 
@@ -366,15 +398,18 @@ class ConceptApp {
         const unit = this.lessonData.learning_units[this.currentUnitIndex];
         const state = this.unitStates[unit.unit_id][this.currentLang];
         state.hintUsed = true;
-        this.showFeedback(`💡 <strong>Hint:</strong> ${unit.challenges[this.currentLang].hint}`, 'secondary');
+        
+        const challenge = unit.challenges[this.currentLang] || unit.challenges.en || unit.challenges;
+        this.showFeedback(`💡 <strong>Hint:</strong> ${challenge.hint}`, 'secondary');
         this.el.hintBtn.disabled = true;
     }
 
     checkAnswer() {
         const unit = this.lessonData.learning_units[this.currentUnitIndex];
-        const challenge = unit.challenges[this.currentLang];
+        const challenge = unit.challenges[this.currentLang] || unit.challenges.en || unit.challenges;
         const state = this.unitStates[unit.unit_id][this.currentLang];
-        const targets = challenge.target_sequence;
+        const targets = challenge.target_sequence || challenge.fragments || [];
+        
         state.attempts++;
 
         const distractor = state.assembly.find(f => !f.isTarget);
@@ -392,7 +427,7 @@ class ConceptApp {
             if (matchedIdx >= 0 && matchedIdx < targets.length - 1) {
                 const nextExpected = targets[matchedIdx + 1];
                 if (nextExpected.role_hint) {
-                    this.showFeedback(`⚠️ ${nextExpected.role_hint}`, 'secondary');
+                    this.showFeedback(`⚠️ <strong>Next Step:</strong> ${nextExpected.role_hint}`, 'secondary');
                     return;
                 }
             }
@@ -425,7 +460,9 @@ class ConceptApp {
         this.el['target-zone'].classList.add('success-lock');
         this.renderFragments(state);
 
-        let successHtml = `🎉 <strong>Correct! (+${marks} pts)</strong><br><br><em>Takeaway:</em> ${unit.key_takeaway[this.currentLang]}`;
+        const takeaway = unit.key_takeaway[this.currentLang] || unit.key_takeaway.en || unit.key_takeaway;
+        let successHtml = `🎉 <strong>Correct! (+${marks} pts)</strong><br><br><em>Takeaway:</em> ${takeaway}`;
+        
         const otherLang = this.currentLang === 'en' ? 'hi' : 'en';
         if (this.masteryScores[uid][otherLang] === 0) {
             successHtml += `<br><br><small>💡 Switch to ${otherLang === 'en' ? 'English' : 'Hindi'} to claim your remaining 10 Mastery Points for this unit!</small>`;
@@ -471,13 +508,16 @@ class ConceptApp {
     }
 
     async submitToDatabase(score, max, time) {
+        const metaTitle = this.lessonData.metadata.chapter_title;
+        const finalTitle = metaTitle.en || metaTitle;
+        
         const payload = {
             action: 'submit',
             studentName: this.studentInfo.name,
             schoolName: this.studentInfo.school,
             class: this.studentInfo.class,
             subject: this.studentInfo.subject,
-            lesson: this.lessonData.metadata.chapter_title.en,
+            lesson: finalTitle,
             mode: "LEARNING",
             score: `${score}/${max}`,
             timeTaken: `'${time}` // Apostrophe protects format in Google Sheets
