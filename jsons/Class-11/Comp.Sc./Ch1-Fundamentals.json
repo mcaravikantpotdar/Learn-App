@@ -1,0 +1,1643 @@
+{
+  "chapter_id": "unit_1_fundamentals_of_computer",
+  "metadata": {
+    "class": "Class 11",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit-1: Fundamentals of Computer",
+      "hi": "यूनिट-1: कंप्यूटर के मूल तत्व"
+    },
+    "total_units": 20,
+    "scoring_model": {
+      "single_language_max": 10,
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "unit_id": "u01_def_computer",
+      "topic": "Definition of Computer & IPO Principle",
+      "instruction": {
+        "title": {
+          "en": "What is a Computer?",
+          "hi": "कंप्यूटर क्या है?"
+        },
+        "theory": {
+          "en": "A computer is an electronic device that takes raw data and instructions as input, processes the data according to the given instructions, and gives information as output.",
+          "hi": "कंप्यूटर एक इलेक्ट्रॉनिक उपकरण है जो डेटा और निर्देशों को इनपुट के रूप में लेता है, दिए गए निर्देशों के अनुसार डेटा को प्रोसेस करता है और आउटपुट के रूप में जानकारी देता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 200' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='30' y='65' width='160' height='70' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='110' y='98' fill='#f8fafc' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Input</text><text x='110' y='120' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Data + Instructions</text><line x1='190' y1='100' x2='240' y2='100' stroke='#38bdf8' stroke-width='2'/><rect x='240' y='65' width='160' height='70' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='320' y='98' fill='#f8fafc' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Process</text><text x='320' y='120' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>CPU Processing</text><line x1='400' y1='100' x2='450' y2='100' stroke='#fbbf24' stroke-width='2'/><rect x='450' y='65' width='160' height='70' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='530' y='98' fill='#f8fafc' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Output</text><text x='530' y='120' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Information</text></svg>",
+          "caption": {
+            "en": "Figure 1: Input-Process-Output (IPO) Architecture",
+            "hi": "चित्र 1: इनपुट-प्रोसेस-आउटपुट (IPO) चक्र"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the complete formal definition of a computer:",
+          "target_sequence": [
+            { "id": "en_u01_t1", "text": "an electronic device" },
+            { "id": "en_u01_t2", "text": "that takes data and instructions as input," },
+            { "id": "en_u01_t3", "text": "processes the data according to the given instructions," },
+            { "id": "en_u01_t4", "text": "and gives information as output" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u01_d1",
+              "category": "logical",
+              "text": "and gives raw unprocessed data as output",
+              "penalty_explanation": "Logical error: Output is processed information, not raw data."
+            },
+            {
+              "id": "en_u01_d2",
+              "category": "grammatical",
+              "text": "processing the data according to the given instructions,",
+              "penalty_explanation": "Grammar error: Breaks parallel verb structure ('takes', 'processes', 'gives')."
+            }
+          ],
+          "hint": "Start with the predicate noun, link the input clause, detail processing, and conclude with the output."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "कंप्यूटर की सही परिभाषा बनाने के लिए वाक्यों को सही क्रम में लगाएं:",
+          "target_sequence": [
+            { "id": "hi_u01_t1", "text": "कंप्यूटर एक इलेक्ट्रॉनिक उपकरण है" },
+            { "id": "hi_u01_t2", "text": "जो डेटा और निर्देशों को इनपुट के रूप में लेता है," },
+            { "id": "hi_u01_t3", "text": "दिए गए निर्देशों के अनुसार डेटा को प्रोसेस करता है" },
+            { "id": "hi_u01_t4", "text": "और आउटपुट के रूप में जानकारी देता है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u01_d1",
+              "category": "logical",
+              "text": "और आउटपुट के रूप में कच्चा डेटा देता है",
+              "penalty_explanation": "तार्किक त्रुटि: कंप्यूटर संसाधित जानकारी आउटपुट करता है।"
+            },
+            {
+              "id": "hi_u01_d2",
+              "category": "grammatical",
+              "text": "जो डेटा और निर्देशों को इनपुट के रूप में लेती है,",
+              "penalty_explanation": "व्याकरण त्रुटि: 'कंप्यूटर' पुल्लिंग है, 'लेती है' अमान्य है।"
+            }
+          ],
+          "hint": "मुख्य संज्ञा से प्रारंभ करें, इनपुट और प्रोसेसिंग जोड़ें, और आउटपुट क्रिया पर समाप्त करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "A computer systematically transforms raw input data into meaningful output information.",
+        "hi": "कंप्यूटर इनपुट डेटा को उपयोगी और अर्थपूर्ण जानकारी में बदलता है।"
+      }
+    },
+    {
+      "unit_id": "u02_block_diagram_input_unit",
+      "topic": "The Input Unit & Transduction Function",
+      "instruction": {
+        "title": {
+          "en": "The Input Unit: Reception and Translation",
+          "hi": "इनपुट यूनिट: डेटा प्राप्ति एवं अनुवाद"
+        },
+        "theory": {
+          "en": "The computer receives data and instructions from the input unit. The input unit changes the data and instructions from human language to binary language. All input devices, like the keyboard and mouse, connect directly to this unit.",
+          "hi": "कंप्यूटर इनपुट यूनिट से डेटा और निर्देश प्राप्त करता है। इनपुट यूनिट डेटा और निर्देशों को मानव भाषा से बाइनरी भाषा में बदलती है। कीबोर्ड और माउस जैसे सभी इनपुट डिवाइस कंप्यूटर की इनपुट यूनिट से जुड़े होते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='40' y='55' width='160' height='70' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='120' y='88' fill='#f8fafc' font-size='13' font-family='sans-serif' text-anchor='middle'>Keyboard / Mouse</text><text x='120' y='110' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Human Language</text><line x1='200' y1='90' x2='260' y2='90' stroke='#38bdf8' stroke-width='2'/><rect x='260' y='45' width='180' height='90' rx='8' fill='#1e293b' stroke='#818cf8' stroke-width='2'/><text x='350' y='80' fill='#818cf8' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Input Unit</text><text x='350' y='102' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>Converts to Binary</text><line x1='440' y1='90' x2='500' y2='90' stroke='#818cf8' stroke-width='2'/><rect x='500' y='55' width='110' height='70' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='555' y='95' fill='#4ade80' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>CPU</text></svg>",
+          "caption": {
+            "en": "Figure 2: Human Language to Binary Conversion in Input Unit",
+            "hi": "चित्र 2: इनपुट यूनिट में बाइनरी भाषा का रूपांतरण"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Synthesize the core operational role of the input unit:",
+          "target_sequence": [
+            { "id": "en_u02_t1", "text": "receiving data from connected devices like keyboards," },
+            { "id": "en_u02_t2", "text": "the input unit changes instructions" },
+            { "id": "en_u02_t3", "text": "from human language to binary language" },
+            { "id": "en_u02_t4", "text": "for cpu execution" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u02_d1",
+              "category": "logical",
+              "text": "changes binary language into human language",
+              "penalty_explanation": "Logical error: Binary to human language translation is done by the output unit."
+            },
+            {
+              "id": "en_u02_d2",
+              "category": "grammatical",
+              "text": "the input unit change instructions",
+              "penalty_explanation": "Grammar error: Singular subject requires 'changes'."
+            }
+          ],
+          "hint": "Begin with the introductory participle, state the subject, describe the linguistic translation, and state the recipient."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "इनपुट यूनिट के मुख्य कार्य का विवरण प्रस्तुत करने वाला वाक्य बनाएं:",
+          "target_sequence": [
+            { "id": "hi_u02_t1", "text": "कंप्यूटर की इनपुट यूनिट" },
+            { "id": "hi_u02_t2", "text": "कीबोर्ड और माउस जैसे इनपुट उपकरणों से जुड़े रहकर," },
+            { "id": "hi_u02_t3", "text": "डेटा और निर्देशों को प्राप्त करती है" },
+            { "id": "hi_u02_t4", "text": "और उन्हें मानव भाषा से बाइनरी भाषा में बदलती है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u02_d1",
+              "category": "logical",
+              "text": "और उन्हें बाइनरी भाषा से मानव भाषा में बदलती है",
+              "penalty_explanation": "तार्किक त्रुटि: बाइनरी से मानव भाषा में बदलना आउटपुट यूनिट का काम है।"
+            },
+            {
+              "id": "hi_u02_d2",
+              "category": "grammatical",
+              "text": "डेटा और निर्देशों को प्राप्त करते हैं",
+              "penalty_explanation": "व्याकरण त्रुटि: 'यूनिट' स्त्रीलिंग एकवचन है, 'करते हैं' अशुद्ध है।"
+            }
+          ],
+          "hint": "विषय से शुरू करें, जुड़े उपकरणों का उल्लेख करें, और बाइनरी रूपांतरण पर वाक्य पूरा करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "The input unit acts as a linguistic converter, translating human inputs into machine-readable binary code.",
+        "hi": "इनपुट यूनिट मानवीय भाषा को मशीनी बाइनरी भाषा में अनुवादित करती है।"
+      }
+    },
+    {
+      "unit_id": "u03_block_diagram_output_unit",
+      "topic": "The Output Unit & Information Decoding",
+      "instruction": {
+        "title": {
+          "en": "The Output Unit: Decoding and Presentation",
+          "hi": "आउटपुट यूनिट: सूचना का प्रकटीकरण"
+        },
+        "theory": {
+          "en": "The computer provides information through the output unit. The output unit changes the processed information from binary language back into human language. Devices like monitors and printers connect to this unit.",
+          "hi": "कंप्यूटर आउटपुट यूनिट से जानकारी प्रदान करता है। आउटपुट यूनिट जानकारी को बाइनरी भाषा से मानव भाषा में बदलती है। मॉनिटर और प्रिंटर जैसे सभी आउटपुट डिवाइस कंप्यूटर की आउटपुट यूनिट से जुड़े होते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='40' y='55' width='110' height='70' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='95' y='95' fill='#4ade80' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>CPU</text><line x1='150' y1='90' x2='210' y2='90' stroke='#818cf8' stroke-width='2'/><rect x='210' y='45' width='190' height='90' rx='8' fill='#1e293b' stroke='#818cf8' stroke-width='2'/><text x='305' y='80' fill='#818cf8' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Output Unit</text><text x='305' y='102' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>Converts Binary to Human</text><line x1='400' y1='90' x2='460' y2='90' stroke='#38bdf8' stroke-width='2'/><rect x='460' y='55' width='150' height='70' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='535' y='88' fill='#f8fafc' font-size='13' font-family='sans-serif' text-anchor='middle'>Monitor / Printer</text><text x='535' y='110' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Human Output</text></svg>",
+          "caption": {
+            "en": "Figure 3: Binary to Human Presentation Pipeline",
+            "hi": "चित्र 3: बाइनरी से मानव भाषा में आउटपुट रूपांतरण"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the functional statement explaining how the output unit presents information:",
+          "target_sequence": [
+            { "id": "en_u03_t1", "text": "by taking binary information from the cpu," },
+            { "id": "en_u03_t2", "text": "the output unit translates internal code" },
+            { "id": "en_u03_t3", "text": "back into human language" },
+            { "id": "en_u03_t4", "text": "and displays it on monitors or prints it on paper" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u03_d1",
+              "category": "logical",
+              "text": "translates human language into binary digits",
+              "penalty_explanation": "Logical error: Translating human language into binary is performed by input devices."
+            },
+            {
+              "id": "en_u03_d2",
+              "category": "grammatical",
+              "text": "and display it on monitors or prints it on paper",
+              "penalty_explanation": "Grammar error: Breaks parallel third-person verb agreement ('displays' vs 'display')."
+            }
+          ],
+          "hint": "Begin with the prepositional source clause, follow with the subject and translation, and end with the presentation method."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "आउटपुट यूनिट की भूमिका को स्पष्ट करने वाले खंडों को सही क्रम में व्यवस्थित करें:",
+          "target_sequence": [
+            { "id": "hi_u03_t1", "text": "आउटपुट यूनिट कंप्यूटर से जानकारी प्राप्त करके," },
+            { "id": "hi_u03_t2", "text": "उसे बाइनरी भाषा से मानव भाषा में बदलती है" },
+            { "id": "hi_u03_t3", "text": "ताकि मॉनिटर और प्रिंटर जैसे उपकरणों द्वारा" },
+            { "id": "hi_u03_t4", "text": "उपयोगकर्ता को स्पष्ट सूचना दी जा सके" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u03_d1",
+              "category": "logical",
+              "text": "उसे मानव भाषा से बाइनरी कोड में बदलती है",
+              "penalty_explanation": "तार्किक त्रुटि: बाइनरी में बदलना इनपुट यूनिट का कार्य है।"
+            },
+            {
+              "id": "hi_u03_d2",
+              "category": "grammatical",
+              "text": "उपयोगकर्ता को स्पष्ट सूचना दिया जा सके",
+              "penalty_explanation": "व्याकरण त्रुटि: 'सूचना' स्त्रीलिंग है, इसलिए 'दी जा सके' सही प्रयोग है।"
+            }
+          ],
+          "hint": "जानकारी प्राप्ति से शुरू करें, भाषा रूपांतरण बताएं, और उपयोगकर्ता तक सूचना पहुँचने पर पूरा करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "The output unit decodes CPU binary signals back into human-understandable visual or physical form.",
+        "hi": "आउटपुट यूनिट बाइनरी भाषा को मानव पठनीय भाषा और स्वरूप में परिवर्तित करती है।"
+      }
+    },
+    {
+      "unit_id": "u04_cpu_alu_cu_roles",
+      "topic": "Central Processing Unit: Subsystems ALU and Control Unit",
+      "instruction": {
+        "title": {
+          "en": "Inside the CPU: ALU and Control Unit",
+          "hi": "CPU के आंतरिक घटक: ALU और CU"
+        },
+        "theory": {
+          "en": "The CPU (Central Processing Unit) is the brain of the computer responsible for all data processing. It has two main sub-units: the ALU (Arithmetic & Logic Unit), which executes all mathematical calculations and logical comparisons, and the CU (Control Unit), known as the heart of the computer, which controls all other hardware units.",
+          "hi": "CPU का पूरा नाम सेंट्रल प्रोसेसिंग यूनिट है। इसे कंप्यूटर का दिमाग कहा जाता है और सारा डेटा प्रोसेसिंग CPU करता है। इसके दो मुख्य भाग हैं: ALU (अरिथमेटिक एंड लॉजिक यूनिट), जो गणितीय और तार्किक गणनाएं करता है, तथा CU (कंट्रोल यूनिट), जिसे कंप्यूटर का दिल कहा जाता है और जो अन्य सभी इकाइयों को नियंत्रित करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='160' y='20' width='320' height='180' rx='10' fill='none' stroke='#38bdf8' stroke-width='2' stroke-dasharray='6'/><text x='320' y='45' fill='#38bdf8' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>CPU (The Brain of the Computer)</text><rect x='190' y='65' width='260' height='50' rx='6' fill='#1e293b' stroke='#60a5fa' stroke-width='2'/><text x='320' y='88' fill='#f8fafc' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>ALU (Arithmetic &amp; Logic Unit)</text><text x='320' y='105' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Mathematical &amp; Logical Processing</text><rect x='190' y='130' width='260' height='50' rx='6' fill='#1e293b' stroke='#f97316' stroke-width='2'/><text x='320' y='153' fill='#f8fafc' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>CU (Control Unit - Heart)</text><text x='320' y='170' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Controls All Units of the System</text></svg>",
+          "caption": {
+            "en": "Figure 4: CPU Internal Architecture (ALU and Control Unit)",
+            "hi": "चित्र 4: CPU के दो मुख्य भाग - ALU और कंट्रोल यूनिट"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct a comprehensive 5-fragment description contrasting the ALU and CU within the CPU:",
+          "target_sequence": [
+            { "id": "en_u04_t1", "text": "acting as the brain of the computer," },
+            { "id": "en_u04_t2", "text": "the central processing unit houses the alu" },
+            { "id": "en_u04_t3", "text": "to execute mathematical calculations and logic," },
+            { "id": "en_u04_t4", "text": "alongside the control unit," },
+            { "id": "en_u04_t5", "text": "which supervises and directs every connected subsystem" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u04_d1",
+              "category": "logical",
+              "text": "houses the control unit to perform arithmetic addition,",
+              "penalty_explanation": "Logical error: CU does not perform arithmetic additions; ALU does."
+            },
+            {
+              "id": "en_u04_d2",
+              "category": "grammatical",
+              "text": "which supervise and directs every connected subsystem",
+              "penalty_explanation": "Grammar error: Singular relative pronoun requires 'supervises', not 'supervise'."
+            }
+          ],
+          "hint": "Begin with the participatory clause ('acting as...'), introduce the CPU and ALU, link to CU, and finish with its supervisory role."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "CPU के दोनों मुख्य भागों की जिम्मेदारियों को स्पष्ट करने वाला 5-खंडीय वाक्य बनाएं:",
+          "target_sequence": [
+            { "id": "hi_u04_t1", "text": "कंप्यूटर के दिमाग के रूप में कार्य करते हुए" },
+            { "id": "hi_u04_t2", "text": "CPU में मौजूद ALU सभी गणितीय और तार्किक गणनाएँ करता है," },
+            { "id": "hi_u04_t3", "text": "जबकि कंट्रोल यूनिट जिसे कंप्यूटर का दिल कहा जाता है," },
+            { "id": "hi_u04_t4", "text": "सिस्टम की अन्य सभी इकाइयों के कार्यों को" },
+            { "id": "hi_u04_t5", "text": "सफलतापूर्वक नियंत्रित और निर्देशित करती है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u04_d1",
+              "category": "logical",
+              "text": "कंट्रोल यूनिट सभी अंकगणितीय जोड़ और घटाव करती है,",
+              "penalty_explanation": "तार्किक त्रुटि: अंकगणितीय गणनाएं CU नहीं, ALU करता है।"
+            },
+            {
+              "id": "hi_u04_d2",
+              "category": "grammatical",
+              "text": "सफलतापूर्वक नियंत्रित और निर्देशित करते हैं",
+              "penalty_explanation": "व्याकरण त्रुटि: 'कंट्रोल यूनिट' स्त्रीलिंग एकवचन है, 'करते हैं' अशुद्ध है।"
+            }
+          ],
+          "hint": "परिचयात्मक खंड से शुरू करें, ALU का कार्य बताएं, फिर CU की नियंत्रक भूमिका पर समाप्त करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "ALU computes mathematical logic while CU coordinates hardware operations across the entire computer.",
+        "hi": "ALU गणनाएं और तार्किक निर्णय लेता है, जबकि CU पूरी प्रणाली को नियंत्रित करता है।"
+      }
+    },
+    {
+      "unit_id": "u05_primary_memory_rom_ram",
+      "topic": "Primary Memory: Volatile RAM vs Permanent ROM",
+      "instruction": {
+        "title": {
+          "en": "Primary Memory: RAM vs ROM",
+          "hi": "प्राइमरी मेमोरी: RAM बनाम ROM"
+        },
+        "theory": {
+          "en": "Primary memory is directly connected with the CPU and operates very fast compared to secondary memory. ROM (Read Only Memory) is permanent, non-volatile, and holds startup bootstrap instructions that are never lost. RAM (Random Access Memory) is volatile, temporarily holding running programs, and loses all its stored data immediately after a power reset.",
+          "hi": "प्राइमरी मेमोरी सीधे CPU से जुड़ी होती है और सेकेंडरी मेमोरी की तुलना में बहुत तेज होती है। ROM स्थायी मेमोरी है जिसमें कंप्यूटर को शुरू करने वाले विशेष निर्देश होते हैं और इसका डेटा कभी नहीं खोता। RAM एक अस्थायी (वॉलेटाइल) मेमोरी है जो चालू प्रोग्राम का डेटा रखती है और बिजली बंद होते ही इसका डेटा नष्ट हो जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='50' y='40' width='240' height='140' rx='8' fill='#1e293b' stroke='#10b981' stroke-width='2'/><text x='170' y='70' fill='#34d399' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>ROM (Permanent)</text><text x='170' y='100' fill='#f8fafc' font-size='12' font-family='sans-serif' text-anchor='middle'>Non-Volatile</text><text x='170' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Stores Startup Instructions</text><text x='170' y='150' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Never loses data</text><rect x='350' y='40' width='240' height='140' rx='8' fill='#1e293b' stroke='#ef4444' stroke-width='2'/><text x='470' y='70' fill='#f87171' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>RAM (Temporary)</text><text x='470' y='100' fill='#f8fafc' font-size='12' font-family='sans-serif' text-anchor='middle'>Volatile Memory</text><text x='470' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Stores Running Programs</text><text x='470' y='150' fill='#f87171' font-size='11' font-family='sans-serif' text-anchor='middle'>Data lost on power reset</text></svg>",
+          "caption": {
+            "en": "Figure 5: Operational Distinction between ROM and RAM",
+            "hi": "चित्र 5: ROM (स्थायी) और RAM (अस्थायी) के बीच अंतर"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct a precise logical sentence detailing the volatility and function of RAM versus ROM (6 fragments):",
+          "target_sequence": [
+            { "id": "en_u05_t1", "text": "while permanent rom stores startup instructions" },
+            { "id": "en_u05_t2", "text": "that are never lost," },
+            { "id": "en_u05_t3", "text": "random access memory" },
+            { "id": "en_u05_t4", "text": "temporarily holds active programs" },
+            { "id": "en_u05_t5", "text": "as volatile storage," },
+            { "id": "en_u05_t6", "text": "losing all contents after a power reset" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u05_d1",
+              "category": "logical",
+              "text": "retaining all active program contents after power loss,",
+              "penalty_explanation": "Logical error: RAM loses its contents when power is disconnected."
+            },
+            {
+              "id": "en_u05_d2",
+              "category": "grammatical",
+              "text": "loses all contents after a power reset",
+              "penalty_explanation": "Grammar error: Participle clause requires 'losing' rather than 'loses'."
+            }
+          ],
+          "hint": "Begin with the subordinate clause contrasting ROM, introduce RAM, mention its volatile state, and end with the loss of power."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "RAM और ROM के बीच के मुख्य अंतर को 5 खंडों में जोड़कर स्पष्ट करें:",
+          "target_sequence": [
+            { "id": "hi_u05_t1", "text": "जहाँ स्थायी ROM कंप्यूटर को शुरू करने वाले" },
+            { "id": "hi_u05_t2", "text": "विशेष निर्देशों को सुरक्षित रखती है," },
+            { "id": "hi_u05_t3", "text": "वहीं अस्थायी RAM वर्तमान में चल रहे प्रोग्रामों को रखती है" },
+            { "id": "hi_u05_t4", "text": "और वोलेटाइल होने के कारण" },
+            { "id": "hi_u05_t5", "text": "पावर रीसेट होते ही अपना सारा डेटा खो देती है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u05_d1",
+              "category": "logical",
+              "text": "पावर बंद होने के बाद भी सारा डेटा सुरक्षित रखती है",
+              "penalty_explanation": "तार्किक त्रुटि: RAM वोलेटाइल है और बिजली जाने पर डेटा नष्ट हो जाता है।"
+            },
+            {
+              "id": "hi_u05_d2",
+              "category": "grammatical",
+              "text": "पावर रीसेट होते ही अपना सारा डेटा खो देते हैं",
+              "penalty_explanation": "व्याकरण त्रुटि: 'RAM' एकवचन स्त्रीलिंग संज्ञा है, 'खो देते हैं' अशुद्ध है।"
+            }
+          ],
+          "hint": "तुलनात्मक शब्द 'जहाँ स्थायी ROM...' से शुरू करें और बिजली जाने पर RAM के डेटा खोने पर समाप्त करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "ROM permanently stores startup routines; RAM is volatile scratchpad memory erased upon power loss.",
+        "hi": "ROM स्थायी बूट निर्देश सुरक्षित रखती है, जबकि RAM बिजली बंद होते ही डेटा खो देती है।"
+      }
+    },
+    {
+      "unit_id": "u06_secondary_memory_storage",
+      "topic": "Secondary Memory (Auxiliary Storage)",
+      "instruction": {
+        "title": {
+          "en": "Secondary Memory: Permanent Auxiliary Storage",
+          "hi": "सेकेंडरी मेमोरी: स्थायी ऑक्सीलरी स्टोरेज"
+        },
+        "theory": {
+          "en": "Secondary memory (auxiliary memory) is not directly connected with the CPU. It is non-volatile memory used to store data, instructions, and information permanently in the computer. HDD, SSD, CD, and DVD are prime examples.",
+          "hi": "सेकेंडरी मेमोरी सीधे CPU से जुड़ी नहीं होती है। यह एक नॉन-वॉलेटाईल मेमोरी है जिसका उपयोग डेटा, निर्देश और सूचना को स्थायी रूप से संचित करने के लिए किया जाता है। HDD, SSD, CD और DVD इसके प्रमुख उदाहरण हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='40' y='50' width='160' height='80' rx='8' fill='#1e293b' stroke='#f59e0b' stroke-width='2'/><text x='120' y='85' fill='#fbbf24' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Secondary Storage</text><text x='120' y='108' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>HDD / SSD / DVD</text><line x1='200' y1='90' x2='300' y2='90' stroke='#ef4444' stroke-width='2' stroke-dasharray='4'/><text x='250' y='80' fill='#ef4444' font-size='10' font-family='sans-serif' text-anchor='middle'>No Direct CPU Bus</text><rect x='300' y='50' width='140' height='80' rx='8' fill='#1e293b' stroke='#10b981' stroke-width='2'/><text x='370' y='85' fill='#34d399' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>RAM</text><text x='370' y='108' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Main Memory</text><line x1='440' y1='90' x2='500' y2='90' stroke='#38bdf8' stroke-width='2'/><rect x='500' y='50' width='100' height='80' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='550' y='95' fill='#38bdf8' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>CPU</text></svg>",
+          "caption": {
+            "en": "Figure 6: Secondary Storage Separation from Direct CPU Execution",
+            "hi": "चित्र 6: सेकेंडरी स्टोरेज और CPU के बीच अप्रत्यक्ष संबंध"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the formal definition of secondary memory highlighting its CPU connection and retention (5 fragments):",
+          "target_sequence": [
+            { "id": "en_u06_t1", "text": "secondary memory is not directly connected to the cpu," },
+            { "id": "en_u06_t2", "text": "operating instead as auxiliary," },
+            { "id": "en_u06_t3", "text": "non-volatile storage" },
+            { "id": "en_u06_t4", "text": "to preserve programs and user files permanently" },
+            { "id": "en_u06_t5", "text": "on media like hdds, ssds, and dvds" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u06_d1",
+              "category": "logical",
+              "text": "operating as volatile memory directly on the cpu bus,",
+              "penalty_explanation": "Logical error: Secondary memory is non-volatile and not directly wired to the CPU bus."
+            },
+            {
+              "id": "en_u06_d2",
+              "category": "grammatical",
+              "text": "to preserves programs and user files permanently",
+              "penalty_explanation": "Grammar error: Infinitive marker 'to' requires base verb 'preserve'."
+            }
+          ],
+          "hint": "Mention the absence of direct CPU connection first, define its non-volatile nature, and cite media examples."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "सेकेंडरी मेमोरी की विशेषताओं को सही क्रम में लगाकर वाक्य बनाएं:",
+          "target_sequence": [
+            { "id": "hi_u06_t1", "text": "सेकेंडरी मेमोरी सीधे CPU से जुड़ी नहीं होती," },
+            { "id": "hi_u06_t2", "text": "बल्कि यह एक नॉन-वॉलेटाईल स्टोरेज है" },
+            { "id": "hi_u06_t3", "text": "जिसका उपयोग डेटा और निर्देशों को" },
+            { "id": "hi_u06_t4", "text": "HDD और SSD जैसे माध्यमों में" },
+            { "id": "hi_u06_t5", "text": "स्थायी रूप से सुरक्षित रखने के लिए किया जाता है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u06_d1",
+              "category": "logical",
+              "text": "जिसमें बिजली बंद होते ही सारा डेटा मिट जाता है",
+              "penalty_explanation": "तार्किक त्रुटि: सेकेंडरी मेमोरी नॉन-वॉलेटाईल होती है, डेटा नहीं मिटता।"
+            },
+            {
+              "id": "hi_u06_d2",
+              "category": "grammatical",
+              "text": "स्थायी रूप से सुरक्षित रखने के लिए किए जाते हैं",
+              "penalty_explanation": "व्याकरण त्रुटि: एकवचन कर्म के साथ 'किया जाता है' शुद्ध है।"
+            }
+          ],
+          "hint": "CPU से जुड़ाव न होने का उल्लेख करें, नॉन-वॉलेटाईल रूप बताएं, और स्टोरेज माध्यमों पर समाप्त करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Secondary memory provides permanent, high-capacity, non-volatile storage decoupled from direct CPU buses.",
+        "hi": "सेकेंडरी मेमोरी डेटा को बिना बिजली के भी स्थायी रूप से सुरक्षित रखती है।"
+      }
+    },
+    {
+      "unit_id": "u07_applications_of_computers",
+      "topic": "Applications of Computers Across Major Domains",
+      "instruction": {
+        "title": {
+          "en": "Real-World Applications of Computers",
+          "hi": "कंप्यूटर के विभिन्न अनुप्रयोग"
+        },
+        "theory": {
+          "en": "Computers serve vital roles across key domains: Communication (email, video conferencing, social networking), Banking (customer financial data, transactions, online banking), Education (student academic records, online classes, topic research), and Business (e-commerce, online shopping, stock and sales records).",
+          "hi": "कंप्यूटर कई क्षेत्रों में आवश्यक हैं: संचार (ईमेल, वीडियो कॉन्फ्रेंसिंग, सोशल नेटवर्किंग), बैंकिंग (वित्तीय डेटा संग्रहण, ऑनलाइन लेनदेन), शिक्षा (शैक्षणिक डेटा, ऑनलाइन कक्षाएं), और व्यवसाय (ई-कॉमर्स, ऑनलाइन शॉपिंग, स्टॉक और बिक्री रिकॉर्ड)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><circle cx='100' cy='90' r='50' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='100' y='85' fill='#38bdf8' font-size='11' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Communication</text><text x='100' y='103' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Email / Video</text><circle cx='245' cy='90' r='50' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='245' y='85' fill='#fbbf24' font-size='11' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Banking</text><text x='245' y='103' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Transactions</text><circle cx='390' cy='90' r='50' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='390' y='85' fill='#4ade80' font-size='11' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Education</text><text x='390' y='103' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Classes / Data</text><circle cx='535' cy='90' r='50' fill='#1e293b' stroke='#f43f5e' stroke-width='2'/><text x='535' y='85' fill='#f43f5e' font-size='11' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Business</text><text x='535' y='103' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>E-Commerce</text></svg>",
+          "caption": {
+            "en": "Figure 7: Four Primary Application Spheres of Modern Computing",
+            "hi": "चित्र 7: आधुनिक कंप्यूटर के चार मुख्य अनुप्रयोग क्षेत्र"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct a comprehensive overview of modern computer applications across industry and society (5 fragments):",
+          "target_sequence": [
+            { "id": "en_u07_t1", "text": "modern computers drive core societal functions" },
+            { "id": "en_u07_t2", "text": "by enabling instant global communication," },
+            { "id": "en_u07_t3", "text": "securing banking financial transactions," },
+            { "id": "en_u07_t4", "text": "facilitating interactive online education," },
+            { "id": "en_u07_t5", "text": "and managing automated business stock records" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u07_d1",
+              "category": "logical",
+              "text": "eliminating the necessity of maintaining business stock records,",
+              "penalty_explanation": "Logical error: Computers maintain and record business stock, they do not eliminate it."
+            },
+            {
+              "id": "en_u07_d2",
+              "category": "grammatical",
+              "text": "and manages automated business stock records",
+              "penalty_explanation": "Grammar error: Breaks parallel gerund form ('enabling', 'securing', 'managing')."
+            }
+          ],
+          "hint": "Open with the main thesis and link the four domains using parallel participial phrases."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "कंप्यूटर के मुख्य अनुप्रयोगों को समेटते हुए सही वाक्य बनाएं:",
+          "target_sequence": [
+            { "id": "hi_u07_t1", "text": "कंप्यूटर का उपयोग संचार में ईमेल और वीडियो मीटिंग्स," },
+            { "id": "hi_u07_t2", "text": "बैंकिंग में वित्तीय लेनदेन सुरक्षित करने," },
+            { "id": "hi_u07_t3", "text": "शिक्षा में ऑनलाइन कक्षाओं का संचालन करने" },
+            { "id": "hi_u07_t4", "text": "तथा व्यवसाय में ई-कॉमर्स और बिक्री का रिकॉर्ड रखने" },
+            { "id": "hi_u07_t5", "text": "जैसे महत्वपूर्ण कार्यों के लिए व्यापक रूप से किया जाता है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u07_d1",
+              "category": "logical",
+              "text": "केवल घरेलू मनोरंजन तक ही सीमित रखा जाता है",
+              "penalty_explanation": "तार्किक त्रुटि: कंप्यूटर का उपयोग कई गंभीर क्षेत्रों में होता है।"
+            },
+            {
+              "id": "hi_u07_d2",
+              "category": "grammatical",
+              "text": "जैसे महत्वपूर्ण कार्यों के लिए व्यापक रूप से किए जाते हैं",
+              "penalty_explanation": "व्याकरण त्रुटि: 'उपयोग किया जाता है' शुद्ध एकवचन रूप है।"
+            }
+          ],
+          "hint": "विभिन्न क्षेत्रों (संचार, बैंकिंग, शिक्षा, व्यवसाय) को जोड़ते हुए अंतिम क्रिया पर पहुंचे।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Computers underpin modern communication, financial banking, education platforms, and commercial inventory.",
+        "hi": "कंप्यूटर संचार, बैंकिंग, शिक्षा और व्यापार के संचालन का आधार हैं।"
+      }
+    },
+    {
+      "unit_id": "u08_input_devices_keyboard_mouse",
+      "topic": "Common Input Devices: Keyboard and Mouse",
+      "instruction": {
+        "title": {
+          "en": "Core Input Devices: Keyboard and Mouse",
+          "hi": "प्रमुख इनपुट डिवाइस: कीबोर्ड और माउस"
+        },
+        "theory": {
+          "en": "Input devices provide data and instructions to the computer. The Keyboard is the most common input device, used to enter alphabets, numbers, symbols, and special commands. The Mouse is the most common pointing device, controlling the screen cursor and pointer-arrow.",
+          "hi": "इनपुट डिवाइस कंप्यूटर को डेटा और निर्देश देते हैं। कीबोर्ड सबसे आम इनपुट डिवाइस है जिसका उपयोग अक्षर, संख्याएं, चिन्ह और निर्देश दर्ज करने के लिए किया जाता है। माउस सबसे आम पॉइंटिंग डिवाइस है जो स्क्रीन पर कर्सर और पॉइंटर-एरो को नियंत्रित करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='60' y='50' width='230' height='80' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='175' y='83' fill='#38bdf8' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Keyboard</text><text x='175' y='105' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Alphanumerics, Symbols, Commands</text><rect x='350' y='50' width='230' height='80' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='465' y='83' fill='#fbbf24' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Mouse (Pointing Device)</text><text x='465' y='105' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Controls Cursor &amp; Pointer Arrow</text></svg>",
+          "caption": {
+            "en": "Figure 8: Primary Direct Data Entry and Pointing Devices",
+            "hi": "चित्र 8: टेक्स्ट इनपुट (कीबोर्ड) और पॉइंटिंग इनपुट (माउस)"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the distinction between keyboard and mouse functionality:",
+          "target_sequence": [
+            { "id": "en_u08_t1", "text": "while the keyboard serves as the primary device" },
+            { "id": "en_u08_t2", "text": "to enter alphanumeric characters and symbols," },
+            { "id": "en_u08_t3", "text": "the mouse functions as a pointing device" },
+            { "id": "en_u08_t4", "text": "to control cursor positioning on the monitor" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u08_d1",
+              "category": "logical",
+              "text": "the mouse functions to enter raw text paragraphs",
+              "penalty_explanation": "Logical error: Mice control pointers; keyboards enter text."
+            },
+            {
+              "id": "en_u08_d2",
+              "category": "grammatical",
+              "text": "while the keyboard serve as the primary device",
+              "penalty_explanation": "Grammar error: Singular subject 'keyboard' requires 'serves'."
+            }
+          ],
+          "hint": "Contrast the text entry role of the keyboard with the pointing cursor role of the mouse."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "कीबोर्ड और माउस के विशिष्ट कार्यों को दर्शाने वाला वाक्य बनाएं:",
+          "target_sequence": [
+            { "id": "hi_u08_t1", "text": "जहाँ कीबोर्ड का उपयोग कंप्यूटर में" },
+            { "id": "hi_u08_t2", "text": "अक्षर, संख्याएं और विशेष चिन्ह दर्ज करने के लिए होता है," },
+            { "id": "hi_u08_t3", "text": "वहीं माउस सबसे आम पॉइंटिंग डिवाइस है" },
+            { "id": "hi_u08_t4", "text": "जो स्क्रीन पर कर्सर और पॉइंटर-एरो को नियंत्रित करता है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u08_d1",
+              "category": "logical",
+              "text": "जो स्क्रीन पर केवल टेक्स्ट टाइप करने का काम करता है",
+              "penalty_explanation": "तार्किक त्रुटि: माउस पॉइंटिंग डिवाइस है, टेक्स्ट टाइपिंग के लिए नहीं।"
+            },
+            {
+              "id": "hi_u08_d2",
+              "category": "grammatical",
+              "text": "जो स्क्रीन पर कर्सर और पॉइंटर-एरो को नियंत्रित करती है",
+              "penalty_explanation": "व्याकरण त्रुटि: 'माउस' पुल्लिंग संज्ञा के रूप में 'करता है' क्रिया लेगा।"
+            }
+          ],
+          "hint": "कीबोर्ड की डेटा एंट्री से शुरू करके माउस के पॉइंटिंग नियंत्रण पर वाक्य पूरा करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Keyboards capture alphanumeric characters; mice translate physical hand motion into cursor guidance.",
+        "hi": "कीबोर्ड टेक्स्ट दर्ज करने का मुख्य उपकरण है और माउस कर्सर नियंत्रण के लिए पॉइंटिंग डिवाइस है।"
+      }
+    },
+    {
+      "unit_id": "u09_scanners_and_types",
+      "topic": "Scanners and Their Mechanical Classification",
+      "instruction": {
+        "title": {
+          "en": "Scanners: Digitization and Physical Forms",
+          "hi": "स्कैनर: दस्तावेज़ डिजिटलीकरण एवं प्रकार"
+        },
+        "theory": {
+          "en": "A scanner captures paper documents and converts them into digital copies stored in computer memory. Scanners are categorized into three physical types: Flat-bed Scanners, Drum Scanners, and Line-Scanners (or Hand-held Scanners).",
+          "hi": "स्कैनर कागज़ के दस्तावेज़ों की डिजिटल प्रति बनाने के लिए उपयोग किया जाता है। यह दस्तावेज़ को स्कैन करके डिजिटल कॉपी कंप्यूटर में संग्रहीत करता है। स्कैनर तीन प्रकार के होते हैं: फ्लैट-बेड स्कैनर, ड्रम स्कैनर, और लाइन-स्कैनर (या हैंड-हेल्ड स्कैनर)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='40' y='60' width='160' height='70' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='120' y='90' fill='#f8fafc' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Flat-bed Scanner</text><text x='120' y='110' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Glass Bed Platen</text><rect x='240' y='60' width='160' height='70' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='320' y='90' fill='#f8fafc' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Drum Scanner</text><text x='320' y='110' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Rotating Cylinder</text><rect x='440' y='60' width='160' height='70' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='520' y='90' fill='#f8fafc' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Hand-held Scanner</text><text x='520' y='110' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Manual Line Swipe</text></svg>",
+          "caption": {
+            "en": "Figure 9: The Three Structural Types of Optical Scanners",
+            "hi": "चित्र 9: स्कैनर के तीन मुख्य प्रकार"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Synthesize the function and classification of scanners (5 fragments):",
+          "target_sequence": [
+            { "id": "en_u09_t1", "text": "by capturing physical paper documents," },
+            { "id": "en_u09_t2", "text": "an optical scanner produces digital copies" },
+            { "id": "en_u09_t3", "text": "for computer storage," },
+            { "id": "en_u09_t4", "text": "utilizing mechanisms categorized as" },
+            { "id": "en_u09_t5", "text": "flat-bed, drum, or hand-held line scanners" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u09_d1",
+              "category": "logical",
+              "text": "produces physical printed ink copies on sheets",
+              "penalty_explanation": "Logical error: Producing printed paper copies is the role of a printer, not a scanner."
+            },
+            {
+              "id": "en_u09_d2",
+              "category": "grammatical",
+              "text": "an optical scanner produce digital copies",
+              "penalty_explanation": "Grammar error: Subject-verb agreement requires 'produces'."
+            }
+          ],
+          "hint": "Begin with paper capture, state the digital output, introduce the mechanism, and list the three scanner types."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "स्कैनर की कार्यप्रणाली और उसके तीनों प्रकारों को सही क्रम में जोड़ें:",
+          "target_sequence": [
+            { "id": "hi_u09_t1", "text": "स्कैनर कागज़ के भौतिक दस्तावेज़ों को स्कैन करके" },
+            { "id": "hi_u09_t2", "text": "उनकी डिजिटल प्रति कंप्यूटर में संग्रहीत करता है," },
+            { "id": "hi_u09_t3", "text": "और यह मुख्य रूप से तीन प्रकारों" },
+            { "id": "hi_u09_t4", "text": "फ्लैट-बेड, ड्रम और हैंड-हेल्ड लाइन स्कैनर के रूप में" },
+            { "id": "hi_u09_t5", "text": "उपलब्ध होता है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u09_d1",
+              "category": "logical",
+              "text": "डिजिटल फ़ाइलों को सीधे कागज़ पर प्रिंट करता है",
+              "penalty_explanation": "तार्किक त्रुटि: कागज़ पर प्रिंट करना प्रिंटर का काम है।"
+            },
+            {
+              "id": "hi_u09_d2",
+              "category": "grammatical",
+              "text": "उनकी डिजिटल प्रति कंप्यूटर में संग्रहीत करते हैं,",
+              "penalty_explanation": "व्याकरण त्रुटि: 'स्कैनर' एकवचन कर्ता है, 'करते हैं' अशुद्ध है।"
+            }
+          ],
+          "hint": "कागज़ के दस्तावेज़ डिजिटलीकरण से शुरू करें और तीनों प्रकारों का नामकरण करते हुए समाप्त करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Scanners digitize paper media via flat-bed, drum, or hand-held line mechanisms.",
+        "hi": "स्कैनर भौतिक कागज़ी प्रतियों को कंप्यूटर के लिए डिजिटल फाइलों में बदलता है।"
+      }
+    },
+    {
+      "unit_id": "u10_pointing_interactive_inputs",
+      "topic": "Interactive Peripherals: Digital Camera, Joystick, Touch-Screen, Light Pen",
+      "instruction": {
+        "title": {
+          "en": "Interactive Peripherals: Cameras, Joysticks, and Touch Interfaces",
+          "hi": "इंटरएक्टिव उपकरण: कैमरा, जॉयस्टिक, टचस्क्रीन और लाइटपेन"
+        },
+        "theory": {
+          "en": "Specialized peripherals handle diverse inputs. A Digital Camera captures photos/videos for conferencing. A Joystick features a 360-degree pivoting stick used for video games. A Touch-Screen functions simultaneously as an input and output device by sensing touches on the display. A Light Pen (or stylus) allows direct writing on screens (light pens on CRT, styluses on LCD).",
+          "hi": "डिजिटल कैमरा फ़ोटो/वीडियो लेता है और वीडियो कॉन्फ्रेंसिंग में काम आता है। जॉयस्टिक एक पॉइंटिंग डिवाइस है जिसकी छड़ी सभी दिशाओं में घूमती है और गेम खेलने के काम आती है। टच-स्क्रीन इनपुट और आउटपुट दोनों है। लाइटपेन CRT मॉनिटर पर और स्टाइलस LCD मॉनिटर पर स्क्रीन पर सीधे लिखने के काम आता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='30' y='50' width='125' height='80' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='92' y='80' fill='#f8fafc' font-size='11' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Digital Camera</text><text x='92' y='100' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Photo/Video Input</text><rect x='180' y='50' width='125' height='80' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='242' y='80' fill='#f8fafc' font-size='11' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Joystick</text><text x='242' y='100' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Multi-Directional Play</text><rect x='330' y='50' width='125' height='80' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='392' y='80' fill='#f8fafc' font-size='11' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Touch Screen</text><text x='392' y='100' fill='#4ade80' font-size='9' font-family='sans-serif' text-anchor='middle'>Dual Input + Output</text><rect x='480' y='50' width='130' height='80' rx='6' fill='#1e293b' stroke='#c084fc' stroke-width='1.5'/><text x='545' y='80' fill='#f8fafc' font-size='11' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Stylus / Light Pen</text><text x='545' y='100' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Direct Screen Writing</text></svg>",
+          "caption": {
+            "en": "Figure 10: Interactive Specialized Input Interfaces",
+            "hi": "चित्र 10: विभिन्न इंटरएक्टिव इनपुट डिवाइस"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Synthesize why a touch screen represents a hybrid interface compared to joysticks and styluses (5 fragments):",
+          "target_sequence": [
+            { "id": "en_u10_t1", "text": "while joysticks and light pens operate purely as inputs," },
+            { "id": "en_u10_t2", "text": "a touch-screen uniquely functions" },
+            { "id": "en_u10_t3", "text": "as both an input and output device" },
+            { "id": "en_u10_t4", "text": "by accepting touch commands" },
+            { "id": "en_u10_t5", "text": "on the very glass that displays graphical feedback" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "logical",
+              "text": "as a pure output device incapable of receiving user touch signals,",
+              "penalty_explanation": "Logical error: Touchscreens receive user touch signals directly as inputs."
+            },
+            {
+              "id": "en_u10_d2",
+              "category": "grammatical",
+              "text": "a touch-screen uniquely function",
+              "penalty_explanation": "Grammar error: Singular subject requires 'functions'."
+            }
+          ],
+          "hint": "Contrast standard input tools with touchscreens, state the dual role, and explain how the display glass enables both."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "टच-स्क्रीन की दोहरी कार्यप्रणाली को स्पष्ट करने वाला 5-खंडीय वाक्य बनाएं:",
+          "target_sequence": [
+            { "id": "hi_u10_t1", "text": "जहाँ जॉयस्टिक और लाइटपेन केवल इनपुट देते हैं," },
+            { "id": "hi_u10_t2", "text": "वहीं टच-स्क्रीन एक ऐसा विशिष्ट उपकरण है" },
+            { "id": "hi_u10_t3", "text": "जो इनपुट और आउटपुट दोनों का कार्य करता है," },
+            { "id": "hi_u10_t4", "text": "क्योंकि स्क्रीन पर सीधे स्पर्श करके निर्देश दिए जाते हैं" },
+            { "id": "hi_u10_t5", "text": "और उसी समय परिणाम भी देखा जा सकता है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "logical",
+              "text": "जो केवल आउटपुट दिखाने का कार्य कर सकता है",
+              "penalty_explanation": "तार्किक त्रुटि: टचस्क्रीन इनपुट स्वीकार करने में पूरी तरह सक्षम है।"
+            },
+            {
+              "id": "hi_u10_d2",
+              "category": "grammatical",
+              "text": "और उसी समय परिणाम भी देखे जा सकते हैं,",
+              "penalty_explanation": "व्याकरण त्रुटि: एकवचन 'परिणाम' के साथ 'देखा जा सकता है' उचित रूप है।"
+            }
+          ],
+          "hint": "तुलना से शुरू करें, इनपुट-आउटपुट दोनों होने की स्थिति बताएं, और एक ही समय पर इनपुट/आउटपुट होने का तर्क दें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Touchscreens uniquely combine sensing (input) and visualization (output) within a single hardware layer.",
+        "hi": "टचस्क्रीन एक ही सतह पर इनपुट देने और आउटपुट देखने की दोहरी सुविधा प्रदान करती है।"
+      }
+    },
+    {
+      "unit_id": "u11_document_readers_bcr_micr_ocr_omr",
+      "topic": "Specialized Optical and Magnetic Readers (BCR, MICR, OCR, OMR, Mic)",
+      "instruction": {
+        "title": {
+          "en": "Automated Readers: BCR, MICR, OCR, OMR, and Microphone",
+          "hi": "विशेष पहचान उपकरण: BCR, MICR, OCR, OMR और माइक"
+        },
+        "theory": {
+          "en": "Automated readers eliminate manual typing: BCR (Bar Code Reader) reads bar patterns on retail items; MICR (Magnetic Ink Character Reader) processes magnetic ink numbers on bank cheques; OCR (Optical Character Recogniser) converts scanned paper text into editable digital text; OMR (Optical Mark Reader) evaluates examination bubbles; and Microphone records voice audio.",
+          "hi": "BCR (बार कोड रीडर) स्टोर में बारकोड स्कैन करता है। MICR (मैग्नेटिक इंक कैरेक्टर रीडर) बैंकों में चुंबकीय स्याही से छपी जानकारी पढ़ता है। OCR (ऑप्टिकल कैरेक्टर रिकॉग्नाइजर) स्कैन दस्तावेज़ से टेक्स्ट पहचानकर संपादन योग्य बनाता है। OMR (ऑप्टिकल मार्क रीडर) परीक्षा शीट का मूल्यांकन करता है और माइक ध्वनि रिकॉर्ड करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='20' y='55' width='105' height='70' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='72' y='85' fill='#38bdf8' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>BCR</text><text x='72' y='105' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Store Barcodes</text><rect x='145' y='55' width='105' height='70' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='197' y='85' fill='#fbbf24' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>MICR</text><text x='197' y='105' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Bank Cheques</text><rect x='270' y='55' width='105' height='70' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='322' y='85' fill='#4ade80' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>OCR</text><text x='322' y='105' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Editable Text</text><rect x='395' y='55' width='105' height='70' rx='6' fill='#1e293b' stroke='#f43f5e' stroke-width='1.5'/><text x='447' y='85' fill='#f43f5e' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>OMR</text><text x='447' y='105' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Exam Answer Keys</text><rect x='520' y='55' width='105' height='70' rx='6' fill='#1e293b' stroke='#c084fc' stroke-width='1.5'/><text x='572' y='85' fill='#c084fc' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>MIC</text><text x='572' y='105' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Voice Audio</text></svg>",
+          "caption": {
+            "en": "Figure 11: Specialized Recognition and Transduction Technologies",
+            "hi": "चित्र 11: विशेष दस्तावेज़ एवं डेटा रीडर"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact sentence differentiating banking MICR from examination OMR systems (5 fragments):",
+          "target_sequence": [
+            { "id": "en_u11_t1", "text": "while banks employ magnetic ink character readers" },
+            { "id": "en_u11_t2", "text": "to verify printed cheque numbers," },
+            { "id": "en_u11_t3", "text": "examination boards use optical mark readers" },
+            { "id": "en_u11_t4", "text": "to scan pencil marks on answer sheets" },
+            { "id": "en_u11_t5", "text": "for automated evaluation" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "logical",
+              "text": "examination boards use barcode readers to verify bank cheques,",
+              "penalty_explanation": "Logical error: Barcode readers scan inventory items, not cheques."
+            },
+            {
+              "id": "en_u11_d2",
+              "category": "grammatical",
+              "text": "while banks employs magnetic ink character readers",
+              "penalty_explanation": "Grammar error: Plural subject 'banks' requires 'employ'."
+            }
+          ],
+          "hint": "Contrast the banking role of MICR with the exam scoring role of OMR."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "MICR और OMR के भिन्न उपयोगों को दर्शाने वाला 5-खंडीय वाक्य बनाएं:",
+          "target_sequence": [
+            { "id": "hi_u11_t1", "text": "जहाँ बैंक चुंबकीय स्याही से छपी जानकारी पढ़ने के लिए" },
+            { "id": "hi_u11_t2", "text": "MICR तकनीक का उपयोग करते हैं," },
+            { "id": "hi_u11_t3", "text": "वहीं परीक्षा बोर्ड छात्रों के उत्तरों का मूल्यांकन करने के लिए" },
+            { "id": "hi_u11_t4", "text": "OMR शीट और ऑप्टिकल मार्क रीडर का सहारा लेते हैं" },
+            { "id": "hi_u11_t5", "text": "ताकि तेजी से निष्पक्ष परिणाम मिल सकें" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "logical",
+              "text": "बैंक परीक्षा की कॉपियों को जांचने के लिए MICR का उपयोग करते हैं,",
+              "penalty_explanation": "तार्किक त्रुटि: MICR का उपयोग चेक जांचने के लिए होता है, परीक्षा के लिए नहीं।"
+            },
+            {
+              "id": "hi_u11_d2",
+              "category": "grammatical",
+              "text": "ताकि तेजी से निष्पक्ष परिणाम मिल सके",
+              "penalty_explanation": "व्याकरण त्रुटि: बहुवचन संज्ञा 'परिणाम' के साथ 'मिल सकें' उचित है।"
+            }
+          ],
+          "hint": "बैंकों में MICR से शुरू करें और परीक्षाओं में OMR मूल्यांकन पर पूरा करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "MICR verifies magnetic bank documents; OMR evaluates bubble sheets optically; OCR extracts digital text.",
+        "hi": "MICR बैंक चेकों की जांच करता है, OMR परीक्षा शीट्स का और OCR छपे हुए अक्षरों को टेक्स्ट बनाता है।"
+      }
+    },
+    {
+      "unit_id": "u12_output_devices_monitor_types",
+      "topic": "Monitors (VDU): Soft-Copy Output, CRT, and LCD Types",
+      "instruction": {
+        "title": {
+          "en": "Monitors (VDU) and Soft-Copy Display",
+          "hi": "मॉनिटर (VDU) और सॉफ्ट-कॉपी डिस्प्ले"
+        },
+        "theory": {
+          "en": "The monitor is the most common visual output device, also known as VDU (Visual Display Unit). It resembles a television screen, displaying digital information known as 'soft-copy'. Monitors are categorized into two structural generations: CRT (Cathode Ray Tube) and LCD (Liquid Crystal Display).",
+          "hi": "मॉनिटर सबसे आम आउटपुट डिवाइस है, जिसे VDU (विजुअल डिस्प्ले यूनिट) भी कहा जाता है। यह टीवी की तरह दिखता है और उपयोगकर्ता को जानकारी प्रदर्शित करता है। मॉनिटर पर दिखने वाली जानकारी को 'सॉफ्ट-कॉपी' कहा जाता है। मॉनिटर दो प्रकार के होते हैं: CRT और LCD मॉनिटर।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='80' y='45' width='200' height='95' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='180' y='78' fill='#38bdf8' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>CRT Monitor</text><text x='180' y='100' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Cathode Ray Tube</text><text x='180' y='120' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>Bulky / Electron Gun</text><rect x='360' y='45' width='200' height='95' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='460' y='78' fill='#4ade80' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>LCD Monitor</text><text x='460' y='100' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Liquid Crystal Display</text><text x='460' y='120' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>Flat Panel / Energy Efficient</text></svg>",
+          "caption": {
+            "en": "Figure 12: Visual Display Technologies (CRT vs LCD)",
+            "hi": "चित्र 12: CRT और LCD मॉनिटर तकनीक"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the formal definition of a monitor explaining its soft-copy nature and hardware variants (5 fragments):",
+          "target_sequence": [
+            { "id": "en_u12_t1", "text": "functioning as a visual display unit," },
+            { "id": "en_u12_t2", "text": "the monitor presents electronic output" },
+            { "id": "en_u12_t3", "text": "designated as soft-copy," },
+            { "id": "en_u12_t4", "text": "rendered through either legacy cathode ray tubes" },
+            { "id": "en_u12_t5", "text": "or modern liquid crystal display panels" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u12_d1",
+              "category": "logical",
+              "text": "produces permanent ink prints designated as hard-copy,",
+              "penalty_explanation": "Logical error: Printed physical paper is hard-copy produced by printers, not monitors."
+            },
+            {
+              "id": "en_u12_d2",
+              "category": "grammatical",
+              "text": "the monitor present electronic output",
+              "penalty_explanation": "Grammar error: Singular subject requires 'presents'."
+            }
+          ],
+          "hint": "Identify the VDU role, define soft-copy output, and cite CRT and LCD technologies."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "मॉनिटर की कार्यप्रणाली और उसकी दोनों तकनीकों को सही क्रम में जोड़ें:",
+          "target_sequence": [
+            { "id": "hi_u12_t1", "text": "मॉनिटर को VDU के नाम से भी जाना जाता है," },
+            { "id": "hi_u12_t2", "text": "जो स्क्रीन पर डिजिटल जानकारी प्रदर्शित करता है" },
+            { "id": "hi_u12_t3", "text": "जिसे सॉफ्ट-कॉपी कहा जाता है," },
+            { "id": "hi_u12_t4", "text": "और यह मुख्य रूप से दो तकनीकों" },
+            { "id": "hi_u12_t5", "text": "CRT और LCD मॉनिटर के रूप में आता है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u12_d1",
+              "category": "logical",
+              "text": "जो कागज़ पर जानकारी छापकर हार्ड-कॉपी प्रदान करता है,",
+              "penalty_explanation": "तार्किक त्रुटि: कागज़ पर हार्ड कॉपी प्रिंटर देता है, मॉनिटर नहीं।"
+            },
+            {
+              "id": "hi_u12_d2",
+              "category": "grammatical",
+              "text": "जो स्क्रीन पर डिजिटल जानकारी प्रदर्शित करते हैं",
+              "penalty_explanation": "व्याकरण त्रुटि: 'मॉनिटर' एकवचन के साथ 'करता है' प्रयोग होगा।"
+            }
+          ],
+          "hint": "VDU के नाम से शुरू करें, सॉफ्ट-कॉपी बताएं, और CRT व LCD वर्गीकरण पर समाप्त करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Monitors display non-permanent soft-copy information via CRT or LCD technologies.",
+        "hi": "मॉनिटर स्क्रीन पर दिखने वाली डिजिटल जानकारी सॉफ्ट-कॉपी कहलाती है।"
+      }
+    },
+    {
+      "unit_id": "u13_printers_impact_vs_non_impact",
+      "topic": "Printers: Hard-Copy, Impact (Mechanical) vs Non-Impact Printers",
+      "instruction": {
+        "title": {
+          "en": "Printers: Impact vs Non-Impact Technologies",
+          "hi": "प्रिंटर: इम्पैक्ट बनाम नॉन-इम्पैक्ट तकनीक"
+        },
+        "theory": {
+          "en": "Printers output information on paper as 'hard-copy'. Impact Printers physically press their printing mechanism against the paper; they are noisy, slow, and inexpensive (e.g., Dot-Matrix, Chain, Drum). Non-Impact Printers do not touch or press against the paper; they are quiet, fast, high-quality, and expensive (e.g., Inkjet line-printers and Laser page-printers).",
+          "hi": "प्रिंटर कागज़ पर जानकारी छापता है जिसे 'हार्ड-कॉपी' कहा जाता है। इम्पैक्ट प्रिंटर में प्रिंटिंग तंत्र सीधे कागज़ पर दबाव डालता है; ये शोर करने वाले, धीमे और सस्ते होते हैं (जैसे डॉट-मैट्रिक्स, चेन, ड्रम प्रिंटर)। नॉन-इम्पैक्ट प्रिंटर में तंत्र कागज़ को नहीं छूता; ये शांत, तेज, उच्च गुणवत्ता वाले और महंगे होते हैं (जैसे इंकजेट और लेजर प्रिंटर)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='40' y='35' width='250' height='150' rx='8' fill='#1e293b' stroke='#f59e0b' stroke-width='2'/><text x='165' y='65' fill='#fbbf24' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Impact Printers</text><text x='165' y='90' fill='#f8fafc' font-size='11' font-family='sans-serif' text-anchor='middle'>Direct Mechanical Press on Paper</text><text x='165' y='115' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Noisy, Slow, Inexpensive</text><text x='165' y='140' fill='#f8fafc' font-size='10' font-family='sans-serif' text-anchor='middle'>Dot-Matrix, Chain, Drum</text><rect x='350' y='35' width='250' height='150' rx='8' fill='#1e293b' stroke='#10b981' stroke-width='2'/><text x='475' y='65' fill='#34d399' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Non-Impact Printers</text><text x='475' y='90' fill='#f8fafc' font-size='11' font-family='sans-serif' text-anchor='middle'>No Physical Press on Paper</text><text x='475' y='115' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Quiet, Fast, High Quality, Costly</text><text x='475' y='140' fill='#f8fafc' font-size='10' font-family='sans-serif' text-anchor='middle'>Inkjet, Laser</text></svg>",
+          "caption": {
+            "en": "Figure 13: Operational Attributes: Impact vs Non-Impact Printers",
+            "hi": "चित्र 13: इम्पैक्ट और नॉन-इम्पैक्ट प्रिंटर की तुलना"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact technical contrast between impact and non-impact printing mechanisms (6 fragments):",
+          "target_sequence": [
+            { "id": "en_u13_t1", "text": "unlike noisy impact printers" },
+            { "id": "en_u13_t2", "text": "which strike a mechanical head directly against paper," },
+            { "id": "en_u13_t3", "text": "non-impact printers deposit markings without contact," },
+            { "id": "en_u13_t4", "text": "producing superior hard-copy quality" },
+            { "id": "en_u13_t5", "text": "at significantly higher operating speeds" },
+            { "id": "en_u13_t6", "text": "through inkjet and laser technologies" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "logical",
+              "text": "which strike ribbon pins silently against paper sheets,",
+              "penalty_explanation": "Logical error: Striking pins against ribbon and paper generates loud noise, not silence."
+            },
+            {
+              "id": "en_u13_d2",
+              "category": "grammatical",
+              "text": "non-impact printers deposits markings without contact,",
+              "penalty_explanation": "Grammar error: Plural subject requires base verb 'deposit'."
+            }
+          ],
+          "hint": "Start with the introductory contrast clause, explain impact strike mechanics, introduce non-impact, and finish with speeds and technologies."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "इम्पैक्ट और नॉन-इम्पैक्ट प्रिंटर के अंतर को स्पष्ट करने वाला 6-खंडीय वाक्य बनाएं:",
+          "target_sequence": [
+            { "id": "hi_u13_t1", "text": "जहाँ इम्पैक्ट प्रिंटर में प्रिंटिंग तंत्र" },
+            { "id": "hi_u13_t2", "text": "कागज़ पर सीधे दबाव डालकर धीमी और शोरयुक्त छपाई करता है," },
+            { "id": "hi_u13_t3", "text": "वहीं लेजर और इंकजेट जैसे नॉन-इम्पैक्ट प्रिंटर" },
+            { "id": "hi_u13_t4", "text": "कागज़ पर बिना किसी भौतिक दबाव के" },
+            { "id": "hi_u13_t5", "text": "शांत, तीव्र और उच्च गुणवत्ता वाली" },
+            { "id": "hi_u13_t6", "text": "हार्ड-कॉपी प्रदान करते हैं" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "logical",
+              "text": "कागज़ पर अत्यधिक शोर के साथ धीमी गति से छपाई करते हैं,",
+              "penalty_explanation": "तार्किक त्रुटि: नॉन-इम्पैक्ट प्रिंटर शांत और तेज़ होते हैं।"
+            },
+            {
+              "id": "hi_u13_d2",
+              "category": "grammatical",
+              "text": "हार्ड-कॉपी प्रदान करता है",
+              "penalty_explanation": "व्याकरण त्रुटि: बहुवचन कर्ता 'नॉन-इम्पैक्ट प्रिंटर' के साथ 'प्रदान करते हैं' सही है।"
+            }
+          ],
+          "hint": "इम्पैक्ट की यांत्रिक दबाव प्रणाली से शुरू करें और नॉन-इम्पैक्ट की शांत, उच्च गुणवत्ता पर समाप्त करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Impact printers strike ribbon against paper noisily; non-impact printers apply ink/toner without physical contact.",
+        "hi": "इम्पैक्ट प्रिंटर कागज़ पर दबाव डालकर छापते हैं, जबकि नॉन-इम्पैक्ट प्रिंटर बिना छुए बेहतर छपाई करते हैं।"
+      }
+    },
+    {
+      "unit_id": "u14_plotters_speakers_projectors",
+      "topic": "Specialized Output Devices: Plotters, Speakers, and Projectors",
+      "instruction": {
+        "title": {
+          "en": "Specialized Output: Plotters, Speakers, and Projectors",
+          "hi": "विशिष्ट आउटपुट: प्लॉटर, स्पीकर और प्रोजेक्टर"
+        },
+        "theory": {
+          "en": "Plotters draw high-quality architectural designs of buildings and aircraft on large canvas sheets, using flat-bed or drum mechanisms. Speakers provide auditory sound output for meetings and media. Projectors display images onto large projection screens for audiences, categorized into CRT, LCD, and DLP types.",
+          "hi": "प्लॉटर बड़े कागज़ या कैनवास पर इमारतों और जहाजों के उच्च गुणवत्ता वाले इंजीनियरिंग डिज़ाइन बनाने के काम आते हैं (फ्लैट-बेड और ड्रम प्लॉटर)। स्पीकर ध्वनि आउटपुट देते हैं। प्रोजेक्टर बड़ी स्क्रीन पर वीडियो और प्रेजेंटेशन दिखाते हैं (CRT, LCD, DLP प्रकार)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='30' y='50' width='160' height='80' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='110' y='80' fill='#38bdf8' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Plotter</text><text x='110' y='100' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Architectural Blueprints</text><text x='110' y='118' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Flat-bed &amp; Drum</text><rect x='240' y='50' width='160' height='80' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='320' y='80' fill='#fbbf24' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Speaker</text><text x='320' y='100' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Auditory Output</text><text x='320' y='118' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Meetings &amp; Audio</text><rect x='450' y='50' width='160' height='80' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='530' y='80' fill='#4ade80' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Projector</text><text x='530' y='100' fill='#4ade80' font-size='10' font-family='sans-serif' text-anchor='middle'>Large Screen Presentation</text><text x='530' y='118' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>CRT, LCD, DLP</text></svg>",
+          "caption": {
+            "en": "Figure 14: Output Devices for Architectural, Auditory, and Audience Display",
+            "hi": "चित्र 14: प्लॉटर, स्पीकर और प्रोजेक्टर के उपयोग"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct a statement detailing why plotters are preferred over standard printers for architectural engineering (5 fragments):",
+          "target_sequence": [
+            { "id": "en_u14_t1", "text": "because standard printers cannot handle massive canvas sizes," },
+            { "id": "en_u14_t2", "text": "engineers utilize flat-bed and drum plotters" },
+            { "id": "en_u14_t3", "text": "to draw continuous high-precision blueprints" },
+            { "id": "en_u14_t4", "text": "of buildings, aircraft, and ships" },
+            { "id": "en_u14_t5", "text": "with exacting geometric accuracy" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "logical",
+              "text": "to produce low-cost character receipts on narrow rolls,",
+              "penalty_explanation": "Logical error: Low-cost receipts are printed by dot-matrix printers, not engineering plotters."
+            },
+            {
+              "id": "en_u14_d2",
+              "category": "grammatical",
+              "text": "engineers utilizes flat-bed and drum plotters",
+              "penalty_explanation": "Grammar error: Plural subject requires base verb 'utilize'."
+            }
+          ],
+          "hint": "Begin with the size limitation clause, identify plotters and engineers, state blueprint drawing, and finish with accuracy."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "इंजीनियरिंग में प्लॉटर के विशिष्ट महत्व को दर्शाने वाला वाक्य बनाएं:",
+          "target_sequence": [
+            { "id": "hi_u14_t1", "text": "सामान्य प्रिंटरों की तुलना में बहुत महंगे होने के बावजूद," },
+            { "id": "hi_u14_t2", "text": "प्लॉटर का उपयोग बड़े कागज़ या कैनवास की शीट पर" },
+            { "id": "hi_u14_t3", "text": "इमारतों, जहाजों और विमानों के" },
+            { "id": "hi_u14_t4", "text": "अत्यंत उच्च गुणवत्ता वाले विस्तृत डिज़ाइन बनाने के लिए" },
+            { "id": "hi_u14_t5", "text": "विशेष रूप से किया जाता है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "logical",
+              "text": "केवल साधारण टेक्स्ट दस्तावेज़ों को जल्दी छापने के लिए,",
+              "penalty_explanation": "तार्किक त्रुटि: साधारण टेक्स्ट छापने के लिए प्रिंटर होता है, प्लॉटर नहीं।"
+            },
+            {
+              "id": "hi_u14_d2",
+              "category": "grammatical",
+              "text": "विशेष रूप से किए जाते हैं",
+              "penalty_explanation": "व्याकरण त्रुटि: 'उपयोग किया जाता है' मानक एकवचन रूप है।"
+            }
+          ],
+          "hint": "लागत तुलना से शुरू करें, बड़े कैनवास पर नक्शे बनाने का उद्देश्य बताएं, और अंतिम क्रिया पर पूरा करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Plotters render high-precision vector engineering drawings on massive canvases beyond printer capacity.",
+        "hi": "प्लॉटर बड़े कैनवास पर इमारतों और मशीनों के सटीक इंजीनियरिंग नक्शे बनाने में उपयोग होते हैं।"
+      }
+    },
+    {
+      "unit_id": "u15_programs_and_software_taxonomy",
+      "topic": "Programs vs Software: System and Application Tiers",
+      "instruction": {
+        "title": {
+          "en": "Software Architecture: Programs, System, and Applications",
+          "hi": "सॉफ्टवेयर संरचना: प्रोग्राम, सिस्टम और एप्लीकेशन सॉफ्टवेयर"
+        },
+        "theory": {
+          "en": "A Computer Program is a collection of instructions enabling a computer to perform a particular task. Computer Software is a collection of integrated programs working together to perform well-defined functions. Software is divided into System Software (controls hardware) and Application Software (performs user tasks).",
+          "hi": "कंप्यूटर प्रोग्राम निर्देशों का एक संग्रह है जो किसी विशेष कार्य को करता है। सॉफ्टवेयर एक साथ काम करने वाले कंप्यूटर प्रोग्रामों का समूह है जो परिभाषित कार्यों को पूरा करता है। सॉफ्टवेयर दो प्रकार के होते हैं: सिस्टम सॉफ्टवेयर (हार्डवेयर नियंत्रण) और एप्लीकेशन सॉफ्टवेयर (उपयोगकर्ता कार्य)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='170' y='20' width='300' height='35' rx='6' fill='#3b82f6'/><text x='320' y='43' fill='#ffffff' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Application Software (Apps: Word, Excel, VLC)</text><rect x='170' y='70' width='300' height='35' rx='6' fill='#0284c7'/><text x='320' y='93' fill='#ffffff' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>System Software (OS, Translators, Utilities)</text><rect x='170' y='120' width='300' height='35' rx='6' fill='#334155'/><text x='320' y='143' fill='#f8fafc' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Hardware (CPU, Memory, Peripherals)</text></svg>",
+          "caption": {
+            "en": "Figure 15: Structural Hierarchy of Computer Software",
+            "hi": "चित्र 15: सॉफ्टवेयर के दो मुख्य वर्ग"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact relationship between instructions, programs, and software (5 fragments):",
+          "target_sequence": [
+            { "id": "en_u15_t1", "text": "while an individual program constitutes instructions" },
+            { "id": "en_u15_t2", "text": "executing a specific task," },
+            { "id": "en_u15_t3", "text": "computer software encompasses coordinated program suites" },
+            { "id": "en_u15_t4", "text": "divided functionally into system software for hardware control" },
+            { "id": "en_u15_t5", "text": "and application software for user productivity" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "logical",
+              "text": "divided functionally into application software to manage physical silicon circuitry,",
+              "penalty_explanation": "Logical error: System software manages physical circuitry, not application software."
+            },
+            {
+              "id": "en_u15_d2",
+              "category": "grammatical",
+              "text": "computer software encompass coordinated program suites",
+              "penalty_explanation": "Grammar error: Singular collective noun requires 'encompasses'."
+            }
+          ],
+          "hint": "Contrast the individual program definition with the overarching software suites and its two categories."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "प्रोग्राम और सॉफ्टवेयर के संबंध को स्पष्ट करने वाला 5-खंडीय वाक्य बनाएं:",
+          "target_sequence": [
+            { "id": "hi_u15_t1", "text": "जहाँ प्रोग्राम किसी विशिष्ट कार्य को करने वाले" },
+            { "id": "hi_u15_t2", "text": "निर्देशों का एक संग्रह मात्र होता है," },
+            { "id": "hi_u15_t3", "text": "वहीं सॉफ्टवेयर ऐसे कई प्रोग्रामों का संयुक्त समूह है" },
+            { "id": "hi_u15_t4", "text": "जो हार्डवेयर नियंत्रण के लिए सिस्टम सॉफ्टवेयर" },
+            { "id": "hi_u15_t5", "text": "और उपयोगकर्ता कार्यों के लिए एप्लीकेशन सॉफ्टवेयर में बंटा होता है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "logical",
+              "text": "जो केवल हार्डवेयर पुर्जों को जोड़ने वाले भौतिक तार होते हैं,",
+              "penalty_explanation": "तार्किक त्रुटि: सॉफ्टवेयर प्रोग्रामों का समूह है, भौतिक हार्डवेयर नहीं।"
+            },
+            {
+              "id": "hi_u15_d2",
+              "category": "grammatical",
+              "text": "सॉफ्टवेयर ऐसे कई प्रोग्रामों का संयुक्त समूह हैं",
+              "penalty_explanation": "व्याकरण त्रुटि: 'सॉफ्टवेयर' एकवचन के साथ 'समूह है' का प्रयोग होगा।"
+            }
+          ],
+          "hint": "प्रोग्राम की परिभाषा से शुरू करें, सॉफ्टवेयर के समूह होने की पुष्टि करें, और दोनों प्रकारों पर समाप्त करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Instructions build programs; programs assemble into software categorized into system and application tiers.",
+        "hi": "निर्देशों से प्रोग्राम बनते हैं, और प्रोग्रामों के व्यवस्थित समूह से सिस्टम व एप्लीकेशन सॉफ्टवेयर बनते हैं।"
+      }
+    },
+    {
+      "unit_id": "u16_system_software_subtypes",
+      "topic": "System Software Triad: Translators, Operating Systems, and Utilities",
+      "instruction": {
+        "title": {
+          "en": "System Software: Translators, Operating Systems, Utilities",
+          "hi": "सिस्टम सॉफ्टवेयर: अनुवादक, ऑपरेटिंग सिस्टम और यूटिलिटीज"
+        },
+        "theory": {
+          "en": "System Software controls computer hardware and provides a platform for running software. It is sub-divided into three categories: Language Translators (converts source code into machine code), Operating Systems (manages system hardware and runs applications, e.g., Windows, Linux, Android), and Utilities (software that enhances OS functionality, e.g., Antivirus, Text Editors).",
+          "hi": "सिस्टम सॉफ्टवेयर कंप्यूटर हार्डवेयर को नियंत्रित करता है। इसे तीन प्रकारों में बांटा गया है: लैंग्वेज ट्रांसलेटर (सोर्स कोड को मशीनी भाषा में बदलना), ऑपरेटिंग सिस्टम (हार्डवेयर का प्रबंधन और प्रोग्राम चलाना, जैसे Windows, Linux), और यूटिलिटीज (OS की क्षमता बढ़ाने वाले सॉफ्टवेयर, जैसे एंटीवायरस, टेक्स्ट एडिटर)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='40' y='50' width='165' height='80' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='122' y='80' fill='#38bdf8' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Translators</text><text x='122' y='100' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Source to Machine Code</text><text x='122' y='118' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Compiler / Interpreter</text><rect x='235' y='50' width='170' height='80' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='320' y='80' fill='#fbbf24' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Operating System</text><text x='320' y='100' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Hardware Management</text><text x='320' y='118' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Windows, Linux, Android</text><rect x='435' y='50' width='165' height='80' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='517' y='80' fill='#4ade80' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Utilities</text><text x='517' y='100' fill='#4ade80' font-size='10' font-family='sans-serif' text-anchor='middle'>Feature Enhancements</text><text x='517' y='118' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Antivirus, System Tools</text></svg>",
+          "caption": {
+            "en": "Figure 16: The Tripartite Classification of System Software",
+            "hi": "चित्र 16: सिस्टम सॉफ्टवेयर के तीन उप-वर्ग"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the classification sentence outlining the tripartite divisions of system software (5 fragments):",
+          "target_sequence": [
+            { "id": "en_u16_t1", "text": "system software exercises foundational control over hardware" },
+            { "id": "en_u16_t2", "text": "through operating systems managing core resources," },
+            { "id": "en_u16_t3", "text": "language translators converting programming code," },
+            { "id": "en_u16_t4", "text": "and utility tools" },
+            { "id": "en_u16_t5", "text": "enhancing security and operational performance" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u16_d1",
+              "category": "logical",
+              "text": "through application spreadsheet packages managing core resources,",
+              "penalty_explanation": "Logical error: Spreadsheets are application software, not system software."
+            },
+            {
+              "id": "en_u16_d2",
+              "category": "grammatical",
+              "text": "and utility tools enhances security",
+              "penalty_explanation": "Grammar error: Plural subject requires base verb 'enhancing' or 'enhance'."
+            }
+          ],
+          "hint": "State the hardware control thesis, then systematically list operating systems, translators, and utilities."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "सिस्टम सॉफ्टवेयर के तीनों भागों की जिम्मेदारियों को सही क्रम में जोड़ें:",
+          "target_sequence": [
+            { "id": "hi_u16_t1", "text": "सिस्टम सॉफ्टवेयर कंप्यूटर हार्डवेयर को नियंत्रित करता है" },
+            { "id": "hi_u16_t2", "text": "जिसमें संसाधनों का प्रबंधन करने वाला ऑपरेटिंग सिस्टम," },
+            { "id": "hi_u16_t3", "text": "मानव कोड को मशीनी भाषा में बदलने वाले अनुवादक" },
+            { "id": "hi_u16_t4", "text": "और सिस्टम की कार्यक्षमता बढ़ाने वाली" },
+            { "id": "hi_u16_t5", "text": "एंटीवायरस जैसी यूटिलिटीज शामिल होती हैं" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u16_d1",
+              "category": "logical",
+              "text": "जिसमें फ़ोटोशॉप और एक्सेल जैसे एप्लीकेशन प्रोग्राम मुख्य हैं,",
+              "penalty_explanation": "तार्किक त्रुटि: फ़ोटोशॉप और एक्सेल एप्लीकेशन सॉफ्टवेयर हैं, सिस्टम सॉफ्टवेयर नहीं।"
+            },
+            {
+              "id": "hi_u16_d2",
+              "category": "grammatical",
+              "text": "एंटीवायरस जैसी यूटिलिटीज शामिल होता है",
+              "penalty_explanation": "व्याकरण त्रुटि: 'यूटिलिटीज' बहुवचन स्त्रीलिंग संज्ञा है, 'शामिल होती हैं' उचित है।"
+            }
+          ],
+          "hint": "हार्डवेयर नियंत्रण से शुरू करें, फिर OS, ट्रांसलेटर और यूटिलिटीज को क्रम से जोड़ें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "System software encompasses Operating Systems, Language Translators, and Utility programs.",
+        "hi": "सिस्टम सॉफ्टवेयर में ऑपरेटिंग सिस्टम, ट्रांसलेटर और यूटिलिटी प्रोग्राम शामिल होते हैं।"
+      }
+    },
+    {
+      "unit_id": "u17_language_translators_comparison",
+      "topic": "Translators: Interpreter, Compiler, and Assembler Differences",
+      "instruction": {
+        "title": {
+          "en": "Language Translators: Interpreter vs Compiler vs Assembler",
+          "hi": "भाषा अनुवादक: इंटरप्रेटर, कंपाइलर और असेम्बलर"
+        },
+        "theory": {
+          "en": "A language translator converts human-readable source code into machine code (binary). An Interpreter converts high-level source code one line at a time. A Compiler translates all lines of high-level source code all at once. An Assembler converts assembly language into machine language.",
+          "hi": "लैंग्वेज ट्रांसलेटर उच्च-स्तरीय सोर्स कोड को मशीनी भाषा में बदलता है। इंटरप्रेटर उच्च स्तरीय कोड को एक बार में एक पंक्ति (लाइन-दर-लाइन) बदलता है। कंपाइलर पूरे कोड की सभी पंक्तियों को एक साथ मशीनी भाषा में बदलता है। असेम्बलर असेम्बली भाषा को मशीनी भाषा में बदलता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='40' y='50' width='165' height='80' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='122' y='80' fill='#38bdf8' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Interpreter</text><text x='122' y='100' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>High Level to Machine</text><text x='122' y='118' fill='#fbbf24' font-size='10' font-family='sans-serif' text-anchor='middle'>One line at a time</text><rect x='235' y='50' width='170' height='80' rx='8' fill='#1e293b' stroke='#10b981' stroke-width='2'/><text x='320' y='80' fill='#34d399' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Compiler</text><text x='320' y='100' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>High Level to Machine</text><text x='320' y='118' fill='#34d399' font-size='10' font-family='sans-serif' text-anchor='middle'>All lines at once</text><rect x='435' y='50' width='165' height='80' rx='8' fill='#1e293b' stroke='#c084fc' stroke-width='2'/><text x='517' y='80' fill='#c084fc' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Assembler</text><text x='517' y='100' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>Assembly to Machine</text><text x='517' y='118' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Mnemonic translation</text></svg>",
+          "caption": {
+            "en": "Figure 17: Operational Differences between Translators",
+            "hi": "चित्र 17: इंटरप्रेटर, कंपाइलर और असेम्बलर की कार्यप्रणाली"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Synthesize the operational difference between compilers, interpreters, and assemblers (6 fragments):",
+          "target_sequence": [
+            { "id": "en_u17_t1", "text": "whereas an interpreter translates high-level source code" },
+            { "id": "en_u17_t2", "text": "one line at a time," },
+            { "id": "en_u17_t3", "text": "a compiler converts the entire program into machine code" },
+            { "id": "en_u17_t4", "text": "all lines at once," },
+            { "id": "en_u17_t5", "text": "distinct from an assembler" },
+            { "id": "en_u17_t6", "text": "which translates assembly language into binary" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u17_d1",
+              "category": "logical",
+              "text": "a compiler converts high-level code one line at a time during execution,",
+              "penalty_explanation": "Logical error: Compilers translate all lines at once, not line-by-line."
+            },
+            {
+              "id": "en_u17_d2",
+              "category": "grammatical",
+              "text": "whereas an interpreter translate high-level source code",
+              "penalty_explanation": "Grammar error: Singular subject 'interpreter' requires 'translates'."
+            }
+          ],
+          "hint": "Start with the interpreter's line-by-line method, contrast with compiler's all-at-once translation, and finish with assembler."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "तीनों लैंग्वेज ट्रांसलेटरों के अंतर को 6 खंडों में जोड़कर स्पष्ट करें:",
+          "target_sequence": [
+            { "id": "hi_u17_t1", "text": "जहाँ इंटरप्रेटर उच्च स्तरीय सोर्स कोड को" },
+            { "id": "hi_u17_t2", "text": "एक बार में केवल एक ही पंक्ति अनुवादित करता है," },
+            { "id": "hi_u17_t3", "text": "वहीं कंपाइलर पूरे प्रोग्राम की सभी पंक्तियों को" },
+            { "id": "hi_u17_t4", "text": "एक साथ मशीनी भाषा में बदल देता है," },
+            { "id": "hi_u17_t5", "text": "जबकि असेम्बलर का कार्य" },
+            { "id": "hi_u17_t6", "text": "असेम्बली भाषा को बाइनरी में बदलना होता है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u17_d1",
+              "category": "logical",
+              "text": "कंपाइलर एक बार में केवल एक ही पंक्ति मशीनी भाषा में बदलता है,",
+              "penalty_explanation": "तार्किक त्रुटि: कंपाइलर सभी पंक्तियों को एक साथ बदलता है।"
+            },
+            {
+              "id": "hi_u17_d2",
+              "category": "grammatical",
+              "text": "एक साथ मशीनी भाषा में बदल देते हैं,",
+              "penalty_explanation": "व्याकरण त्रुटि: 'कंपाइलर' एकवचन कर्ता के साथ 'बदल देता है' सही है।"
+            }
+          ],
+          "hint": "इंटरप्रेटर (लाइन-दर-लाइन) से शुरू करें, कंपाइलर (एक साथ) बताएं, और असेम्बलर (असेम्बली भाषा) पर समाप्त करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Interpreters translate line-by-line; compilers translate as a whole; assemblers convert assembly code.",
+        "hi": "इंटरप्रेटर एक-एक पंक्ति, कंपाइलर सभी पंक्तियां एक साथ और असेम्बलर असेम्बली भाषा का अनुवाद करता है।"
+      }
+    },
+    {
+      "unit_id": "u18_number_systems_radix_concepts",
+      "topic": "Number Systems: Base-10 Decimal vs Base-2 Binary Circuit Mapping",
+      "instruction": {
+        "title": {
+          "en": "Number Systems: Decimal (Base-10) and Binary (Base-2)",
+          "hi": "संख्या प्रणालियाँ: दशमलव (आधार-10) और बाइनरी (आधार-2)"
+        },
+        "theory": {
+          "en": "The Decimal System is a base-10 system utilizing ten digits (0-9) where digit positions represent powers of 10 (units, tens, hundreds). The Binary System is a base-2 system using only two digits (0 and 1) representing powers of 2. Computers rely on binary because two electrical voltage states (OFF and ON) are easy and reliable to implement in digital circuits.",
+          "hi": "दशमलव प्रणाली आधार-10 प्रणाली है जिसमें दस अंक (0 से 9) होते हैं। बाइनरी प्रणाली आधार-2 प्रणाली है जिसमें केवल दो अंक (0 और 1) होते हैं। कंप्यूटर आंतरिक रूप से बाइनरी का उपयोग करता है क्योंकि इलेक्ट्रॉनिक सर्किट में दो अवस्थाओं (चालू और बंद) को लागू करना बहुत सरल और स्थिर होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 180' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><rect x='40' y='40' width='250' height='100' rx='8' fill='#1e293b' stroke='#6366f1' stroke-width='2'/><text x='165' y='70' fill='#a5b4fc' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Decimal (Base-10)</text><text x='165' y='95' fill='#f8fafc' font-size='11' font-family='sans-serif' text-anchor='middle'>Digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9</text><text x='165' y='120' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Positional Weights: 10⁰, 10¹, 10²...</text><rect x='350' y='40' width='250' height='100' rx='8' fill='#1e293b' stroke='#ec4899' stroke-width='2'/><text x='475' y='70' fill='#f472b6' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Binary (Base-2)</text><text x='475' y='95' fill='#f8fafc' font-size='11' font-family='sans-serif' text-anchor='middle'>Digits: 0 and 1</text><text x='475' y='120' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Electronic Circuit States: OFF / ON</text></svg>",
+          "caption": {
+            "en": "Figure 18: Radix and Positional Bases of Decimal vs Binary",
+            "hi": "चित्र 18: दशमलव (आधार-10) और बाइनरी (आधार-2) संख्या प्रणाली"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the engineering rationale explaining why computers use binary rather than decimal systems (5 fragments):",
+          "target_sequence": [
+            { "id": "en_u18_t1", "text": "while human mathematics standardizes on the base-10 decimal system," },
+            { "id": "en_u18_t2", "text": "digital computers employ the base-2 binary system" },
+            { "id": "en_u18_t3", "text": "using only 0 and 1" },
+            { "id": "en_u18_t4", "text": "because two voltage levels" },
+            { "id": "en_u18_t5", "text": "are straightforward to implement in physical electronic circuits" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u18_d1",
+              "category": "logical",
+              "text": "because digital electronic circuits naturally distinguish ten voltage states without error,",
+              "penalty_explanation": "Logical error: Distinguishing 10 voltages causes electrical noise and logic failure; circuits use two states."
+            },
+            {
+              "id": "en_u18_d2",
+              "category": "grammatical",
+              "text": "digital computers employs the base-2 binary system",
+              "penalty_explanation": "Grammar error: Plural subject requires base verb 'employ'."
+            }
+          ],
+          "hint": "Contrast human base-10 counting with computer base-2, mention 0 and 1, and conclude with two-state voltage reliability."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "कंप्यूटर में बाइनरी सिस्टम के उपयोग का वैज्ञानिक कारण 5 खंडों में जोड़ें:",
+          "target_sequence": [
+            { "id": "hi_u18_t1", "text": "जहाँ मानवीय गणना आधार-10 दशमलव प्रणाली पर निर्भर है," },
+            { "id": "hi_u18_t2", "text": "वहीं आधुनिक कंप्यूटर आधार-2 बाइनरी प्रणाली अपनाते हैं," },
+            { "id": "hi_u18_t3", "text": "जिसमें केवल 0 और 1 का उपयोग होता है" },
+            { "id": "hi_u18_t4", "text": "क्योंकि डिजिटल इलेक्ट्रॉनिक सर्किट में दो वोल्टेज अवस्थाओं को" },
+            { "id": "hi_u18_t5", "text": "विश्वसनीयता से लागू करना सबसे सरल होता है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u18_d1",
+              "category": "logical",
+              "text": "क्योंकि कंप्यूटर आंतरिक रूप से दस अलग-अलग वोल्टेज स्तरों पर सटीक काम करता है,",
+              "penalty_explanation": "तार्किक त्रुटि: कंप्यूटर 10 नहीं, केवल 2 वोल्टेज स्तरों (चालू/बंद) पर काम करता है।"
+            },
+            {
+              "id": "hi_u18_d2",
+              "category": "grammatical",
+              "text": "वहीं आधुनिक कंप्यूटर आधार-2 बाइनरी प्रणाली अपनाता है,",
+              "penalty_explanation": "व्याकरण त्रुटि: बहुवचन संज्ञा 'कंप्यूटर' के साथ 'अपनाते हैं' उचित क्रिया है।"
+            }
+          ],
+          "hint": "दशमलव से तुलना शुरू करें, बाइनरी का आधार 2 और 0/1 बताएं, और सर्किट की दो वोल्टेज अवस्थाओं पर पूरा करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Decimal uses 10 symbols for humans; binary uses 2 symbols mapped to physical electronic switches.",
+        "hi": "इलेक्ट्रॉनिक सर्किट चालू और बंद (0 और 1) की दो अवस्थाओं को आसानी से पहचानते हैं, इसलिए बाइनरी आधार है।"
+      }
+    },
+    {
+      "unit_id": "u19_conversion_decimal_to_binary",
+      "topic": "Conversion Algorithm: Decimal to Binary (Successive Division)",
+      "instruction": {
+        "title": {
+          "en": "Converting Decimal to Binary: The Division Algorithm",
+          "hi": "दशमलव से बाइनरी में रूपांतरण: विभाजन विधि"
+        },
+        "theory": {
+          "en": "To convert a decimal integer to binary: repeatedly divide the number by 2, record the remainder (0 or 1) at each step, update the number with the integer quotient, continue until quotient reaches 0, and read the sequence of remainders from bottom to top (e.g., 19 divided successively produces remainders 1,1,0,0,1, reading upwards as 10011).",
+          "hi": "दशमलव संख्या को बाइनरी में बदलने के चरण: संख्या को बार-बार 2 से भाग दें, प्रत्येक बार शेषफल (0 या 1) लिखें, भागफल को नई संख्या मानकर प्रक्रिया दोहराएं जब तक भागफल 0 न हो जाए, और अंत में शेषफलों को नीचे से ऊपर की ओर पढ़ें (जैसे 19 का बाइनरी मान 10011 है)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><text x='180' y='30' fill='#38bdf8' font-size='12' font-family='monospace' font-weight='bold'>Divisor | Number | Remainder</text><line x1='80' y1='40' x2='380' y2='40' stroke='#475569' stroke-width='1.5'/><text x='110' y='60' fill='#f8fafc' font-size='12' font-family='monospace'>2 | 19 | 1 (LSB)</text><text x='110' y='85' fill='#f8fafc' font-size='12' font-family='monospace'>2 |  9 | 1</text><text x='110' y='110' fill='#f8fafc' font-size='12' font-family='monospace'>2 |  4 | 0</text><text x='110' y='135' fill='#f8fafc' font-size='12' font-family='monospace'>2 |  2 | 0</text><text x='110' y='160' fill='#f8fafc' font-size='12' font-family='monospace'>2 |  1 | 1 (MSB)</text><text x='110' y='185' fill='#94a3b8' font-size='12' font-family='monospace'>    0</text><path d='M 320 170 L 320 60' stroke='#fbbf24' stroke-width='2' fill='none' marker-end='url(#arr)'/><text x='350' y='120' fill='#fbbf24' font-size='11' font-family='sans-serif'>Read Up: 10011₂</text></svg>",
+          "caption": {
+            "en": "Figure 19: Repeated Division-by-2 of Decimal 19",
+            "hi": "चित्र 19: संख्या 19 का बाइनरी में क्रमिक विभाजन रूपांतरण"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact algorithmic procedure for converting a decimal number to binary (7 fragments):",
+          "target_sequence": [
+            { "id": "en_u19_t1", "text": "to convert a decimal number to binary," },
+            { "id": "en_u19_t2", "text": "repeatedly divide the number by 2," },
+            { "id": "en_u19_t3", "text": "record each remainder as either 0 or 1," },
+            { "id": "en_u19_t4", "text": "update the number with the integer quotient," },
+            { "id": "en_u19_t5", "text": "continue the cycle until the quotient becomes 0," },
+            { "id": "en_u19_t6", "text": "and finally read the recorded remainders" },
+            { "id": "en_u19_t7", "text": "in reverse sequence from bottom to top" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u19_d1",
+              "category": "logical",
+              "text": "and read the recorded remainders from top to bottom,",
+              "penalty_explanation": "Logical error: Reading top-to-bottom inverts significance; it must be read bottom-to-top."
+            },
+            {
+              "id": "en_u19_d2",
+              "category": "grammatical",
+              "text": "record each remainder as either 0 and 1,",
+              "penalty_explanation": "Grammar error: Correlative pair is 'either ... or', not 'either ... and'."
+            }
+          ],
+          "hint": "List the steps sequentially: purpose, divide by 2, record remainder, update quotient, terminate at 0, and read bottom-to-top."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "दशमलव से बाइनरी में बदलने के कलन-विधि (एल्गोरिदम) चरणों को सही क्रम में जोड़ें (7 खंड):",
+          "target_sequence": [
+            { "id": "hi_u19_t1", "text": "किसी दशमलव संख्या को बाइनरी में बदलने के लिए" },
+            { "id": "hi_u19_t2", "text": "संख्या को बार-बार 2 से विभाजित किया जाता है," },
+            { "id": "hi_u19_t3", "text": "प्रत्येक चरण में शेषफल 0 या 1 को नोट किया जाता है," },
+            { "id": "hi_u19_t4", "text": "भागफल को नई संख्या मानकर प्रक्रिया जारी रखी जाती है," },
+            { "id": "hi_u19_t5", "text": "जब तक कि भागफल 0 न हो जाए," },
+            { "id": "hi_u19_t6", "text": "और अंत में बाइनरी संख्या प्राप्त करने के लिए" },
+            { "id": "hi_u19_t7", "text": "शेषफलों को नीचे से ऊपर की दिशा में पढ़ा जाता है" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u19_d1",
+              "category": "logical",
+              "text": "शेषफलों को ऊपर से नीचे की दिशा में पढ़ा जाता है,",
+              "penalty_explanation": "तार्किक त्रुटि: शेष को ऊपर से नीचे नहीं, बल्कि नीचे से ऊपर पढ़ा जाता है।"
+            },
+            {
+              "id": "hi_u19_d2",
+              "category": "grammatical",
+              "text": "शेषफल 0 या 1 को नोट किए जाते हैं,",
+              "penalty_explanation": "व्याकरण त्रुटि: 'शेषफल नोट किया जाता है' शुद्ध एकवचन प्रयोग है।"
+            }
+          ],
+          "hint": "विभाजन के उद्देश्य से शुरू करके, 2 से भाग, शेष लिखना, 0 पर रुकना, और नीचे-से-ऊपर पढ़ने पर समाप्त करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Decimal to binary requires repeated division by 2, terminating at quotient 0 and reading remainders upwards.",
+        "hi": "दशमलव को बाइनरी में बदलने के लिए 2 से भाग देकर शेषफलों को नीचे से ऊपर पढ़ा जाता है।"
+      }
+    },
+    {
+      "unit_id": "u20_conversion_binary_to_decimal",
+      "topic": "Conversion Algorithm: Binary to Decimal (Positional Weight Expansion)",
+      "instruction": {
+        "title": {
+          "en": "Converting Binary to Decimal: Positional Weight Expansion",
+          "hi": "बाइनरी से दशमलव में रूपांतरण: स्थानीय मान विधि"
+        },
+        "theory": {
+          "en": "To convert a binary number to decimal: write down the binary number, list the powers of 2 (2⁰, 2¹, 2², 2³...) from right to left starting at position 0, multiply each binary bit by its corresponding power of 2, and sum all products to obtain the decimal value (e.g., binary 10011 expands to (1×16)+(0×8)+(0×4)+(1×2)+(1×1) = 19).",
+          "hi": "बाइनरी को दशमलव में बदलने के चरण: बाइनरी नंबर लिखें, दाएं से बाएं ओर 2 की घातें (2⁰, 2¹, 2², 2³...) लिखें, प्रत्येक बाइनरी अंक को उसकी संगत 2 की घात से गुणा करें, और दशमलव मान पाने के लिए सभी गुणनफलों को जोड़ें (जैसे 10011 का मान 16+0+0+2+1 = 19 है)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='#0f172a'/><text x='120' y='40' fill='#f8fafc' font-size='14' font-family='monospace' font-weight='bold'>Binary:  1   0   0   1   1</text><text x='120' y='75' fill='#38bdf8' font-size='13' font-family='monospace'>Power:  2⁴  2³  2²  2¹  2⁰</text><text x='120' y='110' fill='#fbbf24' font-size='13' font-family='monospace'>Weight: 16   8   4   2   1</text><line x1='60' y1='125' x2='480' y2='125' stroke='#475569' stroke-width='1.5'/><text x='120' y='155' fill='#4ade80' font-size='13' font-family='monospace'>Mult:  16 + 0 + 0 + 2 + 1 = 19₁₀</text></svg>",
+          "caption": {
+            "en": "Figure 20: Positional Weight Expansion for Binary 10011",
+            "hi": "चित्र 20: बाइनरी 10011 का स्थानीय मान विस्तार"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact algorithmic mathematical sequence to convert binary digits into decimal values (7 fragments):",
+          "target_sequence": [
+            { "id": "en_u20_t1", "text": "to convert a binary number to decimal," },
+            { "id": "en_u20_t2", "text": "write down the sequence of binary bits," },
+            { "id": "en_u20_t3", "text": "list successive powers of 2 from right to left" },
+            { "id": "en_u20_t4", "text": "starting with exponent 0 for the rightmost digit," },
+            { "id": "en_u20_t5", "text": "multiply each bit by its corresponding power of 2," },
+            { "id": "en_u20_t6", "text": "and add all the calculated products together" },
+            { "id": "en_u20_t7", "text": "to yield the final decimal sum" }
+          ],
+          "distractors": [
+            {
+              "id": "en_u20_d1",
+              "category": "logical",
+              "text": "list successive powers of 10 from right to left,",
+              "penalty_explanation": "Logical error: Binary expansion uses powers of 2, not powers of 10."
+            },
+            {
+              "id": "en_u20_d2",
+              "category": "grammatical",
+              "text": "and adds all the calculated products together",
+              "penalty_explanation": "Grammar error: Breaks parallel imperative verb structure ('write', 'list', 'multiply', 'add')."
+            }
+          ],
+          "hint": "State the conversion purpose, write bits, list powers of 2 right-to-left from exponent 0, multiply, and sum."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "बाइनरी से दशमलव में बदलने की गणितीय विधि को 7 खंडों में सही क्रम में लगाएं:",
+          "target_sequence": [
+            { "id": "hi_u20_t1", "text": "बाइनरी संख्या को दशमलव में बदलने के लिए" },
+            { "id": "hi_u20_t2", "text": "सर्वप्रथम दिए गए बाइनरी अंकों को लिखें," },
+            { "id": "hi_u20_t3", "text": "दाएं से बाएं की ओर 2 की घातें सूचीबद्ध करें" },
+            { "id": "hi_u20_t4", "text": "जिसमें सबसे दाएं अंक की घात 0 हो," },
+            { "id": "hi_u20_t5", "text": "प्रत्येक बाइनरी अंक को उसकी संगत 2 की घात से गुणा करें," },
+            { "id": "hi_u20_t6", "text": "और अंत में प्राप्त सभी गुणनफलों को आपस में जोड़कर" },
+            { "id": "hi_u20_t7", "text": "अंतिम दशमलव संख्या प्राप्त करें" }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u20_d1",
+              "category": "logical",
+              "text": "दाएं से बाएं की ओर 10 की घातें सूचीबद्ध करें,",
+              "penalty_explanation": "तार्किक त्रुटि: बाइनरी विस्तार में 2 की घातों का उपयोग होता है, 10 की घातों का नहीं।"
+            },
+            {
+              "id": "hi_u20_d2",
+              "category": "grammatical",
+              "text": "और अंत में प्राप्त सभी गुणनफलों को आपस में जोड़ते हुए दशमलव संख्या प्राप्त करें,",
+              "penalty_explanation": "व्याकरण त्रुटि: अनावश्यक कृदंत जोड़कर वाक्य संरचना को विकृत किया गया है।"
+            }
+          ],
+          "hint": "अंक लिखने से शुरू करें, 2 की घात दाएं-से-बाएं लगाना, गुणा करना, और गुणनफलों को जोड़कर दशमलव पाने पर समाप्त करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Binary to decimal conversion multiplies each bit by its positional power of 2 ($2^0, 2^1, 2^2\\dots$) and sums the results.",
+        "hi": "बाइनरी से दशमलव में बदलने के लिए प्रत्येक अंक को 2 की संगत घात से गुणा करके जोड़ा जाता है।"
+      }
+    }
+  ]
+}
