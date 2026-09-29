@@ -1,0 +1,794 @@
+{
+  "metadata": {
+    "chapter_numbers": [4, 6],
+    "chapter_title": "PHP and PL/SQL Fundamentals - Comparative Study",
+    "chapter_title_hindi": "PHP और PL/SQL फंडामेंटल्स - तुलनात्मक अध्ययन",
+    "subject": "Computer Science - Class 12",
+    "board": "HPBOSE",
+    "total_questions": 30,
+    "version": "1.0",
+    "naming_convention": "12_CS_PHP_PLSQL_Fundamentals.json"
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "In PHP, which character is mandatory at the start of every variable name, whereas PL/SQL variables have no such required prefix?",
+        "hi": "PHP में, प्रत्येक वेरिएबल नाम की शुरुआत में कौन सा वर्ण अनिवार्य है, जबकि PL/SQL वेरिएबल्स में ऐसा कोई आवश्यक प्रीफ़िक्स नहीं होता है?"
+      },
+      "options": {
+        "a": {"en": "&amp;", "hi": "&amp;"},
+        "b": {"en": "#", "hi": "#"},
+        "c": {"en": "$", "hi": "$"},
+        "d": {"en": "@", "hi": "@"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Example: $x = 10; in PHP.",
+        "hi": "उदाहरण: PHP में $x = 10;"
+      },
+      "explanation": {
+        "en": "In PHP, all variables must start with the dollar sign ($). In PL/SQL, variables are declared by name alone in the DECLARE section.",
+        "hi": "PHP में, सभी वेरिएबल डॉलर चिह्न ($) से शुरू होने चाहिए। PL/SQL में, DECLARE सेक्शन में वेरिएबल्स को केवल नाम से घोषित किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "PHP Variables = $name; PL/SQL Variables = name.",
+        "hi": "PHP वेरिएबल = $name; PL/SQL वेरिएबल = name।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "Which of the following correctly identifies the assignment operator used in PHP and PL/SQL respectively?",
+        "hi": "निम्नलिखित में से कौन PHP और PL/SQL में क्रमशः उपयोग किए जाने वाले असाइनमेंट ऑपरेटर (assignment operator) की सही पहचान करता है?"
+      },
+      "options": {
+        "a": {"en": "= and =", "hi": "= और ="},
+        "b": {"en": ":= and =", "hi": ":= और ="},
+        "c": {"en": "= and :=", "hi": "= और :="},
+        "d": {"en": "== and :=", "hi": "== और :="}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "PHP uses the standard math equal sign, while PL/SQL uses a colon before the equal sign.",
+        "hi": "PHP मानक गणितीय बराबर चिह्न का उपयोग करता है, जबकि PL/SQL बराबर चिह्न से पहले कोलन (colon) का उपयोग करता है।"
+      },
+      "explanation": {
+        "en": "PHP uses '=' to assign values. PL/SQL uses ':=' for assignment (e.g., x := 10;).",
+        "hi": "PHP मान निर्दिष्ट करने के लिए '=' का उपयोग करता है। PL/SQL असाइनमेंट के लिए ':=' का उपयोग करता है (जैसे, x := 10;)।"
+      },
+      "key_takeaway": {
+        "en": "PHP Assignment: = | PL/SQL Assignment: :=",
+        "hi": "PHP असाइनमेंट: = | PL/SQL असाइनमेंट: :="
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "What is the command used to display output in a web browser using PHP, compared to DBMS_OUTPUT.PUT_LINE in PL/SQL?",
+        "hi": "PL/SQL में DBMS_OUTPUT.PUT_LINE की तुलना में, PHP का उपयोग करके वेब ब्राउज़र में आउटपुट प्रदर्शित करने के लिए किस कमांड का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "print_line", "hi": "print_line"},
+        "b": {"en": "display", "hi": "display"},
+        "c": {"en": "echo", "hi": "echo"},
+        "d": {"en": "write", "hi": "write"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It is a 4-letter command frequently used to send text to the browser.",
+        "hi": "यह 4-अक्षरों वाली कमांड है जिसका उपयोग अक्सर ब्राउज़र को टेक्स्ट भेजने के लिए किया जाता है।"
+      },
+      "explanation": {
+        "en": "'echo' is the primary PHP command to output data. PL/SQL uses the 'DBMS_OUTPUT' package's 'PUT_LINE' procedure for console output.",
+        "hi": "'echo' डेटा आउटपुट करने के लिए प्राथमिक PHP कमांड है। PL/SQL कंसोल आउटपुट के लिए 'DBMS_OUTPUT' पैकेज के 'PUT_LINE' प्रोसीजर का उपयोग करता है।"
+      },
+      "key_takeaway": {
+        "en": "PHP: echo | PL/SQL: DBMS_OUTPUT.PUT_LINE",
+        "hi": "PHP: echo | PL/SQL: DBMS_OUTPUT.PUT_LINE"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "PHP scripts are enclosed in tags like &lt;?php ... ?&gt;, but how is a PL/SQL code block structured?",
+        "hi": "PHP स्क्रिप्ट &lt;?php ... ?&gt; जैसे टैग्स में संलग्न होती हैं, लेकिन PL/SQL कोड ब्लॉक कैसे संरचित होता है?"
+      },
+      "options": {
+        "a": {"en": "Using &lt;sql&gt; tags", "hi": "&lt;sql&gt; टैग्स का उपयोग करके"},
+        "b": {"en": "Inside DECLARE, BEGIN, and END keywords", "hi": "DECLARE, BEGIN और END कीवर्ड के अंदर"},
+        "c": {"en": "Inside a single pair of curly braces { }", "hi": "घुंघराले कोष्ठक { } की एक जोड़ी के अंदर"},
+        "d": {"en": "Scripts have no structure", "hi": "स्क्रिप्ट की कोई संरचना नहीं होती"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It is a 'block-structured' language starting with the word BEGIN.",
+        "hi": "यह एक 'ब्लॉक-स्ट्रक्चर्ड' भाषा है जो BEGIN शब्द से शुरू होती है।"
+      },
+      "explanation": {
+        "en": "PL/SQL is a block-structured language. Code is organized into blocks containing sections like DECLARE, BEGIN, EXCEPTION, and END.",
+        "hi": "PL/SQL एक ब्लॉक-स्ट्रक्चर्ड भाषा है। कोड को DECLARE, BEGIN, EXCEPTION और END जैसे सेक्शन वाले ब्लॉक में व्यवस्थित किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "PHP uses Tags; PL/SQL uses Keywords (Blocks).",
+        "hi": "PHP टैग्स का उपयोग करता है; PL/SQL कीवर्ड (ब्लॉक) का उपयोग करता है।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "Which operator is used to join (concatenate) two strings in PHP and PL/SQL respectively?",
+        "hi": "क्रमशः PHP और PL/SQL में दो स्ट्रिंग्स को जोड़ने (concatenate) के लिए किस ऑपरेटर का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "+ and ||", "hi": "+ और ||"},
+        "b": {"en": ". and +", "hi": ". और +"},
+        "c": {"en": ". and ||", "hi": ". और ||"},
+        "d": {"en": "&amp; and ||", "hi": "&amp; और ||"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "PHP uses a dot (.), while PL/SQL uses double pipes (||).",
+        "hi": "PHP एक डॉट (.) का उपयोग करता है, जबकि PL/SQL डबल पाइप (||) का उपयोग करता है।"
+      },
+      "explanation": {
+        "en": "In PHP, the dot (.) operator concatenates strings. In PL/SQL, the double pipe (||) operator is used for the same purpose.",
+        "hi": "PHP में, डॉट (.) ऑपरेटर स्ट्रिंग्स को जोड़ता है। PL/SQL में, इसी उद्देश्य के लिए डबल पाइप (||) ऑपरेटर का उपयोग किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "PHP Concatenation: . | PL/SQL Concatenation: ||",
+        "hi": "PHP कॉन्केटनेशन: . | PL/SQL कॉन्केटनेशन: ||"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "How do you write a single-line comment in PHP and PL/SQL?",
+        "hi": "आप PHP और PL/SQL में सिंगल-लाइन कमेंट कैसे लिखते हैं?"
+      },
+      "options": {
+        "a": {"en": "// in both", "hi": "दोनों में //"},
+        "b": {"en": "-- in both", "hi": "दोनों में --"},
+        "c": {"en": "// (or #) in PHP and -- in PL/SQL", "hi": "PHP में // (या #) और PL/SQL में --"},
+        "d": {"en": "/* */ in both", "hi": "दोनों में /* */"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "PHP uses C++ style comments, while PL/SQL uses a double dash.",
+        "hi": "PHP C++ स्टाइल कमेंट्स का उपयोग करता है, जबकि PL/SQL डबल डैश का उपयोग करता है।"
+      },
+      "explanation": {
+        "en": "PHP supports // and # for single-line comments. PL/SQL uses -- for single-line comments.",
+        "hi": "PHP सिंगल-लाइन कमेंट्स के लिए // और # को सपोर्ट करता है। PL/SQL सिंगल-लाइन कमेंट्स के लिए -- का उपयोग करता है।"
+      },
+      "key_takeaway": {
+        "en": "PHP Comment: // | PL/SQL Comment: --",
+        "hi": "PHP कमेंट: // | PL/SQL कमेंट: --"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "In the PL/SQL block structure, which section is used to define variables before the code starts?",
+        "hi": "PL/SQL ब्लॉक संरचना में, कोड शुरू होने से पहले वेरिएबल्स को परिभाषित करने के लिए किस सेक्शन का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "BEGIN", "hi": "BEGIN"},
+        "b": {"en": "DECLARE", "hi": "DECLARE"},
+        "c": {"en": "EXCEPTION", "hi": "EXCEPTION"},
+        "d": {"en": "VARIABLES", "hi": "VARIABLES"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It is an optional section that appears at the very top of the block.",
+        "hi": "यह एक वैकल्पिक सेक्शन है जो ब्लॉक के बिल्कुल टॉप पर दिखाई देता है।"
+      },
+      "explanation": {
+        "en": "The 'DECLARE' section is where variables, constants, and cursors are defined. In PHP, variables can be created anywhere without a specific section.",
+        "hi": "'DECLARE' सेक्शन वह जगह है जहाँ वेरिएबल्स, कॉन्स्टेंट और कर्सर परिभाषित किए जाते हैं। PHP में, बिना किसी विशिष्ट सेक्शन के वेरिएबल्स कहीं भी बनाए जा सकते हैं।"
+      },
+      "key_takeaway": {
+        "en": "PL/SQL requires explicit declaration in the DECLARE section.",
+        "hi": "PL/SQL को DECLARE सेक्शन में स्पष्ट घोषणा की आवश्यकता होती है।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "Which of the following correctly shows the equality comparison operator for both languages?",
+        "hi": "निम्नलिखित में से कौन दोनों भाषाओं के लिए समानता तुलना ऑपरेटर (equality comparison operator) को सही ढंग से दर्शाता है?"
+      },
+      "options": {
+        "a": {"en": "PHP: == | PL/SQL: =", "hi": "PHP: == | PL/SQL: ="},
+        "b": {"en": "PHP: = | PL/SQL: ==", "hi": "PHP: = | PL/SQL: =="},
+        "c": {"en": "PHP: == | PL/SQL: ==", "hi": "PHP: == | PL/SQL: =="},
+        "d": {"en": "PHP: === | PL/SQL: :=", "hi": "PHP: === | PL/SQL: :="}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "PHP uses double equals for comparison, while PL/SQL uses a single equal sign.",
+        "hi": "PHP तुलना के लिए डबल इक्वल्स का उपयोग करता है, जबकि PL/SQL सिंगल इक्वल साइन का उपयोग करता है।"
+      },
+      "explanation": {
+        "en": "In PHP, '==' is used to check if two values are equal. In PL/SQL, a single '=' is used for comparison in IF statements.",
+        "hi": "PHP में, '==' का उपयोग यह जाँचने के लिए किया जाता है कि क्या दो मान बराबर हैं। PL/SQL में, IF स्टेटमेंट में तुलना के लिए सिंगल '=' का उपयोग किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Equality check: PHP (==) vs PL/SQL (=).",
+        "hi": "समानता जाँच: PHP (==) बनाम PL/SQL (=)।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "In PL/SQL, what keyword must follow an IF condition, which is not required in PHP syntax?",
+        "hi": "PL/SQL में, IF कंडीशन के बाद किस कीवर्ड का होना अनिवार्य है, जिसकी PHP सिंटैक्स में आवश्यकता नहीं होती है?"
+      },
+      "options": {
+        "a": {"en": "DO", "hi": "DO"},
+        "b": {"en": "THEN", "hi": "THEN"},
+        "c": {"en": "BEGIN", "hi": "BEGIN"},
+        "d": {"en": "EXECUTE", "hi": "EXECUTE"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Syntax: IF (condition) ______",
+        "hi": "सिंटैक्स: IF (कंडीशन) ______"
+      },
+      "explanation": {
+        "en": "PL/SQL syntax for conditions is 'IF (condition) THEN'. PHP simply uses 'if (condition) { }'.",
+        "hi": "कंडीशन के लिए PL/SQL सिंटैक्स 'IF (कंडीशन) THEN' है। PHP केवल 'if (कंडीशन) { }' का उपयोग करता है।"
+      },
+      "key_takeaway": {
+        "en": "PL/SQL IF logic requires the THEN keyword.",
+        "hi": "PL/SQL IF लॉजिक के लिए THEN कीवर्ड की आवश्यकता होती है।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "How is the 'else if' condition written in PL/SQL compared to PHP?",
+        "hi": "PHP की तुलना में PL/SQL में 'else if' कंडीशन कैसे लिखी जाती है?"
+      },
+      "options": {
+        "a": {"en": "PHP: elseif | PL/SQL: ELSIF", "hi": "PHP: elseif | PL/SQL: ELSIF"},
+        "b": {"en": "PHP: else if | PL/SQL: ELSE IF", "hi": "PHP: else if | PL/SQL: ELSE IF"},
+        "c": {"en": "PHP: elseif | PL/SQL: ELSEIF", "hi": "PHP: elseif | PL/SQL: ELSEIF"},
+        "d": {"en": "Both use elseif", "hi": "दोनों elseif का उपयोग करते हैं"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "The PL/SQL keyword is missing the letter 'E' in the middle.",
+        "hi": "PL/SQL कीवर्ड के बीच में 'E' अक्षर गायब है।"
+      },
+      "explanation": {
+        "en": "PL/SQL uses 'ELSIF' (no 'E' after S) for multiple conditions. PHP uses 'elseif' or 'else if'.",
+        "hi": "PL/SQL कई स्थितियों के लिए 'ELSIF' (S के बाद 'E' नहीं) का उपयोग करता है। PHP 'elseif' या 'else if' का उपयोग करता है।"
+      },
+      "key_takeaway": {
+        "en": "PL/SQL spelling: ELSIF (Mandatory).",
+        "hi": "PL/SQL स्पेलिंग: ELSIF (अनिवार्य)।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "What is the mandatory closing statement for an IF block in PL/SQL?",
+        "hi": "PL/SQL में IF ब्लॉक के लिए अनिवार्य क्लोजिंग स्टेटमेंट क्या है?"
+      },
+      "options": {
+        "a": {"en": "}", "hi": "}"},
+        "b": {"en": "END;", "hi": "END;"},
+        "c": {"en": "END IF;", "hi": "END IF;"},
+        "d": {"en": "FI;", "hi": "FI;"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Unlike PHP which uses a brace '}', PL/SQL uses two words followed by a semicolon.",
+        "hi": "PHP के विपरीत जो ब्रेस '}' का उपयोग करता है, PL/SQL दो शब्दों के बाद सेमीकोलन का उपयोग करता है।"
+      },
+      "explanation": {
+        "en": "In PL/SQL, every IF structure must conclude with 'END IF;'. In PHP, the closing curly brace '}' is used.",
+        "hi": "PL/SQL में, प्रत्येक IF संरचना 'END IF;' के साथ समाप्त होनी चाहिए। PHP में, क्लोजिंग कर्ली ब्रेस '}' का उपयोग किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "IF blocks in PL/SQL must be explicitly terminated with END IF;.",
+        "hi": "PL/SQL में IF ब्लॉक को स्पष्ट रूप से END IF; के साथ समाप्त किया जाना चाहिए।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "In PL/SQL, which section is responsible for handling errors that occur during program execution?",
+        "hi": "PL/SQL में, प्रोग्राम निष्पादन (execution) के दौरान होने वाली त्रुटियों (errors) को संभालने के लिए कौन सा सेक्शन जिम्मेदार है?"
+      },
+      "options": {
+        "a": {"en": "DECLARE", "hi": "DECLARE"},
+        "b": {"en": "BEGIN", "hi": "BEGIN"},
+        "c": {"en": "EXCEPTION", "hi": "EXCEPTION"},
+        "d": {"en": "END", "hi": "END"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It sounds like a word meaning 'something that deviates from the norm'.",
+        "hi": "यह एक ऐसे शब्द जैसा लगता है जिसका अर्थ है 'कुछ ऐसा जो सामान्य से अलग हो'।"
+      },
+      "explanation": {
+        "en": "The 'EXCEPTION' section contains code that runs if an error occurs in the BEGIN section. PHP uses try-catch for similar tasks.",
+        "hi": "'EXCEPTION' सेक्शन में वह कोड होता है जो तब चलता है जब BEGIN सेक्शन में कोई त्रुटि होती है। PHP समान कार्यों के लिए try-catch का उपयोग करता है।"
+      },
+      "key_takeaway": {
+        "en": "EXCEPTION = Error handling block in PL/SQL.",
+        "hi": "EXCEPTION = PL/SQL में एरर हैंडलिंग ब्लॉक।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "Which of the following is a fundamental difference between SQL and PL/SQL?",
+        "hi": "निम्नलिखित में से कौन SQL और PL/SQL के बीच एक मौलिक अंतर है?"
+      },
+      "options": {
+        "a": {"en": "SQL is procedural, PL/SQL is not", "hi": "SQL प्रसीजरल है, PL/SQL नहीं"},
+        "b": {"en": "SQL executes one command at a time; PL/SQL can execute a whole block", "hi": "SQL एक समय में एक कमांड निष्पादित करता है; PL/SQL एक पूरा ब्लॉक निष्पादित कर सकता है"},
+        "c": {"en": "PL/SQL cannot use SQL commands", "hi": "PL/SQL SQL कमांड का उपयोग नहीं कर सकता"},
+        "d": {"en": "There is no difference", "hi": "कोई अंतर नहीं है"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "SQL is a subset of PL/SQL.",
+        "hi": "SQL, PL/SQL का एक सबसेट है।"
+      },
+      "explanation": {
+        "en": "SQL is a non-procedural language for single queries. PL/SQL adds procedural features like loops and variables to SQL, allowing blocks of code to run together.",
+        "hi": "SQL सिंगल क्वेरी के लिए एक नॉन-प्रसीजरल भाषा है। PL/SQL SQL में लूप और वेरिएबल जैसी प्रसीजरल सुविधाएँ जोड़ता है, जिससे कोड के ब्लॉक एक साथ चल सकते हैं।"
+      },
+      "key_takeaway": {
+        "en": "PL/SQL = SQL + Procedural capabilities.",
+        "hi": "PL/SQL = SQL + प्रसीजरल क्षमताएं।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "What is the file extension used for PHP files?",
+        "hi": "PHP फ़ाइलों के लिए किस फ़ाइल एक्सटेंशन का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": ".html", "hi": ".html"},
+        "b": {"en": ".php", "hi": ".php"},
+        "c": {"en": ".js", "hi": ".js"},
+        "d": {"en": ".sql", "hi": ".sql"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It is named after the language itself.",
+        "hi": "इसका नाम स्वयं भाषा के नाम पर रखा गया है।"
+      },
+      "explanation": {
+        "en": "All PHP scripts must be saved with a '.php' extension so the server knows to process the PHP code before sending it to the browser.",
+        "hi": "सभी PHP स्क्रिप्ट को '.php' एक्सटेंशन के साथ सेव किया जाना चाहिए ताकि सर्वर को ब्राउज़र पर भेजने से पहले PHP कोड को प्रोसेस करना पता चले।"
+      },
+      "key_takeaway": {
+        "en": ".php = Standard extension for PHP scripts.",
+        "hi": ".php = PHP स्क्रिप्ट के लिए मानक एक्सटेंशन।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "Which tag is considered the 'Standard Tag' for PHP development?",
+        "hi": "PHP विकास के लिए किस टैग को 'मानक टैग' (Standard Tag) माना जाता है?"
+      },
+      "options": {
+        "a": {"en": "&lt;? ... ?&gt;", "hi": "&lt;? ... ?&gt;"},
+        "b": {"en": "&lt;% ... %&gt;", "hi": "&lt;% ... %&gt;"},
+        "c": {"en": "&lt;?php ... ?&gt;", "hi": "&lt;?php ... ?&gt;"},
+        "d": {"en": "&lt;script&gt; ... &lt;/script&gt;", "hi": "&lt;script&gt; ... &lt;/script&gt;"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It includes the name of the language after the question mark.",
+        "hi": "इसमें प्रश्न चिह्न के बाद भाषा का नाम शामिल होता है।"
+      },
+      "explanation": {
+        "en": "While PHP supports several tag styles, '&lt;?php ... ?&gt;' is the standard and most widely used tag.",
+        "hi": "यद्यपि PHP कई टैग शैलियों का समर्थन करता है, '&lt;?php ... ?&gt;' मानक और सबसे व्यापक रूप से उपयोग किया जाने वाला टैग है।"
+      },
+      "key_takeaway": {
+        "en": "&lt;?php is the safest way to start a PHP script.",
+        "hi": "&lt;?php PHP स्क्रिप्ट शुरू करने का सबसे सुरक्षित तरीका है।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "Which of these is a valid constant declaration in PL/SQL?",
+        "hi": "इनमें से कौन सा PL/SQL में एक मान्य कॉन्स्टेंट घोषणा (constant declaration) है?"
+      },
+      "options": {
+        "a": {"en": "pi CONSTANT NUMBER := 3.14;", "hi": "pi CONSTANT NUMBER := 3.14;"},
+        "b": {"en": "define('pi', 3.14);", "hi": "define('pi', 3.14);"},
+        "c": {"en": "var pi = 3.14;", "hi": "var pi = 3.14;"},
+        "d": {"en": "pi = 3.14 constant;", "hi": "pi = 3.14 constant;"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It uses the keyword CONSTANT after the name.",
+        "hi": "यह नाम के बाद CONSTANT कीवर्ड का उपयोग करता है।"
+      },
+      "explanation": {
+        "en": "In PL/SQL, constants are declared using the 'CONSTANT' keyword. In PHP, constants are defined using the 'define()' function.",
+        "hi": "PL/SQL में, कॉन्स्टेंट को 'CONSTANT' कीवर्ड का उपयोग करके घोषित किया जाता है। PHP में, कॉन्स्टेंट को 'define()' फंक्शन का उपयोग करके परिभाषित किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "PL/SQL Constant: name CONSTANT type := value;",
+        "hi": "PL/SQL कॉन्स्टेंट: नाम CONSTANT टाइप := मान;"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "What happens if you use a PHP variable without the '$' sign?",
+        "hi": "यदि आप '$' चिह्न के बिना PHP वेरिएबल का उपयोग करते हैं तो क्या होगा?"
+      },
+      "options": {
+        "a": {"en": "It works normally", "hi": "यह सामान्य रूप से काम करता है"},
+        "b": {"en": "It is treated as a string constant", "hi": "इसे स्ट्रिंग कॉन्स्टेंट के रूप में माना जाता है"},
+        "c": {"en": "It causes a syntax error", "hi": "यह एक सिंटैक्स एरर पैदा करता है"},
+        "d": {"en": "It automatically adds the $", "hi": "यह अपने आप $ जोड़ देता है"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The dollar sign is an identifier of a variable in PHP.",
+        "hi": "डॉलर चिह्न PHP में वेरिएबल का पहचानकर्ता है।"
+      },
+      "explanation": {
+        "en": "PHP strictly requires the '$' prefix for all variables. Missing it will result in an error or unexpected behavior.",
+        "hi": "PHP को सभी वेरिएबल्स के लिए '$' प्रीफ़िक्स की सख्ती से आवश्यकता होती है। इसके न होने पर एरर या अप्रत्याशित व्यवहार होगा।"
+      },
+      "key_takeaway": {
+        "en": "No $ = No variable in PHP.",
+        "hi": "No $ = No variable in PHP."
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "Which operator is used to calculate 'Raised to the power' in PHP?",
+        "hi": "PHP में 'Raised to the power' (घात) की गणना करने के लिए किस ऑपरेटर का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "^", "hi": "^"},
+        "b": {"en": "pow", "hi": "pow"},
+        "c": {"en": "**", "hi": "**"},
+        "d": {"en": "||", "hi": "||"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It is a double asterisk.",
+        "hi": "यह डबल एस्टेरिस्क (asterisk) है।"
+      },
+      "explanation": {
+        "en": "PHP uses the '**' operator for exponentiation. PL/SQL uses the 'POWER(base, exp)' function for the same calculation.",
+        "hi": "PHP एक्सपोनेंटियशन के लिए '**' ऑपरेटर का उपयोग करता है। PL/SQL उसी गणना के लिए 'POWER(base, exp)' फंक्शन का उपयोग करता है।"
+      },
+      "key_takeaway": {
+        "en": "Power: PHP (**) vs PL/SQL (POWER()).",
+        "hi": "पावर: PHP (**) बनाम PL/SQL (POWER())।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "Which of the following is NOT a valid PHP variable name?",
+        "hi": "निम्नलिखित में से कौन सा एक मान्य PHP वेरिएबल नाम नहीं है?"
+      },
+      "options": {
+        "a": {"en": "$my_var", "hi": "$my_var"},
+        "b": {"en": "$var123", "hi": "$var123"},
+        "c": {"en": "$123var", "hi": "$123var"},
+        "d": {"en": "$_var", "hi": "$_var"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "A variable name cannot start with a number after the $ sign.",
+        "hi": "वेरिएबल नाम $ चिह्न के बाद नंबर से शुरू नहीं हो सकता।"
+      },
+      "explanation": {
+        "en": "A PHP variable name must start with a letter or an underscore, not a number.",
+        "hi": "PHP वेरिएबल का नाम अक्षर या अंडरस्कोर से शुरू होना चाहिए, नंबर से नहीं।"
+      },
+      "key_takeaway": {
+        "en": "Variable naming rules: letter/underscore first.",
+        "hi": "वेरिएबल नामकरण नियम: अक्षर/अंडरस्कोर पहले।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "What character is used to end most statements in both PHP and PL/SQL?",
+        "hi": "PHP और PL/SQL दोनों में अधिकांश स्टेटमेंट को समाप्त करने के लिए किस वर्ण का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": ":", "hi": ":"},
+        "b": {"en": ".", "hi": "."},
+        "c": {"en": ";", "hi": ";"},
+        "d": {"en": ",", "hi": ","}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It is a semicolon.",
+        "hi": "यह सेमीकोलन है।"
+      },
+      "explanation": {
+        "en": "Both PHP and PL/SQL use the semicolon (;) as a terminator for statements.",
+        "hi": "PHP और PL/SQL दोनों स्टेटमेंट के टर्मिनेटर के रूप में सेमीकोलन (;) का उपयोग करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "; = Statement terminator.",
+        "hi": "; = स्टेटमेंट टर्मिनेटर।"
+      }
+    },
+    {
+      "question_id": 21,
+      "question": {
+        "en": "In PL/SQL, which data type is used to store variable-length character strings, similar to PHP's string type?",
+        "hi": "PL/SQL में, वेरिएबल-लेंथ कैरेक्टर स्ट्रिंग्स को स्टोर करने के लिए किस डेटा टाइप का उपयोग किया जाता है, जो PHP के स्ट्रिंग टाइप के समान है?"
+      },
+      "options": {
+        "a": {"en": "STRING", "hi": "STRING"},
+        "b": {"en": "TEXT", "hi": "TEXT"},
+        "c": {"en": "VARCHAR2", "hi": "VARCHAR2"},
+        "d": {"en": "CHAR", "hi": "CHAR"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "You must specify the maximum size in parentheses, like (20).",
+        "hi": "आपको कोष्ठक में अधिकतम आकार निर्दिष्ट करना होगा, जैसे (20)।"
+      },
+      "explanation": {
+        "en": "VARCHAR2 is the standard PL/SQL type for strings. PHP handles strings dynamically without needing a size limit.",
+        "hi": "VARCHAR2 स्ट्रिंग्स के लिए मानक PL/SQL टाइप है। PHP बिना आकार सीमा की आवश्यकता के स्ट्रिंग्स को गतिशील रूप से संभालता है।"
+      },
+      "key_takeaway": {
+        "en": "PL/SQL String type = VARCHAR2(size).",
+        "hi": "PL/SQL स्ट्रिंग टाइप = VARCHAR2(size)।"
+      }
+    },
+    {
+      "question_id": 22,
+      "question": {
+        "en": "Which logic is used for 'Not Equal to' in PL/SQL comparison?",
+        "hi": "PL/SQL तुलना में 'Not Equal to' (बराबर नहीं) के लिए किस लॉजिक का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "!=", "hi": "!="},
+        "b": {"en": "&lt;&gt;", "hi": "&lt;&gt;"},
+        "c": {"en": "Both a and b", "hi": "a और b दोनों"},
+        "d": {"en": "~=", "hi": "~="}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "PL/SQL supports multiple ways to show inequality.",
+        "hi": "PL/SQL असमानता दिखाने के कई तरीकों का समर्थन करता है।"
+      },
+      "explanation": {
+        "en": "PL/SQL is flexible and accepts !=, &lt;&gt;, and ~= for 'Not Equal'. PHP primarily uses != or &lt;&gt;.",
+        "hi": "PL/SQL लचीला है और 'Not Equal' के लिए !=, &lt;&gt;, और ~= स्वीकार करता है। PHP मुख्य रूप से != या &lt;&gt; का उपयोग करता है।"
+      },
+      "key_takeaway": {
+        "en": "Multiple inequality operators are valid in PL/SQL.",
+        "hi": "PL/SQL में कई असमानता ऑपरेटर मान्य हैं।"
+      }
+    },
+    {
+      "question_id": 23,
+      "question": {
+        "en": "Which of these is a logical 'OR' operator in PHP?",
+        "hi": "इनमें से कौन सा PHP में लॉजिकल 'OR' ऑपरेटर है?"
+      },
+      "options": {
+        "a": {"en": "AND", "hi": "AND"},
+        "b": {"en": "||", "hi": "||"},
+        "c": {"en": "&amp;&amp;", "hi": "&amp;&amp;"},
+        "d": {"en": "!", "hi": "!"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It is represented by two vertical bars.",
+        "hi": "इसे दो वर्टिकल बार (vertical bars) द्वारा दर्शाया जाता है।"
+      },
+      "explanation": {
+        "en": "PHP uses '||' (or the word 'or') for logical OR. PL/SQL uses the word 'OR' exclusively.",
+        "hi": "PHP लॉजिकल OR के लिए '||' (या 'or' शब्द) का उपयोग करता है। PL/SQL विशेष रूप से 'OR' शब्द का उपयोग करता है।"
+      },
+      "key_takeaway": {
+        "en": "Logical OR: PHP (||) vs PL/SQL (OR).",
+        "hi": "लॉजिकल OR: PHP (||) बनाम PL/SQL (OR)।"
+      }
+    },
+    {
+      "question_id": 24,
+      "question": {
+        "en": "In PL/SQL, what keyword is used to mark the end of a code block?",
+        "hi": "PL/SQL में, कोड ब्लॉक के अंत को चिह्नित करने के लिए किस कीवर्ड का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "STOP", "hi": "STOP"},
+        "b": {"en": "FINISH", "hi": "FINISH"},
+        "c": {"en": "END", "hi": "END"},
+        "d": {"en": "EXIT", "hi": "EXIT"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Every block starts with BEGIN and must close with this word.",
+        "hi": "प्रत्येक ब्लॉक BEGIN से शुरू होता है और इस शब्द के साथ बंद होना चाहिए।"
+      },
+      "explanation": {
+        "en": "PL/SQL blocks always end with the 'END;' keyword. PHP uses the closing tag '?&gt;' to end a script.",
+        "hi": "PL/SQL ब्लॉक हमेशा 'END;' कीवर्ड के साथ समाप्त होते हैं। PHP स्क्रिप्ट को समाप्त करने के लिए क्लोजिंग टैग '?&gt;' का उपयोग करता है।"
+      },
+      "key_takeaway": {
+        "en": "END; terminates a PL/SQL block.",
+        "hi": "END; PL/SQL ब्लॉक को समाप्त करता है।"
+      }
+    },
+    {
+      "question_id": 25,
+      "question": {
+        "en": "Which PHP function is used to define a constant value that cannot change during execution?",
+        "hi": "निष्पादन (execution) के दौरान न बदलने वाले कॉन्स्टेंट मान को परिभाषित करने के लिए किस PHP फंक्शन का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "constant()", "hi": "constant()"},
+        "b": {"en": "set()", "hi": "set()"},
+        "c": {"en": "define()", "hi": "define()"},
+        "d": {"en": "fixed()", "hi": "fixed()"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Example: define('MIN_AGE', 18);",
+        "hi": "उदाहरण: define('MIN_AGE', 18);"
+      },
+      "explanation": {
+        "en": "Constants in PHP are created using the define() function and do not use the '$' sign.",
+        "hi": "PHP में कॉन्स्टेंट define() फंक्शन का उपयोग करके बनाए जाते हैं और इनमें '$' चिह्न का उपयोग नहीं होता है।"
+      },
+      "key_takeaway": {
+        "en": "define() = Constant creator in PHP.",
+        "hi": "define() = PHP में कॉन्स्टेंट निर्माता।"
+      }
+    },
+    {
+      "question_id": 26,
+      "question": {
+        "en": "Are PL/SQL keywords and variable names case-sensitive?",
+        "hi": "क्या PL/SQL कीवर्ड और वेरिएबल नाम केस-सेंसिटिव (case-sensitive) होते हैं?"
+      },
+      "options": {
+        "a": {"en": "Yes, always", "hi": "हाँ, हमेशा"},
+        "b": {"en": "No, they are case-insensitive", "hi": "नहीं, वे केस-इन्सेंसिटिव होते हैं"},
+        "c": {"en": "Only keywords are case-sensitive", "hi": "केवल कीवर्ड केस-सेंसिटिव होते हैं"},
+        "d": {"en": "Only variables are case-sensitive", "hi": "केवल वेरिएबल केस-सेंसिटिव होते हैं"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Writing 'BEGIN' is the same as writing 'begin' in PL/SQL.",
+        "hi": "PL/SQL में 'BEGIN' लिखना 'begin' लिखने के समान ही है।"
+      },
+      "explanation": {
+        "en": "PL/SQL is case-insensitive. PHP is case-sensitive for variable names but case-insensitive for keywords (like echo).",
+        "hi": "PL/SQL केस-इन्सेंसिटिव है। PHP वेरिएबल नामों के लिए केस-सेंसिटिव है लेकिन कीवर्ड (जैसे echo) के लिए केस-इन्सेंसिटिव है।"
+      },
+      "key_takeaway": {
+        "en": "PL/SQL = Case Insensitive; PHP Variables = Case Sensitive.",
+        "hi": "PL/SQL = केस इन्सेंसिटिव; PHP वेरिएबल = केस सेंसिटिव।"
+      }
+    },
+    {
+      "question_id": 27,
+      "question": {
+        "en": "What does the modulo operator '%' do in PHP?",
+        "hi": "PHP में मोड्युलो ऑपरेटर '%' क्या करता है?"
+      },
+      "options": {
+        "a": {"en": "Calculates percentage", "hi": "प्रतिशत की गणना करता है"},
+        "b": {"en": "Returns the remainder of a division", "hi": "विभाजन का शेषफल लौटाता है"},
+        "c": {"en": "Multiplies two numbers", "hi": "दो नंबरों को गुणा करता है"},
+        "d": {"en": "Divides and rounds down", "hi": "विभाजित करता है और राउंड डाउन करता है"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "PL/SQL uses a function called MOD(a, b) for this.",
+        "hi": "PL/SQL इसके लिए MOD(a, b) नामक फंक्शन का उपयोग करता है।"
+      },
+      "explanation": {
+        "en": "The '%' operator provides the remainder after division. 5 % 2 would result in 1.",
+        "hi": "'%' ऑपरेटर विभाजन के बाद शेषफल प्रदान करता है। 5 % 2 का परिणाम 1 होगा।"
+      },
+      "key_takeaway": {
+        "en": "Remainder logic: PHP (%) vs PL/SQL (MOD()).",
+        "hi": "शेषफल लॉजिक: PHP (%) बनाम PL/SQL (MOD())।"
+      }
+    },
+    {
+      "question_id": 28,
+      "question": {
+        "en": "Which PL/SQL section is mandatory in every code block?",
+        "hi": "प्रत्येक कोड ब्लॉक में कौन सा PL/SQL सेक्शन अनिवार्य है?"
+      },
+      "options": {
+        "a": {"en": "DECLARE", "hi": "DECLARE"},
+        "b": {"en": "EXCEPTION", "hi": "EXCEPTION"},
+        "c": {"en": "BEGIN and END", "hi": "BEGIN और END"},
+        "d": {"en": "Only END", "hi": "केवल END"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "These keywords wrap the executable logic of the program.",
+        "hi": "ये कीवर्ड प्रोग्राम के निष्पादन योग्य लॉजिक को घेरते हैं।"
+      },
+      "explanation": {
+        "en": "While DECLARE and EXCEPTION are optional, every PL/SQL block must have a BEGIN and an END; statement.",
+        "hi": "जबकि DECLARE और EXCEPTION वैकल्पिक हैं, प्रत्येक PL/SQL ब्लॉक में एक BEGIN और एक END; स्टेटमेंट होना चाहिए।"
+      },
+      "key_takeaway": {
+        "en": "Executable blocks must have BEGIN...END;.",
+        "hi": "निष्पादन योग्य ब्लॉक में BEGIN...END; होना चाहिए।"
+      }
+    },
+    {
+      "question_id": 29,
+      "question": {
+        "en": "Which operator is used for Logical 'AND' in PL/SQL?",
+        "hi": "PL/SQL में लॉजिकल 'AND' के लिए किस ऑपरेटर का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "&&", "hi": "&&"},
+        "b": {"en": "AND", "hi": "AND"},
+        "c": {"en": "||", "hi": "||"},
+        "d": {"en": "AMPER", "hi": "AMPER"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It is the word itself, written in uppercase usually.",
+        "hi": "यह स्वयं शब्द है, जिसे आमतौर पर अपरकेस में लिखा जाता है।"
+      },
+      "explanation": {
+        "en": "PL/SQL uses the word 'AND' for logical conjunctions. PHP can use both '&&' and the word 'and'.",
+        "hi": "PL/SQL लॉजिकल कंजंक्शन (conjunctions) के लिए 'AND' शब्द का उपयोग करता है। PHP '&&' और 'and' शब्द दोनों का उपयोग कर सकता है।"
+      },
+      "key_takeaway": {
+        "en": "Logical AND: PHP (&&) vs PL/SQL (AND).",
+        "hi": "लॉजिकल AND: PHP (&&) बनाम PL/SQL (AND)।"
+      }
+    },
+    {
+      "question_id": 30,
+      "question": {
+        "en": "PHP is a server-side scripting language primarily used for web pages, but what is the primary purpose of PL/SQL?",
+        "hi": "PHP एक सर्वर-साइड स्क्रिप्टिंग भाषा है जिसका उपयोग मुख्य रूप से वेब पेजों के लिए किया जाता है, लेकिन PL/SQL का प्राथमिक उद्देश्य क्या है?"
+      },
+      "options": {
+        "a": {"en": "To design graphics", "hi": "ग्राफिक्स डिजाइन करने के लिए"},
+        "b": {"en": "To create database-driven applications and procedures", "hi": "डेटाबेस-ड्रिवेन एप्लिकेशन और प्रोसीजर बनाने के लिए"},
+        "c": {"en": "To write operating systems", "hi": "ऑपरेटिंग सिस्टम लिखने के लिए"},
+        "d": {"en": "To create mobile games", "hi": "मोबाइल गेम बनाने के लिए"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It is tightly integrated with Oracle Database.",
+        "hi": "यह ओरेकल डेटाबेस (Oracle Database) के साथ मजबूती से जुड़ा हुआ है।"
+      },
+      "explanation": {
+        "en": "PL/SQL is designed for procedural processing within a database environment, allowing for complex data operations.",
+        "hi": "PL/SQL को डेटाबेस वातावरण के भीतर प्रसीजरल प्रोसेसिंग के लिए डिज़ाइन किया गया है, जो जटिल डेटा ऑपरेशंस की अनुमति देता है।"
+      },
+      "key_takeaway": {
+        "en": "PHP = Web server focus; PL/SQL = Database focus.",
+        "hi": "PHP = वेब सर्वर फोकस; PL/SQL = डेटाबेस फोकस।"
+      }
+    }
+  ]
+}

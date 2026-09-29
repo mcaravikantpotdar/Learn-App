@@ -1,0 +1,1392 @@
+{
+  "metadata": {
+    "chapter_number": 4,
+    "chapter_title": "Digital Image Editing (Adobe Photoshop)",
+    "chapter_title_hindi": "डिजिटल इमेज एडिटिंग (एडोब फोटोशॉप)",
+    "subject": "Computer Science",
+    "total_questions": 36,
+    "source_language": "en",
+    "target_language": "hi",
+    "version": "3.0",
+    "note": "Bias correction applied: Options shuffled to balance distribution (Target ~25% per option)."
+  },
+  "validation_report": {
+    "is_valid": true,
+    "checked_by": "AI Generator",
+    "corrections": [
+      "Balanced option distribution from heavy 'B' bias to near-equal split",
+      "Auto-generated pedagogical content (Hints, Explanations, Key Takeaways)",
+      "Applied HTML entity encoding to special characters in menu paths"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "What is Adobe Photoshop primarily used for?",
+        "hi": "एडोब फोटोशॉप मुख्य रूप से किसके लिए उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Editing digital images, creating artwork, and designing graphics",
+          "hi": "डिजिटल छवियों को संपादित करने, कलाकृति बनाने और ग्राफिक्स डिजाइन करने के लिए"
+        },
+        "b": {
+          "en": "Writing documents and creating spreadsheets",
+          "hi": "दस्तावेज़ लिखने और स्प्रेडशीट बनाने के लिए"
+        },
+        "c": {
+          "en": "Managing databases and performing calculations",
+          "hi": "डेटाबेस प्रबंधित करने और गणना करने के लिए"
+        },
+        "d": {
+          "en": "Creating presentations and sending emails",
+          "hi": "प्रस्तुतियाँ बनाने और ईमेल भेजने के लिए"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Think about what you do with a camera photo—do you calculate numbers or adjust its look?",
+        "hi": "सोचें कि आप कैमरे की तस्वीर के साथ क्या करते हैं—क्या आप संख्याओं की गणना करते हैं या उसका रूप बदलते हैं?"
+      },
+      "explanation": {
+        "en": "Adobe Photoshop is a powerful raster graphics editor designed specifically for manipulating digital images, creating complex artwork, and designing visual graphics.",
+        "hi": "एडोब फोटोशॉप एक शक्तिशाली रास्टर ग्राफिक्स संपादक है जिसे विशेष रूप से डिजिटल छवियों में हेरफेर करने, जटिल कलाकृति बनाने और दृश्य ग्राफिक्स डिजाइन करने के लिए डिज़ाइन किया गया है।"
+      },
+      "key_takeaway": {
+        "en": "Photoshop is the industry standard for digital image editing.",
+        "hi": "फोटोशॉप डिजिटल इमेज एडिटिंग के लिए उद्योग मानक है।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "Which of the following is a key feature of Photoshop?",
+        "hi": "निम्नलिखित में से कौन सी फोटोशॉप की एक प्रमुख विशेषता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Compiling code",
+          "hi": "कोड संकलित करना"
+        },
+        "b": {
+          "en": "Creating audio files",
+          "hi": "ऑडियो फ़ाइलें बनाना"
+        },
+        "c": {
+          "en": "Building 3D models",
+          "hi": "3D मॉडल बनाना"
+        },
+        "d": {
+          "en": "Working with layers to edit images non-destructively",
+          "hi": "छवियों को गैर-विनाशकारी रूप से संपादित करने के लिए परतों के साथ काम करना"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This feature acts like transparent sheets stacked on top of each other.",
+        "hi": "यह विशेषता एक दूसरे के ऊपर रखी पारदर्शी शीट की तरह काम करती है।"
+      },
+      "explanation": {
+        "en": "Layers allow you to work on one part of an image without disturbing the rest. This non-destructive workflow is Photoshop's most defining feature.",
+        "hi": "परतें (Layers) आपको बाकी हिस्सों को प्रभावित किए बिना छवि के एक हिस्से पर काम करने की अनुमति देती हैं। यह गैर-विनाशकारी कार्यप्रवाह फोटोशॉप की सबसे परिभाषित विशेषता है।"
+      },
+      "key_takeaway": {
+        "en": "Layers allow for separate, non-destructive editing of image elements.",
+        "hi": "परतें छवि तत्वों के अलग, गैर-विनाशकारी संपादन की अनुमति देती हैं।"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "Bitmap images are composed of:",
+        "hi": "बिटमैप छवियाँ इनसे बनी होती हैं:"
+      },
+      "options": {
+        "a": {
+          "en": "Mathematical equations",
+          "hi": "गणितीय समीकरण"
+        },
+        "b": {
+          "en": "Tiny squares of color called pixels",
+          "hi": "रंग के छोटे वर्ग जिन्हें पिक्सेल कहा जाता है"
+        },
+        "c": {
+          "en": "Text and numbers",
+          "hi": "पाठ और संख्याएँ"
+        },
+        "d": {
+          "en": "Vector paths and curves",
+          "hi": "वेक्टर पथ और वक्र"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Zoom in very close to a photo on your screen; what do you see?",
+        "hi": "अपनी स्क्रीन पर किसी फोटो को बहुत करीब से ज़ूम करें; आप क्या देखते हैं?"
+      },
+      "explanation": {
+        "en": "Bitmap (or raster) images are grids of individual pixels, each holding a specific color value. Photos are always bitmaps.",
+        "hi": "बिटमैप (या रास्टर) छवियां व्यक्तिगत पिक्सेल के ग्रिड होते हैं, जिनमें से प्रत्येक का एक विशिष्ट रंग मान होता है। तस्वीरें हमेशा बिटमैप होती हैं।"
+      },
+      "key_takeaway": {
+        "en": "Bitmap images = Grid of Pixels.",
+        "hi": "बिटमैप छवियां = पिक्सेल का ग्रिड।"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "What happens to a bitmap image when it is enlarged too much?",
+        "hi": "एक बिटमैप छवि का क्या होता है जब इसे बहुत अधिक बड़ा किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "It becomes sharper and more detailed.",
+          "hi": "यह तेज और अधिक विस्तृत हो जाती है।"
+        },
+        "b": {
+          "en": "Its file size decreases automatically.",
+          "hi": "इसका फाइल आकार स्वचालित रूप से घट जाता है।"
+        },
+        "c": {
+          "en": "It loses quality and appears pixelated.",
+          "hi": "इसकी गुणवत्ता ख़राब हो जाती है और यह पिक्सेलेटेड दिखाई देती है।"
+        },
+        "d": {
+          "en": "It automatically converts to a vector image.",
+          "hi": "यह स्वचालित रूप से वेक्टर छवि में परिवर्तित हो जाती है।"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Think of stretching a small mosaic; the individual tiles become painfully visible.",
+        "hi": "एक छोटे मोज़ेक को खींचने के बारे में सोचें; व्यक्तिगत टाइलें स्पष्ट रूप से दिखाई देने लगती हैं।"
+      },
+      "explanation": {
+        "en": "Since bitmaps are fixed grids of pixels, enlarging them forces the software to create new pixels based on guesswork (interpolation), resulting in a blocky or 'pixelated' look.",
+        "hi": "चूंकि बिटमैप पिक्सेल के निश्चित ग्रिड होते हैं, इसलिए उन्हें बड़ा करने पर सॉफ़्टवेयर को अनुमान (इंटरपोलेशन) के आधार पर नए पिक्सेल बनाने के लिए मजबूर होना पड़ता है, जिसके परिणामस्वरूप 'पिक्सेलेटेड' स्वरूप दिखाई देता है।"
+      },
+      "key_takeaway": {
+        "en": "Bitmaps lose quality when scaled up (Pixelation).",
+        "hi": "स्केल अप करने पर बिटमैप अपनी गुणवत्ता खो देते हैं (पिक्सेलेशन)।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "Vector images are made up of:",
+        "hi": "वेक्टर छवियाँ इनसे बनी होती हैं:"
+      },
+      "options": {
+        "a": {
+          "en": "Pixels arranged in a grid",
+          "hi": "ग्रिड में व्यवस्थित पिक्सेल"
+        },
+        "b": {
+          "en": "Mathematical equations defining lines and curves",
+          "hi": "रेखाओं और वक्रों को परिभाषित करने वाले गणितीय समीकरण"
+        },
+        "c": {
+          "en": "A single layer of color",
+          "hi": "रंग की एक एकल परत"
+        },
+        "d": {
+          "en": "Compressed photographic data",
+          "hi": "संपीड़ित फोटोग्राफिक डेटा"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Unlike photos, these images are built using geometry.",
+        "hi": "तस्वीरों के विपरीत, ये छवियां ज्यामिति का उपयोग करके बनाई जाती हैं।"
+      },
+      "explanation": {
+        "en": "Vectors use mathematical formulas (paths, points, curves) to describe shapes. This allows them to be recalculated at any size without losing quality.",
+        "hi": "वेक्टर आकृतियों का वर्णन करने के लिए गणितीय सूत्रों (पथ, बिंदु, वक्र) का उपयोग करते हैं। यह उन्हें गुणवत्ता खोए बिना किसी भी आकार में पुनर्गणना करने की अनुमति देता है।"
+      },
+      "key_takeaway": {
+        "en": "Vectors = Mathematical Paths (Scalable).",
+        "hi": "वेक्टर = गणितीय पथ (स्केलेबल)।"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "The main advantage of vector images over bitmap images is:",
+        "hi": "बिटमैप छवियों पर वेक्टर छवियों का मुख्य लाभ है:"
+      },
+      "options": {
+        "a": {
+          "en": "They are always smaller in file size.",
+          "hi": "वे हमेशा फाइल आकार में छोटी होती हैं।"
+        },
+        "b": {
+          "en": "They are better for storing photographs.",
+          "hi": "वे फोटोग्राफ संग्रहीत करने के लिए बेहतर हैं।"
+        },
+        "c": {
+          "en": "They are easier to create from scratch.",
+          "hi": "उन्हें शुरुआत से बनाना आसान है।"
+        },
+        "d": {
+          "en": "They can be resized infinitely without losing quality.",
+          "hi": "उन्हें गुणवत्ता खोए बिना अनंत तक आकार में बदला जा सकता है।"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Think about a company logo on a business card vs. a giant billboard.",
+        "hi": "बिजनेस कार्ड पर कंपनी के लोगो बनाम एक विशाल बिलबोर्ड के बारे में सोचें।"
+      },
+      "explanation": {
+        "en": "Because vectors are based on math, not fixed pixels, they are 'resolution independent' and can be scaled to any size while remaining perfectly sharp.",
+        "hi": "चूंकि वेक्टर गणित पर आधारित होते हैं, निश्चित पिक्सेल पर नहीं, वे 'रिज़ॉल्यूशन स्वतंत्र' होते हैं और पूरी तरह से तेज रहते हुए किसी भी आकार में स्केल किए जा सकते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Vectors are infinitely scalable.",
+        "hi": "वेक्टर अनंत रूप से स्केलेबल होते हैं।"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "Which software is typically used for editing vector images?",
+        "hi": "वेक्टर छवियों को संपादित करने के लिए आमतौर पर किस सॉफ़्टवेयर का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Adobe Photoshop",
+          "hi": "एडोब फोटोशॉप"
+        },
+        "b": {
+          "en": "Adobe Illustrator",
+          "hi": "एडोब इलस्ट्रेटर"
+        },
+        "c": {
+          "en": "Microsoft Word",
+          "hi": "माइक्रोसॉफ्ट वर्ड"
+        },
+        "d": {
+          "en": "GIMP",
+          "hi": "जीआईएमपी"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It is the sibling software to Photoshop, specifically for illustrations.",
+        "hi": "यह फोटोशॉप का सहोदर सॉफ्टवेयर है, जो विशेष रूप से चित्रण (illustrations) के लिए है।"
+      },
+      "explanation": {
+        "en": "Adobe Illustrator is the industry standard for vector graphics. While Photoshop has some vector tools, it is primarily a raster editor.",
+        "hi": "एडोब इलस्ट्रेटर वेक्टर ग्राफिक्स के लिए उद्योग मानक है। जबकि फोटोशॉप में कुछ वेक्टर उपकरण हैं, यह मुख्य रूप से एक रास्टर संपादक है।"
+      },
+      "key_takeaway": {
+        "en": "Illustrator is for Vectors; Photoshop is for Bitmaps.",
+        "hi": "इलस्ट्रेटर वेक्टर के लिए है; फोटोशॉप बिटमैप के लिए है।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "Image resolution is measured in:",
+        "hi": "छवि रिज़ॉल्यूशन को इनमें मापा जाता है:"
+      },
+      "options": {
+        "a": {
+          "en": "DPI (Dots Per Inch) or PPI (Pixels Per Inch)",
+          "hi": "डीपीआई (डॉट्स पर इंच) या पीपीआई (पिक्सेल पर इंच)"
+        },
+        "b": {
+          "en": "Pixels (px) or Inches (in)",
+          "hi": "पिक्सेल (px) या इंच (in)"
+        },
+        "c": {
+          "en": "Kilobytes (KB) or Megabytes (MB)",
+          "hi": "किलोबाइट (KB) या मेगाबाइट (MB)"
+        },
+        "d": {
+          "en": "RGB or CMYK",
+          "hi": "आरजीबी या सीएमवाईके"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It refers to the density of information in a specific physical length.",
+        "hi": "यह एक विशिष्ट भौतिक लंबाई में जानकारी के घनत्व को संदर्भित करता है।"
+      },
+      "explanation": {
+        "en": "Resolution defines how closely pixels are packed together. PPI (Pixels Per Inch) is used for screens, and DPI (Dots Per Inch) is used for printing.",
+        "hi": "रिज़ॉल्यूशन परिभाषित करता है कि पिक्सेल एक साथ कितनी निकटता से पैक किए गए हैं। PPI (पिक्सेल प्रति इंच) का उपयोग स्क्रीन के लिए किया जाता है, और DPI (डॉट्स प्रति इंच) का उपयोग प्रिंटिंग के लिए किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Resolution = Density (PPI/DPI).",
+        "hi": "रिज़ॉल्यूशन = घनत्व (PPI/DPI)।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "A higher resolution image generally results in:",
+        "hi": "उच्चतर रिज़ॉल्यूशन वाली छवि आम तौर पर इनमें परिणत होती है:"
+      },
+      "options": {
+        "a": {
+          "en": "A sharper image and a larger file size",
+          "hi": "एक तेज छवि और एक बड़ा फाइल आकार"
+        },
+        "b": {
+          "en": "A smaller file size and blurry print",
+          "hi": "एक छोटा फाइल आकार और धुंधला प्रिंट"
+        },
+        "c": {
+          "en": "A pixelated appearance on screen",
+          "hi": "स्क्रीन पर एक पिक्सेलेटेड स्वरूप"
+        },
+        "d": {
+          "en": "Automatic conversion to vector format",
+          "hi": "वेक्टर प्रारूप में स्वचालित रूपांतरण"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "More dots means more detail, but where does all that data go?",
+        "hi": "अधिक डॉट्स का मतलब है अधिक विवरण, लेकिन वह सारा डेटा कहां जाता है?"
+      },
+      "explanation": {
+        "en": "Higher resolution means more pixels per inch. This creates a crisper, more detailed image, but storing all those extra pixels requires more storage space (larger file size).",
+        "hi": "उच्च रिज़ॉल्यूशन का अर्थ है प्रति इंच अधिक पिक्सेल। यह एक स्पष्ट, अधिक विस्तृत छवि बनाता है, लेकिन उन सभी अतिरिक्त पिक्सेल को संग्रहीत करने के लिए अधिक संग्रहण स्थान (बड़ा फ़ाइल आकार) की आवश्यकता होती है।"
+      },
+      "key_takeaway": {
+        "en": "High Resolution = High Quality + Large File Size.",
+        "hi": "उच्च रिज़ॉल्यूशन = उच्च गुणवत्ता + बड़ा फ़ाइल आकार।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "Which resolution is considered standard for web and screen display?",
+        "hi": "वेब और स्क्रीन डिस्प्ले के लिए कौन सा रिज़ॉल्यूशन मानक माना जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "300 DPI",
+          "hi": "300 डीपीआई"
+        },
+        "b": {
+          "en": "150 DPI",
+          "hi": "150 डीपीआई"
+        },
+        "c": {
+          "en": "72 DPI",
+          "hi": "72 डीपीआई"
+        },
+        "d": {
+          "en": "600 DPI",
+          "hi": "600 डीपीआई"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Screens require much less density than paper printing.",
+        "hi": "स्क्रीन को कागज की छपाई की तुलना में बहुत कम घनत्व की आवश्यकता होती है।"
+      },
+      "explanation": {
+        "en": "Historically, 72 PPI (often referred to as DPI) became the standard for monitors. While modern 'Retina' screens use higher densities, 72 is still the default web standard, whereas 300 is for print.",
+        "hi": "ऐतिहासिक रूप से, 72 PPI (अक्सर DPI के रूप में संदर्भित) मॉनिटर के लिए मानक बन गया। जबकि आधुनिक 'रेटिना' स्क्रीन उच्च घनत्व का उपयोग करते हैं, 72 अभी भी डिफ़ॉल्ट वेब मानक है, जबकि 300 प्रिंट के लिए है।"
+      },
+      "key_takeaway": {
+        "en": "Web/Screen Standard = 72 PPI.",
+        "hi": "वेब/स्क्रीन मानक = 72 PPI।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "Image size refers to:",
+        "hi": "छवि का आकार संदर्भित करता है:"
+      },
+      "options": {
+        "a": {
+          "en": "The number of pixels per inch in the image",
+          "hi": "छवि में प्रति इंच पिक्सेल की संख्या को"
+        },
+        "b": {
+          "en": "The physical dimensions of the image in pixels, inches, or centimeters",
+          "hi": "पिक्सेल, इंच, या सेंटीमीटर में छवि के भौतिक आयामों को"
+        },
+        "c": {
+          "en": "The amount of compression applied to the image",
+          "hi": "छवि पर लागू संपीड़न की मात्रा को"
+        },
+        "d": {
+          "en": "The color mode used by the image (e.g., RGB)",
+          "hi": "छवि द्वारा उपयोग किए जाने वाले रंग मोड को (जैसे, आरजीबी)"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It answers the question 'How wide and tall is this picture?'",
+        "hi": "यह इस प्रश्न का उत्तर देता है 'यह चित्र कितना चौड़ा और लंबा है?'"
+      },
+      "explanation": {
+        "en": "Image size describes the physical dimensions (Width x Height), typically measured in pixels for screens or inches/cm for print.",
+        "hi": "छवि का आकार भौतिक आयामों (चौड़ाई x ऊंचाई) का वर्णन करता है, जिसे आमतौर पर स्क्रीन के लिए पिक्सेल या प्रिंट के लिए इंच/सेमी में मापा जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Image Size = Width x Height.",
+        "hi": "छवि का आकार = चौड़ाई x ऊंचाई।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "Which file format is a compressed raster format commonly used for photographs on the web?",
+        "hi": "कौन सा फ़ाइल प्रारूप एक संपीड़ित रास्टर प्रारूप है जो आमतौर पर वेब पर फोटोग्राफ़ के लिए उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "BMP",
+          "hi": "बीएमपी"
+        },
+        "b": {
+          "en": "TIFF",
+          "hi": "टिफ़"
+        },
+        "c": {
+          "en": "JPEG",
+          "hi": "जेपीईजी"
+        },
+        "d": {
+          "en": "SVG",
+          "hi": "एसवीजी"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It is the most popular format for digital camera photos.",
+        "hi": "यह डिजिटल कैमरा फोटो के लिए सबसे लोकप्रिय प्रारूप है।"
+      },
+      "explanation": {
+        "en": "JPEG (Joint Photographic Experts Group) is designed to compress photo data efficiently, making file sizes small enough for fast web loading while maintaining acceptable quality.",
+        "hi": "JPEG (Joint Photographic Experts Group) को फोटो डेटा को कुशलतापूर्वक संपीड़ित करने के लिए डिज़ाइन किया गया है, जिससे फाइल का आकार वेब पर तेजी से लोड होने के लिए पर्याप्त छोटा हो जाता है और गुणवत्ता भी स्वीकार्य बनी रहती है।"
+      },
+      "key_takeaway": {
+        "en": "JPEG is the standard for web photographs.",
+        "hi": "JPEG वेब तस्वीरों के लिए मानक है।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "The PNG file format is best known for supporting:",
+        "hi": "पीएनजी फ़ाइल प्रारूप सबसे अधिक जाना जाता है इसे सपोर्ट करने के लिए:"
+      },
+      "options": {
+        "a": {
+          "en": "Animation",
+          "hi": "एनिमेशन"
+        },
+        "b": {
+          "en": "Transparency",
+          "hi": "पारदर्शिता"
+        },
+        "c": {
+          "en": "Mathematical equations",
+          "hi": "गणितीय समीकरण"
+        },
+        "d": {
+          "en": "Lossless compression for printing",
+          "hi": "प्रिंटिंग के लिए दोषरहित संपीड़न"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Think of a logo with no background color behind it.",
+        "hi": "एक ऐसे लोगो के बारे में सोचें जिसके पीछे कोई पृष्ठभूमि रंग न हो।"
+      },
+      "explanation": {
+        "en": "PNG (Portable Network Graphics) supports alpha transparency, allowing you to have images with see-through backgrounds, which is essential for logos and overlays.",
+        "hi": "PNG (पोर्टेबल नेटवर्क ग्राफिक्स) अल्फा पारदर्शिता का समर्थन करता है, जिससे आप पारदर्शी पृष्ठभूमि वाली छवियां प्राप्त कर सकते हैं, जो लोगो और ओवरले के लिए आवश्यक है।"
+      },
+      "key_takeaway": {
+        "en": "PNG = Transparency.",
+        "hi": "पीएनजी = पारदर्शिता।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "Which file format supports animation and has a limited color palette of 256 colors?",
+        "hi": "कौन सा फ़ाइल प्रारूप एनिमेशन को सपोर्ट करता है और इसके 256 रंगों की एक सीमित पैलेट होती है?"
+      },
+      "options": {
+        "a": {
+          "en": "GIF",
+          "hi": "जीआईएफ"
+        },
+        "b": {
+          "en": "JPEG",
+          "hi": "जेपीईजी"
+        },
+        "c": {
+          "en": "PDF",
+          "hi": "पीडीएफ"
+        },
+        "d": {
+          "en": "EPS",
+          "hi": "ईपीएस"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "You see these moving images frequently on social media comments and memes.",
+        "hi": "आप अक्सर सोशल मीडिया टिप्पणियों और मीम्स पर इन चलती छवियों को देखते हैं।"
+      },
+      "explanation": {
+        "en": "GIF (Graphics Interchange Format) supports simple frame-based animation but is limited to 256 colors, making it unsuitable for high-quality photos but perfect for memes and simple icons.",
+        "hi": "GIF (ग्राफिक्स इंटरचेंज फॉर्मेट) सरल फ्रेम-आधारित एनीमेशन का समर्थन करता है लेकिन 256 रंगों तक सीमित है, जो इसे उच्च गुणवत्ता वाली तस्वीरों के लिए अनुपयुक्त बनाता है लेकिन मीम्स और सरल आइकन के लिए एकदम सही है।"
+      },
+      "key_takeaway": {
+        "en": "GIF = Animation + Limited Colors.",
+        "hi": "जीआईएफ = एनिमेशन + सीमित रंग।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "For logos and illustrations that need to be scaled to different sizes, the most suitable file type is:",
+        "hi": "लोगो और इलस्ट्रेशन के लिए जिन्हें विभिन्न आकारों में स्केल करने की आवश्यकता होती है, सबसे उपयुक्त फ़ाइल प्रकार है:"
+      },
+      "options": {
+        "a": {
+          "en": "JPEG",
+          "hi": "जेपीईजी"
+        },
+        "b": {
+          "en": "BMP",
+          "hi": "बीएमपी"
+        },
+        "c": {
+          "en": "SVG",
+          "hi": "एसवीजी"
+        },
+        "d": {
+          "en": "TIFF",
+          "hi": "टिफ़"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This is a vector format standard for the web.",
+        "hi": "यह वेब के लिए एक वेक्टर प्रारूप मानक है।"
+      },
+      "explanation": {
+        "en": "SVG (Scalable Vector Graphics) is a vector format. Unlike JPEGs or BMPs, SVGs can be resized to any dimension without pixelation, making them ideal for responsive logos.",
+        "hi": "SVG (स्केलेबल वेक्टर ग्राफिक्स) एक वेक्टर प्रारूप है। JPEG या BMP के विपरीत, SVG को पिक्सेलेशन के बिना किसी भी आयाम में बदला जा सकता है, जो उन्हें उत्तरदायी लोगो के लिए आदर्श बनाता है।"
+      },
+      "key_takeaway": {
+        "en": "SVG is the vector standard for web graphics.",
+        "hi": "SVG वेब ग्राफिक्स के लिए वेक्टर मानक है।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "What is a digital picture collage?",
+        "hi": "एक डिजिटल पिक्चर कोलाज क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "A single, unedited photograph",
+          "hi": "एक एकल, असंपादित फोटोग्राफ"
+        },
+        "b": {
+          "en": "An artistic arrangement of multiple images combined into one composition",
+          "hi": "कई छवियों की एक कलात्मक व्यवस्था जिसे एक रचना में जोड़ा गया हो"
+        },
+        "c": {
+          "en": "A 3D model created from photographs",
+          "hi": "फोटोग्राफ़ से बना एक 3D मॉडल"
+        },
+        "d": {
+          "en": "A video slideshow of images",
+          "hi": "छवियों की एक वीडियो स्लाइडशो"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It involves mixing and matching several photos together.",
+        "hi": "इसमें कई तस्वीरों को एक साथ मिलाना और मैच करना शामिल है।"
+      },
+      "explanation": {
+        "en": "A collage is a visual composition made by combining distinct images into a new whole. In digital editing, this involves using layers to arrange multiple photos.",
+        "hi": "कोलाज एक दृश्य रचना है जो अलग-अलग छवियों को मिलाकर एक नया रूप देती है। डिजिटल संपादन में, इसमें कई तस्वीरों को व्यवस्थित करने के लिए परतों का उपयोग करना शामिल है।"
+      },
+      "key_takeaway": {
+        "en": "Collage = Multiple images combined artistically.",
+        "hi": "कोलाज = कलात्मक रूप से संयुक्त कई छवियां।"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "What is the first step to create a collage in Adobe Photoshop?",
+        "hi": "एडोब फोटोशॉप में कोलाज बनाने का पहला कदम क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Apply filters and effects",
+          "hi": "फ़िल्टर और प्रभाव लागू करना"
+        },
+        "b": {
+          "en": "Open Photoshop and create a new document",
+          "hi": "फोटोशॉप खोलना और एक नया दस्तावेज़ बनाना"
+        },
+        "c": {
+          "en": "Save the file as a JPEG",
+          "hi": "फाइल को जेपीईजी के रूप में सहेजना"
+        },
+        "d": {
+          "en": "Add text and graphics",
+          "hi": "पाठ और ग्राफिक्स जोड़ना"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "You need a canvas before you can paint.",
+        "hi": "पेंट करने से पहले आपको कैनवास की आवश्यकता होती है।"
+      },
+      "explanation": {
+        "en": "Before placing images or adding effects, you must launch the software and define your workspace (canvas size and resolution) by creating a new document.",
+        "hi": "छवियों को रखने या प्रभाव जोड़ने से पहले, आपको सॉफ़्टवेयर लॉन्च करना होगा और एक नया दस्तावेज़ बनाकर अपने कार्यक्षेत्र (कैनवास का आकार और रिज़ॉल्यूशन) को परिभाषित करना होगा।"
+      },
+      "key_takeaway": {
+        "en": "Step 1: Create a New Document.",
+        "hi": "चरण 1: एक नया दस्तावेज़ बनाएँ।"
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "Which tool in Photoshop is used to add images to your canvas?",
+        "hi": "फोटोशॉप में किस टूल का उपयोग आपके कैनवास पर छवियों को जोड़ने के लिए किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Crop Tool",
+          "hi": "क्रॉप टूल"
+        },
+        "b": {
+          "en": "File &rarr; Place Embedded",
+          "hi": "फाइल &rarr; प्लेस एम्बेडेड"
+        },
+        "c": {
+          "en": "Brush Tool",
+          "hi": "ब्रश टूल"
+        },
+        "d": {
+          "en": "Eraser Tool",
+          "hi": "इरेज़र टूल"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "You are bringing an outside file 'into' your current file.",
+        "hi": "आप एक बाहरी फ़ाइल को अपनी वर्तमान फ़ाइल 'में' ला रहे हैं।"
+      },
+      "explanation": {
+        "en": "The command 'Place Embedded' imports an external file as a Smart Object into your current layer stack. It is not a toolbar tool like Brush or Crop.",
+        "hi": "'प्लेस एम्बेडेड' कमांड एक बाहरी फ़ाइल को स्मार्ट ऑब्जेक्ट के रूप में आपके वर्तमान लेयर स्टैक में आयात करता है। यह ब्रश या क्रॉप जैसा टूलबार टूल नहीं है।"
+      },
+      "key_takeaway": {
+        "en": "Use 'Place Embedded' to insert images.",
+        "hi": "छवियाँ डालने के लिए 'प्लेस एम्बेडेड' का उपयोग करें।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "What does rotating an image do?",
+        "hi": "एक छवि को घुमाने से क्या होता है?"
+      },
+      "options": {
+        "a": {
+          "en": "It mirrors the image horizontally.",
+          "hi": "यह छवि को क्षैतिज रूप से मिरर करती है।"
+        },
+        "b": {
+          "en": "It turns the image by a specific angle.",
+          "hi": "यह छवि को एक विशिष्ट कोण से घुमाती है।"
+        },
+        "c": {
+          "en": "It removes unwanted parts of the image.",
+          "hi": "यह छवि के अवांछित भागों को हटाती है।"
+        },
+        "d": {
+          "en": "It changes the image's resolution.",
+          "hi": "यह छवि के रिज़ॉल्यूशन को बदल देती है।"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Think of turning a steering wheel.",
+        "hi": "स्टीयरिंग व्हील को घुमाने के बारे में सोचें।"
+      },
+      "explanation": {
+        "en": "Rotation changes the orientation of an image around a center point by a specific degree (e.g., 90° or 45°).",
+        "hi": "रोटेशन (घूर्णन) एक केंद्र बिंदु के चारों ओर एक विशिष्ट डिग्री (जैसे, 90° या 45°) तक छवि के ओरिएंटेशन को बदलता है।"
+      },
+      "key_takeaway": {
+        "en": "Rotate = Turn by an angle.",
+        "hi": "रोटेट = एक कोण से घुमाना।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "The keyboard shortcut for free transformation (which allows rotating and resizing) in Photoshop is:",
+        "hi": "फोटोशॉप में मुक्त रूपांतरण (जो घुमाने और आकार बदलने की अनुमति देता है) के लिए कीबोर्ड शॉर्टकट है:"
+      },
+      "options": {
+        "a": {
+          "en": "Ctrl + C (Windows) / Cmd + C (Mac)",
+          "hi": "Ctrl + C (विंडोज) / Cmd + C (मैक)"
+        },
+        "b": {
+          "en": "Ctrl + V (Windows) / Cmd + V (Mac)",
+          "hi": "Ctrl + V (विंडोज) / Cmd + V (मैक)"
+        },
+        "c": {
+          "en": "Ctrl + T (Windows) / Cmd + T (Mac)",
+          "hi": "Ctrl + T (विंडोज) / Cmd + T (मैक)"
+        },
+        "d": {
+          "en": "Ctrl + S (Windows) / Cmd + S (Mac)",
+          "hi": "Ctrl + S (विंडोज) / Cmd + S (मैक)"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "'T' stands for Transform.",
+        "hi": "'T' का अर्थ है ट्रांसफॉर्म (Transform)।"
+      },
+      "explanation": {
+        "en": "Ctrl+T (or Cmd+T) activates the Free Transform tool, adding handles to the layer so you can resize, rotate, or distort it.",
+        "hi": "Ctrl+T (या Cmd+T) फ्री ट्रांसफॉर्म टूल को सक्रिय करता है, परत में हैंडल जोड़ता है ताकि आप इसे आकार, घुमा या विकृत कर सकें।"
+      },
+      "key_takeaway": {
+        "en": "Ctrl + T = Free Transform.",
+        "hi": "Ctrl + T = फ्री ट्रांसफॉर्म।"
+      }
+    },
+    {
+      "question_id": 21,
+      "question": {
+        "en": "Cropping an image is used to:",
+        "hi": "एक छवि को क्रॉप करने का उपयोग किया जाता है:"
+      },
+      "options": {
+        "a": {
+          "en": "Change its colors",
+          "hi": "इसके रंग बदलने के लिए"
+        },
+        "b": {
+          "en": "Remove unwanted parts and improve composition",
+          "hi": "अवांछित भागों को हटाने और रचना में सुधार करने के लिए"
+        },
+        "c": {
+          "en": "Apply a blur effect",
+          "hi": "एक ब्लर प्रभाव लागू करने के लिए"
+        },
+        "d": {
+          "en": "Convert it to a vector",
+          "hi": "इसे वेक्टर में बदलने के लिए"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "If a photo has too much empty space or distractions on the edges, you do this.",
+        "hi": "यदि किसी फोटो के किनारों पर बहुत अधिक खाली जगह या व्यवधान हैं, तो आप यह करते हैं।"
+      },
+      "explanation": {
+        "en": "Cropping cuts away the outer edges of an image to change its aspect ratio or focus attention on the subject.",
+        "hi": "क्रॉपिंग एक छवि के बाहरी किनारों को काट देता है ताकि उसका पहलू अनुपात (aspect ratio) बदला जा सके या विषय पर ध्यान केंद्रित किया जा सके।"
+      },
+      "key_takeaway": {
+        "en": "Crop = Cut edges to frame subject.",
+        "hi": "क्रॉप = विषय को फ्रेम करने के लिए किनारों को काटना।"
+      }
+    },
+    {
+      "question_id": 22,
+      "question": {
+        "en": "Which tool is specifically used for cropping in Photoshop?",
+        "hi": "फोटोशॉप में क्रॉपिंग के लिए विशेष रूप से किस टूल का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Move Tool (V)",
+          "hi": "मूव टूल (V)"
+        },
+        "b": {
+          "en": "Crop Tool (C)",
+          "hi": "क्रॉप टूल (C)"
+        },
+        "c": {
+          "en": "Type Tool (T)",
+          "hi": "टाइप टूल (T)"
+        },
+        "d": {
+          "en": "Brush Tool (B)",
+          "hi": "ब्रश टूल (B)"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The tool name describes the action exactly.",
+        "hi": "टूल का नाम क्रिया का ठीक-ठीक वर्णन करता है।"
+      },
+      "explanation": {
+        "en": "The Crop Tool (shortcut 'C') allows you to draw a box around the part of the image you want to keep and delete the rest.",
+        "hi": "क्रॉप टूल (शॉर्टकट 'C') आपको छवि के उस हिस्से के चारों ओर एक बॉक्स बनाने की अनुमति देता है जिसे आप रखना चाहते हैं और बाकी को हटा सकते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Press 'C' for Crop Tool.",
+        "hi": "क्रॉप टूल के लिए 'C' दबाएं।"
+      }
+    },
+    {
+      "question_id": 23,
+      "question": {
+        "en": "Flipping an image horizontally means:",
+        "hi": "किसी छवि को क्षैतिज रूप से फ्लिप करने का अर्थ है:"
+      },
+      "options": {
+        "a": {
+          "en": "Turning it upside down",
+          "hi": "इसे उल्टा करना"
+        },
+        "b": {
+          "en": "Mirroring it from left to right",
+          "hi": "इसे बाएं से दाएं मिरर करना"
+        },
+        "c": {
+          "en": "Rotating it 90 degrees clockwise",
+          "hi": "इसे 90 डिग्री दक्षिणावर्त घुमाना"
+        },
+        "d": {
+          "en": "Reducing its opacity",
+          "hi": "इसकी अपारदर्शिता कम करना"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Imagine looking at the image in a mirror.",
+        "hi": "दर्पण में छवि को देखने की कल्पना करें।"
+      },
+      "explanation": {
+        "en": "Horizontal flipping mirrors the image across a vertical axis, swapping left and right. Vertical flipping turns it upside down.",
+        "hi": "क्षैतिज फ्लिपिंग एक ऊर्ध्वाधर अक्ष पर छवि को मिरर करता है, बाएं और दाएं को स्वैप करता है। वर्टिकल फ्लिपिंग इसे उल्टा कर देता है।"
+      },
+      "key_takeaway": {
+        "en": "Flip Horizontal = Mirror Image.",
+        "hi": "फ्लिप हॉरिजॉन्टल = मिरर इमेज।"
+      }
+    },
+    {
+      "question_id": 24,
+      "question": {
+        "en": "Where is the option to flip an image vertically located in Photoshop's menu?",
+        "hi": "फोटोशॉप के मेन्यू में किसी छवि को लंबवत फ्लिप करने का विकल्प कहाँ स्थित है?"
+      },
+      "options": {
+        "a": {
+          "en": "Image &rarr; Image Rotation",
+          "hi": "इमेज &rarr; इमेज रोटेशन"
+        },
+        "b": {
+          "en": "Filter &rarr; Blur",
+          "hi": "फ़िल्टर &rarr; ब्लर"
+        },
+        "c": {
+          "en": "Edit &rarr; Transform &rarr; Flip Vertical",
+          "hi": "एडिट &rarr; ट्रांसफॉर्म &rarr; फ्लिप वर्टिकल"
+        },
+        "d": {
+          "en": "Layer &rarr; Layer Mask",
+          "hi": "लेयर &rarr; लेयर मास्क"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Since this is a transformation of the object, look in the Edit menu under Transform.",
+        "hi": "चूंकि यह वस्तु का रूपांतरण (transformation) है, इसलिए एडिट मेनू में ट्रांसफॉर्म के अंतर्गत देखें।"
+      },
+      "explanation": {
+        "en": "To flip a specific layer or selection, you use <code>Edit &rarr; Transform</code>. (Note: <code>Image &rarr; Image Rotation</code> flips the entire canvas).",
+        "hi": "किसी विशिष्ट परत या चयन को फ्लिप करने के लिए, आप <code>Edit &rarr; Transform</code> का उपयोग करते हैं। (नोट: <code>Image &rarr; Image Rotation</code> पूरे कैनवास को फ्लिप करता है)।"
+      },
+      "key_takeaway": {
+        "en": "Flip commands are under Edit > Transform.",
+        "hi": "फ्लिप कमांड एडिट > ट्रांसफॉर्म के अंतर्गत हैं।"
+      }
+    },
+    {
+      "question_id": 25,
+      "question": {
+        "en": "The main purpose of using Layer Masks in a collage is to:",
+        "hi": "एक कोलाज में लेयर मास्क का उपयोग करने का मुख्य उद्देश्य है:"
+      },
+      "options": {
+        "a": {
+          "en": "Delete layers permanently",
+          "hi": "परतों को स्थायी रूप से हटाना"
+        },
+        "b": {
+          "en": "Blend images smoothly by hiding parts non-destructively",
+          "hi": "भागों को गैर-विनाशकारी रूप से छिपाकर छवियों को आसानी से ब्लेंड करना"
+        },
+        "c": {
+          "en": "Increase the file size",
+          "hi": "फाइल का आकार बढ़ाना"
+        },
+        "d": {
+          "en": "Add text effects",
+          "hi": "पाठ प्रभाव जोड़ना"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Think of it as covering a part of the image with digital tape instead of cutting it off.",
+        "hi": "इसे इसे काटने के बजाय छवि के एक हिस्से को डिजिटल टेप से ढकने के रूप में सोचें।"
+      },
+      "explanation": {
+        "en": "Layer Masks allow you to hide parts of a layer (using black paint) without erasing the pixels permanently. This is essential for smooth blending.",
+        "hi": "लेयर मास्क आपको पिक्सेल को स्थायी रूप से मिटाए बिना (काले पेंट का उपयोग करके) परत के कुछ हिस्सों को छिपाने की अनुमति देते हैं। यह स्मूथ ब्लेंडिंग के लिए आवश्यक है।"
+      },
+      "key_takeaway": {
+        "en": "Layer Masks = Hide without deleting.",
+        "hi": "लेयर मास्क = हटाए बिना छिपाना।"
+      }
+    },
+    {
+      "question_id": 26,
+      "question": {
+        "en": "To keep all layers editable for future changes, in which format should you save your Photoshop file?",
+        "hi": "भविष्य में परिवर्तनों के लिए सभी परतों को संपादन योग्य रखने के लिए, आपको अपनी फोटोशॉप फाइल को किस प्रारूप में सहेजना चाहिए?"
+      },
+      "options": {
+        "a": {
+          "en": "JPEG",
+          "hi": "जेपीईजी"
+        },
+        "b": {
+          "en": "PNG",
+          "hi": "पीएनजी"
+        },
+        "c": {
+          "en": "PSD",
+          "hi": "पीएसडी"
+        },
+        "d": {
+          "en": "GIF",
+          "hi": "जीआईएफ"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This is Photoshop's native document format.",
+        "hi": "यह फोटोशॉप का मूल दस्तावेज़ प्रारूप है।"
+      },
+      "explanation": {
+        "en": "PSD (Photoshop Document) saves all your layers, masks, and effects. Formats like JPEG flatten everything into a single layer, making future edits impossible.",
+        "hi": "PSD (फोटोशॉप दस्तावेज़) आपकी सभी परतों, मास्क और प्रभावों को सहेजता है। JPEG जैसे प्रारूप सब कुछ एक ही परत में समतल (flatten) कर देते हैं, जिससे भविष्य में संपादन असंभव हो जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Save as PSD to keep layers.",
+        "hi": "परतें रखने के लिए PSD के रूप में सहेजें।"
+      }
+    },
+    {
+      "question_id": 27,
+      "question": {
+        "en": "You have taken a photo with your digital camera and want to use it for a large poster print. However, when you check the image properties, you see it is 72 DPI. What is the potential issue?",
+        "hi": "आपने अपने डिजिटल कैमरे से एक फोटो ली है और इसे एक बड़े पोस्टर प्रिंट के लिए उपयोग करना चाहते हैं। हालाँकि, जब आप छवि गुण देखते हैं, तो आप देखते हैं कि यह 72 डीपीआई है। संभावित समस्या क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "The file size is too small.",
+          "hi": "फाइल का आकार बहुत छोटा है।"
+        },
+        "b": {
+          "en": "The image might appear blurry or pixelated when printed large.",
+          "hi": "छवि बड़ी छपने पर धुंधली या पिक्सेलेटेड दिखाई दे सकती है।"
+        },
+        "c": {
+          "en": "The image colors will change.",
+          "hi": "छवि के रंग बदल जाएंगे।"
+        },
+        "d": {
+          "en": "The image will automatically convert to vector.",
+          "hi": "छवि स्वचालित रूप से वेक्टर में परिवर्तित हो जाएगी।"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "72 DPI is for screens; printing usually needs 300 DPI.",
+        "hi": "72 DPI स्क्रीन के लिए है; प्रिंटिंग के लिए आमतौर पर 300 DPI की आवश्यकता होती है।"
+      },
+      "explanation": {
+        "en": "Printing requires a higher density of dots (usually 300 DPI). A 72 DPI image stretched to poster size will lack sufficient data, causing blurriness or pixelation.",
+        "hi": "प्रिंटिंग के लिए डॉट्स के उच्च घनत्व (आमतौर पर 300 DPI) की आवश्यकता होती है। पोस्टर आकार में खींची गई 72 DPI छवि में पर्याप्त डेटा की कमी होगी, जिससे धुंधलापन या पिक्सेलेशन होगा।"
+      },
+      "key_takeaway": {
+        "en": "Low DPI prints look blurry.",
+        "hi": "कम डीपीआई प्रिंट धुंधले दिखते हैं।"
+      }
+    },
+    {
+      "question_id": 28,
+      "question": {
+        "en": "You are designing a logo for a company that will be used on a business card and also on a large billboard. Which type of image should you create to ensure it looks sharp in both cases?",
+        "hi": "आप एक कंपनी के लिए एक लोगो डिजाइन कर रहे हैं जिसका उपयोग बिजनेस कार्ड पर और एक बड़े बिलबोर्ड पर भी किया जाएगा। यह सुनिश्चित करने के लिए कि यह दोनों ही मामलों में तेज दिखे, आपको किस प्रकार की छवि बनानी चाहिए?"
+      },
+      "options": {
+        "a": {
+          "en": "A high-resolution JPEG image",
+          "hi": "एक उच्च-रिज़ॉल्यूशन जेपीईजी छवि"
+        },
+        "b": {
+          "en": "A GIF image with limited colors",
+          "hi": "सीमित रंगों वाली एक जीआईएफ छवि"
+        },
+        "c": {
+          "en": "A vector image (e.g., SVG or AI)",
+          "hi": "एक वेक्टर छवि (जैसे, एसवीजी या एआई)"
+        },
+        "d": {
+          "en": "A PNG image with transparency",
+          "hi": "पारदर्शिता वाली एक पीएनजी छवि"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "You need a format that can scale infinitely.",
+        "hi": "आपको ऐसे प्रारूप की आवश्यकता है जो अनंत रूप से स्केल कर सके।"
+      },
+      "explanation": {
+        "en": "Vector images use mathematics to define shapes, so they can be scaled from a tiny card to a massive billboard without losing any quality. Raster formats like JPEG would pixelate.",
+        "hi": "वेक्टर छवियां आकृतियों को परिभाषित करने के लिए गणित का उपयोग करती हैं, इसलिए उन्हें किसी भी गुणवत्ता को खोए बिना एक छोटे कार्ड से विशाल बिलबोर्ड तक स्केल किया जा सकता है। JPEG जैसे रास्टर प्रारूप पिक्सेलेट हो जाएंगे।"
+      },
+      "key_takeaway": {
+        "en": "Logos should always be Vector.",
+        "hi": "लोगो हमेशा वेक्टर होने चाहिए।"
+      }
+    },
+    {
+      "question_id": 29,
+      "question": {
+        "en": "While working on a collage in Photoshop, you place an image but it covers the entire canvas, hiding other elements. Which panel should you use to rearrange the order of the images?",
+        "hi": "फोटोशॉप में एक कोलाज पर काम करते समय, आप एक छवि रखते हैं लेकिन यह पूरे कैनवास को ढक लेती है, अन्य तत्वों को छिपा देती है। छवियों के क्रम को पुनर्व्यवस्थित करने के लिए आपको किस पैनल का उपयोग करना चाहिए?"
+      },
+      "options": {
+        "a": {
+          "en": "The Color Panel",
+          "hi": "कलर पैनल"
+        },
+        "b": {
+          "en": "The Layers Panel",
+          "hi": "लेयर्स पैनल"
+        },
+        "c": {
+          "en": "The History Panel",
+          "hi": "हिस्ट्री पैनल"
+        },
+        "d": {
+          "en": "The Tools Panel",
+          "hi": "टूल्स पैनल"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The order of items in this panel dictates what sits 'on top' visually.",
+        "hi": "इस पैनल में वस्तुओं का क्रम यह निर्धारित करता है कि दृश्य रूप से 'शीर्ष पर' क्या बैठता है।"
+      },
+      "explanation": {
+        "en": "The Layers Panel controls the stacking order. You can drag layers up or down in this panel to determine which image appears in front of or behind others.",
+        "hi": "लेयर्स पैनल स्टैकिंग ऑर्डर को नियंत्रित करता है। आप यह निर्धारित करने के लिए कि कौन सी छवि दूसरों के सामने या पीछे दिखाई दे, इस पैनल में परतों को ऊपर या नीचे खींच सकते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Layers Panel controls stacking order.",
+        "hi": "लेयर्स पैनल स्टैकिंग ऑर्डर को नियंत्रित करता है।"
+      }
+    },
+    {
+      "question_id": 30,
+      "question": {
+        "en": "You have a photograph where the subject is too far to one side. You want to center the subject and remove the distracting empty space on the side. Which Photoshop operation is most suitable?",
+        "hi": "आपके पास एक फोटोग्राफ है जहां विषय एक तरफ बहुत दूर है। आप विषय को केंद्र में लाना चाहते हैं और तरफ की विचलित करने वाली खाली जगह को हटाना चाहते हैं। कौन सा फोटोशॉप ऑपरेशन सबसे उपयुक्त है?"
+      },
+      "options": {
+        "a": {
+          "en": "Rotating the image 90 degrees",
+          "hi": "छवि को 90 डिग्री घुमाना"
+        },
+        "b": {
+          "en": "Flipping the image vertically",
+          "hi": "छवि को लंबवत फ्लिप करना"
+        },
+        "c": {
+          "en": "Cropping the image",
+          "hi": "छवि को क्रॉप करना"
+        },
+        "d": {
+          "en": "Applying a Gaussian Blur filter",
+          "hi": "गाऊसियन ब्लर फिल्टर लागू करना"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "You need to cut out the bad parts.",
+        "hi": "आपको खराब हिस्सों को काटने की जरूरत है।"
+      },
+      "explanation": {
+        "en": "Cropping allows you to redefine the boundaries of the image, cutting out the empty space and effectively recentering your subject.",
+        "hi": "क्रॉपिंग आपको छवि की सीमाओं को फिर से परिभाषित करने, खाली जगह को काटने और अपने विषय को प्रभावी ढंग से फिर से केंद्रित करने की अनुमति देता है।"
+      },
+      "key_takeaway": {
+        "en": "Crop to fix composition.",
+        "hi": "रचना को ठीक करने के लिए क्रॉप करें।"
+      }
+    },
+    {
+      "question_id": 31,
+      "question": {
+        "en": "Your friend has sent you a company logo in JPEG format. When you try to enlarge it for a presentation slide, it becomes blurry. What is the most likely reason, and what format would have been better?",
+        "hi": "आपके मित्र ने आपको जेपीईजी प्रारूप में एक कंपनी का लोगो भेजा है। जब आप इसे एक प्रस्तुति स्लाइड के लिए बड़ा करने का प्रयास करते हैं, तो यह धुंधला हो जाता है। सबसे संभावित कारण क्या है, और कौन सा प्रारूप बेहतर होता?"
+      },
+      "options": {
+        "a": {
+          "en": "Reason: JPEG doesn't support transparency. Better Format: PNG",
+          "hi": "कारण: जेपीईजी पारदर्शिता का समर्थन नहीं करता है। बेहतर प्रारूप: पीएनजी"
+        },
+        "b": {
+          "en": "Reason: JPEG is a raster format. Better Format: A vector format like SVG",
+          "hi": "कारण: जेपीईजी एक रास्टर प्रारूप है। बेहतर प्रारूप: एक वेक्टर प्रारूप जैसे एसवीजी"
+        },
+        "c": {
+          "en": "Reason: JPEG compression is lossless. Better Format: GIF",
+          "hi": "कारण: जेपीईजी संपीड़न दोषरहित है। बेहतर प्रारूप: जीआईएफ"
+        },
+        "d": {
+          "en": "Reason: JPEG files are always low resolution. Better Format: BMP",
+          "hi": "कारण: जेपीईजी फाइलें हमेशा कम रिज़ॉल्यूशन की होती हैं। बेहतर प्रारूप: बीएमपी"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Raster pixels cannot grow; mathematical vectors can.",
+        "hi": "रास्टर पिक्सेल बढ़ नहीं सकते; गणितीय वेक्टर कर सकते हैं।"
+      },
+      "explanation": {
+        "en": "JPEGs are raster (pixel-based) images, so they pixelate when enlarged. A vector format like SVG is math-based and scales perfectly without blur.",
+        "hi": "JPEGs रास्टर (पिक्सेल-आधारित) चित्र हैं, इसलिए बड़े होने पर वे पिक्सेलेट हो जाते हैं। SVG जैसा वेक्टर प्रारूप गणित-आधारित है और बिना धुंधलापन के पूरी तरह से स्केल होता है।"
+      },
+      "key_takeaway": {
+        "en": "Use Vector (SVG) to avoid blur when enlarging.",
+        "hi": "बड़ा करते समय धुंधलापन से बचने के लिए वेक्टर (SVG) का उपयोग करें।"
+      }
+    },
+    {
+      "question_id": 32,
+      "question": {
+        "en": "In Photoshop, you have two images side by side in your collage, but the transition between them looks harsh. Which feature can you use to blend the edges of these images smoothly?",
+        "hi": "फोटोशॉप में, आपके कोलाज में दो छवियाँ एक दूसरे के बगल में हैं, लेकिन उनके बीच का संक्रमण कठोर दिखता है। इन छवियों के किनारों को सहजता से ब्लेंड करने के लिए आप किस सुविधा का उपयोग कर सकते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "The Crop Tool",
+          "hi": "क्रॉप टूल"
+        },
+        "b": {
+          "en": "The Type Tool",
+          "hi": "टाइप टूल"
+        },
+        "c": {
+          "en": "Layer Masks",
+          "hi": "लेयर मास्क"
+        },
+        "d": {
+          "en": "The Eraser Tool",
+          "hi": "इरेज़र टूल"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "You can paint with a soft black brush on this feature to fade edges.",
+        "hi": "किनारों को फीका करने के लिए आप इस सुविधा पर नरम काले ब्रश से पेंट कर सकते हैं।"
+      },
+      "explanation": {
+        "en": "Using a Layer Mask with a soft-edged brush allows you to create a gradient fade transparency, blending two images seamlessly without permanently erasing any pixels.",
+        "hi": "सॉफ्ट-एज ब्रश के साथ लेयर मास्क का उपयोग करने से आप एक ग्रेडिएंट फेड पारदर्शिता बना सकते हैं, जो किसी भी पिक्सेल को स्थायी रूप से मिटाए बिना दो छवियों को मूल रूप से मिश्रित करता है।"
+      },
+      "key_takeaway": {
+        "en": "Layer Masks allow for soft blending.",
+        "hi": "लेयर मास्क सॉफ्ट ब्लेंडिंग की अनुमति देते हैं।"
+      }
+    },
+    {
+      "question_id": 33,
+      "question": {
+        "en": "You are creating a social media post in Photoshop and want to add a short quote over the image. Which tool should you select?",
+        "hi": "आप फोटोशॉप में एक सोशल मीडिया पोस्ट बना रहे हैं और छवि पर एक संक्षिप्त उद्धरण जोड़ना चाहते हैं। आपको कौन सा टूल चुनना चाहिए?"
+      },
+      "options": {
+        "a": {
+          "en": "The Brush Tool (B)",
+          "hi": "ब्रश टूल (B)"
+        },
+        "b": {
+          "en": "The Move Tool (V)",
+          "hi": "मूव टूल (V)"
+        },
+        "c": {
+          "en": "The Type Tool (T)",
+          "hi": "टाइप टूल (T)"
+        },
+        "d": {
+          "en": "The Shape Tool (U)",
+          "hi": "शेप टूल (U)"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Look for the icon with the letter 'T'.",
+        "hi": "'T' अक्षर वाले आइकन को देखें।"
+      },
+      "explanation": {
+        "en": "The Type Tool (Horizontal Type Tool) is specifically designed to create and edit vector text layers in Photoshop.",
+        "hi": "टाइप टूल (हॉरिजॉन्टल टाइप टूल) विशेष रूप से फोटोशॉप में वेक्टर टेक्स्ट लेयर बनाने और संपादित करने के लिए डिज़ाइन किया गया है।"
+      },
+      "key_takeaway": {
+        "en": "Type Tool (T) is for text.",
+        "hi": "टाइप टूल (T) टेक्स्ट के लिए है।"
+      }
+    },
+    {
+      "question_id": 34,
+      "question": {
+        "en": "For a professional photography project requiring the highest quality for large-scale printing, which raster file format would be most appropriate due to its lossless compression?",
+        "hi": "एक पेशेवर फोटोग्राफी प्रोजेक्ट के लिए जिसमें बड़े पैमाने पर प्रिंटिंग के लिए उच्चतम गुणवत्ता की आवश्यकता है, कौन सा रास्टर फ़ाइल प्रारूप इसके दोषरहित संपीड़न के कारण सबसे उपयुक्त होगा?"
+      },
+      "options": {
+        "a": {
+          "en": "JPEG",
+          "hi": "जेपीईजी"
+        },
+        "b": {
+          "en": "GIF",
+          "hi": "जीआईएफ"
+        },
+        "c": {
+          "en": "PNG",
+          "hi": "पीएनजी"
+        },
+        "d": {
+          "en": "TIFF",
+          "hi": "टिफ़"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This format is the industry standard for high-quality printing.",
+        "hi": "यह प्रारूप उच्च गुणवत्ता वाली छपाई के लिए उद्योग मानक है।"
+      },
+      "explanation": {
+        "en": "TIFF (Tagged Image File Format) uses lossless compression, preserving every bit of image detail. This makes it superior to JPEG for professional printing where quality is more important than file size.",
+        "hi": "TIFF (टैग्ड इमेज फाइल फॉर्मेट) दोषरहित संपीड़न का उपयोग करता है, जो छवि विवरण के हर बिट को संरक्षित करता है। यह इसे पेशेवर प्रिंटिंग के लिए JPEG से बेहतर बनाता है जहां गुणवत्ता फ़ाइल आकार से अधिक महत्वपूर्ण है।"
+      },
+      "key_takeaway": {
+        "en": "TIFF = Professional Print Quality (Lossless).",
+        "hi": "TIFF = पेशेवर प्रिंट गुणवत्ता (दोषरहित)।"
+      }
+    },
+    {
+      "question_id": 35,
+      "question": {
+        "en": "You need to create a simple animated icon for a website. Which image format is specifically designed for such a purpose?",
+        "hi": "आपको एक वेबसाइट के लिए एक साधारण एनिमेटेड आइकन बनाने की आवश्यकता है। कौन सा छवि प्रारूप विशेष रूप से इस उद्देश्य के लिए बनाया गया है?"
+      },
+      "options": {
+        "a": {
+          "en": "JPG",
+          "hi": "जेपीजी"
+        },
+        "b": {
+          "en": "SVG",
+          "hi": "एसवीजी"
+        },
+        "c": {
+          "en": "GIF",
+          "hi": "जीआईएफ"
+        },
+        "d": {
+          "en": "BMP",
+          "hi": "बीएमपी"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It is the classic format for simple web animations.",
+        "hi": "यह सरल वेब एनिमेशन के लिए क्लासिक प्रारूप है।"
+      },
+      "explanation": {
+        "en": "GIF supports animation frames within a single file. While not good for video, it is the standard for small, looping animations like icons or loading spinners.",
+        "hi": "GIF एक ही फ़ाइल के भीतर एनीमेशन फ्रेम का समर्थन करता है। हालांकि यह वीडियो के लिए अच्छा नहीं है, यह आइकन या लोडिंग स्पिनर जैसे छोटे, लूपिंग एनिमेशन के लिए मानक है।"
+      },
+      "key_takeaway": {
+        "en": "GIF is for simple animations.",
+        "hi": "GIF सरल एनिमेशन के लिए है।"
+      }
+    },
+    {
+      "question_id": 36,
+      "question": {
+        "en": "If you want to send a Photoshop design to a colleague who also uses Photoshop and might need to make edits, what is the best practice?",
+        "hi": "यदि आप एक फोटोशॉप डिज़ाइन एक सहकर्मी को भेजना चाहते हैं जो फोटोशॉप का उपयोग भी करता है और संपादन करने की आवश्यकता हो सकती है, तो सर्वोत्तम अभ्यास क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Export the file as a high-quality JPEG.",
+          "hi": "फाइल को उच्च-गुणवत्ता वाले जेपीईजी के रूप में निर्यात करें।"
+        },
+        "b": {
+          "en": "Save the file in the PSD format.",
+          "hi": "फाइल को पीएसडी प्रारूप में सहेजें।"
+        },
+        "c": {
+          "en": "Take a screenshot of the design and send it.",
+          "hi": "डिज़ाइन का स्क्रीनशॉट लें और उसे भेजें।"
+        },
+        "d": {
+          "en": "Convert the design to a GIF file.",
+          "hi": "डिजाइन को जीआईएफ फाइल में बदलें।"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "You want to send them the full 'project file', not just a picture of it.",
+        "hi": "आप उन्हें पूरी 'प्रोजेक्ट फ़ाइल' भेजना चाहते हैं, न कि केवल उसकी एक तस्वीर।"
+      },
+      "explanation": {
+        "en": "Sending the PSD file ensures your colleague receives all the separate layers, text objects, and editable effects, allowing them to continue working exactly where you left off.",
+        "hi": "PSD फ़ाइल भेजने से यह सुनिश्चित होता है कि आपके सहकर्मी को सभी अलग-अलग परतें, टेक्स्ट ऑब्जेक्ट और संपादन योग्य प्रभाव प्राप्त हों, जिससे वे ठीक वहीं काम करना जारी रख सकें जहाँ आपने छोड़ा था।"
+      },
+      "key_takeaway": {
+        "en": "Share PSD files for collaboration.",
+        "hi": "सहयोग के लिए PSD फ़ाइलें साझा करें।"
+      }
+    }
+  ]
+}

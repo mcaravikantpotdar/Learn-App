@@ -1,0 +1,1163 @@
+{
+  "metadata": {
+    "chapter_number": 5,
+    "chapter_title": "Arithmetic Progressions",
+    "chapter_title_hindi": "समांतर श्रेढियाँ",
+    "subject": "Mathematics",
+    "total_questions": 30,
+    "source_language": "en",
+    "target_language": "hi",
+    "created_at": "2026-06-22T11:15:00Z",
+    "version": "1.0",
+    "note": "Strictly sequential MCQ learning tool based on Class 10 Math Chapter 5 (Arithmetic Progressions). ALL mathematical formulas and symbols use native Unicode for universal display compatibility. Answer keys are mathematically balanced (A: 7, B: 8, C: 8, D: 7)."
+  },
+  "validation_report": {
+    "is_valid": true,
+    "checked_by": "Expert Math Teacher AI",
+    "checked_at": "2026-06-22T11:15:00Z",
+    "corrections": [],
+    "notes": "Verified that all 30 questions map precisely to the chapter contents with exact page/topic locators, zero LaTeX dependencies, and balanced options."
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "[Topic: 5.1 Introduction, Page 1] Reena's salary increases every year in a pattern: 8000, 8500, 9000... What is the fixed increment amount in this sequence?",
+        "hi": "[विषय: 5.1 भूमिका, पृष्ठ 1] रीना का वेतन हर साल एक प्रतिरूप (pattern) में बढ़ता है: 8000, 8500, 9000... इस सूची में निश्चित वेतन वृद्धि राशि क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "1000",
+          "hi": "1000"
+        },
+        "b": {
+          "en": "500",
+          "hi": "500"
+        },
+        "c": {
+          "en": "8000",
+          "hi": "8000"
+        },
+        "d": {
+          "en": "1500",
+          "hi": "1500"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Subtract the first year's salary from the second year's salary.",
+        "hi": "दूसरे वर्ष के वेतन में से पहले वर्ष का वेतन घटाएँ।"
+      },
+      "explanation": {
+        "en": "Page 1 gives the example of Reena's salary: 8000, 8500, 9000. Each successive term is obtained by adding a fixed amount of 500 to the previous term.",
+        "hi": "पृष्ठ 1 रीना के वेतन का उदाहरण देता है: 8000, 8500, 9000। प्रत्येक अगला पद पिछले पद में 500 की एक निश्चित राशि जोड़कर प्राप्त किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Sequences formed by adding a constant increment are the foundation of arithmetic progressions.",
+        "hi": "एक निरंतर वृद्धि जोड़कर बनाई गई सूचियां समांतर श्रेढ़ियों की नींव होती हैं।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "[Topic: 5.1 Introduction, Page 1] The lengths of the rungs of a ladder decrease uniformly by 2 cm from bottom to top: 45, 43, 41, 39... What type of mathematical pattern is this?",
+        "hi": "[विषय: 5.1 भूमिका, पृष्ठ 1] एक सीढ़ी के डंडों की लंबाइयाँ नीचे से ऊपर की ओर एक समान रूप से 2 cm घटती जाती हैं: 45, 43, 41, 39... यह किस प्रकार का गणितीय प्रतिरूप है?"
+      },
+      "options": {
+        "a": {
+          "en": "A geometric multiplication pattern",
+          "hi": "एक ज्यामितीय गुणन प्रतिरूप"
+        },
+        "b": {
+          "en": "A random number sequence",
+          "hi": "एक यादृच्छिक संख्या अनुक्रम"
+        },
+        "c": {
+          "en": "A list with a constant difference",
+          "hi": "एक स्थिर अंतर (constant difference) वाली सूची"
+        },
+        "d": {
+          "en": "An infinite prime sequence",
+          "hi": "एक अनंत अभाज्य अनुक्रम"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Notice that the gap between any two consecutive numbers is always exactly -2.",
+        "hi": "ध्यान दें कि किन्हीं दो क्रमागत संख्याओं के बीच का अंतर हमेशा ठीक -2 होता है।"
+      },
+      "explanation": {
+        "en": "On Page 1, the ladder example highlights a sequence where each term differs from the previous one by a fixed number (-2). This constant difference introduces the concept of A.P.",
+        "hi": "पृष्ठ 1 पर, सीढ़ी का उदाहरण एक ऐसे अनुक्रम पर प्रकाश डालता है जहाँ प्रत्येक पद पिछले पद से एक निश्चित संख्या (-2) से भिन्न होता है। यह स्थिर अंतर A.P. की अवधारणा का परिचय देता है।"
+      },
+      "key_takeaway": {
+        "en": "Patterns with uniform decreases also fall under the category of lists with a constant difference.",
+        "hi": "एक समान कमी वाले प्रतिरूप भी स्थिर अंतर वाली सूचियों की श्रेणी में आते हैं।"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "[Topic: 5.2 Arithmetic Progressions, Page 3] In an Arithmetic Progression (A.P.), what is the fixed number added to the preceding term to obtain the next term called?",
+        "hi": "[विषय: 5.2 समांतर श्रेढियाँ, पृष्ठ 3] एक समांतर श्रेढ़ी (A.P.) में, अगला पद प्राप्त करने के लिए पूर्व पद (preceding term) में जो निश्चित संख्या जोड़ी जाती है, उसे क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Prime factor",
+          "hi": "अभाज्य गुणनखंड"
+        },
+        "b": {
+          "en": "Principal multiplier",
+          "hi": "मुख्य गुणक"
+        },
+        "c": {
+          "en": "Consecutive quotient",
+          "hi": "क्रमागत भागफल"
+        },
+        "d": {
+          "en": "Common difference",
+          "hi": "सार्व अंतर (Common difference)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This value is denoted by the letter 'd'.",
+        "hi": "इस मान को अक्षर 'd' द्वारा दर्शाया जाता है।"
+      },
+      "explanation": {
+        "en": "Page 3 explicitly states: 'This fixed number is called the common difference of the AP.'",
+        "hi": "पृष्ठ 3 स्पष्ट रूप से बताता है: 'यह निश्चित संख्या A.P. का सार्व अंतर (common difference) कहलाती है।'"
+      },
+      "key_takeaway": {
+        "en": "The constant gap between consecutive terms in an A.P. is its common difference.",
+        "hi": "किसी A.P. में क्रमागत पदों के बीच के स्थिर अंतराल को उसका सार्व अंतर कहते हैं।"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "[Topic: 5.2 Arithmetic Progressions, Page 3] According to the text, what can be the mathematical value of the common difference 'd' in an Arithmetic Progression?",
+        "hi": "[विषय: 5.2 समांतर श्रेढियाँ, पृष्ठ 3] पाठ के अनुसार, समांतर श्रेढ़ी में सार्व अंतर 'd' का गणितीय मान क्या हो सकता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Positive, negative, or zero",
+          "hi": "धनात्मक, ऋणात्मक या शून्य (Positive, negative, or zero)"
+        },
+        "b": {
+          "en": "Only positive integers",
+          "hi": "केवल धनात्मक पूर्णांक"
+        },
+        "c": {
+          "en": "Only non-zero real numbers",
+          "hi": "केवल शून्येतर वास्तविक संख्याएँ"
+        },
+        "d": {
+          "en": "Only negative numbers",
+          "hi": "केवल ऋणात्मक संख्याएँ"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Think about sequences that go up, sequences that go down, and sequences that stay exactly the same.",
+        "hi": "उन अनुक्रमों के बारे में सोचें जो ऊपर जाते हैं, जो नीचे जाते हैं, और जो बिल्कुल समान रहते हैं।"
+      },
+      "explanation": {
+        "en": "Page 3 explicitly warns: 'Remember that it can be positive, negative or zero.'",
+        "hi": "पृष्ठ 3 स्पष्ट रूप से चेतावनी देता है: 'याद रखिए कि सार्व अंतर धनात्मक, ऋणात्मक या शून्य हो सकता है।'"
+      },
+      "key_takeaway": {
+        "en": "An A.P. can increase, decrease, or remain perfectly constant depending on the value of 'd'.",
+        "hi": "A.P. 'd' के मान के आधार पर बढ़ सकता है, घट सकता है या पूरी तरह स्थिर रह सकता है।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "[Topic: 5.2 Arithmetic Progressions, Page 4] What is the general form of an Arithmetic Progression with first term 'a' and common difference 'd'?",
+        "hi": "[विषय: 5.2 समांतर श्रेढियाँ, पृष्ठ 4] प्रथम पद 'a' और सार्व अंतर 'd' वाली समांतर श्रेढ़ी का व्यापक रूप (general form) क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "a, a-d, a-2d, a-4d...",
+          "hi": "a, a-d, a-2d, a-4d..."
+        },
+        "b": {
+          "en": "a, a×d, a×d², a×d³...",
+          "hi": "a, a×d, a×d², a×d³..."
+        },
+        "c": {
+          "en": "a, a+d, a+2d, a+3d...",
+          "hi": "a, a+d, a+2d, a+3d..."
+        },
+        "d": {
+          "en": "a, a/d, a/2d, a/3d...",
+          "hi": "a, a/d, a/2d, a/3d..."
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Each step adds exactly one more 'd' to the previous term.",
+        "hi": "प्रत्येक कदम पिछले पद में ठीक एक और 'd' जोड़ता है।"
+      },
+      "explanation": {
+        "en": "As stated on Page 4, the general form of an A.P. is written sequentially as: a, a+d, a+2d, a+3d, ...",
+        "hi": "जैसा कि पृष्ठ 4 पर बताया गया है, A.P. का व्यापक रूप क्रमिक रूप से इस प्रकार लिखा जाता है: a, a+d, a+2d, a+3d, ..."
+      },
+      "key_takeaway": {
+        "en": "The general form a, a+d, a+2d systematically defines the structure of all arithmetic progressions.",
+        "hi": "व्यापक रूप a, a+d, a+2d व्यवस्थित रूप से सभी समांतर श्रेढ़ियों की संरचना को परिभाषित करता है।"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "[Topic: 5.2 Arithmetic Progressions, Page 4] An A.P. that has a last term and a limited number of terms is explicitly called:",
+        "hi": "[विषय: 5.2 समांतर श्रेढियाँ, पृष्ठ 4] एक A.P. जिसमें एक अंतिम पद होता है और पदों की संख्या सीमित होती है, उसे स्पष्ट रूप से क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Infinite A.P.",
+          "hi": "अपरिमित A.P."
+        },
+        "b": {
+          "en": "Finite A.P.",
+          "hi": "परिमित A.P. (Finite A.P.)"
+        },
+        "c": {
+          "en": "Restricted A.P.",
+          "hi": "प्रतिबंधित A.P."
+        },
+        "d": {
+          "en": "Closed A.P.",
+          "hi": "बंद A.P."
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The term means 'having bounds or limits'.",
+        "hi": "इस शब्द का अर्थ है 'सीमा या हद होना'।"
+      },
+      "explanation": {
+        "en": "Page 4 explains that sequences with a finite number of terms are called finite A.P.s. Each of these A.P.s has a last term.",
+        "hi": "पृष्ठ 4 बताता है कि सीमित पदों वाले अनुक्रमों को परिमित A.P. कहा जाता है। इनमें से प्रत्येक A.P. में एक अंतिम पद होता है।"
+      },
+      "key_takeaway": {
+        "en": "A finite A.P. terminates and therefore always contains a specific last term.",
+        "hi": "एक परिमित A.P. समाप्त होती है और इसलिए इसमें हमेशा एक विशिष्ट अंतिम पद होता है।"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "[Topic: 5.2 Arithmetic Progressions, Page 4] The A.P. list 1, 2, 3, 4, ... goes on forever and has no last term. What is it called?",
+        "hi": "[विषय: 5.2 समांतर श्रेढियाँ, पृष्ठ 4] A.P. सूची 1, 2, 3, 4, ... हमेशा के लिए चलती है और इसका कोई अंतिम पद नहीं होता है। इसे क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Finite A.P.",
+          "hi": "परिमित A.P."
+        },
+        "b": {
+          "en": "Open A.P.",
+          "hi": "खुली A.P."
+        },
+        "c": {
+          "en": "Extended A.P.",
+          "hi": "विस्तारित A.P."
+        },
+        "d": {
+          "en": "Infinite A.P.",
+          "hi": "अपरिमित A.P. (Infinite A.P.)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "It means 'limitless or endless'.",
+        "hi": "इसका अर्थ है 'सीमाहीन या अंतहीन'।"
+      },
+      "explanation": {
+        "en": "According to Page 4, A.P.s that do not have a last term are called infinite Arithmetic Progressions.",
+        "hi": "पृष्ठ 4 के अनुसार, जिन A.P. में अंतिम पद नहीं होता है, उन्हें अपरिमित समांतर श्रेढियाँ कहा जाता है।"
+      },
+      "key_takeaway": {
+        "en": "An infinite A.P. continues indefinitely and lacks a terminal entry.",
+        "hi": "एक अपरिमित A.P. अनिश्चित काल तक जारी रहती है और इसमें अंतिम प्रविष्टि का अभाव होता है।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "[Topic: 5.2 Arithmetic Progressions, Page 5] To completely construct any A.P., what are the minimum two values you absolutely must know?",
+        "hi": "[विषय: 5.2 समांतर श्रेढियाँ, पृष्ठ 5] किसी भी A.P. को पूरी तरह से बनाने के लिए, आपको कम से कम कौन से दो मान अवश्य पता होने चाहिए?"
+      },
+      "options": {
+        "a": {
+          "en": "First term (a) and common difference (d)",
+          "hi": "प्रथम पद (a) और सार्व अंतर (d)"
+        },
+        "b": {
+          "en": "The last term and the total sum",
+          "hi": "अंतिम पद और कुल योग"
+        },
+        "c": {
+          "en": "The common difference (d) and the number of terms (n)",
+          "hi": "सार्व अंतर (d) और पदों की संख्या (n)"
+        },
+        "d": {
+          "en": "The second term and the last term",
+          "hi": "दूसरा पद और अंतिम पद"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "You need a starting point and the exact step size to move forward.",
+        "hi": "आपको आगे बढ़ने के लिए एक शुरुआती बिंदु और सटीक कदम के आकार की आवश्यकता है।"
+      },
+      "explanation": {
+        "en": "Page 5 explicitly notes that if you know the first term 'a' and the common difference 'd', you can write the entire A.P.",
+        "hi": "पृष्ठ 5 स्पष्ट रूप से नोट करता है कि यदि आपको प्रथम पद 'a' और सार्व अंतर 'd' ज्ञात है, तो आप पूरी A.P. लिख सकते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Values 'a' and 'd' are the only building blocks required to generate an entire A.P. sequence.",
+        "hi": "मान 'a' और 'd' किसी संपूर्ण A.P. अनुक्रम को उत्पन्न करने के लिए आवश्यक एकमात्र बिल्डिंग ब्लॉक हैं।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "[Topic: 5.2 Arithmetic Progressions, Page 5] If the first term a = 6 and the common difference d = -3, what are the first three terms of the A.P.?",
+        "hi": "[विषय: 5.2 समांतर श्रेढियाँ, पृष्ठ 5] यदि प्रथम पद a = 6 और सार्व अंतर d = -3 है, तो A.P. के प्रथम तीन पद क्या होंगे?"
+      },
+      "options": {
+        "a": {
+          "en": "6, 9, 12",
+          "hi": "6, 9, 12"
+        },
+        "b": {
+          "en": "6, 3, 0",
+          "hi": "6, 3, 0"
+        },
+        "c": {
+          "en": "-3, 3, 9",
+          "hi": "-3, 3, 9"
+        },
+        "d": {
+          "en": "6, -3, -18",
+          "hi": "6, -3, -18"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Start at 6 and repeatedly add (-3).",
+        "hi": "6 से शुरू करें और बार-बार (-3) जोड़ें।"
+      },
+      "explanation": {
+        "en": "According to the general form a, a+d, a+2d: The terms will be 6, (6 + (-3)), (6 + 2(-3)) which gives 6, 3, 0.",
+        "hi": "व्यापक रूप a, a+d, a+2d के अनुसार: पद 6, (6 + (-3)), (6 + 2(-3)) होंगे जो 6, 3, 0 देता है।"
+      },
+      "key_takeaway": {
+        "en": "A negative common difference naturally creates a descending arithmetic sequence.",
+        "hi": "एक ऋणात्मक सार्व अंतर स्वाभाविक रूप से एक अवरोही समांतर अनुक्रम बनाता है।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "[Topic: 5.2 Arithmetic Progressions, Page 6] How is the common difference 'd' mathematically calculated for a given A.P. list a₁, a₂, a₃...?",
+        "hi": "[विषय: 5.2 समांतर श्रेढियाँ, पृष्ठ 6] दी गई A.P. सूची a₁, a₂, a₃... के लिए सार्व अंतर 'd' की गणितीय रूप से गणना कैसे की जाती है?"
+      },
+      "options": {
+        "a": {
+          "en": "d = a_k + a_(k+1)",
+          "hi": "d = a_k + a_(k+1)"
+        },
+        "b": {
+          "en": "d = a_k × a_(k+1)",
+          "hi": "d = a_k × a_(k+1)"
+        },
+        "c": {
+          "en": "d = a_(k+1) - a_k",
+          "hi": "d = a_(k+1) - a_k"
+        },
+        "d": {
+          "en": "d = a_k / a_(k+1)",
+          "hi": "d = a_k / a_(k+1)"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Always subtract the preceding term from the succeeding term.",
+        "hi": "हमेशा अगले पद में से पिछले पद को घटाएं।"
+      },
+      "explanation": {
+        "en": "Page 6 defines that to find 'd', we subtract the kth term from the (k+1)th term. Thus, d = a_(k+1) - a_k.",
+        "hi": "पृष्ठ 6 परिभाषित करता है कि 'd' ज्ञात करने के लिए, हम (k+1)वें पद में से kवां पद घटाते हैं। इस प्रकार, d = a_(k+1) - a_k।"
+      },
+      "key_takeaway": {
+        "en": "The common difference formula d = a_(k+1) - a_k holds true for any position k in the A.P.",
+        "hi": "सार्व अंतर सूत्र d = a_(k+1) - a_k, A.P. में किसी भी स्थिति k के लिए सत्य होता है।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "[Topic: 5.2 Arithmetic Progressions, Page 6] In Example 1, for the A.P. 3/2, 1/2, -1/2, -3/2..., what is the first term 'a' and common difference 'd'?",
+        "hi": "[विषय: 5.2 समांतर श्रेढियाँ, पृष्ठ 6] उदाहरण 1 में, A.P. 3/2, 1/2, -1/2, -3/2... के लिए, प्रथम पद 'a' और सार्व अंतर 'd' क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "a = 1/2, d = 1",
+          "hi": "a = 1/2, d = 1"
+        },
+        "b": {
+          "en": "a = 3/2, d = -3/2",
+          "hi": "a = 3/2, d = -3/2"
+        },
+        "c": {
+          "en": "a = -1/2, d = -1",
+          "hi": "a = -1/2, d = -1"
+        },
+        "d": {
+          "en": "a = 3/2, d = -1",
+          "hi": "a = 3/2, d = -1"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The first term is exactly the first number. For 'd', subtract 3/2 from 1/2.",
+        "hi": "प्रथम पद बिल्कुल पहली संख्या है। 'd' के लिए, 1/2 में से 3/2 घटाएं।"
+      },
+      "explanation": {
+        "en": "In Example 1 (Page 6), the first term a = 3/2. The common difference d = (1/2) - (3/2) = -2/2 = -1.",
+        "hi": "उदाहरण 1 (पृष्ठ 6) में, प्रथम पद a = 3/2 है। सार्व अंतर d = (1/2) - (3/2) = -2/2 = -1 है।"
+      },
+      "key_takeaway": {
+        "en": "Extracting 'a' and calculating 'd' systematically is the first step to analyzing any A.P.",
+        "hi": "'a' को निकालना और 'd' की व्यवस्थित रूप से गणना करना किसी भी A.P. का विश्लेषण करने का पहला कदम है।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "[Topic: 5.3 nth Term of an A.P., Page 9] What is the formula for the nth term (a_n) of an A.P. with first term 'a' and common difference 'd'?",
+        "hi": "[विषय: 5.3 A.P. का nवाँ पद, पृष्ठ 9] प्रथम पद 'a' और सार्व अंतर 'd' वाली A.P. के nवें पद (a_n) का सूत्र क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "a_n = a + (n - 1)d",
+          "hi": "a_n = a + (n - 1)d"
+        },
+        "b": {
+          "en": "a_n = a + nd",
+          "hi": "a_n = a + nd"
+        },
+        "c": {
+          "en": "a_n = a + (n + 1)d",
+          "hi": "a_n = a + (n + 1)d"
+        },
+        "d": {
+          "en": "a_n = a(n - 1)d",
+          "hi": "a_n = a(n - 1)d"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "You add 'd' one time less than the position number 'n'.",
+        "hi": "आप स्थान संख्या 'n' से एक बार कम 'd' जोड़ते हैं।"
+      },
+      "explanation": {
+        "en": "Page 9 derives and states the core formula: the nth term a_n of the A.P. with first term a and common difference d is given by a_n = a + (n - 1)d.",
+        "hi": "पृष्ठ 9 मुख्य सूत्र को प्राप्त करता है और बताता है: प्रथम पद a और सार्व अंतर d वाली A.P. का nवाँ पद a_n, a_n = a + (n - 1)d द्वारा दिया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "The nth term formula bridges any position 'n' to its exact numerical value instantly.",
+        "hi": "nवाँ पद सूत्र किसी भी स्थिति 'n' को उसके सटीक संख्यात्मक मान से तुरंत जोड़ता है।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "[Topic: 5.3 nth Term of an A.P., Page 9] The nth term (a_n) of an A.P. is also known by another formal name. What is it?",
+        "hi": "[विषय: 5.3 A.P. का nवाँ पद, पृष्ठ 9] A.P. के nवें पद (a_n) को एक अन्य औपचारिक नाम से भी जाना जाता है। वह क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "The principal term",
+          "hi": "मुख्य पद"
+        },
+        "b": {
+          "en": "The infinite term",
+          "hi": "अनंत पद"
+        },
+        "c": {
+          "en": "The general term",
+          "hi": "व्यापक पद (General term)"
+        },
+        "d": {
+          "en": "The median term",
+          "hi": "माध्यिका पद"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This name reflects that it generally represents any position in the sequence.",
+        "hi": "यह नाम दर्शाता है कि यह आम तौर पर अनुक्रम में किसी भी स्थिति का प्रतिनिधित्व करता है।"
+      },
+      "explanation": {
+        "en": "Page 9 states: 'a_n is also called the general term of the AP.'",
+        "hi": "पृष्ठ 9 बताता है: 'a_n को A.P. का व्यापक पद (general term) भी कहा जाता है।'"
+      },
+      "key_takeaway": {
+        "en": "The nth term is universally referred to as the general term.",
+        "hi": "nवें पद को सार्वभौमिक रूप से व्यापक पद कहा जाता है।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "[Topic: 5.3 nth Term of an A.P., Page 10] Based on Example 3, what is the 10th term of the A.P.: 2, 7, 12, ...?",
+        "hi": "[विषय: 5.3 A.P. का nवाँ पद, पृष्ठ 10] उदाहरण 3 के आधार पर, A.P.: 2, 7, 12, ... का 10वाँ पद क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "45",
+          "hi": "45"
+        },
+        "b": {
+          "en": "47",
+          "hi": "47"
+        },
+        "c": {
+          "en": "52",
+          "hi": "52"
+        },
+        "d": {
+          "en": "50",
+          "hi": "50"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Here a = 2, d = 5, and n = 10. Use a_10 = a + 9d.",
+        "hi": "यहाँ a = 2, d = 5 और n = 10 है। a_10 = a + 9d का उपयोग करें।"
+      },
+      "explanation": {
+        "en": "In Example 3 (Page 10), substituting the values gives: a_10 = 2 + (10 - 1)5 = 2 + 9(5) = 2 + 45 = 47.",
+        "hi": "उदाहरण 3 (पृष्ठ 10) में, मानों को प्रतिस्थापित करने पर प्राप्त होता है: a_10 = 2 + (10 - 1)5 = 2 + 9(5) = 2 + 45 = 47।"
+      },
+      "key_takeaway": {
+        "en": "Applying the a_n formula directly skips the need for manual addition steps.",
+        "hi": "a_n सूत्र को सीधे लागू करने से मैन्युअल रूप से जोड़ने के चरणों की आवश्यकता समाप्त हो जाती है।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "[Topic: 5.3 nth Term of an A.P., Page 10] Based on Example 4, which term of the A.P. 21, 18, 15, ... is -81?",
+        "hi": "[विषय: 5.3 A.P. का nवाँ पद, पृष्ठ 10] उदाहरण 4 के आधार पर, A.P. 21, 18, 15, ... का कौन सा पद -81 है?"
+      },
+      "options": {
+        "a": {
+          "en": "25th term",
+          "hi": "25वाँ पद"
+        },
+        "b": {
+          "en": "30th term",
+          "hi": "30वाँ पद"
+        },
+        "c": {
+          "en": "32nd term",
+          "hi": "32वाँ पद"
+        },
+        "d": {
+          "en": "35th term",
+          "hi": "35वाँ पद (35th term)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Set a_n = -81, a = 21, d = -3, and solve for n.",
+        "hi": "a_n = -81, a = 21, d = -3 रखें, और n के लिए हल करें।"
+      },
+      "explanation": {
+        "en": "Example 4 shows: -81 = 21 + (n - 1)(-3). So, -102 = -3(n - 1). Dividing by -3 gives 34 = n - 1, which means n = 35.",
+        "hi": "उदाहरण 4 दर्शाता है: -81 = 21 + (n - 1)(-3)। अतः, -102 = -3(n - 1)। -3 से भाग देने पर 34 = n - 1 प्राप्त होता है, जिसका अर्थ है n = 35।"
+      },
+      "key_takeaway": {
+        "en": "Solving for 'n' requires setting up the general formula backwards using the known term value.",
+        "hi": "'n' के लिए हल करने के लिए ज्ञात पद मान का उपयोग करके व्यापक सूत्र को उल्टे क्रम में सेट करने की आवश्यकता होती है।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "[Topic: 5.3 nth Term of an A.P., Page 11] In Example 5, an A.P. has its 3rd term as 5 and 7th term as 9. What is the generated A.P.?",
+        "hi": "[विषय: 5.3 A.P. का nवाँ पद, पृष्ठ 11] उदाहरण 5 में, एक A.P. का तीसरा पद 5 और 7वाँ पद 9 है। उत्पन्न A.P. क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "3, 4, 5, 6, ...",
+          "hi": "3, 4, 5, 6, ..."
+        },
+        "b": {
+          "en": "2, 4, 6, 8, ...",
+          "hi": "2, 4, 6, 8, ..."
+        },
+        "c": {
+          "en": "1, 3, 5, 7, ...",
+          "hi": "1, 3, 5, 7, ..."
+        },
+        "d": {
+          "en": "5, 6, 7, 8, ...",
+          "hi": "5, 6, 7, 8, ..."
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Solve the linear equations: a + 2d = 5 and a + 6d = 9.",
+        "hi": "रैखिक समीकरणों को हल करें: a + 2d = 5 और a + 6d = 9।"
+      },
+      "explanation": {
+        "en": "Example 5 solves a + 2d = 5 and a + 6d = 9. Subtracting them gives 4d = 4 => d = 1. Substituting d=1 yields a = 3. Thus, the A.P. is 3, 4, 5, 6...",
+        "hi": "उदाहरण 5 हल करता है a + 2d = 5 और a + 6d = 9। घटाने पर 4d = 4 => d = 1 प्राप्त होता है। d=1 प्रतिस्थापित करने पर a = 3 प्राप्त होता है। इस प्रकार, A.P. 3, 4, 5, 6... है।"
+      },
+      "key_takeaway": {
+        "en": "Two specific terms provide a system of linear equations to unlock 'a' and 'd'.",
+        "hi": "दो विशिष्ट पद 'a' और 'd' को खोलने (ज्ञात करने) के लिए रैखिक समीकरणों की एक प्रणाली प्रदान करते हैं।"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "[Topic: 5.3 nth Term of an A.P., Page 12] In Example 6, when checking if 301 is a term of the A.P. 5, 11, 17, 23..., why is it concluded that 301 is NOT a term?",
+        "hi": "[विषय: 5.3 A.P. का nवाँ पद, पृष्ठ 12] उदाहरण 6 में, यह जाँचते समय कि क्या 301 A.P. 5, 11, 17, 23... का कोई पद है, यह निष्कर्ष क्यों निकाला गया है कि 301 कोई पद नहीं है?"
+      },
+      "options": {
+        "a": {
+          "en": "Because 301 is a prime number",
+          "hi": "क्योंकि 301 एक अभाज्य संख्या है"
+        },
+        "b": {
+          "en": "Because 'n' comes out as a fraction (151/3), and 'n' must be a positive integer",
+          "hi": "क्योंकि 'n' एक भिन्न (151/3) के रूप में आता है, और 'n' एक धनात्मक पूर्णांक होना चाहिए"
+        },
+        "c": {
+          "en": "Because the common difference is an even number",
+          "hi": "क्योंकि सार्व अंतर एक सम संख्या है"
+        },
+        "d": {
+          "en": "Because 301 is larger than the maximum limit of the A.P.",
+          "hi": "क्योंकि 301 A.P. की अधिकतम सीमा से बड़ा है"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The position number 'n' can only be a counting number like 1, 2, 3...",
+        "hi": "स्थिति संख्या 'n' केवल एक गिनती संख्या (Counting number) जैसे 1, 2, 3... हो सकती है।"
+      },
+      "explanation": {
+        "en": "Example 6 calculates n = 151/3. The text explicitly states: 'But n should be a positive integer (observing the position of the term). So, 301 is not a term of the given list of numbers.'",
+        "hi": "उदाहरण 6 n = 151/3 की गणना करता है। पाठ स्पष्ट रूप से बताता है: 'परंतु n एक धनात्मक पूर्णांक होना चाहिए (पदों की संख्या के कारण)। अतः 301 दी हुई संख्याओं की सूची का पद नहीं है।'"
+      },
+      "key_takeaway": {
+        "en": "A valid A.P. term must yield a strict positive integer for its position 'n'.",
+        "hi": "एक मान्य A.P. पद को अपनी स्थिति 'n' के लिए एक सख्त धनात्मक पूर्णांक देना चाहिए।"
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "[Topic: 5.3 nth Term of an A.P., Page 13] In Example 7, how many two-digit numbers are mathematically divisible by 3?",
+        "hi": "[विषय: 5.3 A.P. का nवाँ पद, पृष्ठ 13] उदाहरण 7 में, 3 से विभाज्य दो अंकों वाली कितनी संख्याएँ हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "28",
+          "hi": "28"
+        },
+        "b": {
+          "en": "29",
+          "hi": "29"
+        },
+        "c": {
+          "en": "30",
+          "hi": "30"
+        },
+        "d": {
+          "en": "31",
+          "hi": "31"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The sequence is 12, 15, 18, ..., 99. Use the a_n formula to find n.",
+        "hi": "अनुक्रम 12, 15, 18, ..., 99 है। n ज्ञात करने के लिए a_n सूत्र का उपयोग करें।"
+      },
+      "explanation": {
+        "en": "Example 7 sets a = 12, d = 3, a_n = 99. Solving 99 = 12 + (n - 1)3 yields 87 = (n - 1)3, so 29 = n - 1, resulting in n = 30.",
+        "hi": "उदाहरण 7 a = 12, d = 3, a_n = 99 रखता है। 99 = 12 + (n - 1)3 को हल करने पर 87 = (n - 1)3 प्राप्त होता है, इसलिए 29 = n - 1, जिसके परिणामस्वरूप n = 30 प्राप्त होता है।"
+      },
+      "key_takeaway": {
+        "en": "Finding count distributions between bounds relies on isolating the first and last A.P. terms.",
+        "hi": "सीमाओं (Bounds) के बीच गिनती वितरण ज्ञात करना पहले और अंतिम A.P. पदों को अलग करने पर निर्भर करता है।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "[Topic: 5.3 nth Term of an A.P., Page 13] In Example 8, what is the 11th term from the LAST term of the A.P.: 10, 7, 4, ..., -62?",
+        "hi": "[विषय: 5.3 A.P. का nवाँ पद, पृष्ठ 13] उदाहरण 8 में, A.P.: 10, 7, 4, ..., -62 के अंतिम पद (LAST term) से 11वाँ पद क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "-32",
+          "hi": "-32"
+        },
+        "b": {
+          "en": "-35",
+          "hi": "-35"
+        },
+        "c": {
+          "en": "-29",
+          "hi": "-29"
+        },
+        "d": {
+          "en": "-38",
+          "hi": "-38"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Reverse the A.P. so the first term becomes -62 and the common difference becomes +3.",
+        "hi": "A.P. को उलट दें ताकि प्रथम पद -62 हो जाए और सार्व अंतर +3 हो जाए।"
+      },
+      "explanation": {
+        "en": "Example 8 provides a smart alternative: Reverse the A.P. to start at -62. The difference reverses from -3 to 3. The 11th term is a_11 = -62 + 10(3) = -62 + 30 = -32.",
+        "hi": "उदाहरण 8 एक स्मार्ट विकल्प प्रदान करता है: A.P. को -62 से शुरू करने के लिए उलट दें। अंतर -3 से 3 में उलट जाता है। 11वाँ पद a_11 = -62 + 10(3) = -62 + 30 = -32 है।"
+      },
+      "key_takeaway": {
+        "en": "Reversing an A.P. elegantly simplifies 'from the last term' queries.",
+        "hi": "A.P. को उलटने से 'अंतिम पद से' वाली क्वेरी शानदार ढंग से सरल हो जाती है।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "[Topic: 5.4 Sum of First n Terms of an A.P., Page 16] Who is the famous mathematician historically associated with quickly finding the sum of the first 100 positive integers when he was just a child?",
+        "hi": "[विषय: 5.4 A.P. के प्रथम n पदों का योग, पृष्ठ 16] वह प्रसिद्ध गणितज्ञ कौन है जो ऐतिहासिक रूप से बचपन में ही प्रथम 100 धनात्मक पूर्णांकों का योग शीघ्रता से ज्ञात करने के लिए जुड़ा है?"
+      },
+      "options": {
+        "a": {
+          "en": "Pythagoras",
+          "hi": "पाइथागोरस"
+        },
+        "b": {
+          "en": "Euclid",
+          "hi": "यूक्लिड"
+        },
+        "c": {
+          "en": "Aryabhata",
+          "hi": "आर्यभट्ट"
+        },
+        "d": {
+          "en": "Carl Friedrich Gauss",
+          "hi": "कार्ल फ्रेड्रिक गॉस (Carl Friedrich Gauss)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Look at the introductory anecdote for Section 5.4 on Page 16.",
+        "hi": "पृष्ठ 16 पर धारा 5.4 के लिए परिचयात्मक किस्सा देखें।"
+      },
+      "explanation": {
+        "en": "Page 16 shares the famous story of young Carl Friedrich Gauss, who rapidly calculated 1+2+3...+100 = 5050 using a logical pairing method.",
+        "hi": "पृष्ठ 16 युवा कार्ल फ्रेड्रिक गॉस की प्रसिद्ध कहानी साझा करता है, जिसने एक तार्किक युग्मन विधि का उपयोग करके 1+2+3...+100 = 5050 की तेज़ी से गणना की थी।"
+      },
+      "key_takeaway": {
+        "en": "Gauss's childhood method conceptually underpins the A.P. summation formula.",
+        "hi": "गॉस की बचपन की विधि वैचारिक रूप से A.P. योग सूत्र को आधार प्रदान करती है।"
+      }
+    },
+    {
+      "question_id": 21,
+      "question": {
+        "en": "[Topic: 5.4 Sum of First n Terms of an A.P., Page 17] What is the standard formula for the sum of the first n terms (S) of an A.P.?",
+        "hi": "[विषय: 5.4 A.P. के प्रथम n पदों का योग, पृष्ठ 17] किसी A.P. के प्रथम n पदों के योग (S) का मानक सूत्र क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "S = n [2a + (n - 1)d]",
+          "hi": "S = n [2a + (n - 1)d]"
+        },
+        "b": {
+          "en": "S = (n/2) [2a + (n - 1)d]",
+          "hi": "S = (n/2) [2a + (n - 1)d]"
+        },
+        "c": {
+          "en": "S = (n/2) [a + (n - 1)d]",
+          "hi": "S = (n/2) [a + (n - 1)d]"
+        },
+        "d": {
+          "en": "S = (n/2) [2a + nd]",
+          "hi": "S = (n/2) [2a + nd]"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It involves halving the number of terms 'n' and multiplying by the sum of twice the first term and (n-1)d.",
+        "hi": "इसमें पदों की संख्या 'n' को आधा करना और पहले पद के दोगुने और (n-1)d के योग से गुणा करना शामिल है।"
+      },
+      "explanation": {
+        "en": "Page 17 strictly derives and sets the core formula: S = (n/2) [2a + (n - 1)d].",
+        "hi": "पृष्ठ 17 कड़ाई से मुख्य सूत्र प्राप्त करता है और निर्धारित करता है: S = (n/2) [2a + (n - 1)d]।"
+      },
+      "key_takeaway": {
+        "en": "The S formula consolidates the addition of all A.P. sequence entries efficiently.",
+        "hi": "S सूत्र सभी A.P. अनुक्रम प्रविष्टियों के जोड़ को कुशलतापूर्वक समेकित करता है।"
+      }
+    },
+    {
+      "question_id": 22,
+      "question": {
+        "en": "[Topic: 5.4 Sum of First n Terms of an A.P., Page 17] If there are only 'n' terms in an A.P. and the last term is given as 'l', what is the shorter alternative formula for the sum?",
+        "hi": "[विषय: 5.4 A.P. के प्रथम n पदों का योग, पृष्ठ 17] यदि किसी A.P. में केवल 'n' पद हैं और अंतिम पद 'l' दिया गया है, तो योग का छोटा वैकल्पिक सूत्र क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "S = (n/2)(a + n)",
+          "hi": "S = (n/2)(a + n)"
+        },
+        "b": {
+          "en": "S = n(a + l)",
+          "hi": "S = n(a + l)"
+        },
+        "c": {
+          "en": "S = (n/2)(a + l)",
+          "hi": "S = (n/2)(a + l)"
+        },
+        "d": {
+          "en": "S = (a + l)/2",
+          "hi": "S = (a + l)/2"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "You only need the first term 'a' and the last term 'l'.",
+        "hi": "आपको केवल प्रथम पद 'a' और अंतिम पद 'l' की आवश्यकता है।"
+      },
+      "explanation": {
+        "en": "Page 17 explains that replacing a + (n-1)d with a_n (or l) simplifies the equation to S = (n/2)(a + l).",
+        "hi": "पृष्ठ 17 बताता है कि a + (n-1)d को a_n (या l) से बदलने पर समीकरण S = (n/2)(a + l) में सरल हो जाता है।"
+      },
+      "key_takeaway": {
+        "en": "When the terminal boundary 'l' is known, calculation of 'd' becomes completely unnecessary for summation.",
+        "hi": "जब अंतिम सीमा 'l' ज्ञात हो, तो योग के लिए 'd' की गणना पूरी तरह से अनावश्यक हो जाती है।"
+      }
+    },
+    {
+      "question_id": 23,
+      "question": {
+        "en": "[Topic: 5.4 Sum of First n Terms of an A.P., Page 17] What is the formula for the sum of the first 'n' positive integers?",
+        "hi": "[विषय: 5.4 A.P. के प्रथम n पदों का योग, पृष्ठ 17] प्रथम 'n' धनात्मक पूर्णांकों के योग का सूत्र क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "S_n = n(n-1)/2",
+          "hi": "S_n = n(n-1)/2"
+        },
+        "b": {
+          "en": "S_n = n(n+2)/2",
+          "hi": "S_n = n(n+2)/2"
+        },
+        "c": {
+          "en": "S_n = n/2",
+          "hi": "S_n = n/2"
+        },
+        "d": {
+          "en": "S_n = n(n+1)/2",
+          "hi": "S_n = n(n+1)/2"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Here, a=1 and the last term l=n.",
+        "hi": "यहाँ, a=1 और अंतिम पद l=n है।"
+      },
+      "explanation": {
+        "en": "As derived on Page 17, using S = (n/2)(a + l) with a=1 and l=n gives the sum of first n positive integers as S_n = n(n+1)/2.",
+        "hi": "जैसा कि पृष्ठ 17 पर प्राप्त किया गया है, a=1 और l=n के साथ S = (n/2)(a + l) का उपयोग करने पर प्रथम n धनात्मक पूर्णांकों का योग S_n = n(n+1)/2 प्राप्त होता है।"
+      },
+      "key_takeaway": {
+        "en": "The pure consecutive integer summation formula collapses beautifully to n(n+1)/2.",
+        "hi": "शुद्ध क्रमागत पूर्णांक योग सूत्र शानदार ढंग से n(n+1)/2 में सिमट जाता है।"
+      }
+    },
+    {
+      "question_id": 24,
+      "question": {
+        "en": "[Topic: 5.4 Sum of First n Terms of an A.P., Page 18] Based on Example 11, what is the sum of the first 22 terms of the A.P. : 8, 3, -2, ...?",
+        "hi": "[विषय: 5.4 A.P. के प्रथम n पदों का योग, पृष्ठ 18] उदाहरण 11 के आधार पर, A.P. : 8, 3, -2, ... के प्रथम 22 पदों का योग क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "-979",
+          "hi": "-979"
+        },
+        "b": {
+          "en": "-969",
+          "hi": "-969"
+        },
+        "c": {
+          "en": "-989",
+          "hi": "-989"
+        },
+        "d": {
+          "en": "-1009",
+          "hi": "-1009"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Use S = (n/2)[2a + (n - 1)d] where n=22, a=8, d=-5.",
+        "hi": "S = (n/2)[2a + (n - 1)d] का उपयोग करें जहाँ n=22, a=8, d=-5 है।"
+      },
+      "explanation": {
+        "en": "Example 11 on Page 18 shows: S = (22/2) [2(8) + (22 - 1)(-5)] = 11 [16 - 105] = 11[-89] = -979.",
+        "hi": "पृष्ठ 18 पर उदाहरण 11 दर्शाता है: S = (22/2) [2(8) + (22 - 1)(-5)] = 11 [16 - 105] = 11[-89] = -979।"
+      },
+      "key_takeaway": {
+        "en": "Sums of A.P.s with negative common differences eventually plummet into steep negative values.",
+        "hi": "ऋणात्मक सार्व अंतर वाले A.P. के योग अंततः भारी ऋणात्मक मानों में गिर जाते हैं।"
+      }
+    },
+    {
+      "question_id": 25,
+      "question": {
+        "en": "[Topic: 5.4 Sum of First n Terms of an A.P., Page 18] In Example 12, if the sum of the first 14 terms of an A.P. is 1050 and its first term is 10, what is the 20th term?",
+        "hi": "[विषय: 5.4 A.P. के प्रथम n पदों का योग, पृष्ठ 18] उदाहरण 12 में, यदि किसी A.P. के प्रथम 14 पदों का योग 1050 है और इसका प्रथम पद 10 है, तो 20वाँ पद क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "190",
+          "hi": "190"
+        },
+        "b": {
+          "en": "200",
+          "hi": "200"
+        },
+        "c": {
+          "en": "210",
+          "hi": "210"
+        },
+        "d": {
+          "en": "220",
+          "hi": "220"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "First find 'd' using the sum formula, then use a_20 = a + 19d.",
+        "hi": "पहले योग सूत्र का उपयोग करके 'd' ज्ञात करें, फिर a_20 = a + 19d का उपयोग करें।"
+      },
+      "explanation": {
+        "en": "Example 12 sets S_14 = 1050, n=14, a=10. 1050 = (14/2)[20 + 13d] => 1050 = 7(20 + 13d) => 150 = 20 + 13d => 13d = 130 => d = 10. Then a_20 = 10 + 19(10) = 200.",
+        "hi": "उदाहरण 12 S_14 = 1050, n=14, a=10 रखता है। 1050 = (14/2)[20 + 13d] => 1050 = 7(20 + 13d) => 150 = 20 + 13d => 13d = 130 => d = 10। फिर a_20 = 10 + 19(10) = 200।"
+      },
+      "key_takeaway": {
+        "en": "Reverse-engineering the sum formula unlocks missing sequence parameters like 'd'.",
+        "hi": "योग सूत्र की रिवर्स-इंजीनियरिंग करने से 'd' जैसे अज्ञात अनुक्रम पैरामीटर खुल (ज्ञात हो) जाते हैं।"
+      }
+    },
+    {
+      "question_id": 26,
+      "question": {
+        "en": "[Topic: 5.4 Sum of First n Terms of an A.P., Page 19] In Example 13, how many terms of the A.P. 24, 21, 18, ... must be taken so that their sum is exactly 78?",
+        "hi": "[विषय: 5.4 A.P. के प्रथम n पदों का योग, पृष्ठ 19] उदाहरण 13 में, A.P. 24, 21, 18, ... के कितने पद लिए जाएँ, ताकि उनका योग ठीक 78 हो जाए?"
+      },
+      "options": {
+        "a": {
+          "en": "Only 4 terms",
+          "hi": "केवल 4 पद"
+        },
+        "b": {
+          "en": "Only 13 terms",
+          "hi": "केवल 13 पद"
+        },
+        "c": {
+          "en": "Either 4 or 13 terms",
+          "hi": "4 या 13 पद (Either 4 or 13 terms)"
+        },
+        "d": {
+          "en": "Exactly 8 terms",
+          "hi": "ठीक 8 पद"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Solving the quadratic equation for 'n' yields two positive integers.",
+        "hi": "'n' के लिए द्विघात समीकरण को हल करने पर दो धनात्मक पूर्णांक प्राप्त होते हैं।"
+      },
+      "explanation": {
+        "en": "Example 13 shows that setting the sum equation 78 = (n/2)[48 + (n-1)(-3)] leads to the quadratic n² - 17n + 52 = 0, which factors into (n-4)(n-13) = 0. Thus, n=4 or n=13.",
+        "hi": "उदाहरण 13 दर्शाता है कि योग समीकरण 78 = (n/2)[48 + (n-1)(-3)] सेट करने से द्विघात समीकरण n² - 17n + 52 = 0 प्राप्त होता है, जो (n-4)(n-13) = 0 में गुणित हो जाता है। इस प्रकार, n=4 या n=13।"
+      },
+      "key_takeaway": {
+        "en": "Quadratic sum functions can yield double-answers when A.P. terms turn negative and cancel earlier positive additions.",
+        "hi": "द्विघात योग फ़ंक्शन दोहरे उत्तर दे सकते हैं जब A.P. पद ऋणात्मक हो जाते हैं और पहले के धनात्मक जोड़ों को रद्द कर देते हैं।"
+      }
+    },
+    {
+      "question_id": 27,
+      "question": {
+        "en": "[Topic: 5.4 Sum of First n Terms of an A.P., Page 19] In Example 13, why do we get two valid possible answers (n=4 and n=13) for the sum being 78?",
+        "hi": "[विषय: 5.4 A.P. के प्रथम n पदों का योग, पृष्ठ 19] उदाहरण 13 में, योग 78 होने के लिए हमें दो मान्य संभावित उत्तर (n=4 और n=13) क्यों मिलते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Because the sum of terms from the 5th term to the 13th term is exactly zero",
+          "hi": "क्योंकि 5वें पद से 13वें पद तक के पदों का योग ठीक शून्य है"
+        },
+        "b": {
+          "en": "Because the common difference magically changes after the 4th term",
+          "hi": "क्योंकि 4थे पद के बाद सार्व अंतर जादुई रूप से बदल जाता है"
+        },
+        "c": {
+          "en": "Because the 4th and 13th terms are identical in value",
+          "hi": "क्योंकि 4था और 13वाँ पद मान में समान हैं"
+        },
+        "d": {
+          "en": "Because the sum formula always produces two correct summations",
+          "hi": "क्योंकि योग सूत्र हमेशा दो सही योगफल उत्पन्न करता है"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Read the 'Remark' (टिप्पणी) given right after the solution of Example 13.",
+        "hi": "उदाहरण 13 के हल के ठीक बाद दी गई 'टिप्पणी' (Remark) पढ़ें।"
+      },
+      "explanation": {
+        "en": "The Remark on Page 19 states: 'In this case, the sum of the first 4 terms = the sum of the first 13 terms = 78. This is because the sum of all terms from the 5th to the 13th will be zero.'",
+        "hi": "पृष्ठ 19 पर टिप्पणी बताती है: 'इस स्थिति में, प्रथम 4 पदों का योग = प्रथम 13 पदों का योग = 78 है। ऐसा इसलिए है, क्योंकि 5वें पद से 13वें पद तक के सभी पदों का योग शून्य हो जाएगा।'"
+      },
+      "key_takeaway": {
+        "en": "Zero-sum stretches within a sequence cause multiple term boundaries to share the exact same total sum.",
+        "hi": "अनुक्रम के भीतर शून्य-योग वाले खिंचाव (stretches) कई पद सीमाओं को बिल्कुल समान कुल योग साझा करने का कारण बनते हैं।"
+      }
+    },
+    {
+      "question_id": 28,
+      "question": {
+        "en": "[Topic: 5.4 Sum of First n Terms of an A.P., Page 20] In Example 15, to find the sum of the first 24 terms where the nth term is given as a_n = 3 + 2n, what is the common difference calculated?",
+        "hi": "[विषय: 5.4 A.P. के प्रथम n पदों का योग, पृष्ठ 20] उदाहरण 15 में, प्रथम 24 पदों का योग ज्ञात करने के लिए जहाँ nवाँ पद a_n = 3 + 2n के रूप में दिया गया है, परिकलित सार्व अंतर क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "3",
+          "hi": "3"
+        },
+        "b": {
+          "en": "5",
+          "hi": "5"
+        },
+        "c": {
+          "en": "7",
+          "hi": "7"
+        },
+        "d": {
+          "en": "2",
+          "hi": "2"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Calculate the 1st term (a_1) and 2nd term (a_2) by plugging in n=1 and n=2, then subtract.",
+        "hi": "n=1 और n=2 रखकर प्रथम पद (a_1) और दूसरा पद (a_2) की गणना करें, फिर घटाएँ।"
+      },
+      "explanation": {
+        "en": "Example 15 (Page 20) calculates: a_1 = 3 + 2(1) = 5, and a_2 = 3 + 2(2) = 7. The common difference d = a_2 - a_1 = 7 - 5 = 2.",
+        "hi": "उदाहरण 15 (पृष्ठ 20) गणना करता है: a_1 = 3 + 2(1) = 5, और a_2 = 3 + 2(2) = 7। सार्व अंतर d = a_2 - a_1 = 7 - 5 = 2 है।"
+      },
+      "key_takeaway": {
+        "en": "General explicit term equations perfectly conceal the standard 'a' and 'd' parameters.",
+        "hi": "सामान्य स्पष्ट पद समीकरण मानक 'a' और 'd' मापदंडों को पूरी तरह से छुपाते हैं।"
+      }
+    },
+    {
+      "question_id": 29,
+      "question": {
+        "en": "[Topic: 5.5 Summary, Page 24] According to the summary, an A.P. is a list of numbers in which each term is obtained by adding a fixed number 'd' to the preceding term. What is 'd' officially called?",
+        "hi": "[विषय: 5.5 सारांश, पृष्ठ 24] सारांश के अनुसार, एक A.P. संख्याओं की ऐसी सूची होती है, जिसमें प्रत्येक पद पूर्व पद में एक निश्चित संख्या 'd' जोड़कर प्राप्त होता है। 'd' को आधिकारिक तौर पर क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Median shift",
+          "hi": "माध्यिका बदलाव"
+        },
+        "b": {
+          "en": "Common difference",
+          "hi": "सार्व अंतर (Common difference)"
+        },
+        "c": {
+          "en": "Principal addition",
+          "hi": "मुख्य जोड़"
+        },
+        "d": {
+          "en": "Sequential gap",
+          "hi": "अनुक्रमिक अंतराल"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Check Point 1 of the '5.5 Summary' section.",
+        "hi": "'5.5 सारांश' अनुभाग का बिंदु 1 देखें।"
+      },
+      "explanation": {
+        "en": "Point 1 of the summary on Page 24 states: 'This fixed number d is called the common difference of the A.P.'",
+        "hi": "पृष्ठ 24 पर सारांश का बिंदु 1 बताता है: 'यह निश्चित संख्या d इस समांतर श्रेढ़ी का सार्व अंतर कहलाती है।'"
+      },
+      "key_takeaway": {
+        "en": "The defining constant of any arithmetic progression is strictly termed its common difference.",
+        "hi": "किसी भी समांतर श्रेढ़ी के परिभाषित स्थिरांक को सख्ती से इसका सार्व अंतर कहा जाता है।"
+      }
+    },
+    {
+      "question_id": 30,
+      "question": {
+        "en": "[Topic: 5.5 Summary, Page 24] According to Point 4 in the summary, if the first term is 'a' and the last term is 'l', what is the sum formula for all terms?",
+        "hi": "[विषय: 5.5 सारांश, पृष्ठ 24] सारांश में बिंदु 4 के अनुसार, यदि प्रथम पद 'a' है और अंतिम पद 'l' है, तो सभी पदों के योग का सूत्र क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "S = n(a + l)",
+          "hi": "S = n(a + l)"
+        },
+        "b": {
+          "en": "S = (a + l)/n",
+          "hi": "S = (a + l)/n"
+        },
+        "c": {
+          "en": "S = (n/2)(a + l)",
+          "hi": "S = (n/2)(a + l)"
+        },
+        "d": {
+          "en": "S = (n/2)(a - l)",
+          "hi": "S = (n/2)(a - l)"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Look at the final bullet point of Point 4 in the Summary.",
+        "hi": "सारांश में बिंदु 4 का अंतिम बुलेट पॉइंट देखें।"
+      },
+      "explanation": {
+        "en": "Point 4 of the Summary on Page 24 provides the exact shortened formula: 'If l is the last term of the finite A.P., say the nth term, then the sum of all terms of the A.P. is given by S = (n/2)(a + l).'",
+        "hi": "पृष्ठ 24 पर सारांश का बिंदु 4 सटीक छोटा सूत्र प्रदान करता है: 'यदि एक परिमित A.P. का अंतिम पद l है, तो A.P. के सभी पदों का योग S = (n/2)(a + l) होता है।'"
+      },
+      "key_takeaway": {
+        "en": "A finite A.P. allows for rapid summation directly bypassing the common difference calculation.",
+        "hi": "एक परिमित A.P. सार्व अंतर की गणना को बायपास करते हुए सीधे तेजी से योग की अनुमति देती है।"
+      }
+    }
+  ]
+}

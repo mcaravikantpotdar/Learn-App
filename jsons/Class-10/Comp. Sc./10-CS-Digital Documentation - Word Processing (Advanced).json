@@ -1,0 +1,1543 @@
+{
+  "metadata": {
+    "chapter_number": 3,
+    "chapter_title": "Digital Documentation - Word Processing (Advanced)",
+    "chapter_title_hindi": "डिजिटल डॉक्यूमेंटेशन - वर्ड प्रोसेसिंग (उन्नत)",
+    "subject": "Computer Science / Information Technology",
+    "total_questions": 40,
+    "source_language": "en",
+    "target_language": "hi",
+    "created_at": "2026-09-09T13:25:00Z",
+    "version": "1.0",
+    "note": "Complete 40-question consolidated master quiz for Class 10 Chapter 3. Completely bilingual, pure Unicode characters (no LaTeX). Perfectly balanced option distribution (A: 10, B: 10, C: 10, D: 10). Flawless syntax with zero trailing commas."
+  },
+  "validation_report": {
+    "is_valid": true,
+    "checked_by": "Expert CS Teacher AI",
+    "checked_at": "2026-09-09T13:25:00Z",
+    "corrections": [],
+    "notes": "Verified that all 40 questions flow sequentially from Page 51 to Page 108 of Unit 3, strictly balancing options to exactly 10 A's, 10 B's, 10 C's, and 10 D's with zero trailing commas."
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "[Topic: 3.1 Introduction to Word Processor, Page 51-52] What type of software is Microsoft Word formally categorized as, and what company developed it?",
+        "hi": "[विषय: 3.1 वर्ड प्रोसेसर का परिचय, पृष्ठ 51-52] Microsoft Word को औपचारिक रूप से किस प्रकार के सॉफ़्टवेयर के रूप में वर्गीकृत किया गया है, और इसे किस कंपनी ने विकसित किया है?"
+      },
+      "options": {
+        "a": {
+          "en": "Application software / Word processing software developed by Microsoft Inc.",
+          "hi": "एप्लिकेशन सॉफ़्टवेयर / वर्ड प्रोसेसिंग सॉफ़्टवेयर, जिसे Microsoft Inc. द्वारा विकसित किया गया है"
+        },
+        "b": {
+          "en": "System operating system developed by Apple Computer",
+          "hi": "सिस्टम ऑपरेटिंग सिस्टम, जिसे Apple Computer द्वारा विकसित किया गया है"
+        },
+        "c": {
+          "en": "Open-source database engine developed by Oracle",
+          "hi": "ओपन-सोर्स डेटाबेस इंजन, जिसे Oracle द्वारा विकसित किया गया है"
+        },
+        "d": {
+          "en": "Hardware diagnostic driver developed by Intel Corporation",
+          "hi": "हार्डवेयर डायग्नोस्टिक ड्राइवर, जिसे Intel Corporation द्वारा विकसित किया गया है"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Look at the very first paragraph under section 3.1 on Page 51.",
+        "hi": "पृष्ठ 51 पर अनुभाग 3.1 के अंतर्गत पहला पैराग्राफ देखें।"
+      },
+      "explanation": {
+        "en": "Page 51 states: 'Microsoft Word is application software developed by Microsoft Inc. Microsoft is an American multinational technology company. It is word processing software.'[cite: 2]",
+        "hi": "पृष्ठ 51 बताता है: 'Microsoft Word, Microsoft Inc. द्वारा विकसित एक एप्लिकेशन सॉफ़्टवेयर है। Microsoft एक अमेरिकी बहुराष्ट्रीय प्रौद्योगिकी कंपनी है। यह वर्ड प्रोसेसिंग सॉफ़्टवेयर है।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "MS Word is a dedicated application software designed for authoring and formatting documents.",
+        "hi": "MS Word दस्तावेज़ों को तैयार करने और प्रारूपित करने के लिए डिज़ाइन किया गया एक समर्पित एप्लिकेशन सॉफ़्टवेयर है।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "[Topic: 3.1 Introduction to Word Processor, Page 52] Which of the following lists contains tools that are ALL explicitly categorized as common Word Processing Softwares on Page 52?",
+        "hi": "[विषय: 3.1 वर्ड प्रोसेसर का परिचय, पृष्ठ 52] निम्नलिखित में से किस सूची में वे उपकरण शामिल हैं जिन्हें पृष्ठ 52 पर सामान्य वर्ड प्रोसेसिंग सॉफ़्टवेयर के रूप में वर्गीकृत किया गया है?"
+      },
+      "options": {
+        "a": {
+          "en": "MS Excel, MS Access, Oracle, MySQL",
+          "hi": "MS Excel, MS Access, Oracle, MySQL"
+        },
+        "b": {
+          "en": "WordPad, MS-Word, WordStar, Notepad",
+          "hi": "WordPad, MS-Word, WordStar, Notepad"
+        },
+        "c": {
+          "en": "Photoshop, CorelDraw, Paint, Illustrator",
+          "hi": "Photoshop, CorelDraw, Paint, Illustrator"
+        },
+        "d": {
+          "en": "Windows Explorer, Unix, MS-DOS, Linux",
+          "hi": "Windows Explorer, Unix, MS-DOS, Linux"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Check the bullet list 'Some common Word Processing Softwares' on Page 52.",
+        "hi": "पृष्ठ 52 पर 'Some common Word Processing Softwares' की सूची देखें।"
+      },
+      "explanation": {
+        "en": "Page 52 explicitly lists four common word processing softwares: (i) WordPad, (ii) MS-Word, (iii) WordStar, and (iv) Notepad.[cite: 2]",
+        "hi": "पृष्ठ 52 स्पष्ट रूप से चार सामान्य वर्ड प्रोसेसिंग सॉफ़्टवेयर सूचीबद्ध करता है: (i) WordPad, (ii) MS-Word, (iii) WordStar, और (iv) Notepad।[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Word processing tools range from plain text editors like Notepad to advanced formatting suites like MS Word.",
+        "hi": "वर्ड प्रोसेसिंग टूल नोटपैड जैसे प्लेन टेक्स्ट एडिटर से लेकर एमएस वर्ड जैसे उन्नत फॉर्मेटिंग सुइट तक होते हैं।"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "[Topic: 3.1 Usage of Word Processing, Page 53] What is 'Word Processing' fundamentally defined as under Section 3.1 on Page 53?",
+        "hi": "[विषय: 3.1 वर्ड प्रोसेसिंग का उपयोग, पृष्ठ 53] पृष्ठ 53 पर अनुभाग 3.1 के तहत 'वर्ड प्रोसेसिंग' को मूल रूप से क्या परिभाषित किया गया है?"
+      },
+      "options": {
+        "a": {
+          "en": "Creating animated video frames on a digital workstation",
+          "hi": "डिजिटल वर्कस्टेशन पर एनिमेटेड वीडियो फ्रेम बनाना"
+        },
+        "b": {
+          "en": "Transmitting packets between client and server nodes over LAN",
+          "hi": "LAN पर क्लाइंट और सर्वर नोड्स के बीच पैकेट प्रसारित करना"
+        },
+        "c": {
+          "en": "Any type of typing work on the computer dealing with typing, editing, and formatting of textual information",
+          "hi": "कंप्यूटर पर किसी भी प्रकार का टाइपिंग कार्य जो टेक्स्ट संबंधी जानकारी के टाइपिंग, संपादन और प्रारूपण से संबंधित है"
+        },
+        "d": {
+          "en": "Measuring central processing unit clock cycles and voltage leaks",
+          "hi": "सेंट्रल प्रोसेसिंग यूनिट क्लॉक चक्रों और वोल्टेज रिसाव को मापना"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Read the paragraph under 'Word processing:' on Page 53.",
+        "hi": "पृष्ठ 53 पर 'Word processing:' के अंतर्गत पैराग्राफ पढ़ें।"
+      },
+      "explanation": {
+        "en": "Page 53 specifies: 'Any type of Typing work on the computer is known as word processing. Word processing deals with typing, editing and formatting of textual information.'[cite: 2]",
+        "hi": "पृष्ठ 53 निर्दिष्ट करता है: 'कंप्यूटर पर किसी भी प्रकार के टाइपिंग कार्य को वर्ड प्रोसेसिंग के रूप में जाना जाता है। वर्ड प्रोसेसिंग टेक्स्ट संबंधी जानकारी के टाइपिंग, संपादन और प्रारूपण से संबंधित है।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Word processing encompasses the entire lifecycle of text input, modification, styling, and output.",
+        "hi": "वर्ड प्रोसेसिंग में टेक्स्ट इनपुट, संशोधन, स्टाइलिंग और आउटपुट का संपूर्ण चक्र शामिल है।"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "[Topic: 3.1 Usage of Word Processing, Page 54] Which facility in MS Word allows users to insert multimedia files like sounds, movies, pictures, and sheets into a document?",
+        "hi": "[विषय: 3.1 वर्ड प्रोसेसिंग का उपयोग, पृष्ठ 54] MS Word में कौन सी सुविधा उपयोगकर्ताओं को दस्तावेज़ में ध्वनि, मूवी, चित्र और शीट जैसी मल्टीमीडिया फ़ाइलें डालने की अनुमति देती है?"
+      },
+      "options": {
+        "a": {
+          "en": "Macro recording loop",
+          "hi": "मैक्रो रिकॉर्डिंग लूप"
+        },
+        "b": {
+          "en": "Thesaurus dictionary",
+          "hi": "थिसॉरस डिक्शनरी"
+        },
+        "c": {
+          "en": "Page Setup margins",
+          "hi": "पेज सेटअप मार्जिन"
+        },
+        "d": {
+          "en": "Object linking facility",
+          "hi": "ऑब्जेक्ट लिंकिंग सुविधा (Object linking facility)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Check point number 7 under 'Usage of Word Processing' on Page 54.",
+        "hi": "पृष्ठ 54 पर 'Usage of Word Processing' के अंतर्गत बिंदु संख्या 7 देखें।"
+      },
+      "explanation": {
+        "en": "Page 54 states: '7. It has the object linking facility using which we can insert sound, movie pictures, photograph, sheets in your document.'[cite: 2]",
+        "hi": "पृष्ठ 54 बताता है: '7. इसमें ऑब्जेक्ट लिंकिंग की सुविधा है जिसका उपयोग करके हम आपके दस्तावेज़ में ध्वनि, मूवी चित्र, फोटोग्राफ, शीट डाल सकते हैं।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Object Linking and Embedding allows dynamic incorporation of rich media and spreadsheets into word documents.",
+        "hi": "ऑब्जेक्ट लिंकिंग और एम्बेडिंग वर्ड दस्तावेज़ों में समृद्ध मीडिया और स्प्रेडशीट के गतिशील समावेश की अनुमति देता है।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "[Topic: 3.2 Creating, Saving, Opening, Page 54] What category under Office.com templates is explicitly navigated to when creating a resume in MS Word?",
+        "hi": "[विषय: 3.2 दस्तावेज़ बनाना, सहेजना, खोलना, पृष्ठ 54] MS Word में एक रेज़्यूमे बनाते समय Office.com टेम्पलेट्स के तहत किस श्रेणी में नेविगेट किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Resumes and Cover Letters",
+          "hi": "रेज़्यूमे और कवर लेटर्स (Resumes and Cover Letters)"
+        },
+        "b": {
+          "en": "Agendas and Calendars",
+          "hi": "एजेंडा और कैलेंडर"
+        },
+        "c": {
+          "en": "Invoices and Billing Receipts",
+          "hi": "चालान और बिलिंग रसीदें"
+        },
+        "d": {
+          "en": "Certificates and Diplomas",
+          "hi": "प्रमाण पत्र और डिप्लोमा"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Review step (iii) on Page 54 under 'To create resume with MS Word Template'.",
+        "hi": "पृष्ठ 54 पर 'To create resume with MS Word Template' के अंतर्गत चरण (iii) की समीक्षा करें।"
+      },
+      "explanation": {
+        "en": "Page 54 specifies in step (iii): 'In office.com templates, select Resumes and Cover Letters.'[cite: 2]",
+        "hi": "पृष्ठ 54 चरण (iii) में निर्दिष्ट करता है: 'office.com टेम्पलेट्स में, Resumes and Cover Letters का चयन करें।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Pre-built resume templates reside inside the 'Resumes and Cover Letters' gallery of Word templates.",
+        "hi": "पहले से बने रेज़्यूमे टेम्पलेट वर्ड टेम्पलेट्स के 'Resumes and Cover Letters' गैलरी के अंदर रहते हैं।"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "[Topic: 3.2 Saving a File, Page 56] Which office button sequence is listed on Page 56 to save a newly created file in MS Word?",
+        "hi": "[विषय: 3.2 फ़ाइल सहेजना, पृष्ठ 56] MS Word में एक नई बनाई गई फ़ाइल को सहेजने के लिए पृष्ठ 56 पर कौन सा क्रम सूचीबद्ध है?"
+      },
+      "options": {
+        "a": {
+          "en": "Review tab -> Proofing -> Save Document",
+          "hi": "Review tab -> Proofing -> Save Document"
+        },
+        "b": {
+          "en": "Click on Office button -> File tab -> Save option -> Type file name -> Click Save",
+          "hi": "Office button -> File tab -> Save option पर क्लिक करें -> फ़ाइल का नाम टाइप करें -> Save पर क्लिक करें"
+        },
+        "c": {
+          "en": "Insert tab -> Tables -> Save As Template",
+          "hi": "Insert tab -> Tables -> Save As Template"
+        },
+        "d": {
+          "en": "Page Layout -> Page Setup -> Commit to Disk",
+          "hi": "Page Layout -> Page Setup -> Commit to Disk"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Look under section 3.2.2 'Saving' on Page 56.",
+        "hi": "पृष्ठ 56 पर अनुभाग 3.2.2 'Saving' के अंतर्गत देखें।"
+      },
+      "explanation": {
+        "en": "Page 56 details the steps: '1. Click on Office button, 2. Click on File tab, 3. Pull down menu will be displayed, 4. Select the Save option, 5. Dialogue box will appear, 6. Type the file name, 7. Click on Save button.'[cite: 2]",
+        "hi": "पृष्ठ 56 चरणों का विवरण देता है: '1. Office बटन पर क्लिक करें, 2. File टैब पर क्लिक करें, 3. पुल डाउन मेनू प्रदर्शित होगा, 4. Save विकल्प चुनें, 5. डायलॉग बॉक्स दिखाई देगा, 6. फ़ाइल का नाम टाइप करें, 7. Save बटन पर क्लिक करें।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Saving assigns an identifiable name and permanent storage path to a document.",
+        "hi": "सहेजना दस्तावेज़ को एक पहचान योग्य नाम और स्थायी भंडारण पथ प्रदान करता है।"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "[Topic: 3.2 Print Command, Page 58] What is the purpose of the printer drop-down menu inside the Print settings pane?",
+        "hi": "[विषय: 3.2 प्रिंट कमांड, पृष्ठ 58] प्रिंट सेटिंग्स फलक के अंदर प्रिंटर ड्रॉप-डाउन मेनू का उद्देश्य क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "To clear temporary RAM memory cache registers",
+          "hi": "अस्थायी रैम मेमोरी कैश रजिस्टरों को साफ़ करने के लिए"
+        },
+        "b": {
+          "en": "To show the number of words typed in the entire document",
+          "hi": "पूरे दस्तावेज़ में टाइप किए गए शब्दों की संख्या दिखाने के लिए"
+        },
+        "c": {
+          "en": "To show the currently selected printer and display other available printers when clicked",
+          "hi": "वर्तमान में चयनित प्रिंटर को दिखाना और क्लिक करने पर अन्य उपलब्ध प्रिंटरों को प्रदर्शित करना"
+        },
+        "d": {
+          "en": "To change the document margins automatically to landscape orientation",
+          "hi": "दस्तावेज़ मार्जिन को स्वचालित रूप से लैंडस्केप ओरिएंटेशन में बदलने के लिए"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Refer to step (iv) under section 3.1.4 'Print Command' on Page 58.",
+        "hi": "पृष्ठ 58 पर अनुभाग 3.1.4 'Print Command' के तहत चरण (iv) देखें।"
+      },
+      "explanation": {
+        "en": "Page 58 states in step (iv): 'This dropdown shows the currently selected printer. Clicking the dropdown will display other available printers.'[cite: 2]",
+        "hi": "पृष्ठ 58 चरण (iv) में बताता है: 'यह ड्रॉपडाउन वर्तमान में चयनित प्रिंटर दिखाता है। ड्रॉपडाउन पर क्लिक करने पर अन्य उपलब्ध प्रिंटर प्रदर्शित होंगे।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "The printer selector dropdown allows users to route physical output to different installed hardware devices.",
+        "hi": "प्रिंटर चयनकर्ता ड्रॉपडाउन उपयोगकर्ताओं को विभिन्न स्थापित हार्डवेयर उपकरणों पर भौतिक आउटपुट भेजने की अनुमति देता है।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "[Topic: 3.2 Print Preview, Page 60] When does Print Preview automatically update while working in Microsoft Word?",
+        "hi": "[विषय: 3.2 प्रिंट पूर्वावलोकन, पृष्ठ 60] Microsoft Word में काम करते समय प्रिंट पूर्वावलोकन स्वचालित रूप से कब अपडेट होता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Only after the computer system is completely shut down and rebooted",
+          "hi": "कंप्यूटर सिस्टम को पूरी तरह से बंद करके रीबूट करने के बाद ही"
+        },
+        "b": {
+          "en": "Only when the physical paper tray on the printer is refilled",
+          "hi": "केवल तभी जब प्रिंटर पर भौतिक पेपर ट्रे फिर से भर दी जाए"
+        },
+        "c": {
+          "en": "Every time an external USB flash drive is unplugged",
+          "hi": "हर बार जब कोई बाहरी USB फ्लैश ड्राइव अनप्लग की जाती है"
+        },
+        "d": {
+          "en": "Automatically whenever a change is made to any print-related setting",
+          "hi": "स्वचालित रूप से जब भी प्रिंट से संबंधित किसी भी सेटिंग में कोई बदलाव किया जाता है"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Read the opening paragraph under section 3.2.5 on Page 60.",
+        "hi": "पृष्ठ 60 पर अनुभाग 3.2.5 के अंतर्गत प्रारंभिक पैराग्राफ पढ़ें।"
+      },
+      "explanation": {
+        "en": "Page 60 explains: 'Print Preview automatically displays when we click on the Print tab. When we make a change to a print-related setting, the preview is automatically updated.'[cite: 2]",
+        "hi": "पृष्ठ 60 बताता है: 'जब हम प्रिंट टैब पर क्लिक करते हैं तो प्रिंट पूर्वावलोकन स्वचालित रूप से प्रदर्शित होता है। जब हम प्रिंट से संबंधित सेटिंग में कोई बदलाव करते हैं, तो पूर्वावलोकन स्वचालित रूप से अपडेट हो जाता है।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Real-time preview rendering ensures paper configuration changes are immediately visible before printing.",
+        "hi": "वास्तविक समय पूर्वावलोकन रेंडरिंग यह सुनिश्चित करती है कि छपाई से पहले कागज कॉन्फ़िगरेशन परिवर्तन तुरंत दिखाई दें।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "[Topic: 3.3 Closing of Document, Page 61] What keyboard shortcut is listed on Page 61 to close an open Word document window?",
+        "hi": "[विषय: 3.3 दस्तावेज़ बंद करना, पृष्ठ 61] खुली हुई Word दस्तावेज़ विंडो को बंद करने के लिए पृष्ठ 61 पर कौन सा कीबोर्ड शॉर्टकट सूचीबद्ध है?"
+      },
+      "options": {
+        "a": {
+          "en": "Alt + F4",
+          "hi": "Alt + F4"
+        },
+        "b": {
+          "en": "Ctrl + Alt + Del",
+          "hi": "Ctrl + Alt + Del"
+        },
+        "c": {
+          "en": "Shift + Enter",
+          "hi": "Shift + Enter"
+        },
+        "d": {
+          "en": "Ctrl + End",
+          "hi": "Ctrl + End"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Check section 3.3 'Perform the following steps to Close a Document' on Page 61.",
+        "hi": "पृष्ठ 61 पर अनुभाग 3.3 'Perform the following steps to Close a Document' देखें।"
+      },
+      "explanation": {
+        "en": "Page 61 lists: '1. Click on File, 2. Click on Close button. Or Press Alt+F4, 3. The document will close.'[cite: 2]",
+        "hi": "पृष्ठ 61 सूचीबद्ध करता है: '1. File पर क्लिक करें, 2. Close बटन पर क्लिक करें। या Alt+F4 दबाएं, 3. दस्तावेज़ बंद हो जाएगा।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Alt + F4 closes the active window interface safely.",
+        "hi": "Alt + F4 सक्रिय विंडो इंटरफ़ेस को सुरक्षित रूप से बंद करता है।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "[Topic: 3.4 Inserting Word Art, Page 62] What is 'WordArt' fundamentally defined as under Section 3.4.1?",
+        "hi": "[विषय: 3.4 वर्ड आर्ट डालना, पृष्ठ 62] धारा 3.4.1 के तहत 'WordArt' को मूल रूप से क्या परिभाषित किया गया है?"
+      },
+      "options": {
+        "a": {
+          "en": "A hardware scanning device for pen drawings",
+          "hi": "पेन ड्राइंग के लिए एक हार्डवेयर स्कैनिंग उपकरण"
+        },
+        "b": {
+          "en": "A feature that changes plain text into decorative drawing items with pre-set designs",
+          "hi": "एक ऐसी सुविधा जो साधारण टेक्स्ट को पूर्व-निर्धारित डिज़ाइनों के साथ सजावटी ड्राइंग आइटम में बदल देती है"
+        },
+        "c": {
+          "en": "A linguistic proofing dictionary for verifying grammar",
+          "hi": "व्याकरण की पुष्टि करने के लिए एक भाषाई प्रूफ़िंग शब्दकोश"
+        },
+        "d": {
+          "en": "A network protocol used to send letters across office computers",
+          "hi": "कार्यालय के कंप्यूटरों में पत्र भेजने के लिए उपयोग किया जाने वाला एक नेटवर्क प्रोटोकॉल"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Read the definition under section 3.4.1 on Page 62.",
+        "hi": "पृष्ठ 62 पर अनुभाग 3.4.1 के अंतर्गत परिभाषा पढ़ें।"
+      },
+      "explanation": {
+        "en": "Page 62 defines: 'Word Art changes the text into a Drawing Items. Word Art contains designs to write Text. These designs are present in Word Art Gallery.'[cite: 2]",
+        "hi": "पृष्ठ 62 परिभाषित करता है: 'Word Art टेक्स्ट को ड्राइंग आइटम में बदल देता है। Word Art में टेक्स्ट लिखने के लिए डिज़ाइन होते हैं। ये डिज़ाइन Word Art Gallery में मौजूद हैं।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "WordArt transforms standard text typography into stylized graphical artwork.",
+        "hi": "WordArt मानक टेक्स्ट टाइपोग्राफी को शैलीबद्ध ग्राफिकल कलाकृति में बदल देता है।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "[Topic: 3.4 Inserting Clip Art, Page 62-63] Under which Ribbon Tab and Group is the 'Clip Art' tool located?",
+        "hi": "[विषय: 3.4 क्लिप आर्ट डालना, पृष्ठ 62-63] 'Clip Art' टूल किस रिबन टैब और समूह के अंतर्गत स्थित है?"
+      },
+      "options": {
+        "a": {
+          "en": "Page Layout tab -> Page Background group",
+          "hi": "Page Layout tab -> Page Background group"
+        },
+        "b": {
+          "en": "Home tab -> Clipboard group",
+          "hi": "Home tab -> Clipboard group"
+        },
+        "c": {
+          "en": "Insert tab -> Illustrations group",
+          "hi": "Insert tab -> Illustrations group (इंसर्ट टैब -> इलस्ट्रेशन्स समूह)"
+        },
+        "d": {
+          "en": "Review tab -> Proofing group",
+          "hi": "Review tab -> Proofing group"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Check step (i) under 'Steps to Insert Clip Art' on Page 62.",
+        "hi": "पृष्ठ 62 पर 'Steps to Insert Clip Art' के तहत चरण (i) देखें।"
+      },
+      "explanation": {
+        "en": "Page 62 outlines in step (i): 'On the Insert tab, in the Illustrations group, click Clip Art.'[cite: 2]",
+        "hi": "पृष्ठ 62 चरण (i) में बताता है: 'Insert टैब पर, Illustrations समूह में, Clip Art पर क्लिक करें।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Clip Art and Pictures are bundled inside the Illustrations group on the Insert tab.",
+        "hi": "क्लिप आर्ट और चित्र Insert टैब पर Illustrations समूह के अंदर बंडल किए गए हैं।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "[Topic: 3.4 Inserting Picture, Page 63-64] How do you insert a saved image file from your computer into an open document?",
+        "hi": "[विषय: 3.4 चित्र डालना, पृष्ठ 63-64] आप अपने कंप्यूटर से सहेजी गई छवि फ़ाइल को खुले दस्तावेज़ में कैसे डालते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Press Alt + Shift + P on the desktop",
+          "hi": "डेस्कटॉप पर Alt + Shift + P दबाएं"
+        },
+        "b": {
+          "en": "Drag the mouse over the vertical scroll bar thumb",
+          "hi": "वर्टिकल स्क्रॉल बार थंब पर माउस को खींचें"
+        },
+        "c": {
+          "en": "Format Painter -> Paintbrush icon -> Double click font",
+          "hi": "Format Painter -> Paintbrush icon -> फ़ॉन्ट पर डबल क्लिक करें"
+        },
+        "d": {
+          "en": "On the Insert tab, in the Illustrations group, click Picture, locate the file, and double-click it",
+          "hi": "Insert टैब पर, Illustrations समूह में, Picture पर क्लिक करें, फ़ाइल ढूंढें और उस पर डबल-क्लिक करें"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Look under section 3.4.3 'Inserting Picture' on Pages 63-64.",
+        "hi": "पृष्ठ 63-64 पर अनुभाग 3.4.3 'Inserting Picture' के अंतर्गत देखें।"
+      },
+      "explanation": {
+        "en": "Pages 63-64 specify: 'On the Insert tab, in the Illustrations group, click Picture option... Locate the picture... Double-click the picture that you want to insert.'[cite: 2]",
+        "hi": "पृष्ठ 63-64 निर्दिष्ट करते हैं: 'Insert टैब पर, Illustrations समूह में, Picture विकल्प पर क्लिक करें... चित्र का पता लगाएं... जिस चित्र को आप सम्मिलित करना चाहते हैं उस पर डबल-क्लिक करें।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Inserting external graphics embeds static visual assets directly onto the printable page.",
+        "hi": "बाहरी ग्राफिक्स डालने से स्थिर दृश्य संपत्तियां सीधे मुद्रण योग्य पृष्ठ पर एम्बेड हो जाती हैं।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "[Topic: 3.5 Page Setting - Margins, Page 64] What are 'Page Margins' explicitly defined as on Page 64?",
+        "hi": "[विषय: 3.5 पेज सेटिंग - मार्जिन, पृष्ठ 64] पृष्ठ 64 पर 'Page Margins' को स्पष्ट रूप से क्या परिभाषित किया गया है?"
+      },
+      "options": {
+        "a": {
+          "en": "The blank space around the edges of the page outside the printable text area",
+          "hi": "मुद्रण योग्य टेक्स्ट क्षेत्र के बाहर पृष्ठ के किनारों के चारों ओर का खाली स्थान"
+        },
+        "b": {
+          "en": "The total pixel resolution rendered on a computer display monitor",
+          "hi": "कंप्यूटर डिस्प्ले मॉनिटर पर प्रदर्शित कुल पिक्सेल रिज़ॉल्यूशन"
+        },
+        "c": {
+          "en": "The thickness of ink lines when printing colored borders",
+          "hi": "रंगीन बॉर्डर प्रिंट करते समय स्याही की रेखाओं की मोटाई"
+        },
+        "d": {
+          "en": "The storage sector size allocated to a saved .docx file on disk",
+          "hi": "डिस्क पर सहेजी गई .docx फ़ाइल को आवंटित स्टोरेज सेक्टर का आकार"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Check item 1 'Margins' under section 3.5.1 on Page 64.",
+        "hi": "पृष्ठ 64 पर अनुभाग 3.5.1 के अंतर्गत बिंदु 1 'Margins' देखें।"
+      },
+      "explanation": {
+        "en": "Page 64 defines: 'Page margins are the blank space around the edges of the page. Normally, you insert text and graphics in the printable area between the margins.'[cite: 2]",
+        "hi": "पृष्ठ 64 परिभाषित करता है: 'पेज मार्जिन पेज के किनारों के आसपास का खाली स्थान है। आम तौर पर, आप मार्जिन के बीच मुद्रण योग्य क्षेत्र में टेक्स्ट और ग्राफिक्स डालते हैं।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Margins establish unprinted padding boundaries framing the document content.",
+        "hi": "मार्जिन दस्तावेज़ सामग्री को फ्रेम करने वाली अनप्रिंटेड पैडिंग सीमाएं स्थापित करते हैं।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "[Topic: 3.5 Page Setting - Orientation, Page 66] What is the distinction between 'Portrait' and 'Landscape' page orientation formats?",
+        "hi": "[विषय: 3.5 पेज सेटिंग - ओरिएंटेशन, पृष्ठ 66] 'Portrait' और 'Landscape' पेज ओरिएंटेशन प्रारूपों के बीच क्या अंतर है?"
+      },
+      "options": {
+        "a": {
+          "en": "Portrait prints in color, whereas Landscape prints in monochrome",
+          "hi": "Portrait रंगीन प्रिंट करता है, जबकि Landscape मोनोक्रोम में प्रिंट करता है"
+        },
+        "b": {
+          "en": "Portrait means the page is oriented vertically, while Landscape means it is oriented horizontally",
+          "hi": "Portrait का अर्थ है कि पृष्ठ लंबवत (vertically) उन्मुख है, जबकि Landscape का अर्थ है कि यह क्षैतिज (horizontally) उन्मुख है"
+        },
+        "c": {
+          "en": "Portrait enables double column layout, while Landscape disables all tables",
+          "hi": "Portrait डबल कॉलम लेआउट को सक्षम करता है, जबकि Landscape सभी तालिकाओं को अक्षम करता है"
+        },
+        "d": {
+          "en": "Portrait compresses file size, while Landscape doubles font sizes",
+          "hi": "Portrait फ़ाइल आकार को संपीड़ित करता है, जबकि Landscape फ़ॉन्ट आकार को दोगुना करता है"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Read item 2 'Orientation' on Page 66.",
+        "hi": "पृष्ठ 66 पर बिंदु 2 'Orientation' पढ़ें।"
+      },
+      "explanation": {
+        "en": "Page 66 specifies: 'Landscape format means the page is oriented horizontally, while portrait format means it is oriented vertically.'[cite: 2]",
+        "hi": "पृष्ठ 66 निर्दिष्ट करता है: 'लैंडस्केप प्रारूप का अर्थ है कि पृष्ठ क्षैतिज रूप से उन्मुख है, जबकि पोर्ट्रेट प्रारूप का अर्थ है कि यह लंबवत रूप से उन्मुख है।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Orientation dictates whether the page axis is taller than wide (Portrait) or wider than tall (Landscape).",
+        "hi": "ओरिएंटेशन यह तय करता है कि पेज चौड़ाई से अधिक लंबा (Portrait) है या लंबाई से अधिक चौड़ा (Landscape)।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "[Topic: 3.5 Columns, Page 67] What function does the 'Columns' option perform under the Page Layout tab?",
+        "hi": "[विषय: 3.5 कॉलम, पृष्ठ 67] Page Layout टैब के अंतर्गत 'Columns' विकल्प क्या कार्य करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "It deletes all tabular data from the document",
+          "hi": "यह दस्तावेज़ से सभी सारणीबद्ध डेटा को हटा देता है"
+        },
+        "b": {
+          "en": "It changes paragraph font type to Algerian",
+          "hi": "यह पैराग्राफ फ़ॉन्ट प्रकार को Algerian में बदलता है"
+        },
+        "c": {
+          "en": "It splits the text into two or more vertical newspaper-style columns",
+          "hi": "यह टेक्स्ट को दो या दो से अधिक लंबवत अखबार शैली के कॉलम में विभाजित करता है"
+        },
+        "d": {
+          "en": "It converts alphabetical lists into numeric bullets",
+          "hi": "यह वर्णमाला सूचियों को संख्यात्मक बुलेट में बदल देता है"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Look at the caption and heading for 'Columns' on Page 67.",
+        "hi": "पृष्ठ 67 पर 'Columns' के शीर्षक और विवरण को देखें।"
+      },
+      "explanation": {
+        "en": "Page 67 states: 'Columns: This option splits the text into two or more columns.'[cite: 2]",
+        "hi": "पृष्ठ 67 बताता है: 'Columns: यह विकल्प टेक्स्ट को दो या दो से अधिक कॉलमों में विभाजित करता है।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Columns organize flowable text into side-by-side vertical tracks commonly seen in periodicals.",
+        "hi": "कॉलम बहने वाले टेक्स्ट को पत्रिकाओं में आमतौर पर देखे जाने वाले अगल-बगल लंबवत ट्रैक्स में व्यवस्थित करते हैं।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "[Topic: 3.5 Watermark, Page 67] What is a 'Watermark' in Microsoft Word, and what is its primary utility?",
+        "hi": "[विषय: 3.5 वॉटरमार्क, पृष्ठ 67] Microsoft Word में 'Watermark' क्या है, और इसकी प्राथमिक उपयोगिता क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "A printer diagnostic pattern checking ink viscosity",
+          "hi": "स्याही की चिपचिपाहट की जांच करने वाला एक प्रिंटर डायग्नोस्टिक पैटर्न"
+        },
+        "b": {
+          "en": "An automatic spelling error replacement algorithm",
+          "hi": "एक स्वचालित वर्तनी त्रुटि प्रतिस्थापन एल्गोरिथ्म"
+        },
+        "c": {
+          "en": "A microscopic digital signature verifying user passwords",
+          "hi": "उपयोगकर्ता पासवर्ड की पुष्टि करने वाला एक सूक्ष्म डिजिटल हस्ताक्षर"
+        },
+        "d": {
+          "en": "A very light text or picture appearing behind document text to indicate status like Draft or Confidential",
+          "hi": "दस्तावेज़ टेक्स्ट के पीछे दिखाई देने वाला एक बहुत ही हल्का टेक्स्ट या चित्र जो ड्राफ्ट या गोपनीय जैसी स्थिति को दर्शाता है"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Read section I 'Water Mark' on Page 67.",
+        "hi": "पृष्ठ 67 पर अनुभाग I 'Water Mark' पढ़ें।"
+      },
+      "explanation": {
+        "en": "Page 67 defines: 'Water mark is a very light text or symbol to be printed on the background of the paper. Watermarks are text or pictures that appear behind document text. They often identify the document status, such as marking a document as a Draft or Confidential.'[cite: 2]",
+        "hi": "पृष्ठ 67 परिभाषित करता है: 'वॉटरमार्क कागज की पृष्ठभूमि पर मुद्रित होने वाला एक बहुत ही हल्का टेक्स्ट या प्रतीक है। वॉटरमार्क टेक्स्ट या चित्र होते हैं जो दस्तावेज़ टेक्स्ट के पीछे दिखाई देते हैं। वे अक्सर दस्तावेज़ की स्थिति की पहचान करते हैं, जैसे ड्राफ्ट या गोपनीय।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Watermarks offer faint background branding or security markings without obscuring readable body text.",
+        "hi": "वॉटरमार्क पठनीय मुख्य पाठ को अस्पष्ट किए बिना हल्की पृष्ठभूमि ब्रांडिंग या सुरक्षा चिह्नों की पेशकश करते हैं।"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "[Topic: 3.5 Page Color - Fill Effects, Page 69] Which option under Page Color allows users to apply gradients, textures, or patterns to the document background?",
+        "hi": "[विषय: 3.5 पेज कलर - फिल इफेक्ट्स, पृष्ठ 69] Page Color के अंतर्गत कौन सा विकल्प उपयोगकर्ताओं को दस्तावेज़ पृष्ठभूमि में ग्रेडिएंट, बनावट (textures) या पैटर्न लागू करने की अनुमति देता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Fill Effects",
+          "hi": "फिल इफेक्ट्स (Fill Effects)"
+        },
+        "b": {
+          "en": "Format Painter",
+          "hi": "फॉर्मेट पेंटर"
+        },
+        "c": {
+          "en": "Object Linker",
+          "hi": "ऑब्जेक्ट लिंकर"
+        },
+        "d": {
+          "en": "Dialog Box Launcher",
+          "hi": "डायलॉग बॉक्स लॉन्चर"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Look at step (ii) under 'Adding color to the page' on Page 69.",
+        "hi": "पृष्ठ 69 पर 'Adding color to the page' के तहत चरण (ii) देखें।"
+      },
+      "explanation": {
+        "en": "Page 69 explains: 'Click Fill Effects to change or add special effects, such as gradients, textures, or patterns.'[cite: 2]",
+        "hi": "पृष्ठ 69 बताता है: 'विशेष प्रभाव, जैसे ग्रेडिएंट, टेक्सचर या पैटर्न बदलने या जोड़ने के लिए Fill Effects पर क्लिक करें।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Fill Effects expands flat page background colors into complex visual surfaces like multi-shade gradients and paper textures.",
+        "hi": "Fill Effects सपाट पृष्ठ पृष्ठभूमि रंगों को जटिल दृश्य सतहों जैसे मल्टी-शेड ग्रेडिएंट और पेपर टेक्सचर में विस्तारित करता है।"
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "[Topic: 3.5 Superscript and Subscript, Page 70] What are 'Superscript' and 'Subscript' formally used for in word processing?",
+        "hi": "[विषय: 3.5 सुपरस्क्रिप्ट और सबस्क्रिप्ट, पृष्ठ 70] वर्ड प्रोसेसिंग में 'सुपरस्क्रिप्ट' और 'सबस्क्रिप्ट' का औपचारिक रूप से क्या उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Aligning text strictly along the right margin border",
+          "hi": "टेक्स्ट को सख्ती से दाएं मार्जिन बॉर्डर के साथ संरेखित करना"
+        },
+        "b": {
+          "en": "Typing characters slightly smaller that appear above (superscript) or below (subscript) the normal text line, such as in chemical formulas or mathematical powers",
+          "hi": "सामान्य टेक्स्ट लाइन के ऊपर (सुपरस्क्रिप्ट) या नीचे (सबस्क्रिप्ट) दिखने वाले थोड़े छोटे वर्ण टाइप करना, जैसे रासायनिक सूत्रों या गणितीय घातों में"
+        },
+        "c": {
+          "en": "Converting lowercase characters to uppercase automatically",
+          "hi": "लोअरकेस वर्णों को स्वचालित रूप से अपरकेस में बदलना"
+        },
+        "d": {
+          "en": "Drawing borders around selected tabular rows and columns",
+          "hi": "चयनित सारणीबद्ध पंक्तियों और स्तंभों के चारों ओर बॉर्डर बनाना"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Read the definition under section 3.5.2 on Page 70.",
+        "hi": "पृष्ठ 70 पर अनुभाग 3.5.2 के अंतर्गत परिभाषा पढ़ें।"
+      },
+      "explanation": {
+        "en": "Page 70 defines: 'Superscript and subscript allow you to type characters that appear above or below the normal text line. These characters appear smaller than standard text, and are traditionally used for footnotes, endnotes, and mathematical notation.'[cite: 2]",
+        "hi": "पृष्ठ 70 परिभाषित करता है: 'सुपरस्क्रिप्ट और सबस्क्रिप्ट आपको ऐसे वर्ण टाइप करने की अनुमति देते हैं जो सामान्य टेक्स्ट लाइन के ऊपर या नीचे दिखाई देते हैं। ये वर्ण मानक टेक्स्ट से छोटे दिखाई देते हैं, और पारंपरिक रूप से फ़ुटनोट्स, एंडनोट्स और गणितीय संकेतन के लिए उपयोग किए जाते हैं।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Superscript raises text above the baseline (e.g., x²), while Subscript drops text below it (e.g., CO₂).",
+        "hi": "सुपरस्क्रिप्ट टेक्स्ट को बेसलाइन से ऊपर उठाता है (जैसे x²), जबकि सबस्क्रिप्ट टेक्स्ट को उसके नीचे गिराता है (जैसे CO₂)।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "[Topic: 3.6 Inserting Symbols, Page 71] Where can you access foreign letters, mathematical operators, and special icons not present on the standard keyboard?",
+        "hi": "[विषय: 3.6 सिंबल डालना, पृष्ठ 71] आप मानक कीबोर्ड पर मौजूद न होने वाले विदेशी अक्षरों, गणितीय ऑपरेटरों और विशेष प्रतीकों तक कहाँ से पहुँच सकते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Page Layout tab -> Line Numbers",
+          "hi": "Page Layout tab -> Line Numbers"
+        },
+        "b": {
+          "en": "Home tab -> Font Face dropdown list",
+          "hi": "Home tab -> Font Face dropdown list"
+        },
+        "c": {
+          "en": "In the Symbol group on the Insert tab, by clicking the Symbol button",
+          "hi": "Insert टैब पर Symbol समूह में, Symbol बटन पर क्लिक करके"
+        },
+        "d": {
+          "en": "File tab -> Save As -> Plain Text options",
+          "hi": "File tab -> Save As -> Plain Text options"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Check step (i) under section 3.6.1 on Page 71.",
+        "hi": "पृष्ठ 71 पर अनुभाग 3.6.1 के तहत चरण (i) देखें।"
+      },
+      "explanation": {
+        "en": "Page 71 states: 'In the symbol group on the Insert tab click the Symbol command button... Selecting a symbol from the menu inserts the special symbol directly into your text.'[cite: 2]",
+        "hi": "पृष्ठ 71 बताता है: 'Insert टैब पर सिंबल समूह में Symbol कमांड बटन पर क्लिक करें... मेनू से किसी सिंबल का चयन करने पर विशेष सिंबल सीधे आपके टेक्स्ट में प्रविष्ट हो जाता है।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "The Symbol tool grants access to full Unicode character maps beyond physical keyboard keycaps.",
+        "hi": "सिंबल टूल भौतिक कीबोर्ड कीकैप से परे पूर्ण यूनिकोड वर्ण मानचित्रों तक पहुंच प्रदान करता है।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "[Topic: 3.6 Bullets and Numbering, Page 72-73] What happens by default if you begin typing a new paragraph with an asterisk or a number in MS Word?",
+        "hi": "[विषय: 3.6 बुलेट्स और नंबरिंग, पृष्ठ 72-73] यदि आप MS Word में किसी नए पैराग्राफ को तारांकन चिह्न (*) या संख्या के साथ टाइप करना शुरू करते हैं तो डिफ़ॉल्ट रूप से क्या होता है?"
+      },
+      "options": {
+        "a": {
+          "en": "The document immediately crashes and resets",
+          "hi": "दस्तावेज़ तुरंत क्रैश हो जाता है और रीसेट हो जाता है"
+        },
+        "b": {
+          "en": "Word automatically converts the text into a bulleted or numbered list",
+          "hi": "Word स्वचालित रूप से टेक्स्ट को बुलेटेड या क्रमांकित सूची में परिवर्तित कर देता है"
+        },
+        "c": {
+          "en": "The font changes permanently to Algerian font size 72",
+          "hi": "फ़ॉन्ट स्थायी रूप से Algerian फ़ॉन्ट आकार 72 में बदल जाता है"
+        },
+        "d": {
+          "en": "The entire paragraph is deleted from memory",
+          "hi": "पूरा पैराग्राफ मेमोरी से हटा दिया जाता है"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Read the opening paragraph under section 3.6.2 on Page 72.",
+        "hi": "पृष्ठ 72 पर अनुभाग 3.6.2 के अंतर्गत पहला पैराग्राफ पढ़ें।"
+      },
+      "explanation": {
+        "en": "Page 72 explains: 'Bullets or numbers can be added quickly to existing lines of text, or Word can automatically create lists as we type. By default, if we start a paragraph with an asterisk or a number.'[cite: 2]",
+        "hi": "पृष्ठ 72 बताता है: 'टेक्स्ट की मौजूदा पंक्तियों में बुलेट या नंबर जल्दी से जोड़े जा सकते हैं, या Word टाइप करते समय स्वचालित रूप से सूचियां बना सकता है। डिफ़ॉल्ट रूप से, यदि हम किसी पैराग्राफ को तारांकन चिह्न या संख्या से शुरू करते हैं।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Auto-formatting senses common list triggers (like '1.' or '*') and converts them into dynamic lists.",
+        "hi": "ऑटो-फ़ॉर्मेटिंग सामान्य सूची ट्रिगर्स (जैसे '1.' या '*') को पहचानती है और उन्हें गतिशील सूचियों में बदल देती है।"
+      }
+    },
+    {
+      "question_id": 21,
+      "question": {
+        "en": "[Topic: 3.7 Border and Shading, Page 74] What tool under the Page Background group of the Page Layout tab allows you to put decorative borders around an entire page?",
+        "hi": "[विषय: 3.7 बॉर्डर और शेडिंग, पृष्ठ 74] Page Layout टैब के Page Background समूह के तहत कौन सा उपकरण आपको पूरे पृष्ठ के चारों ओर सजावटी बॉर्डर लगाने की अनुमति देता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Page Borders",
+          "hi": "पेज बॉर्डर्स (Page Borders)"
+        },
+        "b": {
+          "en": "Margins Setup",
+          "hi": "मार्जिन सेटअप"
+        },
+        "c": {
+          "en": "Text Highlight Color",
+          "hi": "टेक्स्ट हाइलाइट कलर"
+        },
+        "d": {
+          "en": "Hyphenation",
+          "hi": "हाइफ़नेशन"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Look at section 3.7.1 'Borders' on Page 74.",
+        "hi": "पृष्ठ 74 पर अनुभाग 3.7.1 'Borders' देखें।"
+      },
+      "explanation": {
+        "en": "Page 74 specifies: 'Page Borders are used to put borders around the page. When you click option Page Borders in Page Background group of Page Layout tab, a dialog box appears.'[cite: 2]",
+        "hi": "पृष्ठ 74 निर्दिष्ट करता है: 'पेज बॉर्डर का उपयोग पृष्ठ के चारों ओर बॉर्डर लगाने के लिए किया जाता है। जब आप Page Layout टैब के Page Background समूह में Page Borders विकल्प पर क्लिक करते हैं, तो एक संवाद बॉक्स प्रकट होता है।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Page Borders frames document perimeters using solid lines, shadows, or artistic clip-art graphics.",
+        "hi": "पेज बॉर्डर ठोस रेखाओं, छायाओं या कलात्मक क्लिप-आर्ट ग्राफिक्स का उपयोग करके दस्तावेज़ की सीमाओं को फ्रेम करता है।"
+      }
+    },
+    {
+      "question_id": 22,
+      "question": {
+        "en": "[Topic: 3.7 Shading, Page 75] What does the 'Shading' feature in MS Word apply to text or paragraphs?",
+        "hi": "[विषय: 3.7 शेडिंग, पृष्ठ 75] MS Word में 'Shading' सुविधा टेक्स्ट या पैराग्राफ पर क्या लागू करती है?"
+      },
+      "options": {
+        "a": {
+          "en": "It italicizes all consonants inside words",
+          "hi": "यह शब्दों के अंदर सभी व्यंजनों को इटैलिक कर देती है"
+        },
+        "b": {
+          "en": "It applies background color styling behind a single word, paragraph, section, or whole page",
+          "hi": "यह किसी एक शब्द, पैराग्राफ, अनुभाग या पूरे पृष्ठ के पीछे पृष्ठभूमि रंग शैली लागू करती है"
+        },
+        "c": {
+          "en": "It replaces standard numbers with Roman numerals",
+          "hi": "यह मानक संख्याओं को रोमन अंकों से बदल देती है"
+        },
+        "d": {
+          "en": "It increases line spacing to quadruple lines",
+          "hi": "यह लाइन स्पेसिंग को चार गुना बढ़ा देती है"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Review the first paragraph under section 3.7.2 on Page 75.",
+        "hi": "पृष्ठ 75 पर अनुभाग 3.7.2 के अंतर्गत पहला पैराग्राफ देखें।"
+      },
+      "explanation": {
+        "en": "Page 75 states: 'Borders and shading is a good feature of MS Word. You can apply a border, shading or both around a single word, a selection of words, a paragraph, group of paragraphs, a single page, a section, or all pages.'[cite: 2]",
+        "hi": "पृष्ठ 75 बताता है: 'बॉर्डर और शेडिंग MS Word की एक अच्छी सुविधा है। आप किसी एक शब्द, शब्दों के चयन, एक पैराग्राफ, पैराग्राफ के समूह, एक पेज, एक अनुभाग या सभी पेजों पर बॉर्डर, शेडिंग या दोनों लागू कर सकते हैं।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Shading tints the background field behind selected text blocks to give visual prominence.",
+        "hi": "शेडिंग दृश्य प्रमुखता देने के लिए चयनित टेक्स्ट ब्लॉक के पीछे पृष्ठभूमि क्षेत्र को रंग देती है।"
+      }
+    },
+    {
+      "question_id": 23,
+      "question": {
+        "en": "[Topic: 3.8 Format Painter, Page 76] What does the mouse pointer transform into after clicking the 'Format Painter' button in the Clipboard group?",
+        "hi": "[विषय: 3.8 फॉर्मेट पेंटर, पृष्ठ 76] Clipboard समूह में 'Format Painter' बटन पर क्लिक करने के बाद माउस पॉइंटर किसमें बदल जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "A magnifying glass icon",
+          "hi": "एक आवर्धक कांच (magnifying glass) आइकन"
+        },
+        "b": {
+          "en": "A scissor cutting icon",
+          "hi": "एक कैंची काटने का आइकन"
+        },
+        "c": {
+          "en": "A paintbrush icon",
+          "hi": "एक पेंटब्रश (paintbrush) आइकन"
+        },
+        "d": {
+          "en": "An hourglass waiting icon",
+          "hi": "एक ऑवरग्लास प्रतीक्षा आइकन"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Check step (ii) under section 3.8.1 on Page 76.",
+        "hi": "पृष्ठ 76 पर अनुभाग 3.8.1 के तहत चरण (ii) देखें।"
+      },
+      "explanation": {
+        "en": "Page 76 describes step (ii): 'In the clipboard group, on the Home tab, single click Format Painter. The pointer will change to a paintbrush icon.'[cite: 2]",
+        "hi": "पृष्ठ 76 चरण (ii) का वर्णन करता है: 'होम टैब पर क्लिपबोर्ड समूह में, Format Painter पर सिंगल क्लिक करें। पॉइंटर एक पेंटब्रश आइकन में बदल जाएगा।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "The paintbrush cursor signifies that copied text styling is loaded and ready to be brushed onto other text.",
+        "hi": "पेंटब्रश कर्सर यह दर्शाता है कि कॉपी की गई टेक्स्ट स्टाइलिंग लोड हो गई है और अन्य टेक्स्ट पर लागू होने के लिए तैयार है।"
+      }
+    },
+    {
+      "question_id": 24,
+      "question": {
+        "en": "[Topic: 3.8 Format Painter, Page 76] Which keyboard shortcut combination copies formatting from a selected text block?",
+        "hi": "[विषय: 3.8 फॉर्मेट पेंटर, पृष्ठ 76] कौन सा कीबोर्ड शॉर्टकट संयोजन चयनित टेक्स्ट ब्लॉक से फ़ॉर्मेटिंग कॉपी करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Ctrl + F",
+          "hi": "Ctrl + F"
+        },
+        "b": {
+          "en": "Alt + Shift + V",
+          "hi": "Alt + Shift + V"
+        },
+        "c": {
+          "en": "Ctrl + Alt + Del",
+          "hi": "Ctrl + Alt + Del"
+        },
+        "d": {
+          "en": "Ctrl + Shift + C",
+          "hi": "Ctrl + Shift + C"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Notice the 'Shift' added to the regular Copy command at the bottom of section 3.8.1 on Page 76.",
+        "hi": "पृष्ठ 76 पर अनुभाग 3.8.1 के निचले भाग में नियमित कॉपी कमांड में जोड़े गए 'Shift' पर ध्यान दें।"
+      },
+      "explanation": {
+        "en": "Page 76 notes: 'Press Ctrl + Shift + C together from keyboard' to copy formatting.[cite: 2]",
+        "hi": "पृष्ठ 76 बताता है: फ़ॉर्मेटिंग कॉपी करने के लिए 'कीबोर्ड से एक साथ Ctrl + Shift + C दबाएं'।[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Ctrl + Shift + C copies visual formatting attributes without copying the actual textual characters.",
+        "hi": "Ctrl + Shift + C वास्तविक पाठ्य वर्णों को कॉपी किए बिना दृश्य स्वरूपण विशेषताओं को कॉपी करता है।"
+      }
+    },
+    {
+      "question_id": 25,
+      "question": {
+        "en": "[Topic: 3.8 Find and Replace, Page 77-78] When searching for a word using the Find feature, how does MS Word highlight matching results in the document text?",
+        "hi": "[विषय: 3.8 ढूँढना और बदलना, पृष्ठ 77-78] Find सुविधा का उपयोग करके किसी शब्द की खोज करते समय, MS Word दस्तावेज़ टेक्स्ट में मिलान करने वाले परिणामों को कैसे हाइलाइट करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "In yellow color",
+          "hi": "पीले रंग में (In yellow color)"
+        },
+        "b": {
+          "en": "In bright red underline",
+          "hi": "चमकीली लाल अंडरलाइन में"
+        },
+        "c": {
+          "en": "By converting them to strikethrough text",
+          "hi": "उन्हें स्ट्राइकथ्रू टेक्स्ट में परिवर्तित करके"
+        },
+        "d": {
+          "en": "By turning the background pitch black",
+          "hi": "पृष्ठभूमि को बिल्कुल काला करके"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Check step (ii) at the top of Page 78.",
+        "hi": "पृष्ठ 78 के शीर्ष पर चरण (ii) देखें।"
+      },
+      "explanation": {
+        "en": "Page 78 states in step (ii): 'If the text is found in the document, it will be highlighted in yellow, and a preview will appear in the navigation pane.'[cite: 2]",
+        "hi": "पृष्ठ 78 चरण (ii) में बताता है: 'यदि दस्तावेज़ में टेक्स्ट मिल जाता है, तो इसे पीले रंग में हाइलाइट किया जाएगा, और नेविगेशन फलक में एक पूर्वावलोकन दिखाई देगा।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "The Find feature flags all query occurrences with temporary yellow highlights across pages.",
+        "hi": "Find सुविधा पृष्ठों पर अस्थायी पीले हाइलाइट्स के साथ सभी मिलान वाले शब्दों को चिह्नित करती है।"
+      }
+    },
+    {
+      "question_id": 26,
+      "question": {
+        "en": "[Topic: 3.8 Find and Replace, Page 78] Which button inside the Find and Replace dialog window changes every occurrence of a target word throughout the document in one action?",
+        "hi": "[विषय: 3.8 ढूँढना और बदलना, पृष्ठ 78] Find and Replace संवाद विंडो के अंदर कौन सा बटन एक ही क्रिया में पूरे दस्तावेज़ में किसी लक्षित शब्द की प्रत्येक पुनरावृत्ति को बदल देता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Find Next",
+          "hi": "फ़ाइंड नेक्स्ट (Find Next)"
+        },
+        "b": {
+          "en": "Replace All",
+          "hi": "रिप्लेस ऑल (Replace All)"
+        },
+        "c": {
+          "en": "Cancel Search",
+          "hi": "कैंसल सर्च"
+        },
+        "d": {
+          "en": "More >>",
+          "hi": "मोर >>"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Look at step (iv) under 'Steps to replace text' on Page 78.",
+        "hi": "पृष्ठ 78 पर 'Steps to replace text' के तहत चरण (iv) देखें।"
+      },
+      "explanation": {
+        "en": "Page 78 explains: 'Click Find Next and then replace to replace text. You can also click Replace All to replace all instances within the document.'[cite: 2]",
+        "hi": "पृष्ठ 78 बताता है: 'टेक्स्ट को बदलने के लिए Find Next और फिर Replace पर क्लिक करें। आप दस्तावेज़ के भीतर सभी प्रविष्टियों को बदलने के लिए Replace All पर भी क्लिक कर सकते हैं।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Replace All automates bulk substitution of phrases across the entire file payload.",
+        "hi": "Replace All संपूर्ण फ़ाइल पेलोड में वाक्यांशों के थोक प्रतिस्थापन को स्वचालित करता है।"
+      }
+    },
+    {
+      "question_id": 27,
+      "question": {
+        "en": "[Topic: 3.9 Inserting a Table, Page 78] According to Section 3.9.1, how many standard methods are available in MS Word to create a table?",
+        "hi": "[विषय: 3.9 तालिका डालना, पृष्ठ 78] अनुभाग 3.9.1 के अनुसार, तालिका बनाने के लिए MS Word में कितने मानक तरीके उपलब्ध हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Exactly 1 method strictly",
+          "hi": "सख्ती से केवल 1 तरीका"
+        },
+        "b": {
+          "en": "Exactly 10 automated routines",
+          "hi": "ठीक 10 स्वचालित तरीके"
+        },
+        "c": {
+          "en": "Three methods: Using table button grid, Using insert table option, and By Drawing a table",
+          "hi": "तीन तरीके: टेबल बटन ग्रिड का उपयोग करके, इन्सर्ट टेबल विकल्प का उपयोग करके, और टेबल ड्रा करके"
+        },
+        "d": {
+          "en": "Tables cannot be created inside MS Word",
+          "hi": "MS Word के अंदर तालिकाएँ नहीं बनाई जा सकती हैं"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Review the bullet points at the bottom of Page 78.",
+        "hi": "पृष्ठ 78 के निचले भाग में दिए गए बिंदुओं की समीक्षा करें।"
+      },
+      "explanation": {
+        "en": "Page 78 lists: 'In MS Word there are three methods to draw a table: 1. Using table button. 2. Using insert table option. 3. By Drawing a table.'[cite: 2]",
+        "hi": "पृष्ठ 78 सूचीबद्ध करता है: 'MS Word में तालिका बनाने के तीन तरीके हैं: 1. टेबल बटन का उपयोग करके। 2. इंसर्ट टेबल विकल्प का उपयोग करके। 3. टेबल बनाकर (Draw Table)।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Word supports grid highlighting, numerical dimension input, and freehand pencil drawing to create tables.",
+        "hi": "वर्ड तालिकाएँ बनाने के लिए ग्रिड हाइलाइटिंग, संख्यात्मक आयाम इनपुट और फ्रीहैंड पेंसिल ड्राइंग का समर्थन करता है।"
+      }
+    },
+    {
+      "question_id": 28,
+      "question": {
+        "en": "[Topic: 3.9 Inserting a Table, Page 82] When a table is inserted or active, which two contextual tabs appear on the Ribbon to manage table design and structure?",
+        "hi": "[विषय: 3.9 तालिका डालना, पृष्ठ 82] जब कोई तालिका डाली जाती है या सक्रिय होती है, तो तालिका डिज़ाइन और संरचना को प्रबंधित करने के लिए रिबन पर कौन से दो प्रासंगिक टैब दिखाई देते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Review and Mailings",
+          "hi": "Review और Mailings"
+        },
+        "b": {
+          "en": "Animations and Slide Show",
+          "hi": "Animations और Slide Show"
+        },
+        "c": {
+          "en": "Developer and Add-Ins",
+          "hi": "Developer और Add-Ins"
+        },
+        "d": {
+          "en": "Design and Layout",
+          "hi": "Design और Layout (डिज़ाइन और लेआउट)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Check step 5 on Page 82.",
+        "hi": "पृष्ठ 82 पर चरण 5 देखें।"
+      },
+      "explanation": {
+        "en": "Page 82 notes in step 5: 'When you insert a table, two new tabs (Design and Layout) will also appear on the Ribbon. These tabs will display various Table tools.'[cite: 2]",
+        "hi": "पृष्ठ 82 चरण 5 में बताता है: 'जब आप एक तालिका सम्मिलित करते हैं, तो रिबन पर दो नए टैब (Design और Layout) भी दिखाई देंगे। ये टैब विभिन्न टेबल उपकरण प्रदर्शित करेंगे।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Contextual Design and Layout tabs surface dedicated tools for styling cells and modifying row/column architecture.",
+        "hi": "प्रासंगिक Design और Layout टैब सेल स्टाइलिंग और पंक्ति/कॉलम संरचना को संशोधित करने के लिए समर्पित उपकरण प्रदान करते हैं।"
+      }
+    },
+    {
+      "question_id": 29,
+      "question": {
+        "en": "[Topic: 3.9 Drawing a Table, Page 82] What does the mouse pointer change into when you select the 'Draw Table' option?",
+        "hi": "[विषय: 3.9 एक तालिका बनाना, पृष्ठ 82] जब आप 'Draw Table' विकल्प चुनते हैं तो माउस पॉइंटर किसमें बदल जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "A pencil",
+          "hi": "एक पेंसिल (A pencil)"
+        },
+        "b": {
+          "en": "A crosshair scissors",
+          "hi": "एक क्रॉसहेयर कैंची"
+        },
+        "c": {
+          "en": "An eraser",
+          "hi": "एक इरेज़र"
+        },
+        "d": {
+          "en": "A bucket fill icon",
+          "hi": "एक बाल्टी भराव (bucket fill) आइकन"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Review step 1 under 'By Drawing a Table' on Page 82.",
+        "hi": "पृष्ठ 82 पर 'By Drawing a Table' के तहत चरण 1 देखें।"
+      },
+      "explanation": {
+        "en": "Page 82 states: 'Click on Insert Tab, click Table and then click Draw Table. The pointer changes to a pencil.'[cite: 2]",
+        "hi": "पृष्ठ 82 बताता है: 'Insert टैब पर क्लिक करें, Table पर क्लिक करें और फिर Draw Table पर क्लिक करें। पॉइंटर एक पेंसिल में बदल जाता है।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "The pencil cursor enables freehand drafting of irregular table boundaries and nested cells.",
+        "hi": "पेंसिल कर्सर अनियमित तालिका सीमाओं और नेस्टेड सेल के फ्रीहैंड प्रारूपण को सक्षम बनाता है।"
+      }
+    },
+    {
+      "question_id": 30,
+      "question": {
+        "en": "[Topic: 3.9 Entering Data in Table, Page 83] Which keyboard keys allow you to move forward to the next cell and backward to the previous cell inside a table?",
+        "hi": "[विषय: 3.9 तालिका में डेटा दर्ज करना, पृष्ठ 83] कौन सी कीबोर्ड कुंजियाँ आपको तालिका के अंदर अगले सेल में आगे बढ़ने और पिछले सेल में पीछे जाने की अनुमति देती हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Forward: Esc; Backward: Enter",
+          "hi": "आगे: Esc; पीछे: Enter"
+        },
+        "b": {
+          "en": "Forward: Tab key; Backward: Shift + Tab keys",
+          "hi": "आगे: Tab कुंजी; पीछे: Shift + Tab कुंजियाँ"
+        },
+        "c": {
+          "en": "Forward: Spacebar; Backward: Backspace",
+          "hi": "आगे: Spacebar; पीछे: Backspace"
+        },
+        "d": {
+          "en": "Forward: Ctrl+C; Backward: Ctrl+V",
+          "hi": "आगे: Ctrl+C; पीछे: Ctrl+V"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Read the instructions under 'Entering Data' on Page 83.",
+        "hi": "पृष्ठ 83 पर 'Entering Data' के अंतर्गत दिए गए निर्देश पढ़ें।"
+      },
+      "explanation": {
+        "en": "Page 83 instructs: 'To go to the next cell press Tab key. To go to the previous cell press Shift and Tab key together. You can also use arrow keys.'[cite: 2]",
+        "hi": "पृष्ठ 83 निर्देश देता है: 'अगले सेल में जाने के लिए Tab कुंजी दबाएं। पिछले सेल में जाने के लिए Shift और Tab कुंजी को एक साथ दबाएं। आप तीर कुंजियों का भी उपयोग कर सकते हैं।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Tab and Shift+Tab offer rapid, hands-on-keyboard navigation across table cells.",
+        "hi": "Tab और Shift+Tab टेबल सेल में तेजी से कीबोर्ड नेविगेशन की सुविधा प्रदान करते हैं।"
+      }
+    },
+    {
+      "question_id": 31,
+      "question": {
+        "en": "[Topic: 3.10 Inserting Columns and Rows, Page 84-86] Under which Ribbon Group on the Layout Tab are commands like 'Insert Left', 'Insert Right', 'Insert Above', and 'Insert Below' found?",
+        "hi": "[विषय: 3.10 कॉलम और पंक्तियाँ डालना, पृष्ठ 84-86] Layout टैब पर किस रिबन समूह के अंतर्गत 'Insert Left', 'Insert Right', 'Insert Above' और 'Insert Below' जैसे कमांड पाए जाते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Table Styles Group",
+          "hi": "Table Styles समूह"
+        },
+        "b": {
+          "en": "Cell Size Group",
+          "hi": "Cell Size समूह"
+        },
+        "c": {
+          "en": "Rows and Columns Group",
+          "hi": "Rows and Columns समूह (रोज़ एंड कॉलम्स ग्रुप)"
+        },
+        "d": {
+          "en": "Merge Group",
+          "hi": "Merge समूह"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Look at the ribbon labels under sections 3.10.1 and 3.10.2 on Pages 84-86.",
+        "hi": "पृष्ठ 84-86 पर अनुभाग 3.10.1 और 3.10.2 के तहत रिबन लेबल देखें।"
+      },
+      "explanation": {
+        "en": "Pages 84-86 document: 'Under Rows and Columns Group, on the Layout Tab... click on Insert Left... Insert Right... Insert Above... Insert Below.'[cite: 2]",
+        "hi": "पृष्ठ 84-86 बताते हैं: 'Layout टैब पर Rows and Columns Group के तहत... Insert Left... Insert Right... Insert Above... Insert Below पर क्लिक करें।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "The Rows and Columns group houses all expansion commands to add adjacent tabular lines.",
+        "hi": "Rows and Columns समूह आसन्न सारणीबद्ध पंक्तियों को जोड़ने के लिए सभी विस्तार कमांड को होस्ट करता है।"
+      }
+    },
+    {
+      "question_id": 32,
+      "question": {
+        "en": "[Topic: 3.10 Inserting a Cell, Page 88] What positional options are presented inside the 'Insert Cells' dialog box when inserting an individual cell?",
+        "hi": "[विषय: 3.10 सेल डालना, पृष्ठ 88] किसी अलग सेल को सम्मिलित करते समय 'Insert Cells' संवाद बॉक्स के अंदर कौन से स्थितीय विकल्प प्रस्तुत किए जाते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Convert to WordArt or Clip Art",
+          "hi": "WordArt या Clip Art में बदलें"
+        },
+        "b": {
+          "en": "Scale font size to double height",
+          "hi": "फ़ॉन्ट आकार को दोगुनी ऊंचाई तक स्केल करें"
+        },
+        "c": {
+          "en": "Compress table margins to zero inches",
+          "hi": "टेबल मार्जिन को शून्य इंच तक संपीड़ित करें"
+        },
+        "d": {
+          "en": "Shift cells right, Shift cells down, Insert entire row, or Insert entire column",
+          "hi": "Shift cells right, Shift cells down, Insert entire row, या Insert entire column"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Examine the screenshot of the 'Insert Cells' dialog box on Page 88.",
+        "hi": "पृष्ठ 88 पर 'Insert Cells' संवाद बॉक्स का स्क्रीनशॉट देखें।"
+      },
+      "explanation": {
+        "en": "Page 88 illustrates the Insert Cells dialog box radio buttons: 'Shift cells right, Shift cells down, Insert entire row, Insert entire column.'[cite: 2]",
+        "hi": "पृष्ठ 88 Insert Cells संवाद बॉक्स के रेडियो बटन दर्शाता है: 'Shift cells right, Shift cells down, Insert entire row, Insert entire column।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Inserting a single cell requires shifting neighboring cells right or down to accommodate the new space.",
+        "hi": "एकल सेल सम्मिलित करने के लिए नए स्थान को समायोजित करने के लिए पड़ोसी सेल को दाएं या नीचे स्थानांतरित करने की आवश्यकता होती है।"
+      }
+    },
+    {
+      "question_id": 33,
+      "question": {
+        "en": "[Topic: 3.10 Deleting Table Elements, Page 89-93] Which option inside the 'Delete Cells' dialog box completely removes a horizontal line of cells across the table?",
+        "hi": "[विषय: 3.10 तालिका तत्वों को हटाना, पृष्ठ 89-93] 'Delete Cells' संवाद बॉक्स के अंदर कौन सा विकल्प पूरी तालिका में सेल की एक क्षैतिज रेखा को पूरी तरह से हटा देता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Delete entire row",
+          "hi": "Delete entire row (पूरी पंक्ति हटाएं)"
+        },
+        "b": {
+          "en": "Shift cells right",
+          "hi": "Shift cells right"
+        },
+        "c": {
+          "en": "Add row above",
+          "hi": "Add row above"
+        },
+        "d": {
+          "en": "Merge cells",
+          "hi": "Merge cells"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Look at the radio options shown on Pages 89 and 90.",
+        "hi": "पृष्ठ 89 और 90 पर दिखाए गए रेडियो विकल्पों को देखें।"
+      },
+      "explanation": {
+        "en": "Pages 89 and 90 show the Delete Cells dialog box option: 'Delete entire row' deletes the complete row across the table.[cite: 2]",
+        "hi": "पृष्ठ 89 और 90 Delete Cells संवाद बॉक्स विकल्प दिखाते हैं: 'Delete entire row' तालिका में पूरी पंक्ति को हटा देता है।[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Selecting 'Delete entire row' prunes the whole horizontal entry without disrupting column alignment.",
+        "hi": "'Delete entire row' का चयन कॉलम संरेखण को बाधित किए बिना पूरी क्षैतिज प्रविष्टि को हटा देता है।"
+      }
+    },
+    {
+      "question_id": 34,
+      "question": {
+        "en": "[Topic: 3.10 Table Properties, Page 93-94] Through which dialog box can you adjust table horizontal alignment (Left, Center, Right) and specify exact row heights?",
+        "hi": "[विषय: 3.10 तालिका गुण, पृष्ठ 93-94] किस संवाद बॉक्स के माध्यम से आप तालिका के क्षैतिज संरेखण (Left, Center, Right) को समायोजित कर सकते हैं और सटीक पंक्ति ऊंचाई निर्दिष्ट कर सकते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Page Setup dialog box",
+          "hi": "Page Setup संवाद बॉक्स"
+        },
+        "b": {
+          "en": "Table Properties dialog box",
+          "hi": "टेबल प्रॉपर्टीज संवाद बॉक्स (Table Properties dialog box)"
+        },
+        "c": {
+          "en": "Symbol Character Map",
+          "hi": "Symbol कैरेक्टर मैप"
+        },
+        "d": {
+          "en": "Clip Art task pane",
+          "hi": "Clip Art टास्क पेन"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Refer to section 'Alignment of a Table' on Pages 93-94.",
+        "hi": "पृष्ठ 93-94 पर 'Alignment of a Table' अनुभाग देखें।"
+      },
+      "explanation": {
+        "en": "Pages 93-94 explain: 'Click on Properties button in the Table group. Then the Table Properties dialog box will be displayed... According to requirement select right, left and center align... to change the size of selected row, select Row tab.'[cite: 2]",
+        "hi": "पृष्ठ 93-94 बताते हैं: 'Table समूह में Properties बटन पर क्लिक करें। फिर Table Properties संवाद बॉक्स प्रदर्शित होगा... आवश्यकतानुसार दाएँ, बाएँ और केंद्र संरेखण का चयन करें... चयनित पंक्ति का आकार बदलने के लिए, Row टैब चुनें।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Table Properties centralizes dimensional rules, alignment positions, and cell borders.",
+        "hi": "Table Properties आयामी नियमों, संरेखण स्थितियों और सेल सीमाओं को केंद्रीकृत करती है।"
+      }
+    },
+    {
+      "question_id": 35,
+      "question": {
+        "en": "[Topic: 3.10 Merging Cells, Page 96] What is the operational effect of the 'Merge Cells' command in MS Word?",
+        "hi": "[विषय: 3.10 सेल मर्ज करना, पृष्ठ 96] MS Word में 'Merge Cells' कमांड का परिचालन प्रभाव क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "It deletes the entire table from the active document",
+          "hi": "यह सक्रिय दस्तावेज़ से पूरी तालिका को हटा देता है"
+        },
+        "b": {
+          "en": "It turns text characters into superscript mathematical indices",
+          "hi": "यह टेक्स्ट वर्णों को सुपरस्क्रिप्ट गणितीय सूचकांकों में बदल देता है"
+        },
+        "c": {
+          "en": "It combines two or more selected cells into a single unified cell",
+          "hi": "यह दो या दो से अधिक चयनित सेल को एक एकल एकीकृत सेल में जोड़ता है"
+        },
+        "d": {
+          "en": "It changes column width to exactly 0.1 inches automatically",
+          "hi": "यह कॉलम की चौड़ाई को स्वचालित रूप से ठीक 0.1 इंच में बदल देता है"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Read the opening paragraph under 'Merging Cells' on Page 96.",
+        "hi": "पृष्ठ 96 पर 'Merging Cells' के अंतर्गत पहला पैराग्राफ पढ़ें।"
+      },
+      "explanation": {
+        "en": "Page 96 specifies: 'You can also merge two or more cells to make one cell to give it a better look. The data gets combined in one cell.'[cite: 2]",
+        "hi": "पृष्ठ 96 निर्दिष्ट करता है: 'आप इसे बेहतर रूप देने के लिए एक सेल बनाने के लिए दो या अधिक सेल को मर्ज भी कर सकते हैं। डेटा एक सेल में संयुक्त हो जाता है।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Merging eliminates internal grid partitions to create spanning headers and title rows.",
+        "hi": "मर्जिंग आंतरिक ग्रिड विभाजनों को समाप्त करके फैले हुए हेडर और शीर्षक पंक्तियाँ बनाती है।"
+      }
+    },
+    {
+      "question_id": 36,
+      "question": {
+        "en": "[Topic: 3.10 Splitting Cells, Page 96-97] What is 'Splitting Cells' in a table defined as?",
+        "hi": "[विषय: 3.10 सेल विभाजित करना, पृष्ठ 96-97] तालिका में 'Splitting Cells' (सेल विभाजित करना) को क्या परिभाषित किया गया है?"
+      },
+      "options": {
+        "a": {
+          "en": "Splitting the computer display monitor into dual screens",
+          "hi": "कंप्यूटर डिस्प्ले मॉनिटर को दोहरी स्क्रीन में विभाजित करना"
+        },
+        "b": {
+          "en": "Converting a word processing file into an executable file",
+          "hi": "वर्ड प्रोसेसिंग फ़ाइल को निष्पादन योग्य फ़ाइल में बदलना"
+        },
+        "c": {
+          "en": "Dividing a single cell into two or more separate cells specifying rows and columns",
+          "hi": "पंक्तियों और स्तंभों को निर्दिष्ट करके किसी एक सेल को दो या दो से अधिक अलग-अलग सेल में विभाजित करना"
+        },
+        "d": {
+          "en": "Removing all text styles from the entire paragraph block",
+          "hi": "पूरे पैराग्राफ ब्लॉक से सभी टेक्स्ट शैलियों को हटाना"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Look under section 3.10 'Splitting Cells' on Page 96.",
+        "hi": "पृष्ठ 96 पर अनुभाग 3.10 'Splitting Cells' के अंतर्गत देखें।"
+      },
+      "explanation": {
+        "en": "Page 96 states: 'You can split a cell into two or more cells... Enter the number of rows and columns into which you want to split the selected cell.'[cite: 2]",
+        "hi": "पृष्ठ 96 बताता है: 'आप एक सेल को दो या अधिक सेल में विभाजित कर सकते हैं... पंक्तियों और स्तंभों की संख्या दर्ज करें जिसमें आप चयनित सेल को विभाजित करना चाहते हैं।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Splitting subdivides a single table block into multiple smaller sub-cells.",
+        "hi": "विभाजन (Splitting) एक एकल टेबल ब्लॉक को कई छोटे उप-सेल में विभाजित करता है।"
+      }
+    },
+    {
+      "question_id": 37,
+      "question": {
+        "en": "[Topic: 3.11 Mail Merge Components, Page 98] What are the two primary components that make up a Mail Merge document in MS Word?",
+        "hi": "[विषय: 3.11 मेल मर्ज के घटक, पृष्ठ 98] MS Word में मेल मर्ज दस्तावेज़ बनाने वाले दो प्राथमिक घटक कौन से हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Header and Footer",
+          "hi": "हेडर और फुटर"
+        },
+        "b": {
+          "en": "Superscript and Subscript",
+          "hi": "सुपरस्क्रिप्ट और सबस्क्रिप्ट"
+        },
+        "c": {
+          "en": "WordArt and Clip Art",
+          "hi": "वर्डआर्ट और क्लिप आर्ट"
+        },
+        "d": {
+          "en": "Data Source and Main Document",
+          "hi": "डेटा सोर्स (Data source) और मेन डॉक्यूमेंट (Main Document)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Check the component list under section 3.11 on Page 98.",
+        "hi": "पृष्ठ 98 पर अनुभाग 3.11 के अंतर्गत घटक सूची देखें।"
+      },
+      "explanation": {
+        "en": "Page 98 explicitly outlines: 'Mail merge document has two different components. These components are: 1. Data source, 2. Main Document.'[cite: 2]",
+        "hi": "पृष्ठ 98 स्पष्ट रूप से रेखांकित करता है: 'मेल मर्ज दस्तावेज़ के दो अलग-अलग घटक होते हैं। ये घटक हैं: 1. डेटा सोर्स (Data source), 2. मेन डॉक्यूमेंट (Main Document)।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "Mail Merge couples static boilerplate text (Main Document) with individualized contact records (Data Source).",
+        "hi": "मेल मर्ज स्थिर बॉयलप्लेट टेक्स्ट (मेन डॉक्यूमेंट) को व्यक्तिगत संपर्क रिकॉर्ड (डेटा सोर्स) के साथ जोड़ता है।"
+      }
+    },
+    {
+      "question_id": 38,
+      "question": {
+        "en": "[Topic: 3.11 Mail Merge Components, Page 98] What does the 'Data Source' (also called data file) contain in a Mail Merge operation?",
+        "hi": "[विषय: 3.11 मेल मर्ज के घटक, पृष्ठ 98] मेल मर्ज ऑपरेशन में 'डेटा सोर्स' (Data Source) में क्या शामिल होता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Individual recipient information such as names, addresses, city, pin code, and telephone numbers",
+          "hi": "व्यक्तिगत प्राप्तकर्ता की जानकारी जैसे नाम, पता, शहर, पिन कोड और टेलीफोन नंबर"
+        },
+        "b": {
+          "en": "The operating system kernel system binaries",
+          "hi": "ऑपरेटिंग सिस्टम कर्नेल सिस्टम बायनेरिज़"
+        },
+        "c": {
+          "en": "The printer mechanical resolution properties and ink ratios",
+          "hi": "प्रिंटर यांत्रिक रिज़ॉल्यूशन गुण और स्याही अनुपात"
+        },
+        "d": {
+          "en": "Standard static body text identical for every reader",
+          "hi": "प्रत्येक पाठक के लिए समान मानक स्थिर मुख्य पाठ"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Read the definition of 'Data source' on Page 98.",
+        "hi": "पृष्ठ 98 पर 'Data source' की परिभाषा पढ़ें।"
+      },
+      "explanation": {
+        "en": "Page 98 defines: 'Data source stores individual information. It is also called data file. Data source is a file that contains the information to be merged into a document. For example, the list of names & addresses, city, pin, telephone number etc.'[cite: 2]",
+        "hi": "पृष्ठ 98 परिभाषित करता है: 'डेटा स्रोत व्यक्तिगत जानकारी संग्रहीत करता है। इसे डेटा फ़ाइल भी कहा जाता है। डेटा स्रोत एक ऐसी फ़ाइल है जिसमें दस्तावेज़ में मर्ज की जाने वाली जानकारी होती है। उदाहरण के लिए, नामों और पतों, शहर, पिन, टेलीफोन नंबर आदि की सूची।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "The Data Source serves as the structured database feeding unique variables into the merge template.",
+        "hi": "डेटा सोर्स मर्ज टेम्पलेट में अद्वितीय चर फीड करने वाले संरचित डेटाबेस के रूप में कार्य करता है।"
+      }
+    },
+    {
+      "question_id": 39,
+      "question": {
+        "en": "[Topic: 3.11 Mail Merge Workflow, Page 98-100] Which Ribbon Tab initiates the 'Step by Step Mail Merge Wizard' in Microsoft Word?",
+        "hi": "[विषय: 3.11 मेल मर्ज वर्कफ़्लो, पृष्ठ 98-100] Microsoft Word में कौन सा रिबन टैब 'Step by Step Mail Merge Wizard' शुरू करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "View Tab",
+          "hi": "View टैब"
+        },
+        "b": {
+          "en": "Mailings Tab",
+          "hi": "Mailings टैब (मेलिंग्स टैब)"
+        },
+        "c": {
+          "en": "Page Layout Tab",
+          "hi": "Page Layout टैब"
+        },
+        "d": {
+          "en": "References Tab",
+          "hi": "References टैब"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Check step 1 under 'Perform the following steps to send Mail' on Page 98.",
+        "hi": "पृष्ठ 98 पर 'Perform the following steps to send Mail' के तहत चरण 1 देखें।"
+      },
+      "explanation": {
+        "en": "Page 98 directs: '1. Click on the Mailing tab, 2. Click on the Start Mail Merge button, 3. Click on the Step by Step Mail Merge Wizard.'[cite: 2]",
+        "hi": "पृष्ठ 98 निर्देशित करता है: '1. Mailing टैब पर क्लिक करें, 2. Start Mail Merge बटन पर क्लिक करें, 3. Step by Step Mail Merge Wizard पर क्लिक करें।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "The Mailings tab is dedicated to mass-correspondence utilities, envelopes, labels, and merges.",
+        "hi": "Mailings टैब सामूहिक पत्राचार उपयोगिताओं, लिफाफे, लेबल और मर्ज के लिए समर्पित है।"
+      }
+    },
+    {
+      "question_id": 40,
+      "question": {
+        "en": "[Topic: 3.11 Final Merged Document, Page 104-105] What is the newly generated document containing all individual personalized letters called after completing the merge?",
+        "hi": "[विषय: 3.11 अंतिम मर्ज किया गया दस्तावेज़, पृष्ठ 104-105] मेल मर्ज पूरा करने के बाद सभी व्यक्तिगत पत्रों से युक्त नए उत्पन्न दस्तावेज़ को क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Stand-alone node file",
+          "hi": "स्टैंड-अलोन नोड फ़ाइल"
+        },
+        "b": {
+          "en": "Macro script buffer",
+          "hi": "मैक्रो स्क्रिप्ट बफ़र"
+        },
+        "c": {
+          "en": "Merged document",
+          "hi": "मर्ज किया गया दस्तावेज़ (Merged document)"
+        },
+        "d": {
+          "en": "Clip Art library register",
+          "hi": "क्लिप आर्ट लाइब्रेरी रजिस्टर"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Read the concluding lines on Page 105 right above 'Just Remember'.",
+        "hi": "पृष्ठ 105 पर 'Just Remember' के ठीक ऊपर अंतिम पंक्तियाँ पढ़ें।"
+      },
+      "explanation": {
+        "en": "Page 105 concludes: 'A new document will be created containing all the merged letters. This new document is called merged document.'[cite: 2]",
+        "hi": "पृष्ठ 105 निष्कर्ष निकालता है: 'सभी मर्ज किए गए पत्रों से युक्त एक नया दस्तावेज़ बनाया जाएगा। इस नए दस्तावेज़ को मर्ज किया गया दस्तावेज़ (merged document) कहा जाता है।'[cite: 2]"
+      },
+      "key_takeaway": {
+        "en": "The Merged Document is the compiled final product ready for individual batch printing or dispatch.",
+        "hi": "मर्ज किया गया दस्तावेज़ (Merged Document) व्यक्तिगत बैच प्रिंटिंग या प्रेषण के लिए तैयार अंतिम संकलित उत्पाद है।"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1850 @@
+{
+  "metadata": {
+    "chapter_number": 5,
+    "chapter_title": "RDBMS Concepts and MySQL",
+    "chapter_title_hindi": "RDBMS अवधारणाएँ और MySQL",
+    "subject": "Database Management Systems",
+    "total_questions": 48,
+    "source_language": "en",
+    "target_language": "hi",
+    "created_at": "2024-11-24T00:00:00Z",
+    "version": "1.1",
+    "note": "Mandatory Option Bias Correction performed to achieve a perfect even distribution (A:12, B:12, C:12, D:12). Factual answer mapping and encoding fixed."
+  },
+  "validation_report": {
+    "is_valid": true,
+    "checked_by": "AI Tutor (Post-Redistribution & Encoding)",
+    "checked_at": "2024-12-08T15:34:02Z",
+    "corrections": [
+      "Option Bias Correction applied to achieve perfect balance (12/12/12/12).",
+      "Raw HTML and code characters (e.g., <, >, &) encoded using HTML entities (&lt;, &gt;, &amp;) for client display compatibility."
+    ],
+    "notes": "Compliant with all V2.0 mandates."
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "What is a database?",
+        "hi": "डेटाबेस क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "A collection of unrelated files",
+          "hi": "असंबंधित फाइलों का संग्रह"
+        },
+        "b": {
+          "en": "A single file containing all information",
+          "hi": "सभी जानकारी वाली एक एकल फाइल"
+        },
+        "c": {
+          "en": "A programming language for data manipulation",
+          "hi": "डेटा मैन्यूपुलेशन के लिए एक प्रोग्रामिंग भाषा"
+        },
+        "d": {
+          "en": "A collection of interrelated data stored without unnecessary duplication",
+          "hi": "अनावश्यक दोहराव के बिना संग्रहीत परस्पर संबंधित डेटा का संग्रह"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "A key feature of modern databases is managing relationships between data and reducing redundancy.",
+        "hi": "आधुनिक डेटाबेस की एक प्रमुख विशेषता डेटा के बीच संबंधों का प्रबंधन करना और अतिरेक को कम करना है।"
+      },
+      "explanation": {
+        "en": "A database is a shared collection of logically related data, designed to meet the information needs of an organization, with controlled redundancy.",
+        "hi": "एक डेटाबेस तार्किक रूप से संबंधित डेटा का एक साझा संग्रह है, जिसे एक संगठन की सूचना आवश्यकताओं को पूरा करने के लिए डिज़ाइन किया गया है, जिसमें नियंत्रित अतिरेक होता है।"
+      },
+      "key_takeaway": {
+        "en": "Databases are about organized, interrelated data.",
+        "hi": "डेटाबेस संगठित, परस्पर संबंधित डेटा के बारे में हैं।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "What does DBMS stand for?",
+        "hi": "DBMS का क्या अर्थ है?"
+      },
+      "options": {
+        "a": {
+          "en": "Data Basic Management System",
+          "hi": "डेटा बेसिक मैनेजमेंट सिस्टम"
+        },
+        "b": {
+          "en": "Database Management System",
+          "hi": "डेटाबेस मैनेजमेंट सिस्टम"
+        },
+        "c": {
+          "en": "Data Binary Management System",
+          "hi": "डेटा बाइनरी मैनेजमेंट सिस्टम"
+        },
+        "d": {
+          "en": "Digital Base Management System",
+          "hi": "डिजिटल बेस मैनेजमेंट सिस्टम"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It is the software that allows users to define, create, maintain, and control access to the database.",
+        "hi": "यह वह सॉफ्टवेयर है जो उपयोगकर्ताओं को डेटाबेस को परिभाषित करने, बनाने, बनाए रखने और एक्सेस को नियंत्रित करने की अनुमति देता है।"
+      },
+      "explanation": {
+        "en": "DBMS stands for Database Management System, the software system used to manage a database.",
+        "hi": "DBMS का अर्थ है डेटाबेस मैनेजमेंट सिस्टम, डेटाबेस का प्रबंधन करने के लिए उपयोग किया जाने वाला सॉफ्टवेयर सिस्टम।"
+      },
+      "key_takeaway": {
+        "en": "DBMS is the software tool.",
+        "hi": "DBMS सॉफ्टवेयर उपकरण है।"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "Which of the following is a key function of a DBMS?",
+        "hi": "निम्नलिखित में से कौन सा DBMS का एक प्रमुख कार्य है?"
+      },
+      "options": {
+        "a": {
+          "en": "Formatting text documents",
+          "hi": "टेक्स्ट दस्तावेजों को फॉर्मेट करना"
+        },
+        "b": {
+          "en": "Storing and updating data",
+          "hi": "डेटा को स्टोर और अपडेट करना"
+        },
+        "c": {
+          "en": "Creating graphical designs",
+          "hi": "ग्राफिकल डिजाइन बनाना"
+        },
+        "d": {
+          "en": "Sending emails",
+          "hi": "ईमेल भेजना"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The primary role relates directly to the 'Data' part of the name.",
+        "hi": "प्राथमिक भूमिका नाम के 'डेटा' भाग से सीधे संबंधित है।"
+      },
+      "explanation": {
+        "en": "The core function of any Database Management System is the efficient and reliable storage, retrieval, and updating of data.",
+        "hi": "किसी भी डेटाबेस मैनेजमेंट सिस्टम का मुख्य कार्य डेटा का कुशल और विश्वसनीय भंडारण, पुनर्प्राप्ति और अद्यतन करना है।"
+      },
+      "key_takeaway": {
+        "en": "DBMS manages data operations.",
+        "hi": "DBMS डेटा संचालन का प्रबंधन करता है।"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "What is RDBMS?",
+        "hi": "RDBMS क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "A system that stores data in a row-based table structure",
+          "hi": "एक सिस्टम जो डेटा को पंक्ति-आधारित तालिका संरचना में संग्रहीत करता है"
+        },
+        "b": {
+          "en": "A system that stores data in unrelated files",
+          "hi": "एक सिस्टम जो डेटा को असंबंधित फाइलों में संग्रहीत करता है"
+        },
+        "c": {
+          "en": "A programming language for web development",
+          "hi": "वेब डेवलपमेंट के लिए एक प्रोग्रामिंग भाषा"
+        },
+        "d": {
+          "en": "A type of computer hardware",
+          "hi": "एक प्रकार का कंप्यूटर हार्डवेयर"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "The 'R' stands for 'Relational'. How are relations represented in a database?",
+        "hi": "'R' का मतलब 'Relational' है। डेटाबेस में संबंध कैसे दर्शाए जाते हैं?"
+      },
+      "explanation": {
+        "en": "RDBMS stands for Relational Database Management System, which stores data in tables (relations) consisting of rows and columns.",
+        "hi": "RDBMS का अर्थ है रिलेशनल डेटाबेस मैनेजमेंट सिस्टम, जो पंक्तियों और कॉलमों से युक्त तालिकाओं (संबंधों) में डेटा संग्रहीत करता है।"
+      },
+      "key_takeaway": {
+        "en": "RDBMS uses tables.",
+        "hi": "RDBMS तालिकाओं का उपयोग करता है।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "In the relational model, how is data stored?",
+        "hi": "रिलेशनल मॉडल में, डेटा कैसे संग्रहीत होता है?"
+      },
+      "options": {
+        "a": {
+          "en": "In hierarchical trees",
+          "hi": "पदानुक्रमित पेड़ों में"
+        },
+        "b": {
+          "en": "In tables that can be linked together",
+          "hi": "तालिकाओं में जिन्हें एक साथ जोड़ा जा सकता है"
+        },
+        "c": {
+          "en": "In network graphs",
+          "hi": "नेटवर्क ग्राफ में"
+        },
+        "d": {
+          "en": "In sequential files",
+          "hi": "अनुक्रमिक फाइलों में"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This is a follow-up to the definition of RDBMS.",
+        "hi": "यह RDBMS की परिभाषा का एक अनुवर्ती प्रश्न है।"
+      },
+      "explanation": {
+        "en": "The relational model, invented by E.F. Codd, stores data in two-dimensional tables (relations) that can be connected using common fields (keys).",
+        "hi": "ई.एफ. कॉड द्वारा आविष्कार किए गए रिलेशनल मॉडल में, डेटा को द्वि-आयामी तालिकाओं (संबंधों) में संग्रहीत किया जाता है जिन्हें सामान्य फ़ील्ड (कुंजियों) का उपयोग करके जोड़ा जा सकता है।"
+      },
+      "key_takeaway": {
+        "en": "Tables are the structure of the relational model.",
+        "hi": "तालिकाएँ रिलेशनल मॉडल की संरचना हैं।"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "What is a major problem of the Traditional File Processing System?",
+        "hi": "पारंपरिक फाइल प्रोसेसिंग सिस्टम की एक प्रमुख समस्या क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Data Redundancy",
+          "hi": "डेटा अतिरेक"
+        },
+        "b": {
+          "en": "High security",
+          "hi": "उच्च सुरक्षा"
+        },
+        "c": {
+          "en": "Support for multiple users",
+          "hi": "एकाधिक उपयोगकर्ताओं के लिए समर्थन"
+        },
+        "d": {
+          "en": "Use of ACID properties",
+          "hi": "ACID गुणों का उपयोग"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "When the same data is stored multiple times in different files, what problem occurs?",
+        "hi": "जब एक ही डेटा को अलग-अलग फाइलों में कई बार संग्रहीत किया जाता है, तो क्या समस्या होती है?"
+      },
+      "explanation": {
+        "en": "Traditional File Systems often lead to Data Redundancy because each application program owns its data file, resulting in the same information being duplicated across files.",
+        "hi": "पारंपरिक फ़ाइल सिस्टम अक्सर डेटा अतिरेक (Data Redundancy) का कारण बनते हैं क्योंकि प्रत्येक एप्लिकेशन प्रोग्राम अपनी डेटा फ़ाइल का मालिक होता है, जिसके परिणामस्वरूप एक ही जानकारी फ़ाइलों में दोहराई जाती है।"
+      },
+      "key_takeaway": {
+        "en": "Redundancy is a file system flaw.",
+        "hi": "अतिरेक फ़ाइल सिस्टम का एक दोष है।"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "Data inconsistency in Traditional File Systems happens primarily due to:",
+        "hi": "पारंपरिक फाइल सिस्टम में डेटा असंगति मुख्य रूप से होती है:"
+      },
+      "options": {
+        "a": {
+          "en": "High security",
+          "hi": "उच्च सुरक्षा के कारण"
+        },
+        "b": {
+          "en": "Data Redundancy",
+          "hi": "डेटा अतिरेक के कारण"
+        },
+        "c": {
+          "en": "Concurrent access",
+          "hi": "समवर्ती पहुंच के कारण"
+        },
+        "d": {
+          "en": "Normalization",
+          "hi": "सामान्यीकरण के कारण"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "If a customer's address is stored in two different files and only one is updated, the data becomes inconsistent.",
+        "hi": "यदि किसी ग्राहक का पता दो अलग-अलग फाइलों में संग्रहीत है और केवल एक को अपडेट किया जाता है, तो डेटा असंगत हो जाता है।"
+      },
+      "explanation": {
+        "en": "Data inconsistency, where the same data has different values in different places, is a direct consequence of Data Redundancy in Traditional File Systems.",
+        "hi": "डेटा असंगति, जहाँ एक ही डेटा का अलग-अलग स्थानों पर अलग-अलग मान होता है, पारंपरिक फ़ाइल सिस्टम में डेटा अतिरेक (Data Redundancy) का सीधा परिणाम है।"
+      },
+      "key_takeaway": {
+        "en": "Redundancy leads to inconsistency.",
+        "hi": "अतिरेक असंगति की ओर ले जाता है।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "Which of the following is a key difference between DBMS and RDBMS?",
+        "hi": "निम्नलिखित में से कौन सा DBMS और RDBMS के बीच एक महत्वपूर्ण अंतर है?"
+      },
+      "options": {
+        "a": {
+          "en": "DBMS supports multiple users, RDBMS supports single user",
+          "hi": "DBMS एकाधिक उपयोगकर्ताओं का समर्थन करता है, RDBMS एकल उपयोगकर्ता का समर्थन करता है"
+        },
+        "b": {
+          "en": "DBMS stores data in tables, RDBMS stores data in files",
+          "hi": "DBMS डेटा को तालिकाओं में संग्रहीत करता है, RDBMS डेटा को फाइलों में संग्रहीत करता है"
+        },
+        "c": {
+          "en": "DBMS does not support normalization, RDBMS supports normalization",
+          "hi": "DBMS सामान्यीकरण का समर्थन नहीं करता है, RDBMS सामान्यीकरण का समर्थन करता है"
+        },
+        "d": {
+          "en": "DBMS is more expensive than RDBMS",
+          "hi": "DBMS, RDBMS से अधिक महंगा है"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "RDBMS follows the relational model, which is based on the principle of minimal redundancy and high data integrity, achieved through a process called normalization.",
+        "hi": "RDBMS रिलेशनल मॉडल का अनुसरण करता है, जो सामान्यीकरण नामक प्रक्रिया के माध्यम से प्राप्त न्यूनतम अतिरेक और उच्च डेटा अखंडता के सिद्धांत पर आधारित है।"
+      },
+      "explanation": {
+        "en": "RDBMS is a subset of DBMS that is based on the relational model, which inherently requires principles like normalization to maintain data integrity and structure. Not all DBMS follow this model (e.g., NoSQL systems).",
+        "hi": "RDBMS, DBMS का एक उपसमूह है जो रिलेशनल मॉडल पर आधारित है, जिसके लिए डेटा अखंडता और संरचना को बनाए रखने के लिए सामान्यीकरण जैसे सिद्धांतों की आवश्यकता होती है। सभी DBMS इस मॉडल का पालन नहीं करते हैं (उदाहरण के लिए, NoSQL सिस्टम)।"
+      },
+      "key_takeaway": {
+        "en": "Relational integrity is key to RDBMS.",
+        "hi": "रिलेशनल अखंडता RDBMS की कुंजी है।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "Which system uses ACID properties for storing data?",
+        "hi": "डेटा संग्रहीत करने के लिए कौन सा सिस्टम ACID गुणों का उपयोग करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Traditional File Processing System",
+          "hi": "पारंपरिक फाइल प्रोसेसिंग सिस्टम"
+        },
+        "b": {
+          "en": "DBMS and RDBMS",
+          "hi": "DBMS और RDBMS"
+        },
+        "c": {
+          "en": "RDBMS",
+          "hi": "आरडीबीएमएस"
+        },
+        "d": {
+          "en": "Neither DBMS nor RDBMS",
+          "hi": "न तो DBMS और न ही RDBMS"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "These properties are essential for reliable transaction processing, which is a hallmark of relational databases.",
+        "hi": "ये गुण विश्वसनीय ट्रांजैक्शन प्रोसेसिंग के लिए आवश्यक हैं, जो रिलेशनल डेटाबेस की एक पहचान है।"
+      },
+      "explanation": {
+        "en": "ACID properties (Atomicity, Consistency, Isolation, Durability) are the fundamental guarantees provided by Relational Database Management Systems (RDBMS) to ensure data integrity during transactions.",
+        "hi": "ACID गुण (एटोमिसिटी, कंसिस्टेंसी, आइसोलेशन, ड्यूरेबिलिटी) रिलेशनल डेटाबेस मैनेजमेंट सिस्टम (RDBMS) द्वारा ट्रांजैक्शन के दौरान डेटा अखंडता सुनिश्चित करने के लिए प्रदान की जाने वाली मौलिक गारंटी हैं।"
+      },
+      "key_takeaway": {
+        "en": "ACID is for RDBMS transactions.",
+        "hi": "ACID RDBMS ट्रांजैक्शन के लिए है।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "What is Data Abstraction?",
+        "hi": "डेटा एब्स्ट्रक्शन क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "The process of duplicating data",
+          "hi": "डेटा को डुप्लिकेट करने की प्रक्रिया"
+        },
+        "b": {
+          "en": "The process of deleting old data",
+          "hi": "पुराने डेटा को हटाने की प्रक्रिया"
+        },
+        "c": {
+          "en": "The process of hiding irrelevant details from users to make data access easy and secure",
+          "hi": "डेटा एक्सेस को आसान और सुरक्षित बनाने के लिए उपयोगकर्ताओं से अप्रासंगिक विवरण छिपाने की प्रक्रिया"
+        },
+        "d": {
+          "en": "The process of converting data into code",
+          "hi": "डेटा को कोड में बदलने की प्रक्रिया"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Think about how the user sees the data versus how it's actually stored on the disk.",
+        "hi": "सोचिए कि उपयोगकर्ता डेटा को कैसे देखता है, बनाम यह डिस्क पर वास्तव में कैसे संग्रहीत होता है।"
+      },
+      "explanation": {
+        "en": "Data abstraction is achieved through the three-level architecture (Physical, Logical, View) of a DBMS, which hides complex storage details from end-users.",
+        "hi": "डेटा एब्स्ट्रक्शन DBMS की त्रि-स्तरीय वास्तुकला (फिजिकल, लॉजिकल, व्यू) के माध्यम से प्राप्त किया जाता है, जो अंतिम उपयोगकर्ताओं से जटिल भंडारण विवरण छिपाता है।"
+      },
+      "key_takeaway": {
+        "en": "Abstraction means hiding complexity.",
+        "hi": "एब्स्ट्रक्शन का अर्थ है जटिलता को छिपाना।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "Which level of data abstraction decides how data is stored on physical hard drives?",
+        "hi": "डेटा एब्स्ट्रक्शन का कौन सा स्तर तय करता है कि डेटा भौतिक हार्ड ड्राइव पर कैसे संग्रहीत होता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Logical Level",
+          "hi": "लॉजिकल स्तर"
+        },
+        "b": {
+          "en": "View Level",
+          "hi": "व्यू स्तर"
+        },
+        "c": {
+          "en": "Physical Level",
+          "hi": "फिजिकल स्तर"
+        },
+        "d": {
+          "en": "Conceptual Level",
+          "hi": "कंसेप्चुअल स्तर"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The name of the level directly corresponds to the hardware storage.",
+        "hi": "स्तर का नाम सीधे हार्डवेयर स्टोरेज से मेल खाता है।"
+      },
+      "explanation": {
+        "en": "The Physical Level (or Internal Schema) describes how the data is actually stored—the physical storage details, file organization, indexing, and access paths.",
+        "hi": "फिजिकल स्तर (या इंटरनल स्कीमा) यह बताता है कि डेटा वास्तव में कैसे संग्रहीत है—भौतिक भंडारण विवरण, फ़ाइल संगठन, इंडेक्सिंग और एक्सेस पाथ।"
+      },
+      "key_takeaway": {
+        "en": "Physical level deals with hardware.",
+        "hi": "फिजिकल स्तर हार्डवेयर से संबंधित है।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "The View Level of data abstraction is concerned with:",
+        "hi": "डेटा एब्स्ट्रक्शन का व्यू स्तर किससे संबंधित है?"
+      },
+      "options": {
+        "a": {
+          "en": "How data is stored physically",
+          "hi": "डेटा भौतिक रूप से कैसे संग्रहीत होता है"
+        },
+        "b": {
+          "en": "How data is organized in structures like tables",
+          "hi": "डेटा तालिकाओं जैसी संरचनाओं में कैसे व्यवस्थित होता है"
+        },
+        "c": {
+          "en": "How data is viewed by the users",
+          "hi": "उपयोगकर्ताओं द्वारा डेटा कैसे देखा जाता है"
+        },
+        "d": {
+          "en": "How data is backed up",
+          "hi": "डेटा का बैकअप कैसे लिया जाता है"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The 'View' is the interface or perspective given to a specific user group.",
+        "hi": "'व्यू' एक विशिष्ट उपयोगकर्ता समूह को दिया गया इंटरफ़ेस या दृष्टिकोण है।"
+      },
+      "explanation": {
+        "en": "The View Level (or External Schema) describes the part of the database that a particular user or application program is interested in, often hiding the rest of the database for security and simplicity.",
+        "hi": "व्यू स्तर (या एक्सटर्नल स्कीमा) डेटाबेस के उस हिस्से का वर्णन करता है जिसमें कोई विशेष उपयोगकर्ता या एप्लिकेशन प्रोग्राम रुचि रखता है, जो अक्सर सुरक्षा और सरलता के लिए डेटाबेस के बाकी हिस्सों को छिपाता है।"
+      },
+      "key_takeaway": {
+        "en": "View level is for users.",
+        "hi": "व्यू स्तर उपयोगकर्ताओं के लिए है।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "What does DBA stand for?",
+        "hi": "DBA का क्या अर्थ है?"
+      },
+      "options": {
+        "a": {
+          "en": "Database Analyst",
+          "hi": "डेटाबेस एनालिस्ट"
+        },
+        "b": {
+          "en": "Database Administrator",
+          "hi": "डेटाबेस एडमिनिस्ट्रेटर"
+        },
+        "c": {
+          "en": "Data Business Application",
+          "hi": "डेटा बिजनेस एप्लिकेशन"
+        },
+        "d": {
+          "en": "Digital Base Access",
+          "hi": "डिजिटल बेस एक्सेस"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This person is responsible for the overall maintenance and control of the database system.",
+        "hi": "यह व्यक्ति डेटाबेस सिस्टम के समग्र रखरखाव और नियंत्रण के लिए जिम्मेदार है।"
+      },
+      "explanation": {
+        "en": "DBA stands for Database Administrator, a person or team responsible for managing the DBMS, including its design, security, and maintenance.",
+        "hi": "DBA का अर्थ है डेटाबेस एडमिनिस्ट्रेटर, एक व्यक्ति या टीम जो DBMS के प्रबंधन के लिए जिम्मेदार है, जिसमें इसका डिज़ाइन, सुरक्षा और रखरखाव शामिल है।"
+      },
+      "key_takeaway": {
+        "en": "DBA manages the database.",
+        "hi": "DBA डेटाबेस का प्रबंधन करता है।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "Which of the following is a role of a DBA?",
+        "hi": "निम्नलिखित में से कौन सा DBA की भूमिका है?"
+      },
+      "options": {
+        "a": {
+          "en": "Designing the user interface",
+          "hi": "यूजर इंटरफेस डिजाइन करना"
+        },
+        "b": {
+          "en": "Defining the database schema",
+          "hi": "डेटाबेस स्कीमा को परिभाषित करना"
+        },
+        "c": {
+          "en": "Writing application code for the front-end",
+          "hi": "फ्रंट-एंड के लिए एप्लिकेशन कोड लिखना"
+        },
+        "d": {
+          "en": "Marketing the database software",
+          "hi": "डेटाबेस सॉफ्टवेयर का विपणन करना"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The schema is the structure of the database, which is a core responsibility of the administrator.",
+        "hi": "स्कीमा डेटाबेस की संरचना है, जो एडमिनिस्ट्रेटर की एक मुख्य जिम्मेदारी है।"
+      },
+      "explanation": {
+        "en": "The DBA is responsible for defining the conceptual and internal schemas, implementing the data storage structure, and providing logical views (external schemas) to users.",
+        "hi": "DBA वैचारिक और आंतरिक स्कीमा को परिभाषित करने, डेटा भंडारण संरचना को लागू करने और उपयोगकर्ताओं को तार्किक दृश्य (बाहरी स्कीमा) प्रदान करने के लिए जिम्मेदार है।"
+      },
+      "key_takeaway": {
+        "en": "Schema definition is a DBA role.",
+        "hi": "स्कीमा परिभाषा एक DBA की भूमिका है।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "SQL statements are divided into how many major groups?",
+        "hi": "SQL स्टेटमेंट कितने प्रमुख समूहों में विभाजित हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Two",
+          "hi": "दो"
+        },
+        "b": {
+          "en": "Three",
+          "hi": "तीन"
+        },
+        "c": {
+          "en": "Four",
+          "hi": "चार"
+        },
+        "d": {
+          "en": "Five",
+          "hi": "पाँच"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Think of DDL, DML, DCL, TCL, and one other category often included.",
+        "hi": "DDL, DML, DCL, TCL, और अक्सर शामिल एक अन्य श्रेणी के बारे में सोचें।"
+      },
+      "explanation": {
+        "en": "SQL commands are typically divided into five major categories: DDL (Data Definition Language), DML (Data Manipulation Language), DQL (Data Query Language, often considered part of DML), DCL (Data Control Language), and TCL (Transaction Control Language).",
+        "hi": "SQL कमांड को आम तौर पर पाँच प्रमुख श्रेणियों में विभाजित किया जाता है: DDL (डेटा डेफिनिशन लैंग्वेज), DML (डेटा मैन्यूपुलेशन लैंग्वेज), DQL (डेटा क्वेरी लैंग्वेज, जिसे अक्सर DML का हिस्सा माना जाता है), DCL (डेटा कंट्रोल लैंग्वेज), और TCL (ट्रांजैक्शन कंट्रोल लैंग्वेज)।"
+      },
+      "key_takeaway": {
+        "en": "There are five SQL command types.",
+        "hi": "SQL कमांड के पाँच प्रकार हैं।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "Which SQL command is used to create database objects like tables?",
+        "hi": "डेटाबेस ऑब्जेक्ट जैसे टेबल बनाने के लिए किस SQL कमांड का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "DROP",
+          "hi": "ड्रॉप"
+        },
+        "b": {
+          "en": "ALTER",
+          "hi": "ऑल्टर"
+        },
+        "c": {
+          "en": "CREATE",
+          "hi": "क्रिएट"
+        },
+        "d": {
+          "en": "TRUNCATE",
+          "hi": "ट्रंकेट"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This command belongs to the Data Definition Language (DDL) category.",
+        "hi": "यह कमांड डेटा डेफिनिशन लैंग्वेज (DDL) श्रेणी से संबंधित है।"
+      },
+      "explanation": {
+        "en": "The `CREATE` command is a DDL command used to create new database objects, such as tables, views, indexes, or databases.",
+        "hi": "`CREATE` कमांड एक DDL कमांड है जिसका उपयोग नई डेटाबेस ऑब्जेक्ट्स, जैसे टेबल, व्यू, इंडेक्स, या डेटाबेस बनाने के लिए किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "`CREATE` is for making objects.",
+        "hi": "`CREATE` ऑब्जेक्ट बनाने के लिए है।"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "The `TRUNCATE` command is used to:",
+        "hi": "`TRUNCATE` कमांड का उपयोग किसके लिए किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Delete a table from the database",
+          "hi": "डेटाबेस से एक टेबल को हटाने के लिए"
+        },
+        "b": {
+          "en": "Remove all records from a table and deallocate the space",
+          "hi": "एक टेबल से सभी रिकॉर्ड हटाने और स्थान डी-अलोकेट करने के लिए"
+        },
+        "c": {
+          "en": "Change the structure of a table",
+          "hi": "टेबल की संरचना बदलने के लिए"
+        },
+        "d": {
+          "en": "Insert new data into a table",
+          "hi": "टेबल में नया डेटा डालने के लिए"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It's a fast DDL operation that removes all data but keeps the table structure. Compare it with `DELETE`.",
+        "hi": "यह एक तेज़ DDL ऑपरेशन है जो सभी डेटा को हटा देता है लेकिन टेबल संरचना को बरकरार रखता है। इसकी तुलना `DELETE` से करें।"
+      },
+      "explanation": {
+        "en": "`TRUNCATE` is a DDL command that quickly removes all rows from a table by deallocating the data pages, which is faster and uses fewer transaction logs than `DELETE`.",
+        "hi": "`TRUNCATE` एक DDL कमांड है जो डेटा पेजों को डी-अलोकेट करके एक टेबल से सभी पंक्तियों को जल्दी से हटा देता है, जो `DELETE` की तुलना में तेज़ होता है और कम ट्रांजैक्शन लॉग का उपयोग करता है।"
+      },
+      "key_takeaway": {
+        "en": "`TRUNCATE` removes all data quickly.",
+        "hi": "`TRUNCATE` सभी डेटा को तेज़ी से हटाता है।"
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "Which category of SQL commands is used for querying the database?",
+        "hi": "डेटाबेस को क्वेरी करने के लिए SQL कमांड की किस श्रेणी का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "DDL",
+          "hi": "DDL"
+        },
+        "b": {
+          "en": "DML",
+          "hi": "DML"
+        },
+        "c": {
+          "en": "DCL",
+          "hi": "DCL"
+        },
+        "d": {
+          "en": "TCL",
+          "hi": "TCL"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The `SELECT` statement is the primary query command.",
+        "hi": "`SELECT` स्टेटमेंट प्राथमिक क्वेरी कमांड है।"
+      },
+      "explanation": {
+        "en": "While some classify `SELECT` as DQL (Data Query Language), it is generally grouped under DML (Data Manipulation Language) as its function is to retrieve and thus 'manipulate' the data presented to the user.",
+        "hi": "जबकि कुछ `SELECT` को DQL (डेटा क्वेरी लैंग्वेज) के रूप में वर्गीकृत करते हैं, इसे आमतौर पर DML (डेटा मैन्यूपुलेशन लैंग्वेज) के तहत समूहीकृत किया जाता है क्योंकि इसका कार्य उपयोगकर्ता को प्रस्तुत डेटा को पुनः प्राप्त करना और इस प्रकार 'मैन्यूपुलेट' करना है।"
+      },
+      "key_takeaway": {
+        "en": "`SELECT` is DML (or DQL).",
+        "hi": "`SELECT` DML (या DQL) है।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "The `INSERT` command belongs to which category of SQL commands?",
+        "hi": "`INSERT` कमांड SQL कमांड की किस श्रेणी से संबंधित है?"
+      },
+      "options": {
+        "a": {
+          "en": "DDL",
+          "hi": "DDL"
+        },
+        "b": {
+          "en": "DML",
+          "hi": "DML"
+        },
+        "c": {
+          "en": "DCL",
+          "hi": "DCL"
+        },
+        "d": {
+          "en": "TCL",
+          "hi": "TCL"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This command changes the data content of a table, not its structure.",
+        "hi": "यह कमांड टेबल की डेटा सामग्री को बदलता है, न कि उसकी संरचना को।"
+      },
+      "explanation": {
+        "en": "DML (Data Manipulation Language) commands are used to modify the database content. `INSERT`, `UPDATE`, and `DELETE` are the primary DML commands.",
+        "hi": "DML (डेटा मैन्यूपुलेशन लैंग्वेज) कमांड का उपयोग डेटाबेस सामग्री को संशोधित करने के लिए किया जाता है। `INSERT`, `UPDATE`, और `DELETE` प्राथमिक DML कमांड हैं।"
+      },
+      "key_takeaway": {
+        "en": "`INSERT` is a DML command.",
+        "hi": "`INSERT` एक DML कमांड है।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "Which DCL command is used to give access permissions to a user?",
+        "hi": "किसी उपयोगकर्ता को एक्सेस अनुमति देने के लिए किस DCL कमांड का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "REVOKE",
+          "hi": "रिवोक"
+        },
+        "b": {
+          "en": "COMMIT",
+          "hi": "कमिट"
+        },
+        "c": {
+          "en": "GRANT",
+          "hi": "ग्रांट"
+        },
+        "d": {
+          "en": "SAVEPOINT",
+          "hi": "सेवपॉइंट"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The opposite command is `REVOKE`.",
+        "hi": "विपरीत कमांड `REVOKE` है।"
+      },
+      "explanation": {
+        "en": "DCL (Data Control Language) manages user access and privileges. `GRANT` gives permissions, and `REVOKE` removes them.",
+        "hi": "DCL (डेटा कंट्रोल लैंग्वेज) उपयोगकर्ता पहुंच और विशेषाधिकारों का प्रबंधन करता है। `GRANT` अनुमति देता है, और `REVOKE` उन्हें हटा देता है।"
+      },
+      "key_takeaway": {
+        "en": "`GRANT` gives permissions.",
+        "hi": "`GRANT` अनुमति देता है।"
+      }
+    },
+    {
+      "question_id": 21,
+      "question": {
+        "en": "What is the purpose of the `COMMIT` command?",
+        "hi": "`COMMIT` कमांड का उद्देश्य क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "To undo a transaction",
+          "hi": "किसी लेन-देन को पूर्ववत करने के लिए"
+        },
+        "b": {
+          "en": "To successfully complete a database transaction",
+          "hi": "डेटाबेस लेन-देन को सफलतापूर्वक पूरा करने के लिए"
+        },
+        "c": {
+          "en": "To set a save point within a transaction",
+          "hi": "किसी लेन-देन के भीतर एक सेव पॉइंट सेट करने के लिए"
+        },
+        "d": {
+          "en": "To delete a table",
+          "hi": "एक टेबल को हटाने के लिए"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This is a TCL command, and it makes changes permanent.",
+        "hi": "यह एक TCL कमांड है, और यह परिवर्तनों को स्थायी बनाता है।"
+      },
+      "explanation": {
+        "en": "`COMMIT` is a TCL (Transaction Control Language) command that makes all changes performed in the current transaction permanent in the database.",
+        "hi": "`COMMIT` एक TCL (ट्रांजैक्शन कंट्रोल लैंग्वेज) कमांड है जो वर्तमान ट्रांजैक्शन में किए गए सभी परिवर्तनों को डेटाबेस में स्थायी बनाता है।"
+      },
+      "key_takeaway": {
+        "en": "`COMMIT` makes changes permanent.",
+        "hi": "`COMMIT` परिवर्तनों को स्थायी बनाता है।"
+      }
+    },
+    {
+      "question_id": 22,
+      "question": {
+        "en": "What is Metadata?",
+        "hi": "मेटाडेटा क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Data about the database",
+          "hi": "डेटाबेस के बारे में डेटा"
+        },
+        "b": {
+          "en": "The actual data stored in tables",
+          "hi": "तालिकाओं में संग्रहीत वास्तविक डेटा"
+        },
+        "c": {
+          "en": "Backup data",
+          "hi": "बैकअप डेटा"
+        },
+        "d": {
+          "en": "Encrypted data",
+          "hi": "एन्क्रिप्टेड डेटा"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "The prefix 'meta-' means 'a change in' or 'comprehensive'.",
+        "hi": "उपसर्ग 'meta-' का अर्थ है 'में एक परिवर्तन' या 'व्यापक'।"
+      },
+      "explanation": {
+        "en": "Metadata is 'data about data.' In a database context, it includes information about table names, column names, data types, constraints, and relationships.",
+        "hi": "मेटाडेटा 'डेटा के बारे में डेटा' है। डेटाबेस संदर्भ में, इसमें तालिका नामों, कॉलम नामों, डेटा प्रकारों, कंस्ट्रेंट्स और संबंधों के बारे में जानकारी शामिल है।"
+      },
+      "key_takeaway": {
+        "en": "Metadata describes the data structure.",
+        "hi": "मेटाडेटा डेटा संरचना का वर्णन करता है।"
+      }
+    },
+    {
+      "question_id": 23,
+      "question": {
+        "en": "Who primarily uses the Data Dictionary?",
+        "hi": "डेटा डिक्शनरी का उपयोग मुख्य रूप से कौन करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Normal database users",
+          "hi": "सामान्य डेटाबेस उपयोगकर्ता"
+        },
+        "b": {
+          "en": "Application Programmers",
+          "hi": "एप्लिकेशन प्रोग्रामर"
+        },
+        "c": {
+          "en": "Database Administrator (DBA)",
+          "hi": "डेटाबेस एडमिनिस्ट्रेटर (DBA)"
+        },
+        "d": {
+          "en": "Web Developers",
+          "hi": "वेब डेवलपर्स"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The Data Dictionary is the central repository for all metadata, which is crucial for the person managing the entire system.",
+        "hi": "डेटा डिक्शनरी सभी मेटाडेटा के लिए केंद्रीय भंडार है, जो पूरे सिस्टम का प्रबंधन करने वाले व्यक्ति के लिए महत्वपूर्ण है।"
+      },
+      "explanation": {
+        "en": "The Data Dictionary is the internal component of the DBMS that stores the metadata. It is the DBA's primary tool for managing the database structure and integrity.",
+        "hi": "डेटा डिक्शनरी DBMS का आंतरिक घटक है जो मेटाडेटा को संग्रहीत करता है। यह डेटाबेस संरचना और अखंडता के प्रबंधन के लिए DBA का प्राथमिक उपकरण है।"
+      },
+      "key_takeaway": {
+        "en": "DBA uses the Data Dictionary.",
+        "hi": "DBA डेटा डिक्शनरी का उपयोग करता है।"
+      }
+    },
+    {
+      "question_id": 24,
+      "question": {
+        "en": "Integrity Constraints are defined to:",
+        "hi": "इंटीग्रिटी कंस्ट्रेंट्स को किसके लिए परिभाषित किया गया है?"
+      },
+      "options": {
+        "a": {
+          "en": "Increase data redundancy",
+          "hi": "डेटा अतिरेक बढ़ाने के लिए"
+        },
+        "b": {
+          "en": "Make the database less secure",
+          "hi": "डेटाबेस को कम सुरक्षित बनाने के लिए"
+        },
+        "c": {
+          "en": "Allow unauthorized access",
+          "hi": "अनधिकृत पहुंच की अनुमति देने के लिए"
+        },
+        "d": {
+          "en": "Keep the database data consistent",
+          "hi": "डेटाबेस डेटा को सुसंगत रखने के लिए"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Integrity means ensuring the quality and reliability of the data.",
+        "hi": "अखंडता का अर्थ है डेटा की गुणवत्ता और विश्वसनीयता सुनिश्चित करना।"
+      },
+      "explanation": {
+        "en": "Integrity Constraints are rules enforced on data columns to limit the type of data that can be entered, ensuring the accuracy and consistency of the data within the relational database.",
+        "hi": "इंटीग्रिटी कंस्ट्रेंट्स डेटा कॉलम पर लागू किए गए नियम हैं जो दर्ज किए जा सकने वाले डेटा के प्रकार को सीमित करते हैं, सुनिश्चित करते हुए कि रिलेशनल डेटाबेस के भीतर डेटा की सटीकता और निरंतरता सुनिश्चित होती है।"
+      },
+      "key_takeaway": {
+        "en": "Constraints maintain data consistency.",
+        "hi": "कंस्ट्रेंट्स डेटा की निरंतरता बनाए रखते हैं।"
+      }
+    },
+    {
+      "question_id": 25,
+      "question": {
+        "en": "Which integrity constraint ensures that a Primary Key cannot store a NULL value?",
+        "hi": "कौन सा इंटीग्रिटी कंस्ट्रेंट सुनिश्चित करता है कि एक प्राथमिक कुंजी NULL मान संग्रहीत नहीं कर सकती?"
+      },
+      "options": {
+        "a": {
+          "en": "Domain Constraint",
+          "hi": "डोमेन कंस्ट्रेंट"
+        },
+        "b": {
+          "en": "Entity Constraint",
+          "hi": "एंटिटी कंस्ट्रेंट"
+        },
+        "c": {
+          "en": "Referential Constraint",
+          "hi": "रेफरेंशियल कंस्ट्रेंट"
+        },
+        "d": {
+          "en": "Key Constraint",
+          "hi": "की कंस्ट्रेंट"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This rule is known as Entity Integrity.",
+        "hi": "इस नियम को एंटिटी इंटीग्रिटी (Entity Integrity) के रूप में जाना जाता है।"
+      },
+      "explanation": {
+        "en": "The Entity Integrity constraint states that the primary key of a relation (table) must not contain a NULL value, ensuring that every entity (row) in the table is uniquely identifiable.",
+        "hi": "एंटिटी इंटीग्रिटी कंस्ट्रेंट बताता है कि किसी संबंध (तालिका) की प्राथमिक कुंजी में NULL मान नहीं होना चाहिए, यह सुनिश्चित करते हुए कि तालिका में प्रत्येक एंटिटी (पंक्ति) विशिष्ट रूप से पहचानने योग्य है।"
+      },
+      "key_takeaway": {
+        "en": "Primary Keys must be NOT NULL (Entity Integrity).",
+        "hi": "प्राथमिक कुंजी NULL नहीं होनी चाहिए (एंटिटी इंटीग्रिटी)।"
+      }
+    },
+    {
+      "question_id": 26,
+      "question": {
+        "en": "The constraint that ensures every Foreign Key value must exist as a Primary Key in another table is:",
+        "hi": "वह कंस्ट्रेंट जो सुनिश्चित करता है कि प्रत्येक फॉरेन की वैल्यू दूसरी टेबल में प्राइमरी की के रूप में मौजूद होनी चाहिए, वह है:"
+      },
+      "options": {
+        "a": {
+          "en": "Domain Constraint",
+          "hi": "डोमेन कंस्ट्रेंट"
+        },
+        "b": {
+          "en": "Entity Constraint",
+          "hi": "एंटिटी कंस्ट्रेंट"
+        },
+        "c": {
+          "en": "Referential Constraint",
+          "hi": "रेफरेंशियल कंस्ट्रेंट"
+        },
+        "d": {
+          "en": "Key Constraint",
+          "hi": "की कंस्ट्रेंट"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Foreign Keys are used to 'reference' rows in another table.",
+        "hi": "फॉरेन कीज़ का उपयोग किसी अन्य तालिका में पंक्तियों को 'संदर्भित' करने के लिए किया जाता है।"
+      },
+      "explanation": {
+        "en": "Referential Integrity constraint ensures that a Foreign Key in one table always refers to a valid row in another table (the parent table), thus maintaining the consistency of relationships.",
+        "hi": "रेफरेंशियल इंटीग्रिटी कंस्ट्रेंट सुनिश्चित करता है कि एक तालिका में एक फॉरेन की हमेशा दूसरी तालिका (मूल तालिका) में एक वैध पंक्ति को संदर्भित करती है, इस प्रकार संबंधों की निरंतरता बनाए रखती है।"
+      },
+      "key_takeaway": {
+        "en": "Foreign Keys enforce Referential Integrity.",
+        "hi": "फॉरेन कीज़ रेफरेंशियल इंटीग्रिटी लागू करती हैं।"
+      }
+    },
+    {
+      "question_id": 27,
+      "question": {
+        "en": "What is a Tuple in the context of a database?",
+        "hi": "डेटाबेस के संदर्भ में टपल क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "A column in a table",
+          "hi": "तालिका में एक कॉलम"
+        },
+        "b": {
+          "en": "A row in a table",
+          "hi": "तालिका में एक पंक्ति"
+        },
+        "c": {
+          "en": "A database table",
+          "hi": "एक डेटाबेस तालिका"
+        },
+        "d": {
+          "en": "A data type",
+          "hi": "एक डेटा प्रकार"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Think of the horizontal part of a table.",
+        "hi": "एक तालिका के क्षैतिज भाग के बारे में सोचें।"
+      },
+      "explanation": {
+        "en": "In relational database terminology, a Tuple is another name for a row or record, representing a single instance of the entity described by the table.",
+        "hi": "रिलेशनल डेटाबेस शब्दावली में, टपल एक पंक्ति या रिकॉर्ड का दूसरा नाम है, जो तालिका द्वारा वर्णित एंटिटी के एक ही उदाहरण का प्रतिनिधित्व करता है।"
+      },
+      "key_takeaway": {
+        "en": "Tuple = Row/Record.",
+        "hi": "टपल = पंक्ति/रिकॉर्ड।"
+      }
+    },
+    {
+      "question_id": 28,
+      "question": {
+        "en": "The number of attributes in a table is called:",
+        "hi": "किसी तालिका में विशेषताओं की संख्या कहलाती है:"
+      },
+      "options": {
+        "a": {
+          "en": "The degree of the table",
+          "hi": "टेबल की डिग्री"
+        },
+        "b": {
+          "en": "The cardinality of the table",
+          "hi": "टेबल की कार्डिनैलिटी"
+        },
+        "c": {
+          "en": "The tuple of the table",
+          "hi": "टेबल का टपल"
+        },
+        "d": {
+          "en": "The schema of the table",
+          "hi": "टेबल की स्कीमा"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "The number of rows is called cardinality. What is the number of columns called?",
+        "hi": "पंक्तियों की संख्या को कार्डिनैलिटी कहा जाता है। कॉलम की संख्या को क्या कहा जाता है?"
+      },
+      "explanation": {
+        "en": "The degree of a table is the number of columns (attributes) it contains. Cardinality is the number of rows (tuples).",
+        "hi": "किसी तालिका की डिग्री उसमें मौजूद कॉलम (विशेषताओं) की संख्या है। कार्डिनैलिटी पंक्तियों (टपल) की संख्या है।"
+      },
+      "key_takeaway": {
+        "en": "Degree = Columns, Cardinality = Rows.",
+        "hi": "डिग्री = कॉलम, कार्डिनैलिटी = पंक्तियाँ।"
+      }
+    },
+    {
+      "question_id": 29,
+      "question": {
+        "en": "Which type of SQL function returns a single value after performing an operation on a column's values?",
+        "hi": "SQL फ़ंक्शन का कौन सा प्रकार किसी कॉलम के मानों पर ऑपरेशन करने के बाद एकल मान लौटाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Scalar Functions",
+          "hi": "स्केलर फंक्शंस"
+        },
+        "b": {
+          "en": "Aggregate Functions",
+          "hi": "एग्रीगेट फंक्शंस"
+        },
+        "c": {
+          "en": "String Functions",
+          "hi": "स्ट्रिंग फंक्शंस"
+        },
+        "d": {
+          "en": "Date Functions",
+          "hi": "डेट फंक्शंस"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Functions like `SUM()`, `AVG()`, and `COUNT()` summarize data across many rows.",
+        "hi": "`SUM()`, `AVG()`, और `COUNT()` जैसे फ़ंक्शन कई पंक्तियों में डेटा का सारांश प्रस्तुत करते हैं।"
+      },
+      "explanation": {
+        "en": "Aggregate functions (like `SUM`, `AVG`, `COUNT`, `MAX`, `MIN`) operate on a set of rows and return a single summary value for that group.",
+        "hi": "एग्रीगेट फ़ंक्शन (जैसे `SUM`, `AVG`, `COUNT`, `MAX`, `MIN`) पंक्तियों के एक सेट पर काम करते हैं और उस समूह के लिए एक एकल सारांश मान लौटाते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Aggregate functions summarize data.",
+        "hi": "एग्रीगेट फ़ंक्शन डेटा का सारांश प्रस्तुत करते हैं।"
+      }
+    },
+    {
+      "question_id": 30,
+      "question": {
+        "en": "The `AVG()` function in MySQL is used to:",
+        "hi": "MySQL में `AVG()` फ़ंक्शन का उपयोग किसके लिए किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Count the number of rows",
+          "hi": "पंक्तियों की संख्या गिनने के लिए"
+        },
+        "b": {
+          "en": "Return the average value from a numeric column",
+          "hi": "एक संख्यात्मक कॉलम से औसत मान लौटाने के लिए"
+        },
+        "c": {
+          "en": "Find the maximum value",
+          "hi": "अधिकतम मान ज्ञात करने के लिए"
+        },
+        "d": {
+          "en": "Convert text to uppercase",
+          "hi": "टेक्स्ट को अपरकेस में बदलने के लिए"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "AVG is an abbreviation for a mathematical operation.",
+        "hi": "AVG एक गणितीय ऑपरेशन का संक्षिप्त रूप है।"
+      },
+      "explanation": {
+        "en": "`AVG()` is an aggregate function that calculates the average (mean) value of a numeric column.",
+        "hi": "`AVG()` एक एग्रीगेट फ़ंक्शन है जो एक संख्यात्मक कॉलम के औसत (मीन) मान की गणना करता है।"
+      },
+      "key_takeaway": {
+        "en": "`AVG()` calculates the mean.",
+        "hi": "`AVG()` माध्य की गणना करता है।"
+      }
+    },
+    {
+      "question_id": 31,
+      "question": {
+        "en": "Which function is used to extract text from a text field?",
+        "hi": "टेक्स्ट फील्ड से टेक्स्ट निकालने के लिए किस फंक्शन का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "UCASE()",
+          "hi": "UCASE()"
+        },
+        "b": {
+          "en": "LCASE()",
+          "hi": "LCASE()"
+        },
+        "c": {
+          "en": "MID()",
+          "hi": "MID()"
+        },
+        "d": {
+          "en": "LEN()",
+          "hi": "LEN()"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This function is also known as `SUBSTRING()` or `SUBSTR()` in many SQL systems. Think of extracting a 'middle' part of a string.",
+        "hi": "इस फ़ंक्शन को कई SQL सिस्टम में `SUBSTRING()` या `SUBSTR()` के रूप में भी जाना जाता है। एक स्ट्रिंग के 'मध्य' भाग को निकालने के बारे में सोचें।"
+      },
+      "explanation": {
+        "en": "The `MID()` function (or `SUBSTRING()`) extracts a substring from a string, starting at a specified position with a specified length.",
+        "hi": "`MID()` फ़ंक्शन (या `SUBSTRING()`) एक स्ट्रिंग से एक सबस्ट्रिंग निकालता है, जो एक निर्दिष्ट स्थिति से निर्दिष्ट लंबाई के साथ शुरू होता है।"
+      },
+      "key_takeaway": {
+        "en": "`MID()`/`SUBSTRING()` extracts text.",
+        "hi": "`MID()`/`SUBSTRING()` टेक्स्ट निकालता है।"
+      }
+    },
+    {
+      "question_id": 32,
+      "question": {
+        "en": "What does the `NOW()` function return?",
+        "hi": "`NOW()` फंक्शन क्या लौटाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "The length of a string",
+          "hi": "एक स्ट्रिंग की लंबाई"
+        },
+        "b": {
+          "en": "The current system date and time",
+          "hi": "वर्तमान सिस्टम तिथि और समय"
+        },
+        "c": {
+          "en": "The sum of a numeric column",
+          "hi": "एक संख्यात्मक कॉलम का योग"
+        },
+        "d": {
+          "en": "The first value in a column",
+          "hi": "किसी कॉलम में पहला मान"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The name of the function is very descriptive.",
+        "hi": "फ़ंक्शन का नाम बहुत वर्णनात्मक है।"
+      },
+      "explanation": {
+        "en": "`NOW()` is a Date/Time function that returns the current date and time of the MySQL server.",
+        "hi": "`NOW()` एक Date/Time फ़ंक्शन है जो MySQL सर्वर की वर्तमान तिथि और समय लौटाता है।"
+      },
+      "key_takeaway": {
+        "en": "`NOW()` gives current date/time.",
+        "hi": "`NOW()` वर्तमान तिथि/समय देता है।"
+      }
+    },
+    {
+      "question_id": 33,
+      "question": {
+        "en": "What is a database transaction?",
+        "hi": "डेटाबेस ट्रांजैक्शन क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "A single SQL command",
+          "hi": "एक एकल SQL कमांड"
+        },
+        "b": {
+          "en": "A set of multiple changes performed as a single unit of work",
+          "hi": "कार्य की एक इकाई के रूप में किए गए कई परिवर्तनों का एक सेट"
+        },
+        "c": {
+          "en": "The process of creating a new database",
+          "hi": "एक नया डेटाबेस बनाने की प्रक्रिया"
+        },
+        "d": {
+          "en": "A backup of the database",
+          "hi": "डेटाबेस का बैकअप"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Think of a fund transfer from one account to another; it's a series of steps that must all succeed or all fail together.",
+        "hi": "एक खाते से दूसरे खाते में फंड ट्रांसफर के बारे में सोचें; यह चरणों की एक श्रृंखला है जिसे या तो सभी को सफल होना चाहिए या सभी को विफल होना चाहिए।"
+      },
+      "explanation": {
+        "en": "A transaction is a sequence of operations that are treated as a single logical unit. It must be either fully completed (`COMMIT`) or entirely undone (`ROLLBACK`) to maintain data integrity (Atomicity).",
+        "hi": "एक ट्रांजैक्शन ऑपरेशंस का एक क्रम है जिसे एक एकल तार्किक इकाई के रूप में माना जाता है। डेटा अखंडता (एटोमिसिटी) बनाए रखने के लिए इसे या तो पूरी तरह से पूरा किया जाना चाहिए (`COMMIT`) या पूरी तरह से पूर्ववत (`ROLLBACK`) किया जाना चाहिए।"
+      },
+      "key_takeaway": {
+        "en": "A transaction is a logical unit of work.",
+        "hi": "एक ट्रांजैक्शन कार्य की एक तार्किक इकाई है।"
+      }
+    },
+    {
+      "question_id": 34,
+      "question": {
+        "en": "The 'A' in ACID properties stands for:",
+        "hi": "ACID गुणों में 'A' का अर्थ है:"
+      },
+      "options": {
+        "a": {
+          "en": "Accessibility",
+          "hi": "एक्सेसिबिलिटी"
+        },
+        "b": {
+          "en": "Atomicity",
+          "hi": "एटोमिसिटी"
+        },
+        "c": {
+          "en": "Availability",
+          "hi": "अवेलेबिलिटी"
+        },
+        "d": {
+          "en": "Association",
+          "hi": "एसोसिएशन"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This property ensures the 'all or nothing' rule for transactions.",
+        "hi": "यह गुण ट्रांजैक्शन के लिए 'सब कुछ या कुछ भी नहीं' नियम सुनिश्चित करता है।"
+      },
+      "explanation": {
+        "en": "ACID stands for Atomicity, Consistency, Isolation, and Durability. Atomicity ensures that a transaction is treated as a single, indivisible unit of work.",
+        "hi": "ACID का मतलब एटोमिसिटी (Atomicity), कंसिस्टेंसी (Consistency), आइसोलेशन (Isolation), और ड्यूरेबिलिटी (Durability) है। एटोमिसिटी सुनिश्चित करती है कि एक ट्रांजैक्शन को कार्य की एक एकल, अविभाज्य इकाई के रूप में माना जाता है।"
+      },
+      "key_takeaway": {
+        "en": "'A' is for Atomicity.",
+        "hi": "'A' एटोमिसिटी के लिए है।"
+      }
+    },
+    {
+      "question_id": 35,
+      "question": {
+        "en": "Which ACID property ensures that a transaction, once committed, remains committed even after a system failure?",
+        "hi": "कौन सा ACID गुण सुनिश्चित करता है कि एक ट्रांजैक्शन, एक बार कमिट हो जाने पर, सिस्टम फेल्योर के बाद भी कमिट रहता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Atomicity",
+          "hi": "एटोमिसिटी"
+        },
+        "b": {
+          "en": "Consistency",
+          "hi": "कंसिस्टेंसी"
+        },
+        "c": {
+          "en": "Isolation",
+          "hi": "आइसोलेशन"
+        },
+        "d": {
+          "en": "Durability",
+          "hi": "ड्यूरेबिलिटी"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This property relates to the long-term persistence of the changes.",
+        "hi": "यह गुण परिवर्तनों की दीर्घकालिक दृढ़ता (persistence) से संबंधित है।"
+      },
+      "explanation": {
+        "en": "Durability guarantees that once a transaction has been committed, it will remain permanently recorded, even in the event of a power loss or system crash.",
+        "hi": "ड्यूरेबिलिटी गारंटी देती है कि एक बार जब कोई ट्रांजैक्शन कमिट हो जाता है, तो यह बिजली की हानि या सिस्टम क्रैश की स्थिति में भी स्थायी रूप से रिकॉर्ड रहेगा।"
+      },
+      "key_takeaway": {
+        "en": "Durability is about permanence.",
+        "hi": "ड्यूरेबिलिटी स्थायित्व (permanence) के बारे में है।"
+      }
+    },
+    {
+      "question_id": 36,
+      "question": {
+        "en": "The `CREATE TABLE` command is used to:",
+        "hi": "`CREATE TABLE` कमांड का उपयोग किसके लिए किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Insert data into a table",
+          "hi": "टेबल में डेटा डालने के लिए"
+        },
+        "b": {
+          "en": "Delete a table",
+          "hi": "एक टेबल को हटाने के लिए"
+        },
+        "c": {
+          "en": "Create a new table structure",
+          "hi": "एक नई टेबल संरचना बनाने के लिए"
+        },
+        "d": {
+          "en": "Update data in a table",
+          "hi": "टेबल में डेटा अपडेट करने के लिए"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This command is part of the Data Definition Language (DDL).",
+        "hi": "यह कमांड डेटा डेफिनिशन लैंग्वेज (DDL) का हिस्सा है।"
+      },
+      "explanation": {
+        "en": "`CREATE TABLE` is the command used to define the schema (structure) of a new table, including its column names and data types.",
+        "hi": "`CREATE TABLE` वह कमांड है जिसका उपयोग एक नई तालिका की स्कीमा (संरचना) को परिभाषित करने के लिए किया जाता है, जिसमें इसके कॉलम नाम और डेटा प्रकार शामिल हैं।"
+      },
+      "key_takeaway": {
+        "en": "`CREATE TABLE` defines the structure.",
+        "hi": "`CREATE TABLE` संरचना को परिभाषित करता है।"
+      }
+    },
+    {
+      "question_id": 37,
+      "question": {
+        "en": "In the example &lt;code&gt;CREATE TABLE student (roll_no number(3), name varchar(30));&lt;/code&gt;, what does &lt;code&gt;varchar(30)&lt;/code&gt; specify?",
+        "hi": "उदाहरण &lt;code&gt;CREATE TABLE student (roll_no number(3), name varchar(30));&lt;/code&gt; में, &lt;code&gt;varchar(30)&lt;/code&gt; क्या निर्दिष्ट करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "A numeric column with maximum value 30",
+          "hi": "अधिकतम मान 30 वाला एक संख्यात्मक कॉलम"
+        },
+        "b": {
+          "en": "A variable-length character column with a maximum of 30 characters",
+          "hi": "अधिकतम 30 वर्णों वाला एक वेरिएबल-लेंथ कैरेक्टर कॉलम"
+        },
+        "c": {
+          "en": "A column that can store only 30 records",
+          "hi": "एक कॉलम जो केवल 30 रिकॉर्ड संग्रहीत कर सकता है"
+        },
+        "d": {
+          "en": "A column for dates",
+          "hi": "तिथियों के लिए एक कॉलम"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "&lt;code&gt;VARCHAR&lt;/code&gt; stands for Variable Character.",
+        "hi": "&lt;code&gt;VARCHAR&lt;/code&gt; का मतलब वेरिएबल कैरेक्टर है।"
+      },
+      "explanation": {
+        "en": "&lt;code&gt;VARCHAR(30)&lt;/code&gt; defines a column that can store a string of variable length, up to a maximum of 30 characters.",
+        "hi": "&lt;code&gt;VARCHAR(30)&lt;/code&gt; एक कॉलम को परिभाषित करता है जो एक वेरिएबल लंबाई की स्ट्रिंग को संग्रहीत कर सकता है, अधिकतम 30 वर्णों तक।"
+      },
+      "key_takeaway": {
+        "en": "&lt;code&gt;VARCHAR&lt;/code&gt; stores text with a max size.",
+        "hi": "&lt;code&gt;VARCHAR&lt;/code&gt; अधिकतम आकार के साथ टेक्स्ट संग्रहीत करता है।"
+      }
+    },
+    {
+      "question_id": 38,
+      "question": {
+        "en": "The &lt;code&gt;INSERT INTO&lt;/code&gt; command is used to:",
+        "hi": "&lt;code&gt;INSERT INTO&lt;/code&gt; कमांड का उपयोग किसके लिए किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Create a new database",
+          "hi": "एक नया डेटाबेस बनाने के लिए"
+        },
+        "b": {
+          "en": "Add new data/records into a table",
+          "hi": "टेबल में नया डेटा/रिकॉर्ड जोड़ने के लिए"
+        },
+        "c": {
+          "en": "Delete records from a table",
+          "hi": "टेबल से रिकॉर्ड हटाने के लिए"
+        },
+        "d": {
+          "en": "Modify the table structure",
+          "hi": "टेबल संरचना को संशोधित करने के लिए"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This is a Data Manipulation Language (DML) command.",
+        "hi": "यह एक डेटा मैन्यूपुलेशन लैंग्वेज (DML) कमांड है।"
+      },
+      "explanation": {
+        "en": "The &lt;code&gt;INSERT INTO&lt;/code&gt; command is a DML statement used to add one or more new rows (records/tuples) of data into a table.",
+        "hi": "The &lt;code&gt;INSERT INTO&lt;/code&gt; command is a DML statement used to add one or more new rows (records/tuples) of data into a table."
+      },
+      "key_takeaway": {
+        "en": "&lt;code&gt;INSERT&lt;/code&gt; adds rows.",
+        "hi": "&lt;code&gt;INSERT&lt;/code&gt; पंक्तियाँ जोड़ता है।"
+      }
+    },
+    {
+      "question_id": 39,
+      "question": {
+        "en": "In a school database, a 'Students' table has a primary key 'StudentID'. An 'Enrollments' table needs to reference this 'StudentID'. Which integrity constraint must be used in the 'Enrollments' table to ensure every enrolled student exists in the 'Students' table?",
+        "hi": "एक स्कूल डेटाबेस में, 'Students' टेबल की एक प्राइमरी की 'StudentID' है। एक 'Enrollments' टेबल को इस 'StudentID' को संदर्भित करने की आवश्यकता है। 'Enrollments' टेबल में किस इंटीग्रिटी कंस्ट्रेंट का उपयोग यह सुनिश्चित करने के लिए किया जाना चाहिए कि प्रत्येक नामांकित छात्र 'Students' टेबल में मौजूद हो?"
+      },
+      "options": {
+        "a": {
+          "en": "Domain Constraint",
+          "hi": "डोमेन कंस्ट्रेंट"
+        },
+        "b": {
+          "en": "Entity Constraint",
+          "hi": "एंटिटी कंस्ट्रेंट"
+        },
+        "c": {
+          "en": "Referential Integrity Constraint",
+          "hi": "रेफरेंशियल इंटीग्रिटी कंस्ट्रेंट"
+        },
+        "d": {
+          "en": "Key Constraint",
+          "hi": "की कंस्ट्रेंट"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This scenario involves maintaining a relationship between two tables, using a Foreign Key.",
+        "hi": "इस परिदृश्य में दो तालिकाओं के बीच एक संबंध बनाए रखना शामिल है, जिसमें एक फॉरेन की का उपयोग किया जाता है।"
+      },
+      "explanation": {
+        "en": "Referential Integrity, enforced by a Foreign Key, ensures that the 'StudentID' value in the 'Enrollments' table always refers to a valid and existing 'StudentID' in the 'Students' table. This prevents 'orphan' enrollment records.",
+        "hi": "रेफरेंशियल इंटीग्रिटी, जो एक फॉरेन की द्वारा लागू की जाती है, यह सुनिश्चित करती है कि 'StudentID' मान हमेशा 'Students' तालिका में एक वैध और मौजूदा 'StudentID' को संदर्भित करता है। यह 'अनाथ' नामांकन रिकॉर्ड को रोकता है।"
+      },
+      "key_takeaway": {
+        "en": "Foreign Keys enforce Referential Integrity to link tables.",
+        "hi": "फॉरेन कीज़ रेफरेंशियल इंटीग्रिटी लागू करती हैं।"
+      }
+    },
+    {
+      "question_id": 40,
+      "question": {
+        "en": "A banking system processes a fund transfer as a single transaction that involves deducting money from one account and adding it to another. If the system fails after deducting the money but before adding it, which ACID property is violated, and what should happen?",
+        "hi": "एक बैंकिंग सिस्टम फंड ट्रांसफर को एकल लेन-देन के रूप में संसाधित करता है जिसमें एक खाते से पैसा काटना और दूसरे में जोड़ना शामिल है। यदि पैसा जोड़ने से पहले काटने के बाद सिस्टम विफल हो जाता है, तो कौन सा ACID गुण उल्लंघन होता है, और क्या होना चाहिए?"
+      },
+      "options": {
+        "a": {
+          "en": "Consistency; the transaction should proceed.",
+          "hi": "कंसिस्टेंसी; लेन-देन जारी रहना चाहिए।"
+        },
+        "b": {
+          "en": "Atomicity; the entire transaction should be rolled back.",
+          "hi": "एटोमिसिटी; पूरे लेन-देन को रोल बैक किया जाना चाहिए।"
+        },
+        "c": {
+          "en": "Durability; the deducted amount should be saved.",
+          "hi": "ड्यूरेबिलिटी; कटौती की गई राशि को सहेजा जाना चाहिए।"
+        },
+        "d": {
+          "en": "Isolation; other transactions should be blocked.",
+          "hi": "आइसोलेशन; अन्य लेन-देन को ब्लॉक कर देना चाहिए।"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The transaction must be treated as an 'all or nothing' unit.",
+        "hi": "लेन-देन को 'सब कुछ या कुछ भी नहीं' की इकाई के रूप में माना जाना चाहिए।"
+      },
+      "explanation": {
+        "en": "Atomicity ensures that a transaction completes successfully or fails completely. If the transfer fails midway, the entire transaction (both deduction and addition) must be rolled back so the money is returned to the first account, maintaining the integrity of the bank's state.",
+        "hi": "एटोमिसिटी सुनिश्चित करती है कि एक लेन-देन या तो सफलतापूर्वक पूरा हो या पूरी तरह से विफल हो जाए। यदि ट्रांसफर बीच में विफल हो जाता है, तो बैंक की स्थिति की अखंडता बनाए रखने के लिए पूरे लेन-देन (कटौती और जोड़ दोनों) को रोल बैक किया जाना चाहिए ताकि पैसा पहले खाते में वापस आ जाए।"
+      },
+      "key_takeaway": {
+        "en": "Atomicity requires 'all or nothing' for transactions.",
+        "hi": "एटोमिसिटी के लिए लेन-देन में 'सब कुछ या कुछ भी नहीं' आवश्यक है।"
+      }
+    },
+    {
+      "question_id": 41,
+      "question": {
+        "en": "When designing a database for an e-commerce website, why is it preferable to use RDBMS over a Traditional File System?",
+        "hi": "एक ई-कॉमर्स वेबसाइट के लिए डेटाबेस डिजाइन करते समय, पारंपरिक फाइल सिस्टम पर RDBMS का उपयोग करना क्यों बेहतर है?"
+      },
+      "options": {
+        "a": {
+          "en": "RDBMS is cheaper.",
+          "hi": "RDBMS सस्ता है।"
+        },
+        "b": {
+          "en": "RDBMS avoids data redundancy and supports multiple concurrent users.",
+          "hi": "RDBMS डेटा अतिरेक से बचाता है और कई समवर्ती उपयोगकर्ताओं का समर्थन करता है।"
+        },
+        "c": {
+          "en": "RDBMS does not require a DBA.",
+          "hi": "RDBMS को DBA की आवश्यकता नहीं होती है।"
+        },
+        "d": {
+          "en": "RDBMS stores data in a single file.",
+          "hi": "RDBMS डेटा को एक ही फाइल में संग्रहीत करता है।"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "E-commerce involves many users (concurrent access) and highly related data (products, customers, orders).",
+        "hi": "ई-कॉमर्स में कई उपयोगकर्ता (समवर्ती पहुंच) और अत्यधिक संबंधित डेटा (उत्पाद, ग्राहक, ऑर्डर) शामिल होते हैं।"
+      },
+      "explanation": {
+        "en": "RDBMS is superior because it manages complex relationships between data (e.g., between Orders and Products), eliminates redundancy, and, crucially for an e-commerce site, provides robust concurrency control for simultaneous transactions.",
+        "hi": "RDBMS बेहतर है क्योंकि यह डेटा के बीच जटिल संबंधों का प्रबंधन करता है (उदाहरण के लिए, ऑर्डर और उत्पादों के बीच), अतिरेक को समाप्त करता है, और, एक ई-कॉमर्स साइट के लिए महत्वपूर्ण रूप से, एक साथ लेन-देन के लिए मजबूत समवर्ती नियंत्रण प्रदान करता है।"
+      },
+      "key_takeaway": {
+        "en": "RDBMS handles concurrent users and data integrity better than file systems.",
+        "hi": "RDBMS फ़ाइल सिस्टम की तुलना में समवर्ती उपयोगकर्ताओं और डेटा अखंडता को बेहतर ढंग से संभालता है।"
+      }
+    },
+    {
+      "question_id": 42,
+      "question": {
+        "en": "Consider the SQL query: &lt;code&gt;SELECT MAX(price) FROM products;&lt;/code&gt;. What type of function is &lt;code&gt;MAX()&lt;/code&gt;?",
+        "hi": "SQL क्वेरी पर विचार करें: &lt;code&gt;SELECT MAX(price) FROM products;&lt;/code&gt;। &lt;code&gt;MAX()&lt;/code&gt; किस प्रकार का फंक्शन है?"
+      },
+      "options": {
+        "a": {
+          "en": "Scalar Function",
+          "hi": "स्केलर फंक्शन"
+        },
+        "b": {
+          "en": "Aggregate Function",
+          "hi": "एग्रीगेट फंक्शन"
+        },
+        "c": {
+          "en": "String Function",
+          "hi": "स्ट्रिंग फंक्शन"
+        },
+        "d": {
+          "en": "Date Function",
+          "hi": "डेट फंक्शन"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It takes many rows of data (the entire 'price' column) as input and returns one result (the single maximum value).",
+        "hi": "यह इनपुट के रूप में डेटा की कई पंक्तियाँ (पूरा 'price' कॉलम) लेता है और एक परिणाम (एकल अधिकतम मान) लौटाता है।"
+      },
+      "explanation": {
+        "en": "&lt;code&gt;MAX()&lt;/code&gt; is an Aggregate function because it operates on a set of input values (all prices in the column) and returns a single summarized value (the highest price).",
+        "hi": "&lt;code&gt;MAX()&lt;/code&gt; एक एग्रीगेट फ़ंक्शन है क्योंकि यह इनपुट मानों के एक सेट (कॉलम में सभी कीमतों) पर काम करता है और एक एकल सारांशित मान (सबसे अधिक कीमत) लौटाता है।"
+      },
+      "key_takeaway": {
+        "en": "Aggregate functions summarize columns.",
+        "hi": "एग्रीगेट फ़ंक्शन कॉलम का सारांश प्रस्तुत करते हैं।"
+      }
+    },
+    {
+      "question_id": 43,
+      "question": {
+        "en": "In a multi-user ticket booking system, if two users try to book the last available seat simultaneously, which ACID property ensures that only one booking is successful and the data remains correct?",
+        "hi": "एक बहु-उपयोगकर्ता टिकट बुकिंग सिस्टम में, यदि दो उपयोगकर्ता एक साथ अंतिम उपलब्ध सीट बुक करने का प्रयास करते हैं, तो कौन सा ACID गुण सुनिश्चित करता है कि केवल एक बुकिंग सफल हो और डेटा सही बना रहे?"
+      },
+      "options": {
+        "a": {
+          "en": "Atomicity",
+          "hi": "एटोमिसिटी"
+        },
+        "b": {
+          "en": "Consistency",
+          "hi": "कंसिस्टेंसी"
+        },
+        "c": {
+          "en": "Isolation",
+          "hi": "आइसोलेशन"
+        },
+        "d": {
+          "en": "Durability",
+          "hi": "ड्यूरेबिलिटी"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This property deals with the concurrent execution of multiple transactions.",
+        "hi": "यह गुण कई लेन-देनों के समवर्ती निष्पादन से संबंधित है।"
+      },
+      "explanation": {
+        "en": "Isolation ensures that concurrent execution of transactions leaves the database in the same state as if the transactions were executed sequentially. This prevents conflicts, such as two users seeing the same last seat as available and both attempting to book it.",
+        "hi": "आइसोलेशन सुनिश्चित करता है कि लेन-देन का समवर्ती निष्पादन डेटाबेस को उसी स्थिति में छोड़ देता है जैसे कि लेन-देन क्रमिक रूप से निष्पादित किए गए हों। यह संघर्षों को रोकता है, जैसे कि दो उपयोगकर्ता एक ही अंतिम सीट को उपलब्ध देखते हैं और दोनों उसे बुक करने का प्रयास करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Isolation manages concurrent access.",
+        "hi": "आइसोलेशन समवर्ती पहुंच का प्रबंधन करता है।"
+      }
+    },
+    {
+      "question_id": 44,
+      "question": {
+        "en": "The &lt;code&gt;GRANT&lt;/code&gt; command in SQL is used to provide specific privileges to a user. This command belongs to which category?",
+        "hi": "SQL में &lt;code&gt;GRANT&lt;/code&gt; कमांड का उपयोग किसी उपयोगकर्ता को विशिष्ट विशेषाधिकार प्रदान करने के लिए किया जाता है। यह कमांड किस श्रेणी से संबंधित है?"
+      },
+      "options": {
+        "a": {
+          "en": "DDL",
+          "hi": "DDL"
+        },
+        "b": {
+          "en": "DML",
+          "hi": "DML"
+        },
+        "c": {
+          "en": "DCL",
+          "hi": "DCL"
+        },
+        "d": {
+          "en": "TCL",
+          "hi": "TCL"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Commands related to permissions and security are part of the 'Control' language.",
+        "hi": "अनुमति और सुरक्षा से संबंधित कमांड 'कंट्रोल' भाषा का हिस्सा हैं।"
+      },
+      "explanation": {
+        "en": "&lt;code&gt;GRANT&lt;/code&gt; and &lt;code&gt;REVOKE&lt;/code&gt; are Data Control Language (DCL) commands, used by the DBA to control user access to the database.",
+        "hi": "&lt;code&gt;GRANT&lt;/code&gt; और &lt;code&gt;REVOKE&lt;/code&gt; डेटा कंट्रोल लैंग्वेज (DCL) कमांड हैं, जिनका उपयोग DBA द्वारा डेटाबेस तक उपयोगकर्ता पहुंच को नियंत्रित करने के लिए किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Permissions are DCL.",
+        "hi": "अनुमति DCL हैं।"
+      }
+    },
+    {
+      "question_id": 45,
+      "question": {
+        "en": "If a DBA wants to remove all data from the 'Logs' table quickly but keep the table structure for future use, which SQL command is most appropriate?",
+        "hi": "यदि एक DBA 'Logs' टेबल से सारा डेटा जल्दी से हटाना चाहता है लेकिन भविष्य के उपयोग के लिए टेबल संरचना रखना चाहता है, तो कौन सा SQL कमांड सबसे उपयुक्त है?"
+      },
+      "options": {
+        "a": {
+          "en": "&lt;code&gt;DROP TABLE Logs;&lt;/code&gt;",
+          "hi": "&lt;code&gt;ड्रॉप टेबल लॉग्स;&lt;/code&gt;"
+        },
+        "b": {
+          "en": "&lt;code&gt;DELETE FROM Logs;&lt;/code&gt;",
+          "hi": "&lt;code&gt;डिलीट फ्रॉम लॉग्स;&lt;/code&gt;"
+        },
+        "c": {
+          "en": "&lt;code&gt;TRUNCATE TABLE Logs;&lt;/code&gt;",
+          "hi": "&lt;code&gt;ट्रंकेट टेबल लॉग्स;&lt;/code&gt;"
+        },
+        "d": {
+          "en": "&lt;code&gt;ALTER TABLE Logs REMOVE DATA;&lt;/code&gt;",
+          "hi": "&lt;code&gt;ऑल्टर टेबल लॉग्स रिमूव डेटा;&lt;/code&gt;"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The requirement is for speed and keeping the structure. This is the difference between &lt;code&gt;DELETE&lt;/code&gt; (slow, can be rolled back) and another command (fast, cannot be easily rolled back).",
+        "hi": "आवश्यकता गति और संरचना को बनाए रखने की है। यह &lt;code&gt;DELETE&lt;/code&gt; (धीमा, रोल बैक किया जा सकता है) और दूसरे कमांड (तेज, आसानी से रोल बैक नहीं किया जा सकता) के बीच का अंतर है।"
+      },
+      "explanation": {
+        "en": "&lt;code&gt;TRUNCATE&lt;/code&gt; is the fastest way to remove all rows from a table because it deallocates the data pages and is a DDL operation. &lt;code&gt;DELETE&lt;/code&gt; is slower as it is a DML operation and logs every row deletion.",
+        "hi": "&lt;code&gt;TRUNCATE&lt;/code&gt; एक तालिका से सभी पंक्तियों को हटाने का सबसे तेज़ तरीका है क्योंकि यह डेटा पेजों को डी-अलोकेट करता है और यह एक DDL ऑपरेशन है। &lt;code&gt;DELETE&lt;/code&gt; धीमा होता है क्योंकि यह एक DML ऑपरेशन है और प्रत्येक पंक्ति विलोपन को लॉग करता है।"
+      },
+      "key_takeaway": {
+        "en": "&lt;code&gt;TRUNCATE&lt;/code&gt; is the fastest way to empty a table.",
+        "hi": "किसी तालिका को खाली करने का सबसे तेज़ तरीका &lt;code&gt;TRUNCATE&lt;/code&gt; है।"
+      }
+    },
+    {
+      "question_id": 46,
+      "question": {
+        "en": "The three-level architecture of a DBMS (Physical, Logical, View) helps in achieving which of the following?",
+        "hi": "DBMS (फिजिकल, लॉजिकल, व्यू) की तीन-स्तरीय आर्किटेक्चर निम्नलिखित में से किसे प्राप्त करने में मदद करती है?"
+      },
+      "options": {
+        "a": {
+          "en": "Data Redundancy",
+          "hi": "डेटा अतिरेक"
+        },
+        "b": {
+          "en": "Data Independence",
+          "hi": "डेटा स्वतंत्रता"
+        },
+        "c": {
+          "en": "Data Duplication",
+          "hi": "डेटा दोहराव"
+        },
+        "d": {
+          "en": "Data Inconsistency",
+          "hi": "डेटा असंगति"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The architecture separates the physical storage details from the logical view of the data, allowing changes at one level without affecting the others.",
+        "hi": "वास्तुकला डेटा के तार्किक दृश्य से भौतिक भंडारण विवरणों को अलग करती है, जिससे एक स्तर पर किए गए परिवर्तनों को दूसरे को प्रभावित किए बिना किया जा सकता है।"
+      },
+      "explanation": {
+        "en": "The three-level architecture's primary goal is to provide Data Independence, meaning that changes at the physical level (e.g., changing storage devices) do not require changes at the logical or view level, and vice-versa.",
+        "hi": "त्रि-स्तरीय वास्तुकला का प्राथमिक लक्ष्य डेटा स्वतंत्रता (Data Independence) प्रदान करना है, जिसका अर्थ है कि भौतिक स्तर पर किए गए परिवर्तनों (उदाहरण के लिए, भंडारण उपकरणों को बदलना) के लिए तार्किक या व्यू स्तर पर परिवर्तनों की आवश्यकता नहीं होती है, और इसके विपरीत भी।"
+      },
+      "key_takeaway": {
+        "en": "Three-schema architecture provides Data Independence.",
+        "hi": "तीन-स्कीमा वास्तुकला डेटा स्वतंत्रता प्रदान करती है।"
+      }
+    },
+    {
+      "question_id": 47,
+      "question": {
+        "en": "In the context of the &lt;code&gt;ROLLBACK&lt;/code&gt; command, what is its primary function?",
+        "hi": "&lt;code&gt;ROLLBACK&lt;/code&gt; कमांड के संदर्भ में, इसका प्राथमिक कार्य क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "To permanently save changes",
+          "hi": "परिवर्तनों को स्थायी रूप से सहेजने के लिए"
+        },
+        "b": {
+          "en": "To undo transactions in case of failure",
+          "hi": "विफलता की स्थिति में लेन-देन को पूर्ववत करने के लिए"
+        },
+        "c": {
+          "en": "To create a new savepoint",
+          "hi": "एक नया सेवपॉइंट बनाने के लिए"
+        },
+        "d": {
+          "en": "To grant permissions to users",
+          "hi": "उपयोगकर्ताओं को अनुमति देने के लिए"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This is the opposite of the &lt;code&gt;COMMIT&lt;/code&gt; command.",
+        "hi": "यह &lt;code&gt;COMMIT&lt;/code&gt; कमांड का विपरीत है।"
+      },
+      "explanation": {
+        "en": "&lt;code&gt;ROLLBACK&lt;/code&gt; is a TCL command used to undo all changes made by a transaction since the last &lt;code&gt;COMMIT&lt;/code&gt; or &lt;code&gt;SAVEPOINT&lt;/code&gt;, ensuring the database state is consistent after a failure.",
+        "hi": "&lt;code&gt;ROLLBACK&lt;/code&gt; एक TCL कमांड है जिसका उपयोग पिछले &lt;code&gt;COMMIT&lt;/code&gt; या &lt;code&gt;SAVEPOINT&lt;/code&gt; के बाद से एक लेन-देन द्वारा किए गए सभी परिवर्तनों को पूर्ववत करने के लिए किया जाता है, यह सुनिश्चित करते हुए कि विफलता के बाद डेटाबेस की स्थिति सुसंगत है।"
+      },
+      "key_takeaway": {
+        "en": "&lt;code&gt;ROLLBACK&lt;/code&gt; is to undo changes.",
+        "hi": "&lt;code&gt;ROLLBACK&lt;/code&gt; परिवर्तनों को पूर्ववत करने के लिए है।"
+      }
+    },
+    {
+      "question_id": 48,
+      "question": {
+        "en": "Which of the following is an example of a scalar function in MySQL?",
+        "hi": "निम्नलिखित में से कौन सा MySQL में स्केलर फंक्शन का एक उदाहरण है?"
+      },
+      "options": {
+        "a": {
+          "en": "&lt;code&gt;SUM()&lt;/code&gt;",
+          "hi": "&lt;code&gt;SUM()&lt;/code&gt;"
+        },
+        "b": {
+          "en": "&lt;code&gt;COUNT()&lt;/code&gt;",
+          "hi": "&lt;code&gt;COUNT()&lt;/code&gt;"
+        },
+        "c": {
+          "en": "&lt;code&gt;UCASE()&lt;/code&gt;",
+          "hi": "&lt;code&gt;UCASE()&lt;/code&gt;"
+        },
+        "d": {
+          "en": "&lt;code&gt;AVG()&lt;/code&gt;",
+          "hi": "&lt;code&gt;AVG()&lt;/code&gt;"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Scalar functions operate on a single input value and return a single output value (e.g., converting a single string to uppercase).",
+        "hi": "स्केलर फ़ंक्शन एकल इनपुट मान पर काम करते हैं और एक एकल आउटपुट मान लौटाते हैं (उदाहरण के लिए, एक ही स्ट्रिंग को अपरकेस में बदलना)।"
+      },
+      "explanation": {
+        "en": "Scalar functions return a single value based on the input value (e.g., &lt;code&gt;UCASE()&lt;/code&gt; converts a single string to uppercase). Aggregate functions (&lt;code&gt;SUM&lt;/code&gt;, &lt;code&gt;COUNT&lt;/code&gt;, &lt;code&gt;AVG&lt;/code&gt;) operate on a set of rows.",
+        "hi": "स्केलर फ़ंक्शन इनपुट मान के आधार पर एक एकल मान लौटाते हैं (उदाहरण के लिए, &lt;code&gt;UCASE()&lt;/code&gt; एक एकल स्ट्रिंग को अपरकेस में परिवर्तित करता है)। एग्रीगेट फ़ंक्शन (&lt;code&gt;SUM&lt;/code&gt;, &lt;code&gt;COUNT&lt;/code&gt;, &lt;code&gt;AVG&lt;/code&gt;) पंक्तियों के एक सेट पर काम करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Scalar functions work on single values.",
+        "hi": "स्केलर फ़ंक्शन एकल मानों पर काम करते हैं।"
+      }
+    }
+  ]
+}

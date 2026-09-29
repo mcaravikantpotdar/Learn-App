@@ -1,0 +1,1914 @@
+{
+  "metadata": {
+    "chapter_number": 2,
+    "chapter_title": "Digital Network Essentials",
+    "chapter_title_hindi": "डिजिटल नेटवर्क एसेंशियल",
+    "subject": "Information Technology / Computer Science",
+    "total_questions": 50,
+    "source_language": "en",
+    "target_language": "hi",
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "What is the Internet?",
+        "hi": "इंटरनेट क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "A type of computer hardware",
+          "hi": "कंप्यूटर हार्डवेयर का एक प्रकार"
+        },
+        "b": {
+          "en": "The largest network of computers and devices worldwide",
+          "hi": "दुनिया भर में कंप्यूटरों और उपकरणों का सबसे बड़ा नेटवर्क"
+        },
+        "c": {
+          "en": "A software for creating documents",
+          "hi": "दस्तावेज़ बनाने के लिए एक सॉफ्टवेयर"
+        },
+        "d": {
+          "en": "A device to connect to Wi-Fi",
+          "hi": "वाई-फाई से कनेक्ट होने के लिए एक उपकरण"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Think about the scale of the Internet—it's a massive, worldwide connection of networks and devices.",
+        "hi": "इंटरनेट के पैमाने के बारे में सोचें—यह नेटवर्कों और उपकरणों का एक विशाल, विश्वव्यापी कनेक्शन है।"
+      },
+      "explanation": {
+        "en": "The Internet is a global system of interconnected computer networks that use the standard Internet protocol suite (TCP/IP) to link devices worldwide, making it the largest network.",
+        "hi": "इंटरनेट आपस में जुड़े हुए कंप्यूटर नेटवर्कों की एक वैश्विक प्रणाली है जो उपकरणों को विश्व स्तर पर जोड़ने के लिए मानक इंटरनेट प्रोटोकॉल सूट (TCP/IP) का उपयोग करती है, जो इसे सबसे बड़ा नेटवर्क बनाता है।"
+      },
+      "key_takeaway": {
+        "en": "The Internet is the global network of networks.",
+        "hi": "इंटरनेट नेटवर्कों का वैश्विक नेटवर्क है।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "What does \"Internet\" stand for?",
+        "hi": "\"इंटरनेट\" का पूर्ण रूप क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Internal Network",
+          "hi": "इंटरनल नेटवर्क"
+        },
+        "b": {
+          "en": "International Network",
+          "hi": "इंटरनेशनल नेटवर्क"
+        },
+        "c": {
+          "en": "Interconnected Network",
+          "hi": "इंटरकनेक्टेड नेटवर्क"
+        },
+        "d": {
+          "en": "Integrated Network",
+          "hi": "इंटीग्रेटेड नेटवर्क"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The term suggests a network that spans across nations, but the official full form is often used in a slightly different context.",
+        "hi": "यह शब्द एक ऐसे नेटवर्क का सुझाव देता है जो राष्ट्रों में फैला हुआ है, लेकिन आधिकारिक पूर्ण रूप का उपयोग अक्सर थोड़े अलग संदर्भ में किया जाता है।"
+      },
+      "explanation": {
+        "en": "While 'Interconnected Network' (c) is semantically correct, the widely accepted and official full form that historically led to the name is 'International Network' or sometimes 'Inter-Network'. The answer key specifies 'International Network'.",
+        "hi": "हालांकि 'इंटरकनेक्टेड नेटवर्क' (c) अर्थ की दृष्टि से सही है, आधिकारिक पूर्ण रूप जो ऐतिहासिक रूप से नाम का कारण बना, वह 'इंटरनेशनल नेटवर्क' है। उत्तर कुंजी 'इंटरनेशनल नेटवर्क' को निर्दिष्ट करती है।"
+      },
+      "key_takeaway": {
+        "en": "Internet stands for International Network (or Inter-Network).",
+        "hi": "इंटरनेट का मतलब इंटरनेशनल नेटवर्क (या इंटर-नेटवर्क) है।"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "Where was the Internet first developed?",
+        "hi": "इंटरनेट का विकास सबसे पहले कहाँ हुआ था?"
+      },
+      "options": {
+        "a": {
+          "en": "CERN, Switzerland",
+          "hi": "सर्न, स्विट्जरलैंड"
+        },
+        "b": {
+          "en": "USA",
+          "hi": "संयुक्त राज्य अमेरिका"
+        },
+        "c": {
+          "en": "United Kingdom",
+          "hi": "यूनाइटेड किंगडम"
+        },
+        "d": {
+          "en": "Russia",
+          "hi": "रूस"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The initial project was funded by a military research agency (ARPA) in North America.",
+        "hi": "प्रारंभिक परियोजना को उत्तरी अमेरिका में एक सैन्य अनुसंधान एजेंसी (ARPA) द्वारा वित्त पोषित किया गया था।"
+      },
+      "explanation": {
+        "en": "The precursor to the Internet, ARPAnet, was developed in the late 1960s by the Advanced Research Projects Agency (ARPA) of the US Department of Defense.",
+        "hi": "इंटरनेट का अग्रदूत, ARPAnet, 1960 के दशक के अंत में अमेरिकी रक्षा विभाग की उन्नत अनुसंधान परियोजना एजेंसी (ARPA) द्वारा विकसित किया गया था।"
+      },
+      "key_takeaway": {
+        "en": "The Internet originated from the ARPAnet project in the USA.",
+        "hi": "इंटरनेट की उत्पत्ति USA में ARPAnet परियोजना से हुई।"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "What was the original name of the Internet?",
+        "hi": "इंटरनेट का मूल नाम क्या था?"
+      },
+      "options": {
+        "a": {
+          "en": "CERNnet",
+          "hi": "सर्ननेट"
+        },
+        "b": {
+          "en": "INTERNET",
+          "hi": "इंटरनेट"
+        },
+        "c": {
+          "en": "ARPAnet",
+          "hi": "अर्पानेट"
+        },
+        "d": {
+          "en": "WWW",
+          "hi": "डब्ल्यूडब्ल्यूडब्ल्यू"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It was named after the agency that created it (Advanced Research Projects Agency).",
+        "hi": "इसका नाम इसे बनाने वाली एजेंसी (एडवांस्ड रिसर्च प्रोजेक्ट्स एजेंसी) के नाम पर रखा गया था।"
+      },
+      "explanation": {
+        "en": "The world's first operational packet-switching network and the direct predecessor of the global Internet was ARPAnet (Advanced Research Projects Agency Network).",
+        "hi": "दुनिया का पहला परिचालन पैकेट-स्विचिंग नेटवर्क और वैश्विक इंटरनेट का सीधा पूर्ववर्ती ARPAnet (एडवांस्ड रिसर्च प्रोजेक्ट्स एजेंसी नेटवर्क) था।"
+      },
+      "key_takeaway": {
+        "en": "ARPAnet was the original Internet predecessor.",
+        "hi": "ARPAnet मूल इंटरनेट पूर्ववर्ती था।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "Who created the World Wide Web (WWW)?",
+        "hi": "वर्ल्ड वाइड वेब (WWW) किसने बनाया?"
+      },
+      "options": {
+        "a": {
+          "en": "Bill Gates",
+          "hi": "बिल गेट्स"
+        },
+        "b": {
+          "en": "Tim Berners-Lee",
+          "hi": "टिम बर्नर्स-ली"
+        },
+        "c": {
+          "en": "Steve Jobs",
+          "hi": "स्टीव जॉब्स"
+        },
+        "d": {
+          "en": "Mark Zuckerberg",
+          "hi": "मार्क जुकरबर्ग"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "He was a British scientist working at CERN in 1989.",
+        "hi": "वह 1989 में CERN में काम करने वाले एक ब्रिटिश वैज्ञानिक थे।"
+      },
+      "explanation": {
+        "en": "Tim Berners-Lee is widely credited as the inventor of the World Wide Web, which is the system of interconnected hypertext documents accessible via the Internet.",
+        "hi": "टिम बर्नर्स-ली को वर्ल्ड वाइड वेब का आविष्कारक माना जाता है, जो इंटरनेट के माध्यम से सुलभ आपस में जुड़े हुए हाइपरटेक्स्ट दस्तावेज़ों की प्रणाली है।"
+      },
+      "key_takeaway": {
+        "en": "Tim Berners-Lee created the WWW, not the Internet itself.",
+        "hi": "टिम बर्नर्स-ली ने WWW बनाया, न कि स्वयं इंटरनेट।"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "What is Information Technology (IT)?",
+        "hi": "सूचना प्रौद्योगिकी (आईटी) क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "The study of computer history",
+          "hi": "कंप्यूटर के इतिहास का अध्ययन"
+        },
+        "b": {
+          "en": "The application of computers to store, retrieve, and process data",
+          "hi": "डेटा को स्टोर, पुनर्प्राप्त और संसाधित करने के लिए कंप्यूटर का अनुप्रयोग"
+        },
+        "c": {
+          "en": "The design of computer hardware",
+          "hi": "कंप्यूटर हार्डवेयर का डिजाइन"
+        },
+        "d": {
+          "en": "A type of internet connection",
+          "hi": "एक प्रकार का इंटरनेट कनेक्शन"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "IT deals with the use of computers to manage information.",
+        "hi": "आईटी जानकारी के प्रबंधन के लिए कंप्यूटर के उपयोग से संबंधित है।"
+      },
+      "explanation": {
+        "en": "Information Technology (IT) encompasses the use of computers, storage, networking, and other physical devices, infrastructure, and processes to create, store, exchange, and process all forms of electronic data.",
+        "hi": "सूचना प्रौद्योगिकी (IT) में सभी प्रकार के इलेक्ट्रॉनिक डेटा को बनाने, स्टोर करने, विनिमय करने और संसाधित करने के लिए कंप्यूटर, स्टोरेज, नेटवर्किंग और अन्य भौतिक उपकरणों, बुनियादी ढांचे और प्रक्रियाओं का उपयोग शामिल है।"
+      },
+      "key_takeaway": {
+        "en": "IT focuses on managing data using computer systems.",
+        "hi": "आईटी कंप्यूटर सिस्टम का उपयोग करके डेटा के प्रबंधन पर केंद्रित है।"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "What is Web Surfing?",
+        "hi": "वेब सर्फिंग क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Visiting websites with a specific objective",
+          "hi": "एक विशिष्ट उद्देश्य के साथ वेबसाइटों पर जाना"
+        },
+        "b": {
+          "en": "Using search engines to find information",
+          "hi": "सूचना खोजने के लिए सर्च इंजन का उपयोग करना"
+        },
+        "c": {
+          "en": "Visiting different websites without any objective",
+          "hi": "बिना किसी उद्देश्य के विभिन्न वेबसाइटों पर जाना"
+        },
+        "d": {
+          "en": "Creating websites",
+          "hi": "वेबसाइट बनाना"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The term 'surfing' implies a somewhat aimless or casual movement from one place to another.",
+        "hi": "शब्द 'सर्फिंग' एक स्थान से दूसरे स्थान पर कुछ हद तक लक्ष्यहीन या आकस्मिक आवाजाही को दर्शाता है।"
+      },
+      "explanation": {
+        "en": "Web Surfing refers to the activity of following hyperlinks and browsing from one website to another, often in an exploratory manner without a rigid goal. Option (a) describes Web Browsing more accurately.",
+        "hi": "वेब सर्फिंग का तात्पर्य हाइपरलिंक का अनुसरण करने और अक्सर बिना किसी कठोर लक्ष्य के खोजपूर्ण तरीके से एक वेबसाइट से दूसरी वेबसाइट पर ब्राउज़ करने की गतिविधि से है। विकल्प (a) वेब ब्राउज़िंग का अधिक सटीक वर्णन करता है।"
+      },
+      "key_takeaway": {
+        "en": "Web Surfing is casual, aimless movement across the web.",
+        "hi": "वेब सर्फिंग वेब पर आकस्मिक, लक्ष्यहीन आवाजाही है।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "What is Web Browsing?",
+        "hi": "वेब ब्राउज़िंग क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Visiting websites without any objective",
+          "hi": "बिना किसी उद्देश्य के वेबसाइटों पर जाना"
+        },
+        "b": {
+          "en": "Visiting websites with a specific objective but no search strategy",
+          "hi": "एक विशिष्ट उद्देश्य के साथ लेकिन बिना खोज रणनीति के वेबसाइटों पर जाना"
+        },
+        "c": {
+          "en": "Using search engines to find information",
+          "hi": "सूचना खोजने के लिए सर्च इंजन का उपयोग करना"
+        },
+        "d": {
+          "en": "Downloading files from the internet",
+          "hi": "इंटरनेट से फाइलें डाउनलोड करना"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This activity involves reading or checking websites, usually with a specific idea of what you want to see.",
+        "hi": "इस गतिविधि में वेबसाइटों को पढ़ना या जांचना शामिल है, आमतौर पर आप क्या देखना चाहते हैं, इसका एक विशिष्ट विचार होता है।"
+      },
+      "explanation": {
+        "en": "Web Browsing is the act of looking through information on the WWW using a web browser, typically with a pre-defined goal (like reading the news or buying a product), but not necessarily relying on a search engine (search strategy).",
+        "hi": "वेब ब्राउज़िंग एक वेब ब्राउज़र का उपयोग करके WWW पर जानकारी देखने का कार्य है, जो आमतौर पर एक पूर्व-परिभाषित लक्ष्य (जैसे समाचार पढ़ना या कोई उत्पाद खरीदना) के साथ किया जाता है, लेकिन जरूरी नहीं कि यह सर्च इंजन (खोज रणनीति) पर निर्भर करता हो।"
+      },
+      "key_takeaway": {
+        "en": "Web Browsing is purposeful viewing of web content.",
+        "hi": "वेब ब्राउज़िंग वेब सामग्री का उद्देश्यपूर्ण अवलोकन है।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "What is Web Searching also known as?",
+        "hi": "वेब सर्चिंग को और क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Web Surfing",
+          "hi": "वेब सर्फिंग"
+        },
+        "b": {
+          "en": "Internet Surfing",
+          "hi": "इंटरनेट सर्फिंग"
+        },
+        "c": {
+          "en": "Internet Searching",
+          "hi": "इंटरनेट सर्चिंग"
+        },
+        "d": {
+          "en": "Web Browsing",
+          "hi": "वेब ब्राउज़िंग"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The term is just another way to describe the act of searching for information online.",
+        "hi": "यह शब्द ऑनलाइन जानकारी खोजने की क्रिया का वर्णन करने का बस एक और तरीका है।"
+      },
+      "explanation": {
+        "en": "'Web Searching' is simply the process of actively looking for information on the World Wide Web. The term 'Internet Searching' is synonymous, referring to the same action of querying a search engine.",
+        "hi": "'वेब सर्चिंग' वर्ल्ड वाइड वेब पर सक्रिय रूप से जानकारी खोजने की प्रक्रिया है। 'इंटरनेट सर्चिंग' शब्द पर्यायवाची है, जो सर्च इंजन से प्रश्न पूछने की समान क्रिया को संदर्भित करता है।"
+      },
+      "key_takeaway": {
+        "en": "Web Searching and Internet Searching are synonyms.",
+        "hi": "वेब सर्चिंग और इंटरनेट सर्चिंग पर्यायवाची हैं।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "What is a Web Browser?",
+        "hi": "वेब ब्राउज़र क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "A hardware device to connect to the internet",
+          "hi": "इंटरनेट से कनेक्ट होने के लिए एक हार्डवेयर उपकरण"
+        },
+        "b": {
+          "en": "An application software that displays information from the WWW",
+          "hi": "एक एप्लिकेशन सॉफ्टवेयर जो डब्ल्यूडब्ल्यूडब्ल्यू से सूचना प्रदर्शित करता है"
+        },
+        "c": {
+          "en": "A type of search engine",
+          "hi": "एक प्रकार का सर्च इंजन"
+        },
+        "d": {
+          "en": "A computer virus",
+          "hi": "एक कंप्यूटर वायरस"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "You use this software (like Chrome or Firefox) to access websites.",
+        "hi": "आप वेबसाइटों तक पहुंचने के लिए इस सॉफ्टवेयर (जैसे क्रोम या फ़ायरफ़ॉक्स) का उपयोग करते हैं।"
+      },
+      "explanation": {
+        "en": "A web browser is application software designed to retrieve, present, and traverse information resources on the World Wide Web.",
+        "hi": "एक वेब ब्राउज़र वर्ल्ड वाइड वेब पर सूचना संसाधनों को पुनः प्राप्त करने, प्रस्तुत करने और पार करने के लिए डिज़ाइन किया गया एक एप्लिकेशन सॉफ्टवेयर है।"
+      },
+      "key_takeaway": {
+        "en": "A web browser is software for viewing the WWW.",
+        "hi": "वेब ब्राउज़र WWW देखने के लिए एक सॉफ्टवेयर है।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "Which of the following is NOT a web browser?",
+        "hi": "निम्नलिखित में से कौन सा वेब ब्राउज़र नहीं है?"
+      },
+      "options": {
+        "a": {
+          "en": "Google Chrome",
+          "hi": "गूगल क्रोम"
+        },
+        "b": {
+          "en": "Microsoft Word",
+          "hi": "माइक्रोसॉफ्ट वर्ड"
+        },
+        "c": {
+          "en": "Mozilla Firefox",
+          "hi": "मोज़िला फायरफॉक्स"
+        },
+        "d": {
+          "en": "Opera",
+          "hi": "ओपेरा"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Three of these are used for viewing web pages; one is used for word processing.",
+        "hi": "इनमें से तीन का उपयोग वेब पेज देखने के लिए किया जाता है; एक का उपयोग वर्ड प्रोसेसिंग के लिए किया जाता है।"
+      },
+      "explanation": {
+        "en": "Google Chrome, Mozilla Firefox, and Opera are all popular web browsers. Microsoft Word is application software used for word processing and document creation, not for viewing web pages.",
+        "hi": "गूगल क्रोम, मोज़िला फ़ायरफ़ॉक्स और ओपेरा सभी लोकप्रिय वेब ब्राउज़र हैं। माइक्रोसॉफ्ट वर्ड वर्ड प्रोसेसिंग और दस्तावेज़ निर्माण के लिए उपयोग किया जाने वाला एप्लिकेशन सॉफ्टवेयर है, न कि वेब पेज देखने के लिए।"
+      },
+      "key_takeaway": {
+        "en": "Microsoft Word is a word processor, not a web browser.",
+        "hi": "माइक्रोसॉफ्ट वर्ड एक वर्ड प्रोसेसर है, न कि वेब ब्राउज़र।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "What is a Search Engine?",
+        "hi": "सर्च इंजन क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "A web browser",
+          "hi": "एक वेब ब्राउज़र"
+        },
+        "b": {
+          "en": "A web application that helps users find information on the internet",
+          "hi": "एक वेब एप्लिकेशन जो उपयोगकर्ताओं को इंटरनेट पर सूचना खोजने में मदद करता है"
+        },
+        "c": {
+          "en": "A type of computer memory",
+          "hi": "कंप्यूटर मेमोरी का एक प्रकार"
+        },
+        "d": {
+          "en": "A device for scanning documents",
+          "hi": "दस्तावेज़ स्कैन करने के लिए एक उपकरण"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Search engines (like Google or Bing) are tools used on the web to locate other web pages.",
+        "hi": "सर्च इंजन (जैसे गूगल या बिंग) ऐसे उपकरण हैं जिनका उपयोग वेब पर अन्य वेब पेज खोजने के लिए किया जाता है।"
+      },
+      "explanation": {
+        "en": "A search engine is a software system designed to carry out web searches, which means to search the World Wide Web in a systematic way for particular information specified in a text query.",
+        "hi": "एक सर्च इंजन एक सॉफ्टवेयर प्रणाली है जिसे वेब खोज करने के लिए डिज़ाइन किया गया है, जिसका अर्थ है किसी टेक्स्ट क्वेरी में निर्दिष्ट विशेष जानकारी के लिए वर्ल्ड वाइड वेब में व्यवस्थित तरीके से खोजना।"
+      },
+      "key_takeaway": {
+        "en": "A search engine is a web tool for finding information.",
+        "hi": "सर्च इंजन जानकारी खोजने के लिए एक वेब टूल है।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "Which of the following is a search engine?",
+        "hi": "निम्नलिखित में से कौन सा एक सर्च इंजन है?"
+      },
+      "options": {
+        "a": {
+          "en": "Google Chrome",
+          "hi": "गूगल क्रोम"
+        },
+        "b": {
+          "en": "Facebook",
+          "hi": "फेसबुक"
+        },
+        "c": {
+          "en": "Google",
+          "hi": "गूगल"
+        },
+        "d": {
+          "en": "Wikipedia",
+          "hi": "विकिपीडिया"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "One of these is the most popular search tool globally.",
+        "hi": "इनमें से एक विश्व स्तर पर सबसे लोकप्रिय खोज उपकरण है।"
+      },
+      "explanation": {
+        "en": "Google is the most widely used search engine. Google Chrome is a web browser, Facebook is a social media platform, and Wikipedia is an online encyclopedia.",
+        "hi": "गूगल सबसे व्यापक रूप से इस्तेमाल किया जाने वाला सर्च इंजन है। गूगल क्रोम एक वेब ब्राउज़र है, फेसबुक एक सोशल मीडिया प्लेटफॉर्म है, और विकिपीडिया एक ऑनलाइन विश्वकोश है।"
+      },
+      "key_takeaway": {
+        "en": "Google is the primary example of a search engine.",
+        "hi": "गूगल सर्च इंजन का प्राथमिक उदाहरण है।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "What is the full form of E-mail?",
+        "hi": "ई-मेल का पूर्ण रूप क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Easy Mail",
+          "hi": "ईजी मेल"
+        },
+        "b": {
+          "en": "Electronic Mail",
+          "hi": "इलेक्ट्रॉनिक मेल"
+        },
+        "c": {
+          "en": "External Mail",
+          "hi": "एक्सटर्नल मेल"
+        },
+        "d": {
+          "en": "Effective Mail",
+          "hi": "इफेक्टिव मेल"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The 'E' stands for the way the message is sent—via digital means.",
+        "hi": "'E' उस तरीके के लिए है जिससे संदेश भेजा जाता है—डिजिटल माध्यम से।"
+      },
+      "explanation": {
+        "en": "E-mail is short for 'Electronic Mail', which is a method of exchanging messages between people using electronic devices.",
+        "hi": "ई-मेल 'इलेक्ट्रॉनिक मेल' का संक्षिप्त रूप है, जो इलेक्ट्रॉनिक उपकरणों का उपयोग करके लोगों के बीच संदेशों का आदान-प्रदान करने की एक विधि है।"
+      },
+      "key_takeaway": {
+        "en": "E-mail stands for Electronic Mail.",
+        "hi": "ई-मेल का मतलब इलेक्ट्रॉनिक मेल है।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "What can an E-mail message contain?",
+        "hi": "एक ई-मेल संदेश में क्या शामिल हो सकता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Only text",
+          "hi": "केवल टेक्स्ट"
+        },
+        "b": {
+          "en": "Only images",
+          "hi": "केवल छवियां"
+        },
+        "c": {
+          "en": "Text, images, audio, video, or documents",
+          "hi": "टेक्स्ट, छवियां, ऑडियो, वीडियो, या दस्तावेज़"
+        },
+        "d": {
+          "en": "Only audio and video",
+          "hi": "केवल ऑडियो और वीडियो"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Think about attachments—you can attach many types of files to an email.",
+        "hi": "अटैचमेंट के बारे में सोचें—आप एक ईमेल के साथ कई प्रकार की फाइलें संलग्न कर सकते हैं।"
+      },
+      "explanation": {
+        "en": "Modern email clients allow users to include various file types as attachments, including rich text, images, multimedia files (audio/video), and documents (PDF, DOCX, etc.), in addition to the main text body.",
+        "hi": "आधुनिक ईमेल क्लाइंट उपयोगकर्ताओं को मुख्य टेक्स्ट बॉडी के अलावा अटैचमेंट के रूप में विभिन्न फ़ाइल प्रकारों को शामिल करने की अनुमति देते हैं, जिसमें रिच टेक्स्ट, छवियां, मल्टीमीडिया फ़ाइलें (ऑडियो/वीडियो), और दस्तावेज़ (PDF, DOCX, आदि) शामिल हैं।"
+      },
+      "key_takeaway": {
+        "en": "Emails can carry all forms of digital content through attachments.",
+        "hi": "ईमेल अटैचमेंट के माध्यम से सभी प्रकार की डिजिटल सामग्री ले जा सकते हैं।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "What is an ESP?",
+        "hi": "ईएसपी क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Email Sending Protocol",
+          "hi": "ईमेल सेंडिंग प्रोटोकॉल"
+        },
+        "b": {
+          "en": "Email Service Provider",
+          "hi": "ईमेल सर्विस प्रोवाइडर"
+        },
+        "c": {
+          "en": "Electronic Signal Processor",
+          "hi": "इलेक्ट्रॉनिक सिग्नल प्रोसेसर"
+        },
+        "d": {
+          "en": "External Storage Provider",
+          "hi": "एक्सटर्नल स्टोरेज प्रोवाइडर"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Examples include Gmail, Outlook, and Yahoo Mail—they provide the service for sending and receiving emails.",
+        "hi": "उदाहरणों में जीमेल, आउटलुक और याहू मेल शामिल हैं—वे ईमेल भेजने और प्राप्त करने की सेवा प्रदान करते हैं।"
+      },
+      "explanation": {
+        "en": "ESP stands for Email Service Provider, a company that offers the service of handling and delivering emails for its users.",
+        "hi": "ESP का मतलब ईमेल सर्विस प्रोवाइडर है, जो एक ऐसी कंपनी है जो अपने उपयोगकर्ताओं के लिए ईमेल को संभालने और वितरित करने की सेवा प्रदान करती है।"
+      },
+      "key_takeaway": {
+        "en": "ESP is a company that provides email services (e.g., Gmail).",
+        "hi": "ESP वह कंपनी है जो ईमेल सेवाएँ प्रदान करती है (उदाहरण के लिए, जीमेल)।"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "What is Data Communication?",
+        "hi": "डेटा कम्युनिकेशन क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "The process of storing data on a computer",
+          "hi": "कंप्यूटर पर डेटा संग्रहीत करने की प्रक्रिया"
+        },
+        "b": {
+          "en": "The process of transferring data from one computer to another in a network",
+          "hi": "नेटवर्क में एक कंप्यूटर से दूसरे कंप्यूटर में डेटा स्थानांतरित करने की प्रक्रिया"
+        },
+        "c": {
+          "en": "The process of deleting data from a computer",
+          "hi": "कंप्यूटर से डेटा हटाने की प्रक्रिया"
+        },
+        "d": {
+          "en": "The process of creating data",
+          "hi": "डेटा बनाने की प्रक्रिया"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The key terms are 'data' and 'communication'—implying movement of information.",
+        "hi": "मुख्य शब्द 'डेटा' और 'संचार' हैं—जिसका अर्थ है जानकारी का आवागमन।"
+      },
+      "explanation": {
+        "en": "Data communication is the exchange of data between two devices via some form of transmission medium. In a network context, this is the transfer of data between computers.",
+        "hi": "डेटा कम्युनिकेशन किसी प्रकार के ट्रांसमिशन माध्यम के माध्यम से दो उपकरणों के बीच डेटा का आदान-प्रदान है। नेटवर्क संदर्भ में, यह कंप्यूटरों के बीच डेटा का स्थानांतरण है।"
+      },
+      "key_takeaway": {
+        "en": "Data Communication is the transfer of data across a network.",
+        "hi": "डेटा कम्युनिकेशन एक नेटवर्क में डेटा का स्थानांतरण है।"
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "What are the three basic components of data communication?",
+        "hi": "डेटा संचार के तीन मूल घटक क्या हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Sender, Computer, Printer",
+          "hi": "प्रेषक, कंप्यूटर, प्रिंटर"
+        },
+        "b": {
+          "en": "Sender, Medium, Receiver",
+          "hi": "प्रेषक, माध्यम, रिसीवर"
+        },
+        "c": {
+          "en": "Keyboard, Mouse, Monitor",
+          "hi": "कीबोर्ड, माउस, मॉनिटर"
+        },
+        "d": {
+          "en": "Input, Process, Output",
+          "hi": "इनपुट, प्रोसेस, आउटपुट"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "To communicate data, you need someone to send it, someone to receive it, and a path between them.",
+        "hi": "डेटा संचारित करने के लिए, आपको इसे भेजने वाले, इसे प्राप्त करने वाले और उनके बीच एक मार्ग की आवश्यकता होती है।"
+      },
+      "explanation": {
+        "en": "The basic model of communication requires a Sender (Source), a Receiver (Destination), and a Medium (Transmission path) to carry the message/data.",
+        "hi": "संचार के मूल मॉडल के लिए संदेश/डेटा ले जाने के लिए एक प्रेषक (स्रोत), एक रिसीवर (गंतव्य), और एक माध्यम (ट्रांसमिशन पथ) की आवश्यकता होती है।"
+      },
+      "key_takeaway": {
+        "en": "The three components are Sender, Medium, and Receiver.",
+        "hi": "तीन घटक हैं प्रेषक, माध्यम और रिसीवर।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "The device that sends data is called:",
+        "hi": "वह उपकरण जो डेटा भेजता है उसे कहा जाता है:"
+      },
+      "options": {
+        "a": {
+          "en": "Receiver",
+          "hi": "रिसीवर"
+        },
+        "b": {
+          "en": "Medium",
+          "hi": "माध्यम"
+        },
+        "c": {
+          "en": "Sender",
+          "hi": "प्रेषक"
+        },
+        "d": {
+          "en": "Sink",
+          "hi": "सिंक"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It is the starting point of the data flow.",
+        "hi": "यह डेटा प्रवाह का प्रारंभिक बिंदु है।"
+      },
+      "explanation": {
+        "en": "In data communication, the device originating the message is called the Sender (or Source/Transmitter).",
+        "hi": "डेटा संचार में, संदेश उत्पन्न करने वाले उपकरण को प्रेषक (या स्रोत/ट्रांसमीटर) कहा जाता है।"
+      },
+      "key_takeaway": {
+        "en": "The Sender transmits the data.",
+        "hi": "प्रेषक डेटा प्रसारित करता है।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "The device that receives data is called:",
+        "hi": "वह उपकरण जो डेटा प्राप्त करता है उसे कहा जाता है:"
+      },
+      "options": {
+        "a": {
+          "en": "Transmitter",
+          "hi": "ट्रांसमीटर"
+        },
+        "b": {
+          "en": "Source",
+          "hi": "स्रोत"
+        },
+        "c": {
+          "en": "Medium",
+          "hi": "माध्यम"
+        },
+        "d": {
+          "en": "Receiver",
+          "hi": "रिसीवर"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "It is the end point or destination of the data flow.",
+        "hi": "यह डेटा प्रवाह का अंतिम बिंदु या गंतव्य है।"
+      },
+      "explanation": {
+        "en": "The Receiver (or Sink/Destination) is the device that accepts the message/data transmitted by the Sender.",
+        "hi": "रिसीवर (या सिंक/गंतव्य) वह उपकरण है जो प्रेषक द्वारा प्रसारित संदेश/डेटा को स्वीकार करता है।"
+      },
+      "key_takeaway": {
+        "en": "The Receiver accepts the data.",
+        "hi": "रिसीवर डेटा स्वीकार करता है।"
+      }
+    },
+    {
+      "question_id": 21,
+      "question": {
+        "en": "The path through which data is transmitted is called:",
+        "hi": "वह मार्ग जिससे डेटा प्रसारित होता है उसे कहा जाता है:"
+      },
+      "options": {
+        "a": {
+          "en": "Sender",
+          "hi": "प्रेषक"
+        },
+        "b": {
+          "en": "Receiver",
+          "hi": "रिसीवर"
+        },
+        "c": {
+          "en": "Medium",
+          "hi": "माध्यम"
+        },
+        "d": {
+          "en": "Signal",
+          "hi": "सिग्नल"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This is the physical or logical channel that connects the sender and receiver.",
+        "hi": "यह वह भौतिक या तार्किक चैनल है जो प्रेषक और रिसीवर को जोड़ता है।"
+      },
+      "explanation": {
+        "en": "The medium (or transmission media/channel) is the physical or wireless path over which the data travels from the sender to the receiver.",
+        "hi": "माध्यम (या ट्रांसमिशन मीडिया/चैनल) वह भौतिक या वायरलेस पथ है जिस पर डेटा प्रेषक से रिसीवर तक यात्रा करता है।"
+      },
+      "key_takeaway": {
+        "en": "The Medium is the path of data transmission.",
+        "hi": "माध्यम डेटा ट्रांसमिशन का मार्ग है।"
+      }
+    },
+    {
+      "question_id": 22,
+      "question": {
+        "en": "What is Internet Security?",
+        "hi": "इंटरनेट सुरक्षा क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Protecting computers from physical damage",
+          "hi": "कंप्यूटरों को भौतिक क्षति से बचाना"
+        },
+        "b": {
+          "en": "The branch of IT that protects computers and data from unauthorized access",
+          "hi": "आईटी की वह शाखा जो कंप्यूटरों और डेटा को अनधिकृत पहुंच से बचाती है"
+        },
+        "c": {
+          "en": "A type of internet connection",
+          "hi": "एक प्रकार का इंटरनेट कनेक्शन"
+        },
+        "d": {
+          "en": "A web browser feature",
+          "hi": "एक वेब ब्राउज़र सुविधा"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Security primarily deals with protecting digital assets and privacy from threats.",
+        "hi": "सुरक्षा मुख्य रूप से डिजिटल संपत्ति और गोपनीयता को खतरों से बचाने से संबंधित है।"
+      },
+      "explanation": {
+        "en": "Internet security is a branch of cybersecurity (a sub-branch of IT) that focuses on protecting digital information, computer systems, and networks from malicious attacks and unauthorized access.",
+        "hi": "इंटरनेट सुरक्षा साइबर सुरक्षा (आईटी की एक उप-शाखा) की एक शाखा है जो दुर्भावनापूर्ण हमलों और अनधिकृत पहुंच से डिजिटल जानकारी, कंप्यूटर सिस्टम और नेटवर्क की सुरक्षा पर केंद्रित है।"
+      },
+      "key_takeaway": {
+        "en": "Internet Security protects data and systems from threats and unauthorized access.",
+        "hi": "इंटरनेट सुरक्षा डेटा और सिस्टम को खतरों और अनधिकृत पहुंच से बचाती है।"
+      }
+    },
+    {
+      "question_id": 23,
+      "question": {
+        "en": "Which technology monitors incoming and outgoing network traffic?",
+        "hi": "कौन सी तकनीक आने वाले और जाने वाले नेटवर्क ट्रैफिक की निगरानी करती है?"
+      },
+      "options": {
+        "a": {
+          "en": "Antivirus Software",
+          "hi": "एंटीवायरस सॉफ्टवेयर"
+        },
+        "b": {
+          "en": "Firewalls",
+          "hi": "फायरवॉल"
+        },
+        "c": {
+          "en": "Secure Passwords",
+          "hi": "सुरक्षित पासवर्ड"
+        },
+        "d": {
+          "en": "Encryption",
+          "hi": "एन्क्रिप्शन"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This acts as a 'barrier' or 'gate' between a private network and the public internet.",
+        "hi": "यह एक निजी नेटवर्क और सार्वजनिक इंटरनेट के बीच एक 'बाधा' या 'गेट' के रूप में कार्य करता है।"
+      },
+      "explanation": {
+        "en": "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules, acting as a filter or barrier.",
+        "hi": "एक फ़ायरवॉल एक नेटवर्क सुरक्षा प्रणाली है जो पूर्व निर्धारित सुरक्षा नियमों के आधार पर आने वाले और जाने वाले नेटवर्क ट्रैफिक की निगरानी और नियंत्रण करती है, जो एक फिल्टर या अवरोधक के रूप में कार्य करती है।"
+      },
+      "key_takeaway": {
+        "en": "Firewalls monitor and control network traffic.",
+        "hi": "फ़ायरवॉल नेटवर्क ट्रैफिक की निगरानी और नियंत्रण करते हैं।"
+      }
+    },
+    {
+      "question_id": 24,
+      "question": {
+        "en": "Strong passwords should be a combination of:",
+        "hi": "मजबूत पासवर्ड किसका संयोजन होना चाहिए?"
+      },
+      "options": {
+        "a": {
+          "en": "Only letters",
+          "hi": "केवल अक्षर"
+        },
+        "b": {
+          "en": "Only numbers",
+          "hi": "केवल संख्याएं"
+        },
+        "c": {
+          "en": "Letters, numbers, and special characters",
+          "hi": "अक्षर, संख्याएं और विशेष वर्ण"
+        },
+        "d": {
+          "en": "Your name and birthdate",
+          "hi": "आपका नाम और जन्मतिथि"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The best passwords use a mix of different character types for maximum complexity.",
+        "hi": "सबसे अच्छे पासवर्ड अधिकतम जटिलता के लिए विभिन्न प्रकार के वर्णों के मिश्रण का उपयोग करते हैं।"
+      },
+      "explanation": {
+        "en": "A strong password incorporates a variety of characters—uppercase and lowercase letters, numbers, and special symbols—to make it difficult for hackers or automated tools to guess or crack.",
+        "hi": "एक मजबूत पासवर्ड में विभिन्न प्रकार के वर्ण—बड़े और छोटे अक्षर, संख्याएं और विशेष प्रतीक—शामिल होते हैं ताकि हैकर्स या स्वचालित उपकरणों के लिए इसे अनुमान लगाना या क्रैक करना मुश्किल हो जाए।"
+      },
+      "key_takeaway": {
+        "en": "Strong passwords use a mix of letters, numbers, and special characters.",
+        "hi": "मजबूत पासवर्ड में अक्षर, संख्याएं और विशेष वर्णों का मिश्रण होता है।"
+      }
+    },
+    {
+      "question_id": 25,
+      "question": {
+        "en": "Antivirus software is used to:",
+        "hi": "एंटीवायरस सॉफ्टवेयर का उपयोग किसके लिए किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Increase internet speed",
+          "hi": "इंटरनेट की गति बढ़ाने के लिए"
+        },
+        "b": {
+          "en": "Detect and remove malicious software",
+          "hi": "दुर्भावनापूर्ण सॉफ्टवेयर का पता लगाने और हटाने के लिए"
+        },
+        "c": {
+          "en": "Create websites",
+          "hi": "वेबसाइट बनाने के लिए"
+        },
+        "d": {
+          "en": "Send emails",
+          "hi": "ईमेल भेजने के लिए"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The name suggests it works against computer viruses and other harmful programs.",
+        "hi": "नाम से पता चलता है कि यह कंप्यूटर वायरस और अन्य हानिकारक कार्यक्रमों के खिलाफ काम करता है।"
+      },
+      "explanation": {
+        "en": "Antivirus software is specifically designed to detect, prevent, and take action to remove or neutralize malicious software, such as viruses, worms, and trojans, from computer systems.",
+        "hi": "एंटीवायरस सॉफ़्टवेयर को विशेष रूप से कंप्यूटर सिस्टम से दुर्भावनापूर्ण सॉफ़्टवेयर, जैसे वायरस, वर्म्स और ट्रोजन का पता लगाने, रोकने और हटाने या निष्क्रिय करने के लिए कार्रवाई करने के लिए डिज़ाइन किया गया है।"
+      },
+      "key_takeaway": {
+        "en": "Antivirus protects against malicious software.",
+        "hi": "एंटीवायरस दुर्भावनापूर्ण सॉफ़्टवेयर से सुरक्षा करता है।"
+      }
+    },
+    {
+      "question_id": 26,
+      "question": {
+        "en": "What is Network Transmission Media?",
+        "hi": "नेटवर्क ट्रांसमिशन मीडिया क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "The device that sends data",
+          "hi": "वह उपकरण जो डेटा भेजता है"
+        },
+        "b": {
+          "en": "The device that receives data",
+          "hi": "वह उपकरण जो डेटा प्राप्त करता है"
+        },
+        "c": {
+          "en": "The path through which data is transmitted",
+          "hi": "वह मार्ग जिससे डेटा प्रसारित होता है"
+        },
+        "d": {
+          "en": "A type of computer virus",
+          "hi": "एक प्रकार का कंप्यूटर वायरस"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The term 'media' in this context refers to the channel or medium of communication.",
+        "hi": "इस संदर्भ में 'मीडिया' शब्द संचार के चैनल या माध्यम को संदर्भित करता है।"
+      },
+      "explanation": {
+        "en": "Transmission media refers to the physical path (like a cable) or the wireless mechanism (like radio waves) over which data travels from a sender to a receiver in a network.",
+        "hi": "ट्रांसमिशन मीडिया भौतिक पथ (जैसे एक केबल) या वायरलेस तंत्र (जैसे रेडियो तरंगें) को संदर्भित करता है जिसके माध्यम से डेटा नेटवर्क में एक प्रेषक से रिसीवर तक यात्रा करता है।"
+      },
+      "key_takeaway": {
+        "en": "Transmission Media is the data path (wired or wireless).",
+        "hi": "ट्रांसमिशन मीडिया डेटा ट्रांसमिशन का मार्ग है (वायर्ड या वायरलेस)।"
+      }
+    },
+    {
+      "question_id": 27,
+      "question": {
+        "en": "What are the two main types of Transmission Media?",
+        "hi": "ट्रांसमिशन मीडिया के दो मुख्य प्रकार क्या हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Sender and Receiver",
+          "hi": "प्रेषक और रिसीवर"
+        },
+        "b": {
+          "en": "Wired and Wireless",
+          "hi": "वायर्ड और वायरलेस"
+        },
+        "c": {
+          "en": "LAN and WAN",
+          "hi": "लैन और वैन"
+        },
+        "d": {
+          "en": "Input and Output",
+          "hi": "इनपुट और आउटपुट"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This classification is based on whether a physical conductor is used or not.",
+        "hi": "यह वर्गीकरण इस बात पर आधारित है कि भौतिक कंडक्टर का उपयोग किया जाता है या नहीं।"
+      },
+      "explanation": {
+        "en": "Transmission media is broadly categorized into Guided Media (Wired, using cables) and Unguided Media (Wireless, using air/vacuum).",
+        "hi": "ट्रांसमिशन मीडिया को मोटे तौर पर गाइडेड मीडिया (वायर्ड, केबल का उपयोग करके) और अनगाइडेड मीडिया (वायरलेस, हवा/वैक्यूम का उपयोग करके) में वर्गीकृत किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "The main types are Wired (Guided) and Wireless (Unguided).",
+        "hi": "मुख्य प्रकार वायर्ड (गाइडेड) और वायरलेस (अनगाइडेड) हैं।"
+      }
+    },
+    {
+      "question_id": 28,
+      "question": {
+        "en": "Which of the following is a Wired Transmission Media?",
+        "hi": "निम्नलिखित में से कौन सा एक वायर्ड ट्रांसमिशन मीडिया है?"
+      },
+      "options": {
+        "a": {
+          "en": "Wi-Fi",
+          "hi": "वाई-फाई"
+        },
+        "b": {
+          "en": "Bluetooth",
+          "hi": "ब्लूटूथ"
+        },
+        "c": {
+          "en": "Twisted-pair cable",
+          "hi": "ट्विस्टेड-पेयर केबल"
+        },
+        "d": {
+          "en": "Satellite",
+          "hi": "सैटेलाइट"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The answer must be a physical cable.",
+        "hi": "उत्तर एक भौतिक केबल होना चाहिए।"
+      },
+      "explanation": {
+        "en": "Twisted-pair cable (used in Ethernet) is a physical, or wired, medium. Wi-Fi, Bluetooth, and Satellite are all wireless media.",
+        "hi": "ट्विस्टेड-पेयर केबल (ईथरनेट में प्रयुक्त) एक भौतिक, या वायर्ड, माध्यम है। वाई-फाई, ब्लूटूथ और सैटेलाइट सभी वायरलेस मीडिया हैं।"
+      },
+      "key_takeaway": {
+        "en": "Twisted-pair cable is a common wired medium.",
+        "hi": "ट्विस्टेड-पेयर केबल एक सामान्य वायर्ड माध्यम है।"
+      }
+    },
+    {
+      "question_id": 29,
+      "question": {
+        "en": "Which cable uses light pulses to transmit data?",
+        "hi": "कौन सी केबल डेटा ट्रांसमिट करने के लिए लाइट पल्स का उपयोग करती है?"
+      },
+      "options": {
+        "a": {
+          "en": "Twisted-pair cable",
+          "hi": "ट्विस्टेड-पेयर केबल"
+        },
+        "b": {
+          "en": "Co-axial cable",
+          "hi": "को-एक्सियल केबल"
+        },
+        "c": {
+          "en": "Fibre-optic cable",
+          "hi": "फाइबर-ऑप्टिक केबल"
+        },
+        "d": {
+          "en": "Ethernet cable",
+          "hi": "ईथरनेट केबल"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This cable is made of glass or plastic strands and offers the fastest data transmission speeds.",
+        "hi": "यह केबल कांच या प्लास्टिक के तारों से बनी होती है और सबसे तेज़ डेटा ट्रांसमिशन गति प्रदान करती है।"
+      },
+      "explanation": {
+        "en": "Fibre-optic cable transmits data in the form of light pulses that travel through thin glass or plastic fibers. Other cables use electrical signals.",
+        "hi": "फाइबर-ऑप्टिक केबल प्रकाश दालों के रूप में डेटा संचारित करता है जो पतले कांच या प्लास्टिक फाइबर के माध्यम से यात्रा करते हैं। अन्य केबल विद्युत संकेतों का उपयोग करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Fibre-optic cable uses light for transmission.",
+        "hi": "फाइबर-ऑप्टिक केबल ट्रांसमिशन के लिए प्रकाश का उपयोग करता है।"
+      }
+    },
+    {
+      "question_id": 30,
+      "question": {
+        "en": "Which wireless media uses antennas on towers for communication over several kilometres?",
+        "hi": "कौन सा वायरलेस मीडिया कई किलोमीटर तक संचार के लिए टावरों पर एंटीना का उपयोग करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Bluetooth",
+          "hi": "ब्लूटूथ"
+        },
+        "b": {
+          "en": "Wi-Fi",
+          "hi": "वाई-फाई"
+        },
+        "c": {
+          "en": "Microwave link",
+          "hi": "माइक्रोवेव लिंक"
+        },
+        "d": {
+          "en": "Satellite",
+          "hi": "सैटेलाइट"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This technology often requires a clear line of sight between tall structures.",
+        "hi": "इस तकनीक को अक्सर लंबी संरचनाओं के बीच दृष्टि की एक स्पष्ट रेखा की आवश्यकता होती है।"
+      },
+      "explanation": {
+        "en": "Microwave links use high-frequency radio waves transmitted between antennas mounted on towers. This line-of-sight communication is used for medium-to-long distance links.",
+        "hi": "माइक्रोवेव लिंक टावरों पर लगे एंटेना के बीच प्रेषित उच्च आवृत्ति वाली रेडियो तरंगों का उपयोग करते हैं। इस लाइन-ऑफ-साइट संचार का उपयोग मध्यम से लंबी दूरी के लिंक के लिए किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Microwave links use towers for long-distance terrestrial communication.",
+        "hi": "माइक्रोवेव लिंक लंबी दूरी के स्थलीय संचार के लिए टावरों का उपयोग करते हैं।"
+      }
+    },
+    {
+      "question_id": 31,
+      "question": {
+        "en": "Which wireless media uses satellites for communication between faraway locations?",
+        "hi": "कौन सा वायरलेस मीडिया दूरदराज के स्थानों के बीच संचार के लिए उपग्रहों का उपयोग करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Wi-Fi",
+          "hi": "वाई-फाई"
+        },
+        "b": {
+          "en": "Bluetooth",
+          "hi": "ब्लूटूथ"
+        },
+        "c": {
+          "en": "Microwave",
+          "hi": "माइक्रोवेव"
+        },
+        "d": {
+          "en": "Satellite Communication",
+          "hi": "सैटेलाइट कम्युनिकेशन"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The name directly includes the celestial object used for this type of long-haul communication.",
+        "hi": "नाम में सीधे इस प्रकार के लंबी दूरी के संचार के लिए उपयोग किए जाने वाले खगोलीय पिंड शामिल हैं।"
+      },
+      "explanation": {
+        "en": "Satellite Communication uses orbital satellites to relay signals over vast distances, including transcontinental links, making it ideal for connecting faraway locations.",
+        "hi": "सैटेलाइट कम्युनिकेशन विशाल दूरी पर संकेतों को रिले करने के लिए कक्षीय उपग्रहों का उपयोग करता है, जिसमें अंतरमहाद्वीपीय लिंक शामिल हैं, जो इसे दूरदराज के स्थानों को जोड़ने के लिए आदर्श बनाता है।"
+      },
+      "key_takeaway": {
+        "en": "Satellite Communication links continents and remote areas.",
+        "hi": "सैटेलाइट कम्युनिकेशन महाद्वीपों और दूरदराज के क्षेत्रों को जोड़ता है।"
+      }
+    },
+    {
+      "question_id": 32,
+      "question": {
+        "en": "What does Wi-Fi stand for?",
+        "hi": "वाई-फाई का क्या अर्थ है?"
+      },
+      "options": {
+        "a": {
+          "en": "Wireless Fidelity",
+          "hi": "वायरलेस फिडेलिटी"
+        },
+        "b": {
+          "en": "Wired Fidelity",
+          "hi": "वायर्ड फिडेलिटी"
+        },
+        "c": {
+          "en": "Wide Fidelity",
+          "hi": "वाइड फिडेलिटी"
+        },
+        "d": {
+          "en": "Wireless Fiber",
+          "hi": "वायरलेस फाइबर"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It is a standard for wireless local area networking.",
+        "hi": "यह वायरलेस लोकल एरिया नेटवर्किंग के लिए एक मानक है।"
+      },
+      "explanation": {
+        "en": "Wi-Fi is a trademark and common term for wireless local area networks, and it stands for Wireless Fidelity.",
+        "hi": "वाई-फाई वायरलेस लोकल एरिया नेटवर्क के लिए एक ट्रेडमार्क और सामान्य शब्द है, और इसका मतलब वायरलेस फिडेलिटी है।"
+      },
+      "key_takeaway": {
+        "en": "Wi-Fi stands for Wireless Fidelity.",
+        "hi": "वाई-फाई का मतलब वायरलेस फिडेलिटी है।"
+      }
+    },
+    {
+      "question_id": 33,
+      "question": {
+        "en": "Wi-Fi is commonly used to create:",
+        "hi": "वाई-फाई आमतौर पर क्या बनाने के लिए उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "WAN",
+          "hi": "वैन"
+        },
+        "b": {
+          "en": "MAN",
+          "hi": "मैन"
+        },
+        "c": {
+          "en": "LAN",
+          "hi": "लैन"
+        },
+        "d": {
+          "en": "PAN",
+          "hi": "पैन"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Wi-Fi creates a network within a limited area like a home or office.",
+        "hi": "वाई-फाई घर या कार्यालय जैसे सीमित क्षेत्र के भीतर एक नेटवर्क बनाता है।"
+      },
+      "explanation": {
+        "en": "Wi-Fi is the most popular technology for creating a Wireless Local Area Network (WLAN), which is a type of LAN, covering a limited geographical area like a building.",
+        "hi": "वाई-फाई वायरलेस लोकल एरिया नेटवर्क (WLAN) बनाने के लिए सबसे लोकप्रिय तकनीक है, जो एक प्रकार का LAN है, जो एक इमारत जैसे सीमित भौगोलिक क्षेत्र को कवर करता है।"
+      },
+      "key_takeaway": {
+        "en": "Wi-Fi is used to create a LAN (specifically, a WLAN).",
+        "hi": "वाई-फाई का उपयोग LAN (विशेष रूप से, WLAN) बनाने के लिए किया जाता है।"
+      }
+    },
+    {
+      "question_id": 34,
+      "question": {
+        "en": "Bluetooth is used to create a:",
+        "hi": "ब्लूटूथ का उपयोग क्या बनाने के लिए किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Wide Area Network (WAN)",
+          "hi": "वाइड एरिया नेटवर्क (वैन)"
+        },
+        "b": {
+          "en": "Metropolitan Area Network (MAN)",
+          "hi": "मेट्रोपॉलिटन एरिया नेटवर्क (मैन)"
+        },
+        "c": {
+          "en": "Local Area Network (LAN)",
+          "hi": "लोकल एरिया नेटवर्क (लैन)"
+        },
+        "d": {
+          "en": "Personal Area Network (PAN)",
+          "hi": "पर्सनल एरिया नेटवर्क (पैन)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Bluetooth's range is very short, typically connecting devices around a single person.",
+        "hi": "ब्लूटूथ की सीमा बहुत कम होती है, जो आमतौर पर एक ही व्यक्ति के आसपास के उपकरणों को जोड़ती है।"
+      },
+      "explanation": {
+        "en": "Bluetooth is a short-range wireless technology (usually up to 10 meters) used to connect devices like headphones, phones, and computers, forming a Personal Area Network (PAN).",
+        "hi": "ब्लूटूथ एक छोटी दूरी की वायरलेस तकनीक है (आमतौर पर 10 मीटर तक) जिसका उपयोग हेडफ़ोन, फोन और कंप्यूटर जैसे उपकरणों को जोड़ने के लिए किया जाता है, जिससे एक पर्सनल एरिया नेटवर्क (PAN) बनता है।"
+      },
+      "key_takeaway": {
+        "en": "Bluetooth creates a PAN for short-range personal use.",
+        "hi": "ब्लूटूथ छोटी दूरी के व्यक्तिगत उपयोग के लिए एक PAN बनाता है।"
+      }
+    },
+    {
+      "question_id": 35,
+      "question": {
+        "en": "A network that connects devices in a small area like a home or office is called:",
+        "hi": "एक नेटवर्क जो घर या ऑफिस जैसे छोटे क्षेत्र में उपकरणों को जोड़ता है, उसे कहा जाता है:"
+      },
+      "options": {
+        "a": {
+          "en": "PAN",
+          "hi": "पैन"
+        },
+        "b": {
+          "en": "LAN",
+          "hi": "लैन"
+        },
+        "c": {
+          "en": "MAN",
+          "hi": "मैन"
+        },
+        "d": {
+          "en": "WAN",
+          "hi": "वैन"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The scope is 'Local Area'.",
+        "hi": "दायरा 'स्थानीय क्षेत्र' है।"
+      },
+      "explanation": {
+        "en": "A Local Area Network (LAN) connects computers and devices in a limited geographical area, such as a single home, school, or office building.",
+        "hi": "एक लोकल एरिया नेटवर्क (LAN) कंप्यूटरों और उपकरणों को एक सीमित भौगोलिक क्षेत्र, जैसे एक घर, स्कूल या कार्यालय भवन में जोड़ता है।"
+      },
+      "key_takeaway": {
+        "en": "LANs cover a single building or small area.",
+        "hi": "LANs एक ही इमारत या छोटे क्षेत्र को कवर करते हैं।"
+      }
+    },
+    {
+      "question_id": 36,
+      "question": {
+        "en": "Which network has the highest transmission speed?",
+        "hi": "किस नेटवर्क में सबसे अधिक ट्रांसमिशन स्पीड होती है?"
+      },
+      "options": {
+        "a": {
+          "en": "PAN",
+          "hi": "पैन"
+        },
+        "b": {
+          "en": "LAN",
+          "hi": "लैन"
+        },
+        "c": {
+          "en": "MAN",
+          "hi": "मैन"
+        },
+        "d": {
+          "en": "WAN",
+          "hi": "वैन"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Shorter distances and dedicated connections (like Ethernet cables) lead to higher speeds and lower latency.",
+        "hi": "कम दूरी और समर्पित कनेक्शन (जैसे ईथरनेट केबल) उच्च गति और कम विलंबता की ओर ले जाते हैं।"
+      },
+      "explanation": {
+        "en": "LANs, being confined to a small area, use high-bandwidth media (like Ethernet and Fibre) and do not suffer from long-distance signal degradation or multiple router hops, thus offering the highest transmission speeds among the options.",
+        "hi": "LANs, एक छोटे से क्षेत्र तक सीमित होने के कारण, उच्च बैंडविड्थ मीडिया (जैसे ईथरनेट और फाइबर) का उपयोग करते हैं और लंबी दूरी के सिग्नल क्षरण या कई राउटर हॉप्स से पीड़ित नहीं होते हैं, इस प्रकार विकल्पों में सबसे अधिक ट्रांसमिशन गति प्रदान करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "LANs offer the highest speed due to their local, dedicated infrastructure.",
+        "hi": "LANs अपनी स्थानीय, समर्पित बुनियादी ढांचे के कारण सबसे अधिक गति प्रदान करते हैं।"
+      }
+    },
+    {
+      "question_id": 37,
+      "question": {
+        "en": "Which network covers the largest geographical area?",
+        "hi": "कौन सा नेटवर्क सबसे बड़े भौगोलिक क्षेत्र को कवर करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "LAN",
+          "hi": "लैन"
+        },
+        "b": {
+          "en": "MAN",
+          "hi": "मैन"
+        },
+        "c": {
+          "en": "WAN",
+          "hi": "वैन"
+        },
+        "d": {
+          "en": "PAN",
+          "hi": "पैन"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The Internet itself is the biggest example of this type of network.",
+        "hi": "इंटरनेट स्वयं इस प्रकार के नेटवर्क का सबसे बड़ा उदाहरण है।"
+      },
+      "explanation": {
+        "en": "A Wide Area Network (WAN) spans a large geographical area, such as a state, a country, or even the entire world (like the Internet).",
+        "hi": "एक वाइड एरिया नेटवर्क (WAN) एक बड़े भौगोलिक क्षेत्र, जैसे एक राज्य, एक देश, या यहां तक कि पूरी दुनिया (जैसे इंटरनेट) में फैला होता है।"
+      },
+      "key_takeaway": {
+        "en": "WANs cover the largest area (global scale).",
+        "hi": "WANs सबसे बड़े क्षेत्र (वैश्विक पैमाने) को कवर करते हैं।"
+      }
+    },
+    {
+      "question_id": 38,
+      "question": {
+        "en": "Which type of network is typically a private network?",
+        "hi": "किस प्रकार का नेटवर्क आमतौर पर एक निजी नेटवर्क होता है?"
+      },
+      "options": {
+        "a": {
+          "en": "LAN",
+          "hi": "लैन"
+        },
+        "b": {
+          "en": "MAN",
+          "hi": "मैन"
+        },
+        "c": {
+          "en": "WAN",
+          "hi": "वैन"
+        },
+        "d": {
+          "en": "Internet",
+          "hi": "इंटरनेट"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Networks confined to a single organization or home are considered private.",
+        "hi": "एक ही संगठन या घर तक सीमित नेटवर्क को निजी माना जाता है।"
+      },
+      "explanation": {
+        "en": "While WANs and MANs can also be private (Intranets), a Local Area Network (LAN) is inherently defined by its local ownership and control, making it the most common and typical example of a private network (e.g., a home or corporate office network). The Internet is public.",
+        "hi": "हालांकि WANs और MANs भी निजी हो सकते हैं (इंट्रानेट), एक लोकल एरिया नेटवर्क (LAN) स्वाभाविक रूप से अपने स्थानीय स्वामित्व और नियंत्रण द्वारा परिभाषित होता है, जो इसे एक निजी नेटवर्क (उदाहरण के लिए, एक घर या कॉर्पोरेट कार्यालय नेटवर्क) का सबसे सामान्य और विशिष्ट उदाहरण बनाता है। इंटरनेट सार्वजनिक है।"
+      },
+      "key_takeaway": {
+        "en": "LANs are the most common private networks.",
+        "hi": "LANs सबसे सामान्य निजी नेटवर्क हैं।"
+      }
+    },
+    {
+      "question_id": 39,
+      "question": {
+        "en": "Which transmission medium is commonly used in a LAN?",
+        "hi": "लैन में आमतौर पर किस ट्रांसमिशन मीडिया का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Satellite",
+          "hi": "सैटेलाइट"
+        },
+        "b": {
+          "en": "Fibre-optic cable",
+          "hi": "फाइबर-ऑप्टिक केबल"
+        },
+        "c": {
+          "en": "Twisted-pair cable",
+          "hi": "ट्विस्टेड-पेयर केबल"
+        },
+        "d": {
+          "en": "Microwave",
+          "hi": "माइक्रोवेव"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Think of the standard cable used to connect a computer to a wall port (Ethernet).",
+        "hi": "एक कंप्यूटर को वॉल पोर्ट (ईथरनेट) से जोड़ने के लिए उपयोग किए जाने वाले मानक केबल के बारे में सोचें।"
+      },
+      "explanation": {
+        "en": "Twisted-pair cable (specifically, unshielded twisted pair or UTP) is the standard and most economical choice for Ethernet, which is the foundational technology for most modern LANs.",
+        "hi": "ट्विस्टेड-पेयर केबल (विशेष रूप से, अनशील्डेड ट्विस्टेड पेयर या UTP) ईथरनेट के लिए मानक और सबसे किफायती विकल्प है, जो अधिकांश आधुनिक LANs के लिए मूलभूत तकनीक है।"
+      },
+      "key_takeaway": {
+        "en": "Twisted-pair cable is the primary medium for wired LANs.",
+        "hi": "ट्विस्टेड-पेयर केबल वायर्ड LANs के लिए प्राथमिक माध्यम है।"
+      }
+    },
+    {
+      "question_id": 40,
+      "question": {
+        "en": "Which transmission medium is commonly used in a WAN?",
+        "hi": "वैन में आमतौर पर किस ट्रांसमिशन मीडिया का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Bluetooth",
+          "hi": "ब्लूटूथ"
+        },
+        "b": {
+          "en": "Twisted-pair cable",
+          "hi": "ट्विस्टेड-पेयर केबल"
+        },
+        "c": {
+          "en": "Wi-Fi",
+          "hi": "वाई-फाई"
+        },
+        "d": {
+          "en": "Satellite communication",
+          "hi": "सैटेलाइट कम्युनिकेशन"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "To cover massive distances (e.g., across oceans or remote areas), a wireless option is essential.",
+        "hi": "विशाल दूरी (उदाहरण के लिए, महासागरों या दूरदराज के क्षेत्रों में) को कवर करने के लिए, एक वायरलेस विकल्प आवश्यक है।"
+      },
+      "explanation": {
+        "en": "WANs, especially those spanning continents or extremely remote regions, rely heavily on Satellite Communication, in addition to high-capacity Fibre-optic cables (not listed as an option here) for long-haul data transport.",
+        "hi": "WANs, विशेष रूप से महाद्वीपों या अत्यधिक दूरदराज के क्षेत्रों में फैले हुए, लंबी दूरी के डेटा परिवहन के लिए उच्च क्षमता वाले फाइबर-ऑप्टिक केबलों (जो यहां एक विकल्प के रूप में सूचीबद्ध नहीं हैं) के अलावा, सैटेलाइट कम्युनिकेशन पर बहुत अधिक निर्भर करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "WANs use Satellite Communication for global reach.",
+        "hi": "WANs वैश्विक पहुंच के लिए सैटेलाइट कम्युनिकेशन का उपयोग करते हैं।"
+      }
+    },
+    {
+      "question_id": 41,
+      "question": {
+        "en": "Which protocol is primarily used for secure communication over a computer network?",
+        "hi": "कंप्यूटर नेटवर्क पर सुरक्षित संचार के लिए मुख्य रूप से किस प्रोटोकॉल का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "HTTP",
+          "hi": "एचटीटीपी"
+        },
+        "b": {
+          "en": "FTP",
+          "hi": "एफटीपी"
+        },
+        "c": {
+          "en": "HTTPS",
+          "hi": "एचटीटीपीएस"
+        },
+        "d": {
+          "en": "SMTP",
+          "hi": "एसएमटीपी"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Look for the protocol that includes the letter 'S' for 'Secure'.",
+        "hi": "'Secure' (सुरक्षित) के लिए अक्षर 'S' वाले प्रोटोकॉल को देखें।"
+      },
+      "explanation": {
+        "en": "HTTPS stands for HyperText Transfer Protocol Secure. It is the secure version of HTTP, ensuring data sent between your browser and a website is encrypted.",
+        "hi": "HTTPS का मतलब हाइपरटेक्स्ट ट्रांसफर प्रोटोकॉल सिक्योर है। यह HTTP का सुरक्षित संस्करण है, जो यह सुनिश्चित करता है कि आपके ब्राउज़र और वेबसाइट के बीच भेजा गया डेटा एन्क्रिप्टेड है।"
+      },
+      "key_takeaway": {
+        "en": "HTTPS is the secure version of the web's communication protocol.",
+        "hi": "HTTPS वेब के संचार प्रोटोकॉल का सुरक्षित संस्करण है।"
+      }
+    },
+    {
+      "question_id": 42,
+      "question": {
+        "en": "If you are in a coffee shop and connect your laptop to their free Wi-Fi, what type of network are you most likely using?",
+        "hi": "यदि आप एक कॉफी शॉप में हैं और अपने लैपटॉप को उनके मुफ्त वाई-फाई से कनेक्ट करते हैं, तो आप सबसे अधिक संभावना किस प्रकार के नेटवर्क का उपयोग कर रहे हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "PAN",
+          "hi": "पैन"
+        },
+        "b": {
+          "en": "LAN",
+          "hi": "लैन"
+        },
+        "c": {
+          "en": "MAN",
+          "hi": "मैन"
+        },
+        "d": {
+          "en": "WAN",
+          "hi": "वैन"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The Wi-Fi network covers only the confined space of the coffee shop.",
+        "hi": "वाई-फाई नेटवर्क केवल कॉफी शॉप के सीमित स्थान को कवर करता है।"
+      },
+      "explanation": {
+        "en": "The Wi-Fi network provided by a coffee shop or a business covers a small, localized area (the premises), making it a type of Local Area Network (LAN).",
+        "hi": "एक कॉफी शॉप या व्यवसाय द्वारा प्रदान किया गया वाई-फाई नेटवर्क एक छोटे, स्थानीयकृत क्षेत्र (परिसर) को कवर करता है, जो इसे एक प्रकार का लोकल एरिया नेटवर्क (LAN) बनाता है।"
+      },
+      "key_takeaway": {
+        "en": "A coffee shop Wi-Fi is an example of a LAN.",
+        "hi": "एक कॉफी शॉप वाई-फाई LAN का एक उदाहरण है।"
+      }
+    },
+    {
+      "question_id": 43,
+      "question": {
+        "en": "What does the acronym 'URL' stand for?",
+        "hi": "संक्षिप्त नाम 'URL' का क्या अर्थ है?"
+      },
+      "options": {
+        "a": {
+          "en": "Universal Resource Locator",
+          "hi": "यूनिवर्सल रिसोर्स लोकेटर"
+        },
+        "b": {
+          "en": "Uniform Resource Locator",
+          "hi": "यूनिफॉर्म रिसोर्स लोकेटर"
+        },
+        "c": {
+          "en": "Unified Resource Link",
+          "hi": "यूनिफाइड रिसोर्स लिंक"
+        },
+        "d": {
+          "en": "Universal Reference Locator",
+          "hi": "यूनिवर्सल रेफरेंस लोकेटर"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It’s the address you type into a browser; the first word means consistent or standardized.",
+        "hi": "यह वह पता है जिसे आप एक ब्राउज़र में टाइप करते हैं; पहला शब्द सुसंगत या मानकीकृत का मतलब है।"
+      },
+      "explanation": {
+        "en": "URL stands for Uniform Resource Locator. It is a specific type of URI (Uniform Resource Identifier) that represents the global address of documents and other resources on the World Wide Web.",
+        "hi": "URL का मतलब यूनिफॉर्म रिसोर्स लोकेटर है। यह URI (यूनिफॉर्म रिसोर्स आइडेंटिफ़ायर) का एक विशिष्ट प्रकार है जो वर्ल्ड वाइड वेब पर दस्तावेज़ों और अन्य संसाधनों के वैश्विक पते का प्रतिनिधित्व करता है।"
+      },
+      "key_takeaway": {
+        "en": "URL is the address of a web resource.",
+        "hi": "URL एक वेब संसाधन का पता है।"
+      }
+    },
+    {
+      "question_id": 44,
+      "question": {
+        "en": "Two-factor authentication (2FA) is used to:",
+        "hi": "टू-फैक्टर ऑथेंटिकेशन (2FA) का उपयोग किसके लिए किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Increase internet speed",
+          "hi": "इंटरनेट की गति बढ़ाने के लिए"
+        },
+        "b": {
+          "en": "Enhance security by requiring two forms of verification",
+          "hi": "सत्यापन के दो रूपों की आवश्यकता से सुरक्षा बढ़ाने के लिए"
+        },
+        "c": {
+          "en": "Block unwanted emails",
+          "hi": "अवांछित ईमेल को ब्लॉक करने के लिए"
+        },
+        "d": {
+          "en": "Create a backup of data",
+          "hi": "डेटा का बैकअप बनाने के लिए"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The 'Two-factor' part is key—it requires two different proofs of identity.",
+        "hi": "'टू-फैक्टर' हिस्सा महत्वपूर्ण है—इसके लिए पहचान के दो अलग-अलग प्रमाणों की आवश्यकता होती है।"
+      },
+      "explanation": {
+        "en": "2FA is a security process that requires two different methods of verification (e.g., a password and a code from a phone) to gain access to a resource, significantly increasing security.",
+        "hi": "2FA एक सुरक्षा प्रक्रिया है जिसके लिए किसी संसाधन तक पहुंच प्राप्त करने के लिए सत्यापन के दो अलग-अलग तरीकों (उदाहरण के लिए, एक पासवर्ड और एक फोन से एक कोड) की आवश्यकता होती है, जिससे सुरक्षा काफी बढ़ जाती है।"
+      },
+      "key_takeaway": {
+        "en": "2FA uses two proofs of identity to enhance security.",
+        "hi": "2FA सुरक्षा बढ़ाने के लिए पहचान के दो प्रमाणों का उपयोग करता है।"
+      }
+    },
+    {
+      "question_id": 45,
+      "question": {
+        "en": "Which device is used to connect different networks and direct data traffic?",
+        "hi": "विभिन्न नेटवर्कों को जोड़ने और डेटा ट्रैफिक को निर्देशित करने के लिए किस उपकरण का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Hub",
+          "hi": "हब"
+        },
+        "b": {
+          "en": "Switch",
+          "hi": "स्विच"
+        },
+        "c": {
+          "en": "Router",
+          "hi": "राउटर"
+        },
+        "d": {
+          "en": "Modem",
+          "hi": "मोडेम"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This device operates at the network layer and connects your home LAN to the Internet (WAN).",
+        "hi": "यह उपकरण नेटवर्क परत पर संचालित होता है और आपके घर के LAN को इंटरनेट (WAN) से जोड़ता है।"
+      },
+      "explanation": {
+        "en": "A Router is a networking device that forwards data packets between computer networks. It directs traffic (or 'routes' data) by determining the best path for a packet to travel across different networks, such as connecting a LAN to a WAN.",
+        "hi": "एक राउटर एक नेटवर्किंग उपकरण है जो कंप्यूटर नेटवर्कों के बीच डेटा पैकेट को अग्रेषित करता है। यह एक पैकेट को विभिन्न नेटवर्कों, जैसे LAN को WAN से जोड़ने के लिए सबसे अच्छा रास्ता निर्धारित करके ट्रैफिक को निर्देशित (या 'रूट्स' डेटा) करता है।"
+      },
+      "key_takeaway": {
+        "en": "A Router connects networks and routes data traffic.",
+        "hi": "एक राउटर नेटवर्कों को जोड़ता है और डेटा ट्रैफिक को रूट करता है।"
+      }
+    },
+    {
+      "question_id": 46,
+      "question": {
+        "en": "'Phishing' is a type of:",
+        "hi": "'फिशिंग' एक प्रकार का है:"
+      },
+      "options": {
+        "a": {
+          "en": "Network cable",
+          "hi": "नेटवर्क केबल"
+        },
+        "b": {
+          "en": "Search engine",
+          "hi": "सर्च इंजन"
+        },
+        "c": {
+          "en": "Cyber attack",
+          "hi": "साइबर हमला"
+        },
+        "d": {
+          "en": "Web browser",
+          "hi": "वेब ब्राउज़र"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It is a fraudulent attempt to obtain sensitive information like usernames and passwords.",
+        "hi": "यह उपयोगकर्ता नाम और पासवर्ड जैसी संवेदनशील जानकारी प्राप्त करने का एक कपटपूर्ण प्रयास है।"
+      },
+      "explanation": {
+        "en": "Phishing is a malicious form of a social engineering cyber attack where an attacker disguises as a trustworthy entity in an electronic communication (e.g., email) to trick victims.",
+        "hi": "फ़िशिंग सोशल इंजीनियरिंग साइबर हमले का एक दुर्भावनापूर्ण रूप है जहाँ एक हमलावर पीड़ितों को धोखा देने के लिए एक इलेक्ट्रॉनिक संचार (उदाहरण के लिए, ईमेल) में एक भरोसेमंद इकाई के रूप में भेष बदलता है।"
+      },
+      "key_takeaway": {
+        "en": "Phishing is a common cyber attack for stealing information.",
+        "hi": "फ़िशिंग जानकारी चुराने के लिए एक सामान्य साइबर हमला है।"
+      }
+    },
+    {
+      "question_id": 47,
+      "question": {
+        "en": "The unique address assigned to every device on a network is called:",
+        "hi": "नेटवर्क पर प्रत्येक डिवाइस को सौंपा गया विशिष्ट पता कहलाता है:"
+      },
+      "options": {
+        "a": {
+          "en": "MAC Address",
+          "hi": "मैक एड्रेस"
+        },
+        "b": {
+          "en": "IP Address",
+          "hi": "आईपी एड्रेस"
+        },
+        "c": {
+          "en": "URL",
+          "hi": "यूआरएल"
+        },
+        "d": {
+          "en": "HTTP",
+          "hi": "एचटीटीपी"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This address is essential for location addressing and identification on the Internet.",
+        "hi": "यह पता इंटरनेट पर स्थान एड्रेसिंग और पहचान के लिए आवश्यक है।"
+      },
+      "explanation": {
+        "en": "An IP Address (Internet Protocol Address) is a numerical label assigned to every device connected to a computer network that uses the Internet Protocol for communication. MAC address is also unique but operates at a lower network layer (data link).",
+        "hi": "एक IP एड्रेस (इंटरनेट प्रोटोकॉल एड्रेस) एक संख्यात्मक लेबल है जो कंप्यूटर नेटवर्क से जुड़े प्रत्येक डिवाइस को सौंपा जाता है जो संचार के लिए इंटरनेट प्रोटोकॉल का उपयोग करता है। MAC एड्रेस भी अद्वितीय है लेकिन एक निचली नेटवर्क परत (डेटा लिंक) पर संचालित होता है।"
+      },
+      "key_takeaway": {
+        "en": "The IP Address is the logical address for network communication.",
+        "hi": "IP एड्रेस नेटवर्क संचार के लिए तार्किक पता है।"
+      }
+    },
+    {
+      "question_id": 48,
+      "question": {
+        "en": "Which organization is responsible for allocating IP addresses globally?",
+        "hi": "आईपी एड्रेस वैश्विक स्तर पर आवंटित करने के लिए कौन सा संगठन जिम्मेदार है?"
+      },
+      "options": {
+        "a": {
+          "en": "IANA (Internet Assigned Numbers Authority)",
+          "hi": "आईएएनए (इंटरनेट असाइन्ड नंबर्स अथॉरिटी)"
+        },
+        "b": {
+          "en": "CERN",
+          "hi": "सर्न"
+        },
+        "c": {
+          "en": "IEEE (Institute of Electrical and Electronics Engineers)",
+          "hi": "आईईईई (इंस्टीट्यूट ऑफ इलेक्ट्रिकल एंड इलेक्ट्रॉनिक्स इंजीनियर्स)"
+        },
+        "d": {
+          "en": "ISO (International Organization for Standardization)",
+          "hi": "आईएसओ (इंटरनेशनल ऑर्गनाइजेशन फॉर स्टैंडर्डाइजेशन)"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Its name explicitly contains 'Internet Assigned Numbers'.",
+        "hi": "इसके नाम में स्पष्ट रूप से 'इंटरनेट असाइन्ड नंबर्स' शामिल है।"
+      },
+      "explanation": {
+        "en": "The Internet Assigned Numbers Authority (IANA) is a function of ICANN (Internet Corporation for Assigned Names and Numbers) that manages the global coordination of the DNS Root, IP addressing, and other protocol parameters.",
+        "hi": "इंटरनेट असाइन्ड नंबर्स अथॉरिटी (IANA) ICANN (इंटरनेट कॉर्पोरेशन फॉर असाइन्ड नेम्स एंड नंबर्स) का एक कार्य है जो DNS रूट, IP एड्रेसिंग और अन्य प्रोटोकॉल मापदंडों के वैश्विक समन्वय का प्रबंधन करता है।"
+      },
+      "key_takeaway": {
+        "en": "IANA manages global IP address allocation.",
+        "hi": "IANA वैश्विक IP एड्रेस आवंटन का प्रबंधन करता है।"
+      }
+    },
+    {
+      "question_id": 49,
+      "question": {
+        "en": "A 'Firewall' in a network acts as a:",
+        "hi": "नेटवर्क में एक 'फायरवॉल' किस रूप में कार्य करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Security barrier between trusted and untrusted networks",
+          "hi": "विश्वसनीय और अविश्वसनीय नेटवर्कों के बीच एक सुरक्षा अवरोध"
+        },
+        "b": {
+          "en": "Device to boost Wi-Fi signal",
+          "hi": "वाई-फाई सिग्नल को बढ़ाने के लिए उपकरण"
+        },
+        "c": {
+          "en": "Tool for creating websites",
+          "hi": "वेबसाइट बनाने के लिए उपकरण"
+        },
+        "d": {
+          "en": "Type of virus",
+          "hi": "एक प्रकार का वायरस"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Its primary function is to prevent unauthorized access from external networks.",
+        "hi": "इसका प्राथमिक कार्य बाहरी नेटवर्कों से अनधिकृत पहुंच को रोकना है।"
+      },
+      "explanation": {
+        "en": "A firewall is designed to prevent unauthorized access to or from a private network. It establishes a 'barrier' between your secure, trusted internal network and external, untrusted networks like the Internet.",
+        "hi": "एक फ़ायरवॉल को एक निजी नेटवर्क तक या उससे अनधिकृत पहुंच को रोकने के लिए डिज़ाइन किया गया है। यह आपके सुरक्षित, विश्वसनीय आंतरिक नेटवर्क और इंटरनेट जैसे बाहरी, अविश्वसनीय नेटवर्कों के बीच एक 'अवरोध' स्थापित करता है।"
+      },
+      "key_takeaway": {
+        "en": "A Firewall is a security barrier/filter.",
+        "hi": "एक फ़ायरवॉल एक सुरक्षा अवरोध/फ़िल्टर है।"
+      }
+    },
+    {
+      "question_id": 50,
+      "question": {
+        "en": "Which wireless technology is typically used for contactless payments?",
+        "hi": "कौन सी वायरलेस तकनीक आमतौर पर कॉन्टैक्टलेस भुगतान के लिए उपयोग की जाती है?"
+      },
+      "options": {
+        "a": {
+          "en": "Wi-Fi",
+          "hi": "वाई-फाई"
+        },
+        "b": {
+          "en": "Bluetooth",
+          "hi": "ब्लूटूथ"
+        },
+        "c": {
+          "en": "NFC (Near Field Communication)",
+          "hi": "एनएफसी (नियर फील्ड कम्युनिकेशन)"
+        },
+        "d": {
+          "en": "Microwave",
+          "hi": "माइक्रोवेव"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This technology requires devices to be held just a few centimetres apart.",
+        "hi": "इस तकनीक के लिए उपकरणों को केवल कुछ सेंटीमीटर की दूरी पर रखने की आवश्यकता होती है।"
+      },
+      "explanation": {
+        "en": "NFC (Near Field Communication) is a set of communication protocols for communication between two electronic devices over a short distance (typically 4 cm or less), making it ideal for tap-to-pay or contactless payment systems.",
+        "hi": "NFC (नियर फील्ड कम्युनिकेशन) एक छोटी दूरी (आमतौर पर 4 सेमी या उससे कम) पर दो इलेक्ट्रॉनिक उपकरणों के बीच संचार के लिए संचार प्रोटोकॉल का एक सेट है, जो इसे टैप-टू-पे या कॉन्टैक्टलेस भुगतान प्रणालियों के लिए आदर्श बनाता है।"
+      },
+      "key_takeaway": {
+        "en": "NFC enables very short-range contactless payments.",
+        "hi": "NFC बहुत कम दूरी के कॉन्टैक्टलेस भुगतान को सक्षम बनाता है।"
+      }
+    }
+  ]
+}

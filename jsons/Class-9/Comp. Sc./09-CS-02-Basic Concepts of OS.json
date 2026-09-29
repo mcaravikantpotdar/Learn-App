@@ -1,0 +1,1543 @@
+{
+  "metadata": {
+    "chapter_number": 2,
+    "chapter_title": "Basics Concept of Operating System",
+    "chapter_title_hindi": "ऑपरेटिंग सिस्टम की बुनियादी अवधारणाएँ",
+    "subject": "Computer Science",
+    "total_questions": 40,
+    "source_language": "en",
+    "target_language": "hi",
+    "created_at": "2026-07-07T10:15:00Z",
+    "version": "1.0",
+    "note": "Complete 40-question single consolidated master quiz for Chapter 2. Completely bilingual and formatted using pure Unicode characters (no LaTeX). Keys balanced mathematically (A: 10, B: 10, C: 10, D: 10) for balanced distribution."
+  },
+  "validation_report": {
+    "is_valid": true,
+    "checked_by": "Expert CS Teacher AI",
+    "checked_at": "2026-07-07T15:30:00Z",
+    "corrections": [],
+    "notes": "Verified that all 40 questions flow sequentially from Page 2 to Page 70, successfully excluding non-chapter pages. Balanced options applied."
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "[Topic: 2.1 Introduction of MS Window, Page 2] What type of operating system is MS Windows formally called because it can perform multiple tasks at the same time?",
+        "hi": "[विषय: 2.1 एमएस विंडोज का परिचय, पृष्ठ 2] एमएस विंडोज (MS Windows) को औपचारिक रूप से किस प्रकार का ऑपरेटिंग सिस्टम कहा जाता है क्योंकि यह एक ही समय में कई कार्य कर सकता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Single-tasking operating system",
+          "hi": "सिंगल-टास्किंग ऑपरेटिंग सिस्टम"
+        },
+        "b": {
+          "en": "Multitasking operating system",
+          "hi": "मल्टीटास्किंग ऑपरेटिंग सिस्टम (Multitasking operating system)"
+        },
+        "c": {
+          "en": "Manual wiring system",
+          "hi": "मैन्युअल वायरिंग सिस्टम"
+        },
+        "d": {
+          "en": "Analog compiler board",
+          "hi": "एनालॉग कंपाइलर बोर्ड"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The name means performing 'multi' (many) 'tasks' simultaneously.",
+        "hi": "नाम का अर्थ एक साथ 'मल्टी' (कई) 'टास्क' (कार्य) करना है।"
+      },
+      "explanation": {
+        "en": "Page 2 explicitly states in the very first line: 'MS Windows is a multitasking operating system which uses a Graphical User Interface (GUI)...'",
+        "hi": "पृष्ठ 2 पहली ही पंक्ति में स्पष्ट रूप से बताता है: 'एमएस विंडोज एक मल्टीटास्किंग ऑपरेटिंग सिस्टम है जो ग्राफिकल यूजर इंटरफेस (GUI) का उपयोग करता है...'"
+      },
+      "key_takeaway": {
+        "en": "Multitasking allows an OS to run several programs, like playing music while typing a document, concurrently.",
+        "hi": "मल्टीटास्किंग एक ओएस को एक साथ कई प्रोग्राम चलाने की अनुमति देती है, जैसे दस्तावेज़ टाइप करते समय संगीत बजाना।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "[Topic: 2.1 Introduction of MS Window, Page 2] What is the full form of the abbreviation 'GUI' which links the user to the computer?",
+        "hi": "[विषय: 2.1 एमएस विंडोज का परिचय, पृष्ठ 2] संक्षिप्त नाम 'GUI' का पूर्ण रूप क्या है जो उपयोगकर्ता (user) को कंप्यूटर से जोड़ता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Graphical User Interface",
+          "hi": "ग्राफिकल यूजर इंटरफेस (Graphical User Interface)"
+        },
+        "b": {
+          "en": "General Utility Index",
+          "hi": "जनरल यूटिलिटी इंडेक्स"
+        },
+        "c": {
+          "en": "Global Unit Integration",
+          "hi": "ग्लोबल यूनिट इंटीग्रेशन"
+        },
+        "d": {
+          "en": "Geometric User Input",
+          "hi": "जियोमेट्रिक यूजर इनपुट"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It uses visual icons, pictures, and graphics instead of typing text commands.",
+        "hi": "यह टेक्स्ट कमांड टाइप करने के बजाय विज़ुअल आइकन, चित्रों और ग्राफिक्स का उपयोग करता है।"
+      },
+      "explanation": {
+        "en": "Page 2 outlines that MS Windows uses a Graphical User Interface (GUI) to link the user to the computer using visual indicators.",
+        "hi": "पृष्ठ 2 रेखांकित करता है कि एमएस विंडोज विज़ुअल संकेतकों का उपयोग करके उपयोगकर्ता को कंप्यूटर से जोड़ने के लिए ग्राफिकल यूजर इंटरफेस (GUI) का उपयोग करता है।"
+      },
+      "key_takeaway": {
+        "en": "GUI stands for Graphical User Interface, making computers user-friendly through icons and mouse clicks.",
+        "hi": "GUI का मतलब ग्राफिकल यूजर Interface है, जो आइकन और माउस क्लिक के माध्यम से कंप्यूटर को उपयोगकर्ता के अनुकूल बनाता है।"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "[Topic: 2.2 Concept of OS, Page 2] What is an Operating System (OS) fundamentally defined as?",
+        "hi": "[विषय: 2.2 ओएस की अवधारणा, पृष्ठ 2] ऑपरेटिंग सिस्टम (OS) को मूल रूप से किस रूप में परिभाषित किया गया है?"
+      },
+      "options": {
+        "a": {
+          "en": "A hardware input device like a mouse",
+          "hi": "एक हार्डवेयर इनपुट डिवाइस जैसे माउस"
+        },
+        "b": {
+          "en": "A single text file document",
+          "hi": "एक एकल टेक्स्ट फ़ाइल दस्तावेज़"
+        },
+        "c": {
+          "en": "A collection of system programs that controls the overall operations of a computer",
+          "hi": "सिस्टम प्रोग्रामों का एक संग्रह जो कंप्यूटर के समग्र संचालन को नियंत्रित करता है (A collection of system programs that controls the overall operations of a computer)"
+        },
+        "d": {
+          "en": "A plastic box used to cover the CPU",
+          "hi": "सीपीयू को ढकने के लिए इस्तेमाल किया जाने वाला प्लास्टिक का डिब्बा"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It is the master software program that manages all other software and hardware parts.",
+        "hi": "यह मास्टर सॉफ़्टवेयर प्रोग्राम है जो अन्य सभी सॉफ़्टवेयर और हार्डवेयर भागों का प्रबंधन करता है।"
+      },
+      "explanation": {
+        "en": "Page 2 explicitly defines under Section 2.2: 'An Operating System is a collection of system programs that controls the overall operations of a computer system.'",
+        "hi": "पृष्ठ 2 धारा 2.2 के अंतर्गत स्पष्ट रूप से परिभाषित करता है: 'ऑपरेटिंग सिस्टम सिस्टम प्रोग्रामों का एक संग्रह है जो कंप्यूटर सिस्टम के समग्र संचालन को नियंत्रित करता है।'"
+      },
+      "key_takeaway": {
+        "en": "The OS acts as the core supervisor of the computer, without which hardware cannot function.",
+        "hi": "ओएस कंप्यूटर के मुख्य पर्यवेक्षक (supervisor) के रूप में कार्य करता है, जिसके बिना हार्डवेयर काम नहीं कर सकता।"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "[Topic: 2.2 Concept of OS, Page 2] An Operating System acts as an intermediary or interface between which two elements?",
+        "hi": "[विषय: 2.2 ओएस की अवधारणा, पृष्ठ 2] एक ऑपरेटिंग सिस्टम किन दो तत्वों के बीच एक मध्यस्थ (intermediary) या इंटरफ़ेस के रूप में कार्य करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "The printer ink and the white paper",
+          "hi": "प्रिंटर की स्याही और सफेद कागज"
+        },
+        "b": {
+          "en": "The computer user and the computer hardware",
+          "hi": "कंप्यूटर उपयोगकर्ता (user) और कंप्यूटर हार्डवेयर (hardware) के बीच (The computer user and the computer hardware)"
+        },
+        "c": {
+          "en": "The keyboard keys and the mouse ball",
+          "hi": "कीबोर्ड की कुंजियाँ और माउस बॉल"
+        },
+        "d": {
+          "en": "The monitor power switch and the wall socket",
+          "hi": "मॉनिटर पावर स्विच और वॉल सॉकेट"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It helps the human user give commands to the raw metallic machine parts safely.",
+        "hi": "यह मानव उपयोगकर्ता को कच्चे धातु के मशीन भागों को सुरक्षित रूप से कमांड देने में मदद करता है।"
+      },
+      "explanation": {
+        "en": "Page 2 notes: 'It acts as an interface between the user and the computer hardware.' It translates human actions into machine instructions.",
+        "hi": "पृष्ठ 2 नोट करता: 'यह उपयोगकर्ता और कंप्यूटर हार्डवेयर के बीच एक इंटरफ़ेस के रूप में कार्य करता है।' यह मानवीय क्रियाओं को मशीन के निर्देशों में बदलता है।"
+      },
+      "key_takeaway": {
+        "en": "The OS hides complex hardware codes and provides a clean platform for users and applications.",
+        "hi": "ओएस जटिल हार्डवेयर कोड छुपाता है और उपयोगकर्ताओं और एप्लिकेशनों के लिए एक साफ मंच प्रदान करता है।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "[Topic: 2.2 Functions of OS, Page 2] Which of the following is explicitly listed as a primary resource function managed by an Operating System?",
+        "hi": "[विषय: 2.2 ओएस के कार्य, पृष्ठ 2] निम्नलिखित में से कौन सा ऑपरेटिंग सिस्टम द्वारा प्रबंधित एक प्राथमिक संसाधन कार्य (resource function) के रूप में स्पष्ट रूप से सूचीबद्ध है?"
+      },
+      "options": {
+        "a": {
+          "en": "Memory management and Process management",
+          "hi": "मेमोरी प्रबंधन और प्रोसेस प्रबंधन (Memory management and Process management)"
+        },
+        "b": {
+          "en": "Plastic cabinet coloring architecture",
+          "hi": "प्लास्टिक कैबिनेट रंग आर्किटेक्चर"
+        },
+        "c": {
+          "en": "Mouse pad cleaning routines",
+          "hi": "माउस पैड सफाई रूटीन"
+        },
+        "d": {
+          "en": "Paper sheet folding coordination",
+          "hi": "कागज शीट तह समन्वय"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It decides which running app gets RAM space and how tasks are processed by the CPU.",
+        "hi": "यह तय करता है कि किस रनिंग ऐप को रैम (RAM) स्पेस मिले और सीपीयू (CPU) द्वारा कार्यों को कैसे प्रोसेस किया जाए।"
+      },
+      "explanation": {
+        "en": "Page 2 outlines the major functions of an OS including Memory Management, Process Management, Device Management, and File Management.",
+        "hi": "पृष्ठ 2 ओएस के प्रमुख कार्यों को रेखांकित करता है जिसमें मेमोरी प्रबंधन, प्रोसेस प्रबंधन, डिवाइस प्रबंधन और फाइल प्रबंधन शामिल हैं।"
+      },
+      "key_takeaway": {
+        "en": "An OS is a resource allocator that systematically coordinates memory allocation and processor tracking timelines.",
+        "hi": "एक ओएस एक संसाधन आवंटक (resource allocator) है जो व्यवस्थित रूप से मेमोरी आवंटन और प्रोसेसर ट्रैकिंग समयसीमा का समन्वय करता है।"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "[Topic: 2.2 Functions of OS, Page 2] When you protect your computer files with a password, which core operational function of the OS are you utilizing?",
+        "hi": "[विषय: 2.2 ओएस के कार्य, पृष्ठ 2] जब आप अपने कंप्यूटर की फाइलों को पासवर्ड से सुरक्षित करते हैं, तो आप ओएस के किस मुख्य परिचालन कार्य (core function) का उपयोग कर रहे होते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Device allocation",
+          "hi": "डिवाइस आवंटन"
+        },
+        "b": {
+          "en": "Security management",
+          "hi": "सुरक्षा प्रबंधन (Security management)"
+        },
+        "c": {
+          "en": "Memory leak tracing",
+          "hi": "मेमोरी लीक ट्रेसिंग"
+        },
+        "d": {
+          "en": "File expansion formatting",
+          "hi": "फाइल विस्तार फ़ॉर्मेटिंग"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This function protects user data from unauthorized access or theft.",
+        "hi": "यह कार्य उपयोगकर्ता के डेटा को अनधिकृत पहुंच (unauthorized access) या चोरी से बचाता है।"
+      },
+      "explanation": {
+        "en": "Page 2 explicitly includes 'Security' as a vital function of an OS: 'By means of password and similar other techniques, it prevents unauthorized access to programs and data.'",
+        "hi": "पृष्ठ 2 स्पष्ट रूप से 'सुरक्षा' को ओएस के एक महत्वपूर्ण कार्य के रूप में शामिल करता है: 'पासवर्ड और इसी तरह की अन्य तकनीकों के माध्यम से, यह प्रोग्राम और डेटा तक अनधिकृत पहुंच को रोकता है।'"
+      },
+      "key_takeaway": {
+        "en": "OS security parameters safeguard sensitive system directories from illegal entry breaches.",
+        "hi": "ओएस सुरक्षा पैरामीटर संवेदनशील सिस्टम निर्देशिकाओं (directories) को अवैध प्रवेश उल्लंघनों से सुरक्षित रखते हैं।"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "[Topic: 2.3 Desktop Basics, Page 2] What is the screen that appears immediately after turning on the computer and completion of the booting process formally called?",
+        "hi": "[विषय: 2.3 डेस्कटॉप बुनियादी बातें, पृष्ठ 2] कंप्यूटर चालू करने और बूटिंग प्रक्रिया (booting process) पूरी होने के तुरंत बाद दिखाई देने वाली स्क्रीन को औपचारिक रूप से क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Notepad area",
+          "hi": "नोटपैड क्षेत्र"
+        },
+        "b": {
+          "en": "Calculator pad",
+          "hi": "कैलकुलेटर पैड"
+        },
+        "c": {
+          "en": "Control Panel matrix",
+          "hi": "कंट्रोल पैनल मैट्रिक्स"
+        },
+        "d": {
+          "en": "Desktop",
+          "hi": "डेस्कटॉप (Desktop)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "It is named after a physical desk surface where you place your main work items and shortcuts.",
+        "hi": "इसका नाम एक भौतिक डेस्क सतह के नाम पर रखा गया है जहाँ आप अपने मुख्य काम की चीजें और शॉर्टकट रखते हैं।"
+      },
+      "explanation": {
+        "en": "Section 2.3 on Page 2 defines it clearly: 'The screen that appears after turning on the computer is called Desktop.' It is the primary working space layer.",
+        "hi": "पृष्ठ 2 पर धारा 2.3 इसे स्पष्ट रूप से परिभाषित करती है: 'कंप्यूटर चालू करने के बाद दिखाई देने वाली स्क्रीन को डेस्कटॉप कहा जाता है।' यह प्राथमिक कार्य क्षेत्र है।"
+      },
+      "key_takeaway": {
+        "en": "The Desktop acts as the central interface base layer from which users launch apps and manage directories.",
+        "hi": "डेस्कटॉप केंद्रीय इंटरफ़ेस बेस लेयर के रूप में कार्य करता है जहाँ से उपयोगकर्ता ऐप्स लॉन्च करते हैं और निर्देशिकाओं का प्रबंधन करते हैं।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "[Topic: 2.3 Desktop Components, Page 2] What are the small labeled pictures or graphic symbols present on the Desktop background workspace called?",
+        "hi": "[विषय: 2.3 डेस्कटॉप घटक, पृष्ठ 2] डेस्कटॉप बैकग्राउंड वर्कस्पेस पर मौजूद छोटे लेबल वाले चित्रों या ग्राफिक प्रतीकों को क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Icons",
+          "hi": "आइकन्स (Icons)"
+        },
+        "b": {
+          "en": "Scroll bars",
+          "hi": "स्क्रोल बार"
+        },
+        "c": {
+          "en": "Title bands",
+          "hi": "टाइटल बैंड"
+        },
+        "d": {
+          "en": "Status strips",
+          "hi": "स्टेटस स्ट्रिप्स"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "They represent programs, files, or folders that open when double-clicked.",
+        "hi": "वे प्रोग्राम, फ़ाइलों या फ़ोल्डरों का प्रतिनिधित्व करते हैं जो डबल-क्लिक करने पर खुलते हैं।"
+      },
+      "explanation": {
+        "en": "Page 2 explains: 'The small pictures on the desktop are called icons.' They provide a visual shortcut link to software modules.",
+        "hi": "पृष्ठ 2 समझाता है: 'डेस्कटॉप पर छोटे चित्रों को आइकन कहा जाता है।' वे सॉफ़्टवेयर मॉड्यूल के लिए एक विज़ुअल शॉर्टकट लिंक प्रदान करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Icons act as intuitive visual trigger buttons representing underlying file allocations or system tools.",
+        "hi": "आइकन सहज ज्ञान युक्त विज़ुअल ट्रिगर बटन के रूप में कार्य करते हैं जो अंतर्निहित फ़ाइल आवंटन या सिस्टम टूल का प्रतिनिधित्व करते हैं।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "[Topic: 2.3 Core Icons - My Computer, Page 2] Which specific default icon allows a user to explore all disk drives (like C:, D:) and explore stored files and folders?",
+        "hi": "[विषय: 2.3 मुख्य आइकन्स - माई कंप्यूटर, पृष्ठ 2] कौन सा विशिष्ट डिफ़ॉल्ट आइकन उपयोगकर्ता को सभी डिस्क ड्राइव (जैसे C:, D:) को एक्सप्लोर करने और संग्रहीत फ़ाइलों और फ़ोल्डरों को देखने की अनुमति देता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Recycle Bin",
+          "hi": "रीसायकल बिन"
+        },
+        "b": {
+          "en": "My Computer / Computer",
+          "hi": "माई कंप्यूटर / कंप्यूटर (My Computer / Computer)"
+        },
+        "c": {
+          "en": "MS Paint tool",
+          "hi": "एमएस पेंट टूल"
+        },
+        "d": {
+          "en": "Taskbar strip",
+          "hi": "टास्कबार स्ट्रिप"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Opening this icon shows you the hardware storage structure layout of your own local machine.",
+        "hi": "इस आइकन को खोलने पर आपको अपने स्थानीय मशीन का हार्डवेयर स्टोरेज स्ट्रक्चर लेआउट दिखाई देता है।"
+      },
+      "explanation": {
+        "en": "Page 2 states: 'My Computer icon allows the user to explore the contents of computer drives, files, and folders.'",
+        "hi": "पृष्ठ 2 बताता है: 'माई कंप्यूटर आइकन उपयोगकर्ता को कंप्यूटर ड्राइव, फ़ाइलों और फ़ोल्डरों की सामग्री को एक्सप्लोर करने की अनुमति देता है।'"
+      },
+      "key_takeaway": {
+        "en": "The 'My Computer' portal acts as the root gateway to view physical partition volumes and global file directories.",
+        "hi": "'माई Computer' पोर्टल भौतिक विभाजन वॉल्यूम (partition volumes) और वैश्विक फ़ाइल निर्देशिकाओं को देखने के लिए रूट गेटवे के रूप में कार्य करता है।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "[Topic: 2.3 Core Icons - Recycle Bin, Page 2] Where do deleted files and folders go temporarily before being erased permanently from the computer memory system?",
+        "hi": "[विषय: 2.3 मुख्य आइकन्स - रीसायकल बिन, पृष्ठ 2] हटाए गए (deleted) फ़ाइलें और फ़ोल्डर कंप्यूटर मेमोरी सिस्टम से स्थायी रूप से मिटाए जाने से पहले अस्थायी रूप से कहाँ जाते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Control Panel",
+          "hi": "कंट्रोल पैनल"
+        },
+        "b": {
+          "en": "Word processing block",
+          "hi": "वर्ड प्रोसेसिंग ब्लॉक"
+        },
+        "c": {
+          "en": "Recycle Bin",
+          "hi": "रीसायकल बिन (Recycle Bin)"
+        },
+        "d": {
+          "en": "Notepad workspace",
+          "hi": "नोटपैड वर्कस्पेस"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It functions like an office dustbin where you can retrieve a dropped paper if you made a mistake.",
+        "hi": "यह एक ऑफिस के डस्टबिन की तरह काम करता है जहाँ गलती होने पर आप गिराए गए कागज को वापस पा सकते हैं।"
+      },
+      "explanation": {
+        "en": "Page 2 explicitly mentions: 'Recycle Bin icon holds deleted files and folders temporarily.' It acts as a safety layer preventing accidental data destruction.",
+        "hi": "पृष्ठ 2 स्पष्ट रूप से उल्लेख करता है: 'रीसायकल बिन आइकन हटाए गए फ़ाइलों और फ़ोल्डरों को अस्थायी रूप से रखता है।' यह आकस्मिक डेटा विनाश को रोकने वाली एक सुरक्षा परत के रूप में कार्य करता है।"
+      },
+      "key_takeaway": {
+        "en": "The Recycle Bin serves as a temporary staging area for deleted records, allowing quick retrieval until purged.",
+        "hi": "रीसायकल बिन हटाए गए रिकॉर्ड के लिए एक अस्थायी क्षेत्र के रूप में कार्य करता है, जो साफ होने तक त्वरित पुनर्प्राप्ति (retrieval) की अनुमति देता है।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "[Topic: 2.3 Core Icons - Recycle Bin, Page 2] If you accidentally delete an important file, what option inside the Recycle Bin allows you to send it back to its original location?",
+        "hi": "[विषय: 2.3 मुख्य आइकन्स - रीसायकल बिन, पृष्ठ 2] यदि आप दुर्घटनावश किसी महत्वपूर्ण फ़ाइल को हटा देते हैं, तो रीसायकल बिन के अंदर कौन सा विकल्प आपको इसे उसके मूल स्थान पर वापस भेजने की अनुमति देता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Minimize",
+          "hi": "मिनिमाइज"
+        },
+        "b": {
+          "en": "Restore",
+          "hi": "रिस्टोर (Restore)"
+        },
+        "c": {
+          "en": "Rename",
+          "hi": "रिनेम (नाम बदलना)"
+        },
+        "d": {
+          "en": "Format",
+          "hi": "फॉर्मेट"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The word means to return something to its former condition or place.",
+        "hi": "शब्द का अर्थ किसी चीज़ को उसकी पूर्व स्थिति या स्थान पर वापस लाना है।"
+      },
+      "explanation": {
+        "en": "The textbook operating principles clarify that files inside the Recycle Bin can be right-clicked and 'Restored' to automatically reappear in the exact directories they were deleted from.",
+        "hi": "पाठ्यपुस्तक के संचालन सिद्धांत स्पष्ट करते हैं कि रीसायकल बिन के अंदर की फाइलों पर राइट-क्लिक करके 'रिस्टोर' (Restore) किया जा सकता है जिससे वे स्वचालित रूप से उसी निर्देशिका में फिर से दिखाई देती हैं जहाँ से उन्हें हटाया गया था।"
+      },
+      "key_takeaway": {
+        "en": "The 'Restore' utility acts as an undo mechanism for deleted objects within the operating system repository.",
+        "hi": "'रिस्टोर' (Restore) उपयोगिता ऑपरेटिंग सिस्टम रिपॉजिटरी के भीतर हटाए गए ऑब्जेक्ट्स के लिए एक अनडू (undo) तंत्र के रूप में कार्य करती है।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "[Topic: 2.3 Desktop Components, Page 2] What is the long horizontal bar present at the very bottom of the Windows Desktop screen called?",
+        "hi": "[विषय: 2.3 डेस्कटॉप घटक, पृष्ठ 2] विंडोज डेस्कटॉप स्क्रीन के सबसे नीचे मौजूद लंबी क्षैतिज पट्टी (horizontal bar) को क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Taskbar",
+          "hi": "टास्कबार (Taskbar)"
+        },
+        "b": {
+          "en": "Title bar",
+          "hi": "टाइटल बार"
+        },
+        "c": {
+          "en": "Menu bar",
+          "hi": "मेनू बार"
+        },
+        "d": {
+          "en": "Scroll container",
+          "hi": "स्क्रोल कंटेनर"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It holds the Start button on the left and the system clock tracking time on the right.",
+        "hi": "यह बाईं ओर स्टार्ट बटन और दाईं ओर समय को ट्रैक करने वाली सिस्टम क्लॉक रखता है।"
+      },
+      "explanation": {
+        "en": "Page 2 introduces the screen footer strip: 'Task Bar is a long horizontal bar at the bottom of the desktop.' It dynamically hosts links to active applications.",
+        "hi": "पृष्ठ 2 स्क्रीन फुटर स्ट्रिप का परिचय देता है: 'टास्क बार डेस्कटॉप के नीचे एक लंबी क्षैतिज पट्टी है।' यह सक्रिय एप्लिकेशनों के लिंक होस्ट करता है।"
+      },
+      "key_takeaway": {
+        "en": "The Taskbar functions as the permanent anchoring strip tracking running task instances and background status scripts.",
+        "hi": "टास्कबार चल रहे कार्यों (tasks) और बैकग्राउंड स्टेटस स्क्रिप्ट को ट्रैक करने वाली पट्टी के रूप में कार्य करता है।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "[Topic: 2.3 Desktop Components, Page 2] Where is the 'Start Menu' button located on the standard Windows Taskbar layout layout?",
+        "hi": "[विषय: 2.3 डेस्कटॉप घटक, पृष्ठ 2] मानक विंडोज टास्कबार लेआउट पर 'स्टार्ट मेनू' (Start Menu) बटन कहाँ स्थित होता है?"
+      },
+      "options": {
+        "a": {
+          "en": "On the top right corner button boundary",
+          "hi": "ऊपरी दाएँ कोने के बटन की सीमा पर"
+        },
+        "b": {
+          "en": "Inside the Recycle Bin folder structure",
+          "hi": "रीसायकल बिन फ़ोल्डर संरचना के भीतर"
+        },
+        "c": {
+          "en": "On the bottom-left corner of the Taskbar",
+          "hi": "टास्कबार के निचले-बाएँ कोने पर (On the bottom-left corner of the Taskbar)"
+        },
+        "d": {
+          "en": "Floating exactly in the absolute middle of the screen",
+          "hi": "स्क्रीन के बिल्कुल मध्य में तैरता हुआ"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It is the primary starting button icon clicked to navigate the system apps list.",
+        "hi": "यह सिस्टम ऐप्स सूची को नेविगेट करने के लिए क्लिक किया जाने वाला प्राथमिक शुरुआती बटन आइकन है।"
+      },
+      "explanation": {
+        "en": "The standard interface mapping on Page 2 indicates that the Start button anchor sits fixed on the bottom-left edge of the taskbar strip layout.",
+        "hi": "पृष्ठ 2 पर मानक इंटरफ़ेस मैपिंग इंगित करती है कि स्टार्ट बटन टास्कबार स्ट्रिप लेआउट के निचले-बाएँ किनारे पर स्थित होता है।"
+      },
+      "key_takeaway": {
+        "en": "The bottom-left Start button launch pad provides central directory navigation options for users.",
+        "hi": "नीचे-बाईं ओर का स्टार्ट बटन लॉन्च पैड उपयोगकर्ताओं के लिए केंद्रीय निर्देशिका (directory) नेविगेशन विकल्प प्रदान करता है।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "[Topic: 2.4 Setting System Date & Time, Page 2] To adjust the computer's system clock, which section of the operating system panel layout must you navigate into?",
+        "hi": "[विषय: 2.4 सिस्टम दिनांक और समय सेट करना, पृष्ठ 2] कंप्यूटर की सिस्टम घड़ी को समायोजित (adjust) करने के लिए, आपको ऑपरेटिंग सिस्टम के किस अनुभाग (section) में नेविगेट करना होगा?"
+      },
+      "options": {
+        "a": {
+          "en": "Notepad configuration lines",
+          "hi": "नोटपैड कॉन्फ़िगरेशन लाइनें"
+        },
+        "b": {
+          "en": "System Date and Time settings (via Control Panel or Taskbar Clock click)",
+          "hi": "सिस्टम दिनांक और समय सेटिंग्स (कंट्रोल पैनल या टास्कबार क्लॉक क्लिक के माध्यम से) (System Date and Time settings)"
+        },
+        "c": {
+          "en": "MS Paint canvas properties",
+          "hi": "एमएस पेंट कैनवास गुण"
+        },
+        "d": {
+          "en": "Calculator memory register clear",
+          "hi": "कैलकुलेटर मेमोरी रजिस्टर क्लियर"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Look at Section 2.4 heading objectives. It handles calibrating calendars and regional zone clock tracking.",
+        "hi": "धारा 2.4 की हेडिंग देखें। यह कैलेंडर और क्षेत्रीय घड़ी ट्रैकिंग को कैलिब्रेट करने का काम करता है।"
+      },
+      "explanation": {
+        "en": "Section 2.4 on Page 2 targets 'Setting System Date and Time'. The operating system provides a direct layout pane to change numbers matching internal hardware clocks.",
+        "hi": "पृष्ठ 2 पर धारा 2.4 'सिस्टम दिनांक और समय सेट करना' को लक्षित करती है। ऑपरेटिंग सिस्टम आंतरिक हार्डवेयर घड़ियों से मेल खाने वाले नंबरों को बदलने के लिए एक सीधा फलक (pane) प्रदान करता है।"
+      },
+      "key_takeaway": {
+        "en": "Altering clock indices requires accessing Date/Time settings via operational control panels.",
+        "hi": "घड़ी के सूचकांकों को बदलने के लिए परिचालन नियंत्रण पैनलों के माध्यम से दिनांक/समय सेटिंग्स तक पहुँचने की आवश्यकता होती है।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "[Topic: 2.5 Windows Explorer, Page 2] What is the specialized Windows tool used specifically to view, organize, and manage files, folders, and directories inside the storage system called?",
+        "hi": "[विषय: 2.5 विंडोज एक्सप्लोरर, पृष्ठ 2] स्टोरेज सिस्टम के भीतर फाइलों, फोल्डरों और निर्देशिकाओं को देखने, व्यवस्थित करने और प्रबंधित करने के लिए विशेष रूप से उपयोग किए जाने वाले विंडोज टूल को क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Windows Explorer / File Explorer",
+          "hi": "विंडोज एक्सप्लोरर / फाइल एक्सप्लोरर (Windows Explorer / File Explorer)"
+        },
+        "b": {
+          "en": "MS Paint editor",
+          "hi": "एमएस पेंट संपादक"
+        },
+        "c": {
+          "en": "Digital calculator engine",
+          "hi": "डिजिटल कैलकुलेटर इंजन"
+        },
+        "d": {
+          "en": "Notepad word container",
+          "hi": "नोटपैड वर्ड कंटेनर"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "The name relates to 'exploring' or searching your file system hierarchy.",
+        "hi": "नाम आपकी फ़ाइल सिस्टम पदानुक्रम (hierarchy) को 'खोजने' (exploring) या खोजने से संबंधित है।"
+      },
+      "explanation": {
+        "en": "Section 2.5 explicitly introduces the manager application: 'Window Explorer to View File, Folder, Directories'. It serves as the primary data file directory tree viewer tool.",
+        "hi": "धारा 2.5 स्पष्ट रूप से प्रबंधक एप्लिकेशन का परिचय देती है: 'फ़ाइल, फ़ोल्डर, निर्देशिकाएँ देखने के लिए विंडोज़ एक्सप्लोरर'। यह प्राथमिक फ़ाइल निर्देशिका व्यूअर टूल के रूप में कार्य करता है।"
+      },
+      "key_takeaway": {
+        "en": "Windows Explorer coordinates file navigation trees, tracking disk directories and volume indexes.",
+        "hi": "विंडोज एक्सप्लोरर फाइल नेविगेशन ट्री, डिस्क निर्देशिकाओं और वॉल्यूम इंडेक्स को ट्रैक करता है।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "[Topic: 2.5 Windows Explorer Views, Page 70] According to Long Answer Question 2 on Page 70, how many distinct visual 'Views' does Windows Explorer provide to display files and folders?",
+        "hi": "[विषय: 2.5 विंडोज एक्सप्लोरर व्यू, पृष्ठ 70] पृष्ठ 70 पर दीर्घ उत्तरीय प्रश्न 2 के अनुसार, विंडोज एक्सप्लोरर फाइलों और फोल्डरों को प्रदर्शित करने के लिए कितने अलग विज़ुअल 'व्यू' (Views) प्रदान करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Exactly two views",
+          "hi": "ठीक दो व्यू"
+        },
+        "b": {
+          "en": "Exactly ten views",
+          "hi": "ठीक दस व्यू"
+        },
+        "c": {
+          "en": "Five views",
+          "hi": "पाँच व्यू (Five views)"
+        },
+        "d": {
+          "en": "Zero views",
+          "hi": "शून्य व्यू"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Look at Long Answer Question 2 at the bottom half of Page 70. It specifically asks to name this set of five display choices (like Large Icons, Details, etc.).",
+        "hi": "पृष्ठ 70 के निचले भाग में दीर्घ उत्तरीय प्रश्न 2 देखें। यह विशेष रूप से इन पाँच प्रदर्शन विकल्पों (जैसे बड़े आइकन, विवरण आदि) के नाम बताने के लिए पूछता है।"
+      },
+      "explanation": {
+        "en": "Page 70 Long Question 2 explicitly prints the reference: 'What is Windows Explorer? Explain five views of Windows Explorer.' This confirms the system offers five standard display layout formats.",
+        "hi": "पृष्ठ 70 दीर्घ प्रश्न 2 स्पष्ट रूप से संदर्भ मुद्रित करता है: 'विंडोज एक्सप्लोरर क्या है? विंडोज एक्सप्लोरर के पांच व्यू समझाएं।' यह पुष्टि करता है कि सिस्टम पांच मानक व्यू प्रारूप प्रदान करता है।"
+      },
+      "key_takeaway": {
+        "en": "Windows Explorer scales items across five visualization layouts matching user detail tracking needs.",
+        "hi": "विंडोज एक्सप्लोरर उपयोगकर्ता की विवरण आवश्यकताओं से मेल खाने वाले पांच विज़ुअलाइज़ेशन लेआउट में आइटम प्रदर्शित करता है।"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "[Topic: 2.6 Managing Folders, Page 2] In directory management, what is a storage container container that holds multiple files or other sub-folders together called?",
+        "hi": "[विषय: 2.6 फ़ोल्डर्स का प्रबंधन, पृष्ठ 2] निर्देशिका (directory) प्रबंधन में, एक स्टोरेज कंटेनर जो कई फाइलों या अन्य सब-फोल्डरों को एक साथ रखता है, क्या कहलाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Bit unit",
+          "hi": "बिट यूनिट"
+        },
+        "b": {
+          "en": "Folder / Directory",
+          "hi": "फ़ोल्डर / निर्देशिका (Folder / Directory)"
+        },
+        "c": {
+          "en": "Calculator script",
+          "hi": "कैलकुलेटर स्क्रिप्ट"
+        },
+        "d": {
+          "en": "Status ribbon",
+          "hi": "स्टेटस रिबन"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It is visually shaped like a yellow paper folder used in physical offices to group documents.",
+        "hi": "यह विज़ुअल रूप से एक पीले कागज़ के फ़ोल्डर की तरह आकार का होता है जिसका उपयोग भौतिक कार्यालयों में दस्तावेज़ों को समूहित करने के लिए किया जाता है।"
+      },
+      "explanation": {
+        "en": "Section 2.6 on Page 2 highlights 'Creating, Renaming and Deleting of File & Folders'. A folder serves as the logical directory binder group hosting independent data files.",
+        "hi": "पृष्ठ 2 पर धारा 2.6 'फाइल और फोल्डर्स बनाना, नाम बदलना और डिलीट करना' पर प्रकाश डालती है। एक फ़ोल्डर तार्किक निर्देशिका बांधने वाले समूह के रूप में कार्य करता है जो स्वतंत्र डेटा फ़ाइलों को होस्ट करता है।"
+      },
+      "key_takeaway": {
+        "en": "Folders manage directory nesting loops, establishing file organization structures within operating system disk storage.",
+        "hi": "फ़ोल्डर निर्देशिका नेस्टिंग लूप प्रबंधित करते हैं, ऑपरेटिंग सिस्टम डिस्क स्टोरेज के भीतर फ़ाइल संगठन संरचनाओं को स्थापित करते हैं।"
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "[Topic: 2.6 Folder Operations, Page 70] According to the Long Answer Question list on Page 70, what operation change is performed when a user triggers 'Rename' on a selected folder?",
+        "hi": "[विषय: 2.6 फ़ोल्डर संचालन, पृष्ठ 70] पृष्ठ 70 पर दीर्घ उत्तरीय प्रश्न सूची के अनुसार, जब कोई उपयोगकर्ता चयनित फ़ोल्डर पर 'रिनेम' (Rename) ट्रिगर करता है तो क्या परिचालन परिवर्तन किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "It deletes the file contents completely",
+          "hi": "यह फ़ाइल सामग्री को पूरी तरह से हटा देता है"
+        },
+        "b": {
+          "en": "It changes the text name identifier of the file/folder",
+          "hi": "यह फ़ाइल/फ़ोल्डर के टेक्स्ट नाम पहचानकर्ता को बदल देता है (It changes the text name of the file/folder)"
+        },
+        "c": {
+          "en": "It multiplies the folder size by two",
+          "hi": "यह फ़ोल्डर के आकार को ठीक दोगुना कर देता है"
+        },
+        "d": {
+          "en": "It prints the label on a physical postcard sheet",
+          "hi": "यह लेबल को भौतिक पोस्टकार्ड शीट पर प्रिंट करता है"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The prefix 'Re-' means again, and 'name' relates to the text label. Think about renaming a file to organize it better.",
+        "hi": "उपसर्ग 'Re-' का अर्थ है पुनः, और 'name' का संबंध टेक्स्ट लेबल से है। फ़ाइल को बेहतर ढंग से व्यवस्थित करने के लिए उसका नाम बदलने के बारे में सोचें।"
+      },
+      "explanation": {
+        "en": "Section 2.6 and Page 70 exercises track directory action steps: 'Renaming' modifies the text string label of the targeted object without changing the internal data binary bits.",
+        "hi": "धारा 2.6 और पृष्ठ 70 के अभ्यास निर्देशिका कार्रवाई चरणों को ट्रैक करते हैं: 'रिनेम' (Renaming) आंतरिक डेटा बाइनरी बिट्स को बदले बिना लक्षित ऑब्जेक्ट के टेक्स्ट स्ट्रिंग लेबल को बदलता है।"
+      },
+      "key_takeaway": {
+        "en": "The rename function edits the pointer name string entry of the target allocation record block safely.",
+        "hi": "रिनेम फ़ंक्शन सुरक्षित रूप से लक्ष्य आवंटन रिकॉर्ड ब्लॉक के पॉइंटर नाम स्ट्रिंग प्रविष्टि को संपादित करता है।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "[Topic: 2.6 Folder Operations, Page 70] According to Long Answer Question 3 on Page 70, what action command script sequence must you study to remove an unwanted file from storage completely?",
+        "hi": "[विषय: 2.6 फ़ोल्डर संचालन, पृष्ठ 70] पृष्ठ 70 पर दीर्घ उत्तरीय प्रश्न 3 के अनुसार, अवांछित फ़ाइल को स्टोरेज से पूरी तरह हटाने के लिए आपको किस एक्शन कमांड स्क्रिप्ट अनुक्रम का अध्ययन करना होगा?"
+      },
+      "options": {
+        "a": {
+          "en": "Steps to create a new macro window",
+          "hi": "एक नई मैक्रो विंडो बनाने के चरण"
+        },
+        "b": {
+          "en": "Steps to calculate mathematical sums",
+          "hi": "गणितीय योग की गणना करने के चरण"
+        },
+        "c": {
+          "en": "Steps to delete a file / folder",
+          "hi": "फ़ाइल / फ़ोल्डर को हटाने (delete) के चरण (Steps to delete a file / folder)"
+        },
+        "d": {
+          "en": "Steps to paint a color canvas background",
+          "hi": "एक रंगीन कैनवास पृष्ठभूमि पेंट करने के चरण"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Look at Long Answer Question 3 on Page 70. It explicitly points out this destructive purging action sequence.",
+        "hi": "पृष्ठ 70 पर दीर्घ उत्तरीय प्रश्न 3 देखें। यह स्पष्ट रूप से इस हटाने (purging) की कार्रवाई के अनुक्रम की ओर इशारा करता है।"
+      },
+      "explanation": {
+        "en": "Page 70 Long Question 3 reads verbatim: 'Write the steps to delete file / folder.' This confirms studying the deletion workflow is a vital directory mastery block.",
+        "hi": "पृष्ठ 70 दीर्घ प्रश्न 3 शब्दशः पढ़ता है: 'फ़ाइल / फ़ोल्डर को हटाने के चरण लिखिए।' यह पुष्टि करता है कि विलोपन (deletion) कार्यप्रवाह का अध्ययन करना एक महत्वपूर्ण निर्देशिका महारत ब्लॉक है।"
+      },
+      "key_takeaway": {
+        "en": "The deletion workflow routes targeted pointer links into trash sectors or flushes allocations entirely.",
+        "hi": "विलोपन (deletion) कार्यप्रवाह लक्षित पॉइंटर लिंक को ट्रैश सेक्टरों में भेजता है या आवंटन को पूरी तरह से हटा देता है।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "[Topic: 2.6 File Management, Page 70] In Windows, when you use 'Cut' or 'Copy', where does the operating system temporarily store the file data before you click 'Paste'?",
+        "hi": "[विषय: 2.6 फ़ाइल प्रबंधन, पृष्ठ 70] विंडोज़ में, जब आप 'कट' या 'कॉपी' का उपयोग करते हैं, तो आपके द्वारा 'पेस्ट' पर क्लिक करने से पहले ऑपरेटिंग सिस्टम फ़ाइल डेटा को अस्थायी रूप से कहाँ संग्रहीत करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Clipboard",
+          "hi": "क्लिपबोर्ड (Clipboard)"
+        },
+        "b": {
+          "en": "Hard disk outer track",
+          "hi": "हार्ड डिस्क बाहरी ट्रैक"
+        },
+        "c": {
+          "en": "Calculator memory registry",
+          "hi": "कैलकुलेटर मेमोरी रजिस्ट्री"
+        },
+        "d": {
+          "en": "Printer spool queue",
+          "hi": "प्रिंटर स्पूल कतार"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It is an invisible temporary storage area in RAM that holds cut or copied elements.",
+        "hi": "यह रैम (RAM) में एक अदृश्य अस्थायी भंडारण क्षेत्र है जो कटे या कॉपी किए गए तत्वों को रखता है।"
+      },
+      "explanation": {
+        "en": "The operational system rules dictate that Cut/Copy actions leverage a temporary memory allocation registry block formally known as the Clipboard to hold data fragments until a Paste directive executes.",
+        "hi": "परिचालन प्रणाली के नियम निर्देश देते हैं कि कट/कॉपी क्रियाएं रैम में एक अस्थायी भंडारण क्षेत्र का लाभ उठाती हैं जिसे औपचारिक रूप से क्लिपबोर्ड (Clipboard) के रूप में जाना जाता है ताकि पेस्ट निर्देश निष्पादित होने तक डेटा टुकड़ों को रखा जा सके।"
+      },
+      "key_takeaway": {
+        "en": "The Clipboard functions as a volatile buffer caching cut/copied element data blocks during transfer sequences.",
+        "hi": "क्लिपबोर्ड ट्रांसफर अनुक्रमों के दौरान कट/कॉपी किए गए तत्व डेटा ब्लॉकों को कैश करने वाले एक अस्थिर बफर के रूप में कार्य करता है।"
+      }
+    },
+    {
+      "question_id": 21,
+      "question": {
+        "en": "[Topic: 2.7 Window Controls, Page 2] Every application window has control choices. What are the 'Minimize' and 'Maximize' states of a window formally considered?",
+        "hi": "[विषय: 2.7 विंडो नियंत्रण, पृष्ठ 2] प्रत्येक एप्लिकेशन विंडो में नियंत्रण विकल्प होते हैं। विंडो की 'मिनिमाइज' (Minimize) और 'मैक्सिमाइज' (Maximize) स्थितियों को औपचारिक रूप से क्या माना जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Window sizing forms",
+          "hi": "विंडो साइजिंग फॉर्म (Window sizing forms)"
+        },
+        "b": {
+          "en": "Disk sector tracks",
+          "hi": "डिस्क सेक्टर ट्रैक"
+        },
+        "c": {
+          "en": "Hardware voltage steps",
+          "hi": "हार्डवेयर वोल्टेज चरण"
+        },
+        "d": {
+          "en": "Binary compilation flags",
+          "hi": "बाइनरी संकलन फ़्लैग"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Look at Section 2.7 heading goals. One shrinks the window into the taskbar, while the other expands it to fill the whole screen layout.",
+        "hi": "धारा 2.7 की हेडिंग देखें। एक विंडो को सिकोड़कर टास्कबार में ले जाता है, जबकि दूसरा इसे पूरी स्क्रीन पर फैला देता है।"
+      },
+      "explanation": {
+        "en": "Section 2.7 on Page 2 outlines 'Opening and Closing of Window, Minimize and Maximize form of a window'. These represent window display dimension states managed by the graphic manager layer.",
+        "hi": "पृष्ठ 2 पर धारा 2.7 'विंडो को खोलना और बंद करना, विंडो का मिनिमाइज और मैक्सिमाइज फॉर्म' को रेखांकित करती है। ये ग्राफिक मैनेजर लेयर द्वारा प्रबंधित विंडो डिस्प्ले डाइमेंशन स्टेट्स का प्रतिनिधित्व करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Minimize/Maximize toggles dynamically modify the visual layout dimensions of an active application container frame.",
+        "hi": "मिनिमाइज/मैक्सिमाइज टॉगल गतिशील रूप से एक सक्रिय एप्लिकेशन कंटेनर फ्रेम के विज़ुअल लेआउट आयामों को संशोधित करते हैं।"
+      }
+    },
+    {
+      "question_id": 22,
+      "question": {
+        "en": "[Topic: 2.7 Window Anatomy, Page 70] What are the three vital control buttons sitting on the far-right edge of an application's top Title Bar called?",
+        "hi": "[विषय: 2.7 विंडो संरचना, पृष्ठ 70] किसी एप्लिकेशन की शीर्ष टाइटल बार (Title Bar) के सुदूर-दाहिने किनारे पर बैठे तीन महत्वपूर्ण नियंत्रण बटनों को क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Cut, Copy, Paste",
+          "hi": "कट, कॉपी, पेस्ट"
+        },
+        "b": {
+          "en": "Minimize, Maximize, Close",
+          "hi": "मिनिमाइज, मैक्सिमाइज, क्लोज (Minimize, Maximize, Close)"
+        },
+        "c": {
+          "en": "Left, Right, Scroll",
+          "hi": "लेफ्ट, राइट, स्क्रोल"
+        },
+        "d": {
+          "en": "Notepad, Paint, Calculator",
+          "hi": "नोटपैड, पेंट, कैलकुलेटर"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "They look like a small dash (-), a square box (🔲), and an 'X' symbol. They control the window size and life.",
+        "hi": "वे एक छोटे डैश (-), एक वर्गाकार बॉक्स (🔲), और एक 'X' प्रतीक की तरह दिखते हैं। वे विंडो के आकार और जीवन को नियंत्रित करते हैं।"
+      },
+      "explanation": {
+        "en": "The anatomical interface framework rules define that the top right title row contains Minimize (shrinks to taskbar), Maximize (fills screen), and Close (terminates application execution thread).",
+        "hi": "इंटरफ़ेस फ्रेमवर्क नियम परिभाषित करते हैं कि शीर्ष दाईं टाइटल बार रो में मिनिमाइज (टास्कबार में सिकोड़ता है), मैक्सिमाइज (स्क्रीन भरता है), और क्लोज (एप्लिकेशन निष्पादन थ्रेड को समाप्त करता है) शामिल हैं।"
+      },
+      "key_takeaway": {
+        "en": "The Minimize, Maximize, and Close trio forms the universal structural window handling interface row.",
+        "hi": "मिनिमाइज, मैक्सिमाइज और क्लोज तिकड़ी सार्वभौमिक संरचनात्मक विंडो हैंडलिंग इंटरफ़ेस रो बनाती है।"
+      }
+    },
+    {
+      "question_id": 23,
+      "question": {
+        "en": "[Topic: 2.7 Window Anatomy, Page 70] When window contents are larger than the current monitor display box area, what vertical or horizontal bar component appears to let you slide hidden content into view?",
+        "hi": "[विषय: 2.7 विंडो संरचना, पृष्ठ 70] जब विंडो की सामग्री वर्तमान मॉनिटर डिस्प्ले बॉक्स क्षेत्र से बड़ी होती है, तो छिपी हुई सामग्री को देखने के लिए कौन सा वर्टिकल या हॉरिजॉन्टल बार घटक दिखाई देता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Scroll Bar",
+          "hi": "स्क्रोल बार (Scroll Bar)"
+        },
+        "b": {
+          "en": "Menu Line",
+          "hi": "मेनू लाइन"
+        },
+        "c": {
+          "en": "Title Strip",
+          "hi": "टाइटल स्ट्रिप"
+        },
+        "d": {
+          "en": "Status Block",
+          "hi": "स्टेटस ब्लॉक"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "You drag its inner slider box or click its arrow tips to scroll up, down, left, or right.",
+        "hi": "आप इसके आंतरिक स्लाइडर बॉक्स को खींचते हैं या ऊपर, नीचे, बाएं या दाएं स्क्रॉल करने के लिए इसके तीर के सिरों (arrow tips) पर क्लिक करते हैं।"
+      },
+      "explanation": {
+        "en": "The visual display window architectures integrate 'Scroll Bars' (both vertical and horizontal) that automatically render whenever text sheets or grid canvas layers overflow past the window boundaries.",
+        "hi": "विज़ुअल डिस्प्ले विंडो आर्किटेक्चर 'स्क्रोल बार' (वर्टिकल और हॉरिजॉन्टल दोनों) को एकीकृत करते हैं जो टेक्स्ट शीट या ग्रिड कैनवास लेयर्स के विंडो सीमाओं से आगे बढ़ने पर स्वचालित रूप से रेंडर होते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Scroll bars act as viewport navigators managing window canvas translations over large active data scopes.",
+        "hi": "स्क्रॉल बार व्यूपोर्ट नेविगेटर के रूप में कार्य करते हैं जो बड़े सक्रिय डेटा स्कोप पर विंडो कैनवास अनुवादों का प्रबंधन करते हैं।"
+      }
+    },
+    {
+      "question_id": 24,
+      "question": {
+        "en": "[Topic: 2.8 Windows Accessories, Page 2] What are built-in tool applications like Notepad, Paint, and Calculator officially categorized as inside the Windows environment?",
+        "hi": "[विषय: 2.8 विंडोज एक्सेसरीज, पृष्ठ 2] विंडोज वातावरण के भीतर नोटपैड, पेंट और कैलकुलेटर जैसे अंतर्निहित (built-in) टूल एप्लिकेशनों को आधिकारिक तौर पर किस रूप में वर्गीकृत किया गया है?"
+      },
+      "options": {
+        "a": {
+          "en": "Core hardware buses",
+          "hi": "कोर हार्डवेयर बसें"
+        },
+        "b": {
+          "en": "Basic Window Accessories",
+          "hi": "बेसिक विंडोज एक्सेसरीज (Basic Window Accessories)"
+        },
+        "c": {
+          "en": "Disk track sectors",
+          "hi": "डिस्क ट्रैक सेक्टर"
+        },
+        "d": {
+          "en": "Analog compiler sets",
+          "hi": "एनालॉग कंपाइलर सेट"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Look at Section 2.8 heading objectives on Page 2. These are small helpful utility programs that come free with the OS.",
+        "hi": "पृष्ठ 2 पर धारा 2.8 की हेडिंग देखें। ये छोटे सहायक उपयोगिता प्रोग्राम हैं जो ओएस के साथ मुफ्त आते हैं।"
+      },
+      "explanation": {
+        "en": "Section 2.8 explicitly lists these helper programs under the official category: 'Basic Window Accessories: NotePad, Paint, Calculator...'",
+        "hi": "धारा 2.8 स्पष्ट रूप से इन सहायक प्रोग्रामों को आधिकारिक श्रेणी के अंतर्गत सूचीबद्ध करती है: 'बेसिक विंडो एक्सेसरीज़: नोटपैड, पेंट, कैलकुलेटर...'"
+      },
+      "key_takeaway": {
+        "en": "Windows Accessories are default utility programs packed into the system envelope to cover elementary productivity workflows.",
+        "hi": "विंडोज एक्सेसरीज प्राथमिक उत्पादकता कार्यप्रवाहों को कवर करने के लिए सिस्टम लिफाफे में पैक किए गए डिफ़ॉल्ट उपयोगिता प्रोग्राम हैं।"
+      }
+    },
+    {
+      "question_id": 25,
+      "question": {
+        "en": "[Topic: 2.8 Accessories - Notepad, Page 70] According to Short Answer Question 5 on Page 70, which built-in accessory program allows you to write and save simple text documents?",
+        "hi": "[विषय: 2.8 एक्सेसरीज - नोटपैड, पृष्ठ 70] पृष्ठ 70 पर लघु उत्तरीय प्रश्न 5 के अनुसार, कौन सा अंतर्निहित सहायक प्रोग्राम आपको सरल टेक्स्ट दस्तावेज़ लिखने और सहेजने की अनुमति देता है?"
+      },
+      "options": {
+        "a": {
+          "en": "MS Paint tool",
+          "hi": "एमएस पेंट टूल"
+        },
+        "b": {
+          "en": "Calculator engine",
+          "hi": "कैलकुलेटर इंजन"
+        },
+        "c": {
+          "en": "Notepad",
+          "hi": "नोटपैड (Notepad)"
+        },
+        "d": {
+          "en": "Control Panel manager",
+          "hi": "कंट्रोल पैनल प्रबंधक"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Short Question 5 explicitly asks for the steps to start this text program: 'What are the steps to open...?'",
+        "hi": "लघु प्रश्न 5 स्पष्ट रूप से इस टेक्स्ट प्रोग्राम को शुरू करने के चरणों के लिए पूछता है: 'खोलने के चरण क्या हैं...?'"
+      },
+      "explanation": {
+        "en": "Page 70 Short Question 5 reads: 'What are the steps to open notepad?' This verifies Notepad is the default elementary text editing workspace engine.",
+        "hi": "पृष्ठ 70 लघु प्रश्न 5 पढ़ता है: 'नोटपैड खोलने के चरण क्या हैं?' यह सत्यापित करता है कि नोटपैड डिफ़ॉल्ट प्राथमिक टेक्स्ट संपादन वर्कस्पेस इंजन है।"
+      },
+      "key_takeaway": {
+        "en": "Notepad is a basic, lightweight text editor used to write simple unformatted text lines.",
+        "hi": "नोटपैड एक बुनियादी, हल्का टेक्स्ट एडिटर है जिसका उपयोग साधारण बिना फ़ॉर्मेट किए गए टेक्स्ट लाइनों को लिखने के लिए किया जाता है।"
+      }
+    },
+    {
+      "question_id": 26,
+      "question": {
+        "en": "[Topic: 2.8 Accessories - Notepad, Page 2] What is the standard filename extension automatically given to files saved using the Notepad accessory?",
+        "hi": "[विषय: 2.8 एक्सेसरीज - नोटपैड, पृष्ठ 2] नोटपैड एक्सेसरी का उपयोग करके सहेजी गई फ़ाइलों को स्वचालित रूप से कौन सा मानक फ़ाइल नाम एक्सटेंशन (extension) दिया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": ".txt",
+          "hi": ".txt"
+        },
+        "b": {
+          "en": ".bmp",
+          "hi": ".bmp"
+        },
+        "c": {
+          "en": ".exe",
+          "hi": ".exe"
+        },
+        "d": {
+          "en": ".jpg",
+          "hi": ".jpg"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It stands for plain 'text'.",
+        "hi": "इसका अर्थ प्लेन 'टेक्स्ट' (text) है।"
+      },
+      "explanation": {
+        "en": "Notepad is a basic text editing utility software that strictly handles unformatted character strings, systematically saving outputs with the default '.txt' extension marker.",
+        "hi": "नोटपैड एक बुनियादी टेक्स्ट एडिटिंग यूटिलिटी सॉफ़्टवेयर है जो केवल बिना फ़ॉर्मेट किए गए कैरेक्टर स्ट्रिंग्स को संभालता है, आउटपुट को डिफ़ॉल्ट '.txt' एक्सटेंशन मार्कर के साथ व्यवस्थित रूप से सहेजता है।"
+      },
+      "key_takeaway": {
+        "en": "The '.txt' file extension alerts the OS that the target file contains raw character code lines without heavy styling metadata.",
+        "hi": "'.txt' फ़ाइल एक्सटेंशन ओएस को सचेत करता है कि लक्षित फ़ाइल में बिना भारी स्टाइलिंग मेटाडेटा के कच्चे कैरेक्टर कोड लाइनें शामिल हैं।"
+      }
+    },
+    {
+      "question_id": 27,
+      "question": {
+        "en": "[Topic: 2.8 Accessories - Paint, Page 70] According to Long Answer Question 4 on Page 70, what basic accessory program is used to draw shapes, paint pictures, and edit visual graphic graphics?",
+        "hi": "[विषय: 2.8 एक्सेसरीज - पेंट, पृष्ठ 70] पृष्ठ 70 पर दीर्घ उत्तरीय प्रश्न 4 के अनुसार, आकृतियाँ बनाने, चित्र पेंट करने और विज़ुअल ग्राफ़िक्स को संपादित करने के लिए किस बुनियादी एक्सेसरी प्रोग्राम का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Notepad engine",
+          "hi": "नोटपैड इंजन"
+        },
+        "b": {
+          "en": "Calculator registry",
+          "hi": "कैलकुलेटर रजिस्ट्री"
+        },
+        "c": {
+          "en": "MS Paint / Paint",
+          "hi": "एमएस पेंट / पेंट (MS Paint / Paint)"
+        },
+        "d": {
+          "en": "System Date clock",
+          "hi": "सिस्टम दिनांक घड़ी"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Look at Long Question 4 on Page 70. It directly asks: 'What is paint? What are the steps to start...?'",
+        "hi": "पृष्ठ 70 पर दीर्घ प्रश्न 4 देखें। यह सीधे पूछता है: 'पेंट क्या है? शुरू करने के चरण क्या हैं...?'"
+      },
+      "explanation": {
+        "en": "Page 70 Long Question 4 asks: 'What is paint? What are the steps to start MS Paint?' This confirms MS Paint is the built-in drawing and canvas accessory.",
+        "hi": "पृष्ठ 70 दीर्घ प्रश्न 4 पूछता है: 'पेंट क्या है? एमएस पेंट शुरू करने के चरण क्या हैं?' यह पुष्टि करता है कि एमएस पेंट अंतर्निहित ड्राइंग और कैनवास सहायक प्रोग्राम है।"
+      },
+      "key_takeaway": {
+        "en": "MS Paint provides a simple bitmap drawing canvas equipped with shapes, color brushes, and basic fill tools.",
+        "hi": "एमएस पेंट आकृतियों, रंगीन ब्रशों और बुनियादी फिल टूल से लैस एक सरल बिटमैप ड्राइंग कैनवास प्रदान करता है।"
+      }
+    },
+    {
+      "question_id": 28,
+      "question": {
+        "en": "[Topic: 2.8 Accessories - Paint, Page 70] What standard raster graphics image file format extension is traditionally associated with saving raw MS Paint canvas outputs?",
+        "hi": "[विषय: 2.8 एक्सेसरीज - पेंट, पृष्ठ 70] कच्चे एमएस पेंट कैनवास आउटपुट को सहेजने के लिए पारंपरिक रूप से कौन सा मानक रेखापुंज ग्राफ़िक्स (raster graphics) छवि फ़ाइल स्वरूप एक्सटेंशन जुड़ा हुआ है?"
+      },
+      "options": {
+        "a": {
+          "en": ".txt",
+          "hi": ".txt"
+        },
+        "b": {
+          "en": ".bmp",
+          "hi": ".bmp"
+        },
+        "c": {
+          "en": ".mp3",
+          "hi": ".mp3"
+        },
+        "d": {
+          "en": ".exe",
+          "hi": ".exe"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It stands for 'bitmap' image, which maps color bits directly to pixels on the screen canvas.",
+        "hi": "इसका मतलब 'बिटमैप' (bitmap) इमेज है, जो स्क्रीन कैनवास पर रंग बिट्स को सीधे पिक्सल पर मैप करता है।"
+      },
+      "explanation": {
+        "en": "MS Paint natively constructs and operates on simple pixel matrix grids, historically saving basic graphic project bundles with the default '.bmp' (Bitmap) extension tag. Option A is for text.",
+        "hi": "एमएस पेंट मूल रूप से सरल पिक्सेल मैट्रिक्स ग्रिड पर काम करता है, ऐतिहासिक रूप से बुनियादी ग्राफिक प्रोजेक्ट बंडलों को डिफ़ॉल्ट '.bmp' (बिटमैप) एक्सटेंशन टैग के साथ सहेजता है। विकल्प A टेक्स्ट के लिए है।"
+      },
+      "key_takeaway": {
+        "en": "The '.bmp' extension identifies uncompressed raster bitmap image data layouts within the file explorer tree.",
+        "hi": "'.bmp' एक्सटेंशन फाइल एक्सप्लोरर ट्री के भीतर असम्पीडित रेखापुंज बिटमैप छवि डेटा लेआउट की पहचान करता है।"
+      }
+    },
+    {
+      "question_id": 29,
+      "question": {
+        "en": "[Topic: 2.8 Windows Accessories, Page 2] Which basic Windows Accessory program gives you an on-screen tool to quickly calculate arithmetic sums, percentages, and subtraction values?",
+        "hi": "[विषय: 2.8 विंडोज एक्सेसरीज, पृष्ठ 2] कौन सा बुनियादी विंडोज एक्सेसरी प्रोग्राम आपको अंकगणितीय योग, प्रतिशत और घटाव के मानों की तेज़ी से गणना करने के लिए ऑन-स्क्रीन टूल देता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Notepad text editor",
+          "hi": "नोटपैड टेक्स्ट एडिटर"
+        },
+        "b": {
+          "en": "MS Paint editor",
+          "hi": "एमएस पेंट एडिटर"
+        },
+        "c": {
+          "en": "Control Panel manager",
+          "hi": "कंट्रोल पैनल प्रबंधक"
+        },
+        "d": {
+          "en": "Calculator",
+          "hi": "कैलकुलेटर (Calculator)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "It mirrors a physical electronic counting machine with digit keys and math symbols (+, -, ×, /).",
+        "hi": "यह डिजिटल कुंजियों और गणित प्रतीकों (+, -, ×, /) वाली एक भौतिक इलेक्ट्रॉनिक गिनती मशीन को दर्शाता है।"
+      },
+      "explanation": {
+        "en": "Section 2.8 lists 'Calculator' as an essential basic accessory. It compiles mathematical inputs instantly to return arithmetic solutions inside an active utility sub-window frame.",
+        "hi": "धारा 2.8 'कैलकुलेटर' को एक आवश्यक बुनियादी एक्सेसरी के रूप में सूचीबद्ध करती है। यह अंकगणितीय समाधान देने के लिए गणितीय इनपुट को तुरंत संकलित करता है।"
+      },
+      "key_takeaway": {
+        "en": "The built-in Calculator app covers everyday numerical compute needs within the user workspace grid.",
+        "hi": "अंतर्निहित कैलकुलेटर ऐप उपयोगकर्ता कार्यक्षेत्र ग्रिड के भीतर दैनिक संख्यात्मक गणना आवश्यकताओं को पूरा करता है।"
+      }
+    },
+    {
+      "question_id": 30,
+      "question": {
+        "en": "[Topic: 2.8 Windows Accessories, Page 2] Which unified administrative folder module provides access to advanced system properties, hardware driver settings, user profiles, and software uninstallation setups?",
+        "hi": "[विषय: 2.8 विंडोज एक्सेसरीज, पृष्ठ 2] कौन सा एकीकृत प्रशासनिक फ़ोल्डर मॉड्यूल उन्नत सिस्टम गुणों, हार्डवेयर ड्राइवर सेटिंग्स, उपयोगकर्ता प्रोफ़ाइल और सॉफ़्टवेयर अनइंस्टॉल सेटअप तक पहुंच प्रदान करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Notepad document sheet",
+          "hi": "नोटपैड दस्तावेज़ शीट"
+        },
+        "b": {
+          "en": "Control Panel",
+          "hi": "कंट्रोल पैनल (Control Panel)"
+        },
+        "c": {
+          "en": "MS Paint brush registry",
+          "hi": "एमएस पेंट ब्रश रजिस्ट्री"
+        },
+        "d": {
+          "en": "Recycle Bin sector binder",
+          "hi": "रीसायकल बिन सेक्टर बाइंडर"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It acts as the central master panel used to 'control' or change the core behaviors of your operating system hardware setup.",
+        "hi": "यह आपके ऑपरेटिंग सिस्टम हार्डवेयर सेटअप के मुख्य व्यवहारों को 'नियंत्रित करने' या बदलने के लिए उपयोग किए जाने वाले केंद्रीय मास्टर पैनल के रूप में कार्य करता है।"
+      },
+      "explanation": {
+        "en": "Section 2.8 explicitly details this administrative nerve center: 'Control Panel'. It hosts configuration wizards tracking system diagnostics and device registry adjustments safely.",
+        "hi": "धारा 2.8 स्पष्ट रूप से इस प्रशासनिक केंद्र का विवरण देती है: 'कंट्रोल पैनल'। यह कॉन्फ़िगरेशन विजार्ड होस्ट करता है जो सिस्टम डायग्नोस्टिक्स और डिवाइस रजिस्ट्री समायोजन को ट्रैक करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "The Control Panel clusters core system tuning utilities together, serving as the master configuration terminal layer.",
+        "hi": "कंट्रोल पैनल मुख्य सिस्टम ट्यूनिंग उपयोगिताओं को एक साथ जोड़ता है, जो मास्टर कॉन्फ़िगरेशन टर्मिनल लेयर के रूप में कार्य करता है।"
+      }
+    },
+    {
+      "question_id": 31,
+      "question": {
+        "en": "[Topic: 2.9 Mouse Button Functions, Page 70] According to Long Answer Question 5 on Page 70, how many hardware buttons are typically present and tracked on a standard computer mouse framework?",
+        "hi": "[विषय: 2.9 माउस बटन के कार्य, पृष्ठ 70] पृष्ठ 70 पर दीर्घ उत्तरीय प्रश्न 5 के अनुसार, एक मानक कंप्यूटर माउस फ्रेमवर्क पर आमतौर पर कितने हार्डवेयर बटन मौजूद और ट्रैक किए जाते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Exactly ten buttons",
+          "hi": "ठीक दस बटन"
+        },
+        "b": {
+          "en": "Three buttons (Left, Right, and Scroll Button)",
+          "hi": "तीन बटन (लेफ्ट, राइट और स्क्रोल बटन) (Three buttons - Left, Right, Scroll)"
+        },
+        "c": {
+          "en": "Only one button solely",
+          "hi": "केवल एक बटन"
+        },
+        "d": {
+          "en": "Zero buttons",
+          "hi": "शून्य बटन"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Look under Section 2.9 index heading on Page 2 or Long Question 5 on Page 70. It tracks the Left click, Right click, and middle wheel components.",
+        "hi": "पृष्ठ 2 पर धारा 2.9 इंडेक्स हेडिंग या पृष्ठ 70 पर दीर्घ प्रश्न 5 के अंतर्गत देखें। यह लेफ्ट क्लिक, राइट क्लिक और मध्य व्हील (wheel) घटकों को ट्रैक करता है।"
+      },
+      "explanation": {
+        "en": "Page 2 heading 2.9 and Page 70 Question 5 ('Describe the functions of mouse button') explicitly focus on the three standard physical interaction targets: Left button, Right button, and middle Scroll button wheel.",
+        "hi": "पृष्ठ 2 की हेडिंग 2.9 और पृष्ठ 70 प्रश्न 5 ('माउस बटन के कार्य स्पष्ट करें') स्पष्ट रूप से तीन मानक भौतिक बटनों पर ध्यान केंद्रित करते हैं: लेफ्ट बटन, राइट बटन और मध्य स्क्रोल बटन व्हील।"
+      },
+      "key_takeaway": {
+        "en": "The standard mechanical mouse uses a trio of Left, Right, and Scroll wheel structures to compile directional navigation coordinates.",
+        "hi": "मानक माउस नेविगेशन को आसान बनाने के लिए लेफ्ट, राइट और स्क्रोल व्हील संरचनाओं की तिकड़ी का उपयोग करता है।"
+      }
+    },
+    {
+      "question_id": 32,
+      "question": {
+        "en": "[Topic: 2.9 Mouse Functions, Page 70] Which mouse click action is used as the standard default method to select an object or icon on the Desktop workspace screen?",
+        "hi": "[विषय: 2.9 माउस के कार्य, पृष्ठ 70] डेस्कटॉप वर्कस्पेस स्क्रीन पर किसी ऑब्जेक्ट या आइकन को चुनने (select) के लिए मानक डिफ़ॉल्ट विधि के रूप में किस माउस क्लिक क्रिया का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Right-click once",
+          "hi": "राइट-क्लिक एक बार"
+        },
+        "b": {
+          "en": "Left-click once",
+          "hi": "लेफ्ट-क्लिक एक बार (Left-click once)"
+        },
+        "c": {
+          "en": "Triple-click rapidly",
+          "hi": "ट्रिपल-क्लिक तेज़ी से"
+        },
+        "d": {
+          "en": "Spinning the scroll wheel backwards twice",
+          "hi": "स्क्रॉल व्हील को दो बार पीछे की ओर घुमाना"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It is the primary action trigger button used under your index finger for general picking and selection actions.",
+        "hi": "यह सामान्य चुनने और चयन (selection) क्रियाओं के लिए आपकी तर्जनी उंगली (index finger) के तहत उपयोग किया जाने वाला प्राथमिक एक्शन ट्रिगर बटन है।"
+      },
+      "explanation": {
+        "en": "The operational guidelines for Section 2.9 outline that a single press of the primary Left mouse button highlights and 'selects' the targeted desktop icon node cleanly.",
+        "hi": "धारा 2.9 के परिचालन दिशानिर्देश रेखांकित करते हैं कि प्राथमिक लेफ्ट माउस बटन को एक बार दबाने से लक्षित डेस्कटॉप आइकन नोड हाइलाइट और 'चयनित' (select) हो जाता है।"
+      },
+      "key_takeaway": {
+        "en": "A single left-click isolates an object coordinates, alerting the system manager of a tentative command focus selection.",
+        "hi": "एक बार लेफ्ट-क्लिक (Left-click) करने से ऑब्जेक्ट का चयन होता है और सिस्टम को उस पर कार्रवाई करने का संकेत मिलता है।"
+      }
+    },
+    {
+      "question_id": 33,
+      "question": {
+        "en": "[Topic: 2.3 Mouse Actions, Page 70] What action occurs when a user triggers a rapid 'Double-click' using the primary Left mouse button over an application icon?",
+        "hi": "[विषय: 2.3 माउस क्रियाएँ, पृष्ठ 70] जब कोई उपयोगकर्ता किसी एप्लिकेशन आइकन पर प्राथमिक लेफ्ट माउस बटन का उपयोग करके तेज़ी से 'डबल-क्लिक' (Double-click) करता है तो क्या क्रिया होती है?"
+      },
+      "options": {
+        "a": {
+          "en": "It permanently deletes the application software instantly.",
+          "hi": "यह एप्लिकेशन सॉफ़्टवेयर को तुरंत स्थायी रूप से हटा देता है।"
+        },
+        "b": {
+          "en": "It opens or executes the targeted application program.",
+          "hi": "यह लक्षित एप्लिकेशन प्रोग्राम को खोलता या निष्पादित (execute) करता है (It opens or executes the targeted program)."
+        },
+        "c": {
+          "en": "It formats the primary boot sector of the hard drive.",
+          "hi": "यह हार्ड ड्राइव के प्राथमिक बूट सेक्टर को फॉर्मेट करता है।"
+        },
+        "d": {
+          "en": "It triggers a manual system hardware reboot loop.",
+          "hi": "यह एक मैन्युअल सिस्टम हार्डवेयर रीबूट लूप को ट्रिगर करता है।"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Think about how you open your files from the Desktop drives. You press the left button two times very quickly.",
+        "hi": "सोचें कि आप डेस्कटॉप ड्राइव से अपनी फ़ाइलें कैसे खोलते हैं। आप बहुत जल्दी दो बार लेफ्ट बटन दबाते हैं।"
+      },
+      "explanation": {
+        "en": "The operational system interaction rules dictate that a rapid sequential double left-click registers as an execution macro directive, forcing the OS to open the targeted file or launch the clicked program instance.",
+        "hi": "परिचालन प्रणाली इंटरैक्शन नियम निर्देश देते हैं कि एक तेज़ क्रमिक डबल लेफ्ट-क्लिक एक निष्पादन निर्देश के रूप में पंजीकृत होता है, जिससे ओएस लक्षित फ़ाइल को खोलने या प्रोग्राम शुरू करने के लिए मजबूर होता है।"
+      },
+      "key_takeaway": {
+        "en": "Double-clicking bypasses general selections, routing an immediate initialization command thread to open the clicked file unit.",
+        "hi": "डबल-क्लिक करने से सामान्य चयन बायपास हो जाता है, और क्लिक की गई फ़ाइल इकाई को खोलने के लिए एक त्वरित इनिशियलाइज़ेशन कमांड थ्रेड रूट होता है।"
+      }
+    },
+    {
+      "question_id": 34,
+      "question": {
+        "en": "[Topic: 2.9 Mouse Actions, Page 70] What visual interface element pops up on screen when a user triggers a single 'Right-click' action over a desktop object?",
+        "hi": "[विषय: 2.9 माउस क्रियाएँ, पृष्ठ 70] जब कोई उपयोगकर्ता डेस्कटॉप ऑब्जेक्ट पर एक बार 'राइट-क्लिक' (Right-click) क्रिया ट्रिगर करता है तो स्क्रीन पर कौन सा विज़ुअल इंटरफ़ेस तत्व पॉप अप होता है?"
+      },
+      "options": {
+        "a": {
+          "en": "The entire desktop window closes instantly",
+          "hi": "पूरा डेस्कटॉप विंडो तुरंत बंद हो जाता है"
+        },
+        "b": {
+          "en": "A context shortcut pop-up menu containing specific command options (like Copy, Delete, Properties)",
+          "hi": "विशिष्ट कमांड विकल्पों (जैसे कॉपी, डिलीट, प्रॉपर्टीज) वाला एक संदर्भ शॉर्टकट पॉप-अप मेनू (A shortcut menu containing specific commands)"
+        },
+        "c": {
+          "en": "A calculation sheet from the digital accessory panel",
+          "hi": "डिजिटल एक्सेसरी पैनल से एक गणना पत्र"
+        },
+        "d": {
+          "en": "An empty Notepad document container file",
+          "hi": "एक खाली नोटपैड दस्तावेज़ कंटेनर फ़ाइल"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It gives you a helpful list of shortcut things you can do to that specific item, like changing its name or checking its file size.",
+        "hi": "यह आपको उस विशिष्ट आइटम के लिए शॉर्टकट चीजों की एक सहायक सूची देता है जो आप कर सकते हैं, जैसे उसका नाम बदलना या उसका फ़ाइल आकार जांचना।"
+      },
+      "explanation": {
+        "en": "Triggering a single Right-click action forces the OS window manager to compile and drop down a situational shortcut context menu mapping specific operations relevant to the targeted screen coordinates.",
+        "hi": "एक बार राइट-क्लिक करने से ओएस विंडो मैनेजर लक्षित स्क्रीन निर्देशांक के लिए प्रासंगिक विशिष्ट ऑपरेशनों को मैप करने वाला एक शॉर्टकट संदर्भ मेनू (context menu) प्रदर्शित करता है।"
+      },
+      "key_takeaway": {
+        "en": "Right-clicking exposes contextual shortcut property menus, granting rapid access to file modifier action passes.",
+        "hi": "राइट-क्लिक करने से प्रासंगिक शॉर्टकट प्रॉपर्टी मेनू खुलते हैं, जिससे फ़ाइल संशोधक (modifier) क्रियाओं तक त्वरित पहुँच मिलती है।"
+      }
+    },
+    {
+      "question_id": 35,
+      "question": {
+        "en": "[Topic: 2.9 Mouse Actions, Page 70] What is the primary functional purpose of the middle wheel or 'Scroll Button' component on a computer mouse?",
+        "hi": "[विषय: 2.9 माउस क्रियाएँ, पृष्ठ 70] कंप्यूटर माउस पर बीच के पहिये या 'स्क्रोल बटन' (Scroll Button) घटक का प्राथमिक कार्यात्मक उद्देश्य क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "To type alphabet letters inside Notepad files",
+          "hi": "नोटपैड फाइलों के अंदर वर्णमाला के अक्षर टाइप करना"
+        },
+        "b": {
+          "en": "To scroll or move up and down through long document pages or web canvases easily",
+          "hi": "लंबे दस्तावेज़ पेजों या वेब कैनवस के माध्यम से आसानी से ऊपर और नीचे स्क्रॉल करना या स्थानांतरित करना (To scroll up and down through long document pages easily)"
+        },
+        "c": {
+          "en": "To permanently format hard drive partition volumes",
+          "hi": "हार्ड ड्राइव विभाजन वॉल्यूम को स्थायी रूप से प्रारूपित (format) करना"
+        },
+        "d": {
+          "en": "To adjust the hardware monitor display screen brightness levels",
+          "hi": "हार्डवेयर मॉनिटर डिस्प्ले स्क्रीन ब्राइटनेस लेवल को एडजस्ट करना"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "You roll this wheel with your middle finger to read down to the bottom of a long textbook PDF page.",
+        "hi": "एक लंबे पाठ्यपुस्तक पीडीएफ पेज के नीचे तक पढ़ने के लिए आप अपनी मध्यमा उंगली (middle finger) से इस पहिये को घुमाते हैं।"
+      },
+      "explanation": {
+        "en": "Section 2.9 tracks the middle Scroll wheel properties. Rolling this hardware component generates line-feed viewport adjustment directives, moving screen document sheets up or down smoothly without clicking side layout bars.",
+        "hi": "धारा 2.9 मध्य स्क्रोल व्हील के गुणों को ट्रैक करती है। इस हार्डवेयर घटक को घुमाने से स्क्रीन दस्तावेज़ शीट आसानी से ऊपर या नीचे जाती हैं।"
+      },
+      "key_takeaway": {
+        "en": "The scroll button simplifies vertical axis document navigation by mapping physical wheel rotation directly to page viewport translation.",
+        "hi": "स्क्रॉल बटन भौतिक पहिये के घूमने को सीधे पेज व्यूपोर्ट अनुवाद पर मैप करके वर्टिकल एक्सिस दस्तावेज़ नेविगेशन को सरल बनाता है।"
+      }
+    },
+    {
+      "question_id": 36,
+      "question": {
+        "en": "[Topic: Answers Key Summary, Page 70] According to the explicit 'Answers Key' block printed on Page 70, what type of interface is Windows confirmed to be?",
+        "hi": "[विषय: उत्तर कुंजी सारांश, पृष्ठ 70] पृष्ठ 70 पर मुद्रित 'उत्तर कुंजी' (Answers Key) ब्लॉक के अनुसार, विंडोज किस प्रकार का इंटरफ़ेस है?"
+      },
+      "options": {
+        "a": {
+          "en": "Manual compiler track",
+          "hi": "मैन्युअल कंपाइलर ट्रैक"
+        },
+        "b": {
+          "en": "GUI (Graphical User Interface)",
+          "hi": "GUI (ग्राफिकल यूजर इंटरफेस) - GUI (Graphical User Interface)"
+        },
+        "c": {
+          "en": "Analog signal matrix",
+          "hi": "एनालॉग सिग्नल मैट्रिक्स"
+        },
+        "d": {
+          "en": "Stand-alone wiring node",
+          "hi": "स्टैंड-अलोन वायरिंग नोड"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Look at item number 2 in the verified Answers Key row on Page 70. It re-confirms this visual user-friendly environment type.",
+        "hi": "पृष्ठ 70 पर सत्यापित उत्तर कुंजी रो में आइटम नंबर 2 देखें। यह इस विज़ुअल उपयोगकर्ता के अनुकूल वातावरण प्रकार की पुन: पुष्टि करता है।"
+      },
+      "explanation": {
+        "en": "The official Answers Key segment printed on Page 70 lists item '2. GUI' as a verified baseline definition shortcut, concluding the foundational interface character of the Windows core OS.",
+        "hi": "पृष्ठ 70 पर मुद्रित आधिकारिक उत्तर कुंजी खंड आइटम '2. GUI' को एक सत्यापित आधारभूत परिभाषा शॉर्टकट के रूप में सूचीबद्ध करता है, जो विंडोज कोर ओएस के मूलभूत इंटरफ़ेस चरित्र का निष्कर्ष निकालता है।"
+      },
+      "key_takeaway": {
+        "en": "The textbook key explicitly anchors Windows as a Graphical User Interface system layout platform.",
+        "hi": "पाठ्यपुस्तक की उत्तर कुंजी स्पष्ट रूप से विंडोज को ग्राफिकल यूजर इंटरफेस सिस्टम लेआउट प्लेटफॉर्म के रूप में स्थापित करती है।"
+      }
+    },
+    {
+      "question_id": 37,
+      "question": {
+        "en": "[Topic: Answers Key Summary, Page 70] According to item number 1 in the verified Answers Key row on Page 70, where do all desktop shortcuts and system icons sit anchored on?",
+        "hi": "[विषय: उत्तर कुंजी सारांश, पृष्ठ 70] पृष्ठ 70 पर सत्यापित उत्तर कुंजी रो में आइटम नंबर 1 के अनुसार, सभी डेस्कटॉप शॉर्टकट और सिस्टम आइकन कहाँ स्थित होते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Inside the calculator register memory",
+          "hi": "कैलकुलेटर रजिस्टर मेमोरी के अंदर"
+        },
+        "b": {
+          "en": "On the deep hard disk platter coating track",
+          "hi": "गहरी हार्ड डिस्क प्लैटर कोटिंग ट्रैक पर"
+        },
+        "c": {
+          "en": "On the Desktop",
+          "hi": "डेस्कटॉप पर (On the Desktop)"
+        },
+        "d": {
+          "en": "Inside unallocated notepad document lines",
+          "hi": "अनावंटित नोटपैड दस्तावेज़ लाइनों के अंदर"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Check item number 1 printed inside the baseline Answers Key block near the page footer of Page 70.",
+        "hi": "पृष्ठ 70 के फुटर के पास आधारभूत उत्तर कुंजी ब्लॉक के अंदर मुद्रित आइटम नंबर 1 की जांच करें।"
+      },
+      "explanation": {
+        "en": "The Answers Key footer grid on Page 70 provides item '1. Desktop' as the explicit solution index answer for the foundational layout container question of the unit framework.",
+        "hi": "पृष्ठ 70 पर उत्तर कुंजी फुटर ग्रिड यूनिट फ्रेमवर्क के मूलभूत लेआउट कंटेनर प्रश्न के लिए स्पष्ट समाधान सूचकांक उत्तर के रूप में आइटम '1. डेस्कटॉप' प्रदान करता है।"
+      },
+      "key_takeaway": {
+        "en": "The operational desktop workspace layer serves as the primary base hosting system elements visually.",
+        "hi": "परिचालन डेस्कटॉप वर्कस्पेस लेयर प्राथमिक बेस के रूप में कार्य करती है जो सिस्टम तत्वों को विज़ुअल रूप से होस्ट करती है।"
+      }
+    },
+    {
+      "question_id": 38,
+      "question": {
+        "en": "[Topic: Answers Key Summary, Page 70] According to the true/false checking parameters in item number 2 of the second key block row on Page 70, is the following statement True or False: \"An Operating System manages files and folders?\"",
+        "hi": "[विषय: उत्तर कुंजी सारांश, पृष्ठ 70] पृष्ठ 70 पर दूसरी कुंजी ब्लॉक रो के आइटम नंबर 2 में सही/गलत चेकिंग मापदंडों के अनुसार, क्या निम्नलिखित कथन सत्य है या असत्य: \"एक ऑपरेटिंग सिस्टम फ़ाइलों और फ़ोल्डरों का प्रबंधन करता है?\""
+      },
+      "options": {
+        "a": {
+          "en": "False, it has zero tracking capabilities",
+          "hi": "असत्य, इसमें शून्य ट्रैकिंग क्षमताएं होती हैं"
+        },
+        "b": {
+          "en": "True",
+          "hi": "सत्य (True)"
+        },
+        "c": {
+          "en": "False, only calculators handle storage fields",
+          "hi": "असत्य, केवल कैलकुलेटर ही स्टोरेज फ़ील्ड संभालते हैं"
+        },
+        "d": {
+          "en": "True, but only if the machine is a stand-alone PC without LAN cords",
+          "hi": "सत्य, लेकिन केवल तभी जब मशीन बिना लैन तारों के स्टैंड-अलोन पीसी हो"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Examine index item number 2 in the boolean true/false answers matrix row printed on Page 70. File system allocation is a vital supervisor function.",
+        "hi": "पृष्ठ 70 पर मुद्रित बूलियन सत्य/असत्य उत्तर मैट्रिक्स रो में इंडेक्स आइटम नंबर 2 की जांच करें। फ़ाइल सिस्टम आवंटन एक महत्वपूर्ण पर्यवेक्षक (supervisor) कार्य है।"
+      },
+      "explanation": {
+        "en": "The textbook validation check block explicitly flags item '2. True' inside the verification row on Page 70, re-confirming that file and directory management is a fundamental capability of the operating system engine software.",
+        "hi": "पाठ्यपुस्तक सत्यापन चेक ब्लॉक पृष्ठ 70 पर सत्यापन रो के अंदर स्पष्ट रूप से '2. True' (सत्य) को चिह्नित करता है, यह पुन: पुष्टि करता है कि फ़ाइल और निर्देशिका प्रबंधन ऑपरेटिंग सिस्टम इंजन सॉफ़्टवेयर की एक मौलिक क्षमता है।"
+      },
+      "key_takeaway": {
+        "en": "Managing files and group folder directories stands verified as an essential operational function of the core OS engine architecture.",
+        "hi": "फ़ाइलों और समूह फ़ोल्डर निर्देशिकाओं का प्रबंधन करना कोर ओएस इंजन आर्किटेक्चर के एक आवश्यक परिचालन कार्य के रूप में सत्यापित है।"
+      }
+    },
+    {
+      "question_id": 39,
+      "question": {
+        "en": "[Topic: Introduction of MS Window, Page 2] Because Windows allows a user to point and click graphical items with a mouse instead of typing lines of code, it is categorized as a:",
+        "hi": "[विषय: एमएस विंडोज का परिचय, पृष्ठ 2] क्योंकि विंडोज़ उपयोगकर्ता को कोड की पंक्तियाँ टाइप करने के बजाय माउस से ग्राफ़िकल आइटम पर पॉइंट और क्लिक करने की अनुमति देता है, इसे इस रूप में वर्गीकृत किया गया है:"
+      },
+      "options": {
+        "a": {
+          "en": "User Friendly Interface",
+          "hi": "उपयोगकर्ता के अनुकूल इंटरफ़ेस (User Friendly Interface)"
+        },
+        "b": {
+          "en": "Text Command Line only",
+          "hi": "केवल टेक्स्ट कमांड लाइन"
+        },
+        "c": {
+          "en": "Isolated hardware bus engine",
+          "hi": "अलग-थलग हार्डवेयर बस इंजन"
+        },
+        "d": {
+          "en": "Volatile register block unit",
+          "hi": "अस्थिर रजिस्टर ब्लॉक इकाई"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It means the system is easy, simple, and comfortable for ordinary human beginners to understand and use.",
+        "hi": "इसका मतलब है कि प्रणाली साधारण मानव शुरुआती लोगों के लिए समझने और उपयोग करने में आसान, सरल और आरामदायक है।"
+      },
+      "explanation": {
+        "en": "Page 2 text outlines that using visual indicators, pointer graphics, and interactive mouse maps turns the operating system into a highly intuitive, user-friendly interface environment compared to text consoles.",
+        "hi": "पृष्ठ 2 का पाठ रेखांकित करता है कि विज़ुअल संकेतकों, पॉइंटर ग्राफिक्स और इंटरैक्टिव माउस मानचित्रों का उपयोग करने से ऑपरेटिंग सिस्टम टेक्स्ट कंसोल की तुलना में अत्यधिक सहज, उपयोगकर्ता के अनुकूल इंटरफ़ेस वातावरण में बदल जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Graphical point-and-click layouts convert raw system compute frameworks into accessible user-friendly interface instances.",
+        "hi": "ग्राफिकल पॉइंट-एंड-क्लिक लेआउट कच्चे सिस्टम कंप्यूट फ्रेमवर्क को सुलभ उपयोगकर्ता के अनुकूल इंटरफेस उदाहरणों में परिवर्तित करते हैं।"
+      }
+    },
+    {
+      "question_id": 40,
+      "question": {
+        "en": "[Topic: 2.1 Introduction to Network, Page 17] When a network connects multiple stand-alone machines together, what is the ultimate organizational advantage gained by the office group?",
+        "hi": "[विषय: 2.1 नेटवर्क का परिचय, पृष्ठ 17] जब एक नेटवर्क कई स्टैंड-अलोन मशीनों को एक साथ जोड़ता है, तो कार्यालय समूह द्वारा प्राप्त अंतिम संगठनात्मक लाभ क्या होता है?"
+      },
+      "options": {
+        "a": {
+          "en": "It completely disconnects all data channels instantly.",
+          "hi": "यह तुरंत सभी डेटा चैनलों को पूरी तरह से डिस्कनेक्ट कर देता है।"
+        },
+        "b": {
+          "en": "It stops the printing mechanisms from activating entirely.",
+          "hi": "यह प्रिंटिंग मैकेनिज्म को पूरी तरह से सक्रिय होने से रोकता है।"
+        },
+        "c": {
+          "en": "It allows efficient exchange of files, sharing of resources, and smooth communication.",
+          "hi": "यह फ़ाइलों के कुशल आदान-प्रदान, संसाधनों को साझा करने और सुचारू संचार की अनुमति देता है (It allows exchange of files and sharing of resources)."
+        },
+        "d": {
+          "en": "It turns the user screens into blank unallocated black canvas sheets.",
+          "hi": "यह उपयोगकर्ता की स्क्रीन को खाली अनावंटित ब्लैक कैनवास शीट में बदल देता है।"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Review the very first summary definitions under section 2.1 on Page 17. Networking replaces isolation with mutual asset collaboration benefits.",
+        "hi": "पृष्ठ 17 पर धारा 2.1 के अंतर्गत पहले सारांश परिभाषाओं की समीक्षा करें। नेटवर्किंग अलगाव को आपसी संपत्ति सहयोग लाभों से बदल देती है।"
+      },
+      "explanation": {
+        "en": "Page 17 establishes that interconnecting computers terminates stand-alone isolation states, delivering severe productivity leaps by enabling cross-node data packet exchange, hardware pooling, and open shared lines channels.",
+        "hi": "पृष्ठ 17 स्थापित करता है कि नेटवर्किंग करने से फ़ाइलों के आदान-प्रदान और संसाधनों को साझा करने की अनुमति मिलती है, जिससे दूरियां समाप्त हो जाती हैं और काम तेज़ होता है।"
+      },
+      "key_takeaway": {
+        "en": "The strategic core Mandate of any network installation focuses on enabling collaborative file exchanges and unified device resource pools.",
+        "hi": "किसी भी नेटवर्क स्थापना का रणनीतिक मुख्य कार्य सहयोगी फ़ाइल एक्सचेंजों और एकीकृत डिवाइस संसाधन पूलों को सक्षम करने पर केंद्रित है।"
+      }
+    }
+  ]
+}

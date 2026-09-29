@@ -1,0 +1,783 @@
+{
+  "metadata": {
+    "chapter_number": 1,
+    "chapter_title": "Number Systems",
+    "chapter_title_hindi": "संख्या पद्धति",
+    "subject": "Mathematics",
+    "total_questions": 20,
+    "source_language": "en",
+    "target_language": "hi",
+    "created_at": "2026-07-06T13:20:00Z",
+    "version": "1.0",
+    "note": "Set 1: Scaffolded learning tool focusing on Pages 1-5 (Introduction, N, W, Z, Q, and finding rationals between two numbers). Designed for weak/Hindi medium students. Pure Unicode used (no LaTeX). Keys perfectly balanced (A:5, B:5, C:5, D:5)."
+  },
+  "validation_report": {
+    "is_valid": true,
+    "checked_by": "Expert Math Teacher AI",
+    "checked_at": "2026-07-06T13:20:00Z",
+    "corrections": [],
+    "notes": "Verified that 'why it is wrong' explanations and pure Unicode symbols (≠, p/q) are used effectively for clear understanding."
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "[Topic: Introduction to Numbers, Page 1] Imagine your bag only has Natural numbers (1, 2, 3...). If you turn back and put '0' (zero) into it, what kind of numbers does the bag have now?",
+        "hi": "[विषय: संख्याओं का परिचय, पृष्ठ 1] कल्पना कीजिए कि आपके थैले में केवल प्राकृत संख्याएँ (Natural numbers 1, 2, 3...) हैं। यदि आप पीछे मुड़कर उस थैले में '0' (शून्य) डाल देते हैं, तो अब यह थैला किन संख्याओं का बन गया है?"
+      },
+      "options": {
+        "a": {
+          "en": "Whole numbers",
+          "hi": "पूर्ण संख्याएँ (Whole numbers)"
+        },
+        "b": {
+          "en": "Integers",
+          "hi": "पूर्णांक (Integers)"
+        },
+        "c": {
+          "en": "Rational numbers",
+          "hi": "परिमेय संख्याएँ (Rational numbers)"
+        },
+        "d": {
+          "en": "Irrational numbers",
+          "hi": "अपरिमेय संख्याएँ (Irrational numbers)"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Zero completes the set, making it 'whole'.",
+        "hi": "शून्य इस संग्रह को पूरा करता है, जिससे यह 'पूर्ण' (whole) बन जाता है।"
+      },
+      "explanation": {
+        "en": "Page 1 explains that the collection of natural numbers together with zero forms the collection of Whole numbers. Integers would also require negative numbers, which are not in the bag yet.",
+        "hi": "पृष्ठ 1 स्पष्ट करता है कि प्राकृत संख्याओं के साथ शून्य (0) को मिलाने पर पूर्ण संख्याओं (Whole numbers) का संग्रह बनता है। पूर्णांक (Integers) के लिए ऋणात्मक संख्याओं की भी आवश्यकता होगी, जो अभी थैले में नहीं हैं।"
+      },
+      "key_takeaway": {
+        "en": "Natural Numbers (N) + Zero (0) = Whole Numbers (W).",
+        "hi": "प्राकृत संख्याएँ (N) + शून्य (0) = पूर्ण संख्याएँ (W)।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "[Topic: Example 1, Page 3] True or False: \"Every whole number is a natural number.\"",
+        "hi": "[विषय: उदाहरण 1, पृष्ठ 3] सत्य या असत्य बताइए: \"प्रत्येक पूर्ण संख्या (Whole number) एक प्राकृत संख्या (Natural number) होती है।\""
+      },
+      "options": {
+        "a": {
+          "en": "True, because they are exactly the same.",
+          "hi": "सत्य, क्योंकि वे बिल्कुल समान हैं।"
+        },
+        "b": {
+          "en": "False, because zero (0) is a whole number but not a natural number.",
+          "hi": "असत्य, क्योंकि शून्य (0) एक पूर्ण संख्या है लेकिन प्राकृत संख्या नहीं है।"
+        },
+        "c": {
+          "en": "True, because natural numbers are bigger.",
+          "hi": "सत्य, क्योंकि प्राकृत संख्याएँ बड़ी होती हैं।"
+        },
+        "d": {
+          "en": "False, because natural numbers have negative signs.",
+          "hi": "असत्य, क्योंकि प्राकृत संख्याओं में ऋणात्मक चिह्न होते हैं।"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Think about the number 0. Is it natural to start counting from 0?",
+        "hi": "संख्या 0 के बारे में सोचें। क्या 0 से गिनती शुरू करना स्वाभाविक (natural) है?"
+      },
+      "explanation": {
+        "en": "Example 1 on Page 3 states this is False, because zero is a whole number but not a natural number. Natural numbers start from 1.",
+        "hi": "पृष्ठ 3 पर उदाहरण 1 बताता है कि यह 'असत्य' है, क्योंकि शून्य (0) एक पूर्ण संख्या है परंतु प्राकृत संख्या नहीं है। प्राकृत संख्याएँ 1 से शुरू होती हैं।"
+      },
+      "key_takeaway": {
+        "en": "0 is the only whole number that is not a natural number.",
+        "hi": "0 ही एकमात्र ऐसी पूर्ण संख्या है जो प्राकृत संख्या नहीं है।"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "[Topic: Symbols of Numbers, Page 1] In mathematics, which capital letter is used to denote the collection of Whole numbers?",
+        "hi": "[विषय: संख्याओं के प्रतीक, पृष्ठ 1] गणित में, पूर्ण संख्याओं (Whole numbers) के संग्रह को दर्शाने के लिए किस अंग्रेजी अक्षर (Capital letter) का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Z",
+          "hi": "Z"
+        },
+        "b": {
+          "en": "N",
+          "hi": "N"
+        },
+        "c": {
+          "en": "W",
+          "hi": "W"
+        },
+        "d": {
+          "en": "Q",
+          "hi": "Q"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Look at the first letter of the word 'Whole'.",
+        "hi": "'Whole' शब्द के पहले अक्षर को देखें।"
+      },
+      "explanation": {
+        "en": "Page 1 states: 'We denote the collection of whole numbers by the symbol W.' (N is for Natural numbers, Z is for Integers).",
+        "hi": "पृष्ठ 1 बताता है: 'हम पूर्ण संख्याओं के संग्रह को प्रतीक W से प्रकट करते हैं।' (N प्राकृत संख्याओं के लिए और Z पूर्णांकों के लिए है)।"
+      },
+      "key_takeaway": {
+        "en": "The symbol 'W' represents the set {0, 1, 2, 3...}.",
+        "hi": "प्रतीक 'W' समुच्चय {0, 1, 2, 3...} को दर्शाता है।"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "[Topic: Symbols of Numbers, Page 1] Which capital letter denotes the collection of all Natural numbers (1, 2, 3...)?",
+        "hi": "[विषय: संख्याओं के प्रतीक, पृष्ठ 1] सभी प्राकृत संख्याओं (Natural numbers 1, 2, 3...) के संग्रह को कौन सा अंग्रेजी अक्षर दर्शाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Z",
+          "hi": "Z"
+        },
+        "b": {
+          "en": "W",
+          "hi": "W"
+        },
+        "c": {
+          "en": "Q",
+          "hi": "Q"
+        },
+        "d": {
+          "en": "N",
+          "hi": "N"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "It starts with the same letter as the word 'Natural'.",
+        "hi": "यह 'Natural' शब्द के पहले अक्षर से शुरू होता है।"
+      },
+      "explanation": {
+        "en": "Page 1 states: 'You might begin with picking up only natural numbers like 1, 2, 3, and so on... denote this collection by the symbol N.'",
+        "hi": "पृष्ठ 1 बताता है: 'आप केवल प्राकृत संख्याओं जैसे 1, 2, 3... को उठाना प्रारंभ कर सकते हैं... इस संग्रह को प्रतीक N से प्रकट करते हैं।'"
+      },
+      "key_takeaway": {
+        "en": "The set of counting numbers starting from 1 is denoted by 'N'.",
+        "hi": "1 से शुरू होने वाली गिनती की संख्याओं के समुच्चय को 'N' द्वारा दर्शाया जाता है।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "[Topic: Integers, Page 1-2] If you now put all the negative numbers (like -1, -2, -3) into your bag of whole numbers, what is this new, larger collection called?",
+        "hi": "[विषय: पूर्णांक, पृष्ठ 1-2] यदि अब आप अपने पूर्ण संख्याओं के थैले में सभी ऋणात्मक संख्याओं (Negative numbers जैसे -1, -2, -3) को डाल देते हैं, तो यह नया और बड़ा संग्रह क्या कहलाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Integers",
+          "hi": "पूर्णांक (Integers)"
+        },
+        "b": {
+          "en": "Natural numbers",
+          "hi": "प्राकृत संख्याएँ"
+        },
+        "c": {
+          "en": "Fractions",
+          "hi": "भिन्न (Fractions)"
+        },
+        "d": {
+          "en": "Decimals",
+          "hi": "दशमलव"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "They are whole numbers but can be negative or positive.",
+        "hi": "ये पूर्ण संख्याएँ ही होती हैं लेकिन ऋणात्मक या धनात्मक हो सकती हैं।"
+      },
+      "explanation": {
+        "en": "Page 2 explains: 'Stretching in front of you are many, many negative integers. Put all the negative integers into your bag... this new collection is of Integers.'",
+        "hi": "पृष्ठ 2 बताता है: 'आपके सामने अनेक ऋणात्मक पूर्णांक हैं। इन सभी ऋणात्मक पूर्णांकों को अपने थैले में डाल दीजिए... यह नया संग्रह पूर्णांकों (Integers) का है।'"
+      },
+      "key_takeaway": {
+        "en": "Whole numbers + Negative counting numbers = Integers.",
+        "hi": "पूर्ण संख्याएँ + ऋणात्मक गिनती की संख्याएँ = पूर्णांक।"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "[Topic: Integers, Page 2] The collection of integers is denoted by the symbol 'Z'. This letter comes from the German word 'Zahlen', which means:",
+        "hi": "[विषय: पूर्णांक, पृष्ठ 2] पूर्णांकों के संग्रह को प्रतीक 'Z' द्वारा दर्शाया जाता है। यह अक्षर जर्मन शब्द 'Zahlen' (जाहलेन) से आया है, जिसका अर्थ क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "To divide",
+          "hi": "भाग देना"
+        },
+        "b": {
+          "en": "To count",
+          "hi": "गिनना (To count)"
+        },
+        "c": {
+          "en": "Zero",
+          "hi": "शून्य"
+        },
+        "d": {
+          "en": "To subtract",
+          "hi": "घटाना"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Integers are essentially 'counting' numbers, including the negative ones.",
+        "hi": "पूर्णांक मूल रूप से 'गिनती' वाली संख्याएँ हैं, जिनमें ऋणात्मक संख्याएँ भी शामिल हैं।"
+      },
+      "explanation": {
+        "en": "A special note on Page 2 states: 'Z comes from the German word zahlen, which means to count.'",
+        "hi": "पृष्ठ 2 पर एक विशेष नोट बताता है: 'Z जर्मन शब्द 'zahlen' से आया है, जिसका अर्थ है गिनना।'"
+      },
+      "key_takeaway": {
+        "en": "The letter 'Z' for Integers has a German origin meaning 'to count'.",
+        "hi": "पूर्णांकों के लिए अक्षर 'Z' की उत्पत्ति जर्मन भाषा से हुई है जिसका अर्थ 'गिनना' है।"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "[Topic: Rational Numbers, Page 2] A number 'r' is called a rational number if it can be written in the form p/q, where p and q are integers. What is the most important condition for 'q'?",
+        "hi": "[विषय: परिमेय संख्याएँ, पृष्ठ 2] एक संख्या 'r' परिमेय संख्या (Rational number) कहलाती है, यदि इसे p/q के रूप में लिखा जा सके, जहाँ p और q पूर्णांक हैं। यहाँ 'q' के लिए सबसे महत्वपूर्ण शर्त क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "q must be 0 (q = 0)",
+          "hi": "q को 0 होना चाहिए (q = 0)"
+        },
+        "b": {
+          "en": "q must be a negative number",
+          "hi": "q को ऋणात्मक संख्या होना चाहिए"
+        },
+        "c": {
+          "en": "q must NOT be 0 (q ≠ 0)",
+          "hi": "q शून्य नहीं होना चाहिए (q ≠ 0)"
+        },
+        "d": {
+          "en": "q must be 1 (q = 1)",
+          "hi": "q को 1 होना चाहिए (q = 1)"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "In mathematics, dividing any number by zero is impossible.",
+        "hi": "गणित में, किसी भी संख्या को शून्य से भाग देना असंभव है।"
+      },
+      "explanation": {
+        "en": "Page 2 defines it clearly: 'A number r is called a rational number, if it can be written in the form p/q, where p and q are integers and q ≠ 0.' Option A is wrong because division by zero is undefined.",
+        "hi": "पृष्ठ 2 स्पष्ट रूप से परिभाषित करता है: 'एक संख्या r को परिमेय संख्या कहा जाता है, यदि इसे p/q के रूप में लिखा जा सकता है, जहाँ p और q पूर्णांक हैं और q ≠ 0 है।' विकल्प A गलत है क्योंकि शून्य से विभाजन अपरिभाषित है।"
+      },
+      "key_takeaway": {
+        "en": "The denominator (q) of a rational number can never be zero.",
+        "hi": "परिमेय संख्या का हर (q) कभी भी शून्य नहीं हो सकता।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "[Topic: Rational Numbers, Page 2] The collection of Rational numbers is denoted by the letter 'Q'. What English word does 'Q' stand for here?",
+        "hi": "[विषय: परिमेय संख्याएँ, पृष्ठ 2] परिमेय संख्याओं के संग्रह को अक्षर 'Q' द्वारा दर्शाया जाता है। यहाँ 'Q' किस अंग्रेजी शब्द से लिया गया है?"
+      },
+      "options": {
+        "a": {
+          "en": "Quality",
+          "hi": "Quality (गुणवत्ता)"
+        },
+        "b": {
+          "en": "Quantity",
+          "hi": "Quantity (मात्रा)"
+        },
+        "c": {
+          "en": "Question",
+          "hi": "Question (प्रश्न)"
+        },
+        "d": {
+          "en": "Quotient",
+          "hi": "Quotient (भागफल)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "A rational number is basically a division (like p divided by q). The answer to a division is called this word.",
+        "hi": "परिमेय संख्या मूल रूप से एक भाग (जैसे p को q से भाग देना) है। भाग देने पर जो उत्तर आता है, उसे यह शब्द कहा जाता है।"
+      },
+      "explanation": {
+        "en": "A note on Page 2 says: 'The word 'rational' comes from the word 'ratio', and Q comes from the word 'quotient'.' Quotient means the result of a division.",
+        "hi": "पृष्ठ 2 पर एक नोट कहता है: 'rational शब्द की उत्पत्ति ratio (अनुपात) से हुई है, और Q अंग्रेजी शब्द 'quotient' (भागफल) से लिया गया है।'"
+      },
+      "key_takeaway": {
+        "en": "Since rational numbers involve division (p/q), they are represented by Q (Quotient).",
+        "hi": "चूंकि परिमेय संख्याओं में विभाजन (p/q) शामिल होता है, इसलिए उन्हें Q (Quotient/भागफल) द्वारा दर्शाया जाता है।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "[Topic: Zero as a Rational Number, Page 3] Is zero (0) considered a rational number?",
+        "hi": "[विषय: एक परिमेय संख्या के रूप में शून्य, पृष्ठ 3] क्या शून्य (0) को एक परिमेय संख्या माना जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Yes, because it can be written as 0/1, 0/2, etc., where q ≠ 0.",
+          "hi": "हाँ, क्योंकि इसे 0/1, 0/2 आदि के रूप में लिखा जा सकता है, जहाँ q ≠ 0 है।"
+        },
+        "b": {
+          "en": "No, because zero cannot be written as a fraction.",
+          "hi": "नहीं, क्योंकि शून्य को भिन्न (fraction) के रूप में नहीं लिखा जा सकता।"
+        },
+        "c": {
+          "en": "Yes, but only if q = 0.",
+          "hi": "हाँ, लेकिन केवल तभी जब q = 0 हो।"
+        },
+        "d": {
+          "en": "No, because zero is neither positive nor negative.",
+          "hi": "नहीं, क्योंकि शून्य न तो धनात्मक है और न ही ऋणात्मक।"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "If you have 0 apples and divide them among 1 friend, they still get 0. This is written as 0/1.",
+        "hi": "यदि आपके पास 0 सेब हैं और आप उन्हें 1 दोस्त में बाँटते हैं, तो उसे 0 ही मिलेगा। इसे 0/1 लिखा जाता है।"
+      },
+      "explanation": {
+        "en": "Page 5 (Exercise 1.1 Q1) and Page 3 text clarify that 0 is indeed a rational number because it can be represented as 0/1, 0/2, 0/-3, etc., satisfying the condition p/q where q ≠ 0.",
+        "hi": "पृष्ठ 5 (प्रश्नावली 1.1 प्रश्न 1) और पृष्ठ 3 का पाठ स्पष्ट करता है कि 0 वास्तव में एक परिमेय संख्या है क्योंकि इसे 0/1, 0/2, 0/-3 आदि के रूप में दर्शाया जा सकता है, जो p/q की शर्त को पूरा करता है जहाँ q ≠ 0 है।"
+      },
+      "key_takeaway": {
+        "en": "Zero is a rational number. Only division BY zero is undefined, not division OF zero.",
+        "hi": "शून्य एक परिमेय संख्या है। केवल शून्य 'से' (BY 0) भाग देना अपरिभाषित है, शून्य 'को' (0/q) भाग देना नहीं।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "[Topic: Example 1, Page 3] True or False: \"Every integer is a rational number.\"",
+        "hi": "[विषय: उदाहरण 1, पृष्ठ 3] सत्य या असत्य बताइए: \"प्रत्येक पूर्णांक (Integer) एक परिमेय संख्या (Rational number) होता है।\""
+      },
+      "options": {
+        "a": {
+          "en": "False, because integers cannot be fractions.",
+          "hi": "असत्य, क्योंकि पूर्णांक भिन्न (fractions) नहीं हो सकते।"
+        },
+        "b": {
+          "en": "True, because every integer 'm' can be written as m/1.",
+          "hi": "सत्य, क्योंकि प्रत्येक पूर्णांक 'm' को m/1 के रूप में लिखा जा सकता है।"
+        },
+        "c": {
+          "en": "False, because negative numbers are not rational.",
+          "hi": "असत्य, क्योंकि ऋणात्मक संख्याएँ परिमेय नहीं होती हैं।"
+        },
+        "d": {
+          "en": "True, but only for positive integers.",
+          "hi": "सत्य, लेकिन केवल धनात्मक पूर्णांकों के लिए।"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Can you write the number 5 as a fraction? Yes, 5/1.",
+        "hi": "क्या आप संख्या 5 को भिन्न के रूप में लिख सकते हैं? हाँ, 5/1।"
+      },
+      "explanation": {
+        "en": "Example 1 (ii) on Page 3 states this is True. Any integer 'm' can be expressed in the form m/1, making it a rational number.",
+        "hi": "पृष्ठ 3 पर उदाहरण 1 (ii) बताता है कि यह 'सत्य' है। किसी भी पूर्णांक 'm' को m/1 के रूप में व्यक्त किया जा सकता है, जिससे यह एक परिमेय संख्या बन जाती है।"
+      },
+      "key_takeaway": {
+        "en": "All integers naturally hide a denominator of '1', making them all rational numbers.",
+        "hi": "सभी पूर्णांक स्वाभाविक रूप से अपने नीचे '1' छिपाए रखते हैं, जिससे वे सभी परिमेय संख्याएँ बन जाते हैं।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "[Topic: Example 1, Page 3] True or False: \"Every rational number is an integer.\"",
+        "hi": "[विषय: उदाहरण 1, पृष्ठ 3] सत्य या असत्य बताइए: \"प्रत्येक परिमेय संख्या (Rational number) एक पूर्णांक (Integer) होती है।\""
+      },
+      "options": {
+        "a": {
+          "en": "True, they mean the exact same thing.",
+          "hi": "सत्य, दोनों का मतलब बिल्कुल एक ही है।"
+        },
+        "b": {
+          "en": "True, as long as it has a positive sign.",
+          "hi": "सत्य, जब तक उसमें धनात्मक चिह्न हो।"
+        },
+        "c": {
+          "en": "False, because numbers like 3/5 are rational but not integers.",
+          "hi": "असत्य, क्योंकि 3/5 जैसी संख्याएँ परिमेय तो हैं लेकिन पूर्णांक नहीं हैं।"
+        },
+        "d": {
+          "en": "False, because integers are bigger than rational numbers.",
+          "hi": "असत्य, क्योंकि पूर्णांक परिमेय संख्याओं से बड़े होते हैं।"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Integers are \"whole\" steps on the number line (1, 2, -3). Fractions fall between them.",
+        "hi": "पूर्णांक संख्या रेखा पर \"पूरे\" कदम (1, 2, -3) होते हैं। भिन्न (Fractions) उनके बीच में आते हैं।"
+      },
+      "explanation": {
+        "en": "Example 1 (iii) on Page 3 states this is False. For example, 3/5 is a rational number (p/q form) but it is not an integer (a whole step number).",
+        "hi": "पृष्ठ 3 पर उदाहरण 1 (iii) बताता है कि यह 'असत्य' है। उदाहरण के लिए, 3/5 एक परिमेय संख्या है लेकिन यह एक पूर्णांक नहीं है।"
+      },
+      "key_takeaway": {
+        "en": "While all integers are rational, not all rational numbers are integers (e.g., proper fractions).",
+        "hi": "जबकि सभी पूर्णांक परिमेय होते हैं, सभी परिमेय संख्याएँ पूर्णांक नहीं होती हैं (जैसे, वास्तविक भिन्न)।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "[Topic: Equivalent Rational Numbers, Page 3] The fractions 1/2, 2/4, 10/20, and 25/50 all represent the same value. What are such rational numbers called?",
+        "hi": "[विषय: तुल्य परिमेय संख्याएँ, पृष्ठ 3] भिन्न 1/2, 2/4, 10/20, और 25/50 सभी एक ही मान को दर्शाते हैं। ऐसी परिमेय संख्याओं को क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Different rational numbers",
+          "hi": "भिन्न-भिन्न परिमेय संख्याएँ"
+        },
+        "b": {
+          "en": "Coprime numbers",
+          "hi": "सह-अभाज्य संख्याएँ"
+        },
+        "c": {
+          "en": "Irrational numbers",
+          "hi": "अपरिमेय संख्याएँ"
+        },
+        "d": {
+          "en": "Equivalent rational numbers (or fractions)",
+          "hi": "तुल्य परिमेय संख्याएँ (या तुल्य भिन्न)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "They are 'equal' in value, even if they look different.",
+        "hi": "वे मान में 'समान' हैं, भले ही वे अलग दिखते हों।"
+      },
+      "explanation": {
+        "en": "Page 3 states: 'These are known as equivalent rational numbers (or fractions).' You can multiply the numerator and denominator of 1/2 by the same number to get the others.",
+        "hi": "पृष्ठ 3 बताता है: 'इन्हें तुल्य परिमेय संख्याएँ (Equivalent rational numbers) या तुल्य भिन्न कहा जाता है।' आप 1/2 के अंश और हर को समान संख्या से गुणा करके अन्य प्राप्त कर सकते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Rational numbers do not have a unique p/q representation; they can have infinitely many equivalent forms.",
+        "hi": "परिमेय संख्याओं का कोई एक अद्वितीय (unique) p/q रूप नहीं होता; उनके अनंत तुल्य रूप हो सकते हैं।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "[Topic: Simplest Form of Rational Numbers, Page 3] When we say that p/q is in its simplest (standard) form, what must be true about the integers p and q?",
+        "hi": "[विषय: परिमेय संख्याओं का सरलतम रूप, पृष्ठ 3] जब हम कहते हैं कि p/q अपने सरलतम (मानक) रूप में है, तो पूर्णांक p और q के बारे में क्या सत्य होना चाहिए?"
+      },
+      "options": {
+        "a": {
+          "en": "They must have no common factors other than 1 (they are co-prime).",
+          "hi": "उनमें 1 के अतिरिक्त कोई अन्य उभयनिष्ठ गुणनखंड (Common factor) नहीं होना चाहिए (वे सह-अभाज्य हैं)।"
+        },
+        "b": {
+          "en": "They must both be even numbers.",
+          "hi": "वे दोनों सम संख्याएँ होनी चाहिए।"
+        },
+        "c": {
+          "en": "The numerator 'p' must be 1.",
+          "hi": "अंश 'p' को 1 होना चाहिए।"
+        },
+        "d": {
+          "en": "They must both be negative.",
+          "hi": "वे दोनों ऋणात्मक होने चाहिए।"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It means the fraction cannot be 'cut' or simplified any further. (Example: 2/3)",
+        "hi": "इसका अर्थ है कि भिन्न को अब और 'काटा' या सरल नहीं किया जा सकता। (उदाहरण: 2/3)"
+      },
+      "explanation": {
+        "en": "Page 3 notes: 'We assume that p and q have no common factors other than 1 (that is, p and q are co-prime).' This is required to represent the rational number uniquely on the number line.",
+        "hi": "पृष्ठ 3 नोट करता है: 'हम यह मान लेते हैं कि p और q में 1 के अतिरिक्त कोई अन्य उभयनिष्ठ गुणनखंड नहीं है (अर्थात p और q सह-अभाज्य / co-prime हैं)।' संख्या रेखा पर परिमेय संख्या को अद्वितीय रूप से दर्शाने के लिए यह आवश्यक है।"
+      },
+      "key_takeaway": {
+        "en": "A rational number is in standard form when its numerator and denominator are co-prime.",
+        "hi": "एक परिमेय संख्या मानक रूप में तब होती है जब उसका अंश और हर सह-अभाज्य (co-prime) होते हैं।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "[Topic: Numbers between Rational Numbers, Page 4] What is a simple mathematical formula to find exactly one rational number sitting exactly in the middle of two rational numbers 'r' and 's'?",
+        "hi": "[विषय: परिमेय संख्याओं के बीच संख्याएँ, पृष्ठ 4] दो परिमेय संख्याओं 'r' और 's' के ठीक बीच (मध्य) में एक परिमेय संख्या ज्ञात करने का सरल गणितीय सूत्र क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "r × s",
+          "hi": "r × s"
+        },
+        "b": {
+          "en": "(r + s) / 2",
+          "hi": "(r + s) / 2"
+        },
+        "c": {
+          "en": "r - s",
+          "hi": "r - s"
+        },
+        "d": {
+          "en": "(r × s) / 2",
+          "hi": "(r × s) / 2"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "To find the middle, you add them both together and divide by 2 (finding the average).",
+        "hi": "बीच का हिस्सा खोजने के लिए, आप उन दोनों को एक साथ जोड़ते हैं और 2 से भाग देते हैं (औसत खोजना)।"
+      },
+      "explanation": {
+        "en": "Page 4 explains Method 1: 'To find a rational number between r and s, you can add r and s and divide the sum by 2, that is (r+s)/2.'",
+        "hi": "पृष्ठ 4 विधि 1 की व्याख्या करता है: 'r और s के बीच एक परिमेय संख्या ज्ञात करने के लिए, आप r और s को जोड़ सकते हैं और योग को 2 से भाग दे सकते हैं, अर्थात (r+s)/2।'"
+      },
+      "key_takeaway": {
+        "en": "The mid-point (average) of two numbers is always a rational number lying exactly between them.",
+        "hi": "दो संख्याओं का मध्य बिंदु (औसत) हमेशा उनके ठीक बीच में स्थित एक परिमेय संख्या होता है।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "[Topic: Example 2, Page 4] How many rational numbers can exist between the numbers 1 and 2?",
+        "hi": "[विषय: उदाहरण 2, पृष्ठ 4] संख्या 1 और 2 के बीच कितनी परिमेय संख्याएँ हो सकती हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Only one (1.5)",
+          "hi": "केवल एक (1.5)"
+        },
+        "b": {
+          "en": "Exactly five",
+          "hi": "ठीक पाँच"
+        },
+        "c": {
+          "en": "Infinitely many",
+          "hi": "अपरिमित रूप से अनेक (अनंत) / Infinitely many"
+        },
+        "d": {
+          "en": "None, because there are no integers between 1 and 2",
+          "hi": "कोई नहीं, क्योंकि 1 और 2 के बीच कोई पूर्णांक नहीं है"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "You can keep finding the mid-point between any two fractions forever.",
+        "hi": "आप किन्हीं भी दो भिन्नों के बीच मध्य-बिंदु हमेशा के लिए खोजते रह सकते हैं।"
+      },
+      "explanation": {
+        "en": "A key remark on Page 4 states: 'There are infinitely many rational numbers between any two given rational numbers.' Option D is wrong because we are looking for rational numbers (fractions), not just integers.",
+        "hi": "पृष्ठ 4 पर एक महत्वपूर्ण टिप्पणी बताती है: 'किन्हीं दो दी हुई परिमेय संख्याओं के बीच अपरिमित रूप से अनेक (अनंत) परिमेय संख्याएँ होती हैं।' विकल्प D गलत है क्योंकि हम परिमेय संख्याओं (भिन्नों) की तलाश कर रहे हैं, केवल पूर्णांकों की नहीं।"
+      },
+      "key_takeaway": {
+        "en": "Between any two rational numbers, there is an endless supply of other rational numbers.",
+        "hi": "किन्हीं भी दो परिमेय संख्याओं के बीच, अन्य परिमेय संख्याओं की एक अंतहीन (अनंत) आपूर्ति होती है।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "[Topic: Example 2 Method 2, Page 4] If you want to find exactly 5 rational numbers between 1 and 2, it is easiest to multiply the numerator and denominator by which number?",
+        "hi": "[विषय: उदाहरण 2 विधि 2, पृष्ठ 4] यदि आप 1 और 2 के बीच ठीक 5 परिमेय संख्याएँ खोजना चाहते हैं, तो अंश और हर को किस संख्या से गुणा करना सबसे आसान है?"
+      },
+      "options": {
+        "a": {
+          "en": "2",
+          "hi": "2"
+        },
+        "b": {
+          "en": "5",
+          "hi": "5"
+        },
+        "c": {
+          "en": "10",
+          "hi": "10"
+        },
+        "d": {
+          "en": "6 (which is 5 + 1)",
+          "hi": "6 (जो कि 5 + 1 है)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The book suggests adding 1 to the number of fractions you want to find (n + 1).",
+        "hi": "पुस्तक आपको जितनी भिन्नें खोजनी हैं, उस संख्या (n) में 1 जोड़ने का सुझाव देती है (n + 1)।"
+      },
+      "explanation": {
+        "en": "Page 4 (Method 2) states: 'Since we want to find 5 numbers, we write 1 and 2 as rational numbers with denominator 5 + 1 = 6.' So, we multiply by 6/6 to get 6/6 and 12/6.",
+        "hi": "पृष्ठ 4 (विधि 2) बताता है: 'चूँकि हमें 5 संख्याएँ ज्ञात करनी हैं, इसलिए हम 1 और 2 को हर 5 + 1 = 6 वाली परिमेय संख्याओं के रूप में लिखते हैं।' अतः, 6/6 और 12/6 प्राप्त करने के लिए हम 6/6 से गुणा करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "To easily find 'n' rational numbers, multiply by (n+1) to create enough gaps between numerators.",
+        "hi": "आसानी से 'n' परिमेय संख्याएँ खोजने के लिए, अंशों के बीच पर्याप्त अंतर बनाने के लिए (n+1) से गुणा करें।"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "[Topic: Exercise 1.1 Q3, Page 5] To find five rational numbers between 3/5 and 4/5, you should multiply both numbers by:",
+        "hi": "[विषय: प्रश्नावली 1.1 प्रश्न 3, पृष्ठ 5] 3/5 और 4/5 के बीच पाँच परिमेय संख्याएँ ज्ञात करने के लिए, आपको दोनों संख्याओं को किससे गुणा करना चाहिए?"
+      },
+      "options": {
+        "a": {
+          "en": "6/6",
+          "hi": "6/6"
+        },
+        "b": {
+          "en": "5/5",
+          "hi": "5/5"
+        },
+        "c": {
+          "en": "2/2",
+          "hi": "2/2"
+        },
+        "d": {
+          "en": "0",
+          "hi": "0"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Use the (n+1) rule. If you need 5 numbers, use 5 + 1.",
+        "hi": "(n+1) नियम का उपयोग करें। यदि आपको 5 संख्याएँ चाहिए, तो 5 + 1 का उपयोग करें।"
+      },
+      "explanation": {
+        "en": "Following Method 2 from Page 4, to find 5 numbers, we multiply by (5+1)=6. 3/5 becomes 18/30 and 4/5 becomes 24/30. The 5 numbers are 19/30, 20/30, 21/30, 22/30, 23/30.",
+        "hi": "पृष्ठ 4 से विधि 2 का पालन करते हुए, 5 संख्याएँ ज्ञात करने के लिए, हम (5+1)=6 से गुणा करते हैं। 3/5 बन जाता है 18/30 और 4/5 बन जाता है 24/30। बीच की 5 संख्याएँ 19/30, 20/30, 21/30, 22/30, 23/30 हैं।"
+      },
+      "key_takeaway": {
+        "en": "Multiplying fractions by the same number on top and bottom keeps their value exactly the same (equivalent).",
+        "hi": "भिन्नों के अंश और हर में समान संख्या से गुणा करने पर उनका मान बिल्कुल समान (तुल्य) रहता है।"
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "[Topic: Exercise 1.1 Q4, Page 5] True or False: \"Every natural number is a whole number.\"",
+        "hi": "[विषय: प्रश्नावली 1.1 प्रश्न 4, पृष्ठ 5] सत्य या असत्य बताइए: \"प्रत्येक प्राकृत संख्या (Natural number) एक पूर्ण संख्या (Whole number) होती है।\""
+      },
+      "options": {
+        "a": {
+          "en": "False, because whole numbers are smaller.",
+          "hi": "असत्य, क्योंकि पूर्ण संख्याएँ छोटी होती हैं।"
+        },
+        "b": {
+          "en": "True, because the collection of whole numbers contains all natural numbers.",
+          "hi": "सत्य, क्योंकि पूर्ण संख्याओं के संग्रह में सभी प्राकृत संख्याएँ होती हैं।"
+        },
+        "c": {
+          "en": "False, because natural numbers have zero.",
+          "hi": "असत्य, क्योंकि प्राकृत संख्याओं में शून्य होता है।"
+        },
+        "d": {
+          "en": "True, but only for even numbers.",
+          "hi": "सत्य, लेकिन केवल सम संख्याओं के लिए।"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Does the bag of Whole numbers (0, 1, 2, 3...) contain all the numbers of the Natural bag (1, 2, 3...)?",
+        "hi": "क्या पूर्ण संख्याओं के थैले (0, 1, 2, 3...) में प्राकृत थैले (1, 2, 3...) की सभी संख्याएँ मौजूद हैं?"
+      },
+      "explanation": {
+        "en": "Exercise 1.1 Q4 confirms this is True. The set of whole numbers is {0, 1, 2, 3...}. It clearly contains every natural number {1, 2, 3...}.",
+        "hi": "प्रश्नावली 1.1 प्रश्न 4 पुष्टि करता है कि यह सत्य है। पूर्ण संख्याओं का समुच्चय {0, 1, 2, 3...} है। इसमें स्पष्ट रूप से प्रत्येक प्राकृत संख्या {1, 2, 3...} शामिल है।"
+      },
+      "key_takeaway": {
+        "en": "All natural numbers are whole numbers, but all whole numbers are NOT natural numbers (due to 0).",
+        "hi": "सभी प्राकृत संख्याएँ पूर्ण संख्याएँ होती हैं, लेकिन सभी पूर्ण संख्याएँ प्राकृत संख्याएँ नहीं होती हैं (0 के कारण)।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "[Topic: Rational Numbers Definition, Page 2] Can the number -2/3 be called a rational number?",
+        "hi": "[विषय: परिमेय संख्या की परिभाषा, पृष्ठ 2] क्या संख्या -2/3 को परिमेय संख्या कहा जा सकता है?"
+      },
+      "options": {
+        "a": {
+          "en": "No, because a rational number cannot be negative.",
+          "hi": "नहीं, क्योंकि परिमेय संख्या ऋणात्मक नहीं हो सकती।"
+        },
+        "b": {
+          "en": "No, because 3 is an odd number.",
+          "hi": "नहीं, क्योंकि 3 एक विषम संख्या है।"
+        },
+        "c": {
+          "en": "Yes, because both -2 and 3 are integers and the denominator is not zero.",
+          "hi": "हाँ, क्योंकि -2 और 3 दोनों पूर्णांक हैं और हर शून्य नहीं है।"
+        },
+        "d": {
+          "en": "Yes, but only if we remove the minus sign.",
+          "hi": "हाँ, लेकिन केवल तभी जब हम माइनस चिह्न हटा दें।"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Check the rule: p and q must be 'integers'. Are negative numbers integers?",
+        "hi": "नियम जाँचे: p और q 'पूर्णांक' होने चाहिए। क्या ऋणात्मक संख्याएँ पूर्णांक होती हैं?"
+      },
+      "explanation": {
+        "en": "Page 2 defines rational numbers as p/q where p and q are integers. Since -2 is a negative integer and 3 is a positive integer (and 3 ≠ 0), -2/3 is a perfectly valid rational number.",
+        "hi": "पृष्ठ 2 परिमेय संख्याओं को p/q के रूप में परिभाषित करता है जहाँ p और q पूर्णांक हैं। चूँकि -2 एक ऋणात्मक पूर्णांक है और 3 एक धनात्मक पूर्णांक है (और 3 ≠ 0), इसलिए -2/3 पूरी तरह से एक वैध परिमेय संख्या है।"
+      },
+      "key_takeaway": {
+        "en": "Rational numbers include negative fractions because integers (the building blocks of p and q) include negative numbers.",
+        "hi": "परिमेय संख्याओं में ऋणात्मक भिन्न शामिल होते हैं क्योंकि पूर्णांक (p और q के निर्माण खंड) में ऋणात्मक संख्याएँ शामिल होती हैं।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "[Topic: Visualizing Number Systems, Page 2] If you have a bag labelled 'Q' (Rational numbers), what other sets of numbers are automatically inside this bag?",
+        "hi": "[विषय: संख्या पद्धति की कल्पना, पृष्ठ 2] यदि आपके पास 'Q' (परिमेय संख्याएँ) लेबल वाला एक थैला है, तो इस थैले के अंदर स्वचालित रूप से संख्याओं के कौन से अन्य समुच्चय (sets) मौजूद हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Only Natural numbers (N)",
+          "hi": "केवल प्राकृत संख्याएँ (N)"
+        },
+        "b": {
+          "en": "Only Integers (Z)",
+          "hi": "केवल पूर्णांक (Z)"
+        },
+        "c": {
+          "en": "None, it is a completely separate bag",
+          "hi": "कोई नहीं, यह पूरी तरह से एक अलग थैला है"
+        },
+        "d": {
+          "en": "Natural numbers (N), Whole numbers (W), and Integers (Z)",
+          "hi": "प्राकृत संख्याएँ (N), पूर्ण संख्याएँ (W), और पूर्णांक (Z)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The Rational number bag is the biggest bag we have studied so far. It swallows all the smaller bags.",
+        "hi": "परिमेय संख्या वाला थैला अब तक का सबसे बड़ा थैला है जिसका हमने अध्ययन किया है। यह सभी छोटे थैलों को निगल लेता है।"
+      },
+      "explanation": {
+        "en": "As explained progressively on Pages 1 and 2, every natural number, whole number, and integer can be written as p/1. Therefore, the collection of rational numbers (Q) includes all of them.",
+        "hi": "जैसा कि पृष्ठ 1 और 2 पर क्रमिक रूप से समझाया गया है, प्रत्येक प्राकृत संख्या, पूर्ण संख्या और पूर्णांक को p/1 के रूप में लिखा जा सकता है। इसलिए, परिमेय संख्याओं (Q) के संग्रह में वे सभी शामिल होते हैं।"
+      },
+      "key_takeaway": {
+        "en": "The Rational Numbers set (Q) acts like a master container holding N, W, and Z.",
+        "hi": "परिमेय संख्या समुच्चय (Q) एक मास्टर कंटेनर की तरह काम करता है जिसमें N, W और Z समाहित होते हैं।"
+      }
+    }
+  ]
+}

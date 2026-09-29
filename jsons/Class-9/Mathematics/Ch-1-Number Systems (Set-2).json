@@ -1,0 +1,783 @@
+{
+  "metadata": {
+    "chapter_number": 1,
+    "chapter_title": "Number Systems",
+    "chapter_title_hindi": "संख्या पद्धति",
+    "subject": "Mathematics",
+    "total_questions": 20,
+    "source_language": "en",
+    "target_language": "hi",
+    "created_at": "2026-07-06T13:25:00Z",
+    "version": "1.0",
+    "note": "Set 2: Scaffolded learning tool focusing on Pages 5-14 (Irrational numbers, Real numbers, and Decimal Expansions). Designed for weak/Hindi medium students. Pure Unicode used (no LaTeX). Keys perfectly balanced (A:5, B:5, C:5, D:5)."
+  },
+  "validation_report": {
+    "is_valid": true,
+    "checked_by": "Expert Math Teacher AI",
+    "checked_at": "2026-07-06T13:25:00Z",
+    "corrections": [],
+    "notes": "Verified that 'why it is wrong' explanations and pure Unicode symbols (√, ≠, p/q) are used effectively. Exact PDF citations included."
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "[Topic: Irrational Numbers, Page 5] A number 's' is called an irrational number if it CANNOT be written in the form p/q (where p, q are integers and q ≠ 0). Which of the following is an example of an irrational number?",
+        "hi": "[विषय: अपरिमेय संख्याएँ, पृष्ठ 5] एक संख्या 's' अपरिमेय संख्या (Irrational number) कहलाती है यदि उसे p/q के रूप में नहीं लिखा जा सके (जहाँ p और q पूर्णांक हैं और q ≠ 0 है)। निम्नलिखित में से कौन सा अपरिमेय संख्या का एक उदाहरण है?"
+      },
+      "options": {
+        "a": {
+          "en": "√2",
+          "hi": "√2"
+        },
+        "b": {
+          "en": "5/1",
+          "hi": "5/1"
+        },
+        "c": {
+          "en": "0",
+          "hi": "0"
+        },
+        "d": {
+          "en": "-3",
+          "hi": "-3"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Look for a number that cannot be solved into a simple fraction or integer.",
+        "hi": "ऐसी संख्या खोजें जिसे किसी सरल भिन्न या पूर्णांक में हल नहीं किया जा सकता।"
+      },
+      "explanation": {
+        "en": "Page 5 defines irrationals as numbers that cannot be written as p/q[cite: 5]. √2 is irrational because its exact value never stops and never repeats. Options B, C (0/1), and D (-3/1) can all be written as p/q, so they are rational.",
+        "hi": "पृष्ठ 5 अपरिमेय संख्याओं को ऐसे परिभाषित करता है जिन्हें p/q के रूप में नहीं लिखा जा सकता[cite: 5]। √2 अपरिमेय है क्योंकि इसका सटीक मान कभी नहीं रुकता। विकल्प B, C (0/1) और D (-3/1) सभी को p/q के रूप में लिखा जा सकता है, इसलिए वे परिमेय (Rational) हैं।"
+      },
+      "key_takeaway": {
+        "en": "Numbers whose square roots are not whole numbers (like √2, √3) are always irrational.",
+        "hi": "जिन संख्याओं के वर्गमूल पूर्ण संख्या नहीं होते (जैसे √2, √3), वे हमेशा अपरिमेय होते हैं।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "[Topic: Discovery of Irrationals, Page 5] According to the text, who were the first mathematicians to discover irrational numbers around 400 BC?",
+        "hi": "[विषय: अपरिमेय संख्याओं की खोज, पृष्ठ 5] पाठ के अनुसार, 400 ईसा पूर्व (BC) के आसपास अपरिमेय संख्याओं की खोज करने वाले पहले गणितज्ञ कौन थे?"
+      },
+      "options": {
+        "a": {
+          "en": "Babylonians",
+          "hi": "बेबीलोनवासी"
+        },
+        "b": {
+          "en": "Pythagoreans (followers of Pythagoras)",
+          "hi": "पाइथागोरस के अनुयायी (Pythagoreans)"
+        },
+        "c": {
+          "en": "Egyptians",
+          "hi": "मिस्रवासी"
+        },
+        "d": {
+          "en": "Romans",
+          "hi": "रोमन"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "They were followers of a very famous Greek philosopher known for his right-angled triangle theorem.",
+        "hi": "वे एक बहुत प्रसिद्ध यूनानी दार्शनिक के अनुयायी थे, जिन्हें उनके समकोण त्रिभुज प्रमेय के लिए जाना जाता है।"
+      },
+      "explanation": {
+        "en": "Page 5 explicitly mentions: 'The Pythagoreans in Greece, followers of the famous mathematician and philosopher Pythagoras, were the first to discover the numbers which were not rationals, around 400 BC.'[cite: 5]",
+        "hi": "पृष्ठ 5 स्पष्ट रूप से बताता है: 'यूनान के महान गणितज्ञ और दार्शनिक पाइथागोरस के अनुयायी पाइथागोरियनों ने सबसे पहले 400 ईसा पूर्व के आसपास उन संख्याओं की खोज की थी जो परिमेय नहीं थीं।'[cite: 5]"
+      },
+      "key_takeaway": {
+        "en": "The discovery of irrational numbers is historically credited to the Pythagoreans.",
+        "hi": "अपरिमेय संख्याओं की खोज का ऐतिहासिक श्रेय पाइथागोरस के अनुयायियों (Pythagoreans) को दिया जाता है।"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "[Topic: Square Roots, Page 8] Are the square roots of ALL positive integers irrational? For example, think about √4.",
+        "hi": "[विषय: वर्गमूल, पृष्ठ 8] क्या सभी धनात्मक पूर्णांकों के वर्गमूल (Square roots) अपरिमेय होते हैं? उदाहरण के लिए, √4 के बारे में सोचें।"
+      },
+      "options": {
+        "a": {
+          "en": "Yes, all square roots are irrational.",
+          "hi": "हाँ, सभी वर्गमूल अपरिमेय होते हैं।"
+        },
+        "b": {
+          "en": "Yes, but only for even numbers.",
+          "hi": "हाँ, लेकिन केवल सम संख्याओं के लिए।"
+        },
+        "c": {
+          "en": "No, because √4 equals 2, which is a rational number.",
+          "hi": "नहीं, क्योंकि √4 का मान 2 होता है, जो एक परिमेय संख्या है।"
+        },
+        "d": {
+          "en": "No, because square roots don't exist for positive integers.",
+          "hi": "नहीं, क्योंकि धनात्मक पूर्णांकों के वर्गमूल होते ही नहीं हैं।"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Some square roots can be solved cleanly into whole numbers.",
+        "hi": "कुछ वर्गमूलों को पूरी तरह से हल करके पूर्ण संख्या बनाई जा सकती है।"
+      },
+      "explanation": {
+        "en": "Exercise 1.2 Q2 on Page 8 addresses this. The square root of 4 is 2. Since 2 can be written as 2/1, it is a rational number[cite: 8]. Therefore, not all square roots are irrational. Options A and B are logically incorrect.",
+        "hi": "पृष्ठ 8 पर प्रश्नावली 1.2 का प्रश्न 2 इसे समझाता है। 4 का वर्गमूल 2 है। चूँकि 2 को 2/1 लिखा जा सकता है, यह एक परिमेय संख्या है[cite: 8]। इसलिए सभी वर्गमूल अपरिमेय नहीं होते।"
+      },
+      "key_takeaway": {
+        "en": "Square roots of perfect squares (like √4, √9, √16) are rational numbers.",
+        "hi": "पूर्ण वर्गों के वर्गमूल (जैसे √4, √9, √16) परिमेय संख्याएँ होते हैं।"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "[Topic: Real Numbers, Page 6] If we put all rational numbers and all irrational numbers together in one big bag, what is this complete collection called?",
+        "hi": "[विषय: वास्तविक संख्याएँ, पृष्ठ 6] यदि हम सभी परिमेय संख्याओं और सभी अपरिमेय संख्याओं को एक बड़े थैले में एक साथ रख दें, तो इस संपूर्ण संग्रह को क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Natural numbers",
+          "hi": "प्राकृत संख्याएँ"
+        },
+        "b": {
+          "en": "Whole numbers",
+          "hi": "पूर्ण संख्याएँ"
+        },
+        "c": {
+          "en": "Integers",
+          "hi": "पूर्णांक"
+        },
+        "d": {
+          "en": "Real numbers (denoted by R)",
+          "hi": "वास्तविक संख्याएँ (R द्वारा दर्शाया गया)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This is the 'ultimate' bag of numbers that includes absolutely every number on the line.",
+        "hi": "यह संख्याओं का 'सबसे बड़ा' थैला है जिसमें संख्या रेखा की हर एक संख्या शामिल होती है।"
+      },
+      "explanation": {
+        "en": "Page 6 states: '...the collection of all rational numbers and irrational numbers together make up what we call the collection of real numbers, which is denoted by R.'[cite: 6] Options A, B, and C are only small parts of this big bag.",
+        "hi": "पृष्ठ 6 बताता है: 'सभी परिमेय संख्याओं और अपरिमेय संख्याओं का संग्रह एक साथ मिलकर वास्तविक संख्याओं (Real numbers) का संग्रह बनाता है, जिसे R द्वारा दर्शाया जाता है।'[cite: 6] अन्य विकल्प केवल इस बड़े थैले के छोटे हिस्से हैं।"
+      },
+      "key_takeaway": {
+        "en": "Rational Numbers + Irrational Numbers = Real Numbers (R).",
+        "hi": "परिमेय संख्याएँ + अपरिमेय संख्याएँ = वास्तविक संख्याएँ (R)।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "[Topic: Real Number Line, Page 6] True or False: \"Every real number is represented by a unique point on the number line.\"",
+        "hi": "[विषय: वास्तविक संख्या रेखा, पृष्ठ 6] सत्य या असत्य बताइए: \"संख्या रेखा का प्रत्येक बिंदु एक अद्वितीय (unique) वास्तविक संख्या को निरूपित करता है।\""
+      },
+      "options": {
+        "a": {
+          "en": "True, every point represents one unique real number.",
+          "hi": "सत्य, प्रत्येक बिंदु एक अद्वितीय वास्तविक संख्या को निरूपित करता है।"
+        },
+        "b": {
+          "en": "False, multiple real numbers can be on the exact same point.",
+          "hi": "असत्य, एक ही बिंदु पर कई वास्तविक संख्याएँ हो सकती हैं।"
+        },
+        "c": {
+          "en": "True, but only for rational numbers.",
+          "hi": "सत्य, लेकिन केवल परिमेय संख्याओं के लिए।"
+        },
+        "d": {
+          "en": "False, irrational numbers cannot be shown on the number line.",
+          "hi": "असत्य, अपरिमेय संख्याओं को संख्या रेखा पर नहीं दिखाया जा सकता।"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Think of the number line as a ruler where no two different measurements can share the exact same mark.",
+        "hi": "संख्या रेखा को एक स्केल (ruler) की तरह समझें जहाँ कोई भी दो अलग-अलग माप एक ही निशान पर नहीं हो सकते।"
+      },
+      "explanation": {
+        "en": "Page 6 concludes: 'every real number is represented by a unique point on the number line. Also, every point on the number line represents a unique real number.'[cite: 6] This is why it is called the 'real number line'. Option D is wrong because irrationals like √2 CAN be shown on the line.",
+        "hi": "पृष्ठ 6 स्पष्ट करता है: 'प्रत्येक वास्तविक संख्या संख्या रेखा पर एक अद्वितीय बिंदु द्वारा निरूपित होती है। साथ ही, संख्या रेखा का प्रत्येक बिंदु एक अद्वितीय वास्तविक संख्या को निरूपित करता है।'[cite: 6] विकल्प D गलत है क्योंकि √2 जैसी अपरिमेय संख्याओं को भी रेखा पर दिखाया जा सकता है।"
+      },
+      "key_takeaway": {
+        "en": "The number line is completely packed; there are no empty gaps, and every point is exactly one real number.",
+        "hi": "संख्या रेखा पूरी तरह से भरी हुई है; इसमें कोई खाली जगह नहीं है, और प्रत्येक बिंदु ठीक एक वास्तविक संख्या है।"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "[Topic: Locating Irrationals, Page 7] To locate √2 on the number line, the Greeks used the Pythagoras theorem on a right-angled triangle with base 1 unit and height 1 unit. What is the length of its hypotenuse?",
+        "hi": "[विषय: अपरिमेय संख्याओं का निर्धारण, पृष्ठ 7] संख्या रेखा पर √2 का स्थान निर्धारित करने के लिए, यूनानियों ने 1 इकाई आधार और 1 इकाई ऊंचाई वाले समकोण त्रिभुज पर पाइथागोरस प्रमेय का उपयोग किया। इसके कर्ण (hypotenuse) की लंबाई क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "1 unit",
+          "hi": "1 इकाई"
+        },
+        "b": {
+          "en": "√2 units",
+          "hi": "√2 इकाई"
+        },
+        "c": {
+          "en": "2 units",
+          "hi": "2 इकाई"
+        },
+        "d": {
+          "en": "3 units",
+          "hi": "3 इकाई"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Pythagoras theorem: Hypotenuse² = Base² + Height². Try calculating 1² + 1².",
+        "hi": "पाइथागोरस प्रमेय: कर्ण² = आधार² + ऊंचाई²। 1² + 1² की गणना करने का प्रयास करें।"
+      },
+      "explanation": {
+        "en": "Page 7 shows that by Pythagoras theorem, OB = √(1² + 1²) = √2[cite: 7]. This length is then marked on the number line using a compass. The hypotenuse perfectly represents √2.",
+        "hi": "पृष्ठ 7 दर्शाता है कि पाइथागोरस प्रमेय द्वारा, कर्ण OB = √(1² + 1²) = √2 है[cite: 7]। फिर इस लंबाई को प्रकार (compass) का उपयोग करके संख्या रेखा पर चिह्नित किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "We can locate irrational square roots accurately on a number line using the lengths of right-angled triangles.",
+        "hi": "हम समकोण त्रिभुजों की लंबाई का उपयोग करके संख्या रेखा पर अपरिमेय वर्गमूलों का सटीक स्थान निर्धारित कर सकते हैं।"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "[Topic: Decimal Expansions, Page 10] When dividing 7 by 8, the remainder eventually becomes zero, and the answer is exactly 0.875. What is this type of decimal expansion called?",
+        "hi": "[विषय: दशमलव प्रसार, पृष्ठ 10] जब 7 को 8 से भाग दिया जाता है, तो शेषफल अंततः शून्य हो जाता है, और उत्तर ठीक 0.875 आता है। इस प्रकार के दशमलव प्रसार (decimal expansion) को क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Non-terminating",
+          "hi": "अशांत (Non-terminating)"
+        },
+        "b": {
+          "en": "Recurring",
+          "hi": "आवर्ती (Recurring)"
+        },
+        "c": {
+          "en": "Terminating",
+          "hi": "सांत (Terminating)"
+        },
+        "d": {
+          "en": "Irrational",
+          "hi": "अपरिमेय (Irrational)"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The division process 'stops' or 'terminates' because there is no remainder left.",
+        "hi": "भाग की प्रक्रिया 'रुक' जाती है या 'समाप्त' हो जाती है क्योंकि कोई शेषफल (remainder) नहीं बचता है।"
+      },
+      "explanation": {
+        "en": "Page 10 states: 'In all these cases, the decimal expansion terminates or ends after a finite number of steps. We call the decimal expansion of such numbers terminating.'",
+        "hi": "पृष्ठ 10 बताता है: 'इन सभी स्थितियों में, कुछ परिमित चरणों के बाद दशमलव प्रसार का अंत हो जाता है। हम ऐसी संख्याओं के दशमलव प्रसार को सांत (terminating) कहते हैं।'"
+      },
+      "key_takeaway": {
+        "en": "When a division leaves a remainder of 0, the decimal expansion is called 'Terminating'.",
+        "hi": "जब किसी भाग में शेषफल 0 बचता है, तो उसके दशमलव प्रसार को 'सांत' (Terminating) कहा जाता है।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "[Topic: Decimal Expansions, Page 10] When dividing 10 by 3, the remainder never becomes zero, and the answer is 3.3333... What is this type of decimal expansion called?",
+        "hi": "[विषय: दशमलव प्रसार, पृष्ठ 10] 10 को 3 से भाग देने पर शेषफल कभी शून्य नहीं होता, और उत्तर 3.3333... आता है। इस प्रकार के दशमलव प्रसार को क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Terminating",
+          "hi": "सांत (Terminating)"
+        },
+        "b": {
+          "en": "Non-terminating non-recurring",
+          "hi": "अशांत अनावर्ती (Non-terminating non-recurring)"
+        },
+        "c": {
+          "en": "Finite decimal",
+          "hi": "परिमित दशमलव"
+        },
+        "d": {
+          "en": "Non-terminating recurring",
+          "hi": "अशांत आवर्ती (Non-terminating recurring)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The division never stops (non-terminating), but the number 3 keeps repeating (recurring).",
+        "hi": "भाग कभी नहीं रुकता (अशांत), लेकिन संख्या 3 बार-बार दोहराई जाती है (आवर्ती)।"
+      },
+      "explanation": {
+        "en": "Page 10 states: 'the remainders repeat after a certain stage forcing the decimal expansion to go on for ever... We say that this expansion is non-terminating recurring.' Option B is wrong because the number 3 is clearly repeating.",
+        "hi": "पृष्ठ 10 बताता है: 'एक निश्चित चरण के बाद शेषफल की पुनरावृत्ति होती है जिससे दशमलव प्रसार निरंतर जारी रहता है... हम कहते हैं कि यह प्रसार अशांत आवर्ती (non-terminating recurring) है।' विकल्प B गलत है क्योंकि संख्या 3 स्पष्ट रूप से दोहरा रही है।"
+      },
+      "key_takeaway": {
+        "en": "Decimals that never end but repeat a pattern are called Non-terminating recurring.",
+        "hi": "वे दशमलव जो कभी समाप्त नहीं होते लेकिन एक ही पैटर्न दोहराते हैं, अशांत आवर्ती कहलाते हैं।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "[Topic: Bar Notation, Page 10] How do we write the repeating decimal 0.142857142857... correctly using a 'bar' symbol?",
+        "hi": "[विषय: बार (Bar) का प्रयोग, पृष्ठ 10] हम दोहराए जाने वाले दशमलव 0.142857142857... को दोहराए जाने वाले ब्लॉक को दर्शाने के लिए 'बार' (bar) प्रतीक का उपयोग करके सही ढंग से कैसे लिखते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "0.142857 (with a bar over the entire 142857 block)",
+          "hi": "0.142857 (पूरे 142857 ब्लॉक के ऊपर बार के साथ)"
+        },
+        "b": {
+          "en": "0.14 (with a bar only over 14)",
+          "hi": "0.14 (केवल 14 के ऊपर बार के साथ)"
+        },
+        "c": {
+          "en": "0.142857 (with a bar only over 7)",
+          "hi": "0.142857 (केवल 7 के ऊपर बार के साथ)"
+        },
+        "d": {
+          "en": "0.1428 (with a bar over 1428)",
+          "hi": "0.1428 (1428 के ऊपर बार के साथ)"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "The bar must cover every single digit that is part of the repeating pattern.",
+        "hi": "बार को हर उस अंक को कवर करना चाहिए जो दोहराए जाने वाले पैटर्न का हिस्सा है।"
+      },
+      "explanation": {
+        "en": "Page 10 explains: 'Since the block of digits 142857 repeats in the quotient of 1/7, we write 1/7 as 0.142857 (with a bar over 142857), where the bar above the digits indicates the block of digits that repeats.'",
+        "hi": "पृष्ठ 10 समझाता है: 'चूंकि 1/7 के भागफल में अंकों का ब्लॉक 142857 दोहराया जाता है, इसलिए हम 1/7 को 0.142857 (142857 के ऊपर बार के साथ) लिखते हैं, जहाँ अंकों के ऊपर का बार दोहराए जाने वाले अंकों के ब्लॉक को दर्शाता है।'"
+      },
+      "key_takeaway": {
+        "en": "The 'bar' notation is a mathematically exact shortcut to write endlessly repeating decimals.",
+        "hi": "'बार' नोटेशन अंतहीन रूप से दोहराए जाने वाले दशमलवों को लिखने का एक गणितीय रूप से सटीक शॉर्टकट है।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "[Topic: Decimal Expansions, Page 11] The number 3.142678 has a terminating decimal expansion (it completely stops). According to the rule, what kind of number is it?",
+        "hi": "[विषय: दशमलव प्रसार, पृष्ठ 11] संख्या 3.142678 का दशमलव प्रसार सांत (terminating) है (यह पूरी तरह से रुक जाता है)। नियम के अनुसार, यह किस प्रकार की संख्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Irrational number",
+          "hi": "अपरिमेय संख्या"
+        },
+        "b": {
+          "en": "Rational number",
+          "hi": "परिमेय संख्या (Rational number)"
+        },
+        "c": {
+          "en": "Integer",
+          "hi": "पूर्णांक"
+        },
+        "d": {
+          "en": "Natural number",
+          "hi": "प्राकृत संख्या"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "If a decimal stops, you can remove the decimal point and write zeros below it (like p/q).",
+        "hi": "यदि दशमलव रुक जाता है, तो आप दशमलव बिंदु को हटा सकते हैं और उसके नीचे शून्य लिख सकते हैं (p/q की तरह)।"
+      },
+      "explanation": {
+        "en": "Example 6 on Page 11 shows that 3.142678 = 3142678/1000000. Since it can be written in p/q form, it is a rational number. Terminating decimals are always rational.",
+        "hi": "पृष्ठ 11 पर उदाहरण 6 दर्शाता है कि 3.142678 = 3142678/1000000. चूंकि इसे p/q के रूप में लिखा जा सकता है, यह एक परिमेय संख्या है। सांत दशमलव हमेशा परिमेय होते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Any decimal number that eventually stops (terminates) is always a rational number.",
+        "hi": "कोई भी दशमलव संख्या जो अंततः रुक जाती है (सांत होती है) हमेशा एक परिमेय संख्या होती है।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "[Topic: Decimal of Irrationals, Page 12] What is the exact nature of the decimal expansion of an IRRATIONAL number like √2 or π?",
+        "hi": "[विषय: अपरिमेय संख्याओं का दशमलव, पृष्ठ 12] √2 या π जैसी अपरिमेय (Irrational) संख्या के दशमलव प्रसार की सटीक प्रकृति क्या होती है?"
+      },
+      "options": {
+        "a": {
+          "en": "Terminating",
+          "hi": "सांत (Terminating)"
+        },
+        "b": {
+          "en": "Non-terminating recurring",
+          "hi": "अशांत आवर्ती (Non-terminating recurring)"
+        },
+        "c": {
+          "en": "Non-terminating non-recurring",
+          "hi": "अशांत अनावर्ती (Non-terminating non-recurring)"
+        },
+        "d": {
+          "en": "It has no decimal expansion",
+          "hi": "इसका कोई दशमलव प्रसार नहीं होता"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "An irrational decimal never stops, and it never gets stuck in a repeating loop.",
+        "hi": "एक अपरिमेय दशमलव कभी नहीं रुकता, और यह कभी भी दोहराए जाने वाले लूप में नहीं फंसता।"
+      },
+      "explanation": {
+        "en": "Page 12 strictly defines this: 'The decimal expansion of an irrational number is non-terminating non-recurring.' It never stops and never repeats a pattern. Options A and B describe Rational numbers.",
+        "hi": "पृष्ठ 12 इसे सख्ती से परिभाषित करता है: 'एक अपरिमेय संख्या का दशमलव प्रसार अशांत अनावर्ती (non-terminating non-recurring) होता है।' यह कभी नहीं रुकता और कभी कोई पैटर्न नहीं दोहराता। विकल्प A और B परिमेय संख्याओं का वर्णन करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "If a decimal never stops and never repeats, it is definitively an irrational number.",
+        "hi": "यदि कोई दशमलव कभी नहीं रुकता और कभी नहीं दोहराता है, तो वह निश्चित रूप से एक अपरिमेय संख्या है।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "[Topic: Pi (π), Page 13] We often use 22/7 to solve math problems easily, but it is just an approximate value. What kind of number is the actual value of π (Pi)?",
+        "hi": "[विषय: पाई (π), पृष्ठ 13] गणित की समस्याओं को आसानी से हल करने के लिए हम अक्सर 22/7 का उपयोग करते हैं, लेकिन यह केवल एक अनुमानित (approximate) मान है। π (पाई) का वास्तविक मान किस प्रकार की संख्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Natural number",
+          "hi": "प्राकृत संख्या"
+        },
+        "b": {
+          "en": "Terminating decimal",
+          "hi": "सांत दशमलव"
+        },
+        "c": {
+          "en": "Rational number",
+          "hi": "परिमेय संख्या"
+        },
+        "d": {
+          "en": "Irrational number",
+          "hi": "अपरिमेय संख्या (Irrational number)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The digits of Pi (3.14159265...) go on forever without ever repeating a pattern.",
+        "hi": "पाई (3.14159265...) के अंक बिना किसी पैटर्न को दोहराए हमेशा के लिए चलते रहते हैं।"
+      },
+      "explanation": {
+        "en": "Page 13 states: 'π = 3.1415926535... (Note that, we often take 22/7 as an approximate value for π, but π ≠ 22/7).' Because its decimal is non-terminating and non-recurring, π is a famous irrational number.",
+        "hi": "पृष्ठ 13 बताता है: 'π = 3.1415926535... (ध्यान दें कि, हम अक्सर π के अनुमानित मान के रूप में 22/7 लेते हैं, लेकिन π ≠ 22/7)।' चूँकि इसका दशमलव अशांत और अनावर्ती है, इसलिए π एक प्रसिद्ध अपरिमेय संख्या है।"
+      },
+      "key_takeaway": {
+        "en": "π is an irrational number; 22/7 is merely a rational approximation used for convenience.",
+        "hi": "π एक अपरिमेय संख्या है; 22/7 केवल सुविधा के लिए उपयोग किया जाने वाला एक परिमेय अनुमान है।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "[Topic: History of Pi, Page 13] Which Greek genius was the first to compute digits in the decimal expansion of π, showing it is between 3.140845 and 3.142857?",
+        "hi": "[विषय: पाई का इतिहास, पृष्ठ 13] कौन सा यूनानी विद्वान π के दशमलव प्रसार के अंकों की गणना करने वाला पहला व्यक्ति था, जिसने दिखाया कि यह 3.140845 और 3.142857 के बीच है?"
+      },
+      "options": {
+        "a": {
+          "en": "Archimedes",
+          "hi": "आर्किमिडीज़ (Archimedes)"
+        },
+        "b": {
+          "en": "Aryabhatta",
+          "hi": "आर्यभट्ट"
+        },
+        "c": {
+          "en": "Pythagoras",
+          "hi": "पाइथागोरस"
+        },
+        "d": {
+          "en": "Euclid",
+          "hi": "यूक्लिड"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "He is a famous Greek mathematician shown in the picture on Page 13.",
+        "hi": "वह एक प्रसिद्ध यूनानी गणितज्ञ हैं जिन्हें पृष्ठ 13 पर चित्र में दिखाया गया है।"
+      },
+      "explanation": {
+        "en": "Page 13 states: 'The Greek genius Archimedes was the first to compute digits in the decimal expansion of π.' Aryabhatta also computed it later, but Archimedes was the first.",
+        "hi": "पृष्ठ 13 बताता है: 'यूनानी विद्वान आर्किमिडीज़ π के दशमलव प्रसार के अंकों की गणना करने वाले पहले व्यक्ति थे।' आर्यभट्ट ने भी बाद में इसकी गणना की थी, लेकिन आर्किमिडीज़ पहले थे।"
+      },
+      "key_takeaway": {
+        "en": "Archimedes made the first historical breakthrough in accurately estimating the value of π.",
+        "hi": "आर्किमिडीज़ ने ऐतिहासिक रूप से π के मान का सटीक अनुमान लगाने में पहली सफलता हासिल की थी।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "[Topic: Generating Irrationals, Page 14] The number 0.150150015000... never stops and its zeros keep increasing, so it never repeats the exact same block. What type of number is this?",
+        "hi": "[विषय: अपरिमेय संख्याएँ बनाना, पृष्ठ 14] संख्या 0.150150015000... कभी नहीं रुकती और इसके शून्य (zeros) बढ़ते रहते हैं, इसलिए यह कभी भी एक ही ब्लॉक को नहीं दोहराती है। यह किस प्रकार की संख्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Rational number",
+          "hi": "परिमेय संख्या"
+        },
+        "b": {
+          "en": "Irrational number",
+          "hi": "अपरिमेय संख्या (Irrational number)"
+        },
+        "c": {
+          "en": "Integer",
+          "hi": "पूर्णांक"
+        },
+        "d": {
+          "en": "Whole number",
+          "hi": "पूर्ण संख्या"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Does it terminate? No. Does it repeat the exact same pattern? No. So it breaks the rules of rational numbers.",
+        "hi": "क्या यह रुकता है? नहीं। क्या यह बिल्कुल उसी पैटर्न को दोहराता है? नहीं। इसलिए यह परिमेय संख्याओं के नियम तोड़ता है।"
+      },
+      "explanation": {
+        "en": "Page 14 uses this exact example to show a non-terminating non-recurring decimal. Because the pattern constantly changes (one zero, then two zeros, then three), it is an irrational number.",
+        "hi": "पृष्ठ 14 एक अशांत अनावर्ती (non-terminating non-recurring) दशमलव दिखाने के लिए इसी उदाहरण का उपयोग करता है। चूँकि पैटर्न लगातार बदलता है (एक शून्य, फिर दो शून्य, फिर तीन), यह एक अपरिमेय संख्या है।"
+      },
+      "key_takeaway": {
+        "en": "You can invent your own irrational numbers by writing decimals with continuously growing patterns that never truly repeat.",
+        "hi": "आप ऐसे दशमलव लिखकर अपनी खुद की अपरिमेय संख्याएँ बना सकते हैं जिनके पैटर्न लगातार बढ़ते हैं और कभी सच में नहीं दोहराते।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "[Topic: Converting Decimals to p/q, Page 11] In Example 7, to convert x = 0.333... into p/q form, we multiply both sides by 10 (10x = 3.333...). Why do we multiply by 10 and not 100?",
+        "hi": "[विषय: दशमलव को p/q में बदलना, पृष्ठ 11] उदाहरण 7 में, x = 0.333... को p/q रूप में बदलने के लिए, हम दोनों पक्षों को 10 से गुणा करते हैं (10x = 3.333...)। हम 10 से गुणा क्यों करते हैं और 100 से क्यों नहीं?"
+      },
+      "options": {
+        "a": {
+          "en": "Because 10 is an even number.",
+          "hi": "क्योंकि 10 एक सम संख्या है।"
+        },
+        "b": {
+          "en": "Because the number 3 is less than 10.",
+          "hi": "क्योंकि संख्या 3, 10 से छोटी है।"
+        },
+        "c": {
+          "en": "Because only one digit (3) is repeating.",
+          "hi": "क्योंकि केवल एक अंक (3) की पुनरावृत्ति हो रही है (दोहरा रहा है)।"
+        },
+        "d": {
+          "en": "Because multiplying by 100 is not allowed in math.",
+          "hi": "क्योंकि गणित में 100 से गुणा करने की अनुमति नहीं है।"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The number of zeros in your multiplier (10, 100, 1000) matches the number of repeating digits.",
+        "hi": "आपके गुणक (10, 100, 1000) में शून्यों की संख्या दोहराए जाने वाले अंकों की संख्या से मेल खाती है।"
+      },
+      "explanation": {
+        "en": "The implicit rule shown in Examples 7 and 8 on Page 11 is that we multiply by 10 if one digit repeats, by 100 if two digits repeat, etc.. Here only '3' repeats, so we use 10.",
+        "hi": "पृष्ठ 11 पर उदाहरण 7 और 8 में दिखाया गया नियम यह है कि यदि एक अंक दोहराता है तो हम 10 से गुणा करते हैं, यदि दो अंक दोहराते हैं तो 100 से, आदि। यहाँ केवल '3' दोहरा रहा है, इसलिए हम 10 का उपयोग करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "To convert recurring decimals, multiply the equation by 10^n, where 'n' is the number of repeating digits.",
+        "hi": "आवर्ती दशमलव को बदलने के लिए, समीकरण को 10^n से गुणा करें, जहाँ 'n' दोहराए जाने वाले अंकों की संख्या है।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "[Topic: Converting Decimals to p/q, Page 11] In Example 8, we want to convert x = 1.272727... into p/q form. Since TWO digits (27) are repeating, what should we multiply 'x' by?",
+        "hi": "[विषय: दशमलव को p/q में बदलना, पृष्ठ 11] उदाहरण 8 में, हम x = 1.272727... को p/q रूप में बदलना चाहते हैं। चूँकि दो अंक (27) दोहराए जा रहे हैं, हमें 'x' को किससे गुणा करना चाहिए?"
+      },
+      "options": {
+        "a": {
+          "en": "10",
+          "hi": "10"
+        },
+        "b": {
+          "en": "27",
+          "hi": "27"
+        },
+        "c": {
+          "en": "1000",
+          "hi": "1000"
+        },
+        "d": {
+          "en": "100",
+          "hi": "100"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "You need two zeros to shift the decimal point past the two repeating digits.",
+        "hi": "दशमलव बिंदु को दो दोहराए जाने वाले अंकों के आगे ले जाने के लिए आपको दो शून्यों की आवश्यकता है।"
+      },
+      "explanation": {
+        "en": "Example 8 on Page 11 explicitly states: 'Since two digits are repeating, we multiply x by 100 to get 100x = 127.2727...'",
+        "hi": "पृष्ठ 11 पर उदाहरण 8 स्पष्ट रूप से बताता है: 'चूंकि दो अंकों की पुनरावृत्ति होती है, इसलिए हम x को 100 से गुणा करते हैं ताकि 100x = 127.2727... प्राप्त हो।'"
+      },
+      "key_takeaway": {
+        "en": "Two repeating digits require multiplication by 100 to properly align the decimal values for subtraction.",
+        "hi": "दो दोहराए जाने वाले अंकों के लिए घटाव (subtraction) के लिए दशमलव मानों को ठीक से संरेखित करने के लिए 100 से गुणा करने की आवश्यकता होती है।"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "[Topic: Real Numbers, Page 8] True or False: \"Every real number is an irrational number.\"",
+        "hi": "[विषय: वास्तविक संख्याएँ, पृष्ठ 8] सत्य या असत्य बताइए: \"प्रत्येक वास्तविक संख्या (Real number) एक अपरिमेय संख्या (Irrational number) होती है।\""
+      },
+      "options": {
+        "a": {
+          "en": "False, because real numbers also include rational numbers.",
+          "hi": "असत्य, क्योंकि वास्तविक संख्याओं में परिमेय संख्याएँ (Rational numbers) भी शामिल होती हैं।"
+        },
+        "b": {
+          "en": "True, all real numbers are irrational.",
+          "hi": "सत्य, सभी वास्तविक संख्याएँ अपरिमेय होती हैं।"
+        },
+        "c": {
+          "en": "False, because real numbers only include negative numbers.",
+          "hi": "असत्य, क्योंकि वास्तविक संख्याओं में केवल ऋणात्मक संख्याएँ शामिल होती हैं।"
+        },
+        "d": {
+          "en": "True, but only on the number line.",
+          "hi": "सत्य, लेकिन केवल संख्या रेखा पर।"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Remember the big bag of 'Real Numbers'. It is made of TWO smaller bags combined.",
+        "hi": "'वास्तविक संख्याओं' के बड़े थैले को याद रखें। यह दो छोटे थैलों को मिलाकर बना है।"
+      },
+      "explanation": {
+        "en": "Exercise 1.2 Q1 (iii) on Page 8 addresses this statement. It is False. The collection of Real numbers (R) is made of BOTH Rational and Irrational numbers[cite: 6, 8]. So a real number like '2' is rational, not irrational.",
+        "hi": "पृष्ठ 8 पर प्रश्नावली 1.2 का प्रश्न 1 (iii) इस कथन को संबोधित करता है। यह असत्य है। वास्तविक संख्याओं (R) का संग्रह परिमेय और अपरिमेय दोनों संख्याओं से बना है[cite: 6, 8]। इसलिए '2' जैसी वास्तविक संख्या परिमेय है, अपरिमेय नहीं।"
+      },
+      "key_takeaway": {
+        "en": "A real number is either rational OR irrational. They are not all irrational.",
+        "hi": "एक वास्तविक संख्या या तो परिमेय होती है या अपरिमेय। वे सभी अपरिमेय नहीं होतीं।"
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "[Topic: Identifying Irrationals, Page 14] Look at Exercise 1.3 Q9. Which of the following numbers is an irrational number?",
+        "hi": "[विषय: अपरिमेय संख्याओं की पहचान, पृष्ठ 14] प्रश्नावली 1.3 प्रश्न 9 को देखें। निम्नलिखित में से कौन सी संख्या एक अपरिमेय संख्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "√225 (which is exactly 15)",
+          "hi": "√225 (जो ठीक 15 है)"
+        },
+        "b": {
+          "en": "√23",
+          "hi": "√23"
+        },
+        "c": {
+          "en": "0.3796",
+          "hi": "0.3796"
+        },
+        "d": {
+          "en": "7.478478...",
+          "hi": "7.478478..."
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Find the square root that cannot be solved perfectly and will go on forever without repeating.",
+        "hi": "वह वर्गमूल ज्ञात कीजिए जिसे पूरी तरह से हल नहीं किया जा सकता और जो बिना दोहराए हमेशा के लिए चलता रहेगा।"
+      },
+      "explanation": {
+        "en": "In Ex 1.3 Q9 (Page 14), √23 is irrational because 23 is not a perfect square. Option A (15) is an integer. Option C is terminating. Option D is recurring. Therefore, A, C, and D are all rational.",
+        "hi": "प्रश्नावली 1.3 प्रश्न 9 (पृष्ठ 14) में, √23 अपरिमेय है क्योंकि 23 एक पूर्ण वर्ग नहीं है। विकल्प A (15) एक पूर्णांक है। विकल्प C सांत है। विकल्प D आवर्ती है। इसलिए, A, C, और D सभी परिमेय हैं।"
+      },
+      "key_takeaway": {
+        "en": "Square roots of non-perfect squares always yield non-terminating, non-recurring irrationals.",
+        "hi": "गैर-पूर्ण वर्गों (non-perfect squares) के वर्गमूल हमेशा अशांत, अनावर्ती अपरिमेय होते हैं।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "[Topic: Identifying Rationals, Page 14] In Exercise 1.3, the number √225 can be simplified to 15. Since 15 can be written as 15/1, what type of number is √225?",
+        "hi": "[विषय: परिमेय संख्याओं की पहचान, पृष्ठ 14] प्रश्नावली 1.3 में, संख्या √225 को 15 के रूप में सरल किया जा सकता है। चूँकि 15 को 15/1 लिखा जा सकता है, √225 किस प्रकार की संख्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Irrational number",
+          "hi": "अपरिमेय संख्या"
+        },
+        "b": {
+          "en": "Non-terminating decimal",
+          "hi": "अशांत दशमलव"
+        },
+        "c": {
+          "en": "Rational number",
+          "hi": "परिमेय संख्या (Rational number)"
+        },
+        "d": {
+          "en": "Negative integer",
+          "hi": "ऋणात्मक पूर्णांक"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Any number that can be written cleanly as p/q falls into this category.",
+        "hi": "कोई भी संख्या जिसे p/q के रूप में सफाई से लिखा जा सकता है, इस श्रेणी में आती है।"
+      },
+      "explanation": {
+        "en": "Ex 1.3 Q9 (Page 14). √225 equals 15. Since 15 is an integer and can be written in p/q form as 15/1, it is a rational number, not irrational. Option A is wrong for this reason.",
+        "hi": "प्रश्नावली 1.3 प्रश्न 9 (पृष्ठ 14)। √225, 15 के बराबर है। चूँकि 15 एक पूर्णांक है और इसे 15/1 के रूप में p/q रूप में लिखा जा सकता है, यह एक परिमेय संख्या है, अपरिमेय नहीं। इसी कारण से विकल्प A गलत है।"
+      },
+      "key_takeaway": {
+        "en": "Do not let the √ symbol trick you; if it resolves to a whole number, it is rational.",
+        "hi": "√ प्रतीक को आपको धोखा न देने दें; यदि यह पूर्ण संख्या में हल हो जाता है, तो यह परिमेय है।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "[Topic: Irrationals between Rationals, Page 13] Example 10 asks to find an irrational number between the rational numbers 1/7 and 2/7. Is it possible to find such an irrational number?",
+        "hi": "[विषय: परिमेय के बीच अपरिमेय, पृष्ठ 13] उदाहरण 10 में परिमेय संख्याओं 1/7 और 2/7 के बीच एक अपरिमेय संख्या ज्ञात करने के लिए कहा गया है। क्या ऐसी अपरिमेय संख्या ज्ञात करना संभव है?"
+      },
+      "options": {
+        "a": {
+          "en": "No, you can only find rational numbers between rational numbers.",
+          "hi": "नहीं, आप परिमेय संख्याओं के बीच केवल परिमेय संख्याएँ ही खोज सकते हैं।"
+        },
+        "b": {
+          "en": "No, 1/7 and 2/7 are too close to each other.",
+          "hi": "नहीं, 1/7 और 2/7 एक दूसरे के बहुत करीब हैं।"
+        },
+        "c": {
+          "en": "Yes, but there is exactly only one irrational number between them.",
+          "hi": "हाँ, लेकिन उनके बीच ठीक केवल एक ही अपरिमेय संख्या होती है।"
+        },
+        "d": {
+          "en": "Yes, you can find infinitely many irrational numbers between them.",
+          "hi": "हाँ, आप उनके बीच अपरिमित रूप से अनेक (अनंत) अपरिमेय संख्याएँ खोज सकते हैं।"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Think about how many random non-repeating decimal patterns you can create between 0.142... and 0.285...",
+        "hi": "सोचें कि आप 0.142... और 0.285... के बीच कितने यादृच्छिक (random) न दोहराने वाले दशमलव पैटर्न बना सकते हैं।"
+      },
+      "explanation": {
+        "en": "Page 13, Example 10 explicitly states: 'To find an irrational number between 1/7 and 2/7, we find a number which is non-terminating non-recurring lying between them. Of course, you can find infinitely many such numbers.'",
+        "hi": "पृष्ठ 13, उदाहरण 10 स्पष्ट रूप से बताता है: '1/7 और 2/7 के बीच एक अपरिमेय संख्या ज्ञात करने के लिए, हम एक ऐसी संख्या ज्ञात करते हैं जो उनके बीच स्थित अशांत अनावर्ती हो। निस्संदेह, आप ऐसी अपरिमित रूप से अनेक (अनंत) संख्याएँ खोज सकते हैं।'"
+      },
+      "key_takeaway": {
+        "en": "Between ANY two rational numbers, there are infinitely many both rational AND irrational numbers.",
+        "hi": "किन्हीं भी दो परिमेय संख्याओं के बीच, अनंत परिमेय और अनंत अपरिमेय संख्याएँ होती हैं।"
+      }
+    }
+  ]
+}

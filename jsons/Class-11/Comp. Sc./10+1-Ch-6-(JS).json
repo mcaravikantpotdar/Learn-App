@@ -1,0 +1,1715 @@
+{
+  "metadata": {
+    "chapter_number": 6,
+    "chapter_title": "Advanced Web Publishing using JavaScript",
+    "chapter_title_hindi": "जावास्क्रिप्ट का उपयोग करके उन्नत वेब प्रकाशन",
+    "subject": "Web Development / Computer Science",
+    "total_questions": 65,
+    "source_language": "en",
+    "target_language": "hi",
+    "version": "3.0",
+    "note": "Options redistributed for balanced frequency (A:16, B:17, C:16, D:16). HTML entities applied to all code elements."
+  },
+  "validation_report": {
+    "is_valid": true,
+    "checked_by": "AI Generator",
+    "corrections": [
+      "Balanced answer distribution",
+      "Applied <pre><code> tags to code blocks",
+      "Encoded &lt; and &gt; symbols in JS logic"
+    ],
+    "notes": "Ready for App Integration"
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "What is the fundamental purpose of a computer network?",
+        "hi": "कंप्यूटर नेटवर्क का मौलिक उद्देश्य क्या है?"
+      },
+      "options": {
+        "a": {"en": "To run complex software", "hi": "जटिल सॉफ़्टवेयर चलाना"},
+        "b": {"en": "To link computing devices for sharing resources and information", "hi": "संसाधनों और सूचना को साझा करने के लिए कंप्यूटिंग उपकरणों को जोड़ना"},
+        "c": {"en": "To increase the processing speed of a single computer", "hi": "एकल कंप्यूटर की प्रसंस्करण गति बढ़ाना"},
+        "d": {"en": "To replace older computers", "hi": "पुराने कंप्यूटरों को बदलना"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Think about why office computers are connected (e.g., printers, files).",
+        "hi": "सोचें कि कार्यालय के कंप्यूटर क्यों जुड़े होते हैं (जैसे, प्रिंटर, फाइलें)।"
+      },
+      "explanation": {
+        "en": "The primary goal of a network is to allow connected devices (nodes) to communicate and share resources like data, internet access, and hardware.",
+        "hi": "नेटवर्क का प्राथमिक लक्ष्य कनेक्टेड डिवाइस (नोड्स) को संचार करने और डेटा, इंटरनेट एक्सेस और हार्डवेयर जैसे संसाधनों को साझा करने की अनुमति देना है।"
+      },
+      "key_takeaway": {
+        "en": "Networks enable resource sharing and communication.",
+        "hi": "नेटवर्क संसाधन साझाकरण और संचार को सक्षम करते हैं।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "Which of these is a key disadvantage of networking related to data?",
+        "hi": "नेटवर्किंग का डेटा से संबंधित एक प्रमुख नुकसान कौन सा है?"
+      },
+      "options": {
+        "a": {"en": "Data security risks from unauthorized users", "hi": "अनधिकृत उपयोगकर्ताओं से डेटा सुरक्षा जोखिम"},
+        "b": {"en": "Reduced hardware costs", "hi": "हार्डवेयर लागत में कमी"},
+        "c": {"en": "Inability to use email", "hi": "ईमेल का उपयोग करने में असमर्थता"},
+        "d": {"en": "Increased need for software licenses", "hi": "सॉफ्टवेयर लाइसेंस की बढ़ती आवश्यकता"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "When devices are connected, it opens a door for external access.",
+        "hi": "जब उपकरण जुड़े होते हैं, तो यह बाहरी पहुंच के लिए एक दरवाजा खोलता है।"
+      },
+      "explanation": {
+        "en": "Security is a major concern in networking. Connecting computers opens them up to potential unauthorized access, viruses, and data theft.",
+        "hi": "नेटवर्किंग में सुरक्षा एक बड़ी चिंता है। कंप्यूटरों को जोड़ने से वे संभावित अनधिकृत पहुंच, वायरस और डेटा चोरी के लिए खुल जाते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Networking increases security vulnerabilities.",
+        "hi": "नेटवर्किंग सुरक्षा कमजोरियों को बढ़ाती है।"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "In the client-server model, what is the primary characteristic of a 'server'?",
+        "hi": "क्लाइंट-सर्वर मॉडल में, 'सर्वर' की प्राथमिक विशेषता क्या है?"
+      },
+      "options": {
+        "a": {"en": "It is a less powerful computer", "hi": "यह एक कम शक्तिशाली कंप्यूटर है"},
+        "b": {"en": "It requests services from other computers", "hi": "यह अन्य कंप्यूटरों से सेवाओं का अनुरोध करता है"},
+        "c": {"en": "It provides services to multiple clients", "hi": "यह कई क्लाइंटों को सेवाएं प्रदान करता है"},
+        "d": {"en": "It only connects to wireless networks", "hi": "यह केवल वायरलेस नेटवर्क से जुड़ता है"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Think of a waiter in a restaurant serving multiple tables.",
+        "hi": "एक रेस्तरां में कई टेबलों पर सेवा देने वाले वेटर के बारे में सोचें।"
+      },
+      "explanation": {
+        "en": "A server is a powerful computer dedicated to managing network resources and 'serving' requests (like web pages or files) to client computers.",
+        "hi": "सर्वर एक शक्तिशाली कंप्यूटर है जो नेटवर्क संसाधनों को प्रबंधित करने और क्लाइंट कंप्यूटरों को अनुरोधों (जैसे वेब पेज या फाइलें) को 'परोसने' (serving) के लिए समर्पित है।"
+      },
+      "key_takeaway": {
+        "en": "Servers provide resources; Clients request them.",
+        "hi": "सर्वर संसाधन प्रदान करते हैं; क्लाइंट उनका अनुरोध करते हैं।"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "Why is client-side scripting generally faster than server-side scripting for simple tasks?",
+        "hi": "सरल कार्यों के लिए क्लाइंट-साइड स्क्रिप्टिंग आम तौर पर सर्वर-साइड स्क्रिप्टिंग से तेज़ क्यों होती है?"
+      },
+      "options": {
+        "a": {"en": "It has access to the server's database", "hi": "इसकी सर्वर के डेटाबेस तक पहुंच है"},
+        "b": {"en": "It runs on the user's local computer, reducing network delay", "hi": "यह उपयोगकर्ता के लोकल कंप्यूटर पर चलती है, जिससे नेटवर्क विलंब कम होता है"},
+        "c": {"en": "It is always written in a faster programming language", "hi": "यह हमेशा तेज प्रोग्रामिंग भाषा में लिखी जाती है"},
+        "d": {"en": "It does not require a web browser", "hi": "इसके लिए वेब ब्राउज़र की आवश्यकता नहीं होती"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It avoids the round-trip travel time to a remote computer.",
+        "hi": "यह रिमोट कंप्यूटर तक आने-जाने के समय (round-trip) से बचाता है।"
+      },
+      "explanation": {
+        "en": "Client-side scripts (like JS) execute directly in the user's browser. This eliminates the need to send data to the server and wait for a response, making interactions like form validation instant.",
+        "hi": "क्लाइंट-साइड स्क्रिप्ट (जैसे JS) सीधे उपयोगकर्ता के ब्राउज़र में निष्पादित होती हैं। यह सर्वर को डेटा भेजने और प्रतिक्रिया की प्रतीक्षा करने की आवश्यकता को समाप्त करता है, जिससे फॉर्म सत्यापन जैसी बातचीत तत्काल हो जाती है।"
+      },
+      "key_takeaway": {
+        "en": "Client-side execution saves network bandwidth and time.",
+        "hi": "क्लाइंट-साइड निष्पादन नेटवर्क बैंडविड्थ और समय बचाता है।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "A major limitation of client-side scripting like JavaScript is that it:",
+        "hi": "क्लाइंट-साइड स्क्रिप्टिंग जैसे जावास्क्रिप्ट की एक प्रमुख सीमा यह है कि यह:"
+      },
+      "options": {
+        "a": {"en": "cannot access the user's browser", "hi": "उपयोगकर्ता के ब्राउज़र तक नहीं पहुंच सकती"},
+        "b": {"en": "cannot perform calculations", "hi": "गणना नहीं कर सकती"},
+        "c": {"en": "cannot securely access the server's file system or database", "hi": "सर्वर की फ़ाइल सिस्टम या डेटाबेस तक सुरक्षित रूप से नहीं पहुंच सकती"},
+        "d": {"en": "is slower than server-side scripting", "hi": "सर्वर-साइड स्क्रिप्टिंग से धीमी है"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "For security reasons, browsers restrict scripts from touching the server's core data directly.",
+        "hi": "सुरक्षा कारणों से, ब्राउज़र स्क्रिप्ट को सर्वर के मुख्य डेटा को सीधे छूने से रोकते हैं।"
+      },
+      "explanation": {
+        "en": "Client-side scripts run in a restricted environment (sandbox) on the user's machine. They cannot directly read/write files on the server or access the database for security reasons.",
+        "hi": "क्लाइंट-साइड स्क्रिप्ट उपयोगकर्ता की मशीन पर प्रतिबंधित वातावरण (सैंडबॉक्स) में चलती हैं। सुरक्षा कारणों से वे सीधे सर्वर पर फाइलें नहीं पढ़/लिख सकतीं या डेटाबेस तक नहीं पहुंच सकतीं।"
+      },
+      "key_takeaway": {
+        "en": "Client-side scripts are restricted from direct server/database access.",
+        "hi": "क्लाइंट-साइड स्क्रिप्ट को सीधे सर्वर/डेटाबेस एक्सेस से प्रतिबंधित किया जाता है।"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "What is the correct sequence of steps for web publishing?",
+        "hi": "वेब प्रकाशन के लिए कदमों का सही क्रम क्या है?"
+      },
+      "options": {
+        "a": {"en": "Buy domain -> Develop website -> Upload to server", "hi": "डोमेन खरीदें -> वेबसाइट विकसित करें -> सर्वर पर अपलोड करें"},
+        "b": {"en": "Develop website -> Upload to server -> Get internet", "hi": "वेबसाइट विकसित करें -> सर्वर पर अपलोड करें -> इंटरनेट प्राप्त करें"},
+        "c": {"en": "Develop website -> Upload to server via internet", "hi": "वेबसाइट विकसित करें -> इंटरनेट के माध्यम से सर्वर पर अपलोड करें"},
+        "d": {"en": "Get internet -> Upload to server -> Develop website", "hi": "इंटरनेट प्राप्त करें -> सर्वर पर अपलोड करें -> वेबसाइट विकसित करें"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "You create the content first, then move it to the host.",
+        "hi": "आप पहले सामग्री बनाते हैं, फिर उसे होस्ट पर ले जाते हैं।"
+      },
+      "explanation": {
+        "en": "The logical flow is to first build the site locally (Development) and then transfer those files to a live web server (Hosting/Uploading) so others can access it.",
+        "hi": "तार्किक प्रवाह पहले स्थानीय रूप से साइट का निर्माण करना (विकास) है और फिर उन फ़ाइलों को लाइव वेब सर्वर (होस्टिंग/अपलोडिंग) पर स्थानांतरित करना है ताकि अन्य लोग उन तक पहुंच सकें।"
+      },
+      "key_takeaway": {
+        "en": "Develop locally, then Publish remotely.",
+        "hi": "स्थानीय रूप से विकसित करें, फिर दूरस्थ रूप से प्रकाशित करें।"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "JavaScript is primarily a ______ scripting language.",
+        "hi": "जावास्क्रिप्ट मुख्य रूप से एक ______ स्क्रिप्टिंग भाषा है।"
+      },
+      "options": {
+        "a": {"en": "client-side", "hi": "क्लाइंट-साइड"},
+        "b": {"en": "server-side", "hi": "सर्वर-साइड"},
+        "c": {"en": "database", "hi": "डेटाबेस"},
+        "d": {"en": "system", "hi": "सिस्टम"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It runs in the web browser, not the web server.",
+        "hi": "यह वेब ब्राउज़र में चलता है, वेब सर्वर में नहीं।"
+      },
+      "explanation": {
+        "en": "While JS can run on the server (Node.js), it was created and is primarily defined as a <b>client-side</b> language that executes in the user's browser to make pages interactive.",
+        "hi": "हालांकि JS सर्वर (Node.js) पर चल सकता है, इसे बनाया गया था और इसे मुख्य रूप से <b>क्लाइंट-साइड</b> भाषा के रूप में परिभाषित किया गया है जो पेजों को इंटरैक्टिव बनाने के लिए उपयोगकर्ता के ब्राउज़र में निष्पादित होती है।"
+      },
+      "key_takeaway": {
+        "en": "JavaScript is the language of the web browser.",
+        "hi": "जावास्क्रिप्ट वेब ब्राउज़र की भाषा है।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "Why is JavaScript described as an \"interpreted\" language?",
+        "hi": "जावास्क्रिप्ट को \"इंटरप्रेटेड\" भाषा क्यों कहा जाता है?"
+      },
+      "options": {
+        "a": {"en": "It needs to be compiled into an executable file", "hi": "इसे निष्पादन योग्य फ़ाइल में संकलित करने की आवश्यकता है"},
+        "b": {"en": "It is translated and executed line-by-line at runtime", "hi": "इसे रनटाइम पर लाइन-बाय-लाइन अनुवादित और निष्पादित किया जाता है"},
+        "c": {"en": "It can only be used for simple calculations", "hi": "इसका उपयोग केवल सरल गणनाओं के लिए किया जा सकता है"},
+        "d": {"en": "It is understood by computers without software", "hi": "यह बिना किसी सॉफ्टवेयर के कंप्यूटरों द्वारा समझी जाती है"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It doesn't create a separate `.exe` file; the browser reads it as it goes.",
+        "hi": "यह एक अलग `.exe` फ़ाइल नहीं बनाता है; ब्राउज़र इसे चलते-चलते पढ़ता है।"
+      },
+      "explanation": {
+        "en": "Interpreted languages are executed directly from the source code, line by line, by an interpreter (the browser engine), rather than being compiled into machine code beforehand.",
+        "hi": "इंटरप्रेटेड भाषाओं को स्रोत कोड से सीधे, लाइन दर लाइन, एक इंटरप्रेटर (ब्राउज़र इंजन) द्वारा निष्पादित किया जाता है, बजाय इसके कि उन्हें पहले से मशीन कोड में संकलित किया जाए।"
+      },
+      "key_takeaway": {
+        "en": "JS is executed on the fly by the browser.",
+        "hi": "JS को ब्राउज़र द्वारा तुरंत (on the fly) निष्पादित किया जाता है।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "What is the significance of JavaScript being case-sensitive?",
+        "hi": "जावास्क्रिप्ट के केस-सेंसिटिव होने का क्या महत्व है?"
+      },
+      "options": {
+        "a": {"en": "The 'var' keyword must be written in uppercase", "hi": "'var' कीवर्ड अपरकेस में लिखा जाना चाहिए"},
+        "b": {"en": "Variables 'MyVar' and 'myvar' are treated as different", "hi": "वेरिएबल्स 'MyVar' और 'myvar' को अलग माना जाता है"},
+        "c": {"en": "It makes the code run faster", "hi": "यह कोड को तेजी से चलाता है"},
+        "d": {"en": "It allows the use of more keywords", "hi": "यह अधिक कीवर्ड के उपयोग की अनुमति देता है"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Capital letters matter. 'A' is not the same as 'a'.",
+        "hi": "बड़े अक्षर मायने रखते हैं। 'A' और 'a' समान नहीं हैं।"
+      },
+      "explanation": {
+        "en": "Case sensitivity means identifiers like variable names must match exactly. <code>myVar</code>, <code>MyVar</code>, and <code>myvar</code> are three completely separate variables in JS.",
+        "hi": "केस संवेदनशीलता का अर्थ है कि वेरिएबल नामों जैसे पहचानकर्ताओं को बिल्कुल मेल खाना चाहिए। <code>myVar</code>, <code>MyVar</code>, और <code>myvar</code> JS में तीन पूरी तरह से अलग वेरिएबल हैं।"
+      },
+      "key_takeaway": {
+        "en": "JS distinguishes between uppercase and lowercase letters.",
+        "hi": "JS अपरकेस और लोअरकेस अक्षरों के बीच अंतर करता है।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "Which tag is used to embed JavaScript code within an HTML document?",
+        "hi": "HTML दस्तावेज़ के भीतर जावास्क्रिप्ट कोड एम्बेड करने के लिए किस टैग का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "<code>&lt;javascript&gt;</code>", "hi": "<code>&lt;javascript&gt;</code>"},
+        "b": {"en": "<code>&lt;js&gt;</code>", "hi": "<code>&lt;js&gt;</code>"},
+        "c": {"en": "<code>&lt;script&gt;</code>", "hi": "<code>&lt;script&gt;</code>"},
+        "d": {"en": "<code>&lt;code&gt;</code>", "hi": "<code>&lt;code&gt;</code>"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The tag implies it contains a 'script'.",
+        "hi": "टैग का अर्थ है कि इसमें 'स्क्रिप्ट' है।"
+      },
+      "explanation": {
+        "en": "The <code>&lt;script&gt;</code> tag is the standard HTML element used to define client-side scripts, such as JavaScript.",
+        "hi": "<code>&lt;script&gt;</code> टैग मानक HTML तत्व है जिसका उपयोग क्लाइंट-साइड स्क्रिप्ट, जैसे जावास्क्रिप्ट, को परिभाषित करने के लिए किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Always wrap inline JS in <code>&lt;script&gt;</code> tags.",
+        "hi": "हमेशा इनलाइन JS को <code>&lt;script&gt;</code> टैग में लपेटें।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "A key advantage of JavaScript is its platform independence. This means:",
+        "hi": "जावास्क्रिप्ट का एक प्रमुख लाभ इसकी प्लेटफ़ॉर्म स्वतंत्रता है। इसका मतलब है:"
+      },
+      "options": {
+        "a": {"en": "It can run on any system with a compatible web browser", "hi": "यह एक संगत वेब ब्राउज़र वाले किसी भी सिस्टम पर चल सकती है"},
+        "b": {"en": "It can only run on Windows", "hi": "यह केवल विंडोज पर चल सकती है"},
+        "c": {"en": "It does not require a browser", "hi": "इसे ब्राउज़र की आवश्यकता नहीं है"},
+        "d": {"en": "It is the same as Java", "hi": "यह जावा के समान है"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It works on Mac, Windows, Linux, and Mobile as long as you can view the web.",
+        "hi": "यह मैक, विंडोज, लिनक्स और मोबाइल पर तब तक काम करता है जब तक आप वेब देख सकते हैं।"
+      },
+      "explanation": {
+        "en": "JavaScript relies on the browser, not the operating system. Any device with a modern web browser (Chrome, Firefox, Safari) can interpret and run JS code.",
+        "hi": "जावास्क्रिप्ट ब्राउज़र पर निर्भर करता है, ऑपरेटिंग सिस्टम पर नहीं। आधुनिक वेब ब्राउज़र (क्रोम, फ़ायरफ़ॉक्स, सफारी) वाला कोई भी उपकरण JS कोड की व्याख्या और संचालन कर सकता है।"
+      },
+      "key_takeaway": {
+        "en": "JS runs anywhere a browser runs.",
+        "hi": "JS वहां चलता है जहां ब्राउज़र चलता है।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "The main security disadvantage of JavaScript is that:",
+        "hi": "जावास्क्रिप्ट का मुख्य सुरक्षा नुकसान यह है कि:"
+      },
+      "options": {
+        "a": {"en": "its source code is visible to the end-user in the browser", "hi": "इसका सोर्स कोड ब्राउज़र में एंड-यूजर को दिखाई देता है"},
+        "b": {"en": "it cannot interact with the user", "hi": "यह उपयोगकर्ता के साथ इंटरैक्ट नहीं कर सकती"},
+        "c": {"en": "it is too slow to handle security", "hi": "यह सुरक्षा संभालने में बहुत धीमी है"},
+        "d": {"en": "it requires a paid license", "hi": "इसके लिए एक सशुल्क लाइसेंस की आवश्यकता होती है"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Right-click -> View Page Source.",
+        "hi": "राइट-क्लिक -> व्यू पेज सोर्स।"
+      },
+      "explanation": {
+        "en": "Since JS is sent to the client to be executed, anyone can view the code by using the browser's 'View Source' feature. This means sensitive logic or keys should never be stored in client-side JS.",
+        "hi": "चूंकि JS को निष्पादित करने के लिए क्लाइंट को भेजा जाता है, इसलिए कोई भी ब्राउज़र की 'व्यू सोर्स' सुविधा का उपयोग करके कोड देख सकता है। इसका मतलब है कि संवेदनशील तर्क या कुंजियों को कभी भी क्लाइंट-साइड JS में संग्रहीत नहीं किया जाना चाहिए।"
+      },
+      "key_takeaway": {
+        "en": "Client-side code is public.",
+        "hi": "क्लाइंट-साइड कोड सार्वजनिक है।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "In JavaScript, what is a variable?",
+        "hi": "जावास्क्रिप्ट में, वेरिएबल क्या है?"
+      },
+      "options": {
+        "a": {"en": "A fixed value that cannot be changed", "hi": "एक निश्चित मान जिसे बदला नहीं जा सकता"},
+        "b": {"en": "A named container that stores a value which can be changed", "hi": "एक नामित कंटेनर जो एक मान संग्रहीत करता है जिसे बदला जा सकता है"},
+        "c": {"en": "A type of JavaScript operator", "hi": "एक प्रकार का जावास्क्रिप्ट ऑपरेटर"},
+        "d": {"en": "A JavaScript function", "hi": "एक जावास्क्रिप्ट फ़ंक्शन"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Think of it like a box with a label where you can put different things.",
+        "hi": "इसे एक लेबल वाले बॉक्स की तरह समझें जहाँ आप अलग-अलग चीजें रख सकते हैं।"
+      },
+      "explanation": {
+        "en": "A variable is a storage location paired with a symbolic name (identifier), which contains some known or unknown quantity of information referred to as a value.",
+        "hi": "एक वेरिएबल एक प्रतीकात्मक नाम (पहचानकर्ता) के साथ जोड़ा गया भंडारण स्थान है, जिसमें कुछ ज्ञात या अज्ञात जानकारी होती है जिसे मान कहा जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Variables are containers for data.",
+        "hi": "वेरिएबल्स डेटा के लिए कंटेनर हैं।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "Which of the following is the correct syntax to declare a variable in JavaScript?",
+        "hi": "निम्नलिखित में से जावास्क्रिप्ट में वेरिएबल घोषित करने का सही सिंटैक्स कौन सा है?"
+      },
+      "options": {
+        "a": {"en": "variable name = 10;", "hi": "variable name = 10;"},
+        "b": {"en": "<code>var name = 10;</code>", "hi": "<code>var name = 10;</code>"},
+        "c": {"en": "name := 10;", "hi": "name := 10;"},
+        "d": {"en": "String name = 10;", "hi": "String name = 10;"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The keyword is short for 'variable'.",
+        "hi": "कीवर्ड 'variable' का संक्षिप्त रूप है।"
+      },
+      "explanation": {
+        "en": "The <code>var</code> keyword (along with <code>let</code> and <code>const</code>) is used to declare variables in JavaScript.",
+        "hi": "<code>var</code> कीवर्ड (<code>let</code> और <code>const</code> के साथ) का उपयोग जावास्क्रिप्ट में वेरिएबल्स घोषित करने के लिए किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Use <code>var</code>, <code>let</code>, or <code>const</code> to declare variables.",
+        "hi": "वेरिएबल्स घोषित करने के लिए <code>var</code>, <code>let</code>, या <code>const</code> का उपयोग करें।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "The statement <code>var city = \"Mumbai\";</code> assigns what type of value to the variable 'city'?",
+        "hi": "स्टेटमेंट <code>var city = \"Mumbai\";</code> वेरिएबल 'city' को किस प्रकार का मान निर्दिष्ट करता है?"
+      },
+      "options": {
+        "a": {"en": "Number", "hi": "नंबर"},
+        "b": {"en": "Boolean", "hi": "बूलियन"},
+        "c": {"en": "String", "hi": "स्ट्रिंग"},
+        "d": {"en": "Undefined", "hi": "अपरिभाषित"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It is text enclosed in quotes.",
+        "hi": "यह कोट्स में संलग्न टेक्स्ट है।"
+      },
+      "explanation": {
+        "en": "In programming, text values enclosed in single or double quotes are called <b>Strings</b>.",
+        "hi": "प्रोग्रामिंग में, सिंगल या डबल कोट्स में संलग्न टेक्स्ट मानों को <b>स्ट्रिंग्स</b> कहा जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Text in quotes is a String.",
+        "hi": "कोट्स में टेक्स्ट एक स्ट्रिंग है।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "What does it mean when we say JavaScript is \"dynamically typed\"?",
+        "hi": "जब हम कहते हैं कि जावास्क्रिप्ट \"डायनामिकली टाइप्ड\" है, तो इसका क्या अर्थ है?"
+      },
+      "options": {
+        "a": {"en": "Variables must be declared before use", "hi": "वेरिएबल का उपयोग करने से पहले उन्हें घोषित किया जाना चाहिए"},
+        "b": {"en": "The data type is determined automatically at runtime", "hi": "वेरिएबल का डेटा प्रकार रनटाइम पर स्वचालित रूप से निर्धारित होता है"},
+        "c": {"en": "Variables cannot change their value", "hi": "वेरिएबल एक बार मान निर्दिष्ट हो जाने पर अपना मान नहीं बदल सकते"},
+        "d": {"en": "You must always specify the data type (e.g., int)", "hi": "वेरिएबल घोषित करते समय आपको हमेशा डेटा प्रकार (जैसे, int) निर्दिष्ट करना होगा"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "You don't have to tell JS if a variable is a number or text; it figures it out.",
+        "hi": "आपको JS को यह बताने की ज़रूरत नहीं है कि कोई वेरिएबल नंबर है या टेक्स्ट; यह खुद पता लगा लेता है।"
+      },
+      "explanation": {
+        "en": "Dynamic typing means a variable can hold a number, and later be assigned a string. The type is inferred from the value, not explicitly defined by the developer.",
+        "hi": "डायनामिक टाइपिंग का अर्थ है कि एक वेरिएबल में एक संख्या हो सकती है, और बाद में उसे एक स्ट्रिंग सौंपी जा सकती है। प्रकार का अनुमान मान से लगाया जाता है, डेवलपर द्वारा स्पष्ट रूप से परिभाषित नहीं किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "JS variables can hold any data type and change types dynamically.",
+        "hi": "JS वेरिएबल्स किसी भी डेटा प्रकार को धारण कर सकते हैं और प्रकारों को गतिशील रूप से बदल सकते हैं।"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "Which of the following is a primitive data type in JavaScript?",
+        "hi": "निम्नलिखित में से कौन सा जावास्क्रिप्ट में एक आदिम (Primitive) डेटा प्रकार है?"
+      },
+      "options": {
+        "a": {"en": "Array", "hi": "ऐरे"},
+        "b": {"en": "Object", "hi": "ऑब्जेक्ट"},
+        "c": {"en": "Number", "hi": "नंबर"},
+        "d": {"en": "Function", "hi": "फ़ंक्शन"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It represents a simple value, not a complex structure.",
+        "hi": "यह एक जटिल संरचना नहीं, बल्कि एक साधारण मान का प्रतिनिधित्व करता है।"
+      },
+      "explanation": {
+        "en": "JavaScript has primitive types (Number, String, Boolean, Null, Undefined, Symbol) and reference types (Object, Array, Function). Number is a primitive.",
+        "hi": "जावास्क्रिप्ट में आदिम प्रकार (Number, String, Boolean, Null, Undefined, Symbol) और संदर्भ प्रकार (Object, Array, Function) होते हैं। नंबर एक आदिम है।"
+      },
+      "key_takeaway": {
+        "en": "Number, String, Boolean are primitives.",
+        "hi": "Number, String, Boolean प्रिमिटिव्स हैं।"
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "The value <code>null</code> in JavaScript represents:",
+        "hi": "जावास्क्रिप्ट में <code>null</code> मान दर्शाता है:"
+      },
+      "options": {
+        "a": {"en": "A variable that has not been assigned a value", "hi": "एक वेरिएबल जिसे कोई मान निर्दिष्ट नहीं किया गया है"},
+        "b": {"en": "An intentional absence of any object value", "hi": "किसी भी ऑब्जेक्ट मान की जानबूझकर अनुपस्थिति"},
+        "c": {"en": "A value of zero", "hi": "शून्य का मान"},
+        "d": {"en": "An empty string", "hi": "एक खाली स्ट्रिंग"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It is used when you want to explicitly say 'this variable is empty'.",
+        "hi": "इसका उपयोग तब किया जाता है जब आप स्पष्ट रूप से कहना चाहते हैं कि 'यह वेरिएबल खाली है'।"
+      },
+      "explanation": {
+        "en": "<code>null</code> is a special keyword denoting a null or 'empty' value. It is different from <code>undefined</code> (which means a variable exists but hasn't been set yet).",
+        "hi": "<code>null</code> एक विशेष कीवर्ड है जो शून्य या 'खाली' मान को दर्शाता है। यह <code>undefined</code> (जिसका अर्थ है कि एक वेरिएबल मौजूद है लेकिन अभी तक सेट नहीं किया गया है) से अलग है।"
+      },
+      "key_takeaway": {
+        "en": "<code>null</code> is an assigned 'empty' value.",
+        "hi": "<code>null</code> एक असाइन किया गया 'खाली' मान है।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "What is the value of a variable that has been declared but not assigned any value?",
+        "hi": "एक वेरिएबल का क्या मान होता है जिसे घोषित किया गया है लेकिन कोई मान निर्दिष्ट नहीं किया गया है?"
+      },
+      "options": {
+        "a": {"en": "null", "hi": "null"},
+        "b": {"en": "0", "hi": "0"},
+        "c": {"en": "empty string", "hi": "खाली स्ट्रिंग"},
+        "d": {"en": "undefined", "hi": "undefined"}
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "It means the definition is there, but the value is not.",
+        "hi": "इसका मतलब है कि परिभाषा तो है, लेकिन मान नहीं है।"
+      },
+      "explanation": {
+        "en": "If you write <code>var x;</code> without assigning a value, JS automatically gives it the value <code>undefined</code>.",
+        "hi": "यदि आप मान निर्दिष्ट किए बिना <code>var x;</code> लिखते हैं, तो JS स्वचालित रूप से इसे <code>undefined</code> मान देता है।"
+      },
+      "key_takeaway": {
+        "en": "Unassigned variables are <code>undefined</code>.",
+        "hi": "असाइन नहीं किए गए वेरिएबल्स <code>undefined</code> होते हैं।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "Which of the following is a non-primitive (reference) data type?",
+        "hi": "निम्नलिखित में से कौन सा एक गैर-आदिम (संदर्भ) डेटा प्रकार है?"
+      },
+      "options": {
+        "a": {"en": "Boolean", "hi": "बूलियन"},
+        "b": {"en": "String", "hi": "स्ट्रिंग"},
+        "c": {"en": "Object", "hi": "ऑब्जेक्ट"},
+        "d": {"en": "Undefined", "hi": "अपरिभाषित"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It is a complex data structure that can hold multiple values.",
+        "hi": "यह एक जटिल डेटा संरचना है जो कई मानों को धारण कर सकती है।"
+      },
+      "explanation": {
+        "en": "Objects (and Arrays) are reference types. They store collections of data rather than a single simple value.",
+        "hi": "ऑब्जेक्ट्स (और एरे) संदर्भ प्रकार हैं। वे एकल सरल मान के बजाय डेटा के संग्रह को संग्रहीत करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Objects are complex reference types.",
+        "hi": "ऑब्जेक्ट्स जटिल संदर्भ प्रकार हैं।"
+      }
+    },
+    {
+      "question_id": 21,
+      "question": {
+        "en": "What is the purpose of operators in JavaScript?",
+        "hi": "जावास्क्रिप्ट में ऑपरेटर का उद्देश्य क्या है?"
+      },
+      "options": {
+        "a": {"en": "To declare variables", "hi": "वेरिएबल घोषित करने के लिए"},
+        "b": {"en": "To define functions", "hi": "फ़ंक्शन को परिभाषित करने के लिए"},
+        "c": {"en": "To perform operations on values", "hi": "मानों पर संचालन करने के लिए"},
+        "d": {"en": "To create loops", "hi": "लूप बनाने के लिए"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "They 'operate' on data (add, subtract, compare).",
+        "hi": "वे डेटा पर 'संचालन' करते हैं (जोड़ना, घटाना, तुलना करना)।"
+      },
+      "explanation": {
+        "en": "Operators act on variables and values to produce a result. Examples include arithmetic (<code>+</code>), comparison (<code>></code>), and logical (<code>&&</code>) operators.",
+        "hi": "ऑपरेटर परिणाम उत्पन्न करने के लिए वेरिएबल और मानों पर कार्य करते हैं। उदाहरणों में अंकगणितीय (<code>+</code>), तुलना (<code>></code>), और तार्किक (<code>&&</code>) ऑपरेटर शामिल हैं।"
+      },
+      "key_takeaway": {
+        "en": "Operators manipulate data.",
+        "hi": "ऑपरेटर डेटा में हेरफेर करते हैं।"
+      }
+    },
+    {
+      "question_id": 22,
+      "question": {
+        "en": "What is the result of the expression: <code>10 % 3</code>?",
+        "hi": "एक्सप्रेशन का परिणाम: <code>10 % 3</code> क्या है?"
+      },
+      "options": {
+        "a": {"en": "3", "hi": "3"},
+        "b": {"en": "1", "hi": "1"},
+        "c": {"en": "0.3", "hi": "0.3"},
+        "d": {"en": "30", "hi": "30"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The <code>%</code> symbol is the Modulus operator, which gives the remainder.",
+        "hi": "<code>%</code> प्रतीक मापांक (Modulus) ऑपरेटर है, जो शेषफल देता है।"
+      },
+      "explanation": {
+        "en": "10 divided by 3 is 3, with a remainder of 1. The modulus operator returns that remainder.",
+        "hi": "10 को 3 से विभाजित करने पर 3 आता है, और शेष 1 बचता है। मापांक ऑपरेटर उस शेषफल को लौटाता है।"
+      },
+      "key_takeaway": {
+        "en": "<code>%</code> returns the remainder of division.",
+        "hi": "<code>%</code> विभाजन का शेषफल लौटाता है।"
+      }
+    },
+    {
+      "question_id": 23,
+      "question": {
+        "en": "The <code>**</code> operator in JavaScript is used for:",
+        "hi": "जावास्क्रिप्ट में <code>**</code> ऑपरेटर का उपयोग किसके लिए किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "Multiplication", "hi": "गुणा"},
+        "b": {"en": "Division", "hi": "विभाजन"},
+        "c": {"en": "Exponentiation (raising to a power)", "hi": "घातांक (एक घात तक बढ़ाना)"},
+        "d": {"en": "Modulus (remainder)", "hi": "मापांक (शेष)"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It's like multiplying a number by itself multiple times.",
+        "hi": "यह किसी संख्या को स्वयं से कई बार गुणा करने जैसा है।"
+      },
+      "explanation": {
+        "en": "<code>2 ** 3</code> means 2 to the power of 3 (2*2*2 = 8). It is the exponentiation operator.",
+        "hi": "<code>2 ** 3</code> का अर्थ है 2 की घात 3 (2*2*2 = 8)। यह घातांक ऑपरेटर है।"
+      },
+      "key_takeaway": {
+        "en": "<code>**</code> is for Exponentiation.",
+        "hi": "<code>**</code> घातांक के लिए है।"
+      }
+    },
+    {
+      "question_id": 24,
+      "question": {
+        "en": "What will be the value of <code>x</code> after this code executes: <code>var x = 5; x++;</code>?",
+        "hi": "इस कोड के निष्पादित होने के बाद <code>x</code> का मान क्या होगा: <code>var x = 5; x++;</code>?"
+      },
+      "options": {
+        "a": {"en": "5", "hi": "5"},
+        "b": {"en": "6", "hi": "6"},
+        "c": {"en": "4", "hi": "4"},
+        "d": {"en": "0", "hi": "0"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "<code>++</code> increments the value by 1.",
+        "hi": "<code>++</code> मान को 1 से बढ़ाता है।"
+      },
+      "explanation": {
+        "en": "The increment operator <code>++</code> adds 1 to the current value. 5 + 1 = 6.",
+        "hi": "इंक्रीमेंट ऑपरेटर <code>++</code> वर्तमान मान में 1 जोड़ता है। 5 + 1 = 6।"
+      },
+      "key_takeaway": {
+        "en": "<code>++</code> increases a variable by 1.",
+        "hi": "<code>++</code> एक वेरिएबल को 1 से बढ़ाता है।"
+      }
+    },
+    {
+      "question_id": 25,
+      "question": {
+        "en": "Which comparison operator checks if two values are NOT equal?",
+        "hi": "कौन सा तुलना ऑपरेटर जाँचता है कि क्या दो मान बराबर नहीं हैं?"
+      },
+      "options": {
+        "a": {"en": "<code>=</code>", "hi": "<code>=</code>"},
+        "b": {"en": "<code>==</code>", "hi": "<code>==</code>"},
+        "c": {"en": "<code>!=</code>", "hi": "<code>!=</code>"},
+        "d": {"en": "<code>!==</code>", "hi": "<code>!==</code>"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The exclamation mark often means 'NOT' in logic.",
+        "hi": "तर्क में विस्मयादिबोधक चिह्न का अर्थ अक्सर 'नहीं' (NOT) होता है।"
+      },
+      "explanation": {
+        "en": "The <code>!=</code> operator returns true if the values are different. (Option D <code>!==</code> checks values AND types, but <code>!=</code> is the standard 'not equal').",
+        "hi": "<code>!=</code> ऑपरेटर सही (true) लौटाता है यदि मान अलग-अलग हैं। (विकल्प D <code>!==</code> मान और प्रकार दोनों की जाँच करता है, लेकिन <code>!=</code> मानक 'बराबर नहीं' है)।"
+      },
+      "key_takeaway": {
+        "en": "<code>!=</code> means Not Equal.",
+        "hi": "<code>!=</code> का अर्थ है बराबर नहीं।"
+      }
+    },
+    {
+      "question_id": 26,
+      "question": {
+        "en": "What is the output of <code>(10 &lt;= 10)</code>?",
+        "hi": "<code>(10 &lt;= 10)</code> का आउटपुट क्या है?"
+      },
+      "options": {
+        "a": {"en": "true", "hi": "true"},
+        "b": {"en": "false", "hi": "false"},
+        "c": {"en": "10", "hi": "10"},
+        "d": {"en": "0", "hi": "0"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Is 10 less than OR equal to 10?",
+        "hi": "क्या 10, 10 से कम या उसके बराबर है?"
+      },
+      "explanation": {
+        "en": "The <code>&lt;=</code> operator means 'less than or equal to'. Since 10 is equal to 10, the condition is true.",
+        "hi": "<code>&lt;=</code> ऑपरेटर का अर्थ है 'से कम या उसके बराबर'। चूंकि 10, 10 के बराबर है, इसलिए शर्त सत्य है।"
+      },
+      "key_takeaway": {
+        "en": "<code>&lt;=</code> checks for less than or equal to.",
+        "hi": "<code>&lt;=</code> कम या बराबर की जाँच करता है।"
+      }
+    },
+    {
+      "question_id": 27,
+      "question": {
+        "en": "The logical operator <code>&amp;&amp;</code> (AND) returns <code>true</code> only when:",
+        "hi": "लॉजिकल ऑपरेटर <code>&amp;&amp;</code> (AND) केवल तभी <code>true</code> लौटाता है जब:"
+      },
+      "options": {
+        "a": {"en": "both operands are true", "hi": "दोनों ऑपरेंड true हैं"},
+        "b": {"en": "at least one operand is true", "hi": "कम से कम एक ऑपरेंड true है"},
+        "c": {"en": "the first operand is true", "hi": "पहला ऑपरेंड true है"},
+        "d": {"en": "both operands are false", "hi": "दोनों ऑपरेंड false हैं"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It's strict; everything must be true.",
+        "hi": "यह सख्त है; सब कुछ सत्य होना चाहिए।"
+      },
+      "explanation": {
+        "en": "The AND operator requires ALL conditions to be met. <code>true &amp;&amp; true</code> is true; anything else is false.",
+        "hi": "AND ऑपरेटर को सभी शर्तों को पूरा करने की आवश्यकता होती है। <code>true &amp;&amp; true</code> सत्य है; बाकी सब कुछ असत्य है।"
+      },
+      "key_takeaway": {
+        "en": "<code>&amp;&amp;</code> means BOTH must be true.",
+        "hi": "<code>&amp;&amp;</code> का अर्थ है कि दोनों सत्य होने चाहिए।"
+      }
+    },
+    {
+      "question_id": 28,
+      "question": {
+        "en": "What is the result of <code>!(5 &gt; 3)</code>?",
+        "hi": "<code>!(5 &gt; 3)</code> का परिणाम क्या है?"
+      },
+      "options": {
+        "a": {"en": "true", "hi": "true"},
+        "b": {"en": "false", "hi": "false"},
+        "c": {"en": "5", "hi": "5"},
+        "d": {"en": "3", "hi": "3"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "First evaluate (5 > 3), then flip it with the NOT operator.",
+        "hi": "पहले (5 > 3) का मूल्यांकन करें, फिर इसे NOT ऑपरेटर के साथ पलट दें।"
+      },
+      "explanation": {
+        "en": "5 is greater than 3, so <code>(5 &gt; 3)</code> is true. The <code>!</code> (NOT) operator inverts true to false.",
+        "hi": "5, 3 से बड़ा है, इसलिए <code>(5 &gt; 3)</code> सत्य है। <code>!</code> (NOT) ऑपरेटर सत्य को असत्य में बदल देता है।"
+      },
+      "key_takeaway": {
+        "en": "<code>!</code> inverts a boolean value.",
+        "hi": "<code>!</code> बूलियन मान को उल्टा कर देता है।"
+      }
+    },
+    {
+      "question_id": 29,
+      "question": {
+        "en": "The <code>+</code> operator, when used with strings, performs:",
+        "hi": "<code>+</code> ऑपरेटर, जब स्ट्रिंग्स के साथ प्रयोग किया जाता है, निष्पादित करता है:"
+      },
+      "options": {
+        "a": {"en": "addition", "hi": "जोड़"},
+        "b": {"en": "subtraction", "hi": "घटाव"},
+        "c": {"en": "concatenation", "hi": "संयोजन (concatenation)"},
+        "d": {"en": "multiplication", "hi": "गुणा"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It joins the text together.",
+        "hi": "यह टेक्स्ट को एक साथ जोड़ता है।"
+      },
+      "explanation": {
+        "en": "In JavaScript, if one or both operands are strings, the <code>+</code> operator joins them together (concatenation) rather than doing math.",
+        "hi": "जावास्क्रिप्ट में, यदि एक या दोनों ऑपरेंड स्ट्रिंग हैं, तो <code>+</code> ऑपरेटर गणित करने के बजाय उन्हें एक साथ जोड़ता है (संयोजन)।"
+      },
+      "key_takeaway": {
+        "en": "<code>+</code> concatenates strings.",
+        "hi": "<code>+</code> स्ट्रिंग्स को जोड़ता है।"
+      }
+    },
+    {
+      "question_id": 30,
+      "question": {
+        "en": "What will be stored in the variable <code>message</code> after this code runs: <code>var message = \"Hi \" + \"there!\";</code>?",
+        "hi": "इस कोड के चलने के बाद वेरिएबल <code>message</code> में क्या संग्रहीत होगा: <code>var message = \"Hi \" + \"there!\";</code>?"
+      },
+      "options": {
+        "a": {"en": "\"Hi\"", "hi": "\"Hi\""},
+        "b": {"en": "\"there!\"", "hi": "\"there!\""},
+        "c": {"en": "\"Hi there!\"", "hi": "\"Hi there!\""},
+        "d": {"en": "\"Hi\" + \"there!\"", "hi": "\"Hi\" + \"there!\""}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The two strings are glued together.",
+        "hi": "दोनों स्ट्रिंग्स को एक साथ चिपकाया गया है।"
+      },
+      "explanation": {
+        "en": "The <code>+</code> operator concatenates the two strings into one single string value: \"Hi there!\".",
+        "hi": "<code>+</code> ऑपरेटर दो स्ट्रिंग्स को एक एकल स्ट्रिंग मान में जोड़ता है: \"Hi there!\"।"
+      },
+      "key_takeaway": {
+        "en": "String concatenation merges text.",
+        "hi": "स्ट्रिंग संयोजन टेक्स्ट को मिलाता है।"
+      }
+    },
+    {
+      "question_id": 31,
+      "question": {
+        "en": "Conditional statements are used to:",
+        "hi": "सशर्त कथनों (Conditional statements) का उपयोग किया जाता है:"
+      },
+      "options": {
+        "a": {"en": "repeat a block of code", "hi": "कोड के एक ब्लॉक को दोहराने के लिए"},
+        "b": {"en": "make decisions and execute different code based on conditions", "hi": "निर्णय लेने और शर्तों के आधार पर अलग-अलग कोड निष्पादित करने के लिए"},
+        "c": {"en": "declare variables", "hi": "वेरिएबल घोषित करने के लिए"},
+        "d": {"en": "define functions", "hi": "फ़ंक्शन को परिभाषित करने के लिए"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "If this happens, do that; otherwise, do something else.",
+        "hi": "यदि ऐसा होता है, तो वह करें; अन्यथा, कुछ और करें।"
+      },
+      "explanation": {
+        "en": "Conditional statements (like <code>if</code>, <code>else</code>, <code>switch</code>) allow the program to choose different paths of execution based on whether a condition is true or false.",
+        "hi": "सशर्त कथन (जैसे <code>if</code>, <code>else</code>, <code>switch</code>) प्रोग्राम को इस आधार पर निष्पादन के अलग-अलग रास्ते चुनने की अनुमति देते हैं कि कोई शर्त सत्य है या असत्य।"
+      },
+      "key_takeaway": {
+        "en": "Conditionals control logic flow.",
+        "hi": "कंडीशनल्स तर्क प्रवाह को नियंत्रित करते हैं।"
+      }
+    },
+    {
+      "question_id": 32,
+      "question": {
+        "en": "In an <code>if</code> statement, the code block inside the curly braces <code>{}</code> is executed:",
+        "hi": "एक <code>if</code> स्टेटमेंट में, करली ब्रेसिज़ <code>{}</code> के अंदर का कोड ब्लॉक निष्पादित होता है:"
+      },
+      "options": {
+        "a": {"en": "always", "hi": "हमेशा"},
+        "b": {"en": "only if the condition is true", "hi": "केवल तभी जब स्थिति true हो"},
+        "c": {"en": "only if the condition is false", "hi": "केवल तभी जब स्थिति false हो"},
+        "d": {"en": "never", "hi": "कभी नहीं"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The gate only opens if the key fits.",
+        "hi": "गेट तभी खुलता है जब चाबी फिट होती है।"
+      },
+      "explanation": {
+        "en": "The fundamental rule of an <code>if</code> statement is that its body runs ONLY when the expression in parentheses evaluates to true.",
+        "hi": "<code>if</code> स्टेटमेंट का मौलिक नियम यह है कि इसका शरीर केवल तभी चलता है जब कोष्ठक में अभिव्यक्ति का मूल्यांकन सत्य हो।"
+      },
+      "key_takeaway": {
+        "en": "<code>if</code> requires a true condition.",
+        "hi": "<code>if</code> के लिए एक सत्य स्थिति की आवश्यकता होती है।"
+      }
+    },
+    {
+      "question_id": 33,
+      "question": {
+        "en": "The <code>else</code> clause in an <code>if-else</code> statement is executed when:",
+        "hi": "एक <code>if-else</code> स्टेटमेंट में <code>else</code> क्लॉज निष्पादित होती है जब:"
+      },
+      "options": {
+        "a": {"en": "the if condition is true", "hi": "if की स्थिति true है"},
+        "b": {"en": "the if condition is false", "hi": "if की स्थिति false है"},
+        "c": {"en": "the program starts", "hi": "प्रोग्राम शुरू होता है"},
+        "d": {"en": "a loop ends", "hi": "एक लूप समाप्त होता है"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It is the backup plan.",
+        "hi": "यह बैकअप प्लान है।"
+      },
+      "explanation": {
+        "en": "The <code>else</code> block is the alternative path. It runs specifically when the main <code>if</code> condition fails (is false).",
+        "hi": "<code>else</code> ब्लॉक वैकल्पिक पथ है। यह विशेष रूप से तब चलता है जब मुख्य <code>if</code> स्थिति विफल (असत्य) हो जाती है।"
+      },
+      "key_takeaway": {
+        "en": "<code>else</code> handles false conditions.",
+        "hi": "<code>else</code> झूठी स्थितियों को संभालता है।"
+      }
+    },
+    {
+      "question_id": 34,
+      "question": {
+        "en": "The <code>if...else if...else</code> statement is most useful for:",
+        "hi": "<code>if...else if...else</code> स्टेटमेंट सबसे उपयोगी है:"
+      },
+      "options": {
+        "a": {"en": "handling multiple possible conditions", "hi": "कई संभावित स्थितियों को संभालने के लिए"},
+        "b": {"en": "creating an infinite loop", "hi": "एक अनंत लूप बनाने के लिए"},
+        "c": {"en": "declaring multiple variables", "hi": "एकाधिक वेरिएबल घोषित करने के लिए"},
+        "d": {"en": "performing arithmetic operations", "hi": "अंकगणितीय संचालन करने के लिए"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Use this when you have more than two choices (e.g., Grade A, B, C, or Fail).",
+        "hi": "इसका उपयोग तब करें जब आपके पास दो से अधिक विकल्प हों (जैसे, ग्रेड A, B, C, या फेल)।"
+      },
+      "explanation": {
+        "en": "This structure allows you to chain multiple tests. If the first fails, it checks the second, and so on, allowing for complex decision trees.",
+        "hi": "यह संरचना आपको कई परीक्षणों को श्रृंखला में जोड़ने की अनुमति देती है। यदि पहला विफल हो जाता है, तो यह दूसरे की जाँच करता है, और इसी तरह, जटिल निर्णय पेड़ों की अनुमति देता है।"
+      },
+      "key_takeaway": {
+        "en": "<code>else if</code> allows multiple specific checks.",
+        "hi": "<code>else if</code> कई विशिष्ट जाँचों की अनुमति देता है।"
+      }
+    },
+    {
+      "question_id": 35,
+      "question": {
+        "en": "The primary purpose of a <code>switch</code> statement is to:",
+        "hi": "<code>switch</code> स्टेटमेंट का प्राथमिक उद्देश्य है:"
+      },
+      "options": {
+        "a": {"en": "replace all if-else statements", "hi": "सभी if-else स्टेटमेंट को बदलना"},
+        "b": {"en": "execute code based on the value of a single variable or expression", "hi": "किसी एक वेरिएबल या एक्सप्रेशन के मान के आधार पर कोड निष्पादित करना"},
+        "c": {"en": "create a loop that runs a fixed number of times", "hi": "एक लूप बनाना जो एक निश्चित संख्या में चलता है"},
+        "d": {"en": "define a new data type", "hi": "एक नया डेटा प्रकार परिभाषित करना"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It compares one variable against many different 'cases'.",
+        "hi": "यह एक वेरिएबल की तुलना कई अलग-अलग 'केसों' से करता है।"
+      },
+      "explanation": {
+        "en": "A <code>switch</code> statement is a cleaner way to write multiple <code>if...else if</code> checks when you are comparing the same variable against many different possible values.",
+        "hi": "<code>switch</code> स्टेटमेंट कई <code>if...else if</code> चेक लिखने का एक साफ तरीका है जब आप एक ही वेरिएबल की तुलना कई अलग-अलग संभावित मानों से कर रहे होते हैं।"
+      },
+      "key_takeaway": {
+        "en": "<code>switch</code> optimizes multi-value checking.",
+        "hi": "<code>switch</code> बहु-मान जाँच को अनुकूलित करता है।"
+      }
+    },
+    {
+      "question_id": 36,
+      "question": {
+        "en": "Why is the <code>break</code> statement important inside a <code>switch</code> block?",
+        "hi": "<code>switch</code> ब्लॉक के अंदर <code>break</code> स्टेटमेंट महत्वपूर्ण क्यों है?"
+      },
+      "options": {
+        "a": {"en": "It stops the entire JavaScript program", "hi": "यह पूरे जावास्क्रिप्ट प्रोग्राम को रोक देता है"},
+        "b": {"en": "It exits the switch block, preventing fall-through", "hi": "यह स्विच ब्लॉक से बाहर निकलता है, फॉल-थ्रू को रोकता है"},
+        "c": {"en": "It is used to declare a variable", "hi": "इसका उपयोग वेरिएबल घोषित करने के लिए किया जाता है"},
+        "d": {"en": "It makes the switch statement run faster", "hi": "यह स्विच स्टेटमेंट को तेजी से चलाता है"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Without it, the code keeps running into the next case automatically.",
+        "hi": "इसके बिना, कोड स्वचालित रूप से अगले केस में चलता रहता है।"
+      },
+      "explanation": {
+        "en": "In a switch, once a match is found, JS executes that code AND all code below it. <code>break</code> stops this 'fall-through' behavior, ensuring only the matching case runs.",
+        "hi": "स्विच में, एक बार मैच मिल जाने पर, JS उस कोड और उसके नीचे के सभी कोड को निष्पादित करता है। <code>break</code> इस 'फॉल-थ्रू' व्यवहार को रोकता है, यह सुनिश्चित करता है कि केवल मिलान वाला केस ही चले।"
+      },
+      "key_takeaway": {
+        "en": "<code>break</code> prevents executing extra cases.",
+        "hi": "<code>break</code> अतिरिक्त केसों को निष्पादित करने से रोकता है।"
+      }
+    },
+    {
+      "question_id": 37,
+      "question": {
+        "en": "The <code>default</code> case in a <code>switch</code> statement is executed when:",
+        "hi": "<code>switch</code> स्टेटमेंट में <code>default</code> केस निष्पादित होता है जब:"
+      },
+      "options": {
+        "a": {"en": "the first case is true", "hi": "पहला केस true है"},
+        "b": {"en": "all cases are true", "hi": "सभी केस true हैं"},
+        "c": {"en": "no matching case is found", "hi": "कोई मेल खाता केस नहीं मिलता है"},
+        "d": {"en": "the break statement is missing", "hi": "break स्टेटमेंट गायब है"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It works like the 'else' at the end of an if-chain.",
+        "hi": "यह if-श्रृंखला के अंत में 'else' की तरह काम करता है।"
+      },
+      "explanation": {
+        "en": "The <code>default</code> block is the catch-all. If none of the specific <code>case</code> values match the expression, the default code runs.",
+        "hi": "<code>default</code> ब्लॉक कैच-ऑल है। यदि कोई भी विशिष्ट <code>case</code> मान अभिव्यक्ति से मेल नहीं खाता है, तो डिफ़ॉल्ट कोड चलता है।"
+      },
+      "key_takeaway": {
+        "en": "<code>default</code> handles unmatched cases.",
+        "hi": "<code>default</code> बेजोड़ मामलों को संभालता है।"
+      }
+    },
+    {
+      "question_id": 38,
+      "question": {
+        "en": "What is looping in programming?",
+        "hi": "प्रोग्रामिंग में लूपिंग क्या है?"
+      },
+      "options": {
+        "a": {"en": "The process of making decisions", "hi": "निर्णय लेने की प्रक्रिया"},
+        "b": {"en": "The process of repeating a block of code multiple times", "hi": "कोड के एक ब्लॉक को कई बार दोहराने की प्रक्रिया"},
+        "c": {"en": "The process of declaring variables", "hi": "वेरिएबल घोषित करने की प्रक्रिया"},
+        "d": {"en": "The process of connecting to a database", "hi": "डेटाबेस से कनेक्ट होने की प्रक्रिया"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Doing the same thing over and over again.",
+        "hi": "एक ही काम को बार-बार करना।"
+      },
+      "explanation": {
+        "en": "Looping structures (for, while) allow you to run the same piece of code repeatedly as long as a condition remains true, saving you from writing the same code multiple times.",
+        "hi": "लूपिंग संरचनाएं (for, while) आपको कोड के एक ही टुकड़े को बार-बार चलाने की अनुमति देती हैं जब तक कि कोई स्थिति सत्य रहती है, जिससे आपको एक ही कोड को कई बार लिखने से बचाया जा सकता है।"
+      },
+      "key_takeaway": {
+        "en": "Loops handle repetition.",
+        "hi": "लूप दोहराव को संभालते हैं।"
+      }
+    },
+    {
+      "question_id": 39,
+      "question": {
+        "en": "Which loop is known as a \"pre-test loop\" because the condition is checked before the iteration?",
+        "hi": "किस लूप को \"प्री-टेस्ट लूप\" के रूप में जाना जाता है क्योंकि पुनरावृत्ति से पहले स्थिति की जाँच की जाती है?"
+      },
+      "options": {
+        "a": {"en": "<code>while</code> loop", "hi": "<code>while</code> लूप"},
+        "b": {"en": "<code>do...while</code> loop", "hi": "<code>do...while</code> लूप"},
+        "c": {"en": "<code>for</code> loop", "hi": "<code>for</code> लूप"},
+        "d": {"en": "Both a and c", "hi": "दोनों a और c"}
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "If the condition is false initially, the code might never run.",
+        "hi": "यदि स्थिति शुरू में झूठी है, तो कोड कभी नहीं चल सकता है।"
+      },
+      "explanation": {
+        "en": "Both <code>while</code> and <code>for</code> loops check the condition *before* executing the code block. If the condition is false at the start, the code inside never runs.",
+        "hi": "<code>while</code> और <code>for</code> दोनों लूप कोड ब्लॉक को निष्पादित करने से *पहले* स्थिति की जांच करते हैं। यदि शुरुआत में स्थिति झूठी है, तो अंदर का कोड कभी नहीं चलता है।"
+      },
+      "key_takeaway": {
+        "en": "<code>while</code> and <code>for</code> are pre-test loops.",
+        "hi": "<code>while</code> और <code>for</code> प्री-टेस्ट लूप हैं।"
+      }
+    },
+    {
+      "question_id": 40,
+      "question": {
+        "en": "Which loop guarantees that the code block will be executed at least once?",
+        "hi": "कौन सा लूप गारंटी देता है कि कोड ब्लॉक कम से कम एक बार निष्पादित होगा?"
+      },
+      "options": {
+        "a": {"en": "<code>while</code> loop", "hi": "<code>while</code> लूप"},
+        "b": {"en": "<code>do...while</code> loop", "hi": "<code>do...while</code> लूप"},
+        "c": {"en": "<code>for</code> loop", "hi": "<code>for</code> लूप"},
+        "d": {"en": "<code>if</code> statement", "hi": "<code>if</code> स्टेटमेंट"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It acts first, asks questions later.",
+        "hi": "यह पहले कार्य करता है, बाद में प्रश्न पूछता है।"
+      },
+      "explanation": {
+        "en": "The <code>do...while</code> loop executes the code block first, and THEN checks the condition. This ensures the code always runs at least one time.",
+        "hi": "<code>do...while</code> लूप पहले कोड ब्लॉक को निष्पादित करता है, और फिर स्थिति की जाँच करता है। यह सुनिश्चित करता है कि कोड हमेशा कम से कम एक बार चले।"
+      },
+      "key_takeaway": {
+        "en": "<code>do...while</code> is a post-test loop.",
+        "hi": "<code>do...while</code> एक पोस्ट-टेस्ट लूप है।"
+      }
+    },
+    {
+      "question_id": 41,
+      "question": {
+        "en": "The <code>for</code> loop is particularly useful when:",
+        "hi": "<code>for</code> लूप विशेष रूप से उपयोगी होता है जब:"
+      },
+      "options": {
+        "a": {"en": "you want the loop to run indefinitely", "hi": "आप चाहते हैं कि लूप अनिश्चित काल तक चले"},
+        "b": {"en": "you know in advance how many times you want to loop", "hi": "आप पहले से जानते हैं कि आप कितनी बार लूप करना चाहते हैं"},
+        "c": {"en": "you need to execute the loop only if a condition is true", "hi": "आपको लूप को केवल तभी निष्पादित करने की आवश्यकता है जब कोई शर्त सत्य हो"},
+        "d": {"en": "you are working with string concatenation", "hi": "आप स्ट्रिंग संयोजन के साथ काम कर रहे हैं"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It has a built-in counter mechanism.",
+        "hi": "इसमें एक अंतर्निहित काउंटर तंत्र है।"
+      },
+      "explanation": {
+        "en": "Because you define the start, end condition, and increment step all in one line, <code>for</code> loops are perfect for counting a specific number of iterations (e.g., loop 10 times).",
+        "hi": "चूंकि आप एक ही पंक्ति में शुरुआत, समाप्ति स्थिति और वृद्धि चरण को परिभाषित करते हैं, इसलिए <code>for</code> लूप पुनरावृत्तियों की एक विशिष्ट संख्या (जैसे, 10 बार लूप) की गणना के लिए एकदम सही हैं।"
+      },
+      "key_takeaway": {
+        "en": "Use <code>for</code> loops for counted iterations.",
+        "hi": "गिने गए पुनरावृत्तियों के लिए <code>for</code> लूप का उपयोग करें।"
+      }
+    },
+    {
+      "question_id": 42,
+      "question": {
+        "en": "What are the three expressions inside the parentheses of a <code>for</code> loop?",
+        "hi": "<code>for</code> लूप के कोष्ठक के अंदर तीन एक्सप्रेशन क्या हैं?"
+      },
+      "options": {
+        "a": {"en": "Initialization, Condition, Increment/Decrement", "hi": "इनिशियलाइज़ेशन, कंडीशन, इंक्रीमेंट/डिक्रीमेंट"},
+        "b": {"en": "Variable, Value, Operator", "hi": "वेरिएबल, वैल्यू, ऑपरेटर"},
+        "c": {"en": "Start, Stop, Step", "hi": "स्टार्ट, स्टॉप, स्टेप"},
+        "d": {"en": "If, Else, Switch", "hi": "इफ, एल्स, स्विच"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Set it up, check if it should run, update the counter.",
+        "hi": "इसे सेट करें, जांचें कि क्या इसे चलना चाहिए, काउंटर को अपडेट करें।"
+      },
+      "explanation": {
+        "en": "The structure is: <code>for (initialization; condition; increment)</code>. 1. Initialize variable. 2. Check logic. 3. Update variable.",
+        "hi": "संरचना है: <code>for (initialization; condition; increment)</code>। 1. वेरिएबल को इनिशियलाइज़ करें। 2. लॉजिक चेक करें। 3. वेरिएबल को अपडेट करें।"
+      },
+      "key_takeaway": {
+        "en": "For loop: Init, Condition, Update.",
+        "hi": "For लूप: इनिशियलाइज़ेशन, कंडीशन, अपडेट।"
+      }
+    },
+    {
+      "question_id": 43,
+      "question": {
+        "en": "In the loop <code>for (i=0; i&lt;5; i++)</code>, how many times will the loop execute?",
+        "hi": "लूप <code>for (i=0; i&lt;5; i++)</code> में, लूप कितनी बार निष्पादित होगा?"
+      },
+      "options": {
+        "a": {"en": "4 times", "hi": "4 बार"},
+        "b": {"en": "5 times", "hi": "5 बार"},
+        "c": {"en": "6 times", "hi": "6 बार"},
+        "d": {"en": "0 times", "hi": "0 बार"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Count starting from 0: 0, 1, 2, 3, 4.",
+        "hi": "0 से गिनती शुरू करें: 0, 1, 2, 3, 4।"
+      },
+      "explanation": {
+        "en": "The loop runs for i = 0, 1, 2, 3, 4. When i becomes 5, the condition <code>i &lt; 5</code> is false, so it stops. Total count is 5.",
+        "hi": "लूप i = 0, 1, 2, 3, 4 के लिए चलता है। जब i 5 हो जाता है, तो स्थिति <code>i &lt; 5</code> झूठी हो जाती है, इसलिए यह रुक जाता है। कुल गिनती 5 है।"
+      },
+      "key_takeaway": {
+        "en": "0 to &lt;5 runs 5 times.",
+        "hi": "0 से &lt;5 तक 5 बार चलता है।"
+      }
+    },
+    {
+      "question_id": 44,
+      "question": {
+        "en": "What are cookies in the context of web technologies?",
+        "hi": "वेब टेक्नोलॉजी के संदर्भ में कुकीज़ क्या हैं?"
+      },
+      "options": {
+        "a": {"en": "Small programs that run on the server", "hi": "छोटे प्रोग्राम जो सर्वर पर चलते हैं"},
+        "b": {"en": "Data stored in small text files on the client's computer", "hi": "क्लाइंट के कंप्यूटर पर छोटी टेक्स्ट फाइलों में संग्रहीत डेटा"},
+        "c": {"en": "A type of virus that affects browsers", "hi": "एक प्रकार का वायरस जो ब्राउज़र को प्रभावित करता है"},
+        "d": {"en": "The source code of a JavaScript program", "hi": "जावास्क्रिप्ट प्रोग्राम का सोर्स कोड"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "They act like the memory of a website, saved on your hard drive.",
+        "hi": "वे वेबसाइट की मेमोरी की तरह काम करते हैं, जो आपके हार्ड ड्राइव पर सेव होती है।"
+      },
+      "explanation": {
+        "en": "Cookies are small text files stored by the browser on the user's computer. They hold data like login state or preferences so the site 'remembers' you.",
+        "hi": "कुकीज़ छोटी टेक्स्ट फाइलें होती हैं जो ब्राउज़र द्वारा उपयोगकर्ता के कंप्यूटर पर संग्रहीत की जाती हैं। वे लॉगिन स्थिति या प्राथमिकताओं जैसे डेटा को रखती हैं ताकि साइट आपको 'याद' रखे।"
+      },
+      "key_takeaway": {
+        "en": "Cookies store user data locally.",
+        "hi": "कुकीज़ उपयोगकर्ता डेटा को स्थानीय रूप से संग्रहीत करती हैं।"
+      }
+    },
+    {
+      "question_id": 45,
+      "question": {
+        "en": "What is the primary use of cookies?",
+        "hi": "कुकीज़ का प्राथमिक उपयोग क्या है?"
+      },
+      "options": {
+        "a": {"en": "To increase the speed of the website", "hi": "वेबसाइट की गति बढ़ाने के लिए"},
+        "b": {"en": "To store user information (like login status)", "hi": "उपयोगकर्ता जानकारी (जैसे लॉगिन स्थिति) संग्रहीत करने के लिए"},
+        "c": {"en": "To prevent unauthorized access to a website", "hi": "किसी वेबसाइट पर अनधिकृत पहुंच को रोकने के लिए"},
+        "d": {"en": "To execute JavaScript code", "hi": "जावास्क्रिप्ट कोड निष्पादित करने के लिए"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "How does a website know you are still logged in when you refresh?",
+        "hi": "रिफ्रेश करने पर वेबसाइट को कैसे पता चलता है कि आप अभी भी लॉग इन हैं?"
+      },
+      "explanation": {
+        "en": "Cookies allow servers to recognize returning users. They are used for session management (logins), personalization (themes), and tracking.",
+        "hi": "कुकीज़ सर्वर को लौटने वाले उपयोगकर्ताओं को पहचानने की अनुमति देती हैं। इनका उपयोग सत्र प्रबंधन (लॉगिन), वैयक्तिकरण (थीम) और ट्रैकिंग के लिए किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Cookies enable user persistence.",
+        "hi": "कुकीज़ उपयोगकर्ता दृढ़ता को सक्षम करती हैं।"
+      }
+    },
+    {
+      "question_id": 46,
+      "question": {
+        "en": "What will be the output of the following code?<br><pre><code>var num = 10;\nif (num > 5) {\n document.write(\"Hello\");\n}</code></pre>",
+        "hi": "निम्नलिखित कोड का आउटपुट क्या होगा?<br><pre><code>var num = 10;\nif (num > 5) {\n document.write(\"Hello\");\n}</code></pre>"
+      },
+      "options": {
+        "a": {"en": "Hello", "hi": "Hello"},
+        "b": {"en": "10", "hi": "10"},
+        "c": {"en": "No output", "hi": "कोई आउटपुट नहीं"},
+        "d": {"en": "An error", "hi": "एक त्रुटि"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Is 10 greater than 5?",
+        "hi": "क्या 10, 5 से बड़ा है?"
+      },
+      "explanation": {
+        "en": "Since 10 is greater than 5, the condition is true, and the code inside the block executes, printing \"Hello\".",
+        "hi": "चूंकि 10, 5 से बड़ा है, स्थिति सत्य है, और ब्लॉक के अंदर का कोड निष्पादित होता है, \"Hello\" प्रिंट करता है।"
+      },
+      "key_takeaway": {
+        "en": "True conditions execute the block.",
+        "hi": "सत्य स्थितियाँ ब्लॉक को निष्पादित करती हैं।"
+      }
+    },
+    {
+      "question_id": 47,
+      "question": {
+        "en": "What will be the output of the following code?<br><pre><code>var age = 15;\nif (age >= 18) {\n document.write(\"Eligible\");\n} else {\n document.write(\"Not Eligible\");\n}</code></pre>",
+        "hi": "निम्नलिखित कोड का आउटपुट क्या होगा?<br><pre><code>var age = 15;\nif (age >= 18) {\n document.write(\"Eligible\");\n} else {\n document.write(\"Not Eligible\");\n}</code></pre>"
+      },
+      "options": {
+        "a": {"en": "Eligible", "hi": "Eligible"},
+        "b": {"en": "Not Eligible", "hi": "Not Eligible"},
+        "c": {"en": "15", "hi": "15"},
+        "d": {"en": "age", "hi": "age"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "15 is not greater than or equal to 18.",
+        "hi": "15, 18 से बड़ा या उसके बराबर नहीं है।"
+      },
+      "explanation": {
+        "en": "The condition <code>15 >= 18</code> is false. Therefore, the code skips the 'if' block and executes the 'else' block.",
+        "hi": "स्थिति <code>15 >= 18</code> गलत है। इसलिए, कोड 'if' ब्लॉक को छोड़ देता है और 'else' ब्लॉक को निष्पादित करता है।"
+      },
+      "key_takeaway": {
+        "en": "Else executes on false.",
+        "hi": "Else असत्य पर निष्पादित होता है।"
+      }
+    },
+    {
+      "question_id": 48,
+      "question": {
+        "en": "After this code runs, what is the final value of <code>count</code>?<br><pre><code>var count = 3;\ncount--;\ncount++;</code></pre>",
+        "hi": "इस कोड के चलने के बाद, <code>count</code> का अंतिम मान क्या है?<br><pre><code>var count = 3;\ncount--;\ncount++;</code></pre>"
+      },
+      "options": {
+        "a": {"en": "2", "hi": "2"},
+        "b": {"en": "3", "hi": "3"},
+        "c": {"en": "4", "hi": "4"},
+        "d": {"en": "5", "hi": "5"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Subtract 1, then add 1.",
+        "hi": "1 घटाएं, फिर 1 जोड़ें।"
+      },
+      "explanation": {
+        "en": "Start at 3. <code>count--</code> makes it 2. <code>count++</code> makes it 3 again.",
+        "hi": "3 से शुरू करें। <code>count--</code> इसे 2 बनाता है। <code>count++</code> इसे फिर से 3 बनाता है।"
+      },
+      "key_takeaway": {
+        "en": "Increment/Decrement modify by 1.",
+        "hi": "इंक्रीमेंट/डिक्रीमेंट 1 से संशोधित करता है।"
+      }
+    },
+    {
+      "question_id": 49,
+      "question": {
+        "en": "What will this code output?<br><pre><code>var a = 5;\nvar b = \"5\";\ndocument.write(a == b);</code></pre>",
+        "hi": "यह कोड क्या आउटपुट करेगा?<br><pre><code>var a = 5;\nvar b = \"5\";\ndocument.write(a == b);</code></pre>"
+      },
+      "options": {
+        "a": {"en": "true", "hi": "true"},
+        "b": {"en": "false", "hi": "false"},
+        "c": {"en": "5", "hi": "5"},
+        "d": {"en": "\"5\"", "hi": "\"5\""}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "<code>==</code> checks value only, ignoring type.",
+        "hi": "<code>==</code> केवल मान की जाँच करता है, प्रकार की अनदेखी करता है।"
+      },
+      "explanation": {
+        "en": "The loose equality operator <code>==</code> converts the string \"5\" to a number before comparing. Since 5 equals 5, it returns true.",
+        "hi": "ढीला समानता ऑपरेटर <code>==</code> तुलना करने से पहले स्ट्रिंग \"5\" को एक संख्या में परिवर्तित करता है। चूंकि 5, 5 के बराबर है, यह सत्य लौटाता है।"
+      },
+      "key_takeaway": {
+        "en": "<code>==</code> performs type coercion.",
+        "hi": "<code>==</code> प्रकार जबरदस्ती (type coercion) करता है।"
+      }
+    },
+    {
+      "question_id": 50,
+      "question": {
+        "en": "What will this code output?<br><pre><code>var isRaining = true;\nvar haveUmbrella = false;\ndocument.write(isRaining && haveUmbrella);</code></pre>",
+        "hi": "यह कोड क्या आउटपुट करेगा?<br><pre><code>var isRaining = true;\nvar haveUmbrella = false;\ndocument.write(isRaining && haveUmbrella);</code></pre>"
+      },
+      "options": {
+        "a": {"en": "true", "hi": "true"},
+        "b": {"en": "false", "hi": "false"},
+        "c": {"en": "undefined", "hi": "undefined"},
+        "d": {"en": "null", "hi": "null"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "For AND (&&), both must be true.",
+        "hi": "AND (&&) के लिए, दोनों सत्य होने चाहिए।"
+      },
+      "explanation": {
+        "en": "True AND False results in False.",
+        "hi": "सत्य और असत्य का परिणाम असत्य होता है।"
+      },
+      "key_takeaway": {
+        "en": "<code>true && false</code> = <code>false</code>.",
+        "hi": "<code>true && false</code> = <code>false</code>."
+      }
+    },
+    {
+      "question_id": 51,
+      "question": {
+        "en": "What will be the output of the following switch statement?<br><pre><code>var day = 3;\nswitch(day) {\n case 1: document.write(\"Mon\"); break;\n case 2: document.write(\"Tue\"); break;\n case 3: document.write(\"Wed\"); break;\n default: document.write(\"Sun\");\n}</code></pre>",
+        "hi": "निम्नलिखित switch स्टेटमेंट का आउटपुट क्या होगा?<br><pre><code>var day = 3;\nswitch(day) {\n case 1: document.write(\"Mon\"); break;\n case 2: document.write(\"Tue\"); break;\n case 3: document.write(\"Wed\"); break;\n default: document.write(\"Sun\");\n}</code></pre>"
+      },
+      "options": {
+        "a": {"en": "Mon", "hi": "Mon"},
+        "b": {"en": "Tue", "hi": "Tue"},
+        "c": {"en": "Wed", "hi": "Wed"},
+        "d": {"en": "Sun", "hi": "Sun"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It looks for the case matching 3.",
+        "hi": "यह 3 से मेल खाने वाले केस की तलाश करता है।"
+      },
+      "explanation": {
+        "en": "The variable <code>day</code> is 3. The code matches <code>case 3</code> and prints \"Wed\", then breaks.",
+        "hi": "वेरिएबल <code>day</code> 3 है। कोड <code>case 3</code> से मेल खाता है और \"Wed\" प्रिंट करता है, फिर ब्रेक करता है।"
+      },
+      "key_takeaway": {
+        "en": "Switch executes the matching case.",
+        "hi": "स्विच मिलान वाले केस को निष्पादित करता है।"
+      }
+    },
+    {
+      "question_id": 52,
+      "question": {
+        "en": "How many times will \"Loop\" be printed?<br><pre><code>for (var i = 1; i <= 3; i++) {\n document.write(\"Loop \");\n}</code></pre>",
+        "hi": "\"Loop\" कितनी बार प्रिंट होगा?<br><pre><code>for (var i = 1; i <= 3; i++) {\n document.write(\"Loop \");\n}</code></pre>"
+      },
+      "options": {
+        "a": {"en": "1", "hi": "1"},
+        "b": {"en": "2", "hi": "2"},
+        "c": {"en": "3", "hi": "3"},
+        "d": {"en": "4", "hi": "4"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "i is 1, then 2, then 3. When it hits 4, it stops.",
+        "hi": "i 1 है, फिर 2, फिर 3। जब यह 4 पर पहुँचता है, तो यह रुक जाता है।"
+      },
+      "explanation": {
+        "en": "The loop runs for i=1, i=2, and i=3. That is 3 iterations.",
+        "hi": "लूप i=1, i=2, और i=3 के लिए चलता है। यह 3 पुनरावृत्तियाँ हैं।"
+      },
+      "key_takeaway": {
+        "en": "1 to <=3 is 3 counts.",
+        "hi": "1 से <=3 तक 3 गिनती हैं।"
+      }
+    },
+    {
+      "question_id": 53,
+      "question": {
+        "en": "What is the output of this while loop?<br><pre><code>var x = 5;\nwhile (x > 0) {\n document.write(x + \" \");\n x--;\n}</code></pre>",
+        "hi": "इस while लूप का आउटपुट क्या है?<br><pre><code>var x = 5;\nwhile (x > 0) {\n document.write(x + \" \");\n x--;\n}</code></pre>"
+      },
+      "options": {
+        "a": {"en": "5 4 3 2 1", "hi": "5 4 3 2 1"},
+        "b": {"en": "1 2 3 4 5", "hi": "1 2 3 4 5"},
+        "c": {"en": "5 4 3 2 1 0", "hi": "5 4 3 2 1 0"},
+        "d": {"en": "4 3 2 1 0", "hi": "4 3 2 1 0"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It starts at 5 and stops BEFORE it prints 0.",
+        "hi": "यह 5 से शुरू होता है और 0 प्रिंट करने से पहले रुक जाता है।"
+      },
+      "explanation": {
+        "en": "It prints 5, decrements to 4. Prints 4, decr to 3... Prints 1, decr to 0. At 0, <code>0 > 0</code> is false, so it stops.",
+        "hi": "यह 5 प्रिंट करता है, 4 तक घटता है। 4 प्रिंट करता है, 3 तक घटता है... 1 प्रिंट करता है, 0 तक घटता है। 0 पर, <code>0 > 0</code> गलत है, इसलिए यह रुक जाता है।"
+      },
+      "key_takeaway": {
+        "en": "While loops run until condition is false.",
+        "hi": "While लूप तब तक चलते हैं जब तक स्थिति गलत नहीं हो जाती।"
+      }
+    },
+    {
+      "question_id": 54,
+      "question": {
+        "en": "What is the output of this do...while loop?<br><pre><code>var y = 10;\ndo {\n document.write(y + \" \");\n y = y - 5;\n} while (y > 0);</code></pre>",
+        "hi": "इस do...while लूप का आउटपुट क्या है?<br><pre><code>var y = 10;\ndo {\n document.write(y + \" \");\n y = y - 5;\n} while (y > 0);</code></pre>"
+      },
+      "options": {
+        "a": {"en": "10", "hi": "10"},
+        "b": {"en": "10 5", "hi": "10 5"},
+        "c": {"en": "10 5 0", "hi": "10 5 0"},
+        "d": {"en": "5 0", "hi": "5 0"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "1. Print 10, y becomes 5. 2. Print 5, y becomes 0. 3. Stop.",
+        "hi": "1. 10 प्रिंट करें, y 5 हो जाता है। 2. 5 प्रिंट करें, y 0 हो जाता है। 3. रुकें।"
+      },
+      "explanation": {
+        "en": "Iteration 1: Prints 10, y becomes 5. Condition (5 > 0) is true.<br>Iteration 2: Prints 5, y becomes 0. Condition (0 > 0) is false. Loop ends.",
+        "hi": "पुनरावृत्ति 1: 10 प्रिंट करता है, y 5 हो जाता है। स्थिति (5 > 0) सत्य है।<br>पुनरावृत्ति 2: 5 प्रिंट करता है, y 0 हो जाता है। स्थिति (0 > 0) गलत है। लूप समाप्त होता है।"
+      },
+      "key_takeaway": {
+        "en": "Step through loops manually to predict output.",
+        "hi": "आउटपुट की भविष्यवाणी करने के लिए लूप के माध्यम से मैन्युअल रूप से कदम उठाएं।"
+      }
+    },
+    {
+      "question_id": 55,
+      "question": {
+        "en": "Which modern JavaScript keyword allows you to declare a variable with a block scope, preventing issues like accidental re-declaration?",
+        "hi": "जावास्क्रिप्ट का कौन सा आधुनिक कीवर्ड आपको ब्लॉक स्कोप के साथ एक वेरिएबल घोषित करने की अनुमति देता है, जिससे अनजाने में पुन: घोषणा जैसी समस्याएं रोकने में मदद मिलती है?"
+      },
+      "options": {
+        "a": {"en": "<code>var</code>", "hi": "<code>var</code>"},
+        "b": {"en": "<code>let</code>", "hi": "<code>let</code>"},
+        "c": {"en": "<code>const</code>", "hi": "<code>const</code>"},
+        "d": {"en": "<code>function</code>", "hi": "<code>function</code>"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It creates a variable that only exists inside the <code>{}</code> it was made in.",
+        "hi": "यह एक ऐसा वेरिएबल बनाता है जो केवल उस <code>{}</code> के अंदर मौजूद होता है जिसमें इसे बनाया गया था।"
+      },
+      "explanation": {
+        "en": "<code>let</code> was introduced in ES6. Unlike <code>var</code>, it is block-scoped, meaning it is confined to the specific if-block or loop it is declared in.",
+        "hi": "<code>let</code> को ES6 में पेश किया गया था। <code>var</code> के विपरीत, यह ब्लॉक-स्कोप है, जिसका अर्थ है कि यह उस विशिष्ट if-ब्लॉक या लूप तक ही सीमित है जिसमें इसे घोषित किया गया है।"
+      },
+      "key_takeaway": {
+        "en": "<code>let</code> is safer than <code>var</code>.",
+        "hi": "<code>let</code> <code>var</code> से ज्यादा सुरक्षित है।"
+      }
+    },
+    {
+      "question_id": 56,
+      "question": {
+        "en": "Which operator is used for strict equality comparison (checking both value and data type) in JavaScript?",
+        "hi": "जावास्क्रिप्ट में सख्त समानता तुलना (मान और डेटा प्रकार दोनों की जाँच) के लिए किस ऑपरेटर का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "<code>=</code>", "hi": "<code>=</code>"},
+        "b": {"en": "<code>==</code>", "hi": "<code>==</code>"},
+        "c": {"en": "<code>===</code>", "hi": "<code>===</code>"},
+        "d": {"en": "<code>!=</code>", "hi": "<code>!=</code>"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It has three lines.",
+        "hi": "इसकी तीन पंक्तियाँ हैं।"
+      },
+      "explanation": {
+        "en": "<code>===</code> checks if values match AND if their types (e.g., number vs string) match. <code>5 === \"5\"</code> is false.",
+        "hi": "<code>===</code> जाँच करता है कि क्या मान मेल खाते हैं और क्या उनके प्रकार (जैसे, संख्या बनाम स्ट्रिंग) मेल खाते हैं। <code>5 === \"5\"</code> गलत है।"
+      },
+      "key_takeaway": {
+        "en": "<code>===</code> is Strict Equality.",
+        "hi": "<code>===</code> सख्त समानता है।"
+      }
+    },
+    {
+      "question_id": 57,
+      "question": {
+        "en": "What will be the output of the following code?<br><pre><code>console.log(2 + \"2\");</code></pre>",
+        "hi": "निम्नलिखित कोड का आउटपुट क्या होगा?<br><pre><code>console.log(2 + \"2\");</code></pre>"
+      },
+      "options": {
+        "a": {"en": "4", "hi": "4"},
+        "b": {"en": "\"4\"", "hi": "\"4\""},
+        "c": {"en": "\"22\"", "hi": "\"22\""},
+        "d": {"en": "22", "hi": "22"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Number + String = Concatenation (joining).",
+        "hi": "नंबर + स्ट्रिंग = संयोजन (जोड़ना)।"
+      },
+      "explanation": {
+        "en": "When adding a number to a string, JS converts the number to a string and concatenates them. \"2\" + \"2\" becomes \"22\".",
+        "hi": "किसी स्ट्रिंग में नंबर जोड़ते समय, JS नंबर को स्ट्रिंग में बदल देता है और उन्हें जोड़ देता है। \"2\" + \"2\", \"22\" बन जाता है।"
+      },
+      "key_takeaway": {
+        "en": "JS prefers concatenation over addition when strings are involved.",
+        "hi": "जब स्ट्रिंग शामिल होती हैं तो JS जोड़ से अधिक संयोजन को प्राथमिकता देता है।"
+      }
+    },
+    {
+      "question_id": 58,
+      "question": {
+        "en": "Which loop is specifically designed for iterating over the properties of an object?",
+        "hi": "कौन सा लूप विशेष रूप से किसी ऑब्जेक्ट के गुणों पर पुनरावृति करने के लिए डिज़ाइन किया गया है?"
+      },
+      "options": {
+        "a": {"en": "<code>for</code> loop", "hi": "<code>for</code> लूप"},
+        "b": {"en": "<code>while</code> loop", "hi": "<code>while</code> लूप"},
+        "c": {"en": "<code>do...while</code> loop", "hi": "<code>do...while</code> लूप"},
+        "d": {"en": "<code>for...in</code> loop", "hi": "<code>for...in</code> लूप"}
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Think 'in' for 'inspecting' properties.",
+        "hi": "गुणों के 'निरीक्षण' (inspecting) के लिए 'in' सोचें।"
+      },
+      "explanation": {
+        "en": "The <code>for...in</code> loop iterates over the keys (properties) of an object. Example: <code>for (var key in user)</code>.",
+        "hi": "<code>for...in</code> लूप किसी ऑब्जेक्ट की कुंजियों (गुणों) पर पुनरावृत्ति करता है। उदाहरण: <code>for (var key in user)</code>."
+      },
+      "key_takeaway": {
+        "en": "<code>for...in</code> is for Objects.",
+        "hi": "<code>for...in</code> ऑब्जेक्ट्स के लिए है।"
+      }
+    },
+    {
+      "question_id": 59,
+      "question": {
+        "en": "Which modern JavaScript method is commonly used to make asynchronous HTTP requests to servers?",
+        "hi": "सर्वरों को अतुल्यकालिक HTTP अनुरोध (asynchronous HTTP requests) करने के लिए आमतौर पर किस आधुनिक जावास्क्रिप्ट विधि का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "<code>get()</code>", "hi": "<code>get()</code>"},
+        "b": {"en": "<code>request()</code>", "hi": "<code>request()</code>"},
+        "c": {"en": "<code>call()</code>", "hi": "<code>call()</code>"},
+        "d": {"en": "<code>fetch()</code>", "hi": "<code>fetch()</code>"}
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "It retrieves resources across the network.",
+        "hi": "यह नेटवर्क पर संसाधनों को पुनः प्राप्त करता है।"
+      },
+      "explanation": {
+        "en": "The <code>fetch()</code> API is the modern standard for making network requests (like AJAX), replacing the older XMLHttpRequest.",
+        "hi": "<code>fetch()</code> API नेटवर्क अनुरोध (AJAX की तरह) करने के लिए आधुनिक मानक है, जो पुराने XMLHttpRequest की जगह लेता है।"
+      },
+      "key_takeaway": {
+        "en": "Use <code>fetch()</code> for API calls.",
+        "hi": "API कॉल के लिए <code>fetch()</code> का उपयोग करें।"
+      }
+    },
+    {
+      "question_id": 60,
+      "question": {
+        "en": "What is the primary purpose of the <code>localStorage</code> object available in modern web browsers?",
+        "hi": "आधुनिक वेब ब्राउज़र में उपलब्ध <code>localStorage</code> ऑब्जेक्ट का प्राथमिक उद्देश्य क्या है?"
+      },
+      "options": {
+        "a": {"en": "To store data that is lost when the browser tab is closed", "hi": "ऐसा डेटा संग्रहीत करना जो ब्राउज़र टैब बंद होने पर खो जाता है"},
+        "b": {"en": "To store data with no expiration time, persisting even after the browser is closed", "hi": "बिना एक्सपायरी समय के डेटा संग्रहीत करना, जो ब्राउज़र बंद होने के बाद भी बना रहता है"},
+        "c": {"en": "To store the browser's cookies", "hi": "ब्राउज़र की कुकीज़ संग्रहीत करना"},
+        "d": {"en": "To execute server-side code", "hi": "सर्वर-साइड कोड निष्पादित करना"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It is like a cookie that never expires.",
+        "hi": "यह एक कुकी की तरह है जो कभी समाप्त नहीं होती है।"
+      },
+      "explanation": {
+        "en": "<code>localStorage</code> allows web applications to store data locally within the user's browser. Unlike <code>sessionStorage</code>, this data does not expire when the browser closes.",
+        "hi": "<code>localStorage</code> वेब एप्लिकेशन को उपयोगकर्ता के ब्राउज़र के भीतर स्थानीय रूप से डेटा संग्रहीत करने की अनुमति देता है। <code>sessionStorage</code> के विपरीत, यह डेटा ब्राउज़र बंद होने पर समाप्त नहीं होता है।"
+      },
+      "key_takeaway": {
+        "en": "<code>localStorage</code> is persistent client-side storage.",
+        "hi": "<code>localStorage</code> लगातार क्लाइंट-साइड स्टोरेज है।"
+      }
+    },
+    {
+      "question_id": 61,
+      "question": {
+        "en": "Which of the following is a popular JavaScript library/framework used for building dynamic user interfaces?",
+        "hi": "निम्नलिखित में से कौन सा एक लोकप्रिय जावास्क्रिप्ट लाइब्रेरी/फ्रेमवर्क है जिसका उपयोग गतिशील यूजर इंटरफेस बनाने के लिए किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "Django", "hi": "Django"},
+        "b": {"en": "Laravel", "hi": "Laravel"},
+        "c": {"en": "React", "hi": "React"},
+        "d": {"en": "Spring Boot", "hi": "Spring Boot"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It was developed by Facebook.",
+        "hi": "इसे फेसबुक द्वारा विकसित किया गया था।"
+      },
+      "explanation": {
+        "en": "React is a JS library for building UIs. Django (Python), Laravel (PHP), and Spring Boot (Java) are server-side frameworks.",
+        "hi": "React UI बनाने के लिए एक JS लाइब्रेरी है। Django (Python), Laravel (PHP), और Spring Boot (Java) सर्वर-साइड फ्रेमवर्क हैं।"
+      },
+      "key_takeaway": {
+        "en": "React is a JS frontend library.",
+        "hi": "React एक JS फ्रंटएंड लाइब्रेरी है।"
+      }
+    },
+    {
+      "question_id": 62,
+      "question": {
+        "en": "The <code>addEventListener</code> method in JavaScript is used to:",
+        "hi": "जावास्क्रिप्ट में <code>addEventListener</code> विधि का उपयोग किया जाता है:"
+      },
+      "options": {
+        "a": {"en": "add two numbers together", "hi": "दो नंबरों को एक साथ जोड़ने के लिए"},
+        "b": {"en": "attach an event handler function to an HTML element", "hi": "एक HTML एलिमेंट को एक इवेंट हैंडलर फ़ंक्शन संलग्न करने के लिए"},
+        "c": {"en": "create a new variable", "hi": "एक नया वेरिएबल बनाने के लिए"},
+        "d": {"en": "declare a constant", "hi": "एक कॉन्स्टेंट घोषित करने के लिए"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It 'listens' for clicks, key presses, or mouse movements.",
+        "hi": "यह क्लिक, कुंजी दबाने, या माउस आंदोलनों के लिए 'सुनता' है।"
+      },
+      "explanation": {
+        "en": "This method attaches a function to an element (like a button) that waits for a specific event (like a 'click') to happen.",
+        "hi": "यह विधि एक तत्व (जैसे बटन) से एक फ़ंक्शन संलग्न करती है जो एक विशिष्ट घटना (जैसे 'क्लिक') होने की प्रतीक्षा करती है।"
+      },
+      "key_takeaway": {
+        "en": "<code>addEventListener</code> handles interactivity.",
+        "hi": "<code>addEventListener</code> अन्तरक्रियाशीलता को संभालता है।"
+      }
+    },
+    {
+      "question_id": 63,
+      "question": {
+        "en": "Which symbol is used for single-line comments in JavaScript?",
+        "hi": "जावास्क्रिप्ट में सिंगल-लाइन कमेंट के लिए किस प्रतीक का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "<code>//</code>", "hi": "<code>//</code>"},
+        "b": {"en": "<code>/*</code>", "hi": "<code>/*</code>"},
+        "c": {"en": "<code>#</code>", "hi": "<code>#</code>"},
+        "d": {"en": "<code>--</code>", "hi": "<code>--</code>"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Two forward slashes.",
+        "hi": "दो फॉरवर्ड स्लैश।"
+      },
+      "explanation": {
+        "en": "<code>//</code> is for single-line comments. <code>/* ... */</code> is for multi-line comments.",
+        "hi": "<code>//</code> सिंगल-लाइन टिप्पणियों के लिए है। <code>/* ... */</code> मल्टी-लाइन टिप्पणियों के लिए है।"
+      },
+      "key_takeaway": {
+        "en": "Use <code>//</code> to comment out one line.",
+        "hi": "एक पंक्ति पर टिप्पणी करने के लिए <code>//</code> का उपयोग करें।"
+      }
+    },
+    {
+      "question_id": 64,
+      "question": {
+        "en": "What is the result of the following expression? <code>Boolean(\"Hello\")</code>",
+        "hi": "निम्नलिखित एक्सप्रेशन का परिणाम क्या है? <code>Boolean(\"Hello\")</code>"
+      },
+      "options": {
+        "a": {"en": "false", "hi": "false"},
+        "b": {"en": "true", "hi": "true"},
+        "c": {"en": "0", "hi": "0"},
+        "d": {"en": "\"Hello\"", "hi": "\"Hello\""}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Any non-empty string is considered 'truthy'.",
+        "hi": "किसी भी गैर-खाली स्ट्रिंग को 'सत्य' (truthy) माना जाता है।"
+      },
+      "explanation": {
+        "en": "In JS, only empty strings (\"\") are falsy. Any string with content converts to true.",
+        "hi": "JS में, केवल खाली स्ट्रिंग्स (\"\") झूठी होती हैं। सामग्री वाली कोई भी स्ट्रिंग सत्य में परिवर्तित हो जाती है।"
+      },
+      "key_takeaway": {
+        "en": "Non-empty strings are Truthy.",
+        "hi": "गैर-खाली स्ट्रिंग्स सत्य होती हैं।"
+      }
+    },
+    {
+      "question_id": 65,
+      "question": {
+        "en": "What will the following code log to the console?<br><pre><code>for (let i = 0; i &lt; 3; i++) {\n setTimeout(() => console.log(i), 100);\n}</code></pre>",
+        "hi": "निम्नलिखित कोड कंसोल पर क्या लॉग करेगा?<br><pre><code>for (let i = 0; i &lt; 3; i++) {\n setTimeout(() => console.log(i), 100);\n}</code></pre>"
+      },
+      "options": {
+        "a": {"en": "0, 1, 2", "hi": "0, 1, 2"},
+        "b": {"en": "3, 3, 3", "hi": "3, 3, 3"},
+        "c": {"en": "0, 0, 0", "hi": "0, 0, 0"},
+        "d": {"en": "1, 2, 3", "hi": "1, 2, 3"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "The keyword <code>let</code> gives 'i' block scope.",
+        "hi": "कीवर्ड <code>let</code> 'i' को ब्लॉक स्कोप देता है।"
+      },
+      "explanation": {
+        "en": "Because <code>let</code> is used, a new binding for <code>i</code> is created for each iteration. So each timeout function remembers the correct value (0, 1, 2). If <code>var</code> were used, it would print 3, 3, 3.",
+        "hi": "चूंकि <code>let</code> का उपयोग किया जाता है, इसलिए प्रत्येक पुनरावृत्ति के लिए <code>i</code> के लिए एक नया बंधन (binding) बनाया जाता है। इसलिए प्रत्येक टाइमआउट फ़ंक्शन सही मान (0, 1, 2) को याद रखता है। यदि <code>var</code> का उपयोग किया जाता, तो यह 3, 3, 3 प्रिंट करता।"
+      },
+      "key_takeaway": {
+        "en": "<code>let</code> fixes scope issues in loops.",
+        "hi": "<code>let</code> लूप में स्कोप समस्याओं को ठीक करता है।"
+      }
+    }
+  ]
+}

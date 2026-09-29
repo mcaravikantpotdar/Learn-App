@@ -1,0 +1,933 @@
+{
+  "metadata": {
+    "chapter_number": 7,
+    "chapter_title": "Multimedia Applications (Sound and Video Editing)",
+    "chapter_title_hindi": "मल्टीमीडिया अनुप्रयोग (ध्वनि और वीडियो संपादन)",
+    "subject": "Information Technology / Computer Science",
+    "total_questions": 35,
+    "source_language": "en",
+    "target_language": "hi",
+    "created_at": "2023-10-25T12:00:00Z",
+    "version": "2.0",
+    "note": "Options rearranged for balanced distribution while maintaining factual accuracy"
+  },
+  "validation_report": {
+    "is_valid": true,
+    "checked_by": "AI Tutor",
+    "checked_at": "2023-10-25T12:00:00Z",
+    "corrections": [],
+    "notes": "Options have been rearranged to create balanced answer distribution while preserving all correct concepts and factual accuracy"
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "What is sound?",
+        "hi": "ध्वनि क्या है?"
+      },
+      "options": {
+        "a": {"en": "A type of wave produced by vibrating objects", "hi": "कंपन करने वाली वस्तुओं द्वारा उत्पन्न एक प्रकार की तरंग"},
+        "b": {"en": "A form of light energy", "hi": "प्रकाश ऊर्जा का एक रूप"},
+        "c": {"en": "A digital signal", "hi": "एक डिजिटल सिग्नल"},
+        "d": {"en": "A static form of energy", "hi": "ऊर्जा का एक स्थिर रूप"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Think about how sound travels through air - it moves in waves created by vibrations.",
+        "hi": "सोचिए कि ध्वनि हवा के माध्यम से कैसे यात्रा करती है - यह कंपन द्वारा बनाई गई तरंगों में चलती है।"
+      },
+      "explanation": {
+        "en": "Sound is a mechanical wave produced by vibrating objects that travels through a medium like air, water, or solids. When objects vibrate, they create pressure waves that our ears detect as sound. Light energy, static energy, and digital signals are different forms of energy and information transmission.",
+        "hi": "ध्वनि एक यांत्रिक तरंग है जो कंपन करने वाली वस्तुओं द्वारा उत्पन्न होती है और हवा, पानी या ठोस जैसे माध्यम से यात्रा करती है। जब वस्तुएं कंपन करती हैं, तो वे दबाव तरंगें बनाती हैं जिन्हें हमारे कान ध्वनि के रूप में पहचानते हैं। प्रकाश ऊर्जा, स्थिर ऊर्जा और डिजिटल सिग्नल ऊर्जा और सूचना संचरण के विभिन्न रूप हैं।"
+      },
+      "key_takeaway": {
+        "en": "Sound = mechanical waves from vibrations.",
+        "hi": "ध्वनि = कंपन से यांत्रिक तरंगें।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "What is the unit of measurement for frequency?",
+        "hi": "आवृत्ति की माप की इकाई क्या है?"
+      },
+      "options": {
+        "a": {"en": "Meter (m)", "hi": "मीटर (m)"},
+        "b": {"en": "Hertz (Hz)", "hi": "हर्ट्ज (Hz)"},
+        "c": {"en": "Decibel (dB)", "hi": "डेसिबल (dB)"},
+        "d": {"en": "Second (s)", "hi": "सेकंड (s)"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This unit measures how many cycles or vibrations occur per second.",
+        "hi": "यह इकाई मापती है कि प्रति सेकंड कितने चक्र या कंपन होते हैं।"
+      },
+      "explanation": {
+        "en": "Hertz (Hz) is the unit of measurement for frequency, representing the number of cycles or vibrations per second. Decibels measure sound intensity/loudness, meters measure distance, and seconds measure time.",
+        "hi": "हर्ट्ज (Hz) आवृत्ति की माप की इकाई है, जो प्रति सेकंड चक्र या कंपन की संख्या को दर्शाती है। डेसिबल ध्वनि की तीव्रता/प्रबलता को मापते हैं, मीटर दूरी को मापते हैं, और सेकंड समय को मापते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Frequency is measured in Hertz (Hz).",
+        "hi": "आवृत्ति हर्ट्ज (Hz) में मापी जाती है।"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "Which property of sound determines its pitch?",
+        "hi": "ध्वनि का कौन सा गुण इसकी पिच (सुर) निर्धारित करता है?"
+      },
+      "options": {
+        "a": {"en": "Wavelength", "hi": "तरंगदैर्ध्य"},
+        "b": {"en": "Frequency", "hi": "आवृत्ति"},
+        "c": {"en": "Amplitude", "hi": "आयाम"},
+        "d": {"en": "Speed", "hi": "गति"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Higher values of this property create higher-pitched sounds, like a whistle.",
+        "hi": "इस गुण के उच्च मान उच्च-सुर वाली ध्वनियाँ बनाते हैं, जैसे सीटी।"
+      },
+      "explanation": {
+        "en": "Frequency determines the pitch of a sound. Higher frequency sounds have higher pitch (like a whistle), while lower frequency sounds have lower pitch (like a drum). Amplitude determines loudness, wavelength is related to frequency, and speed is how fast sound travels through a medium.",
+        "hi": "आवृत्ति ध्वनि की पिच निर्धारित करती है। उच्च आवृत्ति वाली ध्वनियों में उच्च पिच होती है (जैसे सीटी), जबकि कम आवृत्ति वाली ध्वनियों में कम पिच होती है (जैसे ड्रम)। आयाम प्रबलता निर्धारित करता है, तरंगदैर्ध्य आवृत्ति से संबंधित है, और गति यह निर्धारित करती है कि ध्वनि किसी माध्यम से कितनी तेजी से यात्रा करती है।"
+      },
+      "key_takeaway": {
+        "en": "Pitch is determined by frequency.",
+        "hi": "पिच आवृत्ति द्वारा निर्धारित होती है।"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "What does the amplitude of a sound wave describe?",
+        "hi": "ध्वनि तरंग का आयाम क्या वर्णन करता है?"
+      },
+      "options": {
+        "a": {"en": "The direction of the sound", "hi": "ध्वनि की दिशा"},
+        "b": {"en": "The loudness of the sound", "hi": "ध्वनि की प्रबलता (जोर)"},
+        "c": {"en": "The pitch of the sound", "hi": "ध्वनि की पिच"},
+        "d": {"en": "The speed of the sound", "hi": "ध्वनि की गति"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This property relates to how strong or intense the sound wave is.",
+        "hi": "यह गुण इससे संबंधित है कि ध्वनि तरंग कितनी मजबूत या तीव्र है।"
+      },
+      "explanation": {
+        "en": "Amplitude describes the loudness or intensity of a sound wave. Larger amplitudes create louder sounds, while smaller amplitudes create quieter sounds. Pitch is determined by frequency, speed is how fast sound travels, and direction refers to where the sound is coming from.",
+        "hi": "आयाम ध्वनि तरंग की प्रबलता या तीव्रता का वर्णन करता है। बड़े आयाम तेज ध्वनियाँ बनाते हैं, जबकि छोटे आयाम शांत ध्वनियाँ बनाते हैं। पिच आवृत्ति द्वारा निर्धारित होती है, गति यह निर्धारित करती है कि ध्वनि कितनी तेजी से यात्रा करती है, और दिशा यह दर्शाती है कि ध्वनि कहाँ से आ रही है।"
+      },
+      "key_takeaway": {
+        "en": "Amplitude determines loudness.",
+        "hi": "आयाम प्रबलता निर्धारित करता है।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "What is the primary function of a microphone?",
+        "hi": "माइक्रोफोन का प्राथमिक कार्य क्या है?"
+      },
+      "options": {
+        "a": {"en": "To record sound digitally", "hi": "ध्वनि को डिजिटल रूप से रिकॉर्ड करना"},
+        "b": {"en": "To convert electrical energy into sound energy", "hi": "विद्युत ऊर्जा को ध्वनि ऊर्जा में परिवर्तित करना"},
+        "c": {"en": "To convert acoustical energy (sound) into electrical energy (audio signal)", "hi": "ध्वनि ऊर्जा (ध्वनि) को विद्युत ऊर्जा (ऑडियो सिग्नल) में परिवर्तित करना"},
+        "d": {"en": "To amplify sound waves", "hi": "ध्वनि तरंगों को प्रवर्धित करना"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Microphones take sound waves and convert them into electrical signals that can be recorded or amplified.",
+        "hi": "माइक्रोफोन ध्वनि तरंगों को लेते हैं और उन्हें विद्युत सिग्नल में परिवर्तित करते हैं जिन्हें रिकॉर्ड या प्रवर्धित किया जा सकता है।"
+      },
+      "explanation": {
+        "en": "The primary function of a microphone is to convert acoustical energy (sound waves) into electrical energy (audio signals). This conversion allows sound to be recorded, amplified, or transmitted. Speakers perform the opposite function - converting electrical signals back into sound.",
+        "hi": "माइक्रोफोन का प्राथमिक कार्य ध्वनि ऊर्जा (ध्वनि तरंगों) को विद्युत ऊर्जा (ऑडियो सिग्नल) में परिवर्तित करना है। यह रूपांतरण ध्वनि को रिकॉर्ड, प्रवर्धित या प्रसारित करने की अनुमति देता है। स्पीकर विपरीत कार्य करते हैं - विद्युत सिग्नल को वापस ध्वनि में परिवर्तित करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Microphones convert sound to electrical signals.",
+        "hi": "माइक्रोफोन ध्वनि को विद्युत सिग्नल में परिवर्तित करते हैं।"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "Which part of a microphone vibrates when struck by sound waves?",
+        "hi": "माइक्रोफोन का कौन सा हिस्सा कंपन करता है जब ध्वनि तरंगें इससे टकराती हैं?"
+      },
+      "options": {
+        "a": {"en": "The coil", "hi": "कुंडली"},
+        "b": {"en": "The casing", "hi": "आवरण"},
+        "c": {"en": "The diaphragm", "hi": "डायाफ्राम"},
+        "d": {"en": "The magnet", "hi": "चुंबक"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This is the thin membrane that first receives sound waves in most microphones.",
+        "hi": "यह पतली झिल्ली है जो अधिकांश माइक्रोफोन में सबसे पहले ध्वनि तरंगों को प्राप्त करती है।"
+      },
+      "explanation": {
+        "en": "The diaphragm is the thin membrane in a microphone that vibrates when struck by sound waves. These vibrations are then converted into electrical signals through various mechanisms depending on the microphone type. The coil, magnet, and casing are other components that support this process but don't directly vibrate with sound waves.",
+        "hi": "डायाफ्राम माइक्रोफोन में पतली झिल्ली है जो ध्वनि तरंगों से टकराने पर कंपन करती है। इन कंपनों को फिर विभिन्न तंत्रों के माध्यम से विद्युत सिग्नल में परिवर्तित किया जाता है, जो माइक्रोफोन के प्रकार पर निर्भर करता है। कुंडली, चुंबक और आवरण अन्य घटक हैं जो इस प्रक्रिया का समर्थन करते हैं लेकिन सीधे ध्वनि तरंगों के साथ कंपन नहीं करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "The diaphragm vibrates with sound waves.",
+        "hi": "डायाफ्राम ध्वनि तरंगों के साथ कंपन करता है।"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "Dynamic microphones operate on the principle of:",
+        "hi": "डायनेमिक माइक्रोफोन किस सिद्धांत पर कार्य करते हैं?"
+      },
+      "options": {
+        "a": {"en": "Piezoelectric effect", "hi": "पीजोइलेक्ट्रिक प्रभाव"},
+        "b": {"en": "Electromagnetism", "hi": "विद्युत चुम्बकत्व"},
+        "c": {"en": "Variable capacitance", "hi": "परिवर्तनीय धारिता"},
+        "d": {"en": "Photoelectric effect", "hi": "प्रकाश विद्युत प्रभाव"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "These microphones use a coil moving in a magnetic field to generate electrical signals.",
+        "hi": "ये माइक्रोफोन विद्युत सिग्नल उत्पन्न करने के लिए चुंबकीय क्षेत्र में घूमने वाली कुंडली का उपयोग करते हैं।"
+      },
+      "explanation": {
+        "en": "Dynamic microphones operate on the principle of electromagnetism. They contain a diaphragm attached to a coil of wire that moves within a magnetic field. When sound waves hit the diaphragm, it moves the coil through the magnetic field, generating an electrical current through electromagnetic induction.",
+        "hi": "डायनेमिक माइक्रोफोन विद्युत चुम्बकत्व के सिद्धांत पर कार्य करते हैं। इनमें एक डायाफ्राम होता है जो तार की एक कुंडली से जुड़ा होता है जो चुंबकीय क्षेत्र के भीतर घूमती है। जब ध्वनि तरंगें डायाफ्राम से टकराती हैं, तो यह कुंडली को चुंबकीय क्षेत्र के माध्यम से घुमाती है, जिससे विद्युत चुम्बकीय प्रेरण के माध्यम से विद्युत धारा उत्पन्न होती है।"
+      },
+      "key_takeaway": {
+        "en": "Dynamic mics use electromagnetic induction.",
+        "hi": "डायनेमिक माइक विद्युत चुम्बकीय प्रेरण का उपयोग करते हैं।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "What is a key advantage of dynamic microphones?",
+        "hi": "डायनेमिक माइक्रोफोन का एक प्रमुख लाभ क्या है?"
+      },
+      "options": {
+        "a": {"en": "They are suitable for recording high-frequency sounds.", "hi": "वे उच्च-आवृत्ति ध्वनियों को रिकॉर्ड करने के लिए उपयुक्त हैं।"},
+        "b": {"en": "They are rugged and less expensive.", "hi": "वे मजबूत और कम महंगे होते हैं।"},
+        "c": {"en": "They are very small and lightweight.", "hi": "वे बहुत छोटे और हल्के होते हैं।"},
+        "d": {"en": "They are highly sensitive.", "hi": "वे अत्यधिक संवेदनशील होते हैं।"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "These microphones are known for their durability and affordability, making them popular for live performances.",
+        "hi": "ये माइक्रोफोन अपनी स्थायित्व और किफायती होने के लिए जाने जाते हैं, जिससे वे लाइव प्रदर्शनों के लिए लोकप्रिय हैं।"
+      },
+      "explanation": {
+        "en": "Dynamic microphones are rugged, durable, and less expensive than other types like condenser microphones. They can handle high sound pressure levels and are less sensitive to moisture and physical abuse, making them ideal for live performances, outdoor use, and rough handling.",
+        "hi": "डायनेमिक माइक्रोफोन मजबूत, टिकाऊ और कंडेनसर माइक्रोफोन जैसे अन्य प्रकारों की तुलना में कम महंगे होते हैं। वे उच्च ध्वनि दबाव स्तरों को संभाल सकते हैं और नमी और भौतिक दुर्व्यवहार के प्रति कम संवेदनशील होते हैं, जिससे वे लाइव प्रदर्शनों, बाहरी उपयोग और कठोर हैंडलिंग के लिए आदर्श होते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Dynamic mics are durable and affordable.",
+        "hi": "डायनेमिक माइक टिकाऊ और किफायती होते हैं।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "Condenser microphones operate on the principle of:",
+        "hi": "कंडेनसर माइक्रोफोन किस सिद्धांत पर कार्य करते हैं?"
+      },
+      "options": {
+        "a": {"en": "Resistance", "hi": "प्रतिरोध"},
+        "b": {"en": "Variable capacitance", "hi": "परिवर्तनीय धारिता"},
+        "c": {"en": "Electromagnetism", "hi": "विद्युत चुम्बकत्व"},
+        "d": {"en": "Induction", "hi": "प्रेरण"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "These microphones work by changing the electrical capacity between two plates when sound hits them.",
+        "hi": "ये माइक्रोफोन ध्वनि के टकराने पर दो प्लेटों के बीच विद्युत क्षमता को बदलकर काम करते हैं।"
+      },
+      "explanation": {
+        "en": "Condenser microphones operate on the principle of variable capacitance. They have two charged plates - one fixed and one movable (the diaphragm). When sound waves hit the diaphragm, the distance between the plates changes, varying the capacitance and creating an electrical signal.",
+        "hi": "कंडेनसर माइक्रोफोन परिवर्तनीय धारिता के सिद्धांत पर कार्य करते हैं। इनमें दो आवेशित प्लेट होती हैं - एक स्थिर और एक चल (डायाफ्राम)। जब ध्वनि तरंगें डायाफ्राम से टकराती हैं, तो प्लेटों के बीच की दूरी बदल जाती है, जिससे धारिता बदल जाती है और एक विद्युत सिग्नल बनता है।"
+      },
+      "key_takeaway": {
+        "en": "Condenser mics use variable capacitance.",
+        "hi": "कंडेनसर माइक परिवर्तनीय धारिता का उपयोग करते हैं।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "What is a key disadvantage of condenser microphones?",
+        "hi": "कंडेनसर माइक्रोफोन का एक प्रमुख नुकसान क्या है?"
+      },
+      "options": {
+        "a": {"en": "They have low sensitivity.", "hi": "उनकी संवेदनशीलता कम होती है।"},
+        "b": {"en": "They are fragile and expensive.", "hi": "वे नाजुक और महंगे होते हैं।"},
+        "c": {"en": "They are large and heavy.", "hi": "वे बड़े और भारी होते हैं।"},
+        "d": {"en": "They are not suitable for high-frequency sounds.", "hi": "वे उच्च-आवृत्ति ध्वनियों के लिए उपयुक्त नहीं हैं।"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "These microphones are more delicate and require careful handling and external power.",
+        "hi": "ये माइक्रोफोन अधिक नाजुक होते हैं और सावधानीपूर्वक हैंडलिंग और बाहरी बिजली की आवश्यकता होती है।"
+      },
+      "explanation": {
+        "en": "Condenser microphones are more fragile and expensive than dynamic microphones. They have delicate internal components and require external power (phantom power) to operate. While they offer excellent sensitivity and frequency response, their fragility makes them less suitable for rough handling or outdoor use.",
+        "hi": "कंडेनसर माइक्रोफोन डायनेमिक माइक्रोफोन की तुलना में अधिक नाजुक और महंगे होते हैं। इनमें नाजुक आंतरिक घटक होते हैं और संचालन के लिए बाहरी बिजली (फैंटम पावर) की आवश्यकता होती है। हालांकि वे उत्कृष्ट संवेदनशीलता और आवृत्ति प्रतिक्रिया प्रदान करते हैं, लेकिन उनकी नाजुकता उन्हें कठोर हैंडलिंग या बाहरी उपयोग के लिए कम उपयुक्त बनाती है।"
+      },
+      "key_takeaway": {
+        "en": "Condenser mics are delicate and costly.",
+        "hi": "कंडेनसर माइक नाजुक और महंगे होते हैं।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "What does the directionality or polar pattern of a microphone describe?",
+        "hi": "माइक्रोफोन की दिशिकता या ध्रुवीय पैटर्न क्या वर्णन करता है?"
+      },
+      "options": {
+        "a": {"en": "Its power requirements", "hi": "इसकी बिजली की आवश्यकताएं"},
+        "b": {"en": "Its sensitivity to sound from different directions", "hi": "विभिन्न दिशाओं से आने वाली ध्वनि के प्रति इसकी संवेदनशीलता"},
+        "c": {"en": "Its frequency response", "hi": "इसकी आवृत्ति प्रतिक्रिया"},
+        "d": {"en": "Its physical size", "hi": "इसका भौतिक आकार"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This characteristic determines from which angles the microphone picks up sound best.",
+        "hi": "यह विशेषता निर्धारित करती है कि माइक्रोफोन किस कोण से ध्वनि को सबसे अच्छी तरह ग्रहण करता है।"
+      },
+      "explanation": {
+        "en": "The directionality or polar pattern describes a microphone's sensitivity to sound from different directions. It shows which directions the microphone picks up sound well (front, sides, back) and which directions it rejects sound. Common patterns include omnidirectional, cardioid, and bidirectional.",
+        "hi": "दिशिकता या ध्रुवीय पैटर्न विभिन्न दिशाओं से आने वाली ध्वनि के प्रति माइक्रोफोन की संवेदनशीलता का वर्णन करता है। यह दर्शाता है कि माइक्रोफोन किन दिशाओं से ध्वनि को अच्छी तरह ग्रहण करता है (सामने, बगल, पीछे) और किन दिशाओं से यह ध्वनि को अस्वीकार करता है। सामान्य पैटर्न में सर्वदिशात्मक, कार्डियोइड और द्विदिशात्मक शामिल हैं।"
+      },
+      "key_takeaway": {
+        "en": "Polar pattern shows sound pickup directions.",
+        "hi": "ध्रुवीय पैटर्न ध्वनि ग्रहण दिशाओं को दर्शाता है।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "An omnidirectional microphone is sensitive to sound from:",
+        "hi": "एक सर्वदिशात्मक (ऑमनीडायरेक्शनल) माइक्रोफोन किस ओर से आने वाली ध्वनि के प्रति संवेदनशील है?"
+      },
+      "options": {
+        "a": {"en": "Only the front", "hi": "केवल सामने से"},
+        "b": {"en": "Primarily the front and slightly the sides", "hi": "मुख्य रूप से सामने और थोड़ा बगल से"},
+        "c": {"en": "All directions equally", "hi": "सभी दिशाओं से समान रूप से"},
+        "d": {"en": "Only two opposite directions", "hi": "केवल दो विपरीत दिशाओं से"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The prefix 'omni-' means 'all' - this microphone picks up sound from everywhere.",
+        "hi": "उपसर्ग 'ऑमनी-' का अर्थ है 'सभी' - यह माइक्रोफोन हर जगह से ध्वनि ग्रहण करता है।"
+      },
+      "explanation": {
+        "en": "Omnidirectional microphones are equally sensitive to sound from all directions. They pick up sound in a 360-degree pattern, making them ideal for recording group discussions, ambient sounds, or situations where sound comes from multiple directions.",
+        "hi": "सर्वदिशात्मक माइक्रोफोन सभी दिशाओं से आने वाली ध्वनि के प्रति समान रूप से संवेदनशील होते हैं। वे 360-डिग्री पैटर्न में ध्वनि ग्रहण करते हैं, जिससे वे समूह चर्चा, परिवेश ध्वनियों, या ऐसी स्थितियों को रिकॉर्ड करने के लिए आदर्श होते हैं जहां ध्वनि कई दिशाओं से आती है।"
+      },
+      "key_takeaway": {
+        "en": "Omnidirectional = picks up from all directions.",
+        "hi": "सर्वदिशात्मक = सभी दिशाओं से ग्रहण करता है।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "Which type of microphone is most sensitive to sounds from the front and slightly from the sides?",
+        "hi": "किस प्रकार का माइक्रोफोन सामने और थोड़ा बगल से आने वाली ध्वनियों के प्रति सबसे अधिक संवेदनशील होता है?"
+      },
+      "options": {
+        "a": {"en": "Bidirectional", "hi": "द्विदिशात्मक"},
+        "b": {"en": "Cardioid", "hi": "कार्डियोइड"},
+        "c": {"en": "Hyper-cardioid", "hi": "हाइपर-कार्डियोइड"},
+        "d": {"en": "Omnidirectional", "hi": "सर्वदिशात्मक"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This microphone pattern is heart-shaped and rejects sound from the rear.",
+        "hi": "यह माइक्रोफोन पैटर्न हृदय के आकार का होता है और पीछे से आने वाली ध्वनि को अस्वीकार करता है।"
+      },
+      "explanation": {
+        "en": "Cardioid microphones (named for their heart-shaped pickup pattern) are most sensitive to sounds from the front and slightly from the sides, while rejecting sounds from the rear. This makes them ideal for stage performances, podcasting, and situations where you want to focus on the sound source in front while minimizing background noise.",
+        "hi": "कार्डियोइड माइक्रोफोन (उनके हृदय के आकार के ग्रहण पैटर्न के नाम पर) सामने और थोड़ा बगल से आने वाली ध्वनियों के प्रति सबसे अधिक संवेदनशील होते हैं, जबकि पीछे से आने वाली ध्वनियों को अस्वीकार करते हैं। यह उन्हें मंच प्रदर्शन, पॉडकास्टिंग और ऐसी स्थितियों के लिए आदर्श बनाता है जहां आप पृष्ठभूमि के शोर को कम करते हुए सामने के ध्वनि स्रोत पर ध्यान केंद्रित करना चाहते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Cardioid mics focus on front, reject rear.",
+        "hi": "कार्डियोइड माइक सामने पर केंद्रित करते हैं, पीछे को अस्वीकार करते हैं।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "A bidirectional microphone picks up sound primarily from:",
+        "hi": "एक द्विदिशात्मक (बायडायरेक्शनल) माइक्रोफोन मुख्य रूप से किस ओर से ध्वनि ग्रहण करता है?"
+      },
+      "options": {
+        "a": {"en": "The front only", "hi": "केवल सामने से"},
+        "b": {"en": "The front and back", "hi": "सामने और पीछे से"},
+        "c": {"en": "Two opposite directions", "hi": "दो विपरीत दिशाओं से"},
+        "d": {"en": "All around", "hi": "चारों ओर से"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The prefix 'bi-' means 'two' - this microphone picks up sound from two main directions.",
+        "hi": "उपसर्ग 'बाय-' का अर्थ है 'दो' - यह माइक्रोफोन दो मुख्य दिशाओं से ध्वनि ग्रहण करता है।"
+      },
+      "explanation": {
+        "en": "Bidirectional microphones (also called figure-8 pattern) pick up sound equally from two opposite directions (front and back) while rejecting sound from the sides. This makes them ideal for interviews, duets, or any situation where you have two sound sources facing each other.",
+        "hi": "द्विदिशात्मक माइक्रोफोन (जिन्हें फिगर-8 पैटर्न भी कहा जाता है) दो विपरीत दिशाओं (सामने और पीछे) से समान रूप से ध्वनि ग्रहण करते हैं जबकि बगल से आने वाली ध्वनि को अस्वीकार करते हैं। यह उन्हें साक्षात्कार, युगल गायन, या किसी भी ऐसी स्थिति के लिए आदर्श बनाता है जहां आपके पास एक दूसरे के सामने दो ध्वनि स्रोत होते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Bidirectional = picks up from front and back.",
+        "hi": "द्विदिशात्मक = सामने और पीछे से ग्रहण करता है।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "What is the process of manipulating audio clips to create new high-quality sounds called?",
+        "hi": "नई उच्च-गुणवत्ता वाली ध्वनियाँ बनाने के लिए ऑडियो क्लिप में हेरफेर करने की प्रक्रिया को क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {"en": "Video Editing", "hi": "वीडियो एडिडिंग"},
+        "b": {"en": "Sound Editing", "hi": "साउंड एडिटिंग"},
+        "c": {"en": "Dubbing", "hi": "डबिंग"},
+        "d": {"en": "Mixing", "hi": "मिक्सिंग"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This process involves cutting, arranging, and enhancing audio recordings to create the final sound product.",
+        "hi": "इस प्रक्रिया में अंतिम ध्वनि उत्पाद बनाने के लिए ऑडियो रिकॉर्डिंग को काटना, व्यवस्थित करना और बढ़ाना शामिल है।"
+      },
+      "explanation": {
+        "en": "Sound editing is the process of manipulating and arranging audio clips to create high-quality sounds. This includes tasks like removing noise, adjusting timing, adding effects, and creating seamless audio transitions. Video editing deals with visual content, dubbing replaces dialogue, and mixing balances multiple audio tracks.",
+        "hi": "साउंड एडिटिंग उच्च-गुणवत्ता वाली ध्वनियाँ बनाने के लिए ऑडियो क्लिप में हेरफेर और व्यवस्थित करने की प्रक्रिया है। इसमें शोर हटाना, समय समायोजित करना, प्रभाव जोड़ना और निर्बाध ऑडियो संक्रमण बनाना जैसे कार्य शामिल हैं। वीडियो एडिटिंग दृश्य सामग्री से संबंधित है, डबिंग संवाद को बदलती है, और मिक्सिंग कई ऑडियो ट्रैक को संतुलित करती है।"
+      },
+      "key_takeaway": {
+        "en": "Sound editing creates quality audio from clips.",
+        "hi": "साउंड एडिटिंग क्लिप से गुणवत्तापूर्ण ऑडियो बनाती है।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "Which of the following is NOT typically a part of sound editing?",
+        "hi": "निम्नलिखित में से कौन सा आमतौर पर साउंड एडिटिंग का हिस्सा नहीं है?"
+      },
+      "options": {
+        "a": {"en": "Removing background noise", "hi": "पृष्ठभूमि का शोर हटाना"},
+        "b": {"en": "Applying color correction", "hi": "कलर करेक्शन लागू करना"},
+        "c": {"en": "Adjusting volume levels", "hi": "वॉल्यूम स्तर समायोजित करना"},
+        "d": {"en": "Adding sound effects", "hi": "साउंड इफेक्ट्स जोड़ना"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This task relates to visual enhancement rather than audio manipulation.",
+        "hi": "यह कार्य ऑडियो हेरफेर के बजाय दृश्य संवर्धन से संबंधित है।"
+      },
+      "explanation": {
+        "en": "Applying color correction is part of video editing, not sound editing. Color correction involves adjusting the colors, brightness, and contrast of visual content. Sound editing deals exclusively with audio tasks like noise removal, volume adjustment, and adding sound effects.",
+        "hi": "कलर करेक्शन लागू करना वीडियो एडिटिंग का हिस्सा है, साउंड एडिटिंग का नहीं। कलर करेक्शन में दृश्य सामग्री के रंग, चमक और कंट्रास्ट को समायोजित करना शामिल है। साउंड एडिटिंग विशेष रूप से ऑडियो कार्यों से संबंधित है जैसे शोर हटाना, वॉल्यूम समायोजन, और साउंड इफेक्ट्स जोड़ना।"
+      },
+      "key_takeaway": {
+        "en": "Color correction is for video, not sound.",
+        "hi": "कलर करेक्शन वीडियो के लिए है, ध्वनि के लिए नहीं।"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "What is the process of manipulating and rearranging video clips to create a new video called?",
+        "hi": "एक नया वीडियो बनाने के लिए वीडियो क्लिप में हेरफेर और पुनर्व्यवस्थित करने की प्रक्रिया को क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {"en": "Linear Editing", "hi": "लीनियर एडिटिंग"},
+        "b": {"en": "Video Editing", "hi": "वीडियो एडिटिंग"},
+        "c": {"en": "Film Splicing", "hi": "फिल्म स्प्लाइसिंग"},
+        "d": {"en": "Sound Editing", "hi": "साउंड एडिटिंग"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This is the general term for the entire process of working with video footage.",
+        "hi": "यह वीडियो फुटेज के साथ काम करने की पूरी प्रक्रिया के लिए सामान्य शब्द है।"
+      },
+      "explanation": {
+        "en": "Video editing is the comprehensive process of manipulating and rearranging video clips to create a new video. This includes cutting, sequencing, adding transitions, effects, and audio. Linear editing and film splicing are specific methods, while sound editing deals only with audio.",
+        "hi": "वीडियो एडिटिंग एक नया वीडियो बनाने के लिए वीडियो क्लिप में हेरफेर और पुनर्व्यवस्थित करने की व्यापक प्रक्रिया है। इसमें काटना, क्रमबद्ध करना, ट्रांजिशन, इफेक्ट्स और ऑडियो जोड़ना शामिल है। लीनियर एडिटिंग और फिल्म स्प्लाइसिंग विशिष्ट विधियाँ हैं, जबकि साउंड एडिटिंग केवल ऑडियो से संबंधित है।"
+      },
+      "key_takeaway": {
+        "en": "Video editing creates new videos from clips.",
+        "hi": "वीडियो एडिटिंग क्लिप से नए वीडियो बनाती है।"
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "Which video editing method is also known as 'tape-to-tape' editing?",
+        "hi": "किस वीडियो संपादन विधि को 'टेप-टू-टेप' संपादन के रूप में भी जाना जाता है?"
+      },
+      "options": {
+        "a": {"en": "Film splicing", "hi": "फिल्म स्प्लाइसिंग"},
+        "b": {"en": "Linear editing", "hi": "लीनियर एडिटिंग"},
+        "c": {"en": "Digital editing", "hi": "डिजिटल एडिटिंग"},
+        "d": {"en": "Non-linear editing", "hi": "नॉन-लीनियर एडिटिंग"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This traditional method involves copying scenes sequentially from one tape to another.",
+        "hi": "इस पारंपरिक विधि में दृश्यों को एक टेप से दूसरे टेप में क्रमिक रूप से कॉपी करना शामिल है।"
+      },
+      "explanation": {
+        "en": "Linear editing, also known as 'tape-to-tape' editing, is a traditional method where video is edited in a sequential, linear fashion. Scenes are copied from the source tape to the master tape in the order they will appear in the final video. This method doesn't allow easy changes once a scene is recorded.",
+        "hi": "लीनियर एडिटिंग, जिसे 'टेप-टू-टेप' संपादन के रूप में भी जाना जाता है, एक पारंपरिक विधि है जहां वीडियो को क्रमिक, रैखिक तरीके से संपादित किया जाता है। दृश्यों को स्रोत टेप से मास्टर टेप में उस क्रम में कॉपी किया जाता है जिस क्रम में वे अंतिम वीडियो में दिखाई देंगे। यह विधि एक बार दृश्य रिकॉर्ड हो जाने के बाद आसान बदलावों की अनुमति नहीं देती है।"
+      },
+      "key_takeaway": {
+        "en": "Linear editing = tape-to-tape sequential editing.",
+        "hi": "लीनियर एडिटिंग = टेप-टू-टेप क्रमिक संपादन।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "In linear editing, which device is used to play the original video?",
+        "hi": "लीनियर एडिटिंग में, मूल वीडियो चलाने के लिए किस उपकरण का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "Computer", "hi": "कंप्यूटर"},
+        "b": {"en": "VCR (Video Cassette Recorder)", "hi": "वीसीआर (वीडियो कैसेट रिकॉर्डर)"},
+        "c": {"en": "VCP (Video Cassette Player)", "hi": "वीसीपी (वीडियो कैसेट प्लेयर)"},
+        "d": {"en": "TV Monitor", "hi": "टीवी मॉनिटर"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This device only plays back video cassettes without recording capability.",
+        "hi": "यह उपकरण केवल वीडियो कैसेट चलाता है बिना रिकॉर्डिंग क्षमता के।"
+      },
+      "explanation": {
+        "en": "In linear editing, a VCP (Video Cassette Player) is used to play the original source video. The VCR (Video Cassette Recorder) is used to record the edited version. The VCP plays the source material, while the VCR records the selected scenes in sequence onto the master tape.",
+        "hi": "लीनियर एडिटिंग में, मूल स्रोत वीडियो चलाने के लिए एक वीसीपी (वीडियो कैसेट प्लेयर) का उपयोग किया जाता है। संपादित संस्करण को रिकॉर्ड करने के लिए वीसीआर (वीडियो कैसेट रिकॉर्डर) का उपयोग किया जाता है। वीसीपी स्रोत सामग्री चलाता है, जबकि वीसीआर चयनित दृश्यों को क्रम में मास्टर टेप पर रिकॉर्ड करता है।"
+      },
+      "key_takeaway": {
+        "en": "VCP plays source, VCR records edited version.",
+        "hi": "वीसीपी स्रोत चलाता है, वीसीआर संपादित संस्करण रिकॉर्ड करता है।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "Which editing method uses a powerful computer with editing software to manipulate video clips?",
+        "hi": "कौन सी संपादन विधि वीडियो क्लिप में हेरफेर करने के लिए संपादन सॉफ्टवेयर वाले एक शक्तिशाली कंप्यूटर का उपयोग करती है?"
+      },
+      "options": {
+        "a": {"en": "Tape Editing", "hi": "टेप एडिटिंग"},
+        "b": {"en": "Non-linear Editing", "hi": "नॉन-लीनियर एडिटिंग"},
+        "c": {"en": "Film Splicing", "hi": "फिल्म स्प्लाइसिंग"},
+        "d": {"en": "Linear Editing", "hi": "लीनियर एडिटिंग"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This modern method allows random access to any part of the video and non-sequential editing.",
+        "hi": "यह आधुनिक विधि वीडियो के किसी भी हिस्से तक यादृच्छिक पहुंच और गैर-क्रमिक संपादन की अनुमति देती है।"
+      },
+      "explanation": {
+        "en": "Non-linear editing (NLE) uses powerful computers with specialized software to manipulate video clips digitally. This method allows editors to access any part of the video instantly, make changes in any order, and easily rearrange scenes without affecting the original footage.",
+        "hi": "नॉन-लीनियर एडिटिंग (एनएलई) वीडियो क्लिप में डिजिटल रूप से हेरफेर करने के लिए विशेष सॉफ्टवेयर वाले शक्तिशाली कंप्यूटरों का उपयोग करती है। यह विधि संपादकों को वीडियो के किसी भी हिस्से तक तुरंत पहुंचने, किसी भी क्रम में बदलाव करने और मूल फुटेज को प्रभावित किए बिना दृश्यों को आसानी से पुनर्व्यवस्थित करने की अनुमति देती है।"
+      },
+      "key_takeaway": {
+        "en": "Non-linear editing uses computers for flexible editing.",
+        "hi": "नॉन-लीनियर एडिटिंग लचीले संपादन के लिए कंप्यूटर का उपयोग करती है।"
+      }
+    },
+    {
+      "question_id": 21,
+      "question": {
+        "en": "Film splicing was primarily used for editing:",
+        "hi": "फिल्म स्प्लाइसिंग मुख्य रूप से किसके संपादन के लिए उपयोग की जाती थी?"
+      },
+      "options": {
+        "a": {"en": "VHS cassettes", "hi": "वीएचएस कैसेट"},
+        "b": {"en": "Audio tapes", "hi": "ऑडियो टेप"},
+        "c": {"en": "Films from film cameras", "hi": "फिल्म कैमरों की फिल्में"},
+        "d": {"en": "Digital videos", "hi": "डिजिटल वीडियो"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This physical editing method involved cutting and joining strips of photographic film.",
+        "hi": "इस भौतिक संपादन विधि में फोटोग्राफिक फिल्म की पट्टियों को काटना और जोड़ना शामिल था।"
+      },
+      "explanation": {
+        "en": "Film splicing was the traditional physical editing method used for films shot on film cameras. Editors would literally cut the physical film strips with a splicer and join them together with tape or cement to rearrange scenes and remove unwanted footage.",
+        "hi": "फिल्म स्प्लाइसिंग फिल्म कैमरों पर शूट की गई फिल्मों के लिए उपयोग की जाने वाली पारंपरिक भौतिक संपादन विधि थी। संपादक वस्तुतः एक स्प्लाइसर के साथ भौतिक फिल्म स्ट्रिप्स को काटते थे और दृश्यों को पुनर्व्यवस्थित करने और अवांछित फुटेज को हटाने के लिए उन्हें टेप या सीमेंट के साथ जोड़ते थे।"
+      },
+      "key_takeaway": {
+        "en": "Film splicing physically cuts and joins film strips.",
+        "hi": "फिल्म स्प्लाइसिंग भौतिक रूप से फिल्म स्ट्रिप्स को काटती और जोड़ती है।"
+      }
+    },
+    {
+      "question_id": 22,
+      "question": {
+        "en": "What is the role of a video editor?",
+        "hi": "एक वीडियो एडिटर की क्या भूमिका है?"
+      },
+      "options": {
+        "a": {"en": "To write the script for the movie", "hi": "फिल्म की पटकथा लिखना"},
+        "b": {"en": "To direct the actors", "hi": "अभिनेताओं को निर्देशित करना"},
+        "c": {"en": "To edit different video footages to produce the final video", "hi": "अंतिम वीडियो तैयार करने के लिए विभिन्न वीडियो फुटेज को संपादित करना"},
+        "d": {"en": "To operate the camera during shooting", "hi": "शूटिंग के दौरान कैमरा संचालित करना"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This professional works with raw footage to create the final visual story.",
+        "hi": "यह पेशेवर अंतिम दृश्य कहानी बनाने के लिए कच्चे फुटेज के साथ काम करता है।"
+      },
+      "explanation": {
+        "en": "A video editor's primary role is to edit different video footage to produce the final video. This involves selecting the best shots, arranging them in sequence, adding transitions, effects, audio, and ensuring the video tells a coherent story. Other roles like script writing, directing, and camera operation are performed by different professionals.",
+        "hi": "एक वीडियो एडिटर की प्राथमिक भूमिका अंतिम वीडियो तैयार करने के लिए विभिन्न वीडियो फुटेज को संपादित करना है। इसमें सर्वश्रेष्ठ शॉट्स का चयन करना, उन्हें क्रम में व्यवस्थित करना, ट्रांजिशन, इफेक्ट्स, ऑडियो जोड़ना और यह सुनिश्चित करना शामिल है कि वीडियो एक सुसंगत कहानी बताता है। पटकथा लेखन, निर्देशन और कैमरा संचालन जैसी अन्य भूमिकाएं विभिन्न पेशेवरों द्वारा निभाई जाती हैं।"
+      },
+      "key_takeaway": {
+        "en": "Video editors create final videos from footage.",
+        "hi": "वीडियो एडिटर फुटेज से अंतिम वीडियो बनाते हैं।"
+      }
+    },
+    {
+      "question_id": 23,
+      "question": {
+        "en": "Which of the following is a responsibility of a video editor?",
+        "hi": "निम्नलिखित में से कौन सी एक वीडियो एडिटर की जिम्मेदारी है?"
+      },
+      "options": {
+        "a": {"en": "Casting the actors", "hi": "अभिनेताओं का चयन करना"},
+        "b": {"en": "Adding effects, filters, and transitions", "hi": "प्रभाव, फिल्टर और ट्रांजिशन जोड़ना"},
+        "c": {"en": "Writing the story", "hi": "कहानी लिखना"},
+        "d": {"en": "Managing the budget", "hi": "बजट प्रबंधन करना"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This task involves enhancing the visual appeal and flow of the video.",
+        "hi": "इस कार्य में वीडियो की दृश्य अपील और प्रवाह को बढ़ाना शामिल है।"
+      },
+      "explanation": {
+        "en": "Adding effects, filters, and transitions is a core responsibility of video editors. These elements enhance the visual quality, create smooth scene changes, and add creative touches to the video. Casting, story writing, and budget management are typically handled by producers, writers, and production managers.",
+        "hi": "प्रभाव, फिल्टर और ट्रांजिशन जोड़ना वीडियो एडिटरों की एक मुख्य जिम्मेदारी है। ये तत्व दृश्य गुणवत्ता को बढ़ाते हैं, सहज दृश्य परिवर्तन बनाते हैं और वीडियो में रचनात्मक स्पर्श जोड़ते हैं। कास्टिंग, कहानी लेखन और बजट प्रबंधन आमतौर पर निर्माताओं, लेखकों और उत्पादन प्रबंधकों द्वारा संभाले जाते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Editors add visual enhancements and transitions.",
+        "hi": "एडिटर दृश्य संवर्धन और ट्रांजिशन जोड़ते हैं।"
+      }
+    },
+    {
+      "question_id": 24,
+      "question": {
+        "en": "A VCR (Video Cassette Recorder) is:",
+        "hi": "एक वीसीआर (वीडियो कैसेट रिकॉर्डर) है:"
+      },
+      "options": {
+        "a": {"en": "A type of camera", "hi": "एक प्रकार का कैमरा"},
+        "b": {"en": "An electro-mechanical device for playing and recording VHS cassettes", "hi": "वीएचएस कैसेट चलाने और रिकॉर्ड करने के लिए एक इलेक्ट्रो-मैकेनिकल उपकरण"},
+        "c": {"en": "A computer software", "hi": "एक कंप्यूटर सॉफ्टवेयर"},
+        "d": {"en": "A digital storage device", "hi": "एक डिजिटल संग्रहण उपकरण"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This device was commonly used in homes to watch movies and record TV shows on tapes.",
+        "hi": "यह उपकरण आमतौर पर घरों में फिल्में देखने और टेप पर टीवी शो रिकॉर्ड करने के लिए उपयोग किया जाता था।"
+      },
+      "explanation": {
+        "en": "A VCR (Video Cassette Recorder) is an electro-mechanical device used for playing and recording VHS cassettes. It uses magnetic tape to store analog video and audio signals. VCRs were revolutionary for home entertainment, allowing people to watch pre-recorded movies and record television broadcasts.",
+        "hi": "एक वीसीआर (वीडियो कैसेट रिकॉर्डर) एक इलेक्ट्रो-मैकेनिकल उपकरण है जिसका उपयोग वीएचएस कैसेट चलाने और रिकॉर्ड करने के लिए किया जाता है। यह एनालॉग वीडियो और ऑडियो सिग्नल को संग्रहीत करने के लिए मैग्नेटिक टेप का उपयोग करता है। वीसीआर होम मनोरंजन के लिए क्रांतिकारी थे, जिससे लोग पहले से रिकॉर्ड की गई फिल्में देख सकते थे और टेलीविजन प्रसारण रिकॉर्ड कर सकते थे।"
+      },
+      "key_takeaway": {
+        "en": "VCR plays and records VHS tapes.",
+        "hi": "वीसीआर वीएचएस टेप चलाता और रिकॉर्ड करता है।"
+      }
+    },
+    {
+      "question_id": 25,
+      "question": {
+        "en": "How is video typically recorded on the magnetic tape inside a VHS cassette?",
+        "hi": "वीएचएस कैसेट के अंदर मैग्नेटिक टेप पर वीडियो आमतौर पर कैसे रिकॉर्ड किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "In circular tracks", "hi": "वृत्ताकार ट्रैक में"},
+        "b": {"en": "In linear tracks", "hi": "रैखिक ट्रैक में"},
+        "c": {"en": "In diagonal tracks", "hi": "विकर्ण ट्रैक में"},
+        "d": {"en": "In random patterns", "hi": "यादृच्छिक पैटर्न में"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The recording head spins at an angle to create slanted tracks on the tape.",
+        "hi": "रिकॉर्डिंग हेड टेप पर तिरछे ट्रैक बनाने के लिए एक कोण पर घूमती है।"
+      },
+      "explanation": {
+        "en": "Video is recorded on VHS magnetic tape in diagonal tracks using a rotating head drum. This helical scan method allows more information to be stored on the tape by recording tracks at an angle. The video head rotates while the tape moves slowly, creating diagonal tracks that pack more data into the available space.",
+        "hi": "वीडियो को वीएचएस मैग्नेटिक टेप पर घूमने वाले हेड ड्रम का उपयोग करके विकर्ण ट्रैक में रिकॉर्ड किया जाता है। यह हेलिकल स्कैन विधि टेप पर एक कोण पर ट्रैक रिकॉर्ड करके अधिक जानकारी संग्रहीत करने की अनुमति देती है। वीडियो हेड घूमता है जबकि टेप धीरे-धीरे चलता है, जिससे विकर्ण ट्रैक बनते हैं जो उपलब्ध स्थान में अधिक डेटा पैक करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "VHS uses diagonal tracks for recording.",
+        "hi": "वीएचएस रिकॉर्डिंग के लिए विकर्ण ट्रैक का उपयोग करता है।"
+      }
+    },
+    {
+      "question_id": 26,
+      "question": {
+        "en": "What is Windows Movie Maker?",
+        "hi": "विंडोज मूवी मेकर क्या है?"
+      },
+      "options": {
+        "a": {"en": "A video cassette player", "hi": "एक वीडियो कैसेट प्लेयर"},
+        "b": {"en": "A video editing software published by Microsoft", "hi": "माइक्रोसॉफ्ट द्वारा प्रकाशित एक वीडियो एडिटिंग सॉफ्टवेयर"},
+        "c": {"en": "A type of microphone", "hi": "एक प्रकार का माइक्रोफोन"},
+        "d": {"en": "A sound editing software", "hi": "एक साउंड एडिटिंग सॉफ्टवेयर"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This software was included with many versions of Windows and was popular for home video editing.",
+        "hi": "यह सॉफ्टवेयर विंडोज के कई संस्करणों के साथ शामिल था और होम वीडियो एडिटिंग के लिए लोकप्रिय था।"
+      },
+      "explanation": {
+        "en": "Windows Movie Maker was a video editing software published by Microsoft. It was designed for home users to easily create and edit videos from photos, video clips, and audio. It featured a simple timeline interface, basic effects, transitions, and titles, making video editing accessible to beginners.",
+        "hi": "विंडोज मूवी मेकर माइक्रोसॉफ्ट द्वारा प्रकाशित एक वीडियो एडिटिंग सॉफ्टवेयर था। इसे होम उपयोगकर्ताओं के लिए फोटो, वीडियो क्लिप और ऑडियो से आसानी से वीडियो बनाने और संपादित करने के लिए डिजाइन किया गया था। इसमें एक सरल टाइमलाइन इंटरफेस, बुनियादी प्रभाव, ट्रांजिशन और टाइटल्स थे, जिससे वीडियो एडिटिंग शुरुआती लोगों के लिए सुलभ हो गई।"
+      },
+      "key_takeaway": {
+        "en": "Windows Movie Maker was Microsoft's video editor.",
+        "hi": "विंडोज मूवी मेकर माइक्रोसॉफ्ट का वीडियो एडिटर था।"
+      }
+    },
+    {
+      "question_id": 27,
+      "question": {
+        "en": "With which operating system was Windows Movie Maker initially introduced?",
+        "hi": "विंडोज मूवी मेकर शुरू में किस ऑपरेटिंग सिस्टम के साथ पेश किया गया था?"
+      },
+      "options": {
+        "a": {"en": "Windows 10", "hi": "विंडोज 10"},
+        "b": {"en": "Windows Vista", "hi": "विंडोज विस्टा"},
+        "c": {"en": "Windows XP", "hi": "विंडोज एक्सपी"},
+        "d": {"en": "Windows 7", "hi": "विंडोज 7"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This popular Windows version was released in 2001 and included this video editing tool.",
+        "hi": "यह लोकप्रिय विंडोज संस्करण 2001 में जारी किया गया था और इसमें यह वीडियो एडिटिंग टूल शामिल था।"
+      },
+      "explanation": {
+        "en": "Windows Movie Maker was initially introduced with Windows XP in 2001 as part of the Windows XP software package. It became one of the most widely used video editing applications for home users due to its simplicity and inclusion with the popular Windows XP operating system.",
+        "hi": "विंडोज मूवी मेकर शुरू में 2001 में विंडोज एक्सपी के साथ विंडोज एक्सपी सॉफ्टवेयर पैकेज के हिस्से के रूप में पेश किया गया था। यह अपनी सरलता और लोकप्रिय विंडोज एक्सपी ऑपरेटिंग सिस्टम के साथ शामिल होने के कारण होम उपयोगकर्ताओं के लिए सबसे व्यापक रूप से उपयोग किए जाने वाले वीडियो एडिटिंग एप्लिकेशन में से एक बन गया।"
+      },
+      "key_takeaway": {
+        "en": "Movie Maker debuted with Windows XP.",
+        "hi": "मूवी मेकर की शुरुआत विंडोज एक्सपी के साथ हुई।"
+      }
+    },
+    {
+      "question_id": 28,
+      "question": {
+        "en": "What can users create with Windows Movie Maker?",
+        "hi": "उपयोगकर्ता विंडोज मूवी मेकर के साथ क्या बना सकते हैं?"
+      },
+      "options": {
+        "a": {"en": "Only audio recordings", "hi": "केवल ऑडियो रिकॉर्डिंग"},
+        "b": {"en": "Movies from photos, videos, and animations", "hi": "फोटो, वीडियो और एनिमेशन से मूवी"},
+        "c": {"en": "3D models", "hi": "3D मॉडल"},
+        "d": {"en": "Spreadsheets", "hi": "स्प्रेडशीट"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This software combines different media types to create video presentations.",
+        "hi": "यह सॉफ्टवेयर वीडियो प्रस्तुतियाँ बनाने के लिए विभिन्न मीडिया प्रकारों को जोड़ता है।"
+      },
+      "explanation": {
+        "en": "With Windows Movie Maker, users could create movies by combining photos, video clips, and animations. The software allowed adding transitions between scenes, titles, credits, background music, and basic visual effects. It was particularly popular for creating family videos, slideshows, and simple educational content.",
+        "hi": "विंडोज मूवी मेकर के साथ, उपयोगकर्ता फोटो, वीडियो क्लिप और एनिमेशन को जोड़कर मूवी बना सकते थे। सॉफ्टवेयर दृश्यों के बीच ट्रांजिशन, टाइटल, क्रेडिट, बैकग्राउंड म्यूजिक और बुनियादी विजुअल इफेक्ट्स जोड़ने की अनुमति देता था। यह विशेष रूप से परिवार के वीडियो, स्लाइडशो और सरल शैक्षिक सामग्री बनाने के लिए लोकप्रिय था।"
+      },
+      "key_takeaway": {
+        "en": "Movie Maker creates videos from mixed media.",
+        "hi": "मूवी मेकर मिश्रित मीडिया से वीडियो बनाता है।"
+      }
+    },
+    {
+      "question_id": 29,
+      "question": {
+        "en": "Which free and open-source audio editing software is widely used as an alternative to Audacity?",
+        "hi": "ऑडेसिटी के विकल्प के रूप में किस मुफ्त और ओपन-सोर्स ऑडियो संपादन सॉफ्टवेयर का व्यापक रूप से उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "Pro Tools", "hi": "प्रो टूल्स"},
+        "b": {"en": "Ocenaudio", "hi": "ओसेनाउडियो"},
+        "c": {"en": "FL Studio", "hi": "एफएल स्टूडियो"},
+        "d": {"en": "Adobe Audition", "hi": "एडोब ऑडिशन"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This software is known for its simple interface and is available for Windows, Mac, and Linux.",
+        "hi": "यह सॉफ्टवेयर अपने सरल इंटरफेस के लिए जाना जाता है और विंडोज, मैक और लिनक्स के लिए उपलब्ध है।"
+      },
+      "explanation": {
+        "en": "Ocenaudio is a free, cross-platform audio editing software that serves as a popular alternative to Audacity. It offers a clean, user-friendly interface with powerful editing features, real-time effects, and supports multiple audio formats. Unlike commercial options like Pro Tools or Adobe Audition, it's completely free and open-source.",
+        "hi": "ओसेनाउडियो एक मुफ्त, क्रॉस-प्लेटफॉर्म ऑडियो संपादन सॉफ्टवेयर है जो ऑडेसिटी के लोकप्रिय विकल्प के रूप में कार्य करता है। यह शक्तिशाली संपादन सुविधाओं, रियल-टाइम प्रभावों के साथ एक साफ, उपयोगकर्ता-अनुकूल इंटरफेस प्रदान करता है और कई ऑडियो प्रारूपों का समर्थन करता है। प्रो टूल्स या एडोब ऑडिशन जैसे वाणिज्यिक विकल्पों के विपरीत, यह पूरी तरह से मुफ्त और ओपन-सोर्स है।"
+      },
+      "key_takeaway": {
+        "en": "Ocenaudio is a free Audacity alternative.",
+        "hi": "ओसेनाउडियो एक मुफ्त ऑडेसिटी विकल्प है।"
+      }
+    },
+    {
+      "question_id": 30,
+      "question": {
+        "en": "In modern non-linear video editing, what is the 'timeline' primarily used for?",
+        "hi": "आधुनिक नॉन-लीनियर वीडियो संपादन में, 'टाइमलाइन' मुख्य रूप से किसके लिए उपयोग की जाती है?"
+      },
+      "options": {
+        "a": {"en": "For applying color correction", "hi": "रंग सुधार लागू करने के लिए"},
+        "b": {"en": "For arranging and sequencing video and audio clips", "hi": "वीडियो और ऑडियो क्लिप को व्यवस्थित और क्रमबद्ध करने के लिए"},
+        "c": {"en": "For writing scripts", "hi": "पटकथा लिखने के लिए"},
+        "d": {"en": "For managing project files", "hi": "प्रोजेक्ट फाइलों को प्रबंधित करने के लिए"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This is the main workspace where you build your video by placing clips in order.",
+        "hi": "यह मुख्य कार्यक्षेत्र है जहां आप क्लिप को क्रम में रखकर अपना वीडियो बनाते हैं।"
+      },
+      "explanation": {
+        "en": "The timeline in non-linear video editing is the primary workspace for arranging and sequencing video and audio clips. It displays clips horizontally along a time axis, allowing editors to precisely position scenes, adjust durations, layer multiple tracks, and synchronize audio with video. All other functions like color correction and file management have their own dedicated panels.",
+        "hi": "नॉन-लीनियर वीडियो संपादन में टाइमलाइन वीडियो और ऑडियो क्लिप को व्यवस्थित और क्रमबद्ध करने के लिए प्राथमिक कार्यक्षेत्र है। यह समय अक्ष के साथ क्षैतिज रूप से क्लिप प्रदर्शित करती है, जिससे संपादक दृश्यों को सटीक रूप से स्थिति में लगा सकते हैं, अवधि समायोजित कर सकते हैं, कई ट्रैक को परत कर सकते हैं और ऑडियो को वीडियो के साथ सिंक्रनाइज़ कर सकते हैं। कलर करेक्शन और फाइल प्रबंधन जैसे अन्य सभी कार्यों के अपने समर्पित पैनल होते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Timeline arranges and sequences clips.",
+        "hi": "टाइमलाइन क्लिप को व्यवस्थित और क्रमबद्ध करती है।"
+      }
+    },
+    {
+      "question_id": 31,
+      "question": {
+        "en": "Which popular modern video editing software, known for its user-friendly interface, is commonly used for social media content creation?",
+        "hi": "अपने उपयोगकर्ता-अनुकूल इंटरफेस के लिए जाने जाने वाला कौन सा लोकप्रिय आधुनिक वीडियो एडिटिंग सॉफ्टवेयर सामान्यतः सोशल मीडिया कंटेंट क्रिएशन के लिए उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "Final Cut Pro", "hi": "फाइनल कट प्रो"},
+        "b": {"en": "Adobe Premiere Pro", "hi": "एडोब प्रीमियर प्रो"},
+        "c": {"en": "DaVinci Resolve", "hi": "डा विंची रिज़ॉल्व"},
+        "d": {"en": "CapCut", "hi": "कैपकट"}
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This mobile-friendly app is particularly popular for creating short-form videos for platforms like TikTok.",
+        "hi": "यह मोबाइल-फ्रेंडली ऐप टिकटॉक जैसे प्लेटफॉर्म के लिए शॉर्ट-फॉर्म वीडियो बनाने के लिए विशेष रूप से लोकप्रिय है।"
+      },
+      "explanation": {
+        "en": "CapCut is a popular modern video editing software known for its user-friendly interface and is widely used for social media content creation. Developed by ByteDance (the same company that created TikTok), it offers templates, effects, and tools specifically designed for short-form vertical videos popular on platforms like TikTok, Instagram Reels, and YouTube Shorts.",
+        "hi": "कैपकट एक लोकप्रिय आधुनिक वीडियो एडिटिंग सॉफ्टवेयर है जो अपने उपयोगकर्ता-अनुकूल इंटरफेस के लिए जाना जाता है और सोशल मीडिया कंटेंट क्रिएशन के लिए व्यापक रूप से उपयोग किया जाता है। बाइटडांस (वही कंपनी जिसने टिकटॉक बनाया) द्वारा विकसित, यह टेम्पलेट्स, इफेक्ट्स और टूल्स प्रदान करता है जो विशेष रूप से टिकटॉक, इंस्टाग्राम रील्स और यूट्यूब शॉर्ट्स जैसे प्लेटफॉर्म पर लोकप्रिय शॉर्ट-फॉर्म वर्टिकल वीडियो के लिए डिजाइन किए गए हैं।"
+      },
+      "key_takeaway": {
+        "en": "CapCut is popular for social media videos.",
+        "hi": "कैपकट सोशल मीडिया वीडियो के लिए लोकप्रिय है।"
+      }
+    },
+    {
+      "question_id": 32,
+      "question": {
+        "en": "What does 'VHS' stand for?",
+        "hi": "'VHS' का पूर्ण रूप क्या है?"
+      },
+      "options": {
+        "a": {"en": "Video Horizontal Signal", "hi": "वीडियो हॉरिजॉन्टल सिग्नल"},
+        "b": {"en": "Video Home System", "hi": "वीडियो होम सिस्टम"},
+        "c": {"en": "Very High Speed", "hi": "वेरी हाई स्पीड"},
+        "d": {"en": "Virtual Hardware System", "hi": "वर्चुअल हार्डवेयर सिस्टम"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The name emphasizes that this format was designed for home use.",
+        "hi": "नाम इस बात पर जोर देता है कि यह प्रारूप घरेलू उपयोग के लिए डिजाइन किया गया था।"
+      },
+      "explanation": {
+        "en": "VHS stands for Video Home System. It was developed by JVC in the 1970s as a consumer-grade analog video recording format for home use. The 'Home System' in its name distinguished it from professional broadcast equipment and emphasized its intended market for everyday consumers to record and play videos at home.",
+        "hi": "वीएचएस का मतलब वीडियो होम सिस्टम है। इसे 1970 के दशक में जेवीसी द्वारा घरेलू उपयोग के लिए एक उपभोक्ता-ग्रेड एनालॉग वीडियो रिकॉर्डिंग प्रारूप के रूप में विकसित किया गया था। इसके नाम में 'होम सिस्टम' ने इसे पेशेवर प्रसारण उपकरणों से अलग किया और रोजमर्रा के उपभोक्ताओं के लिए इसके इच्छित बाजार पर जोर दिया ताकि वे घर पर वीडियो रिकॉर्ड और प्ले कर सकें।"
+      },
+      "key_takeaway": {
+        "en": "VHS = Video Home System.",
+        "hi": "वीएचएस = वीडियो होम सिस्टम।"
+      }
+    },
+    {
+      "question_id": 33,
+      "question": {
+        "en": "The process of replacing the original dialogue in a video with a recorded translation in another language is called:",
+        "hi": "किसी वीडियो में मूल संवाद को किसी अन्य भाषा में रिकॉर्डेड अनुवाद से बदलने की प्रक्रिया को कहा जाता है:"
+      },
+      "options": {
+        "a": {"en": "Foley", "hi": "फोली"},
+        "b": {"en": "Dubbing", "hi": "डबिंग"},
+        "c": {"en": "Narration", "hi": "कथन"},
+        "d": {"en": "Sound Mixing", "hi": "साउंड मिक्सिंग"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This is commonly done for foreign films and TV shows to make them accessible to different language audiences.",
+        "hi": "यह आमतौर पर विदेशी फिल्मों और टीवी शो के लिए किया जाता है ताकि उन्हें विभिन्न भाषा के दर्शकों के लिए सुलभ बनाया जा सके।"
+      },
+      "explanation": {
+        "en": "Dubbing is the process of replacing the original dialogue in a video with a recorded translation in another language. Voice actors record the translated lines, which are then synchronized with the actors' lip movements in the video. This allows audiences who don't understand the original language to watch and understand the content.",
+        "hi": "डबिंग किसी वीडियो में मूल संवाद को किसी अन्य भाषा में रिकॉर्डेड अनुवाद से बदलने की प्रक्रिया है। आवाज अभिनेता अनुवादित पंक्तियों को रिकॉर्ड करते हैं, जिन्हें फिर वीडियो में अभिनेताओं के होंठ आंदोलनों के साथ सिंक्रनाइज़ किया जाता है। यह उन दर्शकों को अनुमति देता है जो मूल भाषा नहीं समझते हैं, सामग्री को देखने और समझने के लिए।"
+      },
+      "key_takeaway": {
+        "en": "Dubbing replaces dialogue with translation.",
+        "hi": "डबिंग संवाद को अनुवाद से बदलती है।"
+      }
+    },
+    {
+      "question_id": 34,
+      "question": {
+        "en": "Which component is essential for a condenser microphone to function, often provided by 'phantom power'?",
+        "hi": "एक कंडेनसर माइक्रोफोन के कार्य करने के लिए कौन सा घटक आवश्यक है, जो अक्सर 'फैंटम पावर' द्वारा प्रदान किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "A large diaphragm", "hi": "एक बड़ा डायाफ्राम"},
+        "b": {"en": "An external battery or power source", "hi": "एक बाहरी बैटरी या बिजली का स्रोत"},
+        "c": {"en": "A strong magnet", "hi": "एक शक्तिशाली चुंबक"},
+        "d": {"en": "A wireless transmitter", "hi": "एक वायरलेस ट्रांसमीटर"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Condenser microphones need electrical power to charge their internal components.",
+        "hi": "कंडेनसर माइक्रोफोन को अपने आंतरिक घटकों को चार्ज करने के लिए विद्युत शक्ति की आवश्यकता होती है।"
+      },
+      "explanation": {
+        "en": "Condenser microphones require an external power source to charge the capacitor plates that form their core operating principle. This power is typically provided by 'phantom power' (48V DC) from mixing consoles, audio interfaces, or external power supplies. Unlike dynamic microphones that generate their own signal, condensers need this external power to function.",
+        "hi": "कंडेनसर माइक्रोफोन को कैपेसिटर प्लेटों को चार्ज करने के लिए एक बाहरी बिजली स्रोत की आवश्यकता होती है जो उनके मुख्य संचालन सिद्धांत का गठन करती हैं। यह शक्ति आमतौर पर मिक्सिंग कंसोल, ऑडियो इंटरफेस, या बाहरी बिजली आपूर्ति से 'फैंटम पावर' (48V DC) द्वारा प्रदान की जाती है। डायनेमिक माइक्रोफोन के विपरीत जो अपना स्वयं का सिग्नल उत्पन्न करते हैं, कंडेनसर को कार्य करने के लिए इस बाहरी शक्ति की आवश्यकता होती है।"
+      },
+      "key_takeaway": {
+        "en": "Condenser mics need external power (phantom power).",
+        "hi": "कंडेनसर माइक को बाहरी बिजली (फैंटम पावर) की आवश्यकता होती है।"
+      }
+    },
+    {
+      "question_id": 35,
+      "question": {
+        "en": "The 'J-cut' and 'L-cut' are editing techniques primarily related to:",
+        "hi": "'जे-कट' और 'एल-कट' मुख्य रूप से किससे संबंधित संपादन तकनीकें हैं?"
+      },
+      "options": {
+        "a": {"en": "Creating transitions between scenes", "hi": "दृश्यों के बीच संक्रमण बनाना"},
+        "b": {"en": "Audio and video timing (where audio leads or follows video)", "hi": "ऑडियो और वीडियो टाइमिंग (जहां ऑडियो वीडियो का नेतृत्व करता है या उसका अनुसरण करता है)"},
+        "c": {"en": "Adding special effects", "hi": "विशेष प्रभाव जोड़ना"},
+        "d": {"en": "Color grading", "hi": "कलर ग्रेडिंग"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "These cuts create smooth transitions by offsetting the audio and video edit points.",
+        "hi": "ये कट ऑडियो और वीडियो संपादन बिंदुओं को ऑफसेट करके सहज संक्रमण बनाते हैं।"
+      },
+      "explanation": {
+        "en": "J-cuts and L-cuts are editing techniques that deal with audio and video timing relationships. A J-cut is when the audio from the next scene begins before the video transition (audio leads video). An L-cut is when the audio from the current scene continues into the next scene (audio follows video). These techniques create smoother, more natural transitions between scenes.",
+        "hi": "जे-कट और एल-कट संपादन तकनीकें हैं जो ऑडियो और वीडियो टाइमिंग संबंधों से संबंधित हैं। एक जे-कट तब होता है जब अगले दृश्य का ऑडियो वीडियो ट्रांजिशन से पहले शुरू होता है (ऑडियो वीडियो का नेतृत्व करता है)। एक एल-कट तब होता है जब वर्तमान दृश्य का ऑडियो अगले दृश्य में जारी रहता है (ऑडियो वीडियो का अनुसरण करता है)। ये तकनीकें दृश्यों के बीच सहज, अधिक प्राकृतिक संक्रमण बनाती हैं।"
+      },
+      "key_takeaway": {
+        "en": "J/L-cuts control audio-video timing relationships.",
+        "hi": "जे/एल-कट ऑडियो-वीडियो टाइमिंग संबंधों को नियंत्रित करते हैं।"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1062 @@
+{
+  "metadata": {
+    "chapter_number": 6,
+    "chapter_title": "PL/SQL Fundamentals",
+    "chapter_title_hindi": "PL/SQL के मूल सिद्धांत",
+    "subject": "Database Management / Programming",
+    "total_questions": 40,
+    "source_language": "en",
+    "target_language": "hi",
+    "created_at": "2025-11-24T09:30:00Z",
+    "version": "2.2",
+    "note": "Standardized code tags."
+  },
+  "validation_report": {
+    "is_valid": true,
+    "checked_by": "AI Tutor",
+    "corrections": ["Fixed Q33", "Applied <code> tags"],
+    "notes": "Complete."
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "What does PL/SQL stand for?",
+        "hi": "PL/SQL का क्या अर्थ है?"
+      },
+      "options": {
+        "a": {"en": "Procedural Language / Structured Query Language", "hi": "प्रोसीजरल लैंग्वेज / स्ट्रक्चर्ड क्वेरी लैंग्वेज"},
+        "b": {"en": "Programming Logic / Standard Query Logic", "hi": "प्रोग्रामिंग लॉजिक / स्टैण्डर्ड क्वेरी लॉजिक"},
+        "c": {"en": "Programming Language / Structured Query Language", "hi": "प्रोग्रामिंग लैंग्वेज / स्ट्रक्चर्ड क्वेरी लैंग्वेज"},
+        "d": {"en": "Primary Language / Standard Query Language", "hi": "प्राइमरी लैंग्वेज / स्टैण्डर्ड क्वेरी लैंग्वेज"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "The 'PL' part stands for Procedural Language.",
+        "hi": "'PL' भाग प्रोसीजरल लैंग्वेज के लिए है।"
+      },
+      "explanation": {
+        "en": "PL/SQL stands for Procedural Language/Structured Query Language.",
+        "hi": "PL/SQL का अर्थ प्रोसीजरल लैंग्वेज/स्ट्रक्चर्ड क्वेरी लैंग्वेज है।"
+      },
+      "key_takeaway": {
+        "en": "PL/SQL combines SQL and procedural programming.",
+        "hi": "PL/SQL SQL और प्रोसीजरल प्रोग्रामिंग को जोड़ता है।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "PL/SQL is a combination of which two elements?",
+        "hi": "PL/SQL किन दो तत्वों का संयोजन है?"
+      },
+      "options": {
+        "a": {"en": "Java and Python", "hi": "जावा और पाइथन"},
+        "b": {"en": "SQL and procedural features", "hi": "SQL और प्रोसीजरल विशेषताएं"},
+        "c": {"en": "Database tables and queries", "hi": "डेटाबेस टेबल और क्वेरीज"},
+        "d": {"en": "HTML and CSS", "hi": "HTML और CSS"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "SQL for data, Procedural for logic.",
+        "hi": "डेटा के लिए SQL, लॉजिक के लिए प्रोसीजरल।"
+      },
+      "explanation": {
+        "en": "PL/SQL combines SQL with procedural features like loops and conditions.",
+        "hi": "PL/SQL, SQL को लूप और कंडीशन जैसी प्रोसीजरल विशेषताओं के साथ जोड़ता है।"
+      },
+      "key_takeaway": {
+        "en": "It bridges data querying and programming logic.",
+        "hi": "यह डेटा क्वेरीइंग और प्रोग्रामिंग लॉजिक को जोड़ता है।"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "Which of the following is a feature of PL/SQL?",
+        "hi": "निम्नलिखित में से कौन सी PL/SQL की एक विशेषता है?"
+      },
+      "options": {
+        "a": {"en": "Markup language", "hi": "मार्कअप लैंग्वेज"},
+        "b": {"en": "Client-side execution", "hi": "क्लाइंट-साइड निष्पादन"},
+        "c": {"en": "Error checking features", "hi": "त्रुटि जांच सुविधाएं"},
+        "d": {"en": "Web page design", "hi": "वेब पेज डिजाइन"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "It handles exceptions.",
+        "hi": "यह अपवादों को संभालता है।"
+      },
+      "explanation": {
+        "en": "PL/SQL includes EXCEPTION handling for error management.",
+        "hi": "PL/SQL में त्रुटि प्रबंधन के लिए EXCEPTION हैंडलिंग शामिल है।"
+      },
+      "key_takeaway": {
+        "en": "Exception handling enhances reliability.",
+        "hi": "अपवाद हैंडलिंग विश्वसनीयता बढ़ाती है।"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "What is the key difference between SQL and PL/SQL regarding execution?",
+        "hi": "निष्पादन के संबंध में SQL और PL/SQL के बीच मुख्य अंतर क्या है?"
+      },
+      "options": {
+        "a": {"en": "PL/SQL executes one command at a time", "hi": "PL/SQL एक समय में एक कमांड निष्पादित करता है"},
+        "b": {"en": "SQL executes single commands, PL/SQL executes blocks", "hi": "SQL एकल कमांड निष्पादित करता है, PL/SQL ब्लॉक"},
+        "c": {"en": "PL/SQL is a subset of SQL", "hi": "PL/SQL, SQL का एक सबसेट है"},
+        "d": {"en": "SQL is faster", "hi": "SQL तेज है"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "PL/SQL sends a batch of commands.",
+        "hi": "PL/SQL कमांड का एक बैच भेजता है।"
+      },
+      "explanation": {
+        "en": "SQL executes single commands; PL/SQL executes a block of commands at once.",
+        "hi": "SQL एकल कमांड निष्पादित करता है; PL/SQL एक बार में कमांड का एक ब्लॉक निष्पादित करता है।"
+      },
+      "key_takeaway": {
+        "en": "Block execution improves performance.",
+        "hi": "ब्लॉक निष्पादन प्रदर्शन में सुधार करता है।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "Which statement is true regarding SQL and PL/SQL?",
+        "hi": "SQL और PL/SQL के संबंध में कौन सा कथन सत्य है?"
+      },
+      "options": {
+        "a": {"en": "Unrelated", "hi": "असंबंधित"},
+        "b": {"en": "PL/SQL is a subset of SQL", "hi": "PL/SQL, SQL का एक सबसेट है"},
+        "c": {"en": "PL/SQL is a superset of SQL", "hi": "PL/SQL, SQL का एक सुपरसेट है"},
+        "d": {"en": "SQL is a superset of PL/SQL", "hi": "SQL, PL/SQL का एक सुपरसेट है"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "PL/SQL has everything SQL has, plus more.",
+        "hi": "PL/SQL में वह सब कुछ है जो SQL में है, और भी बहुत कुछ।"
+      },
+      "explanation": {
+        "en": "PL/SQL is a superset of SQL because it supports all SQL commands plus procedural logic.",
+        "hi": "PL/SQL, SQL का एक सुपरसेट है क्योंकि यह सभी SQL कमांड और प्रोसीजरल लॉजिक का समर्थन करता है।"
+      },
+      "key_takeaway": {
+        "en": "PL/SQL extends SQL.",
+        "hi": "PL/SQL SQL का विस्तार करता है।"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "Which section defines variables in PL/SQL?",
+        "hi": "PL/SQL में वेरिएबल्स को कौन सा सेक्शन परिभाषित करता है?"
+      },
+      "options": {
+        "a": {"en": "END", "hi": "एंड"},
+        "b": {"en": "EXCEPTION", "hi": "एक्सेप्शन"},
+        "c": {"en": "DECLARE", "hi": "डिक्लेयर"},
+        "d": {"en": "BEGIN", "hi": "बिगिन"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Used for declarations.",
+        "hi": "घोषणाओं के लिए उपयोग किया जाता है।"
+      },
+      "explanation": {
+        "en": "The <code>DECLARE</code> section is used to define variables and cursors.",
+        "hi": "<code>DECLARE</code> सेक्शन का उपयोग वेरिएबल्स और कर्सर को परिभाषित करने के लिए किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "DECLARE is for setup.",
+        "hi": "DECLARE सेटअप के लिए है।"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "Which sections are mandatory in a PL/SQL block?",
+        "hi": "PL/SQL ब्लॉक में कौन से सेक्शन अनिवार्य हैं?"
+      },
+      "options": {
+        "a": {"en": "DECLARE, EXCEPTION", "hi": "डिक्लेयर, एक्सेप्शन"},
+        "b": {"en": "BEGIN, END", "hi": "बिगिन, एंड"},
+        "c": {"en": "DECLARE, BEGIN", "hi": "डिक्लेयर, बिगिन"},
+        "d": {"en": "EXCEPTION, END", "hi": "एक्सेप्शन, एंड"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Logic start and logic end.",
+        "hi": "लॉजिक स्टार्ट और लॉजिक एंड।"
+      },
+      "explanation": {
+        "en": "<code>BEGIN</code> and <code>END</code> are mandatory.",
+        "hi": "<code>BEGIN</code> और <code>END</code> अनिवार्य हैं।"
+      },
+      "key_takeaway": {
+        "en": "Every block needs BEGIN and END.",
+        "hi": "प्रत्येक ब्लॉक को BEGIN और END की आवश्यकता होती है।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "The <code>EXCEPTION</code> section is used for:",
+        "hi": "<code>EXCEPTION</code> सेक्शन का उपयोग किसके लिए किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "Defining variables", "hi": "वेरिएबल्स को परिभाषित करने के लिए"},
+        "b": {"en": "Handling errors", "hi": "त्रुटियों को संभालने के लिए"},
+        "c": {"en": "Main logic", "hi": "मुख्य लॉजिक"},
+        "d": {"en": "Ending block", "hi": "ब्लॉक समाप्त करने के लिए"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Catches runtime problems.",
+        "hi": "रनटाइम समस्याओं को पकड़ता है।"
+      },
+      "explanation": {
+        "en": "The <code>EXCEPTION</code> section handles runtime errors.",
+        "hi": "<code>EXCEPTION</code> सेक्शन रनटाइम त्रुटियों को संभालता है।"
+      },
+      "key_takeaway": {
+        "en": "EXCEPTION handles errors.",
+        "hi": "EXCEPTION त्रुटियों को संभालता है।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "What are flow-control structures used for?",
+        "hi": "फ्लो-कंट्रोल स्ट्रक्चर्स का उपयोग किसके लिए किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "Database connection", "hi": "डेटाबेस कनेक्शन"},
+        "b": {"en": "Control execution flow", "hi": "निष्पादन प्रवाह को नियंत्रित करने के लिए"},
+        "c": {"en": "Declare constants", "hi": "कॉन्स्टेंट्स घोषित करने के लिए"},
+        "d": {"en": "Define types", "hi": "प्रकार परिभाषित करने के लिए"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Decisions and loops.",
+        "hi": "निर्णय और लूप।"
+      },
+      "explanation": {
+        "en": "They control the order of execution (e.g., <code>IF</code>, <code>LOOP</code>).",
+        "hi": "वे निष्पादन के क्रम को नियंत्रित करते हैं (जैसे, <code>IF</code>, <code>LOOP</code>)।"
+      },
+      "key_takeaway": {
+        "en": "Flow control manages logic paths.",
+        "hi": "फ्लो कंट्रोल लॉजिक पथों का प्रबंधन करता है।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "Which is a type of control structure in PL/SQL?",
+        "hi": "PL/SQL में नियंत्रण संरचना का एक प्रकार कौन सा है?"
+      },
+      "options": {
+        "a": {"en": "Exception structure", "hi": "एक्सेप्शन स्ट्रक्चर"},
+        "b": {"en": "Conditional structure", "hi": "कंडीशनल स्ट्रक्चर"},
+        "c": {"en": "Database structure", "hi": "डेटाबेस संरचना"},
+        "d": {"en": "Variable structure", "hi": "वेरिएबल स्ट्रक्चर"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Like IF-THEN.",
+        "hi": "IF-THEN की तरह।"
+      },
+      "explanation": {
+        "en": "Conditional structures (<code>IF</code>, <code>CASE</code>) are main control types.",
+        "hi": "कंडीशनल स्ट्रक्चर्स (<code>IF</code>, <code>CASE</code>) मुख्य नियंत्रण प्रकार हैं।"
+      },
+      "key_takeaway": {
+        "en": "Conditional structures make decisions.",
+        "hi": "कंडीशनल स्ट्रक्चर्स निर्णय लेते हैं।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "Conditional structures are also known as:",
+        "hi": "कंडीशनल स्ट्रक्चर्स को इस रूप में भी जाना जाता है:"
+      },
+      "options": {
+        "a": {"en": "Looping statements", "hi": "लूपिंग स्टेटमेंट्स"},
+        "b": {"en": "Branching statements", "hi": "ब्रांचिंग स्टेटमेंट्स"},
+        "c": {"en": "Cursor declarations", "hi": "कर्सर डिक्लेरेशन्स"},
+        "d": {"en": "Exception handlers", "hi": "एक्सेप्शन हैंडलर्स"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "They branch the code path.",
+        "hi": "वे कोड पथ को ब्रांच करते हैं।"
+      },
+      "explanation": {
+        "en": "They cause the program to branch based on conditions.",
+        "hi": "वे शर्तों के आधार पर प्रोग्राम को ब्रांच करने का कारण बनते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Conditional = Branching.",
+        "hi": "कंडीशनल = ब्रांचिंग।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "Which statement executes only if a condition is TRUE?",
+        "hi": "कौन सा स्टेटमेंट केवल तभी निष्पादित होता है जब कोई शर्त TRUE हो?"
+      },
+      "options": {
+        "a": {"en": "<code>CASE</code>", "hi": "<code>CASE</code>"},
+        "b": {"en": "<code>IF-THEN-ELSIF</code>", "hi": "<code>IF-THEN-ELSIF</code>"},
+        "c": {"en": "<code>IF-THEN</code>", "hi": "<code>IF-THEN</code>"},
+        "d": {"en": "<code>IF-THEN-ELSE</code>", "hi": "<code>IF-THEN-ELSE</code>"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Simplest form.",
+        "hi": "सबसे सरल रूप।"
+      },
+      "explanation": {
+        "en": "<code>IF-THEN</code> runs code only on TRUE.",
+        "hi": "<code>IF-THEN</code> केवल TRUE पर कोड चलाता है।"
+      },
+      "key_takeaway": {
+        "en": "<code>IF-THEN</code> is the basic conditional.",
+        "hi": "<code>IF-THEN</code> बुनियादी कंडीशनल है।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "In <code>IF-THEN-ELSE</code>, when is the <code>ELSE</code> part executed?",
+        "hi": "<code>IF-THEN-ELSE</code> में, <code>ELSE</code> भाग कब निष्पादित होता है?"
+      },
+      "options": {
+        "a": {"en": "IF is TRUE", "hi": "IF TRUE है"},
+        "b": {"en": "IF is FALSE", "hi": "IF FALSE है"},
+        "c": {"en": "ELSIF is TRUE", "hi": "ELSIF TRUE है"},
+        "d": {"en": "Error occurs", "hi": "त्रुटि होती है"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Fallback path.",
+        "hi": "फॉलबैक पथ।"
+      },
+      "explanation": {
+        "en": "<code>ELSE</code> runs when the <code>IF</code> condition is FALSE.",
+        "hi": "<code>ELSE</code> तब चलता है जब <code>IF</code> शर्त FALSE होती है।"
+      },
+      "key_takeaway": {
+        "en": "<code>ELSE</code> handles the false case.",
+        "hi": "<code>ELSE</code> गलत मामले को संभालता है।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "When is <code>IF-THEN-ELSIF-ELSE</code> used?",
+        "hi": "<code>IF-THEN-ELSIF-ELSE</code> का उपयोग कब किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "For loops", "hi": "लूप्स के लिए"},
+        "b": {"en": "Multiple conditions", "hi": "एकाधिक शर्तों के लिए"},
+        "c": {"en": "Single statement", "hi": "एकल स्टेटमेंट के लिए"},
+        "d": {"en": "Exceptions", "hi": "अपवादों के लिए"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Checking many options sequentially.",
+        "hi": "क्रमिक रूप से कई विकल्पों की जाँच करना।"
+      },
+      "explanation": {
+        "en": "<code>ELSIF</code> allows checking multiple sequential conditions.",
+        "hi": "<code>ELSIF</code> कई क्रमिक शर्तों की जाँच करने की अनुमति देता है।"
+      },
+      "key_takeaway": {
+        "en": "<code>ELSIF</code> is for multi-way branching.",
+        "hi": "<code>ELSIF</code> बहु-मार्ग ब्रांचिंग के लिए है।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "Looping statements are used to:",
+        "hi": "लूपिंग स्टेटमेंट्स का उपयोग किसके लिए किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "Declare variables", "hi": "वेरिएबल्स घोषित करने के लिए"},
+        "b": {"en": "Run once", "hi": "एक बार चलाने के लिए"},
+        "c": {"en": "Connect DB", "hi": "DB कनेक्ट करने के लिए"},
+        "d": {"en": "Execute repeatedly", "hi": "बार-बार निष्पादित करने के लिए"}
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Repetition.",
+        "hi": "पुनरावृत्ति।"
+      },
+      "explanation": {
+        "en": "Loops execute code repeatedly until a condition is met.",
+        "hi": "लूप कोड को तब तक बार-बार निष्पादित करते हैं जब तक कि कोई शर्त पूरी नहीं हो जाती।"
+      },
+      "key_takeaway": {
+        "en": "Loops handle iteration.",
+        "hi": "लूप पुनरावृत्ति को संभालते हैं।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "Which loop executes at least once?",
+        "hi": "कौन सा लूप कम से कम एक बार निष्पादित होता है?"
+      },
+      "options": {
+        "a": {"en": "<code>WHILE</code> loop", "hi": "<code>WHILE</code> लूप"},
+        "b": {"en": "<code>FOR</code> loop", "hi": "<code>FOR</code> लूप"},
+        "c": {"en": "Basic loop", "hi": "बेसिक लूप"},
+        "d": {"en": "Nested loop", "hi": "नेस्टेड लूप"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Checks exit condition at the end.",
+        "hi": "अंत में निकास शर्त की जाँच करता है।"
+      },
+      "explanation": {
+        "en": "The <code>BASIC LOOP</code> runs until an <code>EXIT</code> statement is reached inside.",
+        "hi": "<code>BASIC LOOP</code> तब तक चलता है जब तक अंदर एक <code>EXIT</code> स्टेटमेंट नहीं मिल जाता।"
+      },
+      "key_takeaway": {
+        "en": "Basic loops are exit-controlled.",
+        "hi": "बेसिक लूप निकास-नियंत्रित होते हैं।"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "In a <code>WHILE</code> loop, when is the condition checked?",
+        "hi": "<code>WHILE</code> लूप में, कंडीशन कब चेक की जाती है?"
+      },
+      "options": {
+        "a": {"en": "Middle", "hi": "बीच में"},
+        "b": {"en": "Before execution", "hi": "निष्पादन से पहले"},
+        "c": {"en": "Never", "hi": "कभी नहीं"},
+        "d": {"en": "After execution", "hi": "निष्पादन के बाद"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Pre-test.",
+        "hi": "प्री-टेस्ट।"
+      },
+      "explanation": {
+        "en": "<code>WHILE</code> loops check the condition before starting.",
+        "hi": "<code>WHILE</code> लूप शुरू करने से पहले शर्त की जाँच करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "<code>WHILE</code> is a pre-test loop.",
+        "hi": "<code>WHILE</code> एक प्री-टेस्ट लूप है।"
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "The <code>FOR</code> loop is used when:",
+        "hi": "<code>FOR</code> लूप का उपयोग तब किया जाता है जब:"
+      },
+      "options": {
+        "a": {"en": "Declare vars", "hi": "वेरिएबल्स घोषित करें"},
+        "b": {"en": "Unknown iterations", "hi": "अज्ञात पुनरावृत्तियाँ"},
+        "c": {"en": "Predetermined iterations", "hi": "पूर्वनिर्धारित पुनरावृत्तियाँ"},
+        "d": {"en": "Handle exceptions", "hi": "अपवादों को संभालें"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Fixed range.",
+        "hi": "निश्चित सीमा।"
+      },
+      "explanation": {
+        "en": "<code>FOR</code> loops iterate over a specific range.",
+        "hi": "<code>FOR</code> लूप एक विशिष्ट सीमा पर पुनरावृत्ति करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "<code>FOR</code> loops are for known ranges.",
+        "hi": "<code>FOR</code> लूप ज्ञात सीमाओं के लिए हैं।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "What is a Trigger?",
+        "hi": "ट्रिगर क्या है?"
+      },
+      "options": {
+        "a": {"en": "A loop", "hi": "एक लूप"},
+        "b": {"en": "Stored program firing on events", "hi": "घटनाओं पर फायर होने वाला संग्रहीत प्रोग्राम"},
+        "c": {"en": "Variable", "hi": "वेरिएबल"},
+        "d": {"en": "Data type", "hi": "डेटा प्रकार"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Automatic response to DML.",
+        "hi": "DML के लिए स्वचालित प्रतिक्रिया।"
+      },
+      "explanation": {
+        "en": "A trigger executes automatically on events like <code>INSERT</code> or <code>UPDATE</code>.",
+        "hi": "एक ट्रिगर <code>INSERT</code> या <code>UPDATE</code> जैसी घटनाओं पर स्वचालित रूप से निष्पादित होता है।"
+      },
+      "key_takeaway": {
+        "en": "Triggers automate database actions.",
+        "hi": "ट्रिगर डेटाबेस कार्यों को स्वचालित करते हैं।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "Which trigger fires once per statement?",
+        "hi": "कौन सा ट्रिगर प्रति स्टेटमेंट एक बार फायर होता है?"
+      },
+      "options": {
+        "a": {"en": "After", "hi": "आफ्टर"},
+        "b": {"en": "Statement-level", "hi": "स्टेटमेंट-लेवल"},
+        "c": {"en": "Row-level", "hi": "रो-लेवल"},
+        "d": {"en": "Before", "hi": "बिफोर"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Regardless of rows affected.",
+        "hi": "प्रभावित पंक्तियों की परवाह किए बिना।"
+      },
+      "explanation": {
+        "en": "Statement-level triggers fire once, even if multiple rows are changed.",
+        "hi": "स्टेटमेंट-लेवल ट्रिगर एक बार फायर होते हैं, भले ही कई पंक्तियाँ बदली गई हों।"
+      },
+      "key_takeaway": {
+        "en": "Statement triggers are per-command.",
+        "hi": "स्टेटमेंट ट्रिगर प्रति-कमांड होते हैं।"
+      }
+    },
+    {
+      "question_id": 21,
+      "question": {
+        "en": "Which trigger fires for every affected row?",
+        "hi": "कौन सा ट्रिगर प्रत्येक प्रभावित पंक्ति के लिए फायर होता है?"
+      },
+      "options": {
+        "a": {"en": "Compound", "hi": "कंपाउंड"},
+        "b": {"en": "Row-level", "hi": "रो-लेवल"},
+        "c": {"en": "Before", "hi": "बिफोर"},
+        "d": {"en": "Statement-level", "hi": "स्टेटमेंट-लेवल"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Tied to individual records.",
+        "hi": "व्यक्तिगत रिकॉर्ड से जुड़ा हुआ।"
+      },
+      "explanation": {
+        "en": "Row-level triggers execute once for each row modified.",
+        "hi": "रो-लेवल ट्रिगर संशोधित प्रत्येक पंक्ति के लिए एक बार निष्पादित होते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Row triggers allow row-specific logic.",
+        "hi": "रो ट्रिगर पंक्ति-विशिष्ट लॉजिक की अनुमति देते हैं।"
+      }
+    },
+    {
+      "question_id": 22,
+      "question": {
+        "en": "What is an advantage of triggers?",
+        "hi": "ट्रिगर्स का एक लाभ क्या है?"
+      },
+      "options": {
+        "a": {"en": "Delete tables", "hi": "टेबल्स हटाएं"},
+        "b": {"en": "Auto-generate values", "hi": "मान स्वचालित रूप से उत्पन्न करें"},
+        "c": {"en": "Slow performance", "hi": "धीमा प्रदर्शन"},
+        "d": {"en": "Create users", "hi": "उपयोगकर्ता बनाएं"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Like derived columns.",
+        "hi": "जैसे व्युत्पन्न कॉलम।"
+      },
+      "explanation": {
+        "en": "Triggers can automatically calculate and set column values.",
+        "hi": "ट्रिगर स्वचालित रूप से कॉलम मानों की गणना और सेट कर सकते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Triggers ensure data consistency.",
+        "hi": "ट्रिगर डेटा स्थिरता सुनिश्चित करते हैं।"
+      }
+    },
+    {
+      "question_id": 23,
+      "question": {
+        "en": "What is a Cursor?",
+        "hi": "कर्सर क्या है?"
+      },
+      "options": {
+        "a": {"en": "Loop", "hi": "लूप"},
+        "b": {"en": "Pointer to result set context", "hi": "परिणाम सेट संदर्भ के लिए सूचक"},
+        "c": {"en": "Date type", "hi": "तिथि प्रकार"},
+        "d": {"en": "Variable", "hi": "वेरिएबल"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Handle for query results.",
+        "hi": "क्वेरी परिणामों के लिए हैंडल।"
+      },
+      "explanation": {
+        "en": "A cursor points to the memory area holding <code>SELECT</code> results.",
+        "hi": "एक कर्सर <code>SELECT</code> परिणामों को रखने वाले मेमोरी क्षेत्र को इंगित करता है।"
+      },
+      "key_takeaway": {
+        "en": "Cursors manage multi-row results.",
+        "hi": "कर्सर मल्टी-रो परिणामों का प्रबंधन करते हैं।"
+      }
+    },
+    {
+      "question_id": 24,
+      "question": {
+        "en": "What is the 'Active Set'?",
+        "hi": "'Active Set' क्या है?"
+      },
+      "options": {
+        "a": {"en": "Rows held by cursor", "hi": "कर्सर द्वारा रखी गई पंक्तियाँ"},
+        "b": {"en": "Row Set", "hi": "रो सेट"},
+        "c": {"en": "Data Set", "hi": "डेटा सेट"},
+        "d": {"en": "Cursor Set", "hi": "कर्सर सेट"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Current data.",
+        "hi": "वर्तमान डेटा।"
+      },
+      "explanation": {
+        "en": "The Active Set is the rows satisfying the cursor's query.",
+        "hi": "एक्टिव सेट कर्सर की क्वेरी को संतुष्ट करने वाली पंक्तियाँ हैं।"
+      },
+      "key_takeaway": {
+        "en": "Active Set is the cursor's data.",
+        "hi": "एक्टिव सेट कर्सर का डेटा है।"
+      }
+    },
+    {
+      "question_id": 25,
+      "question": {
+        "en": "Which cursor is created automatically?",
+        "hi": "कौन सा कर्सर स्वचालित रूप से बनाया जाता है?"
+      },
+      "options": {
+        "a": {"en": "Dynamic", "hi": "डायनामिक"},
+        "b": {"en": "Implicit", "hi": "इम्प्लिसिट"},
+        "c": {"en": "Static", "hi": "स्टैटिक"},
+        "d": {"en": "Explicit", "hi": "एक्सप्लिसिट"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Managed by system.",
+        "hi": "सिस्टम द्वारा प्रबंधित।"
+      },
+      "explanation": {
+        "en": "Implicit cursors are created for standard DML statements.",
+        "hi": "मानक DML स्टेटमेंट्स के लिए इम्प्लिसिट कर्सर बनाए जाते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Implicit cursors are automatic.",
+        "hi": "इम्प्लिसिट कर्सर स्वचालित होते हैं।"
+      }
+    },
+    {
+      "question_id": 26,
+      "question": {
+        "en": "How to control cursor behavior manually?",
+        "hi": "कर्सर व्यवहार को मैन्युअल रूप से कैसे नियंत्रित करें?"
+      },
+      "options": {
+        "a": {"en": "Use implicit", "hi": "इम्प्लिसिट का उपयोग करें"},
+        "b": {"en": "Cannot control", "hi": "नियंत्रित नहीं कर सकते"},
+        "c": {"en": "Use explicit cursors", "hi": "एक्सप्लिसिट कर्सर का उपयोग करें"},
+        "d": {"en": "Use SQL", "hi": "SQL का उपयोग करें"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "You declare these.",
+        "hi": "आप इन्हें घोषित करते हैं।"
+      },
+      "explanation": {
+        "en": "Explicit cursors give programmers full control.",
+        "hi": "एक्सप्लिसिट कर्सर प्रोग्रामर को पूर्ण नियंत्रण देते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Explicit cursors are manual.",
+        "hi": "एक्सप्लिसिट कर्सर मैनुअल होते हैं।"
+      }
+    },
+    {
+      "question_id": 27,
+      "question": {
+        "en": "Which attribute returns TRUE if rows were affected?",
+        "hi": "यदि पंक्तियाँ प्रभावित हुईं तो कौन सी विशेषता TRUE लौटाती है?"
+      },
+      "options": {
+        "a": {"en": "<code>%ISOPEN</code>", "hi": "<code>%ISOPEN</code>"},
+        "b": {"en": "<code>%FOUND</code>", "hi": "<code>%FOUND</code>"},
+        "c": {"en": "<code>%NOTFOUND</code>", "hi": "<code>%NOTFOUND</code>"},
+        "d": {"en": "<code>%ROWCOUNT</code>", "hi": "<code>%ROWCOUNT</code>"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Opposite of 'not found'.",
+        "hi": "'not found' का विपरीत।"
+      },
+      "explanation": {
+        "en": "<code>%FOUND</code> returns TRUE if DML affected rows.",
+        "hi": "<code>%FOUND</code> TRUE लौटाता है यदि DML ने पंक्तियों को प्रभावित किया।"
+      },
+      "key_takeaway": {
+        "en": "<code>%FOUND</code> checks success.",
+        "hi": "<code>%FOUND</code> सफलता की जाँच करता है।"
+      }
+    },
+    {
+      "question_id": 28,
+      "question": {
+        "en": "What does <code>%ROWCOUNT</code> return?",
+        "hi": "<code>%ROWCOUNT</code> क्या लौटाता है?"
+      },
+      "options": {
+        "a": {"en": "Number of rows affected", "hi": "प्रभावित पंक्तियों की संख्या"},
+        "b": {"en": "Data type", "hi": "डेटा प्रकार"},
+        "c": {"en": "TRUE if open", "hi": "TRUE यदि खुला है"},
+        "d": {"en": "TRUE if 0 rows", "hi": "TRUE यदि 0 पंक्तियाँ"}
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It counts rows.",
+        "hi": "यह पंक्तियों को गिनता है।"
+      },
+      "explanation": {
+        "en": "<code>%ROWCOUNT</code> gives the count of processed rows.",
+        "hi": "<code>%ROWCOUNT</code> संसाधित पंक्तियों की गणना देता है।"
+      },
+      "key_takeaway": {
+        "en": "<code>%ROWCOUNT</code> is a counter.",
+        "hi": "<code>%ROWCOUNT</code> एक काउंटर है।"
+      }
+    },
+    {
+      "question_id": 29,
+      "question": {
+        "en": "What does <code>%ISOPEN</code> return for implicit cursors?",
+        "hi": "इम्प्लिसिट कर्सर के लिए <code>%ISOPEN</code> क्या लौटाता है?"
+      },
+      "options": {
+        "a": {"en": "0", "hi": "0"},
+        "b": {"en": "<code>FALSE</code>", "hi": "<code>FALSE</code>"},
+        "c": {"en": "<code>NULL</code>", "hi": "<code>NULL</code>"},
+        "d": {"en": "<code>TRUE</code>", "hi": "<code>TRUE</code>"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "They close immediately.",
+        "hi": "वे तुरंत बंद हो जाते हैं।"
+      },
+      "explanation": {
+        "en": "Implicit cursors close automatically, so <code>%ISOPEN</code> is always FALSE.",
+        "hi": "इम्प्लिसिट कर्सर स्वचालित रूप से बंद हो जाते हैं, इसलिए <code>%ISOPEN</code> हमेशा FALSE होता है।"
+      },
+      "key_takeaway": {
+        "en": "Implicit cursors are always closed after execution.",
+        "hi": "निष्पादन के बाद इम्प्लिसिट कर्सर हमेशा बंद रहते हैं।"
+      }
+    },
+    {
+      "question_id": 30,
+      "question": {
+        "en": "Which section contains the main logic?",
+        "hi": "मुख्य लॉजिक किस सेक्शन में होता है?"
+      },
+      "options": {
+        "a": {"en": "EXCEPTION", "hi": "एक्सेप्शन"},
+        "b": {"en": "DECLARE", "hi": "डिक्लेयर"},
+        "c": {"en": "BEGIN", "hi": "बिगिन"},
+        "d": {"en": "END", "hi": "एंड"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Where the code runs.",
+        "hi": "जहाँ कोड चलता है।"
+      },
+      "explanation": {
+        "en": "The <code>BEGIN</code> section holds executable statements.",
+        "hi": "<code>BEGIN</code> सेक्शन में निष्पादन योग्य स्टेटमेंट होते हैं।"
+      },
+      "key_takeaway": {
+        "en": "BEGIN holds the code.",
+        "hi": "BEGIN में कोड होता है।"
+      }
+    },
+    {
+      "question_id": 31,
+      "question": {
+        "en": "Which trigger type is best for updating another table after insertion?",
+        "hi": "इंसर्शन के बाद दूसरी टेबल को अपडेट करने के लिए कौन सा ट्रिगर प्रकार सबसे अच्छा है?"
+      },
+      "options": {
+        "a": {"en": "BEFORE ROW", "hi": "बिफोर रो"},
+        "b": {"en": "AFTER ROW", "hi": "आफ्टर रो"},
+        "c": {"en": "BEFORE STATEMENT", "hi": "बिफोर स्टेटमेंट"},
+        "d": {"en": "INSTEAD OF", "hi": "इन्स्टेड ऑफ"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Do it once the insert succeeds.",
+        "hi": "सम्मिलन सफल होने के बाद इसे करें।"
+      },
+      "explanation": {
+        "en": "<code>AFTER ROW</code> ensures the original action is complete before triggering updates.",
+        "hi": "<code>AFTER ROW</code> यह सुनिश्चित करता है कि ट्रिगर अपडेट से पहले मूल क्रिया पूरी हो गई है।"
+      },
+      "key_takeaway": {
+        "en": "Use AFTER triggers for follow-up actions.",
+        "hi": "फॉलो-अप कार्यों के लिए AFTER ट्रिगर्स का उपयोग करें।"
+      }
+    },
+    {
+      "question_id": 32,
+      "question": {
+        "en": "Which cursor type gives most control for processing many rows?",
+        "hi": "कई पंक्तियों को संसाधित करने के लिए कौन सा कर्सर प्रकार सबसे अधिक नियंत्रण देता है?"
+      },
+      "options": {
+        "a": {"en": "None", "hi": "कोई नहीं"},
+        "b": {"en": "Explicit Cursor", "hi": "एक्सप्लिसिट कर्सर"},
+        "c": {"en": "Implicit Cursor", "hi": "इम्प्लिसिट कर्सर"},
+        "d": {"en": "REF Cursor", "hi": "रेफ कर्सर"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Manual control.",
+        "hi": "मैनुअल नियंत्रण।"
+      },
+      "explanation": {
+        "en": "Explicit cursors allow manual fetching.",
+        "hi": "एक्सप्लिसिट कर्सर मैनुअल फ़ेचिंग की अनुमति देते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Explicit cursors = Control.",
+        "hi": "एक्सप्लिसिट कर्सर = नियंत्रण।"
+      }
+    },
+    {
+      "question_id": 33,
+      "question": {
+        "en": "Consider the following PL/SQL code snippet:<br><pre><code>DECLARE\n    total NUMBER := 0;\nBEGIN\n    FOR i IN 1..5 LOOP\n        total := total + i;\n    END LOOP;\nEND;</code></pre> What will be the final value of total?",
+        "hi": "निम्नलिखित PL/SQL कोड स्निपेट पर विचार करें:<br><pre><code>DECLARE\n    total NUMBER := 0;\nBEGIN\n    FOR i IN 1..5 LOOP\n        total := total + i;\n    END LOOP;\nEND;</code></pre> total का अंतिम मान क्या होगा?"
+      },
+      "options": {
+        "a": {"en": "0", "hi": "0"},
+        "b": {"en": "5", "hi": "5"},
+        "c": {"en": "10", "hi": "10"},
+        "d": {"en": "15", "hi": "15"}
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Sum of 1 to 5.",
+        "hi": "1 से 5 का योग।"
+      },
+      "explanation": {
+        "en": "1+2+3+4+5 = 15.",
+        "hi": "1+2+3+4+5 = 15।"
+      },
+      "key_takeaway": {
+        "en": "Loops sum values.",
+        "hi": "लूप मानों को जोड़ते हैं।"
+      }
+    },
+    {
+      "question_id": 34,
+      "question": {
+        "en": "Which feature ensures 'all or nothing' processing?",
+        "hi": "कौन सी विशेषता 'सब कुछ या कुछ नहीं' प्रसंस्करण सुनिश्चित करती है?"
+      },
+      "options": {
+        "a": {"en": "Triggers", "hi": "ट्रिगर्स"},
+        "b": {"en": "Cursors", "hi": "कर्सर्स"},
+        "c": {"en": "Transactions", "hi": "ट्रांजैक्शन्स"},
+        "d": {"en": "Loops", "hi": "लूप्स"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Commit or Rollback.",
+        "hi": "कमिट या रोलबैक।"
+      },
+      "explanation": {
+        "en": "Transactions ensure atomicity.",
+        "hi": "ट्रांजैक्शन्स परमाणुता सुनिश्चित करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Transactions protect integrity.",
+        "hi": "ट्रांजैक्शन्स अखंडता की रक्षा करते हैं।"
+      }
+    },
+    {
+      "question_id": 35,
+      "question": {
+        "en": "If error logging fails, what should happen to the main transaction?",
+        "hi": "यदि त्रुटि लॉगिंग विफल हो जाती है, तो मुख्य लेन-देन का क्या होना चाहिए?"
+      },
+      "options": {
+        "a": {"en": "Ignore", "hi": "अनदेखा करें"},
+        "b": {"en": "Rollback", "hi": "रोलबैक"},
+        "c": {"en": "Commit", "hi": "कमिट"},
+        "d": {"en": "New transaction", "hi": "नया लेन-देन"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Safety first.",
+        "hi": "सुरक्षा पहले।"
+      },
+      "explanation": {
+        "en": "Rollback to maintain integrity.",
+        "hi": "अखंडता बनाए रखने के लिए रोलबैक करें।"
+      },
+      "key_takeaway": {
+        "en": "Rollback on failure.",
+        "hi": "विफलता पर रोलबैक करें।"
+      }
+    },
+    {
+      "question_id": 36,
+      "question": {
+        "en": "What is <code>%NOTFOUND</code> used for in a loop?",
+        "hi": "लूप में <code>%NOTFOUND</code> का उपयोग किसके लिए किया जाता है?"
+      },
+      "options": {
+        "a": {"en": "Check open", "hi": "खुला जांचें"},
+        "b": {"en": "Exceptions", "hi": "अपवाद"},
+        "c": {"en": "Exit loop", "hi": "लूप से बाहर निकलें"},
+        "d": {"en": "Count", "hi": "गिनती"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Stop when no data.",
+        "hi": "डेटा न होने पर रुकें।"
+      },
+      "explanation": {
+        "en": "It determines when to exit after all rows are fetched.",
+        "hi": "यह निर्धारित करता है कि सभी पंक्तियों के प्राप्त होने के बाद कब बाहर निकलना है।"
+      },
+      "key_takeaway": {
+        "en": "<code>%NOTFOUND</code> exits loops.",
+        "hi": "<code>%NOTFOUND</code> लूप से बाहर निकलता है।"
+      }
+    },
+    {
+      "question_id": 37,
+      "question": {
+        "en": "Difference between <code>BASIC</code> and <code>WHILE</code> loop?",
+        "hi": "<code>BASIC</code> और <code>WHILE</code> लूप के बीच अंतर?"
+      },
+      "options": {
+        "a": {"en": "Basic checks start", "hi": "बेसिक शुरुआत में जाँच करता है"},
+        "b": {"en": "While always runs", "hi": "व्हाइल हमेशा चलता है"},
+        "c": {"en": "Basic runs at least once", "hi": "बेसिक कम से कम एक बार चलता है"},
+        "d": {"en": "While needs exit", "hi": "व्हाइल को निकास की आवश्यकता है"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Post-test vs Pre-test.",
+        "hi": "पोस्ट-टेस्ट बनाम प्री-टेस्ट।"
+      },
+      "explanation": {
+        "en": "Basic loop checks exit condition inside/after execution.",
+        "hi": "बेसिक लूप निष्पादन के अंदर/बाद निकास शर्त की जाँच करता है।"
+      },
+      "key_takeaway": {
+        "en": "Basic loops run once.",
+        "hi": "बेसिक लूप एक बार चलते हैं।"
+      }
+    },
+    {
+      "question_id": 38,
+      "question": {
+        "en": "How do triggers aid security?",
+        "hi": "ट्रिगर सुरक्षा में कैसे सहायता करते हैं?"
+      },
+      "options": {
+        "a": {"en": "Block users", "hi": "उपयोगकर्ताओं को ब्लॉक करें"},
+        "b": {"en": "Enforce complex rules", "hi": "जटिल नियमों को लागू करें"},
+        "c": {"en": "Encrypt", "hi": "एन्क्रिप्ट करें"},
+        "d": {"en": "Replace DBA", "hi": "DBA को बदलें"}
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Logic checks.",
+        "hi": "लॉजिक चेक।"
+      },
+      "explanation": {
+        "en": "Triggers enforce rules beyond standard constraints.",
+        "hi": "ट्रिगर मानक बाधाओं से परे नियमों को लागू करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Triggers enforce rules.",
+        "hi": "ट्रिगर नियमों को लागू करते हैं।"
+      }
+    },
+    {
+      "question_id": 39,
+      "question": {
+        "en": "What must you do after using an explicit cursor?",
+        "hi": "एक एक्सप्लिसिट कर्सर का उपयोग करने के बाद आपको क्या करना चाहिए?"
+      },
+      "options": {
+        "a": {"en": "Check %ISOPEN", "hi": "%ISOPEN जांचें"},
+        "b": {"en": "Use %CLOSE", "hi": "%CLOSE का उपयोग करें"},
+        "c": {"en": "Explicitly CLOSE it", "hi": "इसे स्पष्ट रूप से CLOSE करें"},
+        "d": {"en": "Nothing", "hi": "कुछ नहीं"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Free resources.",
+        "hi": "संसाधन मुक्त करें।"
+      },
+      "explanation": {
+        "en": "You must <code>CLOSE</code> explicit cursors to free memory.",
+        "hi": "मेमोरी मुक्त करने के लिए आपको एक्सप्लिसिट कर्सर को <code>CLOSE</code> करना होगा।"
+      },
+      "key_takeaway": {
+        "en": "Always CLOSE cursors.",
+        "hi": "हमेशा कर्सर CLOSE करें।"
+      }
+    },
+    {
+      "question_id": 40,
+      "question": {
+        "en": "Integration of SQL in PL/SQL helps in:",
+        "hi": "PL/SQL में SQL का एकीकरण इसमें मदद करता है:"
+      },
+      "options": {
+        "a": {"en": "No SQL knowledge", "hi": "कोई SQL ज्ञान नहीं"},
+        "b": {"en": "Separate layers", "hi": "अलग परतें"},
+        "c": {"en": "Efficient database apps", "hi": "कुशल डेटाबेस ऐप्स"},
+        "d": {"en": "Complex code", "hi": "जटिल कोड"}
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Less traffic.",
+        "hi": "कम ट्रैफ़िक।"
+      },
+      "explanation": {
+        "en": "It reduces network traffic and increases efficiency.",
+        "hi": "यह नेटवर्क ट्रैफ़िक को कम करता है और दक्षता बढ़ाता है।"
+      },
+      "key_takeaway": {
+        "en": "PL/SQL is efficient.",
+        "hi": "PL/SQL कुशल है।"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1186 @@
+{
+  "metadata": {
+    "exam_title": "HP SCERT Solan - NMMS Grand Mock Exam (Part II: SAT - Section 1)",
+    "exam_title_hindi": "एचपी एससीईआरटी सोलन - एनएमएमएस ग्रैंड मॉक परीक्षा (भाग II: शैक्षिक योग्यता परीक्षा - खंड 1)",
+    "target_class": "Class VIII",
+    "total_questions_in_section": 45,
+    "question_range": "Q91 to Q135",
+    "subjects_covered": "Science (Physics, Chemistry, Biology) & History",
+    "source_language": "en",
+    "target_language": "hi",
+    "version": "1.0",
+    "note": "Part 1 of File 2 (Questions 91 to 135). Formatted in bilingual JSON with pure Unicode characters, zero trailing commas, balanced option keys, and conceptual explanations."
+  },
+  "questions": [
+    {
+      "question_id": 91,
+      "question": {
+        "en": "[Q91: Science, Page 5] What is the normal physiological body temperature of a healthy human being?",
+        "hi": "[Q91: विज्ञान, पृष्ठ 5] एक स्वस्थ मानव शरीर का सामान्य तापमान कितना होता है?"
+      },
+      "options": {
+        "a": { "en": "35°C", "hi": "35°C" },
+        "b": { "en": "37°C", "hi": "37°C" },
+        "c": { "en": "39°C", "hi": "39°C" },
+        "d": { "en": "42°C", "hi": "42°C" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "On the Fahrenheit temperature scale, this core body value corresponds to exactly 98.6°F.",
+        "hi": "फारेनहाइट पैमाने पर यह सामान्य तापमान 98.6°F के बराबर होता है।"
+      },
+      "explanation": {
+        "en": "The average normal physiological human body temperature is 37°C (98.6°F). Clinical thermometers are calibrated across the range of 35°C to 42°C because human body temperature rarely falls below or exceeds these limits.",
+        "hi": "स्वस्थ मानव शरीर का सामान्य तापमान 37°C (98.6°F) होता है। डॉक्टरी थर्मामीटर का पैमाना 35°C से 42°C तक होता है क्योंकि मानव शरीर का तापमान इन सीमाओं से बाहर नहीं जाता।"
+      },
+      "key_takeaway": {
+        "en": "Normal core body temperature is 37°C (98.6°F).",
+        "hi": "मानव शरीर का सामान्य तापमान 37°C या 98.6°F होता है।"
+      }
+    },
+    {
+      "question_id": 92,
+      "question": {
+        "en": "[Q92: Science, Page 5] Heat transfer in liquids and gases occurs primarily through which thermal mechanism?",
+        "hi": "[Q92: विज्ञान, पृष्ठ 5] द्रवों और गैसों में ऊष्मा का स्थानांतरण मुख्य रूप से किस विधि द्वारा होता है?"
+      },
+      "options": {
+        "a": { "en": "Conduction", "hi": "चालन (Conduction)" },
+        "b": { "en": "Convection", "hi": "संवहन (Convection)" },
+        "c": { "en": "Radiation", "hi": "विकिरण (Radiation)" },
+        "d": { "en": "Insulation", "hi": "ऊष्मारोधन" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Heated fluid particles expand, become lighter, and rise, while denser cooler fluid sinks to take their place.",
+        "hi": "गर्म होने पर द्रव या गैस के कण हल्के होकर ऊपर उठते हैं और ठंडे भारी कण नीचे आते हैं।"
+      },
+      "explanation": {
+        "en": "Convection is the mode of heat transfer in fluids (liquids and gases) via actual mass movement of heated particles. Conduction is dominant in solids, and radiation requires no physical medium.",
+        "hi": "तरल पदार्थों (द्रव और गैस) में ऊष्मा का संचरण कणों की वास्तविक गति द्वारा होता है, जिसे संवहन कहते हैं। ठोसों में चालन होता है और विकिरण के लिए माध्यम की आवश्यकता नहीं होती।"
+      },
+      "key_takeaway": {
+        "en": "Fluids transfer thermal energy predominantly via bulk convective currents.",
+        "hi": "द्रवों और गैसों में ऊष्मा संवहन धाराओं के माध्यम से स्थानांतरित होती है।"
+      }
+    },
+    {
+      "question_id": 93,
+      "question": {
+        "en": "[Q93: Science, Page 5] An automotive instrument used to measure the instantaneous running speed of a vehicle is called a:",
+        "hi": "[Q93: विज्ञान, पृष्ठ 5] वाहन की तात्कालिक गति मापने के लिए किस उपकरण का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": { "en": "Odometer", "hi": "ओडोमीटर" },
+        "b": { "en": "Speedometer", "hi": "स्पीडोमीटर" },
+        "c": { "en": "Barometer", "hi": "बैरोमीटर" },
+        "d": { "en": "Ammeter", "hi": "एमीटर" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It displays values directly in km/h on the dashboard, while an odometer records the cumulative distance traveled.",
+        "hi": "यह डैशबोर्ड पर किमी/घंटा में गति दिखाता है, जबकि ओडोमीटर कुल तय दूरी मापता है।"
+      },
+      "explanation": {
+        "en": "A Speedometer indicates running vehicle speed in km/h. An Odometer records total distance traversed in kilometers.",
+        "hi": "स्पीडोमीटर वाहन की गति को किमी/घंटे में मापता है। ओडोमीटर वाहन द्वारा तय की गई कुल दूरी को मापता है।"
+      },
+      "key_takeaway": {
+        "en": "Speedometers measure instantaneous speed; odometers log cumulative mileage.",
+        "hi": "स्पीडोमीटर चाल मापता है और ओडोमीटर दूरी मापता है।"
+      }
+    },
+    {
+      "question_id": 94,
+      "question": {
+        "en": "[Q94: Science, Page 5] Which circuit safety device operates on the heating effect of electric current to prevent electrical fires?",
+        "hi": "[Q94: विज्ञान, पृष्ठ 5] विद्युत धारा के तापीय प्रभाव पर आधारित कौन सा सुरक्षा उपकरण शॉर्ट सर्किट और आग लगने से बचाता है?"
+      },
+      "options": {
+        "a": { "en": "Electric Bell", "hi": "विद्युत घंटी" },
+        "b": { "en": "Electric Fuse", "hi": "विद्युत फ्यूज (Electric Fuse)" },
+        "c": { "en": "Switch", "hi": "स्विच" },
+        "d": { "en": "Battery", "hi": "बैटरी" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It contains a low-melting-point wire that melts and breaks the circuit when excessive current surges.",
+        "hi": "इसमें कम गलनांक वाला तार होता है जो अत्यधिक करंट आने पर पिघलकर परिपथ को तोड़ देता है।"
+      },
+      "explanation": {
+        "en": "An Electric Fuse utilizes a wire alloy with a low melting point. When excessive current flows due to overloading, Joule heating melts the wire, breaking the circuit and protecting appliances.",
+        "hi": "विद्युत फ्यूज कम गलनांक वाले मिश्रधातु के तार से बना होता है। अत्यधिक विद्युत धारा प्रवाहित होने पर उत्पन्न ऊष्मा से यह तार पिघल जाता है और परिपथ टूट जाता है।"
+      },
+      "key_takeaway": {
+        "en": "Electric fuses interrupt overcurrents via thermal melting of a sacrificial wire.",
+        "hi": "विद्युत फ्यूज तापीय प्रभाव द्वारा अत्यधिक धारा को रोककर उपकरणों की रक्षा करता है।"
+      }
+    },
+    {
+      "question_id": 95,
+      "question": {
+        "en": "[Q95: Science, Page 5] Which type of optical mirror is utilized by dentists to examine enlarged images of teeth?",
+        "hi": "[Q95: विज्ञान, पृष्ठ 5] दंत चिकित्सकों द्वारा दाँतों की बड़ी छवि देखने के लिए किस प्रकार के दर्पण का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": { "en": "Convex Mirror", "hi": "उत्तल दर्पण" },
+        "b": { "en": "Concave Mirror", "hi": "अवतल दर्पण (Concave Mirror)" },
+        "c": { "en": "Plane Mirror", "hi": "समतल दर्पण" },
+        "d": { "en": "Cylindrical Mirror", "hi": "बेलनाकार दर्पण" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "When an object is placed close between its pole and focus, it forms an erect, magnified virtual image.",
+        "hi": "जब वस्तु को ध्रुव और फोकस के बीच रखा जाता है, तो यह सीधा और बड़ा आभासी प्रतिबिंब बनाता है।"
+      },
+      "explanation": {
+        "en": "A Concave mirror produces a virtual, erect, and magnified image when placed close to an object (between the pole and principal focus). Dentists use it to view teeth clearly.",
+        "hi": "अवतल दर्पण वस्तु को फोकस और ध्रुव के पास रखने पर उसका सीधा और आवर्धित (बड़ा) आभासी प्रतिबिंब बनाता है। इसलिए दंत चिकित्सक इसका उपयोग करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Concave mirrors produce enlarged virtual images when held close to objects.",
+        "hi": "अवतल दर्पण निकट रखी वस्तुओं का बड़ा और स्पष्ट आभासी प्रतिबिंब दिखाता है।"
+      }
+    },
+    {
+      "question_id": 96,
+      "question": {
+        "en": "[Q96: Science, Page 5] What is the standard SI unit used to quantify the frequency of sound vibrations?",
+        "hi": "[Q96: विज्ञान, पृष्ठ 5] ध्वनि कंपनों की आवृत्ति (frequency) को मापने के लिए प्रयुक्त मानक SI इकाई क्या है?"
+      },
+      "options": {
+        "a": { "en": "Decibel", "hi": "डेसिबल" },
+        "b": { "en": "Hertz (Hz)", "hi": "हर्ट्ज़ / Hz (Hertz)" },
+        "c": { "en": "Meter", "hi": "मीटर" },
+        "d": { "en": "Second", "hi": "सेकंड" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "1 unit represents 1 complete vibration or wave cycle per second.",
+        "hi": "1 इकाई का अर्थ प्रति सेकंड 1 पूर्ण कंपन या तरंग चक्र होता है।"
+      },
+      "explanation": {
+        "en": "Frequency is the number of sound wave oscillations per second, measured in Hertz (Hz). Decibel measures sound loudness/intensity, meters measure wavelength, and seconds measure time.",
+        "hi": "प्रति सेकंड होने वाले दोलनों या कंपनों की संख्या को आवृत्ति कहते हैं, और इसका SI मात्रक हर्ट्ज़ (Hz) है। डेसिबल ध्वनि की तीव्रता मापता है।"
+      },
+      "key_takeaway": {
+        "en": "Sound wave frequency is quantified in Hertz (Hz, cycles/second).",
+        "hi": "ध्वनि की आवृत्ति को हर्ट्ज़ (Hz) में मापा जाता है।"
+      }
+    },
+    {
+      "question_id": 97,
+      "question": {
+        "en": "[Q97: Science, Page 5] Which contact force opposes the relative motion between two physical surfaces touching each other?",
+        "hi": "[Q97: विज्ञान, पृष्ठ 5] संपर्क में आने वाली दो सतहों के बीच सापेक्ष गति का विरोध करने वाला बल कौन सा है?"
+      },
+      "options": {
+        "a": { "en": "Magnetic Force", "hi": "चुंबकीय बल" },
+        "b": { "en": "Frictional Force", "hi": "घर्षण बल (Frictional Force)" },
+        "c": { "en": "Electrostatic Force", "hi": "स्थिरविद्युत बल" },
+        "d": { "en": "Gravitational Force", "hi": "गुरुत्वाकर्षण बल" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Arising from microscopic surface irregularities, this resistance always acts opposite to the direction of motion.",
+        "hi": "सतह के खुरदरेपन के कारण उत्पन्न यह बल सदैव गति की विपरीत दिशा में कार्य करता है।"
+      },
+      "explanation": {
+        "en": "Frictional force opposes relative sliding or rolling between two contacting surfaces. It acts tangentially along the contact plane and depends on surface roughness and normal contact force.",
+        "hi": "घर्षण बल वह संपर्क बल है जो एक-दूसरे के संपर्क में रखी दो वस्तुओं की सापेक्ष गति का विरोध करता है। यह गति की दिशा के विपरीत दिशा में कार्य करता है।"
+      },
+      "key_takeaway": {
+        "en": "Friction acts tangentially against relative motion between contacting surfaces.",
+        "hi": "घर्षण बल हमेशा संपर्क सतहों की गति का विरोध करता है।"
+      }
+    },
+    {
+      "question_id": 98,
+      "question": {
+        "en": "[Q98: Science, Page 5] In physical mechanics, pressure is defined mathematically as:",
+        "hi": "[Q98: विज्ञान, पृष्ठ 5] भौतिकी में दबाव (दाब) को गणितीय रूप से कैसे परिभाषित किया जाता है?"
+      },
+      "options": {
+        "a": { "en": "Force x Area", "hi": "बल x क्षेत्रफल" },
+        "b": { "en": "Force / Area", "hi": "बल / क्षेत्रफल (Force / Area)" },
+        "c": { "en": "Area / Force", "hi": "क्षेत्रफल / बल" },
+        "d": { "en": "Mass x Acceleration", "hi": "द्रव्यमान x त्वरण" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Pressure is perpendicular force applied per unit surface area; its SI unit is the Pascal (N/m²).",
+        "hi": "प्रति इकाई क्षेत्रफल पर लगने वाले लंबवत बल को दाब कहते हैं; इसका मात्रक पास्कल (N/m²) है।"
+      },
+      "explanation": {
+        "en": "Pressure (P) = Force (F) / Area (A). A smaller contact area concentrates force, resulting in higher pressure (which is why knives have sharp cutting edges).",
+        "hi": "दाब (P) = बल (F) / क्षेत्रफल (A)। कम क्षेत्रफल पर बल लगाने से अधिक दाब उत्पन्न होता है, इसलिए कील और चाकू के सिरे नुकीले होते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Pressure equals normal force divided by contact surface area (P = F / A).",
+        "hi": "दाब बराबर बल बटा क्षेत्रफल (P = F / A) होता है।"
+      }
+    },
+    {
+      "question_id": 99,
+      "question": {
+        "en": "[Q99: Science, Page 5] Which color of visible light undergoes the LEAST refraction (bending) when passing through a triangular glass prism?",
+        "hi": "[Q99: विज्ञान, पृष्ठ 5] कांच के प्रिज्म से गुजरने पर दृश्य प्रकाश का कौन सा रंग सबसे कम मुड़ता (अपवर्तित होता) है?"
+      },
+      "options": {
+        "a": { "en": "Violet", "hi": "बैंगनी" },
+        "b": { "en": "Blue", "hi": "नीला" },
+        "c": { "en": "Red", "hi": "लाल (Red)" },
+        "d": { "en": "Green", "hi": "हरा" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This color possesses the longest wavelength in the visible spectrum, so danger signals are made of it.",
+        "hi": "इस रंग की तरंगदैर्घ्य दृश्य प्रकाश में सबसे लंबी होती है, इसलिए खतरे के संकेत इसी रंग के बनाए जाते हैं।"
+      },
+      "explanation": {
+        "en": "Red light has the longest wavelength in the visible spectrum and experiences the smallest change in refractive index, bending the least. Violet light has the shortest wavelength and bends the most.",
+        "hi": "लाल रंग के प्रकाश की तरंगदैर्घ्य सबसे अधिक होती है, इसलिए प्रिज्म से गुजरने पर इसका अपवर्तन सबसे कम होता है। बैंगनी रंग का अपवर्तन सबसे अधिक होता है।"
+      },
+      "key_takeaway": {
+        "en": "Red light refracts the least in a prism because it has the longest wavelength.",
+        "hi": "अधिकतम तरंगदैर्घ्य के कारण लाल प्रकाश प्रिज्म में सबसे कम विचलित होता है।"
+      }
+    },
+    {
+      "question_id": 100,
+      "question": {
+        "en": "[Q100: Science, Page 5] What is the normal audible frequency range of hearing for a healthy human ear?",
+        "hi": "[Q100: विज्ञान, पृष्ठ 5] स्वस्थ मानव कान के लिए श्रव्य ध्वनि (audible range) की सामान्य आवृत्ति सीमा क्या है?"
+      },
+      "options": {
+        "a": { "en": "Below 20 Hz", "hi": "20 Hz से कम" },
+        "b": { "en": "20 Hz to 20,000 Hz", "hi": "20 Hz से 20,000 Hz" },
+        "c": { "en": "Above 20,000 Hz", "hi": "20,000 Hz से अधिक" },
+        "d": { "en": "100 Hz to 50,000 Hz", "hi": "100 Hz से 50,000 Hz" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Frequencies below this interval are infrasonic; frequencies above are ultrasonic.",
+        "hi": "इस सीमा से कम की ध्वनि अपश्रव्य और अधिक की ध्वनि पराश्रव्य (अल्ट्रासोनिक) कहलाती है।"
+      },
+      "explanation": {
+        "en": "The human ear can detect acoustic vibrations from 20 Hz to 20,000 Hz (20 kHz). Frequencies below 20 Hz are infrasonic, and frequencies above 20 kHz are ultrasonic.",
+        "hi": "मानव कान 20 हर्ट्ज़ से 20,000 हर्ट्ज़ तक की आवृत्तियों को सुन सकते हैं। 20 Hz से नीचे अपश्रव्य और 20,000 Hz से ऊपर पराश्रव्य ध्वनियाँ होती हैं।"
+      },
+      "key_takeaway": {
+        "en": "Human audible limits span 20 Hz to 20,000 Hz.",
+        "hi": "मानव की श्रव्य सीमा 20 Hz से 20,000 Hz तक होती है।"
+      }
+    },
+    {
+      "question_id": 101,
+      "question": {
+        "en": "[Q101: Science, Page 5] The optical image formed by a smooth plane mirror is always:",
+        "hi": "[Q101: विज्ञान, पृष्ठ 5] समतल दर्पण द्वारा बनने वाला प्रतिबिंब सदैव कैसा होता है?"
+      },
+      "options": {
+        "a": { "en": "Real & Inverted", "hi": "वास्तविक और उल्टा" },
+        "b": { "en": "Virtual & Erect", "hi": "आभासी और सीधा (Virtual & Erect)" },
+        "c": { "en": "Real & Erect", "hi": "वास्तविक और सीधा" },
+        "d": { "en": "Virtual & Inverted", "hi": "आभासी और उल्टा" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It cannot be projected onto a physical screen and shows lateral left-right inversion.",
+        "hi": "इसे पर्दे पर प्राप्त नहीं किया जा सकता और इसमें बायाँ भाग दायाँ दिखाई देता है (पार्श्व परिवर्तन)।"
+      },
+      "explanation": {
+        "en": "A plane mirror forms a virtual and erect image of identical size, equidistant behind the mirror, displaying lateral inversion.",
+        "hi": "समतल दर्पण से बना प्रतिबिंब सदैव सीधा और आभासी होता है, वस्तु के बराबर आकार का होता है तथा पार्श्व रूप से उल्टा होता है।"
+      },
+      "key_takeaway": {
+        "en": "Plane mirrors produce virtual, erect, and laterally inverted reflections.",
+        "hi": "समतल दर्पण आभासी, सीधा और पार्श्व-परिवर्तित प्रतिबिंब बनाता है।"
+      }
+    },
+    {
+      "question_id": 102,
+      "question": {
+        "en": "[Q102: Science, Page 5] Under identical surface conditions, rolling friction is always:",
+        "hi": "[Q102: विज्ञान, पृष्ठ 5] समान परिस्थितियों में लोटनिक घर्षण (rolling friction) सर्पी घर्षण की तुलना में सदैव कैसा होता है?"
+      },
+      "options": {
+        "a": { "en": "Greater", "hi": "अधिक" },
+        "b": { "en": "Equal", "hi": "समान" },
+        "c": { "en": "Smaller", "hi": "कम / छोटा (Smaller)" },
+        "d": { "en": "Double", "hi": "दोगुना" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This is why wheel and ball-bearing mechanisms reduce mechanical resistance in machines.",
+        "hi": "इसी कारण मशीनों में पहियों और बॉल-बेयरिंग का उपयोग करके घर्षण को कम किया जाता है।"
+      },
+      "explanation": {
+        "en": "Rolling friction is significantly smaller than sliding friction because rolling minimizes the contact area and interlocking of microscopic surface irregularities. Ball bearings exploit this principle.",
+        "hi": "लोटनिक घर्षण का मान सर्पी घर्षण से काफी कम होता है क्योंकि लुढ़कने पर सतहों के बीच संपर्क क्षेत्र और रुकावट बहुत घट जाती है। इसीलिए बॉल-बेयरिंग का उपयोग होता है।"
+      },
+      "key_takeaway": {
+        "en": "Rolling friction is weaker than sliding friction: Static > Sliding > Rolling.",
+        "hi": "घर्षण का क्रम: स्थैतिक > सर्पी > लोटनिक घर्षण।"
+      }
+    },
+    {
+      "question_id": 103,
+      "question": {
+        "en": "[Q103: Science, Page 5] Which organic acid is naturally present in an ant's sting?",
+        "hi": "[Q103: विज्ञान, पृष्ठ 5] चींटी के डंक में कौन सा कार्बनिक अम्ल प्राकृतिक रूप से उपस्थित होता है?"
+      },
+      "options": {
+        "a": { "en": "Acetic Acid", "hi": "एसिटिक अम्ल" },
+        "b": { "en": "Formic Acid", "hi": "फॉर्मिक अम्ल (Formic Acid)" },
+        "c": { "en": "Citric Acid", "hi": "साइट्रिक अम्ल" },
+        "d": { "en": "Tartaric Acid", "hi": "टार्टरिक अम्ल" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Also known as methanoic acid (HCOOH), it causes burning and can be neutralized using baking soda.",
+        "hi": "इसे मेथेनॉइक अम्ल भी कहते हैं, और इसे बेकिंग सोडा या कैलेमाइन लोशन से शांत किया जाता है।"
+      },
+      "explanation": {
+        "en": "Ant stings contain Formic acid (methanoic acid)[cite: 9]. It can be neutralized by applying mild basic agents such as baking soda or calamine lotion[cite: 9].",
+        "hi": "चींटी के डंक में फॉर्मिक अम्ल होता है[cite: 9]। इसकी जलन को बेकिंग सोडा (मीठा सोडा) या कैलेमाइन लोशन लगाकर उदासीन किया जाता है[cite: 9]।"
+      },
+      "key_takeaway": {
+        "en": "Formic acid causes ant sting irritation and is neutralized with mild bases[cite: 9].",
+        "hi": "चींटी के डंक में फॉर्मिक अम्ल होता है जिसे क्षारक से उदासीन किया जा सकता है[cite: 9]।"
+      }
+    },
+    {
+      "question_id": 104,
+      "question": {
+        "en": "[Q104: Science, Page 5] Natural litmus dye indicator is extracted from which organism?",
+        "hi": "[Q104: विज्ञान, पृष्ठ 5] प्राकृतिक लिटमस सूचक किस जीव से निष्कर्षित किया जाता है?"
+      },
+      "options": {
+        "a": { "en": "Lichens", "hi": "लाइकेन (Lichens)" },
+        "b": { "en": "China Rose", "hi": "गुड़हल" },
+        "c": { "en": "Turmeric", "hi": "हल्दी" },
+        "d": { "en": "Red Cabbage", "hi": "लाल पत्तागोभी" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Obtained from a symbiotic partnership between fungi and algae.",
+        "hi": "यह कवक और शैवाल के सहजीवी संबंध से बने जीव से मिलता है।"
+      },
+      "explanation": {
+        "en": "Litmus indicator is extracted from Lichens[cite: 9]. It turns red in acidic solutions and blue in basic solutions[cite: 9].",
+        "hi": "लिटमस एक प्राकृतिक सूचक है जिसे लाइकेन से प्राप्त किया जाता है[cite: 9]। यह अम्ल में लाल और क्षार में नीला रंग देता है[cite: 9]।"
+      },
+      "key_takeaway": {
+        "en": "Litmus dye originates from lichens and gauges solution acidity/alkalinity[cite: 9].",
+        "hi": "लाइकेन से प्राप्त लिटमस अम्ल और क्षार की पहचान करने वाला मुख्य सूचक है[cite: 9]।"
+      }
+    },
+    {
+      "question_id": 105,
+      "question": {
+        "en": "[Q105: Science, Page 5] The metallurgical process of depositing a thin zinc coating on iron to prevent corrosion is called:",
+        "hi": "[Q105: विज्ञान, पृष्ठ 5] लोहे को जंग से बचाने के लिए उस पर जस्ते (जिंक) की परत चढ़ाने की विधि क्या कहलाती है?"
+      },
+      "options": {
+        "a": { "en": "Crystallisation", "hi": "क्रिस्टलीकरण" },
+        "b": { "en": "Galvanisation", "hi": "यशदलेपन / गैल्वनीकरण" },
+        "c": { "en": "Vulcanisation", "hi": "वल्कनीकरण" },
+        "d": { "en": "Neutralisation", "hi": "उदासीनीकरण" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Water supply pipes and roofing sheets are treated this way with sacrificial zinc.",
+        "hi": "पानी के पाइपों और छतों की चादरों पर जस्ते की परत चढ़ाई जाती है।"
+      },
+      "explanation": {
+        "en": "Galvanisation protects iron from air and moisture by depositing a sacrificial layer of zinc[cite: 9].",
+        "hi": "लोहे को संक्षारण से बचाने के लिए उस पर जस्ते की परत चढ़ाना यशदलेपन (गैल्वनीकरण) कहलाता है[cite: 9]।"
+      },
+      "key_takeaway": {
+        "en": "Galvanisation prevents rusting by coating iron with sacrificial zinc[cite: 9].",
+        "hi": "यशदलेपन द्वारा लोहे पर जिंक की सुरक्षात्मक परत चढ़ाकर जंग रोकी जाती है[cite: 9]।"
+      }
+    },
+    {
+      "question_id": 106,
+      "question": {
+        "en": "[Q106: Science, Page 5] Which semi-synthetic regenerated fibre is prepared from wood pulp and known as 'Artificial Silk'?",
+        "hi": "[Q106: विज्ञान, पृष्ठ 5] किस संश्लेषित रेशे को 'कृत्रिम रेशम' कहा जाता है जो काष्ठ लुगदी से तैयार होता है?"
+      },
+      "options": {
+        "a": { "en": "Nylon", "hi": "नायलॉन" },
+        "b": { "en": "Rayon", "hi": "रेयान (Rayon)" },
+        "c": { "en": "Acrylic", "hi": "एक्रिलिक" },
+        "d": { "en": "Polyester", "hi": "पॉलिएस्टर" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It mimics natural silk sheen at lower cost and is treated chemically from plant cellulose.",
+        "hi": "यह प्राकृतिक रेशम जैसी चमक देता है और काष्ठ लुगदी के रासायनिक उपचार से बनता है।"
+      },
+      "explanation": {
+        "en": "Rayon is produced by the chemical treatment of wood pulp cellulose[cite: 9]. Because it mimics silk's soft texture and lustre, it is called Artificial Silk[cite: 9].",
+        "hi": "रेयान प्राकृतिक काष्ठ लुगदी से रासायनिक उपचार द्वारा बनाया जाता है और रेशम जैसी चमक के कारण इसे कृत्रिम रेशम कहते हैं[cite: 9]।"
+      },
+      "key_takeaway": {
+        "en": "Rayon is wood pulp-derived artificial silk[cite: 9].",
+        "hi": "रेयान को कृत्रिम रेशम के रूप में जाना जाता है[cite: 9]।"
+      }
+    },
+    {
+      "question_id": 107,
+      "question": {
+        "en": "[Q107: Science, Page 5] Which non-metal exists as a liquid at room temperature?",
+        "hi": "[Q107: विज्ञान, पृष्ठ 5] कौन सी अधातु कमरे के तापमान पर द्रव अवस्था में पाई जाती है?"
+      },
+      "options": {
+        "a": { "en": "Iodine", "hi": "आयोडीन" },
+        "b": { "en": "Bromine", "hi": "ब्रोमीन (Bromine)" },
+        "c": { "en": "Carbon", "hi": "कार्बन" },
+        "d": { "en": "Phosphorus", "hi": "फास्फोरस" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "While mercury is the only liquid metal, this halogen is the only liquid non-metal.",
+        "hi": "पारा एकमात्र तरल धातु है, जबकि यह हैलोजन एकमात्र तरल अधातु है।"
+      },
+      "explanation": {
+        "en": "Bromine is the only non-metallic element in the periodic table that exists as a reddish-brown liquid at standard room temperature[cite: 9].",
+        "hi": "ब्रोमीन एकमात्र ऐसी अधातु है जो कमरे के सामान्य तापमान पर द्रव अवस्था में रहती है[cite: 9]।"
+      },
+      "key_takeaway": {
+        "en": "Bromine is the sole liquid non-metallic element at room temperature[cite: 9].",
+        "hi": "ब्रोमीन सामान्य तापमान पर एकमात्र द्रव अधातु है[cite: 9]।"
+      }
+    },
+    {
+      "question_id": 108,
+      "question": {
+        "en": "[Q108: Science, Page 5] Which combustible gas burns with a characteristic 'pop sound' when brought near a flame?",
+        "hi": "[Q108: विज्ञान, पृष्ठ 5] जलती हुई तीली पास लाने पर कौन सी गैस विशिष्ट 'पॉप' ध्वनि के साथ जलती है?"
+      },
+      "options": {
+        "a": { "en": "Oxygen", "hi": "ऑक्सीजन" },
+        "b": { "en": "Carbon Dioxide", "hi": "कार्बन डाइऑक्साइड" },
+        "c": { "en": "Hydrogen", "hi": "हाइड्रोजन (Hydrogen)" },
+        "d": { "en": "Nitrogen", "hi": "नाइट्रोजन" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Evolved when reactive metals react with dilute acids.",
+        "hi": "धातुओं की तनु अम्लों के साथ अभिक्रिया से यह गैस निकलती है।"
+      },
+      "explanation": {
+        "en": "Hydrogen gas (H2) combusts with a characteristic pop sound when ignited with a matchstick: 2H2 + O2 -> 2H2O[cite: 9].",
+        "hi": "हाइड्रोजन गैस जलती हुई तीली लाने पर मिनी-धमाके के साथ 'पॉप' ध्वनि करते हुए जलती है[cite: 9]।"
+      },
+      "key_takeaway": {
+        "en": "A pop sound upon ignition confirms the presence of hydrogen gas[cite: 9].",
+        "hi": "पॉप ध्वनि के साथ जलना हाइड्रोजन गैस की उपस्थिति की पुष्टि करता है[cite: 9]।"
+      }
+    },
+    {
+      "question_id": 109,
+      "question": {
+        "en": "[Q109: Science, Page 5] Non-stick coatings applied to culinary cookware are composed of:",
+        "hi": "[Q109: विज्ञान, पृष्ठ 5] खाना पकाने के नॉन-स्टिक बर्तनों पर किसकी परत चढ़ाई जाती है?"
+      },
+      "options": {
+        "a": { "en": "Bakelite", "hi": "बेकेलाइट" },
+        "b": { "en": "Teflon", "hi": "टेफ्लॉन (Teflon)" },
+        "c": { "en": "Melamine", "hi": "मेलामाइन" },
+        "d": { "en": "PVC", "hi": "पीवीसी" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Known chemically as polytetrafluoroethylene (PTFE), oil and water do not adhere to it.",
+        "hi": "इसे पॉलीटेट्राफ्लुओरोएथिलीन कहा जाता है; तेल और पानी इस पर नहीं चिपकते।"
+      },
+      "explanation": {
+        "en": "Teflon (PTFE) is a fluoropolymer with a low coefficient of friction; oil and water do not stick to it, making it ideal for cookware[cite: 9].",
+        "hi": "टेफ्लॉन (PTFE) पर तेल और पानी नहीं चिपकते, इसलिए इसका उपयोग नॉन-स्टिक बर्तनों की कोटिंग के लिए किया जाता है[cite: 9]।"
+      },
+      "key_takeaway": {
+        "en": "Teflon provides slick, non-stick cooking surfaces resistant to oil and water[cite: 9].",
+        "hi": "टेफ्लॉन तेल और पानी प्रतिरोधी नॉन-स्टिक कोटिंग प्रदान करता है[cite: 9]।"
+      }
+    },
+    {
+      "question_id": 110,
+      "question": {
+        "en": "[Q110: Science, Page 5] Which metal is stored immersed in kerosene due to its extreme reactivity with air and moisture?",
+        "hi": "[Q110: विज्ञान, पृष्ठ 5] वायु और जल के साथ तीव्र अभिक्रिया के कारण किस धातु को मिट्टी के तेल (केरोसिन) में रखा जाता है?"
+      },
+      "options": {
+        "a": { "en": "Copper", "hi": "ताँबा" },
+        "b": { "en": "Iron", "hi": "लोहा" },
+        "c": { "en": "Sodium", "hi": "सोडियम (Sodium)" },
+        "d": { "en": "Gold", "hi": "सोना" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This alkali metal reacts exothermically with water and catches fire spontaneously in air.",
+        "hi": "यह क्षार धातु पानी के संपर्क में आते ही ऊष्माक्षेपी क्रिया कर आग पकड़ लेती है।"
+      },
+      "explanation": {
+        "en": "Sodium (and potassium) reacts vigorously with air and water, generating heat and igniting[cite: 9]. It is stored under kerosene oil to isolate it[cite: 9].",
+        "hi": "सोडियम हवा और पानी के साथ बहुत तेजी से क्रिया कर आग पकड़ लेता है, इसलिए इसे केरोसिन में डुबोकर रखा जाता है[cite: 9]।"
+      },
+      "key_takeaway": {
+        "en": "Sodium is stored in kerosene to prevent atmospheric oxidation and combustion[cite: 9].",
+        "hi": "सोडियम को आग से बचाने के लिए मिट्टी के तेल में सुरक्षित रखा जाता है[cite: 9]।"
+      }
+    },
+    {
+      "question_id": 111,
+      "question": {
+        "en": "[Q111: Science, Page 5] Which clean compressed gaseous fuel is preferred in automotive transport to curb urban air pollution?",
+        "hi": "[Q111: विज्ञान, पृष्ठ 5] शहरी वायु प्रदूषण को कम करने के लिए वाहनों में कौन सा स्वच्छ संपीड़ित ईंधन उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": { "en": "Petrol", "hi": "पेट्रोल" },
+        "b": { "en": "Diesel", "hi": "डीजल" },
+        "c": { "en": "CNG", "hi": "सीएनजी / CNG" },
+        "d": { "en": "Kerosene", "hi": "केरोसिन" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Compressed Natural Gas composed mainly of methane (CH4).",
+        "hi": "संपीड़ित प्राकृतिक गैस जिसमें मुख्य रूप से मीथेन होती है।"
+      },
+      "explanation": {
+        "en": "CNG (Compressed Natural Gas) burns cleanly, leaving negligible particulate matter and unburnt carbon compared to diesel and petrol[cite: 9].",
+        "hi": "सीएनजी (CNG) का पूर्ण दहन होता है और यह पेट्रोल-डीजल की तुलना में बहुत कम धुआँ और प्रदूषक छोड़ती है[cite: 9]।"
+      },
+      "key_takeaway": {
+        "en": "CNG is an eco-friendly alternative vehicle fuel[cite: 9].",
+        "hi": "सीएनजी वाहनों के लिए एक स्वच्छ और पर्यावरण-मित्र ईंधन है[cite: 9]।"
+      }
+    },
+    {
+      "question_id": 112,
+      "question": {
+        "en": "[Q112: Science, Page 5] Oxides of non-metals dissolved in water are generally:",
+        "hi": "[Q112: विज्ञान, पृष्ठ 5] अधातुओं के ऑक्साइड जल में घुलकर सामान्यतः किस प्रकृति के होते हैं?"
+      },
+      "options": {
+        "a": { "en": "Basic", "hi": "क्षारीय" },
+        "b": { "en": "Acidic", "hi": "अम्लीय (Acidic)" },
+        "c": { "en": "Neutral", "hi": "उदासीन" },
+        "d": { "en": "Amphoteric", "hi": "उभयधर्मी" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Sulfur dioxide in water forms sulfurous acid and turns blue litmus red.",
+        "hi": "सल्फर डाइऑक्साइड जल में घुलकर सल्फ्यूरस अम्ल बनाती है और नीले लिटमस को लाल करती है।"
+      },
+      "explanation": {
+        "en": "Non-metal oxides (like SO2 and CO2) dissolve in water to yield acids (H2SO3, H2CO3), turning blue litmus paper red[cite: 9].",
+        "hi": "अधातुओं के ऑक्साइड जल में घुलकर अम्ल बनाते हैं जो नीले लिटमस को लाल कर देते हैं, अतः ये अम्लीय प्रकृति के होते हैं[cite: 9]।"
+      },
+      "key_takeaway": {
+        "en": "Non-metallic oxides are acidic; metal oxides are generally basic[cite: 9].",
+        "hi": "अधातु ऑक्साइड अम्लीय और धातु ऑक्साइड क्षारीय होते हैं[cite: 9]।"
+      }
+    },
+    {
+      "question_id": 113,
+      "question": {
+        "en": "[Q113: Science, Page 5] The innermost zone of a candle flame is the:",
+        "hi": "[Q113: विज्ञान, पृष्ठ 5] मोमबत्ती की ज्वाला का सबसे आंतरिक क्षेत्र कैसा होता है?"
+      },
+      "options": {
+        "a": { "en": "Hottest zone", "hi": "सबसे गर्म क्षेत्र" },
+        "b": { "en": "Darkest & Least Hot zone", "hi": "सबसे काला और सबसे कम गर्म क्षेत्र" },
+        "c": { "en": "Luminous zone", "hi": "दीप्त पीला क्षेत्र" },
+        "d": { "en": "Blue zone", "hi": "नीला क्षेत्र" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It immediately surrounds the wick and contains unburnt wax vapor due to lack of oxygen.",
+        "hi": "यह बत्ती के ठीक पास होता है और ऑक्सीजन की कमी के कारण इसमें बिना जले मोम के कण होते हैं।"
+      },
+      "explanation": {
+        "en": "The innermost dark zone contains unburnt wax vapors due to lack of oxygen; it is the coolest and darkest zone of the flame[cite: 9].",
+        "hi": "ज्वाला का सबसे भीतरी क्षेत्र बिना जले मोम वाष्प का होता है; ऑक्सीजन न मिलने के कारण यह सबसे कम गर्म और काला होता है[cite: 9]।"
+      },
+      "key_takeaway": {
+        "en": "The innermost flame zone is dark and least hot; the outermost blue zone is the hottest[cite: 9].",
+        "hi": "ज्वाला का आंतरिक भाग सबसे कम गर्म और बाहरी नीला भाग सबसे अधिक गर्म होता है[cite: 9]।"
+      }
+    },
+    {
+      "question_id": 114,
+      "question": {
+        "en": "[Q114: Science, Page 5] Which cell organelle is designated as the 'Powerhouse of the Cell'?",
+        "hi": "[Q114: विज्ञान, पृष्ठ 5] किस कोशिकांग को 'कोशिका का पावरहाउस' कहा जाता है?"
+      },
+      "options": {
+        "a": { "en": "Plastid", "hi": "लवक" },
+        "b": { "en": "Mitochondria", "hi": "माइटोकॉन्ड्रिया (Mitochondria)" },
+        "c": { "en": "Ribosome", "hi": "राइबोसोम" },
+        "d": { "en": "Golgi Body", "hi": "गॉल्जी काय" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "It carries out cellular respiration and produces ATP energy molecules.",
+        "hi": "यह कोशिकीय श्वसन द्वारा ATP ऊर्जा का निर्माण करता है।"
+      },
+      "explanation": {
+        "en": "Mitochondria oxidize food to generate adenosine triphosphate (ATP) during aerobic respiration, earning the title 'Powerhouse of the Cell'[cite: 10].",
+        "hi": "माइटोकॉन्ड्रिया कोशिकीय श्वसन द्वारा ATP के रूप में ऊर्जा बनाते हैं, इसलिए इन्हें कोशिका का पावरहाउस कहते हैं[cite: 10]।"
+      },
+      "key_takeaway": {
+        "en": "Mitochondria produce cellular ATP energy currency[cite: 10].",
+        "hi": "माइटोकॉन्ड्रिया कोशिका के लिए ऊर्जा (ATP) का उत्पादन करते हैं[cite: 10]।"
+      }
+    },
+    {
+      "question_id": 115,
+      "question": {
+        "en": "[Q115: Science, Page 5] Rhizobium bacteria live symbiotically in root nodules of leguminous plants to fix which gas into nitrates?",
+        "hi": "[Q115: विज्ञान, पृष्ठ 5] राइजोबियम जीवाणु फलीदार पौधों की जड़ों में रहकर किस गैस का स्थिरीकरण करते हैं?"
+      },
+      "options": {
+        "a": { "en": "Oxygen", "hi": "ऑक्सीजन" },
+        "b": { "en": "Nitrogen", "hi": "नाइट्रोजन (Nitrogen)" },
+        "c": { "en": "Carbon", "hi": "कार्बन" },
+        "d": { "en": "Hydrogen", "hi": "हाइड्रोजन" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Plants cannot absorb atmospheric N2 directly, relying on these bacteria for nitrogenous plant food.",
+        "hi": "पौधे वायुमंडलीय N2 को सीधे नहीं ले सकते, इसलिए जीवाणु इसे घुलनशील यौगिकों में बदलते हैं।"
+      },
+      "explanation": {
+        "en": "Rhizobium fixes atmospheric nitrogen gas into soluble nitrates that legumes absorb to synthesize proteins[cite: 10].",
+        "hi": "राइजोबियम वायुमंडलीय नाइट्रोजन को घुलनशील नाइट्रेट्स में बदलता है, जिससे पौधों को पोषण मिलता है[cite: 10]।"
+      },
+      "key_takeaway": {
+        "en": "Rhizobium provides biological nitrogen fixation in legume root nodules[cite: 10].",
+        "hi": "राइजोबियम दलहनी पौधों में जैविक नाइट्रोजन स्थिरीकरण करता है[cite: 10]।"
+      }
+    },
+    {
+      "question_id": 116,
+      "question": {
+        "en": "[Q116: Science, Page 5] Which hormone secreted by the pancreas regulates glucose sugar levels in human blood?",
+        "hi": "[Q116: विज्ञान, पृष्ठ 5] अग्न्याशय द्वारा स्रावित कौन सा हार्मोन मानव रक्त में शर्करा के स्तर को नियंत्रित करता है?"
+      },
+      "options": {
+        "a": { "en": "Thyroxine", "hi": "थायरोक्सिन" },
+        "b": { "en": "Adrenaline", "hi": "एड्रेनालिन" },
+        "c": { "en": "Insulin", "hi": "इंसुलिन (Insulin)" },
+        "d": { "en": "Estrogen", "hi": "एस्ट्रोजन" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "A deficiency of this hormone causes Diabetes Mellitus.",
+        "hi": "इस हार्मोन की कमी से मधुमेह (डायबिटीज) रोग हो जाता है।"
+      },
+      "explanation": {
+        "en": "Insulin, secreted by beta cells of the pancreas, lowers blood glucose levels[cite: 10]. Insufficient production causes diabetes[cite: 10].",
+        "hi": "अग्न्याशय से निकलने वाला इंसुलिन हार्मोन रक्त में ग्लूकोज की मात्रा को नियंत्रित करता है[cite: 10]। इसकी कमी से मधुमेह होता है[cite: 10]।"
+      },
+      "key_takeaway": {
+        "en": "Insulin controls blood sugar homeostasis; deficiency leads to diabetes[cite: 10].",
+        "hi": "इंसुलिन रक्त शर्करा को नियंत्रित करता है; इसकी कमी से डायबिटीज होती है[cite: 10]।"
+      }
+    },
+    {
+      "question_id": 117,
+      "question": {
+        "en": "[Q117: Science, Page 6] Hydra reproduces asexually through which method?",
+        "hi": "[Q117: विज्ञान, पृष्ठ 6] हाइड्रा में अलैंगिक जनन किस प्रक्रिया द्वारा होता है?"
+      },
+      "options": {
+        "a": { "en": "Binary Fission", "hi": "द्विखंडन" },
+        "b": { "en": "Budding", "hi": "मुकुलन (Budding)" },
+        "c": { "en": "Spore Formation", "hi": "बीजाणु निर्माण" },
+        "d": { "en": "Fragmentation", "hi": "खंडन" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "A small bud develops on the parent body, matures, and detaches as a new organism.",
+        "hi": "जनक के शरीर पर एक उभार (मुकुल) बनता है जो विकसित होकर अलग हो जाता है।"
+      },
+      "explanation": {
+        "en": "Hydra reproduces asexually by Budding, developing an outgrowth (bud) that detaches upon maturity to form a new individual[cite: 10].",
+        "hi": "हाइड्रा में मुकुलन (Budding) द्वारा जनन होता है, जहाँ जनक शरीर पर बना उभार नया जीव बनकर अलग हो जाता है[cite: 10]।"
+      },
+      "key_takeaway": {
+        "en": "Budding is an asexual reproductive mode in yeast and Hydra[cite: 10].",
+        "hi": "मुकुलन यीस्ट और हाइड्रा में अलैंगिक जनन की विधि है[cite: 10]।"
+      }
+    },
+    {
+      "question_id": 118,
+      "question": {
+        "en": "[Q118: Science, Page 6] Which plant vascular tissue transports water and dissolved soil minerals from roots up to the leaves?",
+        "hi": "[Q118: विज्ञान, पृष्ठ 6] कौन सा पादप संवहन ऊतक जड़ों से पत्तियों तक जल और खनिजों का परिवहन करता है?"
+      },
+      "options": {
+        "a": { "en": "Phloem", "hi": "फ्लोएम" },
+        "b": { "en": "Xylem", "hi": "जाइलम (Xylem)" },
+        "c": { "en": "Cambium", "hi": "कैम्बियम" },
+        "d": { "en": "Stomata", "hi": "रंध्र" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Xylem carries water upwards; phloem distributes food synthesised by leaves.",
+        "hi": "जाइलम जल का वहन करता है; फ्लोएम पत्तियों द्वारा बने भोजन का वहन करता है।"
+      },
+      "explanation": {
+        "en": "Xylem transports water and minerals unidirectionally upwards from roots to leaves[cite: 10]. Phloem translocates synthesized sugars bidirectionally[cite: 10].",
+        "hi": "जाइलम ऊतक जड़ों द्वारा अवशोषित जल और खनिजों को पत्तियों तक ऊपर पहुँचाता है[cite: 10]। फ्लोएम भोजन का परिवहन करता है[cite: 10]।"
+      },
+      "key_takeaway": {
+        "en": "Xylem conducts water/minerals; Phloem distributes food[cite: 10].",
+        "hi": "जाइलम जल का और फ्लोएम भोजन का संवहन करता है[cite: 10]।"
+      }
+    },
+    {
+      "question_id": 119,
+      "question": {
+        "en": "[Q119: Science, Page 6] Nutritional deficiency of Vitamin C in human diet results in which disease?",
+        "hi": "[Q119: विज्ञान, पृष्ठ 6] मानव आहार में विटामिन C की कमी से कौन सा रोग होता है?"
+      },
+      "options": {
+        "a": { "en": "Beriberi", "hi": "बेरी-बेरी" },
+        "b": { "en": "Scurvy", "hi": "स्कर्वी (Scurvy)" },
+        "c": { "en": "Rickets", "hi": "रिकेट्स" },
+        "d": { "en": "Goitre", "hi": "घेंघा" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Symptoms include bleeding gums and delayed wound healing.",
+        "hi": "इसके लक्षणों में मसूड़ों से खून आना और घाव न भरना शामिल है।"
+      },
+      "explanation": {
+        "en": "Deficiency of Vitamin C (ascorbic acid) causes Scurvy, characterized by spongy, bleeding gums and skin fragility[cite: 10].",
+        "hi": "विटामिन C की कमी से स्कर्वी रोग होता है, जिसके लक्षण मसूड़ों से खून आना और घाव भरने में समय लगना हैं[cite: 10]।"
+      },
+      "key_takeaway": {
+        "en": "Vitamin C deficiency leads to scurvy[cite: 10].",
+        "hi": "विटामिन C की कमी से स्कर्वी रोग होता है[cite: 10]।"
+      }
+    },
+    {
+      "question_id": 120,
+      "question": {
+        "en": "[Q120: Science, Page 6] Which of the following is an example of a monsoon Kharif crop in India?",
+        "hi": "[Q120: विज्ञान, पृष्ठ 6] निम्नलिखित में से कौन सी भारत में खरीफ की फसल का उदाहरण है?"
+      },
+      "options": {
+        "a": { "en": "Wheat", "hi": "गेहूँ" },
+        "b": { "en": "Mustard", "hi": "सरसों" },
+        "c": { "en": "Paddy (Rice)", "hi": "धान / चावल (Paddy)" },
+        "d": { "en": "Gram", "hi": "चना" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Sown during June-July rains and harvested in autumn; wheat and mustard are winter Rabi crops.",
+        "hi": "वर्षा ऋतु में बोई जाने वाली फसल; गेहूँ और सरसों शीतकालीन रबी फसलें हैं।"
+      },
+      "explanation": {
+        "en": "Paddy (rice) requires abundant water and is planted during the monsoon season (June-September) as a Kharif crop[cite: 10]. Wheat, mustard, and gram are winter Rabi crops[cite: 10].",
+        "hi": "धान (चावल) वर्षा ऋतु की खरीफ फसल है जिसे जून-जुलाई में बोया जाता है[cite: 10]। गेहूँ, चना और सरसों रबी की फसलें हैं[cite: 10]।"
+      },
+      "key_takeaway": {
+        "en": "Paddy and maize are Kharif crops; wheat and mustard are Rabi crops[cite: 10].",
+        "hi": "धान खरीफ फसल है और गेहूँ रबी की फसल है[cite: 10]।"
+      }
+    },
+    {
+      "question_id": 121,
+      "question": {
+        "en": "[Q121: Science, Page 6] The anaerobic conversion of sugar into alcohol by the action of yeast is called:",
+        "hi": "[Q121: विज्ञान, पृष्ठ 6] यीस्ट द्वारा शर्करा को एल्कोहॉल में बदलने की अवायवीय प्रक्रिया कहलाती है:"
+      },
+      "options": {
+        "a": { "en": "Pasteurisation", "hi": "पाश्चुरीकरण" },
+        "b": { "en": "Fermentation", "hi": "किण्वन (Fermentation)" },
+        "c": { "en": "Nitrogen Fixation", "hi": "नाइट्रोजन स्थिरीकरण" },
+        "d": { "en": "Sterilisation", "hi": "रोगाणुनाशन" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Discovered by Louis Pasteur in 1857.",
+        "hi": "लुई पाश्चर द्वारा 1857 में खोजी गई प्रक्रिया।"
+      },
+      "explanation": {
+        "en": "Fermentation is the enzymatic, anaerobic breakdown of carbohydrates into alcohol and CO2 by yeast[cite: 10].",
+        "hi": "यीस्ट द्वारा ऑक्सीजन की अनुपस्थिति में चीनी को एल्कोहॉल में बदलना किण्वन (Fermentation) कहलाता है[cite: 10]।"
+      },
+      "key_takeaway": {
+        "en": "Fermentation converts sugars into ethanol anaerobically using yeast[cite: 10].",
+        "hi": "किण्वन प्रक्रिया यीस्ट की मदद से शर्करा को एल्कोहॉल में बदलती है[cite: 10]।"
+      }
+    },
+    {
+      "question_id": 122,
+      "question": {
+        "en": "[Q122: Science, Page 6] The official international Red Data Book maintained by the IUCN records all:",
+        "hi": "[Q122: विज्ञान, पृष्ठ 6] IUCN द्वारा जारी की जाने वाली आधिकारिक 'रेड डाटा बुक' किसका रिकॉर्ड रखती है?"
+      },
+      "options": {
+        "a": { "en": "Extinct species", "hi": "विलुप्त प्रजातियाँ" },
+        "b": { "en": "Endangered species", "hi": "संकटापन्न / संकटग्रस्त प्रजातियाँ (Endangered species)" },
+        "c": { "en": "Domestic animals", "hi": "पालतू पशु" },
+        "d": { "en": "Medicinal plants", "hi": "औषधीय पौधे" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Documents wild organisms facing an imminent risk of extinction.",
+        "hi": "जिन जीव-जंतुओं के विलुप्त होने का गंभीर खतरा है, उनका रिकॉर्ड रखती है।"
+      },
+      "explanation": {
+        "en": "The Red Data Book catalogs endangered and threatened species of animals and plants at risk of extinction[cite: 10].",
+        "hi": "रेड डाटा बुक में उन सभी संकटापन्न (Endangered) पौधों और जीवों की सूची दर्ज होती है जिनके लुप्त होने का खतरा है[cite: 10]।"
+      },
+      "key_takeaway": {
+        "en": "The Red Data Book records endangered biological species globally[cite: 10].",
+        "hi": "रेड डाटा बुक संकटग्रस्त प्रजातियों का अंतरराष्ट्रीय दस्तावेज है[cite: 10]।"
+      }
+    },
+    {
+      "question_id": 123,
+      "question": {
+        "en": "[Q123: Science, Page 6] Metamorphosis of aquatic tadpoles into adult frogs is governed by which hormone?",
+        "hi": "[Q123: विज्ञान, पृष्ठ 6] टैडपोल का मेंढक में कायांतरण किस हार्मोन के नियंत्रण में होता है?"
+      },
+      "options": {
+        "a": { "en": "Insulin", "hi": "इंसुलिन" },
+        "b": { "en": "Thyroxine", "hi": "थायरोक्सिन (Thyroxine)" },
+        "c": { "en": "Growth Hormone", "hi": "वृद्धि हार्मोन" },
+        "d": { "en": "Adrenaline", "hi": "एड्रेनालिन" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Secreted by the thyroid gland and requires iodine in the water for its synthesis.",
+        "hi": "थायरॉयड ग्रंथि से निकलता है और इसके लिए पानी में आयोडीन का होना आवश्यक है।"
+      },
+      "explanation": {
+        "en": "Thyroxine, produced by the thyroid gland, controls amphibian metamorphosis[cite: 10]. Iodine in water is essential for its synthesis[cite: 10].",
+        "hi": "थायरॉयड ग्रंथि से निकलने वाला थायरोक्सिन हार्मोन मेंढक के कायांतरण को नियंत्रित करता है; इसके लिए पानी में आयोडीन आवश्यक है[cite: 10]।"
+      },
+      "key_takeaway": {
+        "en": "Tadpole metamorphosis requires thyroxine, which depends on environmental iodine[cite: 10].",
+        "hi": "कायांतरण के लिए थायरोक्सिन और पानी में आयोडीन अनिवार्य है[cite: 10]।"
+      }
+    },
+    {
+      "question_id": 124,
+      "question": {
+        "en": "[Q124: Science, Page 6] Which blood cellular component is responsible for forming clots at wounds to halt bleeding?",
+        "hi": "[Q124: विज्ञान, पृष्ठ 6] चोट लगने पर रक्त का थक्का जमाकर खून बहने से रोकने वाला रक्त घटक कौन सा है?"
+      },
+      "options": {
+        "a": { "en": "RBCs", "hi": "लाल रक्त कोशिकाएं" },
+        "b": { "en": "WBCs", "hi": "श्वेत रक्त कोशिकाएं" },
+        "c": { "en": "Platelets", "hi": "प्लेटलेट्स / पट्टिकाणु (Platelets)" },
+        "d": { "en": "Plasma", "hi": "प्लाज्मा" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "These small cellular fragments trigger coagulation to form fibrin mesh clots.",
+        "hi": "ये छोटे कोशिका कण फाइब्रिन जाल बनाकर थक्का जमाने की प्रक्रिया शुरू करते हैं।"
+      },
+      "explanation": {
+        "en": "Platelets (thrombocytes) release clotting factors that convert fibrinogen into a fibrin mesh, forming a clot that stops hemorrhage[cite: 10].",
+        "hi": "रक्त प्लेटलेट्स (पट्टिकाणु) रक्त का थक्का जमाकर घाव से होने वाले रक्तस्राव को रोकते हैं[cite: 10]।"
+      },
+      "key_takeaway": {
+        "en": "Platelets facilitate blood coagulation at injury sites[cite: 10].",
+        "hi": "प्लेटलेट्स रक्त का थक्का जमाने का कार्य करते हैं[cite: 10]।"
+      }
+    },
+    {
+      "question_id": 125,
+      "question": {
+        "en": "[Q125: Science, Page 6] The structural and functional filtration unit of the human kidney is called a:",
+        "hi": "[Q125: विज्ञान, पृष्ठ 6] मानव गुर्दे (वृक्क) की संरचनात्मक और कार्यात्मक निस्यंदन इकाई क्या कहलाती है?"
+      },
+      "options": {
+        "a": { "en": "Neuron", "hi": "न्यूरॉन" },
+        "b": { "en": "Nephron", "hi": "नेफ्रॉन / वृक्काणु (Nephron)" },
+        "c": { "en": "Alveoli", "hi": "कूपिका" },
+        "d": { "en": "Axon", "hi": "एक्सॉन" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Each kidney contains over a million of these microscopic filtering units.",
+        "hi": "प्रत्येक गुर्दे में लगभग 10 लाख ऐसी सूक्ष्म नलिकाएं होती हैं जो रक्त को छानती हैं।"
+      },
+      "explanation": {
+        "en": "Nephrons filter urea and metabolic wastes from blood plasma to form urine[cite: 10]. Neurons are functional units of the nervous system[cite: 10].",
+        "hi": "नेफ्रॉन (वृक्काणु) वृक्क की मुख्य निस्यंदन इकाइयाँ हैं जो रक्त को छानकर मूत्र बनाती हैं[cite: 10]। न्यूरॉन तंत्रिका तंत्र की इकाई है[cite: 10]।"
+      },
+      "key_takeaway": {
+        "en": "Nephrons serve as the filtration units of the renal system[cite: 10].",
+        "hi": "वृक्क की कार्यात्मक इकाई नेफ्रॉन है[cite: 10]।"
+      }
+    },
+    {
+      "question_id": 126,
+      "question": {
+        "en": "[Q126: History, Page 6] Which Mughal emperor built the Lal Qila (Red Fort) in Delhi?",
+        "hi": "[Q126: इतिहास, पृष्ठ 6] दिल्ली के प्रसिद्ध लाल किले का निर्माण किस मुगल सम्राट ने करवाया था?"
+      },
+      "options": {
+        "a": { "en": "Akbar", "hi": "अकबर" },
+        "b": { "en": "Jahangir", "hi": "जहाँगीर" },
+        "c": { "en": "Shah Jahan", "hi": "शाहजहाँ (Shah Jahan)" },
+        "d": { "en": "Aurangzeb", "hi": "औरंगजेब" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "He also commissioned the Taj Mahal in Agra and founded Shahjahanabad in Delhi.",
+        "hi": "उन्होंने आगरा में ताजमहल भी बनवाया था और दिल्ली में शाहजहानाबाद बसाया था।"
+      },
+      "explanation": {
+        "en": "Shah Jahan commissioned the Red Fort out of red sandstone between 1638 and 1648 upon moving the capital from Agra to Delhi[cite: 11].",
+        "hi": "शाहजहाँ ने 1638 से 1648 के बीच दिल्ली में लाल बलुआ पत्थर से लाल किले का निर्माण करवाया था[cite: 11]।"
+      },
+      "key_takeaway": {
+        "en": "Shah Jahan built the Red Fort in Delhi and founded Shahjahanabad[cite: 11].",
+        "hi": "शाहजहाँ ने दिल्ली के लाल किले का निर्माण करवाया था[cite: 11]।"
+      }
+    },
+    {
+      "question_id": 127,
+      "question": {
+        "en": "[Q127: History, Page 6] In which year was the historic Battle of Plassey fought between Siraj-ud-Daulah and Robert Clive?",
+        "hi": "[Q127: इतिहास, पृष्ठ 6] नवाब सिराजुद्दौला और रॉबर्ट क्लाइव के बीच प्लासी का ऐतिहासिक युद्ध किस वर्ष लड़ा गया था?"
+      },
+      "options": {
+        "a": { "en": "1757", "hi": "1757" },
+        "b": { "en": "1764", "hi": "1764" },
+        "c": { "en": "1782", "hi": "1782" },
+        "d": { "en": "1857", "hi": "1857" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Fought on 23rd June, marking the beginning of British colonial political rule in India.",
+        "hi": "23 जून को लड़ा गया यह युद्ध भारत में ब्रिटिश राजनीतिक प्रभुत्व की शुरुआत माना जाता है।"
+      },
+      "explanation": {
+        "en": "The Battle of Plassey took place on 23 June 1757[cite: 11]. Robert Clive defeated Nawab Siraj-ud-Daulah, establishing British territorial power in Bengal[cite: 11].",
+        "hi": "प्लासी का युद्ध 23 जून 1757 को हुआ जिसमें रॉबर्ट क्लाइव ने सिराजुद्दौला को पराजित कर बंगाल में ब्रिटिश शासन की नींव रखी[cite: 11]।"
+      },
+      "key_takeaway": {
+        "en": "The Battle of Plassey in 1757 established British political dominance in India[cite: 11].",
+        "hi": "1757 के प्लासी युद्ध ने भारत में ब्रिटिश औपनिवेशिक सत्ता की शुरुआत की[cite: 11]।"
+      }
+    },
+    {
+      "question_id": 128,
+      "question": {
+        "en": "[Q128: History, Page 6] Who introduced the 'Permanent Settlement' land revenue system in Bengal in 1793?",
+        "hi": "[Q128: इतिहास, पृष्ठ 6] 1793 में बंगाल में 'स्थाई बंदोबस्त' भू-राजस्व प्रणाली किसने लागू की थी?"
+      },
+      "options": {
+        "a": { "en": "Lord Wellesley", "hi": "लॉर्ड वेलेजली" },
+        "b": { "en": "Lord Cornwallis", "hi": "लॉर्ड कॉर्नवालिस (Lord Cornwallis)" },
+        "c": { "en": "Lord Dalhousie", "hi": "लॉर्ड डलहौजी" },
+        "d": { "en": "Warren Hastings", "hi": "वॉरेन हेस्टिंग्स" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Under this system, Zamindars were given permanent land rights in exchange for a fixed annual tax.",
+        "hi": "इस व्यवस्था में जमींदारों को एक निश्चित वार्षिक कर के बदले भूमि का स्थाई अधिकार दिया गया।"
+      },
+      "explanation": {
+        "en": "Lord Cornwallis enacted the Permanent Settlement in 1793, fixing land revenue rates with Zamindars in perpetuity[cite: 11].",
+        "hi": "लॉर्ड कॉर्नवालिस ने 1793 में बंगाल में स्थाई बंदोबस्त लागू कर जमींदारों से भू-राजस्व सदैव के लिए तय कर दिया था[cite: 11]।"
+      },
+      "key_takeaway": {
+        "en": "Lord Cornwallis established the Permanent Settlement in Bengal in 1793[cite: 11].",
+        "hi": "लॉर्ड कॉर्नवालिस ने 1793 में जमींदारी स्थाई बंदोबस्त प्रणाली लागू की[cite: 11]।"
+      }
+    },
+    {
+      "question_id": 129,
+      "question": {
+        "en": "[Q129: History, Page 6] The socio-religious reform movement 'Brahmo Samaj' was established in Calcutta in 1828 by:",
+        "hi": "[Q129: इतिहास, पृष्ठ 6] 1828 में कलकत्ता में सामाजिक सुधार आंदोलन 'ब्रह्म समाज' की स्थापना किसके द्वारा की गई थी?"
+      },
+      "options": {
+        "a": { "en": "Swami Dayanand", "hi": "स्वामी दयानंद" },
+        "b": { "en": "Raja Ram Mohan Roy", "hi": "राजा राममोहन राय (Raja Ram Mohan Roy)" },
+        "c": { "en": "Jyotirao Phule", "hi": "ज्योतिराव फुले" },
+        "d": { "en": "Swami Vivekananda", "hi": "स्वामी विवेकानंद" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "He campaigned against Sati and is regarded as the Father of Modern Indian Renaissance.",
+        "hi": "उन्होंने सती प्रथा का विरोध किया और उन्हें आधुनिक भारत के पुनर्जागरण का जनक माना जाता है।"
+      },
+      "explanation": {
+        "en": "Raja Ram Mohan Roy founded the Brahmo Samaj in 1828 to promote monotheism and eliminate social evils like Sati and child marriage[cite: 11].",
+        "hi": "राजा राममोहन राय ने 1828 में ब्रह्म समाज की स्थापना कर सती प्रथा और कुप्रथाओं के खिलाफ आंदोलन का नेतृत्व किया[cite: 11]।"
+      },
+      "key_takeaway": {
+        "en": "Raja Ram Mohan Roy founded the Brahmo Samaj to advance social reform[cite: 11].",
+        "hi": "राजा राममोहन राय ने 1828 में ब्रह्म समाज की स्थापना की[cite: 11]।"
+      }
+    },
+    {
+      "question_id": 130,
+      "question": {
+        "en": "[Q130: History, Page 6] Who led the Revolt of 1857 against the British in Kanpur?",
+        "hi": "[Q130: इतिहास, पृष्ठ 6] कानपुर में 1857 के विद्रोह का नेतृत्व किसने किया था?"
+      },
+      "options": {
+        "a": { "en": "Rani Lakshmibai", "hi": "रानी लक्ष्मीबाई" },
+        "b": { "en": "Nana Saheb", "hi": "नाना साहेब (Nana Saheb)" },
+        "c": { "en": "Kunwar Singh", "hi": "कुंवर सिंह" },
+        "d": { "en": "Begum Hazrat Mahal", "hi": "बेगम हजरत महल" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The adopted son of Peshwa Baji Rao II, assisted by general Tantia Tope.",
+        "hi": "अंतिम पेशवा बाजीराव द्वितीय के दत्तक पुत्र, जिन्होंने तात्या टोपे के साथ मिलकर युद्ध लड़ा।"
+      },
+      "explanation": {
+        "en": "Nana Saheb led the revolt in Kanpur during 1857 alongside Tantia Tope after his pension was cancelled by the British[cite: 11].",
+        "hi": "नाना साहेब ने तात्या टोपे के सहयोग से 1857 के संग्राम में कानपुर से विद्रोह का नेतृत्व किया था[cite: 11]।"
+      },
+      "key_takeaway": {
+        "en": "Nana Saheb commanded the 1857 uprising in Kanpur[cite: 11].",
+        "hi": "कानपुर में 1857 की क्रांति का नेतृत्व नाना साहेब ने किया था[cite: 11]।"
+      }
+    },
+    {
+      "question_id": 131,
+      "question": {
+        "en": "[Q131: History, Page 6] The Indian National Congress (INC) held its foundational session in December 1885 at which city?",
+        "hi": "[Q131: इतिहास, पृष्ठ 6] भारतीय राष्ट्रीय कांग्रेस (INC) की स्थापना दिसंबर 1885 में किस शहर में हुई थी?"
+      },
+      "options": {
+        "a": { "en": "Calcutta", "hi": "कलकत्ता" },
+        "b": { "en": "Bombay", "hi": "बॉम्बे / मुंबई (Bombay)" },
+        "c": { "en": "Madras", "hi": "मद्रास" },
+        "d": { "en": "Delhi", "hi": "दिल्ली" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Convened at Gokuldas Tejpal Sanskrit College with 72 delegates present.",
+        "hi": "गोकुलदास तेजपाल संस्कृत कॉलेज में 72 प्रतिनिधियों की उपस्थिति में आयोजित हुआ था।"
+      },
+      "explanation": {
+        "en": "The INC was established in Bombay in December 1885 under the presidency of W.C. Bonnerjee with 72 delegates attending[cite: 11].",
+        "hi": "भारतीय राष्ट्रीय कांग्रेस की स्थापना दिसंबर 1885 में बॉम्बे के गोकुलदास तेजपाल संस्कृत कॉलेज में हुई थी[cite: 11]।"
+      },
+      "key_takeaway": {
+        "en": "The Indian National Congress held its first meeting in Bombay in 1885[cite: 11].",
+        "hi": "कांग्रेस का प्रथम अधिवेशन दिसंबर 1885 में बॉम्बे में आयोजित हुआ था[cite: 11]।"
+      }
+    },
+    {
+      "question_id": 132,
+      "question": {
+        "en": "[Q132: History, Page 6] Who wrote the influential book 'Gulamgiri' (1873) dedicated to American anti-slavery activists?",
+        "hi": "[Q132: इतिहास, पृष्ठ 6] 1873 में अमेरिकी दास-मुक्ति आंदोलन को समर्पित प्रसिद्ध पुस्तक 'गुलामगिरी' किसने लिखी थी?"
+      },
+      "options": {
+        "a": { "en": "Dr. B.R. Ambedkar", "hi": "डॉ. बी.आर. आंबेडकर" },
+        "b": { "en": "Jyotirao Phule", "hi": "ज्योतिराव फुले (Jyotirao Phule)" },
+        "c": { "en": "Periyar", "hi": "पेरियार" },
+        "d": { "en": "Sri Narayana Guru", "hi": "श्री नारायण गुरु" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "He also established the Satyashodhak Samaj in Maharashtra.",
+        "hi": "उन्होंने महाराष्ट्र में सत्यशोधक समाज की भी स्थापना की थी।"
+      },
+      "explanation": {
+        "en": "Jyotirao Phule authored Gulamgiri in 1873, drawing a parallel between caste oppression and racial slavery in the United States[cite: 11].",
+        "hi": "ज्योतिराव फुले ने 1873 में 'गुलामगिरी' लिखकर भारत के जातिगत उत्पीड़न की तुलना अमेरिकी दासता से की थी[cite: 11]।"
+      },
+      "key_takeaway": {
+        "en": "Jyotirao Phule wrote Gulamgiri to criticize caste hierarchy and oppression[cite: 11].",
+        "hi": "ज्योतिराव फुले ने जातिवाद और उत्पीड़न के विरोध में 'गुलामगिरी' की रचना की[cite: 11]।"
+      }
+    },
+    {
+      "question_id": 133,
+      "question": {
+        "en": "[Q133: History, Page 6] Who was the Viceroy of India who announced the controversial Partition of Bengal in 1905?",
+        "hi": "[Q133: इतिहास, पृष्ठ 6] 1905 में बंगाल विभाजन की घोषणा करने वाले भारत के ब्रिटिश वायसराय कौन थे?"
+      },
+      "options": {
+        "a": { "en": "Lord Curzon", "hi": "लॉर्ड कर्जन (Lord Curzon)" },
+        "b": { "en": "Lord Ripon", "hi": "लॉर्ड रिपन" },
+        "c": { "en": "Lord Lytton", "hi": "लॉर्ड लिटन" },
+        "d": { "en": "Lord Minto", "hi": "लॉर्ड मिंटो" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "This measure sparked the mass Swadeshi and Boycott movements.",
+        "hi": "इस विभाजन के विरोध में देशव्यापी स्वदेशी और बहिष्कार आंदोलन शुरू हुआ था।"
+      },
+      "explanation": {
+        "en": "Lord Curzon decreed the Partition of Bengal in 1905 on administrative pretexts to divide nationalist resistance, provoking the Swadeshi movement[cite: 11].",
+        "hi": "लॉर्ड कर्जन ने 1905 में राष्ट्रवाद को कमजोर करने के उद्देश्य से बंगाल का विभाजन किया था[cite: 11]।"
+      },
+      "key_takeaway": {
+        "en": "Lord Curzon partitioned Bengal in 1905, triggering the Swadeshi movement[cite: 11].",
+        "hi": "लॉर्ड कर्जन ने 1905 में बंगाल का विभाजन किया था[cite: 11]।"
+      }
+    },
+    {
+      "question_id": 134,
+      "question": {
+        "en": "[Q134: History, Page 6] The 'Doctrine of Lapse' annexation policy was enforced by which Governor-General?",
+        "hi": "[Q134: इतिहास, पृष्ठ 6] 'हड़प नीति' (व्यपगत का सिद्धांत / Doctrine of Lapse) किस गवर्नर-जनरल द्वारा लागू की गई थी?"
+      },
+      "options": {
+        "a": { "en": "Lord Wellesley", "hi": "लॉर्ड वेलेजली" },
+        "b": { "en": "Lord Dalhousie", "hi": "लॉर्ड डलहौजी (Lord Dalhousie)" },
+        "c": { "en": "Lord Canning", "hi": "लॉर्ड कैनिंग" },
+        "d": { "en": "Lord Hastings", "hi": "लॉर्ड हेस्टिंग्स" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "He annexed Satara, Sambalpur, Nagpur, and Jhansi under this rule.",
+        "hi": "इसके तहत सतारा, नागपुर और झाँसी जैसे राज्यों को ब्रिटिश साम्राज्य में मिलाया गया।"
+      },
+      "explanation": {
+        "en": "Lord Dalhousie enforced the Doctrine of Lapse, annexing princely states whose rulers died without natural male heirs (e.g., Jhansi, Satara)[cite: 11].",
+        "hi": "लॉर्ड डलहौजी ने निसंतान राजाओं के राज्यों को हड़पने के लिए व्यपगत का सिद्धांत (Doctrine of Lapse) लागू किया था[cite: 11]।"
+      },
+      "key_takeaway": {
+        "en": "Lord Dalhousie used the Doctrine of Lapse to annex Indian states lacking natural male heirs[cite: 11].",
+        "hi": "लॉर्ड डलहौजी ने राज्यों के विलय के लिए हड़प नीति का प्रयोग किया[cite: 11]।"
+      }
+    },
+    {
+      "question_id": 135,
+      "question": {
+        "en": "[Q135: History, Page 6] Who authored 'Akbarnama', the official chronicle of Emperor Akbar's reign?",
+        "hi": "[Q135: इतिहास, पृष्ठ 6] मुगल सम्राट अकबर के शासनकाल के आधिकारिक इतिहास 'अकबरनामा' के लेखक कौन थे?"
+      },
+      "options": {
+        "a": { "en": "Abul Fazl", "hi": "अबुल फजल (Abul Fazl)" },
+        "b": { "en": "Badauni", "hi": "बदायूँनी" },
+        "c": { "en": "Faizi", "hi": "फैजी" },
+        "d": { "en": "Birbal", "hi": "बीरबल" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "One of Akbar's Navratnas, who also authored 'Ain-i-Akbari'.",
+        "hi": "अकबर के नवरत्नों में से एक, जिन्होंने 'आईन-ए-अकबरी' भी लिखी थी।"
+      },
+      "explanation": {
+        "en": "Abul Fazl wrote the three-volume Persian chronicle Akbarnama, including the administrative record Ain-i-Akbari[cite: 11].",
+        "hi": "अबुल फजल ने फारसी भाषा में अकबर के इतिहास पर 'अकबरनामा' और 'आईन-ए-अकबरी' की रचना की थी[cite: 11]।"
+      },
+      "key_takeaway": {
+        "en": "Abul Fazl was the court historian who chronicled Akbar's reign in the Akbarnama[cite: 11].",
+        "hi": "अबुल फजल ने अकबरनामा और आईन-ए-अकबरी लिखी थी[cite: 11]।"
+      }
+    }
+  ]
+}

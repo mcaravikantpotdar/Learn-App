@@ -1,0 +1,1185 @@
+{
+  "metadata": {
+    "exam_title": "HP SCERT Solan - NMMS Grand Mock Exam (Part I: MAT - Section 1)",
+    "exam_title_hindi": "एचपी एससीईआरटी सोलन - एनएमएमएस ग्रैंड मॉक परीक्षा (भाग I: मानसिक योग्यता परीक्षा - खंड 1)",
+    "target_class": "Class VIII",
+    "total_questions_in_section": 45,
+    "question_range": "Q1 to Q45",
+    "source_language": "en",
+    "target_language": "hi",
+    "version": "1.0",
+    "note": "Part 1 of File 1 (Questions 1 to 45). Generated in standardized bilingual format with complete mathematical and logical solutions. To maintain 100% valid JSON syntax without token truncation, MAT is delivered in two seamless 45-question sections."
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "[Q1, Page 1] Complete the number series: 3, 6, 12, 24, 48, ?",
+        "hi": "[Q1, पृष्ठ 1] संख्या श्रृंखला को पूरा करें: 3, 6, 12, 24, 48, ?"
+      },
+      "options": {
+        "a": { "en": "72", "hi": "72" },
+        "b": { "en": "84", "hi": "84" },
+        "c": { "en": "96", "hi": "96" },
+        "d": { "en": "108", "hi": "108" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Each number is multiplied by 2 to get the next term.",
+        "hi": "अगला पद प्राप्त करने के लिए प्रत्येक संख्या को 2 से गुणा किया जाता है।"
+      },
+      "explanation": {
+        "en": "The sequence follows a doubling rule: 3 x 2 = 6, 6 x 2 = 12, 12 x 2 = 24, 24 x 2 = 48, 48 x 2 = 96.",
+        "hi": "श्रृंखला में प्रत्येक पद दोगुना हो रहा है: 3 x 2 = 6, 6 x 2 = 12, 12 x 2 = 24, 24 x 2 = 48, 48 x 2 = 96।"
+      },
+      "key_takeaway": {
+        "en": "A series with a constant ratio of 2 is a geometric progression.",
+        "hi": "समान अनुपात 2 वाली श्रृंखला ज्यामितीय श्रेणी होती है।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "[Q2, Page 1] Find the missing term: 2, 5, 10, 17, 26, ?",
+        "hi": "[Q2, पृष्ठ 1] लुप्त पद ज्ञात कीजिए: 2, 5, 10, 17, 26, ?"
+      },
+      "options": {
+        "a": { "en": "35", "hi": "35" },
+        "b": { "en": "37", "hi": "37" },
+        "c": { "en": "38", "hi": "38" },
+        "d": { "en": "40", "hi": "40" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Differences are consecutive odd numbers: +3, +5, +7, +9, +11.",
+        "hi": "पदों के बीच का अंतर विषम संख्याएँ हैं: +3, +5, +7, +9, +11।"
+      },
+      "explanation": {
+        "en": "Differences increase by 2: 2+3=5, 5+5=10, 10+7=17, 17+9=26, 26+11=37 (or n^2 + 1: 6^2 + 1 = 37).",
+        "hi": "अंतर में 2 की वृद्धि: 2+3=5, 5+5=10, 10+7=17, 17+9=26, 26+11=37 (या n^2 + 1: 6^2 + 1 = 37)।"
+      },
+      "key_takeaway": {
+        "en": "Consecutive odd differences correspond to quadratic sequences of the form n^2 + 1.",
+        "hi": "लगातार विषम संख्याओं का अंतर n^2 + 1 रूप की द्विघात श्रृंखला बनाता है।"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "[Q3, Page 1] Complete the cube-difference series: 0, 7, 26, 63, 124, ?",
+        "hi": "[Q3, पृष्ठ 1] घन-अंतर श्रृंखला को पूरा करें: 0, 7, 26, 63, 124, ?"
+      },
+      "options": {
+        "a": { "en": "180", "hi": "180" },
+        "b": { "en": "215", "hi": "215" },
+        "c": { "en": "216", "hi": "216" },
+        "d": { "en": "240", "hi": "240" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Each term is 1 less than a cube: n^3 - 1.",
+        "hi": "प्रत्येक पद पूर्ण घन से 1 कम है: n^3 - 1।"
+      },
+      "explanation": {
+        "en": "1^3-1=0, 2^3-1=7, 3^3-1=26, 4^3-1=63, 5^3-1=124; next is 6^3-1 = 216 - 1 = 215.",
+        "hi": "1^3-1=0, 2^3-1=7, 3^3-1=26, 4^3-1=63, 5^3-1=124; अगला पद 6^3-1 = 216 - 1 = 215 होगा।"
+      },
+      "key_takeaway": {
+        "en": "Recognize n^3 - 1 sequences: 0, 7, 26, 63, 124, 215.",
+        "hi": "n^3 - 1 वाले अनुक्रम (0, 7, 26, 63, 124, 215) को ध्यान में रखें।"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "[Q4, Page 1] What comes next in the letter series? C, F, I, L, O, ?",
+        "hi": "[Q4, पृष्ठ 1] अक्षर श्रृंखला में अगला पद क्या होगा? C, F, I, L, O, ?"
+      },
+      "options": {
+        "a": { "en": "P", "hi": "P" },
+        "b": { "en": "Q", "hi": "Q" },
+        "c": { "en": "R", "hi": "R" },
+        "d": { "en": "S", "hi": "S" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Each letter advances by +3 positions.",
+        "hi": "प्रत्येक अक्षर 3 स्थान आगे बढ़ रहा है।"
+      },
+      "explanation": {
+        "en": "C(3) + 3 = F(6); F(6) + 3 = I(9); I(9) + 3 = L(12); L(12) + 3 = O(15); O(15) + 3 = R(18).",
+        "hi": "C(3) + 3 = F(6); F(6) + 3 = I(9); I(9) + 3 = L(12); L(12) + 3 = O(15); O(15) + 3 = R(18)।"
+      },
+      "key_takeaway": {
+        "en": "Letter shifts by a fixed value follow multiples of that position step.",
+        "hi": "निश्चित संख्या से आगे बढ़ने वाली अक्षर श्रृंखला स्थानीय मान के गुणजों पर आधारित होती है।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "[Q5, Page 1] Complete the sequence: AZ, BY, CX, DW, ?",
+        "hi": "[Q5, पृष्ठ 1] अनुक्रम को पूरा करें: AZ, BY, CX, DW, ?"
+      },
+      "options": {
+        "a": { "en": "EV", "hi": "EV" },
+        "b": { "en": "FU", "hi": "FU" },
+        "c": { "en": "GT", "hi": "GT" },
+        "d": { "en": "HS", "hi": "HS" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "First letter increases by 1; second letter decreases by 1 (opposite letter pairs).",
+        "hi": "पहला अक्षर +1 बढ़ रहा है; दूसरा अक्षर -1 घट रहा है (विपरीत अक्षर युग्म)।"
+      },
+      "explanation": {
+        "en": "First letters: A -> B -> C -> D -> E. Second letters: Z -> Y -> X -> W -> V. Opposite pair sum = 27 (E=5, V=22). Result: EV.",
+        "hi": "प्रथम अक्षर: A -> B -> C -> D -> E। द्वितीय अक्षर: Z -> Y -> X -> W -> V। विपरीत युग्म योग = 27 (E=5, V=22)। परिणाम: EV।"
+      },
+      "key_takeaway": {
+        "en": "Pairs whose letter ranks sum to 27 are opposite alphabet pairs.",
+        "hi": "जिन अक्षरों के स्थानीय मान का योग 27 होता है, वे विपरीत अक्षर युग्म कहलाते हैं।"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "[Q6, Page 1] Find the next fraction: 1/2, 3/4, 5/8, 7/16, ?",
+        "hi": "[Q6, पृष्ठ 1] अगली भिन्न ज्ञात कीजिए: 1/2, 3/4, 5/8, 7/16, ?"
+      },
+      "options": {
+        "a": { "en": "9/32", "hi": "9/32" },
+        "b": { "en": "11/32", "hi": "11/32" },
+        "c": { "en": "9/24", "hi": "9/24" },
+        "d": { "en": "8/32", "hi": "8/32" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Numerator increases by +2; denominator multiplies by 2.",
+        "hi": "अंश में +2 की वृद्धि हो रही है; हर 2 से गुणा हो रहा है।"
+      },
+      "explanation": {
+        "en": "Numerators: 1, 3, 5, 7, 9 (+2 each). Denominators: 2, 4, 8, 16, 32 (x2 each). Fraction = 9/32.",
+        "hi": "अंश: 1, 3, 5, 7, 9 (+2 की वृद्धि)। हर: 2, 4, 8, 16, 32 (2 से गुणा)। भिन्न = 9/32।"
+      },
+      "key_takeaway": {
+        "en": "Track numerators and denominators independently in fractional series.",
+        "hi": "भिन्न श्रृंखलाओं में अंश और हर के नियमों का अलग-अलग विश्लेषण करें।"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "[Q7, Page 1] Find the missing number: 4, 9, 25, 49, 121, ?",
+        "hi": "[Q7, पृष्ठ 1] लुप्त संख्या ज्ञात कीजिए: 4, 9, 25, 49, 121, ?"
+      },
+      "options": {
+        "a": { "en": "144", "hi": "144" },
+        "b": { "en": "169", "hi": "169" },
+        "c": { "en": "196", "hi": "196" },
+        "d": { "en": "225", "hi": "225" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "These are squares of consecutive prime numbers: 2, 3, 5, 7, 11...",
+        "hi": "ये क्रमागत अभाज्य संख्याओं के वर्ग हैं: 2, 3, 5, 7, 11..."
+      },
+      "explanation": {
+        "en": "The sequence is 2^2, 3^2, 5^2, 7^2, 11^2. The next prime number after 11 is 13, and 13^2 = 169.",
+        "hi": "यह अनुक्रम 2^2, 3^2, 5^2, 7^2, 11^2 है। 11 के बाद अगली अभाज्य संख्या 13 है, तथा 13^2 = 169।"
+      },
+      "key_takeaway": {
+        "en": "Prime squares exclude composite squares like 4^2, 6^2, and 8^2.",
+        "hi": "अभाज्य संख्याओं के वर्ग में 4^2, 6^2 जैसे भाज्य वर्ग शामिल नहीं होते।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "[Q8, Page 1] Complete the alternating series: 4, 18, 7, 15, 10, 12, 13, ?",
+        "hi": "[Q8, पृष्ठ 1] एकांतर श्रृंखला को पूरा करें: 4, 18, 7, 15, 10, 12, 13, ?"
+      },
+      "options": {
+        "a": { "en": "8", "hi": "8" },
+        "b": { "en": "9", "hi": "9" },
+        "c": { "en": "10", "hi": "10" },
+        "d": { "en": "11", "hi": "11" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Series 1 (+3): 4, 7, 10, 13. Series 2 (-3): 18, 15, 12, ?",
+        "hi": "पहली श्रृंखला (+3): 4, 7, 10, 13। दूसरी श्रृंखला (-3): 18, 15, 12, ?"
+      },
+      "explanation": {
+        "en": "Odd positions add 3 (4, 7, 10, 13). Even positions subtract 3: 18 - 3 = 15; 15 - 3 = 12; 12 - 3 = 9.",
+        "hi": "विषम स्थानों में 3 जुड़ रहा है (4, 7, 10, 13)। सम स्थानों में 3 घट रहा है: 18 - 3 = 15, 15 - 3 = 12, 12 - 3 = 9।"
+      },
+      "key_takeaway": {
+        "en": "Interleaved series alternate two completely independent mathematical patterns.",
+        "hi": "एकांतर श्रृंखलाओं में दो स्वतंत्र गणितीय नियम बारी-बारी से चलते हैं।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "[Q9, Page 1] Complete the Fibonacci sequence: 2, 3, 5, 8, 13, 21, ?",
+        "hi": "[Q9, पृष्ठ 1] फाइबोनैचि अनुक्रम को पूरा करें: 2, 3, 5, 8, 13, 21, ?"
+      },
+      "options": {
+        "a": { "en": "29", "hi": "29" },
+        "b": { "en": "31", "hi": "31" },
+        "c": { "en": "34", "hi": "34" },
+        "d": { "en": "36", "hi": "36" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Each term is the sum of the two preceding terms.",
+        "hi": "प्रत्येक पद पिछले दो पदों का योग होता है।"
+      },
+      "explanation": {
+        "en": "2+3=5, 3+5=8, 5+8=13, 8+13=21. The next term is 13 + 21 = 34.",
+        "hi": "2+3=5, 3+5=8, 5+8=13, 8+13=21। अगला पद 13 + 21 = 34 होगा।"
+      },
+      "key_takeaway": {
+        "en": "Fibonacci sequences form each term by adding the prior two numbers.",
+        "hi": "फाइबोनैचि श्रृंखला में प्रत्येक पद पिछले दो पदों को जोड़ने से बनता है।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "[Q10, Page 1] Complete the alphanumeric series: A2B, C4D, E8F, G16H, ?",
+        "hi": "[Q10, पृष्ठ 1] अल्फ़ान्यूमेरिक श्रृंखला को पूरा करें: A2B, C4D, E8F, G16H, ?"
+      },
+      "options": {
+        "a": { "en": "I24J", "hi": "I24J" },
+        "b": { "en": "I32J", "hi": "I32J" },
+        "c": { "en": "H32I", "hi": "H32I" },
+        "d": { "en": "J32K", "hi": "J32K" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Letters step forward by +2; numbers double (x 2).",
+        "hi": "अक्षर 2 स्थान आगे बढ़ते हैं; संख्याएं दोगुनी (x 2) होती हैं।"
+      },
+      "explanation": {
+        "en": "1st letter: A(+2)->C(+2)->E(+2)->G(+2)->I. Number: 2, 4, 8, 16, 32. 3rd letter: B(+2)->D(+2)->F(+2)->H(+2)->J. Result: I32J.",
+        "hi": "पहला अक्षर: A(+2)->C(+2)->E(+2)->G(+2)->I। संख्या: 2, 4, 8, 16, 32। तीसरा अक्षर: B(+2)->D(+2)->F(+2)->H(+2)->J। उत्तर: I32J।"
+      },
+      "key_takeaway": {
+        "en": "Resolve multi-character series by analyzing each position independently.",
+        "hi": "बहु-चरित्र श्रृंखला में प्रत्येक स्थान का अलग-अलग विश्लेषण करें।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "[Q11, Page 1] Find the missing term: 100, 99, 96, 91, 84, 75, ?",
+        "hi": "[Q11, पृष्ठ 1] लुप्त पद ज्ञात कीजिए: 100, 99, 96, 91, 84, 75, ?"
+      },
+      "options": {
+        "a": { "en": "64", "hi": "64" },
+        "b": { "en": "66", "hi": "66" },
+        "c": { "en": "68", "hi": "68" },
+        "d": { "en": "70", "hi": "70" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Decrements are consecutive odd numbers: -1, -3, -5, -7, -9, -11.",
+        "hi": "घटती संख्याएं क्रमागत विषम संख्याएं हैं: -1, -3, -5, -7, -9, -11।"
+      },
+      "explanation": {
+        "en": "100-1=99, 99-3=96, 96-5=91, 91-7=84, 84-9=75. Next: 75 - 11 = 64.",
+        "hi": "100-1=99, 99-3=96, 96-5=91, 91-7=84, 84-9=75। अगला पद: 75 - 11 = 64।"
+      },
+      "key_takeaway": {
+        "en": "Successive odd subtractions reduce values rapidly.",
+        "hi": "लगातार विषम संख्याओं को घटाने से मान तेजी से घटता है।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "[Q12, Page 1] Complete the sequence: 1, 8, 27, 64, 125, ?",
+        "hi": "[Q12, पृष्ठ 1] अनुक्रम को पूरा करें: 1, 8, 27, 64, 125, ?"
+      },
+      "options": {
+        "a": { "en": "196", "hi": "196" },
+        "b": { "en": "216", "hi": "216" },
+        "c": { "en": "225", "hi": "225" },
+        "d": { "en": "256", "hi": "256" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Consecutive cubes: 1^3, 2^3, 3^3, 4^3, 5^3...",
+        "hi": "लगातार घन संख्याएं: 1^3, 2^3, 3^3, 4^3, 5^3..."
+      },
+      "explanation": {
+        "en": "The terms are n^3: 1^3=1, 2^3=8, 3^3=27, 4^3=64, 5^3=125. Next is 6^3 = 216.",
+        "hi": "यह n^3 की श्रृंखला है: 1^3=1, 2^3=8, 3^3=27, 4^3=64, 5^3=125। अगला पद 6^3 = 216 होगा।"
+      },
+      "key_takeaway": {
+        "en": "Familiarity with standard integer cubes ensures fast problem solving.",
+        "hi": "घन संख्याओं को याद रखने से प्रश्नों को तेजी से हल किया जा सकता है।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "[Q13, Page 1] Find the missing number: [(2, 3 -> 13), (4, 1 -> 17), (5, 2 -> ?)]",
+        "hi": "[Q13, पृष्ठ 1] लुप्त संख्या ज्ञात कीजिए: [(2, 3 -> 13), (4, 1 -> 17), (5, 2 -> ?)]"
+      },
+      "options": {
+        "a": { "en": "27", "hi": "27" },
+        "b": { "en": "29", "hi": "29" },
+        "c": { "en": "31", "hi": "31" },
+        "d": { "en": "33", "hi": "33" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Apply sum of squares: a^2 + b^2.",
+        "hi": "वर्गों का योग नियम लागू करें: a^2 + b^2।"
+      },
+      "explanation": {
+        "en": "2^2 + 3^2 = 4 + 9 = 13; 4^2 + 1^2 = 16 + 1 = 17. For (5, 2): 5^2 + 2^2 = 25 + 4 = 29.",
+        "hi": "2^2 + 3^2 = 4 + 9 = 13; 4^2 + 1^2 = 16 + 1 = 17। (5, 2) के लिए: 5^2 + 2^2 = 25 + 4 = 29।"
+      },
+      "key_takeaway": {
+        "en": "Matrix pairing frequently relies on sum-of-squares logic a^2 + b^2.",
+        "hi": "संख्या युग्मों में अक्सर वर्गों के योग (a^2 + b^2) का नियम लागू होता है।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "[Q14, Page 1] What comes next? ZA, YB, XC, WD, ?",
+        "hi": "[Q14, पृष्ठ 1] अगला पद क्या होगा? ZA, YB, XC, WD, ?"
+      },
+      "options": {
+        "a": { "en": "VE", "hi": "VE" },
+        "b": { "en": "UF", "hi": "UF" },
+        "c": { "en": "TG", "hi": "TG" },
+        "d": { "en": "SH", "hi": "SH" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "1st letter moves backward from Z; 2nd letter moves forward from A.",
+        "hi": "पहला अक्षर Z से पीछे और दूसरा अक्षर A से आगे बढ़ता है।"
+      },
+      "explanation": {
+        "en": "First letter: Z -> Y -> X -> W -> V (-1). Second letter: A -> B -> C -> D -> E (+1). Combined: VE.",
+        "hi": "पहला अक्षर: Z -> Y -> X -> W -> V (-1)। दूसरा अक्षर: A -> B -> C -> D -> E (+1)। उत्तर: VE।"
+      },
+      "key_takeaway": {
+        "en": "Paired series can combine forward and backward alphabetic shifts simultaneously.",
+        "hi": "अक्षर युग्मों में एक साथ आगे और पीछे का क्रम चल सकता है।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "[Q15, Page 1] Complete the series: 7, 14, 28, 56, 112, ?",
+        "hi": "[Q15, पृष्ठ 1] श्रृंखला को पूरा करें: 7, 14, 28, 56, 112, ?"
+      },
+      "options": {
+        "a": { "en": "212", "hi": "212" },
+        "b": { "en": "224", "hi": "224" },
+        "c": { "en": "240", "hi": "240" },
+        "d": { "en": "248", "hi": "248" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Double the previous number: x 2.",
+        "hi": "पिछली संख्या को 2 से गुणा करें।"
+      },
+      "explanation": {
+        "en": "Each number is multiplied by 2: 7x2=14, 14x2=28, 28x2=56, 56x2=112, 112x2=224.",
+        "hi": "प्रत्येक संख्या 2 से गुणा हो रही है: 7x2=14, 14x2=28, 28x2=56, 56x2=112, 112x2=224।"
+      },
+      "key_takeaway": {
+        "en": "Doubling progressions multiply each successive term by 2.",
+        "hi": "दोगुनी प्रगति में प्रत्येक पद पिछले पद का 2 गुना होता है।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "[Q16, Page 1] Complete the analogy: Train : Track :: Boat : ?",
+        "hi": "[Q16, पृष्ठ 1] सादृश्यता को पूरा करें: रेलगाड़ी : पटरी :: नाव : ?"
+      },
+      "options": {
+        "a": { "en": "Road", "hi": "सड़क" },
+        "b": { "en": "Water", "hi": "पानी / जल" },
+        "c": { "en": "Air", "hi": "हवा" },
+        "d": { "en": "Sky", "hi": "आकाश" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Identify the physical medium on which the vehicle moves.",
+        "hi": "उस माध्यम की पहचान करें जिस पर वाहन चलता है।"
+      },
+      "explanation": {
+        "en": "A train runs on tracks; similarly, a boat moves on water.",
+        "hi": "जिस प्रकार रेलगाड़ी पटरी पर चलती है, उसी प्रकार नाव पानी पर चलती है।"
+      },
+      "key_takeaway": {
+        "en": "Match vehicles to their direct operational medium.",
+        "hi": "वाहन को उसके संचालन के प्रत्यक्ष माध्यम से सुमेलित करें।"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "[Q17, Page 1] Complete the analogy: Eye : See :: Ear : ?",
+        "hi": "[Q17, पृष्ठ 1] सादृश्यता को पूरा करें: आँख : देखना :: कान : ?"
+      },
+      "options": {
+        "a": { "en": "Hear", "hi": "सुनना" },
+        "b": { "en": "Smell", "hi": "सूँघना" },
+        "c": { "en": "Taste", "hi": "चखना" },
+        "d": { "en": "Touch", "hi": "स्पर्श करना" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Identify the primary sensory function of the ear.",
+        "hi": "कान के मुख्य संवेदी कार्य की पहचान करें।"
+      },
+      "explanation": {
+        "en": "The eye is used for seeing; the ear is used for hearing.",
+        "hi": "आँख देखने का कार्य करती है; कान सुनने का कार्य करता है।"
+      },
+      "key_takeaway": {
+        "en": "Sense organs pair directly with their primary sensory functions.",
+        "hi": "ज्ञानेंद्रियों को उनके प्राथमिक संवेदी कार्यों से जोड़ा जाता है।"
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "[Q18, Page 1] Complete the analogy: India : New Delhi :: Japan : ?",
+        "hi": "[Q18, पृष्ठ 1] सादृश्यता को पूरा करें: भारत : नई दिल्ली :: जापान : ?"
+      },
+      "options": {
+        "a": { "en": "Beijing", "hi": "बीजिंग" },
+        "b": { "en": "Tokyo", "hi": "टोक्यो" },
+        "c": { "en": "Seoul", "hi": "सियोल" },
+        "d": { "en": "Bangkok", "hi": "बैंकॉक" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Identify the capital city of Japan.",
+        "hi": "जापान की राजधानी की पहचान करें।"
+      },
+      "explanation": {
+        "en": "New Delhi is the capital of India; Tokyo is the capital of Japan.",
+        "hi": "नई दिल्ली भारत की राजधानी है; उसी प्रकार टोक्यो जापान की राजधानी है।"
+      },
+      "key_takeaway": {
+        "en": "Country-to-capital analogies test knowledge of sovereign capitals.",
+        "hi": "देश-राजधानी सादृश्यता में देशों को उनकी राजधानियों से मिलाया जाता है।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "[Q19, Page 1] Complete the analogy: Carpenter : Saw :: Tailor : ?",
+        "hi": "[Q19, पृष्ठ 1] सादृश्यता को पूरा करें: बढ़ई : आरी :: दर्जी : ?"
+      },
+      "options": {
+        "a": { "en": "Pen", "hi": "कलम" },
+        "b": { "en": "Needle", "hi": "सुई" },
+        "c": { "en": "Hammer", "hi": "हथौड़ा" },
+        "d": { "en": "Scalpel", "hi": "चाकू" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Identify the primary hand tool used by a tailor.",
+        "hi": "दर्जी द्वारा उपयोग किए जाने वाले मुख्य उपकरण की पहचान करें।"
+      },
+      "explanation": {
+        "en": "A carpenter uses a saw as a primary tool; a tailor uses a needle.",
+        "hi": "बढ़ई का मुख्य औजार आरी है; दर्जी का मुख्य उपकरण सुई है।"
+      },
+      "key_takeaway": {
+        "en": "Worker-tool analogies connect occupations with their primary instruments.",
+        "hi": "व्यवसाय को उसके प्रमुख कार्य-औजार से जोड़ा जाता है।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "[Q20, Page 1] Complete the analogy: Kilogram : Mass :: Metre : ?",
+        "hi": "[Q20, पृष्ठ 1] सादृश्यता को पूरा करें: किलोग्राम : द्रव्यमान :: मीटर : ?"
+      },
+      "options": {
+        "a": { "en": "Time", "hi": "समय" },
+        "b": { "en": "Length", "hi": "लंबाई" },
+        "c": { "en": "Temperature", "hi": "तापमान" },
+        "d": { "en": "Volume", "hi": "आयतन" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Metre is the SI unit of which physical quantity?",
+        "hi": "मीटर किस भौतिक राशि का SI मात्रक है?"
+      },
+      "explanation": {
+        "en": "Kilogram is the SI unit of mass; Metre is the SI unit of length.",
+        "hi": "किलोग्राम द्रव्यमान का मात्रक है; मीटर लंबाई का SI मात्रक है।"
+      },
+      "key_takeaway": {
+        "en": "Unit-quantity analogies link SI metrics to their physical dimensions.",
+        "hi": "इकाइयों को उनकी संबंधित भौतिक राशियों से सुमेलित किया जाता है।"
+      }
+    },
+    {
+      "question_id": 21,
+      "question": {
+        "en": "[Q21, Page 2] Complete the analogy: Ammeter : Electric Current :: Hygrometer : ?",
+        "hi": "[Q21, पृष्ठ 2] सादृश्यता को पूरा करें: एमीटर : विद्युत धारा :: हाइग्रोमीटर : ?"
+      },
+      "options": {
+        "a": { "en": "Humidity", "hi": "आर्द्रता / नमी" },
+        "b": { "en": "Pressure", "hi": "दबाव" },
+        "c": { "en": "Speed", "hi": "गति" },
+        "d": { "en": "Temperature", "hi": "तापमान" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "A hygrometer measures atmospheric moisture.",
+        "hi": "हाइग्रोमीटर वायुमंडलीय नमी को मापता है।"
+      },
+      "explanation": {
+        "en": "An ammeter measures electric current; a hygrometer measures relative humidity.",
+        "hi": "एमीटर विद्युत धारा मापता है; हाइग्रोमीटर वायुमंडलीय आर्द्रता (नमी) मापता है।"
+      },
+      "key_takeaway": {
+        "en": "Scientific instruments correspond to specific physical variables.",
+        "hi": "वैज्ञानिक उपकरण विशिष्ट भौतिक राशियों के मापन के लिए होते हैं।"
+      }
+    },
+    {
+      "question_id": 22,
+      "question": {
+        "en": "[Q22, Page 2] Complete the analogy: Photosynthesis : Chloroplast :: Respiration : ?",
+        "hi": "[Q22, पृष्ठ 2] सादृश्यता को पूरा करें: प्रकाश संश्लेषण : क्लोरोप्लास्ट :: श्वसन : ?"
+      },
+      "options": {
+        "a": { "en": "Nucleus", "hi": "केंद्रक" },
+        "b": { "en": "Mitochondria", "hi": "माइटोकॉन्ड्रिया" },
+        "c": { "en": "Ribosome", "hi": "राइबोसोम" },
+        "d": { "en": "Vacuole", "hi": "रसधानी" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Cellular respiration occurs in the 'powerhouse of the cell'.",
+        "hi": "कोशिकीय श्वसन 'कोशिका के पावरहाउस' में होता है।"
+      },
+      "explanation": {
+        "en": "Photosynthesis occurs in chloroplasts; cellular respiration takes place in mitochondria.",
+        "hi": "प्रकाश संश्लेषण क्लोरोप्लास्ट में होता है; कोशिकीय श्वसन माइटोकॉन्ड्रिया में संपन्न होता है।"
+      },
+      "key_takeaway": {
+        "en": "Cellular metabolic processes pair with their designated organelles.",
+        "hi": "कोशिकीय क्रियाएँ उनके संबंधित कोशिकांगों से जुड़ी होती हैं।"
+      }
+    },
+    {
+      "question_id": 23,
+      "question": {
+        "en": "[Q23, Page 2] Complete the analogy: Penicillin : Fleming :: Smallpox Vaccine : ?",
+        "hi": "[Q23, पृष्ठ 2] सादृश्यता को पूरा करें: पेनिसिलिन : फ्लेमिंग :: चेचक का टीका : ?"
+      },
+      "options": {
+        "a": { "en": "Pasteur", "hi": "पाश्चर" },
+        "b": { "en": "Jenner", "hi": "जेनर" },
+        "c": { "en": "Koch", "hi": "कोच" },
+        "d": { "en": "Darwin", "hi": "डार्विन" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Edward Jenner developed the smallpox vaccine in 1796.",
+        "hi": "एडवर्ड जेनर ने 1796 में चेचक के टीके का आविष्कार किया था।"
+      },
+      "explanation": {
+        "en": "Alexander Fleming discovered penicillin; Edward Jenner developed the smallpox vaccine.",
+        "hi": "पेनिसिलिन की खोज अलेक्जेंडर फ्लेमिंग ने की थी; चेचक का टीका एडवर्ड जेनर ने बनाया था।"
+      },
+      "key_takeaway": {
+        "en": "Match medical breakthroughs to their discovering scientists.",
+        "hi": "चिकित्सा खोजों का मिलान उनके अन्वेषक वैज्ञानिकों से करें।"
+      }
+    },
+    {
+      "question_id": 24,
+      "question": {
+        "en": "[Q24, Page 2] Complete the analogy: Speed : Scalar :: Velocity : ?",
+        "hi": "[Q24, पृष्ठ 2] सादृश्यता को पूरा करें: चाल : अदिश :: वेग : ?"
+      },
+      "options": {
+        "a": { "en": "Vector", "hi": "सदिश" },
+        "b": { "en": "Scalar", "hi": "अदिश" },
+        "c": { "en": "Constant", "hi": "अचर" },
+        "d": { "en": "Mass", "hi": "द्रव्यमान" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Velocity possesses both magnitude and direction.",
+        "hi": "वेग में परिमाण के साथ-साथ दिशा भी होती है।"
+      },
+      "explanation": {
+        "en": "Speed has magnitude only (scalar); velocity has magnitude and direction (vector).",
+        "hi": "चाल में केवल परिमाण होता है (अदिश); वेग में परिमाण और दिशा दोनों होते हैं (सदिश)।"
+      },
+      "key_takeaway": {
+        "en": "Quantities with magnitude and direction are vectors.",
+        "hi": "परिमाण और दिशा वाली भौतिक राशियाँ सदिश कहलाती हैं।"
+      }
+    },
+    {
+      "question_id": 25,
+      "question": {
+        "en": "[Q25, Page 2] Complete the analogy: Bhimtal : Lake :: Rohtang : ?",
+        "hi": "[Q25, पृष्ठ 2] सादृश्यता को पूरा करें: भीमताल : झील :: रोहतांग : ?"
+      },
+      "options": {
+        "a": { "en": "Glacier", "hi": "हिमनद" },
+        "b": { "en": "Pass", "hi": "दर्रा" },
+        "c": { "en": "River", "hi": "नदी" },
+        "d": { "en": "Peak", "hi": "चोटी" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Rohtang is a high mountain pass in Himachal Pradesh.",
+        "hi": "रोहतांग हिमाचल प्रदेश का एक प्रमुख पर्वतीय दर्रा है।"
+      },
+      "explanation": {
+        "en": "Bhimtal is a lake; Rohtang is a mountain pass in Himachal Pradesh.",
+        "hi": "भीमताल एक झील है; रोहतांग हिमाचल प्रदेश में स्थित एक दर्रा (Pass) है।"
+      },
+      "key_takeaway": {
+        "en": "Geographical locations pair with their landform classifications.",
+        "hi": "भौगोलिक स्थलों को उनकी सही भू-आकृतिक श्रेणी से पहचानें।"
+      }
+    },
+    {
+      "question_id": 26,
+      "question": {
+        "en": "[Q26, Page 2] Complete the analogy: Earth : Planet :: Sun : ?",
+        "hi": "[Q26, पृष्ठ 2] सादृश्यता को पूरा करें: पृथ्वी : ग्रह :: सूर्य : ?"
+      },
+      "options": {
+        "a": { "en": "Moon", "hi": "चंद्रमा" },
+        "b": { "en": "Star", "hi": "तारा" },
+        "c": { "en": "Comet", "hi": "धूमकेतु" },
+        "d": { "en": "Asteroid", "hi": "क्षुद्रग्रह" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The Sun is a self-luminous celestial body.",
+        "hi": "सूर्य एक स्वयं-प्रकाशित खगोलीय पिंड है।"
+      },
+      "explanation": {
+        "en": "Earth is classified as a planet; the Sun is classified as a star.",
+        "hi": "पृथ्वी एक ग्रह है; सूर्य एक तारा (Star) है।"
+      },
+      "key_takeaway": {
+        "en": "Classify celestial bodies into stars, planets, and moons.",
+        "hi": "खगोलीय पिंडों का वर्गीकरण तारे, ग्रह और उपग्रह के रूप में होता है।"
+      }
+    },
+    {
+      "question_id": 27,
+      "question": {
+        "en": "[Q27, Page 2] Complete the analogy: Thermometer : Temperature :: Barometer : ?",
+        "hi": "[Q27, पृष्ठ 2] सादृश्यता को पूरा करें: थर्मामीटर : तापमान :: बैरोमीटर : ?"
+      },
+      "options": {
+        "a": { "en": "Pressure", "hi": "दबाव / वायुदाब" },
+        "b": { "en": "Speed", "hi": "गति" },
+        "c": { "en": "Mass", "hi": "द्रव्यमान" },
+        "d": { "en": "Depth", "hi": "गहराई" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "A barometer measures atmospheric pressure.",
+        "hi": "बैरोमीटर से वायुमंडलीय दबाव मापा जाता है।"
+      },
+      "explanation": {
+        "en": "A thermometer measures temperature; a barometer measures atmospheric pressure.",
+        "hi": "थर्मामीटर तापमान मापता है; बैरोमीटर वायुदाब मापता है।"
+      },
+      "key_takeaway": {
+        "en": "Barometers measure atmospheric pressure in millibars.",
+        "hi": "बैरोमीटर वायुमंडलीय दबाव मापने का उपकरण है।"
+      }
+    },
+    {
+      "question_id": 28,
+      "question": {
+        "en": "[Q28, Page 2] Complete the analogy: Doctor : Hospital :: Teacher : ?",
+        "hi": "[Q28, पृष्ठ 2] सादृश्यता को पूरा करें: डॉक्टर : अस्पताल :: शिक्षक : ?"
+      },
+      "options": {
+        "a": { "en": "Office", "hi": "कार्यालय" },
+        "b": { "en": "School", "hi": "विद्यालय / स्कूल" },
+        "c": { "en": "Court", "hi": "न्यायालय" },
+        "d": { "en": "Factory", "hi": "कारखाना" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Identify the primary institutional workplace of a teacher.",
+        "hi": "शिक्षक के मुख्य कार्यस्थल की पहचान करें।"
+      },
+      "explanation": {
+        "en": "A doctor works in a hospital; a teacher works in a school.",
+        "hi": "डॉक्टर अस्पताल में कार्य करता है; शिक्षक विद्यालय में कार्य करता है।"
+      },
+      "key_takeaway": {
+        "en": "Workplace analogies connect professions with their typical work settings.",
+        "hi": "पेशेवर सादृश्यता व्यवसायों को उनके कार्यस्थल से जोड़ती है।"
+      }
+    },
+    {
+      "question_id": 29,
+      "question": {
+        "en": "[Q29, Page 2] Complete the analogy: Cow : Calf :: Dog : ?",
+        "hi": "[Q29, पृष्ठ 2] सादृश्यता को पूरा करें: गाय : बछड़ा :: कुत्ता : ?"
+      },
+      "options": {
+        "a": { "en": "Kitten", "hi": "बिल्ली का बच्चा" },
+        "b": { "en": "Puppy", "hi": "पिल्ला" },
+        "c": { "en": "Cub", "hi": "शावक" },
+        "d": { "en": "Foal", "hi": "बछेड़ा" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Identify the offspring of a canine (dog).",
+        "hi": "कुत्ते के बच्चे को क्या कहा जाता है?"
+      },
+      "explanation": {
+        "en": "A calf is the young of a cow; a puppy is the young of a dog.",
+        "hi": "गाय के बच्चे को बछड़ा कहते हैं; कुत्ते के बच्चे को पिल्ला कहते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Match adult animals to their specific biological juvenile terms.",
+        "hi": "वयस्क पशुओं को उनके बच्चों के विशिष्ट नामों से सुमेलित करें।"
+      }
+    },
+    {
+      "question_id": 30,
+      "question": {
+        "en": "[Q30, Page 2] Complete the analogy: Acoustics : Sound :: Optics : ?",
+        "hi": "[Q30, पृष्ठ 2] सादृश्यता को पूरा करें: ध्वनिकी : ध्वनि :: प्रकाशिकी : ?"
+      },
+      "options": {
+        "a": { "en": "Heat", "hi": "ऊष्मा" },
+        "b": { "en": "Light", "hi": "प्रकाश" },
+        "c": { "en": "Motion", "hi": "गति" },
+        "d": { "en": "Electricity", "hi": "विद्युत" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Optics is the branch of physics dedicated to studying light.",
+        "hi": "प्रकाशिकी भौतिकी की वह शाखा है जो प्रकाश का अध्ययन करती है।"
+      },
+      "explanation": {
+        "en": "Acoustics is the study of sound; optics is the study of light.",
+        "hi": "ध्वनिकी ध्वनि का अध्ययन है; प्रकाशिकी प्रकाश का अध्ययन है।"
+      },
+      "key_takeaway": {
+        "en": "Scientific branches pair with their respective physical phenomena.",
+        "hi": "विज्ञान की शाखाओं को उनके अध्ययन विषयों से जोड़ा जाता है।"
+      }
+    },
+    {
+      "question_id": 31,
+      "question": {
+        "en": "[Q31, Page 2] Choose the odd one out: Eye, Nose, Ear, Hand",
+        "hi": "[Q31, पृष्ठ 2] विजातीय (विषम) विकल्प चुनिए: आँख, नाक, कान, हाथ"
+      },
+      "options": {
+        "a": { "en": "Eye", "hi": "आँख" },
+        "b": { "en": "Nose", "hi": "नाक" },
+        "c": { "en": "Ear", "hi": "कान" },
+        "d": { "en": "Hand", "hi": "हाथ" }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Three options are primary facial sense organs; one is an external motor limb.",
+        "hi": "तीन विकल्प मुख्य ज्ञानेंद्रियां हैं; एक बाह्य शारीरिक अंग (अग्रपाद) है।"
+      },
+      "explanation": {
+        "en": "Eye, Nose, and Ear are primary sensory organs; Hand is a motor limb.",
+        "hi": "आँख, नाक और कान संवेदी ज्ञानेंद्रियां हैं; हाथ एक शारीरिक गति अंग (मोटर लिम्ब) है।"
+      },
+      "key_takeaway": {
+        "en": "Separate specialized facial sense organs from motor appendages.",
+        "hi": "ज्ञानेंद्रियों और शारीरिक अंगों के बीच अंतर स्पष्ट रखें।"
+      }
+    },
+    {
+      "question_id": 32,
+      "question": {
+        "en": "[Q32, Page 2] Choose the odd one out: Iron, Copper, Mercury, Zinc",
+        "hi": "[Q32, पृष्ठ 2] विजातीय विकल्प चुनिए: लोहा, ताँबा, पारा, जस्ता"
+      },
+      "options": {
+        "a": { "en": "Iron", "hi": "लोहा" },
+        "b": { "en": "Copper", "hi": "ताँबा" },
+        "c": { "en": "Mercury", "hi": "पारा" },
+        "d": { "en": "Zinc", "hi": "जस्ता" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Consider the physical state of matter at standard room temperature.",
+        "hi": "कमरे के सामान्य तापमान पर भौतिक अवस्था पर विचार करें।"
+      },
+      "explanation": {
+        "en": "Iron, Copper, and Zinc are solid metals at room temperature; Mercury is liquid.",
+        "hi": "लोहा, ताँबा और जस्ता ठोस धातुएँ हैं; पारा कमरे के तापमान पर एकमात्र तरल धातु है।"
+      },
+      "key_takeaway": {
+        "en": "Mercury is the only metal that is liquid under standard ambient conditions.",
+        "hi": "पारा सामान्य तापमान पर द्रव अवस्था में रहने वाली एकमात्र धातु है।"
+      }
+    },
+    {
+      "question_id": 33,
+      "question": {
+        "en": "[Q33, Page 2] Choose the odd one out: Circle, Square, Triangle, Rectangle",
+        "hi": "[Q33, पृष्ठ 2] विजातीय विकल्प चुनिए: वृत्त, वर्ग, त्रिभुज, आयत"
+      },
+      "options": {
+        "a": { "en": "Circle", "hi": "वृत्त" },
+        "b": { "en": "Square", "hi": "वर्ग" },
+        "c": { "en": "Triangle", "hi": "त्रिभुज" },
+        "d": { "en": "Rectangle", "hi": "आयत" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Polygons have straight sides and vertices; which figure is curved?",
+        "hi": "बहुभुज में सीधी भुजाएं और कोने होते हैं; कौन सी आकृति वक्राकार है?"
+      },
+      "explanation": {
+        "en": "Square, Triangle, and Rectangle are straight-sided polygons; a Circle is curved.",
+        "hi": "वर्ग, त्रिभुज और आयत सीधी भुजाओं वाले बहुभुज हैं; वृत्त एक वक्र आकृति है।"
+      },
+      "key_takeaway": {
+        "en": "Distinguish straight-edged polygons from curved planar figures.",
+        "hi": "सीधी भुजाओं वाले बहुभुज और वक्राकार आकृतियों में भेद करें।"
+      }
+    },
+    {
+      "question_id": 34,
+      "question": {
+        "en": "[Q34, Page 2] Choose the odd one out: 13, 17, 23, 27",
+        "hi": "[Q34, पृष्ठ 2] विजातीय संख्या चुनिए: 13, 17, 23, 27"
+      },
+      "options": {
+        "a": { "en": "13", "hi": "13" },
+        "b": { "en": "17", "hi": "17" },
+        "c": { "en": "23", "hi": "23" },
+        "d": { "en": "27", "hi": "27" }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Check for prime vs composite numbers.",
+        "hi": "अभाज्य और भाज्य संख्याओं की जाँच करें।"
+      },
+      "explanation": {
+        "en": "13, 17, and 23 are prime numbers; 27 is a composite number (3 x 9 = 27).",
+        "hi": "13, 17 और 23 अभाज्य संख्याएँ हैं; 27 एक भाज्य संख्या है (3 x 9 = 27)।"
+      },
+      "key_takeaway": {
+        "en": "Do not confuse odd numbers with prime numbers; test divisibility by 3.",
+        "hi": "विषम और अभाज्य संख्याओं में अंतर रखें; 3 से विभाज्यता अवश्य जांचें।"
+      }
+    },
+    {
+      "question_id": 35,
+      "question": {
+        "en": "[Q35, Page 2] Choose the odd one out: Brass, Copper, Silver, Gold",
+        "hi": "[Q35, पृष्ठ 2] विजातीय विकल्प चुनिए: पीतल, ताँबा, चाँदी, सोना"
+      },
+      "options": {
+        "a": { "en": "Brass", "hi": "पीतल" },
+        "b": { "en": "Copper", "hi": "ताँबा" },
+        "c": { "en": "Silver", "hi": "चाँदी" },
+        "d": { "en": "Gold", "hi": "सोना" }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Three are pure chemical elements; one is an alloy.",
+        "hi": "तीन शुद्ध रासायनिक तत्व हैं; एक मिश्रधातु है।"
+      },
+      "explanation": {
+        "en": "Copper, Silver, and Gold are pure elements; Brass is an alloy of copper and zinc.",
+        "hi": "ताँबा, चाँदी और सोना शुद्ध तत्व हैं; पीतल तांबे और जस्ते की मिश्रधातु है।"
+      },
+      "key_takeaway": {
+        "en": "Differentiate elemental metals from composite metallic alloys.",
+        "hi": "शुद्ध धात्विक तत्वों और मिश्रधातुओं के बीच अंतर पहचानें।"
+      }
+    },
+    {
+      "question_id": 36,
+      "question": {
+        "en": "[Q36, Page 2] Choose the odd one out: Shimla, Manali, Dharamshala, Chandigarh",
+        "hi": "[Q36, पृष्ठ 2] विजातीय विकल्प चुनिए: शिमला, मनाली, धर्मशाला, चंडीगढ़"
+      },
+      "options": {
+        "a": { "en": "Shimla", "hi": "शिमला" },
+        "b": { "en": "Manali", "hi": "मनाली" },
+        "c": { "en": "Dharamshala", "hi": "धर्मशाला" },
+        "d": { "en": "Chandigarh", "hi": "चंडीगढ़" }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Three are hill stations located in Himachal Pradesh; one is a Union Territory in the plains.",
+        "hi": "तीन हिमाचल प्रदेश के पर्वतीय नगर हैं; एक केंद्र शासित प्रदेश है।"
+      },
+      "explanation": {
+        "en": "Shimla, Manali, and Dharamshala are hill stations in Himachal Pradesh; Chandigarh is a Union Territory.",
+        "hi": "शिमला, मनाली और धर्मशाला हिमाचल प्रदेश के प्रसिद्ध नगर हैं; चंडीगढ़ एक केंद्र शासित प्रदेश है।"
+      },
+      "key_takeaway": {
+        "en": "Geographical grouping distinguishes state hill stations from union territories.",
+        "hi": "राज्य के पर्वतीय स्थलों और केंद्र शासित प्रदेशों में भेद करें।"
+      }
+    },
+    {
+      "question_id": 37,
+      "question": {
+        "en": "[Q37, Page 2] Choose the odd one out: Physics, Chemistry, Biology, Geography",
+        "hi": "[Q37, पृष्ठ 2] विजातीय विकल्प चुनिए: भौतिकी, रसायन विज्ञान, जीव विज्ञान, भूगोल"
+      },
+      "options": {
+        "a": { "en": "Physics", "hi": "भौतिकी" },
+        "b": { "en": "Chemistry", "hi": "रसायन विज्ञान" },
+        "c": { "en": "Biology", "hi": "जीव विज्ञान" },
+        "d": { "en": "Geography", "hi": "भूगोल" }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Separate Natural Science laboratory disciplines from Social Sciences.",
+        "hi": "प्राकृतिक विज्ञान के विषयों को सामाजिक विज्ञान से अलग करें।"
+      },
+      "explanation": {
+        "en": "Physics, Chemistry, and Biology are Natural Sciences; Geography is a Social Science.",
+        "hi": "भौतिकी, रसायन और जीव विज्ञान प्राकृतिक विज्ञान हैं; भूगोल सामाजिक विज्ञान का विषय है।"
+      },
+      "key_takeaway": {
+        "en": "Group disciplines into Natural Sciences versus Social Sciences.",
+        "hi": "विषयों को प्राकृतिक विज्ञान और सामाजिक विज्ञान के रूप में वर्गीकृत करें।"
+      }
+    },
+    {
+      "question_id": 38,
+      "question": {
+        "en": "[Q38, Page 2] Choose the odd one out: Diamond, Graphite, Fullerene, Bronze",
+        "hi": "[Q38, पृष्ठ 2] विजातीय विकल्प चुनिए: हीरा, ग्रेफाइट, फुलरीन, काँसा"
+      },
+      "options": {
+        "a": { "en": "Diamond", "hi": "हीरा" },
+        "b": { "en": "Graphite", "hi": "ग्रेफाइट" },
+        "c": { "en": "Fullerene", "hi": "फुलरीन" },
+        "d": { "en": "Bronze", "hi": "काँसा" }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Three are allotropes of carbon; one is a copper-tin alloy.",
+        "hi": "तीन कार्बन के अपरूप हैं; एक तांबे और टिन की मिश्रधातु है।"
+      },
+      "explanation": {
+        "en": "Diamond, Graphite, and Fullerene are carbon allotropes; Bronze is an alloy of copper and tin.",
+        "hi": "हीरा, ग्रेफाइट और फुलरीन कार्बन के अपरूप हैं; काँसा तांबे और टिन की मिश्रधातु है।"
+      },
+      "key_takeaway": {
+        "en": "Allotropes share identical chemical composition, whereas alloys combine multiple metals.",
+        "hi": "अपरूप शुद्ध तत्व के रूप होते हैं, जबकि मिश्रधातु विभिन्न धातुओं का मिश्रण होती है।"
+      }
+    },
+    {
+      "question_id": 39,
+      "question": {
+        "en": "[Q39, Page 2] Choose the odd one out: Earthquake, Tsunami, Deforestation, Cyclone",
+        "hi": "[Q39, पृष्ठ 2] विजातीय विकल्प चुनिए: भूकंप, सुनामी, वनों की कटाई, चक्रवात"
+      },
+      "options": {
+        "a": { "en": "Earthquake", "hi": "भूकंप" },
+        "b": { "en": "Tsunami", "hi": "सुनामी" },
+        "c": { "en": "Deforestation", "hi": "वनों की कटाई" },
+        "d": { "en": "Cyclone", "hi": "चक्रवात" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Three are natural disasters; one is an anthropogenic (man-made) activity.",
+        "hi": "तीन प्राकृतिक आपदाएं हैं; एक मानव निर्मित गतिविधि है।"
+      },
+      "explanation": {
+        "en": "Earthquake, Tsunami, and Cyclone are natural disasters; Deforestation is human-driven.",
+        "hi": "भूकंप, सुनामी और चक्रवात प्राकृतिक आपदाएं हैं; वनों की कटाई मानव-जनित प्रक्रिया है।"
+      },
+      "key_takeaway": {
+        "en": "Classify environmental events into natural occurrences versus human activities.",
+        "hi": "पर्यावरणीय घटनाओं को प्राकृतिक आपदाओं और मानव-निर्मित संकटों में विभाजित करें।"
+      }
+    },
+    {
+      "question_id": 40,
+      "question": {
+        "en": "[Q40, Page 2] Choose the odd one out: AZ, BY, CX, HR",
+        "hi": "[Q40, पृष्ठ 2] विजातीय युग्म चुनिए: AZ, BY, CX, HR"
+      },
+      "options": {
+        "a": { "en": "AZ", "hi": "AZ" },
+        "b": { "en": "BY", "hi": "BY" },
+        "c": { "en": "CX", "hi": "CX" },
+        "d": { "en": "HR", "hi": "HR" }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "In opposite pairs, position ranks sum to 27. Check H(8) + R(18).",
+        "hi": "विपरीत अक्षर युग्मों के मान का योग 27 होता है। H(8) + R(18) की जाँच करें।"
+      },
+      "explanation": {
+        "en": "A(1)+Z(26)=27, B(2)+Y(25)=27, C(3)+X(24)=27. For HR: H(8)+R(18)=26 (opposite of H is S, 8+19=27).",
+        "hi": "A(1)+Z(26)=27, B(2)+Y(25)=27, C(3)+X(24)=27। HR में: H(8)+R(18)=26 होता है, जो 27 नहीं है।"
+      },
+      "key_takeaway": {
+        "en": "Opposite alphabet letter pairs always satisfy Rank1 + Rank2 = 27.",
+        "hi": "सच्चे विपरीत अक्षर युग्मों का योग अनिवार्य रूप से 27 होता है।"
+      }
+    },
+    {
+      "question_id": 41,
+      "question": {
+        "en": "[Q41, Page 2] Choose the odd one out: 121, 144, 169, 185",
+        "hi": "[Q41, पृष्ठ 2] विजातीय संख्या चुनिए: 121, 144, 169, 185"
+      },
+      "options": {
+        "a": { "en": "121", "hi": "121" },
+        "b": { "en": "144", "hi": "144" },
+        "c": { "en": "169", "hi": "169" },
+        "d": { "en": "185", "hi": "185" }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Three numbers are perfect squares of integers.",
+        "hi": "तीन संख्याएं पूर्ण वर्ग संख्याएं हैं।"
+      },
+      "explanation": {
+        "en": "121 = 11^2, 144 = 12^2, and 169 = 13^2 are perfect squares; 185 is not a perfect square.",
+        "hi": "121 = 11^2, 144 = 12^2, और 169 = 13^2 पूर्ण वर्ग संख्याएं हैं; 185 पूर्ण वर्ग नहीं है।"
+      },
+      "key_takeaway": {
+        "en": "Filter numerical classification by perfect square properties.",
+        "hi": "संख्याओं के वर्गीकरण में पूर्ण वर्ग नियमों की जाँच करें।"
+      }
+    },
+    {
+      "question_id": 42,
+      "question": {
+        "en": "[Q42, Page 2] Choose the odd one out: Yamuna, Ganga, Brahmaputra, Chilika",
+        "hi": "[Q42, पृष्ठ 2] विजातीय विकल्प चुनिए: यमुना, गंगा, ब्रह्मपुत्र, चिल्का"
+      },
+      "options": {
+        "a": { "en": "Yamuna", "hi": "यमुना" },
+        "b": { "en": "Ganga", "hi": "गंगा" },
+        "c": { "en": "Brahmaputra", "hi": "ब्रह्मपुत्र" },
+        "d": { "en": "Chilika", "hi": "चिल्का" }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Three are rivers; one is a coastal lagoon lake in Odisha.",
+        "hi": "तीन नदियां हैं; एक ओडिशा की तटीय लैगून झील है।"
+      },
+      "explanation": {
+        "en": "Yamuna, Ganga, and Brahmaputra are flowing rivers; Chilika is a brackish water coastal lake.",
+        "hi": "यमुना, गंगा और ब्रह्मपुत्र नदियां हैं; चिल्का ओडिशा की एक खारे पानी की झील है।"
+      },
+      "key_takeaway": {
+        "en": "Differentiate flowing fluvial river channels from enclosed lacustrine water bodies.",
+        "hi": "प्रवाही नदियों और स्थिर झीलों के मध्य भौगोलिक अंतर पहचानें।"
+      }
+    },
+    {
+      "question_id": 43,
+      "question": {
+        "en": "[Q43, Page 2] Choose the odd one out: Meter, Litre, Centimeter, Kilometer",
+        "hi": "[Q43, पृष्ठ 2] विजातीय इकाई चुनिए: मीटर, लीटर, सेंटीमीटर, किलोमीटर"
+      },
+      "options": {
+        "a": { "en": "Meter", "hi": "मीटर" },
+        "b": { "en": "Litre", "hi": "लीटर" },
+        "c": { "en": "Centimeter", "hi": "सेंटीमीटर" },
+        "d": { "en": "Kilometer", "hi": "किलोमीटर" }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "Three units measure distance/length; one measures liquid capacity/volume.",
+        "hi": "तीन इकाइयां लंबाई मापती हैं; एक तरल आयतन मापती है।"
+      },
+      "explanation": {
+        "en": "Meter, Centimeter, and Kilometer measure 1D length; Litre measures 3D volume.",
+        "hi": "मीटर, सेंटीमीटर और किलोमीटर लंबाई के मात्रक हैं; लीटर आयतन (क्षमता) का मात्रक है।"
+      },
+      "key_takeaway": {
+        "en": "Always classify units by their fundamental physical dimension.",
+        "hi": "इकाइयों को उनके भौतिक आयाम (लंबाई बनाम आयतन) के आधार पर अलग करें।"
+      }
+    },
+    {
+      "question_id": 44,
+      "question": {
+        "en": "[Q44, Page 2] Choose the odd one out: CPU, RAM, Monitor, Hard Disk",
+        "hi": "[Q44, पृष्ठ 2] विजातीय कंप्यूटर घटक चुनिए: CPU, RAM, मॉनिटर, हार्ड डिस्क"
+      },
+      "options": {
+        "a": { "en": "CPU", "hi": "CPU" },
+        "b": { "en": "RAM", "hi": "RAM" },
+        "c": { "en": "Monitor", "hi": "मॉनिटर" },
+        "d": { "en": "Hard Disk", "hi": "हार्ड डिस्क" }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Three components reside inside the computer system cabinet; one is an external display peripheral.",
+        "hi": "तीन घटक सिस्टम कैबिनेट के अंदर होते हैं; एक बाहरी डिस्प्ले उपकरण है।"
+      },
+      "explanation": {
+        "en": "CPU, RAM, and Hard Disk are internal processing and storage components; Monitor is an external output peripheral.",
+        "hi": "CPU, RAM और हार्ड डिस्क आंतरिक प्रोसेसिंग व स्टोरेज घटक हैं; मॉनिटर एक बाहरी आउटपुट पेरिफेरल है।"
+      },
+      "key_takeaway": {
+        "en": "Separate internal system unit architecture from external input/output peripherals.",
+        "hi": "आंतरिक सिस्टम घटकों और बाहरी डिस्प्ले उपकरणों में भेद करें।"
+      }
+    },
+    {
+      "question_id": 45,
+      "question": {
+        "en": "[Q45, Page 2] Choose the odd one out: Scurvy, Beriberi, Rickets, Malaria",
+        "hi": "[Q45, पृष्ठ 2] विजातीय रोग चुनिए: स्कर्वी, बेरी-बेरी, रिकेट्स, मलेरिया"
+      },
+      "options": {
+        "a": { "en": "Scurvy", "hi": "स्कर्वी" },
+        "b": { "en": "Beriberi", "hi": "बेरी-बेरी" },
+        "c": { "en": "Rickets", "hi": "रिकेट्स" },
+        "d": { "en": "Malaria", "hi": "मलेरिया" }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Three are nutritional vitamin deficiency diseases; one is a mosquito-borne infectious parasitic disease.",
+        "hi": "तीन विटामिन की कमी से होने वाले रोग हैं; एक मच्छर से फैलने वाला संक्रामक रोग है।"
+      },
+      "explanation": {
+        "en": "Scurvy (Vit C), Beriberi (Vit B1), and Rickets (Vit D) are non-communicable vitamin deficiency diseases; Malaria is a protozoan infection transmitted by mosquitoes.",
+        "hi": "स्कर्वी, बेरी-बेरी और रिकेट्स विटामिन की कमी से होने वाले रोग हैं; मलेरिया मच्छर द्वारा फैलने वाला प्रोटोजोआ संक्रमण है।"
+      },
+      "key_takeaway": {
+        "en": "Classify pathological conditions into nutritional deficiencies versus vector-borne infections.",
+        "hi": "रोगों को पोषण संबंधी हीनताजन्य रोगों और संक्रामक रोगों में वर्गीकृत करें।"
+      }
+    }
+  ]
+}

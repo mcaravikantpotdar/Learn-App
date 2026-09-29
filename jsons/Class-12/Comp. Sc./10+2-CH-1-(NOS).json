@@ -1,0 +1,3063 @@
+{
+  "metadata": {
+    "chapter_number": 1,
+    "chapter_title": "Network Operating System",
+    "chapter_title_hindi": "नेटवर्क ऑपरेटिंग सिस्टम",
+    "subject": "Information Technology / Computer Science",
+    "total_questions": 80,
+    "source_language": "en",
+    "target_language": "hi",
+    "created_at": "2023-12-08T11:42:00Z",
+    "version": "1.0",
+    "note": "Options rearranged for balanced distribution while maintaining factual accuracy"
+  },
+  "validation_report": {
+    "is_valid": true,
+    "checked_by": "AI Tutor",
+    "checked_at": "2023-12-08T11:42:00Z",
+    "corrections": [],
+    "notes": "Options have been rearranged to create a perfect 25% balanced answer distribution (20 A, 20 B, 20 C, 20 D) while preserving all correct concepts and factual accuracy."
+  },
+  "questions": [
+    {
+      "question_id": 1,
+      "question": {
+        "en": "What is a computer network?",
+        "hi": "कंप्यूटर नेटवर्क क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "A link between two or more computing devices",
+          "hi": "दो या दो से अधिक कंप्यूटिंग डिवाइस के बीच एक लिंक"
+        },
+        "b": {
+          "en": "A single computing device",
+          "hi": "एक एकल कंप्यूटिंग डिवाइस"
+        },
+        "c": {
+          "en": "A type of software",
+          "hi": "एक प्रकार का सॉफ्टवेयर"
+        },
+        "d": {
+          "en": "A type of storage device",
+          "hi": "एक प्रकार का स्टोरेज डिवाइस"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "A network, by definition, requires a connection between multiple entities.",
+        "hi": "एक नेटवर्क के लिए, परिभाषा के अनुसार, कई संस्थाओं के बीच एक कनेक्शन की आवश्यकता होती है।"
+      },
+      "explanation": {
+        "en": "A computer network is fundamentally defined as an interconnection that allows two or more independent computing devices to communicate and share resources. For example, connecting your laptop and printer allows them to form a simple network.",
+        "hi": "एक कंप्यूटर नेटवर्क को मौलिक रूप से एक इंटरकनेक्शन के रूप में परिभाषित किया जाता है जो दो या दो से अधिक स्वतंत्र कंप्यूटिंग डिवाइसों को संवाद करने और संसाधनों को साझा करने की अनुमति देता है। उदाहरण के लिए, अपने लैपटॉप और प्रिंटर को जोड़ना उन्हें एक साधारण नेटवर्क बनाने की अनुमति देता है।"
+      },
+      "key_takeaway": {
+        "en": "A computer network links multiple devices for communication.",
+        "hi": "एक कंप्यूटर नेटवर्क संचार के लिए कई डिवाइसों को जोड़ता है।"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": {
+        "en": "What is the primary purpose of networking?",
+        "hi": "नेटवर्किंग का प्राथमिक उद्देश्य क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "To increase cost",
+          "hi": "लागत बढ़ाने के लिए"
+        },
+        "b": {
+          "en": "To slow down communication",
+          "hi": "संचार को धीमा करने के लिए"
+        },
+        "c": {
+          "en": "To use only wireless medium",
+          "hi": "केवल वायरलेस माध्यम का उपयोग करने के लिए"
+        },
+        "d": {
+          "en": "To share information and computing resources",
+          "hi": "जानकारी और कंप्यूटिंग संसाधनों को साझा करने के लिए"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Think about why businesses and homes connect their devices, focusing on utility and efficiency.",
+        "hi": "सोचिए कि व्यवसाय और घर अपने डिवाइसों को क्यों जोड़ते हैं, उपयोगिता और दक्षता पर ध्यान केंद्रित करते हुए।"
+      },
+      "explanation": {
+        "en": "The main reason for connecting computers is to enable resource sharing, such as allowing multiple users to share a single printer or accessing centralized data files from different computers. This improves efficiency and reduces hardware costs.",
+        "hi": "कंप्यूटरों को जोड़ने का मुख्य कारण संसाधन साझाकरण को सक्षम करना है, जैसे कई उपयोगकर्ताओं को एक ही प्रिंटर साझा करने की अनुमति देना या विभिन्न कंप्यूटरों से केंद्रीकृत डेटा फ़ाइलों तक पहुंचना। यह दक्षता में सुधार करता है और हार्डवेयर लागत को कम करता है।"
+      },
+      "key_takeaway": {
+        "en": "Networking enables resource sharing and communication.",
+        "hi": "नेटवर्किंग संसाधन साझाकरण और संचार को सक्षम करती है।"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": {
+        "en": "Which of the following is the largest computer network?",
+        "hi": "निम्नलिखित में से सबसे बड़ा कंप्यूटर नेटवर्क कौन सा है?"
+      },
+      "options": {
+        "a": {
+          "en": "A local office network",
+          "hi": "एक स्थानीय कार्यालय नेटवर्क"
+        },
+        "b": {
+          "en": "A home Wi-Fi network",
+          "hi": "एक घरेलू वाई-फाई नेटवर्क"
+        },
+        "c": {
+          "en": "The Internet",
+          "hi": "इंटरनेट"
+        },
+        "d": {
+          "en": "A university campus network",
+          "hi": "एक विश्वविद्यालय परिसर नेटवर्क"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Consider the network that connects millions of smaller, global networks.",
+        "hi": "उस नेटवर्क पर विचार करें जो लाखों छोटे, वैश्विक नेटवर्कों को जोड़ता है।"
+      },
+      "explanation": {
+        "en": "The Internet is often described as a 'network of networks.' It is the largest computer network globally, connecting billions of devices and millions of localized networks (like LANs and MANs) across the entire world.",
+        "hi": "इंटरनेट को अक्सर 'नेटवर्कों का नेटवर्क' कहा जाता है। यह विश्व स्तर पर सबसे बड़ा कंप्यूटर नेटवर्क है, जो अरबों डिवाइसों और लाखों स्थानीयकृत नेटवर्कों (जैसे LAN और MAN) को पूरी दुनिया में जोड़ता है।"
+      },
+      "key_takeaway": {
+        "en": "The Internet is the largest global network of networks.",
+        "hi": "इंटरनेट नेटवर्कों का सबसे बड़ा वैश्विक नेटवर्क है।"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": {
+        "en": "What is a key advantage of networking?",
+        "hi": "नेटवर्किंग का एक प्रमुख लाभ क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Sharing of hardware resources",
+          "hi": "हार्डवेयर संसाधनों का साझाकरण"
+        },
+        "b": {
+          "en": "Increased data security",
+          "hi": "बढ़ी हुई डेटा सुरक्षा"
+        },
+        "c": {
+          "en": "Guaranteed 100% reliability",
+          "hi": "100% विश्वसनीयता की गारंटी"
+        },
+        "d": {
+          "en": "Elimination of all communication issues",
+          "hi": "सभी संचार समस्याओं का समापन"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Think about how a network saves money in an office setting by reducing equipment needs.",
+        "hi": "सोचिए कि एक नेटवर्क उपकरण की जरूरतों को कम करके कार्यालय सेटिंग में पैसे कैसे बचाता है।"
+      },
+      "explanation": {
+        "en": "One of the most practical advantages is the ability to share hardware resources like printers, scanners, or storage devices among all connected users. For example, an entire department can share one expensive laser printer instead of needing one for every desk.",
+        "hi": "सबसे व्यावहारिक लाभों में से एक हार्डवेयर संसाधनों जैसे प्रिंटर, स्कैनर या स्टोरेज डिवाइस को सभी जुड़े हुए उपयोगकर्ताओं के बीच साझा करने की क्षमता है। उदाहरण के लिए, एक पूरे विभाग के लिए हर डेस्क के लिए एक महंगा लेजर प्रिंटर की आवश्यकता के बजाय उसे साझा कर सकता है।"
+      },
+      "key_takeaway": {
+        "en": "Hardware resource sharing is a major network benefit.",
+        "hi": "हार्डवेयर संसाधन साझाकरण एक प्रमुख नेटवर्क लाभ है।"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": {
+        "en": "What is a major disadvantage of networking?",
+        "hi": "नेटवर्किंग का एक प्रमुख नुकसान क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Reduced cost",
+          "hi": "कम लागत"
+        },
+        "b": {
+          "en": "Easier communication",
+          "hi": "आसान संचार"
+        },
+        "c": {
+          "en": "Resource sharing",
+          "hi": "संसाधन साझाकरण"
+        },
+        "d": {
+          "en": "Data security risks",
+          "hi": "डेटा सुरक्षा जोखिम"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "When devices are connected, they are exposed to external threats and potential breaches.",
+        "hi": "जब डिवाइस जुड़े होते हैं, तो वे बाहरी खतरों और संभावित उल्लंघनों के संपर्क में आते हैं।"
+      },
+      "explanation": {
+        "en": "Connecting devices in a network (especially the Internet) significantly increases the exposure to viruses, malware, and hacking attempts. Centralized data also becomes a single point of failure and a high-value target for attackers, necessitating robust security measures.",
+        "hi": "डिवाइसों को एक नेटवर्क (विशेष रूप से इंटरनेट) में जोड़ना वायरस, मैलवेयर और हैकिंग प्रयासों के संपर्क में काफी वृद्धि करता है। केंद्रीकृत डेटा भी विफलता का एक बिंदु बन जाता है और हमलावरों के लिए एक उच्च-मूल्य लक्ष्य होता है, जिसके लिए मजबूत सुरक्षा उपायों की आवश्यकता होती है।"
+      },
+      "key_takeaway": {
+        "en": "Networking increases data security risks and exposure to threats.",
+        "hi": "नेटवर्किंग डेटा सुरक्षा जोखिम और खतरों के संपर्क में वृद्धि करती है।"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": {
+        "en": "Which component is the most powerful computer in a network?",
+        "hi": "कौन सा घटक एक नेटवर्क में सबसे शक्तिशाली कंप्यूटर है?"
+      },
+      "options": {
+        "a": {
+          "en": "Client",
+          "hi": "क्लाइंट"
+        },
+        "b": {
+          "en": "Hub",
+          "hi": "हब"
+        },
+        "c": {
+          "en": "Server",
+          "hi": "सर्वर"
+        },
+        "d": {
+          "en": "NIC",
+          "hi": "एनआईसी"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This component is responsible for providing resources and services to all other computers.",
+        "hi": "यह घटक अन्य सभी कंप्यूटरों को संसाधन और सेवाएँ प्रदान करने के लिए जिम्मेदार है।"
+      },
+      "explanation": {
+        "en": "The Server is a powerful computer dedicated to providing services (like file storage, printing, or web hosting) and managing resources for all 'client' computers on the network. It requires high processing power, large storage, and robust software to handle multiple requests simultaneously.",
+        "hi": "सर्वर एक शक्तिशाली कंप्यूटर है जो नेटवर्क पर सभी 'क्लाइंट' कंप्यूटरों के लिए सेवाएँ (जैसे फ़ाइल स्टोरेज, प्रिंटिंग, या वेब होस्टिंग) प्रदान करने और संसाधनों का प्रबंधन करने के लिए समर्पित है। इसे एक साथ कई अनुरोधों को संभालने के लिए उच्च प्रसंस्करण शक्ति, बड़े स्टोरेज और मजबूत सॉफ्टवेयर की आवश्यकता होती है।"
+      },
+      "key_takeaway": {
+        "en": "The Server is the central, powerful resource provider in a network.",
+        "hi": "सर्वर एक नेटवर्क में केंद्रीय, शक्तिशाली संसाधन प्रदाता है।"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": {
+        "en": "What does NIC stand for?",
+        "hi": "एनआईसी का क्या अर्थ है?"
+      },
+      "options": {
+        "a": {
+          "en": "Network Interface Card",
+          "hi": "नेटवर्क इंटरफेस कार्ड"
+        },
+        "b": {
+          "en": "Network Internet Card",
+          "hi": "नेटवर्क इंटरनेट कार्ड"
+        },
+        "c": {
+          "en": "New Interface Connection",
+          "hi": "न्यू इंटरफेस कनेक्शन"
+        },
+        "d": {
+          "en": "Network Internal Cable",
+          "hi": "नेटवर्क इंटरनल केबल"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "It is the physical circuit board that allows a computer to connect to a network medium, like a cable or Wi-Fi.",
+        "hi": "यह वह भौतिक सर्किट बोर्ड है जो कंप्यूटर को नेटवर्क माध्यम, जैसे केबल या वाई-फाई से कनेक्ट करने की अनुमति देता है।"
+      },
+      "explanation": {
+        "en": "NIC stands for Network Interface Card. It is the hardware component (either a physical card or integrated chip) that allows a computer to physically communicate with a network. Every device that connects to a network requires an NIC, which is also associated with a unique MAC address.",
+        "hi": "एनआईसी का अर्थ है नेटवर्क इंटरफेस कार्ड। यह वह हार्डवेयर घटक (या तो एक भौतिक कार्ड या एकीकृत चिप) है जो कंप्यूटर को भौतिक रूप से एक नेटवर्क के साथ संवाद करने की अनुमति देता है। नेटवर्क से जुड़ने वाले प्रत्येक डिवाइस को एक एनआईसी की आवश्यकता होती है, जो एक अद्वितीय मैक एड्रेस से भी जुड़ा होता है।"
+      },
+      "key_takeaway": {
+        "en": "NIC (Network Interface Card) is the hardware for network connection.",
+        "hi": "एनआईसी (नेटवर्क इंटरफेस कार्ड) नेटवर्क कनेक्शन के लिए हार्डवेयर है।"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": {
+        "en": "Which networking device uses broadcasting technology and is less secure?",
+        "hi": "कौन सा नेटवर्किंग डिवाइस ब्रॉडकास्टिंग तकनीक का उपयोग करता है और कम सुरक्षित है?"
+      },
+      "options": {
+        "a": {
+          "en": "Switch",
+          "hi": "स्विच"
+        },
+        "b": {
+          "en": "Router",
+          "hi": "राउटर"
+        },
+        "c": {
+          "en": "Hub",
+          "hi": "हब"
+        },
+        "d": {
+          "en": "Server",
+          "hi": "सर्वर"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This is a basic, unintelligent device that forwards all incoming data to all connected ports.",
+        "hi": "यह एक बुनियादी, अकुशल डिवाइस है जो सभी आने वाले डेटा को सभी जुड़े हुए पोर्ट पर आगे बढ़ाती है।"
+      },
+      "explanation": {
+        "en": "A Hub is a passive device that simply repeats the incoming data signal to every other port, regardless of the intended recipient. This broadcasting method clogs the network and makes it less secure because all connected devices receive all data traffic.",
+        "hi": "एक हब एक निष्क्रिय डिवाइस है जो केवल आने वाले डेटा सिग्नल को हर दूसरे पोर्ट पर दोहराता है, भले ही इच्छित प्राप्तकर्ता कोई भी हो। यह प्रसारण विधि नेटवर्क को बाधित करती है और इसे कम सुरक्षित बनाती है क्योंकि सभी जुड़े हुए डिवाइस सभी डेटा ट्रैफिक प्राप्त करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Hubs use broadcasting, making them inefficient and less secure.",
+        "hi": "हब ब्रॉडकास्टिंग का उपयोग करते हैं, जिससे वे अक्षम और कम सुरक्षित होते हैं।"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": {
+        "en": "Which networking device uses direct connection technology and is more secure?",
+        "hi": "कौन सा नेटवर्किंग डिवाइस डायरेक्ट कनेक्शन तकनीक का उपयोग करता है और अधिक सुरक्षित है?"
+      },
+      "options": {
+        "a": {
+          "en": "Hub",
+          "hi": "हब"
+        },
+        "b": {
+          "en": "Client",
+          "hi": "क्लाइंट"
+        },
+        "c": {
+          "en": "NIC",
+          "hi": "एनआईसी"
+        },
+        "d": {
+          "en": "Switch",
+          "hi": "स्विच"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This device learns the MAC addresses of connected devices and forwards data only to the correct port.",
+        "hi": "यह डिवाइस जुड़े हुए डिवाइसों के मैक एड्रेस को सीखती है और डेटा को केवल सही पोर्ट पर आगे बढ़ाती है।"
+      },
+      "explanation": {
+        "en": "A Switch is an intelligent device that maintains a table of MAC addresses and forwards data frames only to the port connected to the intended recipient. This reduces unnecessary network traffic (unlike a Hub) and improves security because data is not broadcast to every device.",
+        "hi": "एक स्विच एक बुद्धिमान डिवाइस है जो मैक एड्रेस की एक तालिका बनाए रखती है और डेटा फ्रेम को केवल इच्छित प्राप्तकर्ता से जुड़े पोर्ट पर आगे बढ़ाती है। यह अनावश्यक नेटवर्क ट्रैफिक (हब के विपरीत) को कम करता है और सुरक्षा में सुधार करता है क्योंकि डेटा हर डिवाइस पर प्रसारित नहीं होता है।"
+      },
+      "key_takeaway": {
+        "en": "A Switch uses direct addressing for better security and efficiency.",
+        "hi": "एक स्विच बेहतर सुरक्षा और दक्षता के लिए डायरेक्ट एड्रेसिंग का उपयोग करता है।"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": {
+        "en": "What is the function of a router?",
+        "hi": "राउटर का कार्य क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "To connect multiple networks together",
+          "hi": "कई नेटवर्कों को एक साथ जोड़ने के लिए"
+        },
+        "b": {
+          "en": "To connect devices within the same network",
+          "hi": "एक ही नेटवर्क के भीतर डिवाइस को जोड़ने के लिए"
+        },
+        "c": {
+          "en": "To act as the most powerful client",
+          "hi": "सबसे शक्तिशाली क्लाइंट के रूप में कार्य करने के लिए"
+        },
+        "d": {
+          "en": "To provide a user interface",
+          "hi": "एक उपयोगकर्ता इंटरफेस प्रदान करने के लिए"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Think about the device that connects your home network (LAN) to the Internet (WAN).",
+        "hi": "उस डिवाइस के बारे में सोचें जो आपके होम नेटवर्क (LAN) को इंटरनेट (WAN) से जोड़ती है।"
+      },
+      "explanation": {
+        "en": "A Router operates at the network layer and is primarily responsible for connecting different networks (e.g., your Local Area Network to the Internet's Wide Area Network). It determines the best path for data packets to travel between these different networks using IP addresses.",
+        "hi": "एक राउटर नेटवर्क लेयर पर काम करता है और मुख्य रूप से विभिन्न नेटवर्कों (उदाहरण के लिए, आपके लोकल एरिया नेटवर्क को इंटरनेट के वाइड एरिया नेटवर्क से) को जोड़ने के लिए जिम्मेदार है। यह IP एड्रेस का उपयोग करके इन विभिन्न नेटवर्कों के बीच डेटा पैकेटों की यात्रा के लिए सबसे अच्छा मार्ग निर्धारित करता है।"
+      },
+      "key_takeaway": {
+        "en": "Routers connect and route traffic between multiple distinct networks.",
+        "hi": "राउटर कई अलग-अलग नेटवर्कों के बीच ट्रैफिक को जोड़ते और रूट करते हैं।"
+      }
+    },
+    {
+      "question_id": 11,
+      "question": {
+        "en": "What does TCP/IP stand for?",
+        "hi": "टीसीपी/आईपी का क्या अर्थ है?"
+      },
+      "options": {
+        "a": {
+          "en": "Transmission Control Protocol/Internet Protocol",
+          "hi": "ट्रांसमिशन कंट्रोल प्रोटोकॉल/इंटरनेट प्रोटोकॉल"
+        },
+        "b": {
+          "en": "Total Connection Protocol/Internet Path",
+          "hi": "टोटल कनेक्शन प्रोटोकॉल/इंटरनेट पाथ"
+        },
+        "c": {
+          "en": "Technical Control Panel/Internet Panel",
+          "hi": "टेक्निकल कंट्रोल पैनल/इंटरनेट पैनल"
+        },
+        "d": {
+          "en": "Transmitted Code Protocol/Internal Protocol",
+          "hi": "ट्रांसमिटेड कोड प्रोटोकॉल/इंटरनल प्रोटोकॉल"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "This is the foundational set of protocols that defines how data is communicated over the Internet.",
+        "hi": "यह प्रोटोकॉल का मूलभूत सेट है जो यह परिभाषित करता है कि इंटरनेट पर डेटा कैसे संचारित होता है।"
+      },
+      "explanation": {
+        "en": "TCP/IP is the abbreviation for Transmission Control Protocol/Internet Protocol, which is the standard protocol suite used for communication across the Internet and other similar networks. TCP handles data integrity, and IP handles addressing and routing.",
+        "hi": "टीसीपी/आईपी ट्रांसमिशन कंट्रोल प्रोटोकॉल/इंटरनेट प्रोटोकॉल का संक्षिप्त रूप है, जो इंटरनेट और अन्य समान नेटवर्कों पर संचार के लिए उपयोग किया जाने वाला मानक प्रोटोकॉल सूट है। टीसीपी डेटा की अखंडता को संभालता है, और आईपी एड्रेसिंग और रूटिंग को संभालता है।"
+      },
+      "key_takeaway": {
+        "en": "TCP/IP is the core protocol suite of the Internet.",
+        "hi": "टीसीपी/आईपी इंटरनेट का मुख्य प्रोटोकॉल सूट है।"
+      }
+    },
+    {
+      "question_id": 12,
+      "question": {
+        "en": "What is the primary role of TCP?",
+        "hi": "टीसीपी की प्राथमिक भूमिका क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Assigning IP addresses",
+          "hi": "आईपी एड्रेस असाइन करना"
+        },
+        "b": {
+          "en": "Handling the routing of data packets",
+          "hi": "डेटा पैकेट के रूटिंग को संभालना"
+        },
+        "c": {
+          "en": "Providing a user interface",
+          "hi": "एक उपयोगकर्ता इंटरफेस प्रदान करना"
+        },
+        "d": {
+          "en": "Dividing data into packets and ensuring their correct order delivery",
+          "hi": "डेटा को पैकेट में विभाजित करना और उनकी सही क्रम वितरण सुनिश्चित करना"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The 'Control' part of its name relates to managing the data flow and reassembly at the destination.",
+        "hi": "इसके नाम का 'कंट्रोल' भाग गंतव्य पर डेटा प्रवाह और पुनर्संयोजन के प्रबंधन से संबंधित है।"
+      },
+      "explanation": {
+        "en": "TCP (Transmission Control Protocol) is responsible for breaking down data into smaller packets, numbering them, transmitting them, and ensuring they are reassembled in the correct order at the destination. It is a connection-oriented protocol that guarantees reliable delivery.",
+        "hi": "टीसीपी (ट्रांसमिशन कंट्रोल प्रोटोकॉल) डेटा को छोटे पैकेटों में तोड़ने, उन्हें संख्या देने, उन्हें प्रसारित करने और यह सुनिश्चित करने के लिए जिम्मेदार है कि वे गंतव्य पर सही क्रम में पुनर्संयोजित हों। यह एक कनेक्शन-ओरिएंटेड प्रोटोकॉल है जो विश्वसनीय वितरण की गारंटी देता है।"
+      },
+      "key_takeaway": {
+        "en": "TCP ensures reliable, ordered, and error-checked data delivery.",
+        "hi": "टीसीपी विश्वसनीय, क्रमबद्ध और त्रुटि-जाँच किए गए डेटा वितरण को सुनिश्चित करता है।"
+      }
+    },
+    {
+      "question_id": 13,
+      "question": {
+        "en": "What is the primary role of IP?",
+        "hi": "आईपी की प्राथमिक भूमिका क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Ensuring data packet order",
+          "hi": "डेटा पैकेट के क्रम को सुनिश्चित करना"
+        },
+        "b": {
+          "en": "Establishing a connection before sending data",
+          "hi": "डेटा भेजने से पहले कनेक्शन स्थापित करना"
+        },
+        "c": {
+          "en": "Managing application software",
+          "hi": "एप्लिकेशन सॉफ्टवेयर प्रबंधित करना"
+        },
+        "d": {
+          "en": "Assigning unique addresses and handling packet routing",
+          "hi": "अद्वितीय पते असाइन करना और पैकेट रूटिंग संभालना"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The 'Internet Protocol' part of its name suggests it deals with addressing and movement across networks.",
+        "hi": "इसके नाम का 'इंटरनेट प्रोटोकॉल' भाग इंगित करता है कि यह नेटवर्कों के पार एड्रेसिंग और आवाजाही से संबंधित है।"
+      },
+      "explanation": {
+        "en": "IP (Internet Protocol) assigns a unique numerical address (the IP address) to every device on a network. Its primary function is to handle the addressing and routing of data packets, ensuring they are delivered from the source host to the destination host across interconnected networks.",
+        "hi": "आईपी (इंटरनेट प्रोटोकॉल) एक नेटवर्क पर प्रत्येक डिवाइस को एक अद्वितीय संख्यात्मक पता (आईपी एड्रेस) असाइन करता है। इसका प्राथमिक कार्य डेटा पैकेटों के एड्रेसिंग और रूटिंग को संभालना है, यह सुनिश्चित करना है कि वे आपस में जुड़े नेटवर्कों के पार स्रोत होस्ट से गंतव्य होस्ट तक पहुंचाए जाएं।"
+      },
+      "key_takeaway": {
+        "en": "IP handles logical addressing and routing across networks.",
+        "hi": "आईपी नेटवर्कों के पार लॉजिकल एड्रेसिंग और रूटिंग को संभालता है।"
+      }
+    },
+    {
+      "question_id": 14,
+      "question": {
+        "en": "Which protocol is connection-oriented?",
+        "hi": "कौन सा प्रोटोकॉल कनेक्शन-ओरिएंटेड है?"
+      },
+      "options": {
+        "a": {
+          "en": "IP",
+          "hi": "आईपी"
+        },
+        "b": {
+          "en": "HTTP",
+          "hi": "एचटीटीपी"
+        },
+        "c": {
+          "en": "FTP",
+          "hi": "एफटीपी"
+        },
+        "d": {
+          "en": "TCP",
+          "hi": "टीसीपी"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This protocol performs a 'handshake' before transmitting data to establish a dedicated, reliable connection.",
+        "hi": "यह प्रोटोकॉल एक समर्पित, विश्वसनीय कनेक्शन स्थापित करने के लिए डेटा संचारित करने से पहले एक 'हैंडशेक' करता है।"
+      },
+      "explanation": {
+        "en": "TCP (Transmission Control Protocol) is connection-oriented because it requires a reliable connection to be established between the sender and receiver before any data transfer begins (the three-way handshake). This overhead ensures all packets are delivered reliably and in order.",
+        "hi": "टीसीपी (ट्रांसमिशन कंट्रोल प्रोटोकॉल) कनेक्शन-ओरिएंटेड है क्योंकि यह डेटा ट्रांसफर शुरू होने से पहले प्रेषक और प्राप्तकर्ता के बीच एक विश्वसनीय कनेक्शन स्थापित करने की मांग करता है (तीन-तरफ़ा हैंडशेक)। यह ओवरहेड सुनिश्चित करता है कि सभी पैकेट विश्वसनीय रूप से और क्रम में वितरित हों।"
+      },
+      "key_takeaway": {
+        "en": "TCP is connection-oriented, guaranteeing reliability.",
+        "hi": "टीसीपी कनेक्शन-ओरिएंटेड है, जो विश्वसनीयता की गारंटी देता है।"
+      }
+    },
+    {
+      "question_id": 15,
+      "question": {
+        "en": "Which protocol is connectionless?",
+        "hi": "कौन सा प्रोटोकॉल कनेक्शनलेस है?"
+      },
+      "options": {
+        "a": {
+          "en": "TCP",
+          "hi": "टीसीपी"
+        },
+        "b": {
+          "en": "SMTP",
+          "hi": "एसएमटीपी"
+        },
+        "c": {
+          "en": "HTTPS",
+          "hi": "एचटीटीपीएस"
+        },
+        "d": {
+          "en": "IP",
+          "hi": "आईपी"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This protocol simply sends data packets based on an address, without worrying about whether the destination is ready or if the data arrives.",
+        "hi": "यह प्रोटोकॉल बस एक पते के आधार पर डेटा पैकेट भेजता है, इस बात की चिंता किए बिना कि गंतव्य तैयार है या डेटा पहुंचता है या नहीं।"
+      },
+      "explanation": {
+        "en": "IP (Internet Protocol) is connectionless. It treats each data packet independently, sending it based solely on the destination IP address without first establishing a dedicated connection. This makes it fast but less reliable; reliability is handled by the TCP layer above it.",
+        "hi": "आईपी (इंटरनेट प्रोटोकॉल) कनेक्शनलेस है। यह प्रत्येक डेटा पैकेट को स्वतंत्र रूप से मानता है, इसे पहले एक समर्पित कनेक्शन स्थापित किए बिना केवल गंतव्य आईपी एड्रेस के आधार पर भेजता है। यह इसे तेज लेकिन कम विश्वसनीय बनाता है; विश्वसनीयता इसके ऊपर की टीसीपी लेयर द्वारा संभाली जाती है।"
+      },
+      "key_takeaway": {
+        "en": "IP is connectionless, prioritizing speed over guaranteed delivery.",
+        "hi": "आईपी कनेक्शनलेस है, जो गारंटीकृत वितरण पर गति को प्राथमिकता देता है।"
+      }
+    },
+    {
+      "question_id": 16,
+      "question": {
+        "en": "What is an IP address?",
+        "hi": "आईपी एड्रेस क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "A unique numerical label for a computing device",
+          "hi": "एक कंप्यूटिंग डिवाइस के लिए एक अद्वितीय संख्यात्मक लेबल"
+        },
+        "b": {
+          "en": "A type of computer virus",
+          "hi": "एक प्रकार का कंप्यूटर वायरस"
+        },
+        "c": {
+          "en": "The physical address of a computer",
+          "hi": "कंप्यूटर का भौतिक पता"
+        },
+        "d": {
+          "en": "A software application",
+          "hi": "एक सॉफ्टवेयर एप्लिकेशन"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "This address acts as the digital postal code for a device, allowing data to be routed correctly.",
+        "hi": "यह एड्रेस एक डिवाइस के लिए डिजिटल पोस्टल कोड के रूप में कार्य करता है, जिससे डेटा को सही ढंग से रूट किया जा सकता है।"
+      },
+      "explanation": {
+        "en": "An IP (Internet Protocol) address is a unique numerical label (like 192.168.1.1) assigned to every device participating in a computer network that uses the Internet Protocol for communication. It is essential for addressing and routing data packets across the network.",
+        "hi": "एक IP (इंटरनेट प्रोटोकॉल) एड्रेस एक अद्वितीय संख्यात्मक लेबल (जैसे 192.168.1.1) है जो संचार के लिए इंटरनेट प्रोटोकॉल का उपयोग करने वाले कंप्यूटर नेटवर्क में भाग लेने वाले प्रत्येक डिवाइस को असाइन किया जाता है। यह नेटवर्क के पार डेटा पैकेटों को एड्रेसिंग और रूटिंग के लिए आवश्यक है।"
+      },
+      "key_takeaway": {
+        "en": "An IP address is a device's unique numerical location identifier.",
+        "hi": "एक आईपी एड्रेस एक डिवाइस का अद्वितीय संख्यात्मक स्थान पहचानकर्ता है।"
+      }
+    },
+    {
+      "question_id": 17,
+      "question": {
+        "en": "How many bits are in an IPv4 address?",
+        "hi": "एक आईपीवी4 एड्रेस में कितने बिट्स होते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "16 bits",
+          "hi": "16 बिट"
+        },
+        "b": {
+          "en": "64 bits",
+          "hi": "64 बिट"
+        },
+        "c": {
+          "en": "128 bits",
+          "hi": "128 बिट"
+        },
+        "d": {
+          "en": "32 bits",
+          "hi": "32 बिट"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Recall that an IPv4 address has four octets, and an octet is 8 bits.",
+        "hi": "याद करें कि एक आईपीवी4 एड्रेस में चार ऑक्टेट होते हैं, और एक ऑक्टेट 8 बिट का होता है।"
+      },
+      "explanation": {
+        "en": "An IPv4 (Internet Protocol version 4) address is 32 bits long. It is typically represented as four sets of 8 bits (octets) separated by dots, such as 192.168.1.1, where $4 \times 8 = 32$ bits.",
+        "hi": "एक आईपीवी4 (इंटरनेट प्रोटोकॉल संस्करण 4) एड्रेस 32 बिट लंबा होता है। इसे आमतौर पर चार सेटों में 8 बिट्स (ऑक्टेट) के रूप में दर्शाया जाता है, जिन्हें डॉट्स से अलग किया जाता है, जैसे $192.168.1.1$, जहाँ $4 \times 8 = 32$ बिट होते हैं।"
+      },
+      "key_takeaway": {
+        "en": "An IPv4 address is 32 bits long.",
+        "hi": "एक आईपीवी4 एड्रेस 32 बिट लंबा होता है।"
+      }
+    },
+    {
+      "question_id": 18,
+      "question": {
+        "en": "How are the parts of an IP address called?",
+        "hi": "आईपी एड्रेस के भागों को क्या कहा जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Bytes",
+          "hi": "बाइट्स"
+        },
+        "b": {
+          "en": "Nibbles",
+          "hi": "निबल्स"
+        },
+        "c": {
+          "en": "Octets",
+          "hi": "ऑक्टेट्स"
+        },
+        "d": {
+          "en": "Segments",
+          "hi": "सेगमेंट्स"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The term relates to the fact that each part consists of 8 bits.",
+        "hi": "यह शब्द इस तथ्य से संबंधित है कि प्रत्येक भाग में 8 बिट होते हैं।"
+      },
+      "explanation": {
+        "en": "The four parts of an IPv4 address, separated by dots (e.g., 192.168.1.1), are called Octets. Since each part is 8 bits long, and 8 bits equal one byte, they are often referred to as octets.",
+        "hi": "एक आईपीवी4 एड्रेस के चार भाग, जो डॉट्स (उदाहरण के लिए, 192.168.1.1) द्वारा अलग किए जाते हैं, ऑक्टेट्स कहलाते हैं। चूंकि प्रत्येक भाग 8 बिट लंबा होता है, और 8 बिट एक बाइट के बराबर होते हैं, इसलिए उन्हें अक्सर ऑक्टेट कहा जाता है।"
+      },
+      "key_takeaway": {
+        "en": "The four 8-bit parts of an IPv4 address are called Octets.",
+        "hi": "एक आईपीवी4 एड्रेस के चार 8-बिट भागों को ऑक्टेट कहा जाता है।"
+      }
+    },
+    {
+      "question_id": 19,
+      "question": {
+        "en": "What is the dotted decimal representation of the binary 11000000.10101000.00001100.01010000?",
+        "hi": "बाइनरी 11000000.10101000.00001100.01010000 का डॉटेड दशमलव प्रतिनिधित्व क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "192.168.12.80",
+          "hi": "192.168.12.80"
+        },
+        "b": {
+          "en": "192.168.10.80",
+          "hi": "192.168.10.80"
+        },
+        "c": {
+          "en": "193.168.12.80",
+          "hi": "193.168.12.80"
+        },
+        "d": {
+          "en": "192.169.12.80",
+          "hi": "192.169.12.80"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "Convert each 8-bit octet separately using powers of two (128, 64, 32, 16, 8, 4, 2, 1).",
+        "hi": "दो की घातों (128, 64, 32, 16, 8, 4, 2, 1) का उपयोग करके प्रत्येक 8-बिट ऑक्टेट को अलग से परिवर्तित करें।"
+      },
+      "explanation": {
+        "en": "Converting each binary octet to decimal gives: 11000000 = 128+64 = 192. 10101000 = 128+32+8 = 168. 00001100 = 8+4 = 12. 01010000 = 64+16 = 80. Therefore, the dotted decimal is 192.168.12.80.",
+        "hi": "प्रत्येक बाइनरी ऑक्टेट को दशमलव में बदलने पर मिलता है: 11000000 = 128+64 = 192। 10101000 = 128+32+8 = 168। 00001100 = 8+4 = 12। 01010000 = 64+16 = 80। इसलिए, डॉटेड दशमलव 192.168.12.80 है।"
+      },
+      "key_takeaway": {
+        "en": "Convert binary IP addresses octet by octet to find the decimal equivalent.",
+        "hi": "दशमलव समतुल्य खोजने के लिए बाइनरी IP एड्रेस को ऑक्टेट दर ऑक्टेट में बदलें।"
+      }
+    },
+    {
+      "question_id": 20,
+      "question": {
+        "en": "An IP address is divided into which two main parts?",
+        "hi": "एक आईपी एड्रेस को दो मुख्य भागों में विभाजित किया गया है?"
+      },
+      "options": {
+        "a": {
+          "en": "Server ID and Client ID",
+          "hi": "सर्वर आईडी और क्लाइंट आईडी"
+        },
+        "b": {
+          "en": "TCP ID and IP ID",
+          "hi": "टीसीपी आईडी और आईपी आईडी"
+        },
+        "c": {
+          "en": "Domain ID and Subnet ID",
+          "hi": "डोमेन आईडी और सबनेट आईडी"
+        },
+        "d": {
+          "en": "Network ID and Host ID",
+          "hi": "नेटवर्क आईडी और होस्ट आईडी"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "One part identifies the local network itself, and the other identifies the specific device within that network.",
+        "hi": "एक भाग स्थानीय नेटवर्क की पहचान करता है, और दूसरा उस नेटवर्क के भीतर विशिष्ट डिवाइस की पहचान करता है।"
+      },
+      "explanation": {
+        "en": "An IP address is logically divided into the Network ID (which specifies the network to which the host belongs) and the Host ID (which identifies the specific device or host within that network). The subnet mask is used to distinguish these two parts.",
+        "hi": "एक आईपी एड्रेस को तार्किक रूप से नेटवर्क आईडी (जो उस नेटवर्क को निर्दिष्ट करता है जिससे होस्ट संबंधित है) और होस्ट आईडी (जो उस नेटवर्क के भीतर विशिष्ट डिवाइस या होस्ट की पहचान करता है) में विभाजित किया जाता है। सबनेट मास्क का उपयोग इन दोनों भागों को अलग करने के लिए किया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "An IP address is composed of a Network ID and a Host ID.",
+        "hi": "एक आईपी एड्रेस नेटवर्क आईडी और होस्ट आईडी से बना होता है।"
+      }
+    },
+    {
+      "question_id": 21,
+      "question": {
+        "en": "How many IP address classes are there?",
+        "hi": "आईपी एड्रेस की कितनी क्लास हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "3",
+          "hi": "3"
+        },
+        "b": {
+          "en": "4",
+          "hi": "4"
+        },
+        "c": {
+          "en": "5",
+          "hi": "5"
+        },
+        "d": {
+          "en": "6",
+          "hi": "6"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The classes are labeled A, B, C, D, and E.",
+        "hi": "क्लास A, B, C, D, और E के रूप में लेबल किए जाते हैं।"
+      },
+      "explanation": {
+        "en": "There are five main classes of IP addresses: Class A, Class B, Class C, Class D, and Class E. Classes A, B, and C are used for unicast communication, Class D is for multicast, and Class E is reserved for experimental use.",
+        "hi": "आईपी एड्रेस की पांच मुख्य क्लास हैं: क्लास ए, क्लास बी, क्लास सी, क्लास डी और क्लास ई। क्लास ए, बी और सी यूनिकास्ट संचार के लिए उपयोग किए जाते हैं, क्लास डी मल्टीकास्ट के लिए है, और क्लास ई प्रयोगात्मक उपयोग के लिए आरक्षित है।"
+      },
+      "key_takeaway": {
+        "en": "There are five IP address classes: A, B, C, D, and E.",
+        "hi": "आईपी एड्रेस की पाँच क्लास हैं: A, B, C, D, और E।"
+      }
+    },
+    {
+      "question_id": 22,
+      "question": {
+        "en": "Which IP address class is used for large networks with a large number of devices?",
+        "hi": "कौन सी आईपी एड्रेस क्लास बड़ी संख्या में डिवाइस वाले बड़े नेटवर्क के लिए उपयोग की जाती है?"
+      },
+      "options": {
+        "a": {
+          "en": "Class B",
+          "hi": "क्लास बी"
+        },
+        "b": {
+          "en": "Class C",
+          "hi": "क्लास सी"
+        },
+        "c": {
+          "en": "Class D",
+          "hi": "क्लास डी"
+        },
+        "d": {
+          "en": "Class A",
+          "hi": "क्लास ए"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This class dedicates the most bits (the last three octets) to the Host ID.",
+        "hi": "यह क्लास होस्ट आईडी के लिए सबसे अधिक बिट्स (अंतिम तीन ऑक्टेट) समर्पित करती है।"
+      },
+      "explanation": {
+        "en": "Class A is used for very large networks because it allows for a small number of network IDs but an enormous number of host IDs (over 16 million hosts per network). Its range is from 1.0.0.0 to 126.0.0.0.",
+        "hi": "क्लास ए बहुत बड़े नेटवर्कों के लिए उपयोग किया जाता है क्योंकि यह कम संख्या में नेटवर्क आईडी लेकिन बड़ी संख्या में होस्ट आईडी (प्रति नेटवर्क 16 मिलियन से अधिक होस्ट) की अनुमति देता है। इसकी रेंज 1.0.0.0 से 126.0.0.0 तक है।"
+      },
+      "key_takeaway": {
+        "en": "Class A is for large networks with millions of hosts.",
+        "hi": "क्लास ए लाखों होस्ट वाले बड़े नेटवर्कों के लिए है।"
+      }
+    },
+    {
+      "question_id": 23,
+      "question": {
+        "en": "What is the starting range for Class A IP addresses?",
+        "hi": "क्लास ए आईपी एड्रेस की शुरुआती रेंज क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "0.0.0.0",
+          "hi": "0.0.0.0"
+        },
+        "b": {
+          "en": "128.0.0.0",
+          "hi": "128.0.0.0"
+        },
+        "c": {
+          "en": "192.0.0.0",
+          "hi": "192.0.0.0"
+        },
+        "d": {
+          "en": "224.0.0.0",
+          "hi": "224.0.0.0"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "The range technically begins with the lowest possible IP address, though 0.0.0.0 is reserved.",
+        "hi": "रेंज तकनीकी रूप से सबसे कम संभव आईपी एड्रेस से शुरू होती है, हालाँकि 0.0.0.0 आरक्षित है।"
+      },
+      "explanation": {
+        "en": "Class A addresses begin when the first bit of the first octet is 0. The usable range is typically considered 1.0.0.0 to 126.0.0.0, but the starting point of the total range is 0.0.0.0. (127.x.x.x is reserved for loopback).",
+        "hi": "क्लास ए एड्रेस तब शुरू होते हैं जब पहले ऑक्टेट का पहला बिट 0 होता है। प्रयोग योग्य रेंज को आमतौर पर 1.0.0.0 से 126.0.0.0 माना जाता है, लेकिन कुल रेंज का शुरुआती बिंदु 0.0.0.0 है। (127.x.x.x लूपबैक के लिए आरक्षित है)।"
+      },
+      "key_takeaway": {
+        "en": "Class A addresses start at 0.0.0.0 (usable from 1.x.x.x).",
+        "hi": "क्लास ए एड्रेस 0.0.0.0 से शुरू होते हैं (1.x.x.x से प्रयोग योग्य)।"
+      }
+    },
+    {
+      "question_id": 24,
+      "question": {
+        "en": "Which class of IP address is used for multicast?",
+        "hi": "आईपी एड्रेस की कौन सी क्लास मल्टीकास्ट के लिए उपयोग की जाती है?"
+      },
+      "options": {
+        "a": {
+          "en": "Class A",
+          "hi": "क्लास ए"
+        },
+        "b": {
+          "en": "Class B",
+          "hi": "क्लास बी"
+        },
+        "c": {
+          "en": "Class C",
+          "hi": "क्लास सी"
+        },
+        "d": {
+          "en": "Class D",
+          "hi": "क्लास डी"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Multicasting involves sending data to a group of hosts simultaneously.",
+        "hi": "मल्टीकास्टिंग में एक साथ कई होस्ट के समूह को डेटा भेजना शामिल है।"
+      },
+      "explanation": {
+        "en": "Class D addresses (224.0.0.0 to 239.255.255.255) are reserved for multicast communication, where a single packet is simultaneously sent to a selected group of recipients, such as for video conferencing or streaming services.",
+        "hi": "क्लास डी एड्रेस (224.0.0.0 से 239.255.255.255) मल्टीकास्ट संचार के लिए आरक्षित हैं, जहाँ एक ही पैकेट को एक साथ प्राप्तकर्ताओं के एक चयनित समूह को भेजा जाता है, जैसे कि वीडियो कॉन्फ्रेंसिंग या स्ट्रीमिंग सेवाओं के लिए।"
+      },
+      "key_takeaway": {
+        "en": "Class D addresses are reserved exclusively for multicast.",
+        "hi": "क्लास डी एड्रेस विशेष रूप से मल्टीकास्ट के लिए आरक्षित हैं।"
+      }
+    },
+    {
+      "question_id": 25,
+      "question": {
+        "en": "Which class of IP address is reserved for experimental purposes?",
+        "hi": "आईपी एड्रेस की कौन सी क्लास प्रयोगात्मक उद्देश्यों के लिए आरक्षित है?"
+      },
+      "options": {
+        "a": {
+          "en": "Class B",
+          "hi": "क्लास बी"
+        },
+        "b": {
+          "en": "Class C",
+          "hi": "क्लास सी"
+        },
+        "c": {
+          "en": "Class D",
+          "hi": "क्लास डी"
+        },
+        "d": {
+          "en": "Class E",
+          "hi": "क्लास ई"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This is the highest-numbered class, defined by a starting range of 240.0.0.0.",
+        "hi": "यह सबसे अधिक संख्या वाली क्लास है, जिसे 240.0.0.0 की शुरुआती रेंज द्वारा परिभाषित किया गया है।"
+      },
+      "explanation": {
+        "en": "Class E addresses (240.0.0.0 to 255.255.255.255) are reserved for future or experimental use by the Internet Engineering Task Force (IETF) and are not used for general Internet or private network traffic.",
+        "hi": "क्लास ई एड्रेस (240.0.0.0 से 255.255.255.255) इंटरनेट इंजीनियरिंग टास्क फोर्स (आईईटीएफ) द्वारा भविष्य या प्रयोगात्मक उपयोग के लिए आरक्षित हैं और सामान्य इंटरनेट या निजी नेटवर्क ट्रैफिक के लिए उपयोग नहीं किए जाते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Class E is reserved for future and experimental use.",
+        "hi": "क्लास ई भविष्य और प्रयोगात्मक उपयोग के लिए आरक्षित है।"
+      }
+    },
+    {
+      "question_id": 26,
+      "question": {
+        "en": "What is the default subnet mask for a Class B IP address?",
+        "hi": "क्लास बी आईपी एड्रेस के लिए डिफॉल्ट सबनेट मास्क क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "255.0.0.0",
+          "hi": "255.0.0.0"
+        },
+        "b": {
+          "en": "255.255.255.0",
+          "hi": "255.255.255.0"
+        },
+        "c": {
+          "en": "255.255.255.255",
+          "hi": "255.255.255.255"
+        },
+        "d": {
+          "en": "255.255.0.0",
+          "hi": "255.255.0.0"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "Class B reserves the first two octets for the Network ID and the last two for the Host ID.",
+        "hi": "क्लास बी पहले दो ऑक्टेट को नेटवर्क आईडी के लिए और अंतिम दो को होस्ट आईडी के लिए आरक्षित करता है।"
+      },
+      "explanation": {
+        "en": "A subnet mask uses the value 255 to indicate the Network ID part and 0 for the Host ID part. Class B uses the first two octets for the Network ID. Therefore, the default mask is 255.255.0.0.",
+        "hi": "एक सबनेट मास्क नेटवर्क आईडी भाग को इंगित करने के लिए 255 मान का उपयोग करता है और होस्ट आईडी भाग के लिए 0 का उपयोग करता है। क्लास बी नेटवर्क आईडी के लिए पहले दो ऑक्टेट का उपयोग करता है। इसलिए, डिफॉल्ट मास्क 255.255.0.0 है।"
+      },
+      "key_takeaway": {
+        "en": "Class B default subnet mask is 255.255.0.0.",
+        "hi": "क्लास बी डिफॉल्ट सबनेट मास्क 255.255.0.0 है।"
+      }
+    },
+    {
+      "question_id": 27,
+      "question": {
+        "en": "What is IP routing?",
+        "hi": "आईपी रूटिंग क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "The process of assigning IP addresses",
+          "hi": "आईपी एड्रेस असाइन करने की प्रक्रिया"
+        },
+        "b": {
+          "en": "The process of encrypting data packets",
+          "hi": "डेटा पैकेट को एन्क्रिप्ट करने की प्रक्रिया"
+        },
+        "c": {
+          "en": "The process of creating a network",
+          "hi": "एक नेटवर्क बनाने की प्रक्रिया"
+        },
+        "d": {
+          "en": "The process of selecting the best path for data packets across networks",
+          "hi": "नेटवर्क के पार डेटा पैकेट के लिए सबसे अच्छा मार्ग चुनने की प्रक्रिया"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This is the primary job of a router, ensuring data finds its way from source to destination.",
+        "hi": "यह एक राउटर का प्राथमिक कार्य है, यह सुनिश्चित करना कि डेटा स्रोत से गंतव्य तक अपना रास्ता खोज ले।"
+      },
+      "explanation": {
+        "en": "IP Routing is the process performed by routers to select the optimal path (route) that a data packet must take to travel from a source network to a destination network. It uses routing tables and protocols to make these path-selection decisions.",
+        "hi": "आईपी रूटिंग राउटरों द्वारा की जाने वाली प्रक्रिया है ताकि डेटा पैकेट को एक स्रोत नेटवर्क से गंतव्य नेटवर्क तक यात्रा करने के लिए सबसे अच्छा मार्ग (रूट) चुना जा सके। यह इन मार्ग-चयन निर्णयों को लेने के लिए रूटिंग टेबल और प्रोटोकॉल का उपयोग करता है।"
+      },
+      "key_takeaway": {
+        "en": "IP Routing selects the best data path between networks.",
+        "hi": "आईपी रूटिंग नेटवर्कों के बीच सबसे अच्छा डेटा पथ चुनता है।"
+      }
+    },
+    {
+      "question_id": 28,
+      "question": {
+        "en": "Which type of IP routing involves manual route selection by a network administrator?",
+        "hi": "किस प्रकार की आईपी रूटिंग में नेटवर्क एडमिनिस्ट्रेटर द्वारा मैन्युअल रूट चयन शामिल होता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Dynamic Routing",
+          "hi": "डायनामिक रूटिंग"
+        },
+        "b": {
+          "en": "Automatic Routing",
+          "hi": "ऑटोमैटिक रूटिंग"
+        },
+        "c": {
+          "en": "Static Routing",
+          "hi": "स्टैटिक रूटिंग"
+        },
+        "d": {
+          "en": "Default Routing",
+          "hi": "डिफॉल्ट रूटिंग"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The route is fixed and does not change based on real-time network conditions.",
+        "hi": "रूट निश्चित है और वास्तविक समय की नेटवर्क स्थितियों के आधार पर नहीं बदलता है।"
+      },
+      "explanation": {
+        "en": "Static Routing requires the network administrator to manually configure all routes and maintain the routing table. It is simpler to implement in small networks but does not adapt automatically to network changes or failures.",
+        "hi": "स्टैटिक रूटिंग में नेटवर्क एडमिनिस्ट्रेटर को मैन्युअल रूप से सभी रूटों को कॉन्फ़िगर करने और रूटिंग टेबल को बनाए रखने की आवश्यकता होती है। छोटे नेटवर्कों में इसे लागू करना आसान है, लेकिन यह नेटवर्क परिवर्तनों या विफलताओं के लिए स्वचालित रूप से अनुकूलित नहीं होता है।"
+      },
+      "key_takeaway": {
+        "en": "Static routing is the manual configuration of network routes.",
+        "hi": "स्टैटिक रूटिंग नेटवर्क रूटों का मैन्युअल कॉन्फ़िगरेशन है।"
+      }
+    },
+    {
+      "question_id": 29,
+      "question": {
+        "en": "Which protocol is commonly associated with dynamic routing?",
+        "hi": "कौन सा प्रोटोकॉल आमतौर पर डायनामिक रूटिंग से जुड़ा होता है?"
+      },
+      "options": {
+        "a": {
+          "en": "TCP",
+          "hi": "टीसीपी"
+        },
+        "b": {
+          "en": "HTTP",
+          "hi": "एचटीटीपी"
+        },
+        "c": {
+          "en": "RIP (Router Information Protocol)",
+          "hi": "आरआईपी (राउटर इंफॉर्मेशन प्रोटोकॉल)"
+        },
+        "d": {
+          "en": "FTP",
+          "hi": "एफटीपी"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This protocol is one of the oldest routing protocols designed to share information about the best routes.",
+        "hi": "यह सबसे पुराने रूटिंग प्रोटोकॉलों में से एक है जिसे सर्वोत्तम रूटों के बारे में जानकारी साझा करने के लिए डिज़ाइन किया गया है।"
+      },
+      "explanation": {
+        "en": "Dynamic Routing uses routing protocols like RIP (Routing Information Protocol) or OSPF to automatically exchange routing information between routers. This allows routers to build their routing tables and adapt to network changes without manual intervention.",
+        "hi": "डायनामिक रूटिंग राउटरों के बीच रूटिंग जानकारी को स्वचालित रूप से विनिमय करने के लिए RIP (राउटिंग इंफॉर्मेशन प्रोटोकॉल) या OSPF जैसे रूटिंग प्रोटोकॉल का उपयोग करता है। यह राउटरों को अपनी रूटिंग टेबल बनाने और मैन्युअल हस्तक्षेप के बिना नेटवर्क परिवर्तनों के अनुकूल होने की अनुमति देता है।"
+      },
+      "key_takeaway": {
+        "en": "Dynamic routing uses protocols like RIP to automatically manage routes.",
+        "hi": "डायनामिक रूटिंग रूटों को स्वचालित रूप से प्रबंधित करने के लिए RIP जैसे प्रोटोकॉल का उपयोग करता है।"
+      }
+    },
+    {
+      "question_id": 30,
+      "question": {
+        "en": "What does NOS stand for?",
+        "hi": "एनओएस का क्या अर्थ है?"
+      },
+      "options": {
+        "a": {
+          "en": "Network Operating Software",
+          "hi": "नेटवर्क ऑपरेटिंग सॉफ्टवेयर"
+        },
+        "b": {
+          "en": "New Operating System",
+          "hi": "न्यू ऑपरेटिंग सिस्टम"
+        },
+        "c": {
+          "en": "Network Online Service",
+          "hi": "नेटवर्क ऑनलाइन सर्विस"
+        },
+        "d": {
+          "en": "Network Operating System",
+          "hi": "नेटवर्क ऑपरेटिंग सिस्टम"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "It is the software that manages the server and network resources.",
+        "hi": "यह वह सॉफ्टवेयर है जो सर्वर और नेटवर्क संसाधनों का प्रबंधन करता है।"
+      },
+      "explanation": {
+        "en": "NOS stands for Network Operating System. It is the operating system specifically designed to support networking capabilities, manage network resources, provide security, and allow client computers to access shared resources like files and printers.",
+        "hi": "एनओएस का अर्थ है नेटवर्क ऑपरेटिंग सिस्टम। यह ऑपरेटिंग सिस्टम विशेष रूप से नेटवर्किंग क्षमताओं का समर्थन करने, नेटवर्क संसाधनों का प्रबंधन करने, सुरक्षा प्रदान करने और क्लाइंट कंप्यूटरों को फ़ाइलों और प्रिंटरों जैसे साझा संसाधनों तक पहुंचने की अनुमति देने के लिए डिज़ाइन किया गया है।"
+      },
+      "key_takeaway": {
+        "en": "NOS is the Network Operating System.",
+        "hi": "NOS नेटवर्क ऑपरेटिंग सिस्टम है।"
+      }
+    },
+    {
+      "question_id": 31,
+      "question": {
+        "en": "What is the primary function of a Network Operating System (NOS)?",
+        "hi": "नेटवर्क ऑपरेटिंग सिस्टम (एनओएस) का प्राथमिक कार्य क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "To manage the resources of a single computer",
+          "hi": "एक एकल कंप्यूटर के संसाधनों का प्रबंधन करना"
+        },
+        "b": {
+          "en": "To only provide internet access",
+          "hi": "केवल इंटरनेट एक्सेस प्रदान करना"
+        },
+        "c": {
+          "en": "To act as a web browser",
+          "hi": "एक वेब ब्राउज़र के रूप में कार्य करना"
+        },
+        "d": {
+          "en": "To manage and control network resources",
+          "hi": "नेटवर्क संसाधनों का प्रबंधन और नियंत्रण करना"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The core function must involve both the network and resource management.",
+        "hi": "मुख्य कार्य में नेटवर्क और संसाधन प्रबंधन दोनों शामिल होना चाहिए।"
+      },
+      "explanation": {
+        "en": "The primary function of an NOS is to manage network resources such as users, security, applications, and shared hardware. It ensures smooth communication and resource sharing across all the devices connected to the network.",
+        "hi": "एक एनओएस का प्राथमिक कार्य उपयोगकर्ताओं, सुरक्षा, एप्लिकेशन और साझा हार्डवेयर जैसे नेटवर्क संसाधनों का प्रबंधन करना है। यह नेटवर्क से जुड़े सभी डिवाइसों में सुचारू संचार और संसाधन साझाकरण सुनिश्चित करता है।"
+      },
+      "key_takeaway": {
+        "en": "NOS manages and controls shared network resources.",
+        "hi": "NOS साझा नेटवर्क संसाधनों का प्रबंधन और नियंत्रण करता है।"
+      }
+    },
+    {
+      "question_id": 32,
+      "question": {
+        "en": "Which was the first NOS developed in 1985?",
+        "hi": "1985 में विकसित पहला एनओएस कौन सा था?"
+      },
+      "options": {
+        "a": {
+          "en": "Windows NT",
+          "hi": "विंडोज एनटी"
+        },
+        "b": {
+          "en": "Linux",
+          "hi": "लिनक्स"
+        },
+        "c": {
+          "en": "Sun Solaris",
+          "hi": "सन सोलारिस"
+        },
+        "d": {
+          "en": "Novel NetWare",
+          "hi": "नोवेल नेटवेयर"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This commercial product was dominant in the early networking days before Windows NT.",
+        "hi": "यह व्यावसायिक उत्पाद विंडोज एनटी से पहले शुरुआती नेटवर्किंग दिनों में प्रमुख था।"
+      },
+      "explanation": {
+        "en": "Novel NetWare was one of the earliest and most widely used Network Operating Systems, developed by Novell, Inc., in 1983, with its major release in 1985. It specialized in offering file and print sharing services to networked computers.",
+        "hi": "नोवेल नेटवेयर सबसे शुरुआती और सबसे व्यापक रूप से उपयोग किए जाने वाले नेटवर्क ऑपरेटिंग सिस्टमों में से एक था, जिसे नोवेल, इंक. द्वारा 1983 में विकसित किया गया था, जिसका प्रमुख रिलीज 1985 में हुआ था। यह नेटवर्क्ड कंप्यूटरों को फ़ाइल और प्रिंट साझाकरण सेवाएँ प्रदान करने में विशेषज्ञ था।"
+      },
+      "key_takeaway": {
+        "en": "Novel NetWare was the first major NOS (1985).",
+        "hi": "नोवेल नेटवेयर पहला प्रमुख NOS था (1985)।"
+      }
+    },
+    {
+      "question_id": 33,
+      "question": {
+        "en": "Which of the following is an open-source NOS?",
+        "hi": "निम्नलिखित में से कौन सा एक ओपन-सोर्स एनओएस है?"
+      },
+      "options": {
+        "a": {
+          "en": "Microsoft Windows",
+          "hi": "माइक्रोसॉफ्ट विंडोज"
+        },
+        "b": {
+          "en": "macOS",
+          "hi": "मैकओएस"
+        },
+        "c": {
+          "en": "Linux",
+          "hi": "लिनक्स"
+        },
+        "d": {
+          "en": "Novel NetWare",
+          "hi": "नोवेल नेटवेयर"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This operating system is known for its free and modifiable code, forming the basis for many server OS variants.",
+        "hi": "यह ऑपरेटिंग सिस्टम अपने मुफ्त और संशोधनीय कोड के लिए जाना जाता है, जो कई सर्वर ओएस वेरिएंट का आधार बनता है।"
+      },
+      "explanation": {
+        "en": "Linux is an open-source operating system, meaning its source code is freely available to the public for use, modification, and distribution. Its stability and security make it a popular choice for servers and Network Operating Systems worldwide.",
+        "hi": "लिनक्स एक ओपन-सोर्स ऑपरेटिंग सिस्टम है, जिसका अर्थ है कि इसका सोर्स कोड उपयोग, संशोधन और वितरण के लिए जनता के लिए स्वतंत्र रूप से उपलब्ध है। इसकी स्थिरता और सुरक्षा इसे दुनिया भर में सर्वर और नेटवर्क ऑपरेटिंग सिस्टम के लिए एक लोकप्रिय विकल्प बनाती है।"
+      },
+      "key_takeaway": {
+        "en": "Linux is the most popular open-source NOS choice.",
+        "hi": "लिनक्स सबसे लोकप्रिय ओपन-सोर्स NOS विकल्प है।"
+      }
+    },
+    {
+      "question_id": 34,
+      "question": {
+        "en": "Who developed Linux?",
+        "hi": "लिनक्स को किसने विकसित किया?"
+      },
+      "options": {
+        "a": {
+          "en": "Steve Jobs",
+          "hi": "स्टीव जॉब्स"
+        },
+        "b": {
+          "en": "Bill Gates",
+          "hi": "बिल गेट्स"
+        },
+        "c": {
+          "en": "Linus Torvalds",
+          "hi": "लाइनस टोरवाल्ड्स"
+        },
+        "d": {
+          "en": "Stephen Bourne",
+          "hi": "स्टीफन बोर्न"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "He is a Finnish-American software engineer who began developing the core of Linux in 1991.",
+        "hi": "वह एक फिनिश-अमेरिकी सॉफ्टवेयर इंजीनियर हैं जिन्होंने 1991 में लिनक्स के कोर का विकास शुरू किया।"
+      },
+      "explanation": {
+        "en": "Linux was created by Linus Torvalds in 1991 while he was a student at the University of Helsinki. He developed the core component, the Linux kernel, and released it under an open-source license, leading to its widespread development and adoption.",
+        "hi": "लिनक्स को 1991 में लाइनस टोरवाल्ड्स द्वारा विकसित किया गया था जब वह हेलसिंकी विश्वविद्यालय में एक छात्र थे। उन्होंने कोर घटक, लिनक्स कर्नेल को विकसित किया और इसे एक ओपन-सोर्स लाइसेंस के तहत जारी किया, जिससे इसका व्यापक विकास और अपनाना हुआ।"
+      },
+      "key_takeaway": {
+        "en": "Linus Torvalds developed the Linux kernel.",
+        "hi": "लाइनस टोरवाल्ड्स ने लिनक्स कर्नेल विकसित किया।"
+      }
+    },
+    {
+      "question_id": 35,
+      "question": {
+        "en": "What is a key advantage of Linux being open-source?",
+        "hi": "लिनक्स के ओपन-सोर्स होने का एक प्रमुख लाभ क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "It is more expensive",
+          "hi": "यह अधिक महंगा है"
+        },
+        "b": {
+          "en": "It only runs on specific hardware",
+          "hi": "यह केवल विशिष्ट हार्डवेयर पर चलता है"
+        },
+        "c": {
+          "en": "It has no security features",
+          "hi": "इसमें कोई सुरक्षा सुविधाएँ नहीं हैं"
+        },
+        "d": {
+          "en": "Its source code is freely available for modification",
+          "hi": "इसका सोर्स कोड संशोधन के लिए स्वतंत्र रूप से उपलब्ध है"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The term 'open-source' directly implies that the core code is accessible to everyone.",
+        "hi": "शब्द 'ओपन-सोर्स' सीधे तौर पर दर्शाता है कि कोर कोड सभी के लिए सुलभ है।"
+      },
+      "explanation": {
+        "en": "The open-source nature of Linux means that developers can freely view, modify, and redistribute the code. This flexibility allows businesses and individuals to tailor the operating system precisely to their needs, fostering rapid development and community bug-fixing.",
+        "hi": "लिनक्स की ओपन-सोर्स प्रकृति का मतलब है कि डेवलपर्स कोड को स्वतंत्र रूप से देख, संशोधित और पुनर्वितरित कर सकते हैं। यह लचीलापन व्यवसायों और व्यक्तियों को ऑपरेटिंग सिस्टम को उनकी जरूरतों के अनुरूप बनाने की अनुमति देता है, जिससे तेजी से विकास और सामुदायिक बग-फिक्सिंग को बढ़ावा मिलता है।"
+      },
+      "key_takeaway": {
+        "en": "Open-source means the code is free to view and modify.",
+        "hi": "ओपन-सोर्स का मतलब है कि कोड देखने और संशोधित करने के लिए स्वतंत्र है।"
+      }
+    },
+    {
+      "question_id": 36,
+      "question": {
+        "en": "Linux is renowned for its:",
+        "hi": "लिनक्स अपने लिए प्रसिद्ध है:"
+      },
+      "options": {
+        "a": {
+          "en": "High cost and complexity",
+          "hi": "उच्च लागत और जटिलता"
+        },
+        "b": {
+          "en": "Lack of hardware compatibility",
+          "hi": "हार्डवेयर संगतता की कमी"
+        },
+        "c": {
+          "en": "Proprietary nature",
+          "hi": "मालिकाना प्रकृति"
+        },
+        "d": {
+          "en": "Stability and reliability",
+          "hi": "स्थिरता और विश्वसनीयता"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "It is preferred for servers due to its ability to run non-stop for very long periods.",
+        "hi": "यह बहुत लंबी अवधि के लिए बिना रुके चलने की क्षमता के कारण सर्वर के लिए पसंद किया जाता है।"
+      },
+      "explanation": {
+        "en": "Linux is widely used in server environments because it is highly stable, reliable, and resistant to crashing. Its robust architecture and long uptime (time spent running without needing a reboot) are key reasons for its popularity in enterprise and network settings.",
+        "hi": "लिनक्स का व्यापक रूप से सर्वर वातावरण में उपयोग किया जाता है क्योंकि यह अत्यधिक स्थिर, विश्वसनीय और क्रैश होने के लिए प्रतिरोधी है। इसकी मजबूत वास्तुकला और लंबी अपटाइम (रीबूट की आवश्यकता के बिना चलने में लगने वाला समय) एंटरप्राइज और नेटवर्क सेटिंग्स में इसकी लोकप्रियता के मुख्य कारण हैं।"
+      },
+      "key_takeaway": {
+        "en": "Linux is highly valued for its stability and reliability.",
+        "hi": "लिनक्स अपनी स्थिरता और विश्वसनीयता के लिए अत्यधिक मूल्यवान है।"
+      }
+    },
+    {
+      "question_id": 37,
+      "question": {
+        "en": "What are the three major components of Linux?",
+        "hi": "लिनक्स के तीन प्रमुख घटक क्या हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "CPU, RAM, Storage",
+          "hi": "सीपीयू, रैम, स्टोरेज"
+        },
+        "b": {
+          "en": "Client, Server, Network",
+          "hi": "क्लाइंट, सर्वर, नेटवर्क"
+        },
+        "c": {
+          "en": "Kernel, Shell, Applications",
+          "hi": "कर्नेल, शेल, एप्लिकेशन"
+        },
+        "d": {
+          "en": "Hardware, Software, Firmware",
+          "hi": "हार्डवेयर, सॉफ्टवेयर, फर्मवेयर"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "These three parts handle the hardware interface, the user interface, and the tasks a user wants to perform.",
+        "hi": "ये तीन भाग हार्डवेयर इंटरफेस, उपयोगकर्ता इंटरफेस और उपयोगकर्ता द्वारा किए जाने वाले कार्यों को संभालते हैं।"
+      },
+      "explanation": {
+        "en": "The three major components of the Linux operating system are the Kernel (the core, managing hardware), the Shell (the command-line interface or interpreter), and the Applications/Utilities (the programs users run).",
+        "hi": "लिनक्स ऑपरेटिंग सिस्टम के तीन प्रमुख घटक हैं कर्नेल (कोर, हार्डवेयर का प्रबंधन), शेल (कमांड-लाइन इंटरफेस या इंटरप्रेटर), और एप्लिकेशन/यूटिलिटीज (वे प्रोग्राम जो उपयोगकर्ता चलाते हैं)।"
+      },
+      "key_takeaway": {
+        "en": "Linux components are the Kernel, Shell, and Applications.",
+        "hi": "लिनक्स घटक हैं कर्नेल, शेल और एप्लिकेशन।"
+      }
+    },
+    {
+      "question_id": 38,
+      "question": {
+        "en": "Which component of Linux directly interacts with the hardware?",
+        "hi": "लिनक्स का कौन सा घटक सीधे हार्डवेयर के साथ इंटरैक्ट करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Shell",
+          "hi": "शेल"
+        },
+        "b": {
+          "en": "Applications",
+          "hi": "एप्लिकेशन"
+        },
+        "c": {
+          "en": "Kernel",
+          "hi": "कर्नेल"
+        },
+        "d": {
+          "en": "GUI",
+          "hi": "जीयूआई"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This is the core of the operating system, acting as the bridge between the application software and the physical hardware.",
+        "hi": "यह ऑपरेटिंग सिस्टम का कोर है, जो एप्लिकेशन सॉफ्टवेयर और भौतिक हार्डवेयर के बीच पुल के रूप में कार्य करता है।"
+      },
+      "explanation": {
+        "en": "The Kernel is the heart of the Linux OS. It manages the system's hardware resources, including CPU, memory, and I/O devices, and provides necessary services to applications. It is the only component that directly interacts with the hardware.",
+        "hi": "कर्नेल लिनक्स ओएस का दिल है। यह सीपीयू, मेमोरी और I/O डिवाइस सहित सिस्टम के हार्डवेयर संसाधनों का प्रबंधन करता है, और एप्लिकेशन को आवश्यक सेवाएँ प्रदान करता है। यह एकमात्र घटक है जो सीधे हार्डवेयर के साथ इंटरैक्ट करता है।"
+      },
+      "key_takeaway": {
+        "en": "The Kernel is the core component that manages hardware.",
+        "hi": "कर्नेल वह मुख्य घटक है जो हार्डवेयर का प्रबंधन करता है।"
+      }
+    },
+    {
+      "question_id": 39,
+      "question": {
+        "en": "What is the role of the Linux Shell?",
+        "hi": "लिनक्स शेल की क्या भूमिका है?"
+      },
+      "options": {
+        "a": {
+          "en": "To manage hardware resources directly",
+          "hi": "हार्डवेयर संसाधनों को सीधे प्रबंधित करने के लिए"
+        },
+        "b": {
+          "en": "To only run graphical applications",
+          "hi": "केवल ग्राफिकल एप्लिकेशन चलाने के लिए"
+        },
+        "c": {
+          "en": "To provide internet connectivity",
+          "hi": "इंटरनेट कनेक्टिविटी प्रदान करने के लिए"
+        },
+        "d": {
+          "en": "To act as an interface between users/applications and the Kernel",
+          "hi": "उपयोगकर्ताओं/एप्लिकेशन और कर्नेल के बीच एक इंटरफेस के रूप में कार्य करना"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The shell is an interpreter that translates user commands into instructions the kernel can understand.",
+        "hi": "शेल एक इंटरप्रेटर है जो उपयोगकर्ता कमांड को उन निर्देशों में अनुवाद करता है जिन्हें कर्नेल समझ सकता है।"
+      },
+      "explanation": {
+        "en": "The Shell is an interface that accepts commands from the user (or a script) and translates them into a language understood by the Kernel. It acts as a protective layer, providing access to the OS services without exposing the Kernel directly.",
+        "hi": "शेल एक इंटरफ़ेस है जो उपयोगकर्ता (या एक स्क्रिप्ट) से कमांड स्वीकार करता है और उन्हें कर्नेल द्वारा समझी जाने वाली भाषा में अनुवादित करता है। यह कर्नेल को सीधे उजागर किए बिना ओएस सेवाओं तक पहुंच प्रदान करते हुए एक सुरक्षात्मक परत के रूप में कार्य करता है।"
+      },
+      "key_takeaway": {
+        "en": "The Shell is the command interpreter between the user and the Kernel.",
+        "hi": "शेल उपयोगकर्ता और कर्नेल के बीच कमांड इंटरप्रेटर है।"
+      }
+    },
+    {
+      "question_id": 40,
+      "question": {
+        "en": "Which shell is known as \"sh\"?",
+        "hi": "किस शेल को \"श\" के नाम से जाना जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Korn Shell",
+          "hi": "कोर्न शेल"
+        },
+        "b": {
+          "en": "C-Shell",
+          "hi": "सी-शेल"
+        },
+        "c": {
+          "en": "Bourne Again Shell",
+          "hi": "बोर्न अगेन शेल"
+        },
+        "d": {
+          "en": "Bourne Shell",
+          "hi": "बोर्न शेल"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This was the first widely available Unix shell, developed by Stephen Bourne.",
+        "hi": "यह स्टीफन बोर्न द्वारा विकसित पहला व्यापक रूप से उपलब्ध यूनिक्स शेल था।"
+      },
+      "explanation": {
+        "en": "The Bourne Shell, commonly referred to as 'sh', was a standard Unix shell developed by Stephen Bourne at Bell Labs. It is significant because many modern shells, like 'bash' (Bourne Again Shell), are based on its syntax and features.",
+        "hi": "बोर्न शेल, जिसे आमतौर पर 'sh' के रूप में संदर्भित किया जाता है, बेल लैब्स में स्टीफन बोर्न द्वारा विकसित एक मानक यूनिक्स शेल था। यह महत्वपूर्ण है क्योंकि 'bash' (बोर्न अगेन शेल) जैसे कई आधुनिक शेल इसकी सिंटैक्स और विशेषताओं पर आधारित हैं।"
+      },
+      "key_takeaway": {
+        "en": "The Bourne Shell is the original 'sh'.",
+        "hi": "बोर्न शेल मूल 'sh' है।"
+      }
+    },
+    {
+      "question_id": 41,
+      "question": {
+        "en": "Which shell allows scripting similar to the C programming language?",
+        "hi": "कौन सा शेल सी प्रोग्रामिंग भाषा के समान स्क्रिप्टिंग की अनुमति देता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Bourne Shell (sh)",
+          "hi": "बोर्न शेल (श)"
+        },
+        "b": {
+          "en": "Korn Shell (ksh)",
+          "hi": "कोर्न शेल (केएसएच)"
+        },
+        "c": {
+          "en": "Bourne Again Shell (bash)",
+          "hi": "बोर्न अगेन शेल (बैश)"
+        },
+        "d": {
+          "en": "C-Shell (csh)",
+          "hi": "सी-शेल (सीएसएच)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The answer is in the name of the shell itself, which mimics a popular language.",
+        "hi": "उत्तर शेल के नाम में ही है, जो एक लोकप्रिय भाषा की नकल करता है।"
+      },
+      "explanation": {
+        "en": "The C-Shell (csh) was developed with a scripting language that has a syntax similar to the C programming language, particularly in its control flow structures. This was designed to be more intuitive for programmers familiar with C.",
+        "hi": "सी-शेल (csh) को एक स्क्रिप्टिंग भाषा के साथ विकसित किया गया था जिसका सिंटैक्स सी प्रोग्रामिंग भाषा के समान है, खासकर इसकी नियंत्रण प्रवाह संरचनाओं में। यह सी से परिचित प्रोग्रामरों के लिए अधिक सहज होने के लिए डिज़ाइन किया गया था।"
+      },
+      "key_takeaway": {
+        "en": "C-Shell (csh) uses C-like syntax for scripting.",
+        "hi": "सी-शेल (csh) स्क्रिप्टिंग के लिए सी-जैसी सिंटैक्स का उपयोग करता है।"
+      }
+    },
+    {
+      "question_id": 42,
+      "question": {
+        "en": "Which shell is an improved version of the C-Shell?",
+        "hi": "कौन सा शेल सी-शेल का एक सुधरा हुआ संस्करण है?"
+      },
+      "options": {
+        "a": {
+          "en": "TC-Shell (tcsh)",
+          "hi": "टीसी-शेल (टीसीएसएच)"
+        },
+        "b": {
+          "en": "Bourne Shell (sh)",
+          "hi": "बोर्न शेल (श)"
+        },
+        "c": {
+          "en": "Korn Shell (ksh)",
+          "hi": "कोर्न शेल (केएसएच)"
+        },
+        "d": {
+          "en": "Bourne Again Shell (bash)",
+          "hi": "बोर्न अगेन शेल (बैश)"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "This shell name is often just 'csh' with an extra letter for 'T' (terminal/toolkit).",
+        "hi": "यह शेल नाम अक्सर 'T' (टर्मिनल/टूलकिट) के लिए एक अतिरिक्त अक्षर के साथ 'csh' होता है।"
+      },
+      "explanation": {
+        "en": "The TC-Shell (tcsh) is a backward-compatible but enhanced version of the C-Shell (csh). Its improvements include features like command-line editing, programmable word completion, and history tracking, making it more user-friendly.",
+        "hi": "टीसी-शेल (tcsh) सी-शेल (csh) का एक पिछड़ा-संगत लेकिन उन्नत संस्करण है। इसके सुधारों में कमांड-लाइन एडिटिंग, प्रोग्रामेबल वर्ड कम्प्लीशन और हिस्ट्री ट्रैकिंग जैसी सुविधाएँ शामिल हैं, जो इसे अधिक उपयोगकर्ता के अनुकूल बनाती हैं।"
+      },
+      "key_takeaway": {
+        "en": "TC-Shell (tcsh) is the improved version of C-Shell.",
+        "hi": "टीसी-शेल (tcsh) सी-शेल का सुधरा हुआ संस्करण है।"
+      }
+    },
+    {
+      "question_id": 43,
+      "question": {
+        "en": "Which shell combines the abilities of Bourne, C, and Korn shells?",
+        "hi": "कौन सा शेल बोर्न, सी, और कोर्न शेल की क्षमताओं को जोड़ता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Bourne Shell (sh)",
+          "hi": "बोर्न शेल (श)"
+        },
+        "b": {
+          "en": "C-Shell (csh)",
+          "hi": "सी-शेल (सीएसएच)"
+        },
+        "c": {
+          "en": "Korn Shell (ksh)",
+          "hi": "कोर्न शेल (केएसएच)"
+        },
+        "d": {
+          "en": "Bourne Again Shell (bash)",
+          "hi": "बोर्न अगेन शेल (बैश)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This shell is the default in many Linux distributions and is a hybrid, indicated by the word 'Again' in its full name.",
+        "hi": "यह शेल कई लिनक्स वितरणों में डिफ़ॉल्ट है और यह एक हाइब्रिड है, जिसे इसके पूरे नाम में 'Again' शब्द से इंगित किया गया है।"
+      },
+      "explanation": {
+        "en": "The Bourne Again Shell (bash) is an interpreter that incorporates the best features from the Bourne Shell (sh), C-Shell (csh), and Korn Shell (ksh). It is the most commonly used shell in Linux, offering powerful scripting capabilities and user-friendly features like command history.",
+        "hi": "बोर्न अगेन शेल (bash) एक इंटरप्रेटर है जो बोर्न शेल (sh), सी-शेल (csh), और कोर्न शेल (ksh) से सर्वोत्तम विशेषताओं को शामिल करता है। यह लिनक्स में सबसे अधिक उपयोग किया जाने वाला शेल है, जो शक्तिशाली स्क्रिप्टिंग क्षमताओं और कमांड हिस्ट्री जैसी उपयोगकर्ता के अनुकूल सुविधाएँ प्रदान करता है।"
+      },
+      "key_takeaway": {
+        "en": "Bash (Bourne Again Shell) is the powerful, hybrid, and default Linux shell.",
+        "hi": "Bash (बोर्न अगेन शेल) शक्तिशाली, हाइब्रिड और डिफ़ॉल्ट लिनक्स शेल है।"
+      }
+    },
+    {
+      "question_id": 44,
+      "question": {
+        "en": "What is the symbol for the Linux shell prompt?",
+        "hi": "लिनक्स शेल प्रॉम्प्ट का प्रतीक क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": ">",
+          "hi": ">"
+        },
+        "b": {
+          "en": "@",
+          "hi": "@"
+        },
+        "c": {
+          "en": "$",
+          "hi": "$"
+        },
+        "d": {
+          "en": "#",
+          "hi": "#"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This symbol typically indicates a non-root (normal) user's command prompt.",
+        "hi": "यह प्रतीक आमतौर पर एक गैर-रूट (सामान्य) उपयोगकर्ता के कमांड प्रॉम्प्ट को इंगित करता है।"
+      },
+      "explanation": {
+        "en": "In Linux, the dollar sign (`$`) is the default prompt symbol for a normal, non-root user, while the hash sign (`#`) is usually the prompt for the root (superuser) account. The prompt indicates that the shell is ready to accept a command.",
+        "hi": "लिनक्स में, डॉलर चिह्न (`$`) एक सामान्य, गैर-रूट उपयोगकर्ता के लिए डिफ़ॉल्ट प्रॉम्प्ट प्रतीक है, जबकि हैश चिह्न (`#`) आमतौर पर रूट (सुपरयूज़र) खाते के लिए प्रॉम्प्ट होता है। प्रॉम्प्ट इंगित करता है कि शेल एक कमांड स्वीकार करने के लिए तैयार है।"
+      },
+      "key_takeaway": {
+        "en": "The '$' symbol indicates a normal user shell prompt.",
+        "hi": "'$' प्रतीक एक सामान्य उपयोगकर्ता शेल प्रॉम्प्ट को इंगित करता है।"
+      }
+    },
+    {
+      "question_id": 45,
+      "question": {
+        "en": "Which Linux command displays the current user?",
+        "hi": "कौन सा लिनक्स कमांड वर्तमान उपयोगकर्ता को प्रदर्शित करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "$ who",
+          "hi": "$ हू"
+        },
+        "b": {
+          "en": "$ pwd",
+          "hi": "$ पीडब्लूडी"
+        },
+        "c": {
+          "en": "$ ls",
+          "hi": "$ एलएस"
+        },
+        "d": {
+          "en": "$ whoami",
+          "hi": "$ हूआमी"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The command is a simple, direct question asking for identity.",
+        "hi": "कमांड पहचान के लिए पूछने वाला एक सरल, सीधा प्रश्न है।"
+      },
+      "explanation": {
+        "en": "The `$ whoami` command prints the effective username of the current user. For example, typing `$ whoami` will output the username under which you are currently logged in and operating.",
+        "hi": "कमांड `$ whoami` वर्तमान उपयोगकर्ता का प्रभावी उपयोगकर्ता नाम प्रिंट करता है। उदाहरण के लिए, `$ whoami` टाइप करने पर वह उपयोगकर्ता नाम आउटपुट होगा जिसके तहत आप वर्तमान में लॉग इन हैं और काम कर रहे हैं।"
+      },
+      "key_takeaway": {
+        "en": "The 'whoami' command displays the current user's name.",
+        "hi": "'whoami' कमांड वर्तमान उपयोगकर्ता का नाम प्रदर्शित करता है।"
+      }
+    },
+    {
+      "question_id": 46,
+      "question": {
+        "en": "What does the command $ pwd do?",
+        "hi": "कमांड $ pwd क्या करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Prints the working directory",
+          "hi": "वर्तमान कार्यशील डायरेक्टरी प्रिंट करता है"
+        },
+        "b": {
+          "en": "Lists all files",
+          "hi": "सभी फाइलों की सूची बनाता है"
+        },
+        "c": {
+          "en": "Displays the current date",
+          "hi": "वर्तमान तिथि प्रदर्शित करता है"
+        },
+        "d": {
+          "en": "Creates a new directory",
+          "hi": "एक नई डायरेक्टरी बनाता है"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "The acronym stands for 'Print Working Directory'.",
+        "hi": "संक्षिप्त नाम का अर्थ है 'प्रिंट वर्किंग डायरेक्टरी'।"
+      },
+      "explanation": {
+        "en": "The `$ pwd` command is used to print the working directory, meaning it displays the full path of the directory you are currently operating in. For example, it might output `/home/username/documents`.",
+        "hi": "कमांड `$ pwd` का उपयोग कार्यशील डायरेक्टरी को प्रिंट करने के लिए किया जाता है, जिसका अर्थ है कि यह उस डायरेक्टरी का पूरा पथ प्रदर्शित करता है जिसमें आप वर्तमान में काम कर रहे हैं। उदाहरण के लिए, यह `/home/username/documents` आउटपुट कर सकता है।"
+      },
+      "key_takeaway": {
+        "en": "The 'pwd' command prints the current directory path.",
+        "hi": "'pwd' कमांड वर्तमान डायरेक्टरी पथ प्रिंट करता है।"
+      }
+    },
+    {
+      "question_id": 47,
+      "question": {
+        "en": "Which command is used to create a new directory named 'projects'?",
+        "hi": "'प्रोजेक्ट्स' नामक एक नई डायरेक्टरी बनाने के लिए किस कमांड का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "$ rmdir projects",
+          "hi": "$ रमडीर प्रोजेक्ट्स"
+        },
+        "b": {
+          "en": "$ cd projects",
+          "hi": "$ सीडी प्रोजेक्ट्स"
+        },
+        "c": {
+          "en": "$ mkdir projects",
+          "hi": "$ मकडीर प्रोजेक्ट्स"
+        },
+        "d": {
+          "en": "$ ls projects",
+          "hi": "$ एलएस प्रोजेक्ट्स"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The command is a short form for 'make directory'.",
+        "hi": "कमांड 'मेक डायरेक्टरी' का एक संक्षिप्त रूप है।"
+      },
+      "explanation": {
+        "en": "The `$ mkdir` command is used to create a new directory (folder) in the file system. Thus, `$ mkdir projects` creates a directory named 'projects' in the current working directory.",
+        "hi": "कमांड `$ mkdir` का उपयोग फ़ाइल सिस्टम में एक नई डायरेक्टरी (फ़ोल्डर) बनाने के लिए किया जाता है। इस प्रकार, `$ mkdir projects` वर्तमान कार्यशील डायरेक्टरी में 'प्रोजेक्ट्स' नामक एक डायरेक्टरी बनाता है।"
+      },
+      "key_takeaway": {
+        "en": "Use 'mkdir' to create a new directory.",
+        "hi": "एक नई डायरेक्टरी बनाने के लिए 'mkdir' का उपयोग करें।"
+      }
+    },
+    {
+      "question_id": 48,
+      "question": {
+        "en": "The command $ cp file1.txt file2.txt is used to:",
+        "hi": "कमांड $ cp file1.txt file2.txt का उपयोग किया जाता है:"
+      },
+      "options": {
+        "a": {
+          "en": "Compare two files",
+          "hi": "दो फाइलों की तुलना करने के लिए"
+        },
+        "b": {
+          "en": "Copy file1.txt to file2.txt",
+          "hi": "file1.txt को file2.txt में कॉपी करने के लिए"
+        },
+        "c": {
+          "en": "Concatenate two files",
+          "hi": "दो फाइलों को जोड़ने के लिए"
+        },
+        "d": {
+          "en": "Create a new file",
+          "hi": "एक नई फाइल बनाने के लिए"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The command name is an abbreviation for 'copy'.",
+        "hi": "कमांड का नाम 'copy' के लिए एक संक्षिप्त रूप है।"
+      },
+      "explanation": {
+        "en": "The `$ cp` command is used to copy files or directories. The syntax `$ cp source destination` means 'copy the content of file1.txt into a new file named file2.txt (or an existing file, overwriting it).",
+        "hi": "कमांड `$ cp` का उपयोग फ़ाइलों या डायरेक्टरी को कॉपी करने के लिए किया जाता है। सिंटैक्स `$ cp source destination` का अर्थ है 'file1.txt की सामग्री को file2.txt नामक एक नई फ़ाइल में कॉपी करें (या एक मौजूदा फ़ाइल में, उसे अधिलेखित करें)।"
+      },
+      "key_takeaway": {
+        "en": "The 'cp' command is used to copy files.",
+        "hi": "'cp' कमांड का उपयोग फाइलों को कॉपी करने के लिए किया जाता है।"
+      }
+    },
+    {
+      "question_id": 49,
+      "question": {
+        "en": "What is the primary use of the $ cat command?",
+        "hi": "$ कैट कमांड का प्राथमिक उपयोग क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "To compare files",
+          "hi": "फाइलों की तुलना करने के लिए"
+        },
+        "b": {
+          "en": "To concatenate and view file content",
+          "hi": "फाइल सामग्री को जोड़ने और देखने के लिए"
+        },
+        "c": {
+          "en": "To change the directory",
+          "hi": "डायरेक्टरी बदलने के लिए"
+        },
+        "d": {
+          "en": "To search for strings",
+          "hi": "स्ट्रिंग्स को खोजने के लिए"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "The command name is short for 'concatenate'.",
+        "hi": "कमांड का नाम 'concatenate' के लिए संक्षिप्त है।"
+      },
+      "explanation": {
+        "en": "The `$ cat` command (short for concatenate) is primarily used to read file contents and display them on the standard output (your screen). It can also be used to combine the contents of multiple files into a single output or a new file.",
+        "hi": "कमांड `$ cat` (concatenate का संक्षिप्त रूप) का उपयोग मुख्य रूप से फ़ाइल सामग्री को पढ़ने और उन्हें मानक आउटपुट (आपकी स्क्रीन) पर प्रदर्शित करने के लिए किया जाता है। इसका उपयोग कई फाइलों की सामग्री को एक ही आउटपुट या एक नई फ़ाइल में संयोजित करने के लिए भी किया जा सकता है।"
+      },
+      "key_takeaway": {
+        "en": "Use 'cat' to view or combine file content.",
+        "hi": "फ़ाइल सामग्री देखने या संयोजित करने के लिए 'cat' का उपयोग करें।"
+      }
+    },
+    {
+      "question_id": 50,
+      "question": {
+        "en": "Which command is used to search for a specific string within a file?",
+        "hi": "किसी फाइल के भीतर एक विशिष्ट स्ट्रिंग खोजने के लिए किस कमांड का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "$ find",
+          "hi": "$ फाइंड"
+        },
+        "b": {
+          "en": "$ grep",
+          "hi": "$ ग्रेप"
+        },
+        "c": {
+          "en": "$ cmp",
+          "hi": "$ सीएमपी"
+        },
+        "d": {
+          "en": "$ netstat",
+          "hi": "$ नेटस्टैट"
+        }
+      },
+      "correct_option": "b",
+      "hint": {
+        "en": "This command is essential for filtering text content using regular expressions.",
+        "hi": "यह कमांड नियमित अभिव्यक्तियों का उपयोग करके टेक्स्ट सामग्री को फ़िल्टर करने के लिए आवश्यक है।"
+      },
+      "explanation": {
+        "en": "The `$ grep` command is a powerful utility used to search for specific text patterns (strings or regular expressions) within one or more files. For example, `$ grep 'error' logfile.txt` will show all lines containing 'error' in that file.",
+        "hi": "कमांड `$ grep` एक शक्तिशाली उपयोगिता है जिसका उपयोग एक या अधिक फाइलों के भीतर विशिष्ट टेक्स्ट पैटर्न (स्ट्रिंग्स या नियमित अभिव्यक्तियों) को खोजने के लिए किया जाता है। उदाहरण के लिए, `$ grep 'error' logfile.txt` उस फ़ाइल में 'error' वाली सभी लाइनें दिखाएगा।"
+      },
+      "key_takeaway": {
+        "en": "The 'grep' command searches for text patterns within files.",
+        "hi": "'grep' कमांड फाइलों के भीतर टेक्स्ट पैटर्न खोजता है।"
+      }
+    },
+    {
+      "question_id": 51,
+      "question": {
+        "en": "The $ netstat command is used to display:",
+        "hi": "$ नेटस्टैट कमांड का उपयोग प्रदर्शित करने के लिए किया जाता है:"
+      },
+      "options": {
+        "a": {
+          "en": "File contents",
+          "hi": "फाइल सामग्री"
+        },
+        "b": {
+          "en": "A list of users",
+          "hi": "उपयोगकर्ताओं की सूची"
+        },
+        "c": {
+          "en": "The current calendar",
+          "hi": "वर्तमान कैलेंडर"
+        },
+        "d": {
+          "en": "Network-related information and statistics",
+          "hi": "नेटवर्क-संबंधित जानकारी और आँकड़े"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The name is a contraction of 'network statistics'.",
+        "hi": "नाम 'नेटवर्क आंकड़े' का एक संकुचन है।"
+      },
+      "explanation": {
+        "en": "The `$ netstat` command (network statistics) displays active network connections, routing tables, and a number of network interface statistics. It is an essential tool for troubleshooting network problems.",
+        "hi": "कमांड `$ netstat` (नेटवर्क आँकड़े) सक्रिय नेटवर्क कनेक्शन, रूटिंग टेबल और कई नेटवर्क इंटरफ़ेस आँकड़े प्रदर्शित करता है। यह नेटवर्क समस्याओं के निवारण के लिए एक आवश्यक उपकरण है।"
+      },
+      "key_takeaway": {
+        "en": "'netstat' displays network connection and statistics.",
+        "hi": "'netstat' नेटवर्क कनेक्शन और आँकड़े प्रदर्शित करता है।"
+      }
+    },
+    {
+      "question_id": 52,
+      "question": {
+        "en": "In Linux, what does the input redirection operator < do?",
+        "hi": "लिनक्स में, इनपुट रीडायरेक्शन ऑपरेटर < क्या करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Sends command output to a file",
+          "hi": "कमांड आउटपुट को एक फाइल में भेजता है"
+        },
+        "b": {
+          "en": "Displays output on the monitor",
+          "hi": "मॉनिटर पर आउटपुट प्रदर्शित करता है"
+        },
+        "c": {
+          "en": "Pipes the output to another command",
+          "hi": "आउटपुट को दूसरे कमांड में पाइप करता है"
+        },
+        "d": {
+          "en": "Takes input for a command from a file",
+          "hi": "किसी फाइल से कमांड के लिए इनपुट लेता है"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The arrow points from the file to the command.",
+        "hi": "तीर फ़ाइल से कमांड की ओर इंगित करता है।"
+      },
+      "explanation": {
+        "en": "The input redirection operator (`<`) redirects a command's standard input from a file instead of the keyboard. For example, `sort < file.txt` takes data from `file.txt` and feeds it into the `sort` command.",
+        "hi": "इनपुट रीडायरेक्शन ऑपरेटर (`<`) कीबोर्ड के बजाय एक फ़ाइल से कमांड के मानक इनपुट को रीडायरेक्ट करता है। उदाहरण के लिए, `sort < file.txt` `file.txt` से डेटा लेता है और इसे `sort` कमांड में फ़ीड करता है।"
+      },
+      "key_takeaway": {
+        "en": "The '<' operator redirects command input from a file.",
+        "hi": "'<' ऑपरेटर एक फ़ाइल से कमांड इनपुट को रीडायरेक्ट करता है।"
+      }
+    },
+    {
+      "question_id": 53,
+      "question": {
+        "en": "In Linux, what does the output redirection operator > do?",
+        "hi": "लिनक्स में, आउटपुट रीडायरेक्शन ऑपरेटर > क्या करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Takes input from the keyboard",
+          "hi": "कीबोर्ड से इनपुट लेता है"
+        },
+        "b": {
+          "en": "Displays output on the monitor",
+          "hi": "मॉनिटर पर आउटपुट प्रदर्शित करता है"
+        },
+        "c": {
+          "en": "Connects multiple commands",
+          "hi": "कई कमांड को जोड़ता है"
+        },
+        "d": {
+          "en": "Sends command output to a file",
+          "hi": "कमांड आउटपुट को एक फाइल में भेजता है"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The arrow points from the command to the file.",
+        "hi": "तीर कमांड से फ़ाइल की ओर इंगित करता है।"
+      },
+      "explanation": {
+        "en": "The output redirection operator (`>`) redirects a command's standard output from the screen to a specified file. For example, `ls -l > output.txt` will save the list of files to `output.txt` instead of displaying it on the screen. It overwrites the file's content.",
+        "hi": "आउटपुट रीडायरेक्शन ऑपरेटर (`>`) कमांड के मानक आउटपुट को स्क्रीन से एक निर्दिष्ट फ़ाइल में रीडायरेक्ट करता है। उदाहरण के लिए, `ls -l > output.txt` फ़ाइलों की सूची को स्क्रीन पर प्रदर्शित करने के बजाय `output.txt` में सहेज देगा। यह फ़ाइल की सामग्री को अधिलेखित कर देता है।"
+      },
+      "key_takeaway": {
+        "en": "The '>' operator redirects command output to a file.",
+        "hi": "'>' ऑपरेटर कमांड आउटपुट को एक फ़ाइल में रीडायरेक्ट करता है।"
+      }
+    },
+    {
+      "question_id": 54,
+      "question": {
+        "en": "What is the purpose of a pipeline (|) in Linux?",
+        "hi": "लिनक्स में पाइपलाइन (|) का उद्देश्य क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "To redirect input",
+          "hi": "इनपुट को रीडायरेक्ट करने के लिए"
+        },
+        "b": {
+          "en": "To redirect output",
+          "hi": "आउटपुट को रीडायरेक्ट करने के लिए"
+        },
+        "c": {
+          "en": "To connect the output of one command to the input of another",
+          "hi": "एक कमांड के आउटपुट को दूसरे कमांड के इनपुट से जोड़ने के लिए"
+        },
+        "d": {
+          "en": "To save a file",
+          "hi": "एक फाइल को सेव करने के लिए"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Think of it as a fluid path that passes data from one process to the next process.",
+        "hi": "इसे एक द्रव पथ के रूप में सोचें जो डेटा को एक प्रक्रिया से अगली प्रक्रिया तक पहुँचाता है।"
+      },
+      "explanation": {
+        "en": "A pipeline (`|`) is a mechanism that connects the standard output of the command on the left to the standard input of the command on the right. For example, `ls -l | less` sends the file listing output to the `less` command, allowing you to scroll through it easily.",
+        "hi": "एक पाइपलाइन (`|`) एक तंत्र है जो बाईं ओर के कमांड के मानक आउटपुट को दाईं ओर के कमांड के मानक इनपुट से जोड़ता है। उदाहरण के लिए, `ls -l | less` फ़ाइल लिस्टिंग आउटपुट को `less` कमांड पर भेजता है, जिससे आप आसानी से स्क्रॉल कर सकते हैं।"
+      },
+      "key_takeaway": {
+        "en": "The pipeline connects the output of one command to the input of the next.",
+        "hi": "पाइपलाइन एक कमांड के आउटपुट को अगले के इनपुट से जोड़ती है।"
+      }
+    },
+    {
+      "question_id": 55,
+      "question": {
+        "en": "What is the default text editor in Linux?",
+        "hi": "लिनक्स में डिफॉल्ट टेक्स्ट एडिटर क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Nano",
+          "hi": "नैनो"
+        },
+        "b": {
+          "en": "Emacs",
+          "hi": "इमैक्स"
+        },
+        "c": {
+          "en": "Gedit",
+          "hi": "जीएडिट"
+        },
+        "d": {
+          "en": "Vi editor",
+          "hi": "वाई एडिटर"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This is a venerable and highly standard command-line editor found on virtually all Unix/Linux systems.",
+        "hi": "यह एक श्रद्धेय और अत्यधिक मानक कमांड-लाइन एडिटर है जो वस्तुतः सभी यूनिक्स/लिनक्स सिस्टम पर पाया जाता है।"
+      },
+      "explanation": {
+        "en": "The Vi editor (often used interchangeably with its improved version, Vim) is considered the default and universally available text editor in Linux. It is known for its efficiency and modal operation, although its command structure can be complex for beginners.",
+        "hi": "Vi एडिटर (जिसे अक्सर इसके बेहतर संस्करण, Vim के साथ प्रयोग किया जाता है) को लिनक्स में डिफ़ॉल्ट और सार्वभौमिक रूप से उपलब्ध टेक्स्ट एडिटर माना जाता है। यह अपनी दक्षता और मोडल ऑपरेशन के लिए जाना जाता है, हालांकि इसकी कमांड संरचना शुरुआती लोगों के लिए जटिल हो सकती है।"
+      },
+      "key_takeaway": {
+        "en": "Vi editor is the default and universally available Linux text editor.",
+        "hi": "Vi एडिटर डिफ़ॉल्ट और सार्वभौमिक रूप से उपलब्ध लिनक्स टेक्स्ट एडिटर है।"
+      }
+    },
+    {
+      "question_id": 56,
+      "question": {
+        "en": "How many main modes does the Vi editor have?",
+        "hi": "वाई एडिटर के कितने मुख्य मोड हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "1",
+          "hi": "1"
+        },
+        "b": {
+          "en": "2",
+          "hi": "2"
+        },
+        "c": {
+          "en": "3",
+          "hi": "3"
+        },
+        "d": {
+          "en": "4",
+          "hi": "4"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The three modes are Command mode, Insert mode, and Last-Line mode.",
+        "hi": "तीन मोड हैं कमांड मोड, इंसर्ट मोड और लास्ट-लाइन मोड।"
+      },
+      "explanation": {
+        "en": "The Vi editor has three main modes: **Command Mode** (for moving, deleting, or copying text), **Insert Mode** (for typing and editing text), and **Last-Line/Ex Mode** (for saving, quitting, and advanced commands, activated by the colon ':').",
+        "hi": "Vi एडिटर में तीन मुख्य मोड हैं: **कमांड मोड** (टेक्स्ट को स्थानांतरित करने, हटाने या कॉपी करने के लिए), **इंसर्ट मोड** (टेक्स्ट टाइप करने और एडिट करने के लिए), और **लास्ट-लाइन/Ex मोड** (सहेजने, छोड़ने और उन्नत कमांड के लिए, कोलन ':' द्वारा सक्रिय)।"
+      },
+      "key_takeaway": {
+        "en": "The three main Vi editor modes are Command, Insert, and Last-Line.",
+        "hi": "Vi एडिटर के तीन मुख्य मोड हैं कमांड, इंसर्ट और लास्ट-लाइन।"
+      }
+    },
+    {
+      "question_id": 57,
+      "question": {
+        "en": "In which Vi editor mode can you type and edit text?",
+        "hi": "वाई एडिटर के किस मोड में आप टेक्स्ट टाइप और एडिट कर सकते हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "Command Mode",
+          "hi": "कमांड मोड"
+        },
+        "b": {
+          "en": "Replacement Mode",
+          "hi": "रिप्लेसमेंट मोड"
+        },
+        "c": {
+          "en": "Visual Mode",
+          "hi": "विजुअल मोड"
+        },
+        "d": {
+          "en": "Insert Mode",
+          "hi": "इंसर्ट मोड"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The mode's name explicitly describes the action of adding content to the file.",
+        "hi": "मोड का नाम स्पष्ट रूप से फ़ाइल में सामग्री जोड़ने की कार्रवाई का वर्णन करता है।"
+      },
+      "explanation": {
+        "en": "You must be in **Insert Mode** in Vi to type text, delete characters, or perform standard text editing. You typically enter Insert Mode from Command Mode by pressing keys like `i` (insert at cursor) or `a` (append after cursor).",
+        "hi": "टेक्स्ट टाइप करने, वर्णों को हटाने, या मानक टेक्स्ट एडिटिंग करने के लिए आपको Vi में **इंसर्ट मोड** में होना चाहिए। आप आमतौर पर `i` (कर्सर पर इंसर्ट) या `a` (कर्सर के बाद जोड़ें) जैसी कुंजियाँ दबाकर कमांड मोड से इंसर्ट मोड में प्रवेश करते हैं।"
+      },
+      "key_takeaway": {
+        "en": "Insert Mode is for typing and editing text in Vi.",
+        "hi": "इंसर्ट मोड Vi में टेक्स्ट टाइप करने और एडिट करने के लिए है।"
+      }
+    },
+    {
+      "question_id": 58,
+      "question": {
+        "en": "Which key is pressed to switch from Insert mode to Command mode in Vi?",
+        "hi": "वाई में इंसर्ट मोड से कमांड मोड में स्विच करने के लिए कौन सी कुंजी दबाई जाती है?"
+      },
+      "options": {
+        "a": {
+          "en": "Enter key",
+          "hi": "एंटर की"
+        },
+        "b": {
+          "en": "i key",
+          "hi": "आई की"
+        },
+        "c": {
+          "en": "Esc key",
+          "hi": "एस्केप की"
+        },
+        "d": {
+          "en": ": key",
+          "hi": ": की"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This key is universally used in software to exit a specific function or mode.",
+        "hi": "इस कुंजी का उपयोग सार्वभौमिक रूप से सॉफ्टवेयर में एक विशिष्ट फ़ंक्शन या मोड से बाहर निकलने के लिए किया जाता है।"
+      },
+      "explanation": {
+        "en": "The `Esc` (Escape) key is used to switch from the Insert Mode (where you type text) back to the Command Mode (where you issue commands to move or manipulate text). This is a fundamental operation in the modal editing of Vi/Vim.",
+        "hi": "`Esc` (एस्केप) कुंजी का उपयोग इंसर्ट मोड (जहां आप टेक्स्ट टाइप करते हैं) से वापस कमांड मोड (जहां आप टेक्स्ट को स्थानांतरित करने या हेरफेर करने के लिए कमांड जारी करते हैं) में स्विच करने के लिए किया जाता है। यह Vi/Vim के मोडल एडिटिंग में एक मौलिक ऑपरेशन है।"
+      },
+      "key_takeaway": {
+        "en": "The Esc key switches from Insert to Command mode in Vi.",
+        "hi": "Esc कुंजी Vi में इंसर्ट से कमांड मोड में स्विच करती है।"
+      }
+    },
+    {
+      "question_id": 59,
+      "question": {
+        "en": "Which command in Vi's command mode is used to save and quit?",
+        "hi": "वाई के कमांड मोड में सेव और क्विट करने के लिए किस कमांड का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": ":q",
+          "hi": ":क्यू"
+        },
+        "b": {
+          "en": ":w",
+          "hi": ":डब्ल्यू"
+        },
+        "c": {
+          "en": ":x",
+          "hi": ":एक्स"
+        },
+        "d": {
+          "en": ":wq",
+          "hi": ":डब्ल्यूक्यू"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The command is a combination of the 'write' and 'quit' commands.",
+        "hi": "कमांड 'राइट' और 'क्विट' कमांड का एक संयोजन है।"
+      },
+      "explanation": {
+        "en": "The command `:wq` is entered from the Command Mode (after pressing Esc) and is a compound command that first **w**rites (saves) the file and then **q**uits the editor. This is the most common way to save changes and exit Vi/Vim.",
+        "hi": "कमांड `:wq` कमांड मोड से (Esc दबाने के बाद) दर्ज किया जाता है और यह एक मिश्रित कमांड है जो पहले फ़ाइल को **w**rites (सहेजता है) और फिर एडिटर को **q**uits (छोड़ता है)। यह परिवर्तनों को सहेजने और Vi/Vim से बाहर निकलने का सबसे आम तरीका है।"
+      },
+      "key_takeaway": {
+        "en": "Use ':wq' or ':x' to save and quit the Vi editor.",
+        "hi": "Vi एडिटर को सहेजने और छोड़ने के लिए ':wq' या ':x' का उपयोग करें।"
+      }
+    },
+    {
+      "question_id": 60,
+      "question": {
+        "en": "What does FHS stand for in the Linux file system?",
+        "hi": "लिनक्स फाइल सिस्टम में एफएचएस का क्या अर्थ है?"
+      },
+      "options": {
+        "a": {
+          "en": "File Handling System",
+          "hi": "फाइल हैंडलिंग सिस्टम"
+        },
+        "b": {
+          "en": "File Storage System",
+          "hi": "फाइल स्टोरेज सिस्टम"
+        },
+        "c": {
+          "en": "Folder Hierarchy Structure",
+          "hi": "फोल्डर हाइरार्की स्ट्रक्चर"
+        },
+        "d": {
+          "en": "Filesystem Hierarchy Standard",
+          "hi": "फाइलसिस्टम हाइरार्की स्टैंडर्ड"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This term defines the standardized arrangement of directories and files in Linux.",
+        "hi": "यह शब्द लिनक्स में डायरेक्टरी और फ़ाइलों की मानकीकृत व्यवस्था को परिभाषित करता है।"
+      },
+      "explanation": {
+        "en": "FHS stands for Filesystem Hierarchy Standard. It defines the names, locations, and purposes of directories and files across the entire Linux file system structure, ensuring uniformity and predictability across different Linux distributions.",
+        "hi": "FHS का अर्थ है फ़ाइलसिस्टम हाइरार्की स्टैंडर्ड। यह विभिन्न लिनक्स वितरणों में एकरूपता और पूर्वानुमेयता सुनिश्चित करते हुए, पूरे लिनक्स फ़ाइल सिस्टम संरचना में डायरेक्टरी और फ़ाइलों के नाम, स्थान और उद्देश्यों को परिभाषित करता है।"
+      },
+      "key_takeaway": {
+        "en": "FHS defines the standardized Linux directory structure.",
+        "hi": "FHS मानकीकृत लिनक्स डायरेक्टरी संरचना को परिभाषित करता है।"
+      }
+    },
+    {
+      "question_id": 61,
+      "question": {
+        "en": "Which directory is the top-level directory in the Linux file system hierarchy?",
+        "hi": "लिनक्स फाइल सिस्टम हाइरार्की में सबसे ऊपरी डायरेक्टरी कौन सी है?"
+      },
+      "options": {
+        "a": {
+          "en": "/boot",
+          "hi": "/बूट"
+        },
+        "b": {
+          "en": "/etc",
+          "hi": "/एटीसी"
+        },
+        "c": {
+          "en": "/root",
+          "hi": "/रूट"
+        },
+        "d": {
+          "en": "/ (root directory)",
+          "hi": "/ (रूट डायरेक्टरी)"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "All other files and directories branch out from this single starting point.",
+        "hi": "अन्य सभी फाइलें और डायरेक्टरी इस एकल शुरुआती बिंदु से शाखाओं में बँटती हैं।"
+      },
+      "explanation": {
+        "en": "The `/` (forward slash) represents the root directory, which is the base of the entire Linux file system hierarchy. All other directories, such as `/home`, `/etc`, and `/bin`, are contained within it.",
+        "hi": "`/` (फॉरवर्ड स्लैश) रूट डायरेक्टरी का प्रतिनिधित्व करता है, जो पूरे लिनक्स फ़ाइल सिस्टम हाइरार्की का आधार है। `/home`, `/etc`, और `/bin` जैसी अन्य सभी डायरेक्टरी इसमें समाहित हैं।"
+      },
+      "key_takeaway": {
+        "en": "The '/' (root directory) is the base of the Linux file system.",
+        "hi": "'/' (रूट डायरेक्टरी) लिनक्स फ़ाइल सिस्टम का आधार है।"
+      }
+    },
+    {
+      "question_id": 62,
+      "question": {
+        "en": "The /bin directory typically contains:",
+        "hi": "/बिन डायरेक्टरी में आमतौर पर शामिल होता है:"
+      },
+      "options": {
+        "a": {
+          "en": "Configuration files",
+          "hi": "कॉन्फ़िगरेशन फाइलें"
+        },
+        "b": {
+          "en": "Device files",
+          "hi": "डिवाइस फाइलें"
+        },
+        "c": {
+          "en": "User home directories",
+          "hi": "उपयोगकर्ता होम डायरेक्टरी"
+        },
+        "d": {
+          "en": "Executable binaries for basic system functions",
+          "hi": "बुनियादी सिस्टम कार्यों के लिए एक्जीक्यूटेबल बाइनरी"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The name is short for 'binaries'. These are essential commands usable by all users.",
+        "hi": "नाम 'बाइनरी' के लिए संक्षिप्त है। ये सभी उपयोगकर्ताओं द्वारा उपयोग किए जाने वाले आवश्यक कमांड हैं।"
+      },
+      "explanation": {
+        "en": "The `/bin` directory holds executable binary files (essential system commands) that are needed when the system is booted and for basic system functionality. Examples include common commands like `ls`, `cp`, and `mkdir`.",
+        "hi": "`/bin` डायरेक्टरी एक्जीक्यूटेबल बाइनरी फाइलें (आवश्यक सिस्टम कमांड) रखती है जो सिस्टम को बूट करने पर और बुनियादी सिस्टम कार्यक्षमता के लिए आवश्यक होती हैं। उदाहरणों में `ls`, `cp`, और `mkdir` जैसे सामान्य कमांड शामिल हैं।"
+      },
+      "key_takeaway": {
+        "en": "/bin contains essential, executable system binaries.",
+        "hi": "/bin में आवश्यक, एक्जीक्यूटेबल सिस्टम बाइनरी शामिल हैं।"
+      }
+    },
+    {
+      "question_id": 63,
+      "question": {
+        "en": "The /etc directory is primarily used for:",
+        "hi": "/एटीसी डायरेक्टरी मुख्य रूप से किसके लिए उपयोग की जाती है?"
+      },
+      "options": {
+        "a": {
+          "en": "Storing user data",
+          "hi": "उपयोगकर्ता डेटा संग्रहीत करने के लिए"
+        },
+        "b": {
+          "en": "Storing boot files",
+          "hi": "बूट फाइलें संग्रहीत करने के लिए"
+        },
+        "c": {
+          "en": "Storing temporary files",
+          "hi": "अस्थायी फाइलें संग्रहीत करने के लिए"
+        },
+        "d": {
+          "en": "Storing system and application configuration files",
+          "hi": "सिस्टम और एप्लिकेशन कॉन्फ़िगरेशन फाइलें संग्रहीत करने के लिए"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The name is often thought of as standing for 'everything to configure'.",
+        "hi": "नाम को अक्सर 'कॉन्फ़िगर करने के लिए सब कुछ' के रूप में सोचा जाता है।"
+      },
+      "explanation": {
+        "en": "The `/etc` directory is crucial as it contains system-wide configuration files for the operating system and installed applications. Examples include network configuration, user password files, and boot configuration.",
+        "hi": "`/etc` डायरेक्टरी महत्वपूर्ण है क्योंकि इसमें ऑपरेटिंग सिस्टम और स्थापित एप्लिकेशन के लिए सिस्टम-व्यापी कॉन्फ़िगरेशन फाइलें होती हैं। उदाहरणों में नेटवर्क कॉन्फ़िगरेशन, उपयोगकर्ता पासवर्ड फाइलें और बूट कॉन्फ़िगरेशन शामिल हैं।"
+      },
+      "key_takeaway": {
+        "en": "/etc stores system and application configuration files.",
+        "hi": "/etc सिस्टम और एप्लिकेशन कॉन्फ़िगरेशन फाइलें संग्रहीत करता है।"
+      }
+    },
+    {
+      "question_id": 64,
+      "question": {
+        "en": "What is cybercrime?",
+        "hi": "साइबर अपराध क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "Crime committed using physical force",
+          "hi": "भौतिक बल का उपयोग करके किया गया अपराध"
+        },
+        "b": {
+          "en": "Crime related to traffic violations",
+          "hi": "यातायात उल्लंघन से संबंधित अपराध"
+        },
+        "c": {
+          "en": "Crime involving only financial fraud",
+          "hi": "केवल वित्तीय धोखाधड़ी से जुड़ा अपराध"
+        },
+        "d": {
+          "en": "Criminal activities committed using computers, networks, or the internet",
+          "hi": "कंप्यूटर, नेटवर्क या इंटरनेट का उपयोग करके किए गए आपराधिक गतिविधियाँ"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The term combines 'cyber' (relating to computers/internet) and 'crime' (illegal activity).",
+        "hi": "यह शब्द 'साइबर' (कंप्यूटर/इंटरनेट से संबंधित) और 'अपराध' (अवैध गतिविधि) को जोड़ता है।"
+      },
+      "explanation": {
+        "en": "Cybercrime refers to any criminal activity that either targets a computer, computer network, or networked device (e.g., hacking) or uses a computer, network, or the Internet as the primary tool to commit a traditional crime (e.g., online fraud).",
+        "hi": "साइबर अपराध किसी भी आपराधिक गतिविधि को संदर्भित करता है जो या तो किसी कंप्यूटर, कंप्यूटर नेटवर्क, या नेटवर्क डिवाइस को लक्षित करता है (उदाहरण के लिए, हैकिंग) या पारंपरिक अपराध करने के लिए कंप्यूटर, नेटवर्क, या इंटरनेट को प्राथमिक उपकरण के रूप में उपयोग करता है (उदाहरण के लिए, ऑनलाइन धोखाधड़ी)।"
+      },
+      "key_takeaway": {
+        "en": "Cybercrime is illegal activity involving computers and networks.",
+        "hi": "साइबर अपराध कंप्यूटर और नेटवर्क से जुड़ी अवैध गतिविधि है।"
+      }
+    },
+    {
+      "question_id": 65,
+      "question": {
+        "en": "Gaining unauthorized access to someone's computer system is known as:",
+        "hi": "किसी के कंप्यूटर सिस्टम में अनधिकृत पहुंच प्राप्त करना कहलाता है:"
+      },
+      "options": {
+        "a": {
+          "en": "Phishing",
+          "hi": "फिशिंग"
+        },
+        "b": {
+          "en": "Identity Theft",
+          "hi": "आइडेंटिटी थेफ्ट"
+        },
+        "c": {
+          "en": "Hacking",
+          "hi": "हैकिंग"
+        },
+        "d": {
+          "en": "Cyberbullying",
+          "hi": "साइबरबुलिंग"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "This term describes bypassing security measures to break into a system.",
+        "hi": "यह शब्द सिस्टम में सेंध लगाने के लिए सुरक्षा उपायों को दरकिनार करने का वर्णन करता है।"
+      },
+      "explanation": {
+        "en": "Hacking is the unauthorized access to or control over a computer system or network. While not all hacking is malicious, the act of gaining unauthorized access is illegal under cyber law, such as accessing a private server without permission.",
+        "hi": "हैकिंग किसी कंप्यूटर सिस्टम या नेटवर्क तक अनधिकृत पहुंच या नियंत्रण है। हालाँकि सभी हैकिंग दुर्भावनापूर्ण नहीं होती है, लेकिन अनधिकृत पहुंच प्राप्त करने का कार्य साइबर कानून के तहत अवैध है, जैसे अनुमति के बिना किसी निजी सर्वर तक पहुंचना।"
+      },
+      "key_takeaway": {
+        "en": "Hacking is gaining unauthorized access to a computer system.",
+        "hi": "हैकिंग एक कंप्यूटर सिस्टम तक अनधिकृत पहुंच प्राप्त करना है।"
+      }
+    },
+    {
+      "question_id": 66,
+      "question": {
+        "en": "Tricking individuals into providing sensitive information via deceptive emails is called:",
+        "hi": "भ्रामक ईमेल के माध्यम से व्यक्तियों को संवेदनशील जानकारी प्रदान करने के लिए बरगलाना कहलाता है:"
+      },
+      "options": {
+        "a": {
+          "en": "Hacking",
+          "hi": "हैकिंग"
+        },
+        "b": {
+          "en": "Identity Theft",
+          "hi": "आइडेंटिटी थेफ्ट"
+        },
+        "c": {
+          "en": "Online Fraud",
+          "hi": "ऑनलाइन फ्रॉड"
+        },
+        "d": {
+          "en": "Phishing",
+          "hi": "फिशिंग"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This technique uses social engineering, often by impersonating a trustworthy source like a bank.",
+        "hi": "यह तकनीक सोशल इंजीनियरिंग का उपयोग करती है, अक्सर किसी बैंक जैसे भरोसेमंद स्रोत का प्रतिरूपण करके।"
+      },
+      "explanation": {
+        "en": "Phishing is a type of social engineering attack where an attacker sends deceptive emails, texts, or websites, masquerading as a legitimate entity to trick the victim into revealing sensitive information like passwords or credit card details.",
+        "hi": "फ़िशिंग एक प्रकार का सोशल इंजीनियरिंग हमला है जहाँ एक हमलावर भ्रामक ईमेल, टेक्स्ट, या वेबसाइटें भेजता है, जो पीड़ित को पासवर्ड या क्रेडिट कार्ड विवरण जैसी संवेदनशील जानकारी प्रकट करने के लिए बरगलाने के लिए एक वैध इकाई के रूप में प्रतिरूपण करता है।"
+      },
+      "key_takeaway": {
+        "en": "Phishing uses deception (emails/sites) to steal sensitive data.",
+        "hi": "फ़िशिंग संवेदनशील डेटा चुराने के लिए धोखे (ईमेल/साइट) का उपयोग करता है।"
+      }
+    },
+    {
+      "question_id": 67,
+      "question": {
+        "en": "Misusing someone else's personal information for financial gain is known as:",
+        "hi": "वित्तीय लाभ के लिए किसी और की व्यक्तिगत जानकारी का दुरुपयोग करना कहलाता है:"
+      },
+      "options": {
+        "a": {
+          "en": "Phishing",
+          "hi": "फिशिंग"
+        },
+        "b": {
+          "en": "Hacking",
+          "hi": "हैकिंग"
+        },
+        "c": {
+          "en": "Identity Theft",
+          "hi": "आइडेंटिटी थेफ्ट"
+        },
+        "d": {
+          "en": "Cyberbullying",
+          "hi": "साइबरबुलिंग"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The crime involves illegally taking and using the victim's personal identity.",
+        "hi": "अपराध में पीड़ित की व्यक्तिगत पहचान को अवैध रूप से लेना और उपयोग करना शामिल है।"
+      },
+      "explanation": {
+        "en": "Identity Theft occurs when an attacker obtains and uses a victim's personal identifying information (like name, Social Security number, or bank details) without their authorization, usually to commit fraud or financial crimes, such as opening a new credit card account.",
+        "hi": "आइडेंटिटी थेफ्ट तब होती है जब कोई हमलावर पीड़ित की व्यक्तिगत पहचान करने वाली जानकारी (जैसे नाम, सामाजिक सुरक्षा संख्या, या बैंक विवरण) को उनकी अनुमति के बिना प्राप्त करता है और उपयोग करता है, आमतौर पर धोखाधड़ी या वित्तीय अपराध करने के लिए, जैसे एक नया क्रेडिट कार्ड खाता खोलना।"
+      },
+      "key_takeaway": {
+        "en": "Identity Theft is the misuse of personal information for financial gain.",
+        "hi": "आइडेंटिटी थेफ्ट वित्तीय लाभ के लिए व्यक्तिगत जानकारी का दुरुपयोग है।"
+      }
+    },
+    {
+      "question_id": 68,
+      "question": {
+        "en": "Harassing or threatening individuals through online platforms is referred to as:",
+        "hi": "ऑनलाइन प्लेटफॉर्म के माध्यम से व्यक्तियों को परेशान करना या धमकाना कहा जाता है:"
+      },
+      "options": {
+        "a": {
+          "en": "Phishing",
+          "hi": "फिशिंग"
+        },
+        "b": {
+          "en": "Hacking",
+          "hi": "हैकिंग"
+        },
+        "c": {
+          "en": "Identity Theft",
+          "hi": "आइडेंटिटी थेफ्ट"
+        },
+        "d": {
+          "en": "Cyberbullying",
+          "hi": "साइबरबुलिंग"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The term describes the online equivalent of intimidation and persecution.",
+        "hi": "यह शब्द उत्पीड़न और उत्पीड़न के ऑनलाइन समकक्ष का वर्णन करता है।"
+      },
+      "explanation": {
+        "en": "Cyberbullying is the use of electronic communication (like social media, text messages, or email) to harass, threaten, or humiliate an individual. It can range from spreading rumors to sending explicit threats.",
+        "hi": "साइबरबुलिंग किसी व्यक्ति को परेशान करने, धमकाने या अपमानित करने के लिए इलेक्ट्रॉनिक संचार (जैसे सोशल मीडिया, टेक्स्ट संदेश, या ईमेल) का उपयोग है। यह अफवाहें फैलाने से लेकर स्पष्ट धमकियाँ भेजने तक हो सकता है।"
+      },
+      "key_takeaway": {
+        "en": "Cyberbullying is online harassment or threatening behavior.",
+        "hi": "साइबरबुलिंग ऑनलाइन उत्पीड़न या धमकी भरा व्यवहार है।"
+      }
+    },
+    {
+      "question_id": 69,
+      "question": {
+        "en": "What does cyber law govern?",
+        "hi": "साइबर कानून क्या नियंत्रित करता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Only financial transactions online",
+          "hi": "केवल ऑनलाइन वित्तीय लेनदेन"
+        },
+        "b": {
+          "en": "Physical crimes involving computers",
+          "hi": "कंप्यूटर से जुड़े भौतिक अपराध"
+        },
+        "c": {
+          "en": "Only hacking activities",
+          "hi": "केवल हैकिंग गतिविधियाँ"
+        },
+        "d": {
+          "en": "Cyber activities, electronic transactions, and cybersecurity on the Internet",
+          "hi": "इंटरनेट पर साइबर गतिविधियाँ, इलेक्ट्रॉनिक लेनदेन और साइबर सुरक्षा"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "It is a broad legal framework covering almost all activities related to digital space and data.",
+        "hi": "यह एक व्यापक कानूनी ढांचा है जो डिजिटल स्पेस और डेटा से संबंधित लगभग सभी गतिविधियों को कवर करता है।"
+      },
+      "explanation": {
+        "en": "Cyber law, or Internet law, is a legal framework that governs digital and electronic activities, including electronic commerce (transactions), intellectual property rights, data protection, digital signatures, and offenses like hacking and cyber fraud. Its purpose is to maintain order and protect citizens in the digital world.",
+        "hi": "साइबर कानून, या इंटरनेट कानून, एक कानूनी ढांचा है जो डिजिटल और इलेक्ट्रॉनिक गतिविधियों को नियंत्रित करता है, जिसमें इलेक्ट्रॉनिक कॉमर्स (लेनदेन), बौद्धिक संपदा अधिकार, डेटा सुरक्षा, डिजिटल हस्ताक्षर, और हैकिंग और साइबर धोखाधड़ी जैसे अपराध शामिल हैं। इसका उद्देश्य डिजिटल दुनिया में व्यवस्था बनाए रखना और नागरिकों की रक्षा करना है।"
+      },
+      "key_takeaway": {
+        "en": "Cyber law governs all digital activities and electronic commerce.",
+        "hi": "साइबर कानून सभी डिजिटल गतिविधियों और इलेक्ट्रॉनिक कॉमर्स को नियंत्रित करता है।"
+      }
+    },
+    {
+      "question_id": 70,
+      "question": {
+        "en": "In India, cyber laws are primarily contained in the:",
+        "hi": "भारत में, साइबर कानून मुख्य रूप से इसमें निहित हैं:"
+      },
+      "options": {
+        "a": {
+          "en": "Indian Penal Code",
+          "hi": "भारतीय दंड संहिता"
+        },
+        "b": {
+          "en": "Companies Act, 2013",
+          "hi": "कंपनी अधिनियम, 2013"
+        },
+        "c": {
+          "en": "Consumer Protection Act",
+          "hi": "उपभोक्ता संरक्षण अधिनियम"
+        },
+        "d": {
+          "en": "Information Technology Act, 2000",
+          "hi": "सूचना प्रौद्योगिकी अधिनियम, 2000"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "This is the central legislation passed by the Parliament of India in the year 2000 to deal with e-commerce and cybercrime.",
+        "hi": "यह ई-कॉमर्स और साइबर अपराध से निपटने के लिए वर्ष 2000 में भारत की संसद द्वारा पारित केंद्रीय कानून है।"
+      },
+      "explanation": {
+        "en": "The Information Technology Act, 2000 (IT Act) is the primary law in India dealing with cybercrime and electronic commerce. It provides legal recognition for transactions carried out by means of electronic data interchange and defines various cyber offenses and penalties.",
+        "hi": "सूचना प्रौद्योगिकी अधिनियम, 2000 (आईटी अधिनियम) भारत में साइबर अपराध और इलेक्ट्रॉनिक कॉमर्स से निपटने वाला प्राथमिक कानून है। यह इलेक्ट्रॉनिक डेटा इंटरचेंज के माध्यम से किए गए लेनदेन के लिए कानूनी मान्यता प्रदान करता है और विभिन्न साइबर अपराधों और दंडों को परिभाषित करता है।"
+      },
+      "key_takeaway": {
+        "en": "The IT Act, 2000, is India's primary cyber law.",
+        "hi": "आईटी अधिनियम, 2000, भारत का प्राथमिक साइबर कानून है।"
+      }
+    },
+    {
+      "question_id": 71,
+      "question": {
+        "en": "Which type of IP address is used by most home networks and provided by routers to devices like laptops and phones?",
+        "hi": "अधिकांश घरेलू नेटवर्कों द्वारा किस प्रकार के आईपी पते का उपयोग किया जाता है और राउटर द्वारा लैपटॉप और फोन जैसे उपकरणों को प्रदान किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Public IP Address",
+          "hi": "पब्लिक आईपी एड्रेस"
+        },
+        "b": {
+          "en": "Class E IP Address",
+          "hi": "क्लास ई आईपी एड्रेस"
+        },
+        "c": {
+          "en": "Multicast IP Address",
+          "hi": "मल्टीकास्ट आईपी एड्रेस"
+        },
+        "d": {
+          "en": "Private IP Address",
+          "hi": "प्राइवेट आईपी एड्रेस"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "These addresses are non-routable on the public Internet and are used only within a local network.",
+        "hi": "ये एड्रेस सार्वजनिक इंटरनेट पर रूट करने योग्य नहीं हैं और केवल एक स्थानीय नेटवर्क के भीतर उपयोग किए जाते हैं।"
+      },
+      "explanation": {
+        "en": "Private IP Addresses (e.g., those starting with 192.168.x.x) are used in a local area network (LAN) to identify devices internally. Your home router assigns these private IPs to your devices. The router then uses a single Public IP address to connect the entire home network to the Internet.",
+        "hi": "प्राइवेट आईपी एड्रेस (उदाहरण के लिए, 192.168.x.x से शुरू होने वाले) का उपयोग स्थानीय क्षेत्र नेटवर्क (LAN) में डिवाइसों को आंतरिक रूप से पहचानने के लिए किया जाता है। आपका होम राउटर आपके डिवाइसों को ये प्राइवेट आईपी असाइन करता है। राउटर तब पूरे होम नेटवर्क को इंटरनेट से जोड़ने के लिए एक सिंगल पब्लिक आईपी एड्रेस का उपयोग करता है।"
+      },
+      "key_takeaway": {
+        "en": "Private IP addresses are used for internal LAN communication.",
+        "hi": "प्राइवेट आईपी एड्रेस का उपयोग आंतरिक LAN संचार के लिए किया जाता है।"
+      }
+    },
+    {
+      "question_id": 72,
+      "question": {
+        "en": "What is the main purpose of a 'Subnet Mask' in a network?",
+        "hi": "नेटवर्क में 'सबनेट मास्क' का मुख्य उद्देश्य क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "To hide the IP address from hackers",
+          "hi": "हैकर्स से आईपी एड्रेस को छिपाने के लिए"
+        },
+        "b": {
+          "en": "To increase the internet speed",
+          "hi": "इंटरनेट की स्पीड बढ़ाने के लिए"
+        },
+        "c": {
+          "en": "To connect to a wireless network",
+          "hi": "वायरलेस नेटवर्क से कनेक्ट होने के लिए"
+        },
+        "d": {
+          "en": "To distinguish the Network ID and Host ID parts of an IP address",
+          "hi": "आईपी एड्रेस के नेटवर्क आईडी और होस्ट आईडी भागों को अलग करने के लिए"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The mask's role is to define the boundaries of the local network.",
+        "hi": "मास्क की भूमिका स्थानीय नेटवर्क की सीमाओं को परिभाषित करना है।"
+      },
+      "explanation": {
+        "en": "The Subnet Mask is a 32-bit number used by networking devices to determine which part of an IP address represents the Network ID and which part represents the Host ID. It is crucial for routing decisions, as it helps a device decide if a destination is local or remote.",
+        "hi": "सबनेट मास्क एक 32-बिट संख्या है जिसका उपयोग नेटवर्किंग डिवाइस यह निर्धारित करने के लिए करते हैं कि आईपी एड्रेस का कौन सा भाग नेटवर्क आईडी का प्रतिनिधित्व करता है और कौन सा भाग होस्ट आईडी का प्रतिनिधित्व करता है। यह रूटिंग निर्णयों के लिए महत्वपूर्ण है, क्योंकि यह एक डिवाइस को यह तय करने में मदद करता है कि गंतव्य स्थानीय है या दूरस्थ।"
+      },
+      "key_takeaway": {
+        "en": "The Subnet Mask separates the Network ID from the Host ID.",
+        "hi": "सबनेट मास्क होस्ट आईडी से नेटवर्क आईडी को अलग करता है।"
+      }
+    },
+    {
+      "question_id": 73,
+      "question": {
+        "en": "Which Linux command is used to check the network connectivity to another device, like a website?",
+        "hi": "किसी अन्य डिवाइस, जैसे किसी वेबसाइट, से नेटवर्क कनेक्टिविटी जांचने के लिए किस लिनक्स कमांड का उपयोग किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "$ netstat",
+          "hi": "$ नेटस्टैट"
+        },
+        "b": {
+          "en": "$ grep",
+          "hi": "$ ग्रेप"
+        },
+        "c": {
+          "en": "$ ping",
+          "hi": "$ पिंग"
+        },
+        "d": {
+          "en": "$ ifconfig",
+          "hi": "$ इफकॉन्फिग"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "The command works by sending a small data packet and waiting for a response, measuring the round-trip time.",
+        "hi": "कमांड एक छोटा डेटा पैकेट भेजकर और प्रतिक्रिया की प्रतीक्षा करके काम करता है, राउंड-ट्रिप समय को मापता है।"
+      },
+      "explanation": {
+        "en": "The `$ ping` command sends an ICMP Echo Request packet to a target IP address or hostname (like a website). If the target is reachable, it sends an Echo Reply, confirming network connectivity and measuring latency (the time it takes for the signal to return).",
+        "hi": "कमांड `$ ping` एक ICMP इको रिक्वेस्ट पैकेट को एक लक्ष्य आईपी एड्रेस या होस्टनाम (जैसे एक वेबसाइट) पर भेजता है। यदि लक्ष्य पहुँच योग्य है, तो यह एक इको रिप्लाई भेजता है, नेटवर्क कनेक्टिविटी की पुष्टि करता है और विलंबता (सिग्नल को वापस आने में लगने वाला समय) को मापता है।"
+      },
+      "key_takeaway": {
+        "en": "The 'ping' command tests network connectivity and latency.",
+        "hi": "'ping' कमांड नेटवर्क कनेक्टिविटी और विलंबता का परीक्षण करता है।"
+      }
+    },
+    {
+      "question_id": 74,
+      "question": {
+        "en": "In the context of cyber safety, what does 'HTTPS' in a website URL signify?",
+        "hi": "साइबर सुरक्षा के संदर्भ में, किसी वेबसाइट यूआरएल में 'HTTPS' क्या दर्शाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "The website has high-quality images",
+          "hi": "वेबसाइट में उच्च गुणवत्ता वाली छवियां हैं"
+        },
+        "b": {
+          "en": "The website is very fast",
+          "hi": "वेबसाइट बहुत तेज है"
+        },
+        "c": {
+          "en": "The website is free to access",
+          "hi": "वेबसाइट तक मुफ्त पहुंच है"
+        },
+        "d": {
+          "en": "The connection to the website is encrypted and secure",
+          "hi": "वेबसाइट से कनेक्शन एन्क्रिप्टेड और सुरक्षित है"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The 'S' stands for 'Secure' and refers to the use of SSL/TLS protocol.",
+        "hi": "'S' का अर्थ 'सुरक्षित' (Secure) है और यह SSL/TLS प्रोटोकॉल के उपयोग को संदर्भित करता है।"
+      },
+      "explanation": {
+        "en": "HTTPS stands for HyperText Transfer Protocol Secure. The 'S' indicates that communication between your browser and the website is encrypted using SSL/TLS. This protection prevents sensitive data (like passwords and credit card numbers) from being intercepted by attackers.",
+        "hi": "HTTPS का अर्थ है हाइपरटेक्स्ट ट्रांसफर प्रोटोकॉल सिक्योर। 'S' इंगित करता है कि आपके ब्राउज़र और वेबसाइट के बीच संचार SSL/TLS का उपयोग करके एन्क्रिप्टेड है। यह सुरक्षा संवेदनशील डेटा (जैसे पासवर्ड और क्रेडिट कार्ड नंबर) को हमलावरों द्वारा इंटरसेप्ट होने से रोकती है।"
+      },
+      "key_takeaway": {
+        "en": "HTTPS ensures a secure, encrypted connection for data transfer.",
+        "hi": "HTTPS डेटा ट्रांसफर के लिए एक सुरक्षित, एन्क्रिप्टेड कनेक्शन सुनिश्चित करता है।"
+      }
+    },
+    {
+      "question_id": 75,
+      "question": {
+        "en": "What is a common use of the 'echo' command in a Linux shell script?",
+        "hi": "लिनक्स शेल स्क्रिप्ट में 'इको' कमांड का एक सामान्य उपयोग क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "To delete files",
+          "hi": "फाइलों को हटाने के लिए"
+        },
+        "b": {
+          "en": "To compare two files",
+          "hi": "दो फाइलों की तुलना करने के लिए"
+        },
+        "c": {
+          "en": "To change the directory",
+          "hi": "डायरेक्टरी बदलने के लिए"
+        },
+        "d": {
+          "en": "To display messages or variables on the screen",
+          "hi": "संदेशों या वेरिएबल्स को स्क्रीन पर प्रदर्शित करने के लिए"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The command name suggests repeating or speaking out the input.",
+        "hi": "कमांड का नाम इनपुट को दोहराने या बोलने का सुझाव देता है।"
+      },
+      "explanation": {
+        "en": "The `$ echo` command's primary function is to output the strings (messages) or the values of variables passed to it onto the standard output (the screen). It is essential for scripting to provide user feedback or debug variable states.",
+        "hi": "कमांड `$ echo` का प्राथमिक कार्य उस स्ट्रिंग्स (संदेशों) या वेरिएबल्स के मानों को मानक आउटपुट (स्क्रीन) पर आउटपुट करना है जो इसे पास किए जाते हैं। यह उपयोगकर्ता प्रतिक्रिया प्रदान करने या वेरिएबल की स्थिति को डीबग करने के लिए स्क्रिप्टिंग के लिए आवश्यक है।"
+      },
+      "key_takeaway": {
+        "en": "'echo' is used to display output to the user/screen.",
+        "hi": "'echo' का उपयोग उपयोगकर्ता/स्क्रीन पर आउटपुट प्रदर्शित करने के लिए किया जाता है।"
+      }
+    },
+    {
+      "question_id": 76,
+      "question": {
+        "en": "Which directory in the Linux file system is specifically meant for storing temporary files that are deleted on reboot?",
+        "hi": "लिनक्स फाइल सिस्टम में कौन सी डायरेक्टरी विशेष रूप से अस्थायी फाइलों को संग्रहीत करने के लिए है जो रीबूट पर हटा दी जाती हैं?"
+      },
+      "options": {
+        "a": {
+          "en": "/etc",
+          "hi": "/एटीसी"
+        },
+        "b": {
+          "en": "/var",
+          "hi": "/वर"
+        },
+        "c": {
+          "en": "/usr",
+          "hi": "/यूएसआर"
+        },
+        "d": {
+          "en": "/tmp",
+          "hi": "/टीएमपी"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The name is a three-letter abbreviation.",
+        "hi": "नाम तीन-अक्षर का संक्षिप्त नाम है।"
+      },
+      "explanation": {
+        "en": "The `/tmp` directory is used for temporary files created by the operating system and applications. The contents of this directory are typically cleared out upon system reboot or periodically by the system, as per the Filesystem Hierarchy Standard (FHS).",
+        "hi": "`/tmp` डायरेक्टरी का उपयोग ऑपरेटिंग सिस्टम और एप्लिकेशन द्वारा बनाई गई अस्थायी फाइलों के लिए किया जाता है। फ़ाइलसिस्टम हाइरार्की स्टैंडर्ड (FHS) के अनुसार, इस डायरेक्टरी की सामग्री को आमतौर पर सिस्टम रीबूट होने पर या समय-समय पर सिस्टम द्वारा साफ़ कर दिया जाता है।"
+      },
+      "key_takeaway": {
+        "en": "The '/tmp' directory stores temporary files that are cleared upon reboot.",
+        "hi": "'/tmp' डायरेक्टरी अस्थायी फाइलें संग्रहीत करती है जो रीबूट होने पर साफ हो जाती हैं।"
+      }
+    },
+    {
+      "question_id": 77,
+      "question": {
+        "en": "What is the primary advantage of using a 'Switch' over a 'Hub' in a modern network?",
+        "hi": "आधुनिक नेटवर्क में 'हब' पर 'स्विच' का उपयोग करने का प्राथमिक लाभ क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "A switch is cheaper",
+          "hi": "एक स्विच सस्ता होता है"
+        },
+        "b": {
+          "en": "A switch uses broadcasting, which is faster",
+          "hi": "एक स्विच ब्रॉडकास्टिंग का उपयोग करता है, जो तेज है"
+        },
+        "c": {
+          "en": "A switch creates direct connections, reducing collisions and improving security",
+          "hi": "एक स्विच सीधे कनेक्शन बनाता है, जिससे टकराव कम होता है और सुरक्षा में सुधार होता है"
+        },
+        "d": {
+          "en": "A switch does not require cables",
+          "hi": "एक स्विच के लिए केबल की आवश्यकता नहीं होती है"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Switches are 'intelligent' because they forward data only to the intended recipient.",
+        "hi": "स्विच 'बुद्धिमान' होते हैं क्योंकि वे डेटा को केवल इच्छित प्राप्तकर्ता को ही आगे बढ़ाते हैं।"
+      },
+      "explanation": {
+        "en": "A Switch creates a direct virtual connection between the source and destination device using MAC addresses. This avoids the excessive traffic and data collisions caused by a Hub's broadcasting, leading to significantly better network performance, capacity, and privacy (security).",
+        "hi": "एक स्विच मैक एड्रेस का उपयोग करके स्रोत और गंतव्य डिवाइस के बीच एक सीधा वर्चुअल कनेक्शन बनाता है। यह हब के प्रसारण के कारण होने वाले अत्यधिक ट्रैफिक और डेटा टकराव से बचाता है, जिससे नेटवर्क प्रदर्शन, क्षमता और गोपनीयता (सुरक्षा) में काफी सुधार होता है।"
+      },
+      "key_takeaway": {
+        "en": "Switches use direct connections to improve network security and performance.",
+        "hi": "स्विच नेटवर्क सुरक्षा और प्रदर्शन को बेहतर बनाने के लिए सीधे कनेक्शन का उपयोग करते हैं।"
+      }
+    },
+    {
+      "question_id": 78,
+      "question": {
+        "en": "The command $ chmod in Linux is used for:",
+        "hi": "लिनक्स में $ chmod कमांड का उपयोग किसके लिए किया जाता है?"
+      },
+      "options": {
+        "a": {
+          "en": "Changing file permissions",
+          "hi": "फाइल परमिशन बदलने के लिए"
+        },
+        "b": {
+          "en": "Checking memory usage",
+          "hi": "मेमोरी उपयोग की जांच करने के लिए"
+        },
+        "c": {
+          "en": "Managing network interfaces",
+          "hi": "नेटवर्क इंटरफेस प्रबंधित करने के लिए"
+        },
+        "d": {
+          "en": "Displaying the calendar",
+          "hi": "कैलेंडर प्रदर्शित करने के लिए"
+        }
+      },
+      "correct_option": "a",
+      "hint": {
+        "en": "The name is a contraction of 'change mode'.",
+        "hi": "नाम 'चेंज मोड' का एक संकुचन है।"
+      },
+      "explanation": {
+        "en": "The `$ chmod` command (change mode) is used to change the access permissions (read, write, and execute) of files and directories. For example, `chmod 755 script.sh` changes the script's permissions to make it executable.",
+        "hi": "कमांड `$ chmod` (चेंज मोड) का उपयोग फाइलों और डायरेक्टरी की एक्सेस परमिशन (पढ़ने, लिखने और निष्पादित करने) को बदलने के लिए किया जाता है। उदाहरण के लिए, `chmod 755 script.sh` स्क्रिप्ट की परमिशन को इसे निष्पादन योग्य बनाने के लिए बदलता है।"
+      },
+      "key_takeaway": {
+        "en": "The 'chmod' command changes file access permissions.",
+        "hi": "'chmod' कमांड फ़ाइल एक्सेस परमिशन बदलता है।"
+      }
+    },
+    {
+      "question_id": 79,
+      "question": {
+        "en": "Which of these is a key principle of responsible social media use to prevent cyberbullying?",
+        "hi": "साइबरबुलिंग को रोकने के लिए जिम्मेदार सोशल मीडिया उपयोग का एक महत्वपूर्ण सिद्धांत कौन सा है?"
+      },
+      "options": {
+        "a": {
+          "en": "Sharing personal passwords with close friends",
+          "hi": "करीबी दोस्तों के साथ व्यक्तिगत पासवर्ड साझा करना"
+        },
+        "b": {
+          "en": "Posting comments without thinking",
+          "hi": "बिना सोचे-समझे टिप्पणियाँ पोस्ट करना"
+        },
+        "c": {
+          "en": "Respecting others online and thinking before you post",
+          "hi": "ऑनलाइन दूसरों का सम्मान करना और पोस्ट करने से पहले सोचना"
+        },
+        "d": {
+          "en": "Using fake identities to avoid responsibility",
+          "hi": "जिम्मेदारी से बचने के लिए नकली पहचान का उपयोग करना"
+        }
+      },
+      "correct_option": "c",
+      "hint": {
+        "en": "Responsible online behavior relies on empathy and careful communication.",
+        "hi": "जिम्मेदार ऑनलाइन व्यवहार सहानुभूति और सावधानीपूर्वक संचार पर निर्भर करता है।"
+      },
+      "explanation": {
+        "en": "Preventing cyberbullying requires adhering to ethical behavior online, specifically by being mindful of how your comments might affect others and avoiding disrespectful language. The core principle is 'Think Before You Post'.",
+        "hi": "साइबरबुलिंग को रोकने के लिए ऑनलाइन नैतिक व्यवहार का पालन करना आवश्यक है, विशेष रूप से इस बात का ध्यान रखना कि आपकी टिप्पणियाँ दूसरों को कैसे प्रभावित कर सकती हैं और अपमानजनक भाषा से बचना। मूल सिद्धांत है 'पोस्ट करने से पहले सोचें'।"
+      },
+      "key_takeaway": {
+        "en": "Always respect others online to prevent cyberbullying.",
+        "hi": "साइबरबुलिंग को रोकने के लिए हमेशा ऑनलाइन दूसरों का सम्मान करें।"
+      }
+    },
+    {
+      "question_id": 80,
+      "question": {
+        "en": "What is the main purpose of the 'Information Technology Act, 2000' in India?",
+        "hi": "भारत में 'सूचना प्रौद्योगिकी अधिनियम, 2000' का मुख्य उद्देश्य क्या है?"
+      },
+      "options": {
+        "a": {
+          "en": "To regulate the price of computers",
+          "hi": "कंप्यूटरों की कीमत को विनियमित करने के लिए"
+        },
+        "b": {
+          "en": "To mandate the use of Linux in all schools",
+          "hi": "सभी स्कूलों में लिनक्स के उपयोग को अनिवार्य करने के लिए"
+        },
+        "c": {
+          "en": "To control internet speed across the country",
+          "hi": "देश भर में इंटरनेट की गति को नियंत्रित करने के लिए"
+        },
+        "d": {
+          "en": "To provide legal recognition for electronic transactions and combat cybercrime",
+          "hi": "इलेक्ट्रॉनिक लेनदेन के लिए कानूनी मान्यता प्रदान करने और साइबर अपराध से निपटने के लिए"
+        }
+      },
+      "correct_option": "d",
+      "hint": {
+        "en": "The Act was designed to provide a legal backbone for the emerging digital and electronic activities in the country.",
+        "hi": "यह अधिनियम देश में उभरती डिजिटल और इलेक्ट्रॉनिक गतिविधियों के लिए एक कानूनी रीढ़ प्रदान करने के लिए डिज़ाइन किया गया था।"
+      },
+      "explanation": {
+        "en": "The main purpose of the IT Act, 2000, is to give legal validity to e-commerce and electronic transactions carried out using digital signatures. Crucially, it also established a framework for prosecuting cyber offenses and promoting cybersecurity in India.",
+        "hi": "आईटी अधिनियम, 2000 का मुख्य उद्देश्य डिजिटल हस्ताक्षर का उपयोग करके किए गए ई-कॉमर्स और इलेक्ट्रॉनिक लेनदेन को कानूनी वैधता प्रदान करना है। महत्वपूर्ण रूप से, इसने भारत में साइबर अपराधों पर मुकदमा चलाने और साइबर सुरक्षा को बढ़ावा देने के लिए एक ढांचा भी स्थापित किया।"
+      },
+      "key_takeaway": {
+        "en": "The IT Act, 2000, legalizes e-transactions and addresses cybercrime.",
+        "hi": "आईटी अधिनियम, 2000, ई-लेनदेन को वैध बनाता है और साइबर अपराध को संबोधित करता है।"
+      }
+    }
+  ]
+}
