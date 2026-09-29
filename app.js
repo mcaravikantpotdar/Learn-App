@@ -4,14 +4,9 @@ class ConceptBuilder {
         this.currentUnitIndex = 0;
         this.currentLang = 'en';
         
-        // State for current challenge
-        this.bank = [];
-        this.assembly = [];
-        this.attempts = 0;
-        this.hintUsed = false;
-        
-        // Mastery Tracking (Scores per unit per language)
-        this.scores = {}; 
+        // Persistent State Store: tracks assemblies, banks, and scores across languages and units
+        this.unitStates = {}; 
+        this.masteryScores = {}; 
 
         this.initElements();
         this.bindEvents();
@@ -19,21 +14,31 @@ class ConceptBuilder {
     }
 
     initElements() {
-        // UI Elements
         this.el = {
-            title: document.getElementById('lesson-title'),
+            title: document.getElementById('chapterTitle'),
+            unitNum: document.getElementById('currentUnitNum'),
+            totalNum: document.getElementById('totalUnitsNum'),
+            masteryScore: document.getElementById('masteryScore'),
+            maxScore: document.getElementById('maxScore'),
+            unitGrid: document.getElementById('unitGrid'),
+            
+            btnEn: document.getElementById('btn-en'),
+            btnHi: document.getElementById('btn-hi'),
+            
+            lessonTitle: document.getElementById('lesson-title'),
             theory: document.getElementById('lesson-theory'),
             mediaContainer: document.getElementById('media-container'),
             mediaCaption: document.getElementById('media-caption'),
+            
             prompt: document.getElementById('challenge-prompt'),
             targetZone: document.getElementById('target-zone'),
             fragmentBank: document.getElementById('fragment-bank'),
-            btnEn: document.getElementById('btn-en'),
-            btnHi: document.getElementById('btn-hi'),
-            btnHint: document.getElementById('btn-hint'),
+            
+            btnPrev: document.getElementById('prevBtn'),
+            btnNext: document.getElementById('nextBtn'),
+            btnHint: document.getElementById('hintBtn'),
             btnSubmit: document.getElementById('btn-submit'),
-            feedback: document.getElementById('feedback-banner'),
-            mastery: document.getElementById('mastery-score')
+            feedback: document.getElementById('feedback-banner')
         };
     }
 
@@ -41,16 +46,18 @@ class ConceptBuilder {
         this.el.btnEn.addEventListener('click', () => this.switchLanguage('en'));
         this.el.btnHi.addEventListener('click', () => this.switchLanguage('hi'));
         
+        this.el.btnPrev.addEventListener('click', () => this.navigateUnit(-1));
+        this.el.btnNext.addEventListener('click', () => this.navigateUnit(1));
+        
         this.el.btnSubmit.addEventListener('click', () => this.checkAnswer());
         this.el.btnHint.addEventListener('click', () => this.giveHint());
     }
 
     async loadLesson() {
         try {
-            // 1. Detect repo owner and repo name dynamically from GitHub Pages URL
+            // 1. Dynamic GitHub Auto-Discovery
             const hostname = window.location.hostname;
             const pathname = window.location.pathname.split('/').filter(Boolean);
-            
             let targetJsonUrl = '';
 
             if (hostname.includes('github.io') && pathname.length > 0) {
@@ -58,82 +65,108 @@ class ConceptBuilder {
                 const repo = pathname[0]; 
                 const apiFolderUrl = `https://api.github.com/repos/${owner}/${repo}/contents/jsons/Class-11/Comp.Sc.`;
 
-                // 2. Scan the directory via GitHub API
                 const dirResponse = await fetch(apiFolderUrl);
                 let files;
-                
                 if (!dirResponse.ok) {
-                    // Fallback attempt without trailing dot if folder naming differs
+                    // Handle trailing dot fallback
                     const altApiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/jsons/Class-11/Comp.Sc`;
                     const altRes = await fetch(altApiUrl);
-                    if (!altRes.ok) throw new Error(`GitHub API directory scan failed: ${dirResponse.status}`);
+                    if (!altRes.ok) throw new Error(`API scan failed: ${dirResponse.status}`);
                     files = await altRes.json();
                 } else {
                     files = await dirResponse.json();
                 }
 
-                // 3. Find the first JSON file regardless of its exact filename
                 const jsonFile = files.find(file => file.name.toLowerCase().endsWith('.json'));
-                if (!jsonFile) throw new Error("No .json file found in jsons/Class-11/Comp.Sc./");
-
-                targetJsonUrl = jsonFile.download_url; // Direct raw CDN link
+                if (!jsonFile) throw new Error("No .json file found in directory.");
+                targetJsonUrl = jsonFile.download_url;
             } else {
-                // Local fallback (e.g., Live Server)
                 targetJsonUrl = 'jsons/Class-11/Comp.Sc./fundamentals-of-computer.json';
             }
 
-            // 4. Fetch the discovered JSON
+            // 2. Fetch JSON
             const response = await fetch(targetJsonUrl);
             if (!response.ok) throw new Error(`HTTP error ${response.status}`);
-
             this.lessonData = await response.json();
-            this.renderUnit();
+            
+            // 3. Initialize Persistent States
+            this.initStates();
+            
+            // 4. Render UI
+            this.el.title.innerText = this.lessonData.metadata.chapter_title[this.currentLang] || this.lessonData.metadata.chapter_title.en;
+            this.el.totalNum.innerText = this.lessonData.learning_units.length;
+            this.el.maxScore.innerText = this.lessonData.learning_units.length * 20;
+            
+            this.renderGrid();
+            this.showUnit(0);
+            
         } catch (error) {
             console.error("Auto-discovery failed:", error);
-            this.el.title.innerText = `Error Loading Lesson File: ${error.message}. Check Console.`;
+            this.el.title.innerText = "Error Loading Lesson File.";
         }
     }
 
-    renderUnit() {
-        const unit = this.lessonData.learning_units[this.currentUnitIndex];
-        
-        // Reset states
-        this.assembly = [];
-        this.attempts = 0;
-        this.hintUsed = false;
-        this.el.feedback.style.display = 'none';
-        
-        // Render Instruction Card
-        this.el.title.innerText = unit.instruction.title[this.currentLang];
-        this.el.theory.innerText = unit.instruction.theory[this.currentLang];
-        
-        // Render Media (SVG)
-        if (unit.instruction.media && unit.instruction.media.svg_code) {
-            this.el.mediaContainer.style.display = 'block';
-            this.el.mediaContainer.innerHTML = unit.instruction.media.svg_code;
-            this.el.mediaCaption.innerText = unit.instruction.media.caption[this.currentLang];
-        } else {
-            this.el.mediaContainer.style.display = 'none';
-            this.el.mediaCaption.innerText = '';
-        }
-
-        this.setupChallenge(unit);
+    initStates() {
+        this.lessonData.learning_units.forEach(unit => {
+            const uid = unit.unit_id;
+            this.masteryScores[uid] = { en: 0, hi: 0 };
+            this.unitStates[uid] = {
+                en: this.createLangState(unit.challenges.en),
+                hi: this.createLangState(unit.challenges.hi)
+            };
+        });
     }
 
-    setupChallenge(unit) {
-        const challenge = unit.challenges[this.currentLang];
-        this.el.prompt.innerText = challenge.prompt;
-
-        // Combine targets and distractors, then shuffle
+    createLangState(challenge) {
         let allFragments = [
             ...challenge.target_sequence.map(f => ({ ...f, isTarget: true })),
             ...challenge.distractors.map(f => ({ ...f, isTarget: false }))
         ];
-        
-        this.bank = this.shuffleArray(allFragments);
-        this.assembly = [];
-        
-        this.renderFragments();
+        return {
+            bank: this.shuffleArray(allFragments),
+            assembly: [],
+            isSolved: false,
+            attempts: 0,
+            hintUsed: false
+        };
+    }
+
+    renderGrid() {
+        this.el.unitGrid.innerHTML = '';
+        this.lessonData.learning_units.forEach((unit, idx) => {
+            const uid = unit.unit_id;
+            const scoreEN = this.masteryScores[uid].en;
+            const scoreHI = this.masteryScores[uid].hi;
+            const totalScore = scoreEN + scoreHI;
+
+            const badge = document.createElement('div');
+            badge.className = `question-number`;
+            
+            // Status classes mapped to your Multi-Class-Quiz CSS
+            if (totalScore === 20) badge.classList.add('correct');
+            else if (totalScore > 0) badge.classList.add('attempted');
+
+            if (idx === this.currentUnitIndex) badge.classList.add('current');
+
+            badge.innerHTML = `
+                <div class="q-number">${idx + 1}</div>
+                <div class="marks">${totalScore}/20</div>
+            `;
+            badge.onclick = () => this.showUnit(idx);
+            this.el.unitGrid.appendChild(badge);
+        });
+
+        // Update overall mastery
+        let globalTotal = 0;
+        Object.values(this.masteryScores).forEach(s => globalTotal += (s.en + s.hi));
+        this.el.masteryScore.innerText = globalTotal;
+    }
+
+    navigateUnit(direction) {
+        let nextIndex = this.currentUnitIndex + direction;
+        if (nextIndex >= 0 && nextIndex < this.lessonData.learning_units.length) {
+            this.showUnit(nextIndex);
+        }
     }
 
     switchLanguage(lang) {
@@ -143,139 +176,181 @@ class ConceptBuilder {
         this.el.btnEn.classList.toggle('active', lang === 'en');
         this.el.btnHi.classList.toggle('active', lang === 'hi');
         
-        this.renderUnit();
+        // Re-render the current unit with the preserved state of the new language
+        this.showUnit(this.currentUnitIndex);
     }
 
-    renderFragments() {
+    showUnit(index) {
+        this.currentUnitIndex = index;
+        const unit = this.lessonData.learning_units[index];
+        const state = this.unitStates[unit.unit_id][this.currentLang];
+        
+        this.el.unitNum.innerText = index + 1;
+        this.renderGrid(); // Updates the '.current' highlight
+
+        // 1. Render Instruction Card
+        this.el.lessonTitle.innerText = unit.instruction.title[this.currentLang];
+        this.el.theory.innerText = unit.instruction.theory[this.currentLang];
+        
+        if (unit.instruction.media && unit.instruction.media.svg_code) {
+            this.el.mediaContainer.style.display = 'block';
+            this.el.mediaContainer.innerHTML = unit.instruction.media.svg_code;
+            this.el.mediaCaption.innerText = unit.instruction.media.caption[this.currentLang];
+        } else {
+            this.el.mediaContainer.style.display = 'none';
+            this.el.mediaCaption.innerText = '';
+        }
+
+        // 2. Render Challenge Board
+        const challenge = unit.challenges[this.currentLang];
+        this.el.prompt.innerText = challenge.prompt;
+        
+        this.el.feedback.style.display = 'none';
+        this.el.targetZone.classList.remove('success-lock');
+
+        this.renderFragments(state);
+
+        // 3. Update Controls Navigation
+        this.el.btnPrev.disabled = (index === 0);
+        this.el.btnNext.innerText = (index === this.lessonData.learning_units.length - 1) ? "🏁 Finish" : "Next Unit →";
+        
+        // 4. Restore Success UI if already solved
+        if (state.isSolved) {
+            this.el.targetZone.classList.add('success-lock');
+            this.showFeedback(`🎉 <strong>Solved! (+${this.masteryScores[unit.unit_id][this.currentLang]} pts)</strong><br><br><em>Takeaway:</em> ${unit.key_takeaway[this.currentLang]}`, 'success');
+            this.el.btnSubmit.disabled = true;
+            this.el.btnHint.disabled = true;
+        }
+    }
+
+    renderFragments(state) {
         this.el.fragmentBank.innerHTML = '';
         this.el.targetZone.innerHTML = '';
 
-        // Render Bank (Always lowercase)
-        this.bank.forEach(frag => {
+        // Render Bank
+        state.bank.forEach(frag => {
             const chip = document.createElement('div');
             chip.className = 'fragment-chip';
             chip.innerText = frag.text;
-            chip.onclick = () => this.moveToAssembly(frag);
+            if (!state.isSolved) {
+                chip.onclick = () => this.moveFragment(frag, 'bank', 'assembly');
+            }
             this.el.fragmentBank.appendChild(chip);
         });
 
-        // Render Assembly Line (Dynamic Capitalization for slot 0)
-        this.assembly.forEach((frag, index) => {
+        // Render Assembly (Dynamic Capitalization for Slot 0)
+        state.assembly.forEach((frag, index) => {
             const chip = document.createElement('div');
             chip.className = 'fragment-chip';
             
-            // Capitalize if it's the very first fragment
             let displayText = frag.text;
             if (index === 0) {
                 displayText = displayText.charAt(0).toUpperCase() + displayText.slice(1);
             }
-            
             chip.innerText = displayText;
-            chip.onclick = () => this.moveToBank(frag);
+            
+            if (!state.isSolved) {
+                chip.onclick = () => this.moveFragment(frag, 'assembly', 'bank');
+            }
             this.el.targetZone.appendChild(chip);
         });
 
-        // Enable/Disable Submit Button
-        this.el.btnSubmit.disabled = this.assembly.length === 0;
+        if (!state.isSolved) {
+            this.el.btnSubmit.disabled = state.assembly.length === 0;
+            this.el.btnHint.disabled = state.hintUsed;
+        }
     }
 
-    moveToAssembly(fragment) {
-        this.bank = this.bank.filter(f => f.id !== fragment.id);
-        this.assembly.push(fragment);
-        this.renderFragments();
-        this.el.feedback.style.display = 'none'; // Clear previous errors
-    }
+    moveFragment(fragment, from, to) {
+        const unit = this.lessonData.learning_units[this.currentUnitIndex];
+        const state = this.unitStates[unit.unit_id][this.currentLang];
+        
+        if (state.isSolved) return; // Locked
 
-    moveToBank(fragment) {
-        this.assembly = this.assembly.filter(f => f.id !== fragment.id);
-        this.bank.push(fragment);
-        this.renderFragments();
+        state[from] = state[from].filter(f => f.id !== fragment.id);
+        state[to].push(fragment);
+        
         this.el.feedback.style.display = 'none';
+        this.renderFragments(state);
     }
 
     giveHint() {
         const unit = this.lessonData.learning_units[this.currentUnitIndex];
-        this.hintUsed = true;
-        this.showFeedback(unit.challenges[this.currentLang].hint, 'secondary');
+        const state = this.unitStates[unit.unit_id][this.currentLang];
+        state.hintUsed = true;
+        this.showFeedback(`💡 <strong>Hint:</strong> ${unit.challenges[this.currentLang].hint}`, 'secondary');
+        this.el.btnHint.disabled = true;
     }
 
     checkAnswer() {
-        this.attempts++;
         const unit = this.lessonData.learning_units[this.currentUnitIndex];
         const challenge = unit.challenges[this.currentLang];
+        const state = this.unitStates[unit.unit_id][this.currentLang];
         const targets = challenge.target_sequence;
 
-        // 1. Check for Distractors
-        const distractor = this.assembly.find(f => !f.isTarget);
+        state.attempts++;
+
+        // Distractor Check
+        const distractor = state.assembly.find(f => !f.isTarget);
         if (distractor) {
             this.showFeedback(`❌ ${distractor.penalty_explanation}`, 'error');
             return;
         }
 
-        // 2. Check Length
-        if (this.assembly.length !== targets.length) {
+        // Length Check
+        if (state.assembly.length !== targets.length) {
             this.showFeedback("❌ The sentence is incomplete or has missing clauses.", 'error');
             return;
         }
 
-        // 3. Check Exact Order
+        // Order Check
         let isCorrect = true;
         for (let i = 0; i < targets.length; i++) {
-            if (this.assembly[i].id !== targets[i].id) {
+            if (state.assembly[i].id !== targets[i].id) {
                 isCorrect = false;
                 break;
             }
         }
 
         if (isCorrect) {
-            this.handleSuccess(unit);
+            this.handleSuccess(unit, state);
         } else {
             this.showFeedback("❌ The logical order is incorrect. Check your clause connections.", 'error');
         }
     }
 
-    handleSuccess(unit) {
+    handleSuccess(unit, state) {
+        state.isSolved = true;
+        
         // Calculate Score
         let marks = 10;
-        if (this.attempts > 1) marks -= 2;
-        if (this.hintUsed) marks -= 2;
+        if (state.attempts > 1) marks -= 2;
+        if (state.hintUsed) marks -= 2;
         marks = Math.max(2, marks); // Floor at 2 pts
 
         // Save Score
-        const unitKey = unit.unit_id;
-        if (!this.scores[unitKey]) this.scores[unitKey] = { en: 0, hi: 0 };
-        
-        // Only update if current attempt is better than previous
-        if (marks > this.scores[unitKey][this.currentLang]) {
-            this.scores[unitKey][this.currentLang] = marks;
+        const uid = unit.unit_id;
+        if (marks > this.masteryScores[uid][this.currentLang]) {
+            this.masteryScores[uid][this.currentLang] = marks;
         }
 
-        this.updateMasteryDisplay();
+        this.renderGrid(); // Updates the top badge color and total score
 
-        // Show Success & Key Takeaway
+        // Render Success Display
+        this.el.targetZone.classList.add('success-lock');
+        this.renderFragments(state); // Re-render to apply lock visuals
+
         let successHtml = `🎉 <strong>Correct! (+${marks} pts)</strong><br><br>`;
         successHtml += `<em>Takeaway:</em> ${unit.key_takeaway[this.currentLang]}`;
         
-        // If they haven't done the other language yet
         const otherLang = this.currentLang === 'en' ? 'hi' : 'en';
-        const otherScore = this.scores[unitKey][otherLang];
-        if (otherScore === 0) {
-            successHtml += `<br><br><small>💡 Switch to ${otherLang === 'en' ? 'English' : 'Hindi'} to claim your remaining 10 Mastery Points!</small>`;
+        if (this.masteryScores[uid][otherLang] === 0) {
+            successHtml += `<br><br><small>💡 Switch to ${otherLang === 'en' ? 'English' : 'Hindi'} to claim your remaining 10 Mastery Points for this unit!</small>`;
         }
 
         this.showFeedback(successHtml, 'success');
-        
-        // Disable buttons on success
         this.el.btnSubmit.disabled = true;
         this.el.btnHint.disabled = true;
-    }
-
-    updateMasteryDisplay() {
-        let total = 0;
-        for (const unit in this.scores) {
-            total += this.scores[unit].en + this.scores[unit].hi;
-        }
-        this.el.mastery.innerText = total;
     }
 
     showFeedback(message, type) {
@@ -285,17 +360,15 @@ class ConceptBuilder {
     }
 
     shuffleArray(array) {
-        let currentIndex = array.length, randomIndex;
-        while (currentIndex !== 0) {
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex--;
-            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+        let newArr = [...array];
+        for (let i = newArr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
         }
-        return array;
+        return newArr;
     }
 }
 
-// Boot up the engine when the DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     window.conceptApp = new ConceptBuilder();
 });
