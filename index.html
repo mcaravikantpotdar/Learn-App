@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept Builder | Learning Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header & Language Toggle -->
+        <header class="top-nav">
+            <div class="brand">Learning Mode</div>
+            <div class="lang-toggle">
+                <button id="btn-en" class="lang-btn active">English [10 pts]</button>
+                <button id="btn-hi" class="lang-btn">हिंदी [10 pts]</button>
+            </div>
+            <div class="score-display">Mastery: <span id="mastery-score">0</span>/20</div>
+        </header>
+
+        <!-- Phase 1: Teach (The Concept Card) -->
+        <section class="lesson-card" id="lesson-card">
+            <h2 id="lesson-title">Loading Lesson...</h2>
+            
+            <!-- 16:9 Responsive Media Container -->
+            <div class="media-viewport" id="media-container" style="display: none;">
+                <!-- SVG / Video gets injected here -->
+            </div>
+            <div class="media-caption" id="media-caption"></div>
+
+            <div class="theory-content" id="lesson-theory"></div>
+        </section>
+
+        <!-- Phase 2: Reconstruct (The Challenge) -->
+        <section class="challenge-board">
+            <div class="prompt-bar" id="challenge-prompt"></div>
+            
+            <!-- Target Zone (Where the sentence is assembled) -->
+            <div class="assembly-line" id="target-zone">
+                <!-- Clicked fragments move here -->
+            </div>
+
+            <!-- Fragment Bank (Where shuffled words start) -->
+            <div class="fragment-pool" id="fragment-bank">
+                <!-- Fragments generated dynamically -->
+            </div>
+
+            <!-- Action Controls -->
+            <div class="action-bar">
+                <button id="btn-hint" class="action-btn secondary">Give Hint (-2 pts)</button>
+                <button id="btn-submit" class="action-btn primary" disabled>Check Answer</button>
+            </div>
+            
+            <!-- Feedback / Key Takeaway Message -->
+            <div class="feedback-banner" id="feedback-banner" style="display: none;"></div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
