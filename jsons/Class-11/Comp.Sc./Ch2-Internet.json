@@ -1,0 +1,2418 @@
+{
+  "chapter_id": "c11_cs_ch02_digital_network_essentials",
+  "metadata": {
+    "class": "Class 11",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Digital Network Essentials",
+      "hi": "डिजिटल नेटवर्क अनिवार्य तत्व"
+    },
+    "total_units": 20,
+    "scoring_model": {
+      "single_language_max": 10,
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "unit_id": "u01_internet_fundamentals",
+      "topic": "Internet: Architecture & Global Scope",
+      "pedagogical_objective": "Define the Internet as a worldwide network of networks exchanging domestic, academic, business, and government information.",
+      "instruction": {
+        "title": {
+          "en": "Understanding the Global Internet",
+          "hi": "वैश्विक इंटरनेट को समझना"
+        },
+        "theory": {
+          "en": "The Internet is the abbreviation for `INTERnational NETwork` and represents the largest network of computers and digital devices across the globe. It connects millions of domestic, academic, business, and government networks that continuously exchange distinct types of digital data. Often colloquially termed the `Net`, it serves as an overarching infrastructure providing global communication facilities.",
+          "hi": "इंटरनेट `INTERnational NETwork` का संक्षिप्त नाम है और यह दुनिया भर के कंप्यूटरों और डिजिटल उपकरणों का सबसे बड़ा नेटवर्क प्रस्तुत करता है। यह लाखों घरेलू, शैक्षणिक, व्यावसायिक और सरकारी नेटवर्कों को जोड़ता है जो निरंतर विभिन्न प्रकार के डिजिटल डेटा का आदान-प्रदान करते हैं। इसे बोलचाल की भाषा में `नेट` भी कहा जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><circle cx='320' cy='110' r='60' fill='#1e293b' stroke='#38bdf8' stroke-width='3'/><text x='320' y='115' fill='#38bdf8' font-size='14' font-family='sans-serif' text-anchor='middle'>INTERNET (Global)</text><circle cx='120' cy='60' r='35' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='120' y='65' fill='#4ade80' font-size='10' font-family='sans-serif' text-anchor='middle'>Academic</text><circle cx='520' cy='60' r='35' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='520' y='65' fill='#fbbf24' font-size='10' font-family='sans-serif' text-anchor='middle'>Business</text><circle cx='120' cy='160' r='35' fill='#1e293b' stroke='#f87171' stroke-width='2'/><text x='120' y='165' fill='#f87171' font-size='10' font-family='sans-serif' text-anchor='middle'>Domestic</text><circle cx='520' cy='160' r='35' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='520' y='165' fill='#38bdf8' font-size='10' font-family='sans-serif' text-anchor='middle'>Government</text><line x1='155' y1='65' x2='260' y2='95' stroke='#94a3b8' stroke-dasharray='4'/><line x1='485' y1='65' x2='380' y2='95' stroke='#94a3b8' stroke-dasharray='4'/><line x1='155' y1='155' x2='260' y2='125' stroke='#94a3b8' stroke-dasharray='4'/><line x1='485' y1='155' x2='380' y2='125' stroke='#94a3b8' stroke-dasharray='4'/></svg>",
+          "caption": {
+            "en": "Interconnection of diverse public and private networks forming the global Internet.",
+            "hi": "वैश्विक इंटरनेट का निर्माण करने वाले सार्वजनिक और निजी नेटवर्कों का अंतर्संबंध।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the formal definition explaining the core architectural concept of the Internet.",
+          "target_sequence": [
+            {
+              "id": "en_u01_t1",
+              "role": "subject",
+              "text": "the internet is",
+              "role_hint": "start with the primary noun phrase defining the entity"
+            },
+            {
+              "id": "en_u01_t2",
+              "role": "modifier",
+              "text": "the largest worldwide network of computers,",
+              "role_hint": "specify the scope and scale of this computing network"
+            },
+            {
+              "id": "en_u01_t3",
+              "role": "process",
+              "text": "connecting diverse networks",
+              "role_hint": "identify the operational activity linking various systems"
+            },
+            {
+              "id": "en_u01_t4",
+              "role": "result",
+              "text": "to exchange distinct information globally",
+              "role_hint": "state the final telecommunication objective"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u01_d1",
+              "category": "logical",
+              "text": "restricted to connecting academic laboratories only",
+              "penalty_explanation": "Logical error: the internet interconnects academic, commercial, domestic, and government networks globally, not just academic labs."
+            },
+            {
+              "id": "en_u01_d2",
+              "category": "grammatical",
+              "text": "is interconnected globally networks without computers",
+              "penalty_explanation": "Grammatical error: fragmented verbal structure fails syntactic agreement with the copula clause."
+            }
+          ],
+          "hint": "Define the global scope of the computer network before specifying the exchange of digital information."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "इंटरनेट की मूलभूत वास्तुकला और कार्यप्रणाली को परिभाषित करने वाला सही वाक्य क्रम चुनें।",
+          "target_sequence": [
+            {
+              "id": "hi_u01_t1",
+              "role": "subject",
+              "text": "इंटरनेट दुनिया भर में",
+              "role_hint": "भौगोलिक पैमाने और मुख्य संज्ञा खंड से शुरुआत करें"
+            },
+            {
+              "id": "hi_u01_t2",
+              "role": "modifier",
+              "text": "कंप्यूटरों और उपकरणों का सबसे बड़ा नेटवर्क है,",
+              "role_hint": "नेटवर्क के आकार और घटक उपकरणों को स्पष्ट करें"
+            },
+            {
+              "id": "hi_u01_t3",
+              "role": "process",
+              "text": "जो लाखों नेटवर्कों को जोड़कर",
+              "role_hint": "नेटवर्कों के आपसी अंतर्संबंध की प्रक्रिया जोड़ें"
+            },
+            {
+              "id": "hi_u01_t4",
+              "role": "result",
+              "text": "सूचनाओं का आदान-प्रदान करता है",
+              "role_hint": "अंतिम मुख्य क्रिया और उद्देश्य से वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u01_d1",
+              "category": "logical",
+              "text": "केवल एक ही कार्यालय में कंप्यूटरों को जोड़ता है",
+              "penalty_explanation": "तार्किक त्रुटि: इंटरनेट केवल एक कार्यालय तक सीमित न होकर वैश्विक स्तर पर लाखों नेटवर्कों को जोड़ता है।"
+            },
+            {
+              "id": "hi_u01_d2",
+              "category": "grammatical",
+              "text": "नेटवर्कों को दुनिया भर की नहीं जोड़ती",
+              "penalty_explanation": "व्याकरणिक त्रुटि: लिंग और कारक रचना मुख्य कर्ता खंड के अनुरूप नहीं है।"
+            }
+          ],
+          "hint": "इंटरनेट के वैश्विक पैमाने का उल्लेख करने के बाद इसके सूचना आदान-प्रदान के उद्देश्य को जोड़ें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "The Internet is the global interconnection of millions of diverse networks, derived from the term 'INTERnational NETwork'.",
+        "hi": "इंटरनेट 'इंटरनेशनल नेटवर्क' का संक्षिप्त नाम है जो विश्व भर के लाखों नेटवर्कों का सबसे बड़ा संयोजन है।"
+      }
+    },
+    {
+      "unit_id": "u02_internet_history_arpanet",
+      "topic": "History of Internet: ARPAnet (1969)",
+      "pedagogical_objective": "Identify the origins of computer networking under the US Department of Defence's Advanced Research Projects Agency in October 1969.",
+      "instruction": {
+        "title": {
+          "en": "Genesis of the Internet: ARPAnet",
+          "hi": "इंटरनेट की उत्पत्ति: ARPAnet"
+        },
+        "theory": {
+          "en": "The historical origins of the modern Internet trace back to the United States Department of Defence. Its Advanced Research Projects Agency (ARPA) funded and initiated an experimental packet-switching communication network named `ARPAnet`. The operational launch took place in October 1969, initially connecting a modest number of research mainframe nodes across academic sites.",
+          "hi": "आधुनिक इंटरनेट की ऐतिहासिक शुरुआत संयुक्त राज्य अमेरिका के रक्षा विभाग से जुड़ी है। इसकी उन्नत अनुसंधान परियोजना एजेंसी (ARPA) ने `ARPAnet` नामक एक प्रयोगात्मक नेटवर्क को वित्तपोषित और प्रारंभ किया। इसे पहली बार अक्टूबर 1969 में शुरू किया गया था।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='80' width='160' height='60' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='140' y='105' fill='#38bdf8' font-size='12' font-family='sans-serif' text-anchor='middle'>US Dept of Defence</text><text x='140' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>ARPA Agency</text><line x1='220' y1='110' x2='380' y2='110' stroke='#4ade80' stroke-width='3' stroke-dasharray='6'/><polygon points='380,105 390,110 380,115' fill='#4ade80'/><rect x='390' y='80' width='180' height='60' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='480' y='105' fill='#4ade80' font-size='14' font-family='sans-serif' text-anchor='middle'>ARPAnet</text><text x='480' y='125' fill='#fbbf24' font-size='12' font-family='sans-serif' text-anchor='middle'>Launched: Oct 1969</text></svg>",
+          "caption": {
+            "en": "ARPAnet was deployed in October 1969 by the US Department of Defence.",
+            "hi": "ARPAnet को अक्टूबर 1969 में अमेरिकी रक्षा विभाग द्वारा शुरू किया गया था।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Assemble the historical milestone detailing the founding and launch of ARPAnet.",
+          "target_sequence": [
+            {
+              "id": "en_u02_t1",
+              "role": "subject",
+              "text": "the internet originated in",
+              "role_hint": "start with the subject asserting its origins"
+            },
+            {
+              "id": "en_u02_t2",
+              "role": "condition",
+              "text": "october 1969 in the usa,",
+              "role_hint": "specify the exact historical timeframe and location"
+            },
+            {
+              "id": "en_u02_t3",
+              "role": "process",
+              "text": "when the department of defence",
+              "role_hint": "name the institutional governing authority"
+            },
+            {
+              "id": "en_u02_t4",
+              "role": "result",
+              "text": "launched the arpanet project",
+              "role_hint": "state the definitive network initiative produced"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u02_d1",
+              "category": "logical",
+              "text": "was developed in geneva switzerland in 1969",
+              "penalty_explanation": "Logical error: ARPAnet was established in the USA by the Department of Defence, while Geneva was the site of CERN's WWW in 1990."
+            },
+            {
+              "id": "en_u02_d2",
+              "category": "grammatical",
+              "text": "initiating defence department arpanet established",
+              "penalty_explanation": "Grammatical error: unlinked participle series lacks proper clausal conjunction."
+            }
+          ],
+          "hint": "Identify the October 1969 timeframe before stating the US Department of Defence ARPA project name."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "ARPAnet के ऐतिहासिक आरंभ को व्यक्त करने वाला सही वाक्य क्रम व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u02_t1",
+              "role": "subject",
+              "text": "इंटरनेट का विकास",
+              "role_hint": "मूल संज्ञा और विषय खंड से प्रारंभ करें"
+            },
+            {
+              "id": "hi_u02_t2",
+              "role": "condition",
+              "text": "अमेरिकी रक्षा विभाग की उन्नत एजेंसी द्वारा",
+              "role_hint": "विकासकर्ता एजेंसी का विवरण दें"
+            },
+            {
+              "id": "hi_u02_t3",
+              "role": "modifier",
+              "text": "अक्टूबर 1969 में शुरू किया गया था,",
+              "role_hint": "आरंभिक माह और वर्ष का उल्लेख करें"
+            },
+            {
+              "id": "hi_u02_t4",
+              "role": "result",
+              "text": "और इसका नाम ARPAnet रखा गया",
+              "role_hint": "परियोजना के नामकरण से वाक्य समाप्त करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u02_d1",
+              "category": "logical",
+              "text": "1990 में स्विट्जरलैंड की एक लैब में शुरू हुआ",
+              "penalty_explanation": "तार्किक त्रुटि: 1990 में स्विट्जरलैंड में WWW विकसित हुआ था, जबकि ARPAnet अक्टूबर 1969 में अमेरिका में शुरू हुआ।"
+            },
+            {
+              "id": "hi_u02_d2",
+              "category": "grammatical",
+              "text": "ARPAnet नाम रखे गए होकर विकास था",
+              "penalty_explanation": "व्याकरणिक त्रुटि: सहायक क्रिया और काल रचना अमान्य है।"
+            }
+          ],
+          "hint": "अमेरिकी रक्षा विभाग और अक्टूबर 1969 को जोड़ते हुए ARPAnet के नामकरण पर समाप्त करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "ARPAnet was first launched in October 1969 by the US Department of Defence's Advanced Research Projects Agency.",
+        "hi": "इंटरनेट की शुरुआत अक्टूबर 1969 में अमेरिकी रक्षा विभाग की ARPA एजेंसी द्वारा ARPAnet के रूप में की गई थी।"
+      }
+    },
+    {
+      "unit_id": "u03_world_wide_web_cern",
+      "topic": "The World Wide Web: Tim Berners-Lee & CERN (1990)",
+      "pedagogical_objective": "Recognize the creation of the World Wide Web by Tim Berners-Lee at CERN in 1990 as the primary information service of the Internet.",
+      "instruction": {
+        "title": {
+          "en": "Invention of the World Wide Web",
+          "hi": "वर्ल्ड वाइड वेब का आविष्कार"
+        },
+        "theory": {
+          "en": "The `World-Wide-Web` (WWW) is often recognized as the largest and most transformative service provided across the Internet. It was invented in `1990` at `CERN` (European Organization for Nuclear Research) in Switzerland by a British computer scientist named `Tim Berners-Lee`. While the Internet provides physical connectivity, the WWW operates as an information space of interlinked documents.",
+          "hi": "`वर्ल्ड-वाइड-वेब` (WWW) इंटरनेट द्वारा दुनिया भर के उपयोगकर्ताओं को प्रदान की जाने वाली सबसे बड़ी सेवा है। इसका आविष्कार वर्ष `1990` में स्विट्जरलैंड स्थित `CERN` में ब्रिटिश वैज्ञानिक `टिम बर्नर्स ली` द्वारा किया गया था। इंटरनेट भौतिक संपर्क प्रदान करता है जबकि WWW सूचनाओं का जाल है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><circle cx='180' cy='110' r='50' fill='#1e293b' stroke='#38bdf8' stroke-width='3'/><text x='180' y='105' fill='#38bdf8' font-size='14' font-family='sans-serif' text-anchor='middle'>Tim Berners-Lee</text><text x='180' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>CERN, Switzerland</text><line x1='230' y1='110' x2='400' y2='110' stroke='#fbbf24' stroke-width='4'/><polygon points='400,104 412,110 400,116' fill='#fbbf24'/><circle cx='470' cy='110' r='55' fill='#1e293b' stroke='#4ade80' stroke-width='3'/><text x='470' y='105' fill='#4ade80' font-size='16' font-family='sans-serif' font-weight='bold' text-anchor='middle'>WWW</text><text x='470' y='125' fill='#fbbf24' font-size='12' font-family='sans-serif' text-anchor='middle'>Created in 1990</text></svg>",
+          "caption": {
+            "en": "Tim Berners-Lee invented the World Wide Web at CERN in 1990.",
+            "hi": "टिम बर्नर्स-ली ने 1990 में सर्न (CERN) में वर्ल्ड वाइड वेब का आविष्कार किया।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Synthesize the historical declaration explaining the founding of the World Wide Web.",
+          "target_sequence": [
+            {
+              "id": "en_u03_t1",
+              "role": "subject",
+              "text": "the world wide web was created",
+              "role_hint": "start with the passive subject clause identifying WWW creation"
+            },
+            {
+              "id": "en_u03_t2",
+              "role": "condition",
+              "text": "at cern in switzerland in 1990,",
+              "role_hint": "state the institute, country, and year"
+            },
+            {
+              "id": "en_u03_t3",
+              "role": "process",
+              "text": "by british scientist tim berners-lee",
+              "role_hint": "identify the inventor who authored the system"
+            },
+            {
+              "id": "en_u03_t4",
+              "role": "result",
+              "text": "as the primary service on the internet",
+              "role_hint": "specify its functional role as the foremost Internet service"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u03_d1",
+              "category": "logical",
+              "text": "by the us department of defence as arpanet",
+              "penalty_explanation": "Logical error: the US DoD developed ARPAnet in 1969, whereas Tim Berners-Lee created the WWW in 1990."
+            },
+            {
+              "id": "en_u03_d2",
+              "category": "grammatical",
+              "text": "created was swiss cern tim berners lee",
+              "penalty_explanation": "Grammatical error: inversion of auxiliary verb and jumbled noun phrases violates declarative syntax."
+            }
+          ],
+          "hint": "Identify when and where CERN was involved before naming Tim Berners-Lee."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "वर्ल्ड वाइड वेब के निर्माण से संबंधित ऐतिहासिक विवरण को सही क्रम में व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u03_t1",
+              "role": "subject",
+              "text": "वर्ल्ड-वाइड-वेब का निर्माण",
+              "role_hint": "मुख्य विषय और आविष्कार की संज्ञा से प्रारंभ करें"
+            },
+            {
+              "id": "hi_u03_t2",
+              "role": "condition",
+              "text": "वर्ष 1990 में स्विट्जरलैंड के CERN में,",
+              "role_hint": "वर्ष और अनुसंधान संस्थान का उल्लेख करें"
+            },
+            {
+              "id": "hi_u03_t3",
+              "role": "process",
+              "text": "ब्रिटिश वैज्ञानिक टिम बर्नर्स ली द्वारा",
+              "role_hint": "आविष्कारक का नाम जोड़ें"
+            },
+            {
+              "id": "hi_u03_t4",
+              "role": "result",
+              "text": "इंटरनेट की सबसे बड़ी सेवा के रूप में किया गया",
+              "role_hint": "सेवा के महत्व और समापन क्रिया से वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u03_d1",
+              "category": "logical",
+              "text": "अक्टूबर 1969 में अमेरिकी सेना द्वारा किया गया",
+              "penalty_explanation": "तार्किक त्रुटि: अक्टूबर 1969 में अमेरिकी सेना द्वारा ARPAnet की स्थापना हुई थी, WWW की नहीं।"
+            },
+            {
+              "id": "hi_u03_d2",
+              "category": "grammatical",
+              "text": "टिम बर्नर्स ली के द्वारा निर्माण हुआ करती थी",
+              "penalty_explanation": "व्याकरणिक त्रुटि: असंगत सहायक क्रिया रूप वाक्य विन्यास को खंडित करता है।"
+            }
+          ],
+          "hint": "1990 में CERN स्विट्जरलैंड तथा टिम बर्नर्स ली की भूमिका को एक तार्किक वाक्य में जोड़ें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Tim Berners-Lee created the World Wide Web at CERN in 1990, establishing the Internet's most expansive service.",
+        "hi": "WWW का आविष्कार 1990 में स्विट्जरलैंड के CERN में टिम बर्नर्स ली द्वारा किया गया था।"
+      }
+    },
+    {
+      "unit_id": "u04_it_vs_ict_hierarchy",
+      "topic": "Information Technology & ICT Hierarchy",
+      "pedagogical_objective": "Formulate the functional operations of IT (storing, retrieving, transmitting, analyzing, and processing data) and establish IT as a subset of ICT.",
+      "instruction": {
+        "title": {
+          "en": "Defining IT and the ICT Hierarchy",
+          "hi": "सूचना प्रौद्योगिकी और ICT पदानुक्रम"
+        },
+        "theory": {
+          "en": "Information Technology (`I.T.`) is defined as the application of computers and computational devices to store, retrieve, transmit, analyze, and process data and information. Structurally, IT does not exist in isolation; it is recognized as a focused subset of the broader domain termed `ICT` (Information and Communication Technology), which encompasses communication hardware and broadcast transmission infrastructure.",
+          "hi": "सूचना प्रौद्योगिकी (`I.T.`) डेटा और सूचना को संग्रहीत, पुनर्प्राप्त, संचारित, विश्लेषण और संसाधित करने के लिए कंप्यूटर और डिजिटल उपकरणों का अनुप्रयोग है। संरचनात्मक रूप से IT को `ICT` (सूचना और संचार प्रौद्योगिकी) का एक सबसेट (उपसमुच्चय) माना जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><ellipse cx='320' cy='110' rx='220' ry='85' fill='#1e293b' stroke='#38bdf8' stroke-width='3'/><text x='320' y='55' fill='#38bdf8' font-size='16' font-family='sans-serif' font-weight='bold' text-anchor='middle'>ICT (Information &amp; Communication Tech)</text><ellipse cx='320' cy='125' rx='130' ry='50' fill='#0f172a' stroke='#4ade80' stroke-width='2'/><text x='320' y='120' fill='#4ade80' font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle'>IT (Information Tech)</text><text x='320' y='145' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Store | Retrieve | Process | Transmit</text></svg>",
+          "caption": {
+            "en": "Information Technology (IT) forms a specialized subset within ICT.",
+            "hi": "सूचना प्रौद्योगिकी (IT) सूचना और संचार प्रौद्योगिकी (ICT) का एक उपसमुच्चय है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the pedagogical explanation defining IT and its architectural position within ICT.",
+          "target_sequence": [
+            {
+              "id": "en_u04_t1",
+              "role": "subject",
+              "text": "information technology uses computers",
+              "role_hint": "start with the subject stating device utilization"
+            },
+            {
+              "id": "en_u04_t2",
+              "role": "process",
+              "text": "to store, process, and transmit data,",
+              "role_hint": "enumerate the functional computing operations"
+            },
+            {
+              "id": "en_u04_t3",
+              "role": "modifier",
+              "text": "and is formally classified",
+              "role_hint": "add the categorical connector phrase"
+            },
+            {
+              "id": "en_u04_t4",
+              "role": "result",
+              "text": "as a functional subset of ict",
+              "role_hint": "conclude with its hierarchical subset status"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u04_d1",
+              "category": "logical",
+              "text": "as the parent domain that fully contains ict",
+              "penalty_explanation": "Logical error: IT is a subset of ICT, not the broader parent category containing ICT."
+            },
+            {
+              "id": "en_u04_d2",
+              "category": "grammatical",
+              "text": "storing data processing transmits under ict",
+              "penalty_explanation": "Grammatical error: mixed gerund forms and lack of a main verb create an incomplete clause."
+            }
+          ],
+          "hint": "Recall the sequential operations on data (store, process, transmit) and state that IT is a subset of ICT."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "सूचना प्रौद्योगिकी (IT) के कार्यों और ICT के साथ इसके संबंध को दर्शाने वाला सही वाक्य बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u04_t1",
+              "role": "subject",
+              "text": "सूचना प्रौद्योगिकी डेटा को",
+              "role_hint": "मुख्य विषय और डेटा संज्ञा से प्रारंभ करें"
+            },
+            {
+              "id": "hi_u04_t2",
+              "role": "process",
+              "text": "संग्रहीत, संसाधित और संचारित करने का अनुप्रयोग है,",
+              "role_hint": "डेटा के मुख्य तकनीकी कार्यों का उल्लेख करें"
+            },
+            {
+              "id": "hi_u04_t3",
+              "role": "modifier",
+              "text": "और इसे तकनीकी पदानुक्रम में",
+              "role_hint": "वर्गीकरण से जोड़ने वाला योजक खंड जोड़ें"
+            },
+            {
+              "id": "hi_u04_t4",
+              "role": "result",
+              "text": "ICT का एक सबसेट माना जाता है",
+              "role_hint": "ICT के उपसमुच्चय होने के परिणामी संबंध से समाप्त करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u04_d1",
+              "category": "logical",
+              "text": "जिसमें ICT इसका सबसेट बन जाता है",
+              "penalty_explanation": "तार्किक त्रुटि: IT सूचना और संचार प्रौद्योगिकी (ICT) का सबसेट है, इसका उल्टा नहीं।"
+            },
+            {
+              "id": "hi_u04_d2",
+              "category": "grammatical",
+              "text": "ICT को सबसेट मानकर डेटा नहीं होता",
+              "penalty_explanation": "व्याकरणिक त्रुटि: अर्थहीन पदक्रम मुख्य परिभाषा को विकृत करता है।"
+            }
+          ],
+          "hint": "डेटा के प्रसंस्करण और संग्रहण के कार्यों को जोड़ते हुए स्पष्ट करें कि IT वास्तव में ICT का सबसेट है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "IT involves computational operations on data (storage, retrieval, processing) and is fundamentally a subset of ICT.",
+        "hi": "IT कंप्यूटर के माध्यम से डेटा के भंडारण, प्रसंस्करण व संप्रेषण का माध्यम है और यह ICT का एक सबसेट है।"
+      }
+    },
+    {
+      "unit_id": "u05_web_surfing_vs_browsing",
+      "topic": "Web Traversal: Surfing vs. Browsing",
+      "pedagogical_objective": "Distinguish between aimless web exploration (surfing) and goal-oriented site visits without a structured search plan (browsing).",
+      "instruction": {
+        "title": {
+          "en": "Web Navigation Modes: Surfing vs. Browsing",
+          "hi": "वेब नेविगेशन: सर्फिंग बनाम ब्राउज़िंग"
+        },
+        "theory": {
+          "en": "Users interact with the World Wide Web through distinct navigational behaviors. `Web Surfing` occurs when an individual navigates across various websites aimlessly, without any predefined goal or specific objective. In contrast, `Web Browsing` denotes intentional exploration where a user visits different websites with a clear, specific objective in mind, yet navigates freely across pages without adhering to a formalized, deterministic search query strategy.",
+          "hi": "`वेब सर्फिंग` का अर्थ है जब कोई व्यक्ति बिना किसी उद्देश्य के इंटरनेट पर विभिन्न वेबसाइटों पर जाता है। इसके विपरीत, `वेब ब्राउज़िंग` का अर्थ है जब कोई व्यक्ति किसी विशिष्ट उद्देश्य के साथ इंटरनेट पर विभिन्न वेबसाइटों पर जाता है, लेकिन बिना किसी संरचित खोज रणनीति (search strategy) के नेविगेट करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='50' y='50' width='240' height='120' rx='8' fill='#1e293b' stroke='#f87171' stroke-width='2'/><text x='170' y='80' fill='#f87171' font-size='16' font-family='sans-serif' text-anchor='middle'>Web Surfing</text><text x='170' y='110' fill='#94a3b8' font-size='12' font-family='sans-serif' text-anchor='middle'>Goal: None</text><text x='170' y='135' fill='#94a3b8' font-size='12' font-family='sans-serif' text-anchor='middle'>Method: Aimless Clicking</text><rect x='350' y='50' width='240' height='120' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='470' y='80' fill='#fbbf24' font-size='16' font-family='sans-serif' text-anchor='middle'>Web Browsing</text><text x='470' y='110' fill='#94a3b8' font-size='12' font-family='sans-serif' text-anchor='middle'>Goal: Specific Objective</text><text x='470' y='135' fill='#94a3b8' font-size='12' font-family='sans-serif' text-anchor='middle'>Method: No Formal Query Strategy</text></svg>",
+          "caption": {
+            "en": "Comparison between aimless surfing and objective-driven browsing.",
+            "hi": "उद्देश्यहीन सर्फिंग और उद्देश्य-संचालित ब्राउज़िंग के बीच तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Assemble the compound sentence contrasting web surfing against web browsing.",
+          "target_sequence": [
+            {
+              "id": "en_u05_t1",
+              "role": "subject",
+              "text": "web surfing involves",
+              "role_hint": "start with the subject specifying the surfing activity"
+            },
+            {
+              "id": "en_u05_t2",
+              "role": "condition",
+              "text": "visiting random websites without any objective,",
+              "role_hint": "describe the aimless nature of surfing"
+            },
+            {
+              "id": "en_u05_t3",
+              "role": "process",
+              "text": "whereas web browsing pursues a specific objective",
+              "role_hint": "contrast with the purposeful intent of browsing"
+            },
+            {
+              "id": "en_u05_t4",
+              "role": "result",
+              "text": "without using a structured search strategy",
+              "role_hint": "clarify the absence of a fixed search engine query strategy"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u05_d1",
+              "category": "logical",
+              "text": "using complex search engines to rank indexed algorithms",
+              "penalty_explanation": "Logical error: relying on search engine algorithms with keywords defines web searching, not surfing or browsing."
+            },
+            {
+              "id": "en_u05_d2",
+              "category": "grammatical",
+              "text": "aimlessly objective specific browsing without visited",
+              "penalty_explanation": "Grammatical error: disorderly string of modifiers lacks coherent subject-verb structure."
+            }
+          ],
+          "hint": "Contrast visiting sites without any objective against visiting them with an objective but no search strategy."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "वेब सर्फिंग और वेब ब्राउज़िंग के अंतर को स्पष्ट करने वाला सही वाक्य क्रम चुनें।",
+          "target_sequence": [
+            {
+              "id": "hi_u05_t1",
+              "role": "subject",
+              "text": "वेब सर्फिंग का अर्थ है",
+              "role_hint": "वेब सर्फिंग के मुख्य कर्ता खंड से शुरुआत करें"
+            },
+            {
+              "id": "hi_u05_t2",
+              "role": "condition",
+              "text": "बिना किसी उद्देश्य के वेबसाइटों पर जाना,",
+              "role_hint": "सर्फिंग के उद्देश्यहीन व्यवहार का विवरण दें"
+            },
+            {
+              "id": "hi_u05_t3",
+              "role": "process",
+              "text": "जबकि वेब ब्राउज़िंग विशिष्ट उद्देश्य से की जाती है",
+              "role_hint": "ब्राउज़िंग के सचेत उद्देश्य वाले खंड को जोड़ें"
+            },
+            {
+              "id": "hi_u05_t4",
+              "role": "result",
+              "text": "परंतु बिना किसी संरचित खोज रणनीति के",
+              "role_hint": "खोज रणनीति के अभाव वाले परिणामी खंड से वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u05_d1",
+              "category": "logical",
+              "text": "सर्च इंजन में कीवर्ड डालकर सटीक पेज निकालना",
+              "penalty_explanation": "तार्किक त्रुटि: कीवर्ड का उपयोग करके डेटा खोजना 'वेब सर्चिंग' कहलाता है, ब्राउज़िंग नहीं।"
+            },
+            {
+              "id": "hi_u05_d2",
+              "category": "grammatical",
+              "text": "उद्देश्यहीन होकर विशिष्ट रणनीति खोजती नहीं",
+              "penalty_explanation": "व्याकरणिक त्रुटि: परस्पर विरोधी विशेषण और अशुद्ध कारक संयोजन।"
+            }
+          ],
+          "hint": "सर्फिंग (बिना उद्देश्य) और ब्राउज़िंग (विशिष्ट उद्देश्य किंतु बिना रणनीति) को क्रमवार जोड़ें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Surfing is exploratory and aimless, while browsing is goal-directed but conducted without a structured search query plan.",
+        "hi": "सर्फिंग बिना किसी उद्देश्य के की जाती है, जबकि ब्राउज़िंग में उद्देश्य होता है परंतु कोई निश्चित खोज रणनीति नहीं होती।"
+      }
+    },
+    {
+      "unit_id": "u06_web_searching_mechanics",
+      "topic": "Web Searching: Query Formulation & Search Engines",
+      "pedagogical_objective": "Analyze how keyword-driven queries locate targeted information across the web using dedicated search engines.",
+      "instruction": {
+        "title": {
+          "en": "Web Searching Principles",
+          "hi": "वेब सर्चिंग के सिद्धांत"
+        },
+        "theory": {
+          "en": "`Web Searching`, also known interchangeably as `Internet Searching`, represents a targeted navigational methodology. It occurs when a user utilizes specialized search engines (such as Google, Bing, Yahoo, or Ask) to locate authoritative information regarding a specific topic. Rather than browsing links haphazardly, the user formulates input keywords, enabling the search application to retrieve matches from web repositories.",
+          "hi": "`वेब सर्चिंग`, जिसे `इंटरनेट सर्चिंग` भी कहा जाता है, एक लक्षित सूचना पुनर्प्राप्ति प्रक्रिया है। यह तब होती है जब कोई व्यक्ति किसी विशिष्ट विषय पर जानकारी प्राप्त करने के लिए सर्च इंजन (जैसे गूगल, बिंग, याहू) का उपयोग करता है। इसमें कीवर्ड्स के आधार पर प्रासंगिक वेब पेजों का पता लगाया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='80' y='40' width='480' height='40' rx='20' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='110' y='65' fill='#94a3b8' font-size='14' font-family='sans-serif'>Keywords: \"CBSE Computer Science Class 11\"</text><circle cx='530' cy='60' r='14' fill='#38bdf8'/><path d='M525 55 L535 65 M535 55 L525 65' stroke='#0f172a' stroke-width='2'/><rect x='80' y='105' width='480' height='30' rx='4' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='100' y='125' fill='#4ade80' font-size='12' font-family='sans-serif'>Result 1: NCERT Digital Network Essentials Syllabus...</text><rect x='80' y='145' width='480' height='30' rx='4' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='100' y='165' fill='#4ade80' font-size='12' font-family='sans-serif'>Result 2: Class 11 Network Topologies and Protocols...</text></svg>",
+          "caption": {
+            "en": "Search engines map input keywords directly to indexed web results.",
+            "hi": "सर्च इंजन इनपुट कीवर्ड्स को अनुक्रमित वेब पेजों के परिणामों से जोड़ते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the logical sequence describing the execution of web searching.",
+          "target_sequence": [
+            {
+              "id": "en_u06_t1",
+              "role": "subject",
+              "text": "web searching occurs when",
+              "role_hint": "start with the subject phrase establishing the search condition"
+            },
+            {
+              "id": "en_u06_t2",
+              "role": "process",
+              "text": "a user submits specific keywords",
+              "role_hint": "describe the user's action of entering query keywords"
+            },
+            {
+              "id": "en_u06_t3",
+              "role": "condition",
+              "text": "into a dedicated search engine,",
+              "role_hint": "specify the intermediary web application receiving the input"
+            },
+            {
+              "id": "en_u06_t4",
+              "role": "result",
+              "text": "to locate targeted information on a topic",
+              "role_hint": "state the final retrieval objective"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u06_d1",
+              "category": "logical",
+              "text": "to randomly jump across links without an objective",
+              "penalty_explanation": "Logical error: moving randomly across hyperlinks without purpose defines web surfing, not searching."
+            },
+            {
+              "id": "en_u06_d2",
+              "category": "grammatical",
+              "text": "locates search engine keywords submitted information",
+              "penalty_explanation": "Grammatical error: direct juxtaposition of unconnected verbs creates an ungrammatical predicate."
+            }
+          ],
+          "hint": "Identify keyword submission to an engine and the purposeful retrieval of topic information."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "वेब सर्चिंग की प्रक्रिया को परिभाषित करने वाला सही वाक्य क्रम चुनें।",
+          "target_sequence": [
+            {
+              "id": "hi_u06_t1",
+              "role": "subject",
+              "text": "वेब सर्चिंग में उपयोगकर्ता",
+              "role_hint": "उपयोगकर्ता और सर्चिंग प्रक्रिया से वाक्य शुरू करें"
+            },
+            {
+              "id": "hi_u06_t2",
+              "role": "process",
+              "text": "सर्च इंजन में विशिष्ट कीवर्ड दर्ज करता है,",
+              "role_hint": "कीवर्ड दर्ज करने की क्रिया का उल्लेख करें"
+            },
+            {
+              "id": "hi_u06_t3",
+              "role": "modifier",
+              "text": "ताकि किसी विशिष्ट विषय से संबंधित",
+              "role_hint": "विशिष्ट विषय के संदर्भ को जोड़ें"
+            },
+            {
+              "id": "hi_u06_t4",
+              "role": "result",
+              "text": "प्रासंगिक जानकारी और वेब पेज खोजे जा सकें",
+              "role_hint": "परिणामी पुनर्प्राप्ति क्रिया से वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u06_d1",
+              "category": "logical",
+              "text": "बिना सोचे समझे किसी भी वेबसाइट को क्लिक करना होता है",
+              "penalty_explanation": "तार्किक त्रुटि: बिना उद्देश्य यादृच्छिक लिंक खोलना वेब सर्फिंग है, सर्चिंग नहीं।"
+            },
+            {
+              "id": "hi_u06_d2",
+              "category": "grammatical",
+              "text": "सर्चिंग कीवर्ड खोजते हुए वेब पेज नहीं मिलता",
+              "penalty_explanation": "व्याकरणिक त्रुटि: नकारात्मक व असंगत क्रिया विन्यास वाक्य का अर्थ बदल देता है।"
+            }
+          ],
+          "hint": "कीवर्ड प्रविष्ट करने और किसी विषय पर लक्षित जानकारी प्राप्त करने के क्रम को पहचानें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Web searching leverages search engines and user-defined keywords to retrieve targeted information from the Internet.",
+        "hi": "वेब सर्चिंग सर्च इंजनों में विशिष्ट कीवर्ड दर्ज करके लक्षित जानकारी और वेब पेज खोजने की प्रक्रिया है।"
+      }
+    },
+    {
+      "unit_id": "u07_web_browsers_and_uri",
+      "topic": "Web Browsers: Client Software & URI/URL Addressing",
+      "pedagogical_objective": "Understand the function of web browsers in retrieving and rendering WWW assets identified by unique URIs/URLs.",
+      "instruction": {
+        "title": {
+          "en": "Web Browsers and URI/URL Addressing",
+          "hi": "वेब ब्राउज़र और URI/URL पहचान प्रणाली"
+        },
+        "theory": {
+          "en": "A `Web Browser` is client application software designed to retrieve, format, and display multimedia information from the World Wide Web. Commonly called an Internet browser (e.g., Google Chrome, Microsoft Edge, Mozilla Firefox, Opera), it facilitates surfing, browsing, and searching. Every discrete information resource across the WWW—including web pages, images, and video files—is uniquely addressed via a `URI` or `URL` (Uniform Resource Identifier / Locator).",
+          "hi": "एक `वेब ब्राउज़र` एक एप्लिकेशन सॉफ़्टवेयर है जो वर्ल्ड वाइड वेब से जानकारी प्राप्त कर उसे उपयोगकर्ता के सम्मुख प्रदर्शित करता है (जैसे क्रोम, एज, फायरफॉक्स)। WWW पर प्रत्येक सूचना संसाधन (वेबसाइट, वेबपेज, चित्र, वीडियो) एक विशिष्ट `URI/URL` (यूनिफ़ॉर्म रिसोर्स आइडेंटिफ़ायर/लोकेटर) द्वारा पहचाना जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='30' width='520' height='160' rx='10' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><circle cx='85' cy='50' r='5' fill='#f87171'/><circle cx='100' cy='50' r='5' fill='#fbbf24'/><circle cx='115' cy='50' r='5' fill='#4ade80'/><rect x='135' y='40' width='425' height='22' rx='4' fill='#0f172a'/><text x='145' y='55' fill='#38bdf8' font-size='11' font-family='monospace'>https://www.ncert.nic.in/textbook.pdf (URI/URL)</text><rect x='85' y='75' width='470' height='100' rx='4' fill='#0f172a'/><text x='320' y='125' fill='#94a3b8' font-size='13' font-family='sans-serif' text-anchor='middle'>Rendered Content: Webpages, Images, Documents</text><text x='320' y='150' fill='#4ade80' font-size='11' font-family='sans-serif' text-anchor='middle'>Client Application: Chrome | Edge | Firefox</text></svg>",
+          "caption": {
+            "en": "Web browsers locate WWW documents using unique URL identifiers.",
+            "hi": "वेब ब्राउज़र अद्वितीय URL पहचानकर्ताओं का उपयोग करके WWW दस्तावेज़ प्रस्तुत करते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the architectural statement explaining web browsers and URI/URL resolution.",
+          "target_sequence": [
+            {
+              "id": "en_u07_t1",
+              "role": "subject",
+              "text": "a web browser is",
+              "role_hint": "start with the subject clause identifying the software"
+            },
+            {
+              "id": "en_u07_t2",
+              "role": "modifier",
+              "text": "an application software displaying web content,",
+              "role_hint": "specify its primary functional identity"
+            },
+            {
+              "id": "en_u07_t3",
+              "role": "process",
+              "text": "locating every unique resource",
+              "role_hint": "describe its interaction with individual network assets"
+            },
+            {
+              "id": "en_u07_t4",
+              "role": "result",
+              "text": "through its specific uri or url",
+              "role_hint": "conclude with the universal addressing mechanism"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u07_d1",
+              "category": "logical",
+              "text": "a physical transmission medium carrying coaxial copper signals",
+              "penalty_explanation": "Logical error: a web browser is an application software program, not a physical hardware transmission wire."
+            },
+            {
+              "id": "en_u07_d2",
+              "category": "grammatical",
+              "text": "through url uri locating application softwares",
+              "penalty_explanation": "Grammatical error: incorrect phrasing produces a broken post-nominal clause."
+            }
+          ],
+          "hint": "Identify the application software that displays content and resolves each resource via its URI or URL."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "वेब ब्राउज़र और URI/URL की कार्यप्रणाली को दर्शाने वाला सही वाक्य क्रम व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u07_t1",
+              "role": "subject",
+              "text": "वेब ब्राउज़र एक एप्लिकेशन सॉफ़्टवेयर है",
+              "role_hint": "वेब ब्राउज़र के सॉफ़्टवेयर स्वरूप से प्रारंभ करें"
+            },
+            {
+              "id": "hi_u07_t2",
+              "role": "process",
+              "text": "जो वर्ल्ड वाइड वेब से सामग्री प्रदर्शित करता है,",
+              "role_hint": "वेब सामग्री को स्क्रीन पर दिखाने की क्रिया जोड़ें"
+            },
+            {
+              "id": "hi_u07_t3",
+              "role": "modifier",
+              "text": "जहाँ प्रत्येक सूचना संसाधन",
+              "role_hint": "वेब पर उपस्थित सूचना संसाधनों का संदर्भ दें"
+            },
+            {
+              "id": "hi_u07_t4",
+              "role": "result",
+              "text": "एक विशिष्ट URI या URL द्वारा पहचाना जाता है",
+              "role_hint": "URI/URL पहचान प्रणाली द्वारा वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u07_d1",
+              "category": "logical",
+              "text": "जो कंप्यूटर को वायरस से मुक्त रखने वाला हार्डवेयर है",
+              "penalty_explanation": "तार्किक त्रुटि: वेब ब्राउज़र इंटरनेट सामग्री देखने का एप्लिकेशन सॉफ़्टवेयर है, एंटीवायरस या हार्डवेयर नहीं।"
+            },
+            {
+              "id": "hi_u07_d2",
+              "category": "grammatical",
+              "text": "URI URL से पहचाने जाने सॉफ़्टवेयर प्रदर्शित",
+              "penalty_explanation": "व्याकरणिक त्रुटि: विभक्तियों का असंगत विन्यास वाक्य रचना को दूषित करता है।"
+            }
+          ],
+          "hint": "वेब ब्राउज़र को एप्लिकेशन सॉफ़्टवेयर बताएं और प्रत्येक संसाधन को URL द्वारा पहचाने जाने से जोड़ें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "A web browser is client application software that retrieves and renders resources mapped to unique URIs/URLs across the WWW.",
+        "hi": "वेब ब्राउज़र एक एप्लिकेशन सॉफ़्टवेयर है जो WWW से अद्वितीय URI/URL वाले संसाधनों को प्रदर्शित करता है।"
+      }
+    },
+    {
+      "unit_id": "u08_search_engine_architecture",
+      "topic": "Search Engine Mechanisms: Keywords & Page Indexing",
+      "pedagogical_objective": "Break down how search engines process user queries to index and return lists of relevant web pages.",
+      "instruction": {
+        "title": {
+          "en": "Search Engine Architecture and Workflows",
+          "hi": "सर्च इंजन की कार्यप्रणाली और संरचना"
+        },
+        "theory": {
+          "en": "A `Search Engine` is a web application designed to help users locate pertinent documents across the Internet. Operationally, the user inputs descriptive keywords into the search prompt. The engine processes these terms, interrogates massive indexing databases of scraped web data, and displays a ranked list of hyperlinks pointing to web pages containing relevant, contextually matched content (e.g., Google, Bing, Yahoo).",
+          "hi": "`सर्च इंजन` एक वेब एप्लिकेशन है जो उपयोगकर्ताओं को इंटरनेट पर प्रासंगिक जानकारी खोजने में मदद करता है। उपयोगकर्ता द्वारा कुछ कीवर्ड दर्ज करने पर सर्च इंजन इंटरनेट पर अनुक्रमित डेटा की खोज करता है और उन वेब पेजों की एक सूची प्रदर्शित करता है जिनमें संबंधित जानकारी होती है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='50' y='85' width='140' height='50' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='120' y='115' fill='#38bdf8' font-size='12' font-family='sans-serif' text-anchor='middle'>User Keywords</text><line x1='190' y1='110' x2='260' y2='110' stroke='#94a3b8' stroke-width='2'/><polygon points='260,105 270,110 260,115' fill='#94a3b8'/><rect x='270' y='70' width='150' height='80' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='345' y='105' fill='#fbbf24' font-size='13' font-family='sans-serif' text-anchor='middle'>Search Engine</text><text x='345' y='125' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Index &amp; Query Match</text><line x1='420' y1='110' x2='490' y2='110' stroke='#94a3b8' stroke-width='2'/><polygon points='490,105 500,110 490,115' fill='#94a3b8'/><rect x='500' y='85' width='110' height='50' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='555' y='107' fill='#4ade80' font-size='11' font-family='sans-serif' text-anchor='middle'>Ranked List</text><text x='555' y='123' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>of Webpages</text></svg>",
+          "caption": {
+            "en": "Search engines parse input keywords to generate ranked web page results.",
+            "hi": "सर्च इंजन इनपुट कीवर्ड्स को संसाधित कर वेब पेजों की परिणाम सूची तैयार करते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the workflow explaining how search engines process user queries.",
+          "target_sequence": [
+            {
+              "id": "en_u08_t1",
+              "role": "subject",
+              "text": "a search engine receives",
+              "role_hint": "start with the subject and the intake action"
+            },
+            {
+              "id": "en_u08_t2",
+              "role": "condition",
+              "text": "keywords submitted by a user,",
+              "role_hint": "specify what input is provided by the user"
+            },
+            {
+              "id": "en_u08_t3",
+              "role": "process",
+              "text": "scans its web indexes for matches",
+              "role_hint": "describe the core database evaluation process"
+            },
+            {
+              "id": "en_u08_t4",
+              "role": "result",
+              "text": "and displays a list of relevant web pages",
+              "role_hint": "state the final output rendered to the screen"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u08_d1",
+              "category": "logical",
+              "text": "and deletes the remote server data permanently",
+              "penalty_explanation": "Logical error: search engines read and index public data; they do not erase remote server information."
+            },
+            {
+              "id": "en_u08_d2",
+              "category": "grammatical",
+              "text": "displaying user keywords relevant indexes",
+              "penalty_explanation": "Grammatical error: missing conjunctions and finite verbs create an incoherent clause structure."
+            }
+          ],
+          "hint": "Follow the sequence: receiving user keywords, scanning web indexes, and presenting relevant web pages."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "सर्च इंजन की कार्यप्रणाली को दर्शाने वाला सही वाक्य क्रम व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u08_t1",
+              "role": "subject",
+              "text": "सर्च इंजन उपयोगकर्ता द्वारा",
+              "role_hint": "सर्च इंजन और उपयोगकर्ता कर्ता से प्रारंभ करें"
+            },
+            {
+              "id": "hi_u08_t2",
+              "role": "condition",
+              "text": "दिए गए कीवर्ड्स को स्वीकार करता है,",
+              "role_hint": "कीवर्ड इनपुट प्राप्त करने की स्थिति जोड़ें"
+            },
+            {
+              "id": "hi_u08_t3",
+              "role": "process",
+              "text": "इंटरनेट पर संबंधित डेटा खोजता है",
+              "role_hint": "इंडेक्स में डेटा तलाशने की प्रक्रिया बताएं"
+            },
+            {
+              "id": "hi_u08_t4",
+              "role": "result",
+              "text": "और प्रासंगिक वेब पेजों की सूची प्रदर्शित करता है",
+              "role_hint": "अंतिम परिणामी सूची प्रदर्शित करने से वाक्य समाप्त करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u08_d1",
+              "category": "logical",
+              "text": "और कंप्यूटर की हार्ड ड्राइव को पूरी तरह फॉर्मेट कर देता है",
+              "penalty_explanation": "तार्किक त्रुटि: सर्च इंजन केवल वेब पेजों की सूची दिखाता है, यह ड्राइव फॉर्मेट नहीं करता।"
+            },
+            {
+              "id": "hi_u08_d2",
+              "category": "grammatical",
+              "text": "कीवर्ड्स खोजता हुआ सूची वेब पेज नहीं होता",
+              "penalty_explanation": "व्याकरणिक त्रुटि: खंडित क्रिया पदबंध वाक्य के तार्किक प्रवाह को बिगाड़ता है।"
+            }
+          ],
+          "hint": "कीवर्ड स्वीकार करने के बाद इंटरनेट पर डेटा खोजने और परिणामों की सूची दिखाने का क्रम चुनें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Search engines map input keywords against indexed web databases to generate ranked lists of relevant resources.",
+        "hi": "सर्च इंजन उपयोगकर्ता के कीवर्ड्स के आधार पर अनुक्रमित डेटा की खोज कर प्रासंगिक वेब पेजों की सूची दिखाते हैं।"
+      }
+    },
+    {
+      "unit_id": "u09_email_system_fundamentals",
+      "topic": "Electronic Mail: Messaging & Attachment Payloads",
+      "pedagogical_objective": "Define asynchronous electronic messaging, rapid global delivery, and the transfer of multimedia file attachments.",
+      "instruction": {
+        "title": {
+          "en": "Email Systems and Digital Delivery",
+          "hi": "ईमेल प्रणाली और डिजिटल संदेश प्रेषण"
+        },
+        "theory": {
+          "en": "`Email` (abbreviated from `Electronic-Mail`) is a telecommunication method of exchanging digital messages between individuals utilizing the Internet. Email facilitates instantaneous point-to-point and point-to-multipoint delivery, enabling a single sender to dispatch communications to multiple recipients simultaneously. In addition to textual data, modern email payloads support rich multimedia attachments including images, documents, audio, and video files.",
+          "hi": "`ई-मेल` का पूर्ण रूप `इलेक्ट्रॉनिक-मेल` है। यह इंटरनेट का उपयोग करने वाले व्यक्तियों के बीच संदेशों के आदान-प्रदान की एक डिजिटल विधि है। ईमेल संदेश दुनिया के किसी भी कोने में कुछ ही सेकंड में एक या एक से अधिक प्राप्तकर्ताओं को एक साथ भेजे जा सकते हैं। इनमें टेक्स्ट के अतिरिक्त चित्र, ऑडियो, वीडियो व दस्तावेज़ संलग्न किए जा सकते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='70' y='60' width='160' height='100' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='150' y='95' fill='#38bdf8' font-size='14' font-family='sans-serif' text-anchor='middle'>Sender Message</text><text x='150' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Text + Multimedia Attachments</text><path d='M230 110 L390 110' stroke='#4ade80' stroke-width='3' stroke-dasharray='6'/><polygon points='390,105 400,110 390,115' fill='#4ade80'/><text x='310' y='95' fill='#fbbf24' font-size='11' font-family='sans-serif' text-anchor='middle'>Seconds Transit</text><rect x='410' y='40' width='160' height='60' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='490' y='75' fill='#4ade80' font-size='12' font-family='sans-serif' text-anchor='middle'>Recipient 1</text><rect x='410' y='120' width='160' height='60' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='490' y='155' fill='#4ade80' font-size='12' font-family='sans-serif' text-anchor='middle'>Recipient 2 (Simultaneous)</text></svg>",
+          "caption": {
+            "en": "Email delivers text and rich attachments globally to multiple recipients in seconds.",
+            "hi": "ईमेल कुछ ही सेकंड में कई प्राप्तकर्ताओं को टेक्स्ट और अटैचमेंट भेजता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the comprehensive explanation of modern electronic mail capabilities.",
+          "target_sequence": [
+            {
+              "id": "en_u09_t1",
+              "role": "subject",
+              "text": "electronic mail is",
+              "role_hint": "start with the subject defining the medium"
+            },
+            {
+              "id": "en_u09_t2",
+              "role": "modifier",
+              "text": "an internet-based messaging method,",
+              "role_hint": "identify its underlying telecommunication platform"
+            },
+            {
+              "id": "en_u09_t3",
+              "role": "process",
+              "text": "delivering text and multimedia attachments",
+              "role_hint": "describe the payload contents being transferred"
+            },
+            {
+              "id": "en_u09_t4",
+              "role": "result",
+              "text": "to multiple recipients within seconds",
+              "role_hint": "state the rapid delivery scope to diverse recipients"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u09_d1",
+              "category": "logical",
+              "text": "requiring physical paper printing before network dispatch",
+              "penalty_explanation": "Logical error: electronic mail is entirely digital and does not require physical paper printing."
+            },
+            {
+              "id": "en_u09_d2",
+              "category": "grammatical",
+              "text": "delivers recipients seconds multimedia within",
+              "penalty_explanation": "Grammatical error: disorganized modifier sequence destroys predicate clarity."
+            }
+          ],
+          "hint": "Characterize email as an internet messaging method carrying text and media payloads to recipients in seconds."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "ईमेल की कार्यप्रणाली और इसकी विशेषताओं को दर्शाने वाला सही वाक्य बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u09_t1",
+              "role": "subject",
+              "text": "इलेक्ट्रॉनिक-मेल इंटरनेट पर",
+              "role_hint": "ईमेल और इंटरनेट माध्यम से शुरुआत करें"
+            },
+            {
+              "id": "hi_u09_t2",
+              "role": "process",
+              "text": "संदेशों के आदान-प्रदान की एक विधि है,",
+              "role_hint": "संदेश विनिमय की मूल क्रिया जोड़ें"
+            },
+            {
+              "id": "hi_u09_t3",
+              "role": "modifier",
+              "text": "जो टेक्स्ट और मल्टीमीडिया फ़ाइलों को",
+              "role_hint": "डेटा सामग्री और अटैचमेंट का संदर्भ दें"
+            },
+            {
+              "id": "hi_u09_t4",
+              "role": "result",
+              "text": "कुछ ही सेकंड में कई प्राप्तकर्ताओं तक पहुँचाती है",
+              "role_hint": "तीव्र वितरण और प्राप्तकर्ताओं के परिणामी खंड से वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u09_d1",
+              "category": "logical",
+              "text": "जिसमें संदेश पहुंचने में कई सप्ताह का समय अनिवार्य रूप से लगता है",
+              "penalty_explanation": "तार्किक त्रुटि: ईमेल कुछ ही सेकंड में वितरित होता है, सप्ताहों में नहीं।"
+            },
+            {
+              "id": "hi_u09_d2",
+              "category": "grammatical",
+              "text": "प्राप्तकर्ताओं को इंटरनेट सेकंड पहुंचाता मल्टीमीडिया",
+              "penalty_explanation": "व्याकरणिक त्रुटि: असंगत पदक्रम वाक्य के व्याकरणिक ढांचे को समाप्त करता है।"
+            }
+          ],
+          "hint": "ईमेल द्वारा कुछ ही सेकंड में टेक्स्ट व मल्टीमीडिया सामग्री को कई लोगों तक भेजने का क्रम चुनें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Email delivers text and rich multimedia payloads globally within seconds to single or multiple recipients simultaneously.",
+        "hi": "ईमेल इंटरनेट के माध्यम से कुछ ही सेकंड में टेक्स्ट और मल्टीमीडिया संदेशों को कई लोगों तक पहुंचाने की सुविधा देता है।"
+      }
+    },
+    {
+      "unit_id": "u10_esp_and_address_syntax",
+      "topic": "Email Service Providers (ESPs) & Address Syntax",
+      "pedagogical_objective": "Explain the role of ESPs in hosting accounts and assigning unique, globally resolvable email identifiers.",
+      "instruction": {
+        "title": {
+          "en": "ESPs and Unique Address Identifiers",
+          "hi": "ईमेल सेवा प्रदाता (ESP) और अद्वितीय पता प्रणाली"
+        },
+        "theory": {
+          "en": "To leverage email facilities, an end user must register an account with an `ESP` (Email Service Provider), such as Google (`@gmail.com`), Microsoft Hotmail/Outlook (`@hotmail.com`), Yahoo (`@yahoo.com`), or Rediffmail (`@rediffmail.com`). The ESP manages mail routing servers and assigns every user a strictly unique email address (e.g., `user@domain.com`). Because no two users can share the same identifier, addresses resolve reliably worldwide.",
+          "hi": "ईमेल सुविधा का उपयोग करने के लिए उपयोगकर्ता को किसी `ESP` (Email Service Provider) जैसे Google, Yahoo, Rediffmail या Microsoft के साथ पंजीकृत होना पड़ता है। प्रत्येक उपयोगकर्ता को एक विशिष्ट और अद्वितीय ईमेल पता (जैसे `username@domain.com`) आवंटित किया जाता है, जिससे संदेश सही व्यक्ति तक पहुंच सके।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='80' y='60' width='480' height='60' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='190' y='97' fill='#4ade80' font-size='18' font-family='monospace' text-anchor='middle'>ravikant_771</text><text x='290' y='97' fill='#fbbf24' font-size='22' font-family='monospace' text-anchor='middle'>@</text><text x='410' y='97' fill='#38bdf8' font-size='18' font-family='monospace' text-anchor='middle'>yahoo.com</text><line x1='190' y1='125' x2='190' y2='155' stroke='#4ade80' stroke-width='1'/><text x='190' y='175' fill='#4ade80' font-size='12' font-family='sans-serif' text-anchor='middle'>Unique Username</text><line x1='410' y1='125' x2='410' y2='155' stroke='#38bdf8' stroke-width='1'/><text x='410' y='175' fill='#38bdf8' font-size='12' font-family='sans-serif' text-anchor='middle'>ESP Domain Name</text></svg>",
+          "caption": {
+            "en": "Structure of a unique email address provisioned through an ESP.",
+            "hi": "किसी ESP के माध्यम से प्रदान किए गए अद्वितीय ईमेल पते की संरचना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the statement describing account provisioning and address uniqueness through ESPs.",
+          "target_sequence": [
+            {
+              "id": "en_u10_t1",
+              "role": "subject",
+              "text": "email service providers provision",
+              "role_hint": "start with the subject stating what ESPs provide"
+            },
+            {
+              "id": "en_u10_t2",
+              "role": "modifier",
+              "text": "registered accounts to users,",
+              "role_hint": "specify user account registration"
+            },
+            {
+              "id": "en_u10_t3",
+              "role": "process",
+              "text": "allocating a globally unique email address",
+              "role_hint": "describe the identifier assignment process"
+            },
+            {
+              "id": "en_u10_t4",
+              "role": "result",
+              "text": "to guarantee reliable worldwide message routing",
+              "role_hint": "state the operational result of unique addressing"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "logical",
+              "text": "allocating duplicate addresses to simplify password recovery",
+              "penalty_explanation": "Logical error: email addresses must be strictly unique to route messages without collisions; duplicates are prohibited."
+            },
+            {
+              "id": "en_u10_d2",
+              "category": "grammatical",
+              "text": "provisioning email uniquely addresses guaranteed worldwide",
+              "penalty_explanation": "Grammatical error: misplaced adverbs and missing auxiliary connectors create an ungrammatical sentence."
+            }
+          ],
+          "hint": "ESPs register user accounts and allocate globally unique addresses for reliable message delivery."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "ईमेल सेवा प्रदाता (ESP) और पते की विशिष्टता को परिभाषित करने वाला सही वाक्य बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u10_t1",
+              "role": "subject",
+              "text": "ईमेल सुविधा का उपयोग करने हेतु",
+              "role_hint": "ईमेल के पूर्व-उपयोग उद्देश्य से शुरुआत करें"
+            },
+            {
+              "id": "hi_u10_t2",
+              "role": "process",
+              "text": "उपयोगकर्ता को ESP के पास पंजीकरण करना होता है,",
+              "role_hint": "ईएसपी के पास खाते के पंजीकरण की प्रक्रिया बताएं"
+            },
+            {
+              "id": "hi_u10_t3",
+              "role": "modifier",
+              "text": "जहाँ प्रत्येक व्यक्ति के लिए",
+              "role_hint": "व्यक्तिगत पहचान का योजक खंड जोड़ें"
+            },
+            {
+              "id": "hi_u10_t4",
+              "role": "result",
+              "text": "एक अद्वितीय ईमेल पता आवंटित किया जाता है",
+              "role_hint": "अद्वितीय पते के आवंटन से वाक्य समाप्त करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "logical",
+              "text": "जहाँ सभी उपयोगकर्ताओं को एक जैसा समान ईमेल पता मिलता है",
+              "penalty_explanation": "तार्किक त्रुटि: प्रत्येक ईमेल पता अद्वितीय होता है; दो उपयोगकर्ताओं को समान पता नहीं दिया जा सकता।"
+            },
+            {
+              "id": "hi_u10_d2",
+              "category": "grammatical",
+              "text": "पंजीकरण पतों को अद्वितीय नहीं करता हुआ",
+              "penalty_explanation": "व्याकरणिक त्रुटि: कृदंत खंड का अशुद्ध प्रयोग वाक्य विन्यास को बिगाड़ता है।"
+            }
+          ],
+          "hint": "उपयोगकर्ता का ESP में पंजीकरण और उसके बाद एक अद्वितीय ईमेल पता प्राप्त होने के क्रम को चुनें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Every email user must register with an ESP to receive a globally unique address that ensures collision-free communication.",
+        "hi": "ईमेल का उपयोग करने के लिए ESP के पास खाता बनाना पड़ता है, जो प्रत्येक व्यक्ति को एक अद्वितीय ईमेल पता देता है।"
+      }
+    },
+    {
+      "unit_id": "u11_data_communication_triad",
+      "topic": "Core Triad: Sender, Medium, and Receiver",
+      "pedagogical_objective": "Model point-to-point data communication across its three foundational pillars: source/transmitter, transmission path, and sink.",
+      "instruction": {
+        "title": {
+          "en": "The Core Data Communication Triad",
+          "hi": "डेटा संचार के तीन बुनियादी घटक"
+        },
+        "theory": {
+          "en": "`Data Communication` is defined as the process of transferring digital information from one computer device to another across a network. This exchange relies upon three fundamental components: (1) `Sender` (also known as the `Source` or `Transmitter`), which originates and transmits the data; (2) `Medium` (or communication channel), the physical or wireless path that carries the signal; and (3) `Receiver` (also termed the `Sink`), which captures the transmitted information.",
+          "hi": "नेटवर्क में एक कंप्यूटर से दूसरे कंप्यूटर में डेटा स्थानांतरित करने की प्रक्रिया को `डेटा संचार` कहा जाता है। डेटा संचार के तीन मूलभूत घटक होते हैं: (1) `प्रेषक (Sender)` या स्रोत/ट्रांसमीटर जो डेटा भेजता है, (2) `माध्यम (Medium)` या चैनल जो डेटा को ले जाता है, और (3) `रिसीवर (Receiver)` या सिंक जो प्रेषित डेटा प्राप्त करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='50' y='75' width='140' height='70' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='120' y='105' fill='#38bdf8' font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle'>SENDER</text><text x='120' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Source / Transmitter</text><line x1='190' y1='110' x2='450' y2='110' stroke='#fbbf24' stroke-width='4'/><polygon points='445,103 457,110 445,117' fill='#fbbf24'/><text x='320' y='95' fill='#fbbf24' font-size='13' font-family='sans-serif' font-weight='bold' text-anchor='middle'>MEDIUM (Channel)</text><text x='320' y='135' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Wired Cables or Wireless Waves</text><rect x='450' y='75' width='140' height='70' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='520' y='105' fill='#4ade80' font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle'>RECEIVER</text><text x='520' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Sink / Destination</text></svg>",
+          "caption": {
+            "en": "The three components of data communication: Sender (Source), Medium, and Receiver (Sink).",
+            "hi": "डेटा संचार के तीन घटक: प्रेषक (स्रोत), माध्यम (चैनल), और रिसीवर (सिंक)।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining data communication and its three constituent components.",
+          "target_sequence": [
+            {
+              "id": "en_u11_t1",
+              "role": "subject",
+              "text": "data communication transfers data",
+              "role_hint": "start with the subject and its primary transfer role"
+            },
+            {
+              "id": "en_u11_t2",
+              "role": "condition",
+              "text": "across a network of computers,",
+              "role_hint": "state the environment where data transfer occurs"
+            },
+            {
+              "id": "en_u11_t3",
+              "role": "process",
+              "text": "utilizing a transmitting source and connecting medium",
+              "role_hint": "identify the sender and physical/wireless path"
+            },
+            {
+              "id": "en_u11_t4",
+              "role": "result",
+              "text": "to deliver signals to the destination sink",
+              "role_hint": "conclude with arrival at the receiving sink"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "logical",
+              "text": "without needing any physical or wireless transmission path",
+              "penalty_explanation": "Logical error: data communication requires a physical or wireless medium to carry the signal from sender to receiver."
+            },
+            {
+              "id": "en_u11_d2",
+              "category": "grammatical",
+              "text": "sink source medium transfers data destination",
+              "penalty_explanation": "Grammatical error: an unpunctuated string of nouns lacks a grammatical verb clause."
+            }
+          ],
+          "hint": "Identify data transfer across a network using a sender (source), medium, and receiver (sink)."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "डेटा संचार और उसके तीन मूल घटकों को परिभाषित करने वाला सही वाक्य बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u11_t1",
+              "role": "subject",
+              "text": "डेटा संचार की प्रक्रिया",
+              "role_hint": "डेटा संचार विषयक कर्ता से शुरुआत करें"
+            },
+            {
+              "id": "hi_u11_t2",
+              "role": "process",
+              "text": "प्रेषक या स्रोत से डेटा भेजकर,",
+              "role_hint": "स्रोत द्वारा डेटा भेजने की क्रिया जोड़ें"
+            },
+            {
+              "id": "hi_u11_t3",
+              "role": "condition",
+              "text": "वायर्ड या वायरलेस माध्यम से गुजारती है",
+              "role_hint": "माध्यम से डेटा गुजरने की स्थिति बताएं"
+            },
+            {
+              "id": "hi_u11_t4",
+              "role": "result",
+              "text": "ताकि रिसीवर या सिंक इसे प्राप्त कर सके",
+              "role_hint": "सिंक द्वारा प्राप्ति के परिणामी खंड से वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "logical",
+              "text": "जिसमें माध्यम की कोई आवश्यकता कभी नहीं होती",
+              "penalty_explanation": "तार्किक त्रुटि: डेटा संचार में ट्रांसमिशन माध्यम (केबल या वायरलेस) का होना अनिवार्य है।"
+            },
+            {
+              "id": "hi_u11_d2",
+              "category": "grammatical",
+              "text": "सिंक प्रेषक से माध्यम गुजरता नहीं हुआ",
+              "penalty_explanation": "व्याकरणिक त्रुटि: असंगत पदक्रम वाक्य के अर्थ को असंगत बना देता है।"
+            }
+          ],
+          "hint": "प्रेषक (स्रोत), माध्यम (केबल/वायरलेस), और रिसीवर (सिंक) के संयोजन को क्रमबद्ध करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Data communication is the transfer of data via three core elements: Sender (source), Medium (channel), and Receiver (sink).",
+        "hi": "डेटा संचार नेटवर्क में डेटा भेजने की प्रक्रिया है जिसके तीन अनिवार्य घटक हैं: प्रेषक, माध्यम और रिसीवर।"
+      }
+    },
+    {
+      "unit_id": "u12_internet_security_firewalls",
+      "topic": "Internet Security & Network Firewalls",
+      "pedagogical_objective": "Formulate system defense principles and analyze firewall traffic inspection (monitoring and filtering inbound/outbound packets).",
+      "instruction": {
+        "title": {
+          "en": "Internet Security and Network Firewalls",
+          "hi": "इंटरनेट सुरक्षा और नेटवर्क फ़ायरवॉल"
+        },
+        "theory": {
+          "en": "`Internet Security` is the branch of Information Technology dedicated to safeguarding computers, networks, and confidential data against unauthorized access, malicious intrusions, and intentional damage. A premier architectural defense is the `Firewall`. Functioning as a secure perimeter barrier, a firewall continuously inspects, monitors, and controls incoming and outgoing network traffic, filtering packets according to predetermined security rules.",
+          "hi": "`इंटरनेट सुरक्षा` सूचना प्रौद्योगिकी की वह शाखा है जो कंप्यूटर, नेटवर्क और डेटा को अनधिकृत पहुंच और क्षति से बचाती है। इसमें `फ़ायरवॉल` एक प्रमुख सुरक्षा तकनीक है। फ़ायरवॉल अनधिकृत पहुंच को रोकने के लिए नेटवर्क में आने वाले (इनकमिंग) और बाहर जाने वाले (आउटगोइंग) नेटवर्क ट्रैफ़िक की निगरानी और नियंत्रण करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><text x='110' y='60' fill='#f87171' font-size='13' font-family='sans-serif' text-anchor='middle'>Untrusted Internet</text><circle cx='110' cy='110' r='35' fill='#1e293b' stroke='#f87171' stroke-width='2'/><path d='M145 100 L270 100' stroke='#f87171' stroke-width='2' stroke-dasharray='4'/><rect x='280' y='40' width='80' height='140' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='3'/><text x='320' y='105' fill='#fbbf24' font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle'>FIREWALL</text><text x='320' y='125' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Traffic Filter</text><path d='M360 100 L495 100' stroke='#4ade80' stroke-width='3'/><polygon points='495,95 505,100 495,105' fill='#4ade80'/><text x='530' y='60' fill='#4ade80' font-size='13' font-family='sans-serif' text-anchor='middle'>Protected Network</text><rect x='490' y='80' width='80' height='60' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='2'/></svg>",
+          "caption": {
+            "en": "Firewalls intercept and inspect network traffic to block unauthorized intrusions.",
+            "hi": "फ़ायरवॉल अनधिकृत घुसपैठ को रोकने के लिए नेटवर्क ट्रैफ़िक की जाँच करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence explaining the security role of a network firewall.",
+          "target_sequence": [
+            {
+              "id": "en_u12_t1",
+              "role": "subject",
+              "text": "a firewall safeguards networks",
+              "role_hint": "start with the subject stating what the firewall protects"
+            },
+            {
+              "id": "en_u12_t2",
+              "role": "process",
+              "text": "by monitoring and controlling",
+              "role_hint": "identify the operational actions performed on packets"
+            },
+            {
+              "id": "en_u12_t3",
+              "role": "condition",
+              "text": "all incoming and outgoing traffic,",
+              "role_hint": "specify the bidirectional data flows being checked"
+            },
+            {
+              "id": "en_u12_t4",
+              "role": "result",
+              "text": "preventing unauthorized access and damage",
+              "role_hint": "state the security outcome"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u12_d1",
+              "category": "logical",
+              "text": "by increasing raw transmission bandwidth across unguided media",
+              "penalty_explanation": "Logical error: firewalls inspect traffic to enforce security; they do not increase bandwidth of unguided media."
+            },
+            {
+              "id": "en_u12_d2",
+              "category": "grammatical",
+              "text": "monitors traffic unauthorized incoming damage prevent",
+              "penalty_explanation": "Grammatical error: fragmented participle pile-up lacks grammatical clause structure."
+            }
+          ],
+          "hint": "Focus on firewalls monitoring and controlling both incoming and outgoing traffic to stop unauthorized access."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "फ़ायरवॉल की सुरक्षा प्रणाली को स्पष्ट करने वाला सही वाक्य क्रम व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u12_t1",
+              "role": "subject",
+              "text": "फ़ायरवॉल कंप्यूटर नेटवर्क को",
+              "role_hint": "फ़ायरवॉल और नेटवर्क कर्ता से शुरुआत करें"
+            },
+            {
+              "id": "hi_u12_t2",
+              "role": "process",
+              "text": "अनधिकृत पहुंच और क्षति से बचाता है,",
+              "role_hint": "सुरक्षा के मूल उद्देश्य का उल्लेख करें"
+            },
+            {
+              "id": "hi_u12_t3",
+              "role": "condition",
+              "text": "इनकमिंग और आउटगोइंग ट्रैफ़िक की निगरानी करके",
+              "role_hint": "ट्रैफ़िक परीक्षण की शर्त जोड़ें"
+            },
+            {
+              "id": "hi_u12_t4",
+              "role": "result",
+              "text": "और असुरक्षित डेटा पैकेटों को रोककर",
+              "role_hint": "अवांछित डेटा को रोकने के अंतिम परिणाम से वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u12_d1",
+              "category": "logical",
+              "text": "जिससे इंटरनेट की गति अपने आप दोगुनी बढ़ जाती है",
+              "penalty_explanation": "तार्किक त्रुटि: फ़ायरवॉल सुरक्षा नियंत्रण के लिए है, इसका कार्य बैंडविड्थ या इंटरनेट गति बढ़ाना नहीं है।"
+            },
+            {
+              "id": "hi_u12_d2",
+              "category": "grammatical",
+              "text": "ट्रैफ़िक निगरानी सुरक्षा रोकती नेटवर्क नहीं",
+              "penalty_explanation": "व्याकरणिक त्रुटि: असंगत पदक्रम वाक्य के व्याकरणिक ढांचे को समाप्त करता है।"
+            }
+          ],
+          "hint": "फ़ायरवॉल द्वारा इनकमिंग/आउटगोइंग ट्रैफ़िक की निगरानी कर अनधिकृत पहुँच रोकने का क्रम बनाएं।"
+        }
+      },
+      "key_takeaway": {
+        "en": "A firewall monitors and filters bidirectional network traffic to protect internal devices from unauthorized intrusions.",
+        "hi": "फ़ायरवॉल इनकमिंग और आउटगोइंग ट्रैफ़िक की निगरानी करके नेटवर्क को अनधिकृत पहुंच और नुकसान से बचाता है।"
+      }
+    },
+    {
+      "unit_id": "u13_passwords_and_antivirus",
+      "topic": "Password Complexity & Antivirus Protection",
+      "pedagogical_objective": "Define strong credential design and antivirus operational workflows for detecting and removing malicious software (viruses, trojans, ransomware, spyware).",
+      "instruction": {
+        "title": {
+          "en": "Credential Hygiene and Malware Mitigation",
+          "hi": "पासवर्ड जटिलता और एंटीवायरस सुरक्षा"
+        },
+        "theory": {
+          "en": "Host defense relies on credential security and anti-malware tools. User accounts require `Secure Passwords` with high entropy, composed of letters, numbers, and special symbols. Complementing access control, `Antivirus Software` runs continuously on endpoints to detect, quarantine, prevent, and purge malicious software (`malware`), including viruses, worms, Trojans, ransomware, and spyware.",
+          "hi": "सिस्टम सुरक्षा के लिए मजबूत पासवर्ड और एंटीवायरस आवश्यक हैं। सुरक्षित पासवर्ड में अक्षरों, संख्याओं और विशेष वर्णों का संयोजन होना चाहिए। `एंटीवायरस सॉफ़्टवेयर` का उपयोग दुर्भावनापूर्ण सॉफ़्टवेयर (मैलवेयर) जैसे वायरस, वर्म्स, ट्रोजन, रैनसमवेयर और स्पाईवेयर का पता लगाने, रोकने और उन्हें नष्ट करने के लिए किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='50' width='240' height='120' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='180' y='85' fill='#4ade80' font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Complex Password</text><text x='180' y='115' fill='#38bdf8' font-size='16' font-family='monospace' text-anchor='middle'>K#9$pL!2026</text><text x='180' y='145' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Letters + Numbers + Symbols</text><rect x='340' y='50' width='240' height='120' rx='8' fill='#1e293b' stroke='#f87171' stroke-width='2'/><text x='460' y='85' fill='#f87171' font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Antivirus Defense</text><text x='460' y='115' fill='#fbbf24' font-size='12' font-family='sans-serif' text-anchor='middle'>Detects &amp; Neutralizes:</text><text x='460' y='145' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Viruses, Worms, Trojans, Ransomware</text></svg>",
+          "caption": {
+            "en": "Dual layer endpoint defense: complex passwords and antivirus software.",
+            "hi": "एंडपॉइंट सुरक्षा की दोहरी परत: जटिल पासवर्ड और एंटीवायरस सॉफ़्टवेयर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sentence detailing endpoint defense via strong credentials and antivirus tools.",
+          "target_sequence": [
+            {
+              "id": "en_u13_t1",
+              "role": "subject",
+              "text": "strong passwords protect accounts",
+              "role_hint": "start with the subject and the role of passwords"
+            },
+            {
+              "id": "en_u13_t2",
+              "role": "condition",
+              "text": "through diverse alphanumeric and special characters,",
+              "role_hint": "specify the required entropy characters"
+            },
+            {
+              "id": "en_u13_t3",
+              "role": "process",
+              "text": "while antivirus software actively scans",
+              "role_hint": "introduce the active role of antivirus scanning"
+            },
+            {
+              "id": "en_u13_t4",
+              "role": "result",
+              "text": "to detect and eliminate malicious malware threats",
+              "role_hint": "state the mitigation outcome against threats"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "logical",
+              "text": "by using single simple dictionary words to avoid lockouts",
+              "penalty_explanation": "Logical error: simple dictionary words result in weak passwords vulnerable to brute-force attacks."
+            },
+            {
+              "id": "en_u13_d2",
+              "category": "grammatical",
+              "text": "antivirus malware scanning eliminate characters accounts",
+              "penalty_explanation": "Grammatical error: an unpunctuated string of terms lacks grammatical clause structure."
+            }
+          ],
+          "hint": "Combine complex character credentials with antivirus software neutralizing malware threats."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "मजबूत पासवर्ड और एंटीवायरस के रक्षा तंत्र को दर्शाने वाला सही वाक्य क्रम व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u13_t1",
+              "role": "subject",
+              "text": "जटिल पासवर्ड अक्षरों और प्रतीकों से",
+              "role_hint": "पासवर्ड की संरचना से शुरुआत करें"
+            },
+            {
+              "id": "hi_u13_t2",
+              "role": "process",
+              "text": "उपयोगकर्ता खातों को सुरक्षित रखते हैं,",
+              "role_hint": "खाते सुरक्षित रखने की क्रिया जोड़ें"
+            },
+            {
+              "id": "hi_u13_t3",
+              "role": "modifier",
+              "text": "जबकि एंटीवायरस सॉफ़्टवेयर",
+              "role_hint": "एंटीवायरस सॉफ़्टवेयर को योजक के रूप में लाएं"
+            },
+            {
+              "id": "hi_u13_t4",
+              "role": "result",
+              "text": "वायरस और ट्रोजन जैसे मैलवेयर को समाप्त करता है",
+              "role_hint": "मैलवेयर हटाने के अंतिम परिणाम से वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "logical",
+              "text": "ताकि वायरस बिना किसी बाधा के सिस्टम में फैल सके",
+              "penalty_explanation": "तार्किक त्रुटि: सुरक्षा उपायों का उद्देश्य वायरस को रोकना होता है, उसे फैलाना नहीं।"
+            },
+            {
+              "id": "hi_u13_d2",
+              "category": "grammatical",
+              "text": "पासवर्ड एंटीवायरस हटाता सुरक्षित खाता नहीं",
+              "penalty_explanation": "व्याकरणिक त्रुटि: व्याकरण-विहीन शब्द संग्रह अर्थ को बाधित करता है।"
+            }
+          ],
+          "hint": "जटिल अक्षरों/प्रतीकों से खाते सुरक्षित करने और एंटीवायरस द्वारा मैलवेयर हटाने का क्रम चुनें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "System security relies on complex multi-character credentials and antivirus software that eliminates malware threats.",
+        "hi": "सिस्टम सुरक्षा मजबूत पासवर्ड और एंटीवायरस सॉफ़्टवेयर पर निर्भर करती है जो दुर्भावनापूर्ण मैलवेयर को नष्ट करता है।"
+      }
+    },
+    {
+      "unit_id": "u14_transmission_media_taxonomy",
+      "topic": "Transmission Media Taxonomy: Guided vs. Unguided",
+      "pedagogical_objective": "Classify communication channels into physically bounded/guided conduits and unbound electromagnetic wireless propagation paths.",
+      "instruction": {
+        "title": {
+          "en": "Transmission Media Taxonomy: Guided vs. Unguided",
+          "hi": "ट्रांसमिशन मीडिया वर्गीकरण: गाइडेड बनाम अनगाइडेड"
+        },
+        "theory": {
+          "en": "Network Transmission Media (or communication channels) constitute the physical or wireless paths that transfer data from sender to receiver. Media are grouped into two categories: (1) `Wired (Guided or Bound) Media`, which employ physical conductors (wires or glass strands) constraining data propagation to a guided trajectory; and (2) `Wireless (Unguided or Unbound) Media`, which transmit electromagnetic signals through open atmosphere or vacuum along unguided paths.",
+          "hi": "ट्रांसमिशन मीडिया (कम्युनिकेशन चैनल) वह मार्ग है जिसके माध्यम से डेटा प्रेषक से रिसीवर तक भेजा जाता है। यह दो श्रेणियों में विभाजित है: (1) `वायर्ड (गाइडेड या बाउंड) मीडिया`, जो भौतिक केबलों का उपयोग करता है और डेटा एक निश्चित पथ से यात्रा करता है; और (2) `वायरलेस (अनगाइडेड या अनबाउंड) मीडिया`, जो वायु या निर्वात के माध्यम से सिग्नल प्रसारित करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='220' y='20' width='200' height='40' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='320' y='45' fill='#38bdf8' font-size='13' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Transmission Media</text><line x1='270' y1='60' x2='160' y2='100' stroke='#94a3b8' stroke-width='2'/><line x1='370' y1='60' x2='480' y2='100' stroke='#94a3b8' stroke-width='2'/><rect x='60' y='100' width='200' height='90' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='160' y='125' fill='#4ade80' font-size='13' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Guided (Wired)</text><text x='160' y='150' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Twisted Pair | Coaxial | Fiber</text><text x='160' y='170' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Physical Bound Path</text><rect x='380' y='100' width='200' height='90' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='480' y='125' fill='#fbbf24' font-size='13' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Unguided (Wireless)</text><text x='480' y='150' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Microwave | Satellite | Wi-Fi</text><text x='480' y='170' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Open Atmospheric Path</text></svg>",
+          "caption": {
+            "en": "Taxonomy of transmission channels: Guided (cables) vs Unguided (wireless signals).",
+            "hi": "ट्रांसमिशन चैनलों का वर्गीकरण: गाइडेड (केबल) बनाम अनगाइडेड (वायरलेस सिग्नल)।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Synthesize the classification contrasting guided media against unguided media.",
+          "target_sequence": [
+            {
+              "id": "en_u14_t1",
+              "role": "subject",
+              "text": "transmission channels are classified into",
+              "role_hint": "start with the subject asserting media categorization"
+            },
+            {
+              "id": "en_u14_t2",
+              "role": "condition",
+              "text": "guided media using physical cables,",
+              "role_hint": "identify the wired physical pathway"
+            },
+            {
+              "id": "en_u14_t3",
+              "role": "process",
+              "text": "and unguided media propagating signals",
+              "role_hint": "contrast with wireless propagation"
+            },
+            {
+              "id": "en_u14_t4",
+              "role": "result",
+              "text": "wirelessly through an unbound path",
+              "role_hint": "conclude with the unbounded pathway characteristics"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "logical",
+              "text": "purely digital software browsers lacking electrical current",
+              "penalty_explanation": "Logical error: transmission media are physical or wireless communication conduits, not software browsers."
+            },
+            {
+              "id": "en_u14_d2",
+              "category": "grammatical",
+              "text": "classifies media cables wireless unbound path",
+              "penalty_explanation": "Grammatical error: an unpunctuated string of terms lacks grammatical clause structure."
+            }
+          ],
+          "hint": "Separate physical cables (guided) from open air/space wireless signals (unguided)."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "ट्रांसमिशन मीडिया के वर्गीकरण को स्पष्ट करने वाला सही वाक्य क्रम व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u14_t1",
+              "role": "subject",
+              "text": "ट्रांसमिशन मीडिया को मुख्य रूप से",
+              "role_hint": "ट्रांसमिशन मीडिया के वर्गीकरण से प्रारंभ करें"
+            },
+            {
+              "id": "hi_u14_t2",
+              "role": "condition",
+              "text": "भौतिक केबलों वाले गाइडेड मीडिया,",
+              "role_hint": "वायर्ड या गाइडेड मीडिया का उल्लेख करें"
+            },
+            {
+              "id": "hi_u14_t3",
+              "role": "process",
+              "text": "और बेतार तरंगों वाले अनगाइडेड मीडिया",
+              "role_hint": "वायरलेस या अनगाइडेड मीडिया को जोड़ें"
+            },
+            {
+              "id": "hi_u14_t4",
+              "role": "result",
+              "text": "के दो प्रमुख वर्गों में विभाजित किया गया है",
+              "role_hint": "दो वर्गों में विभाजन के अंतिम खंड से वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "logical",
+              "text": "केवल एक ही वर्ग यानी बिना केबल वाले में बांटा गया है",
+              "penalty_explanation": "तार्किक त्रुटि: मीडिया को दो वर्गों में विभाजित किया गया है: गाइडेड (केबल) और अनगाइडेड (वायरलेस)।"
+            },
+            {
+              "id": "hi_u14_d2",
+              "category": "grammatical",
+              "text": "विभाजित मीडिया अनगाइडेड केबल नहीं होता",
+              "penalty_explanation": "व्याकरणिक त्रुटि: असंगत पदक्रम वाक्य के व्याकरणिक ढांचे को समाप्त करता है।"
+            }
+          ],
+          "hint": "गाइडेड (भौतिक केबल) और अनगाइडेड (वायरलेस तरंगें) के दो वर्गों में विभाजन का क्रम चुनें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Transmission channels comprise guided media (physical cables) and unguided media (unbounded wireless propagation).",
+        "hi": "ट्रांसमिशन मीडिया दो प्रकार के होते हैं: गाइडेड मीडिया (वायर्ड केबल) और अनगाइडेड मीडिया (वायरलेस)।"
+      }
+    },
+    {
+      "unit_id": "u15_twisted_pair_coaxial_cables",
+      "topic": "Guided Media: Twisted Pair & Coaxial Cables",
+      "pedagogical_objective": "Contrast electrical conduction, noise cancellation mechanisms, and applications between twisted-pair wire and shielded coaxial cables.",
+      "instruction": {
+        "title": {
+          "en": "Guided Copper Conduits: Twisted Pair and Coaxial",
+          "hi": "गाइडेड कॉपर केबल: ट्विस्टेड पेयर और कोएक्सियल"
+        },
+        "theory": {
+          "en": "Copper-based guided channels use electrical signals for data conveyance: (1) `Twisted Pair Cable` consists of pairs of insulated copper wires twisted around each other to reduce electromagnetic interference (crosstalk), commonly deployed in landline telephony and short-to-medium distance LANs; (2) `Coaxial Cable` features a solid central copper conductor encircled by dielectric insulation, an outer braided copper-mesh shield, and a protective jacket, suited for cable television and broadband.",
+          "hi": "(1) `ट्विस्टेड पेयर केबल` में दो स्वतंत्र रूप से इंसुलेटेड तार होते हैं जो विद्युत चुम्बकीय हस्तक्षेप को कम करने के लिए एक-दूसरे के चारों ओर मुड़े होते हैं। इसका उपयोग लैंडलाइन टेलीफोन और कम दूरी के LAN में होता है। (2) `कोएक्सियल केबल` में एक केंद्रीय कोर तार होता है जो धातु की जाली (शील्ड) और बाहरी इन्सुलेशन से घिरा होता है। यह केबल टीवी और ब्रॉडबैंड इंटरनेट में प्रयुक्त होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><g transform='translate(50, 40)'><rect width='240' height='140' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='120' y='30' fill='#38bdf8' font-size='13' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Twisted Pair Cable</text><path d='M30 70 Q 60 40, 90 70 T 150 70 T 210 70' fill='none' stroke='#4ade80' stroke-width='3'/><path d='M30 70 Q 60 100, 90 70 T 150 70 T 210 70' fill='none' stroke='#fbbf24' stroke-width='3'/><text x='120' y='115' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Twisted insulated wires reduce noise</text><text x='120' y='130' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Telephony &amp; Local LANs</text></g><g transform='translate(350, 40)'><rect width='240' height='140' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='120' y='30' fill='#fbbf24' font-size='13' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Coaxial Cable</text><circle cx='60' cy='75' r='10' fill='#fbbf24'/><circle cx='60' cy='75' r='22' fill='none' stroke='#94a3b8' stroke-width='3'/><circle cx='60' cy='75' r='30' fill='none' stroke='#38bdf8' stroke-width='3' stroke-dasharray='4'/><text x='150' y='65' fill='#94a3b8' font-size='10' font-family='sans-serif'>Center Conductor</text><text x='150' y='80' fill='#94a3b8' font-size='10' font-family='sans-serif'>Insulator &amp; Copper Mesh</text><text x='120' y='125' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Cable TV &amp; Broadband Networks</text></g></svg>",
+          "caption": {
+            "en": "Structural design of twisted pair cables versus shielded coaxial cables.",
+            "hi": "ट्विस्टेड पेयर केबल और शील्डेड कोएक्सियल केबल की संरचनात्मक बनावट।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the comparative statement contrasting twisted pair with coaxial cables.",
+          "target_sequence": [
+            {
+              "id": "en_u15_t1",
+              "role": "subject",
+              "text": "twisted pair uses intertwined insulated wires",
+              "role_hint": "start with the structure of twisted pair cabling"
+            },
+            {
+              "id": "en_u15_t2",
+              "role": "condition",
+              "text": "primarily for telephone and lan lines,",
+              "role_hint": "identify its standard deployment domain"
+            },
+            {
+              "id": "en_u15_t3",
+              "role": "process",
+              "text": "whereas coaxial cable employs mesh shielding",
+              "role_hint": "contrast with the construction of coaxial cable"
+            },
+            {
+              "id": "en_u15_t4",
+              "role": "result",
+              "text": "for high-speed broadband and cable television",
+              "role_hint": "conclude with coaxial cable applications"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "logical",
+              "text": "to convert optical photon pulses into microwave space signals",
+              "penalty_explanation": "Logical error: copper twisted pair and coaxial cables transmit electrical currents, not optical photons."
+            },
+            {
+              "id": "en_u15_d2",
+              "category": "grammatical",
+              "text": "coaxial intertwined wires shielding telephone cable",
+              "penalty_explanation": "Grammatical error: an unpunctuated string of terms lacks grammatical clause structure."
+            }
+          ],
+          "hint": "Contrast twisted pair (intertwined wires for LAN/phone) with coaxial cable (mesh shielding for TV/broadband)."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "ट्विस्टेड पेयर और कोएक्सियल केबल की तुलना करने वाला सही वाक्य क्रम व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u15_t1",
+              "role": "subject",
+              "text": "ट्विस्टेड पेयर आपस में मुड़े तारों से",
+              "role_hint": "ट्विस्टेड पेयर की संरचना से शुरुआत करें"
+            },
+            {
+              "id": "hi_u15_t2",
+              "role": "condition",
+              "text": "टेलीफोन और लोकल लैन में काम आती है,",
+              "role_hint": "इसके अनुप्रयोग क्षेत्र का उल्लेख करें"
+            },
+            {
+              "id": "hi_u15_t3",
+              "role": "process",
+              "text": "जबकि कोएक्सियल केबल में सुरक्षात्मक जाली होती है",
+              "role_hint": "कोएक्सियल केबल की शील्डिंग संरचना बताएं"
+            },
+            {
+              "id": "hi_u15_t4",
+              "role": "result",
+              "text": "जो केबल टीवी और ब्रॉडबैंड में उपयोग की जाती है",
+              "role_hint": "कोएक्सियल केबल के अंतिम उपयोग से वाक्य समाप्त करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "logical",
+              "text": "जो प्रकाश पुंजों से अंतरिक्ष में सिग्नल भेजती है",
+              "penalty_explanation": "तार्किक त्रुटि: ट्विस्टेड पेयर और कोएक्सियल केबल विद्युत संकेत ले जाती हैं, प्रकाश किरणें नहीं।"
+            },
+            {
+              "id": "hi_u15_d2",
+              "category": "grammatical",
+              "text": "केबल टीवी जाली उपयोग मुड़े तार नहीं",
+              "penalty_explanation": "व्याकरणिक त्रुटि: असंगत पदक्रम वाक्य के व्याकरणिक ढांचे को समाप्त करता है।"
+            }
+          ],
+          "hint": "ट्विस्टेड पेयर (टेलीफोन/LAN) और कोएक्सियल (जालीदार शील्ड, टीवी/ब्रॉडबैंड) की तुलना का क्रम चुनें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Twisted pair uses intertwined insulated conductors for LANs/phones, while shielded coaxial cable serves broadband and cable TV.",
+        "hi": "ट्विस्टेड पेयर मुड़े हुए तारों द्वारा टेलीफोन/LAN में और कोएक्सियल केबल मेश शील्डिंग द्वारा केबल टीवी/ब्रॉडबैंड में प्रयुक्त होती है।"
+      }
+    },
+    {
+      "unit_id": "u16_fiber_optic_cables",
+      "topic": "Guided Media: Optical Fiber & Total Internal Reflection",
+      "pedagogical_objective": "Explain high-throughput optical data transport using light pulses traveling through silica/plastic waveguides via total internal reflection.",
+      "instruction": {
+        "title": {
+          "en": "Fiber-Optic Waveguides and Total Internal Reflection",
+          "hi": "फाइबर-ऑप्टिक केबल और पूर्ण आंतरिक परावर्तन"
+        },
+        "theory": {
+          "en": "`Fibre-Optic Cable` represents guided optical transmission technology. Rather than conducting copper electrical pulses, it consists of slender strands of high-purity glass or silica plastic. Digital bits are encoded into modulated light pulses (photons). These optical signals propagate along the inner core, constrained by the surrounding lower-refractive cladding through the physical principle of `Total Internal Reflection`.",
+          "hi": "`फाइबर-ऑप्टिक केबल` में कांच या प्लास्टिक के पतले रेशे (कोर और क्लैडिंग) होते हैं। यह विद्युत संकेतों के स्थान पर ऑप्टिकल सिग्नल यानी प्रकाश पल्स (light pulses) का उपयोग करके डेटा प्रसारित करता है। प्रकाश किरणें `पूर्ण आंतरिक परावर्तन` (Total Internal Reflection) के सिद्धांत द्वारा बिना सिग्नल क्षय के लंबी दूरी तय करती हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='80' y='50' width='480' height='120' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><rect x='80' y='80' width='480' height='60' fill='#0f172a' stroke='#4ade80' stroke-width='1'/><text x='110' y='72' fill='#94a3b8' font-size='11' font-family='sans-serif'>Cladding (Lower Index)</text><text x='110' y='115' fill='#38bdf8' font-size='12' font-family='sans-serif'>Core (Glass/Plastic)</text><path d='M80 110 L 160 85 L 240 135 L 320 85 L 400 135 L 480 85 L 560 110' stroke='#fbbf24' stroke-width='3' fill='none'/><circle cx='160' cy='85' r='4' fill='#f87171'/><circle cx='240' cy='135' r='4' fill='#f87171'/><circle cx='320' cy='85' r='4' fill='#f87171'/><circle cx='400' cy='135' r='4' fill='#f87171'/><text x='320' y='180' fill='#fbbf24' font-size='12' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Total Internal Reflection of Light Pulses</text></svg>",
+          "caption": {
+            "en": "Light pulses propagating through an optical core via total internal reflection.",
+            "hi": "पूर्ण आंतरिक परावर्तन के माध्यम से ऑप्टिकल कोर में गति करती प्रकाश तरंगें।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence explaining data propagation inside a fiber-optic cable.",
+          "target_sequence": [
+            {
+              "id": "en_u16_t1",
+              "role": "subject",
+              "text": "fiber-optic cables transmit data",
+              "role_hint": "start with the subject and the data transmission assertion"
+            },
+            {
+              "id": "en_u16_t2",
+              "role": "process",
+              "text": "using optical light pulses",
+              "role_hint": "specify the physical carrier of the information"
+            },
+            {
+              "id": "en_u16_t3",
+              "role": "condition",
+              "text": "through glass fibers via total internal reflection,",
+              "role_hint": "state the physical medium and optical phenomenon"
+            },
+            {
+              "id": "en_u16_t4",
+              "role": "result",
+              "text": "enabling ultra-high-speed communication over long distances",
+              "role_hint": "state the performance advantages"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u16_d1",
+              "category": "logical",
+              "text": "using metallic copper pins conducting low-frequency audio hums",
+              "penalty_explanation": "Logical error: fiber optic cables transmit light pulses through glass strands, not low-frequency electricity over copper pins."
+            },
+            {
+              "id": "en_u16_d2",
+              "category": "grammatical",
+              "text": "transmitting pulses glass light internal total reflection",
+              "penalty_explanation": "Grammatical error: an unpunctuated string of terms lacks grammatical clause structure."
+            }
+          ],
+          "hint": "Identify optical light pulses traveling through glass fibers by total internal reflection for ultra-high speeds."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "फाइबर-ऑप्टिक केबल की भौतिक कार्यप्रणाली को दर्शाने वाला सही वाक्य क्रम व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u16_t1",
+              "role": "subject",
+              "text": "फाइबर-ऑप्टिक केबल में डेटा",
+              "role_hint": "फाइबर ऑप्टिक में डेटा संचरण से प्रारंभ करें"
+            },
+            {
+              "id": "hi_u16_t2",
+              "role": "process",
+              "text": "प्रकाश पल्स यानी ऑप्टिकल सिग्नल के रूप में,",
+              "role_hint": "प्रकाश पल्स के उपयोग का उल्लेख करें"
+            },
+            {
+              "id": "hi_u16_t3",
+              "role": "condition",
+              "text": "पूर्ण आंतरिक परावर्तन द्वारा कांच के रेशों से गुजरता है",
+              "role_hint": "पूर्ण आंतरिक परावर्तन का नियम जोड़ें"
+            },
+            {
+              "id": "hi_u16_t4",
+              "role": "result",
+              "text": "जिससे लंबी दूरी पर अति-उच्च गति संचार संभव होता है",
+              "role_hint": "लंबी दूरी और तीव्र गति के परिणाम से वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u16_d1",
+              "category": "logical",
+              "text": "जिसमें तांबे की तारों से धीमी गति का विद्युत करंट बहता है",
+              "penalty_explanation": "तार्किक त्रुटि: फाइबर ऑप्टिक में तांबे के तारों के स्थान पर कांच के पतले रेशे और प्रकाश तरंगें प्रयुक्त होती हैं।"
+            },
+            {
+              "id": "hi_u16_d2",
+              "category": "grammatical",
+              "text": "कांच प्रकाश सिग्नल परावर्तन अति गति नहीं",
+              "penalty_explanation": "व्याकरणिक त्रुटि: असंगत पदक्रम वाक्य के व्याकरणिक ढांचे को समाप्त करता है।"
+            }
+          ],
+          "hint": "कांच के रेशे, प्रकाश पल्स, पूर्ण आंतरिक परावर्तन और अति-उच्च गति के क्रम को चुनें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Fiber-optic cables guide light pulses through core glass strands via total internal reflection, achieving ultra-high speeds.",
+        "hi": "फाइबर-ऑप्टिक केबल पूर्ण आंतरिक परावर्तन के माध्यम से प्रकाश पल्स भेजकर लंबी दूरी पर अति-उच्च गति डेटा संचार प्रदान करती है।"
+      }
+    },
+    {
+      "unit_id": "u17_terrestrial_satellite_wireless",
+      "topic": "Unguided Long-Range: Microwave Links & Satellite Relays",
+      "pedagogical_objective": "Contrast terrestrial line-of-sight tower links with geostationary/orbital transponder links connecting distant ground stations.",
+      "instruction": {
+        "title": {
+          "en": "Long-Range Wireless: Microwave and Satellite",
+          "hi": "लंबी दूरी के वायरलेस माध्यम: माइक्रोवेव और उपग्रह"
+        },
+        "theory": {
+          "en": "Long-distance unguided media include terrestrial and space configurations: (1) `Microwave Links` propagate signals through the air between line-of-sight parabolic antennas atop high towers spaced kilometres apart, commonly utilized for cellular backhaul and wireless Internet; (2) `Satellite Communication` overcomes terrestrial line-of-sight constraints by positioning orbiting transponders that bridge originating and destination ground stations across continents.",
+          "hi": "(1) `माइक्रोवेव लिंक` भौतिक केबलों के बिना कई किलोमीटर दूर तक सिग्नल भेजने के लिए टावरों पर लगे एंटीना का उपयोग करता है। यह मोबाइल फोन नेटवर्क और वायरलेस इंटरनेट में प्रयुक्त होता है। (2) `उपग्रह संचार (Satellite Communication)` पृथ्वी की कक्षा में स्थित उपग्रहों का उपयोग करता है जो ग्राउंड स्टेशनों से सिग्नल ग्रहण कर सुदूर महाद्वीपों तक प्रेषित करते हैं (जैसे DTH टीवी व सैन्य संचार)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><g transform='translate(40, 60)'><rect width='240' height='120' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='120' y='30' fill='#38bdf8' font-size='13' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Terrestrial Microwave</text><line x1='50' y1='100' x2='50' y2='60' stroke='#94a3b8' stroke-width='3'/><line x1='190' y1='100' x2='190' y2='60' stroke='#94a3b8' stroke-width='3'/><line x1='50' y1='65' x2='190' y2='65' stroke='#f87171' stroke-width='2' stroke-dasharray='4'/><text x='120' y='110' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Tower Antennas (Line of Sight)</text></g><g transform='translate(360, 40)'><rect width='240' height='140' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='120' y='25' fill='#fbbf24' font-size='13' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Satellite Relay</text><polygon points='120,45 100,65 140,65' fill='#fbbf24'/><line x1='50' y1='120' x2='110' y2='65' stroke='#4ade80' stroke-width='2'/><line x1='130' y1='65' x2='190' y2='120' stroke='#4ade80' stroke-width='2'/><text x='50' y='135' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Ground Stn A</text><text x='190' y='135' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Ground Stn B</text></g></svg>",
+          "caption": {
+            "en": "Terrestrial microwave line-of-sight towers compared with orbital satellite relays.",
+            "hi": "स्थलीय माइक्रोवेव टावर और कक्षीय उपग्रह रिले के बीच तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Synthesize the contrast between terrestrial microwave networks and satellite links.",
+          "target_sequence": [
+            {
+              "id": "en_u17_t1",
+              "role": "subject",
+              "text": "microwave systems rely on tower antennas",
+              "role_hint": "start with the subject describing microwave equipment"
+            },
+            {
+              "id": "en_u17_t2",
+              "role": "condition",
+              "text": "for terrestrial line-of-sight transmission,",
+              "role_hint": "specify the surface line-of-sight requirement"
+            },
+            {
+              "id": "en_u17_t3",
+              "role": "process",
+              "text": "whereas satellite communication routes signals",
+              "role_hint": "introduce orbital relay routing"
+            },
+            {
+              "id": "en_u17_t4",
+              "role": "result",
+              "text": "through space between distant ground stations",
+              "role_hint": "conclude with global ground station connectivity"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u17_d1",
+              "category": "logical",
+              "text": "using underground glass strands buried across continental sea beds",
+              "penalty_explanation": "Logical error: underground glass strands describe undersea fiber optic cables, not wireless microwave or satellite links."
+            },
+            {
+              "id": "en_u17_d2",
+              "category": "grammatical",
+              "text": "satellite towers signals between distant stations terrestrial",
+              "penalty_explanation": "Grammatical error: an unpunctuated string of terms lacks grammatical clause structure."
+            }
+          ],
+          "hint": "Contrast terrestrial tower line-of-sight antennas with satellites in space bridging ground stations."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "माइक्रोवेव और उपग्रह संचार की कार्यप्रणाली को दर्शाने वाला सही वाक्य क्रम व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u17_t1",
+              "role": "subject",
+              "text": "माइक्रोवेव लिंक टावरों पर लगे एंटीना से",
+              "role_hint": "माइक्रोवेव और टावर एंटीना से प्रारंभ करें"
+            },
+            {
+              "id": "hi_u17_t2",
+              "role": "condition",
+              "text": "स्थलीय सीधी रेखा में सिग्नल भेजते हैं,",
+              "role_hint": "सीधी रेखा में सिग्नल प्रसारण की स्थिति जोड़ें"
+            },
+            {
+              "id": "hi_u17_t3",
+              "role": "process",
+              "text": "जबकि उपग्रह संचार अंतरिक्ष में स्थित उपग्रहों द्वारा",
+              "role_hint": "उपग्रहों द्वारा अंतरिक्ष से संचार की प्रक्रिया बताएं"
+            },
+            {
+              "id": "hi_u17_t4",
+              "role": "result",
+              "text": "दूर स्थित ग्राउंड स्टेशनों के बीच डेटा स्थानांतरित करता है",
+              "role_hint": "ग्राउंड स्टेशनों के बीच डेटा स्थानांतरण से वाक्य समाप्त करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u17_d1",
+              "category": "logical",
+              "text": "जो पानी के भीतर बिछी धातु की केबलों से ही चल सकते हैं",
+              "penalty_explanation": "तार्किक त्रुटि: माइक्रोवेव और सैटेलाइट बेतार (वायरलेस) माध्यम हैं, पानी के अंदर धातु की केबल नहीं।"
+            },
+            {
+              "id": "hi_u17_d2",
+              "category": "grammatical",
+              "text": "एंटीना उपग्रह ग्राउंड स्टेशन नहीं भेजता हुआ",
+              "penalty_explanation": "व्याकरणिक त्रुटि: असंगत पदक्रम वाक्य के व्याकरणिक ढांचे को समाप्त करता है।"
+            }
+          ],
+          "hint": "टावर एंटीना (माइक्रोवेव) और अंतरिक्षीय उपग्रह (सैटेलाइट रिले) के संयोजन का क्रम चुनें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Microwave links use terrestrial line-of-sight tower antennas, while satellite relays link distant ground stations via space.",
+        "hi": "माइक्रोवेव लिंक टावरों द्वारा सीधी रेखा में सिग्नल भेजते हैं, जबकि उपग्रह संचार अंतरिक्ष के जरिए ग्राउंड स्टेशनों को जोड़ता है।"
+      }
+    },
+    {
+      "unit_id": "u18_short_range_wireless_wifi_bluetooth",
+      "topic": "Unguided Short-Range: Wi-Fi (WLAN) & Bluetooth (PAN)",
+      "pedagogical_objective": "Differentiate local wireless networking via Wi-Fi from device-to-device peripheral communication over Bluetooth.",
+      "instruction": {
+        "title": {
+          "en": "Short-Range Wireless: Wi-Fi and Bluetooth",
+          "hi": "कम दूरी के वायरलेस माध्यम: वाई-फाई और ब्लूटूथ"
+        },
+        "theory": {
+          "en": "Short-range unguided communications address localized computing needs: (1) `Wi-Fi` (Wireless Fidelity) establishes a `Wireless-LAN (WLAN)` within homes, offices, or campus zones, enabling smartphones, laptops, and smart appliances to share high-speed broadband sans physical cables; (2) `Bluetooth` constructs a smaller `Personal Area Network (PAN)`, interconnecting proximate peripheral devices (smartphones, headphones, printers) across a limited radius.",
+          "hi": "(1) `Wi-Fi` (वायरलेस फिडेलिटी) का उपयोग बिना केबल के लोकल नेटवर्क यानी `Wireless-LAN (WLAN)` बनाने के लिए किया जाता है, जिससे घरों और कार्यालयों में इंटरनेट साझा होता है। (2) `ब्लूटूथ` एक लघु-दूरी की वायरलेस तकनीक है जिसका उपयोग पर्सनल एरिया नेटवर्क (`PAN`) बनाने के लिए किया जाता है, जो पास रखे उपकरणों (जैसे मोबाइल, स्पीकर, लैपटॉप) के बीच डेटा साझा करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><g transform='translate(50, 40)'><rect width='240' height='140' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='120' y='30' fill='#38bdf8' font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Wi-Fi (Wireless-LAN)</text><path d='M90 75 A 35 35 0 0 1 150 75' stroke='#38bdf8' stroke-width='3' fill='none'/><path d='M100 85 A 25 25 0 0 1 140 85' stroke='#38bdf8' stroke-width='3' fill='none'/><circle cx='120' cy='95' r='4' fill='#38bdf8'/><text x='120' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Home / Office Broadband Access</text></g><g transform='translate(350, 40)'><rect width='240' height='140' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='120' y='30' fill='#4ade80' font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Bluetooth (PAN)</text><path d='M115 55 L 125 65 L 115 75 L 115 55 L 125 75' stroke='#4ade80' stroke-width='2' fill='none'/><text x='120' y='110' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Personal Area Network</text><text x='120' y='128' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Phone | Headset | Peripherals</text></g></svg>",
+          "caption": {
+            "en": "Wi-Fi forms a local area WLAN, while Bluetooth powers device-centric PANs.",
+            "hi": "वाई-फाई WLAN का निर्माण करता है, जबकि ब्लूटूथ PAN का संचालन करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sentence differentiating Wi-Fi WLAN capabilities from Bluetooth PAN connections.",
+          "target_sequence": [
+            {
+              "id": "en_u18_t1",
+              "role": "subject",
+              "text": "wi-fi forms a wireless lan",
+              "role_hint": "start with the subject naming Wi-Fi and its network scope"
+            },
+            {
+              "id": "en_u18_t2",
+              "role": "process",
+              "text": "to distribute internet across offices,",
+              "role_hint": "describe Wi-Fi's operational objective in buildings"
+            },
+            {
+              "id": "en_u18_t3",
+              "role": "modifier",
+              "text": "while bluetooth connects personal devices",
+              "role_hint": "introduce Bluetooth's peripheral-centric nature"
+            },
+            {
+              "id": "en_u18_t4",
+              "role": "result",
+              "text": "within an intimate personal area network",
+              "role_hint": "conclude with the PAN network classification"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u18_d1",
+              "category": "logical",
+              "text": "to bridge continents across deep sea transponder cables",
+              "penalty_explanation": "Logical error: Wi-Fi and Bluetooth are short-range localized radio standards, not transoceanic undersea systems."
+            },
+            {
+              "id": "en_u18_d2",
+              "category": "grammatical",
+              "text": "bluetooth wireless lan connects personal internet offices",
+              "penalty_explanation": "Grammatical error: an unpunctuated string of terms lacks grammatical clause structure."
+            }
+          ],
+          "hint": "Contrast Wi-Fi creating a WLAN for internet sharing with Bluetooth creating a short-range PAN."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "वाई-फाई और ब्लूटूथ के अंतर को दर्शाने वाला सही वाक्य क्रम व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u18_t1",
+              "role": "subject",
+              "text": "वाई-फाई कार्यालयों और घरों में",
+              "role_hint": "वाई-फाई और उसके उपयोग क्षेत्र से शुरुआत करें"
+            },
+            {
+              "id": "hi_u18_t2",
+              "role": "process",
+              "text": "इंटरनेट साझा करने हेतु WLAN बनाता है,",
+              "role_hint": "WLAN नेटवर्क निर्माण की क्रिया जोड़ें"
+            },
+            {
+              "id": "hi_u18_t3",
+              "role": "modifier",
+              "text": "जबकि ब्लूटूथ पास स्थित उपकरणों को",
+              "role_hint": "ब्लूटूथ और निकटवर्ती उपकरणों का संदर्भ दें"
+            },
+            {
+              "id": "hi_u18_t4",
+              "role": "result",
+              "text": "जोड़कर पर्सनल एरिया नेटवर्क (PAN) तैयार करता है",
+              "role_hint": "PAN निर्माण के अंतिम परिणाम से वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u18_d1",
+              "category": "logical",
+              "text": "जो उपग्रहों से जुड़कर पूरी पृथ्वी पर संचार करता है",
+              "penalty_explanation": "तार्किक त्रुटि: वाई-फाई और ब्लूटूथ सीमित दूरी की तकनीकें हैं, वैश्विक उपग्रह नेटवर्क नहीं।"
+            },
+            {
+              "id": "hi_u18_d2",
+              "category": "grammatical",
+              "text": "WLAN PAN जोड़ता इंटरनेट नहीं बनाता ब्लूटूथ",
+              "penalty_explanation": "व्याकरणिक त्रुटि: असंगत पदक्रम वाक्य के व्याकरणिक ढांचे को समाप्त करता है।"
+            }
+          ],
+          "hint": "वाई-फाई द्वारा WLAN और ब्लूटूथ द्वारा पास के उपकरणों के लिए PAN बनाने का क्रम चुनें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Wi-Fi builds Wireless-LANs for office/home broadband, whereas Bluetooth establishes short-range Personal Area Networks.",
+        "hi": "वाई-फाई घरों और कार्यालयों में वायरलेस लैन (WLAN) बनाता है, जबकि ब्लूटूथ उपकरणों के बीच पर्सनल एरिया नेटवर्क (PAN) बनाता है।"
+      }
+    },
+    {
+      "unit_id": "u19_localized_networks_pan_lan",
+      "topic": "Local Network Topologies: PAN vs. LAN",
+      "pedagogical_objective": "Compare room-level Personal Area Networks with high-speed, low-latency, low-error Local Area Networks in private buildings.",
+      "instruction": {
+        "title": {
+          "en": "Localized Network Scales: PAN and LAN",
+          "hi": "स्थानीय नेटवर्क का पैमाना: PAN और LAN"
+        },
+        "theory": {
+          "en": "Geographic networks start at small physical scales: (1) `PAN (Personal Area Network)` spans a very small, room-level radius centered around an individual's personal gadgets (e.g., Bluetooth pairing), exhibiting moderate speeds; (2) `LAN (Local Area Network)` connects computing nodes across a localized perimeter, such as a school building, office floor, or residence. Owned privately, LANs feature very high transmission speeds, minimal latency, and low error rates.",
+          "hi": "(1) `PAN (Personal Area Network)` एक कमरे जैसे बहुत छोटे दायरे में व्यक्तिगत उपकरणों को जोड़ता है और निजी प्रकृति का होता है। (2) `LAN (Local Area Network)` घर, कार्यालय या स्कूल भवन जैसे छोटे भौगोलिक क्षेत्र के उपकरणों को आपस में जोड़ता है। यह एक प्राइवेट नेटवर्क है जिसमें ट्रांसमिशन की गति बहुत अधिक और त्रुटियां बहुत कम होती हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><g transform='translate(50, 40)'><rect width='240' height='140' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='120' y='30' fill='#38bdf8' font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle'>PAN</text><text x='120' y='55' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Personal Area Network</text><rect x='80' y='75' width='80' height='45' rx='4' fill='#0f172a' stroke='#38bdf8' stroke-width='1'/><text x='120' y='102' fill='#38bdf8' font-size='10' font-family='sans-serif' text-anchor='middle'>Single Room</text><text x='120' y='135' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Private | Low Speed | Bluetooth</text></g><g transform='translate(350, 40)'><rect width='240' height='140' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='120' y='30' fill='#4ade80' font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle'>LAN</text><text x='120' y='55' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Local Area Network</text><rect x='80' y='75' width='80' height='45' rx='4' fill='#0f172a' stroke='#4ade80' stroke-width='1'/><text x='120' y='102' fill='#4ade80' font-size='10' font-family='sans-serif' text-anchor='middle'>School / Office</text><text x='120' y='135' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Private | High Speed | Low Errors</text></g></svg>",
+          "caption": {
+            "en": "Scope comparison between a personal room PAN and a campus/building LAN.",
+            "hi": "व्यक्तिगत कक्ष PAN और परिसर/भवन LAN के भौगोलिक दायरे की तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the comparative statement contrasting PAN with LAN networks.",
+          "target_sequence": [
+            {
+              "id": "en_u19_t1",
+              "role": "subject",
+              "text": "a pan links personal devices",
+              "role_hint": "start with the subject stating what PAN interconnects"
+            },
+            {
+              "id": "en_u19_t2",
+              "role": "condition",
+              "text": "within a single room,",
+              "role_hint": "specify the room-level boundary"
+            },
+            {
+              "id": "en_u19_t3",
+              "role": "process",
+              "text": "while a lan spans an entire building",
+              "role_hint": "contrast with the building-wide scale of LAN"
+            },
+            {
+              "id": "en_u19_t4",
+              "role": "result",
+              "text": "delivering very high speed with minimal errors",
+              "role_hint": "state the high performance and low error characteristics"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u19_d1",
+              "category": "logical",
+              "text": "spanning worldwide continents using public telecommunication satellites",
+              "penalty_explanation": "Logical error: spanning global continents using satellites defines a WAN, not a localized PAN or LAN."
+            },
+            {
+              "id": "en_u19_d2",
+              "category": "grammatical",
+              "text": "pan lan devices high building errors minimal",
+              "penalty_explanation": "Grammatical error: an unpunctuated string of terms lacks grammatical clause structure."
+            }
+          ],
+          "hint": "Contrast the room boundary of a PAN with the building scope, high speed, and low errors of a LAN."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "PAN और LAN नेटवर्क की तुलना करने वाला सही वाक्य क्रम व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u19_t1",
+              "role": "subject",
+              "text": "PAN एक कमरे जैसे सीमित क्षेत्र में",
+              "role_hint": "PAN के कमरे तक सीमित दायरे से शुरुआत करें"
+            },
+            {
+              "id": "hi_u19_t2",
+              "role": "process",
+              "text": "व्यक्तिगत उपकरणों को आपस में जोड़ता है,",
+              "role_hint": "उपकरणों को जोड़ने की क्रिया जोड़ें"
+            },
+            {
+              "id": "hi_u19_t3",
+              "role": "modifier",
+              "text": "जबकि LAN स्कूल या कार्यालय भवन में",
+              "role_hint": "LAN के भवन स्तर के क्षेत्र का उल्लेख करें"
+            },
+            {
+              "id": "hi_u19_t4",
+              "role": "result",
+              "text": "अति-उच्च गति और नगण्य त्रुटियों के साथ काम करता है",
+              "role_hint": "अति-उच्च गति और न्यूनतम त्रुटियों के परिणाम से वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u19_d1",
+              "category": "logical",
+              "text": "जो कई देशों और महाद्वीपों में फैला सार्वजनिक नेटवर्क है",
+              "penalty_explanation": "तार्किक त्रुटि: कई देशों और महाद्वीपों में फैलने वाला नेटवर्क WAN कहलाता है, PAN या LAN नहीं।"
+            },
+            {
+              "id": "hi_u19_d2",
+              "category": "grammatical",
+              "text": "कमरे भवन त्रुटियों उच्च गति नहीं जोड़ता",
+              "penalty_explanation": "व्याकरणिक त्रुटि: असंगत पदक्रम वाक्य के व्याकरणिक ढांचे को समाप्त करता है।"
+            }
+          ],
+          "hint": "PAN (कमरे तक सीमित) और LAN (भवन/कार्यालय, उच्च गति, कम त्रुटियां) के संयोजन का क्रम चुनें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "PAN operates across a room for personal peripherals, while LAN covers an entire building with high speed and low error rates.",
+        "hi": "PAN एक कमरे में निजी उपकरणों को जोड़ता है, जबकि LAN किसी भवन या स्कूल में उच्च गति व कम त्रुटियों के साथ काम करता है।"
+      }
+    },
+    {
+      "unit_id": "u20_broad_networks_man_wan",
+      "topic": "Wide Area Network Scales: MAN vs. WAN",
+      "pedagogical_objective": "Compare city-spanning Metropolitan Area Networks with continental/planetary Wide Area Networks spanning countries and global backbones.",
+      "instruction": {
+        "title": {
+          "en": "Metropolitan and Wide Area Network Scales",
+          "hi": "मेट्रोपॉलिटन और वाइड एरिया नेटवर्क का पैमाना"
+        },
+        "theory": {
+          "en": "Broader network architectures cover regional and global scales: (1) `MAN (Metropolitan Area Network)` interconnects devices and smaller local networks across a town or city, operating under private or public governance with moderate speeds; (2) `WAN (Wide Area Network)` spans countries, continents, or the entire planet, integrating public and private infrastructures (e.g., undersea fiber optic cables, satellite links, and the Internet). WAN exhibits the widest scale, higher error rates, and variable speeds.",
+          "hi": "(1) `MAN (Metropolitan Area Network)` कस्बों और शहरों जैसे बड़े भौगोलिक क्षेत्र में उपकरणों और छोटे नेटवर्कों को जोड़ता है। यह निजी या सार्वजनिक हो सकता है तथा इसकी गति मध्यम होती है। (2) `WAN (Wide Area Network)` देशों, महाद्वीपों और पूरी दुनिया में फैला होता है। इसमें सार्वजनिक और निजी नेटवर्क दोनों शामिल होते हैं (जैसे इंटरनेट)। यह सबसे बड़ा नेटवर्क पैमाना है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><g transform='translate(50, 40)'><rect width='240' height='140' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='120' y='30' fill='#fbbf24' font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle'>MAN</text><text x='120' y='55' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Metropolitan Area Network</text><rect x='60' y='75' width='120' height='40' rx='4' fill='#0f172a' stroke='#fbbf24' stroke-width='1'/><text x='120' y='98' fill='#fbbf24' font-size='11' font-family='sans-serif' text-anchor='middle'>Town / City Wide</text><text x='120' y='132' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Moderate Speed | Coaxial / Fiber</text></g><g transform='translate(350, 40)'><rect width='240' height='140' rx='8' fill='#1e293b' stroke='#f87171' stroke-width='2'/><text x='120' y='30' fill='#f87171' font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle'>WAN</text><text x='120' y='55' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Wide Area Network</text><rect x='60' y='75' width='120' height='40' rx='4' fill='#0f172a' stroke='#f87171' stroke-width='1'/><text x='120' y='98' fill='#f87171' font-size='11' font-family='sans-serif' text-anchor='middle'>Countries / Continents</text><text x='120' y='132' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Global Scale | Satellite / Undersea Fiber</text></g></svg>",
+          "caption": {
+            "en": "Scope comparison between a city-scale MAN and a global WAN.",
+            "hi": "शहर-स्तरीय MAN और वैश्विक WAN के भौगोलिक दायरे की तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence contrasting a metropolitan network with a global wide area network.",
+          "target_sequence": [
+            {
+              "id": "en_u20_t1",
+              "role": "subject",
+              "text": "a man interconnects systems",
+              "role_hint": "start with the subject naming the metropolitan system"
+            },
+            {
+              "id": "en_u20_t2",
+              "role": "condition",
+              "text": "across a single town or city,",
+              "role_hint": "state the municipal boundary constraint"
+            },
+            {
+              "id": "en_u20_t3",
+              "role": "process",
+              "text": "whereas a wan spans entire nations and continents",
+              "role_hint": "contrast with the continental scope of WAN"
+            },
+            {
+              "id": "en_u20_t4",
+              "role": "result",
+              "text": "integrating global satellites and fiber backbones",
+              "role_hint": "conclude with global infrastructure integration"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u20_d1",
+              "category": "logical",
+              "text": "strictly limited to bluetooth peripherals within three meters",
+              "penalty_explanation": "Logical error: a three-meter range describes a personal area network (PAN), not a metropolitan or wide area network."
+            },
+            {
+              "id": "en_u20_d2",
+              "category": "grammatical",
+              "text": "wan man city nations satellite backbones spans",
+              "penalty_explanation": "Grammatical error: an unpunctuated string of terms lacks grammatical clause structure."
+            }
+          ],
+          "hint": "Contrast MAN spanning a town or city with WAN connecting countries and continents across the globe."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "MAN और WAN नेटवर्क के अंतर को दर्शाने वाला सही वाक्य क्रम व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u20_t1",
+              "role": "subject",
+              "text": "MAN एक कस्बे या शहर में",
+              "role_hint": "MAN के शहर-स्तरीय दायरे से शुरुआत करें"
+            },
+            {
+              "id": "hi_u20_t2",
+              "role": "process",
+              "text": "कंप्यूटरों और छोटे नेटवर्कों को जोड़ता है,",
+              "role_hint": "छोटे नेटवर्कों को जोड़ने की क्रिया जोड़ें"
+            },
+            {
+              "id": "hi_u20_t3",
+              "role": "modifier",
+              "text": "जबकि WAN विभिन्न देशों और महाद्वीपों में",
+              "role_hint": "WAN के महाद्वीपीय स्तर के क्षेत्र का उल्लेख करें"
+            },
+            {
+              "id": "hi_u20_t4",
+              "role": "result",
+              "text": "उपग्रहों और फाइबर केबल द्वारा वैश्विक नेटवर्क बनाता है",
+              "role_hint": "वैश्विक नेटवर्क के अंतिम परिणाम से वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u20_d1",
+              "category": "logical",
+              "text": "जो केवल एक ही मेज पर रखे दो मोबाइलों तक सीमित रहता है",
+              "penalty_explanation": "तार्किक त्रुटि: एक मेज पर रखे उपकरणों को जोड़ना PAN कहलाता है, MAN या WAN नहीं।"
+            },
+            {
+              "id": "hi_u20_d2",
+              "category": "grammatical",
+              "text": "शहर महाद्वीप उपग्रह जोड़ता नहीं नेटवर्क हुआ",
+              "penalty_explanation": "व्याकरणिक त्रुटि: असंगत पदक्रम वाक्य के व्याकरणिक ढांचे को समाप्त करता है।"
+            }
+          ],
+          "hint": "MAN (कस्बा/शहर) और WAN (देश/महाद्वीप/पूरी दुनिया, उपग्रह और फाइबर) के संयोजन का क्रम चुनें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "MAN links networks across a town or city, while WAN spans countries and continents across global satellite and optical backbones.",
+        "hi": "MAN कस्बों और शहरों के दायरे में नेटवर्कों को जोड़ता है, जबकि WAN देशों और महाद्वीपों में फैला वैश्विक नेटवर्क है।"
+      }
+    }
+  ]
+}
