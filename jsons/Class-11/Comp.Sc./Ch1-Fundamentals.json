@@ -16,21 +16,21 @@
   "learning_units": [
     {
       "unit_id": "u01_computer_definition_ipoc",
-      "topic": "Computer Definition & IPO Cycle",
-      "pedagogical_objective": "Formulate the computer as an electronic data-processing machine receiving input, executing programmed logic, and generating informative output.",
+      "topic": "Computer Definition & The IPO Cycle",
+      "pedagogical_objective": "Formulate the formal definition of a computer as an electronic device executing the input-process-output (IPO) cycle.",
       "instruction": {
         "title": {
           "en": "Definition of Computer & The IPO Cycle",
           "hi": "कंप्यूटर की परिभाषा और इनपुट-प्रोसेस-आउटपुट चक्र"
         },
         "theory": {
-          "en": "A computer is an electronic device engineered to receive raw data and user instructions as input, process that data deterministically according to programmed rules, and yield meaningful, structured information as output.",
-          "hi": "कंप्यूटर एक इलेक्ट्रॉनिक उपकरण है जो इनपुट के रूप में कच्चा डेटा और निर्देश प्राप्त करता है, दिए गए नियमों के अनुसार उस डेटा को प्रोसेस करता है और आउटपुट के रूप में उपयोगी सूचना प्रदान करता है।"
+          "en": "A computer is an electronic device that receives data and instructions as input, processes the data according to the given instructions, and gives meaningful information as output.",
+          "hi": "कंप्यूटर एक इलेक्ट्रॉनिक उपकरण है जो इनपुट के रूप में डेटा और निर्देश लेता है, दिए गए निर्देशों के अनुसार डेटा को प्रोसेस करता है और आउटपुट के रूप में उपयोगी जानकारी देता है।"
         },
         "media": {
           "type": "svg",
           "aspect_ratio": "16/9",
-          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='40' y='70' width='150' height='80' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='115' y='105' fill='#38bdf8' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Input</text><text x='115' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Data + Instructions</text><line x1='190' y1='110' x2='245' y2='110' stroke='#38bdf8' stroke-width='3'/><polygon points='250,110 240,105 240,115' fill='#38bdf8'/><rect x='250' y='70' width='140' height='80' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='320' y='105' fill='#fbbf24' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Process</text><text x='320' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>CPU Logic</text><line x1='390' y1='110' x2='445' y2='110' stroke='#4ade80' stroke-width='3'/><polygon points='450,110 440,105 440,115' fill='#4ade80'/><rect x='450' y='70' width='150' height='80' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='525' y='105' fill='#4ade80' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Output</text><text x='525' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Information</text></svg>",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='40' y='70' width='150' height='80' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='115' y='105' fill='#38bdf8' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Input Unit</text><text x='115' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Data + Instructions</text><line x1='190' y1='110' x2='245' y2='110' stroke='#38bdf8' stroke-width='3'/><polygon points='250,110 240,105 240,115' fill='#38bdf8'/><rect x='250' y='70' width='140' height='80' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='320' y='105' fill='#fbbf24' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>CPU</text><text x='320' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Processing</text><line x1='390' y1='110' x2='445' y2='110' stroke='#4ade80' stroke-width='3'/><polygon points='450,110 440,105 440,115' fill='#4ade80'/><rect x='450' y='70' width='150' height='80' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='525' y='105' fill='#4ade80' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Output Unit</text><text x='525' y='125' fill='#94a3b8' font-size='11' font-family='sans-serif' text-anchor='middle'>Information</text></svg>",
           "caption": {
             "en": "The foundational Input-Process-Output (IPO) architecture of computing.",
             "hi": "कंप्यूटर की आधारभूत इनपुट-प्रोसेस-आउटपुट (IPO) संरचना।"
@@ -46,25 +46,37 @@
               "id": "en_u01_t1",
               "role": "subject",
               "text": "a computer is an electronic device",
-              "role_hint": "start with the primary subject clause defining the machine"
+              "role_hint": {
+                "en": "identify the machine by looking for its primary subject clause",
+                "hi": "उपकरण को परिभाषित करने वाले मुख्य कर्ता खंड से शुरुआत करें"
+              }
             },
             {
               "id": "en_u01_t2",
               "role": "condition",
               "text": "that receives raw data and instructions as input,",
-              "role_hint": "specify the input stage condition"
+              "role_hint": {
+                "en": "specify what data the machine accepts as the input condition",
+                "hi": "डेटा प्राप्ति की इनपुट शर्त जोड़ें"
+              }
             },
             {
               "id": "en_u01_t3",
               "role": "process",
               "text": "processes that data systematically according to the instructions,",
-              "role_hint": "describe the core processing phase"
+              "role_hint": {
+                "en": "describe the core data processing step",
+                "hi": "प्रोसेसिंग क्रिया का विवरण दें"
+              }
             },
             {
               "id": "en_u01_t4",
               "role": "result",
               "text": "and produces structured information as output",
-              "role_hint": "conclude with the final informative output result"
+              "role_hint": {
+                "en": "conclude with the final result produced for the user",
+                "hi": "अंतिम परिणाम और आउटपुट के साथ वाक्य समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -91,25 +103,37 @@
               "id": "hi_u01_t1",
               "role": "subject",
               "text": "कंप्यूटर एक ऐसा इलेक्ट्रॉनिक उपकरण है",
-              "role_hint": "उपकरण को परिभाषित करने वाले मुख्य कर्ता खंड से शुरुआत करें"
+              "role_hint": {
+                "en": "start with the primary subject clause in hindi defining the machine",
+                "hi": "उपकरण को परिभाषित करने वाले मुख्य कर्ता खंड से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u01_t2",
               "role": "condition",
               "text": "जो डेटा और निर्देशों को इनपुट के रूप में स्वीकार करता है,",
-              "role_hint": "डेटा प्राप्ति की इनपुट शर्त जोड़ें"
+              "role_hint": {
+                "en": "add the input acceptance condition clause",
+                "hi": "डेटा प्राप्ति की इनपुट शर्त जोड़ें"
+              }
             },
             {
               "id": "hi_u01_t3",
               "role": "process",
               "text": "दिए गए निर्देशों के अनुसार उस डेटा को संसाधित करता है",
-              "role_hint": "प्रोसेसिंग क्रिया का विवरण दें"
+              "role_hint": {
+                "en": "connect the processing action verb clause",
+                "hi": "प्रोसेसिंग क्रिया का विवरण दें"
+              }
             },
             {
               "id": "hi_u01_t4",
               "role": "result",
               "text": "और सार्थक परिणाम के रूप में सूचना प्रदान करता है",
-              "role_hint": "अंतिम परिणाम और आउटपुट के साथ वाक्य समाप्त करें"
+              "role_hint": {
+                "en": "complete the sentence with the final output delivery clause",
+                "hi": "अंतिम परिणाम और आउटपुट के साथ वाक्य समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -135,17 +159,17 @@
       }
     },
     {
-      "unit_id": "u02_input_output_unit_architecture",
-      "topic": "Input & Output Unit Translation Mechanics",
-      "pedagogical_objective": "Explain binary-human language bridging across input and output interface units.",
+      "unit_id": "u02_input_output_unit_transduction",
+      "topic": "Input & Output Units: Transduction & Translation",
+      "pedagogical_objective": "Analyze the role of input units (human → binary) and output units (binary → human).",
       "instruction": {
         "title": {
-          "en": "Transduction: Input & Output Translation Units",
-          "hi": "भाषा रूपांतरण: इनपुट और आउटपुट यूनिट"
+          "en": "Input and Output Units: Language Translation",
+          "hi": "इनपुट और आउटपुट यूनिट: भाषा रूपांतरण"
         },
         "theory": {
-          "en": "The Input Unit ingests data and instructions from input devices and translates them from human-readable language into internal machine binary code. Conversely, the Output Unit receives processed binary results from the CPU and decodes them back into human-understandable visual, textual, or auditory forms.",
-          "hi": "इनपुट यूनिट बाह्य उपकरणों से डेटा व निर्देश ग्रहण कर उन्हें मानव भाषा से मशीनी बाइनरी भाषा में बदलती है। इसके विपरीत, आउटपुट यूनिट सीपीयू से प्राप्त संसाधित बाइनरी डेटा को पुनः मानव-पठनीय रूप में अनुवादित कर स्क्रीन या कागज़ पर प्रस्तुत करती है।"
+          "en": "The Input Unit receives data and instructions from input devices and converts them from human language to machine-readable binary language. The Output Unit takes processed binary information from the computer and converts it back into human language for display or printout.",
+          "hi": "इनपुट यूनिट इनपुट डिवाइस से डेटा और निर्देश प्राप्त करती है और उन्हें मानव भाषा से बाइनरी भाषा में बदलती है। आउटपुट यूनिट कंप्यूटर से जानकारी प्राप्त करती है और बाइनरी भाषा को पुनः मानव भाषा में बदलकर उपयोगकर्ता को प्रस्तुत करती है।"
         },
         "media": {
           "type": "svg",
@@ -166,25 +190,37 @@
               "id": "en_u02_t1",
               "role": "subject",
               "text": "the input unit converts incoming data",
-              "role_hint": "start with the input unit's conversion clause"
+              "role_hint": {
+                "en": "start with the input unit's conversion clause",
+                "hi": "इनपुट यूनिट के रूपांतरण खंड से शुरुआत करें"
+              }
             },
             {
               "id": "en_u02_t2",
               "role": "process",
               "text": "from human language into binary machine code for the cpu,",
-              "role_hint": "specify translation from human to binary"
+              "role_hint": {
+                "en": "specify translation from human language into binary machine code",
+                "hi": "मानव भाषा से बाइनरी कोड में रूपांतरण जोड़ें"
+              }
             },
             {
               "id": "en_u02_t3",
               "role": "condition",
               "text": "while the output unit receives binary results",
-              "role_hint": "introduce the contrasting output unit role"
+              "role_hint": {
+                "en": "introduce the contrasting output unit role",
+                "hi": "आउटपुट यूनिट की विपरीत भूमिका का परिचय दें"
+              }
             },
             {
               "id": "en_u02_t4",
               "role": "result",
               "text": "and translates them back into human-understandable information",
-              "role_hint": "conclude with the decoding back into human language"
+              "role_hint": {
+                "en": "conclude with the decoding back into human language",
+                "hi": "मानव भाषा में पुनः डिकोडिंग के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -211,25 +247,37 @@
               "id": "hi_u02_t1",
               "role": "subject",
               "text": "इनपुट यूनिट बाहरी डेटा और निर्देशों को",
-              "role_hint": "इनपुट यूनिट और उसके विषय से शुरुआत करें"
+              "role_hint": {
+                "en": "start with the subject phrase indicating the input unit and incoming data",
+                "hi": "इनपुट यूनिट और उसके विषय से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u02_t2",
               "role": "process",
               "text": "मानव भाषा से बाइनरी भाषा में रूपांतरित करती है,",
-              "role_hint": "मानव से बाइनरी में अनुवाद का उल्लेख करें"
+              "role_hint": {
+                "en": "mention conversion from human language into binary code",
+                "hi": "मानव से बाइनरी में अनुवाद का उल्लेख करें"
+              }
             },
             {
               "id": "hi_u02_t3",
               "role": "condition",
               "text": "जबकि आउटपुट यूनिट सीपीयू के बाइनरी परिणामों को",
-              "role_hint": "आउटपुट यूनिट की स्थिति जोड़ें"
+              "role_hint": {
+                "en": "add the clause describing the output unit receiving binary data",
+                "hi": "आउटपुट यूनिट की स्थिति जोड़ें"
+              }
             },
             {
               "id": "hi_u02_t4",
               "role": "result",
               "text": "पुनः मानव-पठनीय सूचना में बदलकर प्रदर्शित करती है",
-              "role_hint": "मानव भाषा में पुनः प्रदर्शन के साथ समाप्त करें"
+              "role_hint": {
+                "en": "complete with converting back to human-readable form and displaying",
+                "hi": "मानव भाषा में पुनः प्रदर्शन के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -256,16 +304,16 @@
     },
     {
       "unit_id": "u03_cpu_alu_cu_architecture",
-      "topic": "CPU Architecture: ALU & Control Unit",
-      "pedagogical_objective": "Contrast arithmetic/logical computation (ALU) with system-wide coordination and timing (CU).",
+      "topic": "CPU Architecture: ALU & Control Unit (CU)",
+      "pedagogical_objective": "Contrast arithmetic/logical evaluation in the ALU with systemic instruction pacing and hardware coordination in the CU.",
       "instruction": {
         "title": {
-          "en": "The CPU Engine: ALU and Control Unit",
-          "hi": "सीपीयू संरचना: ALU और कंट्रोल यूनिट"
+          "en": "CPU Subsystems: ALU and Control Unit",
+          "hi": "सीपीयू के उपतंत्र: ALU और कंट्रोल यूनिट"
         },
         "theory": {
-          "en": "The Central Processing Unit (CPU) is the operational brain of the computer. Its internal architecture divides into two primary sub-units: the Arithmetic and Logic Unit (ALU), which performs all arithmetic calculations and logical decisions, and the Control Unit (CU), recognized as the heart of the system, which directs and coordinates all hardware operations.",
-          "hi": "सेंट्रल प्रोसेसिंग यूनिट (CPU) कंप्यूटर का मस्तिष्क है जो संपूर्ण डेटा प्रोसेसिंग करता है। इसके दो प्रमुख भाग होते हैं: अरिथमेटिक एंड लॉजिक यूनिट (ALU), जो सभी गणितीय और तार्किक गणनाएं करता है, तथा कंट्रोल यूनिट (CU), जिसे कंप्यूटर का दिल कहा जाता है और जो अन्य सभी इकाइयों को नियंत्रित करता है।"
+          "en": "The Central Processing Unit (CPU) is known as the brain of the computer and performs all data processing. It has two main sub-units: the Arithmetic & Logic Unit (ALU), which executes all mathematical calculations and logical evaluations, and the Control Unit (CU), known as the heart of the computer, which coordinates and supervises all other computer units.",
+          "hi": "CPU का पूरा नाम सेंट्रल प्रोसेसिंग यूनिट है। इसे कंप्यूटर का दिमाग कहा जाता है और सारा डेटा प्रोसेसिंग CPU करता है। इसके दो मुख्य भाग हैं: ALU (अरिथमेटिक एंड लॉजिक यूनिट), जो सभी गणितीय और तार्किक गणनाएं करता है, तथा CU (कंट्रोल यूनिट), जिसे कंप्यूटर का दिल कहा जाता है और जो अन्य सभी इकाइयों को नियंत्रित करता है।"
         },
         "media": {
           "type": "svg",
@@ -286,25 +334,37 @@
               "id": "en_u03_t1",
               "role": "subject",
               "text": "the central processing unit houses the alu",
-              "role_hint": "start with the CPU containing the ALU"
+              "role_hint": {
+                "en": "start with the subject stating that the CPU contains the ALU",
+                "hi": "सीपीयू में ALU के पाए जाने वाले खंड से प्रारंभ करें"
+              }
             },
             {
               "id": "en_u03_t2",
               "role": "process",
               "text": "to execute mathematical calculations and logical evaluations,",
-              "role_hint": "state the computational duty of the ALU"
+              "role_hint": {
+                "en": "state the computational function performed by the ALU",
+                "hi": "ALU द्वारा निष्पादित गणितीय और तार्किक कार्यों का विवरण दें"
+              }
             },
             {
               "id": "en_u03_t3",
               "role": "condition",
               "text": "operating in tandem with the control unit,",
-              "role_hint": "introduce the control unit partner"
+              "role_hint": {
+                "en": "introduce the partnering Control Unit",
+                "hi": "कंट्रोल यूनिट के साथ कार्य करने की स्थिति जोड़ें"
+              }
             },
             {
               "id": "en_u03_t4",
               "role": "result",
               "text": "which orchestrates and directs every subsystem across the computer",
-              "role_hint": "conclude with the supervisory control role"
+              "role_hint": {
+                "en": "conclude with the supervisory control function of the CU",
+                "hi": "सभी इकाइयों को नियंत्रित करने वाले परिणामी खंड पर समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -331,25 +391,37 @@
               "id": "hi_u03_t1",
               "role": "subject",
               "text": "सेंट्रल प्रोसेसिंग यूनिट में मौजूद ALU",
-              "role_hint": "सीपीयू और ALU के परिचय से शुरुआत करें"
+              "role_hint": {
+                "en": "start with the subject introducing ALU inside the CPU",
+                "hi": "सीपीयू और ALU के परिचय से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u03_t2",
               "role": "process",
               "text": "सभी गणितीय और तार्किक गणनाओं को निष्पादित करता है,",
-              "role_hint": "गणितीय और तार्किक कार्य जोड़ें"
+              "role_hint": {
+                "en": "describe mathematical and logical processing",
+                "hi": "गणितीय और तार्किक कार्य जोड़ें"
+              }
             },
             {
               "id": "hi_u03_t3",
               "role": "condition",
               "text": "जबकि कंट्रोल यूनिट कंप्यूटर का दिल बनकर",
-              "role_hint": "कंट्रोल यूनिट की स्थिति बताएं"
+              "role_hint": {
+                "en": "introduce the Control Unit as the heart of the system",
+                "hi": "कंट्रोल यूनिट की स्थिति बताएं"
+              }
             },
             {
               "id": "hi_u03_t4",
               "role": "result",
               "text": "सिस्टम की अन्य सभी इकाइयों के कार्यों को नियंत्रित करती है",
-              "role_hint": "नियंत्रक भूमिका के साथ वाक्य समाप्त करें"
+              "role_hint": {
+                "en": "conclude with the CU controlling all other units",
+                "hi": "नियंत्रक भूमिका के साथ वाक्य समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -375,16 +447,16 @@
       }
     },
     {
-      "unit_id": "u04_memory_unit_ram_rom",
-      "topic": "Primary Memory: RAM vs. ROM",
-      "pedagogical_objective": "Distinguish volatile program execution storage (RAM) from non-volatile startup boot firmware (ROM).",
+      "unit_id": "u04_primary_memory_ram_rom",
+      "topic": "Primary Memory: Volatile RAM vs. Permanent ROM",
+      "pedagogical_objective": "Differentiate volatile runtime storage (RAM) from non-volatile bootstrap startup firmware (ROM).",
       "instruction": {
         "title": {
           "en": "Primary Memory: Volatile RAM vs. Permanent ROM",
           "hi": "प्राइमरी मेमोरी: वोलेटाइल RAM बनाम स्थायी ROM"
         },
         "theory": {
-          "en": "Primary Memory is directly connected to the CPU bus for high-speed operation. ROM (Read Only Memory) is permanent, non-volatile storage holding critical startup firmware that is preserved indefinitely without power. In contrast, RAM (Random Access Memory) is volatile scratchpad memory that temporarily hosts currently executing programs and is entirely erased upon a power reset.",
+          "en": "Primary memory (main memory) is directly connected with the CPU and operates very fast compared to secondary memory. ROM (Read Only Memory) is permanent, non-volatile, and holds startup bootstrap instructions that are never lost. RAM (Random Access Memory) is volatile, temporarily holds currently running programs, and loses all its stored data after a power reset.",
           "hi": "प्राइमरी मेमोरी सीधे सीपीयू से जुड़ी होती है और बहुत तेज़ होती है। ROM एक स्थायी (non-volatile) मेमोरी है जो कंप्यूटर को शुरू करने वाले विशेष निर्देशों को सुरक्षित रखती है और इसका डेटा कभी नष्ट नहीं होता। RAM एक अस्थायी (volatile) मेमोरी है जो वर्तमान में चल रहे प्रोग्रामों को रखती है और बिजली बंद होते ही इसका डेटा मिट जाता है।"
         },
         "media": {
@@ -406,25 +478,37 @@
               "id": "en_u04_t1",
               "role": "subject",
               "text": "while non-volatile rom permanently preserves startup routines",
-              "role_hint": "start with the permanent ROM clause"
+              "role_hint": {
+                "en": "start with the clause defining permanent ROM storing startup routines",
+                "hi": "ROM और इसके स्थायी स्टार्टअप कोड के खंड से प्रारंभ करें"
+              }
             },
             {
               "id": "en_u04_t2",
               "role": "condition",
               "text": "without losing its content when power is disconnected,",
-              "role_hint": "specify retention across power cycles"
+              "role_hint": {
+                "en": "specify retention of content even during power disconnection",
+                "hi": "बिजली बंद होने पर भी डेटा सुरक्षित रहने की शर्त जोड़ें"
+              }
             },
             {
               "id": "en_u04_t3",
               "role": "process",
               "text": "random access memory temporarily stores currently running programs",
-              "role_hint": "introduce RAM's runtime role"
+              "role_hint": {
+                "en": "introduce RAM temporarily holding running applications",
+                "hi": "RAM द्वारा चालू प्रोग्रामों को अस्थायी रूप से सहेजने का विवरण दें"
+              }
             },
             {
               "id": "en_u04_t4",
               "role": "result",
               "text": "as volatile storage that loses all stored data after a power reset",
-              "role_hint": "conclude with RAM's volatility consequence"
+              "role_hint": {
+                "en": "conclude with RAM losing all its data upon a power reset",
+                "hi": "पावर रीसेट पर डेटा नष्ट होने के परिणाम के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -451,25 +535,37 @@
               "id": "hi_u04_t1",
               "role": "subject",
               "text": "जहाँ स्थायी ROM कंप्यूटर को बूट करने वाले",
-              "role_hint": "ROM और बूटिंग संदर्भ से वाक्य शुरू करें"
+              "role_hint": {
+                "en": "start with the subject clause covering ROM and boot instructions",
+                "hi": "ROM और बूटिंग संदर्भ से वाक्य शुरू करें"
+              }
             },
             {
               "id": "hi_u04_t2",
               "role": "condition",
               "text": "विशेष निर्देशों को बिना बिजली के भी सुरक्षित रखती है,",
-              "role_hint": "स्थायी सुरक्षित रखने की शर्त जोड़ें"
+              "role_hint": {
+                "en": "mention preservation of instructions without electricity",
+                "hi": "स्थायी सुरक्षित रखने की शर्त जोड़ें"
+              }
             },
             {
               "id": "hi_u04_t3",
               "role": "process",
               "text": "वहीं अस्थायी RAM वर्तमान में सक्रिय प्रोग्रामों को रखती है",
-              "role_hint": "RAM के सक्रिय डेटा भंडारण का उल्लेख करें"
+              "role_hint": {
+                "en": "describe RAM holding active runtime programs",
+                "hi": "RAM के सक्रिय डेटा भंडारण का उल्लेख करें"
+              }
             },
             {
               "id": "hi_u04_t4",
               "role": "result",
               "text": "और पावर रीसेट होते ही अपना समस्त डेटा खो देती है",
-              "role_hint": "बिजली जाने पर डेटा नष्ट होने के साथ समाप्त करें"
+              "role_hint": {
+                "en": "end with data loss upon power reset",
+                "hi": "बिजली जाने पर डेटा नष्ट होने के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -496,16 +592,16 @@
     },
     {
       "unit_id": "u05_secondary_storage_systems",
-      "topic": "Secondary Memory: Non-Volatile Storage",
-      "pedagogical_objective": "Analyze auxiliary persistence devices (HDD, SSD, CD, DVD) decoupled from direct CPU execution.",
+      "topic": "Secondary Memory: Non-Volatile Auxiliary Storage",
+      "pedagogical_objective": "Examine auxiliary persistence media (HDD, SSD, CD, DVD) decoupled from direct CPU execution.",
       "instruction": {
         "title": {
-          "en": "Secondary Memory (Auxiliary Storage)",
+          "en": "Secondary Memory: Permanent Auxiliary Storage",
           "hi": "सेकेंडरी मेमोरी: स्थायी ऑक्सीलरी स्टोरेज"
         },
         "theory": {
-          "en": "Secondary Memory, also known as Auxiliary Memory, is not directly connected to the CPU bus. It provides high-capacity, non-volatile persistence for operating systems, application software, and user data. Devices such as Hard Disk Drives (HDDs), Solid State Drives (SSDs), Compact Discs (CDs), and Digital Versatile Discs (DVDs) retain their recorded information permanently regardless of power state.",
-          "hi": "सेकेंडरी मेमोरी (ऑक्सीलरी मेमोरी) सीधे सीपीयू से जुड़ी नहीं होती है। यह एक नॉन-वॉलेटाईल मेमोरी है जिसका उपयोग डेटा, निर्देश और सूचना को स्थायी रूप से संचित करने के लिए किया जाता है। हार्ड डिस्क ड्राइव (HDD), सॉलिड स्टेट ड्राइव (SSD), CD और DVD इसके प्रमुख उदाहरण हैं।"
+          "en": "Secondary memory (auxiliary memory) is not directly connected with the CPU. It is a non-volatile memory used to store data, instructions, and information permanently in the computer. HDD, SSD, CD, and DVD are prime examples of secondary storage media.",
+          "hi": "सेकेंडरी मेमोरी (ऑक्सीलरी मेमोरी) सीधे सीपीयू से जुड़ी नहीं होती है। यह एक नॉन-वॉलेटाईल मेमोरी है जिसका उपयोग डेटा, निर्देश और सूचना को स्थायी रूप से संचित करने के लिए किया जाता है। HDD, SSD, CD और DVD सेकेंडरी मेमोरी के प्रमुख उदाहरण हैं।"
         },
         "media": {
           "type": "svg",
@@ -526,25 +622,37 @@
               "id": "en_u05_t1",
               "role": "subject",
               "text": "secondary memory is an auxiliary storage system",
-              "role_hint": "start with the auxiliary storage subject"
+              "role_hint": {
+                "en": "start with the subject clause defining secondary memory as auxiliary storage",
+                "hi": "सेकेंडरी मेमोरी को ऑक्सीलरी स्टोरेज बताने वाले खंड से प्रारंभ करें"
+              }
             },
             {
               "id": "en_u05_t2",
               "role": "condition",
               "text": "that is not directly connected with the cpu,",
-              "role_hint": "specify its physical decoupling from the CPU"
+              "role_hint": {
+                "en": "specify that it is not wired directly to the CPU bus",
+                "hi": "इसके सीपीयू से सीधे न जुड़े होने का उल्लेख करें"
+              }
             },
             {
               "id": "en_u05_t3",
               "role": "process",
               "text": "operating non-volatility on media like hdds and ssds",
-              "role_hint": "mention non-volatile operation and physical media"
+              "role_hint": {
+                "en": "mention non-volatile persistence on physical media like HDDs and SSDs",
+                "hi": "HDD और SSD जैसे माध्यमों में नॉन-वोलेटाइल होने का विवरण दें"
+              }
             },
             {
               "id": "en_u05_t4",
               "role": "result",
               "text": "to preserve user programs and files permanently",
-              "role_hint": "conclude with permanent file preservation"
+              "role_hint": {
+                "en": "finish with the objective of permanently preserving files",
+                "hi": "फाइलों को स्थायी रूप से सहेजने के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -571,25 +679,37 @@
               "id": "hi_u05_t1",
               "role": "subject",
               "text": "सेकेंडरी मेमोरी एक ऐसी ऑक्सीलरी मेमोरी है",
-              "role_hint": "ऑक्सीलरी मेमोरी के परिचय से वाक्य प्रारंभ करें"
+              "role_hint": {
+                "en": "start with secondary memory as auxiliary storage",
+                "hi": "ऑक्सीलरी मेमोरी के परिचय से वाक्य प्रारंभ करें"
+              }
             },
             {
               "id": "hi_u05_t2",
               "role": "condition",
               "text": "जो सीधे सीपीयू से जुड़ी नहीं होती,",
-              "role_hint": "सीपीयू से अप्रत्यक्ष जुड़ाव की शर्त जोड़ें"
+              "role_hint": {
+                "en": "add the condition stating it is not directly connected to the CPU",
+                "hi": "सीपीयू से अप्रत्यक्ष जुड़ाव की शर्त जोड़ें"
+              }
             },
             {
               "id": "hi_u05_t3",
               "role": "process",
               "text": "तथा HDD, SSD और DVD जैसे माध्यमों में",
-              "role_hint": "स्टोरेज उपकरणों के नाम बताएं"
+              "role_hint": {
+                "en": "mention storage hardware types like HDD, SSD, and DVD",
+                "hi": "स्टोरेज उपकरणों के नाम बताएं"
+              }
             },
             {
               "id": "hi_u05_t4",
               "role": "result",
               "text": "डेटा और निर्देशों को स्थायी रूप से संचित करती है",
-              "role_hint": "स्थायी संचयन के परिणाम के साथ समाप्त करें"
+              "role_hint": {
+                "en": "finish with permanent retention of data and instructions",
+                "hi": "स्थायी संचयन के परिणाम के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -615,17 +735,17 @@
       }
     },
     {
-      "unit_id": "u06_computer_applications_domains",
-      "topic": "Real-World Applications: Banking, Education, Business",
-      "pedagogical_objective": "Survey computing roles across digital communications, financial transactions, e-learning, and e-commerce.",
+      "unit_id": "u06_computing_applications_domains",
+      "topic": "Computing Domains: Communication, Banking, Education, Business",
+      "pedagogical_objective": "Survey digital applications across telecommunications, banking, e-learning, and e-commerce transactions.",
       "instruction": {
         "title": {
           "en": "Applications of Computers Across Major Domains",
-          "hi": "कंप्यूटर के विभिन्न क्षेत्रों में अनुप्रयोग"
+          "hi": "कंप्यूटर के विभिन्न अनुप्रयोग क्षेत्र"
         },
         "theory": {
-          "en": "Computers underpin critical sectors of modern society: Communication (exchanging emails, instant messaging, video conferences), Banking (maintaining client financial databases, electronic fund transfers, net-banking), Education (managing academic student records, interactive digital classrooms, e-learning), and Business (executing e-commerce transactions, automated inventory, sales accounting).",
-          "hi": "कंप्यूटर आधुनिक जीवन के कई क्षेत्रों का संचालन करते हैं: संचार (ईमेल, वीडियो कॉन्फ्रेंसिंग, सोशल नेटवर्किंग), बैंकिंग (ग्राहकों का वित्तीय डेटा, ऑनलाइन लेनदेन), शिक्षा (छात्रों का शैक्षणिक रिकॉर्ड, ऑनलाइन कक्षाएं), और व्यवसाय (ई-कॉमर्स, ऑनलाइन शॉपिंग, स्टॉक और बिक्री रिकॉर्ड)।"
+          "en": "Computers are used in communication (email, chatting, video conferencing, social networking), banking (storing financial data, executing transactions, online banking), education (academic records, online classes, study topics), and business (e-commerce, online shopping, stock and sales records).",
+          "hi": "कंप्यूटर का उपयोग संचार (ईमेल, चैटिंग, वीडियो कॉन्फ्रेंसिंग, सोशल नेटवर्किंग), बैंकिंग (वित्तीय डेटा संग्रहण, वित्तीय लेनदेन, ऑनलाइन बैंकिंग), शिक्षा (छात्रों का शैक्षणिक डेटा, ऑनलाइन कक्षाएं) और व्यवसाय (ई-कॉमर्स, ऑनलाइन शॉपिंग, स्टॉक और बिक्री रिकॉर्ड) में किया जाता है।"
         },
         "media": {
           "type": "svg",
@@ -646,25 +766,37 @@
               "id": "en_u06_t1",
               "role": "subject",
               "text": "computers drive core real-world applications",
-              "role_hint": "start with the primary subject indicating computing applications"
+              "role_hint": {
+                "en": "start with the subject stating computers driving core applications",
+                "hi": "कंप्यूटर के मुख्य अनुप्रयोगों से जुड़े कर्ता खंड से शुरुआत करें"
+              }
             },
             {
               "id": "en_u06_t2",
               "role": "process",
               "text": "by enabling telecommunications and securing banking transactions,",
-              "role_hint": "mention communication and banking services"
+              "role_hint": {
+                "en": "mention communication and banking services",
+                "hi": "संचार और बैंकिंग लेनदेन की प्रक्रिया जोड़ें"
+              }
             },
             {
               "id": "en_u06_t3",
               "role": "condition",
               "text": "while managing academic student records in education",
-              "role_hint": "state the educational administrative role"
+              "role_hint": {
+                "en": "state the educational administrative role",
+                "hi": "शिक्षा में शैक्षणिक रिकॉर्ड प्रबंधन का उल्लेख करें"
+              }
             },
             {
               "id": "en_u06_t4",
               "role": "result",
               "text": "and automating commercial e-commerce inventory in business",
-              "role_hint": "complete with the business and e-commerce outcome"
+              "role_hint": {
+                "en": "complete with the business and e-commerce outcome",
+                "hi": "व्यवसाय में ई-कॉमर्स और इन्वेंट्री परिणाम के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -691,25 +823,37 @@
               "id": "hi_u06_t1",
               "role": "subject",
               "text": "कंप्यूटर का उपयोग संचार में ईमेल और वीडियो मीटिंग्स,",
-              "role_hint": "संचार और ईमेल के संदर्भ से वाक्य शुरू करें"
+              "role_hint": {
+                "en": "start with computer usage in communication and video meetings",
+                "hi": "संचार और ईमेल के संदर्भ से वाक्य शुरू करें"
+              }
             },
             {
               "id": "hi_u06_t2",
               "role": "process",
               "text": "बैंकिंग में वित्तीय डेटा और ऑनलाइन लेनदेन को सुरक्षित करने,",
-              "role_hint": "बैंकिंग लेनदेन का विवरण दें"
+              "role_hint": {
+                "en": "mention banking data and online transaction security",
+                "hi": "बैंकिंग लेनदेन का विवरण दें"
+              }
             },
             {
               "id": "hi_u06_t3",
               "role": "condition",
               "text": "शिक्षा में शैक्षणिक रिकॉर्ड और ऑनलाइन कक्षाओं के संचालन,",
-              "role_hint": "शिक्षा क्षेत्र की स्थिति जोड़ें"
+              "role_hint": {
+                "en": "add education records and online classes condition",
+                "hi": "शिक्षा क्षेत्र की स्थिति जोड़ें"
+              }
             },
             {
               "id": "hi_u06_t4",
               "role": "result",
               "text": "तथा व्यवसाय में ई-कॉमर्स और बिक्री का रिकॉर्ड रखने में किया जाता है",
-              "role_hint": "व्यापार और ई-कॉमर्स परिणाम के साथ समाप्त करें"
+              "role_hint": {
+                "en": "finish with e-commerce and sales management in business",
+                "hi": "व्यापार और ई-कॉमर्स परिणाम के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -726,7 +870,7 @@
               "penalty_explanation": "व्याकरणिक त्रुटि: असंगत पद जो वाक्य के अर्थ को निरर्थक बनाता है।"
             }
           ],
-          "hint": "संचार, बैंकिंग लेनदेन, शिक्षा और व्यवसाय के ई-कॉमर्स कार्यों को क्रमबद्ध रूप से जोड़ें।"
+          "hint": "संचार, बैंकिंग लेनदेन, शिक्षा और व्यवसाय के ई-कॉमर्स कार्यों को क्रमबद्ध रूप से जोड़ें."
         }
       },
       "key_takeaway": {
@@ -737,15 +881,15 @@
     {
       "unit_id": "u07_pointing_devices_mouse_joystick",
       "topic": "Direct Manipulation: Mouse & Joystick",
-      "pedagogical_objective": "Analyze screen coordinate navigation, cursor tracking, and multi-directional gaming control mechanisms.",
+      "pedagogical_objective": "Contrast 2D graphical cursor manipulation (mouse) with 360° omnidirectional simulation/gameplay control (joystick).",
       "instruction": {
         "title": {
           "en": "Pointing Devices: Mouse and Joystick",
           "hi": "पॉइंटिंग डिवाइस: माउस और जॉयस्टिक"
         },
         "theory": {
-          "en": "Pointing devices provide direct spatial input to graphical user interfaces. The Mouse is the most ubiquitous pointing peripheral, controlling screen cursor-arrow movement and object selection. The Joystick features a vertical stick mounted on a base that pivots omnidirectionally (up, down, left, right), primarily used for fluid vehicle and character control in video games and simulations.",
-          "hi": "पॉइंटिंग डिवाइस स्क्रीन पर कर्सर को नियंत्रित करते हैं। माउस सबसे आम पॉइंटिंग डिवाइस है जो स्क्रीन पर पॉइंटर-एरो और कर्सर को नियंत्रित करता है। जॉयस्टिक भी एक पॉइंटिंग डिवाइस है जिसमें एक आधार पर छड़ी (stick) लगी होती है; यह छड़ी ऊपर-नीचे-दाएं-बाएं सभी दिशाओं में घूम सकती है और मुख्य रूप से वीडियो गेम खेलने के काम आती है।"
+          "en": "The Mouse is the most common pointing device used to control the pointer-arrow and cursor on the screen. The Joystick is also a pointing device used for playing video games; it has a stick attached to a base that can move in all directions (up, down, right, left).",
+          "hi": "माउस सबसे आम पॉइंटिंग डिवाइस है जिसका उपयोग स्क्रीन पर पॉइंटर-एरो और कर्सर को नियंत्रित करने के लिए किया जाता है। जॉय-स्टिक भी एक पॉइंटिंग डिवाइस है जिसका उपयोग वीडियो गेम खेलने के लिए किया जाता है; इसके आधार पर एक छड़ी लगी होती है जो ऊपर-नीचे-दाएं-बाएं सभी दिशाओं में घूम सकती है।"
         },
         "media": {
           "type": "svg",
@@ -766,25 +910,37 @@
               "id": "en_u07_t1",
               "role": "subject",
               "text": "while the mouse functions as the primary pointing device",
-              "role_hint": "start with the mouse as the primary pointing device"
+              "role_hint": {
+                "en": "start with the mouse as the primary pointing device",
+                "hi": "माउस को प्राथमिक पॉइंटिंग डिवाइस बताने वाले खंड से शुरुआत करें"
+              }
             },
             {
               "id": "en_u07_t2",
               "role": "process",
               "text": "to guide screen cursors and select graphical interface elements,",
-              "role_hint": "detail the cursor manipulation function"
+              "role_hint": {
+                "en": "detail cursor guidance and GUI element selection",
+                "hi": "कर्सर नियंत्रण और चयन प्रक्रिया जोड़ें"
+              }
             },
             {
               "id": "en_u07_t3",
               "role": "condition",
               "text": "the joystick utilizes an omnidirectional pivoting stick",
-              "role_hint": "introduce the joystick's pivoting physical stick"
+              "role_hint": {
+                "en": "introduce the joystick's omnidirectional pivoting stick",
+                "hi": "जॉयस्टिक की सभी दिशाओं में घूमने वाली छड़ी का उल्लेख करें"
+              }
             },
             {
               "id": "en_u07_t4",
               "role": "result",
               "text": "to provide multi-axis motion control in video gaming and simulations",
-              "role_hint": "conclude with gaming and simulation motion control"
+              "role_hint": {
+                "en": "end with multi-axis motion control in gaming and simulations",
+                "hi": "गेमिंग में गति नियंत्रण के साथ वाक्य समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -811,25 +967,37 @@
               "id": "hi_u07_t1",
               "role": "subject",
               "text": "जहाँ माउस सबसे आम पॉइंटिंग डिवाइस है",
-              "role_hint": "माउस की पॉइंटिंग प्रकृति से शुरुआत करें"
+              "role_hint": {
+                "en": "start with the mouse being the most common pointing peripheral",
+                "hi": "माउस की पॉइंटिंग प्रकृति से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u07_t2",
               "role": "process",
               "text": "जो स्क्रीन पर कर्सर और पॉइंटर-एरो को नियंत्रित करता है,",
-              "role_hint": "कर्सर नियंत्रण क्रिया जोड़ें"
+              "role_hint": {
+                "en": "describe pointer-arrow and cursor control",
+                "hi": "कर्सर नियंत्रण क्रिया जोड़ें"
+              }
             },
             {
               "id": "hi_u07_t3",
               "role": "condition",
               "text": "वहीं जॉयस्टिक के आधार पर लगी घूमने वाली छड़ी",
-              "role_hint": "जॉयस्टिक की आधार छड़ी का उल्लेख करें"
+              "role_hint": {
+                "en": "mention the pivoting stick on the joystick base",
+                "hi": "जॉयस्टिक की आधार छड़ी का उल्लेख करें"
+              }
             },
             {
               "id": "hi_u07_t4",
               "role": "result",
               "text": "सभी दिशाओं में घूमकर वीडियो गेम खेलने में गति नियंत्रण प्रदान करती है",
-              "role_hint": "गेमिंग नियंत्रण के परिणाम के साथ समाप्त करें"
+              "role_hint": {
+                "en": "conclude with motion control for video gaming in all directions",
+                "hi": "गेमिंग नियंत्रण के परिणाम के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -855,17 +1023,17 @@
       }
     },
     {
-      "unit_id": "u08_optical_scanners_types",
-      "topic": "Document Digitization: Scanner Types",
-      "pedagogical_objective": "Categorize physical-to-digital image capture using flatbed, drum, and handheld scanner hardware.",
+      "unit_id": "u08_optical_scanners_taxonomy",
+      "topic": "Document Digitization: Flat-bed, Drum, and Hand-held Scanners",
+      "pedagogical_objective": "Categorize physical-to-digital image capture mechanisms across flat-bed, drum, and hand-held scanners.",
       "instruction": {
         "title": {
-          "en": "Optical Scanners: Digitization and Physical Classifications",
-          "hi": "स्कैनर: दस्तावेज़ डिजिटलीकरण और प्रकार"
+          "en": "Optical Scanners: Types and Functions",
+          "hi": "ऑप्टिकल स्कैनर: प्रकार और कार्य"
         },
         "theory": {
-          "en": "A Scanner is an optical input peripheral engineered to convert physical paper documents and photographs into digital bitmap or vector copies stored in memory. Scanners are categorized into three physical mechanisms: Flat-bed Scanners (glass platen with moving optical sensor), Drum Scanners (rotating cylinder for highest dynamic range), and Hand-held or Line Scanners (manually swiped across text).",
-          "hi": "स्कैनर एक इनपुट डिवाइस है जिसका उपयोग कागज़ के दस्तावेज़ों की डिजिटल प्रति बनाने के लिए किया जाता है। यह दस्तावेज़ को स्कैन करके उसकी डिजिटल प्रति कंप्यूटर में संग्रहीत करता है। स्कैनर मुख्य रूप से तीन प्रकार के होते हैं: फ्लैट-बेड स्कैनर, ड्रम स्कैनर, और लाइन-स्कैनर (या हैंड-हेल्ड स्कैनर)।"
+          "en": "A scanner is used to make digital copies of paper documents by scanning the document and storing the digital copy in the computer. Scanners exist in three main physical configurations: Flat-bed Scanners, Drum Scanners, and Line-Scanners (Hand-held Scanners).",
+          "hi": "स्कैनर का उपयोग कागज़ के दस्तावेज़ों की डिजिटल प्रति बनाने के लिए किया जाता है। यह कागज़ के दस्तावेज़ को स्कैन करके उसकी डिजिटल प्रति कंप्यूटर में संग्रहीत करता है। स्कैनर तीन प्रकार के होते हैं: फ्लैट-बेड स्कैनर, ड्रम स्कैनर, और लाइन-स्कैनर (हैंड-हेल्ड स्कैनर)।"
         },
         "media": {
           "type": "svg",
@@ -886,25 +1054,37 @@
               "id": "en_u08_t1",
               "role": "subject",
               "text": "an optical scanner captures paper documents",
-              "role_hint": "start with the optical scanner capturing paper documents"
+              "role_hint": {
+                "en": "start with the optical scanner capturing paper documents",
+                "hi": "स्कैनर द्वारा कागज़ी दस्तावेज़ कैप्चर करने से शुरुआत करें"
+              }
             },
             {
               "id": "en_u08_t2",
               "role": "process",
               "text": "and stores their digital electronic copies in computer memory,",
-              "role_hint": "detail the digital copy storage in memory"
+              "role_hint": {
+                "en": "detail the digital copy storage in memory",
+                "hi": "मेमोरी में डिजिटल कॉपी के स्टोरेज को बताएं"
+              }
             },
             {
               "id": "en_u08_t3",
               "role": "condition",
               "text": "engineered mechanically across three standard variants",
-              "role_hint": "introduce the tripartite engineering variants"
+              "role_hint": {
+                "en": "introduce the three standard mechanical variants",
+                "hi": "तीन मानक प्रकारों की स्थिति जोड़ें"
+              }
             },
             {
               "id": "en_u08_t4",
               "role": "result",
               "text": "comprising flat-bed, rotating drum, and manual hand-held line scanners",
-              "role_hint": "conclude with the three mechanical scanner types"
+              "role_hint": {
+                "en": "conclude with flat-bed, drum, and hand-held line scanner types",
+                "hi": "फ्लैट-बेड, ड्रम और हैंड-हेल्ड स्कैनर के नामों पर समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -931,25 +1111,37 @@
               "id": "hi_u08_t1",
               "role": "subject",
               "text": "स्कैनर कागज़ के भौतिक दस्तावेज़ों को स्कैन करके",
-              "role_hint": "कागज़ी दस्तावेज़ स्कैन करने से वाक्य शुरू करें"
+              "role_hint": {
+                "en": "start with scanning paper documents using a scanner",
+                "hi": "कागज़ी दस्तावेज़ स्कैन करने से वाक्य शुरू करें"
+              }
             },
             {
               "id": "hi_u08_t2",
               "role": "process",
               "text": "उनकी डिजिटल प्रति कंप्यूटर में संग्रहीत करता है,",
-              "role_hint": "डिजिटल प्रति के संग्रहण का उल्लेख करें"
+              "role_hint": {
+                "en": "state storage of digital copies in the computer",
+                "hi": "डिजिटल प्रति के संग्रहण का उल्लेख करें"
+              }
             },
             {
               "id": "hi_u08_t3",
               "role": "condition",
               "text": "तथा यह उपकरण मुख्य रूप से तीन प्रकारों",
-              "role_hint": "तीन प्रकारों की स्थिति बताएं"
+              "role_hint": {
+                "en": "introduce the three main configurations",
+                "hi": "तीन प्रकारों की स्थिति बताएं"
+              }
             },
             {
               "id": "hi_u08_t4",
               "role": "result",
               "text": "फ्लैट-बेड स्कैनर, ड्रम स्कैनर और हैंड-हेल्ड लाइन स्कैनर में उपलब्ध होता है",
-              "role_hint": "तीनों प्रकारों के नामों के साथ समाप्त करें"
+              "role_hint": {
+                "en": "list flat-bed, drum, and hand-held scanner variants",
+                "hi": "तीनों प्रकारों के नामों के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -975,17 +1167,17 @@
       }
     },
     {
-      "unit_id": "u09_touchscreen_and_stylus",
-      "topic": "Interactive Interfaces: Touch-Screen & Stylus",
-      "pedagogical_objective": "Differentiate dual-role I/O touch screens from CRT light-pens and LCD electromagnetic styluses.",
+      "unit_id": "u09_touchscreen_and_stylus_interfaces",
+      "topic": "Interactive Interfaces: Touch-Screen, Light Pen, and Stylus",
+      "pedagogical_objective": "Differentiate dual-role I/O touch screens from CRT light-pens and LCD capacitive/electromagnetic styluses.",
       "instruction": {
         "title": {
-          "en": "Interactive Displays: Touch-Screens, Light-Pens, and Styluses",
-          "hi": "इंटरैक्टिव इंटरफेस: टच-स्क्रीन, लाइट-पेन और स्टाइलस"
+          "en": "Interactive Display Devices: Touch-Screens and Styluses",
+          "hi": "इंटरैक्टिव डिस्प्ले उपकरण: टच-स्क्रीन और स्टाइलस"
         },
         "theory": {
-          "en": "A Touch-Screen uniquely represents both an input device and an output device simultaneously; users supply data by pressing targeted screen coordinates while viewing visual feedback on the same glass. In pen-based computing, a Light-pen uses light sensors to write directly onto CRT monitors, whereas an electromagnetic or capacitive Stylus is engineered for modern flat-panel LCD displays.",
-          "hi": "टच-स्क्रीन एक साथ इनपुट और आउटपुट दोनों का कार्य करती है; उपयोगकर्ता स्क्रीन पर स्पर्श करके इनपुट देता है और उसी समय उस पर जानकारी भी देख सकता है। पेन-आधारित उपकरणों में, लाइट-पेन का उपयोग CRT मॉनिटर पर सीधे लिखने हेतु होता है, जबकि स्टाइलस का उपयोग आधुनिक LCD मॉनिटर पर किया जाता है।"
+          "en": "A Touch-Screen is both an input and output device: users touch different areas on the screen to provide input and simultaneously view output information. A Light Pen (used on CRT monitors) and a Stylus (used on LCD monitors) are pen-shaped input devices used to draw or write directly on the computer screen.",
+          "hi": "टच-स्क्रीन इनपुट के साथ-साथ आउटपुट डिवाइस भी है, जिसमें स्क्रीन छूकर इनपुट दिया जाता है और उसी पर आउटपुट देखा जाता है। लाइट-पेन (CRT मॉनिटर पर प्रयुक्त) और स्टाइलस (LCD मॉनिटर पर प्रयुक्त) पेन के आकार के इनपुट डिवाइस हैं जिनका उपयोग स्क्रीन पर सीधे चित्र बनाने या लिखने के लिए किया जाता है।"
         },
         "media": {
           "type": "svg",
@@ -1006,25 +1198,37 @@
               "id": "en_u09_t1",
               "role": "subject",
               "text": "a touch-screen functions simultaneously as both input and output",
-              "role_hint": "start with the dual I/O nature of the touchscreen"
+              "role_hint": {
+                "en": "start with the dual I/O nature of the touchscreen",
+                "hi": "टच-स्क्रीन की दोहरी इनपुट-आउटपुट प्रकृति से प्रारंभ करें"
+              }
             },
             {
               "id": "en_u09_t2",
               "role": "process",
               "text": "by capturing finger contact while presenting visual information on the same display,",
-              "role_hint": "explain simultaneous input capture and visual display"
+              "role_hint": {
+                "en": "explain simultaneous touch sensing and visual display",
+                "hi": "एक ही स्क्रीन पर स्पर्श संवेदन और दृश्य प्रदर्शन समझाएं"
+              }
             },
             {
               "id": "en_u09_t3",
               "role": "condition",
               "text": "supplemented by direct screen writing tools",
-              "role_hint": "introduce pen-based drawing tools"
+              "role_hint": {
+                "en": "introduce direct screen writing pen tools",
+                "hi": "स्क्रीन पर सीधे लिखने वाले उपकरणों का संदर्भ जोड़ें"
+              }
             },
             {
               "id": "en_u09_t4",
               "role": "result",
               "text": "where light-pens operate on crt monitors and styluses on lcd panels",
-              "role_hint": "conclude with CRT light-pen vs LCD stylus distinction"
+              "role_hint": {
+                "en": "conclude with light-pens on CRT and styluses on LCD",
+                "hi": "CRT पर लाइट-पेन और LCD पर स्टाइलस के उपयोग पर समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1051,25 +1255,37 @@
               "id": "hi_u09_t1",
               "role": "subject",
               "text": "टच-स्क्रीन एक इनपुट के साथ-साथ आउटपुट डिवाइस भी है",
-              "role_hint": "टच-स्क्रीन की दोहरी प्रकृति से शुरुआत करें"
+              "role_hint": {
+                "en": "start with touchscreen being both an input and output device",
+                "hi": "टच-स्क्रीन की दोहरी प्रकृति से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u09_t2",
               "role": "process",
               "text": "जिस पर स्पर्श करके इनपुट दिया जाता है और जानकारी भी देखी जाती है,",
-              "role_hint": "स्पर्श इनपुट और प्रदर्शन का उल्लेख करें"
+              "role_hint": {
+                "en": "explain touching for input and viewing output on the display",
+                "hi": "स्पर्श इनपुट और प्रदर्शन का उल्लेख करें"
+              }
             },
             {
               "id": "hi_u09_t3",
               "role": "condition",
               "text": "जबकि स्क्रीन पर सीधे लिखने वाले पेन उपकरणों में",
-              "role_hint": "पेन उपकरणों का संदर्भ जोड़ें"
+              "role_hint": {
+                "en": "introduce direct screen writing pen devices",
+                "hi": "पेन उपकरणों का संदर्भ जोड़ें"
+              }
             },
             {
               "id": "hi_u09_t4",
               "role": "result",
               "text": "लाइट-पेन का उपयोग CRT मॉनीटर पर तथा स्टाइलस का LCD मॉनीटर पर होता है",
-              "role_hint": "CRT बनाम LCD के विशिष्ट उपयोग के साथ समाप्त करें"
+              "role_hint": {
+                "en": "conclude with light-pen on CRT and stylus on LCD",
+                "hi": "CRT बनाम LCD के विशिष्ट उपयोग के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1095,17 +1311,17 @@
       }
     },
     {
-      "unit_id": "u10_optical_recognition_bcr_ocr_omr",
-      "topic": "Optical Recognition Technologies: BCR, OCR, and OMR",
-      "pedagogical_objective": "Contrast bar-code parsing, optical character recognition for editable text, and optical mark examination grading.",
+      "unit_id": "u10_automated_readers_bcr_ocr_omr",
+      "topic": "Optical Recognition: BCR, OCR, and OMR Systems",
+      "pedagogical_objective": "Contrast inventory barcode readers (BCR), editable text recognizers (OCR), and examination bubble evaluators (OMR).",
       "instruction": {
         "title": {
-          "en": "Automated Readers: BCR, OCR, and OMR",
-          "hi": "ऑप्टिकल पहचान तकनीकें: BCR, OCR और OMR"
+          "en": "Optical Recognition Devices: BCR, OCR, and OMR",
+          "hi": "ऑप्टिकल पहचान उपकरण: BCR, OCR और OMR"
         },
         "theory": {
-          "en": "Automated optical readers streamline specialized data ingestion: Bar Code Readers (BCR) decode parallel line patterns to identify retail items; Optical Character Recognizers (OCR) scan printed or handwritten text and convert it into editable digital text; and Optical Mark Readers (OMR) detect shaded bubbles or marks on examination answer sheets for rapid automated evaluation.",
-          "hi": "स्वचालित ऑप्टिकल तकनीकें डेटा प्रविष्टि को सुगम बनाती हैं: BCR (बार कोड रीडर) स्टोर में वस्तुओं की पहचान हेतु लाइनों के सेट (बार-कोड) को स्कैन करता है; OCR (ऑप्टिकल कैरेक्टर रिकॉग्नाइजर) स्कैन किए गए दस्तावेज़ से अक्षरों को पहचानकर संपादन योग्य डिजिटल कॉपी बनाता है; तथा OMR (ऑप्टिकल मार्क रीडर) परीक्षाओं में उत्तर पुस्तिकाओं के मूल्यांकन हेतु प्रयुक्त होता है।"
+          "en": "BCR (Bar Code Reader) scans barcodes consisting of sets of lines used to identify items in stores. OCR (Optical Character Recogniser) recognises text from scanned paper documents and converts it into editable digital copies. OMR (Optical Mark Reader) detects marks to evaluate answer sheets in competitive examinations.",
+          "hi": "BCR (बार कोड रीडर) स्टोर में वस्तुओं की पहचान के लिए लाइनों के सेट (बार-कोड) को स्कैन करता है। OCR (ऑप्टिकल कैरेक्टर रिकॉग्नाइजर) स्कैन किए गए दस्तावेज़ से अक्षरों को पहचानकर संपादन योग्य डिजिटल कॉपी बनाता है। OMR (ऑप्टिकल मार्क रीडर) परीक्षाओं में उत्तर पुस्तिकाओं के मूल्यांकन हेतु प्रयुक्त होता है।"
         },
         "media": {
           "type": "svg",
@@ -1126,25 +1342,37 @@
               "id": "en_u10_t1",
               "role": "subject",
               "text": "while bar code readers scan printed item lines in stores,",
-              "role_hint": "start with BCR and retail barcode scanning"
+              "role_hint": {
+                "en": "start with BCR scanning printed item lines in stores",
+                "hi": "BCR और स्टोर बारकोड से प्रारंभ करें"
+              }
             },
             {
               "id": "en_u10_t2",
               "role": "process",
               "text": "optical character recognizers transform scanned document images into editable text,",
-              "role_hint": "detail OCR converting scanned text to editable text"
+              "role_hint": {
+                "en": "detail OCR converting scanned text to editable text",
+                "hi": "OCR द्वारा संपादन योग्य टेक्स्ट बनाने की क्रिया जोड़ें"
+              }
             },
             {
               "id": "en_u10_t3",
               "role": "condition",
               "text": "and optical mark readers detect pencil and pen marks",
-              "role_hint": "introduce OMR mark detection"
+              "role_hint": {
+                "en": "introduce OMR detecting marks",
+                "hi": "OMR द्वारा निशानों की पहचान की स्थिति बताएं"
+              }
             },
             {
               "id": "en_u10_t4",
               "role": "result",
               "text": "to evaluate objective student answers across examination sheets",
-              "role_hint": "conclude with examination evaluation"
+              "role_hint": {
+                "en": "conclude with evaluating answers on examination sheets",
+                "hi": "परीक्षा उत्तरों के मूल्यांकन के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1171,25 +1399,37 @@
               "id": "hi_u10_t1",
               "role": "subject",
               "text": "जहाँ BCR स्टोर में वस्तुओं की पहचान हेतु बार-कोड स्कैन करता है,",
-              "role_hint": "BCR और बार-कोड स्कैनिंग से शुरुआत करें"
+              "role_hint": {
+                "en": "start with BCR scanning barcodes in stores",
+                "hi": "BCR और बार-कोड स्कैनिंग से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u10_t2",
               "role": "process",
               "text": "वहीं OCR दस्तावेज़ के अक्षरों को पहचानकर संपादन योग्य टेक्स्ट बनाता है,",
-              "role_hint": "OCR द्वारा संपादन योग्य टेक्स्ट निर्माण जोड़ें"
+              "role_hint": {
+                "en": "mention OCR making scanned characters editable text",
+                "hi": "OCR द्वारा संपादन योग्य टेक्स्ट निर्माण जोड़ें"
+              }
             },
             {
               "id": "hi_u10_t3",
               "role": "condition",
               "text": "और OMR तकनीक परीक्षा शीट्स पर भरे गए निशानों को पढ़कर",
-              "role_hint": "OMR शीट और निशानों की स्थिति बताएं"
+              "role_hint": {
+                "en": "state OMR reading marks on exam sheets",
+                "hi": "OMR शीट और निशानों की स्थिति बताएं"
+              }
             },
             {
               "id": "hi_u10_t4",
               "role": "result",
               "text": "विभिन्न प्रतियोगी परीक्षाओं में उत्तरों का निष्पक्ष मूल्यांकन करती है",
-              "role_hint": "परीक्षा मूल्यांकन के परिणाम के साथ वाक्य समाप्त करें"
+              "role_hint": {
+                "en": "conclude with evaluating exam responses",
+                "hi": "परीक्षा मूल्यांकन के परिणाम के साथ वाक्य समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1216,16 +1456,16 @@
     },
     {
       "unit_id": "u11_magnetic_audio_input_micr_mic",
-      "topic": "Specialized Input: MICR & Audio Microphones",
-      "pedagogical_objective": "Examine magnetic ink banking automation and acoustic-to-digital speech recording channels.",
+      "topic": "Specialized Ingestion: Banking MICR & Microphones",
+      "pedagogical_objective": "Detail magnetic ink verification on bank cheques (MICR) and acoustic voice transduction (Microphone).",
       "instruction": {
         "title": {
-          "en": "Specialized Ingestion: Banking MICR and Microphones",
+          "en": "Specialized Input: Banking MICR and Microphones",
           "hi": "विशिष्ट इनपुट: बैंकिंग MICR और माइक्रोफ़ोन"
         },
         "theory": {
-          "en": "Specialized input hardware solves targeted application requirements. Magnetic Ink Character Readers (MICR) are deployed exclusively in the banking sector to read and verify routing and account numbers printed with magnetized iron oxide ink on financial cheques. Complementing textual input, Microphones (Mic) capture human vocal acoustics and convert analog audio waves into digital pulses for teleconferencing and speech recording.",
-          "hi": "MICR का पूरा नाम मैग्नेटिक इंक कैरेक्टर रीडर (Magnetic Ink Character Reader) है; इसका उपयोग बैंकों में चेक पर मैग्नेटिक इंक से छपी जानकारी को पढ़ने के लिए किया जाता है। वहीं माइक्रोफ़ोन (माइक) कंप्यूटर में ध्वनि और आवाज़ को रिकॉर्ड करता है, जिसका उपयोग ऑडियो/वीडियो कॉन्फ्रेंस में बातचीत के लिए किया जाता है।"
+          "en": "MICR stands for Magnetic Ink Character Reader; it is used in banks to read information printed with magnetic ink on cheques. Microphones (Mic) record voice and sounds into the computer, enabling speech transmission during audio and video conferences.",
+          "hi": "MICR का पूरा नाम मैग्नेटिक इंक कैरेक्टर रीडर (Magnetic Ink Character Reader) है; इसका उपयोग बैंकों में चेक पर मैग्नेटिक इंक से छपी जानकारी को पढ़ने के लिए किया जाता है। माइक्रोफ़ोन (माइक) कंप्यूटर में ध्वनि और आवाज़ को रिकॉर्ड करता है और ऑनलाइन बैठकों में संवाद स्थापित करता है।"
         },
         "media": {
           "type": "svg",
@@ -1246,25 +1486,37 @@
               "id": "en_u11_t1",
               "role": "subject",
               "text": "while magnetic ink character readers are used in banks",
-              "role_hint": "start with MICR usage in the banking domain"
+              "role_hint": {
+                "en": "start with MICR usage in the banking domain",
+                "hi": "बैंकों में MICR के उपयोग से शुरुआत करें"
+              }
             },
             {
               "id": "en_u11_t2",
               "role": "process",
               "text": "to process identification codes printed with magnetic ink on cheques,",
-              "role_hint": "detail reading magnetic ink cheque codes"
+              "role_hint": {
+                "en": "detail reading magnetic ink cheque codes",
+                "hi": "चेक पर मैग्नेटिक इंक पढ़ने की प्रक्रिया जोड़ें"
+              }
             },
             {
               "id": "en_u11_t3",
               "role": "condition",
               "text": "microphones capture ambient sound and human voice",
-              "role_hint": "introduce microphone acoustic capture"
+              "role_hint": {
+                "en": "introduce microphone acoustic sound capture",
+                "hi": "माइक द्वारा ध्वनि कैप्चर की स्थिति बताएं"
+              }
             },
             {
               "id": "en_u11_t4",
               "role": "result",
               "text": "to facilitate audio recording and live teleconferencing communications",
-              "role_hint": "conclude with recording and conferencing results"
+              "role_hint": {
+                "en": "conclude with audio recording and teleconferencing results",
+                "hi": "ऑडियो रिकॉर्डिंग और कॉन्फ्रेंसिंग पर समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1291,25 +1543,37 @@
               "id": "hi_u11_t1",
               "role": "subject",
               "text": "जहाँ मैग्नेटिक इंक कैरेक्टर रीडर (MICR) का उपयोग बैंकों में",
-              "role_hint": "MICR और बैंकों के संदर्भ से शुरुआत करें"
+              "role_hint": {
+                "en": "start with MICR usage in banks",
+                "hi": "MICR और बैंकों के संदर्भ से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u11_t2",
               "role": "process",
               "text": "चेक पर चुंबकीय स्याही से छपी जानकारी को पढ़ने के लिए होता है,",
-              "role_hint": "चुंबकीय स्याही से छपे चेक पढ़ने की क्रिया जोड़ें"
+              "role_hint": {
+                "en": "detail reading magnetic ink characters on cheques",
+                "hi": "चुंबकीय स्याही से छपे चेक पढ़ने की क्रिया जोड़ें"
+              }
             },
             {
               "id": "hi_u11_t3",
               "role": "condition",
               "text": "वहीं माइक्रोफ़ोन कंप्यूटर में आवाज़ और ध्वनि को रिकॉर्ड करता है",
-              "role_hint": "माइक द्वारा ध्वनि रिकॉर्डिंग की स्थिति बताएं"
+              "role_hint": {
+                "en": "mention microphone capturing voice and audio",
+                "hi": "माइक द्वारा ध्वनि रिकॉर्डिंग की स्थिति बताएं"
+              }
             },
             {
               "id": "hi_u11_t4",
               "role": "result",
               "text": "ताकि ऑनलाइन सम्मेलनों में दूसरे लोगों से बातचीत की जा सके",
-              "role_hint": "ऑनलाइन बातचीत के परिणाम के साथ वाक्य पूरा करें"
+              "role_hint": {
+                "en": "finish with communicating with others during online meetings",
+                "hi": "ऑनलाइन बातचीत के परिणाम के साथ वाक्य पूरा करें"
+              }
             }
           ],
           "distractors": [
@@ -1335,17 +1599,17 @@
       }
     },
     {
-      "unit_id": "u12_visual_displays_monitors",
-      "topic": "Visual Display Units: CRT vs. LCD Monitors",
-      "pedagogical_objective": "Characterize soft-copy visual display units across cathode-ray tubes and liquid-crystal panels.",
+      "unit_id": "u12_visual_displays_monitors_vdu",
+      "topic": "Visual Display Units: Soft-Copy, CRT, and LCD",
+      "pedagogical_objective": "Formulate soft-copy display characteristics across cathode-ray tubes (CRT) and liquid-crystal panels (LCD).",
       "instruction": {
         "title": {
           "en": "Visual Display Units: CRT and LCD Monitors",
           "hi": "विजुअल डिस्प्ले यूनिट: CRT और LCD मॉनिटर"
         },
         "theory": {
-          "en": "The Monitor, commonly designated as a VDU (Visual Display Unit), is the primary soft-copy visual output device. Unlike printed hard-copies, monitor output is transient and intangible ('soft-copy'). Historically and structurally, monitors are classified into Cathode Ray Tube (CRT) monitors, which use bulky electron guns, and modern Liquid Crystal Display (LCD) monitors, which employ slim, energy-efficient flat panels.",
-          "hi": "मॉनिटर सबसे अधिक इस्तेमाल किया जाने वाला आउटपुट डिवाइस है, जिसे VDU (विजुअल डिस्प्ले यूनिट) भी कहा जाता है। मॉनिटर में प्रदर्शित जानकारी को 'सॉफ्ट-कॉपी' कहा जाता है। संरचनात्मक दृष्टि से मॉनिटर दो प्रकार के होते हैं: CRT (कैथोड रे ट्यूब) मॉनिटर, जो भारी और पुराने हैं, तथा LCD (लिक्विड क्रिस्टल डिस्प्ले) मॉनिटर, जो पतले और आधुनिक हैं।"
+          "en": "The monitor is the most commonly used output device, also known as VDU (Visual Display Unit). It resembles a TV screen and displays information known as 'soft-copy'. Monitors are categorized into two types: CRT (Cathode Ray Tube) monitors and LCD (Liquid Crystal Display) monitors.",
+          "hi": "मॉनिटर सबसे अधिक इस्तेमाल किया जाने वाला आउटपुट डिवाइस है जिसे VDU (विजुअल डिस्प्ले यूनिट) भी कहते हैं। यह टीवी सेट की तरह दिखता है और जानकारी प्रदर्शित करता है। मॉनिटर में प्रदर्शित जानकारी को 'सॉफ्ट-कॉपी' कहा जाता है। मॉनिटर दो प्रकार के होते हैं: CRT मॉनिटर और LCD मॉनिटर।"
         },
         "media": {
           "type": "svg",
@@ -1366,25 +1630,37 @@
               "id": "en_u12_t1",
               "role": "subject",
               "text": "the monitor functions as a visual display unit",
-              "role_hint": "start with the monitor as a visual display unit"
+              "role_hint": {
+                "en": "start with the monitor as a visual display unit",
+                "hi": "मॉनिटर के VDU होने वाले खंड से प्रारंभ करें"
+              }
             },
             {
               "id": "en_u12_t2",
               "role": "process",
               "text": "that presents transient information known as soft-copy,",
-              "role_hint": "detail the presentation of soft-copy output"
+              "role_hint": {
+                "en": "detail the presentation of soft-copy output",
+                "hi": "सॉफ्ट-कॉपी प्रदर्शन का विवरण दें"
+              }
             },
             {
               "id": "en_u12_t3",
               "role": "condition",
               "text": "developed structurally across two generations",
-              "role_hint": "transition into historical generations"
+              "role_hint": {
+                "en": "transition into historical generations",
+                "hi": "दो पीढ़ियों के संरचनात्मक विकास का उल्लेख करें"
+              }
             },
             {
               "id": "en_u12_t4",
               "role": "result",
               "text": "namely legacy cathode ray tubes and modern liquid crystal displays",
-              "role_hint": "conclude with CRT and LCD display technologies"
+              "role_hint": {
+                "en": "conclude with CRT and LCD display technologies",
+                "hi": "CRT और LCD तकनीकों के नामों पर समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1411,25 +1687,37 @@
               "id": "hi_u12_t1",
               "role": "subject",
               "text": "मॉनिटर को VDU (विजुअल डिस्प्ले यूनिट) भी कहा जाता है",
-              "role_hint": "मॉनिटर और VDU नामकरण से शुरुआत करें"
+              "role_hint": {
+                "en": "start with monitor and VDU naming",
+                "hi": "मॉनिटर और VDU नामकरण से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u12_t2",
               "role": "process",
               "text": "जो स्क्रीन पर जानकारी को सॉफ्ट-कॉपी के रूप में प्रदर्शित करता है,",
-              "role_hint": "सॉफ्ट-कॉपी के प्रदर्शन का उल्लेख करें"
+              "role_hint": {
+                "en": "mention displaying information as soft-copy",
+                "hi": "सॉफ्ट-कॉपी के प्रदर्शन का उल्लेख करें"
+              }
             },
             {
               "id": "hi_u12_t3",
               "role": "condition",
               "text": "तथा तकनीकी संरचना के आधार पर",
-              "role_hint": "संरचनात्मक वर्गीकरण की शर्त जोड़ें"
+              "role_hint": {
+                "en": "add classification by technical architecture",
+                "hi": "संरचनात्मक वर्गीकरण की शर्त जोड़ें"
+              }
             },
             {
               "id": "hi_u12_t4",
               "role": "result",
               "text": "यह मुख्य रूप से CRT मॉनिटर और LCD मॉनिटर के रूप में पाया जाता है",
-              "role_hint": "CRT और LCD प्रकारों के साथ वाक्य समाप्त करें"
+              "role_hint": {
+                "en": "finish with CRT and LCD types",
+                "hi": "CRT और LCD प्रकारों के साथ वाक्य समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1455,17 +1743,17 @@
       }
     },
     {
-      "unit_id": "u13_printer_mechanisms_impact",
-      "topic": "Hard-Copy Printing: Impact Printers",
-      "pedagogical_objective": "Detail mechanical ribbon-striking, acoustic noise profiles, and dot-matrix/chain/drum architectures.",
+      "unit_id": "u13_impact_printers_mechanics",
+      "topic": "Hard-Copy Printing: Impact Printers (Dot-Matrix, Chain, Drum)",
+      "pedagogical_objective": "Detail mechanical ribbon-striking, acoustic profiles, and character/line/page impact architectures.",
       "instruction": {
         "title": {
-          "en": "Hard-Copy Output: Impact Printers",
-          "hi": "हार्ड-कॉपी आउटपुट: इम्पैक्ट प्रिंटर"
+          "en": "Impact Printers: Mechanism and Architectures",
+          "hi": "इम्पैक्ट प्रिंटर: यांत्रिकी और प्रकार"
         },
         "theory": {
-          "en": "Printers transfer digital information onto paper, producing permanent physical output known as 'hard-copy'. Impact Printers feature a physical mechanism that presses or strikes directly against an inked ribbon onto the paper. Consequently, impact printers are acoustically noisy, relatively slow, yet inexpensive. Key configurations include character printers (Dot-Matrix), line printers (Chain), and page printers (Drum).",
-          "hi": "प्रिंटर कागज़ पर जानकारी छापता है जिसे 'हार्ड-कॉपी' कहा जाता है। इम्पैक्ट प्रिंटर वे प्रिंटर होते हैं जिनमें प्रिंटिंग-मैकेनिज्म सीधे कागज़ पर दबाव डालता है। ये प्रिंटर बहुत शोर करते हैं, धीमे होते हैं और सस्ते होते हैं। इसके मुख्य उदाहरण हैं: डॉट-मैट्रिक्स प्रिंटर (कैरेक्टर प्रिंटर), चेन प्रिंटर (लाइन-प्रिंटर), और ड्रम प्रिंटर (पेज-प्रिंटर)।"
+          "en": "Printers produce hard-copy by printing information on paper. Impact Printers use a mechanism that directly presses or strikes against the paper. They are very noisy, slow, and inexpensive. Key examples include Dot-Matrix (character printer), Chain (line printer), and Drum (page printer).",
+          "hi": "प्रिंटर का उपयोग कागज़ पर जानकारी प्रिंट करने के लिए किया जाता है जिसे 'हार्ड-कॉपी' कहते हैं। इम्पैक्ट प्रिंटर वे प्रिंटर होते हैं जिनमें प्रिंटिंग-मैकेनिज्म सीधे कागज़ पर दबाव डालता है। ये बहुत शोर करते हैं, धीमे होते हैं और सस्ते होते हैं। इसके उदाहरण हैं: डॉट-मैट्रिक्स (कैरेक्टर प्रिंटर), चेन (लाइन-प्रिंटर) और ड्रम प्रिंटर (पेज-प्रिंटर)।"
         },
         "media": {
           "type": "svg",
@@ -1486,25 +1774,37 @@
               "id": "en_u13_t1",
               "role": "subject",
               "text": "impact printers produce physical hard-copy",
-              "role_hint": "start with impact printers producing hard-copy"
+              "role_hint": {
+                "en": "start with impact printers producing hard-copy",
+                "hi": "इम्पैक्ट प्रिंटर द्वारा हार्ड-कॉपी निर्माण से प्रारंभ करें"
+              }
             },
             {
               "id": "en_u13_t2",
               "role": "process",
               "text": "by physically striking their printing mechanism against paper,",
-              "role_hint": "explain the physical striking against paper"
+              "role_hint": {
+                "en": "explain the physical striking against paper",
+                "hi": "कागज़ पर भौतिक प्रहार की प्रक्रिया बताएं"
+              }
             },
             {
               "id": "en_u13_t3",
               "role": "condition",
               "text": "resulting in noisy and slow operation at low cost,",
-              "role_hint": "state the noisy, slow, low-cost operational trade-offs"
+              "role_hint": {
+                "en": "state the noisy, slow, low-cost operational trade-offs",
+                "hi": "शोर, धीमी गति और कम लागत की स्थिति जोड़ें"
+              }
             },
             {
               "id": "en_u13_t4",
               "role": "result",
               "text": "exemplified by dot-matrix character, chain line, and drum page printers",
-              "role_hint": "conclude with the dot-matrix, chain, and drum printer classes"
+              "role_hint": {
+                "en": "conclude with the dot-matrix, chain, and drum printer classes",
+                "hi": "डॉट-मैट्रिक्स, चेन और ड्रम प्रिंटर के नामों पर समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1531,25 +1831,37 @@
               "id": "hi_u13_t1",
               "role": "subject",
               "text": "इम्पैक्ट प्रिंटर कागज़ पर हार्ड-कॉपी छापते समय",
-              "role_hint": "इम्पैक्ट प्रिंटर और हार्ड-कॉपी से शुरुआत करें"
+              "role_hint": {
+                "en": "start with impact printers printing hard-copy on paper",
+                "hi": "इम्पैक्ट प्रिंटर और हार्ड-कॉपी से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u13_t2",
               "role": "process",
               "text": "प्रिंटिंग-मैकेनिज्म से सीधे कागज़ पर दबाव डालते हैं,",
-              "role_hint": "कागज़ पर भौतिक दबाव का उल्लेख करें"
+              "role_hint": {
+                "en": "describe the mechanism physically pressing against paper",
+                "hi": "कागज़ पर भौतिक दबाव का उल्लेख करें"
+              }
             },
             {
               "id": "hi_u13_t3",
               "role": "condition",
               "text": "जिससे ये बहुत शोर करने वाले, धीमे और सस्ते होते हैं,",
-              "role_hint": "शोर, धीमी गति और कम लागत की स्थिति बताएं"
+              "role_hint": {
+                "en": "mention noise, slow speed, and cheap cost",
+                "hi": "शोर, धीमी गति और कम लागत की स्थिति बताएं"
+              }
             },
             {
               "id": "hi_u13_t4",
               "role": "result",
               "text": "जैसे डॉट-मैट्रिक्स कैरेक्टर प्रिंटर, चेन प्रिंटर और ड्रम प्रिंटर",
-              "role_hint": "डॉट-मैट्रिक्स, चेन और ड्रम उदाहरणों के साथ समाप्त करें"
+              "role_hint": {
+                "en": "list dot-matrix, chain, and drum printer types",
+                "hi": "डॉट-मैट्रिक्स, चेन और ड्रम उदाहरणों के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1575,17 +1887,17 @@
       }
     },
     {
-      "unit_id": "u14_printer_mechanisms_non_impact",
-      "topic": "High-Resolution Printing: Non-Impact Printers",
-      "pedagogical_objective": "Formulate non-contact electrostatic laser and liquid inkjet spraying for quiet, high-definition hard copies.",
+      "unit_id": "u14_non_impact_printers_technologies",
+      "topic": "High-Resolution Printing: Non-Impact Printers (Inkjet & Laser)",
+      "pedagogical_objective": "Explain non-contact droplet spraying (inkjet line printers) and electrostatic toner fusion (laser page printers).",
       "instruction": {
         "title": {
-          "en": "Non-Impact Printers: Inkjet and Laser Technologies",
-          "hi": "नॉन-इम्पैक्ट प्रिंटर: इंकजेट और लेजर तकनीक"
+          "en": "Non-Impact Printers: Inkjet and Laser",
+          "hi": "नॉन-इम्पैक्ट प्रिंटर: इंकजेट और लेजर"
         },
         "theory": {
-          "en": "Non-Impact Printers form characters and images without any mechanical element physically striking or pressing against the paper. Operating without physical impact, they are significantly quieter, operate at higher speeds, and deliver superior print resolution, albeit at higher equipment costs. Prominent implementations include Inkjet printers (line-oriented ink droplet spraying) and Laser printers (page-oriented toner fusion).",
-          "hi": "नॉन-इम्पैक्ट प्रिंटर वे प्रिंटर होते हैं जिनमें प्रिंटिंग मैकेनिज्म सीधे कागज़ पर दबाव नहीं डालता। ये प्रिंटर इम्पैक्ट प्रिंटरों की तुलना में कम शोर करते हैं, काफी तेज़ होते हैं और इनकी प्रिंट क्वालिटी बहुत उच्च होती है। इसके प्रमुख उदाहरण हैं: इंकजेट प्रिंटर (लाइन प्रिंटर) और लेजर प्रिंटर (पेज प्रिंटर)।"
+          "en": "Non-Impact Printers are printers in which the printing mechanism does not press against the paper. They are less noisy, faster, more expensive, and offer high print quality. Examples include Inkjet Printers (line printers) and Laser Printers (page printers).",
+          "hi": "नॉन-इम्पैक्ट प्रिंटर वे होते हैं जिनमें प्रिंटिंग मैकेनिज्म कागज़ पर दबाव नहीं डालता। ये कम शोर करते हैं, तेज़ होते हैं, महंगे होते हैं और इनकी प्रिंट क्वालिटी बहुत उच्च होती है। इसके उदाहरण हैं: इंकजेट प्रिंटर (लाइन प्रिंटर) और लेजर प्रिंटर (पेज प्रिंटर)।"
         },
         "media": {
           "type": "svg",
@@ -1606,25 +1918,37 @@
               "id": "en_u14_t1",
               "role": "subject",
               "text": "non-impact printers deposit ink or toner markings",
-              "role_hint": "start with non-impact printers depositing markings"
+              "role_hint": {
+                "en": "start with non-impact printers depositing ink or toner",
+                "hi": "नॉन-इम्पैक्ट प्रिंटर द्वारा स्याही या टोनर निक्षेपण से प्रारंभ करें"
+              }
             },
             {
               "id": "en_u14_t2",
               "role": "process",
               "text": "without allowing their printing mechanism to press against paper,",
-              "role_hint": "explain the non-contact printing process"
+              "role_hint": {
+                "en": "explain the non-contact printing process",
+                "hi": "कागज़ पर दबाव न डालने की प्रक्रिया समझाएं"
+              }
             },
             {
               "id": "en_u14_t3",
               "role": "condition",
               "text": "delivering fast, quiet, and high-quality hard-copy prints,",
-              "role_hint": "detail speed, noise reduction, and high quality"
+              "role_hint": {
+                "en": "detail speed, noise reduction, and high quality",
+                "hi": "तेज़, शांत और उच्च गुणवत्ता की स्थिति जोड़ें"
+              }
             },
             {
               "id": "en_u14_t4",
               "role": "result",
               "text": "represented by inkjet line printers and laser page printers",
-              "role_hint": "conclude with inkjet line and laser page printer examples"
+              "role_hint": {
+                "en": "conclude with inkjet line and laser page printer examples",
+                "hi": "इंकजेट लाइन और लेजर पेज प्रिंटर के उदाहरणों पर समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1651,25 +1975,37 @@
               "id": "hi_u14_t1",
               "role": "subject",
               "text": "नॉन-इम्पैक्ट प्रिंटर में प्रिंटिंग मैकेनिज्म",
-              "role_hint": "नॉन-इम्पैक्ट प्रिंटर मैकेनिज्म से शुरुआत करें"
+              "role_hint": {
+                "en": "start with non-impact printer printing mechanism",
+                "hi": "नॉन-इम्पैक्ट प्रिंटर मैकेनिज्म से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u14_t2",
               "role": "process",
               "text": "कागज़ पर कोई भौतिक दबाव नहीं डालता,",
-              "role_hint": "कागज़ पर दबाव न डालने की प्रक्रिया जोड़ें"
+              "role_hint": {
+                "en": "state absence of physical pressure on paper",
+                "hi": "कागज़ पर दबाव न डालने की प्रक्रिया जोड़ें"
+              }
             },
             {
               "id": "hi_u14_t3",
               "role": "condition",
               "text": "जिससे ये कम शोर करने वाले, तेज़ और उच्च गुणवत्ता प्रदान करते हैं,",
-              "role_hint": "कम शोर, तेज़ गति और उच्च गुणवत्ता की स्थिति बताएं"
+              "role_hint": {
+                "en": "mention quietness, fast speed, and high quality",
+                "hi": "कम शोर, तेज़ गति और उच्च गुणवत्ता की स्थिति बताएं"
+              }
             },
             {
               "id": "hi_u14_t4",
               "role": "result",
               "text": "जिसके प्रमुख उदाहरण इंकजेट लाइन प्रिंटर और लेजर पेज प्रिंटर हैं",
-              "role_hint": "इंकजेट और लेजर उदाहरणों के साथ वाक्य समाप्त करें"
+              "role_hint": {
+                "en": "list inkjet line and laser page printer examples",
+                "hi": "इंकजेट और लेजर उदाहरणों के साथ वाक्य समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1695,17 +2031,17 @@
       }
     },
     {
-      "unit_id": "u15_large_format_plotters_projectors",
-      "topic": "Large Format Displays: Plotters & Projectors",
-      "pedagogical_objective": "Detail precision vector line drafting (flatbed/drum plotters) and optical screen projection (CRT, LCD, DLP).",
+      "unit_id": "u15_large_scale_output_plotters_projectors",
+      "topic": "Large Format Output: Plotters & Projection Displays",
+      "pedagogical_objective": "Detail precision vector drafting (flat-bed/drum plotters) and large-screen auditorium projection (CRT, LCD, DLP).",
       "instruction": {
         "title": {
           "en": "Large-Scale Output: Plotters and Projectors",
           "hi": "बड़े पैमाने के आउटपुट उपकरण: प्लॉटर और प्रोजेक्टर"
         },
         "theory": {
-          "en": "Specialized output devices cater to architectural and auditorium scales. A Plotter is an expensive hard-copy device engineered to render high-precision vector engineering designs of buildings, aircraft, and ships on massive canvas sheets, using flat-bed (paper stationary, head moves) or drum (paper moves vertically) mechanisms. Conversely, a Projector presents high-resolution soft-copy images, slides, and videos onto large projection screens for extensive audiences using CRT, LCD, or DLP optics.",
-          "hi": "प्लॉटर एक उच्च-स्तरीय आउटपुट डिवाइस है जिसका उपयोग कागज़ या कैनवास की बड़ी शीट पर इमारतों, जहाजों और विमानों के इंजीनियरिंग डिज़ाइन बनाने के लिए किया जाता है; यह फ्लैट-बेड और ड्रम प्लॉटर के रूप में आता है। वहीं प्रोजेक्टर एक आउटपुट डिवाइस है जो बड़ी प्रोजेक्शन स्क्रीन पर इमेज और वीडियो प्रस्तुत करता है (CRT, LCD और DLP प्रकार)।"
+          "en": "A Plotter draws high-quality engineering designs on large sheets of paper or canvas (e.g., designs of buildings, ships, aircraft) using Flat-bed or Drum mechanisms; they are very costly compared to printers. A Projector displays images onto a large screen to show photos, videos, and presentations to large audiences using CRT, LCD, or DLP optics.",
+          "hi": "प्लॉटर एक आउटपुट डिवाइस है जिसका उपयोग कागज़ या कैनवास की बड़ी शीट पर इमारतों, जहाजों और विमानों के उच्च गुणवत्ता वाले डिज़ाइन बनाने के लिए किया जाता है (फ्लैट-बेड और ड्रम प्रकार)। प्रोजेक्टर बड़ी स्क्रीन पर चित्र व वीडियो प्रस्तुत करता है (CRT, LCD और DLP प्रकार)।"
         },
         "media": {
           "type": "svg",
@@ -1726,25 +2062,37 @@
               "id": "en_u15_t1",
               "role": "subject",
               "text": "while high-precision plotters draw architectural designs",
-              "role_hint": "start with plotters drawing architectural blueprints"
+              "role_hint": {
+                "en": "start with plotters drawing architectural blueprints",
+                "hi": "प्लॉटर द्वारा इंजीनियरिंग नक्शे बनाने से प्रारंभ करें"
+              }
             },
             {
               "id": "en_u15_t2",
               "role": "process",
               "text": "of buildings, aircraft, and ships on massive canvas sheets,",
-              "role_hint": "specify massive canvas scale for ships and buildings"
+              "role_hint": {
+                "en": "specify massive canvas scale for ships and buildings",
+                "hi": "बड़ी शीट पर इमारतों और जहाजों के डिज़ाइन का उल्लेख करें"
+              }
             },
             {
               "id": "en_u15_t3",
               "role": "condition",
               "text": "projectors beam soft-copy presentations onto large screens",
-              "role_hint": "introduce projectors beaming onto large screens"
+              "role_hint": {
+                "en": "introduce projectors beaming onto large screens",
+                "hi": "प्रोजेक्टर द्वारा बड़ी स्क्रीन पर दिखाने की स्थिति जोड़ें"
+              }
             },
             {
               "id": "en_u15_t4",
               "role": "result",
               "text": "for broad audiences using crt, lcd, or dlp optical systems",
-              "role_hint": "conclude with CRT, LCD, and DLP projection technologies"
+              "role_hint": {
+                "en": "conclude with CRT, LCD, and DLP projection technologies",
+                "hi": "CRT, LCD और DLP तकनीकों के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1771,25 +2119,37 @@
               "id": "hi_u15_t1",
               "role": "subject",
               "text": "जहाँ प्लॉटर कैनवास की बड़ी शीट पर",
-              "role_hint": "प्लॉटर और बड़े कैनवास से शुरुआत करें"
+              "role_hint": {
+                "en": "start with plotter on large sheets of canvas",
+                "hi": "प्लॉटर और बड़े कैनवास से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u15_t2",
               "role": "process",
               "text": "इमारतों, जहाजों और विमानों के उच्च गुणवत्ता वाले डिज़ाइन बनाता है,",
-              "role_hint": "इमारतों और विमानों के डिज़ाइन निर्माण को जोड़ें"
+              "role_hint": {
+                "en": "mention high quality designs of buildings, ships, and aircraft",
+                "hi": "इमारतों और विमानों के डिज़ाइन निर्माण को जोड़ें"
+              }
             },
             {
               "id": "hi_u15_t3",
               "role": "condition",
               "text": "वहीं प्रोजेक्टर लोगों के एक बड़े समूह को",
-              "role_hint": "प्रोजेक्टर और दर्शकों के समूह का उल्लेख करें"
+              "role_hint": {
+                "en": "introduce projector presenting to a large group of people",
+                "hi": "प्रोजेक्टर और दर्शकों के समूह का उल्लेख करें"
+              }
             },
             {
               "id": "hi_u15_t4",
               "role": "result",
               "text": "बड़ी स्क्रीन पर CRT, LCD या DLP तकनीक से प्रेजेंटेशन दिखाता है",
-              "role_hint": "बड़ी स्क्रीन और CRT/LCD/DLP तकनीक के साथ समाप्त करें"
+              "role_hint": {
+                "en": "finish with large screen presentations using CRT, LCD, or DLP",
+                "hi": "बड़ी स्क्रीन और CRT/LCD/DLP तकनीक के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1817,15 +2177,15 @@
     {
       "unit_id": "u16_software_classification_hierarchy",
       "topic": "Software Hierarchy: System vs. Application Software",
-      "pedagogical_objective": "Establish hardware management layers versus task-specific end-user application software programs.",
+      "pedagogical_objective": "Establish hardware management abstraction layers versus task-specific end-user productivity programs (apps).",
       "instruction": {
         "title": {
-          "en": "Software Hierarchy: System Software vs. Application Software",
-          "hi": "सॉफ्टवेयर वर्गीकरण: सिस्टम बनाम एप्लीकेशन सॉफ्टवेयर"
+          "en": "Software Categories: System vs. Application Software",
+          "hi": "सॉफ्टवेयर श्रेणियां: सिस्टम बनाम एप्लीकेशन सॉफ्टवेयर"
         },
         "theory": {
-          "en": "A Computer Program is a sequential collection of instructions directing a computer to execute a specific task. In aggregate, Computer Software consists of coordinated programs engineered to deliver comprehensive functionality. Software bifurcates into System Software, which directly controls and manages physical hardware resources, and Application Software ('apps'), which executes end-user tasks like document editing (MS Word), calculations (Excel), and multimedia rendering (VLC).",
-          "hi": "एक कंप्यूटर प्रोग्राम निर्देशों का संग्रह है जो कंप्यूटर को विशेष कार्य करने में सक्षम बनाता है। सॉफ्टवेयर एक साथ काम करने वाले कंप्यूटर-प्रोग्रामों का संग्रह है। सॉफ्टवेयर दो प्रकार के होते हैं: 1. सिस्टम सॉफ्टवेयर—जो कंप्यूटर के हार्डवेयर को नियंत्रित करता है, और 2. एप्लीकेशन सॉफ्टवेयर (ऐप)—जो विशिष्ट उपयोगकर्ता कार्यों को करता है (जैसे MS Word, Excel, VLC प्लेयर)।"
+          "en": "A Computer Program is a collection of instructions that enables the computer to perform a particular task. Computer Software is a collection of computer programs working together to perform well-defined functions. Software is categorized into System Software (used particularly to control computer hardware) and Application Software (used to perform specific tasks, also known as 'apps', like Word, Excel, VLC, and Photoshop).",
+          "hi": "प्रोग्राम निर्देशों का संग्रह है जो किसी विशेष कार्य को करने में सक्षम बनाता है। सॉफ्टवेयर एक साथ काम करने वाले कंप्यूटर-प्रोग्रामों का संग्रह है। यह दो प्रकार का होता है: सिस्टम सॉफ्टवेयर (कंप्यूटर के हार्डवेयर को नियंत्रित करने के लिए) और एप्लीकेशन सॉफ्टवेयर (विशिष्ट कार्यों के लिए, जैसे MS Word, Excel, VLC प्लेयर आदि)।"
         },
         "media": {
           "type": "svg",
@@ -1846,25 +2206,37 @@
               "id": "en_u16_t1",
               "role": "subject",
               "text": "computer software encompasses integrated program suites",
-              "role_hint": "start with computer software encompassing programs"
+              "role_hint": {
+                "en": "start with computer software encompassing programs",
+                "hi": "सॉफ्टवेयर के प्रोग्रामों का समूह होने वाले खंड से प्रारंभ करें"
+              }
             },
             {
               "id": "en_u16_t2",
               "role": "condition",
               "text": "divided into system software that exercises direct control over hardware,",
-              "role_hint": "introduce system software hardware control"
+              "role_hint": {
+                "en": "introduce system software hardware control",
+                "hi": "हार्डवेयर नियंत्रित करने वाले सिस्टम सॉफ्टवेयर का उल्लेख करें"
+              }
             },
             {
               "id": "en_u16_t3",
               "role": "process",
               "text": "and application software or apps",
-              "role_hint": "introduce application software"
+              "role_hint": {
+                "en": "introduce application software or apps",
+                "hi": "एप्लीकेशन सॉफ्टवेयर (ऐप्स) को जोड़ें"
+              }
             },
             {
               "id": "en_u16_t4",
               "role": "result",
               "text": "to execute specific end-user tasks like word processing and spreadsheets",
-              "role_hint": "conclude with user productivity applications"
+              "role_hint": {
+                "en": "conclude with user productivity applications",
+                "hi": "विशिष्ट कार्यों (जैसे वर्ड और एक्सेल) के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1891,25 +2263,37 @@
               "id": "hi_u16_t1",
               "role": "subject",
               "text": "सॉफ्टवेयर एक साथ काम करने वाले कंप्यूटर-प्रोग्रामों का संग्रह है",
-              "role_hint": "सॉफ्टवेयर और प्रोग्राम संग्रह से शुरुआत करें"
+              "role_hint": {
+                "en": "start with software as a collection of programs working together",
+                "hi": "सॉफ्टवेयर और प्रोग्राम संग्रह से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u16_t2",
               "role": "condition",
               "text": "जो मुख्य रूप से सिस्टम सॉफ्टवेयर",
-              "role_hint": "सिस्टम सॉफ्टवेयर का उल्लेख करें"
+              "role_hint": {
+                "en": "mention system software category",
+                "hi": "सिस्टम सॉफ्टवेयर का उल्लेख करें"
+              }
             },
             {
               "id": "hi_u16_t3",
               "role": "process",
               "text": "के माध्यम से कंप्यूटर के हार्डवेयर को नियंत्रित करता है,",
-              "role_hint": "हार्डवेयर नियंत्रण प्रक्रिया को जोड़ें"
+              "role_hint": {
+                "en": "describe controlling computer hardware",
+                "hi": "हार्डवेयर नियंत्रण प्रक्रिया को जोड़ें"
+              }
             },
             {
               "id": "hi_u16_t4",
               "role": "result",
               "text": "तथा एप्लीकेशन सॉफ्टवेयर (ऐप) द्वारा वर्ड प्रोसेसिंग जैसे विशिष्ट कार्य करता है",
-              "role_hint": "एप्लीकेशन सॉफ्टवेयर के विशिष्ट कार्यों के साथ समाप्त करें"
+              "role_hint": {
+                "en": "finish with application software performing specific tasks",
+                "hi": "एप्लीकेशन सॉफ्टवेयर के विशिष्ट कार्यों के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -1936,16 +2320,16 @@
     },
     {
       "unit_id": "u17_language_translators_taxonomy",
-      "topic": "Language Processors: Assembler, Compiler, Interpreter",
-      "pedagogical_objective": "Contrast line-by-line interpretation, batch compilation, and mnemonic assembly translation.",
+      "topic": "Language Processors: Assembler, Compiler, and Interpreter",
+      "pedagogical_objective": "Contrast line-by-line interpretation, atomic whole-program compilation, and assembly mnemonic translation.",
       "instruction": {
         "title": {
-          "en": "Language Translators: Assembler, Compiler, and Interpreter",
-          "hi": "भाषा अनुवादक: असेम्बलर, कंपाइलर और इन्टर्प्रेटर"
+          "en": "Language Processors: Interpreter, Compiler, and Assembler",
+          "hi": "भाषा अनुवादक: इन्टर्प्रेटर, कम्पाइलर और असेम्बलर"
         },
         "theory": {
-          "en": "A Language Translator (Language Processor) converts source code into machine language (binary 0s and 1s). It comprises three distinct classes: an Assembler, which converts low-level assembly language mnemonics into machine code; an Interpreter, which translates high-level source code sequentially one line at a time; and a Compiler, which scans and translates all lines of high-level source code simultaneously into an executable binary unit.",
-          "hi": "लैंग्वेज ट्रांसलेटर (भाषा अनुवादक) वह सिस्टम सॉफ्टवेयर है जो उच्च-स्तरीय भाषा को मशीनी भाषा में बदलता है। यह तीन प्रकार का होता है: असेम्बलर—जो असेम्बली भाषा को मशीनी भाषा में बदलता है; इन्टर्प्रेटर—जो उच्च स्तरीय कोड को एक बार में एक पंक्ति (लाइन-दर-लाइन) बदलता है; तथा कम्पाइलर—जो सोर्स कोड की सभी पंक्तियों को एक साथ मशीनी भाषा में परिवर्तित करता है।"
+          "en": "A Language Translator converts source code into machine language. An Interpreter converts high-level source code one line at a time. A Compiler converts all lines of high-level source code into machine language all at once. An Assembler converts lines of source code written in assembly language into machine language.",
+          "hi": "सिस्टम सॉफ्टवेयर जो उच्च-स्तरीय भाषा (सोर्स कोड) को मशीनी भाषा में बदलता है, लैंग्वेज ट्रांसलेटर कहलाता है। इन्टर्प्रटर उच्च स्तरीय कोड को एक बार में एक पंक्ति बदलता है। कम्पाइलर सभी पंक्तियों को एक साथ मशीनी भाषा में बदलता है। असेम्बलर असेम्बली भाषा को मशीनी भाषा में बदलता है।"
         },
         "media": {
           "type": "svg",
@@ -1966,25 +2350,37 @@
               "id": "en_u17_t1",
               "role": "subject",
               "text": "while an interpreter translates high-level source code",
-              "role_hint": "start with the interpreter's high-level translation"
+              "role_hint": {
+                "en": "start with the interpreter's high-level translation",
+                "hi": "इंटरप्रेटर के उच्च-स्तरीय अनुवाद खंड से प्रारंभ करें"
+              }
             },
             {
               "id": "en_u17_t2",
               "role": "process",
               "text": "sequentially one line at a time into machine language,",
-              "role_hint": "specify line-by-line conversion"
+              "role_hint": {
+                "en": "specify line-by-line conversion",
+                "hi": "एक बार में एक पंक्ति अनुवादित करने का विवरण दें"
+              }
             },
             {
               "id": "en_u17_t3",
               "role": "condition",
               "text": "a compiler converts the entire program all lines at once,",
-              "role_hint": "contrast with the compiler translating all lines at once"
+              "role_hint": {
+                "en": "contrast with the compiler translating all lines at once",
+                "hi": "कंपाइलर द्वारा सभी पंक्तियां एक साथ बदलने का उल्लेख करें"
+              }
             },
             {
               "id": "en_u17_t4",
               "role": "result",
               "text": "and an assembler translates mnemonic assembly language into binary",
-              "role_hint": "conclude with the assembler translating assembly code"
+              "role_hint": {
+                "en": "conclude with the assembler translating assembly code",
+                "hi": "असेम्बलर द्वारा असेम्बली भाषा को बाइनरी में बदलने पर समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -2011,25 +2407,37 @@
               "id": "hi_u17_t1",
               "role": "subject",
               "text": "जहाँ इन्टर्प्रेटर उच्च स्तरीय भाषा के सोर्स कोड को",
-              "role_hint": "इन्टर्प्रेटर और सोर्स कोड से शुरुआत करें"
+              "role_hint": {
+                "en": "start with interpreter processing high level source code",
+                "hi": "इन्टर्प्रेटर और सोर्स कोड से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u17_t2",
               "role": "process",
               "text": "एक बार में एक पंक्ति करके मशीनी भाषा में बदलता है,",
-              "role_hint": "एक बार में एक पंक्ति बदलने का उल्लेख करें"
+              "role_hint": {
+                "en": "state line-by-line conversion into machine language",
+                "hi": "एक बार में एक पंक्ति बदलने का उल्लेख करें"
+              }
             },
             {
               "id": "hi_u17_t3",
               "role": "condition",
               "text": "वहीं कम्पाइलर सभी पंक्तियों को एक साथ अनुवादित करता है,",
-              "role_hint": "कम्पाइलर द्वारा सभी पंक्तियां एक साथ बदलने को जोड़ें"
+              "role_hint": {
+                "en": "contrast with compiler translating all lines at once",
+                "hi": "कम्पाइलर द्वारा सभी पंक्तियां एक साथ बदलने को जोड़ें"
+              }
             },
             {
               "id": "hi_u17_t4",
               "role": "result",
               "text": "जबकि असेम्बलर असेम्बली भाषा को मशीनी भाषा में परिवर्तित करता है",
-              "role_hint": "असेम्बलर के कार्य के साथ वाक्य समाप्त करें"
+              "role_hint": {
+                "en": "finish with assembler converting assembly language",
+                "hi": "असेम्बलर के कार्य के साथ वाक्य समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -2056,16 +2464,16 @@
     },
     {
       "unit_id": "u18_operating_systems_and_utilities",
-      "topic": "OS Resource Management & System Utilities",
-      "pedagogical_objective": "Analyze kernel hardware scheduling alongside maintenance utility software (antivirus, disk tools).",
+      "topic": "Core OS Supervisors & Supportive Maintenance Utilities",
+      "pedagogical_objective": "Analyze hardware resource scheduling by the OS alongside diagnostic/security utility tools.",
       "instruction": {
         "title": {
-          "en": "System Backbone: Operating Systems and Utilities",
-          "hi": "सिस्टम की रीढ़: ऑपरेटिंग सिस्टम और यूटिलिटीज"
+          "en": "Operating Systems and Utilities",
+          "hi": "ऑपरेटिंग सिस्टम और यूटिलिटीज"
         },
         "theory": {
-          "en": "An Operating System (OS) is the essential system software configured to manage and allocate hardware resources efficiently (CPU scheduling, memory management, device drivers) while hosting applications (e.g., Windows, Linux, Android). Utilities are auxiliary system software modules that augment and maintain system health, optimizing performance and security through antivirus software, text editors, and system diagnostic tools.",
-          "hi": "ऑपरेटिंग सिस्टम (OS) वह सिस्टम सॉफ्टवेयर है जो कंप्यूटर सिस्टम को कुशलतापूर्वक चलाने, हार्डवेयर संसाधनों का प्रबंधन करने और प्रोग्राम चलाने हेतु आवश्यक होता है (जैसे Windows, Linux, Android)। वहीं यूटिलिटीज (Utilities) ऑपरेटिंग सिस्टम की कार्यक्षमता और सुरक्षा को बढ़ाने वाले अतिरिक्त सॉफ्टवेयर हैं (जैसे एंटीवायरस, टेक्स्ट एडिटर, सिस्टम टूल्स)।"
+          "en": "An Operating System manages hardware resources efficiently and is required to run programs and software (e.g., Windows, Linux, Android). Utilities are additional system software that enhance the features and functionality of the operating system (e.g., antivirus software, text editors, system tools).",
+          "hi": "ऑपरेटिंग सिस्टम कंप्यूटर सिस्टम को कुशलतापूर्वक चलाने और हार्डवेयर संसाधनों का प्रबंधन करने वाला सिस्टम सॉफ्टवेयर है (जैसे Windows, Linux, Android)। यूटिलिटीज ऑपरेटिंग सिस्टम की विशेषताओं और कार्यक्षमता को बढ़ाने वाले अतिरिक्त सॉफ्टवेयर होते हैं (जैसे एंटीवायरस सॉफ्टवेयर, टेक्स्ट एडिटर, सिस्टम टूल्स)।"
         },
         "media": {
           "type": "svg",
@@ -2086,25 +2494,37 @@
               "id": "en_u18_t1",
               "role": "subject",
               "text": "the operating system manages hardware resources efficiently",
-              "role_hint": "start with the operating system managing hardware resources"
+              "role_hint": {
+                "en": "start with the operating system managing hardware resources",
+                "hi": "ऑपरेटिंग सिस्टम द्वारा हार्डवेयर प्रबंधन से प्रारंभ करें"
+              }
             },
             {
               "id": "en_u18_t2",
               "role": "process",
               "text": "to run and supervise application software across the machine,",
-              "role_hint": "explain running and supervising application software"
+              "role_hint": {
+                "en": "explain running and supervising application software",
+                "hi": "सॉफ्टवेयर चलाने और निगरानी की प्रक्रिया बताएं"
+              }
             },
             {
               "id": "en_u18_t3",
               "role": "condition",
               "text": "while utilities act as specialized maintenance tools",
-              "role_hint": "introduce utilities as maintenance tools"
+              "role_hint": {
+                "en": "introduce utilities as maintenance tools",
+                "hi": "यूटिलिटीज को सहायक टूल्स के रूप में जोड़ें"
+              }
             },
             {
               "id": "en_u18_t4",
               "role": "result",
               "text": "enhancing security and system features through antivirus and diagnostic utilities",
-              "role_hint": "conclude with enhancing features via antivirus and diagnostics"
+              "role_hint": {
+                "en": "conclude with enhancing features via antivirus and diagnostics",
+                "hi": "एंटीवायरस और टूल्स से सुरक्षा व क्षमता बढ़ाने पर समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -2131,25 +2551,37 @@
               "id": "hi_u18_t1",
               "role": "subject",
               "text": "ऑपरेटिंग सिस्टम हार्डवेयर संसाधनों का कुशल प्रबंधन करके",
-              "role_hint": "ऑपरेटिंग सिस्टम और हार्डवेयर प्रबंधन से शुरुआत करें"
+              "role_hint": {
+                "en": "start with OS managing hardware resources",
+                "hi": "ऑपरेटिंग सिस्टम और हार्डवेयर प्रबंधन से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u18_t2",
               "role": "process",
               "text": "कंप्यूटर पर अन्य प्रोग्रामों और सॉफ्टवेयरों को चलाता है,",
-              "role_hint": "सॉफ्टवेयर चलाने की प्रक्रिया जोड़ें"
+              "role_hint": {
+                "en": "describe running other programs and software",
+                "hi": "सॉफ्टवेयर चलाने की प्रक्रिया जोड़ें"
+              }
             },
             {
               "id": "hi_u18_t3",
               "role": "condition",
               "text": "जबकि यूटिलिटीज ऐसे सहायक सिस्टम सॉफ्टवेयर हैं",
-              "role_hint": "यूटिलिटीज के सहायक स्वरूप का उल्लेख करें"
+              "role_hint": {
+                "en": "introduce utilities as additional system software",
+                "hi": "यूटिलिटीज के सहायक स्वरूप का उल्लेख करें"
+              }
             },
             {
               "id": "hi_u18_t4",
               "role": "result",
               "text": "जो एंटीवायरस और सिस्टम टूल्स द्वारा ऑपरेटिंग सिस्टम की कार्यक्षमता बढ़ाते हैं",
-              "role_hint": "एंटीवायरस और कार्यक्षमता विस्तार के साथ समाप्त करें"
+              "role_hint": {
+                "en": "finish with antivirus and tools enhancing OS features",
+                "hi": "एंटीवायरस और कार्यक्षमता विस्तार के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -2175,17 +2607,17 @@
       }
     },
     {
-      "unit_id": "u19_number_systems_decimal_binary",
-      "topic": "Positional Number Systems: Base-10 vs. Base-2",
-      "pedagogical_objective": "Compare human decimal positional weighting ($10^n$) with internal computer binary electronic circuitry ($2^n$).",
+      "unit_id": "u19_number_systems_radix_mapping",
+      "topic": "Positional Number Systems: Base-10 Decimal vs. Base-2 Binary",
+      "pedagogical_objective": "Compare human decimal counting ($10^n$) with digital two-state electronic voltage circuit mapping ($2^n$).",
       "instruction": {
         "title": {
-          "en": "Number Systems: Base-10 Decimal vs. Base-2 Binary",
-          "hi": "संख्या प्रणालियां: दशमलव (बेस-10) बनाम बाइनरी (बेस-2)"
+          "en": "Number Systems: Decimal (Base-10) and Binary (Base-2)",
+          "hi": "संख्या प्रणालियां: दशमलव (बेस-10) और बाइनरी (बेस-2)"
         },
         "theory": {
-          "en": "The Decimal Number System is a positional base-10 radix system utilizing ten distinct digits (0 through 9), where successive column weights represent powers of 10 ($10^0, 10^1, 10^2$). The Binary Number System is a base-2 radix system employing only two digits: 0 and 1, with weights representing powers of 2 ($2^0, 2^1, 2^2$). Digital computers process binary internally because two discrete voltage states (OFF/0 and ON/1) are straightforward and resilient to implement in electronic circuits.",
-          "hi": "दशमलव संख्या प्रणाली आधार-10 (base-10) प्रणाली है जो दस अंकों (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) का उपयोग करती है और यह मानवीय गणना का मानक है। बाइनरी संख्या प्रणाली आधार-2 (base-2) प्रणाली है जो केवल दो अंकों (0 और 1) का उपयोग करती है। लगभग सभी आधुनिक कंप्यूटर बाइनरी का उपयोग करते हैं क्योंकि डिजिटल इलेक्ट्रॉनिक सर्किट में दो अवस्थाओं (चालू/बंद) को लागू करना सरल और सटीक होता है।"
+          "en": "Decimal numbers are based on the number 10, using digits 0 through 9; it is the standard base-10 system for human numerical notation. Binary numbers are based on the number 2, using only digits 0 and 1 (base-2 system). The binary system is used internally by almost all modern computers because it is straightforward to implement with two-state digital electronic circuitry (OFF and ON).",
+          "hi": "दशमलव प्रणाली संख्या 10 पर आधारित होती है और इसमें 0 से 9 तक दस अंक प्रयुक्त होते हैं। बाइनरी प्रणाली संख्या 2 पर आधारित होती है और इसमें केवल दो अंक 0 और 1 होते हैं। बाइनरी का उपयोग लगभग सभी आधुनिक कंप्यूटरों द्वारा किया जाता है क्योंकि इसे डिजिटल इलेक्ट्रॉनिक सर्किटरी में दो अवस्थाओं द्वारा लागू करना सरल होता है।"
         },
         "media": {
           "type": "svg",
@@ -2206,25 +2638,37 @@
               "id": "en_u19_t1",
               "role": "subject",
               "text": "while the standard decimal system uses base-10 positional digits",
-              "role_hint": "start with the decimal base-10 radix clause"
+              "role_hint": {
+                "en": "start with the decimal base-10 radix clause",
+                "hi": "दशमलव आधार-10 अंक प्रणाली से प्रारंभ करें"
+              }
             },
             {
               "id": "en_u19_t2",
               "role": "condition",
               "text": "spanning 0 through 9 for human calculation,",
-              "role_hint": "specify digits 0 to 9 for humans"
+              "role_hint": {
+                "en": "specify digits 0 to 9 for human calculation",
+                "hi": "मानव गणना हेतु 0 से 9 अंकों का उल्लेख करें"
+              }
             },
             {
               "id": "en_u19_t3",
               "role": "process",
               "text": "modern digital computers operate internally on the base-2 binary system",
-              "role_hint": "introduce computer operation on base-2 binary"
+              "role_hint": {
+                "en": "introduce computer operation on base-2 binary",
+                "hi": "कंप्यूटर द्वारा बेस-2 बाइनरी उपयोग की प्रक्रिया जोड़ें"
+              }
             },
             {
               "id": "en_u19_t4",
               "role": "result",
               "text": "because two discrete electrical voltage states are straightforward to implement",
-              "role_hint": "conclude with two voltage states in electronic circuitry"
+              "role_hint": {
+                "en": "conclude with two voltage states in electronic circuitry",
+                "hi": "दो वोल्टेज अवस्थाओं की सरलता पर समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -2251,25 +2695,37 @@
               "id": "hi_u19_t1",
               "role": "subject",
               "text": "जहाँ दशमलव प्रणाली आधार-10 पर आधारित होकर",
-              "role_hint": "दशमलव प्रणाली और आधार-10 से शुरुआत करें"
+              "role_hint": {
+                "en": "start with decimal based on radix 10",
+                "hi": "दशमलव प्रणाली और आधार-10 से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u19_t2",
               "role": "condition",
               "text": "मानवीय गणना के लिए 0 से 9 तक दस अंकों का उपयोग करती है,",
-              "role_hint": "0 से 9 तक दस अंकों के उपयोग का उल्लेख करें"
+              "role_hint": {
+                "en": "mention using 10 digits from 0 to 9",
+                "hi": "0 से 9 तक दस अंकों के उपयोग का उल्लेख करें"
+              }
             },
             {
               "id": "hi_u19_t3",
               "role": "process",
               "text": "वहीं डिजिटल कंप्यूटर आंतरिक रूप से आधार-2 बाइनरी प्रणाली अपनाते हैं",
-              "role_hint": "कंप्यूटर द्वारा आधार-2 बाइनरी अपनाने को जोड़ें"
+              "role_hint": {
+                "en": "state computers using base-2 binary internally",
+                "hi": "कंप्यूटर द्वारा आधार-2 बाइनरी अपनाने को जोड़ें"
+              }
             },
             {
               "id": "hi_u19_t4",
               "role": "result",
               "text": "क्योंकि डिजिटल सर्किट में दो वोल्टेज अवस्थाओं (0 और 1) को लागू करना सरल है",
-              "role_hint": "दो वोल्टेज अवस्थाओं की सरलता के साथ समाप्त करें"
+              "role_hint": {
+                "en": "finish with ease of implementing two voltage states in circuits",
+                "hi": "दो वोल्टेज अवस्थाओं की सरलता के साथ समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -2295,22 +2751,22 @@
       }
     },
     {
-      "unit_id": "u20_number_conversions_dec_bin",
-      "topic": "Mathematical Conversion: Decimal ↔ Binary",
-      "pedagogical_objective": "Formulate repeated division-by-2 remainder extraction and positional power-of-2 summation.",
+      "unit_id": "u20_mathematical_conversions_dec_bin",
+      "topic": "Mathematical Algorithms: Decimal ↔ Binary Conversions",
+      "pedagogical_objective": "Formulate repeated division-by-2 remainder extraction and positional power-of-2 weighted summation.",
       "instruction": {
         "title": {
-          "en": "Mathematical Conversion: Decimal to Binary and Binary to Decimal",
-          "hi": "संख्या रूपांतरण: दशमलव ↔ बाइनरी"
+          "en": "Converting Decimal to Binary and Binary to Decimal",
+          "hi": "दशमलव से बाइनरी और बाइनरी से दशमलव रूपांतरण"
         },
         "theory": {
-          "en": "Converting a decimal integer to binary requires successive division by 2, recording remainders (0 or 1), and reading the final remainder stack in reverse from bottom to top; for example, $(19)_{10}$ yields remainders $1, 1, 0, 0, 1$, resolving to $(10011)_2$. Conversely, converting binary to decimal requires expanding each bit by its positional power of 2 ($2^0, 2^1, 2^2, 2^3, 2^4$) and summing the products: $(1 \\times 16) + (0 \\times 8) + (0 \\times 4) + (1 \\times 2) + (1 \\times 1) = 19$.",
-          "hi": "दशमलव से बाइनरी में बदलने के लिए संख्या को बार-बार 2 से भाग देकर शेषफल (0 या 1) नोट किए जाते हैं और उन्हें नीचे से ऊपर पढ़ा जाता है; जैसे $(19)_{10} = (10011)_2$। इसके विपरीत, बाइनरी से दशमलव में बदलने के लिए प्रत्येक बाइनरी अंक को उसकी संगत 2 की घात ($2^0, 2^1, 2^2, 2^3, 2^4$) से गुणा करके सभी गुणनफलों को जोड़ दिया जाता है: $16 + 0 + 0 + 2 + 1 = 19$।"
+          "en": "To convert decimal to binary, repeatedly divide the number by 2, record remainders (0 or 1), update with the quotient until 0, and read remainders from bottom to top: $(19)_{10} = (10011)_2$. To convert binary to decimal, list powers of 2 from right to left starting at $2^0$, multiply each binary bit by its corresponding power of 2, and sum all products: $(1 \\times 16) + (0 \\times 8) + (0 \\times 4) + (1 \\times 2) + (1 \\times 1) = 19$.",
+          "hi": "दशमलव को बाइनरी में बदलने के लिए संख्या को बार-बार 2 से भाग दें, शेषफल लिखें, भागफल 0 होने तक दोहराएं और शेषफल नीचे से ऊपर पढ़ें: $(19)_{10} = (10011)_2$। बाइनरी को दशमलव में बदलने के लिए दाएं से बाएं 2 की घातें लिखें, प्रत्येक अंक को उसकी घात से गुणा करें और जोड़ें: $16 + 0 + 0 + 2 + 1 = 19$।"
         },
         "media": {
           "type": "svg",
           "aspect_ratio": "16/9",
-          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><text x='150' y='35' fill='#38bdf8' font-size='12' font-family='monospace' font-weight='bold'>Decimal 19 ÷ 2 (Remainders)</text><text x='150' y='65' fill='#cbd5e1' font-size='11' font-family='monospace'>19 ÷ 2 = 9 rem 1 (LSB)</text><text x='150' y='90' fill='#cbd5e1' font-size='11' font-family='monospace'> 9 ÷ 2 = 4 rem 1</text><text x='150' y='115' fill='#cbd5e1' font-size='11' font-family='monospace'> 4 ÷ 2 = 2 rem 0</text><text x='150' y='140' fill='#cbd5e1' font-size='11' font-family='monospace'> 2 ÷ 2 = 1 rem 0</text><text x='150' y='165' fill='#cbd5e1' font-size='11' font-family='monospace'> 1 ÷ 2 = 0 rem 1 (MSB)</text><path d='M 285 165 L 285 65' stroke='#fbbf24' stroke-width='2' fill='none'/><polygon points='285,60 280,70 290,70' fill='#fbbf24'/><text x='300' y='115' fill='#fbbf24' font-size='11' font-family='sans-serif'>Read Up: (10011)₂</text><line x1='370' y1='40' x2='370' y2='190' stroke='#334155' stroke-width='1'/><text x='505' y='35' fill='#4ade80' font-size='12' font-family='monospace' font-weight='bold'>Binary 10011 → Decimal</text><text x='505' y='75' fill='#cbd5e1' font-size='11' font-family='monospace'>1×2⁴ + 0×2³ + 0×2² + 1×2¹ + 1×2⁰</text><text x='505' y='115' fill='#cbd5e1' font-size='11' font-family='monospace'>= 16 + 0 + 0 + 2 + 1</text><text x='505' y='155' fill='#4ade80' font-size='14' font-family='monospace' font-weight='bold'>= (19)₁₀</text></svg>",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><line x1='320' y1='20' x2='320' y2='200' stroke='#334155' stroke-width='1.5'/><text x='160' y='40' fill='#38bdf8' font-size='12' font-family='monospace' text-anchor='middle' font-weight='bold'>Decimal 19 ÷ 2 (Remainders)</text><text x='160' y='65' fill='#cbd5e1' font-size='11' font-family='monospace' text-anchor='middle'>19 ÷ 2 = 9 rem 1 (LSB)</text><text x='160' y='90' fill='#cbd5e1' font-size='11' font-family='monospace' text-anchor='middle'>9 ÷ 2 = 4 rem 1</text><text x='160' y='115' fill='#cbd5e1' font-size='11' font-family='monospace' text-anchor='middle'>4 ÷ 2 = 2 rem 0</text><text x='160' y='140' fill='#cbd5e1' font-size='11' font-family='monospace' text-anchor='middle'>2 ÷ 2 = 1 rem 0</text><text x='160' y='165' fill='#cbd5e1' font-size='11' font-family='monospace' text-anchor='middle'>1 ÷ 2 = 0 rem 1 (MSB)</text><text x='160' y='195' fill='#fbbf24' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Read Up: (10011)₂</text><text x='480' y='40' fill='#4ade80' font-size='12' font-family='monospace' text-anchor='middle' font-weight='bold'>Binary 10011 → Decimal</text><text x='480' y='75' fill='#cbd5e1' font-size='11' font-family='monospace' text-anchor='middle'>1×2⁴ + 0×2³ + 0×2² + 1×2¹ + 1×2⁰</text><text x='480' y='110' fill='#cbd5e1' font-size='11' font-family='monospace' text-anchor='middle'>= 16 + 0 + 0 + 2 + 1</text><text x='480' y='155' fill='#4ade80' font-size='14' font-family='monospace' text-anchor='middle' font-weight='bold'>= (19)₁₀</text></svg>",
           "caption": {
             "en": "Bidirectional conversion algorithms: Successive division by 2 vs. positional weight expansion.",
             "hi": "द्विदिशी रूपांतरण विधियां: 2 से क्रमिक विभाजन बनाम 2 की घातों का स्थानीय मान विस्तार।"
@@ -2326,25 +2782,37 @@
               "id": "en_u20_t1",
               "role": "subject",
               "text": "converting decimal to binary requires repeated division by 2",
-              "role_hint": "start with decimal to binary division by 2"
+              "role_hint": {
+                "en": "start with decimal to binary division by 2",
+                "hi": "दशमलव से बाइनरी में 2 से भाग देने से शुरुआत करें"
+              }
             },
             {
               "id": "en_u20_t2",
               "role": "process",
               "text": "recording remainders until the quotient reaches zero and reading them bottom to top,",
-              "role_hint": "detail recording remainders and reading bottom to top"
+              "role_hint": {
+                "en": "detail recording remainders and reading bottom to top",
+                "hi": "शेषफल नोट कर नीचे से ऊपर पढ़ने का उल्लेख करें"
+              }
             },
             {
               "id": "en_u20_t3",
               "role": "condition",
               "text": "whereas converting binary to decimal multiplies each bit",
-              "role_hint": "introduce binary to decimal bit multiplication"
+              "role_hint": {
+                "en": "introduce binary to decimal bit multiplication",
+                "hi": "बाइनरी से दशमलव में प्रत्येक अंक की स्थिति बताएं"
+              }
             },
             {
               "id": "en_u20_t4",
               "role": "result",
               "text": "by its corresponding power of 2 from right to left and summing the products",
-              "role_hint": "conclude with positional powers of 2 and summation"
+              "role_hint": {
+                "en": "conclude with positional powers of 2 and summation",
+                "hi": "2 की घात से गुणा और जोड़ के साथ वाक्य समाप्त करें"
+              }
             }
           ],
           "distractors": [
@@ -2371,25 +2839,37 @@
               "id": "hi_u20_t1",
               "role": "subject",
               "text": "दशमलव संख्या को बाइनरी में बदलने के लिए संख्या को 2 से भाग देकर",
-              "role_hint": "दशमलव से बाइनरी में 2 से भाग देने से शुरुआत करें"
+              "role_hint": {
+                "en": "start with dividing decimal by 2 for binary conversion",
+                "hi": "दशमलव से बाइनरी में 2 से भाग देने से शुरुआत करें"
+              }
             },
             {
               "id": "hi_u20_t2",
               "role": "process",
               "text": "शेषफल नोट किए जाते हैं और उन्हें नीचे से ऊपर की ओर पढ़ा जाता है,",
-              "role_hint": "शेषफल नोट कर नीचे से ऊपर पढ़ने का उल्लेख करें"
+              "role_hint": {
+                "en": "mention recording remainders and reading bottom to top",
+                "hi": "शेषफल नोट कर नीचे से ऊपर पढ़ने का उल्लेख करें"
+              }
             },
             {
               "id": "hi_u20_t3",
               "role": "condition",
               "text": "जबकि बाइनरी से दशमलव में बदलने के लिए प्रत्येक बाइनरी अंक को",
-              "role_hint": "बाइनरी से दशमलव में प्रत्येक अंक की स्थिति बताएं"
+              "role_hint": {
+                "en": "introduce binary digits conversion to decimal",
+                "hi": "बाइनरी से दशमलव में प्रत्येक अंक की स्थिति बताएं"
+              }
             },
             {
               "id": "hi_u20_t4",
               "role": "result",
               "text": "दाएं से बाएं 2 की संगत घात से गुणा करके सभी गुणनफलों को जोड़ दिया जाता है",
-              "role_hint": "2 की घात से गुणा और जोड़ के साथ वाक्य समाप्त करें"
+              "role_hint": {
+                "en": "finish by multiplying by power of 2 from right to left and summing",
+                "hi": "2 की घात से गुणा और जोड़ के साथ वाक्य समाप्त करें"
+              }
             }
           ],
           "distractors": [
