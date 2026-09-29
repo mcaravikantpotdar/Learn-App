@@ -1,0 +1,2898 @@
+{
+  "chapter_id": "c11_cs_ch03_desktop_publishing_elementary",
+  "metadata": {
+    "class": "Class 11",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Desktop Publishing (DTP) Elementary",
+      "hi": "डेस्कटॉप पब्लिशिंग (DTP) प्रारंभिक"
+    },
+    "total_units": 20,
+    "scoring_model": {
+      "single_language_max": 10,
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "unit_id": "u01_dtp_concept_and_publications",
+      "topic": "Desktop Publishing: Concept & Publication Scope",
+      "pedagogical_objective": "Define DTP as computer-based layout design combining text, images, and graphics for brochures, magazines, books, flyers, and newspapers.",
+      "instruction": {
+        "title": {
+          "en": "What is Desktop Publishing (DTP)?",
+          "hi": "डेस्कटॉप पब्लिशिंग (DTP) क्या है?"
+        },
+        "theory": {
+          "en": "Desktop publishing (DTP) is the process of creating and designing publications such as brochures, magazines, books, flyers, and newspapers using specialized computer software. Unlike basic text documents created in word processors, files created in DTP software are called 'publications', integrating text, high-resolution images, and vector graphics.",
+          "hi": "डेस्कटॉप पब्लिशिंग (DTP) कंप्यूटर सॉफ्टवेयर का उपयोग करके ब्रोशर, पत्रिकाएं, किताबें, फ़्लायर्स और समाचार पत्र जैसे प्रकाशन बनाने और डिज़ाइन करने की प्रक्रिया है। वर्ड प्रोसेसिंग में बनी फ़ाइल को जहाँ 'दस्तावेज़' कहा जाता है, वहीं DTP सॉफ़्टवेयर में तैयार की गई फ़ाइल को 'प्रकाशन' (publication) कहा जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='40' y='65' width='160' height='90' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='120' y='100' fill='#38bdf8' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Text + Images</text><text x='120' y='125' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Design Elements</text><line x1='200' y1='110' x2='260' y2='110' stroke='#38bdf8' stroke-width='3'/><polygon points='265,110 255,105 255,115' fill='#38bdf8'/><rect x='265' y='65' width='110' height='90' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='320' y='105' fill='#fbbf24' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>DTP Engine</text><text x='320' y='125' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>PageMaker</text><line x1='375' y1='110' x2='435' y2='110' stroke='#4ade80' stroke-width='3'/><polygon points='440,110 430,105 430,115' fill='#4ade80'/><rect x='440' y='65' width='160' height='90' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='520' y='100' fill='#4ade80' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Publication</text><text x='520' y='125' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Books • Magazines</text></svg>",
+          "caption": {
+            "en": "Desktop Publishing workflow synthesizing visual media and typography into publications.",
+            "hi": "टेक्स्ट और ग्राफिक्स को मिलाकर व्यावसायिक प्रकाशन तैयार करने की DTP प्रक्रिया।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the formal definition of Desktop Publishing and its distinctive output.",
+          "target_sequence": [
+            {
+              "id": "en_u01_t1",
+              "role": "subject",
+              "text": "desktop publishing is the specialized process",
+              "role_hint": {
+                "en": "start with the primary subject clause defining DTP",
+                "hi": "DTP को परिभाषित करने वाले मुख्य कर्ता खंड से शुरुआत करें"
+              }
+            },
+            {
+              "id": "en_u01_t2",
+              "role": "process",
+              "text": "of creating and designing professional page layouts using computer software,",
+              "role_hint": {
+                "en": "specify the design and page layout process",
+                "hi": "सॉफ्टवेयर द्वारा लेआउट डिजाइन की प्रक्रिया जोड़ें"
+              }
+            },
+            {
+              "id": "en_u01_t3",
+              "role": "condition",
+              "text": "combining text, graphics, and high-resolution images",
+              "role_hint": {
+                "en": "add the clause describing the integration of media elements",
+                "hi": "टेक्स्ट, ग्राफिक्स और छवियों के एकीकरण का उल्लेख करें"
+              }
+            },
+            {
+              "id": "en_u01_t4",
+              "role": "result",
+              "text": "to produce printed publications like brochures, magazines, and newspapers",
+              "role_hint": {
+                "en": "conclude with the resulting publication outputs",
+                "hi": "अंतिम प्रकाशन उत्पादों के साथ वाक्य समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u01_d1",
+              "category": "logical",
+              "text": "to format raw hard disk sectors into unreadable binary files",
+              "penalty_explanation": "Logical error: DTP designs printed layouts; it does not format low-level hardware sectors."
+            },
+            {
+              "id": "en_u01_d2",
+              "category": "grammatical",
+              "text": "of create and design layout without software tools",
+              "penalty_explanation": "Grammatical error: preposition 'of' requires the gerund form 'creating and designing'."
+            }
+          ],
+          "hint": "Start with DTP as a process, mention designing layouts using software, combine text/graphics, and end with publications."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "डेस्कटॉप पब्लिशिंग (DTP) की परिभाषा और उद्देश्य का सही क्रम बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u01_t1",
+              "role": "subject",
+              "text": "डेस्कटॉप पब्लिशिंग कंप्यूटर सॉफ्टवेयर का उपयोग करके",
+              "role_hint": {
+                "en": "start with the subject clause covering DTP and computer software",
+                "hi": "DTP और कंप्यूटर सॉफ्टवेयर के परिचय से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u01_t2",
+              "role": "process",
+              "text": "टेक्स्ट, इमेज और ग्राफ़िक्स को संयोजित करने की वह प्रक्रिया है,",
+              "role_hint": {
+                "en": "describe the combination of text, images, and graphics",
+                "hi": "टेक्स्ट और ग्राफिक्स के संयोजन का विवरण दें"
+              }
+            },
+            {
+              "id": "hi_u01_t3",
+              "role": "condition",
+              "text": "जिसमें पेशेवर दिखने वाले दस्तावेज़ तैयार किए जाते हैं,",
+              "role_hint": {
+                "en": "state the preparation of professional documents",
+                "hi": "पेशेवर दस्तावेज़ तैयार करने की स्थिति जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u01_t4",
+              "role": "result",
+              "text": "और इस प्रक्रिया द्वारा निर्मित फ़ाइल को प्रकाशन कहा जाता है",
+              "role_hint": {
+                "en": "conclude with the file being called a publication",
+                "hi": "निर्मित फ़ाइल को प्रकाशन कहे जाने के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u01_d1",
+              "category": "logical",
+              "text": "और यह केवल कंप्यूटर के मदरबोर्ड को साफ करने का काम करती है",
+              "penalty_explanation": "तार्किक त्रुटि: DTP प्रकाशन डिज़ाइन करने का सॉफ्टवेयर है, भौतिक सफाई का नहीं।"
+            },
+            {
+              "id": "hi_u01_d2",
+              "category": "grammatical",
+              "text": "जो बिना किसी सॉफ्टवेयर के स्वतः छप जाती",
+              "penalty_explanation": "व्याकरणिक त्रुटि: अधूरा वाक्य खंड जो अर्थपूर्ण वाक्य का निर्माण नहीं करता।"
+            }
+          ],
+          "hint": "सॉफ्टवेयर के उपयोग से शुरू करें, मीडिया संयोजन बताएं, और फ़ाइल को प्रकाशन कहे जाने पर समाप्त करें।"
+        }
+      },
+      "key_takeaway": {
+        "en": "DTP combines text, graphics, and layout tools to produce complex printed publications like books and flyers.",
+        "hi": "DTP पेशेवर प्रकाशन (ब्रोशर, पत्रिकाएं, किताबें) बनाने के लिए टेक्स्ट और ग्राफिक्स का संयोजन करता है।"
+      }
+    },
+    {
+      "unit_id": "u02_word_processing_vs_dtp",
+      "topic": "Word Processing vs. Desktop Publishing",
+      "pedagogical_objective": "Contrast document drafting (direct typing in MS Word) with layout-driven publication creation (requiring text frames in DTP).",
+      "instruction": {
+        "title": {
+          "en": "Word Processing vs. Desktop Publishing",
+          "hi": "वर्ड-प्रोसेसिंग बनाम डेस्कटॉप पब्लिशिंग"
+        },
+        "theory": {
+          "en": "Word processing software (e.g., Microsoft Word, Google Docs) is designed for creating and editing basic text documents like letters, memos, and resumes, where text is entered directly. Desktop Publishing software (e.g., PageMaker, CorelDraw, QuarkXPress) focuses on complex page design combining text, frames, and graphics for brochures and magazines; in DTP, text cannot be entered directly on the page and requires inserting a text frame first.",
+          "hi": "वर्ड प्रोसेसिंग (जैसे MS Word) का उपयोग पत्र, मेमो और बायोडाटा जैसे टेक्स्ट दस्तावेज़ बनाने हेतु होता है, जहाँ टेक्स्ट सीधे टाइप किया जा सकता है। इसके विपरीत, DTP (जैसे PageMaker, CorelDraw) ब्रोशर और पत्रिकाओं के लेआउट डिज़ाइन के लिए उपयोग होता है, जहाँ टेक्स्ट टाइप करने के लिए पहले टेक्स्ट फ्रेम डालना अनिवार्य होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><line x1='320' y1='20' x2='320' y2='200' stroke='#334155' stroke-width='1.5'/><text x='160' y='50' fill='#38bdf8' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Word Processing</text><text x='160' y='85' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>• Direct text entry on page</text><text x='160' y='110' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>• Output: Standard Document</text><text x='160' y='135' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>• Letters, Memos, Resumes</text><text x='160' y='160' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>MS Word • Google Docs</text><text x='480' y='50' fill='#fbbf24' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Desktop Publishing</text><text x='480' y='85' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>• Requires text frames to type</text><text x='480' y='110' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>• Output: Publication File</text><text x='480' y='135' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>• Brochures, Flyers, Books</text><text x='480' y='160' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>PageMaker • QuarkXPress</text></svg>",
+          "caption": {
+            "en": "Structural distinction between direct-entry Word Processing and frame-based Desktop Publishing.",
+            "hi": "वर्ड प्रोसेसिंग (सीधा टेक्स्ट इनपुट) और DTP (फ्रेम-आधारित डिज़ाइन) के बीच तकनीकी अंतर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact contrast between word processing and desktop publishing mechanics.",
+          "target_sequence": [
+            {
+              "id": "en_u02_t1",
+              "role": "subject",
+              "text": "while word processing allows text to be entered directly onto pages",
+              "role_hint": {
+                "en": "start with the direct text entry clause of word processing",
+                "hi": "वर्ड प्रोसेसिंग में सीधे टेक्स्ट दर्ज करने के खंड से शुरुआत करें"
+              }
+            },
+            {
+              "id": "en_u02_t2",
+              "role": "process",
+              "text": "to draft standard documents such as letters and resumes,",
+              "role_hint": {
+                "en": "mention standard documents like letters and resumes",
+                "hi": "पत्र और बायोडाटा जैसे सामान्य दस्तावेज़ों का उल्लेख करें"
+              }
+            },
+            {
+              "id": "en_u02_t3",
+              "role": "condition",
+              "text": "desktop publishing requires inserting a dedicated text frame first",
+              "role_hint": {
+                "en": "introduce the DTP requirement of inserting text frames",
+                "hi": "DTP में टेक्स्ट फ्रेम डालने की अनिवार्यता जोड़ें"
+              }
+            },
+            {
+              "id": "en_u02_t4",
+              "role": "result",
+              "text": "to build complex multi-element publications like magazines and flyers",
+              "role_hint": {
+                "en": "conclude with building publications like magazines and flyers",
+                "hi": "पत्रिकाओं और फ़्लायर्स जैसे जटिल प्रकाशनों पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u02_d1",
+              "category": "logical",
+              "text": "to completely disable all computer keyboards and typing functions",
+              "penalty_explanation": "Logical error: DTP relies heavily on typing within frames; it does not disable keyboards."
+            },
+            {
+              "id": "en_u02_d2",
+              "category": "grammatical",
+              "text": "desktop publishing require insert dedicated text frame",
+              "penalty_explanation": "Grammatical error: singular subject requires 'requires' followed by a gerund or infinitive."
+            }
+          ],
+          "hint": "Contrast direct typing in word processors with the mandatory text frames needed for DTP layouts."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "वर्ड-प्रोसेसिंग और DTP के बीच के अंतर को सही क्रम में व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u02_t1",
+              "role": "subject",
+              "text": "जहाँ वर्ड-प्रोसेसिंग में पत्र और बायोडाटा जैसे दस्तावेज़ बनाने के लिए",
+              "role_hint": {
+                "en": "start with word processing creating letters and resumes",
+                "hi": "वर्ड-प्रोसेसिंग में पत्र और बायोडाटा के संदर्भ से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u02_t2",
+              "role": "process",
+              "text": "टेक्स्ट को पृष्ठ पर सीधे टाइप किया जा सकता है,",
+              "role_hint": {
+                "en": "mention direct text typing on the page",
+                "hi": "सीधे टेक्स्ट टाइप करने की प्रक्रिया बताएं"
+              }
+            },
+            {
+              "id": "hi_u02_t3",
+              "role": "condition",
+              "text": "वहीं डेस्कटॉप पब्लिशिंग में ब्रोशर और पत्रिकाएं तैयार करने हेतु",
+              "role_hint": {
+                "en": "introduce DTP for designing brochures and magazines",
+                "hi": "DTP में ब्रोशर और पत्रिकाओं के निर्माण का संदर्भ जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u02_t4",
+              "role": "result",
+              "text": "टेक्स्ट टाइप करने से पूर्व एक टेक्स्ट फ्रेम डालना अनिवार्य होता है",
+              "role_hint": {
+                "en": "finish with the mandatory requirement of inserting a text frame",
+                "hi": "टेक्स्ट फ्रेम डालने की अनिवार्यता के साथ वाक्य समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u02_d1",
+              "category": "logical",
+              "text": "कंप्यूटर की स्क्रीन को पूरी तरह बंद करना आवश्यक होता है",
+              "penalty_explanation": "तार्किक त्रुटि: DTP स्क्रीन पर देखकर डिज़ाइन किया जाता है, स्क्रीन बंद करके नहीं।"
+            },
+            {
+              "id": "hi_u02_d2",
+              "category": "grammatical",
+              "text": "जो बिना किसी फ्रेम के स्वतः उड़कर",
+              "penalty_explanation": "व्याकरणिक त्रुटि: असंगत पद जो वाक्य विन्यास को खंडित करता है।"
+            }
+          ],
+          "hint": "वर्ड प्रोसेसिंग में सीधा टेक्स्ट टाइप होता है, जबकि DTP में पहले टेक्स्ट फ्रेम बनाना पड़ता है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Word processing handles direct text documents, whereas DTP relies on text frames to orchestrate visual layouts.",
+        "hi": "वर्ड प्रोसेसिंग सीधे टेक्स्ट लिखने के लिए है, जबकि DTP में टेक्स्ट फ्रेम का उपयोग करके जटिल लेआउट बनते हैं।"
+      }
+    },
+    {
+      "unit_id": "u03_pagemaker_overview",
+      "topic": "PageMaker: Overview & Multi-Page Scope",
+      "pedagogical_objective": "Identify Adobe PageMaker as a premier DTP application capable of designing both single-page and complex multi-page publications.",
+      "instruction": {
+        "title": {
+          "en": "Adobe PageMaker: Overview and Capabilities",
+          "hi": "एडोब पेजमेकर: परिचय और कार्यक्षमता"
+        },
+        "theory": {
+          "en": "PageMaker is a popular Desktop Publishing (DTP) software application designed to create and edit professional publications including brochures, identity cards, flyers, books, and newspapers. It provides powerful layout tools capable of assembling both single-page projects (e.g., identity cards, flyers) and extensive multi-page publications (e.g., books, magazines).",
+          "hi": "पेजमेकर एक अत्यधिक लोकप्रिय डेस्कटॉप पब्लिशिंग सॉफ्टवेयर है। इसका उपयोग ब्रोशर, पत्रिकाएं, किताबें, फ़्लायर्स, समाचार पत्र और पहचान पत्र जैसे प्रकाशन बनाने के लिए किया जाता है। पेजमेकर का उपयोग एकल पृष्ठ (single-page) प्रकाशनों के साथ-साथ बहु-पृष्ठ (multi-page) प्रकाशनों के निर्माण हेतु भी किया जा सकता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='55' width='230' height='110' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='175' y='90' fill='#38bdf8' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Single-Page Layouts</text><text x='175' y='115' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>ID Cards • Flyers • Posters</text><text x='175' y='135' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Precise Vector Placement</text><rect x='350' y='55' width='230' height='110' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='465' y='90' fill='#4ade80' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Multi-Page Layouts</text><text x='465' y='115' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>Books • Magazines • Newspapers</text><text x='465' y='135' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Master Page Sequencing</text></svg>",
+          "caption": {
+            "en": "Scope of PageMaker: Scalable from standalone single sheets to multi-page publication volumes.",
+            "hi": "पेजमेकर की कार्यक्षमता: एकल पृष्ठ पहचान पत्रों से लेकर बहु-पृष्ठ किताबों तक का प्रकाशन।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Assemble the sequence outlining the publication capabilities of Adobe PageMaker.",
+          "target_sequence": [
+            {
+              "id": "en_u03_t1",
+              "role": "subject",
+              "text": "adobe pagemaker is a popular desktop publishing software",
+              "role_hint": {
+                "en": "start with the subject identifying PageMaker as DTP software",
+                "hi": "पेजमेकर को DTP सॉफ्टवेयर बताने वाले कर्ता खंड से शुरुआत करें"
+              }
+            },
+            {
+              "id": "en_u03_t2",
+              "role": "process",
+              "text": "utilized to create and edit diverse graphic publications,",
+              "role_hint": {
+                "en": "mention creating and editing diverse publications",
+                "hi": "प्रकाशन बनाने और संपादित करने की प्रक्रिया जोड़ें"
+              }
+            },
+            {
+              "id": "en_u03_t3",
+              "role": "condition",
+              "text": "offering specialized layout environments",
+              "role_hint": {
+                "en": "specify the flexible layout environment",
+                "hi": "लेआउट वातावरण की स्थिति बताएं"
+              }
+            },
+            {
+              "id": "en_u03_t4",
+              "role": "result",
+              "text": "for both single-page identity cards and extensive multi-page books",
+              "role_hint": {
+                "en": "conclude with single-page and multi-page publication examples",
+                "hi": "एकल पृष्ठ और बहु-पृष्ठ प्रकाशनों के उदाहरणों पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u03_d1",
+              "category": "logical",
+              "text": "for translating python scripts into assembly language firmware",
+              "penalty_explanation": "Logical error: PageMaker is a page design tool, not a programming language compiler."
+            },
+            {
+              "id": "en_u03_d2",
+              "category": "grammatical",
+              "text": "utilized to creating and editing publication without software",
+              "penalty_explanation": "Grammatical error: preposition 'to' requires base verb 'create and edit' in this infinitive construct."
+            }
+          ],
+          "hint": "State PageMaker's role as a DTP tool, explain its layout capabilities, and mention single- and multi-page publishing."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "पेजमेकर सॉफ्टवेयर की विशेषताओं और उपयोग के दायरे का सही क्रम बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u03_t1",
+              "role": "subject",
+              "text": "पेजमेकर एक लोकप्रिय डेस्कटॉप पब्लिशिंग सॉफ्टवेयर है",
+              "role_hint": {
+                "en": "start with PageMaker as popular DTP software",
+                "hi": "पेजमेकर के DTP सॉफ्टवेयर होने के परिचय से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u03_t2",
+              "role": "process",
+              "text": "जिसका उपयोग पेशेवर प्रकाशनों को डिजाइन करने के लिए किया जाता है,",
+              "role_hint": {
+                "en": "describe designing professional publications",
+                "hi": "प्रकाशन डिज़ाइन करने की प्रक्रिया बताएं"
+              }
+            },
+            {
+              "id": "hi_u03_t3",
+              "role": "condition",
+              "text": "तथा यह ब्रोशर और समाचार पत्रों के निर्माण में",
+              "role_hint": {
+                "en": "mention brochures and newspapers context",
+                "hi": "ब्रोशर और समाचार पत्रों के निर्माण का संदर्भ जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u03_t4",
+              "role": "result",
+              "text": "एकल पृष्ठ और बहु-पृष्ठ दोनों प्रकार के प्रकाशनों का समर्थन करता है",
+              "role_hint": {
+                "en": "conclude with supporting single-page and multi-page layouts",
+                "hi": "एकल और बहु-पृष्ठ प्रकाशनों के समर्थन पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u03_d1",
+              "category": "logical",
+              "text": "केवल कंप्यूटर के वायरस को स्कैन करके डिलीट करता है",
+              "penalty_explanation": "तार्किक त्रुटि: वायरस स्कैन करना एंटीवायरस का कार्य है, पेजमेकर का नहीं।"
+            },
+            {
+              "id": "hi_u03_d2",
+              "category": "grammatical",
+              "text": "जो बिना किसी पृष्ठ के सीधे शून्य में",
+              "penalty_explanation": "व्याकरणिक त्रुटि: असंगत पद जो वाक्य के अर्थ को निरर्थक बनाता है।"
+            }
+          ],
+          "hint": "पेजमेकर DTP सॉफ्टवेयर है, यह पेशेवर लेआउट बनाता है और एकल व बहु-पृष्ठ दोनों का समर्थन करता है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "PageMaker delivers an industry-standard layout workspace adaptable for both single-sheet and multi-page publications.",
+        "hi": "पेजमेकर एक शक्तिशाली DTP टूल है जो एकल पृष्ठ और बहु-पृष्ठ दोनों प्रकार के प्रकाशनों के निर्माण में सक्षम है।"
+      }
+    },
+    {
+      "unit_id": "u04_window_control_bars",
+      "topic": "Window Controls: Title Bar, Menu Bar, & Tool Bar",
+      "pedagogical_objective": "Distinguish document title displays, command drop-down menus (File, Edit, Layout, etc.), and quick-access toolbar icon buttons.",
+      "instruction": {
+        "title": {
+          "en": "PageMaker Window Layout: Title, Menu, and Tool Bars",
+          "hi": "पेजमेकर विंडो संरचना: टाइटल बार, मेनू बार और टूल बार"
+        },
+        "theory": {
+          "en": "The PageMaker interface organizes document management across three primary top bars: the Title Bar displays the current document name and application title; the Menu Bar contains pull-down menus (File, Edit, Layout, Type, Element, Utilities, Help) providing access to tools and operational commands; and the Tool Bar provides icon buttons to execute common, frequently used tasks quickly instead of using menus.",
+          "hi": "पेजमेकर विंडो के शीर्ष पर तीन प्रमुख बार होते हैं: 1. टाइटल बार (शीर्षक बार)—जो दस्तावेज़ का नाम और सॉफ्टवेयर शीर्षक प्रदर्शित करता है; 2. मेनू बार—जिसमें File, Edit, Layout, Type, Element, Utilities और Help जैसे मेनू होते हैं; और 3. टूल बार—जिसमें अक्सर उपयोग किए जाने वाले कार्यों के त्वरित निष्पादन हेतु बटन होते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='40' y='35' width='560' height='35' rx='4' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='58' fill='#38bdf8' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Title Bar: Adobe PageMaker 7.0 - [Document Name]</text><rect x='40' y='80' width='560' height='35' rx='4' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='320' y='103' fill='#fbbf24' font-size='11' font-family='sans-serif' text-anchor='middle'>Menu Bar: File • Edit • Layout • Type • Element • Utilities • Help</text><rect x='40' y='125' width='560' height='40' rx='4' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='320' y='150' fill='#4ade80' font-size='11' font-family='sans-serif' text-anchor='middle'>Tool Bar: Quick Action Buttons (New, Open, Save, Print)</text><text x='320' y='195' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Top Command Hierarchy of the PageMaker GUI</text></svg>",
+          "caption": {
+            "en": "Hierarchy of the upper window controls: Title Bar, Menu Bar, and Icon Tool Bar.",
+            "hi": "पेजमेकर विंडो के शीर्ष नियंत्रण: टाइटल बार, मेनू बार और त्वरित टूल बार।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact structural explanation of PageMaker's upper window control bars.",
+          "target_sequence": [
+            {
+              "id": "en_u04_t1",
+              "role": "subject",
+              "text": "the pagemaker window features the title bar",
+              "role_hint": {
+                "en": "start with the subject clause introducing the Title Bar",
+                "hi": "टाइटल बार के परिचय वाले मुख्य कर्ता खंड से शुरुआत करें"
+              }
+            },
+            {
+              "id": "en_u04_t2",
+              "role": "process",
+              "text": "to display the document name alongside application identity,",
+              "role_hint": {
+                "en": "detail displaying document and application names",
+                "hi": "दस्तावेज़ और सॉफ्टवेयर का नाम दिखाने का विवरण दें"
+              }
+            },
+            {
+              "id": "en_u04_t3",
+              "role": "condition",
+              "text": "positioned above the command-rich menu bar",
+              "role_hint": {
+                "en": "state position above the menu bar",
+                "hi": "मेनू बार के ऊपर स्थित होने की स्थिति बताएं"
+              }
+            },
+            {
+              "id": "en_u04_t4",
+              "role": "result",
+              "text": "and the icon tool bar which provides quick shortcuts for frequent tasks",
+              "role_hint": {
+                "en": "conclude with the icon tool bar offering shortcuts for common tasks",
+                "hi": "अक्सर प्रयुक्त कार्यों हेतु टूल बार के शॉर्टकट बटनों पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u04_d1",
+              "category": "logical",
+              "text": "which mechanically shreds paper sheets inside the monitor frame",
+              "penalty_explanation": "Logical error: interface control bars execute software commands; they do not physically shred paper."
+            },
+            {
+              "id": "en_u04_d2",
+              "category": "grammatical",
+              "text": "and the icon tool bar which provide quick shortcuts",
+              "penalty_explanation": "Grammatical error: singular antecedent 'tool bar' requires singular verb agreement 'provides'."
+            }
+          ],
+          "hint": "Identify the Title Bar showing file names, mention the Menu Bar with commands, and link to the Tool Bar for quick shortcuts."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "पेजमेकर विंडो के शीर्ष बारों (टाइटल, मेनू और टूल बार) का सही क्रम बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u04_t1",
+              "role": "subject",
+              "text": "पेजमेकर विंडो का शीर्षक बार (Title Bar)",
+              "role_hint": {
+                "en": "start with the Title Bar of PageMaker window",
+                "hi": "पेजमेकर के टाइटल बार से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u04_t2",
+              "role": "process",
+              "text": "सॉफ्टवेयर शीर्षक और सक्रिय दस्तावेज़ का नाम प्रदर्शित करता है,",
+              "role_hint": {
+                "en": "describe displaying software and document names",
+                "hi": "दस्तावेज़ और सॉफ्टवेयर शीर्षक प्रदर्शन का उल्लेख करें"
+              }
+            },
+            {
+              "id": "hi_u04_t3",
+              "role": "condition",
+              "text": "जिसके ठीक नीचे विभिन्न कमांड मेनू प्रदान करने वाला मेनू बार",
+              "role_hint": {
+                "en": "add the Menu Bar located directly below",
+                "hi": "नीचे स्थित मेनू बार का संदर्भ जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u04_t4",
+              "role": "result",
+              "text": "और अक्सर उपयोग होने वाले कार्यों हेतु शॉर्टकट बटन युक्त टूल बार होता है",
+              "role_hint": {
+                "en": "finish with the Tool Bar containing shortcut buttons",
+                "hi": "शॉर्टकट बटनों वाले टूल बार के साथ वाक्य समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u04_d1",
+              "category": "logical",
+              "text": "और सभी मेनू को तुरंत छुपाकर कंप्यूटर बंद कर देता है",
+              "penalty_explanation": "तार्किक त्रुटि: बार्स नेविगेशन और कमांड निष्पादन के लिए होते हैं, सिस्टम बंद करने के लिए नहीं।"
+            },
+            {
+              "id": "hi_u04_d2",
+              "category": "grammatical",
+              "text": "जो बिना किसी बटन के स्वतः काम",
+              "penalty_explanation": "व्याकरणिक त्रुटि: अधूरा उपवाक्य जो मुख्य वाक्य रचना से मेल नहीं खाता।"
+            }
+          ],
+          "hint": "टाइटल बार नाम दिखाता है, मेनू बार कमांड देता है, और टूल बार त्वरित शॉर्टकट बटन प्रदान करता है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "The Title Bar identifies files, the Menu Bar houses drop-down commands, and the Tool Bar delivers one-click operational shortcuts.",
+        "hi": "टाइटल बार दस्तावेज़ का नाम दिखाता है, मेनू बार आदेश प्रदान करता है, और टूल बार त्वरित शॉर्टकट देता है।"
+      }
+    },
+    {
+      "unit_id": "u05_page_area_vs_pasteboard",
+      "topic": "Workspace Anatomy: Page Area vs. Pasteboard",
+      "pedagogical_objective": "Contrast the printable page area with the surrounding non-printing pasteboard staging ground.",
+      "instruction": {
+        "title": {
+          "en": "Workspace Layout: Page Area vs. Pasteboard",
+          "hi": "कार्यक्षेत्र संरचना: पेज एरिया बनाम पेस्टबोर्ड"
+        },
+        "theory": {
+          "en": "The central workspace in PageMaker is bifurcated into two functional zones: the Page Area is the central bounded printable workspace where publication pages are designed, viewed, and printed. The Pasteboard is the vast surrounding staging area where text blocks and graphics can be stored temporarily; objects placed on the pasteboard remain accessible across pages but never appear in the final printed document.",
+          "hi": "पेजमेकर का कार्यक्षेत्र दो भागों में बंटा होता है: 1. पेज एरिया (Page Area)—यह केंद्रीय कार्यक्षेत्र है जहाँ दस्तावेज़ के पृष्ठ प्रदर्शित, संपादित और मुद्रित होते हैं; 2. पेस्टबोर्ड (Pasteboard)—यह पृष्ठ के चारों ओर का क्षेत्र है जहाँ ऑब्जेक्ट्स को अस्थायी रूप से रखा जा सकता है। पेस्टबोर्ड पर रखी वस्तुएं मुद्रित दस्तावेज़ में दिखाई नहीं देती हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='80' y='30' width='480' height='160' rx='6' fill='#1e293b' stroke='#94a3b8' stroke-width='1.5' stroke-dasharray='4'/><text x='150' y='55' fill='#94a3b8' font-size='12' font-family='sans-serif'>Pasteboard (Temporary Staging)</text><text x='150' y='75' fill='#f87171' font-size='10' font-family='sans-serif'>• Objects here DO NOT print</text><rect x='240' y='45' width='160' height='130' fill='#0f172a' stroke='#38bdf8' stroke-width='2'/><text x='320' y='105' fill='#38bdf8' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Page Area</text><text x='320' y='125' fill='#4ade80' font-size='10' font-family='sans-serif' text-anchor='middle'>Printable Document</text><rect x='100' y='100' width='70' height='45' rx='3' fill='#334155' stroke='#fbbf24' stroke-width='1'/><text x='135' y='125' fill='#fbbf24' font-size='9' font-family='sans-serif' text-anchor='middle'>Staged Art</text></svg>",
+          "caption": {
+            "en": "Workspace geometry: Active printable Page Area enclosed by the non-printing staging Pasteboard.",
+            "hi": "कार्यक्षेत्र संरचना: मुद्रण योग्य पेज एरिया तथा अप्रकाशित वस्तुओं के संचयन हेतु पेस्टबोर्ड।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact sentence contrasting the printable page area with the non-printing pasteboard.",
+          "target_sequence": [
+            {
+              "id": "en_u05_t1",
+              "role": "subject",
+              "text": "while the page area serves as the central printable workspace",
+              "role_hint": {
+                "en": "start with the page area as the printable workspace",
+                "hi": "पेज एरिया को मुद्रण योग्य कार्यक्षेत्र बताने वाले खंड से शुरुआत करें"
+              }
+            },
+            {
+              "id": "en_u05_t2",
+              "role": "process",
+              "text": "where publication pages are displayed and actively edited,",
+              "role_hint": {
+                "en": "describe displaying and editing active pages",
+                "hi": "पृष्ठों के संपादन और प्रदर्शन का विवरण दें"
+              }
+            },
+            {
+              "id": "en_u05_t3",
+              "role": "condition",
+              "text": "the surrounding pasteboard acts as a staging ground",
+              "role_hint": {
+                "en": "introduce the surrounding pasteboard as staging area",
+                "hi": "पेस्टबोर्ड के अस्थायी क्षेत्र होने की स्थिति बताएं"
+              }
+            },
+            {
+              "id": "en_u05_t4",
+              "role": "result",
+              "text": "to store graphic objects temporarily without appearing in the printed output",
+              "role_hint": {
+                "en": "conclude with temporary storage that does not appear in final print",
+                "hi": "प्रिंट में न दिखने वाले अस्थायी संचयन के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u05_d1",
+              "category": "logical",
+              "text": "and prints all staged objects automatically across every page boundary",
+              "penalty_explanation": "Logical error: objects placed on the pasteboard are explicitly excluded from printing."
+            },
+            {
+              "id": "en_u05_d2",
+              "category": "grammatical",
+              "text": "the surrounding pasteboard act as staging ground",
+              "penalty_explanation": "Grammatical error: singular subject 'pasteboard' requires singular verb agreement 'acts'."
+            }
+          ],
+          "hint": "Contrast the printable page area where elements print with the surrounding pasteboard holding temporary non-printing items."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "पेज एरिया (मुद्रण योग्य) और पेस्टबोर्ड (अस्थायी संचयन) के अंतर को सही क्रम में लगाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u05_t1",
+              "role": "subject",
+              "text": "जहाँ पेज एरिया मुख्य केंद्रीय कार्यक्षेत्र होता है",
+              "role_hint": {
+                "en": "start with page area being the main central workspace",
+                "hi": "पेज एरिया के मुख्य कार्यक्षेत्र होने से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u05_t2",
+              "role": "process",
+              "text": "जहाँ दस्तावेज़ के पृष्ठों को डिज़ाइन और मुद्रित किया जाता है,",
+              "role_hint": {
+                "en": "mention designing and printing document pages",
+                "hi": "दस्तावेज़ डिज़ाइन और मुद्रण का उल्लेख करें"
+              }
+            },
+            {
+              "id": "hi_u05_t3",
+              "role": "condition",
+              "text": "वहीं पृष्ठ के चारों ओर स्थित पेस्टबोर्ड एक ऐसा क्षेत्र है",
+              "role_hint": {
+                "en": "introduce the pasteboard surrounding the page",
+                "hi": "पेस्टबोर्ड की स्थिति जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u05_t4",
+              "role": "result",
+              "text": "जहाँ वस्तुओं को अस्थायी रूप से रखा जाता है और वे प्रिंट में नहीं आतीं",
+              "role_hint": {
+                "en": "finish with temporary storage of items that do not print",
+                "hi": "अस्थायी संचयन और प्रिंट में न आने के परिणाम के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u05_d1",
+              "category": "logical",
+              "text": "जहाँ रखी वस्तुएं प्रिंटर की स्याही को पूरी तरह सुखा देती हैं",
+              "penalty_explanation": "तार्किक त्रुटि: पेस्टबोर्ड स्क्रीन पर एक लेआउट क्षेत्र है; यह भौतिक स्याही को प्रभावित नहीं करता।"
+            },
+            {
+              "id": "hi_u05_d2",
+              "category": "grammatical",
+              "text": "जो बिना किसी पेज के सीधे गायब होकर",
+              "penalty_explanation": "व्याकरणिक त्रुटि: निरर्थक वाक्यांश जो वाक्य संरचना को बिगाड़ता है।"
+            }
+          ],
+          "hint": "पेज एरिया पर काम प्रिंट होता है, जबकि पेस्टबोर्ड पर रखी वस्तुएं केवल अस्थायी संचयन के लिए होती हैं।"
+        }
+      },
+      "key_takeaway": {
+        "en": "The Page Area contains active printable elements, whereas the Pasteboard serves as an off-page holding area excluded from printing.",
+        "hi": "पेज एरिया मुद्रण योग्य कार्यक्षेत्र है, जबकि पेस्टबोर्ड अस्थायी संचयन क्षेत्र है जिसकी वस्तुएं प्रिंट नहीं होती हैं।"
+      }
+    },
+    {
+      "unit_id": "u06_rulers_guides_scrollbars",
+      "topic": "Precision Tools: Rulers, Guides, & Scroll Bars",
+      "pedagogical_objective": "Analyze horizontal/vertical rulers, draggable alignment guide lines, and canvas scroll bars for navigation.",
+      "instruction": {
+        "title": {
+          "en": "Precision Alignment: Rulers, Guides, and Scroll Bars",
+          "hi": "सटीक संरेखण: रूलर, गाइड और स्क्रॉल बार"
+        },
+        "theory": {
+          "en": "Precision placement in PageMaker is guided by rulers and navigation aids. Horizontal and vertical Rulers border the workspace to calibrate exact measurements and element dimensions. By clicking and dragging from the rulers, non-printing guide lines can be pulled onto the page for millimeter-precise alignment. Meanwhile, horizontal and vertical Scroll Bars permit navigation across large pages or high zoom levels.",
+          "hi": "पेजमेकर में तत्वों को सटीक स्थान पर रखने के लिए रूलर और गाइड का उपयोग होता है। कार्यक्षेत्र के शीर्ष और बाईं ओर क्षैतिज व ऊर्ध्वाधर रूलर (Rulers) होते हैं। इन रूलरों से खींचकर (drag करके) नॉन-प्रिंटिंग गाइड लाइनें बनाई जा सकती हैं जो सटीक संरेखण में मदद करती हैं। वहीं स्क्रॉल बार (Scroll Bars) पृष्ठ के विभिन्न भागों में नेविगेट करने की अनुमति देते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='80' y='30' width='480' height='20' fill='#1e293b' stroke='#94a3b8' stroke-width='1'/><text x='320' y='44' fill='#38bdf8' font-size='10' font-family='monospace' text-anchor='middle'>|...|...|...| Horizontal Ruler |...|...|...|</text><rect x='60' y='50' width='20' height='130' fill='#1e293b' stroke='#94a3b8' stroke-width='1'/><text x='70' y='115' fill='#38bdf8' font-size='9' font-family='monospace' text-anchor='middle' transform='rotate(-90 70 115)'>Vertical Ruler</text><rect x='80' y='50' width='480' height='130' fill='#0f172a'/><line x1='180' y1='50' x2='180' y2='180' stroke='#38bdf8' stroke-width='1.5' stroke-dasharray='3'/><text x='185' y='80' fill='#38bdf8' font-size='9' font-family='sans-serif'>Draggable Guide</text><line x1='80' y1='120' x2='560' y2='120' stroke='#38bdf8' stroke-width='1.5' stroke-dasharray='3'/><rect x='80' y='180' width='480' height='15' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='320' y='192' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Horizontal Scroll Bar</text></svg>",
+          "caption": {
+            "en": "Coordinate alignment infrastructure: Measurement rulers, draggable guides, and canvas scroll bars.",
+            "hi": "सटीक संरेखण ढांचा: मापक रूलर, ड्रैग करने योग्य गाइड लाइनें और स्क्रॉल बार।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Assemble the sequence explaining the roles of rulers, draggable guides, and scroll bars.",
+          "target_sequence": [
+            {
+              "id": "en_u06_t1",
+              "role": "subject",
+              "text": "horizontal and vertical rulers calibrate element dimensions",
+              "role_hint": {
+                "en": "start with rulers calibrating element dimensions",
+                "hi": "रूलर द्वारा माप और आयाम तय करने से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u06_t2",
+              "role": "process",
+              "text": "allowing designers to drag non-printing alignment guides onto pages,",
+              "role_hint": {
+                "en": "describe dragging non-printing guides onto the page",
+                "hi": "गाइड लाइनों को खींचकर लाने की प्रक्रिया बताएं"
+              }
+            },
+            {
+              "id": "en_u06_t3",
+              "role": "condition",
+              "text": "while integrated scroll bars provide continuous navigation",
+              "role_hint": {
+                "en": "introduce scroll bars providing navigation",
+                "hi": "स्क्रॉल बार द्वारा नेविगेशन की स्थिति जोड़ें"
+              }
+            },
+            {
+              "id": "en_u06_t4",
+              "role": "result",
+              "text": "to position layout blocks with exacting geometric precision",
+              "role_hint": {
+                "en": "conclude with positioning layout blocks with precision",
+                "hi": "सटीक स्थिति और संरेखण के परिणाम पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u06_d1",
+              "category": "logical",
+              "text": "to permanently print bold black measurement grids over the entire cover design",
+              "penalty_explanation": "Logical error: rulers and guides are alignment references only and never print on the output."
+            },
+            {
+              "id": "en_u06_d2",
+              "category": "grammatical",
+              "text": "allowing designers to dragging non-printing alignment guides",
+              "penalty_explanation": "Grammatical error: preposition 'to' requires the base infinitive verb 'drag' rather than gerund 'dragging'."
+            }
+          ],
+          "hint": "Mention rulers calibrating measurements, pulling out draggable guides, and using scroll bars for precise navigation."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "रूलर, गाइड लाइन और स्क्रॉल बार की कार्यप्रणाली को सही क्रम में व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u06_t1",
+              "role": "subject",
+              "text": "क्षैतिज और ऊर्ध्वाधर रूलर पृष्ठ पर तत्वों को संरेखित करने",
+              "role_hint": {
+                "en": "start with horizontal and vertical rulers aligning elements",
+                "hi": "क्षैतिज और ऊर्ध्वाधर रूलर के संरेखण कार्य से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u06_t2",
+              "role": "process",
+              "text": "और सटीक स्थिति के लिए गाइड लाइनें खींचने में मदद करते हैं,",
+              "role_hint": {
+                "en": "mention dragging guide lines for precise positioning",
+                "hi": "गाइड लाइनें खींचने की प्रक्रिया जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u06_t3",
+              "role": "condition",
+              "text": "जबकि कार्यक्षेत्र के किनारों पर लगे स्क्रॉल बार",
+              "role_hint": {
+                "en": "introduce scroll bars along the workspace edges",
+                "hi": "किनारों पर स्थित स्क्रॉल बार की स्थिति बताएं"
+              }
+            },
+            {
+              "id": "hi_u06_t4",
+              "role": "result",
+              "text": "दस्तावेज़ के विभिन्न भागों में आसानी से नेविगेट करने की सुविधा देते हैं",
+              "role_hint": {
+                "en": "finish with navigating through different parts of the document",
+                "hi": "दस्तावेज़ में नेविगेट करने की सुविधा के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u06_d1",
+              "category": "logical",
+              "text": "और छपाई के समय पन्नों पर गहरे काले बॉर्डर बना देते हैं",
+              "penalty_explanation": "तार्किक त्रुटि: रूलर और गाइड लाइनें मुद्रित दस्तावेज़ में कभी दिखाई नहीं देती हैं।"
+            },
+            {
+              "id": "hi_u06_d2",
+              "category": "grammatical",
+              "text": "दस्तावेज़ के विभिन्न भागों में आसानी से नेविगेट करने की सुविधा देती हैं",
+              "penalty_explanation": "व्याकरणिक त्रुटि: पुल्लिंग कर्ता 'स्क्रॉल बार' के साथ स्त्रीलिंग क्रिया का अशुद्ध रूप।"
+            }
+          ],
+          "hint": "रूलर संरेखण और गाइड खींचने में मदद करते हैं, तथा स्क्रॉल बार नेविगेशन की अनुमति देते हैं।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Rulers and guides ensure geometric layout alignment, while scroll bars navigate across the extended canvas.",
+        "hi": "रूलर और गाइड तत्वों के सटीक संरेखण में सहायता करते हैं, जबकि स्क्रॉल बार नेविगेशन संभव बनाते हैं।"
+      }
+    },
+    {
+      "unit_id": "u07_page_icons_navigation",
+      "topic": "Document Structure: Page Icons & Sheet Traversal",
+      "pedagogical_objective": "Detail multi-page document organization, sequencing, and rapid page switching via page navigation icons.",
+      "instruction": {
+        "title": {
+          "en": "Document Structure: Page Navigation Icons",
+          "hi": "दस्तावेज़ संरचना: पेज आइकन और नेविगेशन"
+        },
+        "theory": {
+          "en": "At the bottom-left corner of the PageMaker window, Page Icons (Page Navigation) display a sequential numbered list of all pages in the active publication (including master pages 'L' and 'R'). Clicking on any page icon immediately jumps the viewport to that specific page, streamlining navigation across extensive multi-page publications like books and magazines.",
+          "hi": "पेजमेकर विंडो के निचले-बाएँ कोने पर पेज आइकन (Page Icons) दस्तावेज़ के सभी पृष्ठों की एक क्रमांकित सूची प्रदर्शित करते हैं (जिसमें मास्टर पेज L और R भी शामिल हैं)। किसी भी पेज आइकन पर क्लिक करने से उपयोगकर्ता सीधे उस विशिष्ट पृष्ठ पर पहुँच जाता है, जिससे बहु-पृष्ठ दस्तावेज़ों में नेविगेशन अत्यंत सुगम हो जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='70' width='520' height='80' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='110' y='115' fill='#94a3b8' font-size='12' font-family='sans-serif'>Master Icons:</text><rect x='190' y='95' width='28' height='30' rx='3' fill='#0f172a' stroke='#fbbf24' stroke-width='1.5'/><text x='204' y='115' fill='#fbbf24' font-size='11' font-family='sans-serif' text-anchor='middle'>L</text><rect x='225' y='95' width='28' height='30' rx='3' fill='#0f172a' stroke='#fbbf24' stroke-width='1.5'/><text x='239' y='115' fill='#fbbf24' font-size='11' font-family='sans-serif' text-anchor='middle'>R</text><line x1='270' y1='85' x2='270' y2='135' stroke='#475569' stroke-width='1'/><text x='310' y='115' fill='#94a3b8' font-size='12' font-family='sans-serif'>Page Icons:</text><rect x='380' y='95' width='28' height='30' rx='3' fill='#0f172a' stroke='#4ade80' stroke-width='1.5'/><text x='394' y='115' fill='#4ade80' font-size='11' font-family='sans-serif' text-anchor='middle'>1</text><rect x='415' y='95' width='28' height='30' rx='3' fill='#0f172a' stroke='#38bdf8' stroke-width='1.5'/><text x='429' y='115' fill='#38bdf8' font-size='11' font-family='sans-serif' text-anchor='middle'>2</text><rect x='450' y='95' width='28' height='30' rx='3' fill='#0f172a' stroke='#38bdf8' stroke-width='1.5'/><text x='464' y='115' fill='#38bdf8' font-size='11' font-family='sans-serif' text-anchor='middle'>3</text><text x='510' y='115' fill='#94a3b8' font-size='12' font-family='sans-serif'>...</text></svg>",
+          "caption": {
+            "en": "Lower window layout: Master spread icons (L/R) alongside sequential numbered page navigation icons.",
+            "hi": "निचली विंडो नेविगेशन: मास्टर स्प्रेड आइकन (L/R) और क्रमांकित पृष्ठ नेविगेशन आइकन।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact description explaining the function of PageMaker's page navigation icons.",
+          "target_sequence": [
+            {
+              "id": "en_u07_t1",
+              "role": "subject",
+              "text": "page navigation icons located at the bottom-left corner",
+              "role_hint": {
+                "en": "start with page navigation icons and their corner location",
+                "hi": "निचले-बाएँ कोने में स्थित पेज आइकन वाले खंड से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u07_t2",
+              "role": "process",
+              "text": "display an ordered list of all publication pages,",
+              "role_hint": {
+                "en": "mention displaying an ordered list of pages",
+                "hi": "पृष्ठों की क्रमांकित सूची प्रदर्शित करने का विवरण दें"
+              }
+            },
+            {
+              "id": "en_u07_t3",
+              "role": "condition",
+              "text": "allowing designers with a single click",
+              "role_hint": {
+                "en": "state one-click interaction",
+                "hi": "एकल क्लिक द्वारा नेविगेट करने की स्थिति जोड़ें"
+              }
+            },
+            {
+              "id": "en_u07_t4",
+              "role": "result",
+              "text": "to switch views instantly across complex multi-page publications",
+              "role_hint": {
+                "en": "conclude with switching views instantly across multi-page documents",
+                "hi": "बहु-पृष्ठ प्रकाशनों में त्वरित दृश्य परिवर्तन पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u07_d1",
+              "category": "logical",
+              "text": "to permanently erase all document chapters from the primary hard disk",
+              "penalty_explanation": "Logical error: page icons provide UI navigation; they do not delete publication chapters."
+            },
+            {
+              "id": "en_u07_d2",
+              "category": "grammatical",
+              "text": "to switch views instant across complex multi-page publications",
+              "penalty_explanation": "Grammatical error: adjective 'instant' incorrectly modifies the verb 'switch' instead of adverb 'instantly'."
+            }
+          ],
+          "hint": "Identify page icons in the lower corner, state that they list document pages, and explain instant page switching."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "पेज आइकन (पेज नेविगेशन) की कार्यप्रणाली को सही क्रम में व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u07_t1",
+              "role": "subject",
+              "text": "विंडो के निचले भाग में स्थित पेज आइकन",
+              "role_hint": {
+                "en": "start with page icons at the bottom of the window",
+                "hi": "विंडो के निचले भाग के पेज आइकन से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u07_t2",
+              "role": "process",
+              "text": "दस्तावेज़ के सभी पृष्ठों की एक क्रमांकित सूची प्रदर्शित करते हैं,",
+              "role_hint": {
+                "en": "describe displaying a numbered list of all document pages",
+                "hi": "सभी पृष्ठों की क्रमांकित सूची दिखाने का उल्लेख करें"
+              }
+            },
+            {
+              "id": "hi_u07_t3",
+              "role": "condition",
+              "text": "जिससे किसी भी पृष्ठ पर केवल एक क्लिक करके",
+              "role_hint": {
+                "en": "mention single-click page selection",
+                "hi": "एक क्लिक द्वारा पृष्ठ चुनने की स्थिति जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u07_t4",
+              "role": "result",
+              "text": "बहु-पृष्ठ प्रकाशन में किसी भी विशिष्ट पृष्ठ पर आसानी से पहुँचा जा सकता है",
+              "role_hint": {
+                "en": "finish with reaching any specific page easily",
+                "hi": "विशिष्ट पृष्ठ पर पहुँचने के परिणाम के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u07_d1",
+              "category": "logical",
+              "text": "और सारे पृष्ठों को उल्टा करके मिटा देते हैं",
+              "penalty_explanation": "तार्किक त्रुटि: पेज आइकन नेविगेशन के लिए होते हैं, पन्नों को मिटाने के लिए नहीं।"
+            },
+            {
+              "id": "hi_u07_d2",
+              "category": "grammatical",
+              "text": "दस्तावेज़ के सभी पृष्ठों की एक क्रमांकित सूची प्रदर्शित करता है,",
+              "penalty_explanation": "व्याकरणिक त्रुटि: बहुवचन कर्ता 'पेज आइकन' के साथ एकवचन क्रिया का अशुद्ध रूप।"
+            }
+          ],
+          "hint": "पेज आइकन पृष्ठों की सूची दिखाते हैं और क्लिक करने पर सीधे उस पेज पर नेविगेट करते हैं।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Page navigation icons offer rapid, direct access to any page or master spread across multi-page documents.",
+        "hi": "पेज आइकन बहु-पृष्ठ प्रकाशनों में किसी भी विशिष्ट पृष्ठ या मास्टर स्प्रेड पर तुरंत जाने में मदद करते हैं।"
+      }
+    },
+    {
+      "unit_id": "u08_pointer_and_text_tools",
+      "topic": "Primary Interaction: Pointer Tool & Text Tool",
+      "pedagogical_objective": "Contrast selecting, moving, and resizing elements (Pointer tool) with creating and editing text frames (Text \"T\" tool).",
+      "instruction": {
+        "title": {
+          "en": "Primary Toolbox Tools: Pointer and Text Tools",
+          "hi": "प्राथमिक टूलबॉक्स उपकरण: पॉइंटर और टेक्स्ट टूल"
+        },
+        "theory": {
+          "en": "The PageMaker Toolbox contains essential creation and editing tools. The Pointer Tool (arrow icon) is the selection tool used to select, move, and resize text blocks, graphics, and geometric objects, as well as selecting text blocks for layout manipulation. The Text Tool ('T' icon) creates and edits text frames: clicking and dragging creates a new text frame, while clicking inside an existing frame allows direct text typing and editing.",
+          "hi": "पेजमेकर टूलबॉक्स एक फ्लोटिंग पैनल है जिसमें मुख्य टूल्स होते हैं। 1. पॉइंटर टूल (आइकन: तीर)—इसका उपयोग ऑब्जेक्ट्स को चुनने (select), स्थानांतरित करने (move) और आकार बदलने (resize) के लिए किया जाता है; 2. टेक्स्ट टूल (आइकन: 'T')—यह टेक्स्ट फ्रेम बनाता और संपादित करता है; क्लिक करके खींचने पर टेक्स्ट बॉक्स बनता है और मौजूदा बॉक्स में क्लिक करके टेक्स्ट संपादित होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='55' width='230' height='110' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='175' y='90' fill='#38bdf8' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Pointer Tool (Arrow)</text><text x='175' y='115' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>Selection • Move • Resize</text><text x='175' y='135' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Manipulates Object Boundaries</text><rect x='350' y='55' width='230' height='110' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='465' y='90' fill='#fbbf24' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Text Tool (\"T\")</text><text x='465' y='115' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>Click &amp; Drag = New Frame</text><text x='465' y='135' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Direct Alphanumeric Text Editing</text></svg>",
+          "caption": {
+            "en": "Toolbox core: The Pointer tool for object selection vs. the Text tool for frame generation.",
+            "hi": "टूलबॉक्स के मूल उपकरण: ऑब्जेक्ट चयन हेतु पॉइंटर टूल बनाम टेक्स्ट फ्रेम निर्माण हेतु टेक्स्ट टूल।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact sentence contrasting the roles of the Pointer Tool and the Text Tool.",
+          "target_sequence": [
+            {
+              "id": "en_u08_t1",
+              "role": "subject",
+              "text": "while the pointer tool selects, moves, and resizes objects",
+              "role_hint": {
+                "en": "start with the pointer tool selecting, moving, and resizing objects",
+                "hi": "पॉइंटर टूल द्वारा ऑब्जेक्ट चयन, चालन और आकार बदलने से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u08_t2",
+              "role": "process",
+              "text": "across the publication layout workspace,",
+              "role_hint": {
+                "en": "mention the publication layout workspace",
+                "hi": "प्रकाशन लेआउट कार्यक्षेत्र का उल्लेख करें"
+              }
+            },
+            {
+              "id": "en_u08_t3",
+              "role": "condition",
+              "text": "the text tool with its distinctive t icon",
+              "role_hint": {
+                "en": "introduce the text tool and its 'T' icon",
+                "hi": "टेक्स्ट टूल और इसके 'T' आइकन की स्थिति बताएं"
+              }
+            },
+            {
+              "id": "en_u08_t4",
+              "role": "result",
+              "text": "creates and edits text frames to enable typing content",
+              "role_hint": {
+                "en": "conclude with creating and editing text frames for typing",
+                "hi": "टाइपिंग हेतु टेक्स्ट फ्रेम बनाने और संपादित करने पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u08_d1",
+              "category": "logical",
+              "text": "converts all paragraph text into raw magnetic audio frequencies",
+              "penalty_explanation": "Logical error: the text tool edits alphanumeric copy; it does not process audio signals."
+            },
+            {
+              "id": "en_u08_d2",
+              "category": "grammatical",
+              "text": "the text tool with its distinctive t icon create and edit text frames",
+              "penalty_explanation": "Grammatical error: singular subject 'text tool' requires singular verb forms 'creates and edits'."
+            }
+          ],
+          "hint": "Contrast the Pointer Tool (arrow icon for select/move/resize) with the Text Tool ('T' icon for creating/editing text frames)."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "पॉइंटर टूल और टेक्स्ट टूल की भिन्न कार्यप्रणाली को सही क्रम में व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u08_t1",
+              "role": "subject",
+              "text": "जहाँ तीर के आकार का पॉइंटर टूल",
+              "role_hint": {
+                "en": "start with arrow-shaped pointer tool",
+                "hi": "तीर के आकार वाले पॉइंटर टूल से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u08_t2",
+              "role": "process",
+              "text": "ऑब्जेक्ट्स को चुनने, खिसकाने और उनका आकार बदलने के काम आता है,",
+              "role_hint": {
+                "en": "describe selecting, moving, and resizing objects",
+                "hi": "ऑब्जेक्ट्स चुनने, खिसकाने और आकार बदलने की क्रिया जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u08_t3",
+              "role": "condition",
+              "text": "वहीं 'T' आइकन वाला टेक्स्ट टूल",
+              "role_hint": {
+                "en": "introduce the Text Tool with 'T' icon",
+                "hi": "'T' आइकन वाले टेक्स्ट टूल का संदर्भ दें"
+              }
+            },
+            {
+              "id": "hi_u08_t4",
+              "role": "result",
+              "text": "पृष्ठ पर टेक्स्ट फ्रेम बनाने और सामग्री टाइप करने की सुविधा देता है",
+              "role_hint": {
+                "en": "finish with creating text frames and typing content",
+                "hi": "टेक्स्ट फ्रेम बनाने और टाइप करने की सुविधा के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u08_d1",
+              "category": "logical",
+              "text": "कंप्यूटर के मॉनीटर पर सीधे स्याही छिड़कने का काम करता है",
+              "penalty_explanation": "तार्किक त्रुटि: टेक्स्ट टूल डिजिटल टेक्स्ट फ्रेम बनाता है; यह भौतिक स्याही नहीं छिड़कता।"
+            },
+            {
+              "id": "hi_u08_d2",
+              "category": "grammatical",
+              "text": "ऑब्जेक्ट्स को चुनने, खिसकाने और उनका आकार बदलने के काम आती है,",
+              "penalty_explanation": "व्याकरणिक त्रुटि: पुल्लिंग कर्ता 'पॉइंटर टूल' के साथ स्त्रीलिंग क्रिया का अशुद्ध रूप।"
+            }
+          ],
+          "hint": "पॉइंटर टूल ऑब्जेक्ट्स चुनता और बदलता है, जबकि टेक्स्ट टूल (T) टेक्स्ट फ्रेम बनाकर टाइपिंग संभव करता है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "The Pointer Tool manages object bounds and placement, while the Text Tool constructs container frames for typesetting.",
+        "hi": "पॉइंटर टूल ऑब्जेक्ट्स का चयन और आकार तय करता है, जबकि टेक्स्ट टूल टेक्स्ट फ्रेम बनाकर संपादन सक्षम करता है।"
+      }
+    },
+    {
+      "unit_id": "u09_line_drawing_tools",
+      "topic": "Line Tools: Diagonal Line & Constrained Line",
+      "pedagogical_objective": "Explain freeform diagonal lines versus angle-constrained lines (0°, 45°, 90°) using the Constrained Line tool or Shift key.",
+      "instruction": {
+        "title": {
+          "en": "Vector Drafting: Line and Constrained Line Tools",
+          "hi": "रेखा आरेखण: लाइन टूल और सीमित लाइन टूल"
+        },
+        "theory": {
+          "en": "PageMaker includes two vector line tools: the standard Line Tool draws straight lines at any freeform diagonal angle (holding Shift constrains drawing to 45-degree angles). The Constrained Line Tool specifically forces lines to strict horizontal, vertical, or 45-degree increments (constrained strictly to 0°, 45°, or 90°), ideal for page column dividers, borders, and margins.",
+          "hi": "पेजमेकर में दो लाइन टूल्स होते हैं: 1. लाइन टूल (आइकन: विकर्ण रेखा)—यह किसी भी दिशा में सीधी रेखाएं खींचता है (Shift कुंजी दबाए रखने पर रेखा 45 डिग्री के कोण पर सीमित होती है); 2. सीमित लाइन टूल (Constrained Line Tool)—यह रेखाओं को सख्ती से 0, 45, या 90 डिग्री के कोणों तक सीमित रखता है, जो कॉलम डिवाइडर और बॉर्डर बनाने हेतु आदर्श है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='50' width='230' height='120' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='175' y='80' fill='#38bdf8' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Standard Line Tool</text><line x1='90' y1='140' x2='250' y2='100' stroke='#38bdf8' stroke-width='2.5'/><text x='175' y='155' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Freeform Diagonal Vector Angles</text><rect x='350' y='50' width='230' height='120' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='465' y='80' fill='#4ade80' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Constrained Line Tool</text><line x1='380' y1='120' x2='540' y2='120' stroke='#4ade80' stroke-width='2.5'/><line x1='460' y1='95' x2='460' y2='145' stroke='#fbbf24' stroke-width='2.5'/><text x='465' y='155' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>Fixed Angles: 0°, 45°, or 90°</text></svg>",
+          "caption": {
+            "en": "Line drafting options: Freeform arbitrary angles vs. angularly constrained vector lines.",
+            "hi": "रेखा आरेखण: किसी भी कोण पर मुक्त रेखा बनाम 0°, 45° या 90° पर सीमित रेखा।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact sentence contrasting the Line Tool and the Constrained Line Tool.",
+          "target_sequence": [
+            {
+              "id": "en_u09_t1",
+              "role": "subject",
+              "text": "while the standard line tool draws straight vector segments",
+              "role_hint": {
+                "en": "start with the standard line tool drawing straight segments",
+                "hi": "मानक लाइन टूल द्वारा सीधी रेखा खींचने से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u09_t2",
+              "role": "process",
+              "text": "at any arbitrary diagonal orientation across the page,",
+              "role_hint": {
+                "en": "specify arbitrary diagonal angles",
+                "hi": "किसी भी विकर्ण कोण पर रेखा खींचने का उल्लेख करें"
+              }
+            },
+            {
+              "id": "en_u09_t3",
+              "role": "condition",
+              "text": "the constrained line tool restricts trajectory drawing",
+              "role_hint": {
+                "en": "introduce the constrained line tool restricting drawing",
+                "hi": "सीमित लाइन टूल के नियंत्रण की स्थिति बताएं"
+              }
+            },
+            {
+              "id": "en_u09_t4",
+              "role": "result",
+              "text": "strictly to fixed increments of 0, 45, or 90 degrees",
+              "role_hint": {
+                "en": "conclude with fixed increments of 0, 45, or 90 degrees",
+                "hi": "0, 45 या 90 डिग्री के निश्चित कोणों पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u09_d1",
+              "category": "logical",
+              "text": "strictly to circular spiral orbits that cannot form straight rules",
+              "penalty_explanation": "Logical error: the constrained line tool draws straight lines at set angles, not curved spirals."
+            },
+            {
+              "id": "en_u09_d2",
+              "category": "grammatical",
+              "text": "the constrained line tool restrict trajectory drawing",
+              "penalty_explanation": "Grammatical error: singular subject 'tool' requires singular verb 'restricts'."
+            }
+          ],
+          "hint": "Contrast freeform diagonal drawing (Line Tool) with angular constraints of 0°, 45°, and 90° (Constrained Line Tool)."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "लाइन टूल और सीमित लाइन टूल के अंतर को दर्शाने वाला सही वाक्य बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u09_t1",
+              "role": "subject",
+              "text": "जहाँ साधारण लाइन टूल किसी भी इच्छित कोण पर",
+              "role_hint": {
+                "en": "start with the standard line tool at any angle",
+                "hi": "साधारण लाइन टूल के किसी भी कोण पर रेखा खींचने से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u09_t2",
+              "role": "process",
+              "text": "मुक्त रूप से सीधी विकर्ण रेखाएं खींचने की अनुमति देता है,",
+              "role_hint": {
+                "en": "mention freely drawing diagonal straight lines",
+                "hi": "सीधी विकर्ण रेखा खींचने का विवरण दें"
+              }
+            },
+            {
+              "id": "hi_u09_t3",
+              "role": "condition",
+              "text": "वहीं सीमित लाइन टूल (Constrained Line Tool)",
+              "role_hint": {
+                "en": "introduce the Constrained Line Tool",
+                "hi": "सीमित लाइन टूल का संदर्भ जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u09_t4",
+              "role": "result",
+              "text": "रेखाओं को केवल 0, 45 या 90 डिग्री के कोणों तक सीमित रखता है",
+              "role_hint": {
+                "en": "finish with restricting lines to 0, 45, or 90 degrees",
+                "hi": "0, 45 या 90 डिग्री के कोणों तक सीमित रखने के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u09_d1",
+              "category": "logical",
+              "text": "केवल गोल घेरे बनाकर स्क्रीन को बंद कर देता है",
+              "penalty_explanation": "तार्किक त्रुटि: लाइन टूल सीधी रेखाएं खींचता है, गोल घेरे नहीं बनाता।"
+            },
+            {
+              "id": "hi_u09_d2",
+              "category": "grammatical",
+              "text": "रेखाओं को केवल 0, 45 या 90 डिग्री के कोणों तक सीमित रखते हैं",
+              "penalty_explanation": "व्याकरणिक त्रुटि: एकवचन कर्ता 'सीमित लाइन टूल' के साथ बहुवचन क्रिया का अशुद्ध रूप।"
+            }
+          ],
+          "hint": "साधारण लाइन टूल किसी भी कोण पर रेखा खींचता है, जबकि सीमित लाइन टूल 0, 45 या 90 डिग्री तक सीमित रखता है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "The Line Tool draws unconstrained diagonal rules, while the Constrained Line Tool snaps trajectories to 0°, 45°, or 90°.",
+        "hi": "लाइन टूल किसी भी कोण पर रेखा बनाता है, जबकि सीमित लाइन टूल रेखा को 0°, 45° या 90° पर स्थिर रखता है।"
+      }
+    },
+    {
+      "unit_id": "u10_rectangle_and_frame_tools",
+      "topic": "Geometric Shapes: Rectangle Tool & Square Constraint",
+      "pedagogical_objective": "Master rectangular shape/frame drafting and proportional 1:1 square constraints using the Shift key.",
+      "instruction": {
+        "title": {
+          "en": "Geometric Shapes: Rectangle and Frame Tools",
+          "hi": "ज्यामितीय आकार: आयत और फ्रेम टूल"
+        },
+        "theory": {
+          "en": "The Rectangle Tool draws rectangular shapes or graphical frames. Holding the Shift key while dragging constrains the dimensions to equal width and height, creating a perfect square. In PageMaker, rectangular tools exist both as basic graphic shapes (for borders and color fills) and as Rectangle Frames (indicated by an 'X' across the icon) designed specifically to hold imported images or text blocks.",
+          "hi": "आयत टूल (Rectangle Tool) आयताकार आकार या फ्रेम बनाता है। माउस खींचते समय Shift कुंजी दबाए रखने से समान लंबाई-चौड़ाई वाला वर्ग (square) बन जाता है। टूलबॉक्स में साधारण रेक्टेंगल टूल के साथ रेक्टेंगल फ्रेम टूल भी होता है (जिसके आइकन पर 'X' बना होता है), जिसका उपयोग टेक्स्ट या इमेज को समाहित करने हेतु होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='50' width='230' height='120' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='175' y='75' fill='#38bdf8' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Rectangle Tool</text><rect x='105' y='90' width='140' height='60' fill='#0f172a' stroke='#38bdf8' stroke-width='1.5'/><text x='175' y='165' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Shift Key = Perfect Square</text><rect x='350' y='50' width='230' height='120' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='465' y='75' fill='#fbbf24' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Rectangle Frame Tool</text><rect x='410' y='85' width='110' height='70' fill='#0f172a' stroke='#fbbf24' stroke-width='1.5'/><line x1='410' y1='85' x2='520' y2='155' stroke='#fbbf24' stroke-width='1'/><line x1='520' y1='85' x2='410' y2='155' stroke='#fbbf24' stroke-width='1'/><text x='465' y='170' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Dedicated Container for Text/Images</text></svg>",
+          "caption": {
+            "en": "Vector box construction: Graphic Rectangle Tool vs. content container Rectangle Frame Tool.",
+            "hi": "ग्राफिक आयत टूल (आकार हेतु) बनाम रेक्टेंगल फ्रेम टूल (कंटेंट कंटेनर हेतु)।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the explanation of drawing rectangles, square constraints, and rectangular frames.",
+          "target_sequence": [
+            {
+              "id": "en_u10_t1",
+              "role": "subject",
+              "text": "the rectangle tool drafts custom rectangular shapes and boundaries",
+              "role_hint": {
+                "en": "start with the rectangle tool drafting rectangular shapes",
+                "hi": "आयत टूल द्वारा आयताकार आकृतियां बनाने से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u10_t2",
+              "role": "process",
+              "text": "which can be constrained into an equilateral square",
+              "role_hint": {
+                "en": "explain constraining into an equilateral square",
+                "hi": "समबाहु वर्ग में बदलने की प्रक्रिया जोड़ें"
+              }
+            },
+            {
+              "id": "en_u10_t3",
+              "role": "condition",
+              "text": "by holding down the shift key during dragging,",
+              "role_hint": {
+                "en": "state the condition of holding down the Shift key",
+                "hi": "Shift कुंजी दबाए रखने की शर्त का उल्लेख करें"
+              }
+            },
+            {
+              "id": "en_u10_t4",
+              "role": "result",
+              "text": "complemented by frame tools with internal x markers for holding text or images",
+              "role_hint": {
+                "en": "conclude with frame tools with internal X marks to hold content",
+                "hi": "टेक्स्ट या इमेज हेतु X मार्क वाले फ्रेम टूल्स पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "logical",
+              "text": "which permanently deletes the operating system kernel when drawn as a square",
+              "penalty_explanation": "Logical error: drawing squares is a basic vector layout operation that does not affect system kernels."
+            },
+            {
+              "id": "en_u10_d2",
+              "category": "grammatical",
+              "text": "which can be constrain into an equilateral square",
+              "penalty_explanation": "Grammatical error: passive construction 'can be' requires past participle 'constrained'."
+            }
+          ],
+          "hint": "Identify the Rectangle Tool, mention using the Shift key to create a square, and describe frame tools holding content."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "आयत टूल, Shift कुंजी के उपयोग और रेक्टेंगल फ्रेम के कार्य को सही क्रम में लगाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u10_t1",
+              "role": "subject",
+              "text": "आयत टूल का उपयोग आयताकार आकार या फ्रेम बनाने के लिए किया जाता है,",
+              "role_hint": {
+                "en": "start with the rectangle tool making rectangular shapes or frames",
+                "hi": "आयत टूल द्वारा आयताकार आकार बनाने से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u10_t2",
+              "role": "process",
+              "text": "जिसमें माउस खींचते समय Shift कुंजी दबाए रखने पर",
+              "role_hint": {
+                "en": "mention holding down the Shift key while dragging",
+                "hi": "Shift कुंजी दबाकर खींचने की प्रक्रिया बताएं"
+              }
+            },
+            {
+              "id": "hi_u10_t3",
+              "role": "condition",
+              "text": "स्वतः एक पूर्ण वर्ग (Square) बन जाता है,",
+              "role_hint": {
+                "en": "state forming a perfect square",
+                "hi": "पूर्ण वर्ग बनने की स्थिति जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u10_t4",
+              "role": "result",
+              "text": "तथा इसके संबंधित फ्रेम टूल में टेक्स्ट या इमेज को समाहित किया जा सकता है",
+              "role_hint": {
+                "en": "finish with containing text or images in its frame tool",
+                "hi": "फ्रेम टूल में टेक्स्ट या इमेज समाहित करने के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "logical",
+              "text": "और यह स्क्रीन के सारे टेक्स्ट को फाड़कर फेंक देता है",
+              "penalty_explanation": "तार्किक त्रुटि: आयत टूल ग्राफिक बॉक्स बनाता है, टेक्स्ट को नुकसान नहीं पहुँचाता।"
+            },
+            {
+              "id": "hi_u10_d2",
+              "category": "grammatical",
+              "text": "जिसमें माउस खींचते समय Shift कुंजी दबाए रखने पर वर्ग बन जाती है,",
+              "penalty_explanation": "व्याकरणिक त्रुटि: पुल्लिंग संज्ञा 'वर्ग' के साथ स्त्रीलिंग क्रिया का अशुद्ध प्रयोग।"
+            }
+          ],
+          "hint": "आयत टूल से आयत बनता है, Shift दबाने से वर्ग बनता है, और फ्रेम में टेक्स्ट/इमेज रखी जा सकती है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "The Rectangle Tool constructs 4-sided boxes; Shift constrains them to squares, while frame tools act as content placeholders.",
+        "hi": "आयत टूल बॉक्स बनाता है; Shift दबाने पर वर्ग बनता है और फ्रेम टूल इमेज/टेक्स्ट का कंटेनर होता है।"
+      }
+    },
+    {
+      "unit_id": "u11_ellipse_and_polygon_tools",
+      "topic": "Curved & Complex Shapes: Ellipse & Polygon Tools",
+      "pedagogical_objective": "Detail elliptical curves, circle constraints (Shift key), and customizable multi-sided polygon drafting.",
+      "instruction": {
+        "title": {
+          "en": "Curved and Multi-Sided Shapes: Ellipse and Polygon Tools",
+          "hi": "वक्र और बहुभुज आकार: दीर्घवृत्त और बहुभुज टूल"
+        },
+        "theory": {
+          "en": "The Ellipse Tool draws elliptical curved shapes or oval frames; holding down the Shift key constrains the drawing to a perfect geometric circle. The Polygon Tool draws multi-sided geometric shapes and polygons with a user-specified number of sides, allowing designers to create customized geometric badges, stars, and complex layout containers.",
+          "hi": "दीर्घवृत्त टूल (Ellipse Tool) अंडाकार या दीर्घवृत्ताकार आकार बनाता है; Shift कुंजी दबाए रखने पर यह एक पूर्ण वृत्त (Circle) का निर्माण करता है। बहुभुज टूल (Polygon Tool) उपयोगकर्ता द्वारा निर्दिष्ट भुजाओं की संख्या वाले बहुभुज बनाता है, जिससे तारे, षट्भुज या अन्य जटिल ज्यामितीय आकार बनाए जा सकते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='50' width='230' height='120' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='175' y='75' fill='#38bdf8' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Ellipse Tool</text><ellipse cx='175' cy='115' rx='60' ry='35' fill='#0f172a' stroke='#38bdf8' stroke-width='1.5'/><text x='175' y='165' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Hold Shift = Perfect Circle</text><rect x='350' y='50' width='230' height='120' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='465' y='75' fill='#fbbf24' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Polygon Tool</text><polygon points='465,90 495,110 485,145 445,145 435,110' fill='#0f172a' stroke='#fbbf24' stroke-width='1.5'/><text x='465' y='165' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Multi-Sided Polygons &amp; Stars</text></svg>",
+          "caption": {
+            "en": "Curved and complex vector geometry: Smooth ellipses/circles and multi-sided polygons.",
+            "hi": "दीर्घवृत्त टूल द्वारा अंडाकार/वृत्त आकार तथा बहुभुज टूल द्वारा बहुभुजीय आकृतियों का निर्माण।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact sentence outlining ellipse drafting, circle constraints, and polygon creation.",
+          "target_sequence": [
+            {
+              "id": "en_u11_t1",
+              "role": "subject",
+              "text": "the ellipse tool draws smooth oval shapes and curved frames",
+              "role_hint": {
+                "en": "start with the ellipse tool drawing oval shapes",
+                "hi": "दीर्घवृत्त टूल द्वारा अंडाकार आकार बनाने से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u11_t2",
+              "role": "process",
+              "text": "that instantly lock into perfect circles when holding the shift key,",
+              "role_hint": {
+                "en": "detail locking into circles using the Shift key",
+                "hi": "Shift कुंजी द्वारा वृत्त में बदलने की प्रक्रिया जोड़ें"
+              }
+            },
+            {
+              "id": "en_u11_t3",
+              "role": "condition",
+              "text": "while the polygon tool configures complex vector boundaries",
+              "role_hint": {
+                "en": "introduce the polygon tool configuring vector boundaries",
+                "hi": "बहुभुज टूल द्वारा जटिल आकृतियां बनाने की स्थिति बताएं"
+              }
+            },
+            {
+              "id": "en_u11_t4",
+              "role": "result",
+              "text": "to construct multi-sided geometric shapes and star patterns with ease",
+              "role_hint": {
+                "en": "conclude with multi-sided shapes and star patterns",
+                "hi": "बहुभुज और तारों जैसी आकृतियों के निर्माण पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "logical",
+              "text": "that mechanically disables the computer monitor power switch on contact",
+              "penalty_explanation": "Logical error: the ellipse tool is a vector drawing instrument; it has no effect on monitor power."
+            },
+            {
+              "id": "en_u11_d2",
+              "category": "grammatical",
+              "text": "while the polygon tool configure complex vector boundaries",
+              "penalty_explanation": "Grammatical error: singular subject 'tool' requires singular verb agreement 'configures'."
+            }
+          ],
+          "hint": "Mention the Ellipse Tool creating ovals/circles with Shift, and contrast with the Polygon Tool building multi-sided shapes."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "दीर्घवृत्त टूल (वृत्त निर्माण) और बहुभुज टूल के उपयोग का सही क्रम बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u11_t1",
+              "role": "subject",
+              "text": "दीर्घवृत्त टूल अंडाकार या वक्राकार आकार बनाता है",
+              "role_hint": {
+                "en": "start with the ellipse tool creating oval shapes",
+                "hi": "दीर्घवृत्त टूल द्वारा अंडाकार आकार बनाने से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u11_t2",
+              "role": "process",
+              "text": "जो Shift कुंजी दबाकर खींचने पर पूर्ण वृत्त में बदल जाता है,",
+              "role_hint": {
+                "en": "mention converting to a circle using the Shift key",
+                "hi": "Shift कुंजी से पूर्ण वृत्त में बदलने का विवरण दें"
+              }
+            },
+            {
+              "id": "hi_u11_t3",
+              "role": "condition",
+              "text": "जबकि बहुभुज टूल (Polygon Tool) का उपयोग",
+              "role_hint": {
+                "en": "introduce the Polygon Tool",
+                "hi": "बहुभुज टूल का संदर्भ जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u11_t4",
+              "role": "result",
+              "text": "निर्दिष्ट संख्या में भुजाओं वाले जटिल बहुभुज और तारे बनाने के लिए किया जाता है",
+              "role_hint": {
+                "en": "finish with creating multi-sided polygons and stars",
+                "hi": "भुजाओं वाले बहुभुज और तारे बनाने के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "logical",
+              "text": "और कंप्यूटर की हार्ड डिस्क को तुरंत प्रारूपित कर देता है",
+              "penalty_explanation": "तार्किक त्रुटि: दीर्घवृत्त और बहुभुज टूल ड्राइंग उपकरण हैं, डिस्क फॉर्मेटिंग के नहीं।"
+            },
+            {
+              "id": "hi_u11_d2",
+              "category": "grammatical",
+              "text": "दीर्घवृत्त टूल अंडाकार या वक्राकार आकार बनाते हैं",
+              "penalty_explanation": "व्याकरणिक त्रुटि: एकवचन कर्ता 'टूल' के साथ बहुवचन क्रिया का अशुद्ध रूप।"
+            }
+          ],
+          "hint": "दीर्घवृत्त टूल अंडाकार/वृत्त (Shift के साथ) बनाता है और बहुभुज टूल कई भुजाओं वाली आकृतियां बनाता है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "The Ellipse Tool drafts curves and circles (via Shift), while the Polygon Tool builds multi-sided geometric figures.",
+        "hi": "दीर्घवृत्त टूल अंडाकार और वृत्त (Shift द्वारा) बनाता है, जबकि बहुभुज टूल बहु-भुजाओं वाले आकार बनाता है।"
+      }
+    },
+    {
+      "unit_id": "u12_rotating_and_cropping_tools",
+      "topic": "Object Transformation: Rotating & Cropping Tools",
+      "pedagogical_objective": "Differentiate pivoting objects around a fixed rotational point from trimming/cropping graphics within a frame.",
+      "instruction": {
+        "title": {
+          "en": "Object Transformation: Rotating and Cropping Tools",
+          "hi": "ऑब्जेक्ट रूपांतरण: रोटेटिंग और क्रॉपिंग टूल"
+        },
+        "theory": {
+          "en": "PageMaker includes specialized object transformation tools: the Rotating Tool (icon with rotating arrows) rotates selected text blocks, shapes, or images around a fixed pivot point. The Cropping Tool (scissors icon) trims or conceals unwanted outer portions of imported images and graphics within their frames without modifying the original source file.",
+          "hi": "पेजमेकर में ऑब्जेक्ट रूपांतरण के लिए विशेष टूल्स होते हैं: 1. रोटेटिंग टूल (आइकन: रोटेटिंग एरो)—यह चयनित ऑब्जेक्ट को एक निश्चित बिंदु के चारों ओर घुमाता है; 2. क्रॉपिंग टूल (आइकन: कैंची)—यह फ्रेम के भीतर इमेज और ऑब्जेक्ट के अवांछित किनारों को क्रॉप या ट्रिम (काटने) के लिए उपयोग किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='50' width='230' height='120' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='175' y='80' fill='#38bdf8' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Rotating Tool (Arrows)</text><circle cx='175' cy='115' r='25' fill='none' stroke='#38bdf8' stroke-width='2' stroke-dasharray='4'/><polygon points='195,115 190,105 200,105' fill='#38bdf8'/><text x='175' y='155' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>Pivots Elements Around a Point</text><rect x='350' y='50' width='230' height='120' rx='8' fill='#1e293b' stroke='#f87171' stroke-width='2'/><text x='465' y='80' fill='#f87171' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Cropping Tool (Scissors)</text><rect x='425' y='95' width='80' height='45' fill='none' stroke='#f87171' stroke-width='1.5' stroke-dasharray='3'/><text x='465' y='122' fill='#fbbf24' font-size='11' font-family='sans-serif' text-anchor='middle'>Trims Image</text><text x='465' y='155' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>Trims Framing &amp; Margins</text></svg>",
+          "caption": {
+            "en": "Transformation operations: Angular object pivoting vs. non-destructive image boundary cropping.",
+            "hi": "रूपांतरण कार्य: किसी बिंदु पर ऑब्जेक्ट को घुमाना बनाम इमेज के किनारों को काटना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact sentence contrasting the Rotating Tool with the Cropping Tool.",
+          "target_sequence": [
+            {
+              "id": "en_u12_t1",
+              "role": "subject",
+              "text": "while the rotating tool pivots selected layout objects",
+              "role_hint": {
+                "en": "start with the rotating tool pivoting selected objects",
+                "hi": "रोटेटिंग टूल द्वारा ऑब्जेक्ट्स को घुमाने से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u12_t2",
+              "role": "process",
+              "text": "around a designated fixed anchor point at any angle,",
+              "role_hint": {
+                "en": "specify pivoting around a fixed anchor point",
+                "hi": "निश्चित बिंदु के चारों ओर घुमाने की प्रक्रिया जोड़ें"
+              }
+            },
+            {
+              "id": "en_u12_t3",
+              "role": "condition",
+              "text": "the cropping tool symbolized by scissors",
+              "role_hint": {
+                "en": "introduce the cropping tool and scissors symbol",
+                "hi": "कैंची प्रतीक वाले क्रॉपिंग टूल का संदर्भ दें"
+              }
+            },
+            {
+              "id": "en_u12_t4",
+              "role": "result",
+              "text": "trims or conceals unwanted perimeter portions of imported images",
+              "role_hint": {
+                "en": "conclude with trimming unwanted portions of imported images",
+                "hi": "इमेज के अवांछित किनारों को काटने पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u12_d1",
+              "category": "logical",
+              "text": "erases the operating system drivers from the central motherboard firmware",
+              "penalty_explanation": "Logical error: cropping hides image margins in PageMaker; it does not touch system firmware."
+            },
+            {
+              "id": "en_u12_d2",
+              "category": "grammatical",
+              "text": "the cropping tool symbolized by scissors trim or conceal unwanted perimeter portions",
+              "penalty_explanation": "Grammatical error: singular subject 'tool' requires singular verb agreement 'trims or conceals'."
+            }
+          ],
+          "hint": "Contrast the Rotating Tool (pivoting around an anchor point) with the Cropping Tool (scissors icon for trimming image margins)."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "रोटेटिंग टूल और क्रॉपिंग टूल के अलग-अलग कार्यों को सही क्रम में व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u12_t1",
+              "role": "subject",
+              "text": "जहाँ रोटेटिंग टूल चयनित ऑब्जेक्ट्स और टेक्स्ट को",
+              "role_hint": {
+                "en": "start with rotating tool handling selected objects and text",
+                "hi": "रोटेटिंग टूल और चयनित ऑब्जेक्ट्स से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u12_t2",
+              "role": "process",
+              "text": "एक निश्चित केंद्र बिंदु के चारों ओर घुमाने का कार्य करता है,",
+              "role_hint": {
+                "en": "mention rotating around a fixed center point",
+                "hi": "निश्चित बिंदु के चारों ओर घुमाने का उल्लेख करें"
+              }
+            },
+            {
+              "id": "hi_u12_t3",
+              "role": "condition",
+              "text": "वहीं कैंची के आइकन वाला क्रॉपिंग टूल",
+              "role_hint": {
+                "en": "introduce the Cropping Tool with scissors icon",
+                "hi": "कैंची आइकन वाले क्रॉपिंग टूल की स्थिति जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u12_t4",
+              "role": "result",
+              "text": "फ्रेम के भीतर इमेज के अवांछित बाहरी भागों को ट्रिम या काटने में मदद करता है",
+              "role_hint": {
+                "en": "finish with trimming unwanted outer portions of images",
+                "hi": "अवांछित भागों को ट्रिम करने के साथ वाक्य समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u12_d1",
+              "category": "logical",
+              "text": "और कंप्यूटर स्क्रीन के कांच को भौतिक रूप से काट देता है",
+              "penalty_explanation": "तार्किक त्रुटि: क्रॉपिंग टूल डिजिटल इमेज को ट्रिम करता है, भौतिक स्क्रीन को नहीं काटता।"
+            },
+            {
+              "id": "hi_u12_d2",
+              "category": "grammatical",
+              "text": "एक निश्चित केंद्र बिंदु के चारों ओर घुमाने का कार्य करती है,",
+              "penalty_explanation": "व्याकरणिक त्रुटि: पुल्लिंग कर्ता 'रोटेटिंग टूल' के साथ स्त्रीलिंग क्रिया का अशुद्ध रूप।"
+            }
+          ],
+          "hint": "रोटेटिंग टूल ऑब्जेक्ट को घुमाता है, जबकि क्रॉपिंग टूल (कैंची) इमेज के बाहरी किनारों को ट्रिम करता है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "The Rotating Tool pivots objects about an anchor, whereas the Cropping Tool masks extraneous outer boundaries of images.",
+        "hi": "रोटेटिंग टूल ऑब्जेक्ट को किसी बिंदु पर घुमाता है और क्रॉपिंग टूल इमेज के अवांछित हिस्सों को ट्रिम करता है।"
+      }
+    },
+    {
+      "unit_id": "u13_hand_and_zoom_navigation",
+      "topic": "Viewport Navigation: Hand Tool & Zoom Tool",
+      "pedagogical_objective": "Explain viewport panning (Hand tool) and magnification adjustment (Zoom tool click to zoom in, Alt-click to zoom out).",
+      "instruction": {
+        "title": {
+          "en": "Viewport Navigation: Hand and Zoom Tools",
+          "hi": "कैनवास नेविगेशन: हैंड टूल और ज़ूम टूल"
+        },
+        "theory": {
+          "en": "Navigating the layout canvas relies on viewport tools. The Hand Tool (hand icon) scrolls the document smoothly by clicking and dragging directly within the page area, panning across different sections. The Zoom Tool (magnifying glass icon) adjusts viewing magnification: clicking directly zooms into a specific area, while holding the Alt key (Option on Mac) and clicking zooms out to view the broader layout.",
+          "hi": "पेजमेकर में पृष्ठ को देखने के लिए दो मुख्य नेविगेशन टूल्स होते हैं: 1. हैंड टूल (आइकन: हाथ)—यह पृष्ठ क्षेत्र में क्लिक करके और खींचकर दस्तावेज़ को सहजता से स्क्रॉल करता है; 2. ज़ूम टूल (आइकन: आवर्धक ग्लास)—यह दस्तावेज़ को ज़ूम इन या आउट करता है; ज़ूम इन करने के लिए साधारण क्लिक करें, तथा ज़ूम आउट करने के लिए Alt कुंजी दबाकर क्लिक करें।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='50' width='230' height='120' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='175' y='80' fill='#38bdf8' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Hand Tool (Pan)</text><text x='175' y='110' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>Click &amp; Drag Canvas</text><text x='175' y='130' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Smooth Multi-Directional Scrolling</text><rect x='350' y='50' width='230' height='120' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='465' y='80' fill='#4ade80' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Zoom Tool (Magnify)</text><text x='465' y='110' fill='#4ade80' font-size='11' font-family='sans-serif' text-anchor='middle'>Click = Zoom In (+)</text><text x='465' y='130' fill='#fbbf24' font-size='11' font-family='sans-serif' text-anchor='middle'>Alt + Click = Zoom Out (-)</text></svg>",
+          "caption": {
+            "en": "Viewport navigation mechanics: Canvas panning via Hand Tool vs. Zoom Tool magnification scaling.",
+            "hi": "कैनवास नेविगेशन: हैंड टूल द्वारा पृष्ठ को खिसकाना बनाम ज़ूम टूल द्वारा आकार बड़ा/छोटा करना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact description comparing the functions of the Hand Tool and the Zoom Tool.",
+          "target_sequence": [
+            {
+              "id": "en_u13_t1",
+              "role": "subject",
+              "text": "while the hand tool scrolls the document",
+              "role_hint": {
+                "en": "start with the hand tool scrolling the document",
+                "hi": "हैंड टूल द्वारा दस्तावेज़ को स्क्रॉल करने से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u13_t2",
+              "role": "process",
+              "text": "by clicking and dragging smoothly across the page area,",
+              "role_hint": {
+                "en": "describe clicking and dragging across the page area",
+                "hi": "क्लिक और ड्रैग करने की प्रक्रिया बताएं"
+              }
+            },
+            {
+              "id": "en_u13_t3",
+              "role": "condition",
+              "text": "the zoom tool adjusts viewing magnification",
+              "role_hint": {
+                "en": "introduce the zoom tool adjusting magnification",
+                "hi": "ज़ूम टूल द्वारा आवर्धन बदलने की स्थिति जोड़ें"
+              }
+            },
+            {
+              "id": "en_u13_t4",
+              "role": "result",
+              "text": "by zooming in with direct clicks and zooming out when holding the alt key",
+              "role_hint": {
+                "en": "conclude with zooming in directly and zooming out with the Alt key",
+                "hi": "क्लिक से ज़ूम इन और Alt के साथ ज़ूम आउट पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "logical",
+              "text": "by permanently magnifying the physical glass of the computer monitor",
+              "penalty_explanation": "Logical error: the zoom tool scales software viewport coordinates, not the physical monitor hardware."
+            },
+            {
+              "id": "en_u13_d2",
+              "category": "grammatical",
+              "text": "the zoom tool adjust viewing magnification without clicks",
+              "penalty_explanation": "Grammatical error: singular subject 'tool' requires singular verb agreement 'adjusts'."
+            }
+          ],
+          "hint": "Contrast the Hand Tool (clicking/dragging to pan) with the Zoom Tool (clicking to zoom in, Alt-clicking to zoom out)."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "हैंड टूल (स्क्रीन खिसकाना) और ज़ूम टूल (बड़ा/छोटा करना) का सही क्रम बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u13_t1",
+              "role": "subject",
+              "text": "जहाँ हाथ के आकार वाला हैंड टूल",
+              "role_hint": {
+                "en": "start with the hand-shaped Hand Tool",
+                "hi": "हाथ के आकार वाले हैंड टूल से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u13_t2",
+              "role": "process",
+              "text": "पृष्ठ क्षेत्र में क्लिक और ड्रैग करके दस्तावेज़ को स्क्रॉल करता है,",
+              "role_hint": {
+                "en": "mention clicking and dragging to scroll the document",
+                "hi": "क्लिक और ड्रैग करके स्क्रॉल करने का उल्लेख करें"
+              }
+            },
+            {
+              "id": "hi_u13_t3",
+              "role": "condition",
+              "text": "वहीं आवर्धक ग्लास वाला ज़ूम टूल",
+              "role_hint": {
+                "en": "introduce the Zoom Tool with magnifying glass icon",
+                "hi": "आवर्धक ग्लास वाले ज़ूम टूल का संदर्भ दें"
+              }
+            },
+            {
+              "id": "hi_u13_t4",
+              "role": "result",
+              "text": "क्लिक करने पर ज़ूम इन और Alt कुंजी दबाने पर ज़ूम आउट करता है",
+              "role_hint": {
+                "en": "finish with zoom in on click and zoom out with Alt key",
+                "hi": "क्लिक पर ज़ूम इन और Alt पर ज़ूम आउट के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "logical",
+              "text": "और सारे अक्षरों को स्थायी रूप से छोटा करके मिटा देता है",
+              "penalty_explanation": "तार्किक त्रुटि: ज़ूम टूल केवल देखने का आकार बदलता है; यह अक्षरों को डिलीट नहीं करता।"
+            },
+            {
+              "id": "hi_u13_d2",
+              "category": "grammatical",
+              "text": "दस्तावेज़ को स्क्रॉल करते हैं,",
+              "penalty_explanation": "व्याकरणिक त्रुटि: एकवचन कर्ता 'हैंड टूल' के साथ बहुवचन क्रिया का अशुद्ध रूप।"
+            }
+          ],
+          "hint": "हैंड टूल पेज को खिसकाता है और ज़ूम टूल क्लिक से बड़ा और Alt+क्लिक से छोटा करता है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "The Hand Tool pans across the canvas, while the Zoom Tool scales viewing magnification (click to zoom in, Alt-click to zoom out).",
+        "hi": "हैंड टूल पेज को खिसकाता है और ज़ूम टूल देखने के आकार को बड़ा (क्लिक) व छोटा (Alt+क्लिक) करता है।"
+      }
+    },
+    {
+      "unit_id": "u14_fill_and_stroke_color",
+      "topic": "Object Styling: Fill and Stroke Mechanics",
+      "pedagogical_objective": "Master color assignment across interior fill palettes and exterior outline stroke perimeters.",
+      "instruction": {
+        "title": {
+          "en": "Object Styling: Fill and Stroke Color Assignment",
+          "hi": "ऑब्जेक्ट स्टाइलिंग: भरण (Fill) और स्ट्रोक (Stroke) रंग प्रणाली"
+        },
+        "theory": {
+          "en": "In PageMaker, vector objects and text frames possess two distinct color properties: Fill refers to the interior color, tint, or pattern contained inside a closed shape or frame; Stroke refers to the exterior perimeter boundary line, including its color, thickness, and line style. The Fill and Stroke tool (represented in the toolbox by two overlapping squares—one filled, one outlined) allows designers to customize both properties independently.",
+          "hi": "पेजमेकर में ऑब्जेक्ट और आकृतियों के दो मुख्य रंग गुण होते हैं: 1. भरण (Fill)—जो किसी बंद आकृति के अंदरूनी भाग का रंग या पैटर्न होता है; 2. स्ट्रोक (Stroke)—जो आकृति की बाहरी सीमा रेखा (आउटलाइन) का रंग और मोटाई होती है। टूलबॉक्स में दो ओवरलैपिंग वर्गों (एक भरा हुआ, एक रेखांकित) द्वारा इन दोनों रंगों का चयन किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='100' y='50' width='180' height='120' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><rect x='135' y='75' width='110' height='70' fill='#38bdf8' stroke='#fbbf24' stroke-width='4'/><text x='190' y='165' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Yellow Stroke + Blue Fill</text><rect x='360' y='50' width='180' height='120' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><rect x='410' y='75' width='45' height='45' fill='#4ade80' stroke='#ffffff' stroke-width='1.5'/><rect x='435' y='95' width='45' height='45' fill='none' stroke='#f87171' stroke-width='3'/><text x='450' y='165' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>Overlapping Squares Icon</text></svg>",
+          "caption": {
+            "en": "Visual differentiation between interior shape Fill and perimeter outline Stroke.",
+            "hi": "ऑब्जेक्ट के आंतरिक भरण (Fill) और बाहरी आउटलाइन (Stroke) के बीच अंतर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact sentence defining the difference between fill and stroke color attributes.",
+          "target_sequence": [
+            {
+              "id": "en_u14_t1",
+              "role": "subject",
+              "text": "fill and stroke styling in pagemaker",
+              "role_hint": {
+                "en": "start with fill and stroke styling in PageMaker",
+                "hi": "पेजमेकर में भरण और स्ट्रोक स्टाइलिंग से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u14_t2",
+              "role": "process",
+              "text": "governs interior colors and outer boundary lines independently,",
+              "role_hint": {
+                "en": "detail governing interior colors and outer boundaries",
+                "hi": "आंतरिक रंग और बाहरी सीमाओं के नियंत्रण का विवरण दें"
+              }
+            },
+            {
+              "id": "en_u14_t3",
+              "role": "condition",
+              "text": "utilizing two overlapping square icons",
+              "role_hint": {
+                "en": "mention the two overlapping square icons",
+                "hi": "दो ओवरलैपिंग वर्ग आइकनों का उल्लेख करें"
+              }
+            },
+            {
+              "id": "en_u14_t4",
+              "role": "result",
+              "text": "to customize interior tints and perimeter line widths for shapes and text",
+              "role_hint": {
+                "en": "conclude with customizing tints and line widths for shapes and text",
+                "hi": "रंग और रेखा की मोटाई बदलने के परिणाम पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "logical",
+              "text": "to convert computer color monitors into black-and-white ink ribbons automatically",
+              "penalty_explanation": "Logical error: fill and stroke are vector color attributes; they do not alter physical monitor displays."
+            },
+            {
+              "id": "en_u14_d2",
+              "category": "grammatical",
+              "text": "governing interior colors and outer boundary lines independent",
+              "penalty_explanation": "Grammatical error: adverb 'independently' is required to modify the participle 'governing'."
+            }
+          ],
+          "hint": "Identify fill (interior) and stroke (outer border), mention the overlapping squares icon, and explain custom styling."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "भरण (Fill) और स्ट्रोक (Stroke) रंगों की कार्यप्रणाली को सही क्रम में व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u14_t1",
+              "role": "subject",
+              "text": "भरण और स्ट्रोक (Fill and Stroke) विकल्प",
+              "role_hint": {
+                "en": "start with Fill and Stroke options",
+                "hi": "भरण और स्ट्रोक विकल्प से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u14_t2",
+              "role": "process",
+              "text": "दो ओवरलैपिंग वर्गों के आइकन द्वारा दर्शाया जाता है,",
+              "role_hint": {
+                "en": "describe representation by two overlapping squares icon",
+                "hi": "दो ओवरलैपिंग वर्गों के प्रतीक का उल्लेख करें"
+              }
+            },
+            {
+              "id": "hi_u14_t3",
+              "role": "condition",
+              "text": "जहाँ 'Fill' ऑब्जेक्ट के अंदरूनी रंग को",
+              "role_hint": {
+                "en": "state Fill controlling inner color",
+                "hi": "Fill द्वारा आंतरिक रंग तय करने की स्थिति बताएं"
+              }
+            },
+            {
+              "id": "hi_u14_t4",
+              "role": "result",
+              "text": "और 'Stroke' उसकी बाहरी सीमा रेखा के रंग और मोटाई को नियंत्रित करता है",
+              "role_hint": {
+                "en": "finish with Stroke controlling outer border color and thickness",
+                "hi": "Stroke द्वारा बाहरी सीमा रेखा नियंत्रण के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "logical",
+              "text": "और कागज़ पर पानी गिराकर सारी छपाई को धो देता है",
+              "penalty_explanation": "तार्किक त्रुटि: यह डिजिटल रंग प्रणाली है; इसका पानी गिराने से कोई संबंध नहीं है।"
+            },
+            {
+              "id": "hi_u14_d2",
+              "category": "grammatical",
+              "text": "दो ओवरलैपिंग वर्गों के आइकन द्वारा दर्शाई जाती है,",
+              "penalty_explanation": "व्याकरणिक त्रुटि: पुल्लिंग कर्ता 'विकल्प' के साथ स्त्रीलिंग क्रिया का अशुद्ध रूप।"
+            }
+          ],
+          "hint": "Fill अंदर का रंग भरता है, Stroke बाहरी लाइन का रंग और मोटाई तय करता है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Fill styles the enclosed interior of shapes, while Stroke specifies the color, style, and width of boundary perimeters.",
+        "hi": "Fill आकृति के भीतरी हिस्से में रंग भरता है, जबकि Stroke बाहरी सीमा रेखा के रंग और मोटाई को नियंत्रित करता है।"
+      }
+    },
+    {
+      "unit_id": "u15_master_pages_architecture",
+      "topic": "Master Pages: Template Layout & Design Consistency",
+      "pedagogical_objective": "Formulate master page templates for automatically enforcing uniform repeating elements (logos, margins) across pages.",
+      "instruction": {
+        "title": {
+          "en": "Master Pages: Layout Templates and Consistency",
+          "hi": "मास्टर पेज: लेआउट टेम्प्लेट और एकरूपता"
+        },
+        "theory": {
+          "en": "In PageMaker, Master Pages act as foundational templates designed to maintain a consistent visual layout across multiple pages in a publication. They contain recurring elements—such as running headers, footers, page numbers, margins, and background logos—that appear automatically on all pages linked to that master, saving substantial design time and guaranteeing stylistic uniformity.",
+          "hi": "पेजमेकर में मास्टर पेज (Master Pages) टेम्प्लेट की तरह होते हैं जो दस्तावेज़ के कई पेजों पर एक समान लेआउट बनाए रखने में मदद करते हैं। इनमें हेडर, फुटर, पेज नंबर और बैकग्राउंड डिज़ाइन जैसे तत्व होते हैं जो उस मास्टर से जुड़े सभी पेजों पर अपने आप दिखाई देते हैं, जिससे समय की बचत होती है और डिज़ाइन में एकरूपता बनी रहती है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='45' width='160' height='130' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='140' y='75' fill='#fbbf24' font-size='12' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Master Page (L/R)</text><text x='140' y='105' fill='#38bdf8' font-size='9' font-family='sans-serif' text-anchor='middle'>[Header Logo]</text><text x='140' y='155' fill='#4ade80' font-size='9' font-family='sans-serif' text-anchor='middle'>[Footer &amp; Page #]</text><line x1='220' y1='90' x2='300' y2='70' stroke='#fbbf24' stroke-width='2'/><polygon points='305,70 295,65 295,75' fill='#fbbf24'/><line x1='220' y1='130' x2='300' y2='150' stroke='#fbbf24' stroke-width='2'/><polygon points='305,150 295,145 295,155' fill='#fbbf24'/><rect x='310' y='30' width='130' height='75' rx='4' fill='#0f172a' stroke='#38bdf8' stroke-width='1'/><text x='375' y='50' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Inherits to Page 1</text><rect x='310' y='115' width='130' height='75' rx='4' fill='#0f172a' stroke='#38bdf8' stroke-width='1'/><text x='375' y='135' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Inherits to Page 2</text><rect x='470' y='70' width='130' height='75' rx='4' fill='#0f172a' stroke='#38bdf8' stroke-width='1'/><text x='535' y='90' fill='#94a3b8' font-size='9' font-family='sans-serif' text-anchor='middle'>Inherits to Page 3...</text></svg>",
+          "caption": {
+            "en": "Template inheritance: Master page headers, footers, and margins applied globally to document sheets.",
+            "hi": "टेम्प्लेट एकरूपता: मास्टर पेज द्वारा सभी पृष्ठों पर हेडर, फुटर और मार्जिन का स्वतः अनुप्रयोग।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact description of Master Pages and their automated layout inheritance.",
+          "target_sequence": [
+            {
+              "id": "en_u15_t1",
+              "role": "subject",
+              "text": "master pages function as global layout templates",
+              "role_hint": {
+                "en": "start with master pages acting as global layout templates",
+                "hi": "मास्टर पेज के लेआउट टेम्प्लेट होने वाले खंड से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u15_t2",
+              "role": "process",
+              "text": "holding repeating headers, footers, margins, and logos,",
+              "role_hint": {
+                "en": "detail holding repeating headers, footers, and logos",
+                "hi": "हेडर, फुटर और लोगो को समाहित करने का विवरण दें"
+              }
+            },
+            {
+              "id": "en_u15_t3",
+              "role": "condition",
+              "text": "automatically inheriting these design elements",
+              "role_hint": {
+                "en": "state automatic inheritance of design elements",
+                "hi": "इन तत्वों के स्वतः लागू होने की स्थिति जोड़ें"
+              }
+            },
+            {
+              "id": "en_u15_t4",
+              "role": "result",
+              "text": "across all publication pages to guarantee visual consistency and save time",
+              "role_hint": {
+                "en": "conclude with guaranteeing visual consistency and saving design time",
+                "hi": "दृश्य एकरूपता और समय की बचत के परिणाम पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "logical",
+              "text": "to randomly scramble page numbering in reverse order during commercial printing",
+              "penalty_explanation": "Logical error: master pages ensure consistent and organized pagination, not random scrambling."
+            },
+            {
+              "id": "en_u15_d2",
+              "category": "grammatical",
+              "text": "master pages functions as global layout templates",
+              "penalty_explanation": "Grammatical error: plural subject 'master pages' requires plural base verb 'function'."
+            }
+          ],
+          "hint": "Define Master Pages as templates, cite recurring headers/footers/margins, and state how automatic inheritance saves time."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "मास्टर पेज की अवधारणा और उसके लाभों का सही क्रम बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u15_t1",
+              "role": "subject",
+              "text": "पेजमेकर में मास्टर पेज टेम्प्लेट की तरह कार्य करते हैं",
+              "role_hint": {
+                "en": "start with Master Pages functioning as templates in PageMaker",
+                "hi": "मास्टर पेज के टेम्प्लेट होने के परिचय से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u15_t2",
+              "role": "process",
+              "text": "जिनमें हेडर, फुटर, पेज नंबर और बैकग्राउंड लोगो होते हैं,",
+              "role_hint": {
+                "en": "mention headers, footers, page numbers, and logos",
+                "hi": "हेडर, फुटर और पेज नंबर के समावेश का उल्लेख करें"
+              }
+            },
+            {
+              "id": "hi_u15_t3",
+              "role": "condition",
+              "text": "तथा इन्हें बार-बार मैन्युअल जोड़ने के बजाय",
+              "role_hint": {
+                "en": "contrast with adding them manually to each page",
+                "hi": "मैन्युअल जोड़ने से बचने की स्थिति बताएं"
+              }
+            },
+            {
+              "id": "hi_u15_t4",
+              "role": "result",
+              "text": "सभी पेजों पर स्वतः लागू करके डिज़ाइन में एकरूपता और समय की बचत की जाती है",
+              "role_hint": {
+                "en": "finish with automatic application across all pages saving time",
+                "hi": "एकरूपता और समय की बचत के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "logical",
+              "text": "और पत्रिका के सभी पृष्ठों को हमेशा के लिए खाली कर देते हैं",
+              "penalty_explanation": "तार्किक त्रुटि: मास्टर पेज सामग्री को सुसंगत बनाते हैं, पन्नों को खाली नहीं करते।"
+            },
+            {
+              "id": "hi_u15_d2",
+              "category": "grammatical",
+              "text": "पेजमेकर में मास्टर पेज टेम्प्लेट की तरह कार्य करता है",
+              "penalty_explanation": "व्याकरणिक त्रुटि: बहुवचन कर्ता 'मास्टर पेज' के साथ एकवचन क्रिया का अशुद्ध रूप।"
+            }
+          ],
+          "hint": "मास्टर पेज टेम्प्लेट हैं जिनमें हेडर/फुटर होते हैं, जो सभी पेजों पर स्वतः आकर एकरूपता लाते हैं।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Master Pages automate recurring layout elements (headers, footers, pagination), guaranteeing document-wide consistency.",
+        "hi": "मास्टर पेज बार-बार दोहराए जाने वाले तत्वों (हेडर, फुटर) को सभी पृष्ठों पर स्वतः लागू करके एकरूपता लाते हैं।"
+      }
+    },
+    {
+      "unit_id": "u16_running_headers_and_footers",
+      "topic": "Page Annotation: Headers and Footers",
+      "pedagogical_objective": "Contrast top-margin metadata (document/chapter titles in headers) with bottom-margin pagination and dates (footers).",
+      "instruction": {
+        "title": {
+          "en": "Page Annotation: Headers and Footers",
+          "hi": "पृष्ठ टिप्पणी: हेडर और फुटर संरचना"
+        },
+        "theory": {
+          "en": "Headers and Footers are designated margin sections at the top and bottom of publication pages that maintain document organization. Headers appear at the top margin and typically contain document titles, book names, or chapter headings. Footers appear at the bottom margin and display sequential page numbers, publication dates, and copyright notices. They are typically applied via Master Pages.",
+          "hi": "पेजमेकर में हेडर और फुटर किसी पृष्ठ के शीर्ष और निचले भाग होते हैं: 1. हेडर (Headers)—पृष्ठ के शीर्ष भाग पर होते हैं और इनमें दस्तावेज़ का नाम, पुस्तक का शीर्षक या अध्याय का नाम होता है; 2. फुटर (Footers)—पृष्ठ के निचले भाग पर दिखाई देते हैं और इनमें पेज नंबर, तारीखें या कॉपीराइट की जानकारी होती है। इन्हें मास्टर पेज द्वारा जोड़ा जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='180' y='25' width='280' height='170' rx='6' fill='#1e293b' stroke='#94a3b8' stroke-width='1.5'/><rect x='200' y='35' width='240' height='25' fill='#0f172a' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='52' fill='#38bdf8' font-size='11' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Header: Chapter 3 - Desktop Publishing</text><line x1='200' y1='80' x2='440' y2='80' stroke='#475569' stroke-width='1'/><line x1='200' y1='100' x2='440' y2='100' stroke='#475569' stroke-width='1'/><line x1='200' y1='120' x2='440' y2='120' stroke='#475569' stroke-width='1'/><rect x='200' y='160' width='240' height='25' fill='#0f172a' stroke='#4ade80' stroke-width='1.5'/><text x='320' y='177' fill='#4ade80' font-size='11' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Footer: Page 42 | © 2026 Learn-App</text></svg>",
+          "caption": {
+            "en": "Anatomy of page annotation: Running chapter Header at top and pagination Footer at bottom.",
+            "hi": "पृष्ठ टिप्पणी संरचना: शीर्ष पर अध्याय का हेडर तथा नीचे पृष्ठ संख्या और कॉपीराइट का फुटर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact contrast between top-margin headers and bottom-margin footers.",
+          "target_sequence": [
+            {
+              "id": "en_u16_t1",
+              "role": "subject",
+              "text": "while headers occupy the top margin of publication pages",
+              "role_hint": {
+                "en": "start with headers occupying the top margin",
+                "hi": "हेडर के शीर्ष मार्जिन पर होने वाले खंड से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u16_t2",
+              "role": "process",
+              "text": "to display chapter titles, document names, and topics,",
+              "role_hint": {
+                "en": "detail displaying chapter titles and document names",
+                "hi": "अध्याय और दस्तावेज़ शीर्षक प्रदर्शन का उल्लेख करें"
+              }
+            },
+            {
+              "id": "en_u16_t3",
+              "role": "condition",
+              "text": "footers reside along the bottom margin",
+              "role_hint": {
+                "en": "introduce footers residing at the bottom margin",
+                "hi": "निचले मार्जिन पर फुटर की स्थिति बताएं"
+              }
+            },
+            {
+              "id": "en_u16_t4",
+              "role": "result",
+              "text": "to present sequential page numbers, dates, and copyright notices consistently",
+              "role_hint": {
+                "en": "conclude with presenting page numbers, dates, and copyright notices",
+                "hi": "पेज नंबर, तारीख और कॉपीराइट जानकारी पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u16_d1",
+              "category": "logical",
+              "text": "to permanently seal the physical printer rollers with dry black glue",
+              "penalty_explanation": "Logical error: headers and footers format layout metadata; they do not apply glue to printers."
+            },
+            {
+              "id": "en_u16_d2",
+              "category": "grammatical",
+              "text": "footers resides along the bottom margin",
+              "penalty_explanation": "Grammatical error: plural subject 'footers' requires plural verb form 'reside'."
+            }
+          ],
+          "hint": "Contrast top headers (chapter/document titles) with bottom footers (page numbers, dates, copyright)."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "हेडर (शीर्ष भाग) और फुटर (निचला भाग) के अंतर को सही क्रम में व्यवस्थित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u16_t1",
+              "role": "subject",
+              "text": "जहाँ हेडर किसी पृष्ठ के शीर्ष भाग पर स्थित होकर",
+              "role_hint": {
+                "en": "start with headers located at the top of the page",
+                "hi": "हेडर के पृष्ठ के शीर्ष भाग पर होने से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u16_t2",
+              "role": "process",
+              "text": "अध्याय का नाम और दस्तावेज़ का शीर्षक प्रदर्शित करते हैं,",
+              "role_hint": {
+                "en": "mention displaying chapter name and document title",
+                "hi": "अध्याय और दस्तावेज़ का नाम दिखाने का विवरण दें"
+              }
+            },
+            {
+              "id": "hi_u16_t3",
+              "role": "condition",
+              "text": "वहीं फुटर पृष्ठ के सबसे निचले भाग पर आकर",
+              "role_hint": {
+                "en": "introduce footers appearing at the bottom of the page",
+                "hi": "निचले भाग पर फुटर की स्थिति जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u16_t4",
+              "role": "result",
+              "text": "पेज नंबर, दिनांक और कॉपीराइट जानकारी को सुसंगत रूप में दिखाते हैं",
+              "role_hint": {
+                "en": "finish with showing page numbers, dates, and copyright notices",
+                "hi": "पेज नंबर और कॉपीराइट जानकारी दिखाने के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u16_d1",
+              "category": "logical",
+              "text": "और पूरी किताब के पन्नों को एक साथ जला देते हैं",
+              "penalty_explanation": "तार्किक त्रुटि: हेडर और फुटर पृष्ठ को व्यवस्थित करते हैं, पन्नों को नुकसान नहीं पहुँचाते।"
+            },
+            {
+              "id": "hi_u16_d2",
+              "category": "grammatical",
+              "text": "अध्याय का नाम और दस्तावेज़ का शीर्षक प्रदर्शित करता है,",
+              "penalty_explanation": "व्याकरणिक त्रुटि: बहुवचन कर्ता 'हेडर' के साथ एकवचन क्रिया का अशुद्ध रूप।"
+            }
+          ],
+          "hint": "हेडर ऊपर रहता है (अध्याय/शीर्षक) और फुटर नीचे रहता है (पेज नंबर/तारीख/कॉपीराइट)।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Headers organize top margins with titles and topics, while Footers anchor bottom margins with pagination and copyright.",
+        "hi": "हेडर पृष्ठ के शीर्ष पर शीर्षक दिखाते हैं, जबकि फुटर निचले भाग पर पेज नंबर और कॉपीराइट दिखाते हैं।"
+      }
+    },
+    {
+      "unit_id": "u17_print_range_configuration",
+      "topic": "Output Setup: Print Range Controls",
+      "pedagogical_objective": "Distinguish between outputting the entire publication (All Pages), the active sheet (Current Page), or custom page subsets (Range).",
+      "instruction": {
+        "title": {
+          "en": "Print Setup: Configuring the Print Range",
+          "hi": "प्रिंट सेटअप: प्रिंट रेंज विन्यास"
+        },
+        "theory": {
+          "en": "PageMaker provides flexible print range options to control output scope: 'All Pages' outputs the entire publication from first to last page; 'Current Page' restricts physical printing strictly to the page currently active on screen; and 'Range' allows specifying custom pages or intervals (e.g., typing '1-5, 8, 10' to output selected sheets).",
+          "hi": "पेजमेकर में दस्तावेज़ को प्रिंट करने के लिए प्रिंट रेंज (Print Range) में मुख्य विकल्प होते हैं: 1. All Pages—संपूर्ण दस्तावेज़ के सभी पृष्ठ प्रिंट करता है; 2. Current Page—केवल उस सक्रिय पृष्ठ को प्रिंट करता है जिस पर उपयोगकर्ता वर्तमान में कार्य कर रहा है; 3. Range—विशिष्ट पृष्ठों या अंतरालों को प्रिंट करता है (जैसे: '1-5, 8, 10')।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='50' width='160' height='120' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><circle cx='85' cy='75' r='6' fill='#38bdf8'/><text x='105' y='80' fill='#38bdf8' font-size='13' font-family='sans-serif' font-weight='bold'>All Pages</text><text x='140' y='110' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>Full Publication Output</text><text x='140' y='130' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Page 1 to End</text><rect x='240' y='50' width='160' height='120' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><circle cx='265' cy='75' r='6' fill='#4ade80'/><text x='285' y='80' fill='#4ade80' font-size='13' font-family='sans-serif' font-weight='bold'>Current Page</text><text x='320' y='110' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>Active Screen Only</text><text x='320' y='130' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>Single Sheet Output</text><rect x='420' y='50' width='160' height='120' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><circle cx='445' cy='75' r='6' fill='#fbbf24'/><text x='465' y='80' fill='#fbbf24' font-size='13' font-family='sans-serif' font-weight='bold'>Range</text><text x='500' y='110' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>Custom Subsets</text><text x='500' y='130' fill='#94a3b8' font-size='10' font-family='sans-serif' text-anchor='middle'>e.g., 1-5, 8, 10</text></svg>",
+          "caption": {
+            "en": "Print scope management: All Pages, active Current Page, and discrete custom Range.",
+            "hi": "प्रिंट रेंज विकल्प: सभी पृष्ठ (All), सक्रिय पृष्ठ (Current) और विशिष्ट पृष्ठ समूह (Range)।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact sentence categorizing the three primary print range options in PageMaker.",
+          "target_sequence": [
+            {
+              "id": "en_u17_t1",
+              "role": "subject",
+              "text": "the print range dialog governs publication output scope",
+              "role_hint": {
+                "en": "start with the print range dialog governing output scope",
+                "hi": "प्रिंट रेंज द्वारा आउटपुट दायरा तय करने वाले खंड से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u17_t2",
+              "role": "process",
+              "text": "by enabling users to print the entire multi-page document,",
+              "role_hint": {
+                "en": "mention printing the entire document",
+                "hi": "संपूर्ण दस्तावेज़ प्रिंट करने का विवरण दें"
+              }
+            },
+            {
+              "id": "en_u17_t3",
+              "role": "condition",
+              "text": "restrict output strictly to the active current page on screen,",
+              "role_hint": {
+                "en": "add restriction to the current page on screen",
+                "hi": "सक्रिय स्क्रीन पेज तक सीमित करने का उल्लेख करें"
+              }
+            },
+            {
+              "id": "en_u17_t4",
+              "role": "result",
+              "text": "or specify discrete page intervals through custom numerical ranges",
+              "role_hint": {
+                "en": "conclude with specifying discrete page intervals through custom ranges",
+                "hi": "कस्टम रेंज द्वारा विशिष्ट पृष्ठ चुनने पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u17_d1",
+              "category": "logical",
+              "text": "or broadcast all publication pages over fm radio transmitters",
+              "penalty_explanation": "Logical error: print range options send pages to physical printers or files, not FM radio broadcasts."
+            },
+            {
+              "id": "en_u17_d2",
+              "category": "grammatical",
+              "text": "the print range dialog govern publication output scope",
+              "penalty_explanation": "Grammatical error: singular subject 'dialog' requires singular verb agreement 'governs'."
+            }
+          ],
+          "hint": "Identify the print range options: All Pages (entire file), Current Page (active screen), and Range (custom intervals)."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "पेजमेकर के तीनों प्रिंट रेंज विकल्पों (All, Current, Range) का सही क्रम बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u17_t1",
+              "role": "subject",
+              "text": "पेजमेकर में प्रिंट रेंज विकल्प के अंतर्गत",
+              "role_hint": {
+                "en": "start with the print range option in PageMaker",
+                "hi": "प्रिंट रेंज विकल्प के संदर्भ से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u17_t2",
+              "role": "process",
+              "text": "All Pages चुनकर संपूर्ण दस्तावेज़ के सभी पन्ने,",
+              "role_hint": {
+                "en": "describe All Pages printing the entire document",
+                "hi": "All Pages द्वारा सभी पन्ने प्रिंट करने का उल्लेख करें"
+              }
+            },
+            {
+              "id": "hi_u17_t3",
+              "role": "condition",
+              "text": "Current Page चुनकर केवल वर्तमान में खुला हुआ पन्ना,",
+              "role_hint": {
+                "en": "mention Current Page printing only the active screen page",
+                "hi": "Current Page द्वारा केवल सक्रिय पन्ना प्रिंट करने की स्थिति जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u17_t4",
+              "role": "result",
+              "text": "तथा Range विकल्प द्वारा विशिष्ट पृष्ठ संख्याएं चुनकर प्रिंट की जा सकती हैं",
+              "role_hint": {
+                "en": "finish with Range option printing specific page intervals",
+                "hi": "Range द्वारा विशिष्ट पृष्ठ प्रिंट करने के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u17_d1",
+              "category": "logical",
+              "text": "और प्रिंटर के सारे कागज़ों को हमेशा के लिए फाड़ दिया जाता है",
+              "penalty_explanation": "तार्किक त्रुटि: प्रिंट रेंज मुद्रण के पृष्ठ चुनता है, कागज़ को नुकसान नहीं पहुँचाता।"
+            },
+            {
+              "id": "hi_u17_d2",
+              "category": "grammatical",
+              "text": "तथा Range विकल्प द्वारा विशिष्ट पृष्ठ संख्याएं चुनकर प्रिंट किया जा सकता है",
+              "penalty_explanation": "व्याकरणिक त्रुटि: बहुवचन कर्म 'पृष्ठ संख्याएं' के साथ 'की जा सकती हैं' शुद्ध रूप है।"
+            }
+          ],
+          "hint": "All Pages से पूरा दस्तावेज़, Current Page से सक्रिय पेज और Range से चुने हुए पेज प्रिंट होते हैं।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Print range controls output volume across the whole document (All), the working view (Current), or specific subsets (Range).",
+        "hi": "प्रिंट रेंज द्वारा पूरा दस्तावेज़ (All), केवल सक्रिय पृष्ठ (Current) या चुने हुए पन्ने (Range) प्रिंट किए जाते हैं।"
+      }
+    },
+    {
+      "unit_id": "u18_paper_setup_and_orientation",
+      "topic": "Media Formats: Paper Sizing & Orientation",
+      "pedagogical_objective": "Configure paper sheet standards (A4, Letter, Legal) and visual layout orientation (vertical Portrait vs. horizontal Landscape).",
+      "instruction": {
+        "title": {
+          "en": "Paper Setup: Sizes and Layout Orientations",
+          "hi": "पेपर सेटअप: आकार और ओरिएंटेशन"
+        },
+        "theory": {
+          "en": "Paper Setup configures the physical media parameters before printing. Users select standardized paper sizes such as A4, Letter, or Legal to match printer trays. Additionally, designers select page orientation: Portrait (vertical layout, taller than wide, used for books and letters) or Landscape (horizontal layout, wider than tall, ideal for certificates, brochures, and broad tables).",
+          "hi": "पेपर सेटअप (Paper Setup) में दस्तावेज़ के भौतिक कागज़ का निर्धारण किया जाता है: 1. पेपर का आकार (Paper Size)—जैसे A4, लेटर (Letter), लीगल (Legal) आदि; 2. ओरिएंटेशन (Orientation)—जिसमें पोर्ट्रेट (Portrait - लंबवत/वर्टिकल) तथा लैंडस्केप (Landscape - क्षैतिज/हॉरिजॉन्टल) में से किसी एक का चयन किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='80' y='45' width='200' height='130' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><rect x='140' y='60' width='80' height='100' fill='#0f172a' stroke='#38bdf8' stroke-width='1.5'/><text x='180' y='115' fill='#38bdf8' font-size='10' font-family='sans-serif' text-anchor='middle'>Vertical</text><text x='180' y='170' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Portrait (A4 / Letter)</text><rect x='360' y='45' width='200' height='130' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><rect x='400' y='75' width='120' height='70' fill='#0f172a' stroke='#4ade80' stroke-width='1.5'/><text x='460' y='115' fill='#4ade80' font-size='10' font-family='sans-serif' text-anchor='middle'>Horizontal</text><text x='460' y='170' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Landscape (Wide View)</text></svg>",
+          "caption": {
+            "en": "Paper orientation paradigms: Vertical Portrait mode vs. wide horizontal Landscape mode.",
+            "hi": "पेपर ओरिएंटेशन: वर्टिकल पोर्ट्रेट मोड (किताबें/पत्र) बनाम हॉरिजॉन्टल लैंडस्केप मोड (ब्रोशर/प्रमाणपत्र)।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact sentence defining paper setup parameters across dimensions and orientation.",
+          "target_sequence": [
+            {
+              "id": "en_u18_t1",
+              "role": "subject",
+              "text": "the paper setup configuration in pagemaker",
+              "role_hint": {
+                "en": "start with the paper setup configuration in PageMaker",
+                "hi": "पेजमेकर में पेपर सेटअप विन्यास से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u18_t2",
+              "role": "process",
+              "text": "selects standardized physical sheet dimensions like a4, letter, and legal,",
+              "role_hint": {
+                "en": "mention selecting paper sizes like A4, Letter, and Legal",
+                "hi": "A4, लेटर और लीगल जैसे आकार चुनने का विवरण दें"
+              }
+            },
+            {
+              "id": "en_u18_t3",
+              "role": "condition",
+              "text": "while establishing page orientation",
+              "role_hint": {
+                "en": "introduce establishing page orientation",
+                "hi": "पेज ओरिएंटेशन तय करने की स्थिति जोड़ें"
+              }
+            },
+            {
+              "id": "en_u18_t4",
+              "role": "result",
+              "text": "as either vertical portrait for books or horizontal landscape for broad charts",
+              "role_hint": {
+                "en": "conclude with vertical portrait or horizontal landscape",
+                "hi": "वर्टिकल पोर्ट्रेट और हॉरिजॉन्टल लैंडस्केप के चयन पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u18_d1",
+              "category": "logical",
+              "text": "to permanently compress paper fibers into liquid glass inside the printer tray",
+              "penalty_explanation": "Logical error: paper setup configures layout dimensions in software; it does not liquefy paper."
+            },
+            {
+              "id": "en_u18_d2",
+              "category": "grammatical",
+              "text": "selects standardized physical sheet dimensions like a4 letter and legal without orientation",
+              "penalty_explanation": "Grammatical error: run-on punctuation lacking appropriate coordinating structure."
+            }
+          ],
+          "hint": "Identify paper setup choosing standards (A4, Letter, Legal) and orientation (vertical Portrait vs horizontal Landscape)."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "पेपर सेटअप (आकार और ओरिएंटेशन) के विन्यास का सही क्रम बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u18_t1",
+              "role": "subject",
+              "text": "पेपर सेटअप के माध्यम से प्रयोक्ता",
+              "role_hint": {
+                "en": "start with the user configuring paper setup",
+                "hi": "पेपर सेटअप के माध्यम से प्रयोक्ता वाले खंड से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u18_t2",
+              "role": "process",
+              "text": "A4, लेटर या लीगल जैसे कागज़ के मानक आकार चुनता है,",
+              "role_hint": {
+                "en": "mention choosing standard sizes like A4, Letter, or Legal",
+                "hi": "A4, लेटर और लीगल आकार चुनने का उल्लेख करें"
+              }
+            },
+            {
+              "id": "hi_u18_t3",
+              "role": "condition",
+              "text": "तथा दस्तावेज़ की आवश्यकतानुसार ओरिएंटेशन का चयन करते हुए",
+              "role_hint": {
+                "en": "state selecting orientation according to document needs",
+                "hi": "दस्तावेज़ अनुसार ओरिएंटेशन चुनने की स्थिति जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u18_t4",
+              "role": "result",
+              "text": "पोर्ट्रेट (वर्टिकल) अथवा लैंडस्केप (हॉरिजॉन्टल) लेआउट निर्धारित करता है",
+              "role_hint": {
+                "en": "finish with setting portrait or landscape layout",
+                "hi": "पोर्ट्रेट या लैंडस्केप लेआउट तय करने के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u18_d1",
+              "category": "logical",
+              "text": "और सारे प्रिंटरों की बिजली को हमेशा के लिए बंद कर देता है",
+              "penalty_explanation": "तार्किक त्रुटि: पेपर सेटअप प्रिंटिंग प्रारूप तय करता है, बिजली बंद नहीं करता।"
+            },
+            {
+              "id": "hi_u18_d2",
+              "category": "grammatical",
+              "text": "A4, लेटर या लीगल जैसे कागज़ के मानक आकार चुनते हैं,",
+              "penalty_explanation": "व्याकरणिक त्रुटि: एकवचन कर्ता 'प्रयोक्ता' के साथ बहुवचन क्रिया का अशुद्ध रूप।"
+            }
+          ],
+          "hint": "पेपर सेटअप में कागज़ का आकार (A4, लेटर) और ओरिएंटेशन (पोर्ट्रेट या लैंडस्केप) तय किया जाता है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Paper Setup calibrates physical dimensions (A4, Letter, Legal) and geometry (vertical Portrait vs. horizontal Landscape).",
+        "hi": "पेपर सेटअप में कागज़ का मानक आकार (A4, Letter) और ओरिएंटेशन (पोर्ट्रेट या लैंडस्केप) चुना जाता है।"
+      }
+    },
+    {
+      "unit_id": "u19_print_quality_and_color_modes",
+      "topic": "Print Modes: Resolution Quality & Color Reproduction",
+      "pedagogical_objective": "Differentiate rapid low-resolution Draft mode from high-resolution final prints, and grayscale Black & White from full-color output.",
+      "instruction": {
+        "title": {
+          "en": "Print Production: Quality and Color Modes",
+          "hi": "प्रिंट उत्पादन: गुणवत्ता स्तर और रंग विकल्प"
+        },
+        "theory": {
+          "en": "PageMaker provides quality and color calibration prior to physical printing: Print Quality offers 'Draft Mode' (faster printing using less toner, ideal for proofreading rough drafts) and 'High Quality' (maximum resolution for final presentation copies). Color Options allow printing in 'Black & White' (converting colors into grayscale shades) or 'Color' (generating full-color separations for color printers).",
+          "hi": "प्रिंटिंग से पहले गुणवत्ता और रंग का चयन किया जाता है: 1. प्रिंट क्वालिटी (Print Quality)—जिसमें ड्राफ्ट मोड (Draft Mode - तेज़ लेकिन कम गुणवत्ता, रफ़ ड्राफ्ट के लिए) और हाई क्वालिटी (High Quality - सर्वश्रेष्ठ रिज़ॉल्यूशन, अंतिम प्रिंट के लिए) होते हैं; 2. रंग विकल्प (Color Options)—जिसमें ब्लैक एंड व्हाइट (ग्रेस्केल) और कलर (पूर्ण रंगीन प्रिंटिंग) शामिल हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><line x1='320' y1='20' x2='320' y2='200' stroke='#334155' stroke-width='1.5'/><text x='160' y='50' fill='#38bdf8' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Print Quality Modes</text><rect x='70' y='75' width='180' height='40' rx='4' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='160' y='100' fill='#fbbf24' font-size='11' font-family='sans-serif' text-anchor='middle'>Draft Mode: Fast / Low Toner</text><rect x='70' y='130' width='180' height='40' rx='4' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='160' y='155' fill='#4ade80' font-size='11' font-family='sans-serif' text-anchor='middle'>High Quality: Best Resolution</text><text x='480' y='50' fill='#fbbf24' font-size='14' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Color Reproduction Modes</text><rect x='390' y='75' width='180' height='40' rx='4' fill='#1e293b' stroke='#94a3b8' stroke-width='1.5'/><text x='480' y='100' fill='#cbd5e1' font-size='11' font-family='sans-serif' text-anchor='middle'>Black &amp; White: Grayscale</text><rect x='390' y='130' width='180' height='40' rx='4' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='480' y='155' fill='#38bdf8' font-size='11' font-family='sans-serif' text-anchor='middle'>Color: Full Color Output</text></svg>",
+          "caption": {
+            "en": "Dual printing controls: Resolution quality calibration alongside grayscale vs. full-color modes.",
+            "hi": "प्रिंटिंग नियंत्रण: रिज़ॉल्यूशन गुणवत्ता (ड्राफ्ट बनाम हाई) तथा रंग प्रबंधन (ब्लैक एंड व्हाइट बनाम कलर)।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact sentence detailing the trade-offs between print quality modes and color options.",
+          "target_sequence": [
+            {
+              "id": "en_u19_t1",
+              "role": "subject",
+              "text": "print quality options contrast fast draft mode for rough proofreading",
+              "role_hint": {
+                "en": "start with print quality contrasting draft mode for proofreading",
+                "hi": "प्रिंट क्वालिटी में रफ़ ड्राफ्ट हेतु ड्राफ्ट मोड से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u19_t2",
+              "role": "process",
+              "text": "with maximum-resolution high quality mode for finished publications,",
+              "role_hint": {
+                "en": "contrast with high quality mode for finished publications",
+                "hi": "अंतिम प्रतियों हेतु हाई क्वालिटी मोड का उल्लेख करें"
+              }
+            },
+            {
+              "id": "en_u19_t3",
+              "role": "condition",
+              "text": "paired with color channel controls",
+              "role_hint": {
+                "en": "introduce pairing with color channel controls",
+                "hi": "रंग विकल्पों के साथ युग्मन की स्थिति बताएं"
+              }
+            },
+            {
+              "id": "en_u19_t4",
+              "role": "result",
+              "text": "to output documents in either monochrome grayscale or rich full-color formats",
+              "role_hint": {
+                "en": "conclude with outputting in monochrome grayscale or full-color formats",
+                "hi": "ग्रेस्केल या पूर्ण रंगीन प्रारूपों में मुद्रण पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u19_d1",
+              "category": "logical",
+              "text": "to convert computer text into physical stone sculptures inside laser cartridges",
+              "penalty_explanation": "Logical error: print quality settings modulate ink/toner deposition; they do not carve physical stones."
+            },
+            {
+              "id": "en_u19_d2",
+              "category": "grammatical",
+              "text": "print quality options contrasts fast draft mode for rough proofreading",
+              "penalty_explanation": "Grammatical error: plural subject 'options' requires base verb 'contrast'."
+            }
+          ],
+          "hint": "Contrast Draft mode (fast proofreading) with High Quality (final prints), and mention Black & White (grayscale) vs Color."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "प्रिंट क्वालिटी (ड्राफ्ट/हाई) और रंग विकल्पों (B&W/Color) का सही क्रम बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u19_t1",
+              "role": "subject",
+              "text": "प्रिंट क्वालिटी के अंतर्गत तेज़ लेकिन कम गुणवत्ता वाला ड्राफ्ट मोड",
+              "role_hint": {
+                "en": "start with Draft Mode being fast but lower quality",
+                "hi": "कम गुणवत्ता वाले ड्राफ्ट मोड से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u19_t2",
+              "role": "process",
+              "text": "रफ़ प्रूफरीडिंग के लिए और हाई क्वालिटी मोड अंतिम प्रिंट के लिए चुना जाता है,",
+              "role_hint": {
+                "en": "mention rough proofreading and High Quality mode for final prints",
+                "hi": "रफ़ प्रूफरीडिंग और अंतिम प्रिंट का विवरण दें"
+              }
+            },
+            {
+              "id": "hi_u19_t3",
+              "role": "condition",
+              "text": "जबकि रंग विकल्पों के माध्यम से",
+              "role_hint": {
+                "en": "introduce Color Options context",
+                "hi": "रंग विकल्पों का संदर्भ जोड़ें"
+              }
+            },
+            {
+              "id": "hi_u19_t4",
+              "role": "result",
+              "text": "दस्तावेज़ को ब्लैक एंड व्हाइट (ग्रेस्केल) या पूरे रंगीन स्वरूप में प्रिंट किया जा सकता है",
+              "role_hint": {
+                "en": "finish with printing in Black and White (grayscale) or full color",
+                "hi": "ब्लैक एंड व्हाइट या रंगीन स्वरूप में प्रिंट करने के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u19_d1",
+              "category": "logical",
+              "text": "और प्रिंटर की सभी मोटरों को जलाकर राख में बदल दिया जाता है",
+              "penalty_explanation": "तार्किक त्रुटि: क्वालिटी मोड स्याही के उपयोग को नियंत्रित करते हैं, मोटर को नुकसान नहीं पहुँचाते।"
+            },
+            {
+              "id": "hi_u19_d2",
+              "category": "grammatical",
+              "text": "रफ़ प्रूफरीडिंग के लिए और हाई क्वालिटी मोड अंतिम प्रिंट के लिए चुने जाते हैं,",
+              "penalty_explanation": "व्याकरणिक त्रुटि: एकवचन कर्म 'मोड' के साथ बहुवचन क्रिया का अशुद्ध रूप।"
+            }
+          ],
+          "hint": "ड्राफ्ट मोड रफ़ काम के लिए और हाई क्वालिटी अंतिम प्रिंट के लिए होता है; रंग में B&W या Color चुना जाता है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Draft mode prioritizes speed for proofing while High Quality optimizes resolution; Color modes toggle grayscale vs. CMYK.",
+        "hi": "ड्राफ्ट मोड रफ़ प्रूफिंग हेतु तेज़ होता है जबकि हाई क्वालिटी अंतिम प्रिंट देती है; रंग विकल्पों में ग्रेस्केल या फुल कलर चुनते हैं।"
+      }
+    },
+    {
+      "unit_id": "u20_duplex_and_print_to_file",
+      "topic": "Advanced Output: Duplex Printing & Print to File",
+      "pedagogical_objective": "Analyze two-sided sheet printing (duplex hardware) and virtual publishing exports to PostScript/PDF digital files.",
+      "instruction": {
+        "title": {
+          "en": "Advanced Output Options: Duplex Printing and Print to File",
+          "hi": "उन्नत प्रिंटिंग विकल्प: डुप्लेक्स प्रिंटिंग और फ़ाइल में प्रिंट"
+        },
+        "theory": {
+          "en": "Advanced publishing workflows utilize specialized output features: Number of Copies sets multi-copy batches. Double-Sided Printing (Duplex) instructs supported printer hardware to print on both the front and back of each paper sheet, cutting paper consumption in half for booklets. Print to File redirects print stream commands into digital files, exporting publications as PostScript (.ps) or PDF documents for commercial press pre-flighting instead of physical paper output.",
+          "hi": "उन्नत प्रिंटिंग में कुछ विशेष विकल्प शामिल हैं: 1. प्रतियों की संख्या (Number of Copies)—प्रिंट की जाने वाली प्रतियों की संख्या तय करता है; 2. डबल-साइडेड प्रिंटिंग / डुप्लेक्स (Duplex)—कागज़ के दोनों तरफ़ प्रिंट करता है (यदि प्रिंटर इसका समर्थन करता है); 3. फ़ाइल में प्रिंट करें (Print to File)—दस्तावेज़ को सीधे कागज़ पर प्रिंट करने के बजाय पोस्टस्क्रिप्ट या PDF फ़ाइल के रूप में सहेजता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 220' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='220' fill='#0f172a'/><rect x='60' y='50' width='230' height='120' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='175' y='80' fill='#38bdf8' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Duplex Printing</text><rect x='110' y='95' width='55' height='40' fill='#0f172a' stroke='#38bdf8' stroke-width='1.5'/><text x='137' y='120' fill='#38bdf8' font-size='10' font-family='sans-serif' text-anchor='middle'>Side 1</text><rect x='180' y='95' width='55' height='40' fill='#0f172a' stroke='#4ade80' stroke-width='1.5'/><text x='207' y='120' fill='#4ade80' font-size='10' font-family='sans-serif' text-anchor='middle'>Side 2</text><text x='175' y='155' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>Two-Sided Book Sheets</text><rect x='350' y='50' width='230' height='120' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='465' y='80' fill='#fbbf24' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Print to File</text><rect x='410' y='95' width='110' height='40' rx='4' fill='#0f172a' stroke='#fbbf24' stroke-width='1.5'/><text x='465' y='120' fill='#fbbf24' font-size='11' font-family='monospace' text-anchor='middle'>.PS / .PDF Export</text><text x='465' y='155' fill='#cbd5e1' font-size='10' font-family='sans-serif' text-anchor='middle'>Digital Press Distribution</text></svg>",
+          "caption": {
+            "en": "Advanced print outputs: Hardware two-sided Duplex sheets vs. virtual Print to File PostScript/PDF export.",
+            "hi": "उन्नत आउटपुट: दो तरफ़ा डुप्लेक्स प्रिंटिंग बनाम डिजिटल पोस्टस्क्रिप्ट/PDF फ़ाइल निर्यात।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the exact description contrasting duplex printing hardware with the Print to File digital workflow.",
+          "target_sequence": [
+            {
+              "id": "en_u20_t1",
+              "role": "subject",
+              "text": "while duplex printing automates double-sided paper output",
+              "role_hint": {
+                "en": "start with duplex printing automating double-sided paper output",
+                "hi": "डुप्लेक्स प्रिंटिंग द्वारा दोनों तरफ मुद्रण से प्रारंभ करें"
+              }
+            },
+            {
+              "id": "en_u20_t2",
+              "role": "process",
+              "text": "to conserve sheets when creating booklets and books,",
+              "role_hint": {
+                "en": "mention conserving sheets for booklets and books",
+                "hi": "किताबों हेतु कागज़ की बचत का उल्लेख करें"
+              }
+            },
+            {
+              "id": "en_u20_t3",
+              "role": "condition",
+              "text": "the print to file option bypasses physical printer hardware",
+              "role_hint": {
+                "en": "introduce Print to File bypassing physical hardware",
+                "hi": "फ़ाइल में प्रिंट द्वारा भौतिक प्रिंटर को बायपास करने की स्थिति बताएं"
+              }
+            },
+            {
+              "id": "en_u20_t4",
+              "role": "result",
+              "text": "to save the publication directly as a digital postscript or pdf document",
+              "role_hint": {
+                "en": "conclude with saving directly as PostScript or PDF files",
+                "hi": "पोस्टस्क्रिप्ट या PDF फाइल के रूप में सहेजने पर समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u20_d1",
+              "category": "logical",
+              "text": "to automatically delete all software licenses from the user profile registry",
+              "penalty_explanation": "Logical error: Print to File generates digital document files; it does not touch software licensing registries."
+            },
+            {
+              "id": "en_u20_d2",
+              "category": "grammatical",
+              "text": "the print to file option bypass physical printer hardware",
+              "penalty_explanation": "Grammatical error: singular subject 'option' requires singular verb agreement 'bypasses'."
+            }
+          ],
+          "hint": "Contrast Duplex printing (printing on both sides of sheets) with Print to File (exporting to PostScript or PDF)."
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "डबल-साइडेड प्रिंटिंग (डुप्लेक्स) और फ़ाइल में प्रिंट (PDF/PS) के अंतर को सही क्रम में लगाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u20_t1",
+              "role": "subject",
+              "text": "जहाँ डबल-साइडेड प्रिंटिंग (डुप्लेक्स) का उपयोग",
+              "role_hint": {
+                "en": "start with double-sided duplex printing",
+                "hi": "डबल-साइडेड डुप्लेक्स प्रिंटिंग से शुरुआत करें"
+              }
+            },
+            {
+              "id": "hi_u20_t2",
+              "role": "process",
+              "text": "कागज़ के दोनों तरफ़ प्रिंट करके किताबें बनाने में होता है,",
+              "role_hint": {
+                "en": "mention printing on both sides of paper for books",
+                "hi": "कागज़ के दोनों तरफ प्रिंट करने का विवरण दें"
+              }
+            },
+            {
+              "id": "hi_u20_t3",
+              "role": "condition",
+              "text": "वहीं Print to File विकल्प दस्तावेज़ को कागज़ पर मुद्रित करने के बजाय",
+              "role_hint": {
+                "en": "state Print to File avoiding direct paper printing",
+                "hi": "कागज़ पर प्रिंट न करने की स्थिति बताएं"
+              }
+            },
+            {
+              "id": "hi_u20_t4",
+              "role": "result",
+              "text": "सीधे पोस्टस्क्रिप्ट या PDF फ़ाइल के रूप में सहेजने की सुविधा देता है",
+              "role_hint": {
+                "en": "finish with saving directly as a PostScript or PDF file",
+                "hi": "पोस्टस्क्रिप्ट या PDF फ़ाइल के रूप में सहेजने के साथ समाप्त करें"
+              }
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u20_d1",
+              "category": "logical",
+              "text": "और पूरे कंप्यूटर के सभी प्रोग्रामों को एक साथ हटा देता है",
+              "penalty_explanation": "तार्किक त्रुटि: Print to File डिजिटल प्रकाशन फ़ाइल बनाता है, प्रोग्रामों को नहीं हटाता।"
+            },
+            {
+              "id": "hi_u20_d2",
+              "category": "grammatical",
+              "text": "सीधे पोस्टस्क्रिप्ट या PDF फ़ाइल के रूप में सहेजने की सुविधा देती है",
+              "penalty_explanation": "व्याकरणिक त्रुटि: पुल्लिंग कर्ता 'विकल्प' के साथ स्त्रीलिंग क्रिया का अशुद्ध रूप।"
+            }
+          ],
+          "hint": "डुप्लेक्स दोनों तरफ प्रिंट करता है, जबकि Print to File कागज़ के बजाय PDF या PostScript फ़ाइल बनाता है।"
+        }
+      },
+      "key_takeaway": {
+        "en": "Duplex printing applies toner to both sides of paper sheets, whereas Print to File outputs PostScript/PDF digital files.",
+        "hi": "डुप्लेक्स प्रिंटिंग कागज़ के दोनों तरफ छपाई करती है, जबकि Print to File सीधे PDF या पोस्टस्क्रिप्ट फ़ाइल तैयार करता है।"
+      }
+    }
+  ]
+}
