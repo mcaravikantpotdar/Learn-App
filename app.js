@@ -1,25 +1,43 @@
 /**
  * Learn-App Core Logic (app.js)
- * Hardened Architecture: Caching, Offline Support, Sanitization, Math Rendering & Drag-Drop Sorting
+ * Hardened Architecture: Full Lifecycle, Caching, Offline Support, Sanitization, Math Rendering & Drag-Drop
  */
 
 const AppState = {
+    // --- CONFIGURATION ---
+    githubRepo: 'YOUR_GITHUB_USERNAME/YOUR_REPO_NAME', // e.g., 'LearnApp/curriculum'
+    gasEndpoint: 'YOUR_GOOGLE_APPS_SCRIPT_URL',        // Your deployment web app URL
+    // ---------------------
     currentLang: 'en',
+    curriculumManifest: null,
+    selectedQuizPath: '',
     units: [],
     currentUnitIndex: 0,
     assembly: [],
     score: 0,
-    maxScore: 0,
     studentId: '',
-    githubRepo: 'YOUR_GITHUB_USERNAME/YOUR_REPO_NAME', // Update this
-    gasEndpoint: 'YOUR_GOOGLE_APPS_SCRIPT_URL'         // Update this
+    schoolName: ''
 };
 
 const UI = {
     screens: {
         home: document.getElementById('home-screen'),
-        quiz: document.getElementById('quiz-screen')
+        quiz: document.getElementById('quiz-screen'),
+        leaderboard: document.getElementById('leaderboard-screen') // Assuming you have a wrapper for leaderboard
     },
+    
+    // --- Home Screen Elements ---
+    classSelect: document.getElementById('class-select'),
+    subjectSelect: document.getElementById('subject-select'),
+    quizList: document.getElementById('quiz-list'),
+    btnStart: document.getElementById('btn-start'),
+    btnViewLeaderboard: document.getElementById('btn-view-leaderboard'),
+    btnBackHome: document.getElementById('btn-back-home'),
+    studentName: document.getElementById('student-name'),
+    schoolName: document.getElementById('school-name'),
+    leaderboardTable: document.getElementById('leaderboard-body'),
+    
+    // --- Quiz Screen Elements ---
     spinner: document.getElementById('loading-spinner'),
     lessonTitle: document.getElementById('lesson-title'),
     theoryContent: document.getElementById('theory-content'),
@@ -36,16 +54,17 @@ const UI = {
 };
 
 // ==========================================
-// 1. INITIALIZATION & OFFLINE SYNC
+// 1. INITIALIZATION & ROUTING
 // ==========================================
 
 document.addEventListener('DOMContentLoaded', () => {
     bindEvents();
     syncOfflineScores();
-    loadCurriculum();
+    loadManifest(); // Load the Class/Subject structure on startup
 });
 
 function bindEvents() {
+    // Language Toggles
     UI.langBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
             UI.langBtns.forEach(b => b.classList.remove('active'));
@@ -55,8 +74,18 @@ function bindEvents() {
         });
     });
 
-    UI.btnCheck.addEventListener('click', checkAnswer);
-    UI.btnNext.addEventListener('click', nextUnit);
+    // Quiz Actions
+    UI.btnCheck?.addEventListener('click', checkAnswer);
+    UI.btnNext?.addEventListener('click', nextUnit);
+
+    // Home Screen Actions
+    UI.classSelect?.addEventListener('change', populateSubjects);
+    UI.subjectSelect?.addEventListener('change', populateQuizzes);
+    UI.btnStart?.addEventListener('click', startQuizWorkflow);
+    
+    // Leaderboard Actions
+    UI.btnViewLeaderboard?.addEventListener('click', showLeaderboard);
+    UI.btnBackHome?.addEventListener('click', () => showScreen('home'));
 }
 
 function showScreen(screenName) {
@@ -65,46 +94,134 @@ function showScreen(screenName) {
 }
 
 // ==========================================
-// 2. INFRASTRUCTURE: GITHUB FETCH & CACHING
+// 2. HOME SCREEN: CASCADING DROPDOWNS & MANIFEST
 // ==========================================
 
-async function loadCurriculum() {
-    UI.spinner.classList.add('active');
-    const cacheKey = 'learnApp_curriculum_cache';
+async function loadManifest() {
+    if(UI.spinner) UI.spinner.classList.add('active');
+    const cacheKey = 'learnApp_manifest_cache';
     const cachedData = sessionStorage.getItem(cacheKey);
 
     if (cachedData) {
-        console.log("Loaded curriculum from session cache.");
-        processCurriculum(JSON.parse(cachedData));
-        UI.spinner.classList.remove('active');
+        AppState.curriculumManifest = JSON.parse(cachedData);
+        populateClasses();
+        if(UI.spinner) UI.spinner.classList.remove('active');
         return;
     }
 
     try {
-        const res = await fetch(`https://api.github.com/repos/${AppState.githubRepo}/contents/curriculum.json`);
-        if (!res.ok) throw new Error("GitHub rate limit hit or file not found.");
+        // Assuming a manifest.json exists at root detailing the folder structure
+        const res = await fetch(`https://api.github.com/repos/${AppState.githubRepo}/contents/manifest.json`);
+        if (!res.ok) throw new Error("Manifest not found or rate limit hit.");
+        
+        const data = await res.json();
+        const decodedContent = decodeURIComponent(escape(atob(data.content)));
+        AppState.curriculumManifest = JSON.parse(decodedContent);
+        
+        sessionStorage.setItem(cacheKey, JSON.stringify(AppState.curriculumManifest));
+        populateClasses();
+    } catch (error) {
+        console.error("Failed to load manifest:", error);
+        // Fallback or error state
+    } finally {
+        if(UI.spinner) UI.spinner.classList.remove('active');
+    }
+}
+
+function populateClasses() {
+    if (!UI.classSelect || !AppState.curriculumManifest) return;
+    UI.classSelect.innerHTML = '<option value="">Select Class</option>';
+    Object.keys(AppState.curriculumManifest).forEach(className => {
+        UI.classSelect.innerHTML += `<option value="${className}">${className}</option>`;
+    });
+    UI.subjectSelect.innerHTML = '<option value="">Select Subject</option>';
+    UI.quizList.innerHTML = '';
+}
+
+function populateSubjects() {
+    const selectedClass = UI.classSelect.value;
+    UI.subjectSelect.innerHTML = '<option value="">Select Subject</option>';
+    UI.quizList.innerHTML = '';
+    
+    if (selectedClass && AppState.curriculumManifest[selectedClass]) {
+        Object.keys(AppState.curriculumManifest[selectedClass]).forEach(subject => {
+            UI.subjectSelect.innerHTML += `<option value="${subject}">${subject}</option>`;
+        });
+    }
+}
+
+function populateQuizzes() {
+    const selectedClass = UI.classSelect.value;
+    const selectedSubject = UI.subjectSelect.value;
+    UI.quizList.innerHTML = '';
+    
+    if (selectedClass && selectedSubject) {
+        const quizzes = AppState.curriculumManifest[selectedClass][selectedSubject];
+        quizzes.forEach(quiz => {
+            const btn = document.createElement('button');
+            btn.className = 'quiz-btn';
+            btn.innerText = quiz.title;
+            btn.dataset.path = quiz.path; // e.g., 'Ch5-HTML.json'
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.quiz-btn').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+                AppState.selectedQuizPath = btn.dataset.path;
+            });
+            UI.quizList.appendChild(btn);
+        });
+    }
+}
+
+// ==========================================
+// 3. QUIZ INITIALIZATION & FETCHING
+// ==========================================
+
+async function startQuizWorkflow() {
+    const studentName = UI.studentName?.value.trim();
+    const schoolName = UI.schoolName?.value.trim();
+    
+    if (!studentName || !AppState.selectedQuizPath) {
+        alert("Please enter your name and select a chapter to begin.");
+        return;
+    }
+    
+    AppState.studentId = studentName;
+    AppState.schoolName = schoolName || 'Unknown School';
+    
+    await loadQuizData(AppState.selectedQuizPath);
+}
+
+async function loadQuizData(filePath) {
+    if(UI.spinner) UI.spinner.classList.add('active');
+    const cacheKey = `learnApp_quiz_${filePath}`;
+    const cachedData = sessionStorage.getItem(cacheKey);
+
+    if (cachedData) {
+        AppState.units = JSON.parse(cachedData).learning_units || [];
+        initModule();
+        return;
+    }
+
+    try {
+        const res = await fetch(`https://api.github.com/repos/${AppState.githubRepo}/contents/${filePath}`);
+        if (!res.ok) throw new Error("Failed to load quiz data.");
         
         const data = await res.json();
         const decodedContent = decodeURIComponent(escape(atob(data.content)));
         const parsedJson = JSON.parse(decodedContent);
         
         sessionStorage.setItem(cacheKey, JSON.stringify(parsedJson));
-        processCurriculum(parsedJson);
+        AppState.units = parsedJson.learning_units || [];
+        initModule();
     } catch (error) {
-        console.error("Failed to load curriculum:", error);
-        UI.feedbackBanner.innerHTML = "Error loading curriculum. Please try again later.";
-        UI.feedbackBanner.className = 'feedback-banner error';
+        console.error("Quiz load error:", error);
+        alert("Could not load the chapter data. Please try again.");
     } finally {
-        UI.spinner.classList.remove('active');
+        if(UI.spinner) UI.spinner.classList.remove('active');
     }
 }
 
-function processCurriculum(data) {
-    AppState.units = data.learning_units || [];
-    startModule();
-}
-
-function startModule() {
+function initModule() {
     AppState.currentUnitIndex = 0;
     AppState.score = 0;
     buildQuestionGrid();
@@ -113,7 +230,7 @@ function startModule() {
 }
 
 // ==========================================
-// 3. RENDERING & AGGRESSIVE SANITIZATION
+// 4. RENDERING & AGGRESSIVE SANITIZATION
 // ==========================================
 
 function formatText(text) {
@@ -169,7 +286,7 @@ function renderCurrentUnit() {
 }
 
 // ==========================================
-// 4. FRAGMENT ASSEMBLY & DRAG-AND-DROP
+// 5. FRAGMENT ASSEMBLY & DRAG-AND-DROP
 // ==========================================
 
 let draggedChip = null;
@@ -268,7 +385,7 @@ function syncAssemblyArray() {
 }
 
 // ==========================================
-// 5. VALIDATION & FEEDBACK
+// 6. VALIDATION & FEEDBACK
 // ==========================================
 
 function checkAnswer() {
@@ -306,6 +423,8 @@ function checkAnswer() {
         UI.btnCheck.disabled = true;
         UI.btnNext.disabled = false;
         
+        AppState.score += 10; // Accumulate score
+        
         const qNode = document.querySelector(`.question-number[data-index="${AppState.currentUnitIndex}"]`);
         if (qNode) qNode.classList.add('correct');
     } else {
@@ -320,7 +439,7 @@ function showFeedback(html, type) {
 }
 
 // ==========================================
-// 6. NAVIGATION & OFFLINE DATA SAVING
+// 7. NAVIGATION & OFFLINE DATA SAVING
 // ==========================================
 
 function buildQuestionGrid() {
@@ -366,8 +485,10 @@ function finishModule() {
     UI.fragmentPool.innerHTML = '';
     
     const payload = {
-        studentId: AppState.studentId || "Guest",
+        studentId: AppState.studentId,
+        school: AppState.schoolName,
         chapter: AppState.units[0]?.chapter_id || "Unknown",
+        score: AppState.score,
         completedAt: new Date().toISOString()
     };
     saveScore(payload);
@@ -409,4 +530,39 @@ async function syncOfflineScores() {
     }
     
     localStorage.setItem('offlineScoreQueue', JSON.stringify(failed));
+}
+
+// ==========================================
+// 8. LEADERBOARD
+// ==========================================
+
+async function showLeaderboard() {
+    showScreen('leaderboard');
+    if (!UI.leaderboardTable) return;
+    
+    UI.leaderboardTable.innerHTML = '<tr><td colspan="4" style="text-align:center;">Loading scores...</td></tr>';
+    
+    try {
+        const res = await fetch(`${AppState.gasEndpoint}?action=getScores`);
+        const data = await res.json();
+        
+        UI.leaderboardTable.innerHTML = '';
+        if (data && data.length > 0) {
+            data.forEach((row, index) => {
+                UI.leaderboardTable.innerHTML += `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>${row.studentId || 'Guest'}</td>
+                        <td>${row.school || 'N/A'}</td>
+                        <td><strong>${row.score || 0}</strong></td>
+                    </tr>
+                `;
+            });
+        } else {
+            UI.leaderboardTable.innerHTML = '<tr><td colspan="4" style="text-align:center;">No scores recorded yet.</td></tr>';
+        }
+    } catch (error) {
+        console.error("Leaderboard fetch error:", error);
+        UI.leaderboardTable.innerHTML = '<tr><td colspan="4" style="text-align:center; color:red;">Failed to load leaderboard.</td></tr>';
+    }
 }
