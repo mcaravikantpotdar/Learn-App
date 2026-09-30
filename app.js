@@ -5,8 +5,8 @@
 
 const AppState = {
     // --- CONFIGURATION ---
-    githubRepo: 'YOUR_GITHUB_USERNAME/YOUR_REPO_NAME', // e.g., 'LearnApp/curriculum'
-    gasEndpoint: 'YOUR_GOOGLE_APPS_SCRIPT_URL',        // Your deployment web app URL
+    githubRepo: 'mcaravikantpotdar/Learn-App', // e.g., 'LearnApp/curriculum'
+    gasEndpoint: 'https://script.google.com/macros/s/AKfycbxNWnLdQxUnjOCfWHoyZALx-orP0D1v9Q04ic9hl3Ido3W3gOgRoYiq2MuN-bv687I/exec',        // Your deployment web app URL
     // ---------------------
     currentLang: 'en',
     curriculumManifest: null,
