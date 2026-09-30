@@ -1,6 +1,6 @@
 /**
  * Learn-App Core Logic (app.js)
- * Hardened Architecture: Caching, Offline Support, Sanitization, and Math Rendering
+ * Hardened Architecture: Caching, Offline Support, Sanitization, Math Rendering & Drag-Drop Sorting
  */
 
 const AppState = {
@@ -41,7 +41,7 @@ const UI = {
 
 document.addEventListener('DOMContentLoaded', () => {
     bindEvents();
-    syncOfflineScores(); // Attempt to sync any scores saved while offline
+    syncOfflineScores();
     loadCurriculum();
 });
 
@@ -73,7 +73,6 @@ async function loadCurriculum() {
     const cacheKey = 'learnApp_curriculum_cache';
     const cachedData = sessionStorage.getItem(cacheKey);
 
-    // Use session cache to bypass GitHub API rate limits (60/hr/IP)
     if (cachedData) {
         console.log("Loaded curriculum from session cache.");
         processCurriculum(JSON.parse(cachedData));
@@ -102,8 +101,6 @@ async function loadCurriculum() {
 
 function processCurriculum(data) {
     AppState.units = data.learning_units || [];
-    // Render quiz list on home screen (implementation depends on your exact home UI)
-    // For now, we will jump straight to the first unit for demonstration.
     startModule();
 }
 
@@ -121,13 +118,8 @@ function startModule() {
 
 function formatText(text) {
     if (!text) return '';
-    
-    // Step 1: Aggressively escape ALL HTML to neutralize AI hallucinations
     let safeText = text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    
-    // Step 2: Restore intended code snippets by parsing backticks into styled code pills
     safeText = safeText.replace(/`([^`]+)`/g, '<code style="background:#f1f5f9; padding:2px 6px; border-radius:4px; font-family:monospace; border: 1px solid #cbd5e1; color:#0f172a;">$1</code>');
-    
     return safeText;
 }
 
@@ -156,18 +148,15 @@ function renderCurrentUnit() {
     const challenge = unit.challenges[lang] || unit.challenges.en;
     const media = unit.instruction.media;
 
-    // Render Text (Sanitized)
     UI.lessonTitle.innerHTML = formatText(unit.instruction.title[lang] || unit.instruction.title.en);
     UI.theoryContent.innerHTML = formatText(unit.instruction.theory[lang] || unit.instruction.theory.en);
     UI.promptBar.innerHTML = formatText(challenge.prompt);
     
-    // Render Media (SVG or Image)
     if (media.type === 'svg') {
         UI.mediaViewport.innerHTML = media.svg_code;
     }
     UI.mediaCaption.innerHTML = formatText(media.caption[lang] || media.caption.en || '');
 
-    // Reset UI State
     UI.feedbackBanner.className = 'feedback-banner';
     UI.feedbackBanner.innerHTML = '';
     UI.btnCheck.disabled = false;
@@ -176,25 +165,25 @@ function renderCurrentUnit() {
 
     buildFragments(challenge);
     updateQuestionGridUI();
-    triggerMathRender(); // Render global KaTeX after DOM injection
+    triggerMathRender();
 }
 
 // ==========================================
-// 4. FRAGMENT ASSEMBLY LOGIC
+// 4. FRAGMENT ASSEMBLY & DRAG-AND-DROP
 // ==========================================
+
+let draggedChip = null;
 
 function buildFragments(challenge) {
     AppState.assembly = [];
     UI.assemblyLine.innerHTML = '';
     UI.fragmentPool.innerHTML = '';
 
-    // Combine targets and distractors, then shuffle
     let allFragments = [...challenge.target_sequence];
     if (challenge.distractors) {
         allFragments = allFragments.concat(challenge.distractors);
     }
     
-    // Fisher-Yates Shuffle
     for (let i = allFragments.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [allFragments[i], allFragments[j]] = [allFragments[j], allFragments[i]];
@@ -204,15 +193,19 @@ function buildFragments(challenge) {
         const chip = document.createElement('div');
         chip.className = 'fragment-chip';
         chip.dataset.id = frag.id;
-        chip.dataset.role = frag.role || 'distractor';
         chip.innerHTML = formatText(frag.text);
-        
-        // Store full object reference for validation
         chip.fragData = frag; 
 
         chip.addEventListener('click', () => toggleFragment(chip));
+        
+        chip.draggable = true;
+        chip.addEventListener('dragstart', handleDragStart);
+        chip.addEventListener('dragend', handleDragEnd);
+
         UI.fragmentPool.appendChild(chip);
     });
+
+    UI.assemblyLine.addEventListener('dragover', handleDragOver);
 }
 
 function toggleFragment(chip) {
@@ -220,11 +213,58 @@ function toggleFragment(chip) {
 
     if (chip.parentElement === UI.fragmentPool) {
         UI.assemblyLine.appendChild(chip);
-        AppState.assembly.push(chip.fragData);
     } else {
         UI.fragmentPool.appendChild(chip);
-        AppState.assembly = AppState.assembly.filter(f => f.id !== chip.dataset.id);
     }
+    syncAssemblyArray();
+}
+
+function handleDragStart(e) {
+    if (UI.assemblyLine.classList.contains('success-lock')) {
+        e.preventDefault();
+        return;
+    }
+    draggedChip = this;
+    setTimeout(() => this.classList.add('dragging'), 0);
+    this.style.opacity = '0.5';
+}
+
+function handleDragEnd() {
+    this.classList.remove('dragging');
+    this.style.opacity = '1';
+    draggedChip = null;
+    syncAssemblyArray();
+}
+
+function handleDragOver(e) {
+    e.preventDefault();
+    if (UI.assemblyLine.classList.contains('success-lock') || !draggedChip) return;
+    
+    const afterElement = getDragAfterElement(UI.assemblyLine, e.clientX, e.clientY);
+    if (afterElement == null) {
+        UI.assemblyLine.appendChild(draggedChip);
+    } else {
+        UI.assemblyLine.insertBefore(draggedChip, afterElement);
+    }
+}
+
+function getDragAfterElement(container, x, y) {
+    const draggableElements = [...container.querySelectorAll('.fragment-chip:not(.dragging)')];
+    
+    return draggableElements.reduce((closest, child) => {
+        const box = child.getBoundingClientRect();
+        const offset = x - box.left - box.width / 2;
+        if (y > box.top && y < box.bottom && offset < 0 && offset > closest.offset) {
+            return { offset: offset, element: child };
+        } else {
+            return closest;
+        }
+    }, { offset: Number.NEGATIVE_INFINITY }).element;
+}
+
+function syncAssemblyArray() {
+    const chips = UI.assemblyLine.querySelectorAll('.fragment-chip');
+    AppState.assembly = Array.from(chips).map(chip => chip.fragData);
 }
 
 // ==========================================
@@ -238,14 +278,12 @@ function checkAnswer() {
 
     if (AppState.assembly.length === 0) return;
 
-    // Check for distractor presence
     const distractor = AppState.assembly.find(f => f.category === 'logical' || f.category === 'grammatical');
     if (distractor) {
         showFeedback(`❌ ${formatText(distractor.penalty_explanation)}`, 'error');
         return;
     }
 
-    // Check sequence length
     if (AppState.assembly.length < targets.length) {
         const nextExpected = targets[AppState.assembly.length];
         const hintText = nextExpected.role_hint[AppState.currentLang] || nextExpected.role_hint.en || nextExpected.role_hint;
@@ -253,7 +291,6 @@ function checkAnswer() {
         return;
     }
 
-    // Check exact order
     let isCorrect = true;
     for (let i = 0; i < targets.length; i++) {
         if (AppState.assembly[i].id !== targets[i].id) {
@@ -269,7 +306,6 @@ function checkAnswer() {
         UI.btnCheck.disabled = true;
         UI.btnNext.disabled = false;
         
-        // Mark grid
         const qNode = document.querySelector(`.question-number[data-index="${AppState.currentUnitIndex}"]`);
         if (qNode) qNode.classList.add('correct');
     } else {
@@ -329,7 +365,6 @@ function finishModule() {
     UI.assemblyLine.innerHTML = '';
     UI.fragmentPool.innerHTML = '';
     
-    // Save Score
     const payload = {
         studentId: AppState.studentId || "Guest",
         chapter: AppState.units[0]?.chapter_id || "Unknown",
@@ -369,7 +404,7 @@ async function syncOfflineScores() {
                 body: JSON.stringify(payload)
             });
         } catch (err) {
-            failed.push(payload); // Keep it in queue if still offline
+            failed.push(payload);
         }
     }
     
