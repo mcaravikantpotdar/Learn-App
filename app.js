@@ -96,16 +96,29 @@ class ConceptApp {
         }
     }
 
-    /* --- UTILS --- */
+    /* --- UTILS & SANITIZERS --- */
     showScreen(screenId) {
         document.querySelectorAll('.screen').forEach(s => { s.classList.remove('active'); s.style.display = 'none'; });
         const t = document.getElementById(screenId);
         if (t) { t.style.display = 'block'; setTimeout(() => t.classList.add('active'), 10); window.scrollTo({top:0, behavior:'smooth'}); }
     }
+    
     showLoading(show) {
         const s = document.getElementById('loadingSpinner');
         if (s) { show ? s.classList.add('active') : s.classList.remove('active'); }
     }
+
+    // Zero-Crash Markdown to HTML Code Sanitizer
+    formatText(text) {
+        if (!text) return '';
+        // Find anything wrapped in backticks `...`
+        return text.replace(/`([^`]+)`/g, (match, codeBlock) => {
+            // Escape angle brackets inside the backticks so the browser doesn't execute them
+            const safeCode = codeBlock.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return `<code style="background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-family: monospace; color: #db2777;">${safeCode}</code>`;
+        });
+    }
+
     triggerMathRender() {
         if (window.renderMathInElement) {
             try {
@@ -115,7 +128,7 @@ class ConceptApp {
                             {left: "$$", right: "$$", display: true}, 
                             {left: "$", right: "$", display: false} 
                         ],
-                        throwOnError: false // Prevents silent crashes if math syntax is slightly off
+                        throwOnError: false // Protects against silent math syntax crashes
                     });
                 });
             } catch (err) {
@@ -220,7 +233,7 @@ class ConceptApp {
             
             // Header Info
             this.el.displayStudentName.innerText = `👤 ${this.studentInfo.name}`;
-            this.el.displaySchoolInfo.innerText = `${this.studentInfo.class} • ${this.studentInfo.subject}`;
+            this.el.displaySchoolInfo.innerText = `${this.studentInfo.class} •${this.studentInfo.subject}`;
             
             const metaTitle = this.lessonData.metadata.chapter_title;
             this.el.chapterTitle.innerText = metaTitle[this.currentLang] || metaTitle.en || metaTitle;
@@ -243,7 +256,7 @@ class ConceptApp {
             const uid = unit.unit_id;
             this.masteryScores[uid] = { en: 0, hi: 0 };
             
-            // Backwards compatibility layer for older JSON variations
+            // Schema resiliency for older/newer JSON variations
             const chalEn = unit.challenges.en || unit.challenges.english || unit.challenges;
             const chalHi = unit.challenges.hi || unit.challenges.hindi || unit.challenges;
 
@@ -255,7 +268,6 @@ class ConceptApp {
     }
 
     createLangState(challenge) {
-        // Schema resiliency for target arrays
         const targets = challenge.target_sequence || challenge.fragments || [];
         const distractors = challenge.distractors || [];
         
@@ -312,17 +324,18 @@ class ConceptApp {
         this.el.currentUnitNum.innerText = index + 1;
         this.renderGrid();
 
-        // Title and Theory (Schema resilient)
+        // Title and Sanitized Theory 
         const instTitle = unit.instruction.title || unit.title;
         this.el['lesson-title'].innerText = instTitle[this.currentLang] || instTitle.en || instTitle;
         
         const instTheory = unit.instruction.theory || unit.theory || unit.instruction.text;
-        this.el['lesson-theory'].innerHTML = instTheory[this.currentLang] || instTheory.en || instTheory; 
+        const rawTheory = instTheory[this.currentLang] || instTheory.en || instTheory; 
+        this.el['lesson-theory'].innerHTML = this.formatText(rawTheory);
         
-        // Media (Schema resilient)
+        // Media rendering
         if (unit.instruction.media && unit.instruction.media.svg_code) {
             this.el['media-container'].style.display = 'block';
-            this.el['media-container'].innerHTML = unit.instruction.media.svg_code; // SVG parsing
+            this.el['media-container'].innerHTML = unit.instruction.media.svg_code;
             this.el['media-caption'].innerText = unit.instruction.media.caption[this.currentLang] || unit.instruction.media.caption.en || '';
         } else {
             this.el['media-container'].style.display = 'none';
@@ -330,7 +343,7 @@ class ConceptApp {
         }
 
         const challenge = unit.challenges[this.currentLang] || unit.challenges.en || unit.challenges;
-        this.el['challenge-prompt'].innerText = challenge.prompt || "Assemble the correct sequence.";
+        this.el['challenge-prompt'].innerHTML = this.formatText(challenge.prompt || "Assemble the correct sequence.");
         this.el['feedback-banner'].style.display = 'none';
         this.el['target-zone'].classList.remove('success-lock');
 
@@ -344,7 +357,7 @@ class ConceptApp {
         if (state.isSolved) {
             this.el['target-zone'].classList.add('success-lock');
             const takeaway = unit.key_takeaway[this.currentLang] || unit.key_takeaway.en || unit.key_takeaway;
-            this.showFeedback(`🎉 <strong>Solved! (+${this.masteryScores[unit.unit_id][this.currentLang]} pts)</strong><br><br><em>Takeaway:</em> ${takeaway}`, 'success');
+            this.showFeedback(`🎉 <strong>Solved! (+${this.masteryScores[unit.unit_id][this.currentLang]} pts)</strong><br><br><em>Takeaway:</em>${this.formatText(takeaway)}`, 'success');
             this.el['btn-submit'].disabled = true;
             this.el.hintBtn.disabled = true;
         }
@@ -357,7 +370,7 @@ class ConceptApp {
         state.bank.forEach(frag => {
             const chip = document.createElement('div');
             chip.className = 'fragment-chip';
-            chip.innerHTML = frag.text; // Allows bolding, spans, or math inside chips
+            chip.innerHTML = this.formatText(frag.text); 
             if (!state.isSolved) chip.onclick = () => this.moveFragment(frag, 'bank', 'assembly');
             this.el['fragment-bank'].appendChild(chip);
         });
@@ -366,11 +379,11 @@ class ConceptApp {
             const chip = document.createElement('div');
             chip.className = 'fragment-chip';
             let txt = frag.text;
-            // Only auto-capitalize plain text, don't mess with HTML/Math brackets
-            if (index === 0 && !txt.trim().startsWith('<') && !txt.trim().startsWith('$')) {
+            // Only auto-capitalize plain text, leaving HTML/Math syntax intact
+            if (index === 0 && !txt.trim().startsWith('<') && !txt.trim().startsWith('$') && !txt.trim().startsWith('`')) {
                 txt = txt.charAt(0).toUpperCase() + txt.slice(1);
             }
-            chip.innerHTML = txt;
+            chip.innerHTML = this.formatText(txt);
             if (!state.isSolved) chip.onclick = () => this.moveFragment(frag, 'assembly', 'bank');
             this.el['target-zone'].appendChild(chip);
         });
@@ -380,7 +393,7 @@ class ConceptApp {
             this.el.hintBtn.disabled = state.hintUsed;
         }
         
-        // Re-trigger math render because new DOM elements were added
+        // Re-trigger math render for newly added DOM elements
         this.triggerMathRender();
     }
 
@@ -400,7 +413,7 @@ class ConceptApp {
         state.hintUsed = true;
         
         const challenge = unit.challenges[this.currentLang] || unit.challenges.en || unit.challenges;
-        this.showFeedback(`💡 <strong>Hint:</strong> ${challenge.hint}`, 'secondary');
+        this.showFeedback(`💡 <strong>Hint:</strong> ${this.formatText(challenge.hint)}`, 'secondary');
         this.el.hintBtn.disabled = true;
     }
 
@@ -414,12 +427,12 @@ class ConceptApp {
 
         const distractor = state.assembly.find(f => !f.isTarget);
         if (distractor) {
-            this.showFeedback(`❌ ${distractor.penalty_explanation}`, 'error');
+            this.showFeedback(`❌ ${this.formatText(distractor.penalty_explanation)}`, 'error');
             return;
         }
 
         if (state.assembly.length !== targets.length) {
-            // Option C pedagogical fallback
+            // Option C pedagogical logic check
             let matchedIdx = -1;
             for(let i=0; i<state.assembly.length; i++) {
                 if (state.assembly[i].id === targets[i].id) matchedIdx = i; else break;
@@ -427,7 +440,8 @@ class ConceptApp {
             if (matchedIdx >= 0 && matchedIdx < targets.length - 1) {
                 const nextExpected = targets[matchedIdx + 1];
                 if (nextExpected.role_hint) {
-                    this.showFeedback(`⚠️ <strong>Next Step:</strong> ${nextExpected.role_hint}`, 'secondary');
+                    const hintText = nextExpected.role_hint[this.currentLang] || nextExpected.role_hint.en || nextExpected.role_hint;
+                    this.showFeedback(`⚠️ <strong>Next Step:</strong> ${this.formatText(hintText)}`, 'secondary');
                     return;
                 }
             }
@@ -461,7 +475,7 @@ class ConceptApp {
         this.renderFragments(state);
 
         const takeaway = unit.key_takeaway[this.currentLang] || unit.key_takeaway.en || unit.key_takeaway;
-        let successHtml = `🎉 <strong>Correct! (+${marks} pts)</strong><br><br><em>Takeaway:</em> ${takeaway}`;
+        let successHtml = `🎉 <strong>Correct! (+${marks} pts)</strong><br><br><em>Takeaway:</em> ${this.formatText(takeaway)}`;
         
         const otherLang = this.currentLang === 'en' ? 'hi' : 'en';
         if (this.masteryScores[uid][otherLang] === 0) {
@@ -520,7 +534,7 @@ class ConceptApp {
             lesson: finalTitle,
             mode: "LEARNING",
             score: `${score}/${max}`,
-            timeTaken: `'${time}` // Apostrophe protects format in Google Sheets
+            timeTaken: `'${time}` 
         };
         try { await fetch(this.SCRIPT_URL, { method: "POST", mode: "no-cors", body: JSON.stringify(payload) }); } 
         catch (e) { console.warn("Submit silently failed", e); }
