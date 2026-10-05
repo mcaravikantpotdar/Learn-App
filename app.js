@@ -1,15 +1,18 @@
 /**
  * Learn-App Core Logic (app.js)
- * Hardened Architecture: Full Lifecycle, Caching, Offline Support, Sanitization, Math Rendering & Drag-Drop
+ * Fully Integrated: Dynamic Recursive Repo Scanner, Cascading Filters,
+ * Drag-and-Drop Assembly, KaTeX Rendering, Offline Score Sync & Leaderboard.
  */
 
 const AppState = {
-    // --- CONFIGURATION ---
-    githubRepo: 'mcaravikantpotdar/Learn-App', // e.g., 'LearnApp/curriculum'
-    gasEndpoint: 'https://script.google.com/macros/s/AKfycbxNWnLdQxUnjOCfWHoyZALx-orP0D1v9Q04ic9hl3Ido3W3gOgRoYiq2MuN-bv687I/exec',        // Your deployment web app URL
-    // ---------------------
+    // Repository & Backend Configuration
+    githubRepo: 'mcaravikantpotdar/Learn-App',
+    branch: 'main',
+    gasEndpoint: 'https://script.google.com/macros/s/AKfycbxNWnLdQxUnjOCfWHoyZALx-orP0D1v9Q04ic9hl3Ido3W3gOgRoYiq2MuN-bv687I/exec',
+    
+    // Application Runtime State
     currentLang: 'en',
-    curriculumManifest: null,
+    repoCatalog: {}, // Structured as: { [class]: { [subject]: [ { title, path } ] } }
     selectedQuizPath: '',
     units: [],
     currentUnitIndex: 0,
@@ -23,10 +26,10 @@ const UI = {
     screens: {
         home: document.getElementById('home-screen'),
         quiz: document.getElementById('quiz-screen'),
-        leaderboard: document.getElementById('leaderboard-screen') // Assuming you have a wrapper for leaderboard
+        leaderboard: document.getElementById('leaderboard-screen')
     },
     
-    // --- Home Screen Elements ---
+    // Home Screen Controls
     classSelect: document.getElementById('class-select'),
     subjectSelect: document.getElementById('subject-select'),
     quizList: document.getElementById('quiz-list'),
@@ -37,7 +40,7 @@ const UI = {
     schoolName: document.getElementById('school-name'),
     leaderboardTable: document.getElementById('leaderboard-body'),
     
-    // --- Quiz Screen Elements ---
+    // Quiz Screen Controls
     spinner: document.getElementById('loading-spinner'),
     lessonTitle: document.getElementById('lesson-title'),
     theoryContent: document.getElementById('theory-content'),
@@ -60,7 +63,7 @@ const UI = {
 document.addEventListener('DOMContentLoaded', () => {
     bindEvents();
     syncOfflineScores();
-    loadManifest(); // Load the Class/Subject structure on startup
+    scanRepositoryTree();
 });
 
 function bindEvents() {
@@ -74,77 +77,119 @@ function bindEvents() {
         });
     });
 
-    // Quiz Actions
+    // Quiz Navigation & Verification
     UI.btnCheck?.addEventListener('click', checkAnswer);
     UI.btnNext?.addEventListener('click', nextUnit);
 
-    // Home Screen Actions
+    // Dynamic Cascading Dropdowns
     UI.classSelect?.addEventListener('change', populateSubjects);
     UI.subjectSelect?.addEventListener('change', populateQuizzes);
     UI.btnStart?.addEventListener('click', startQuizWorkflow);
     
-    // Leaderboard Actions
+    // Leaderboard Controls
     UI.btnViewLeaderboard?.addEventListener('click', showLeaderboard);
     UI.btnBackHome?.addEventListener('click', () => showScreen('home'));
 }
 
 function showScreen(screenName) {
-    Object.values(UI.screens).forEach(s => s?.classList.remove('active'));
-    UI.screens[screenName]?.classList.add('active');
+    Object.values(UI.screens).forEach(screen => {
+        if (screen) screen.classList.remove('active');
+    });
+    if (UI.screens[screenName]) {
+        UI.screens[screenName].classList.add('active');
+    }
 }
 
 // ==========================================
-// 2. HOME SCREEN: CASCADING DROPDOWNS & MANIFEST
+// 2. DYNAMIC GITHUB TREE SCANNER
 // ==========================================
 
-async function loadManifest() {
-    if(UI.spinner) UI.spinner.classList.add('active');
-    const cacheKey = 'learnApp_manifest_cache';
-    const cachedData = sessionStorage.getItem(cacheKey);
+async function scanRepositoryTree() {
+    toggleSpinner(true);
+    const cacheKey = `learnApp_treeCatalog_${AppState.githubRepo}`;
+    const cachedTree = sessionStorage.getItem(cacheKey);
 
-    if (cachedData) {
-        AppState.curriculumManifest = JSON.parse(cachedData);
+    if (cachedTree) {
+        AppState.repoCatalog = JSON.parse(cachedTree);
         populateClasses();
-        if(UI.spinner) UI.spinner.classList.remove('active');
+        toggleSpinner(false);
         return;
     }
 
     try {
-        // Assuming a manifest.json exists at root detailing the folder structure
-        const res = await fetch(`https://api.github.com/repos/${AppState.githubRepo}/contents/manifest.json`);
-        if (!res.ok) throw new Error("Manifest not found or rate limit hit.");
+        // Recursive Git Trees API: Retrieves the complete repo structure in 1 call
+        const response = await fetch(`https://api.github.com/repos/${AppState.githubRepo}/git/trees/${AppState.branch}?recursive=1`);
         
-        const data = await res.json();
-        const decodedContent = decodeURIComponent(escape(atob(data.content)));
-        AppState.curriculumManifest = JSON.parse(decodedContent);
+        if (!response.ok) {
+            throw new Error(`GitHub API returned status ${response.status}`);
+        }
         
-        sessionStorage.setItem(cacheKey, JSON.stringify(AppState.curriculumManifest));
+        const data = await response.json();
+        const tree = data.tree || [];
+        const catalog = {};
+
+        // Filter and map paths matching: jsons/{Class}/{Subject}/{Chapter}.json
+        tree.forEach(node => {
+            if (node.type === 'blob' && node.path.startsWith('jsons/') && node.path.endsWith('.json')) {
+                const parts = node.path.split('/');
+                
+                // Format: jsons / [Class] / [Subject] / [File.json]
+                if (parts.length === 4) {
+                    const className = parts[1];
+                    const subjectName = parts[2];
+                    const fileName = parts[3];
+                    const cleanTitle = fileName.replace('.json', '').replace(/[-_]/g, ' ');
+
+                    if (!catalog[className]) {
+                        catalog[className] = {};
+                    }
+                    if (!catalog[className][subjectName]) {
+                        catalog[className][subjectName] = [];
+                    }
+
+                    catalog[className][subjectName].push({
+                        title: cleanTitle,
+                        path: node.path
+                    });
+                }
+            }
+        });
+
+        AppState.repoCatalog = catalog;
+        sessionStorage.setItem(cacheKey, JSON.stringify(catalog));
         populateClasses();
     } catch (error) {
-        console.error("Failed to load manifest:", error);
-        // Fallback or error state
+        console.error("Repository scan failed:", error);
+        alert("Failed to load curriculum catalog from GitHub. Please check your network or repository settings.");
     } finally {
-        if(UI.spinner) UI.spinner.classList.remove('active');
+        toggleSpinner(false);
     }
 }
 
 function populateClasses() {
-    if (!UI.classSelect || !AppState.curriculumManifest) return;
-    UI.classSelect.innerHTML = '<option value="">Select Class</option>';
-    Object.keys(AppState.curriculumManifest).forEach(className => {
+    if (!UI.classSelect) return;
+    UI.classSelect.innerHTML = '<option value="">-- Select Class --</option>';
+    
+    const classes = Object.keys(AppState.repoCatalog);
+    classes.sort().forEach(className => {
         UI.classSelect.innerHTML += `<option value="${className}">${className}</option>`;
     });
-    UI.subjectSelect.innerHTML = '<option value="">Select Subject</option>';
-    UI.quizList.innerHTML = '';
+
+    if (UI.subjectSelect) UI.subjectSelect.innerHTML = '<option value="">-- Select Subject --</option>';
+    if (UI.quizList) UI.quizList.innerHTML = '';
 }
 
 function populateSubjects() {
     const selectedClass = UI.classSelect.value;
-    UI.subjectSelect.innerHTML = '<option value="">Select Subject</option>';
-    UI.quizList.innerHTML = '';
+    if (!UI.subjectSelect) return;
     
-    if (selectedClass && AppState.curriculumManifest[selectedClass]) {
-        Object.keys(AppState.curriculumManifest[selectedClass]).forEach(subject => {
+    UI.subjectSelect.innerHTML = '<option value="">-- Select Subject --</option>';
+    if (UI.quizList) UI.quizList.innerHTML = '';
+    AppState.selectedQuizPath = '';
+
+    if (selectedClass && AppState.repoCatalog[selectedClass]) {
+        const subjects = Object.keys(AppState.repoCatalog[selectedClass]);
+        subjects.sort().forEach(subject => {
             UI.subjectSelect.innerHTML += `<option value="${subject}">${subject}</option>`;
         });
     }
@@ -153,75 +198,94 @@ function populateSubjects() {
 function populateQuizzes() {
     const selectedClass = UI.classSelect.value;
     const selectedSubject = UI.subjectSelect.value;
-    UI.quizList.innerHTML = '';
+    if (!UI.quizList) return;
     
-    if (selectedClass && selectedSubject) {
-        const quizzes = AppState.curriculumManifest[selectedClass][selectedSubject];
+    UI.quizList.innerHTML = '';
+    AppState.selectedQuizPath = '';
+
+    if (selectedClass && selectedSubject && AppState.repoCatalog[selectedClass][selectedSubject]) {
+        const quizzes = AppState.repoCatalog[selectedClass][selectedSubject];
+        
         quizzes.forEach(quiz => {
             const btn = document.createElement('button');
+            btn.type = 'button';
             btn.className = 'quiz-btn';
             btn.innerText = quiz.title;
-            btn.dataset.path = quiz.path; // e.g., 'Ch5-HTML.json'
-            btn.addEventListener('click', (e) => {
+            btn.dataset.path = quiz.path;
+
+            btn.addEventListener('click', () => {
                 document.querySelectorAll('.quiz-btn').forEach(b => b.classList.remove('selected'));
                 btn.classList.add('selected');
-                AppState.selectedQuizPath = btn.dataset.path;
+                AppState.selectedQuizPath = quiz.path;
             });
+
             UI.quizList.appendChild(btn);
         });
     }
 }
 
 // ==========================================
-// 3. QUIZ INITIALIZATION & FETCHING
+// 3. QUIZ WORKFLOW & DATA LOADING
 // ==========================================
 
 async function startQuizWorkflow() {
     const studentName = UI.studentName?.value.trim();
-    const schoolName = UI.schoolName?.value.trim();
-    
-    if (!studentName || !AppState.selectedQuizPath) {
-        alert("Please enter your name and select a chapter to begin.");
+    const school = UI.schoolName?.value.trim();
+
+    if (!studentName) {
+        alert("Please enter your name.");
+        UI.studentName?.focus();
         return;
     }
-    
+
+    if (!AppState.selectedQuizPath) {
+        alert("Please select a chapter from the list.");
+        return;
+    }
+
     AppState.studentId = studentName;
-    AppState.schoolName = schoolName || 'Unknown School';
-    
+    AppState.schoolName = school || 'General';
+
     await loadQuizData(AppState.selectedQuizPath);
 }
 
 async function loadQuizData(filePath) {
-    if(UI.spinner) UI.spinner.classList.add('active');
-    const cacheKey = `learnApp_quiz_${filePath}`;
-    const cachedData = sessionStorage.getItem(cacheKey);
+    toggleSpinner(true);
+    const cacheKey = `learnApp_file_${filePath}`;
+    const cachedFile = sessionStorage.getItem(cacheKey);
 
-    if (cachedData) {
-        AppState.units = JSON.parse(cachedData).learning_units || [];
+    if (cachedFile) {
+        const parsed = JSON.parse(cachedFile);
+        AppState.units = parsed.learning_units || [];
+        toggleSpinner(false);
         initModule();
         return;
     }
 
     try {
-        const res = await fetch(`https://api.github.com/repos/${AppState.githubRepo}/contents/${filePath}`);
-        if (!res.ok) throw new Error("Failed to load quiz data.");
-        
-        const data = await res.json();
-        const decodedContent = decodeURIComponent(escape(atob(data.content)));
+        const response = await fetch(`https://api.github.com/repos/${AppState.githubRepo}/contents/${filePath}?ref=${AppState.branch}`);
+        if (!response.ok) throw new Error(`Could not fetch file: ${response.statusText}`);
+
+        const fileData = await response.json();
+        const decodedContent = decodeURIComponent(escape(atob(fileData.content)));
         const parsedJson = JSON.parse(decodedContent);
-        
+
         sessionStorage.setItem(cacheKey, JSON.stringify(parsedJson));
         AppState.units = parsedJson.learning_units || [];
         initModule();
     } catch (error) {
         console.error("Quiz load error:", error);
-        alert("Could not load the chapter data. Please try again.");
+        alert("Error loading chapter data. Please verify the JSON file structure.");
     } finally {
-        if(UI.spinner) UI.spinner.classList.remove('active');
+        toggleSpinner(false);
     }
 }
 
 function initModule() {
+    if (!AppState.units.length) {
+        alert("This chapter has no available learning units.");
+        return;
+    }
     AppState.currentUnitIndex = 0;
     AppState.score = 0;
     buildQuestionGrid();
@@ -229,15 +293,21 @@ function initModule() {
     renderCurrentUnit();
 }
 
+function toggleSpinner(show) {
+    if (UI.spinner) {
+        UI.spinner.classList.toggle('active', show);
+    }
+}
+
 // ==========================================
-// 4. RENDERING & AGGRESSIVE SANITIZATION
+// 4. RENDERING, SANITIZATION & KATEX
 // ==========================================
 
 function formatText(text) {
     if (!text) return '';
-    let safeText = text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    safeText = safeText.replace(/`([^`]+)`/g, '<code style="background:#f1f5f9; padding:2px 6px; border-radius:4px; font-family:monospace; border: 1px solid #cbd5e1; color:#0f172a;">$1</code>');
-    return safeText;
+    let safe = String(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    safe = safe.replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>');
+    return safe;
 }
 
 function triggerMathRender() {
@@ -247,8 +317,8 @@ function triggerMathRender() {
             document.querySelectorAll(selector).forEach(el => {
                 renderMathInElement(el, {
                     delimiters: [
-                        {left: '$$', right: '$$', display: true},
-                        {left: '$', right: '$', display: false}
+                        { left: '$$', right: '$$', display: true },
+                        { left: '$', right: '$', display: false }
                     ],
                     throwOnError: false
                 });
@@ -265,20 +335,30 @@ function renderCurrentUnit() {
     const challenge = unit.challenges[lang] || unit.challenges.en;
     const media = unit.instruction.media;
 
-    UI.lessonTitle.innerHTML = formatText(unit.instruction.title[lang] || unit.instruction.title.en);
-    UI.theoryContent.innerHTML = formatText(unit.instruction.theory[lang] || unit.instruction.theory.en);
-    UI.promptBar.innerHTML = formatText(challenge.prompt);
+    if (UI.lessonTitle) UI.lessonTitle.innerHTML = formatText(unit.instruction.title[lang] || unit.instruction.title.en);
+    if (UI.theoryContent) UI.theoryContent.innerHTML = formatText(unit.instruction.theory[lang] || unit.instruction.theory.en);
+    if (UI.promptBar) UI.promptBar.innerHTML = formatText(challenge.prompt);
     
-    if (media.type === 'svg') {
-        UI.mediaViewport.innerHTML = media.svg_code;
+    if (UI.mediaViewport) {
+        if (media && media.type === 'svg') {
+            UI.mediaViewport.innerHTML = media.svg_code;
+        } else {
+            UI.mediaViewport.innerHTML = '';
+        }
     }
-    UI.mediaCaption.innerHTML = formatText(media.caption[lang] || media.caption.en || '');
+    
+    if (UI.mediaCaption) {
+        UI.mediaCaption.innerHTML = formatText(media?.caption?.[lang] || media?.caption?.en || '');
+    }
 
-    UI.feedbackBanner.className = 'feedback-banner';
-    UI.feedbackBanner.innerHTML = '';
-    UI.btnCheck.disabled = false;
-    UI.btnNext.disabled = true;
-    UI.assemblyLine.classList.remove('success-lock');
+    if (UI.feedbackBanner) {
+        UI.feedbackBanner.className = 'feedback-banner';
+        UI.feedbackBanner.innerHTML = '';
+    }
+    
+    if (UI.btnCheck) UI.btnCheck.disabled = false;
+    if (UI.btnNext) UI.btnNext.disabled = true;
+    if (UI.assemblyLine) UI.assemblyLine.classList.remove('success-lock');
 
     buildFragments(challenge);
     updateQuestionGridUI();
@@ -293,6 +373,8 @@ let draggedChip = null;
 
 function buildFragments(challenge) {
     AppState.assembly = [];
+    if (!UI.assemblyLine || !UI.fragmentPool) return;
+    
     UI.assemblyLine.innerHTML = '';
     UI.fragmentPool.innerHTML = '';
 
@@ -301,6 +383,7 @@ function buildFragments(challenge) {
         allFragments = allFragments.concat(challenge.distractors);
     }
     
+    // Fisher-Yates shuffle
     for (let i = allFragments.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [allFragments[i], allFragments[j]] = [allFragments[j], allFragments[i]];
@@ -311,10 +394,12 @@ function buildFragments(challenge) {
         chip.className = 'fragment-chip';
         chip.dataset.id = frag.id;
         chip.innerHTML = formatText(frag.text);
-        chip.fragData = frag; 
+        chip.fragData = frag;
 
+        // Click to toggle between pool and assembly line
         chip.addEventListener('click', () => toggleFragment(chip));
         
+        // Drag-and-drop support
         chip.draggable = true;
         chip.addEventListener('dragstart', handleDragStart);
         chip.addEventListener('dragend', handleDragEnd);
@@ -385,7 +470,7 @@ function syncAssemblyArray() {
 }
 
 // ==========================================
-// 6. VALIDATION & FEEDBACK
+// 6. VALIDATION & FEEDBACK ENGINE
 // ==========================================
 
 function checkAnswer() {
@@ -395,19 +480,22 @@ function checkAnswer() {
 
     if (AppState.assembly.length === 0) return;
 
+    // Check for distractor penalties
     const distractor = AppState.assembly.find(f => f.category === 'logical' || f.category === 'grammatical');
     if (distractor) {
         showFeedback(`❌ ${formatText(distractor.penalty_explanation)}`, 'error');
         return;
     }
 
+    // Sequence too short: provide contextual role hint
     if (AppState.assembly.length < targets.length) {
         const nextExpected = targets[AppState.assembly.length];
-        const hintText = nextExpected.role_hint[AppState.currentLang] || nextExpected.role_hint.en || nextExpected.role_hint;
+        const hintText = nextExpected.role_hint?.[AppState.currentLang] || nextExpected.role_hint?.en || nextExpected.role_hint;
         showFeedback(`💡 <strong>Hint:</strong> ${formatText(hintText)}`, 'secondary');
         return;
     }
 
+    // Verify ordering
     let isCorrect = true;
     for (let i = 0; i < targets.length; i++) {
         if (AppState.assembly[i].id !== targets[i].id) {
@@ -417,34 +505,37 @@ function checkAnswer() {
     }
 
     if (isCorrect) {
-        const takeawayText = unit.key_takeaway[AppState.currentLang] || unit.key_takeaway.en;
-        showFeedback(`✅ <strong>Correct!</strong><br><br>${formatText(takeawayText)}`, 'success');
+        const takeaway = unit.key_takeaway?.[AppState.currentLang] || unit.key_takeaway?.en || 'Great job!';
+        showFeedback(`✅ <strong>Correct!</strong><br><br>${formatText(takeaway)}`, 'success');
         UI.assemblyLine.classList.add('success-lock');
         UI.btnCheck.disabled = true;
         UI.btnNext.disabled = false;
         
-        AppState.score += 10; // Accumulate score
+        AppState.score += 10;
         
         const qNode = document.querySelector(`.question-number[data-index="${AppState.currentUnitIndex}"]`);
         if (qNode) qNode.classList.add('correct');
     } else {
-        showFeedback(`❌ Sequence incorrect. Review the structure and try again.`, 'error');
+        showFeedback(`❌ The sequence is incorrect. Reorder the fragments and check again.`, 'error');
     }
 }
 
 function showFeedback(html, type) {
+    if (!UI.feedbackBanner) return;
     UI.feedbackBanner.innerHTML = html;
     UI.feedbackBanner.className = `feedback-banner ${type}`;
     triggerMathRender();
 }
 
 // ==========================================
-// 7. NAVIGATION & OFFLINE DATA SAVING
+// 7. PROGRESSION & OFFLINE QUEUE
 // ==========================================
 
 function buildQuestionGrid() {
+    if (!UI.questionGrid) return;
     UI.questionGrid.innerHTML = '';
-    AppState.units.forEach((unit, index) => {
+    
+    AppState.units.forEach((_, index) => {
         const div = document.createElement('div');
         div.className = 'question-number';
         div.dataset.index = index;
@@ -460,7 +551,7 @@ function buildQuestionGrid() {
 function updateQuestionGridUI() {
     document.querySelectorAll('.question-number').forEach(node => {
         node.classList.remove('current');
-        if (parseInt(node.dataset.index) === AppState.currentUnitIndex) {
+        if (parseInt(node.dataset.index, 10) === AppState.currentUnitIndex) {
             node.classList.add('current');
             node.classList.add('attempted');
         }
@@ -477,17 +568,19 @@ function nextUnit() {
 }
 
 function finishModule() {
-    UI.mediaViewport.innerHTML = `<div style="text-align:center; padding: 40px; color: white;"><h3>🎉 Module Complete!</h3></div>`;
-    UI.theoryContent.innerHTML = "You have successfully completed all units in this chapter.";
-    UI.btnNext.style.display = 'none';
-    UI.btnCheck.style.display = 'none';
-    UI.assemblyLine.innerHTML = '';
-    UI.fragmentPool.innerHTML = '';
+    if (UI.mediaViewport) {
+        UI.mediaViewport.innerHTML = `<div style="text-align:center; padding: 40px; color: #38bdf8;"><h3>🎉 Module Complete!</h3><p>Your score: ${AppState.score}</p></div>`;
+    }
+    if (UI.theoryContent) UI.theoryContent.innerHTML = "Congratulations! You have completed all interactive units for this chapter.";
+    if (UI.btnNext) UI.btnNext.style.display = 'none';
+    if (UI.btnCheck) UI.btnCheck.style.display = 'none';
+    if (UI.assemblyLine) UI.assemblyLine.innerHTML = '';
+    if (UI.fragmentPool) UI.fragmentPool.innerHTML = '';
     
     const payload = {
         studentId: AppState.studentId,
         school: AppState.schoolName,
-        chapter: AppState.units[0]?.chapter_id || "Unknown",
+        chapter: AppState.selectedQuizPath,
         score: AppState.score,
         completedAt: new Date().toISOString()
     };
@@ -496,44 +589,42 @@ function finishModule() {
 
 async function saveScore(payload) {
     try {
-        const res = await fetch(AppState.gasEndpoint, {
+        await fetch(AppState.gasEndpoint, {
             method: 'POST',
             mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
         });
-        console.log("Score synced to server.");
     } catch (error) {
-        console.warn("Network offline. Queueing score locally.");
-        let queue = JSON.parse(localStorage.getItem('offlineScoreQueue') || '[]');
+        console.warn("Server unavailable. Queuing score locally for offline sync.");
+        const queue = JSON.parse(localStorage.getItem('offlineScoreQueue') || '[]');
         queue.push(payload);
         localStorage.setItem('offlineScoreQueue', JSON.stringify(queue));
     }
 }
 
 async function syncOfflineScores() {
-    let queue = JSON.parse(localStorage.getItem('offlineScoreQueue') || '[]');
+    const queue = JSON.parse(localStorage.getItem('offlineScoreQueue') || '[]');
     if (queue.length === 0) return;
     
-    console.log(`Syncing ${queue.length} offline scores...`);
-    let failed = [];
-    
-    for (let payload of queue) {
+    const remaining = [];
+    for (const item of queue) {
         try {
             await fetch(AppState.gasEndpoint, {
                 method: 'POST',
                 mode: 'no-cors',
-                body: JSON.stringify(payload)
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(item)
             });
         } catch (err) {
-            failed.push(payload);
+            remaining.push(item);
         }
     }
-    
-    localStorage.setItem('offlineScoreQueue', JSON.stringify(failed));
+    localStorage.setItem('offlineScoreQueue', JSON.stringify(remaining));
 }
 
 // ==========================================
-// 8. LEADERBOARD
+// 8. LEADERBOARD SYSTEM
 // ==========================================
 
 async function showLeaderboard() {
@@ -543,26 +634,26 @@ async function showLeaderboard() {
     UI.leaderboardTable.innerHTML = '<tr><td colspan="4" style="text-align:center;">Loading scores...</td></tr>';
     
     try {
-        const res = await fetch(`${AppState.gasEndpoint}?action=getScores`);
-        const data = await res.json();
+        const response = await fetch(`${AppState.gasEndpoint}?action=getScores`);
+        const data = await response.json();
         
         UI.leaderboardTable.innerHTML = '';
-        if (data && data.length > 0) {
-            data.forEach((row, index) => {
+        if (Array.isArray(data) && data.length > 0) {
+            data.forEach((entry, idx) => {
                 UI.leaderboardTable.innerHTML += `
                     <tr>
-                        <td>${index + 1}</td>
-                        <td>${row.studentId || 'Guest'}</td>
-                        <td>${row.school || 'N/A'}</td>
-                        <td><strong>${row.score || 0}</strong></td>
+                        <td>${idx + 1}</td>
+                        <td>${entry.studentId || 'Guest'}</td>
+                        <td>${entry.school || 'General'}</td>
+                        <td><strong>${entry.score || 0}</strong></td>
                     </tr>
                 `;
             });
         } else {
-            UI.leaderboardTable.innerHTML = '<tr><td colspan="4" style="text-align:center;">No scores recorded yet.</td></tr>';
+            UI.leaderboardTable.innerHTML = '<tr><td colspan="4" style="text-align:center;">No scores found.</td></tr>';
         }
     } catch (error) {
         console.error("Leaderboard fetch error:", error);
-        UI.leaderboardTable.innerHTML = '<tr><td colspan="4" style="text-align:center; color:red;">Failed to load leaderboard.</td></tr>';
+        UI.leaderboardTable.innerHTML = '<tr><td colspan="4" style="text-align:center; color:#ef4444;">Failed to load leaderboard.</td></tr>';
     }
 }
