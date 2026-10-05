@@ -328,10 +328,11 @@ select.file-input {
     color: #0f172a; 
 }
 
+/* RESTORED: RICH QUESTION GRID WITH MARKS */
 .question-grid { 
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 6px; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr)); 
+    gap: 8px; 
     margin-bottom: 25px; 
     background: white; 
     padding: 15px; 
@@ -339,40 +340,70 @@ select.file-input {
     box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
 }
 
-.unit-indicator { 
+.question-number, .unit-indicator { 
     position: relative; 
-    width: 34px; 
-    height: 34px; 
+    height: 54px; 
     border: 1px solid #e2e8f0; 
     border-radius: 8px; 
-    background: #e2e8f0; 
+    background: white; 
     cursor: pointer; 
-    display: inline-flex; 
+    display: flex; 
+    flex-direction: column; 
     align-items: center; 
     justify-content: center; 
-    font-weight: 600; 
-    font-size: 13px; 
-    color: #334155; 
     transition: all 0.15s ease; 
 }
 
-.unit-indicator:hover { 
+.q-number { 
+    font-size: 13px; 
+    font-weight: 700; 
+    color: #64748b; 
+    line-height: 1.2; 
+}
+
+.marks { 
+    font-size: 9px; 
+    font-weight: 800; 
+    color: #94a3b8; 
+    position: absolute; 
+    bottom: 4px; 
+}
+
+.question-number:hover, .unit-indicator:hover { 
     border-color: #3b82f6; 
-    background: #f1f5f9; 
 }
 
-.unit-indicator.current { 
+.question-number.current, .unit-indicator.current { 
     background: #eff6ff !important; 
-    border-color: #2563eb !important; 
-    color: #1d4ed8 !important; 
-    transform: scale(1.08); 
-    box-shadow: 0 2px 4px rgba(37,99,235,0.2); 
+    border-color: #3b82f6 !important; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 6px rgba(37,99,235,0.2); 
 }
 
-.unit-indicator.correct { 
-    background: #22c55e !important; 
-    border-color: #16a34a !important; 
-    color: white !important; 
+.question-number.current .q-number, .unit-indicator.current .q-number { 
+    color: #1d4ed8; 
+}
+
+.question-number.attempted, .unit-indicator.attempted { 
+    background: #fef08a !important; 
+    border-color: #eab308 !important; 
+}
+
+.question-number.attempted .marks, .unit-indicator.attempted .marks { 
+    color: #a16207; 
+}
+
+.question-number.correct, .unit-indicator.correct { 
+    background: #dcfce7 !important; 
+    border-color: #22c55e !important; 
+}
+
+.question-number.correct .q-number, .unit-indicator.correct .q-number { 
+    color: #15803d; 
+}
+
+.question-number.correct .marks, .unit-indicator.correct .marks { 
+    color: #15803d; 
 }
 
 /* LEARNING AREA & BUILDER */
