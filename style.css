@@ -37,8 +37,8 @@ body {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    width: 40px; 
-    height: 40px; 
+    width: 44px; 
+    height: 44px; 
     border: 4px solid #e2e8f0; 
     border-top: 4px solid #2563eb; 
     border-radius: 50%; 
@@ -215,7 +215,7 @@ select.file-input {
     background: #f8fafc; 
 }
 
-.quiz-btn { 
+.quiz-select-btn, .quiz-btn { 
     background: white; 
     padding: 12px 15px; 
     border: 1px solid #e2e8f0; 
@@ -228,15 +228,15 @@ select.file-input {
     text-align: left; 
 }
 
-.quiz-btn:hover { 
+.quiz-select-btn:hover, .quiz-btn:hover { 
     border-color: #94a3b8; 
     transform: translateX(2px); 
 }
 
-.quiz-btn.selected { 
-    background: #2563eb; 
-    color: white; 
-    border-color: #2563eb; 
+.quiz-select-btn.selected, .quiz-btn.selected { 
+    background: #2563eb !important; 
+    color: white !important; 
+    border-color: #2563eb !important; 
     box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2); 
 }
 
@@ -329,9 +329,9 @@ select.file-input {
 }
 
 .question-grid { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr)); 
-    gap: 8px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 6px; 
     margin-bottom: 25px; 
     background: white; 
     padding: 15px; 
@@ -339,62 +339,40 @@ select.file-input {
     box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
 }
 
-.question-number { 
+.unit-indicator, .question-number { 
     position: relative; 
-    height: 54px; 
+    width: 34px; 
+    height: 34px; 
     border: 1px solid #e2e8f0; 
     border-radius: 8px; 
-    background: white; 
+    background: #e2e8f0; 
     cursor: pointer; 
-    display: flex; 
-    flex-direction: column; 
+    display: inline-flex; 
     align-items: center; 
     justify-content: center; 
-    transition: all 0.1s; 
-}
-
-.q-number { 
+    font-weight: 600; 
     font-size: 13px; 
-    font-weight: 700; 
-    color: #64748b; 
-    line-height: 1.2; 
+    color: #334155; 
+    transition: all 0.15s ease; 
 }
 
-.marks { 
-    font-size: 9px; 
-    font-weight: 800; 
-    color: #94a3b8; 
-    position: absolute; 
-    bottom: 4px; 
-}
-
-.question-number:hover { 
+.unit-indicator:hover, .question-number:hover { 
     border-color: #3b82f6; 
+    background: #f1f5f9; 
 }
 
-.question-number.current { 
-    background: #eff6ff; 
-    border-color: #3b82f6; 
-    transform: scale(1.05); 
-    box-shadow: 0 4px 6px rgba(37,99,235,0.2); 
+.unit-indicator.current, .question-number.current { 
+    background: #eff6ff !important; 
+    border-color: #2563eb !important; 
+    color: #1d4ed8 !important; 
+    transform: scale(1.08); 
+    box-shadow: 0 2px 4px rgba(37,99,235,0.2); 
 }
 
-.question-number.correct { 
-    background: #dcfce7; 
-    border-color: #22c55e; 
-}
-
-.question-number.correct .marks { 
-    color: #15803d; 
-}
-
-.question-number.attempted { 
-    background: #fef08a; 
-    border-color: #eab308; 
-} 
-
-.question-number.attempted .marks { 
-    color: #a16207; 
+.unit-indicator.correct, .question-number.correct { 
+    background: #22c55e !important; 
+    border-color: #16a34a !important; 
+    color: white !important; 
 }
 
 /* LEARNING AREA & BUILDER */
@@ -453,19 +431,19 @@ select.file-input {
     margin: 16px auto 12px auto; 
     background: #0f172a; 
     border-radius: 12px; 
-    border: 1px solid #1e293b;
+    border: 1px solid #1e293b; 
     overflow: hidden; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .media-viewport svg { 
     display: block; 
     width: 100%; 
     height: auto; 
-    max-height: 340px;
+    max-height: 340px; 
 }
 
 .media-caption { 
@@ -498,13 +476,13 @@ select.file-input {
     transition: all 0.2s ease; 
 }
 
-.assembly-line:hover {
-    border-color: #94a3b8;
+.assembly-line:hover { 
+    border-color: #94a3b8; 
 }
 
-.assembly-line.success-lock { 
-    border: 2px solid #22c55e; 
-    background-color: #f0fdf4; 
+.assembly-line.success-locked, .assembly-line.success-lock { 
+    border: 2px solid #22c55e !important; 
+    background-color: #f0fdf4 !important; 
 }
 
 .fragment-pool { 
@@ -515,7 +493,7 @@ select.file-input {
     padding: 16px; 
     display: flex; 
     flex-wrap: wrap; 
-    align-content: flex-start;
+    align-content: flex-start; 
     gap: 10px; 
 }
 
@@ -532,13 +510,13 @@ select.file-input {
     border: 1px solid #cbd5e1; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
     transition: transform 0.15s, background-color 0.2s, box-shadow 0.2s, opacity 0.2s; 
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
+    display: inline-flex; 
+    align-items: center; 
+    gap: 6px; 
 }
 
-.fragment-chip:active {
-    cursor: grabbing;
+.fragment-chip:active { 
+    cursor: grabbing; 
 }
 
 .fragment-chip:hover { 
@@ -547,23 +525,21 @@ select.file-input {
     border-color: #94a3b8; 
 }
 
-/* Highlighted state when actively dragging */
-.fragment-chip.dragging {
-    opacity: 0.4 !important;
-    transform: scale(0.96);
-    border: 2px dashed #2563eb !important;
-    background-color: #eff6ff !important;
+.fragment-chip.dragging { 
+    opacity: 0.35 !important; 
+    transform: scale(0.96); 
+    border: 2px dashed #2563eb !important; 
+    background-color: #eff6ff !important; 
 }
 
-/* Code pills inside chips */
-.fragment-chip code {
-    background: #e2e8f0;
-    color: #0f172a;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: monospace;
-    font-size: 14px;
-    font-weight: 600;
+.fragment-chip code, code.inline-code { 
+    background: #e2e8f0; 
+    color: #0f172a; 
+    padding: 2px 6px; 
+    border-radius: 4px; 
+    font-family: monospace; 
+    font-size: 14px; 
+    font-weight: 600; 
 }
 
 .assembly-line .fragment-chip { 
@@ -572,26 +548,28 @@ select.file-input {
     border-color: #1d4ed8; 
 }
 
-.assembly-line .fragment-chip code {
-    background: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+.assembly-line .fragment-chip code { 
+    background: rgba(255, 255, 255, 0.2); 
+    color: #ffffff; 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
 }
 
 .assembly-line .fragment-chip:hover { 
     background-color: #1e40af; 
 }
 
+.assembly-line.success-locked .fragment-chip,
 .assembly-line.success-lock .fragment-chip { 
-    background-color: #22c55e; 
-    border-color: #166534; 
+    background-color: #22c55e !important; 
+    border-color: #166534 !important; 
     cursor: default; 
     transform: none; 
 }
 
-.assembly-line.success-lock .fragment-chip code {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.4);
+.assembly-line.success-locked .fragment-chip code,
+.assembly-line.success-lock .fragment-chip code { 
+    background: rgba(255, 255, 255, 0.25); 
+    border-color: rgba(255, 255, 255, 0.4); 
 }
 
 /* FEEDBACK & NOTIFICATIONS */
@@ -604,9 +582,9 @@ select.file-input {
     animation: slideIn 0.3s ease-out; 
 }
 
-@keyframes slideIn {
-    from { opacity: 0; transform: translateY(-8px); }
-    to { opacity: 1; transform: translateY(0); }
+@keyframes slideIn { 
+    from { opacity: 0; transform: translateY(-8px); } 
+    to { opacity: 1; transform: translateY(0); } 
 }
 
 .feedback-banner.success { 
@@ -635,7 +613,16 @@ select.file-input {
     border-top: 1px solid #f1f5f9; 
 }
 
-/* SCOREBOARD TABLE */
+/* SCOREBOARD & RESULTS */
+.results-container { 
+    background: white; 
+    border-radius: 16px; 
+    overflow: hidden; 
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); 
+    max-width: 600px; 
+    margin: 40px auto; 
+}
+
 .scoreboard-table { 
     width: 100%; 
     border-collapse: collapse; 
@@ -664,48 +651,51 @@ select.file-input {
     font-size: 14px; 
 }
 
-.sort-asc::after { 
-    content: " ↑"; 
-    color: #2563eb; 
+/* KATEX MATH FORMULA FIXES */
+.katex-display { 
+    margin: 12px 0 !important; 
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    padding: 4px 0; 
 }
 
-.sort-desc::after { 
-    content: " ↓"; 
-    color: #2563eb; 
+.katex { 
+    font-size: 1.05em; 
+    text-rendering: auto; 
 }
 
 /* RESPONSIVE LAYOUT */
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
     .quiz-stats-row { 
         flex-direction: row; 
         flex-wrap: wrap; 
         justify-content: space-around; 
         gap: 10px; 
-    }
+    } 
     
     .quiz-controls { 
         flex-direction: column; 
         gap: 15px; 
-    }
+    } 
     
     .quiz-controls > div { 
         display: flex; 
         flex-direction: column; 
         gap: 8px; 
         width: 100%; 
-    }
+    } 
     
     .quiz-controls button { 
         width: 100%; 
-    }
+    } 
     
     .upload-card { 
         padding: 25px 20px; 
         margin: 20px auto; 
-    }
+    } 
 
-    .fragment-chip {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
+    .fragment-chip { 
+        font-size: 14px; 
+        padding: 8px 12px; 
+    } 
 }
