@@ -339,7 +339,7 @@ select.file-input {
     box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
 }
 
-.unit-indicator, .question-number { 
+.unit-indicator { 
     position: relative; 
     width: 34px; 
     height: 34px; 
@@ -356,12 +356,12 @@ select.file-input {
     transition: all 0.15s ease; 
 }
 
-.unit-indicator:hover, .question-number:hover { 
+.unit-indicator:hover { 
     border-color: #3b82f6; 
     background: #f1f5f9; 
 }
 
-.unit-indicator.current, .question-number.current { 
+.unit-indicator.current { 
     background: #eff6ff !important; 
     border-color: #2563eb !important; 
     color: #1d4ed8 !important; 
@@ -369,7 +369,7 @@ select.file-input {
     box-shadow: 0 2px 4px rgba(37,99,235,0.2); 
 }
 
-.unit-indicator.correct, .question-number.correct { 
+.unit-indicator.correct { 
     background: #22c55e !important; 
     border-color: #16a34a !important; 
     color: white !important; 
@@ -461,11 +461,11 @@ select.file-input {
     font-size: 15px; 
 }
 
-/* ASSEMBLY LINE & DRAG-AND-DROP ZONES */
-.assembly-line { 
+/* TARGET ASSEMBLY DROPZONE (#target-zone) */
+#target-zone, .assembly-line { 
     min-height: 80px; 
     background-color: #f8fafc; 
-    border: 2px dashed #cbd5e1; 
+    border: 2px dashed #93c5fd; 
     border-radius: 12px; 
     padding: 16px; 
     display: flex; 
@@ -476,16 +476,18 @@ select.file-input {
     transition: all 0.2s ease; 
 }
 
-.assembly-line:hover { 
-    border-color: #94a3b8; 
+#target-zone:hover, .assembly-line:hover { 
+    border-color: #3b82f6; 
+    background-color: #f0f7ff;
 }
 
-.assembly-line.success-locked, .assembly-line.success-lock { 
+#target-zone.success-locked, .assembly-line.success-lock { 
     border: 2px solid #22c55e !important; 
     background-color: #f0fdf4 !important; 
 }
 
-.fragment-pool { 
+/* FRAGMENT BANK POOL (#fragment-bank) */
+#fragment-bank, .fragment-pool { 
     min-height: 120px; 
     background-color: white; 
     border: 2px solid #e2e8f0; 
@@ -497,32 +499,28 @@ select.file-input {
     gap: 10px; 
 }
 
-/* FRAGMENT CHIPS & DRAGGING STATES */
+/* DEFAULT CHIP (Inside Bank) */
 .fragment-chip { 
     background-color: white; 
-    color: #334155; 
+    color: #1e293b; 
     padding: 10px 16px; 
-    border-radius: 20px; 
-    font-size: 15px; 
+    border-radius: 10px; 
+    font-size: 14px; 
     font-weight: 500; 
     cursor: grab; 
     user-select: none; 
-    border: 1px solid #cbd5e1; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
-    transition: transform 0.15s, background-color 0.2s, box-shadow 0.2s, opacity 0.2s; 
+    border: 1.5px solid #cbd5e1; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06); 
+    transition: transform 0.15s, background-color 0.2s, box-shadow 0.2s; 
     display: inline-flex; 
     align-items: center; 
     gap: 6px; 
 }
 
-.fragment-chip:active { 
-    cursor: grabbing; 
-}
-
 .fragment-chip:hover { 
-    transform: translateY(-2px); 
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-    border-color: #94a3b8; 
+    transform: translateY(-1px); 
+    border-color: #3b82f6; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.08); 
 }
 
 .fragment-chip.dragging { 
@@ -538,38 +536,46 @@ select.file-input {
     padding: 2px 6px; 
     border-radius: 4px; 
     font-family: monospace; 
-    font-size: 14px; 
+    font-size: 13px; 
     font-weight: 600; 
 }
 
+/* CHIPS INSIDE TARGET ZONE (Crisp Blue with High-Contrast White Font) */
+#target-zone .fragment-chip,
 .assembly-line .fragment-chip { 
-    background-color: #2563eb; 
-    color: white; 
-    border-color: #1d4ed8; 
+    background-color: #1d4ed8 !important; 
+    color: #ffffff !important; 
+    border-color: #1e40af !important; 
+    box-shadow: 0 2px 4px rgba(29, 78, 216, 0.25);
 }
 
+#target-zone .fragment-chip code,
 .assembly-line .fragment-chip code { 
-    background: rgba(255, 255, 255, 0.2); 
-    color: #ffffff; 
-    border: 1px solid rgba(255, 255, 255, 0.3); 
+    background: rgba(255, 255, 255, 0.25) !important; 
+    color: #ffffff !important; 
+    border: 1px solid rgba(255, 255, 255, 0.4); 
 }
 
+#target-zone .fragment-chip:hover,
 .assembly-line .fragment-chip:hover { 
-    background-color: #1e40af; 
+    background-color: #1e40af !important; 
 }
 
-.assembly-line.success-locked .fragment-chip,
+/* SUCCESS STATE (Green) */
+#target-zone.success-locked .fragment-chip,
 .assembly-line.success-lock .fragment-chip { 
-    background-color: #22c55e !important; 
+    background-color: #15803d !important; 
     border-color: #166534 !important; 
+    color: #ffffff !important;
     cursor: default; 
     transform: none; 
 }
 
-.assembly-line.success-locked .fragment-chip code,
+#target-zone.success-locked .fragment-chip code,
 .assembly-line.success-lock .fragment-chip code { 
-    background: rgba(255, 255, 255, 0.25); 
+    background: rgba(255, 255, 255, 0.25) !important; 
     border-color: rgba(255, 255, 255, 0.4); 
+    color: #ffffff !important;
 }
 
 /* FEEDBACK & NOTIFICATIONS */
