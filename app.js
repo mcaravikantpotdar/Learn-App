@@ -109,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function bindGlobalEvents() {
-    // Navigation / Screens
     DOM.topHomeBtn?.addEventListener('click', () => switchScreen('upload'));
     DOM.topQuitBtn?.addEventListener('click', finishModule);
     DOM.homeBtn?.addEventListener('click', () => switchScreen('upload'));
@@ -118,16 +117,13 @@ function bindGlobalEvents() {
     DOM.viewScoreboardFromResults?.addEventListener('click', showScoreboard);
     DOM.backFromScoreboard?.addEventListener('click', () => switchScreen('upload'));
 
-    // Dropdown Cascade
     DOM.classSelect?.addEventListener('change', handleClassChange);
     DOM.subjectSelect?.addEventListener('change', handleSubjectChange);
     DOM.startQuiz?.addEventListener('click', handleStartQuiz);
 
-    // Language Toggles
     DOM.btnEn?.addEventListener('click', () => setLanguage('en'));
     DOM.btnHi?.addEventListener('click', () => setLanguage('hi'));
 
-    // Quiz Controls
     DOM.btnSubmit?.addEventListener('click', verifyAssembly);
     DOM.nextBtn?.addEventListener('click', handleNextUnit);
     DOM.prevBtn?.addEventListener('click', handlePrevUnit);
@@ -172,7 +168,6 @@ async function scanRepositoryTree() {
         const data = await res.json();
         const catalog = {};
 
-        // Parse paths matching: jsons/{Class}/{Subject}/{Chapter}.json
         (data.tree || []).forEach(node => {
             if (node.type === 'blob' && node.path.startsWith('jsons/') && node.path.endsWith('.json')) {
                 const segments = node.path.split('/');
@@ -262,18 +257,10 @@ function handleSubjectChange() {
             btn.type = 'button';
             btn.className = 'quiz-select-btn';
             btn.innerText = quiz.title;
-            btn.style.cssText = "display:block; width:100%; text-align:left; padding:10px 14px; margin-bottom:6px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; cursor:pointer; font-weight:500; font-size:14px;";
 
             btn.addEventListener('click', () => {
-                document.querySelectorAll('.quiz-select-btn').forEach(b => {
-                    b.style.borderColor = '#e2e8f0';
-                    b.style.background = '#f8fafc';
-                    b.style.color = '#0f172a';
-                });
-                btn.style.borderColor = '#2563eb';
-                btn.style.background = '#eff6ff';
-                btn.style.color = '#1d4ed8';
-
+                document.querySelectorAll('.quiz-select-btn').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
                 AppState.selectedQuizPath = quiz.path;
                 validateStartReady();
             });
@@ -345,7 +332,6 @@ function setupQuizFromData(data) {
         return;
     }
 
-    // Populate header info
     if (DOM.chapterTitle) {
         DOM.chapterTitle.innerText = data.metadata?.chapter_title?.[AppState.currentLang] || data.metadata?.chapter_title?.en || "Learning Module";
     }
@@ -398,7 +384,6 @@ function renderUnitGrid() {
         const cell = document.createElement('div');
         cell.className = 'unit-indicator';
         cell.dataset.index = idx;
-        cell.style.cssText = "width:32px; height:32px; border-radius:6px; display:inline-flex; align-items:center; justify-content:center; background:#e2e8f0; font-weight:600; font-size:13px; cursor:pointer; margin:3px;";
         cell.innerText = idx + 1;
 
         cell.addEventListener('click', () => {
@@ -413,7 +398,7 @@ function renderUnitGrid() {
 function updateUnitGridStatus() {
     document.querySelectorAll('.unit-indicator').forEach(node => {
         const idx = parseInt(node.dataset.index, 10);
-        node.style.border = (idx === AppState.currentUnitIndex) ? '2px solid #2563eb' : 'none';
+        node.classList.toggle('current', idx === AppState.currentUnitIndex);
     });
 }
 
@@ -424,7 +409,7 @@ function updateUnitGridStatus() {
 function formatMarkup(str) {
     if (!str) return '';
     let sanitized = String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    return sanitized.replace(/`([^`]+)`/g, '<code style="background:#f1f5f9; padding:2px 5px; border-radius:4px; color:#0f172a; font-family:monospace;">$1</code>');
+    return sanitized.replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>');
 }
 
 function applyKaTeX() {
@@ -469,7 +454,6 @@ function renderCurrentUnit() {
     if (DOM.lessonTheory) DOM.lessonTheory.innerHTML = formatMarkup(unit.instruction.theory[lang] || unit.instruction.theory.en);
     if (DOM.challengePrompt) DOM.challengePrompt.innerHTML = formatMarkup(challenge.prompt);
 
-    // SVG / Media Viewport
     if (DOM.mediaContainer) {
         if (media && media.type === 'svg') {
             DOM.mediaContainer.innerHTML = media.svg_code;
@@ -484,7 +468,6 @@ function renderCurrentUnit() {
         DOM.mediaCaption.innerHTML = formatMarkup(media?.caption?.[lang] || media?.caption?.en || '');
     }
 
-    // Reset feedback & controls
     if (DOM.feedbackBanner) {
         DOM.feedbackBanner.style.display = 'none';
         DOM.feedbackBanner.innerHTML = '';
@@ -534,7 +517,6 @@ function buildFragmentPool(challenge) {
         chip.dataset.id = frag.id;
         chip.innerHTML = formatMarkup(frag.text);
         chip.fragRef = frag;
-        chip.style.cssText = "display:inline-block; padding:8px 14px; margin:4px; background:#ffffff; border:1.5px solid #cbd5e1; border-radius:8px; cursor:pointer; font-weight:500; font-size:14px; user-select:none; transition:all 0.15s ease;";
 
         // Click-to-toggle
         chip.addEventListener('click', () => toggleChipPlacement(chip));
@@ -567,11 +549,11 @@ function handleDragStart(e) {
         return;
     }
     activeDraggedItem = this;
-    this.style.opacity = '0.4';
+    this.classList.add('dragging');
 }
 
 function handleDragEnd() {
-    this.style.opacity = '1';
+    this.classList.remove('dragging');
     activeDraggedItem = null;
     syncAssemblyFromDOM();
 }
@@ -589,7 +571,7 @@ function handleDragOverZone(e) {
 }
 
 function getDropTargetElement(container, x, y) {
-    const elements = [...container.querySelectorAll('.fragment-chip:not([style*="opacity: 0.4"])')];
+    const elements = [...container.querySelectorAll('.fragment-chip:not(.dragging)')];
     return elements.reduce((closest, child) => {
         const box = child.getBoundingClientRect();
         const offset = x - box.left - box.width / 2;
@@ -647,19 +629,15 @@ function verifyAssembly() {
         renderFeedback(`✅ <strong>Mastered!</strong><br><br>${formatMarkup(takeaway)}`, '#15803d', '#f0fdf4');
         
         DOM.targetZone.classList.add('success-locked');
-        DOM.targetZone.style.pointerEvents = 'none';
         DOM.btnSubmit.disabled = true;
         DOM.nextBtn.disabled = false;
 
-        // Points
         AppState.score += 10;
         if (DOM.masteryScore) DOM.masteryScore.innerText = AppState.score;
 
-        // Grid indicator
         const gridNode = document.querySelector(`.unit-indicator[data-index="${AppState.currentUnitIndex}"]`);
         if (gridNode) {
-            gridNode.style.background = '#22c55e';
-            gridNode.style.color = '#ffffff';
+            gridNode.classList.add('correct');
         }
     } else {
         renderFeedback(`❌ Incorrect arrangement. Reorder the fragments and verify again.`, '#ef4444', '#fef2f2');
