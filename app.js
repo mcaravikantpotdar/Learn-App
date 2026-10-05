@@ -1,59 +1,101 @@
 /**
  * Learn-App Core Logic (app.js)
- * Fully Integrated: Dynamic Recursive Repo Scanner, Cascading Filters,
- * Drag-and-Drop Assembly, KaTeX Rendering, Offline Score Sync & Leaderboard.
+ * Fully Aligned with index.html DOM IDs
+ * Features:
+ * - Dynamic Recursive Git Tree Scanner (jsons/Class/Subject/Chapter.json)
+ * - Session-cached GitHub queries to respect rate limits
+ * - Cascading Selectors (Class -> Subject -> Lesson)
+ * - KaTeX Math & Inline Code Rendering
+ * - Bilingual Fragment Assembly with Drag & Drop + Click Fallback
+ * - Timer, Progress Bar, Mastery Points, and Results Screen
+ * - Google Apps Script Online Submission + Offline LocalQueue Fallback
+ * - Global Leaderboard with Sorting
  */
 
-const AppState = {
-    // Repository & Backend Configuration
+const AppConfig = {
     githubRepo: 'mcaravikantpotdar/Learn-App',
     branch: 'main',
-    gasEndpoint: 'https://script.google.com/macros/s/AKfycbxNWnLdQxUnjOCfWHoyZALx-orP0D1v9Q04ic9hl3Ido3W3gOgRoYiq2MuN-bv687I/exec',
-    
-    // Application Runtime State
+    gasEndpoint: 'https://script.google.com/macros/s/AKfycbxNWnLdQxUnjOCfWHoyZALx-orP0D1v9Q04ic9hl3Ido3W3gOgRoYiq2MuN-bv687I/exec'
+};
+
+const AppState = {
     currentLang: 'en',
-    repoCatalog: {}, // Structured as: { [class]: { [subject]: [ { title, path } ] } }
+    repoCatalog: {}, // { [class]: { [subject]: [ { title, path } ] } }
+    selectedClass: '',
+    selectedSubject: '',
     selectedQuizPath: '',
     units: [],
     currentUnitIndex: 0,
     assembly: [],
     score: 0,
-    studentId: '',
-    schoolName: ''
+    studentName: '',
+    schoolName: '',
+    timerSeconds: 0,
+    timerInterval: null
 };
 
-const UI = {
+// Direct 1-to-1 Mapping to your index.html IDs
+const DOM = {
+    // Screens
     screens: {
-        home: document.getElementById('home-screen'),
-        quiz: document.getElementById('quiz-screen'),
-        leaderboard: document.getElementById('leaderboard-screen')
+        upload: document.getElementById('uploadScreen'),
+        quiz: document.getElementById('quizScreen'),
+        results: document.getElementById('resultsScreen'),
+        scoreboard: document.getElementById('scoreboardScreen')
     },
-    
-    // Home Screen Controls
-    classSelect: document.getElementById('class-select'),
-    subjectSelect: document.getElementById('subject-select'),
-    quizList: document.getElementById('quiz-list'),
-    btnStart: document.getElementById('btn-start'),
-    btnViewLeaderboard: document.getElementById('btn-view-leaderboard'),
-    btnBackHome: document.getElementById('btn-back-home'),
-    studentName: document.getElementById('student-name'),
-    schoolName: document.getElementById('school-name'),
-    leaderboardTable: document.getElementById('leaderboard-body'),
-    
-    // Quiz Screen Controls
-    spinner: document.getElementById('loading-spinner'),
+    spinner: document.getElementById('loadingSpinner'),
+    errorMessage: document.getElementById('errorMessage'),
+
+    // Screen 1: Discovery & Registration
+    studentName: document.getElementById('studentName'),
+    schoolName: document.getElementById('schoolName'),
+    classSelect: document.getElementById('classSelect'),
+    subjectGroup: document.getElementById('subjectGroup'),
+    subjectSelect: document.getElementById('subjectSelect'),
+    lessonGroup: document.getElementById('lessonGroup'),
+    quizList: document.getElementById('quizList'),
+    startQuiz: document.getElementById('startQuiz'),
+    viewScoreboardBtn: document.getElementById('viewScoreboardBtn'),
+
+    // Screen 2: Workbench
+    topHomeBtn: document.getElementById('topHomeBtn'),
+    topQuitBtn: document.getElementById('topQuitBtn'),
+    chapterTitle: document.getElementById('chapterTitle'),
+    displayStudentName: document.getElementById('displayStudentName'),
+    displaySchoolInfo: document.getElementById('displaySchoolInfo'),
+    currentUnitNum: document.getElementById('currentUnitNum'),
+    totalUnitsNum: document.getElementById('totalUnitsNum'),
+    timer: document.getElementById('timer'),
+    masteryScore: document.getElementById('masteryScore'),
+    maxScore: document.getElementById('maxScore'),
+    unitGrid: document.getElementById('unitGrid'),
+    btnEn: document.getElementById('btn-en'),
+    btnHi: document.getElementById('btn-hi'),
     lessonTitle: document.getElementById('lesson-title'),
-    theoryContent: document.getElementById('theory-content'),
-    mediaViewport: document.getElementById('media-viewport'),
+    mediaContainer: document.getElementById('media-container'),
     mediaCaption: document.getElementById('media-caption'),
-    promptBar: document.getElementById('prompt-bar'),
-    assemblyLine: document.getElementById('assembly-line'),
-    fragmentPool: document.getElementById('fragment-pool'),
+    lessonTheory: document.getElementById('lesson-theory'),
+    challengePrompt: document.getElementById('challenge-prompt'),
+    targetZone: document.getElementById('target-zone'),
+    fragmentBank: document.getElementById('fragment-bank'),
     feedbackBanner: document.getElementById('feedback-banner'),
-    questionGrid: document.getElementById('question-grid'),
-    btnCheck: document.getElementById('btn-check'),
-    btnNext: document.getElementById('btn-next'),
-    langBtns: document.querySelectorAll('.lang-btn')
+    prevBtn: document.getElementById('prevBtn'),
+    hintBtn: document.getElementById('hintBtn'),
+    btnSubmit: document.getElementById('btn-submit'),
+    nextBtn: document.getElementById('nextBtn'),
+
+    // Screen 3: Results
+    finalScore: document.getElementById('finalScore'),
+    totalPossible: document.getElementById('totalPossible'),
+    percentage: document.getElementById('percentage'),
+    totalTime: document.getElementById('totalTime'),
+    retakeBtn: document.getElementById('retakeBtn'),
+    viewScoreboardFromResults: document.getElementById('viewScoreboardFromResults'),
+    homeBtn: document.getElementById('homeBtn'),
+
+    // Screen 4: Scoreboard
+    backFromScoreboard: document.getElementById('backFromScoreboard'),
+    scoreboardBody: document.getElementById('scoreboardBody')
 };
 
 // ==========================================
@@ -61,43 +103,48 @@ const UI = {
 // ==========================================
 
 document.addEventListener('DOMContentLoaded', () => {
-    bindEvents();
+    bindGlobalEvents();
     syncOfflineScores();
     scanRepositoryTree();
 });
 
-function bindEvents() {
+function bindGlobalEvents() {
+    // Navigation / Screens
+    DOM.topHomeBtn?.addEventListener('click', () => switchScreen('upload'));
+    DOM.topQuitBtn?.addEventListener('click', finishModule);
+    DOM.homeBtn?.addEventListener('click', () => switchScreen('upload'));
+    DOM.retakeBtn?.addEventListener('click', restartCurrentModule);
+    DOM.viewScoreboardBtn?.addEventListener('click', showScoreboard);
+    DOM.viewScoreboardFromResults?.addEventListener('click', showScoreboard);
+    DOM.backFromScoreboard?.addEventListener('click', () => switchScreen('upload'));
+
+    // Dropdown Cascade
+    DOM.classSelect?.addEventListener('change', handleClassChange);
+    DOM.subjectSelect?.addEventListener('change', handleSubjectChange);
+    DOM.startQuiz?.addEventListener('click', handleStartQuiz);
+
     // Language Toggles
-    UI.langBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            UI.langBtns.forEach(b => b.classList.remove('active'));
-            e.target.classList.add('active');
-            AppState.currentLang = e.target.dataset.lang;
-            renderCurrentUnit();
-        });
-    });
+    DOM.btnEn?.addEventListener('click', () => setLanguage('en'));
+    DOM.btnHi?.addEventListener('click', () => setLanguage('hi'));
 
-    // Quiz Navigation & Verification
-    UI.btnCheck?.addEventListener('click', checkAnswer);
-    UI.btnNext?.addEventListener('click', nextUnit);
-
-    // Dynamic Cascading Dropdowns
-    UI.classSelect?.addEventListener('change', populateSubjects);
-    UI.subjectSelect?.addEventListener('change', populateQuizzes);
-    UI.btnStart?.addEventListener('click', startQuizWorkflow);
-    
-    // Leaderboard Controls
-    UI.btnViewLeaderboard?.addEventListener('click', showLeaderboard);
-    UI.btnBackHome?.addEventListener('click', () => showScreen('home'));
+    // Quiz Controls
+    DOM.btnSubmit?.addEventListener('click', verifyAssembly);
+    DOM.nextBtn?.addEventListener('click', handleNextUnit);
+    DOM.prevBtn?.addEventListener('click', handlePrevUnit);
+    DOM.hintBtn?.addEventListener('click', handleShowHint);
 }
 
-function showScreen(screenName) {
-    Object.values(UI.screens).forEach(screen => {
+function switchScreen(screenKey) {
+    Object.values(DOM.screens).forEach(screen => {
         if (screen) screen.classList.remove('active');
     });
-    if (UI.screens[screenName]) {
-        UI.screens[screenName].classList.add('active');
+    if (DOM.screens[screenKey]) {
+        DOM.screens[screenKey].classList.add('active');
     }
+}
+
+function toggleSpinner(show) {
+    if (DOM.spinner) DOM.spinner.classList.toggle('active', show);
 }
 
 // ==========================================
@@ -106,49 +153,40 @@ function showScreen(screenName) {
 
 async function scanRepositoryTree() {
     toggleSpinner(true);
-    const cacheKey = `learnApp_treeCatalog_${AppState.githubRepo}`;
-    const cachedTree = sessionStorage.getItem(cacheKey);
+    const cacheKey = `learnApp_catalog_${AppConfig.githubRepo}`;
+    const cached = sessionStorage.getItem(cacheKey);
 
-    if (cachedTree) {
-        AppState.repoCatalog = JSON.parse(cachedTree);
-        populateClasses();
+    if (cached) {
+        AppState.repoCatalog = JSON.parse(cached);
+        populateClassDropdown();
         toggleSpinner(false);
         return;
     }
 
     try {
-        // Recursive Git Trees API: Retrieves the complete repo structure in 1 call
-        const response = await fetch(`https://api.github.com/repos/${AppState.githubRepo}/git/trees/${AppState.branch}?recursive=1`);
+        const url = `https://api.github.com/repos/${AppConfig.githubRepo}/git/trees/${AppConfig.branch}?recursive=1`;
+        const res = await fetch(url);
         
-        if (!response.ok) {
-            throw new Error(`GitHub API returned status ${response.status}`);
-        }
+        if (!res.ok) throw new Error(`GitHub Tree API status: ${res.status}`);
         
-        const data = await response.json();
-        const tree = data.tree || [];
+        const data = await res.json();
         const catalog = {};
 
-        // Filter and map paths matching: jsons/{Class}/{Subject}/{Chapter}.json
-        tree.forEach(node => {
+        // Parse paths matching: jsons/{Class}/{Subject}/{Chapter}.json
+        (data.tree || []).forEach(node => {
             if (node.type === 'blob' && node.path.startsWith('jsons/') && node.path.endsWith('.json')) {
-                const parts = node.path.split('/');
-                
-                // Format: jsons / [Class] / [Subject] / [File.json]
-                if (parts.length === 4) {
-                    const className = parts[1];
-                    const subjectName = parts[2];
-                    const fileName = parts[3];
-                    const cleanTitle = fileName.replace('.json', '').replace(/[-_]/g, ' ');
+                const segments = node.path.split('/');
+                if (segments.length === 4) {
+                    const cls = segments[1];
+                    const subj = segments[2];
+                    const fileName = segments[3];
+                    const title = fileName.replace('.json', '').replace(/[-_]/g, ' ');
 
-                    if (!catalog[className]) {
-                        catalog[className] = {};
-                    }
-                    if (!catalog[className][subjectName]) {
-                        catalog[className][subjectName] = [];
-                    }
+                    if (!catalog[cls]) catalog[cls] = {};
+                    if (!catalog[cls][subj]) catalog[cls][subj] = [];
 
-                    catalog[className][subjectName].push({
-                        title: cleanTitle,
+                    catalog[cls][subj].push({
+                        title: title,
                         path: node.path
                     });
                 }
@@ -157,164 +195,243 @@ async function scanRepositoryTree() {
 
         AppState.repoCatalog = catalog;
         sessionStorage.setItem(cacheKey, JSON.stringify(catalog));
-        populateClasses();
-    } catch (error) {
-        console.error("Repository scan failed:", error);
-        alert("Failed to load curriculum catalog from GitHub. Please check your network or repository settings.");
+        populateClassDropdown();
+    } catch (err) {
+        console.error("Scanner Error:", err);
+        if (DOM.errorMessage) {
+            DOM.errorMessage.innerText = "Error loading repository modules. Please check connection.";
+            DOM.errorMessage.style.display = 'block';
+        }
     } finally {
         toggleSpinner(false);
     }
 }
 
-function populateClasses() {
-    if (!UI.classSelect) return;
-    UI.classSelect.innerHTML = '<option value="">-- Select Class --</option>';
+function populateClassDropdown() {
+    if (!DOM.classSelect) return;
+    DOM.classSelect.innerHTML = '<option value="" disabled selected>Choose Class...</option>';
     
-    const classes = Object.keys(AppState.repoCatalog);
-    classes.sort().forEach(className => {
-        UI.classSelect.innerHTML += `<option value="${className}">${className}</option>`;
+    const classes = Object.keys(AppState.repoCatalog).sort();
+    classes.forEach(cls => {
+        DOM.classSelect.innerHTML += `<option value="${cls}">${cls}</option>`;
     });
 
-    if (UI.subjectSelect) UI.subjectSelect.innerHTML = '<option value="">-- Select Subject --</option>';
-    if (UI.quizList) UI.quizList.innerHTML = '';
+    if (DOM.subjectGroup) DOM.subjectGroup.style.display = 'none';
+    if (DOM.lessonGroup) DOM.lessonGroup.style.display = 'none';
+    if (DOM.startQuiz) DOM.startQuiz.disabled = true;
 }
 
-function populateSubjects() {
-    const selectedClass = UI.classSelect.value;
-    if (!UI.subjectSelect) return;
-    
-    UI.subjectSelect.innerHTML = '<option value="">-- Select Subject --</option>';
-    if (UI.quizList) UI.quizList.innerHTML = '';
+function handleClassChange() {
+    AppState.selectedClass = DOM.classSelect.value;
+    AppState.selectedSubject = '';
     AppState.selectedQuizPath = '';
 
-    if (selectedClass && AppState.repoCatalog[selectedClass]) {
-        const subjects = Object.keys(AppState.repoCatalog[selectedClass]);
-        subjects.sort().forEach(subject => {
-            UI.subjectSelect.innerHTML += `<option value="${subject}">${subject}</option>`;
-        });
+    if (!DOM.subjectSelect) return;
+    DOM.subjectSelect.innerHTML = '<option value="" disabled selected>Choose Subject...</option>';
+    
+    if (DOM.quizList) {
+        DOM.quizList.innerHTML = '<p style="padding:10px; opacity:0.6; font-size: 13px;">Select subject next</p>';
     }
+
+    if (AppState.selectedClass && AppState.repoCatalog[AppState.selectedClass]) {
+        const subjects = Object.keys(AppState.repoCatalog[AppState.selectedClass]).sort();
+        subjects.forEach(subj => {
+            DOM.subjectSelect.innerHTML += `<option value="${subj}">${subj}</option>`;
+        });
+        if (DOM.subjectGroup) DOM.subjectGroup.style.display = 'block';
+    } else {
+        if (DOM.subjectGroup) DOM.subjectGroup.style.display = 'none';
+    }
+
+    if (DOM.lessonGroup) DOM.lessonGroup.style.display = 'none';
+    if (DOM.startQuiz) DOM.startQuiz.disabled = true;
 }
 
-function populateQuizzes() {
-    const selectedClass = UI.classSelect.value;
-    const selectedSubject = UI.subjectSelect.value;
-    if (!UI.quizList) return;
-    
-    UI.quizList.innerHTML = '';
+function handleSubjectChange() {
+    AppState.selectedSubject = DOM.subjectSelect.value;
     AppState.selectedQuizPath = '';
 
-    if (selectedClass && selectedSubject && AppState.repoCatalog[selectedClass][selectedSubject]) {
-        const quizzes = AppState.repoCatalog[selectedClass][selectedSubject];
+    if (!DOM.quizList) return;
+    DOM.quizList.innerHTML = '';
+
+    if (AppState.selectedClass && AppState.selectedSubject) {
+        const quizzes = AppState.repoCatalog[AppState.selectedClass][AppState.selectedSubject] || [];
         
         quizzes.forEach(quiz => {
             const btn = document.createElement('button');
             btn.type = 'button';
-            btn.className = 'quiz-btn';
+            btn.className = 'quiz-select-btn';
             btn.innerText = quiz.title;
-            btn.dataset.path = quiz.path;
+            btn.style.cssText = "display:block; width:100%; text-align:left; padding:10px 14px; margin-bottom:6px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; cursor:pointer; font-weight:500; font-size:14px;";
 
             btn.addEventListener('click', () => {
-                document.querySelectorAll('.quiz-btn').forEach(b => b.classList.remove('selected'));
-                btn.classList.add('selected');
+                document.querySelectorAll('.quiz-select-btn').forEach(b => {
+                    b.style.borderColor = '#e2e8f0';
+                    b.style.background = '#f8fafc';
+                    b.style.color = '#0f172a';
+                });
+                btn.style.borderColor = '#2563eb';
+                btn.style.background = '#eff6ff';
+                btn.style.color = '#1d4ed8';
+
                 AppState.selectedQuizPath = quiz.path;
+                validateStartReady();
             });
 
-            UI.quizList.appendChild(btn);
+            DOM.quizList.appendChild(btn);
         });
+
+        if (DOM.lessonGroup) DOM.lessonGroup.style.display = 'block';
+    } else {
+        if (DOM.lessonGroup) DOM.lessonGroup.style.display = 'none';
     }
 }
 
-// ==========================================
-// 3. QUIZ WORKFLOW & DATA LOADING
-// ==========================================
-
-async function startQuizWorkflow() {
-    const studentName = UI.studentName?.value.trim();
-    const school = UI.schoolName?.value.trim();
-
-    if (!studentName) {
-        alert("Please enter your name.");
-        UI.studentName?.focus();
-        return;
+function validateStartReady() {
+    const nameValid = DOM.studentName?.value.trim().length > 0;
+    const pathValid = AppState.selectedQuizPath.length > 0;
+    if (DOM.startQuiz) {
+        DOM.startQuiz.disabled = !(nameValid && pathValid);
     }
-
-    if (!AppState.selectedQuizPath) {
-        alert("Please select a chapter from the list.");
-        return;
-    }
-
-    AppState.studentId = studentName;
-    AppState.schoolName = school || 'General';
-
-    await loadQuizData(AppState.selectedQuizPath);
 }
 
-async function loadQuizData(filePath) {
+DOM.studentName?.addEventListener('input', validateStartReady);
+
+// ==========================================
+// 3. QUIZ INITIALIZATION & PARSING
+// ==========================================
+
+async function handleStartQuiz() {
+    AppState.studentName = DOM.studentName.value.trim();
+    AppState.schoolName = DOM.schoolName?.value.trim() || 'General';
+
     toggleSpinner(true);
-    const cacheKey = `learnApp_file_${filePath}`;
-    const cachedFile = sessionStorage.getItem(cacheKey);
+    const cacheKey = `learnApp_file_${AppState.selectedQuizPath}`;
+    const cached = sessionStorage.getItem(cacheKey);
 
-    if (cachedFile) {
-        const parsed = JSON.parse(cachedFile);
-        AppState.units = parsed.learning_units || [];
+    if (cached) {
+        setupQuizFromData(JSON.parse(cached));
         toggleSpinner(false);
-        initModule();
         return;
     }
 
     try {
-        const response = await fetch(`https://api.github.com/repos/${AppState.githubRepo}/contents/${filePath}?ref=${AppState.branch}`);
-        if (!response.ok) throw new Error(`Could not fetch file: ${response.statusText}`);
+        const url = `https://api.github.com/repos/${AppConfig.githubRepo}/contents/${AppState.selectedQuizPath}?ref=${AppConfig.branch}`;
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`Fetch chapter error: ${res.statusText}`);
 
-        const fileData = await response.json();
-        const decodedContent = decodeURIComponent(escape(atob(fileData.content)));
-        const parsedJson = JSON.parse(decodedContent);
+        const fileJson = await res.json();
+        const rawContent = decodeURIComponent(escape(atob(fileJson.content)));
+        const parsed = JSON.parse(rawContent);
 
-        sessionStorage.setItem(cacheKey, JSON.stringify(parsedJson));
-        AppState.units = parsedJson.learning_units || [];
-        initModule();
-    } catch (error) {
-        console.error("Quiz load error:", error);
-        alert("Error loading chapter data. Please verify the JSON file structure.");
+        sessionStorage.setItem(cacheKey, JSON.stringify(parsed));
+        setupQuizFromData(parsed);
+    } catch (err) {
+        console.error("Quiz Fetch Error:", err);
+        alert("Failed to load the selected chapter JSON. Please check file formatting.");
     } finally {
         toggleSpinner(false);
     }
 }
 
-function initModule() {
-    if (!AppState.units.length) {
-        alert("This chapter has no available learning units.");
-        return;
-    }
+function setupQuizFromData(data) {
+    AppState.units = data.learning_units || [];
     AppState.currentUnitIndex = 0;
     AppState.score = 0;
-    buildQuestionGrid();
-    showScreen('quiz');
+    AppState.timerSeconds = 0;
+
+    if (!AppState.units.length) {
+        alert("This module does not contain any valid learning units.");
+        return;
+    }
+
+    // Populate header info
+    if (DOM.chapterTitle) {
+        DOM.chapterTitle.innerText = data.metadata?.chapter_title?.[AppState.currentLang] || data.metadata?.chapter_title?.en || "Learning Module";
+    }
+    if (DOM.displayStudentName) DOM.displayStudentName.innerText = `👤 ${AppState.studentName}`;
+    if (DOM.displaySchoolInfo) DOM.displaySchoolInfo.innerText = `${AppState.selectedClass} •${AppState.selectedSubject}`;
+    if (DOM.totalUnitsNum) DOM.totalUnitsNum.innerText = AppState.units.length;
+    if (DOM.maxScore) DOM.maxScore.innerText = AppState.units.length * 10;
+    if (DOM.masteryScore) DOM.masteryScore.innerText = 0;
+
+    startTimer();
+    renderUnitGrid();
+    switchScreen('quiz');
     renderCurrentUnit();
 }
 
-function toggleSpinner(show) {
-    if (UI.spinner) {
-        UI.spinner.classList.toggle('active', show);
-    }
+function restartCurrentModule() {
+    AppState.currentUnitIndex = 0;
+    AppState.score = 0;
+    AppState.timerSeconds = 0;
+    if (DOM.masteryScore) DOM.masteryScore.innerText = 0;
+    startTimer();
+    renderUnitGrid();
+    switchScreen('quiz');
+    renderCurrentUnit();
 }
 
 // ==========================================
-// 4. RENDERING, SANITIZATION & KATEX
+// 4. TIMER & GRID SYSTEM
 // ==========================================
 
-function formatText(text) {
-    if (!text) return '';
-    let safe = String(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    safe = safe.replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>');
-    return safe;
+function startTimer() {
+    clearInterval(AppState.timerInterval);
+    AppState.timerInterval = setInterval(() => {
+        AppState.timerSeconds++;
+        const mins = String(Math.floor(AppState.timerSeconds / 60)).padStart(2, '0');
+        const secs = String(AppState.timerSeconds % 60).padStart(2, '0');
+        if (DOM.timer) DOM.timer.innerText = `${mins}:${secs}`;
+    }, 1000);
 }
 
-function triggerMathRender() {
+function stopTimer() {
+    clearInterval(AppState.timerInterval);
+}
+
+function renderUnitGrid() {
+    if (!DOM.unitGrid) return;
+    DOM.unitGrid.innerHTML = '';
+
+    AppState.units.forEach((_, idx) => {
+        const cell = document.createElement('div');
+        cell.className = 'unit-indicator';
+        cell.dataset.index = idx;
+        cell.style.cssText = "width:32px; height:32px; border-radius:6px; display:inline-flex; align-items:center; justify-content:center; background:#e2e8f0; font-weight:600; font-size:13px; cursor:pointer; margin:3px;";
+        cell.innerText = idx + 1;
+
+        cell.addEventListener('click', () => {
+            AppState.currentUnitIndex = idx;
+            renderCurrentUnit();
+        });
+
+        DOM.unitGrid.appendChild(cell);
+    });
+}
+
+function updateUnitGridStatus() {
+    document.querySelectorAll('.unit-indicator').forEach(node => {
+        const idx = parseInt(node.dataset.index, 10);
+        node.style.border = (idx === AppState.currentUnitIndex) ? '2px solid #2563eb' : 'none';
+    });
+}
+
+// ==========================================
+// 5. RENDERING, KA-TEX & FORMATTING
+// ==========================================
+
+function formatMarkup(str) {
+    if (!str) return '';
+    let sanitized = String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return sanitized.replace(/`([^`]+)`/g, '<code style="background:#f1f5f9; padding:2px 5px; border-radius:4px; color:#0f172a; font-family:monospace;">$1</code>');
+}
+
+function applyKaTeX() {
     if (typeof renderMathInElement === 'function') {
-        const targets = ['.theory-content', '.prompt-bar', '.feedback-banner', '.fragment-chip', '.media-caption'];
-        targets.forEach(selector => {
-            document.querySelectorAll(selector).forEach(el => {
+        const containers = [DOM.lessonTheory, DOM.challengePrompt, DOM.targetZone, DOM.fragmentBank, DOM.feedbackBanner, DOM.mediaCaption];
+        containers.forEach(el => {
+            if (el) {
                 renderMathInElement(el, {
                     delimiters: [
                         { left: '$$', right: '$$', display: true },
@@ -322,9 +439,21 @@ function triggerMathRender() {
                     ],
                     throwOnError: false
                 });
-            });
+            }
         });
     }
+}
+
+function setLanguage(lang) {
+    AppState.currentLang = lang;
+    if (lang === 'en') {
+        DOM.btnEn?.classList.add('active');
+        DOM.btnHi?.classList.remove('active');
+    } else {
+        DOM.btnHi?.classList.add('active');
+        DOM.btnEn?.classList.remove('active');
+    }
+    renderCurrentUnit();
 }
 
 function renderCurrentUnit() {
@@ -335,125 +464,133 @@ function renderCurrentUnit() {
     const challenge = unit.challenges[lang] || unit.challenges.en;
     const media = unit.instruction.media;
 
-    if (UI.lessonTitle) UI.lessonTitle.innerHTML = formatText(unit.instruction.title[lang] || unit.instruction.title.en);
-    if (UI.theoryContent) UI.theoryContent.innerHTML = formatText(unit.instruction.theory[lang] || unit.instruction.theory.en);
-    if (UI.promptBar) UI.promptBar.innerHTML = formatText(challenge.prompt);
-    
-    if (UI.mediaViewport) {
+    if (DOM.currentUnitNum) DOM.currentUnitNum.innerText = AppState.currentUnitIndex + 1;
+    if (DOM.lessonTitle) DOM.lessonTitle.innerHTML = formatMarkup(unit.instruction.title[lang] || unit.instruction.title.en);
+    if (DOM.lessonTheory) DOM.lessonTheory.innerHTML = formatMarkup(unit.instruction.theory[lang] || unit.instruction.theory.en);
+    if (DOM.challengePrompt) DOM.challengePrompt.innerHTML = formatMarkup(challenge.prompt);
+
+    // SVG / Media Viewport
+    if (DOM.mediaContainer) {
         if (media && media.type === 'svg') {
-            UI.mediaViewport.innerHTML = media.svg_code;
+            DOM.mediaContainer.innerHTML = media.svg_code;
+            DOM.mediaContainer.style.display = 'block';
         } else {
-            UI.mediaViewport.innerHTML = '';
+            DOM.mediaContainer.innerHTML = '';
+            DOM.mediaContainer.style.display = 'none';
         }
     }
-    
-    if (UI.mediaCaption) {
-        UI.mediaCaption.innerHTML = formatText(media?.caption?.[lang] || media?.caption?.en || '');
+
+    if (DOM.mediaCaption) {
+        DOM.mediaCaption.innerHTML = formatMarkup(media?.caption?.[lang] || media?.caption?.en || '');
     }
 
-    if (UI.feedbackBanner) {
-        UI.feedbackBanner.className = 'feedback-banner';
-        UI.feedbackBanner.innerHTML = '';
+    // Reset feedback & controls
+    if (DOM.feedbackBanner) {
+        DOM.feedbackBanner.style.display = 'none';
+        DOM.feedbackBanner.innerHTML = '';
     }
-    
-    if (UI.btnCheck) UI.btnCheck.disabled = false;
-    if (UI.btnNext) UI.btnNext.disabled = true;
-    if (UI.assemblyLine) UI.assemblyLine.classList.remove('success-lock');
 
-    buildFragments(challenge);
-    updateQuestionGridUI();
-    triggerMathRender();
+    if (DOM.targetZone) {
+        DOM.targetZone.classList.remove('success-locked');
+        DOM.targetZone.style.pointerEvents = 'auto';
+    }
+
+    if (DOM.btnSubmit) DOM.btnSubmit.disabled = true;
+    if (DOM.nextBtn) DOM.nextBtn.disabled = true;
+    if (DOM.prevBtn) DOM.prevBtn.disabled = (AppState.currentUnitIndex === 0);
+
+    buildFragmentPool(challenge);
+    updateUnitGridStatus();
+    applyKaTeX();
 }
 
 // ==========================================
-// 5. FRAGMENT ASSEMBLY & DRAG-AND-DROP
+// 6. DRAG AND DROP & SELECTION SYSTEM
 // ==========================================
 
-let draggedChip = null;
+let activeDraggedItem = null;
 
-function buildFragments(challenge) {
+function buildFragmentPool(challenge) {
     AppState.assembly = [];
-    if (!UI.assemblyLine || !UI.fragmentPool) return;
-    
-    UI.assemblyLine.innerHTML = '';
-    UI.fragmentPool.innerHTML = '';
+    if (!DOM.targetZone || !DOM.fragmentBank) return;
 
-    let allFragments = [...challenge.target_sequence];
+    DOM.targetZone.innerHTML = '';
+    DOM.fragmentBank.innerHTML = '';
+
+    let fragments = [...challenge.target_sequence];
     if (challenge.distractors) {
-        allFragments = allFragments.concat(challenge.distractors);
-    }
-    
-    // Fisher-Yates shuffle
-    for (let i = allFragments.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [allFragments[i], allFragments[j]] = [allFragments[j], allFragments[i]];
+        fragments = fragments.concat(challenge.distractors);
     }
 
-    allFragments.forEach(frag => {
+    // Shuffle
+    for (let i = fragments.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [fragments[i], fragments[j]] = [fragments[j], fragments[i]];
+    }
+
+    fragments.forEach(frag => {
         const chip = document.createElement('div');
         chip.className = 'fragment-chip';
         chip.dataset.id = frag.id;
-        chip.innerHTML = formatText(frag.text);
-        chip.fragData = frag;
+        chip.innerHTML = formatMarkup(frag.text);
+        chip.fragRef = frag;
+        chip.style.cssText = "display:inline-block; padding:8px 14px; margin:4px; background:#ffffff; border:1.5px solid #cbd5e1; border-radius:8px; cursor:pointer; font-weight:500; font-size:14px; user-select:none; transition:all 0.15s ease;";
 
-        // Click to toggle between pool and assembly line
-        chip.addEventListener('click', () => toggleFragment(chip));
-        
-        // Drag-and-drop support
+        // Click-to-toggle
+        chip.addEventListener('click', () => toggleChipPlacement(chip));
+
+        // Drag-and-drop
         chip.draggable = true;
         chip.addEventListener('dragstart', handleDragStart);
         chip.addEventListener('dragend', handleDragEnd);
 
-        UI.fragmentPool.appendChild(chip);
+        DOM.fragmentBank.appendChild(chip);
     });
 
-    UI.assemblyLine.addEventListener('dragover', handleDragOver);
+    DOM.targetZone.addEventListener('dragover', handleDragOverZone);
 }
 
-function toggleFragment(chip) {
-    if (UI.assemblyLine.classList.contains('success-lock')) return;
+function toggleChipPlacement(chip) {
+    if (DOM.targetZone.classList.contains('success-locked')) return;
 
-    if (chip.parentElement === UI.fragmentPool) {
-        UI.assemblyLine.appendChild(chip);
+    if (chip.parentElement === DOM.fragmentBank) {
+        DOM.targetZone.appendChild(chip);
     } else {
-        UI.fragmentPool.appendChild(chip);
+        DOM.fragmentBank.appendChild(chip);
     }
-    syncAssemblyArray();
+    syncAssemblyFromDOM();
 }
 
 function handleDragStart(e) {
-    if (UI.assemblyLine.classList.contains('success-lock')) {
+    if (DOM.targetZone.classList.contains('success-locked')) {
         e.preventDefault();
         return;
     }
-    draggedChip = this;
-    setTimeout(() => this.classList.add('dragging'), 0);
-    this.style.opacity = '0.5';
+    activeDraggedItem = this;
+    this.style.opacity = '0.4';
 }
 
 function handleDragEnd() {
-    this.classList.remove('dragging');
     this.style.opacity = '1';
-    draggedChip = null;
-    syncAssemblyArray();
+    activeDraggedItem = null;
+    syncAssemblyFromDOM();
 }
 
-function handleDragOver(e) {
+function handleDragOverZone(e) {
     e.preventDefault();
-    if (UI.assemblyLine.classList.contains('success-lock') || !draggedChip) return;
-    
-    const afterElement = getDragAfterElement(UI.assemblyLine, e.clientX, e.clientY);
+    if (!activeDraggedItem || DOM.targetZone.classList.contains('success-locked')) return;
+
+    const afterElement = getDropTargetElement(DOM.targetZone, e.clientX, e.clientY);
     if (afterElement == null) {
-        UI.assemblyLine.appendChild(draggedChip);
+        DOM.targetZone.appendChild(activeDraggedItem);
     } else {
-        UI.assemblyLine.insertBefore(draggedChip, afterElement);
+        DOM.targetZone.insertBefore(activeDraggedItem, afterElement);
     }
 }
 
-function getDragAfterElement(container, x, y) {
-    const draggableElements = [...container.querySelectorAll('.fragment-chip:not(.dragging)')];
-    
-    return draggableElements.reduce((closest, child) => {
+function getDropTargetElement(container, x, y) {
+    const elements = [...container.querySelectorAll('.fragment-chip:not([style*="opacity: 0.4"])')];
+    return elements.reduce((closest, child) => {
         const box = child.getBoundingClientRect();
         const offset = x - box.left - box.width / 2;
         if (y > box.top && y < box.bottom && offset < 0 && offset > closest.offset) {
@@ -464,101 +601,85 @@ function getDragAfterElement(container, x, y) {
     }, { offset: Number.NEGATIVE_INFINITY }).element;
 }
 
-function syncAssemblyArray() {
-    const chips = UI.assemblyLine.querySelectorAll('.fragment-chip');
-    AppState.assembly = Array.from(chips).map(chip => chip.fragData);
+function syncAssemblyFromDOM() {
+    const chips = DOM.targetZone.querySelectorAll('.fragment-chip');
+    AppState.assembly = Array.from(chips).map(c => c.fragRef);
+    if (DOM.btnSubmit) {
+        DOM.btnSubmit.disabled = (AppState.assembly.length === 0);
+    }
 }
 
 // ==========================================
-// 6. VALIDATION & FEEDBACK ENGINE
+// 7. VERIFICATION & FEEDBACK
 // ==========================================
 
-function checkAnswer() {
+function verifyAssembly() {
     const unit = AppState.units[AppState.currentUnitIndex];
     const challenge = unit.challenges[AppState.currentLang] || unit.challenges.en;
-    const targets = challenge.target_sequence;
-
-    if (AppState.assembly.length === 0) return;
+    const targetSeq = challenge.target_sequence;
 
     // Check for distractor penalties
-    const distractor = AppState.assembly.find(f => f.category === 'logical' || f.category === 'grammatical');
-    if (distractor) {
-        showFeedback(`❌ ${formatText(distractor.penalty_explanation)}`, 'error');
+    const distractorHit = AppState.assembly.find(f => f.category === 'logical' || f.category === 'grammatical');
+    if (distractorHit) {
+        renderFeedback(`❌ ${formatMarkup(distractorHit.penalty_explanation)}`, '#ef4444', '#fef2f2');
         return;
     }
 
     // Sequence too short: provide contextual role hint
-    if (AppState.assembly.length < targets.length) {
-        const nextExpected = targets[AppState.assembly.length];
-        const hintText = nextExpected.role_hint?.[AppState.currentLang] || nextExpected.role_hint?.en || nextExpected.role_hint;
-        showFeedback(`💡 <strong>Hint:</strong> ${formatText(hintText)}`, 'secondary');
+    if (AppState.assembly.length < targetSeq.length) {
+        const nextTarget = targetSeq[AppState.assembly.length];
+        const hintMsg = nextTarget.role_hint?.[AppState.currentLang] || nextTarget.role_hint?.en || nextTarget.role_hint;
+        renderFeedback(`💡 <strong>Next Step Hint:</strong> ${formatMarkup(hintMsg)}`, '#0284c7', '#f0f9ff');
         return;
     }
 
-    // Verify ordering
-    let isCorrect = true;
-    for (let i = 0; i < targets.length; i++) {
-        if (AppState.assembly[i].id !== targets[i].id) {
-            isCorrect = false;
+    // Sequence verification
+    let correct = true;
+    for (let i = 0; i < targetSeq.length; i++) {
+        if (AppState.assembly[i].id !== targetSeq[i].id) {
+            correct = false;
             break;
         }
     }
 
-    if (isCorrect) {
-        const takeaway = unit.key_takeaway?.[AppState.currentLang] || unit.key_takeaway?.en || 'Great job!';
-        showFeedback(`✅ <strong>Correct!</strong><br><br>${formatText(takeaway)}`, 'success');
-        UI.assemblyLine.classList.add('success-lock');
-        UI.btnCheck.disabled = true;
-        UI.btnNext.disabled = false;
+    if (correct) {
+        const takeaway = unit.key_takeaway?.[AppState.currentLang] || unit.key_takeaway?.en || "Great work!";
+        renderFeedback(`✅ <strong>Mastered!</strong><br><br>${formatMarkup(takeaway)}`, '#15803d', '#f0fdf4');
         
+        DOM.targetZone.classList.add('success-locked');
+        DOM.targetZone.style.pointerEvents = 'none';
+        DOM.btnSubmit.disabled = true;
+        DOM.nextBtn.disabled = false;
+
+        // Points
         AppState.score += 10;
-        
-        const qNode = document.querySelector(`.question-number[data-index="${AppState.currentUnitIndex}"]`);
-        if (qNode) qNode.classList.add('correct');
+        if (DOM.masteryScore) DOM.masteryScore.innerText = AppState.score;
+
+        // Grid indicator
+        const gridNode = document.querySelector(`.unit-indicator[data-index="${AppState.currentUnitIndex}"]`);
+        if (gridNode) {
+            gridNode.style.background = '#22c55e';
+            gridNode.style.color = '#ffffff';
+        }
     } else {
-        showFeedback(`❌ The sequence is incorrect. Reorder the fragments and check again.`, 'error');
+        renderFeedback(`❌ Incorrect arrangement. Reorder the fragments and verify again.`, '#ef4444', '#fef2f2');
     }
 }
 
-function showFeedback(html, type) {
-    if (!UI.feedbackBanner) return;
-    UI.feedbackBanner.innerHTML = html;
-    UI.feedbackBanner.className = `feedback-banner ${type}`;
-    triggerMathRender();
+function handleShowHint() {
+    const unit = AppState.units[AppState.currentUnitIndex];
+    const challenge = unit.challenges[AppState.currentLang] || unit.challenges.en;
+    renderFeedback(`💡 <strong>Hint:</strong> ${formatMarkup(challenge.hint)}`, '#0284c7', '#f0f9ff');
 }
 
-// ==========================================
-// 7. PROGRESSION & OFFLINE QUEUE
-// ==========================================
-
-function buildQuestionGrid() {
-    if (!UI.questionGrid) return;
-    UI.questionGrid.innerHTML = '';
-    
-    AppState.units.forEach((_, index) => {
-        const div = document.createElement('div');
-        div.className = 'question-number';
-        div.dataset.index = index;
-        div.innerHTML = `<span class="q-number">${index + 1}</span>`;
-        div.addEventListener('click', () => {
-            AppState.currentUnitIndex = index;
-            renderCurrentUnit();
-        });
-        UI.questionGrid.appendChild(div);
-    });
+function renderFeedback(html, color, bg) {
+    if (!DOM.feedbackBanner) return;
+    DOM.feedbackBanner.innerHTML = html;
+    DOM.feedbackBanner.style.cssText = `display:block; padding:12px 16px; margin-top:12px; border-radius:8px; border:1px solid ${color}; background:${bg}; color:${color}; font-size:14px;`;
+    applyKaTeX();
 }
 
-function updateQuestionGridUI() {
-    document.querySelectorAll('.question-number').forEach(node => {
-        node.classList.remove('current');
-        if (parseInt(node.dataset.index, 10) === AppState.currentUnitIndex) {
-            node.classList.add('current');
-            node.classList.add('attempted');
-        }
-    });
-}
-
-function nextUnit() {
+function handleNextUnit() {
     if (AppState.currentUnitIndex < AppState.units.length - 1) {
         AppState.currentUnitIndex++;
         renderCurrentUnit();
@@ -567,93 +688,120 @@ function nextUnit() {
     }
 }
 
-function finishModule() {
-    if (UI.mediaViewport) {
-        UI.mediaViewport.innerHTML = `<div style="text-align:center; padding: 40px; color: #38bdf8;"><h3>🎉 Module Complete!</h3><p>Your score: ${AppState.score}</p></div>`;
+function handlePrevUnit() {
+    if (AppState.currentUnitIndex > 0) {
+        AppState.currentUnitIndex--;
+        renderCurrentUnit();
     }
-    if (UI.theoryContent) UI.theoryContent.innerHTML = "Congratulations! You have completed all interactive units for this chapter.";
-    if (UI.btnNext) UI.btnNext.style.display = 'none';
-    if (UI.btnCheck) UI.btnCheck.style.display = 'none';
-    if (UI.assemblyLine) UI.assemblyLine.innerHTML = '';
-    if (UI.fragmentPool) UI.fragmentPool.innerHTML = '';
-    
-    const payload = {
-        studentId: AppState.studentId,
-        school: AppState.schoolName,
-        chapter: AppState.selectedQuizPath,
-        score: AppState.score,
-        completedAt: new Date().toISOString()
-    };
-    saveScore(payload);
 }
 
-async function saveScore(payload) {
+// ==========================================
+// 8. MODULE COMPLETION & SYNC
+// ==========================================
+
+function finishModule() {
+    stopTimer();
+    switchScreen('results');
+
+    const totalPossible = AppState.units.length * 10;
+    const percentage = totalPossible > 0 ? Math.round((AppState.score / totalPossible) * 100) : 0;
+    const mins = String(Math.floor(AppState.timerSeconds / 60)).padStart(2, '0');
+    const secs = String(AppState.timerSeconds % 60).padStart(2, '0');
+
+    if (DOM.finalScore) DOM.finalScore.innerText = AppState.score;
+    if (DOM.totalPossible) DOM.totalPossible.innerText = totalPossible;
+    if (DOM.percentage) DOM.percentage.innerText = `${percentage}%`;
+    if (DOM.totalTime) DOM.totalTime.innerText = `${mins}:${secs}`;
+
+    const scorePayload = {
+        studentId: AppState.studentName,
+        school: AppState.schoolName,
+        class: AppState.selectedClass,
+        subject: AppState.selectedSubject,
+        chapter: AppState.selectedQuizPath,
+        score: AppState.score,
+        time: `${mins}:${secs}`,
+        completedAt: new Date().toISOString()
+    };
+
+    transmitScore(scorePayload);
+}
+
+async function transmitScore(payload) {
     try {
-        await fetch(AppState.gasEndpoint, {
+        await fetch(AppConfig.gasEndpoint, {
             method: 'POST',
             mode: 'no-cors',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
         });
-    } catch (error) {
-        console.warn("Server unavailable. Queuing score locally for offline sync.");
-        const queue = JSON.parse(localStorage.getItem('offlineScoreQueue') || '[]');
+    } catch (err) {
+        console.warn("Server unreachable. Storing score in local queue.", err);
+        const queue = JSON.parse(localStorage.getItem('learnApp_offlineQueue') || '[]');
         queue.push(payload);
-        localStorage.setItem('offlineScoreQueue', JSON.stringify(queue));
+        localStorage.setItem('learnApp_offlineQueue', JSON.stringify(queue));
     }
 }
 
 async function syncOfflineScores() {
-    const queue = JSON.parse(localStorage.getItem('offlineScoreQueue') || '[]');
+    const queue = JSON.parse(localStorage.getItem('learnApp_offlineQueue') || '[]');
     if (queue.length === 0) return;
-    
-    const remaining = [];
+
+    const unSynced = [];
     for (const item of queue) {
         try {
-            await fetch(AppState.gasEndpoint, {
+            await fetch(AppConfig.gasEndpoint, {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(item)
             });
-        } catch (err) {
-            remaining.push(item);
+        } catch {
+            unSynced.push(item);
         }
     }
-    localStorage.setItem('offlineScoreQueue', JSON.stringify(remaining));
+    localStorage.setItem('learnApp_offlineQueue', JSON.stringify(unSynced));
 }
 
 // ==========================================
-// 8. LEADERBOARD SYSTEM
+// 9. LEADERBOARD SYSTEM
 // ==========================================
 
-async function showLeaderboard() {
-    showScreen('leaderboard');
-    if (!UI.leaderboardTable) return;
-    
-    UI.leaderboardTable.innerHTML = '<tr><td colspan="4" style="text-align:center;">Loading scores...</td></tr>';
-    
+async function showScoreboard() {
+    switchScreen('scoreboard');
+    if (!DOM.scoreboardBody) return;
+
+    DOM.scoreboardBody.innerHTML = '<tr><td colspan="9" style="padding:40px; text-align:center; color: #64748b;">Loading scores...</td></tr>';
+
     try {
-        const response = await fetch(`${AppState.gasEndpoint}?action=getScores`);
-        const data = await response.json();
-        
-        UI.leaderboardTable.innerHTML = '';
-        if (Array.isArray(data) && data.length > 0) {
-            data.forEach((entry, idx) => {
-                UI.leaderboardTable.innerHTML += `
-                    <tr>
-                        <td>${idx + 1}</td>
-                        <td>${entry.studentId || 'Guest'}</td>
-                        <td>${entry.school || 'General'}</td>
-                        <td><strong>${entry.score || 0}</strong></td>
+        const res = await fetch(`${AppConfig.gasEndpoint}?action=getScores`);
+        const scores = await res.json();
+
+        DOM.scoreboardBody.innerHTML = '';
+        if (Array.isArray(scores) && scores.length > 0) {
+            scores.forEach((entry, idx) => {
+                const dateStr = entry.completedAt ? entry.completedAt.split('T')[0] : 'Recent';
+                const chapterClean = entry.chapter ? entry.chapter.split('/').pop().replace('.json', '') : 'Module';
+
+                DOM.scoreboardBody.innerHTML += `
+                    <tr style="border-bottom: 1px solid #f1f5f9; text-align: center;">
+                        <td style="padding: 12px;"><strong>#${idx + 1}</strong></td>
+                        <td style="padding: 12px; font-size:12px; color:#64748b;">${dateStr}</td>
+                        <td style="padding: 12px; font-weight:600;">${entry.studentId || 'Guest'}</td>
+                        <td style="padding: 12px;">${entry.class || '-'}</td>
+                        <td style="padding: 12px;">${entry.subject || '-'}</td>
+                        <td style="padding: 12px;">${chapterClean}</td>
+                        <td style="padding: 12px;"><span style="background:#eff6ff; color:#1d4ed8; padding:3px 8px; border-radius:4px; font-size:11px; font-weight:600;">LEARNING</span></td>
+                        <td style="padding: 12px; font-weight:700; color:#16a34a;">${entry.score || 0}</td>
+                        <td style="padding: 12px; font-family:monospace;">${entry.time || '--:--'}</td>
                     </tr>
                 `;
             });
         } else {
-            UI.leaderboardTable.innerHTML = '<tr><td colspan="4" style="text-align:center;">No scores found.</td></tr>';
+            DOM.scoreboardBody.innerHTML = '<tr><td colspan="9" style="padding:40px; text-align:center; color: #64748b;">No scoreboard records found.</td></tr>';
         }
-    } catch (error) {
-        console.error("Leaderboard fetch error:", error);
-        UI.leaderboardTable.innerHTML = '<tr><td colspan="4" style="text-align:center; color:#ef4444;">Failed to load leaderboard.</td></tr>';
+    } catch (err) {
+        console.error("Scoreboard Fetch Error:", err);
+        DOM.scoreboardBody.innerHTML = '<tr><td colspan="9" style="padding:40px; text-align:center; color: #ef4444;">Failed to retrieve online scoreboard.</td></tr>';
     }
 }
