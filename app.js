@@ -1,6 +1,6 @@
 /**
  * Learn-App Core Logic (app.js)
- * Fully Integrated with Restored Question Grid & Marks Badges
+ * Fully Aligned with index.html DOM IDs & Original Google Apps Script Backend
  */
 
 const AppConfig = {
@@ -15,15 +15,19 @@ const AppState = {
     selectedClass: '',
     selectedSubject: '',
     selectedQuizPath: '',
+    chapterTitleString: '',
     units: [],
     currentUnitIndex: 0,
     assembly: [],
     score: 0,
-    unitProgress: {}, // Tracks per-unit status: { [index]: { attempted: bool, enSolved: bool, hiSolved: bool, marks: number } }
+    maxScore: 0,
+    unitProgress: {}, 
     studentName: '',
     schoolName: '',
     timerSeconds: 0,
-    timerInterval: null
+    timerInterval: null,
+    scoreboardData: [],
+    sortConfig: { key: 'date', asc: false }
 };
 
 // 1-to-1 Mapping to index.html DOM IDs
@@ -82,6 +86,7 @@ const DOM = {
     homeBtn: document.getElementById('homeBtn'),
 
     backFromScoreboard: document.getElementById('backFromScoreboard'),
+    leaderboardHeaders: document.getElementById('leaderboardHeaders'),
     scoreboardBody: document.getElementById('scoreboardBody')
 };
 
@@ -96,13 +101,26 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function bindGlobalEvents() {
-    DOM.topHomeBtn?.addEventListener('click', () => switchScreen('upload'));
+    DOM.topHomeBtn?.addEventListener('click', resetToMainMenu);
+    DOM.homeBtn?.addEventListener('click', resetToMainMenu);
     DOM.topQuitBtn?.addEventListener('click', finishModule);
-    DOM.homeBtn?.addEventListener('click', () => switchScreen('upload'));
     DOM.retakeBtn?.addEventListener('click', restartCurrentModule);
-    DOM.viewScoreboardBtn?.addEventListener('click', showScoreboard);
-    DOM.viewScoreboardFromResults?.addEventListener('click', showScoreboard);
-    DOM.backFromScoreboard?.addEventListener('click', () => switchScreen('upload'));
+    
+    const showScore = () => { switchScreen('scoreboard'); fetchScoreboard(); };
+    DOM.viewScoreboardBtn?.addEventListener('click', showScore);
+    DOM.viewScoreboardFromResults?.addEventListener('click', showScore);
+    
+    DOM.backFromScoreboard?.addEventListener('click', () => {
+        if (AppState.units.length > 0) switchScreen('quiz');
+        else switchScreen('upload');
+    });
+
+    if (DOM.leaderboardHeaders) {
+        DOM.leaderboardHeaders.addEventListener('click', (e) => {
+            const th = e.target.closest('th');
+            if (th && th.dataset.sort) sortScoreboard(th.dataset.sort);
+        });
+    }
 
     DOM.classSelect?.addEventListener('change', handleClassChange);
     DOM.subjectSelect?.addEventListener('change', handleSubjectChange);
@@ -124,6 +142,20 @@ function switchScreen(screenKey) {
     if (DOM.screens[screenKey]) {
         DOM.screens[screenKey].classList.add('active');
     }
+}
+
+function resetToMainMenu() {
+    stopTimer();
+    AppState.units = [];
+    AppState.selectedQuizPath = '';
+    AppState.currentUnitIndex = 0;
+    AppState.score = 0;
+    
+    if (DOM.quizList) {
+        document.querySelectorAll('.quiz-select-btn').forEach(b => b.classList.remove('selected'));
+    }
+    validateStartReady();
+    switchScreen('upload');
 }
 
 function toggleSpinner(show) {
@@ -148,7 +180,7 @@ async function scanRepositoryTree() {
 
     try {
         const url = `https://api.github.com/repos/${AppConfig.githubRepo}/git/trees/${AppConfig.branch}?recursive=1`;
-        const res = await fetch(url);
+        const res = await fetch(url, { cache: 'no-cache' });
         
         if (!res.ok) throw new Error(`GitHub Tree API status: ${res.status}`);
         
@@ -159,10 +191,10 @@ async function scanRepositoryTree() {
             if (node.type === 'blob' && node.path.startsWith('jsons/') && node.path.endsWith('.json')) {
                 const segments = node.path.split('/');
                 if (segments.length === 4) {
-                    const cls = segments[1];
-                    const subj = segments[2];
+                    const cls = cleanTitleFormat(segments[1]);
+                    const subj = cleanTitleFormat(segments[2]);
                     const fileName = segments[3];
-                    const title = fileName.replace('.json', '').replace(/[-_]/g, ' ');
+                    const title = cleanTitleFormat(fileName.replace('.json', ''));
 
                     if (!catalog[cls]) catalog[cls] = {};
                     if (!catalog[cls][subj]) catalog[cls][subj] = [];
@@ -187,6 +219,10 @@ async function scanRepositoryTree() {
     } finally {
         toggleSpinner(false);
     }
+}
+
+function cleanTitleFormat(str) {
+    return str.replace(/_/g, ' ').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 }
 
 function populateClassDropdown() {
@@ -226,7 +262,7 @@ function handleClassChange() {
     }
 
     if (DOM.lessonGroup) DOM.lessonGroup.style.display = 'none';
-    if (DOM.startQuiz) DOM.startQuiz.disabled = true;
+    validateStartReady();
 }
 
 function handleSubjectChange() {
@@ -240,10 +276,9 @@ function handleSubjectChange() {
         const quizzes = AppState.repoCatalog[AppState.selectedClass][AppState.selectedSubject] || [];
         
         quizzes.forEach(quiz => {
-            const btn = document.createElement('button');
-            btn.type = 'button';
+            const btn = document.createElement('div');
             btn.className = 'quiz-select-btn';
-            btn.innerText = quiz.title;
+            btn.innerText = `📂 ${quiz.title}`;
 
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.quiz-select-btn').forEach(b => b.classList.remove('selected'));
@@ -259,17 +294,20 @@ function handleSubjectChange() {
     } else {
         if (DOM.lessonGroup) DOM.lessonGroup.style.display = 'none';
     }
+    validateStartReady();
 }
 
 function validateStartReady() {
     const nameValid = DOM.studentName?.value.trim().length > 0;
-    const pathValid = AppState.selectedQuizPath.length > 0;
+    const schoolValid = DOM.schoolName?.value.trim().length > 0;
+    const pathValid = AppState.selectedQuizPath && AppState.selectedQuizPath.length > 0;
     if (DOM.startQuiz) {
-        DOM.startQuiz.disabled = !(nameValid && pathValid);
+        DOM.startQuiz.disabled = !(nameValid && schoolValid && pathValid);
     }
 }
 
 DOM.studentName?.addEventListener('input', validateStartReady);
+DOM.schoolName?.addEventListener('input', validateStartReady);
 
 // ==========================================
 // 3. QUIZ INITIALIZATION & PARSING
@@ -277,7 +315,7 @@ DOM.studentName?.addEventListener('input', validateStartReady);
 
 async function handleStartQuiz() {
     AppState.studentName = DOM.studentName.value.trim();
-    AppState.schoolName = DOM.schoolName?.value.trim() || 'General';
+    AppState.schoolName = DOM.schoolName.value.trim();
 
     toggleSpinner(true);
     const cacheKey = `learnApp_file_${AppState.selectedQuizPath}`;
@@ -320,7 +358,11 @@ function setupQuizFromData(data) {
         return;
     }
 
-    // Initialize unit states
+    // Dynamic dual-language max score calculation
+    const masteryPerUnit = data.metadata?.scoring_model?.dual_language_mastery_max || 20;
+    AppState.maxScore = AppState.units.length * masteryPerUnit;
+    AppState.chapterTitleString = data.metadata?.chapter_title?.en || "Learning Module";
+
     AppState.units.forEach((_, idx) => {
         AppState.unitProgress[idx] = {
             attempted: false,
@@ -336,7 +378,7 @@ function setupQuizFromData(data) {
     if (DOM.displayStudentName) DOM.displayStudentName.innerText = `👤 ${AppState.studentName}`;
     if (DOM.displaySchoolInfo) DOM.displaySchoolInfo.innerText = `${AppState.selectedClass} •${AppState.selectedSubject}`;
     if (DOM.totalUnitsNum) DOM.totalUnitsNum.innerText = AppState.units.length;
-    if (DOM.maxScore) DOM.maxScore.innerText = AppState.units.length * 10;
+    if (DOM.maxScore) DOM.maxScore.innerText = AppState.maxScore;
     if (DOM.masteryScore) DOM.masteryScore.innerText = 0;
 
     startTimer();
@@ -388,8 +430,8 @@ function renderUnitGrid() {
         div.dataset.index = idx;
         
         div.innerHTML = `
-            <span class="q-number">${idx + 1}</span>
-            <span class="marks" id="marks-${idx}">0</span>
+            <div class="q-number">${idx + 1}</div>
+            <div class="marks" id="marks-${idx}">0</div>
         `;
 
         div.addEventListener('click', () => {
@@ -410,7 +452,9 @@ function updateUnitGridStatus() {
 
         node.className = 'question-number';
         
-        if (p.marks >= 10) {
+        if (p.marks >= 20) {
+            node.classList.add('correct');
+        } else if (p.marks >= 10) {
             node.classList.add('correct');
         } else if (p.attempted) {
             node.classList.add('attempted');
@@ -424,6 +468,20 @@ function updateUnitGridStatus() {
             marksEl.innerText = p.marks > 0 ? `+${p.marks}` : '0';
         }
     });
+
+    updateLanguageButtonsStatus();
+}
+
+function updateLanguageButtonsStatus() {
+    const p = AppState.unitProgress[AppState.currentUnitIndex];
+    if (!p) return;
+
+    if (DOM.btnEn) {
+        DOM.btnEn.innerText = p.enSolved ? "English ✅ [10 pts]" : "English [10 pts]";
+    }
+    if (DOM.btnHi) {
+        DOM.btnHi.innerText = p.hiSolved ? "हिंदी ✅ [10 pts]" : "हिंदी [10 pts]";
+    }
 }
 
 // ==========================================
@@ -497,7 +555,6 @@ function renderCurrentUnit() {
         DOM.feedbackBanner.innerHTML = '';
     }
 
-    // Check if current language track was already mastered
     const currentProgress = AppState.unitProgress[AppState.currentUnitIndex];
     const isAlreadySolved = (lang === 'en' && currentProgress.enSolved) || (lang === 'hi' && currentProgress.hiSolved);
 
@@ -534,7 +591,6 @@ function buildFragmentPool(challenge, isLocked = false) {
     DOM.fragmentBank.innerHTML = '';
 
     if (isLocked) {
-        // Render target sequence in placed order
         challenge.target_sequence.forEach(frag => {
             const chip = document.createElement('div');
             chip.className = 'fragment-chip';
@@ -578,7 +634,6 @@ function buildFragmentPool(challenge, isLocked = false) {
 function toggleChipPlacement(chip) {
     if (DOM.targetZone.classList.contains('success-locked')) return;
 
-    // Mark as attempted in progress grid
     AppState.unitProgress[AppState.currentUnitIndex].attempted = true;
     updateUnitGridStatus();
 
@@ -651,7 +706,6 @@ function verifyAssembly() {
 
     p.attempted = true;
 
-    // Check for distractor penalties
     const distractorHit = AppState.assembly.find(f => f.category === 'logical' || f.category === 'grammatical');
     if (distractorHit) {
         renderFeedback(`❌ ${formatMarkup(distractorHit.penalty_explanation)}`, '#ef4444', '#fef2f2');
@@ -659,7 +713,6 @@ function verifyAssembly() {
         return;
     }
 
-    // Sequence too short: provide contextual role hint
     if (AppState.assembly.length < targetSeq.length) {
         const nextTarget = targetSeq[AppState.assembly.length];
         const hintMsg = nextTarget.role_hint?.[lang] || nextTarget.role_hint?.en || nextTarget.role_hint;
@@ -668,7 +721,6 @@ function verifyAssembly() {
         return;
     }
 
-    // Sequence verification
     let correct = true;
     for (let i = 0; i < targetSeq.length; i++) {
         if (AppState.assembly[i].id !== targetSeq[i].id) {
@@ -685,7 +737,6 @@ function verifyAssembly() {
         DOM.btnSubmit.disabled = true;
         DOM.nextBtn.disabled = false;
 
-        // Score tracking per track
         if (lang === 'en' && !p.enSolved) {
             p.enSolved = true;
             p.marks += 10;
@@ -734,32 +785,35 @@ function handlePrevUnit() {
 }
 
 // ==========================================
-// 8. MODULE COMPLETION & SYNC
+// 8. MODULE COMPLETION & SYNC (MATCHING OLD SCHEMA)
 // ==========================================
 
 function finishModule() {
     stopTimer();
     switchScreen('results');
 
-    const totalPossible = AppState.units.length * 10;
+    const totalPossible = AppState.maxScore;
     const percentage = totalPossible > 0 ? Math.round((AppState.score / totalPossible) * 100) : 0;
     const mins = String(Math.floor(AppState.timerSeconds / 60)).padStart(2, '0');
     const secs = String(AppState.timerSeconds % 60).padStart(2, '0');
+    const timeFormatted = `${mins}:${secs}`;
 
     if (DOM.finalScore) DOM.finalScore.innerText = AppState.score;
     if (DOM.totalPossible) DOM.totalPossible.innerText = totalPossible;
     if (DOM.percentage) DOM.percentage.innerText = `${percentage}%`;
-    if (DOM.totalTime) DOM.totalTime.innerText = `${mins}:${secs}`;
+    if (DOM.totalTime) DOM.totalTime.innerText = timeFormatted;
 
+    // Payload formatted to match Google Apps Script
     const scorePayload = {
-        studentId: AppState.studentName,
-        school: AppState.schoolName,
+        action: 'submit',
+        studentName: AppState.studentName,
+        schoolName: AppState.schoolName,
         class: AppState.selectedClass,
         subject: AppState.selectedSubject,
-        chapter: AppState.selectedQuizPath,
-        score: AppState.score,
-        time: `${mins}:${secs}`,
-        completedAt: new Date().toISOString()
+        lesson: AppState.chapterTitleString,
+        mode: 'LEARNING',
+        score: `${AppState.score}/${totalPossible}`,
+        timeTaken: `'${timeFormatted}`
     };
 
     transmitScore(scorePayload);
@@ -770,7 +824,6 @@ async function transmitScore(payload) {
         await fetch(AppConfig.gasEndpoint, {
             method: 'POST',
             mode: 'no-cors',
-            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
         });
     } catch (err) {
@@ -791,7 +844,6 @@ async function syncOfflineScores() {
             await fetch(AppConfig.gasEndpoint, {
                 method: 'POST',
                 mode: 'no-cors',
-                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(item)
             });
         } catch {
@@ -802,44 +854,87 @@ async function syncOfflineScores() {
 }
 
 // ==========================================
-// 9. LEADERBOARD SYSTEM
+// 9. LEADERBOARD SYSTEM (MATCHING ORIGINAL CODE)
 // ==========================================
 
-async function showScoreboard() {
-    switchScreen('scoreboard');
+async function fetchScoreboard() {
     if (!DOM.scoreboardBody) return;
-
-    DOM.scoreboardBody.innerHTML = '<tr><td colspan="9" style="padding:40px; text-align:center; color: #64748b;">Loading scores...</td></tr>';
-
+    DOM.scoreboardBody.innerHTML = '<tr><td colspan="9" style="padding:40px; text-align:center;">Syncing...</td></tr>';
+    
     try {
-        const res = await fetch(`${AppConfig.gasEndpoint}?action=getScores`);
-        const scores = await res.json();
-
-        DOM.scoreboardBody.innerHTML = '';
-        if (Array.isArray(scores) && scores.length > 0) {
-            scores.forEach((entry, idx) => {
-                const dateStr = entry.completedAt ? entry.completedAt.split('T')[0] : 'Recent';
-                const chapterClean = entry.chapter ? entry.chapter.split('/').pop().replace('.json', '') : 'Module';
-
-                DOM.scoreboardBody.innerHTML += `
-                    <tr style="border-bottom: 1px solid #f1f5f9; text-align: center;">
-                        <td style="padding: 12px;"><strong>#${idx + 1}</strong></td>
-                        <td style="padding: 12px; font-size:12px; color:#64748b;">${dateStr}</td>
-                        <td style="padding: 12px; font-weight:600;">${entry.studentId || 'Guest'}</td>
-                        <td style="padding: 12px;">${entry.class || '-'}</td>
-                        <td style="padding: 12px;">${entry.subject || '-'}</td>
-                        <td style="padding: 12px;">${chapterClean}</td>
-                        <td style="padding: 12px;"><span style="background:#eff6ff; color:#1d4ed8; padding:3px 8px; border-radius:4px; font-size:11px; font-weight:600;">LEARNING</span></td>
-                        <td style="padding: 12px; font-weight:700; color:#16a34a;">${entry.score || 0}</td>
-                        <td style="padding: 12px; font-family:monospace;">${entry.time || '--:--'}</td>
-                    </tr>
-                `;
-            });
-        } else {
-            DOM.scoreboardBody.innerHTML = '<tr><td colspan="9" style="padding:40px; text-align:center; color: #64748b;">No scoreboard records found.</td></tr>';
-        }
-    } catch (err) {
-        console.error("Scoreboard Fetch Error:", err);
-        DOM.scoreboardBody.innerHTML = '<tr><td colspan="9" style="padding:40px; text-align:center; color: #ef4444;">Failed to retrieve online scoreboard.</td></tr>';
+        // Matches exact query: ?action=get&t=Date.now()
+        const r = await fetch(`${AppConfig.gasEndpoint}?action=get&t=${Date.now()}`);
+        AppState.scoreboardData = await r.json();
+        sortScoreboard('date');
+    } catch (e) {
+        console.error("Scoreboard fetch error:", e);
+        DOM.scoreboardBody.innerHTML = '<tr><td colspan="9" style="color:#ef4444; padding:40px; text-align:center;">Server Error.</td></tr>';
     }
+}
+
+function cleanEfficiency(s) {
+    let raw = String(s || '').replace('⏱️', '').replace("'", "").trim();
+    if (raw.includes('T')) raw = raw.split('T')[1].split('.')[0];
+    if (raw.startsWith('00:')) raw = raw.substring(3);
+    return raw || '0:00';
+}
+
+function sortScoreboard(key) {
+    if (AppState.sortConfig.key === key) {
+        AppState.sortConfig.asc = !AppState.sortConfig.asc;
+    } else {
+        AppState.sortConfig.key = key;
+        AppState.sortConfig.asc = (key === 'student' || key === 'class');
+    }
+    
+    const headers = document.querySelectorAll('#leaderboardHeaders th');
+    headers.forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
+    const active = document.querySelector(`#leaderboardHeaders th[data-sort="${key}"]`);
+    if (active) active.classList.add(AppState.sortConfig.asc ? 'sort-asc' : 'sort-desc');
+
+    const data = [...AppState.scoreboardData];
+    data.sort((a, b) => {
+        let vA, vB;
+        switch (key) {
+            case 'rank': 
+            case 'score': 
+                vA = parseFloat(String(a[7] || '').split('/')[0]) || 0; 
+                vB = parseFloat(String(b[7] || '').split('/')[0]) || 0; 
+                break;
+            case 'date': 
+                vA = new Date(a[0]); 
+                vB = new Date(b[0]); 
+                break;
+            case 'student': vA = String(a[1]).toLowerCase(); vB = String(b[1]).toLowerCase(); break;
+            case 'class': vA = String(a[3]).toLowerCase(); vB = String(b[3]).toLowerCase(); break;
+            case 'subject': vA = String(a[4]).toLowerCase(); vB = String(b[4]).toLowerCase(); break;
+            case 'chapter': vA = String(a[5]).toLowerCase(); vB = String(b[5]).toLowerCase(); break;
+            case 'mode': vA = String(a[6]).toLowerCase(); vB = String(b[6]).toLowerCase(); break;
+            case 'efficiency': 
+                const toSecs = (s) => {
+                    const clean = cleanEfficiency(s);
+                    const p = clean.split(':').map(Number);
+                    return p.length === 3 ? p[0]*3600 + p[1]*60 + p[2] : (p.length === 2 ? p[0]*60 + p[1] : parseFloat(clean) || 0);
+                };
+                vA = toSecs(a[8]); vB = toSecs(b[8]); break;
+            default: vA = 0; vB = 0;
+        }
+        if (vA < vB) return AppState.sortConfig.asc ? -1 : 1;
+        if (vA > vB) return AppState.sortConfig.asc ? 1 : -1;
+        return 0;
+    });
+
+    DOM.scoreboardBody.innerHTML = data.slice(0, 50).map((r, i) => `
+        <tr>
+            <td style="padding:15px; font-weight:bold;">${i+1}</td>
+            <td style="padding:15px; font-size:11px;">${r[0] ? new Date(r[0]).toLocaleDateString('en-IN', {day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit'}) : '-'}</td>
+            <td style="padding:15px;"><strong>${r[1]}</strong><br><small style="color:#64748b;">${r[2]}</small></td>
+            <td style="padding:15px; font-size:12px;">${r[3]}</td>
+            <td style="padding:15px; font-size:12px;">${r[4]}</td>
+            <td style="padding:15px; font-size:12px;">${r[5]}</td>
+            <td style="padding:15px;"><span style="background:#eff6ff; color:#1d4ed8; padding:3px 8px; border-radius:4px; font-size:11px; font-weight:600;">${r[6]}</span></td>
+            <td style="padding:15px; font-weight:800; color:#2563eb;">${r[7]}</td>
+            <td style="padding:15px; font-size:12px;">⏱️ ${cleanEfficiency(r[8])}</td>
+        </tr>
+    `).join('');
 }
