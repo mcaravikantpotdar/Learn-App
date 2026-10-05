@@ -1,15 +1,6 @@
 /**
  * Learn-App Core Logic (app.js)
- * Fully Aligned with index.html DOM IDs
- * Features:
- * - Dynamic Recursive Git Tree Scanner (jsons/Class/Subject/Chapter.json)
- * - Session-cached GitHub queries to respect rate limits
- * - Cascading Selectors (Class -> Subject -> Lesson)
- * - KaTeX Math & Inline Code Rendering
- * - Bilingual Fragment Assembly with Drag & Drop + Click Fallback
- * - Timer, Progress Bar, Mastery Points, and Results Screen
- * - Google Apps Script Online Submission + Offline LocalQueue Fallback
- * - Global Leaderboard with Sorting
+ * Fully Integrated with Restored Question Grid & Marks Badges
  */
 
 const AppConfig = {
@@ -20,7 +11,7 @@ const AppConfig = {
 
 const AppState = {
     currentLang: 'en',
-    repoCatalog: {}, // { [class]: { [subject]: [ { title, path } ] } }
+    repoCatalog: {}, 
     selectedClass: '',
     selectedSubject: '',
     selectedQuizPath: '',
@@ -28,15 +19,15 @@ const AppState = {
     currentUnitIndex: 0,
     assembly: [],
     score: 0,
+    unitProgress: {}, // Tracks per-unit status: { [index]: { attempted: bool, enSolved: bool, hiSolved: bool, marks: number } }
     studentName: '',
     schoolName: '',
     timerSeconds: 0,
     timerInterval: null
 };
 
-// Direct 1-to-1 Mapping to your index.html IDs
+// 1-to-1 Mapping to index.html DOM IDs
 const DOM = {
-    // Screens
     screens: {
         upload: document.getElementById('uploadScreen'),
         quiz: document.getElementById('quizScreen'),
@@ -46,7 +37,6 @@ const DOM = {
     spinner: document.getElementById('loadingSpinner'),
     errorMessage: document.getElementById('errorMessage'),
 
-    // Screen 1: Discovery & Registration
     studentName: document.getElementById('studentName'),
     schoolName: document.getElementById('schoolName'),
     classSelect: document.getElementById('classSelect'),
@@ -57,7 +47,6 @@ const DOM = {
     startQuiz: document.getElementById('startQuiz'),
     viewScoreboardBtn: document.getElementById('viewScoreboardBtn'),
 
-    // Screen 2: Workbench
     topHomeBtn: document.getElementById('topHomeBtn'),
     topQuitBtn: document.getElementById('topQuitBtn'),
     chapterTitle: document.getElementById('chapterTitle'),
@@ -84,7 +73,6 @@ const DOM = {
     btnSubmit: document.getElementById('btn-submit'),
     nextBtn: document.getElementById('nextBtn'),
 
-    // Screen 3: Results
     finalScore: document.getElementById('finalScore'),
     totalPossible: document.getElementById('totalPossible'),
     percentage: document.getElementById('percentage'),
@@ -93,7 +81,6 @@ const DOM = {
     viewScoreboardFromResults: document.getElementById('viewScoreboardFromResults'),
     homeBtn: document.getElementById('homeBtn'),
 
-    // Screen 4: Scoreboard
     backFromScoreboard: document.getElementById('backFromScoreboard'),
     scoreboardBody: document.getElementById('scoreboardBody')
 };
@@ -326,11 +313,22 @@ function setupQuizFromData(data) {
     AppState.currentUnitIndex = 0;
     AppState.score = 0;
     AppState.timerSeconds = 0;
+    AppState.unitProgress = {};
 
     if (!AppState.units.length) {
         alert("This module does not contain any valid learning units.");
         return;
     }
+
+    // Initialize unit states
+    AppState.units.forEach((_, idx) => {
+        AppState.unitProgress[idx] = {
+            attempted: false,
+            enSolved: false,
+            hiSolved: false,
+            marks: 0
+        };
+    });
 
     if (DOM.chapterTitle) {
         DOM.chapterTitle.innerText = data.metadata?.chapter_title?.[AppState.currentLang] || data.metadata?.chapter_title?.en || "Learning Module";
@@ -351,6 +349,10 @@ function restartCurrentModule() {
     AppState.currentUnitIndex = 0;
     AppState.score = 0;
     AppState.timerSeconds = 0;
+    AppState.unitProgress = {};
+    AppState.units.forEach((_, idx) => {
+        AppState.unitProgress[idx] = { attempted: false, enSolved: false, hiSolved: false, marks: 0 };
+    });
     if (DOM.masteryScore) DOM.masteryScore.innerText = 0;
     startTimer();
     renderUnitGrid();
@@ -359,7 +361,7 @@ function restartCurrentModule() {
 }
 
 // ==========================================
-// 4. TIMER & GRID SYSTEM
+// 4. TIMER & QUESTION GRID (WITH MARKS)
 // ==========================================
 
 function startTimer() {
@@ -381,24 +383,46 @@ function renderUnitGrid() {
     DOM.unitGrid.innerHTML = '';
 
     AppState.units.forEach((_, idx) => {
-        const cell = document.createElement('div');
-        cell.className = 'unit-indicator';
-        cell.dataset.index = idx;
-        cell.innerText = idx + 1;
+        const div = document.createElement('div');
+        div.className = 'question-number';
+        div.dataset.index = idx;
+        
+        div.innerHTML = `
+            <span class="q-number">${idx + 1}</span>
+            <span class="marks" id="marks-${idx}">0</span>
+        `;
 
-        cell.addEventListener('click', () => {
+        div.addEventListener('click', () => {
             AppState.currentUnitIndex = idx;
             renderCurrentUnit();
         });
 
-        DOM.unitGrid.appendChild(cell);
+        DOM.unitGrid.appendChild(div);
     });
 }
 
 function updateUnitGridStatus() {
-    document.querySelectorAll('.unit-indicator').forEach(node => {
-        const idx = parseInt(node.dataset.index, 10);
-        node.classList.toggle('current', idx === AppState.currentUnitIndex);
+    AppState.units.forEach((_, idx) => {
+        const node = document.querySelector(`.question-number[data-index="${idx}"]`);
+        const marksEl = document.getElementById(`marks-${idx}`);
+        const p = AppState.unitProgress[idx];
+        if (!node) return;
+
+        node.className = 'question-number';
+        
+        if (p.marks >= 10) {
+            node.classList.add('correct');
+        } else if (p.attempted) {
+            node.classList.add('attempted');
+        }
+
+        if (idx === AppState.currentUnitIndex) {
+            node.classList.add('current');
+        }
+
+        if (marksEl) {
+            marksEl.innerText = p.marks > 0 ? `+${p.marks}` : '0';
+        }
     });
 }
 
@@ -473,16 +497,25 @@ function renderCurrentUnit() {
         DOM.feedbackBanner.innerHTML = '';
     }
 
+    // Check if current language track was already mastered
+    const currentProgress = AppState.unitProgress[AppState.currentUnitIndex];
+    const isAlreadySolved = (lang === 'en' && currentProgress.enSolved) || (lang === 'hi' && currentProgress.hiSolved);
+
     if (DOM.targetZone) {
-        DOM.targetZone.classList.remove('success-locked');
-        DOM.targetZone.style.pointerEvents = 'auto';
+        if (isAlreadySolved) {
+            DOM.targetZone.classList.add('success-locked');
+            DOM.targetZone.style.pointerEvents = 'none';
+        } else {
+            DOM.targetZone.classList.remove('success-locked');
+            DOM.targetZone.style.pointerEvents = 'auto';
+        }
     }
 
-    if (DOM.btnSubmit) DOM.btnSubmit.disabled = true;
-    if (DOM.nextBtn) DOM.nextBtn.disabled = true;
+    if (DOM.btnSubmit) DOM.btnSubmit.disabled = isAlreadySolved;
+    if (DOM.nextBtn) DOM.nextBtn.disabled = !isAlreadySolved;
     if (DOM.prevBtn) DOM.prevBtn.disabled = (AppState.currentUnitIndex === 0);
 
-    buildFragmentPool(challenge);
+    buildFragmentPool(challenge, isAlreadySolved);
     updateUnitGridStatus();
     applyKaTeX();
 }
@@ -493,12 +526,25 @@ function renderCurrentUnit() {
 
 let activeDraggedItem = null;
 
-function buildFragmentPool(challenge) {
+function buildFragmentPool(challenge, isLocked = false) {
     AppState.assembly = [];
     if (!DOM.targetZone || !DOM.fragmentBank) return;
 
     DOM.targetZone.innerHTML = '';
     DOM.fragmentBank.innerHTML = '';
+
+    if (isLocked) {
+        // Render target sequence in placed order
+        challenge.target_sequence.forEach(frag => {
+            const chip = document.createElement('div');
+            chip.className = 'fragment-chip';
+            chip.dataset.id = frag.id;
+            chip.innerHTML = formatMarkup(frag.text);
+            chip.fragRef = frag;
+            DOM.targetZone.appendChild(chip);
+        });
+        return;
+    }
 
     let fragments = [...challenge.target_sequence];
     if (challenge.distractors) {
@@ -518,10 +564,7 @@ function buildFragmentPool(challenge) {
         chip.innerHTML = formatMarkup(frag.text);
         chip.fragRef = frag;
 
-        // Click-to-toggle
         chip.addEventListener('click', () => toggleChipPlacement(chip));
-
-        // Drag-and-drop
         chip.draggable = true;
         chip.addEventListener('dragstart', handleDragStart);
         chip.addEventListener('dragend', handleDragEnd);
@@ -534,6 +577,10 @@ function buildFragmentPool(challenge) {
 
 function toggleChipPlacement(chip) {
     if (DOM.targetZone.classList.contains('success-locked')) return;
+
+    // Mark as attempted in progress grid
+    AppState.unitProgress[AppState.currentUnitIndex].attempted = true;
+    updateUnitGridStatus();
 
     if (chip.parentElement === DOM.fragmentBank) {
         DOM.targetZone.appendChild(chip);
@@ -597,21 +644,27 @@ function syncAssemblyFromDOM() {
 
 function verifyAssembly() {
     const unit = AppState.units[AppState.currentUnitIndex];
-    const challenge = unit.challenges[AppState.currentLang] || unit.challenges.en;
+    const lang = AppState.currentLang;
+    const challenge = unit.challenges[lang] || unit.challenges.en;
     const targetSeq = challenge.target_sequence;
+    const p = AppState.unitProgress[AppState.currentUnitIndex];
+
+    p.attempted = true;
 
     // Check for distractor penalties
     const distractorHit = AppState.assembly.find(f => f.category === 'logical' || f.category === 'grammatical');
     if (distractorHit) {
         renderFeedback(`❌ ${formatMarkup(distractorHit.penalty_explanation)}`, '#ef4444', '#fef2f2');
+        updateUnitGridStatus();
         return;
     }
 
     // Sequence too short: provide contextual role hint
     if (AppState.assembly.length < targetSeq.length) {
         const nextTarget = targetSeq[AppState.assembly.length];
-        const hintMsg = nextTarget.role_hint?.[AppState.currentLang] || nextTarget.role_hint?.en || nextTarget.role_hint;
+        const hintMsg = nextTarget.role_hint?.[lang] || nextTarget.role_hint?.en || nextTarget.role_hint;
         renderFeedback(`💡 <strong>Next Step Hint:</strong> ${formatMarkup(hintMsg)}`, '#0284c7', '#f0f9ff');
+        updateUnitGridStatus();
         return;
     }
 
@@ -625,22 +678,29 @@ function verifyAssembly() {
     }
 
     if (correct) {
-        const takeaway = unit.key_takeaway?.[AppState.currentLang] || unit.key_takeaway?.en || "Great work!";
+        const takeaway = unit.key_takeaway?.[lang] || unit.key_takeaway?.en || "Great work!";
         renderFeedback(`✅ <strong>Mastered!</strong><br><br>${formatMarkup(takeaway)}`, '#15803d', '#f0fdf4');
         
         DOM.targetZone.classList.add('success-locked');
         DOM.btnSubmit.disabled = true;
         DOM.nextBtn.disabled = false;
 
-        AppState.score += 10;
-        if (DOM.masteryScore) DOM.masteryScore.innerText = AppState.score;
-
-        const gridNode = document.querySelector(`.unit-indicator[data-index="${AppState.currentUnitIndex}"]`);
-        if (gridNode) {
-            gridNode.classList.add('correct');
+        // Score tracking per track
+        if (lang === 'en' && !p.enSolved) {
+            p.enSolved = true;
+            p.marks += 10;
+            AppState.score += 10;
+        } else if (lang === 'hi' && !p.hiSolved) {
+            p.hiSolved = true;
+            p.marks += 10;
+            AppState.score += 10;
         }
+
+        if (DOM.masteryScore) DOM.masteryScore.innerText = AppState.score;
+        updateUnitGridStatus();
     } else {
         renderFeedback(`❌ Incorrect arrangement. Reorder the fragments and verify again.`, '#ef4444', '#fef2f2');
+        updateUnitGridStatus();
     }
 }
 
