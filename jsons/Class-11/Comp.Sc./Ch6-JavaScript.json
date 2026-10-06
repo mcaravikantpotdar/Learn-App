@@ -1,0 +1,2178 @@
+{
+  "chapter_id": "ch06_advanced_web_publishing_javascript",
+  "metadata": {
+    "class": "Class 11",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Advanced Web Publishing using JavaScript",
+      "hi": "जावास्क्रिप्ट का उपयोग करके उन्नत वेब प्रकाशन"
+    },
+    "total_units": 20,
+    "scoring_model": {
+      "single_language_max": 10,
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "unit_id": "u01_computer_networking_essentials",
+      "topic": "Computer Networking Concepts, Benefits & Trade-offs",
+      "pedagogical_objective": "Define computer networking, hardware/software resource sharing, communication facilities, and inherent security/reliability trade-offs.",
+      "instruction": {
+        "title": {
+          "en": "Computer Networking Essentials",
+          "hi": "कंप्यूटर नेटवर्किंग के मूल सिद्धांत"
+        },
+        "theory": {
+          "en": "A computer network is an interconnection of two or more autonomous computing devices established via wired or wireless channels. Networking enables efficient sharing of hardware resources (printers, processors, storage), software packages, and communication facilities (email, video conferencing). However, it introduces trade-offs in data security and network reliability due to potential unauthorized access and connectivity failures.",
+          "hi": "कंप्यूटर नेटवर्क दो या दो से अधिक स्वायत्त कंप्यूटिंग उपकरणों का एक अंतर्संबंध है जो वायर्ड या वायरलेस माध्यमों से जुड़ा होता है। नेटवर्किंग हार्डवेयर संसाधनों (प्रिंटर, प्रोसेसर, स्टोरेज), सॉफ्टवेयर और संचार सुविधाओं (ईमेल, वीडियो कॉन्फ्रेंसिंग) को साझा करने में सक्षम बनाता है। हालांकि, यह अनधिकृत पहुंच और कनेक्टिविटी विफलताओं के कारण डेटा सुरक्षा और विश्वसनीयता संबंधी चुनौतियां भी प्रस्तुत करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Computer Network: Resource Sharing Architecture</text><rect x='240' y='80' width='160' height='45' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='108' fill='#38bdf8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Central Network Hub</text><rect x='50' y='170' width='140' height='65' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='120' y='198' fill='#4ade80' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Hardware Sharing</text><text x='120' y='218' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Printers / Storage</text><rect x='250' y='170' width='140' height='65' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1'/><text x='320' y='198' fill='#fbbf24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Software Sharing</text><text x='320' y='218' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Central Licenses</text><rect x='450' y='170' width='140' height='65' rx='6' fill='#1e293b' stroke='#f472b6' stroke-width='1'/><text x='520' y='198' fill='#f472b6' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Communication</text><text x='520' y='218' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Email / Conferencing</text><line x1='320' y1='125' x2='120' y2='170' stroke='#38bdf8' stroke-width='1.5' stroke-dasharray='4'/><line x1='320' y1='125' x2='320' y2='170' stroke='#38bdf8' stroke-width='1.5' stroke-dasharray='4'/><line x1='320' y1='125' x2='520' y2='170' stroke='#38bdf8' stroke-width='1.5' stroke-dasharray='4'/></svg>",
+          "caption": {
+            "en": "Central network topology distributing hardware, software, and communication channels.",
+            "hi": "हार्डवेयर, सॉफ्टवेयर और संचार चैनलों को वितरित करने वाली केंद्रीय नेटवर्क टोपोलॉजी।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Assemble the sequence outlining the definition and primary benefits of computer networking.",
+          "hint": "Start with interlinking computing devices, mention resource sharing, and conclude with the trade-offs.",
+          "target_sequence": [
+            {
+              "id": "en_u01_t1",
+              "role": "subject",
+              "text": "interlinking two or more computing devices establishes a computer network,",
+              "role_hint": "describe the functional sharing capabilities"
+            },
+            {
+              "id": "en_u01_t2",
+              "role": "process",
+              "text": "enabling distributed sharing of hardware, software, and communication services,",
+              "role_hint": "conclude with operational considerations"
+            },
+            {
+              "id": "en_u01_t3",
+              "role": "result",
+              "text": "while requiring robust safeguards against data security breaches and reliability failures",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u01_d1",
+              "category": "logical",
+              "text": "completely eliminating any need for transmission media or network protocols,",
+              "penalty_explanation": "Networking fundamentally requires wired or wireless transmission media and protocols."
+            },
+            {
+              "id": "en_u01_d2",
+              "category": "grammatical",
+              "text": "requiring each user to maintain isolated offline peripherals exclusively,",
+              "penalty_explanation": "Networking enables resource sharing rather than enforcing isolated offline hardware."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "कंप्यूटर नेटवर्किंग की परिभाषा और लाभों को दर्शाने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "उपकरणों को आपस में जोड़ने से शुरू करें, संसाधन साझाकरण बताएं और सुरक्षा चुनौतियों से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u01_t1",
+              "role": "subject",
+              "text": "दो या अधिक कंप्यूटिंग उपकरणों को आपस में जोड़ने से एक कंप्यूटर नेटवर्क बनता है,",
+              "role_hint": "संसाधनों के साझाकरण का वर्णन करें"
+            },
+            {
+              "id": "hi_u01_t2",
+              "role": "process",
+              "text": "हार्डवेयर, सॉफ्टवेयर और संचार सेवाओं के वितरित साझाकरण को सक्षम करते हुए,",
+              "role_hint": "सुरक्षा और विश्वसनीयता के पहलुओं के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u01_t3",
+              "role": "result",
+              "text": "जबकि डेटा सुरक्षा उल्लंघनों और विश्वसनीयता विफलताओं के खिलाफ मजबूत सुरक्षा उपायों की आवश्यकता होती है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u01_d1",
+              "category": "logical",
+              "text": "ट्रांसमिशन मीडिया या नेटवर्क प्रोटोकॉल की किसी भी आवश्यकता को पूरी तरह से समाप्त करते हुए,",
+              "penalty_explanation": "नेटवर्किंग के लिए वायर्ड या वायरलेस ट्रांसमिशन मीडिया और प्रोटोकॉल अनिवार्य हैं।"
+            },
+            {
+              "id": "hi_u01_d2",
+              "category": "grammatical",
+              "text": "प्रत्येक उपयोगकर्ता को केवल अलग-थलग ऑफ़लाइन उपकरणों को बनाए रखने के लिए बाध्य करते हुए,",
+              "penalty_explanation": "नेटवर्किंग संसाधनों को साझा करने की सुविधा देती है, न कि उन्हें अलग-थलग रखने की।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Computer networks link autonomous devices to share data, hardware, and communication tools, while requiring data security.",
+        "hi": "कंप्यूटर नेटवर्क डेटा, हार्डवेयर और संचार साझा करने के लिए उपकरणों को जोड़ते हैं, जिसके लिए डेटा सुरक्षा आवश्यक है।"
+      }
+    },
+    {
+      "unit_id": "u02_client_server_architecture",
+      "topic": "Client-Server Network Architecture",
+      "pedagogical_objective": "Contrast the roles of high-performance centralized servers servicing distributed requests against end-user client nodes.",
+      "instruction": {
+        "title": {
+          "en": "Client-Server Architecture",
+          "hi": "क्लाइंट-सर्वर आर्किटेक्चर"
+        },
+        "theory": {
+          "en": "Client-Server architecture is a distributed computing model where network tasks are partitioned between service requesters (clients) and service providers (servers). A Client is a workstation or browser device that originates service requests over the network. A Server is a high-capacity machine that listens for incoming requests, executes database operations, and returns processed response payloads back to the client.",
+          "hi": "क्लाइंट-सर्वर आर्किटेक्चर एक वितरित कंप्यूटिंग मॉडल है जहां नेटवर्क कार्यों को सेवा अनुरोधकर्ताओं (क्लाइंट) और सेवा प्रदाताओं (सर्वर) के बीच विभाजित किया जाता है। क्लाइंट एक कंप्यूटर या ब्राउज़र उपकरण है जो नेटवर्क पर सेवा अनुरोध भेजता है। सर्वर एक उच्च-क्षमता वाली मशीन है जो अनुरोध प्राप्त करती है, डेटाबेस प्रोसेसिंग करती है और संसाधित प्रतिक्रिया क्लाइंट को वापस भेजती है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Request-Response Cycle in Client-Server Model</text><rect x='50' y='95' width='160' height='120' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='130' y='125' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Client Node</text><text x='130' y='155' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Web Browser / App</text><text x='130' y='180' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Originates Requests</text><line x1='220' y1='135' x2='410' y2='135' stroke='#38bdf8' stroke-width='2'/><polygon points='415,135 405,130 405,140' fill='#38bdf8'/><text x='315' y='125' fill='#38bdf8' font-family='sans-serif' font-size='11' text-anchor='middle'>1. Service Request (HTTP)</text><line x1='410' y1='175' x2='220' y2='175' stroke='#4ade80' stroke-width='2'/><polygon points='215,175 225,170 225,180' fill='#4ade80'/><text x='315' y='195' fill='#4ade80' font-family='sans-serif' font-size='11' text-anchor='middle'>2. Service Response (HTML/Data)</text><rect x='430' y='95' width='160' height='120' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='510' y='125' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Server Node</text><text x='510' y='155' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>High-End Host</text><text x='510' y='180' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Manages Resources &amp; DB</text></svg>",
+          "caption": {
+            "en": "Bidirectional request-response communication between client workstations and centralized servers.",
+            "hi": "क्लाइंट वर्कस्टेशन और केंद्रीकृत सर्वर के बीच द्विदिशीय अनुरोध-प्रतिक्रिया संचार।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining the client-server request-response paradigm.",
+          "hint": "Identify the client sending requests, followed by the server processing and returning data.",
+          "target_sequence": [
+            {
+              "id": "en_u02_t1",
+              "role": "subject",
+              "text": "the client node generates and transmits service requests over the network,",
+              "role_hint": "describe server-side handling"
+            },
+            {
+              "id": "en_u02_t2",
+              "role": "process",
+              "text": "the server processes the incoming request and manages shared resources,",
+              "role_hint": "complete with the delivery of the response"
+            },
+            {
+              "id": "en_u02_t3",
+              "role": "result",
+              "text": "and transmits the processed data back to the client as a network response",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u02_d1",
+              "category": "logical",
+              "text": "delegating all database storage operations strictly to unpowered client mice,",
+              "penalty_explanation": "Database and backend storage operations are managed by high-capacity servers."
+            },
+            {
+              "id": "en_u02_d2",
+              "category": "grammatical",
+              "text": "requiring servers to run exclusively inside client web browser tabs,",
+              "penalty_explanation": "Servers are independent hosts providing services to remote client browsers over the network."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "क्लाइंट-सर्वर अनुरोध-प्रतिक्रिया मॉडल को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "क्लाइंट द्वारा अनुरोध भेजने से शुरू करें, सर्वर द्वारा प्रोसेसिंग बताएं और प्रतिक्रिया वापसी से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u02_t1",
+              "role": "subject",
+              "text": "क्लाइंट नोड नेटवर्क पर सेवा अनुरोध उत्पन्न और प्रसारित करता है,",
+              "role_hint": "सर्वर द्वारा हैंडलिंग का वर्णन करें"
+            },
+            {
+              "id": "hi_u02_t2",
+              "role": "process",
+              "text": "सर्वर आने वाले अनुरोध को संसाधित करता है और साझा संसाधनों का प्रबंधन करता है,",
+              "role_hint": "प्रतिक्रिया वितरण के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u02_t3",
+              "role": "result",
+              "text": "और संसाधित डेटा को नेटवर्क प्रतिक्रिया के रूप में क्लाइंट को वापस भेजता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u02_d1",
+              "category": "logical",
+              "text": "डेटाबेस स्टोरेज संचालन को पूरी तरह से क्लाइंट माउस को सौंपते हुए,",
+              "penalty_explanation": "डेटाबेस और स्टोरेज संचालन सर्वर द्वारा प्रबंधित किए जाते हैं, इनपुट डिवाइस द्वारा नहीं।"
+            },
+            {
+              "id": "hi_u02_d2",
+              "category": "grammatical",
+              "text": "सर्वर को विशेष रूप से क्लाइंट वेब ब्राउज़र टैब के अंदर चलाने की मांग करते हुए,",
+              "penalty_explanation": "सर्वर स्वतंत्र बैकएंड मशीनें हैं जो नेटवर्क पर सेवाएं प्रदान करती हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "In client-server architecture, clients send service requests and servers process and deliver the response.",
+        "hi": "क्लाइंट-सर्वर आर्किटेक्चर में क्लाइंट अनुरोध भेजता है और सर्वर उसे प्रोसेस करके प्रतिक्रिया देता है।"
+      }
+    },
+    {
+      "unit_id": "u03_client_vs_server_scripting",
+      "topic": "Client-Side Scripting vs Server-Side Scripting",
+      "pedagogical_objective": "Differentiate execution environments, response latency, database permissions, and file-system access between client-side and server-side scripts.",
+      "instruction": {
+        "title": {
+          "en": "Client-Side vs Server-Side Scripting",
+          "hi": "क्लाइंट-साइड बनाम सर्वर-साइड स्क्रिप्टिंग"
+        },
+        "theory": {
+          "en": "Web programming operates across two distinct execution domains. `Client-Side Scripting` (such as JavaScript) runs natively within the user's browser, providing rapid response times without network round-trips; however, it cannot access server databases or file systems directly. Conversely, `Server-Side Scripting` (such as PHP, Python, or Node.js) executes on the remote web server, offering full access to central databases and file systems at the cost of higher latency.",
+          "hi": "वेब प्रोग्रामिंग दो अलग-अलग निष्पादन क्षेत्रों में कार्य करती है। `Client-Side Scripting` (जैसे जावास्क्रिप्ट) सीधे उपयोगकर्ता के ब्राउज़र में चलती है, जिससे नेटवर्क विलंब के बिना तेज़ प्रतिक्रिया मिलती है; हालांकि यह सर्वर डेटाबेस या फ़ाइल सिस्टम तक सीधे नहीं पहुंच सकती। इसके विपरीत, `Server-Side Scripting` (जैसे PHP, Python) रिमोट सर्वर पर चलती है, जो डेटाबेस और फ़ाइल सिस्टम तक पूरी पहुँच प्रदान करती है लेकिन प्रतिक्रिया समय धीमा होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Scripting Paradigms: Browser Execution vs Server Processing</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='170' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Client-Side Scripting</text><text x='60' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='12'>• Runs in Client Browser</text><text x='60' y='165' fill='#4ade80' font-family='sans-serif' font-size='12'>• Fast response time (local)</text><text x='60' y='190' fill='#ef4444' font-family='sans-serif' font-size='12'>• No server database access</text><text x='60' y='215' fill='#ef4444' font-family='sans-serif' font-size='12'>• No server file system access</text><text x='170' y='242' fill='#94a3b8' font-family='monospace' font-size='11' text-anchor='middle'>e.g., JavaScript</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='470' y='105' fill='#38bdf8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Server-Side Scripting</text><text x='360' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='12'>• Runs on Web Server</text><text x='360' y='165' fill='#fbbf24' font-family='sans-serif' font-size='12'>• Slower (network transit)</text><text x='360' y='190' fill='#4ade80' font-family='sans-serif' font-size='12'>• Full server database access</text><text x='360' y='215' fill='#4ade80' font-family='sans-serif' font-size='12'>• Full server file system access</text><text x='470' y='242' fill='#94a3b8' font-family='monospace' font-size='11' text-anchor='middle'>e.g., PHP, Python, Node.js</text></svg>",
+          "caption": {
+            "en": "Functional breakdown comparing browser-executed scripts with server-side processing engines.",
+            "hi": "ब्राउज़र-निष्पादित स्क्रिप्ट और सर्वर-साइड प्रोसेसिंग इंजन की कार्यात्मक तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Arrange the sequence contrasting client-side scripting with server-side execution.",
+          "hint": "Identify browser execution and fast response first, then contrast with server database access.",
+          "target_sequence": [
+            {
+              "id": "en_u03_t1",
+              "role": "subject",
+              "text": "client-side scripting executes directly inside the user's web browser,",
+              "role_hint": "describe its performance advantage and restriction"
+            },
+            {
+              "id": "en_u03_t2",
+              "role": "process",
+              "text": "delivering fast response times but lacking direct access to server databases,",
+              "role_hint": "contrast with server-side capabilities"
+            },
+            {
+              "id": "en_u03_t3",
+              "role": "result",
+              "text": "while server-side scripting runs on remote hosts with full access to databases and files",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u03_d1",
+              "category": "logical",
+              "text": "client-side scripting modifies the central server database without network connectivity,",
+              "penalty_explanation": "Client-side scripts run locally in the browser and cannot modify backend server databases directly."
+            },
+            {
+              "id": "en_u03_d2",
+              "category": "grammatical",
+              "text": "prohibiting web browsers from executing any scripting logic,",
+              "penalty_explanation": "Browsers incorporate JavaScript engines to execute client-side scripts natively."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "क्लाइंट-साइड और सर्वर-साइड स्क्रिप्टिंग के अंतर को दर्शाने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "ब्राउज़र निष्पादन से शुरू करें, तेज़ गति और सीमाओं का उल्लेख करें, और सर्वर डेटाबेस एक्सेस से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u03_t1",
+              "role": "subject",
+              "text": "क्लाइंट-साइड स्क्रिप्टिंग सीधे उपयोगकर्ता के वेब ब्राउज़र के भीतर निष्पादित होती है,",
+              "role_hint": "प्रदर्शन और सीमाओं का वर्णन करें"
+            },
+            {
+              "id": "hi_u03_t2",
+              "role": "process",
+              "text": "तेज़ प्रतिक्रिया समय प्रदान करते हुए लेकिन सर्वर डेटाबेस तक सीधी पहुँच के बिना,",
+              "role_hint": "सर्वर-साइड क्षमताओं के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u03_t3",
+              "role": "result",
+              "text": "जबकि सर्वर-साइड स्क्रिप्टिंग डेटाबेस और फ़ाइलों तक पूर्ण पहुँच के साथ रिमोट होस्ट पर चलती है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u03_d1",
+              "category": "logical",
+              "text": "क्लाइंट-साइड स्क्रिप्टिंग बिना नेटवर्क कनेक्टिविटी के सर्वर डेटाबेस को सीधे संशोधित करती है,",
+              "penalty_explanation": "क्लाइंट-साइड स्क्रिप्ट केवल ब्राउज़र में चलती है और सर्वर डेटाबेस को सीधे एक्सेस नहीं कर सकती।"
+            },
+            {
+              "id": "hi_u03_d2",
+              "category": "grammatical",
+              "text": "वेब ब्राउज़र को किसी भी स्क्रिप्टिंग तर्क को निष्पादित करने से रोकते हुए,",
+              "penalty_explanation": "ब्राउज़र क्लाइंट-साइड जावास्क्रिप्ट को निष्पादित करने के लिए ही डिज़ाइन किए गए हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Client-side scripting runs in the browser with fast responses; server-side runs on the host with full database access.",
+        "hi": "क्लाइंट-साइड स्क्रिप्टिंग ब्राउज़र में तेज़ चलती है; सर्वर-साइड सर्वर पर डेटाबेस एक्सेस के साथ चलती है।"
+      }
+    },
+    {
+      "unit_id": "u04_web_publishing_fundamentals",
+      "topic": "Web Publishing Lifecycle & Required Resources",
+      "pedagogical_objective": "Understand the end-to-end web publishing process (creating, uploading, updating content) and essential infrastructure (editor, web server, Internet connection).",
+      "instruction": {
+        "title": {
+          "en": "Web Publishing Lifecycle and Resources",
+          "hi": "वेब प्रकाशन जीवनचक्र और संसाधन"
+        },
+        "theory": {
+          "en": "Web Publishing is the comprehensive process of creating, uploading, and maintaining content on the Internet across websites, web applications, and blogs. Successful web deployment requires three core components: Web Development Software (code editors and design suites), a Web Server (a connected host computer that stores and delivers pages via HTTP), and an Internet connection to transmit published assets.",
+          "hi": "वेब प्रकाशन इंटरनेट पर वेबसाइटों, वेब अनुप्रयोगों और ब्लॉगों पर सामग्री बनाने, अपलोड करने और प्रबंधित करने की प्रक्रिया है। सफल वेब प्रकाशन के लिए तीन आवश्यक संसाधनों की आवश्यकता होती है: वेब डेवलपमेंट सॉफ्टवेयर (कोड एडिटर), एक वेब सर्वर (होस्ट कंप्यूटर जो HTTP के माध्यम से पृष्ठ वितरित करता है), और सामग्री अपलोड करने के लिए एक इंटरनेट कनेक्शन।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Three Pillars of the Web Publishing Pipeline</text><rect x='40' y='85' width='160' height='140' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='120' y='115' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>1. Development</text><text x='120' y='145' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Code Editors / IDEs</text><text x='120' y='170' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>HTML, CSS &amp; JS</text><text x='120' y='200' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Content Creation</text><line x1='205' y1='155' x2='245' y2='155' stroke='#38bdf8' stroke-width='2' stroke-dasharray='4'/><polygon points='250,155 242,150 242,160' fill='#38bdf8'/><rect x='255' y='85' width='140' height='140' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='325' y='115' fill='#38bdf8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>2. Network Link</text><text x='325' y='145' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Internet Connection</text><text x='325' y='170' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>FTP / Deployment</text><text x='325' y='200' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Data Transmission</text><line x1='400' y1='155' x2='440' y2='155' stroke='#38bdf8' stroke-width='2' stroke-dasharray='4'/><polygon points='445,155 437,150 437,160' fill='#38bdf8'/><rect x='445' y='85' width='155' height='140' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='522' y='115' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>3. Web Server</text><text x='522' y='145' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Hosting Infrastructure</text><text x='522' y='170' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>HTTP / Cloud Storage</text><text x='522' y='200' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Global Delivery</text></svg>",
+          "caption": {
+            "en": "The web publishing sequence: authoring in development tools, uploading via Internet, and hosting on a web server.",
+            "hi": "वेब प्रकाशन क्रम: विकास टूल्स में निर्माण, इंटरनेट से अपलोड और वेब सर्वर पर होस्टिंग।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining the resources and steps of the web publishing lifecycle.",
+          "hint": "Begin with authoring web content, upload via Internet connections, and host on a web server.",
+          "target_sequence": [
+            {
+              "id": "en_u04_t1",
+              "role": "subject",
+              "text": "web publishing authors digital content using web development software,",
+              "role_hint": "describe the deployment process"
+            },
+            {
+              "id": "en_u04_t2",
+              "role": "process",
+              "text": "uploads the structured pages and assets across an active internet connection,",
+              "role_hint": "conclude with server hosting"
+            },
+            {
+              "id": "en_u04_t3",
+              "role": "result",
+              "text": "and hosts them on a web server for worldwide browser access",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u04_d1",
+              "category": "logical",
+              "text": "restricting published pages to local offline computer hard drives permanently,",
+              "penalty_explanation": "Web publishing is designed to host content on public web servers for global Internet access."
+            },
+            {
+              "id": "en_u04_d2",
+              "category": "grammatical",
+              "text": "prohibits the uploading of any image or video media assets,",
+              "penalty_explanation": "Web publishing encompasses text, graphics, audio, and video content."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "वेब प्रकाशन जीवनचक्र के चरणों और आवश्यक संसाधनों के सही क्रम को व्यवस्थित करें।",
+          "hint": "सॉफ्टवेयर में सामग्री निर्माण से शुरू करें, इंटरनेट द्वारा अपलोड बताएं और सर्वर होस्टिंग से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u04_t1",
+              "role": "subject",
+              "text": "वेब प्रकाशन वेब डेवलपमेंट सॉफ्टवेयर का उपयोग करके डिजिटल सामग्री तैयार करता है,",
+              "role_hint": "अपलोड प्रक्रिया का वर्णन करें"
+            },
+            {
+              "id": "hi_u04_t2",
+              "role": "process",
+              "text": "एक सक्रिय इंटरनेट कनेक्शन के माध्यम से संरचित पृष्ठों और संपत्तियों को अपलोड करता है,",
+              "role_hint": "सर्वर होस्टिंग के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u04_t3",
+              "role": "result",
+              "text": "और दुनिया भर में ब्राउज़र एक्सेस के लिए उन्हें एक वेब सर्वर पर होस्ट करता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u04_d1",
+              "category": "logical",
+              "text": "प्रकाशित पृष्ठों को स्थायी रूप से केवल स्थानीय ऑफ़लाइन हार्ड ड्राइव तक सीमित रखते हुए,",
+              "penalty_explanation": "वेब प्रकाशन का उद्देश्य इंटरनेट पर सार्वजनिक पहुंच के लिए वेब सर्वर पर सामग्री रखना है।"
+            },
+            {
+              "id": "hi_u04_d2",
+              "category": "grammatical",
+              "text": "किसी भी छवि या वीडियो मीडिया संपत्ति को अपलोड करने से पूरी तरह रोकते हुए,",
+              "penalty_explanation": "वेब प्रकाशन में टेक्स्ट, चित्र, ऑडियो और वीडियो सभी शामिल होते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Web publishing involves creating content in editors, uploading via the Internet, and serving pages on a web server.",
+        "hi": "वेब प्रकाशन में एडिटर में सामग्री बनाना, इंटरनेट से अपलोड करना और वेब सर्वर पर होस्ट करना शामिल है।"
+      }
+    },
+    {
+      "unit_id": "u05_javascript_core_nature",
+      "topic": "JavaScript Language Profile & Web Embedding",
+      "pedagogical_objective": "Master the execution traits of JavaScript (client-side, interpreted, event-based, case-sensitive) and embedding it within HTML using script tags.",
+      "instruction": {
+        "title": {
+          "en": "JavaScript Language Profile & Embedding",
+          "hi": "जावास्क्रिप्ट भाषा की प्रकृति और HTML एम्बेडिंग"
+        },
+        "theory": {
+          "en": "JavaScript is a lightweight, interpreted, client-side web development language created to make web pages dynamic and interactive. It is event-based (responding to user clicks and keystrokes) and strictly case-sensitive. JavaScript code is integrated directly into HTML documents using the `<script type=\"text/javascript\">...</script>` container tag.",
+          "hi": "जावास्क्रिप्ट एक हल्की, इंटरप्रेटेड, क्लाइंट-साइड वेब डेवलपमेंट भाषा है जिसे वेब पेजों को गतिशील (dynamic) और इंटरैक्टिव बनाने के लिए डिज़ाइन किया गया है। यह इवेंट-आधारित है (क्लिक या कीस्ट्रोक पर प्रतिक्रिया देती है) और केस-सेंसिटिव है। जावास्क्रिप्ट कोड को HTML में `<script type=\"text/javascript\">...</script>` टैग के माध्यम से एम्बेड किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Embedding JavaScript in HTML Documents</text><rect x='40' y='75' width='560' height='100' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='60' y='105' fill='#38bdf8' font-family='monospace' font-size='14'>&lt;script type=\"text/javascript\"&gt;</text><text x='85' y='135' fill='#4ade80' font-family='monospace' font-size='14'>document.write(\"Hello World\");</text><text x='60' y='165' fill='#38bdf8' font-family='monospace' font-size='14'>&lt;/script&gt;</text><rect x='40' y='190' width='175' height='70' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1'/><text x='127' y='215' fill='#fbbf24' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Interpreted</text><text x='127' y='238' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>No compiler needed</text><rect x='232' y='190' width='175' height='70' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='319' y='215' fill='#4ade80' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Event-Driven</text><text x='319' y='238' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Responds to user actions</text><rect x='425' y='190' width='175' height='70' rx='6' fill='#1e293b' stroke='#f472b6' stroke-width='1'/><text x='512' y='215' fill='#f472b6' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Case-Sensitive</text><text x='512' y='238' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Strict keyword casing</text></svg>",
+          "caption": {
+            "en": "HTML script tag syntax and fundamental language characteristics of JavaScript.",
+            "hi": "जावास्क्रिप्ट की HTML स्क्रिप्ट टैग संरचना और भाषा की बुनियादी विशेषताएं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining the execution nature and embedding syntax of JavaScript.",
+          "hint": "Identify JavaScript's client-side interpreted nature, mention event-driven behavior, and conclude with the script tag.",
+          "target_sequence": [
+            {
+              "id": "en_u05_t1",
+              "role": "subject",
+              "text": "javascript operates as a client-side, interpreted, and case-sensitive scripting language,",
+              "role_hint": "explain how it handles user interaction"
+            },
+            {
+              "id": "en_u05_t2",
+              "role": "process",
+              "text": "utilizing event-driven programming to make web pages interactive,",
+              "role_hint": "state the embedding HTML syntax"
+            },
+            {
+              "id": "en_u05_t3",
+              "role": "result",
+              "text": "and embeds directly inside html markup using the `<script>...</script>` container tag",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u05_d1",
+              "category": "logical",
+              "text": "requiring heavy binary compilation into machine code before any execution starts,",
+              "penalty_explanation": "JavaScript is an interpreted language executed dynamically in web browsers without binary compilation."
+            },
+            {
+              "id": "en_u05_d2",
+              "category": "grammatical",
+              "text": "embedding logic strictly inside `<style>` tags reserved for css formatting,",
+              "penalty_explanation": "JavaScript embeds inside `<script>` tags; `<style>` tags are reserved for CSS."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "जावास्क्रिप्ट की निष्पादन प्रकृति और एम्बेडिंग सिंटैक्स को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "क्लाइंट-साइड इंटरप्रेटेड प्रकृति से शुरू करें, इवेंट-आधारित व्यवहार बताएं और स्क्रिप्ट टैग के साथ समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u05_t1",
+              "role": "subject",
+              "text": "जावास्क्रिप्ट एक क्लाइंट-साइड, इंटरप्रेटेड और केस-सेंसिटिव स्क्रिप्टिंग भाषा के रूप में कार्य करती है,",
+              "role_hint": "यह उपयोगकर्ता इंटरैक्शन को कैसे संभालती है समझाएं"
+            },
+            {
+              "id": "hi_u05_t2",
+              "role": "process",
+              "text": "वेब पेजों को इंटरैक्टिव बनाने के लिए इवेंट-आधारित प्रोग्रामिंग का उपयोग करते हुए,",
+              "role_hint": "HTML एम्बेडिंग सिंटैक्स बताएं"
+            },
+            {
+              "id": "hi_u05_t3",
+              "role": "result",
+              "text": "और `<script>...</script>` कंटेनर टैग का उपयोग करके सीधे HTML में एम्बेड होती है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u05_d1",
+              "category": "logical",
+              "text": "निष्पादन शुरू होने से पहले मशीन कोड में भारी बाइनरी संकलन (compilation) की आवश्यकता होती है,",
+              "penalty_explanation": "जावास्क्रिप्ट एक इंटरप्रेटेड भाषा है, इसे संकलन (compilation) की आवश्यकता नहीं होती।"
+            },
+            {
+              "id": "hi_u05_d2",
+              "category": "grammatical",
+              "text": "तर्क को सख्ती से केवल CSS फॉर्मेटिंग के लिए आरक्षित `<style>` टैग के अंदर एम्बेड करते हुए,",
+              "penalty_explanation": "जावास्क्रिप्ट कोड `<script>` टैग में लिखा जाता है, `<style>` में नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "JavaScript is an interpreted, client-side, event-driven, case-sensitive language embedded via `<script>` tags.",
+        "hi": "जावास्क्रिप्ट एक इंटरप्रेटेड, क्लाइंट-साइड, इवेंट-आधारित और केस-सेंसिटिव भाषा है जिसे `<script>` टैग में लिखा जाता है।"
+      }
+    },
+    {
+      "unit_id": "u06_javascript_pros_and_cons",
+      "topic": "JavaScript Architectural Advantages & Vulnerabilities",
+      "pedagogical_objective": "Analyze the operational strengths of JavaScript (rapid in-browser execution, ease of debugging, cross-platform independence) and source-code visibility risks.",
+      "instruction": {
+        "title": {
+          "en": "Advantages and Disadvantages of JavaScript",
+          "hi": "जावास्क्रिप्ट के लाभ और कमियां"
+        },
+        "theory": {
+          "en": "JavaScript delivers substantial architectural advantages: it executes with high speed directly within the client browser without compiler overhead, features straightforward testing and debugging, and runs platform-independently across any operating system. Its primary disadvantage is code security; because JavaScript runs in the browser, its source code is visible via 'View Source' or browser developer tools, making it susceptible to client-side inspection.",
+          "hi": "जावास्क्रिप्ट महत्वपूर्ण लाभ प्रदान करती है: यह कंपाइलर के बिना सीधे क्लाइंट ब्राउज़र में तेज़ी से निष्पादित होती है, परीक्षण और डीबग करने में आसान है, और विभिन्न ऑपरेटिंग सिस्टम पर प्लेटफ़ॉर्म-स्वतंत्र रूप से चलती है। इसका मुख्य नुकसान कोड सुरक्षा है; चूंकि यह ब्राउज़र में चलती है, इसका सोर्स कोड 'View Source' या डेवलपर टूल्स के माध्यम से आसानी से देखा जा सकता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Trade-Off Matrix: JavaScript Architectural Profile</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='170' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Architectural Advantages</text><text x='60' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='12'>• High Execution Speed</text><text x='60' y='165' fill='#cbd5e1' font-family='sans-serif' font-size='12'>• No compilation step needed</text><text x='60' y='190' fill='#cbd5e1' font-family='sans-serif' font-size='12'>• Platform-Independent</text><text x='60' y='215' fill='#cbd5e1' font-family='sans-serif' font-size='12'>• Easy debugging &amp; testing</text><text x='170' y='242' fill='#4ade80' font-family='sans-serif' font-size='10' text-anchor='middle'>Runs natively across browsers</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#ef4444' stroke-width='1.5'/><text x='470' y='105' fill='#ef4444' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Primary Disadvantage</text><text x='360' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='12'>• Client-Side Code Visibility</text><text x='360' y='165' fill='#cbd5e1' font-family='sans-serif' font-size='12'>• Source readable via browser</text><text x='360' y='190' fill='#cbd5e1' font-family='sans-serif' font-size='12'>• Vulnerable to inspection</text><text x='360' y='215' fill='#cbd5e1' font-family='sans-serif' font-size='12'>• Cannot hide backend logic</text><text x='470' y='242' fill='#ef4444' font-family='sans-serif' font-size='10' text-anchor='middle'>Security limitation on secrets</text></svg>",
+          "caption": {
+            "en": "Evaluation of JavaScript: high local speed and platform independence balanced against visible source code.",
+            "hi": "जावास्क्रिप्ट का मूल्यांकन: उच्च स्थानीय गति और प्लेटफ़ॉर्म स्वतंत्रता बनाम दृश्यमान सोर्स कोड की सुरक्षा चुनौती।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence evaluating the benefits and primary security trade-off of JavaScript.",
+          "hint": "Highlight speed and platform independence, then state the vulnerability of client-side visibility.",
+          "target_sequence": [
+            {
+              "id": "en_u06_t1",
+              "role": "subject",
+              "text": "javascript provides high execution speed and platform independence across client browsers,",
+              "role_hint": "mention ease of development"
+            },
+            {
+              "id": "en_u06_t2",
+              "role": "process",
+              "text": "eliminating compilation steps while offering straightforward testing and debugging,",
+              "role_hint": "conclude with the security trade-off"
+            },
+            {
+              "id": "en_u06_t3",
+              "role": "result",
+              "text": "while introducing security concerns because its source code can be inspected directly in the browser",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u06_d1",
+              "category": "logical",
+              "text": "rendering javascript completely unexecutable on non-windows operating systems,",
+              "penalty_explanation": "JavaScript is platform-independent and runs natively in all major operating systems."
+            },
+            {
+              "id": "en_u06_d2",
+              "category": "grammatical",
+              "text": "prohibiting users from ever viewing source code in web browsers,",
+              "penalty_explanation": "Client-side JavaScript code is visible to users via browser developer tools."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "जावास्क्रिप्ट के लाभों और मुख्य सुरक्षा चुनौती का मूल्यांकन करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "गति और प्लेटफ़ॉर्म स्वतंत्रता से शुरू करें, विकास में आसानी बताएं और दृश्यमान कोड की सुरक्षा कमी से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u06_t1",
+              "role": "subject",
+              "text": "जावास्क्रिप्ट क्लाइंट ब्राउज़र में तेज़ निष्पादन गति और प्लेटफ़ॉर्म स्वतंत्रता प्रदान करती है,",
+              "role_hint": "विकास में आसानी का उल्लेख करें"
+            },
+            {
+              "id": "hi_u06_t2",
+              "role": "process",
+              "text": "बिना कंपाइलर की आवश्यकता के सरल परीक्षण और डीबगिंग की पेशकश करते हुए,",
+              "role_hint": "सुरक्षा ट्रेड-ऑफ के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u06_t3",
+              "role": "result",
+              "text": "जबकि सुरक्षा संबंधी चुनौतियां पेश करती है क्योंकि इसका सोर्स कोड सीधे ब्राउज़र में देखा जा सकता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u06_d1",
+              "category": "logical",
+              "text": "जावास्क्रिप्ट को गैर-विंडोज ऑपरेटिंग सिस्टम पर पूरी तरह से निष्पादन योग्य नहीं बनाते हुए,",
+              "penalty_explanation": "जावास्क्रिप्ट प्लेटफ़ॉर्म-स्वतंत्र है और सभी ऑपरेटिंग सिस्टम पर चलती है।"
+            },
+            {
+              "id": "hi_u06_d2",
+              "category": "grammatical",
+              "text": "वेब ब्राउज़र में उपयोगकर्ताओं को कभी भी सोर्स कोड देखने से रोकते हुए,",
+              "penalty_explanation": "ब्राउज़र में जावास्क्रिप्ट का कोड कोई भी डेवलपर टूल्स से आसानी से देख सकता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "JavaScript is fast and platform-independent, but client-side visibility makes its source code readable to users.",
+        "hi": "जावास्क्रिप्ट तेज़ और प्लेटफ़ॉर्म-स्वतंत्र है, लेकिन ब्राउज़र में सोर्स कोड दिखने के कारण कम सुरक्षित है।"
+      }
+    },
+    {
+      "unit_id": "u07_variables_and_declaration",
+      "topic": "Variables, Dynamic Typing, and the var Keyword",
+      "pedagogical_objective": "Declare variables using the var keyword, assign dynamic values with '=', and understand JavaScript's loosely typed memory model.",
+      "instruction": {
+        "title": {
+          "en": "Variables and Dynamic Typing in JavaScript",
+          "hi": "जावास्क्रिप्ट में वेरिएबल और डायनामिक टाइपिंग"
+        },
+        "theory": {
+          "en": "A Variable in JavaScript is a named memory location that stores dynamic data values. Variables are declared using the `var` keyword and assigned values using the `=` assignment operator (e.g., `var total = 100;`). JavaScript is dynamically typed (loosely typed), meaning developers do not declare explicit data types; a variable can hold a number, string, or boolean, and change types during runtime execution.",
+          "hi": "जावास्क्रिप्ट में एक वेरिएबल डेटा मानों को संग्रहीत करने के लिए एक नामित मेमोरी स्थान है। वेरिएबल को `var` कीवर्ड का उपयोग करके घोषित किया जाता है और `=` असाइनमेंट ऑपरेटर का उपयोग करके मान सौंपा जाता है (जैसे `var total = 100;`)। जावास्क्रिप्ट डायनामिक रूप से टाइप की गई भाषा (loosely typed) है, जिसका अर्थ है कि वेरिएबल घोषित करते समय डेटा प्रकार निर्दिष्ट करने की आवश्यकता नहीं होती है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Variable Declaration Syntax &amp; Memory Allocation</text><rect x='50' y='80' width='540' height='75' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='80' y='125' fill='#cbd5e1' font-family='monospace' font-size='22'><tspan fill='#fbbf24'>var</tspan> <tspan fill='#38bdf8'>counter</tspan> <tspan fill='#ffffff'>=</tspan> <tspan fill='#4ade80'>10</tspan>;</text><line x1='100' y1='135' x2='100' y2='175' stroke='#fbbf24' stroke-width='1.5'/><text x='100' y='195' fill='#fbbf24' font-family='sans-serif' font-size='11' text-anchor='middle'>Declaration Keyword</text><line x1='205' y1='135' x2='205' y2='175' stroke='#38bdf8' stroke-width='1.5'/><text x='205' y='195' fill='#38bdf8' font-family='sans-serif' font-size='11' text-anchor='middle'>Variable Identifier</text><line x1='275' y1='135' x2='275' y2='175' stroke='#ffffff' stroke-width='1.5'/><text x='275' y='195' fill='#ffffff' font-family='sans-serif' font-size='11' text-anchor='middle'>Assignment Op</text><line x1='340' y1='135' x2='340' y2='175' stroke='#4ade80' stroke-width='1.5'/><text x='340' y='195' fill='#4ade80' font-family='sans-serif' font-size='11' text-anchor='middle'>Assigned Value</text><rect x='50' y='215' width='540' height='40' rx='4' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='320' y='240' fill='#cbd5e1' font-family='sans-serif' font-size='12' text-anchor='middle'>Dynamic Typing: Data type is automatically inferred at runtime</text></svg>",
+          "caption": {
+            "en": "Syntax of declaring variables with var and assigning values via the assignment operator.",
+            "hi": "var कीवर्ड से वेरिएबल घोषित करने और असाइनमेंट ऑपरेटर से मान सौंपने का सिंटैक्स।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence for declaring and assigning a variable in JavaScript.",
+          "hint": "Use the var keyword, state the identifier, use the assignment operator, and explain dynamic typing.",
+          "target_sequence": [
+            {
+              "id": "en_u07_t1",
+              "role": "subject",
+              "text": "declare a variable identifier using the `var` keyword,",
+              "role_hint": "assign a value to it"
+            },
+            {
+              "id": "en_u07_t2",
+              "role": "process",
+              "text": "assign a value using the `=` assignment operator,",
+              "role_hint": "explain dynamic typing behavior"
+            },
+            {
+              "id": "en_u07_t3",
+              "role": "result",
+              "text": "and let javascript infer and update data types dynamically during runtime execution",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u07_d1",
+              "category": "logical",
+              "text": "strictly declare variable data types using rigid c++ memory primitives,",
+              "penalty_explanation": "JavaScript is dynamically typed and does not require explicit static data type declarations."
+            },
+            {
+              "id": "en_u07_d2",
+              "category": "grammatical",
+              "text": "prohibits the stored value in a variable from ever being modified,",
+              "penalty_explanation": "Variables in JavaScript are mutable containers whose values can be modified at any time."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "जावास्क्रिप्ट में वेरिएबल घोषित करने और मान असाइन करने के सही क्रम को व्यवस्थित करें।",
+          "hint": "var कीवर्ड से शुरू करें, असाइनमेंट ऑपरेटर का उपयोग बताएं और डायनामिक टाइपिंग से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u07_t1",
+              "role": "subject",
+              "text": "`var` कीवर्ड का उपयोग करके एक वेरिएबल घोषित करें,",
+              "role_hint": "मान असाइन करने का तरीका बताएं"
+            },
+            {
+              "id": "hi_u07_t2",
+              "role": "process",
+              "text": "`=` असाइनमेंट ऑपरेटर का उपयोग करके इसे एक मान सौंपें,",
+              "role_hint": "डायनामिक टाइपिंग के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u07_t3",
+              "role": "result",
+              "text": "और जावास्क्रिप्ट को रनटाइम निष्पादन के दौरान डेटा प्रकारों का स्वचालित रूप से अनुमान लगाने दें",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u07_d1",
+              "category": "logical",
+              "text": "कठोर C++ मेमोरी प्रिमिटिव्स का उपयोग करके डेटा प्रकारों को सख्ती से घोषित करते हुए,",
+              "penalty_explanation": "जावास्क्रिप्ट डायनामिक टाइपिंग का समर्थन करती है, इसमें स्थैतिक घोषणा की आवश्यकता नहीं होती।"
+            },
+            {
+              "id": "hi_u07_d2",
+              "category": "grammatical",
+              "text": "वेरिएबल में संग्रहीत मान को कभी भी बदलने से पूरी तरह रोकते हुए,",
+              "penalty_explanation": "वेरिएबल में संग्रहीत मान को किसी भी समय बदला जा सकता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Variables are declared with `var` and assigned with `=`; JavaScript infers and changes types dynamically.",
+        "hi": "वेरिएबल `var` से घोषित होते हैं और `=` से मान लेते हैं; जावास्क्रिप्ट में डेटा प्रकार डायनामिक होते हैं।"
+      }
+    },
+    {
+      "unit_id": "u08_primitive_data_types",
+      "topic": "Primitive Data Types: Number, String, and Boolean",
+      "pedagogical_objective": "Differentiate JavaScript primitive types: signed/floating-point Number, quoted character String, and logical Boolean values (true/false).",
+      "instruction": {
+        "title": {
+          "en": "Primitive Types: Number, String, and Boolean",
+          "hi": "प्रिमिटिव डेटा प्रकार: Number, String, और Boolean"
+        },
+        "theory": {
+          "en": "Primitive data types are fundamental in-built types in JavaScript. `Number` represents both integers and floating-point decimal values, positive or negative (e.g., `100`, `3.14`, `-10`). `String` represents a sequence of textual characters wrapped in single or double quotation marks (e.g., `\"Hello\"`). `Boolean` represents binary truth evaluations with two valid states: `true` or `false`.",
+          "hi": "प्रिमिटिव डेटा प्रकार जावास्क्रिप्ट द्वारा प्रदान किए गए इन-बिल्ट बुनियादी प्रकार हैं। `Number` धनात्मक या ऋणात्मक पूर्णांकों और दशमलव दोनों संख्याओं का प्रतिनिधित्व करता है (जैसे `100`, `3.14`, `-10`)। `String` एकल या दोहरे उद्धरण चिह्नों में लिखे गए अक्षरों और शब्दों की एक श्रृंखला है (जैसे `\"Hello\"`)। `Boolean` एक तार्किक मान है जिसके केवल दो मान होते हैं: `true` या `false`।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Core JavaScript Primitive Data Types</text><rect x='40' y='75' width='170' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='125' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Number</text><text x='125' y='145' fill='#4ade80' font-family='monospace' font-size='14' text-anchor='middle'>100, 3.14, -50</text><text x='125' y='180' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Integers &amp; Floats</text><text x='125' y='200' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Positive or Negative</text><text x='125' y='235' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Unified numeric type</text><rect x='235' y='75' width='170' height='180' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='105' fill='#38bdf8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>String</text><text x='320' y='145' fill='#4ade80' font-family='monospace' font-size='13' text-anchor='middle'>\"Hello\" / 'World'</text><text x='320' y='180' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Character sequences</text><text x='320' y='200' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Quotation-wrapped</text><text x='320' y='235' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Textual data carrier</text><rect x='430' y='75' width='170' height='180' rx='8' fill='#1e293b' stroke='#f472b6' stroke-width='1.5'/><text x='515' y='105' fill='#f472b6' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Boolean</text><text x='515' y='145' fill='#4ade80' font-family='monospace' font-size='14' text-anchor='middle'>true || false</text><text x='515' y='180' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Binary logic states</text><text x='515' y='200' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Conditional flags</text><text x='515' y='235' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Decision evaluations</text></svg>",
+          "caption": {
+            "en": "Classification of primitive types: numeric values, quoted character strings, and boolean truth values.",
+            "hi": "प्रिमिटिव प्रकारों का वर्गीकरण: संख्यात्मक मान, उद्धरण-बद्ध स्ट्रिंग्स और बूलियन तार्किक मान।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence that differentiates Number, String, and Boolean primitives.",
+          "hint": "Identify numeric values first, followed by character strings in quotes, and binary boolean flags.",
+          "target_sequence": [
+            {
+              "id": "en_u08_t1",
+              "role": "subject",
+              "text": "the `number` data type accommodates positive and negative integers and floating-point decimals,",
+              "role_hint": "introduce textual strings"
+            },
+            {
+              "id": "en_u08_t2",
+              "role": "process",
+              "text": "while `string` encapsulates characters enclosed in single or double quotation marks,",
+              "role_hint": "conclude with boolean logic"
+            },
+            {
+              "id": "en_u08_t3",
+              "role": "result",
+              "text": "and `boolean` defines logical truth states evaluating exclusively to true or false",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u08_d1",
+              "category": "logical",
+              "text": "the `boolean` type holds an infinite spectrum of floating-point fractions,",
+              "penalty_explanation": "Boolean data types hold only two discrete values: true or false."
+            },
+            {
+              "id": "en_u08_d2",
+              "category": "grammatical",
+              "text": "forces strings to be written without any surrounding quotes,",
+              "penalty_explanation": "Strings in JavaScript must be enclosed in single or double quotation marks."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "Number, String और Boolean प्रिमिटिव प्रकारों के अंतर को दर्शाने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "संख्यात्मक मानों से शुरू करें, उद्धरण चिह्नों में टेक्स्ट बताएं और बूलियन सत्य/असत्य से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u08_t1",
+              "role": "subject",
+              "text": "`number` डेटा प्रकार धनात्मक और ऋणात्मक पूर्णांकों और दशमलव संख्याओं को संभालता है,",
+              "role_hint": "टेक्स्ट स्ट्रिंग्स का परिचय दें"
+            },
+            {
+              "id": "hi_u08_t2",
+              "role": "process",
+              "text": "जबकि `string` एकल या दोहरे उद्धरण चिह्नों में संलग्न वर्णों को शामिल करता है,",
+              "role_hint": "बूलियन लॉजिक के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u08_t3",
+              "role": "result",
+              "text": "और `boolean` तार्किक अवस्थाओं को परिभाषित करता है जो केवल सत्य (true) या असत्य (false) का मूल्यांकन करती हैं",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u08_d1",
+              "category": "logical",
+              "text": "`boolean` प्रकार दशमलव भिन्न संख्याओं के अनंत स्पेक्ट्रम को रखता है,",
+              "penalty_explanation": "बूलियन डेटा प्रकार केवल दो मान रखता है: true या false।"
+            },
+            {
+              "id": "hi_u08_d2",
+              "category": "grammatical",
+              "text": "स्ट्रिंग्स को बिना किसी उद्धरण चिह्न के लिखने के लिए बाध्य करते हुए,",
+              "penalty_explanation": "जावास्क्रिप्ट में स्ट्रिंग्स को एकल या दोहरे उद्धरण चिह्नों में लिखना अनिवार्य है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "JavaScript primitives include `Number` (numeric values), `String` (quoted text), and `Boolean` (`true`/`false`).",
+        "hi": "जावास्क्रिप्ट प्रिमिटिव्स में `Number` (संख्याएं), `String` (उद्धरण-बद्ध टेक्स्ट) और `Boolean` (`true`/`false`) शामिल हैं।"
+      }
+    },
+    {
+      "unit_id": "u09_special_and_derived_types",
+      "topic": "Special Values (null, undefined) & Non-Primitive Types",
+      "pedagogical_objective": "Distinguish uninitialized undefined variables from intentional null object references, and identify non-primitive structures (arrays and objects).",
+      "instruction": {
+        "title": {
+          "en": "Special Values (null, undefined) & Derived Types",
+          "hi": "विशेष मान (null, undefined) और गैर-प्रिमिटिव प्रकार"
+        },
+        "theory": {
+          "en": "JavaScript includes special values and derived structures. `undefined` is the default state of a declared variable that has not yet been assigned a value. `null` represents the intentional absence of any object value (distinct from zero or an empty string). Derived or Non-Primitive Data Types—primarily `Array` (ordered collections) and `Object` (key-value structures)—are built from primitive values to manage complex composite data.",
+          "hi": "जावास्क्रिप्ट में विशेष मान और व्युत्पन्न संरचनाएं शामिल हैं। `undefined` एक घोषित चर की डिफ़ॉल्ट स्थिति है जिसे अभी तक कोई मान नहीं दिया गया है। `null` किसी मान या ऑब्जेक्ट संदर्भ की जानबूझकर की गई अनुपस्थिति का प्रतिनिधित्व करता है (जो शून्य या खाली स्थान से अलग है)। Non-Primitive (व्युत्पन्न) डेटा प्रकारों में मुख्य रूप से `Array` (क्रमबद्ध सूचियां) और `Object` (की-वैल्यू जोड़े) शामिल हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Special Values vs Derived (Non-Primitive) Types</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='170' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Special Primitive Values</text><text x='60' y='140' fill='#cbd5e1' font-family='monospace' font-size='12'>undefined</text><text x='60' y='160' fill='#94a3b8' font-family='sans-serif' font-size='11'>Variable declared, no value assigned</text><text x='60' y='195' fill='#cbd5e1' font-family='monospace' font-size='12'>null</text><text x='60' y='215' fill='#94a3b8' font-family='sans-serif' font-size='11'>Intentional empty object reference</text><text x='170' y='242' fill='#fbbf24' font-family='sans-serif' font-size='10' text-anchor='middle'>Not equivalent to 0 or \"\"</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='470' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Non-Primitive (Derived)</text><text x='360' y='140' fill='#cbd5e1' font-family='monospace' font-size='12'>Array: [1, 2, \"item\"]</text><text x='360' y='160' fill='#94a3b8' font-family='sans-serif' font-size='11'>Ordered index collections</text><text x='360' y='195' fill='#cbd5e1' font-family='monospace' font-size='12'>Object: { name: \"Val\" }</text><text x='360' y='215' fill='#94a3b8' font-family='sans-serif' font-size='11'>Key-value entity records</text><text x='470' y='242' fill='#4ade80' font-family='sans-serif' font-size='10' text-anchor='middle'>Constructed from primitives</text></svg>",
+          "caption": {
+            "en": "Distinction between unassigned special values and structured derived non-primitive types.",
+            "hi": "अनिर्दिष्ट विशेष मानों (null/undefined) और संरचित गैर-प्रिमिटिव प्रकारों (Array/Object) के बीच अंतर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence distinguishing special values from derived non-primitive types.",
+          "hint": "Define undefined and null first, then contrast with composite arrays and objects.",
+          "target_sequence": [
+            {
+              "id": "en_u09_t1",
+              "role": "subject",
+              "text": "`undefined` represents uninitialized variables while `null` signifies an intentional absence of value,",
+              "role_hint": "introduce non-primitive structures"
+            },
+            {
+              "id": "en_u09_t2",
+              "role": "process",
+              "text": "contrasting with derived non-primitive data types like arrays and objects,",
+              "role_hint": "state their composite role"
+            },
+            {
+              "id": "en_u09_t3",
+              "role": "result",
+              "text": "which organize primitive data into complex collections and key-value records",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u09_d1",
+              "category": "logical",
+              "text": "equating `null` exactly with numeric zero and space characters,",
+              "penalty_explanation": "Null represents an empty reference, which is strictly distinct from the number zero or a space string."
+            },
+            {
+              "id": "en_u09_d2",
+              "category": "grammatical",
+              "text": "classifies arrays strictly as compiled C++ memory pointers,",
+              "penalty_explanation": "Arrays in JavaScript are dynamic non-primitive high-level objects."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "विशेष मानों और गैर-प्रिमिटिव प्रकारों के अंतर को दर्शाने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "पहले undefined और null की व्याख्या करें, फिर Arrays और Objects के साथ समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u09_t1",
+              "role": "subject",
+              "text": "`undefined` अप्रारंभीकृत चर का प्रतिनिधित्व करता है जबकि `null` मान की जानबूझकर अनुपस्थिति दर्शाता है,",
+              "role_hint": "गैर-प्रिमिटिव संरचनाओं का परिचय दें"
+            },
+            {
+              "id": "hi_u09_t2",
+              "role": "process",
+              "text": "व्युत्पन्न गैर-प्रिमिटिव डेटा प्रकारों जैसे ऐरे और ऑब्जेक्ट्स के विपरीत,",
+              "role_hint": "इनकी संयुक्त भूमिका बताएं"
+            },
+            {
+              "id": "hi_u09_t3",
+              "role": "result",
+              "text": "जो जटिल संग्रहों और की-वैल्यू रिकॉर्ड्स में प्रिमिटिव डेटा को व्यवस्थित करते हैं",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u09_d1",
+              "category": "logical",
+              "text": "`null` को संख्यात्मक शून्य और स्पेस वर्णों के बिल्कुल बराबर मानते हुए,",
+              "penalty_explanation": "`null` एक खाली संदर्भ है, यह शून्य संख्या या स्पेस स्ट्रिंग के समान नहीं है।"
+            },
+            {
+              "id": "hi_u09_d2",
+              "category": "grammatical",
+              "text": "ऐरे को केवल संकलित C++ मेमोरी पॉइंटर्स के रूप में वर्गीकृत करते हुए,",
+              "penalty_explanation": "जावास्क्रिप्ट में ऐरे गतिशील गैर-प्रिमिटिव ऑब्जेक्ट्स हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "`undefined` means unassigned, `null` means intentionally empty, while arrays and objects form non-primitive structures.",
+        "hi": "`undefined` का अर्थ है मान न होना, `null` का अर्थ है जानबूझकर खाली छोड़ना, और Array/Object गैर-प्रिमिटिव प्रकार हैं।"
+      }
+    },
+    {
+      "unit_id": "u10_arithmetic_operators",
+      "topic": "Arithmetic Operations & Evaluation Rules",
+      "pedagogical_objective": "Compute arithmetic expressions using addition, subtraction, multiplication, division, modulus remainder, and exponentiation.",
+      "instruction": {
+        "title": {
+          "en": "Arithmetic Operators in JavaScript",
+          "hi": "जावास्क्रिप्ट में अंकगणितीय ऑपरेटर"
+        },
+        "theory": {
+          "en": "Arithmetic operators execute mathematical calculations on numeric operands. JavaScript includes addition (`+`), subtraction (`-`), multiplication (`*`), division (`/`), modulus (`%` returning the integer remainder of division, e.g., $5 \\% 2 = 1$), and exponentiation (`**` raising the base to a power, e.g., $5 \\text{ ** } 2 = 25$).",
+          "hi": "अंकगणितीय ऑपरेटर संख्यात्मक मानों पर गणितीय गणना करते हैं। जावास्क्रिप्ट में जोड़ (`+`), घटाव (`-`), गुणा (`*`), भाग (`/`), मापांक (`%` जो भाग के बाद शेषफल देता है, जैसे $5 \\% 2 = 1$), और घातांक (`**` जो घात की गणना करता है, जैसे $5 \\text{ ** } 2 = 25$) शामिल हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>JavaScript Arithmetic Operators Reference</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='60' y='105' fill='#fbbf24' font-family='monospace' font-size='13'>+  Addition:       5 + 2 = 7</text><text x='60' y='135' fill='#cbd5e1' font-family='monospace' font-size='13'>-  Subtraction:    5 - 2 = 3</text><text x='60' y='165' fill='#cbd5e1' font-family='monospace' font-size='13'>*  Multiplication: 5 * 2 = 10</text><text x='60' y='195' fill='#cbd5e1' font-family='monospace' font-size='13'>/  Division:       5 / 2 = 2.5</text><text x='170' y='235' fill='#94a3b8' font-family='sans-serif' font-size='11' text-anchor='middle'>Standard algebraic math</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='360' y='110' fill='#38bdf8' font-family='monospace' font-size='13'>%  Modulus (Remainder)</text><text x='380' y='135' fill='#4ade80' font-family='monospace' font-size='12'>5 % 2 = 1 (Remainder)</text><text x='360' y='175' fill='#38bdf8' font-family='monospace' font-size='13'>** Exponentiation</text><text x='380' y='200' fill='#4ade80' font-family='monospace' font-size='12'>5 ** 2 = 25 (5²)</text><text x='470' y='235' fill='#94a3b8' font-family='sans-serif' font-size='11' text-anchor='middle'>Advanced numeric evaluation</text></svg>",
+          "caption": {
+            "en": "Overview of JavaScript arithmetic operations including modulus remainder and exponentiation.",
+            "hi": "मापांक शेषफल और घातांक सहित जावास्क्रिप्ट अंकगणितीय ऑपरेटरों का अवलोकन।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Arrange the sequence defining the evaluation of basic and advanced arithmetic operators in JavaScript.",
+          "hint": "Identify algebraic operators (+, -, *, /) first, then explain modulus (%) and exponentiation (**).",
+          "target_sequence": [
+            {
+              "id": "en_u10_t1",
+              "role": "subject",
+              "text": "arithmetic operators execute calculations using addition, subtraction, multiplication, and division,",
+              "role_hint": "introduce modulus"
+            },
+            {
+              "id": "en_u10_t2",
+              "role": "process",
+              "text": "while the modulus operator `%` extracts the integer remainder of division,",
+              "role_hint": "conclude with exponentiation"
+            },
+            {
+              "id": "en_u10_t3",
+              "role": "result",
+              "text": "and the exponentiation operator `**` raises the base operand to a specified power",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "logical",
+              "text": "the modulus operator `%` converts numeric variables into formatted html strings,",
+              "penalty_explanation": "Modulus `%` calculates the integer remainder of division between numbers."
+            },
+            {
+              "id": "en_u10_d2",
+              "category": "grammatical",
+              "text": "prohibits division operations from producing floating-point quotients,",
+              "penalty_explanation": "Division `/` in JavaScript produces fractional floating-point numbers when not evenly divisible."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "जावास्क्रिप्ट में बुनियादी और उन्नत अंकगणितीय ऑपरेटरों के मूल्यांकन के सही क्रम को व्यवस्थित करें।",
+          "hint": "जोड़, घटाव, गुणा, भाग से शुरू करें, मापांक (%) बताएं और घातांक (**) से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u10_t1",
+              "role": "subject",
+              "text": "अंकगणितीय ऑपरेटर जोड़, घटाव, गुणा और भाग का उपयोग करके गणना करते हैं,",
+              "role_hint": "मापांक (modulus) का परिचय दें"
+            },
+            {
+              "id": "hi_u10_t2",
+              "role": "process",
+              "text": "जबकि मापांक ऑपरेटर `%` विभाजन के बाद शेषफल निकालता है,",
+              "role_hint": "घातांक के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u10_t3",
+              "role": "result",
+              "text": "और घातांक ऑपरेटर `**` बेस ऑपरेंड को निर्दिष्ट घात तक बढ़ाता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "logical",
+              "text": "मापांक ऑपरेटर `%` संख्यात्मक चरों को स्वरूपित HTML स्ट्रिंग्स में बदलता है,",
+              "penalty_explanation": "मापांक ऑपरेटर `%` विभाजन के बाद पूर्णांक शेषफल की गणना करता है।"
+            },
+            {
+              "id": "hi_u10_d2",
+              "category": "grammatical",
+              "text": "विभाजन संचालन को कभी भी दशमलव भागफल देने से रोकते हुए,",
+              "penalty_explanation": "जावास्क्रिप्ट में विभाजन `/` आवश्यकता पड़ने पर दशमलव भागफल देता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Arithmetic operators compute math; `%` returns the remainder ($5 \\% 2 = 1$) and `**` calculates power ($5 \\text{ ** } 2 = 25$).",
+        "hi": "अंकगणितीय ऑपरेटर गणना करते हैं; `%` शेषफल ($5 \\% 2 = 1$) और `**` घात ($5 \\text{ ** } 2 = 25$) निकालता है।"
+      }
+    },
+    {
+      "unit_id": "u11_increment_decrement_operators",
+      "topic": "Unary Arithmetic: Increment and Decrement",
+      "pedagogical_objective": "Apply unary increment (++) and decrement (--) operators to mutate numeric counter variables by one unit.",
+      "instruction": {
+        "title": {
+          "en": "Increment and Decrement Operators",
+          "hi": "इंक्रीमेंट (++) और डिक्रीमेंट (--) ऑपरेटर"
+        },
+        "theory": {
+          "en": "Increment (`++`) and Decrement (`--`) are unary arithmetic operators that modify a numeric variable by exactly one unit. The increment operator (`++`) increases the stored value by 1 (e.g., if `n = 5`, executing `n++` mutates `n` to `6`). The decrement operator (`--`) decreases the stored value by 1 (e.g., if `n = 2`, executing `n--` mutates `n` to `1`). They are standard in loop iterations.",
+          "hi": "इंक्रीमेंट (`++`) और डिक्रीमेंट (`--`) यूनेरी ऑपरेटर हैं जो किसी संख्यात्मक चर के मान को ठीक 1 से बदलते हैं। इंक्रीमेंट ऑपरेटर (`++`) मान को 1 से बढ़ाता है (जैसे यदि `n = 5` है, तो `n++` के बाद `n` का मान `6` हो जाता है)। डिक्रीमेंट ऑपरेटर (`--`) मान को 1 से घटाता है (जैसे यदि `n = 2` है, तो `n--` के बाद `n` का मान `1` हो जाता है)। इनका उपयोग मुख्य रूप से लूप में होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Unary Counter Mutation: ++ and --</text><rect x='50' y='85' width='240' height='150' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='170' y='115' fill='#4ade80' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Increment (++)</text><text x='170' y='155' fill='#cbd5e1' font-family='monospace' font-size='16' text-anchor='middle'>n = 5; n++;</text><text x='170' y='185' fill='#4ade80' font-family='sans-serif' font-size='13' text-anchor='middle'>Result: n = 6</text><text x='170' y='215' fill='#94a3b8' font-family='sans-serif' font-size='11' text-anchor='middle'>Increases variable value by 1</text><rect x='350' y='85' width='240' height='150' rx='8' fill='#1e293b' stroke='#f472b6' stroke-width='1.5'/><text x='470' y='115' fill='#f472b6' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Decrement (--)</text><text x='470' y='155' fill='#cbd5e1' font-family='monospace' font-size='16' text-anchor='middle'>n = 2; n--;</text><text x='470' y='185' fill='#f472b6' font-family='sans-serif' font-size='13' text-anchor='middle'>Result: n = 1</text><text x='470' y='215' fill='#94a3b8' font-family='sans-serif' font-size='11' text-anchor='middle'>Decreases variable value by 1</text></svg>",
+          "caption": {
+            "en": "Unary arithmetic operators mutating numeric variables: incrementing or decrementing by one.",
+            "hi": "संख्यात्मक चरों को 1 से बढ़ाने या घटाने वाले यूनेरी ऑपरेटर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining the mutation effect of increment and decrement operators.",
+          "hint": "Identify unary operations mutating numeric variables, explain increment adding 1, and decrement subtracting 1.",
+          "target_sequence": [
+            {
+              "id": "en_u11_t1",
+              "role": "subject",
+              "text": "unary operators modify existing numeric variables by a fixed single step,",
+              "role_hint": "explain the increment operator"
+            },
+            {
+              "id": "en_u11_t2",
+              "role": "process",
+              "text": "where the increment operator `++` increases the stored value by one,",
+              "role_hint": "conclude with the decrement operator"
+            },
+            {
+              "id": "en_u11_t3",
+              "role": "result",
+              "text": "and the decrement operator `--` decreases the stored numeric value by one",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "logical",
+              "text": "the increment operator `++` multiplies the variable exponentially by two,",
+              "penalty_explanation": "The increment operator adds exactly 1; it does not multiply by two."
+            },
+            {
+              "id": "en_u11_d2",
+              "category": "grammatical",
+              "text": "resets the target variable to null unconditionally,",
+              "penalty_explanation": "Unary operators mutate numeric values by one unit; they do not set variables to null."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "इंक्रीमेंट और डिक्रीमेंट ऑपरेटरों के प्रभाव को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "संख्यात्मक मानों में बदलाव से शुरू करें, 1 जोड़ने वाले इंक्रीमेंट को बताएं और 1 घटाने वाले डिक्रीमेंट से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u11_t1",
+              "role": "subject",
+              "text": "यूनेरी ऑपरेटर मौजूदा संख्यात्मक चरों को एक निश्चित चरण से बदलते हैं,",
+              "role_hint": "इंक्रीमेंट ऑपरेटर की व्याख्या करें"
+            },
+            {
+              "id": "hi_u11_t2",
+              "role": "process",
+              "text": "जहाँ इंक्रीमेंट ऑपरेटर `++` संग्रहीत मान को एक से बढ़ाता है,",
+              "role_hint": "डिक्रीमेंट ऑपरेटर के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u11_t3",
+              "role": "result",
+              "text": "और डिक्रीमेंट ऑपरेटर `--` संग्रहीत संख्यात्मक मान को एक से घटाता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "logical",
+              "text": "इंक्रीमेंट ऑपरेटर `++` वेरिएबल को तेजी से दो से गुणा करता है,",
+              "penalty_explanation": "इंक्रीमेंट ऑपरेटर ठीक 1 जोड़ता है; यह गुणा नहीं करता।"
+            },
+            {
+              "id": "hi_u11_d2",
+              "category": "grammatical",
+              "text": "लक्षित वेरिएबल को बिना शर्त शून्य या null पर रीसेट करते हुए,",
+              "penalty_explanation": "ये ऑपरेटर मान को केवल 1 से बढ़ाते या घटाते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Unary `++` increments a variable by 1, while `--` decrements a variable by 1.",
+        "hi": "यूनेरी ऑपरेटर `++` मान को 1 से बढ़ाता है, और `--` मान को 1 से घटाता है।"
+      }
+    },
+    {
+      "unit_id": "u12_comparison_equality_operators",
+      "topic": "Relational Operators: Equality & Inequality",
+      "pedagogical_objective": "Evaluate boolean comparisons testing value equivalence (==) and non-equality (!=) across operands.",
+      "instruction": {
+        "title": {
+          "en": "Comparison Operators: Equality and Inequality",
+          "hi": "तुलनात्मक ऑपरेटर: समानता (==) और असमानता (!=)"
+        },
+        "theory": {
+          "en": "Comparison (Relational) operators evaluate relationships between operands and return a Boolean result (`true` or `false`). The Equality operator (`==`) returns `true` if both values evaluate to the same value (e.g., `5 == 5` is `true`, while `5 == 2` is `false`). The Inequality operator (`!=`) returns `true` if the compared operands are not equal (e.g., `5 != 2` is `true`, while `5 != 5` is `false`).",
+          "hi": "तुलनात्मक (Comparison या Relational) ऑपरेटर दो मानों की तुलना करते हैं और एक बूलियन परिणाम (`true` या `false`) देते हैं। समानता ऑपरेटर (`==`) तब `true` देता है जब दोनों मान बराबर हों (जैसे `5 == 5` सत्य है, जबकि `5 == 2` असत्य है)। असमानता ऑपरेटर (`!=`) तब `true` देता है जब दोनों मान बराबर न हों (जैसे `5 != 2` सत्य है, जबकि `5 != 5` असत्य है)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Relational Equality Testing: == and !=</text><rect x='50' y='85' width='240' height='150' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='170' y='115' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Equality (==)</text><text x='170' y='150' fill='#4ade80' font-family='monospace' font-size='14' text-anchor='middle'>5 == 5  →  true</text><text x='170' y='180' fill='#ef4444' font-family='monospace' font-size='14' text-anchor='middle'>5 == 2  →  false</text><text x='170' y='215' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>true only when values match</text><rect x='350' y='85' width='240' height='150' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='470' y='115' fill='#fbbf24' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Inequality (!=)</text><text x='470' y='150' fill='#ef4444' font-family='monospace' font-size='14' text-anchor='middle'>5 != 5  →  false</text><text x='470' y='180' fill='#4ade80' font-family='monospace' font-size='14' text-anchor='middle'>5 != 2  →  true</text><text x='470' y='215' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>true when values differ</text></svg>",
+          "caption": {
+            "en": "Evaluation of boolean equality (==) and inequality (!=) comparisons in JavaScript.",
+            "hi": "जावास्क्रिप्ट में बूलियन समानता (==) और असमानता (!=) तुलनाओं का मूल्यांकन।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining how equality and inequality operators evaluate comparisons.",
+          "hint": "Identify comparison returning booleans, explain the == condition, and contrast with !=.",
+          "target_sequence": [
+            {
+              "id": "en_u12_t1",
+              "role": "subject",
+              "text": "relational comparison operators evaluate values to produce a boolean result,",
+              "role_hint": "explain the equality operator"
+            },
+            {
+              "id": "en_u12_t2",
+              "role": "process",
+              "text": "where `==` returns true if both compared operands evaluate to the same value,",
+              "role_hint": "conclude with the inequality operator"
+            },
+            {
+              "id": "en_u12_t3",
+              "role": "result",
+              "text": "and `!=` returns true if the operands hold differing values",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u12_d1",
+              "category": "logical",
+              "text": "the equality operator `==` overwrites the left operand with the right operand value,",
+              "penalty_explanation": "Value assignment is performed by `=`; the `==` operator strictly compares values."
+            },
+            {
+              "id": "en_u12_d2",
+              "category": "grammatical",
+              "text": "causes relational tests to return undefined strings instead of booleans,",
+              "penalty_explanation": "Relational operators strictly return boolean `true` or `false` values."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "समानता और असमानता ऑपरेटरों द्वारा तुलना मूल्यांकन के सही क्रम को व्यवस्थित करें।",
+          "hint": "बूलियन परिणाम देने वाली तुलना से शुरू करें, == की स्थिति बताएं और != से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u12_t1",
+              "role": "subject",
+              "text": "तुलनात्मक ऑपरेटर बूलियन परिणाम उत्पन्न करने के लिए मानों का मूल्यांकन करते हैं,",
+              "role_hint": "समानता ऑपरेटर समझाएं"
+            },
+            {
+              "id": "hi_u12_t2",
+              "role": "process",
+              "text": "जहाँ `==` सत्य (true) देता है यदि दोनों मान समान हों,",
+              "role_hint": "असमानता ऑपरेटर के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u12_t3",
+              "role": "result",
+              "text": "और `!=` सत्य (true) देता है यदि दोनों मान भिन्न हों",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u12_d1",
+              "category": "logical",
+              "text": "समानता ऑपरेटर `==` बाएं मान को दाएं मान से अधिलेखित (overwrite) कर देता है,",
+              "penalty_explanation": "मान असाइन करने के लिए `=` का उपयोग होता है; `==` केवल तुलना करता है।"
+            },
+            {
+              "id": "hi_u12_d2",
+              "category": "grammatical",
+              "text": "बूलियन के बजाय अपरिभाषित स्ट्रिंग्स वापस करने के लिए तुलना को बाध्य करते हुए,",
+              "penalty_explanation": "तुलनात्मक ऑपरेटर केवल बूलियन `true` या `false` मान देते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Relational `==` tests equality (`5 == 5` is `true`), while `!=` tests inequality (`5 != 2` is `true`).",
+        "hi": "समानता ऑपरेटर `==` बराबरी की जांच करता है (`5 == 5` सत्य है), और `!=` असमानता की जांच करता है (`5 != 2` सत्य है)।"
+      }
+    },
+    {
+      "unit_id": "u13_relational_ordering_operators",
+      "topic": "Relational Ordering: <, <=, >, and >=",
+      "pedagogical_objective": "Compare values using strict ordering (<, >) and boundary comparison operators (<=, >=) to control decision branches.",
+      "instruction": {
+        "title": {
+          "en": "Relational Ordering Operators (<, <=, >, >=)",
+          "hi": "तुलनात्मक क्रम ऑपरेटर (<, <=, >, >=)"
+        },
+        "theory": {
+          "en": "Relational ordering operators evaluate numerical thresholds. Less Than (`<`) returns `true` if the left operand is strictly smaller than the right operand (`2 < 5`). Less Than or Equal To (`<=`) returns `true` if the left operand is smaller than or equal to the right operand (`5 <= 5`). Greater Than (`>`) tests if the left value exceeds the right (`5 > 2`), and Greater Than or Equal To (`>=`) includes the boundary value (`5 >= 5`).",
+          "hi": "तुलनात्मक क्रम ऑपरेटर संख्यात्मक सीमाओं का मूल्यांकन करते हैं। Less Than (`<`) सत्य देता है यदि बायां मान दाएं से छोटा हो (`2 < 5`)। Less Than or Equal (`<=`) सत्य देता है यदि बायां मान दाएं से छोटा या उसके बराबर हो (`5 <= 5`)। Greater Than (`>`) जांचता है कि क्या बायां मान बड़ा है (`5 > 2`), और Greater Than or Equal (`>=`) सीमा मान को भी शामिल करता है (`5 >= 5`)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Relational Magnitude &amp; Boundary Comparisons</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='170' y='105' fill='#38bdf8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Less Than Operators</text><text x='60' y='140' fill='#cbd5e1' font-family='monospace' font-size='13'>2 &lt; 5   →  true</text><text x='60' y='165' fill='#cbd5e1' font-family='monospace' font-size='13'>5 &lt; 5   →  false</text><text x='60' y='195' fill='#4ade80' font-family='monospace' font-size='13'>5 &lt;= 5  →  true</text><text x='60' y='220' fill='#cbd5e1' font-family='monospace' font-size='13'>6 &lt;= 5  →  false</text><text x='170' y='242' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Boundary inclusive with =</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='470' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Greater Than Operators</text><text x='360' y='140' fill='#cbd5e1' font-family='monospace' font-size='13'>5 &gt; 2   →  true</text><text x='360' y='165' fill='#cbd5e1' font-family='monospace' font-size='13'>5 &gt; 5   →  false</text><text x='360' y='195' fill='#4ade80' font-family='monospace' font-size='13'>5 &gt;= 5  →  true</text><text x='360' y='220' fill='#cbd5e1' font-family='monospace' font-size='13'>4 &gt;= 5  →  false</text><text x='470' y='242' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Boundary inclusive with =</text></svg>",
+          "caption": {
+            "en": "Magnitude evaluation comparing strictly smaller/larger values and inclusive boundary limits.",
+            "hi": "कड़े छोटे/बड़े मानों और समावेशी सीमा सीमाओं की तुलना करने वाला परिमाण मूल्यांकन।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Arrange the sequence defining the evaluation of relational ordering operators.",
+          "hint": "Identify strict comparisons (<, >), then explain boundary-inclusive operators (<=, >=).",
+          "target_sequence": [
+            {
+              "id": "en_u13_t1",
+              "role": "subject",
+              "text": "relational ordering operators evaluate numerical thresholds between operands,",
+              "role_hint": "explain strict comparison"
+            },
+            {
+              "id": "en_u13_t2",
+              "role": "process",
+              "text": "where `<` and `>` test strict inequality excluding the boundary values,",
+              "role_hint": "conclude with inclusive boundary operators"
+            },
+            {
+              "id": "en_u13_t3",
+              "role": "result",
+              "text": "while `<=` and `>=` return true if the operands are either strictly ordered or equal",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "logical",
+              "text": "`<=` returns false whenever both operands are exactly identical,",
+              "penalty_explanation": "`<=` specifically returns true when both operands are equal."
+            },
+            {
+              "id": "en_u13_d2",
+              "category": "grammatical",
+              "text": "converts numerical inequalities into circular graphic pie charts,",
+              "penalty_explanation": "Relational operators evaluate logical boolean conditions, not graphic charts."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "तुलनात्मक क्रम ऑपरेटरों के मूल्यांकन को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "संख्यात्मक सीमाओं के मूल्यांकन से शुरू करें, < और > का अंतर बताएं और <= व >= से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u13_t1",
+              "role": "subject",
+              "text": "तुलनात्मक क्रम ऑपरेटर ऑपरेंड के बीच संख्यात्मक सीमाओं का मूल्यांकन करते हैं,",
+              "role_hint": "सख्त असमानता की व्याख्या करें"
+            },
+            {
+              "id": "hi_u13_t2",
+              "role": "process",
+              "text": "जहाँ `<` और `>` सीमा मानों को छोड़कर सख्त असमानता का परीक्षण करते हैं,",
+              "role_hint": "समावेशी सीमा ऑपरेटरों के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u13_t3",
+              "role": "result",
+              "text": "जबकि `<=` और `>=` सत्य देते हैं यदि ऑपरेंड या तो क्रमबद्ध हों या बराबर हों",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "logical",
+              "text": "`<=` असत्य (false) देता है जब दोनों मान बिल्कुल समान हों,",
+              "penalty_explanation": "`<=` विशेष रूप से सत्य (true) देता है जब दोनों मान बराबर हों।"
+            },
+            {
+              "id": "hi_u13_d2",
+              "category": "grammatical",
+              "text": "संख्यात्मक असमानताओं को गोलाकार पाई चार्ट में परिवर्तित करते हुए,",
+              "penalty_explanation": "तुलनात्मक ऑपरेटर बूलियन परिणाम देते हैं, चार्ट नहीं बनाते।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "`<` and `>` check strict thresholds, while `<=` and `>=` include equal values (`5 <= 5` is `true`).",
+        "hi": "`<` और `>` सख्त सीमाएं जांचते हैं, जबकि `<=` और `>=` बराबर मानों को भी शामिल करते हैं (`5 <= 5` सत्य है)।"
+      }
+    },
+    {
+      "unit_id": "u14_logical_operators",
+      "topic": "Boolean Logic: AND, OR, and NOT",
+      "pedagogical_objective": "Construct complex conditional tests using logical conjunction (&&), disjunction (||), and boolean inversion (!).",
+      "instruction": {
+        "title": {
+          "en": "Logical Operators: AND, OR, NOT",
+          "hi": "लॉजिकल ऑपरेटर: AND (&&), OR (||), NOT (!)"
+        },
+        "theory": {
+          "en": "Logical operators combine or invert boolean truth states. Logical AND (`&&`) returns `true` only if both operands evaluate to `true` (`true && false` evaluates to `false`). Logical OR (`||`) returns `true` if at least one operand is `true` (`true || false` evaluates to `true`). Logical NOT (`!`) inverts boolean polarity, flipping `true` to `false` and `false` to `true` (`!true` is `false`).",
+          "hi": "लॉजिकल ऑपरेटर बूलियन मानों को जोड़ते या बदलते हैं। Logical AND (`&&`) केवल तभी `true` देता है जब दोनों स्थितियां `true` हों (`true && false` असत्य है)। Logical OR (`||`) तब `true` देता है जब कम से कम एक स्थिति `true` हो (`true || false` सत्य है)। Logical NOT (`!`) बूलियन मान को उल्टा कर देता है, यानी `true` को `false` और `false` को `true` में बदल देता है (`!true` असत्य है)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Boolean Truth Evaluation: AND (&amp;&amp;), OR (||), NOT (!)</text><rect x='40' y='75' width='170' height='180' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='125' y='105' fill='#38bdf8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Logical AND (&amp;&amp;)</text><text x='60' y='140' fill='#4ade80' font-family='monospace' font-size='11'>T &amp;&amp; T → true</text><text x='60' y='165' fill='#ef4444' font-family='monospace' font-size='11'>T &amp;&amp; F → false</text><text x='60' y='190' fill='#ef4444' font-family='monospace' font-size='11'>F &amp;&amp; F → false</text><text x='125' y='235' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>true ONLY if both true</text><rect x='235' y='75' width='170' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='320' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Logical OR (||)</text><text x='255' y='140' fill='#4ade80' font-family='monospace' font-size='11'>T || T → true</text><text x='255' y='165' fill='#4ade80' font-family='monospace' font-size='11'>T || F → true</text><text x='255' y='190' fill='#ef4444' font-family='monospace' font-size='11'>F || F → false</text><text x='320' y='235' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>true if EITHER is true</text><rect x='430' y='75' width='170' height='180' rx='8' fill='#1e293b' stroke='#f472b6' stroke-width='1.5'/><text x='515' y='105' fill='#f472b6' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Logical NOT (!)</text><text x='450' y='140' fill='#ef4444' font-family='monospace' font-size='11'>!true  → false</text><text x='450' y='170' fill='#4ade80' font-family='monospace' font-size='11'>!false → true</text><text x='515' y='235' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Inverts boolean polarity</text></svg>",
+          "caption": {
+            "en": "Truth table operations of logical conjunction (&&), disjunction (||), and negation (!).",
+            "hi": "लॉजिकल AND (&&), OR (||) और NOT (!) का सत्य सारणी (Truth Table) मूल्यांकन।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining boolean operations using AND, OR, and NOT.",
+          "hint": "Explain && requiring both true, || requiring either true, and ! inverting polarity.",
+          "target_sequence": [
+            {
+              "id": "en_u14_t1",
+              "role": "subject",
+              "text": "the logical AND operator `&&` returns true only when both conditional operands are true,",
+              "role_hint": "describe the OR operator"
+            },
+            {
+              "id": "en_u14_t2",
+              "role": "process",
+              "text": "while the logical OR operator `||` returns true if either of the evaluated conditions is true,",
+              "role_hint": "conclude with the NOT operator"
+            },
+            {
+              "id": "en_u14_t3",
+              "role": "result",
+              "text": "and the logical NOT operator `!` inverts boolean truth by converting true to false and false to true",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "logical",
+              "text": "the logical AND operator `&&` returns true when both evaluated operands are completely false,",
+              "penalty_explanation": "Logical AND requires both operands to be true; two false operands result in false."
+            },
+            {
+              "id": "en_u14_d2",
+              "category": "grammatical",
+              "text": "prohibits boolean logic from operating inside conditional if statements,",
+              "penalty_explanation": "Logical operators are designed specifically to construct compound tests within if statements."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "AND, OR और NOT का उपयोग करके बूलियन ऑपरेशनों को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "दोनों सत्य की मांग करने वाले && से शुरू करें, किसी एक सत्य वाले || को बताएं और मान पलटने वाले ! से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u14_t1",
+              "role": "subject",
+              "text": "लॉजिकल AND ऑपरेटर `&&` केवल तभी सत्य देता है जब दोनों स्थितियां सत्य हों,",
+              "role_hint": "OR ऑपरेटर की व्याख्या करें"
+            },
+            {
+              "id": "hi_u14_t2",
+              "role": "process",
+              "text": "जबकि लॉजिकल OR ऑपरेटर `||` सत्य देता है यदि दोनों में से कोई भी एक स्थिति सत्य हो,",
+              "role_hint": "NOT ऑपरेटर के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u14_t3",
+              "role": "result",
+              "text": "और लॉजिकल NOT ऑपरेटर `!` सत्य को असत्य और असत्य को सत्य में बदलकर बूलियन मान को उल्टा करता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "logical",
+              "text": "लॉजिकल AND ऑपरेटर `&&` तब सत्य देता है जब दोनों मान पूरी तरह से असत्य हों,",
+              "penalty_explanation": "Logical AND केवल तभी true देता है जब दोनों मान true हों।"
+            },
+            {
+              "id": "hi_u14_d2",
+              "category": "grammatical",
+              "text": "बूलियन लॉजिक को कंडीशनल if स्टेटमेंट के अंदर काम करने से रोकते हुए,",
+              "penalty_explanation": "लॉजिकल ऑपरेटरों का उपयोग if स्टेटमेंट में मिश्रित शर्तों के निर्माण के लिए ही किया जाता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "`&&` requires both operands to be true, `||` requires at least one true, and `!` inverts the boolean value.",
+        "hi": "`&&` में दोनों सत्य होने चाहिए, `||` में कोई एक सत्य होना चाहिए, और `!` मान को उल्टा कर देता है।"
+      }
+    },
+    {
+      "unit_id": "u15_string_concatenation",
+      "topic": "String Concatenation Operator (+)",
+      "pedagogical_objective": "Combine alphanumeric literals and variable values into unified text strings using the overloaded string concatenation operator (+).",
+      "instruction": {
+        "title": {
+          "en": "String Concatenation in JavaScript",
+          "hi": "जावास्क्रिप्ट में स्ट्रिंग कॉन्सैटिनेशन (+)"
+        },
+        "theory": {
+          "en": "In JavaScript, the plus sign (`+`) is an overloaded operator. When applied to numeric types, it performs addition; however, when applied to String operands, it acts as the Concatenation Operator. Concatenation merges two or more string fragments and variables into a single continuous string (e.g., `\"I love \" + \"my country\"` results in `\"I love my country\"`).",
+          "hi": "जावास्क्रिप्ट में प्लस चिन्ह (`+`) एक ओवरलोडेड ऑपरेटर है। जब इसका उपयोग संख्याओं के साथ किया जाता है, तो यह जोड़ करता है; लेकिन जब इसका उपयोग String मानों के साथ किया जाता है, तो यह स्ट्रिंग कॉन्सैटिनेशन ऑपरेटर के रूप में कार्य करता है। यह दो या दो से अधिक स्ट्रिंग्स और वेरिएबल्स को जोड़कर एक निरंतर स्ट्रिंग बनाता है (जैसे `\"I love \" + \"my country\"` का परिणाम `\"I love my country\"` होगा)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>String Concatenation: Merging Text with the + Operator</text><rect x='50' y='80' width='540' height='75' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='80' y='125' fill='#cbd5e1' font-family='monospace' font-size='18'><tspan fill='#fbbf24'>\"I love \"</tspan> <tspan fill='#38bdf8'>+</tspan> <tspan fill='#fbbf24'>\"my country, \"</tspan> <tspan fill='#38bdf8'>+</tspan> <tspan fill='#fbbf24'>\"Bharat.\"</tspan></text><rect x='50' y='175' width='540' height='75' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='320' y='205' fill='#4ade80' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Concatenated Output String</text><text x='320' y='230' fill='#cbd5e1' font-family='monospace' font-size='15' text-anchor='middle'>\"I love my country, Bharat.\"</text></svg>",
+          "caption": {
+            "en": "Evaluating the overloaded plus operator to join discrete string fragments together.",
+            "hi": "अलग-अलग स्ट्रिंग टुकड़ों को आपस में जोड़ने के लिए प्लस (+) ऑपरेटर का मूल्यांकन।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining string concatenation behavior using the plus operator.",
+          "hint": "Identify the plus symbol operating on string values, explain merging fragments, and conclude with the combined string.",
+          "target_sequence": [
+            {
+              "id": "en_u15_t1",
+              "role": "subject",
+              "text": "when applied to string operands, the overloaded `+` symbol functions as a concatenation operator,",
+              "role_hint": "describe the merging action"
+            },
+            {
+              "id": "en_u15_t2",
+              "role": "process",
+              "text": "joining multiple textual literals and string variables end-to-end,",
+              "role_hint": "conclude with the unified string output"
+            },
+            {
+              "id": "en_u15_t3",
+              "role": "result",
+              "text": "to produce a single unified continuous text string output",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "logical",
+              "text": "calculating mathematical arithmetic sums by converting all letters into numbers,",
+              "penalty_explanation": "When strings are present, `+` performs text concatenation rather than numeric addition."
+            },
+            {
+              "id": "en_u15_d2",
+              "category": "grammatical",
+              "text": "deletes all punctuation and spaces automatically between words,",
+              "penalty_explanation": "Concatenation preserves all characters and spaces exactly as defined within the strings."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "प्लस ऑपरेटर का उपयोग करके स्ट्रिंग कॉन्सैटिनेशन व्यवहार को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "स्ट्रिंग पर काम करने वाले प्लस चिन्ह से शुरू करें, टुकड़ों को जोड़ना बताएं और अंतिम संयुक्त टेक्स्ट से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u15_t1",
+              "role": "subject",
+              "text": "स्ट्रिंग ऑपरेंड पर लागू होने पर, ओवरलोडेड `+` चिन्ह एक कॉन्सैटिनेशन ऑपरेटर के रूप में कार्य करता है,",
+              "role_hint": "जोड़ने की क्रिया का वर्णन करें"
+            },
+            {
+              "id": "hi_u15_t2",
+              "role": "process",
+              "text": "कई टेक्स्ट लिटरल्स और स्ट्रिंग वेरिएबल्स को एक साथ जोड़ते हुए,",
+              "role_hint": "अंतिम स्ट्रिंग आउटपुट के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u15_t3",
+              "role": "result",
+              "text": "एक एकल एकीकृत निरंतर टेक्स्ट स्ट्रिंग आउटपुट उत्पन्न करने के लिए",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "logical",
+              "text": "सभी अक्षरों को संख्याओं में बदलकर गणितीय अंकगणितीय योग की गणना करते हुए,",
+              "penalty_explanation": "स्ट्रिंग्स के साथ `+` ऑपरेटर टेक्स्ट जोड़ने का काम करता है, गणितीय योग नहीं।"
+            },
+            {
+              "id": "hi_u15_d2",
+              "category": "grammatical",
+              "text": "शब्दों के बीच सभी विराम चिह्नों और खाली स्थानों को स्वचालित रूप से हटाते हुए,",
+              "penalty_explanation": "कॉन्सैटिनेशन स्ट्रिंग में मौजूद सभी वर्णों और स्पेस को सुरक्षित रखता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The `+` operator concatenates strings, merging text fragments into a continuous unified string.",
+        "hi": "`+` ऑपरेटर स्ट्रिंग्स को जोड़ता है (concatenate), और विभिन्न टेक्स्ट टुकड़ों को मिलाकर एक स्ट्रिंग बनाता है।"
+      }
+    },
+    {
+      "unit_id": "u16_conditional_if_and_ifelse",
+      "topic": "Decision Control: if and if...else Statements",
+      "pedagogical_objective": "Control program branching using standalone if conditions and binary if...else alternative statement blocks.",
+      "instruction": {
+        "title": {
+          "en": "Conditional Branching: if and if...else",
+          "hi": "सशर्त ब्रांचिंग: if और if...else स्टेटमेंट"
+        },
+        "theory": {
+          "en": "Conditional statements control program flow based on boolean evaluations. The `if` statement executes an enclosed block of code only if the specified condition evaluates to `true`. The `if...else` statement establishes binary decision branching: if the condition is `true`, the first block executes; if the condition evaluates to `false`, control branches to execute the `else` block.",
+          "hi": "सशर्त (Conditional) स्टेटमेंट बूलियन मूल्यांकन के आधार पर प्रोग्राम के निष्पादन को नियंत्रित करते हैं। `if` स्टेटमेंट कोड के एक ब्लॉक को केवल तभी निष्पादित करता है जब निर्दिष्ट शर्त `true` हो। `if...else` स्टेटमेंट दोतरफा निर्णय लेता है: यदि शर्त `true` है, तो पहला ब्लॉक चलता है; और यदि शर्त `false` है, तो `else` ब्लॉक निष्पादित होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Control Flow: if and if...else Branching Logic</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='170' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>if Statement (Single Branch)</text><text x='60' y='135' fill='#38bdf8' font-family='monospace' font-size='12'>if (age &gt;= 18) {</text><text x='80' y='160' fill='#4ade80' font-family='monospace' font-size='12'>  vote();</text><text x='60' y='185' fill='#38bdf8' font-family='monospace' font-size='12'>}</text><text x='170' y='235' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Executes ONLY when true</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='470' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>if...else (Dual Alternative)</text><text x='360' y='135' fill='#38bdf8' font-family='monospace' font-size='12'>if (age &gt;= 18) {</text><text x='380' y='155' fill='#4ade80' font-family='monospace' font-size='12'>  vote();</text><text x='360' y='175' fill='#38bdf8' font-family='monospace' font-size='12'>} else {</text><text x='380' y='195' fill='#ef4444' font-family='monospace' font-size='12'>  wait();</text><text x='360' y='215' fill='#38bdf8' font-family='monospace' font-size='12'>}</text><text x='470' y='242' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Guarantees one branch executes</text></svg>",
+          "caption": {
+            "en": "Branching logic of single-condition if statements and two-way alternative if...else blocks.",
+            "hi": "एकल-शर्त if स्टेटमेंट और दोतरफा वैकल्पिक if...else ब्लॉक का लॉजिक।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining program branching using if and if...else statements.",
+          "hint": "Explain the single-condition if test, introduce the else alternative, and conclude with binary execution.",
+          "target_sequence": [
+            {
+              "id": "en_u16_t1",
+              "role": "subject",
+              "text": "the `if` statement evaluates a condition to execute an enclosed code block only when true,",
+              "role_hint": "introduce the else alternative"
+            },
+            {
+              "id": "en_u16_t2",
+              "role": "process",
+              "text": "while pairing it with `else` provides an alternative execution pathway,",
+              "role_hint": "conclude with binary branch execution"
+            },
+            {
+              "id": "en_u16_t3",
+              "role": "result",
+              "text": "guaranteeing that either the true block or the false alternative executes deterministically",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u16_d1",
+              "category": "logical",
+              "text": "executes both the `if` and `else` blocks simultaneously whenever a condition evaluates to false,",
+              "penalty_explanation": "An `if...else` structure executes only one branch based on condition truth."
+            },
+            {
+              "id": "en_u16_d2",
+              "category": "grammatical",
+              "text": "requires if conditions to omit enclosing parentheses `()` entirely,",
+              "penalty_explanation": "JavaScript syntax mandates enclosing conditional expressions in parentheses `()`."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "if और if...else कथनों का उपयोग करके प्रोग्राम ब्रांचिंग के सही क्रम को व्यवस्थित करें।",
+          "hint": "सत्य होने पर चलने वाले if से शुरू करें, else विकल्प का उल्लेख करें और द्वि-शाखा निष्पादन से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u16_t1",
+              "role": "subject",
+              "text": "`if` स्टेटमेंट किसी शर्त का मूल्यांकन केवल सत्य होने पर संलग्न कोड ब्लॉक को चलाने के लिए करता है,",
+              "role_hint": "else विकल्प का परिचय दें"
+            },
+            {
+              "id": "hi_u16_t2",
+              "role": "process",
+              "text": "जबकि इसे `else` के साथ जोड़ना एक वैकल्पिक निष्पादन मार्ग प्रदान करता है,",
+              "role_hint": "द्वि-शाखा निष्पादन के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u16_t3",
+              "role": "result",
+              "text": "यह सुनिश्चित करते हुए कि या तो सत्य ब्लॉक या असत्य विकल्प निश्चित रूप से चले",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u16_d1",
+              "category": "logical",
+              "text": "शर्त असत्य होने पर `if` और `else` दोनों ब्लॉकों को एक साथ निष्पादित करते हुए,",
+              "penalty_explanation": "`if...else` संरचना में शर्त के आधार पर केवल एक ही ब्लॉक निष्पादित होता है।"
+            },
+            {
+              "id": "hi_u16_d2",
+              "category": "grammatical",
+              "text": "if शर्तों को कोष्ठक `()` को पूरी तरह से छोड़ने के लिए बाध्य करते हुए,",
+              "penalty_explanation": "जावास्क्रिप्ट में if शर्त को कोष्ठक `()` के अंदर लिखना अनिवार्य है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "`if` runs code only when a condition is true; `if...else` provides a two-way branch when it is false.",
+        "hi": "`if` केवल शर्त सत्य होने पर चलता है; `if...else` शर्त असत्य होने पर वैकल्पिक मार्ग प्रदान करता है।"
+      }
+    },
+    {
+      "unit_id": "u17_nested_if_and_switch",
+      "topic": "Multi-Branch Selection: if...else if...else & switch",
+      "pedagogical_objective": "Implement multi-path decision structures using else if ladders and value matching via switch, case, break, and default.",
+      "instruction": {
+        "title": {
+          "en": "Multi-Way Branching: else if Ladders and switch",
+          "hi": "बहु-मार्गी ब्रांचिंग: else if सीढ़ी और switch स्टेटमेंट"
+        },
+        "theory": {
+          "en": "When evaluating multiple distinct criteria, JavaScript provides two primary control structures: The `if...else if...else` ladder checks sequential conditions top-to-bottom, executing the first matching true block. The `switch` statement evaluates an expression against multiple `case` labels. Each case requires a `break` statement to prevent fall-through execution into subsequent cases, and a `default` clause executes if no cases match.",
+          "hi": "जब कई अलग-अलग शर्तों का मूल्यांकन करना हो, तो दो मुख्य संरचनाएं होती हैं: `if...else if...else` सीढ़ी ऊपर से नीचे तक शर्तों की जांच करती है और पहली सत्य शर्त को निष्पादित करती है। `switch` स्टेटमेंट किसी वेरिएबल की तुलना कई `case` मानों से करता है। अगले केस में जाने से रोकने के लिए प्रत्येक केस के बाद `break` का उपयोग किया जाता है, और कोई मिलान न होने पर `default` ब्लॉक चलता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Multi-Branch Decision Structures: Ladder vs Switch</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='170' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>else if Ladder</text><text x='60' y='135' fill='#38bdf8' font-family='monospace' font-size='11'>if (score &gt;= 75) {</text><text x='75' y='155' fill='#4ade80' font-family='monospace' font-size='11'>  \"Distinction\";</text><text x='60' y='175' fill='#38bdf8' font-family='monospace' font-size='11'>} else if (score &gt;= 33) {</text><text x='75' y='195' fill='#4ade80' font-family='monospace' font-size='11'>  \"Pass\";</text><text x='60' y='215' fill='#38bdf8' font-family='monospace' font-size='11'>} else { \"Fail\"; }</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='470' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>switch Statement</text><text x='360' y='135' fill='#38bdf8' font-family='monospace' font-size='11'>switch (day) {</text><text x='375' y='155' fill='#cbd5e1' font-family='monospace' font-size='11'>  case 1: \"Mon\"; break;</text><text x='375' y='175' fill='#cbd5e1' font-family='monospace' font-size='11'>  case 2: \"Tue\"; break;</text><text x='375' y='195' fill='#fbbf24' font-family='monospace' font-size='11'>  default: \"Other\";</text><text x='360' y='215' fill='#38bdf8' font-family='monospace' font-size='11'>}</text><text x='470' y='242' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>break prevents fall-through</text></svg>",
+          "caption": {
+            "en": "Multi-path decision structures: sequential else-if condition ladders and discrete case-switch blocks.",
+            "hi": "बहु-मार्गी निर्णय संरचनाएं: अनुक्रमिक else-if सीढ़ी और switch-case ब्लॉक।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining multi-branch control using else-if ladders and switch statements.",
+          "hint": "Identify the else-if ladder checking conditions, then explain the switch statement with break and default.",
+          "target_sequence": [
+            {
+              "id": "en_u17_t1",
+              "role": "subject",
+              "text": "the `else if` ladder evaluates sequential conditional expressions top-to-bottom,",
+              "role_hint": "contrast with the switch statement"
+            },
+            {
+              "id": "en_u17_t2",
+              "role": "process",
+              "text": "while the `switch` statement matches an expression against specific case values,",
+              "role_hint": "explain break and default clauses"
+            },
+            {
+              "id": "en_u17_t3",
+              "role": "result",
+              "text": "using `break` to exit after a match and `default` to handle non-matching cases",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u17_d1",
+              "category": "logical",
+              "text": "omitting the `break` statement forces the switch block to terminate immediately,",
+              "penalty_explanation": "Omitting `break` causes fall-through, executing subsequent cases until a break or the end is reached."
+            },
+            {
+              "id": "en_u17_d2",
+              "category": "grammatical",
+              "text": "prohibits switch statements from utilizing default fallback clauses,",
+              "penalty_explanation": "The `default` clause is an established component of switch structures to handle unmatched values."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "else-if सीढ़ी और switch कथनों का उपयोग करके बहु-शाखा नियंत्रण के सही क्रम को व्यवस्थित करें।",
+          "hint": "शर्तों की जांच करने वाली else-if सीढ़ी से शुरू करें, switch स्टेटमेंट का उल्लेख करें और break व default से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u17_t1",
+              "role": "subject",
+              "text": "`else if` सीढ़ी ऊपर से नीचे तक अनुक्रमिक सशर्त अभिव्यक्तियों का मूल्यांकन करती है,",
+              "role_hint": "switch स्टेटमेंट से तुलना करें"
+            },
+            {
+              "id": "hi_u17_t2",
+              "role": "process",
+              "text": "जबकि `switch` स्टेटमेंट किसी मान की तुलना विशिष्ट केस मानों से करता है,",
+              "role_hint": "break और default के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u17_t3",
+              "role": "result",
+              "text": "मैच के बाद बाहर निकलने के लिए `break` और गैर-मिलान वाले मामलों के लिए `default` का उपयोग करते हुए",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u17_d1",
+              "category": "logical",
+              "text": "`break` स्टेटमेंट को छोड़ने से स्विच ब्लॉक तुरंत समाप्त हो जाता है,",
+              "penalty_explanation": "`break` छोड़ने पर कोड अगले केस में चला जाता है (fall-through), तुरंत समाप्त नहीं होता।"
+            },
+            {
+              "id": "hi_u17_d2",
+              "category": "grammatical",
+              "text": "स्विच स्टेटमेंट को डिफ़ॉल्ट फ़ॉलबैक क्लॉज का उपयोग करने से रोकते हुए,",
+              "penalty_explanation": "`default` क्लॉज स्विच संरचना का एक स्थापित घटक है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "`else if` ladders test sequential conditions; `switch` matches values, requiring `break` to prevent fall-through.",
+        "hi": "`else if` सीढ़ी कई शर्तों का परीक्षण करती है; `switch` मानों का मिलान करता है और `break` से बाहर निकलता है।"
+      }
+    },
+    {
+      "unit_id": "u18_while_loop_mechanics",
+      "topic": "Entry-Controlled Iteration: The while Loop",
+      "pedagogical_objective": "Execute entry-controlled repetition where the loop guard condition is evaluated prior to any iteration running.",
+      "instruction": {
+        "title": {
+          "en": "Entry-Controlled Looping: The while Loop",
+          "hi": "एंट्री-नियंत्रित लूपिंग: while लूप"
+        },
+        "theory": {
+          "en": "Iteration (looping) executes a block of statements repeatedly as long as a specified condition remains `true`. The `while` loop is an entry-controlled loop: its condition is evaluated at the start, before the first iteration executes. If the condition evaluates to `false` initially, the loop body is bypassed and will not run even once. A loop counter must be updated inside the loop to avoid infinite loops.",
+          "hi": "लूपिंग (Iteration) कोड के एक ब्लॉक को बार-बार तब तक निष्पादित करता है जब तक कि दी गई शर्त `true` रहती है। `while` लूप एक एंट्री-नियंत्रित (entry-controlled) लूप है: इसकी शर्त की जांच पहले पुनरावृत्ति से पहले ही की जाती है। यदि प्रारंभिक शर्त `false` है, तो लूप बॉडी एक बार भी नहीं चलेगी। अनंत लूप से बचने के लिए अंदर काउंटर को अपडेट करना आवश्यक है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Entry-Controlled while Loop Flowchart</text><rect x='220' y='75' width='200' height='40' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='320' y='100' fill='#fbbf24' font-family='monospace' font-size='13' text-anchor='middle'>while (condition)</text><line x1='320' y1='115' x2='320' y2='145' stroke='#38bdf8' stroke-width='2'/><polygon points='320,150 315,142 325,142' fill='#38bdf8'/><text x='345' y='135' fill='#4ade80' font-family='sans-serif' font-size='11'>true</text><rect x='220' y='150' width='200' height='55' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='320' y='173' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='middle'>Execute Statements</text><text x='320' y='193' fill='#fbbf24' font-family='monospace' font-size='12' text-anchor='middle'>Update Counter (n++)</text><path d='M 220 177 L 160 177 L 160 95 L 215 95' fill='none' stroke='#38bdf8' stroke-width='2'/><polygon points='220,95 212,90 212,100' fill='#38bdf8'/><line x1='420' y1='95' x2='500' y2='95' stroke='#ef4444' stroke-width='2'/><polygon points='505,95 497,90 497,100' fill='#ef4444'/><text x='455' y='85' fill='#ef4444' font-family='sans-serif' font-size='11'>false</text><text x='550' y='100' fill='#ef4444' font-family='sans-serif' font-size='12'>Bypass Loop</text></svg>",
+          "caption": {
+            "en": "Flowchart showing pre-condition evaluation in entry-controlled while loops.",
+            "hi": "एंट्री-नियंत्रित while लूप में शर्त के प्रारंभिक मूल्यांकन को दर्शाने वाला फ्लोचार्ट।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining the execution mechanics of an entry-controlled while loop.",
+          "hint": "State condition evaluation at the start, explain body execution when true, and describe bypassing when false.",
+          "target_sequence": [
+            {
+              "id": "en_u18_t1",
+              "role": "subject",
+              "text": "the `while` loop checks its conditional expression prior to executing any code block,",
+              "role_hint": "describe what happens when true"
+            },
+            {
+              "id": "en_u18_t2",
+              "role": "process",
+              "text": "executing the enclosed statements repeatedly and updating counter variables while true,",
+              "role_hint": "conclude with the false condition behavior"
+            },
+            {
+              "id": "en_u18_t3",
+              "role": "result",
+              "text": "and bypassing execution completely without running once if the initial test evaluates to false",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u18_d1",
+              "category": "logical",
+              "text": "guaranteeing that the body executes at least five times regardless of condition truth,",
+              "penalty_explanation": "An entry-controlled while loop will not run even once if its condition starts as false."
+            },
+            {
+              "id": "en_u18_d2",
+              "category": "grammatical",
+              "text": "prohibits counter variables from being incremented inside loop bodies,",
+              "penalty_explanation": "Counter variables must be updated inside the loop body to avoid infinite iteration."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "एंट्री-नियंत्रित while लूप के निष्पादन तंत्र को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "शुरुआत में शर्त की जांच से शुरू करें, सत्य होने पर कोड चलना बताएं और असत्य होने पर बायपास से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u18_t1",
+              "role": "subject",
+              "text": "`while` लूप किसी भी कोड ब्लॉक को निष्पादित करने से पहले अपनी शर्त की जांच करता है,",
+              "role_hint": "सत्य होने पर क्या होता है समझाएं"
+            },
+            {
+              "id": "hi_u18_t2",
+              "role": "process",
+              "text": "शर्त सत्य रहने तक कोड को बार-बार चलाता है और काउंटर वेरिएबल को अपडेट करता है,",
+              "role_hint": "शर्त असत्य होने पर व्यवहार के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u18_t3",
+              "role": "result",
+              "text": "और प्रारंभिक परीक्षण असत्य होने पर एक बार भी चले बिना निष्पादन को पूरी तरह से बायपास कर देता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u18_d1",
+              "category": "logical",
+              "text": "शर्त की परवाह किए बिना लूप बॉडी को कम से कम पांच बार चलाने की गारंटी देते हुए,",
+              "penalty_explanation": "यदि शर्त प्रारंभ में ही असत्य है, तो while लूप एक बार भी नहीं चलता।"
+            },
+            {
+              "id": "hi_u18_d2",
+              "category": "grammatical",
+              "text": "लूप बॉडी के अंदर काउंटर वेरिएबल को बढ़ाने से रोकते हुए,",
+              "penalty_explanation": "अनंत लूप से बचने के लिए लूप बॉडी के अंदर काउंटर को बढ़ाना आवश्यक है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The `while` loop checks conditions first; if false initially, the loop body will not execute even once.",
+        "hi": "`while` लूप पहले शर्त की जांच करता है; यदि शर्त शुरू में ही असत्य है, तो लूप एक बार भी नहीं चलेगा।"
+      }
+    },
+    {
+      "unit_id": "u19_dowhile_and_for_loops",
+      "topic": "Exit-Controlled do...while & Counter-Driven for Loops",
+      "pedagogical_objective": "Contrast guaranteed single-pass execution in do...while with tripartite counter-driven iteration in for loops.",
+      "instruction": {
+        "title": {
+          "en": "Loops: Exit-Controlled do...while and for",
+          "hi": "लूप्स: एग्जिट-नियंत्रित do...while और for लूप"
+        },
+        "theory": {
+          "en": "The `do...while` loop is an exit-controlled loop: its statements execute first unconditionally, and the condition is evaluated at the end of the iteration. Thus, it is guaranteed to execute at least once even if the condition is `false`. The `for` loop consolidates counter-driven iteration into a tripartite header containing `initialization; condition; increment/decrement`, making it ideal when the exact number of iterations is known in advance.",
+          "hi": "`do...while` लूप एक एग्जिट-नियंत्रित (exit-controlled) लूप है: इसके स्टेटमेंट पहले बिना शर्त निष्पादित होते हैं, और शर्त की जांच पुनरावृत्ति के अंत में की जाती है। इसलिए, शर्त `false` होने पर भी यह कम से कम एक बार जरूर चलता है। `for` लूप एक ही पंक्ति में `(प्रारंभीकरण; शर्त; इंक्रीमेंट/डिक्रीमेंट)` को समेकित करता है, जो तब आदर्श होता है जब पुनरावृत्तियों की संख्या पहले से ज्ञात हो।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>do...while (Exit-Controlled) vs for (Counter-Driven)</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='170' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>do...while Loop</text><text x='60' y='135' fill='#38bdf8' font-family='monospace' font-size='12'>do {</text><text x='80' y='155' fill='#4ade80' font-family='monospace' font-size='12'>  execute(); n++;</text><text x='60' y='175' fill='#38bdf8' font-family='monospace' font-size='12'>} while (n &lt;= 10);</text><text x='170' y='215' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Condition checked at bottom</text><text x='170' y='235' fill='#4ade80' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Guaranteed &gt;= 1 execution</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='470' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>for Loop</text><text x='355' y='135' fill='#38bdf8' font-family='monospace' font-size='11'>for (n=1; n&lt;=10; n++) {</text><text x='375' y='160' fill='#4ade80' font-family='monospace' font-size='12'>  execute();</text><text x='355' y='185' fill='#38bdf8' font-family='monospace' font-size='12'>}</text><text x='470' y='215' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Header: init; test; step</text><text x='470' y='235' fill='#4ade80' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Best for fixed iterations</text></svg>",
+          "caption": {
+            "en": "Structural contrast between post-condition do...while loops and counter-initialized for loops.",
+            "hi": "शर्त-पश्चात do...while लूप और काउंटर-आरंभीकृत for लूप के बीच संरचनात्मक अंतर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence contrasting the execution mechanics of do...while and for loops.",
+          "hint": "Identify exit-controlled execution in do...while, then explain tripartite counter initialization in for loops.",
+          "target_sequence": [
+            {
+              "id": "en_u19_t1",
+              "role": "subject",
+              "text": "the `do...while` loop executes its statements first before evaluating conditions at the bottom,",
+              "role_hint": "state the guaranteed execution count"
+            },
+            {
+              "id": "en_u19_t2",
+              "role": "process",
+              "text": "guaranteeing that its enclosed block executes at least once even if the condition is false,",
+              "role_hint": "contrast with the for loop"
+            },
+            {
+              "id": "en_u19_t3",
+              "role": "result",
+              "text": "while the `for` loop consolidates initialization, condition, and increment in a single header for counted repetitions",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u19_d1",
+              "category": "logical",
+              "text": "the `do...while` loop checks conditions first and never executes if initially false,",
+              "penalty_explanation": "The `while` loop behaves this way; `do...while` always executes at least once."
+            },
+            {
+              "id": "en_u19_d2",
+              "category": "grammatical",
+              "text": "prohibits for loops from containing any loop counter increments,",
+              "penalty_explanation": "The for loop explicitly incorporates an increment/decrement step in its header."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "do...while और for लूप के निष्पादन तंत्र के अंतर को दर्शाने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "do...while के एग्जिट-नियंत्रित निष्पादन से शुरू करें, कम से कम एक बार चलना बताएं और for लूप से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u19_t1",
+              "role": "subject",
+              "text": "`do...while` लूप नीचे दी गई शर्त का मूल्यांकन करने से पहले अपने बयानों को निष्पादित करता है,",
+              "role_hint": "न्यूनतम निष्पादन संख्या बताएं"
+            },
+            {
+              "id": "hi_u19_t2",
+              "role": "process",
+              "text": "यह गारंटी देते हुए कि शर्त असत्य होने पर भी इसका ब्लॉक कम से कम एक बार जरूर चलता है,",
+              "role_hint": "for लूप के साथ तुलना करें"
+            },
+            {
+              "id": "hi_u19_t3",
+              "role": "result",
+              "text": "जबकि `for` लूप निश्चित पुनरावृत्तियों के लिए एक ही हेडर में इनिशियलाइज़ेशन, शर्त और इंक्रीमेंट को जोड़ता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u19_d1",
+              "category": "logical",
+              "text": "`do...while` लूप पहले शर्त की जांच करता है और शुरुआत में असत्य होने पर कभी नहीं चलता,",
+              "penalty_explanation": "यह `while` लूप का व्यवहार है; `do...while` हमेशा कम से कम एक बार चलता है।"
+            },
+            {
+              "id": "hi_u19_d2",
+              "category": "grammatical",
+              "text": "for लूप को किसी भी काउंटर इंक्रीमेंट को शामिल करने से रोकते हुए,",
+              "penalty_explanation": "for लूप स्पष्ट रूप से अपने हेडर में इंक्रीमेंट/डिक्रीमेंट शामिल करता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "`do...while` runs at least once because its check is at the end; `for` loops manage counted iterations cleanly in one header.",
+        "hi": "`do...while` कम से कम एक बार जरूर चलता है क्योंकि शर्त अंत में होती है; `for` लूप ज्ञात पुनरावृत्तियों के लिए सबसे उपयुक्त है।"
+      }
+    },
+    {
+      "unit_id": "u20_state_persistence_cookies",
+      "topic": "Client-Side State Persistence: Browser Cookies",
+      "pedagogical_objective": "Explain how client-stored text cookies maintain session state and convey persistent user data across HTTP client-server cycles.",
+      "instruction": {
+        "title": {
+          "en": "Client-Side State: Browser Cookies",
+          "hi": "क्लाइंट-साइड स्थिति: ब्राउज़र कुकीज़ (Cookies)"
+        },
+        "theory": {
+          "en": "HTTP is fundamentally a stateless communication protocol. To maintain user identity and session continuity across page loads, web applications use Cookies. Cookies are small pieces of data stored as plain text files on the client machine by the web browser. When the browser requests a web page, stored cookies are automatically attached to the HTTP request headers, enabling the server to recognize the user and preserve session state.",
+          "hi": "HTTP मूल रूप से एक स्टेटलेस (stateless) प्रोटोकॉल है। कई वेब पृष्ठों पर उपयोगकर्ता की पहचान और सत्र निरंतरता बनाए रखने के लिए, ब्राउज़र कुकीज़ (Cookies) का उपयोग किया जाता है। कुकीज़ वेब ब्राउज़र द्वारा क्लाइंट कंप्यूटर पर छोटी टेक्स्ट फ़ाइलों के रूप में संग्रहीत डेटा हैं। जब कोई ब्राउज़र सर्वर से किसी पृष्ठ का अनुरोध करता है, तो कुकीज़ उस अनुरोध के साथ जुड़ जाती हैं, जिससे सर्वर उपयोगकर्ता की जानकारी याद रखता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Cookie Persistence Cycle: Client Storage and Header Attachment</text><rect x='50' y='85' width='180' height='150' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='140' y='115' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Client Browser</text><rect x='70' y='135' width='140' height='55' rx='4' fill='#0f172a' stroke='#cbd5e1' stroke-width='1'/><text x='140' y='158' fill='#4ade80' font-family='monospace' font-size='11' text-anchor='middle'>cookie.txt</text><text x='140' y='178' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Small local text file</text><text x='140' y='220' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Created &amp; kept by browser</text><line x1='240' y1='135' x2='400' y2='135' stroke='#38bdf8' stroke-width='2'/><polygon points='405,135 395,130 395,140' fill='#38bdf8'/><text x='320' y='125' fill='#38bdf8' font-family='sans-serif' font-size='10' text-anchor='middle'>HTTP Request + Cookie Data</text><line x1='400' y1='180' x2='240' y2='180' stroke='#4ade80' stroke-width='2'/><polygon points='235,180 245,175 245,185' fill='#4ade80'/><text x='320' y='200' fill='#4ade80' font-family='sans-serif' font-size='10' text-anchor='middle'>HTTP Response + Set-Cookie</text><rect x='410' y='85' width='180' height='150' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='500' y='115' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Remote Web Server</text><text x='500' y='155' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Reads Cookie in Header</text><text x='500' y='180' fill='#38bdf8' font-family='sans-serif' font-size='11' text-anchor='middle'>Identifies User Session</text><text x='500' y='220' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Preserves State Across Visits</text></svg>",
+          "caption": {
+            "en": "Browser storing text cookies locally and attaching them to HTTP requests to preserve session state.",
+            "hi": "ब्राउज़र द्वारा स्थानीय रूप से कुकीज़ सहेजना और सत्र की स्थिति बनाए रखने के लिए उन्हें HTTP अनुरोधों से जोड़ना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining how browser cookies preserve session state across networks.",
+          "hint": "Identify cookies as small text files stored locally, explain attachment to HTTP requests, and describe server recognition.",
+          "target_sequence": [
+            {
+              "id": "en_u20_t1",
+              "role": "subject",
+              "text": "cookies are created and stored as small plain text files on the client computer by the web browser,",
+              "role_hint": "explain how they travel over the network"
+            },
+            {
+              "id": "en_u20_t2",
+              "role": "process",
+              "text": "automatically attaching to subsequent http page requests directed to that server,",
+              "role_hint": "conclude with server session memory"
+            },
+            {
+              "id": "en_u20_t3",
+              "role": "result",
+              "text": "enabling the remote web server to identify user sessions and retain state information across visits",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u20_d1",
+              "category": "logical",
+              "text": "cookies permanently reformat the client hard drive into an unpartitioned binary file,",
+              "penalty_explanation": "Cookies are harmless small plain-text files storing key-value pairs; they do not reformat drives."
+            },
+            {
+              "id": "en_u20_d2",
+              "category": "grammatical",
+              "text": "prohibits browsers from attaching stored cookies to any outbound network requests,",
+              "penalty_explanation": "Browsers automatically attach matching domain cookies to outgoing HTTP headers."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "ब्राउज़र कुकीज़ द्वारा सत्र की स्थिति (session state) को बनाए रखने के सही क्रम को व्यवस्थित करें।",
+          "hint": "स्थानीय रूप से सहेजी गई छोटी टेक्स्ट फ़ाइलों से शुरू करें, HTTP अनुरोध में जुड़ना बताएं और सर्वर द्वारा उपयोगकर्ता पहचान से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u020_t1",
+              "role": "subject",
+              "text": "कुकीज़ वेब ब्राउज़र द्वारा क्लाइंट कंप्यूटर पर छोटी प्लेन-टेक्स्ट फ़ाइलों के रूप में बनाई और संग्रहीत की जाती हैं,",
+              "role_hint": "नेटवर्क पर जाने की प्रक्रिया बताएं"
+            },
+            {
+              "id": "hi_u020_t2",
+              "role": "process",
+              "text": "उस सर्वर को भेजे जाने वाले बाद के HTTP पृष्ठ अनुरोधों के साथ स्वचालित रूप से जुड़ते हुए,",
+              "role_hint": "सत्र पहचान के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u020_t3",
+              "role": "result",
+              "text": "रिमोट वेब सर्वर को उपयोगकर्ता सत्रों की पहचान करने और यात्राओं में जानकारी याद रखने में सक्षम बनाती हैं",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u020_d1",
+              "category": "logical",
+              "text": "कुकीज़ क्लाइंट हार्ड ड्राइव को स्थायी रूप से एक बाइनरी फ़ाइल में रीफ़ॉर्मेट कर देती हैं,",
+              "penalty_explanation": "कुकीज़ केवल छोटी सादे टेक्स्ट की फाइलें होती हैं, वे हार्ड ड्राइव को नुकसान नहीं पहुंचाती हैं।"
+            },
+            {
+              "id": "hi_u020_d2",
+              "category": "grammatical",
+              "text": "ब्राउज़र को किसी भी आउटबाउंड नेटवर्क अनुरोध के साथ संग्रहीत कुकीज़ जोड़ने से रोकते हुए,",
+              "penalty_explanation": "ब्राउज़र स्वचालित रूप से आउटगोइंग HTTP हेडर के साथ कुकीज़ जोड़ते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Cookies are small client-side text files attached to HTTP requests to help servers remember user sessions.",
+        "hi": "कुकीज़ क्लाइंट-साइड टेक्स्ट फ़ाइलें हैं जो HTTP अनुरोधों से जुड़कर सर्वर को उपयोगकर्ता सत्र याद रखने में मदद करती हैं।"
+      }
+    }
+  ]
+}
