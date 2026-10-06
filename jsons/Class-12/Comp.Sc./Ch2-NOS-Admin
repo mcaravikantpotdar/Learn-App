@@ -1,0 +1,1818 @@
+{
+  "chapter_id": "ch02_network_operating_system",
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science / Network Administration",
+    "chapter_title": {
+      "en": "Network Operating System (Configuration and Management)",
+      "hi": "नेटवर्क ऑपरेटिंग सिस्टम (कॉन्फ़िगरेशन और प्रबंधन)"
+    },
+    "total_units": 15,
+    "scoring_model": {
+      "single_language_max": 10,
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "unit_id": "u01_hardware_network_maintenance",
+      "topic": "Hardware and NOS Maintenance Activities",
+      "pedagogical_objective": "Understand the key routine maintenance activities necessary for optimal network reliability and performance.",
+      "instruction": {
+        "title": {
+          "en": "Hardware and Network Maintenance Essentials",
+          "hi": "हार्डवेयर और नेटवर्क रखरखाव के मूल तत्व"
+        },
+        "theory": {
+          "en": "Hardware and network operating system maintenance refers to activities performed to ensure optimal performance and high reliability across a computer network. These routines prevent system downtime, troubleshoot underlying faults, and upgrade capabilities. Crucial maintenance tasks include physical cleaning, hardware replacement, firmware/BIOS updates, NOS patching, performance monitoring, security auditing, and regular backup and disaster recovery operations.",
+          "hi": "हार्डवेयर और नेटवर्क ऑपरेटिंग सिस्टम रखरखाव उन गतिविधियों को संदर्भित करता है जो कंप्यूटर नेटवर्क के उच्चतम कार्य-प्रदर्शन और विश्वसनीयता को सुनिश्चित करने के लिए की जाती हैं। ये गतिविधियाँ समस्याओं को रोकने, खराबी का निवारण करने और प्रदर्शन में सुधार करने में मदद करती हैं। प्रमुख रखरखाव कार्यों में भौतिक सफाई, हार्डवेयर अपग्रेड, फ़र्मवेयर/BIOS अपडेट, NOS पैचिंग, प्रदर्शन निगरानी, सुरक्षा ऑडिट, और नियमित बैकअप व रिकवरी शामिल हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='20' y='20' width='600' height='40' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='40' y='45' fill='#38bdf8' font-family='monospace' font-size='15' font-weight='bold' text-anchor='start'>NOS MAINTENANCE LIFECYCLE</text><rect x='30' y='80' width='170' height='160' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='45' y='110' fill='#4ade80' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>1. PREVENTIVE</text><text x='45' y='140' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Physical Clean</text><text x='45' y='165' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- BIOS/Firmware</text><text x='45' y='190' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- NOS Patches</text><rect x='235' y='80' width='170' height='160' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='250' y='110' fill='#fbbf24' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>2. MONITORING</text><text x='250' y='140' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Performance</text><text x='250' y='165' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Fault Detection</text><text x='250' y='190' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Security Logs</text><rect x='440' y='80' width='170' height='160' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='455' y='110' fill='#f472b6' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>3. RESILIENCE</text><text x='455' y='140' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Data Backups</text><text x='455' y='165' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Fault Recovery</text><text x='455' y='190' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Hardware Swap</text></svg>",
+          "caption": {
+            "en": "Three key pillars of hardware and network maintenance operations.",
+            "hi": "हार्डवेयर और नेटवर्क रखरखाव संचालन के तीन मुख्य स्तंभ।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Assemble the correct lifecycle sequence for maintaining a reliable network operating system.",
+          "hint": "Begin with scheduled inspection, proceed to patching software, and finalize with backups.",
+          "target_sequence": [
+            {
+              "id": "en_u01_t1",
+              "role": "subject",
+              "text": "perform physical inspection of hardware,",
+              "role_hint": "follow up with system-level updates"
+            },
+            {
+              "id": "en_u01_t2",
+              "role": "process",
+              "text": "apply firmware updates and `NOS` security patches,",
+              "role_hint": "track system metrics continuously"
+            },
+            {
+              "id": "en_u01_t3",
+              "role": "process",
+              "text": "monitor performance logs to detect faults,",
+              "role_hint": "finish with data safety protocols"
+            },
+            {
+              "id": "en_u01_t4",
+              "role": "result",
+              "text": "execute routine data backups for disaster recovery",
+              "role_hint": "maintenance cycle completes"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u01_d1",
+              "category": "logical",
+              "text": "disable firewall controls during routine inspections,",
+              "penalty_explanation": "Disabling security controls during routine inspections leaves the entire network vulnerable to unauthorized access."
+            },
+            {
+              "id": "en_u01_d2",
+              "category": "grammatical",
+              "text": "execute routine data backups prior to checking connections,",
+              "penalty_explanation": "This reverses the diagnostic sequence; hardware integrity and cleanliness must be validated before conducting system operations."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "एक विश्वसनीय नेटवर्क ऑपरेटिंग सिस्टम के रखरखाव के सही जीवन-चक्र क्रम को व्यवस्थित करें।",
+          "hint": "हार्डवेयर के भौतिक निरीक्षण से शुरू करें, सॉफ्टवेयर पैच लागू करें, और बैकअप पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u01_t1",
+              "role": "subject",
+              "text": "हार्डवेयर का भौतिक निरीक्षण और सफाई करें,",
+              "role_hint": "इसके बाद सिस्टम-स्तरीय अपडेट करें"
+            },
+            {
+              "id": "hi_u01_t2",
+              "role": "process",
+              "text": "फ़र्मवेयर अपडेट और `NOS` सुरक्षा पैच लागू करें,",
+              "role_hint": "सिस्टम मेट्रिक्स की लगातार निगरानी करें"
+            },
+            {
+              "id": "hi_u01_t3",
+              "role": "process",
+              "text": "खामियों का पता लगाने के लिए प्रदर्शन लॉग की निगरानी करें,",
+              "role_hint": "डेटा सुरक्षा प्रोटोकॉल के साथ पूरा करें"
+            },
+            {
+              "id": "hi_u01_t4",
+              "role": "result",
+              "text": "आपदा रिकवरी के लिए नियमित डेटा बैकअप निष्पादित करें",
+              "role_hint": "रखरखाव चक्र समाप्त हुआ"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u01_d1",
+              "category": "logical",
+              "text": "नियमित निरीक्षण के दौरान फ़ायरवॉल नियंत्रण अक्षम करें,",
+              "penalty_explanation": "रखरखाव के दौरान सुरक्षा नियंत्रण बंद करने से नेटवर्क अनधिकृत खतरों के प्रति संवेदनशील हो जाता है।"
+            },
+            {
+              "id": "hi_u01_d2",
+              "category": "grammatical",
+              "text": "कनेक्शन की जांच करने से पहले नियमित डेटा बैकअप निष्पादित करें,",
+              "penalty_explanation": "यह नैदानिक क्रम को उलट देता है; सिस्टम संचालन से पहले भौतिक कनेक्शन की जांच जरूरी है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Network maintenance combines physical inspection, firmware updates, active performance monitoring, and secure backups to guarantee uptime and reliability.",
+        "hi": "नेटवर्क रखरखाव में विश्वसनीयता और निरंतर संचालन बनाए रखने के लिए भौतिक निरीक्षण, फ़र्मवेयर अपडेट, प्रदर्शन निगरानी और बैकअप शामिल हैं।"
+      }
+    },
+    {
+      "unit_id": "u02_network_security_and_roles",
+      "topic": "Network Security Principles & Specialist Techniques",
+      "pedagogical_objective": "Master the core defensive measures and administrative techniques implemented by a network specialist.",
+      "instruction": {
+        "title": {
+          "en": "Network Security Fundamentals and Techniques",
+          "hi": "नेटवर्क सुरक्षा के सिद्धांत और तकनीकें"
+        },
+        "theory": {
+          "en": "Network security is the process of taking preventive measures to protect computers, network infrastructure, and sensitive data from unauthorized access, misuse, and physical damage. This is administered by a dedicated professional known as a network specialist or network administrator. Core techniques include network monitoring to detect faults, configuring firewalls to filter traffic, deploying antivirus software against malware (such as worms, Trojans, and ransomware), and enforcing complex passwords containing letters, numbers, and symbols.",
+          "hi": "नेटवर्क सुरक्षा कंप्यूटर, नेटवर्क बुनियादी ढांचे और संवेदनशील डेटा को अनधिकृत पहुंच, दुरुपयोग और क्षति से बचाने के लिए निवारक उपाय करने की प्रक्रिया है। यह कार्य एक विशेष व्यक्ति द्वारा किया जाता है जिसे नेटवर्क विशेषज्ञ या नेटवर्क प्रशासक कहा जाता है। मुख्य तकनीकों में खराबी पकड़ने के लिए नेटवर्क मॉनिटरिंग, ट्रैफ़िक को फ़िल्टर करने के लिए फ़ायरवॉल लगाना, मैलवेयर (जैसे वर्म्स, ट्रोजन और रैनसमवेयर) रोकने के लिए एंटीवायरस सॉफ़्टवेयर का उपयोग, और अक्षरों, संख्याओं व विशेष वर्णों से युक्त मजबूत पासवर्ड लागू करना शामिल है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='20' y='20' width='600' height='40' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='40' y='45' fill='#38bdf8' font-family='monospace' font-size='15' font-weight='bold' text-anchor='start'>DEFENSE-IN-DEPTH: NETWORK SECURITY</text><rect x='40' y='85' width='260' height='75' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='55' y='110' fill='#38bdf8' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>FIREWALL</text><text x='55' y='135' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>Filters incoming/outgoing traffic</text><rect x='340' y='85' width='260' height='75' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='355' y='110' fill='#4ade80' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>ANTIVIRUS SUITE</text><text x='355' y='135' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>Removes Trojans, worms, spyware</text><rect x='40' y='180' width='260' height='75' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1'/><text x='55' y='205' fill='#fbbf24' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>STRONG PASSWORDS</text><text x='55' y='230' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>Letters, numbers &amp; symbols</text><rect x='340' y='180' width='260' height='75' rx='6' fill='#1e293b' stroke='#f472b6' stroke-width='1'/><text x='355' y='205' fill='#f472b6' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>NETWORK MONITORING</text><text x='355' y='230' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>Inspects hardware/software faults</text></svg>",
+          "caption": {
+            "en": "Four core defensive techniques deployed by a network specialist.",
+            "hi": "नेटवर्क विशेषज्ञ द्वारा उपयोग की जाने वाली चार प्रमुख सुरक्षा तकनीकें।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence of defensive barriers configured by a network administrator to safeguard corporate assets.",
+          "hint": "Inspect boundary traffic first, eliminate endpoint malware, and enforce credential complexity.",
+          "target_sequence": [
+            {
+              "id": "en_u02_t1",
+              "role": "subject",
+              "text": "configure a network firewall,",
+              "role_hint": "filter unauthorized incoming data packets"
+            },
+            {
+              "id": "en_u02_t2",
+              "role": "process",
+              "text": "filter incoming and outgoing traffic streams,",
+              "role_hint": "install malicious software defense systems"
+            },
+            {
+              "id": "en_u02_t3",
+              "role": "process",
+              "text": "deploy antivirus software against trojans and worms,",
+              "role_hint": "restrict user identity access controls"
+            },
+            {
+              "id": "en_u02_t4",
+              "role": "result",
+              "text": "enforce strong passwords using alphanumeric symbols",
+              "role_hint": "network security pipeline secured"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u02_d1",
+              "category": "logical",
+              "text": "allow open network traffic to accelerate connection speeds,",
+              "penalty_explanation": "Opening unrestricted traffic removes boundary protection and exposes internal computers to remote exploitation."
+            },
+            {
+              "id": "en_u02_d2",
+              "category": "grammatical",
+              "text": "enforce strong passwords using alphanumeric symbols before installing the firewall,",
+              "penalty_explanation": "Perimeter network filtering must be established prior to configuring internal endpoint credential rules."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "कंपनी के नेटवर्क की सुरक्षा के लिए नेटवर्क प्रशासक द्वारा कॉन्फ़िगर किए गए रक्षा चरणों को क्रमबद्ध करें।",
+          "hint": "सीमा सुरक्षा से शुरू करें, एंडपॉइंट मैलवेयर रोकें, और पासवर्ड सुरक्षा लागू करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u02_t1",
+              "role": "subject",
+              "text": "एक नेटवर्क फ़ायरवॉल को कॉन्फ़िगर करें,",
+              "role_hint": "अनधिकृत इनपुट डेटा पैकेट फ़िल्टर करें"
+            },
+            {
+              "id": "hi_u02_t2",
+              "role": "process",
+              "text": "इनकमिंग और आउटगोइंग ट्रैफ़िक स्ट्रीम को फ़िल्टर करें,",
+              "role_hint": "मैलवेयर से सुरक्षा प्रणाली स्थापित करें"
+            },
+            {
+              "id": "hi_u02_t3",
+              "role": "process",
+              "text": "ट्रोजन और वर्म्स के खिलाफ एंटीवायरस सॉफ़्टवेयर तैनात करें,",
+              "role_hint": "उपयोगकर्ता एक्सेस नियंत्रण कड़े करें"
+            },
+            {
+              "id": "hi_u02_t4",
+              "role": "result",
+              "text": "अक्षर और विशेष वर्णों से युक्त मजबूत पासवर्ड लागू करें",
+              "role_hint": "नेटवर्क सुरक्षा चक्र पूरा हुआ"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u02_d1",
+              "category": "logical",
+              "text": "कनेक्शन गति बढ़ाने के लिए बिना रोक-टोक ट्रैफ़िक की अनुमति दें,",
+              "penalty_explanation": "अप्रतिबंधित ट्रैफ़िक की अनुमति देने से नेटवर्क सीमा सुरक्षा समाप्त हो जाती है और हमले का खतरा बढ़ जाता है।"
+            },
+            {
+              "id": "hi_u02_d2",
+              "category": "grammatical",
+              "text": "फ़ायरवॉल लगाने से पहले मजबूत पासवर्ड लागू करें,",
+              "penalty_explanation": "आंतरिक एंडपॉइंट क्रेडेंशियल्स लागू करने से पहले नेटवर्क फ़िल्टरिंग स्थापित की जानी चाहिए।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Network security relies on a network specialist coordinating firewalls, active scanning, antivirus defenses, and robust password policies.",
+        "hi": "नेटवर्क सुरक्षा एक नेटवर्क विशेषज्ञ द्वारा फ़ायरवॉल, सक्रिय निगरानी, एंटीवायरस और कड़े पासवर्ड नियमों के समन्वय पर निर्भर करती है।"
+      }
+    },
+    {
+      "unit_id": "u03_network_specialist_careers",
+      "topic": "Career Opportunities in Network Administration",
+      "pedagogical_objective": "Distinguish between the roles and responsibilities of key networking career paths.",
+      "instruction": {
+        "title": {
+          "en": "Specialized Career Paths in Computer Networking",
+          "hi": "कंप्यूटर नेटवर्किंग में कैरियर के विविध अवसर"
+        },
+        "theory": {
+          "en": "Networking offers distinct career specializations tailored to specific infrastructure demands: 1. Network Administrator: Focuses on day-to-day operations, troubleshooting, device configuration, and health monitoring. 2. Network Engineer: Responsible for designing, architecting, implementing, and maintaining high-level network infrastructure. 3. Network Security Specialist: Implements defensive safeguards including firewalls, encryption, and intrusion detection systems (IDS). 4. Network Support Specialist: Provides hands-on technical support to end users and resolves workstation connectivity problems.",
+          "hi": "कंप्यूटर नेटवर्किंग बुनियादी ढांचे की विभिन्न जरूरतों के लिए कई पेशेवर कैरियर विकल्प प्रदान करती है: 1. नेटवर्क प्रशासक (Network Administrator): दैनिक संचालन, समस्या निवारण, डिवाइस कॉन्फ़िगरेशन और निगरानी पर ध्यान केंद्रित करता है। 2. नेटवर्क इंजीनियर (Network Engineer): नेटवर्क के बुनियादी ढांचे को डिजाइन, लागू और रखरखाव करता है। 3. नेटवर्क सुरक्षा विशेषज्ञ (Network Security Specialist): फ़ायरवॉल, एन्क्रिप्शन और घुसपैठ का पता लगाने वाली प्रणाली (IDS) जैसे सुरक्षा उपाय लागू करता है। 4. नेटवर्क सहायता विशेषज्ञ (Network Support Specialist): अंतिम उपयोगकर्ताओं को तकनीकी सहायता देता है और कनेक्टिविटी समस्याओं को हल करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='20' y='15' width='600' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='40' y='38' fill='#38bdf8' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>CAREER ROLES IN NETWORKING</text><rect x='30' y='65' width='270' height='90' rx='6' fill='#1e293b' stroke='#475569'/><text x='45' y='90' fill='#38bdf8' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>Network Administrator</text><text x='45' y='115' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Troubleshoot &amp; configure</text><text x='45' y='135' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Routine system monitoring</text><rect x='340' y='65' width='270' height='90' rx='6' fill='#1e293b' stroke='#475569'/><text x='355' y='90' fill='#4ade80' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>Network Engineer</text><text x='355' y='115' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Design infrastructure</text><text x='355' y='135' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Deploy enterprise systems</text><rect x='30' y='170' width='270' height='90' rx='6' fill='#1e293b' stroke='#475569'/><text x='45' y='195' fill='#fbbf24' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>Security Specialist</text><text x='45' y='220' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Firewalls &amp; IDS systems</text><text x='45' y='240' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Threat assessment</text><rect x='340' y='170' width='270' height='90' rx='6' fill='#1e293b' stroke='#475569'/><text x='355' y='195' fill='#f472b6' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>Support Specialist</text><text x='355' y='220' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- End-user assistance</text><text x='355' y='240' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Client issue resolution</text></svg>",
+          "caption": {
+            "en": "Overview of key network professional career opportunities and duties.",
+            "hi": "प्रमुख नेटवर्क पेशेवर करियर अवसरों और उनके दायित्वों का विवरण।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Arrange the career responsibilities spanning design, operational monitoring, and perimeter defense.",
+          "hint": "Start with infrastructural engineering design, proceed through configuration, and conclude with IDS implementation.",
+          "target_sequence": [
+            {
+              "id": "en_u03_t1",
+              "role": "subject",
+              "text": "network engineers design infrastructure,",
+              "role_hint": "identify the administrative role next"
+            },
+            {
+              "id": "en_u03_t2",
+              "role": "process",
+              "text": "network administrators handle daily monitoring and configuration,",
+              "role_hint": "introduce the defensive security measures"
+            },
+            {
+              "id": "en_u03_t3",
+              "role": "process",
+              "text": "security specialists implement firewalls and `IDS`,",
+              "role_hint": "resolve client-side issues"
+            },
+            {
+              "id": "en_u03_t4",
+              "role": "result",
+              "text": "while support specialists assist end users with connectivity",
+              "role_hint": "role mapping complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u03_d1",
+              "category": "logical",
+              "text": "support specialists design enterprise router topology,",
+              "penalty_explanation": "Network support specialists handle end-user troubleshooting, not wide-area enterprise network architecture."
+            },
+            {
+              "id": "en_u03_d2",
+              "category": "grammatical",
+              "text": "while support specialists assist end users before engineers design infrastructure,",
+              "penalty_explanation": "End users cannot receive technical support before network infrastructure is designed and implemented."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "डिजाइन, परिचालन निगरानी और रक्षा तंत्र से जुड़े विभिन्न करियर दायित्वों को सही क्रम में व्यवस्थित करें।",
+          "hint": "इंजीनियरिंग डिज़ाइन से शुरू करें, कॉन्फ़िगरेशन पर जाएं, और तकनीकी सहायता के साथ समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u03_t1",
+              "role": "subject",
+              "text": "नेटवर्क इंजीनियर बुनियादी ढांचे को डिजाइन करते हैं,",
+              "role_hint": "इसके बाद प्रशासनिक भूमिका पहचानें"
+            },
+            {
+              "id": "hi_u03_t2",
+              "role": "process",
+              "text": "नेटवर्क प्रशासक दैनिक निगरानी और कॉन्फ़िगरेशन संभालते हैं,",
+              "role_hint": "सुरक्षात्मक उपायों की भूमिका जोड़ें"
+            },
+            {
+              "id": "hi_u03_t3",
+              "role": "process",
+              "text": "सुरक्षा विशेषज्ञ फ़ायरवॉल और `IDS` लागू करते हैं,",
+              "role_hint": "अंतिम उपयोगकर्ता समर्थन को शामिल करें"
+            },
+            {
+              "id": "hi_u03_t4",
+              "role": "result",
+              "text": "जबकि सहायता विशेषज्ञ उपयोगकर्ताओं की समस्याओं को हल करते हैं",
+              "role_hint": "कैरियर मानचित्रण पूरा हुआ"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u03_d1",
+              "category": "logical",
+              "text": "सहायता विशेषज्ञ एंटरप्राइज़ नेटवर्क टोपोलॉजी डिज़ाइन करते हैं,",
+              "penalty_explanation": "सहायता विशेषज्ञ अंतिम उपयोगकर्ताओं की समस्याओं का निवारण करते हैं, बड़े पैमाने पर बुनियादी ढांचा तैयार नहीं करते।"
+            },
+            {
+              "id": "hi_u03_d2",
+              "category": "grammatical",
+              "text": "इंजीनियर द्वारा डिजाइन करने से पहले सहायता विशेषज्ञ उपयोगकर्ताओं की समस्याओं को हल करते हैं,",
+              "penalty_explanation": "बुनियादी ढांचा तैयार होने और लागू होने से पहले उपयोगकर्ता सहायता प्रदान नहीं की जा सकती।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Networking career paths divide into planning (Engineers), running (Administrators), protecting (Security Specialists), and assisting users (Support Specialists).",
+        "hi": "नेटवर्किंग में कैरियर योजना (इंजीनियर), संचालन (प्रशासक), सुरक्षा (सुरक्षा विशेषज्ञ) और सहायता (सपोर्ट विशेषज्ञ) में विभाजित हैं।"
+      }
+    },
+    {
+      "unit_id": "u04_windows_nt_architecture",
+      "topic": "Windows NT Architecture & Products",
+      "pedagogical_objective": "Identify the architectural traits and product editions of Microsoft Windows NT.",
+      "instruction": {
+        "title": {
+          "en": "Windows NT Architecture and Product Editions",
+          "hi": "विंडोज़ एनटी की संरचना और इसके उत्पाद"
+        },
+        "theory": {
+          "en": "Windows NT (standing for Windows 'New Technology') is a 32-bit network operating system developed by Microsoft Corporation. It marked a major evolutionary jump from consumer 16-bit DOS-based environments to fully pre-emptive multitasking network operating systems. Microsoft delivered Windows NT as two distinct products: Windows NT Server (optimized for handling enterprise client requests, domain hosting, and central network management) and Windows NT Workstation (configured for local high-performance user desktops).",
+          "hi": "विंडोज़ एनटी (Windows NT - New Technology) माइक्रोसॉफ्ट कॉर्पोरेशन द्वारा विकसित एक 32-बिट नेटवर्क ऑपरेटिंग सिस्टम है। यह पुराने 16-बिट DOS आधारित परिवेश की तुलना में आधुनिक प्री-एम्प्टिव मल्टीटास्किंग नेटवर्क ओएस का बड़ा बदलाव था। माइक्रोसॉफ्ट ने विंडोज़ एनटी को दो मुख्य उत्पादों के रूप में पेश किया: 'Windows NT Server' (नेटवर्क सेवाओं, डोमेन प्रबंधन और होस्टिंग के लिए) और 'Windows NT Workstation' (स्थानीय उच्च-प्रदर्शन कंप्यूटर और डेस्कटॉप उपयोग के लिए)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='40' y='25' width='560' height='60' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='60' y='52' fill='#38bdf8' font-family='monospace' font-size='16' font-weight='bold' text-anchor='start'>WINDOWS NT (New Technology)</text><text x='60' y='72' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>32-bit Pre-emptive Network Operating System by Microsoft</text><line x1='320' y1='85' x2='320' y2='130' stroke='#38bdf8' stroke-width='2'/><line x1='180' y1='130' x2='460' y2='130' stroke='#38bdf8' stroke-width='2'/><line x1='180' y1='130' x2='180' y2='155' stroke='#38bdf8' stroke-width='2'/><line x1='460' y1='130' x2='460' y2='155' stroke='#38bdf8' stroke-width='2'/><rect x='60' y='155' width='240' height='100' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='75' y='185' fill='#4ade80' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>Windows NT Server</text><text x='75' y='210' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Central network management</text><text x='75' y='230' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Multi-user network services</text><rect x='340' y='155' width='240' height='100' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='355' y='185' fill='#fbbf24' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>Windows NT Workstation</text><text x='355' y='210' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Individual desktop client</text><text x='355' y='230' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Local application execution</text></svg>",
+          "caption": {
+            "en": "Architectural breakdown of Microsoft Windows NT product bifurcation.",
+            "hi": "माइक्रोसॉफ्ट विंडोज़ एनटी उत्पाद विभाजन का संरचनात्मक विवरण।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Assemble the core architectural description and product bifurcation of Microsoft Windows NT.",
+          "hint": "Identify the bit-architecture and developer, then distinguish between its server and workstation flavors.",
+          "target_sequence": [
+            {
+              "id": "en_u04_t1",
+              "role": "subject",
+              "text": "microsoft developed `Windows NT`,",
+              "role_hint": "specify its underlying bit architecture"
+            },
+            {
+              "id": "en_u04_t2",
+              "role": "attribute",
+              "text": "as a 32-bit network operating system,",
+              "role_hint": "describe the commercial edition for servers"
+            },
+            {
+              "id": "en_u04_t3",
+              "role": "process",
+              "text": "delivering `Windows NT Server` for central domain services,",
+              "role_hint": "conclude with the client workstation edition"
+            },
+            {
+              "id": "en_u04_t4",
+              "role": "result",
+              "text": "alongside `Windows NT Workstation` for individual clients",
+              "role_hint": "bifurcation established"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u04_d1",
+              "category": "logical",
+              "text": "as a 16-bit single-user operating system,",
+              "penalty_explanation": "Windows NT was architected specifically as a 32-bit multi-user network operating system, not a 16-bit single-user OS."
+            },
+            {
+              "id": "en_u04_d2",
+              "category": "grammatical",
+              "text": "alongside `Windows NT Workstation` before developing `Windows NT`,",
+              "penalty_explanation": "The workstation edition cannot exist before the foundational Windows NT operating system itself was engineered."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "माइक्रोसॉफ्ट विंडोज़ एनटी की संरचना और इसके दोहरे उत्पाद संस्करणों का सही विवरण बनाएं।",
+          "hint": "माइक्रोसॉफ्ट द्वारा विकास से शुरू करें, 32-बिट बताएं और सर्वर व वर्कस्टेशन में विभाजित करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u04_t1",
+              "role": "subject",
+              "text": "माइक्रोसॉफ्ट ने `Windows NT` विकसित किया,",
+              "role_hint": "इसकी बिट संरचना का विवरण दें"
+            },
+            {
+              "id": "hi_u04_t2",
+              "role": "attribute",
+              "text": "एक 32-बिट नेटवर्क ऑपरेटिंग सिस्टम के रूप में,",
+              "role_hint": "केंद्रीय सर्वर संस्करण जोड़ें"
+            },
+            {
+              "id": "hi_u04_t3",
+              "role": "process",
+              "text": "नेटवर्क सेवाओं के लिए `Windows NT Server` पेश किया,",
+              "role_hint": "व्यक्तिगत क्लाइंट संस्करण के साथ पूरा करें"
+            },
+            {
+              "id": "hi_u04_t4",
+              "role": "result",
+              "text": "और क्लाइंट के लिए `Windows NT Workstation` उपलब्ध कराया",
+              "role_hint": "संरचना पूरी हुई"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u04_d1",
+              "category": "logical",
+              "text": "एक 16-बिट एकल-उपयोगकर्ता ऑपरेटिंग सिस्टम के रूप में,",
+              "penalty_explanation": "विंडोज़ एनटी को विशेष रूप से 32-बिट नेटवर्क ऑपरेटिंग सिस्टम के रूप में बनाया गया था, न कि 16-बिट ओएस के रूप में।"
+            },
+            {
+              "id": "hi_u04_d2",
+              "category": "grammatical",
+              "text": "`Windows NT` विकसित करने से पहले `Windows NT Workstation` जोड़ें,",
+              "penalty_explanation": "मूल ऑपरेटिंग सिस्टम के विकास से पहले वर्कस्टेशन संस्करण का अस्तित्व संभव नहीं है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Windows NT is a 32-bit NOS offered in two variants: Server (for network hosting) and Workstation (for local computing).",
+        "hi": "विंडोज़ एनटी एक 32-बिट NOS है जो दो रूपों में आता है: सर्वर (नेटवर्क होस्टिंग के लिए) और वर्कस्टेशन (स्थानीय कंप्यूटिंग के लिए)।"
+      }
+    },
+    {
+      "unit_id": "u05_windows_nt_advantages_limitations",
+      "topic": "Windows NT Evaluation (NTFS Features vs. Vulnerabilities)",
+      "pedagogical_objective": "Evaluate the strengths of Windows NT alongside its technical and stability limitations.",
+      "instruction": {
+        "title": {
+          "en": "Windows NT: Advantages and Known Limitations",
+          "hi": "विंडोज़ एनटी: फायदे और इसकी कमियां"
+        },
+        "theory": {
+          "en": "Windows NT introduced major operational advantages, including the New Technology File System (`NTFS`). `NTFS` supports large hard disk capacities and delivers critical security controls such as granular file permissions and encryption. Furthermore, Windows NT featured an intuitive graphical user interface (GUI) and could operate well on older hardware. However, it had significant drawbacks: it was prone to malware infections, suffered from kernel instability, crashed frequently, and required continuous patching and rebooting to sustain operation.",
+          "hi": "विंडोज़ एनटी ने कई महत्वपूर्ण सुधार पेश किए, जिनमें `NTFS` (न्यू टेक्नोलॉजी फाइल सिस्टम) प्रमुख है। `NTFS` बड़ी क्षमता वाली हार्ड डिस्क का समर्थन करता है और फ़ाइल अनुमतियों (permissions) व एन्क्रिप्शन जैसी मजबूत सुरक्षा सुविधाएं देता है। इसके अलावा, इसमें एक आकर्षक और उपयोग में आसान GUI था तथा यह पुराने कंप्यूटरों पर भी चल सकता था। हालांकि, इसके कुछ बड़े नुकसान भी थे: यह मैलवेयर और वायरस से आसानी से प्रभावित हो जाता था, अस्थिर था, बार-बार क्रैश होता था और इसे लगातार पैचिंग व रीबूट की आवश्यकता होती थी।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='275' height='240' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='50' y='50' fill='#4ade80' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>ADVANTAGES</text><text x='50' y='85' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- `NTFS` default file system</text><text x='50' y='115' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- File permissions &amp; encryption</text><text x='50' y='145' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Large storage disk support</text><text x='50' y='175' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- User-friendly GUI</text><text x='50' y='205' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Runs well on older PCs</text><rect x='335' y='20' width='275' height='240' rx='8' fill='#1e293b' stroke='#f472b6' stroke-width='1.5'/><text x='355' y='50' fill='#f472b6' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>DISADVANTAGES</text><text x='355' y='85' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Vulnerable to malware &amp; viruses</text><text x='355' y='115' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Frequent system crashes</text><text x='355' y='145' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Unstable OS kernel</text><text x='355' y='175' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Requires frequent patching</text><text x='355' y='205' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Demands constant rebooting</text></svg>",
+          "caption": {
+            "en": "Trade-offs between Windows NT NTFS features and operational stability limitations.",
+            "hi": "विंडोज़ एनटी की NTFS क्षमताओं और स्थिरता सीमाओं के बीच तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Assemble the trade-off chain comparing Windows NT file features against its maintenance vulnerabilities.",
+          "hint": "Highlight NTFS file permissions first, and finish with its stability and reboot drawbacks.",
+          "target_sequence": [
+            {
+              "id": "en_u05_t1",
+              "role": "subject",
+              "text": "`Windows NT` utilizes `NTFS`,",
+              "role_hint": "specify the security capabilities enabled"
+            },
+            {
+              "id": "en_u05_t2",
+              "role": "attribute",
+              "text": "to provide disk permissions and encryption,",
+              "role_hint": "pivot toward systemic vulnerabilities"
+            },
+            {
+              "id": "en_u05_t3",
+              "role": "condition",
+              "text": "yet remains vulnerable to malware infections,",
+              "role_hint": "mention the consequence on uptime"
+            },
+            {
+              "id": "en_u05_t4",
+              "role": "result",
+              "text": "which causes crashes requiring frequent rebooting",
+              "role_hint": "trade-off synthesized"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u05_d1",
+              "category": "logical",
+              "text": "preventing all malware without requiring any security patches,",
+              "penalty_explanation": "Windows NT was notoriously vulnerable to malware and demanded frequent patches to survive."
+            },
+            {
+              "id": "en_u05_d2",
+              "category": "grammatical",
+              "text": "which causes crashes before utilizing `NTFS`,",
+              "penalty_explanation": "Crash vulnerabilities are an operational consequence, not an antecedent to file system design."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "विंडोज़ एनटी की फ़ाइल सुरक्षा सुविधाओं और उसकी रखरखाव संबंधी कमियों की श्रृंखला व्यवस्थित करें।",
+          "hint": "NTFS अनुमतियों से शुरू करें और सिस्टम क्रैश व रीबूट की समस्या पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u05_t1",
+              "role": "subject",
+              "text": "`Windows NT` डिफ़ॉल्ट रूप से `NTFS` का उपयोग करता है,",
+              "role_hint": "इसकी सुरक्षा क्षमताओं का उल्लेख करें"
+            },
+            {
+              "id": "hi_u05_t2",
+              "role": "attribute",
+              "text": "फ़ाइल पर्मिशन और एन्क्रिप्शन प्रदान करने के लिए,",
+              "role_hint": "कमियों और संक्रमण के खतरे को जोड़ें"
+            },
+            {
+              "id": "hi_u05_t3",
+              "role": "condition",
+              "text": "फिर भी यह मैलवेयर संक्रमण के प्रति संवेदनशील रहता है,",
+              "role_hint": "सिस्टम स्थिरता पर प्रभाव बताएं"
+            },
+            {
+              "id": "hi_u05_t4",
+              "role": "result",
+              "text": "जिससे सिस्टम क्रैश होता है और बार-बार रीबूट करना पड़ता है",
+              "role_hint": "विश्लेषण पूरा हुआ"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u05_d1",
+              "category": "logical",
+              "text": "सभी मैलवेयर को बिना किसी पैच के पूरी तरह रोक देता है,",
+              "penalty_explanation": "विंडोज़ एनटी आसानी से मैलवेयर से संक्रमित हो जाता था और इसे लगातार पैचिंग की आवश्यकता होती थी।"
+            },
+            {
+              "id": "hi_u05_d2",
+              "category": "grammatical",
+              "text": "`NTFS` का उपयोग करने से पहले सिस्टम क्रैश हो जाता है,",
+              "penalty_explanation": "अस्थिरता और क्रैश होना ऑपरेटिंग सिस्टम के उपयोग के दौरान आने वाली कमियां हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "While Windows NT introduced powerful NTFS encryption and permissions, it suffered from severe virus susceptibility and frequent crash cycles.",
+        "hi": "यद्यपि विंडोज़ एनटी ने शक्तिशाली NTFS एन्क्रिप्शन और अनुमतियाँ दीं, फिर भी यह वायरस संक्रमण और बार-बार क्रैश होने की समस्या से ग्रस्त था।"
+      }
+    },
+    {
+      "unit_id": "u06_linux_vs_windows_comparison",
+      "topic": "Comparative Analysis: Linux vs. Windows",
+      "pedagogical_objective": "Differentiate Linux and Windows across licensing, source openness, security, case sensitivity, and reliability.",
+      "instruction": {
+        "title": {
+          "en": "Technical Comparison: Linux vs. Windows",
+          "hi": "तकनीकी तुलना: लिनक्स बनाम विंडोज़"
+        },
+        "theory": {
+          "en": "Linux and Windows represent distinct software models. Linux is an open-source, free OS whose source code can be modified by users without purchased licenses. Windows is a costly, closed-source proprietary OS requiring paid licensing. In terms of server reliability and security, Linux can run for extended periods without rebooting or patching, whereas Windows requires frequent reboots and is more vulnerable to malware. Conversely, Windows provides a friendlier consumer GUI and case-insensitive filenames, whereas Linux enforces strict case-sensitivity.",
+          "hi": "लिनक्स और विंडोज़ दो भिन्न सॉफ्टवेयर आर्किटेक्चर को दर्शाते हैं। लिनक्स एक निःशुल्क और ओपन-सोर्स OS है जिसके कोड को उपयोगकर्ता बिना किसी लाइसेंस शुल्क के संशोधित कर सकते हैं। विंडोज़ एक क्लोज्ड-सोर्स और सशुल्क ऑपरेटिंग सिस्टम है जिसमें लाइसेंस खरीदना अनिवार्य होता है। सर्वर विश्वसनीयता और सुरक्षा के मामले में लिनक्स बिना रीबूट या पैचिंग के लंबे समय तक चल सकता है, जबकि विंडोज़ में बार-बार रीबूट की आवश्यकता होती है और वह मैलवेयर के प्रति अधिक संवेदनशील है। इसके विपरीत, विंडोज़ का GUI अधिक सरल है और इसके फ़ाइल नाम केस-इनसेंसिटिव होते हैं, जबकि लिनक्स में फ़ाइल नाम पूरी तरह केस-संवेदी (case-sensitive) होते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='20' y='15' width='285' height='250' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='40' y='45' fill='#4ade80' font-family='monospace' font-size='15' font-weight='bold' text-anchor='start'>LINUX</text><text x='40' y='80' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Free &amp; Open-Source</text><text x='40' y='110' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Modifiable source code</text><text x='40' y='140' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- No license fees required</text><text x='40' y='170' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- High uptime (rare reboots)</text><text x='40' y='200' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- High malware resistance</text><text x='40' y='230' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Case-Sensitive filenames</text><rect x='335' y='15' width='285' height='250' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='355' y='45' fill='#38bdf8' font-family='monospace' font-size='15' font-weight='bold' text-anchor='start'>WINDOWS</text><text x='355' y='80' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Costly &amp; Closed-Source</text><text x='355' y='110' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Code cannot be modified</text><text x='355' y='140' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Purchased license needed</text><text x='355' y='170' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Frequent patching/reboot</text><text x='355' y='200' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Prone to virus infection</text><text x='355' y='230' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Case-Insensitive names</text></svg>",
+          "caption": {
+            "en": "Direct feature comparison between Linux open-source architecture and Windows proprietary platform.",
+            "hi": "लिनक्स ओपन-सोर्स आर्किटेक्चर और विंडोज़ प्रोप्राइटरी प्लेटफॉर्म के बीच तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Assemble the contrasting properties distinguishing open-source Linux from proprietary Windows platforms.",
+          "hint": "Start with Linux open-source licensing, contrast it with Windows code restrictions, and conclude with stability.",
+          "target_sequence": [
+            {
+              "id": "en_u06_t1",
+              "role": "subject",
+              "text": "linux provides free open-source software,",
+              "role_hint": "contrast with the proprietary licensing model of Windows"
+            },
+            {
+              "id": "en_u06_t2",
+              "role": "process",
+              "text": "whereas windows requires paid commercial licenses,",
+              "role_hint": "highlight case-sensitivity differences"
+            },
+            {
+              "id": "en_u06_t3",
+              "role": "attribute",
+              "text": "while enforcing case-sensitive file naming conventions,",
+              "role_hint": "conclude with uptime and reboot comparisons"
+            },
+            {
+              "id": "en_u06_t4",
+              "role": "result",
+              "text": "allowing linux to achieve superior uptime without frequent reboots",
+              "role_hint": "distinction verified"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u06_d1",
+              "category": "logical",
+              "text": "requiring users to purchase expensive licenses to modify linux code,",
+              "penalty_explanation": "Linux is completely open-source and free to modify without purchasing any commercial license."
+            },
+            {
+              "id": "en_u06_d2",
+              "category": "grammatical",
+              "text": "allowing linux to achieve uptime before windows requires licenses,",
+              "penalty_explanation": "Juxtaposing performance uptime chronologically before licensing creates a disordered logical statement."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "ओपन-सोर्स लिनक्स और प्रोप्राइटरी विंडोज़ के बीच के अंतर को स्पष्ट करने वाले तार्किक क्रम को व्यवस्थित करें।",
+          "hint": "लिनक्स के ओपन-सोर्स स्वभाव से शुरू करें, विंडोज़ के सशुल्क लाइसेंस से तुलना करें, और विश्वसनीयता पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u06_t1",
+              "role": "subject",
+              "text": "लिनक्स मुफ्त ओपन-सोर्स सॉफ्टवेयर प्रदान करता है,",
+              "role_hint": "विंडोज़ के स्वामित्व मॉडल से तुलना करें"
+            },
+            {
+              "id": "hi_u06_t2",
+              "role": "process",
+              "text": "जबकि विंडोज़ के लिए सशुल्क लाइसेंस आवश्यक है,",
+              "role_hint": "केस-सेंसिटिविटी अंतर को जोड़ें"
+            },
+            {
+              "id": "hi_u06_t3",
+              "role": "attribute",
+              "text": "और लिनक्स में फ़ाइल नाम केस-संवेदी होते हैं,",
+              "role_hint": "सिस्टम विश्वसनीयता और अपटाइम के साथ पूरा करें"
+            },
+            {
+              "id": "hi_u06_t4",
+              "role": "result",
+              "text": "जिससे लिनक्स बिना बार-बार रीबूट किए लंबा अपटाइम प्रदान करता है",
+              "role_hint": "तुलना पूरी हुई"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u06_d1",
+              "category": "logical",
+              "text": "लिनक्स कोड बदलने के लिए उपयोगकर्ताओं से महंगे लाइसेंस की मांग करता है,",
+              "penalty_explanation": "लिनक्स पूरी तरह से खुला स्रोत और मुफ्त है, इसे संशोधित करने के लिए किसी लाइसेंस शुल्क की आवश्यकता नहीं होती।"
+            },
+            {
+              "id": "hi_u06_d2",
+              "category": "grammatical",
+              "text": "विंडोज़ को लाइसेंस की आवश्यकता होने से पहले लिनक्स अपटाइम प्राप्त करता है,",
+              "penalty_explanation": "लाइसेंसिंग और विश्वसनीयता के बीच कालानुक्रमिक संबंध गलत तरीके से जोड़ा गया है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Linux offers free, open-source customization and exceptional stability, whereas Windows provides a friendlier desktop GUI backed by commercial licensing.",
+        "hi": "लिनक्स मुफ्त ओपन-सोर्स अनुकूलन और उत्कृष्ट स्थिरता देता है, जबकि विंडोज़ सशुल्क लाइसेंस के साथ आसान डेस्कटॉप GUI प्रदान करता है।"
+      }
+    },
+    {
+      "unit_id": "u07_linux_firewall_types",
+      "topic": "Network Firewalls: Software vs. Hardware",
+      "pedagogical_objective": "Compare the technical mechanisms, costs, and reliability of software and hardware firewalls.",
+      "instruction": {
+        "title": {
+          "en": "Network Firewalls: Software vs. Dedicated Hardware",
+          "hi": "नेटवर्क फ़ायरवॉल: सॉफ़्टवेयर बनाम समर्पित हार्डवेयर"
+        },
+        "theory": {
+          "en": "A firewall is a core network security system designed to monitor and inspect both incoming and outgoing packet traffic against pre-configured rules to block unauthorized intrusions. Firewalls exist in two primary implementations: 1. Software Firewall: An application program installed directly onto an existing server OS. Software firewalls are inexpensive and flexible, but consume host compute resources and offer lower reliability. 2. Hardware Firewall: A dedicated physical hardware appliance positioned at network perimeters. Hardware firewalls are more expensive, but handle heavy throughput and deliver superior reliability and security isolation.",
+          "hi": "फ़ायरवॉल एक प्रमुख नेटवर्क सुरक्षा प्रणाली है जो अनधिकृत पहुंच को रोकने के लिए पूर्व-निर्धारित नियमों के आधार पर इनकमिंग और आउटगोइंग नेटवर्क ट्रैफ़िक की निगरानी और नियंत्रण करती है। फ़ायरवॉल दो मुख्य रूपों में पाए जाते हैं: 1. सॉफ़्टवेयर फ़ायरवॉल (Software Firewall): यह एक एप्लीकेशन सॉफ़्टवेयर है जिसे सर्वर ऑपरेटिंग सिस्टम पर स्थापित किया जाता है। यह कम खर्चीला होता है परंतु सर्वर संसाधनों का उपयोग करता है और अपेक्षाकृत कम विश्वसनीय होता है। 2. हार्डवेयर फ़ायरवॉल (Hardware Firewall): यह एक समर्पित भौतिक हार्डवेयर डिवाइस है जो नेटवर्क की सीमा पर लगाया जाता है। यह अधिक महंगा होता है परंतु अत्यंत विश्वसनीय और उच्च सुरक्षा प्रदान करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='20' y='20' width='600' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='40' y='43' fill='#38bdf8' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>FIREWALL IMPLEMENTATION TAXONOMY</text><rect x='30' y='75' width='275' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='50' y='105' fill='#fbbf24' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>SOFTWARE FIREWALL</text><text x='50' y='140' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Installed on Host/Server OS</text><text x='50' y='170' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Lower upfront financial cost</text><text x='50' y='200' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Dependent on host OS health</text><text x='50' y='230' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Moderate reliability tier</text><rect x='335' y='75' width='275' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='355' y='105' fill='#4ade80' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>HARDWARE FIREWALL</text><text x='355' y='140' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Dedicated perimeter device</text><text x='355' y='170' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Higher hardware acquisition cost</text><text x='355' y='200' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Autonomous hardware isolation</text><text x='355' y='230' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- High enterprise reliability</text></svg>",
+          "caption": {
+            "en": "Structural differentiation between host software firewalls and dedicated hardware firewalls.",
+            "hi": "होस्ट सॉफ्टवेयर फ़ायरवॉल और समर्पित हार्डवेयर फ़ायरवॉल के बीच संरचनात्मक अंतर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the comparative synthesis contrasting software firewall attributes with dedicated hardware firewall appliances.",
+          "hint": "Identify software firewalls as server applications, then contrast them with dedicated perimeter hardware devices.",
+          "target_sequence": [
+            {
+              "id": "en_u07_t1",
+              "role": "subject",
+              "text": "software firewalls run as server applications,",
+              "role_hint": "note their economic and reliability profile"
+            },
+            {
+              "id": "en_u07_t2",
+              "role": "attribute",
+              "text": "offering low cost but reduced reliability,",
+              "role_hint": "contrast with dedicated physical equipment"
+            },
+            {
+              "id": "en_u07_t3",
+              "role": "process",
+              "text": "whereas dedicated hardware firewalls guard perimeter traffic,",
+              "role_hint": "highlight the enterprise reliability outcome"
+            },
+            {
+              "id": "en_u07_t4",
+              "role": "result",
+              "text": "delivering maximum reliability at higher financial expense",
+              "role_hint": "taxonomy synthesized"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u07_d1",
+              "category": "logical",
+              "text": "hardware firewalls run as cheap background applications inside client browsers,",
+              "penalty_explanation": "Hardware firewalls are dedicated physical network appliances, not in-browser desktop software applications."
+            },
+            {
+              "id": "en_u07_d2",
+              "category": "grammatical",
+              "text": "delivering maximum reliability before software firewalls run as applications,",
+              "penalty_explanation": "Using a misplaced temporal conjunction disrupts the comparative relationship between software and hardware tiers."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "सॉफ्टवेयर फ़ायरवॉल और समर्पित हार्डवेयर फ़ायरवॉल के बीच के तुलनात्मक गुणों को व्यवस्थित करें।",
+          "hint": "सॉफ्टवेयर फ़ायरवॉल की सर्वर उपस्थिति से शुरू करें और हार्डवेयर की विश्वसनीयता व लागत पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u07_t1",
+              "role": "subject",
+              "text": "सॉफ़्टवेयर फ़ायरवॉल सर्वर पर एप्लिकेशन के रूप में चलते हैं,",
+              "role_hint": "इनकी लागत और विश्वसनीयता का विवरण दें"
+            },
+            {
+              "id": "hi_u07_t2",
+              "role": "attribute",
+              "text": "जो कम खर्चीले परंतु कम विश्वसनीय होते हैं,",
+              "role_hint": "समर्पित हार्डवेयर उपकरणों से तुलना करें"
+            },
+            {
+              "id": "hi_u07_t3",
+              "role": "process",
+              "text": "जबकि समर्पित हार्डवेयर फ़ायरवॉल नेटवर्क परिधि की रक्षा करते हैं,",
+              "role_hint": "उच्च विश्वसनीयता परिणाम पर समाप्त करें"
+            },
+            {
+              "id": "hi_u07_t4",
+              "role": "result",
+              "text": "और अधिक लागत पर उच्चतम विश्वसनीयता प्रदान करते हैं",
+              "role_hint": "वर्गीकरण पूरा हुआ"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u07_d1",
+              "category": "logical",
+              "text": "हार्डवेयर फ़ायरवॉल क्लाइंट ब्राउज़र में सस्ते बैकग्राउंड ऐप के रूप में चलते हैं,",
+              "penalty_explanation": "हार्डवेयर फ़ायरवॉल स्वतंत्र भौतिक नेटवर्क उपकरण होते हैं, ब्राउज़र में चलने वाले प्रोग्राम नहीं।"
+            },
+            {
+              "id": "hi_u07_d2",
+              "category": "grammatical",
+              "text": "सॉफ़्टवेयर फ़ायरवॉल चलने से पहले उच्चतम विश्वसनीयता प्रदान करते हैं,",
+              "penalty_explanation": "तुलनात्मक विश्लेषण में गलत समय-सूचक शब्दों का उपयोग वाक्य के तर्क को बिगाड़ता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Software firewalls provide affordable server-level filtering, while dedicated hardware firewalls offer maximum perimeter defense and reliability at higher expense.",
+        "hi": "सॉफ़्टवेयर फ़ायरवॉल किफायती सर्वर-स्तरीय फ़िल्टरिंग देते हैं, जबकि समर्पित हार्डवेयर फ़ायरवॉल उच्च लागत पर बेहतर सुरक्षा और विश्वसनीयता प्रदान करते हैं।"
+      }
+    },
+    {
+      "unit_id": "u08_disk_partitioning_concepts",
+      "topic": "Disk Partitioning and the Partition Table",
+      "pedagogical_objective": "Explain the mechanics of disk slicing, partition table tracking, and physical disk capacity boundaries.",
+      "instruction": {
+        "title": {
+          "en": "Disk Partitioning Mechanics and Partition Tables",
+          "hi": "डिस्क पार्टिशनिंग और पार्टिशन टेबल की कार्यप्रणाली"
+        },
+        "theory": {
+          "en": "Disk partitioning (also known as disk slicing) is the storage management process of dividing a single physical drive into one or more independent logical regions known as partitions. To the operating system, each partition presents itself as a distinct, self-contained disk drive. Metadata mapping the start, end, and format of these logical regions is recorded in a dedicated sector called the partition table. Crucially, traditional disk partitions cannot span beyond the boundary of a single physical disk drive.",
+          "hi": "डिस्क विभाजन (जिसे डिस्क स्लाइसिंग भी कहा जाता है) एक भौतिक हार्ड ड्राइव को एक या अधिक स्वतंत्र लाजिकल क्षेत्रों (partitions) में विभाजित करने की प्रक्रिया है। ऑपरेटिंग सिस्टम के लिए प्रत्येक पार्टीशन एक अलग व्यक्तिगत डिस्क के रूप में दिखाई देता है। इन विभाजनों की जानकारी 'पार्टिशन टेबल' (Partition Table) नामक एक समर्पित क्षेत्र में संग्रहीत की जाती है। पारंपरिक डिस्क पार्टीशन की भंडारण क्षमता केवल एक ही भौतिक डिस्क पर उपलब्ध स्पेस तक सीमित होती है और यह अन्य डिस्क पर नहीं फैल सकती।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='40' y='20' width='560' height='40' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='60' y='45' fill='#38bdf8' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>SINGLE PHYSICAL DISK (SLICING ARCHITECTURE)</text><rect x='40' y='80' width='160' height='150' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='55' y='110' fill='#fbbf24' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>Partition Table</text><text x='55' y='135' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Stores sector offsets</text><text x='55' y='155' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Tracks boundaries</text><text x='55' y='175' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Managed by Admin</text><rect x='230' y='80' width='175' height='150' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='245' y='110' fill='#4ade80' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>Partition 1</text><text x='245' y='135' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Logical Drive C: / dev</text><text x='245' y='155' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Independent filesystem</text><text x='245' y='175' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Physical disk limit</text><rect x='435' y='80' width='165' height='150' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='450' y='110' fill='#38bdf8' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>Partition 2</text><text x='450' y='135' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Logical Drive D: / home</text><text x='450' y='155' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Independent filesystem</text><text x='450' y='175' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Physical disk limit</text></svg>",
+          "caption": {
+            "en": "Division of a single physical disk into logical partitions tracked by a partition table.",
+            "hi": "पार्टिशन टेबल द्वारा ट्रैक किए गए एकल भौतिक डिस्क का लॉजिकल पार्टीशन में विभाजन।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Assemble the architectural steps governing how a system administrator partitions a physical hard drive.",
+          "hint": "Begin with the administrator slicing the drive, index entries in the partition table, and note capacity boundaries.",
+          "target_sequence": [
+            {
+              "id": "en_u08_t1",
+              "role": "subject",
+              "text": "the administrator divides a single drive,",
+              "role_hint": "create distinct logical regions"
+            },
+            {
+              "id": "en_u08_t2",
+              "role": "process",
+              "text": "into isolated logical partitions,",
+              "role_hint": "record partition boundary data"
+            },
+            {
+              "id": "en_u08_t3",
+              "role": "process",
+              "text": "storing boundary metadata in the partition table,",
+              "role_hint": "state physical drive boundary limitation"
+            },
+            {
+              "id": "en_u08_t4",
+              "role": "result",
+              "text": "capping partition storage to the space of that single disk",
+              "role_hint": "partitioning architecture concluded"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u08_d1",
+              "category": "logical",
+              "text": "allowing traditional partitions to span across multiple separate physical disks,",
+              "penalty_explanation": "Traditional disk partitions are physically bounded to the storage capacity available on one physical drive."
+            },
+            {
+              "id": "en_u08_d2",
+              "category": "grammatical",
+              "text": "capping partition storage before dividing the physical drive,",
+              "penalty_explanation": "Storage bounds are enforced during and after partition division, not prior to partitioning the drive."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "सिस्टम प्रशासक द्वारा भौतिक हार्ड ड्राइव को विभाजित करने के चरणों को सही क्रम में व्यवस्थित करें।",
+          "hint": "डिस्क स्लाइसिंग से शुरू करें, विभाजन तालिका में रिकॉर्ड करें, और एकल डिस्क सीमा पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u08_t1",
+              "role": "subject",
+              "text": "सिस्टम प्रशासक एक भौतिक डिस्क को विभाजित करता है,",
+              "role_hint": "अलग लाजिकल क्षेत्र बनाएं"
+            },
+            {
+              "id": "hi_u08_t2",
+              "role": "process",
+              "text": "एक या अधिक स्वतंत्र लाजिकल विभाजनों में,",
+              "role_hint": "पार्टिशन टेबल में डेटा रिकॉर्ड करें"
+            },
+            {
+              "id": "hi_u08_t3",
+              "role": "process",
+              "text": "जिसकी जानकारी पार्टिशन टेबल में संग्रहीत की जाती है,",
+              "role_hint": "भौतिक भंडारण सीमा का उल्लेख करें"
+            },
+            {
+              "id": "hi_u08_t4",
+              "role": "result",
+              "text": "और इसकी क्षमता केवल एक भौतिक डिस्क के स्पेस तक सीमित रहती है",
+              "role_hint": "विभाजन प्रक्रिया पूरी हुई"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u08_d1",
+              "category": "logical",
+              "text": "पारंपरिक विभाजन को कई अलग-अलग भौतिक डिस्कों पर फैलाकर,",
+              "penalty_explanation": "पारंपरिक पार्टीशन कई भौतिक डिस्कों में नहीं फैल सकते; वे केवल एक ही ड्राइव की क्षमता तक सीमित होते हैं।"
+            },
+            {
+              "id": "hi_u08_d2",
+              "category": "grammatical",
+              "text": "डिस्क को विभाजित करने से पहले भंडारण क्षमता सीमित करके,",
+              "penalty_explanation": "विभाजन की सीमाएं पार्टीशन बनने के साथ निर्धारित होती हैं, विभाजन से पहले नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Disk partitioning slices a single drive into independent volumes tracked by a partition table, strictly bounded by that physical disk's capacity.",
+        "hi": "डिस्क पार्टिशनिंग एक डिस्क को अलग-अलग वॉल्यूम में बांटती है जिसे पार्टिशन टेबल ट्रैक करता है, और यह एकल डिस्क की क्षमता तक सीमित होता है।"
+      }
+    },
+    {
+      "unit_id": "u09_logical_volume_manager",
+      "topic": "Logical Volume Manager (LVM) Architecture",
+      "pedagogical_objective": "Master the three-tier LVM architecture combining Physical Volumes into Volume Groups and Logical Volumes.",
+      "instruction": {
+        "title": {
+          "en": "Logical Volume Manager (LVM) Architecture",
+          "hi": "लॉजिकल वॉल्यूम मैनेजर (LVM) की संरचना"
+        },
+        "theory": {
+          "en": "The Logical Volume Manager (`LVM`) is an advanced storage management subsystem designed to overcome the strict capacity limits of physical disk partitioning. `LVM` operates across a three-tier hierarchy: 1. Physical Volumes (`PV`): The raw storage drives or partitions. 2. Volume Group (`VG`): A unified storage pool created by combining multiple Physical Volumes. 3. Logical Volumes (`LV`): Virtual slices carved out from the Volume Group. Unlike traditional partitions, a Logical Volume is not restricted to a single drive and can seamlessly span across multiple physical disks.",
+          "hi": "लॉजिकल वॉल्यूम मैनेजर (`LVM`) एक उन्नत स्टोरेज प्रबंधन प्रणाली है जिसे पारंपरिक डिस्क पार्टीशनिंग की सीमाओं को दूर करने के लिए बनाया गया है। `LVM` तीन-स्तरीय पदानुक्रम में काम करता है: 1. फ़िज़िकल वॉल्यूम (`PV`): वास्तविक हार्ड डिस्क या पार्टीशन। 2. वॉल्यूम ग्रुप (`VG`): कई फ़िज़िकल वॉल्यूम को मिलाकर बनाया गया एक बड़ा स्टोरेज पूल। 3. लॉजिकल वॉल्यूम (`LV`): वॉल्यूम ग्रुप से बांटे गए स्वतंत्र वर्चुअल पार्टीशन। पारंपरिक पार्टीशन के विपरीत, लॉजिकल वॉल्यूम की क्षमता केवल एक डिस्क तक सीमित नहीं होती, बल्कि यह कई डिस्कों में फैल सकती है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='80' y='25' width='180' height='45' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='95' y='52' fill='#4ade80' font-family='monospace' font-size='12' font-weight='bold' text-anchor='start'>Logical Volume 1</text><rect x='380' y='25' width='180' height='45' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='395' y='52' fill='#4ade80' font-family='monospace' font-size='12' font-weight='bold' text-anchor='start'>Logical Volume 2</text><line x1='170' y1='70' x2='240' y2='100' stroke='#38bdf8' stroke-width='2'/><line x1='470' y1='70' x2='400' y2='100' stroke='#38bdf8' stroke-width='2'/><rect x='100' y='100' width='440' height='55' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='250' y='132' fill='#38bdf8' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>Volume Group (VG Pool)</text><line x1='140' y1='195' x2='200' y2='155' stroke='#fbbf24' stroke-width='2'/><line x1='320' y1='195' x2='320' y2='155' stroke='#fbbf24' stroke-width='2'/><line x1='500' y1='195' x2='440' y2='155' stroke='#fbbf24' stroke-width='2'/><rect x='60' y='195' width='150' height='55' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='75' y='227' fill='#fbbf24' font-family='monospace' font-size='12' font-weight='bold' text-anchor='start'>Physical Vol 1</text><rect x='245' y='195' width='150' height='55' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='260' y='227' fill='#fbbf24' font-family='monospace' font-size='12' font-weight='bold' text-anchor='start'>Physical Vol 2</text><rect x='430' y='195' width='150' height='55' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='445' y='227' fill='#fbbf24' font-family='monospace' font-size='12' font-weight='bold' text-anchor='start'>Physical Vol 3</text></svg>",
+          "caption": {
+            "en": "Three-tier architecture of LVM: Physical Volumes pool into a Volume Group to carve Logical Volumes.",
+            "hi": "LVM की तीन-स्तरीय संरचना: फिजिकल वॉल्यूम एक वॉल्यूम ग्रुप पूल बनाकर लॉजिकल वॉल्यूम का निर्माण करते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Order the architectural progression of the Logical Volume Manager (LVM) from hardware to dynamic storage.",
+          "hint": "Begin with raw physical disks, bundle them into a volume group, and slice dynamic logical volumes.",
+          "target_sequence": [
+            {
+              "id": "en_u09_t1",
+              "role": "subject",
+              "text": "initialize multiple physical volumes,",
+              "role_hint": "aggregate them into a single unified storage pool"
+            },
+            {
+              "id": "en_u09_t2",
+              "role": "process",
+              "text": "pool them together into a volume group,",
+              "role_hint": "carve dynamic logical partitions"
+            },
+            {
+              "id": "en_u09_t3",
+              "role": "process",
+              "text": "carve out distinct logical volumes,",
+              "role_hint": "highlight the cross-disk spanning capability"
+            },
+            {
+              "id": "en_u09_t4",
+              "role": "result",
+              "text": "allowing storage partitions to span across multiple physical disks",
+              "role_hint": "LVM hierarchy established"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u09_d1",
+              "category": "logical",
+              "text": "restricting logical volume capacity strictly to the limits of a single disk,",
+              "penalty_explanation": "The core purpose of LVM is to break single-disk limits and allow volumes to span across multiple drives."
+            },
+            {
+              "id": "en_u09_d2",
+              "category": "grammatical",
+              "text": "allowing storage partitions to span disks before initializing physical volumes,",
+              "penalty_explanation": "Physical volumes must be initialized and grouped into pools before spanning logical volumes can be created."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "लॉजिकल वॉल्यूम मैनेजर (LVM) के तीन-स्तरीय पदानुक्रम को हार्डवेयर से वर्चुअल स्टोरेज तक व्यवस्थित करें।",
+          "hint": "फिजिकल वॉल्यूम से शुरू करें, वॉल्यूम ग्रुप में संयोजित करें, और मल्टी-डिस्क लॉजिकल वॉल्यूम बनाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u09_t1",
+              "role": "subject",
+              "text": "कई भौतिक वॉल्यूम को आरंभीकृत करें,",
+              "role_hint": "इन्हें एक बड़े स्टोरेज समूह में संयोजित करें"
+            },
+            {
+              "id": "hi_u09_t2",
+              "role": "process",
+              "text": "उन्हें मिलाकर एक वॉल्यूम-समूह बनाएं,",
+              "role_hint": "इस पूल से वर्चुअल वॉल्यूम विभाजित करें"
+            },
+            {
+              "id": "hi_u09_t3",
+              "role": "process",
+              "text": "वॉल्यूम-समूह से अलग-अलग लाजिकल-वॉल्यूम विभाजित करें,",
+              "role_hint": "मल्टी-डिस्क क्षमता के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u09_t4",
+              "role": "result",
+              "text": "जिससे स्टोरेज क्षमता कई भौतिक डिस्कों में फैल सकती है",
+              "role_hint": "LVM पदानुक्रम पूरा हुआ"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u09_d1",
+              "category": "logical",
+              "text": "लाजिकल वॉल्यूम को केवल एक ही डिस्क के स्पेस तक सख्ती से सीमित रखें,",
+              "penalty_explanation": "एलवीएम की मुख्य विशेषता ही यह है कि इसका लॉजिकल वॉल्यूम एक से अधिक डिस्कों तक विस्तारित हो सकता है।"
+            },
+            {
+              "id": "hi_u09_d2",
+              "category": "grammatical",
+              "text": "भौतिक वॉल्यूम आरंभीकृत करने से पहले कई डिस्कों में स्टोरेज फैलाएं,",
+              "penalty_explanation": "भौतिक वॉल्यूम और वॉल्यूम ग्रुप बनाए बिना लॉजिकल वॉल्यूम का निर्माण संभव नहीं है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "LVM abstracts physical storage by grouping Physical Volumes into Volume Groups, allowing Logical Volumes to span seamlessly across multiple disks.",
+        "hi": "LVM फिजिकल वॉल्यूम को वॉल्यूम ग्रुप में जोड़कर स्टोरेज को प्रबंधित करता है, जिससे लॉजिकल वॉल्यूम कई डिस्कों में आसानी से फैल सकता है।"
+      }
+    },
+    {
+      "unit_id": "u10_filesystem_hierarchy_standard",
+      "topic": "Linux Filesystem Hierarchy Standard (FHS)",
+      "pedagogical_objective": "Master the directory layout defined by the Linux Filesystem Hierarchy Standard (FHS).",
+      "instruction": {
+        "title": {
+          "en": "The Linux Filesystem Hierarchy Standard (FHS)",
+          "hi": "लिनक्स फाइलसिस्टम हाइरार्की स्टैन्डर्ड (FHS)"
+        },
+        "theory": {
+          "en": "Linux organizes directories using the Filesystem Hierarchy Standard (`FHS`), creating a consistent tree structure across all distributions. At the pinnacle is the root directory (`/`), from which every file, mounted drive, and directory branches out. Essential directories include: 1. `/bin`: Stores fundamental binary executable programs required for basic system operations (such as `ls` and `cp`). 2. `/etc`: Dedicated strictly to system-wide configuration files and application settings. 3. `/dev`: Houses special device nodes representing physical and virtual hardware components (e.g., hard drives, keyboards, printers).",
+          "hi": "लिनक्स सभी वितरणों में फाइलों और फोल्डरों को व्यवस्थित करने के लिए 'फाइलसिस्टम हाइरार्की स्टैन्डर्ड' (`FHS`) का पालन करता है। इस पदानुक्रम में सबसे ऊपर रूट डायरेक्टरी (`/`) होती है, जिसके अंतर्गत अन्य सभी फाइलें और डायरेक्टरी आती हैं। प्रमुख डायरेक्टरी इस प्रकार हैं: 1. `/bin`: बुनियादी सिस्टम संचालन के लिए आवश्यक निष्पादन योग्य बाइनरी प्रोग्राम (जैसे `ls`, `cp`) रखता है। 2. `/etc`: सिस्टम और विभिन्न अनुप्रयोगों के लिए कॉन्फ़िगरेशन फ़ाइलों को संग्रहीत करता है। 3. `/dev`: सिस्टम से जुड़े विभिन्न भौतिक उपकरणों (जैसे हार्ड ड्राइव, कीबोर्ड, प्रिंटर) का प्रतिनिधित्व करने वाली डिवाइस फ़ाइलें रखता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='250' y='20' width='140' height='45' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='270' y='48' fill='#38bdf8' font-family='monospace' font-size='16' font-weight='bold' text-anchor='start'>/ (root)</text><line x1='320' y1='65' x2='320' y2='105' stroke='#38bdf8' stroke-width='2'/><line x1='120' y1='105' x2='520' y2='105' stroke='#38bdf8' stroke-width='2'/><line x1='120' y1='105' x2='120' y2='135' stroke='#38bdf8' stroke-width='2'/><line x1='320' y1='105' x2='320' y2='135' stroke='#38bdf8' stroke-width='2'/><line x1='520' y1='105' x2='520' y2='135' stroke='#38bdf8' stroke-width='2'/><rect x='30' y='135' width='180' height='115' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='45' y='165' fill='#4ade80' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>/bin</text><text x='45' y='195' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Essential Binaries</text><text x='45' y='220' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Core OS programs</text><rect x='230' y='135' width='180' height='115' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='245' y='165' fill='#fbbf24' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>/etc</text><text x='245' y='195' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Configuration files</text><text x='245' y='220' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- System settings</text><rect x='430' y='135' width='180' height='115' rx='6' fill='#1e293b' stroke='#f472b6' stroke-width='1.5'/><text x='445' y='165' fill='#f472b6' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>/dev</text><text x='445' y='195' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Device nodes</text><text x='445' y='220' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Disks, terminal, ports</text></svg>",
+          "caption": {
+            "en": "FHS directory tree showing root '/' branching into '/bin', '/etc', and '/dev'.",
+            "hi": "FHS डायरेक्टरी ट्री जिसमें रूट '/' से '/bin', '/etc' और '/dev' शाखाएं निकलती हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the hierarchical structure of the Linux Filesystem Hierarchy Standard (FHS).",
+          "hint": "Start at the root directory, branch into system binaries and configurations, and end with hardware device files.",
+          "target_sequence": [
+            {
+              "id": "en_u10_t1",
+              "role": "subject",
+              "text": "the top-level root directory `/` anchors all files,",
+              "role_hint": "identify where essential executable programs live"
+            },
+            {
+              "id": "en_u10_t2",
+              "role": "process",
+              "text": "branching into `/bin` for executable binaries,",
+              "role_hint": "locate system and application configurations"
+            },
+            {
+              "id": "en_u10_t3",
+              "role": "process",
+              "text": "mapping system configuration files into `/etc`,",
+              "role_hint": "point to physical device representations"
+            },
+            {
+              "id": "en_u10_t4",
+              "role": "result",
+              "text": "and representing attached hardware devices inside `/dev`",
+              "role_hint": "FHS hierarchy complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "logical",
+              "text": "storing executable binaries directly inside `/dev` alongside disk hardware,",
+              "penalty_explanation": "Executable user binaries are stored in `/bin`, whereas `/dev` is strictly reserved for device nodes representing hardware."
+            },
+            {
+              "id": "en_u10_d2",
+              "category": "grammatical",
+              "text": "and representing hardware inside `/dev` before the root directory `/` exists,",
+              "penalty_explanation": "No subdirectories or hardware nodes can exist prior to the initialization of the root directory `/`."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "लिनक्स फाइलसिस्टम हाइरार्की स्टैन्डर्ड (FHS) की निर्देशिका संरचना को सही क्रम में व्यवस्थित करें।",
+          "hint": "रूट डायरेक्टरी से शुरू करें, बाइनरी प्रोग्राम और सेटिंग्स को जोड़ें, और डिवाइस फ़ाइलों पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u10_t1",
+              "role": "subject",
+              "text": "शीर्ष-स्तरीय रूट डायरेक्टरी `/` सभी फ़ाइलों को समाहित करती है,",
+              "role_hint": "बुनियादी सिस्टम प्रोग्राम डायरेक्टरी जोड़ें"
+            },
+            {
+              "id": "hi_u10_t2",
+              "role": "process",
+              "text": "निष्पादन योग्य बायनेरिज़ के लिए `/bin` में विभाजित होकर,",
+              "role_hint": "सिस्टम सेटिंग्स डायरेक्टरी का उल्लेख करें"
+            },
+            {
+              "id": "hi_u10_t3",
+              "role": "process",
+              "text": "सिस्टम कॉन्फ़िगरेशन फ़ाइलों को `/etc` में संग्रहीत करती है,",
+              "role_hint": "हार्डवेयर नोड्स डायरेक्टरी के साथ पूरा करें"
+            },
+            {
+              "id": "hi_u10_t4",
+              "role": "result",
+              "text": "और जुड़े हुए हार्डवेयर उपकरणों को `/dev` में दर्शाती है",
+              "role_hint": "FHS क्रम पूरा हुआ"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "logical",
+              "text": "हार्डवेयर उपकरणों के साथ निष्पादन योग्य बाइनरी को सीधे `/dev` में रखकर,",
+              "penalty_explanation": "सिस्टम बाइनरी प्रोग्राम `/bin` में होते हैं, जबकि `/dev` केवल डिवाइस नोड्स के लिए आरक्षित है।"
+            },
+            {
+              "id": "hi_u10_d2",
+              "category": "grammatical",
+              "text": "रूट डायरेक्टरी `/` बनने से पहले `/dev` में हार्डवेयर दर्शाकर,",
+              "penalty_explanation": "रूट डायरेक्टरी शीर्ष स्तर है; इसके अस्तित्व के बिना कोई भी उप-निर्देशिका नहीं बन सकती।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "FHS structures Linux around root `/`, separating executable binaries in `/bin`, settings in `/etc`, and device interfaces in `/dev`.",
+        "hi": "FHS लिनक्स को रूट `/` के तहत व्यवस्थित करता है, जिसमें बाइनरी `/bin` में, सेटिंग्स `/etc` में और डिवाइस नोड्स `/dev` में होते हैं।"
+      }
+    },
+    {
+      "unit_id": "u11_linux_file_permissions_model",
+      "topic": "Permission Groups and Access Modes",
+      "pedagogical_objective": "Master Linux file permission categories (Owner, Group, Others, All) and access permissions (Read, Write, Execute).",
+      "instruction": {
+        "title": {
+          "en": "Linux File Permissions: Target Groups and Access Modes",
+          "hi": "लिनक्स फ़ाइल अनुमतियाँ: पर्मिशन-ग्रुप और एक्सेस प्रकार"
+        },
+        "theory": {
+          "en": "Linux protects files and directories using a strict multi-user access security model. Permissions are divided into four target groups: Owner (`u` - the user who owns the file), Group (`g` - users belonging to the file's assigned group), Others (`o` - all other system users), and All (`a` - shorthand for everyone: ugo). Each group can be assigned three fundamental access modes: Read (`r` - permits viewing contents), Write (`w` - permits modifying or deleting contents), and Execute (`x` - permits running the file as a program or script).",
+          "hi": "लिनक्स एक मजबूत मल्टी-यूज़र सुरक्षा मॉडल का उपयोग करता है जो फ़ाइलों और निर्देशिकाओं तक पहुंच को नियंत्रित करता है। अनुमतियों को चार समूहों में बांटा गया है: Owner (`u` - फ़ाइल का स्वामी), Group (`g` - फ़ाइल के समूह से जुड़े सदस्य), Others (`o` - सिस्टम के अन्य सभी उपयोगकर्ता), और All (`a` - सभी उपयोगकर्ताओं का संयुक्त समूह: ugo)। प्रत्येक समूह के लिए तीन प्रकार की अनुमतियाँ होती हैं: Read (`r` - फ़ाइल सामग्री को पढ़ना), Write (`w` - सामग्री में बदलाव करना या लिखना), और Execute (`x` - फ़ाइल को एक प्रोग्राम के रूप में निष्पादित करना)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='20' y='15' width='600' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='40' y='38' fill='#38bdf8' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>LINUX PERMISSION MATRIX (GROUPS &amp; MODES)</text><rect x='30' y='65' width='270' height='190' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='50' y='95' fill='#4ade80' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>PERMISSION GROUPS</text><text x='50' y='130' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- u : Owner (user)</text><text x='50' y='160' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- g : Group</text><text x='50' y='190' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- o : Others</text><text x='50' y='220' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- a : All users (ugo)</text><rect x='340' y='65' width='270' height='190' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='360' y='95' fill='#fbbf24' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>ACCESS PERMISSIONS</text><text x='360' y='130' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- r : Read (view file)</text><text x='360' y='160' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- w : Write (edit/modify)</text><text x='360' y='190' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- x : Execute (run program)</text><text x='360' y='220' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>(x is given only for programs)</text></svg>",
+          "caption": {
+            "en": "Target permission groups and the three primary access modes in Linux.",
+            "hi": "लिनक्स में लक्षित पर्मिशन-ग्रुप और तीन मुख्य एक्सेस अनुमतियाँ।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining how Linux assigns permission categories to access operations.",
+          "hint": "Define the user scope first (owner, group, others) and match them with read, write, and execute permissions.",
+          "target_sequence": [
+            {
+              "id": "en_u11_t1",
+              "role": "subject",
+              "text": "linux assigns permissions across user groups,",
+              "role_hint": "specify owner, group, and others"
+            },
+            {
+              "id": "en_u11_t2",
+              "role": "process",
+              "text": "categorized into owner `u`, group `g`, and others `o`,",
+              "role_hint": "introduce read and write access"
+            },
+            {
+              "id": "en_u11_t3",
+              "role": "process",
+              "text": "granting read `r` and write `w` rights to examine or edit,",
+              "role_hint": "conclude with execute permissions"
+            },
+            {
+              "id": "en_u11_t4",
+              "role": "result",
+              "text": "along with execute `x` permissions if the file is a program",
+              "role_hint": "permission schema complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "logical",
+              "text": "granting execute `x` permissions to plain text files to enable editing,",
+              "penalty_explanation": "Execute permission `x` allows running programs, whereas text modification is governed by the write `w` permission."
+            },
+            {
+              "id": "en_u11_d2",
+              "category": "grammatical",
+              "text": "along with execute `x` rights before categorizing user groups,",
+              "penalty_explanation": "Access permissions cannot be allocated before defining the recipient user groups (u, g, o)."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "लिनक्स में पर्मिशन-ग्रुप और एक्सेस अधिकारों को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "उपयोगकर्ता समूहों (u, g, o) से शुरू करें और रीड, राइट व निष्पादन अधिकारों पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u11_t1",
+              "role": "subject",
+              "text": "लिनक्स विभिन्न उपयोगकर्ता समूहों में अनुमतियाँ बांटता है,",
+              "role_hint": "स्वामी, समूह और अन्य को निर्दिष्ट करें"
+            },
+            {
+              "id": "hi_u11_t2",
+              "role": "process",
+              "text": "जिन्हें स्वामी `u`, समूह `g`, और अन्य `o` में वर्गीकृत किया जाता है,",
+              "role_hint": "पढ़ने और लिखने के अधिकार जोड़ें"
+            },
+            {
+              "id": "hi_u11_t3",
+              "role": "process",
+              "text": "सामग्री देखने या बदलने के लिए रीड `r` और राइट `w` अधिकार देकर,",
+              "role_hint": "एग्जीक्यूट अधिकार के साथ पूरा करें"
+            },
+            {
+              "id": "hi_u11_t4",
+              "role": "result",
+              "text": "और फ़ाइल के प्रोग्राम होने पर निष्पादन `x` अनुमति प्रदान करके",
+              "role_hint": "पर्मिशन मॉडल पूरा हुआ"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "logical",
+              "text": "टेक्स्ट फ़ाइलों को संपादित करने के लिए निष्पादन `x` अनुमति प्रदान करके,",
+              "penalty_explanation": "निष्पादन अनुमति `x` केवल प्रोग्राम चलाने के लिए दी जाती है, टेक्स्ट संपादन के लिए राइट `w` की जरूरत होती है।"
+            },
+            {
+              "id": "hi_u11_d2",
+              "category": "grammatical",
+              "text": "उपयोगकर्ता समूहों को वर्गीकृत करने से पहले निष्पादन अनुमति देकर,",
+              "penalty_explanation": "उपयोगकर्ता श्रेणियों को परिभाषित किए बिना अनुमतियाँ आवंटित नहीं की जा सकतीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "File access in Linux is governed across Owner (u), Group (g), and Others (o) using Read (r), Write (w), and Execute (x) modes.",
+        "hi": "लिनक्स में फ़ाइल एक्सेस को Owner (u), Group (g) और Others (o) के तहत Read (r), Write (w) और Execute (x) द्वारा नियंत्रित किया जाता है।"
+      }
+    },
+    {
+      "unit_id": "u12_viewing_modifying_permissions",
+      "topic": "Viewing & Modifying Permissions (ls -l and chmod)",
+      "pedagogical_objective": "Apply ls -l to inspect access rights and chmod with operators to alter file permissions.",
+      "instruction": {
+        "title": {
+          "en": "Inspecting and Changing Permissions: ls -l and chmod",
+          "hi": "अनुमतियों का निरीक्षण और संशोधन: ls -l और chmod"
+        },
+        "theory": {
+          "en": "To view file permissions in Linux, administrators execute the long listing command: `ls -l`. This displays a 10-character string (e.g., `-rwxr-xr--`) reflecting the file type followed by owner, group, and others permission trios. To modify these permissions, Linux provides the change mode command: `chmod`. The syntax accepts user target specifiers (`u`, `g`, `o`, `a`) along with mathematical operators: `+` is used to add a permission, and `-` is used to remove a permission (e.g., `chmod ugo+rwx file01.txt`).",
+          "hi": "लिनक्स में फ़ाइल अनुमतियों को देखने के लिए प्रशासक `ls -l` कमांड का उपयोग करते हैं। यह आउटपुट में 10-वर्णों की एक स्ट्रिंग प्रदर्शित करता है (जैसे `-rwxr-xr--`), जिसमें फ़ाइल प्रकार के बाद स्वामी, समूह और अन्य की अनुमतियाँ दिखाई देती हैं। इन अनुमतियों को बदलने के लिए `chmod` (चेंज मोड) कमांड का उपयोग किया जाता है। इसमें लक्षित समूह (`u`, `g`, `o`, `a`) के साथ ऑपरेटर का उपयोग होता है: अनुमति जोड़ने के लिए `+` चिन्ह का और अनुमति हटाने के लिए `-` चिन्ह का उपयोग किया जाता है (जैसे `chmod ugo+rwx file01.txt`)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='20' y='20' width='600' height='40' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='40' y='45' fill='#38bdf8' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>INSPECT &amp; MODIFY: ls -l &amp; chmod</text><rect x='30' y='80' width='580' height='80' rx='6' fill='#1e293b' stroke='#475569'/><text x='50' y='110' fill='#4ade80' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>$ ls -l file01.txt</text><text x='50' y='135' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>-rwxr--r--  1  admin  staff  4096  data.txt</text><text x='50' y='152' fill='#fbbf24' font-family='monospace' font-size='11' text-anchor='start'>[type][owner:rwx][group:r--][others:r--]</text><rect x='30' y='175' width='580' height='85' rx='6' fill='#1e293b' stroke='#475569'/><text x='50' y='205' fill='#38bdf8' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>$ chmod ugo+rwx file01.txt</text><text x='50' y='230' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>Operators: '+' adds permission  |  '-' removes permission</text><text x='50' y='248' fill='#f472b6' font-family='monospace' font-size='11' text-anchor='start'>Target: u=owner, g=group, o=others, a=all</text></svg>",
+          "caption": {
+            "en": "Syntax and output layout for checking permissions with 'ls -l' and modifying them using 'chmod'.",
+            "hi": "'ls -l' से अनुमतियाँ देखने और 'chmod' से उन्हें संशोधित करने का सिंटैक्स लेआउट।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Assemble the diagnostic and modification sequence used to inspect and grant full permissions to a file.",
+          "hint": "Inspect rights using ls -l first, then execute chmod with the + operator.",
+          "target_sequence": [
+            {
+              "id": "en_u12_t1",
+              "role": "subject",
+              "text": "run `ls -l` to inspect existing file permissions,",
+              "role_hint": "choose the command to alter permissions"
+            },
+            {
+              "id": "en_u12_t2",
+              "role": "process",
+              "text": "invoke the `chmod` command,",
+              "role_hint": "specify target users and permissions with the add operator"
+            },
+            {
+              "id": "en_u12_t3",
+              "role": "process",
+              "text": "specify `ugo+rwx` using the `+` operator to add rights,",
+              "role_hint": "complete the command on the target file"
+            },
+            {
+              "id": "en_u12_t4",
+              "role": "result",
+              "text": "and target `file01.txt` to grant full multi-user access",
+              "role_hint": "modification completed"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u12_d1",
+              "category": "logical",
+              "text": "use the `-` operator to add permissions to all users,",
+              "penalty_explanation": "In chmod, the `-` operator strips permissions away, whereas the `+` operator adds them."
+            },
+            {
+              "id": "en_u12_d2",
+              "category": "grammatical",
+              "text": "and target `file01.txt` prior to executing `ls -l`,",
+              "penalty_explanation": "Administrators first inspect existing rights via `ls -l` before executing modification commands on the file."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "फ़ाइल अनुमतियों की जांच करने और पूर्ण पहुंच प्रदान करने के लिए आवश्यक कमांड क्रम व्यवस्थित करें।",
+          "hint": "पहले `ls -l` से जांचें, फिर `+` ऑपरेटर के साथ `chmod` कमांड चलाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u12_t1",
+              "role": "subject",
+              "text": "मौजूदा अनुमतियों की जांच के लिए `ls -l` निष्पादित करें,",
+              "role_hint": "अनुमति बदलने वाले कमांड को कॉल करें"
+            },
+            {
+              "id": "hi_u12_t2",
+              "role": "process",
+              "text": "अनुमति बदलने के लिए `chmod` कमांड का उपयोग करें,",
+              "role_hint": "ऑपरेटर के साथ अनुमतियां जोड़ें"
+            },
+            {
+              "id": "hi_u12_t3",
+              "role": "process",
+              "text": "अधिकार जोड़ने के लिए `+` ऑपरेटर के साथ `ugo+rwx` जोड़ें,",
+              "role_hint": "लक्षित फ़ाइल पर लागू करें"
+            },
+            {
+              "id": "hi_u12_t4",
+              "role": "result",
+              "text": "और पूर्ण पहुंच देने के लिए `file01.txt` पर लागू करें",
+              "role_hint": "संशोधन पूरा हुआ"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u12_d1",
+              "category": "logical",
+              "text": "सभी उपयोगकर्ताओं को अनुमति जोड़ने के लिए `-` ऑपरेटर का उपयोग करें,",
+              "penalty_explanation": "chmod में `-` चिन्ह अनुमति हटाने के लिए उपयोग होता है, जोड़ने के लिए `+` चिन्ह का उपयोग किया जाता है।"
+            },
+            {
+              "id": "hi_u12_d2",
+              "category": "grammatical",
+              "text": "`ls -l` चलाने से पहले `file01.txt` पर अनुमतियाँ लागू करें,",
+              "penalty_explanation": "फ़ाइल पर नई अनुमतियाँ लागू करने से पहले वर्तमान अनुमतियों की जांच की जाती है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Linux permissions are inspected with `ls -l` and modified via `chmod`, utilizing `+` to add and `-` to revoke rights for users (u), groups (g), and others (o).",
+        "hi": "लिनक्स अनुमतियों को `ls -l` से देखा जाता है और `chmod` द्वारा बदला जाता है, जहाँ `+` अधिकार जोड़ने और `-` अधिकार हटाने का कार्य करता है।"
+      }
+    },
+    {
+      "unit_id": "u13_linux_swap_space",
+      "topic": "Swap Space Mechanics & RAM Management",
+      "pedagogical_objective": "Explain how the Linux operating system uses hard-disk swap space to augment physical memory (RAM).",
+      "instruction": {
+        "title": {
+          "en": "Linux Swap Space and Virtual Memory Management",
+          "hi": "लिनक्स स्वैप स्पेस और वर्चुअल मेमोरी प्रबंधन"
+        },
+        "theory": {
+          "en": "Swap space is a dedicated storage region on the secondary storage drive (hard disk or SSD) configured as an extension of physical RAM. When the main memory (RAM) becomes saturated, the Linux kernel relies on swap space to maintain system responsiveness. The kernel offloads inactive or low-priority process memory pages into the swap area, freeing up high-speed physical RAM for immediate allocation to active, high-priority, foreground processes.",
+          "hi": "स्वैप स्पेस (Swap Space) हार्ड डिस्क या एसएसडी पर एक समर्पित क्षेत्र है जिसे भौतिक रैम (RAM) के विस्तार के रूप में उपयोग किया जाता है। जब मुख्य मेमोरी (RAM) पूरी तरह भर जाती है, तो सिस्टम को क्रैश होने से बचाने के लिए स्वैप स्पेस का उपयोग होता है। लिनक्स कर्नल निष्क्रिय या कम-प्राथमिकता वाली प्रक्रियाओं के मेमोरी पेजों को अस्थायी रूप से स्वैप स्पेस में भेज देता है, जिससे सक्रिय और उच्च-प्राथमिकता वाली प्रक्रियाओं के लिए रैम में खाली जगह बन जाती है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='20' y='15' width='600' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='40' y='38' fill='#38bdf8' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>RAM SATURATION &amp; SWAP OFFLOADING</text><rect x='40' y='70' width='240' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='55' y='100' fill='#4ade80' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>MAIN MEMORY (RAM)</text><text x='55' y='135' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- High-speed volatile memory</text><text x='55' y='165' fill='#38bdf8' font-family='monospace' font-size='12' font-weight='bold' text-anchor='start'>Active / High-Priority</text><text x='55' y='190' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>Retained in RAM for CPU</text><path d='M 285 140 L 355 140' stroke='#fbbf24' stroke-width='3' stroke-dasharray='4,4'/><polygon points='355,140 345,135 345,145' fill='#fbbf24'/><text x='290' y='130' fill='#fbbf24' font-family='monospace' font-size='10' text-anchor='start'>Pages</text><rect x='360' y='70' width='240' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='375' y='100' fill='#fbbf24' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>SWAP SPACE (DISK)</text><text x='375' y='135' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>- Dedicated hard-disk area</text><text x='375' y='165' fill='#f472b6' font-family='monospace' font-size='12' font-weight='bold' text-anchor='start'>Idle / Low-Priority</text><text x='375' y='190' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>Offloaded temporarily</text></svg>",
+          "caption": {
+            "en": "Mechanism of moving idle memory pages from saturated RAM into dedicated swap space.",
+            "hi": "रैम भरने पर निष्क्रिय मेमोरी पेजों को समर्पित स्वैप स्पेस में स्थानांतरित करने की प्रक्रिया।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Assemble the dynamic paging sequence triggered when main memory becomes fully saturated.",
+          "hint": "Detect RAM saturation, transfer idle process pages to disk swap space, and free RAM for active tasks.",
+          "target_sequence": [
+            {
+              "id": "en_u13_t1",
+              "role": "condition",
+              "text": "when main-memory `RAM` becomes completely full,",
+              "role_hint": "locate the secondary disk memory area"
+            },
+            {
+              "id": "en_u13_t2",
+              "role": "process",
+              "text": "the kernel engages dedicated hard-disk swap space,",
+              "role_hint": "identify which pages get transferred"
+            },
+            {
+              "id": "en_u13_t3",
+              "role": "process",
+              "text": "temporarily offloading idle or low-priority process pages,",
+              "role_hint": "state the benefit to active processes"
+            },
+            {
+              "id": "en_u13_t4",
+              "role": "result",
+              "text": "freeing physical `RAM` to execute active high-priority processes",
+              "role_hint": "memory offload cycle completed"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "logical",
+              "text": "permanently deleting idle process pages to clear physical memory,",
+              "penalty_explanation": "Pages are swapped temporarily to disk so they can be retrieved later; they are never permanently deleted."
+            },
+            {
+              "id": "en_u13_d2",
+              "category": "grammatical",
+              "text": "freeing physical `RAM` before main memory becomes full,",
+              "penalty_explanation": "Swap offloading is triggered in response to high memory pressure, not prior to memory consumption."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "मुख्य मेमोरी (रैम) पूरी तरह भर जाने पर सक्रिय होने वाले स्वैप स्पेस के चरणों को क्रमबद्ध करें।",
+          "hint": "रैम भरने से शुरू करें, स्वैप स्पेस में ट्रांसफर करें, और सक्रिय प्रक्रियाओं के लिए मेमोरी खाली करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u13_t1",
+              "role": "condition",
+              "text": "जब मुख्य मेमोरी `RAM` पूरी तरह भर जाती है,",
+              "role_hint": "हार्ड डिस्क पर स्वैप क्षेत्र का उपयोग करें"
+            },
+            {
+              "id": "hi_u13_t2",
+              "role": "process",
+              "text": "कर्नल हार्ड डिस्क पर समर्पित स्वैप स्पेस का उपयोग करता है,",
+              "role_hint": "कम प्राथमिकता वाले पेजों को हटाएं"
+            },
+            {
+              "id": "hi_u13_t3",
+              "role": "process",
+              "text": "निष्क्रिय प्रक्रियाओं के मेमोरी पेजों को अस्थायी रूप से संग्रहीत करके,",
+              "role_hint": "सक्रिय कार्यों के लिए जगह बनाकर पूरा करें"
+            },
+            {
+              "id": "hi_u13_t4",
+              "role": "result",
+              "text": "ताकि सक्रिय और उच्च-प्राथमिकता वाले प्रोग्रामों के लिए `RAM` खाली हो सके",
+              "role_hint": "स्वैप चक्र पूरा हुआ"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "logical",
+              "text": "मेमोरी खाली करने के लिए निष्क्रिय प्रोग्राम के डेटा को स्थायी रूप से हटाकर,",
+              "penalty_explanation": "स्वैप स्पेस डेटा को सुरक्षित रखने के लिए अस्थायी रूप से डिस्क पर लिखता है, उसे नष्ट नहीं करता।"
+            },
+            {
+              "id": "hi_u13_d2",
+              "category": "grammatical",
+              "text": "मेमोरी भरने से पहले `RAM` खाली करके कर्नल स्वैप स्पेस बनाता है,",
+              "penalty_explanation": "स्वैपिंग की आवश्यकता तभी उत्पन्न होती है जब रैम भर जाती है या मेमोरी का दबाव बढ़ता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Swap space provides a disk-based virtual memory safety net, staging idle RAM pages so that active tasks retain direct physical memory.",
+        "hi": "स्वैप स्पेस डिस्क पर एक वर्चुअल मेमोरी विस्तार है, जो निष्क्रिय पेजों को स्थानांतरित करके सक्रिय प्रोग्रामों के लिए रैम खाली रखता है।"
+      }
+    },
+    {
+      "unit_id": "u14_linux_mount_points",
+      "topic": "Storage Attachment via Mount Points (mount / umount)",
+      "pedagogical_objective": "Understand how Linux attaches storage devices to the directory tree using mount and umount commands.",
+      "instruction": {
+        "title": {
+          "en": "Linux Storage Attachment: Mount Points and Commands",
+          "hi": "लिनक्स स्टोरेज जुड़ाव: माउंट पॉइंट्स और कमांड्स"
+        },
+        "theory": {
+          "en": "In Linux, storage devices (such as USB drives, external disks, or secondary partitions) do not appear as drive letters like 'D:' or 'E:'. Instead, they are attached to the unified directory tree using a mechanism known as a mount point. A mount point is simply an existing directory through which an external or additional storage device is made accessible to users. The administrator attaches a device using the `mount` command and detaches it safely using the `umount` command.",
+          "hi": "लिनक्स में बाहरी स्टोरेज डिवाइस (जैसे पेन ड्राइव या हार्ड डिस्क) विंडोज़ की तरह 'D:' या 'E:' ड्राइव लेटर के रूप में नहीं दिखते। इसके बजाय, उन्हें डायरेक्टरी ट्री से जोड़ने के लिए 'माउंट पॉइंट' का उपयोग किया जाता है। माउंट पॉइंट एक मौजूदा डायरेक्टरी होती है जिसके माध्यम से किसी बाहरी या अतिरिक्त स्टोरेज डिवाइस को उपयोगकर्ताओं के लिए सुलभ बनाया जाता है। स्टोरेज डिवाइस को जोड़ने के लिए `mount` कमांड का और सुरक्षित रूप से हटाने के लिए `umount` कमांड का उपयोग किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='20' y='20' width='600' height='40' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='40' y='45' fill='#38bdf8' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>MOUNT POINT ARCHITECTURE</text><rect x='40' y='80' width='230' height='75' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='55' y='105' fill='#fbbf24' font-family='monospace' font-size='12' font-weight='bold' text-anchor='start'>STORAGE DEVICE</text><text x='55' y='130' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>Raw node: /dev/sdb1</text><line x1='275' y1='117' x2='365' y2='117' stroke='#38bdf8' stroke-width='2'/><polygon points='365,117 355,112 355,122' fill='#38bdf8'/><text x='285' y='110' fill='#38bdf8' font-family='monospace' font-size='10' text-anchor='start'>mount</text><rect x='370' y='80' width='230' height='75' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='385' y='105' fill='#4ade80' font-family='monospace' font-size='12' font-weight='bold' text-anchor='start'>MOUNT POINT DIRECTORY</text><text x='385' y='130' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>Directory: /mnt/usbdrive</text><rect x='40' y='175' width='560' height='80' rx='6' fill='#1e293b' stroke='#475569'/><text x='55' y='202' fill='#38bdf8' font-family='monospace' font-size='12' font-weight='bold' text-anchor='start'>Commands:</text><text x='55' y='225' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>Attach device:  $ sudo mount /dev/sdb1 /mnt/usbdrive</text><text x='55' y='245' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='start'>Detach device:  $ sudo umount /mnt/usbdrive</text></svg>",
+          "caption": {
+            "en": "Attaching hardware devices to Linux directories via mount and umount commands.",
+            "hi": "माउंट और अनमाउंट कमांड के माध्यम से हार्डवेयर डिवाइस को लिनक्स डायरेक्टरी से जोड़ना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence for mounting and safely detaching an external storage device in Linux.",
+          "hint": "Specify an existing directory, execute mount to attach the drive, and use umount to disconnect.",
+          "target_sequence": [
+            {
+              "id": "en_u14_t1",
+              "role": "subject",
+              "text": "select an existing directory as a mount point,",
+              "role_hint": "attach the device node"
+            },
+            {
+              "id": "en_u14_t2",
+              "role": "process",
+              "text": "execute the `mount` command to link storage,",
+              "role_hint": "enable user file operations"
+            },
+            {
+              "id": "en_u14_t3",
+              "role": "process",
+              "text": "allowing users to access external files seamlessly,",
+              "role_hint": "detach storage cleanly"
+            },
+            {
+              "id": "en_u14_t4",
+              "role": "result",
+              "text": "before issuing the `umount` command to disconnect safely",
+              "role_hint": "attachment lifecycle complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "logical",
+              "text": "unplug the physical device directly without issuing `umount`,",
+              "penalty_explanation": "Disconnecting a drive without running `umount` can corrupt file systems and result in data loss."
+            },
+            {
+              "id": "en_u14_d2",
+              "category": "grammatical",
+              "text": "before issuing the `umount` command prior to executing `mount`,",
+              "penalty_explanation": "A storage device cannot be unmounted before it has been mounted into the filesystem hierarchy."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "लिनक्स में बाहरी स्टोरेज डिवाइस को जोड़ने (माउंट करने) और सुरक्षित रूप से हटाने का सही क्रम बनाएं।",
+          "hint": "डायरेक्टरी चुनने से शुरू करें, mount कमांड चलाएं, और सुरक्षित निष्कासन हेतु umount पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u14_t1",
+              "role": "subject",
+              "text": "माउंट पॉइंट के रूप में एक मौजूदा डायरेक्टरी चुनें,",
+              "role_hint": "स्टोरेज डिवाइस को लिंक करें"
+            },
+            {
+              "id": "hi_u14_t2",
+              "role": "process",
+              "text": "स्टोरेज को जोड़ने के लिए `mount` कमांड निष्पादित करें,",
+              "role_hint": "फ़ाइल एक्सेस सक्षम करें"
+            },
+            {
+              "id": "hi_u14_t3",
+              "role": "process",
+              "text": "जिससे उपयोगकर्ता बाहरी फाइलों तक पहुंच सकें,",
+              "role_hint": "सुरक्षित रूप से हटाने की कमांड चलाएं"
+            },
+            {
+              "id": "hi_u14_t4",
+              "role": "result",
+              "text": "और सुरक्षित रूप से हटाने के लिए `umount` कमांड चलाएं",
+              "role_hint": "माउंट चक्र पूरा हुआ"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "logical",
+              "text": "`umount` कमांड चलाए बिना भौतिक उपकरण को सीधे डिस्कनेक्ट करके,",
+              "penalty_explanation": "बिना `umount` किए डिवाइस हटाने से डेटा करप्ट हो सकता है और फ़ाइल सिस्टम को नुकसान पहुंचता है।"
+            },
+            {
+              "id": "hi_u14_d2",
+              "category": "grammatical",
+              "text": "डिवाइस को `mount` करने से पहले `umount` कमांड चलाकर,",
+              "penalty_explanation": "किसी डिवाइस को पहले जोड़े (mount) बिना उसे अनमाउंट नहीं किया जा सकता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Storage devices are attached to directories via the `mount` command and cleanly disconnected using `umount` to avoid data corruption.",
+        "hi": "लिनक्स में स्टोरेज डिवाइस को `mount` कमांड से डायरेक्टरी में जोड़ा जाता है और डेटा सुरक्षा के लिए `umount` द्वारा हटाया जाता है।"
+      }
+    },
+    {
+      "unit_id": "u15_shell_scripting_and_user_admin",
+      "topic": "Shell Scripting Automation & User Management Commands",
+      "pedagogical_objective": "Automate routine operations using shell scripts and manage user lifecycles with adduser and deluser.",
+      "instruction": {
+        "title": {
+          "en": "Shell Scripting Automation and User Account Management",
+          "hi": "शेल स्क्रिप्टिंग ऑटोमेशन और उपयोगकर्ता खाता प्रबंधन"
+        },
+        "theory": {
+          "en": "Shell scripting enables administrators to batch and execute multiple shell commands sequentially within an automated script file. Storing routine commands in a script avoids repetitive manual typing and reduces human error during system administration. In addition to process automation, managing user access is a core task: new user accounts are created using the privileged command `sudo adduser <username>`, and obsolete or compromised user accounts are removed using `sudo deluser <username>`.",
+          "hi": "शेल-स्क्रिप्टिंग एक ऐसी प्रक्रिया है जिसमें उपयोगकर्ता एक साथ कई शेल कमांड निष्पादित कर सकता है। निष्पादित किए जाने वाले कमांड के क्रम को एक टेक्स्ट फ़ाइल में लिखा जाता है जिसे शेल-स्क्रिप्ट कहते हैं। यह दोहराव वाले प्रशासनिक कार्यों को स्वचालित करता है ताकि बार-बार कमांड टाइप न करना पड़े। इसके साथ ही उपयोगकर्ता खातों का प्रबंधन भी आवश्यक है: नया उपयोगकर्ता खाता जोड़ने के लिए `sudo adduser <username>` और उपयोगकर्ता को हटाने के लिए `sudo deluser <username>` कमांड का उपयोग किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg viewBox='0 0 640 280' xmlns='http://www.w3.org/2000/svg'><rect width='640' height='280' fill='#0f172a'/><rect x='20' y='20' width='600' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='40' y='43' fill='#38bdf8' font-family='monospace' font-size='14' font-weight='bold' text-anchor='start'>AUTOMATION &amp; USER ADMINISTRATION</text><rect x='30' y='75' width='275' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='50' y='105' fill='#4ade80' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>SHELL SCRIPTING</text><text x='50' y='135' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Batch command file (.sh)</text><text x='50' y='160' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Automates repetitive tasks</text><text x='50' y='185' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Eliminates typing mistakes</text><text x='50' y='215' fill='#fbbf24' font-family='monospace' font-size='11' text-anchor='start'>$ ./maintenance_job.sh</text><rect x='335' y='75' width='275' height='180' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='355' y='105' fill='#38bdf8' font-family='monospace' font-size='13' font-weight='bold' text-anchor='start'>USER MANAGEMENT</text><text x='355' y='135' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Create new user account:</text><text x='355' y='155' fill='#4ade80' font-family='monospace' font-size='11' text-anchor='start'>  sudo adduser &lt;username&gt;</text><text x='355' y='185' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='start'>- Delete user account:</text><text x='355' y='205' fill='#f472b6' font-family='monospace' font-size='11' text-anchor='start'>  sudo deluser &lt;username&gt;</text></svg>",
+          "caption": {
+            "en": "Shell script execution alongside core Linux user administration commands.",
+            "hi": "लिनक्स शेल स्क्रिप्ट निष्पादन और मुख्य उपयोगकर्ता खाता प्रबंधन कमांड।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence for automating system maintenance and managing authorized user accounts.",
+          "hint": "Write commands in a shell script, add a user with sudo adduser, and terminate unauthorized access with sudo deluser.",
+          "target_sequence": [
+            {
+              "id": "en_u15_t1",
+              "role": "subject",
+              "text": "write repetitive commands in a shell script,",
+              "role_hint": "run the automated batch commands"
+            },
+            {
+              "id": "en_u15_t2",
+              "role": "process",
+              "text": "executing multi-step maintenance tasks automatically,",
+              "role_hint": "provision a new operator account"
+            },
+            {
+              "id": "en_u15_t3",
+              "role": "process",
+              "text": "provisioning new accounts with `sudo adduser <username>`,",
+              "role_hint": "remove obsolete access privileges"
+            },
+            {
+              "id": "en_u15_t4",
+              "role": "result",
+              "text": "and purging expired users using `sudo deluser <username>`",
+              "role_hint": "administrative lifecycle complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "logical",
+              "text": "execute `sudo deluser <username>` to create brand new user profiles,",
+              "penalty_explanation": "The `deluser` command removes user accounts; creating new accounts requires `adduser`."
+            },
+            {
+              "id": "en_u15_d2",
+              "category": "grammatical",
+              "text": "and purging expired users before writing any commands in a shell script,",
+              "penalty_explanation": "Chronologically framing user deletion before scripting operations creates a disjointed sentence flow."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "सिस्टम रखरखाव को स्वचालित करने और उपयोगकर्ता खातों को प्रबंधित करने के सही क्रम को व्यवस्थित करें।",
+          "hint": "शेल स्क्रिप्ट में कमांड लिखने से शुरू करें, `adduser` से नया खाता जोड़ें, और `deluser` से हटाएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u15_t1",
+              "role": "subject",
+              "text": "शेल-स्क्रिप्ट फ़ाइल में दोहराव वाले कमांड लिखें,",
+              "role_hint": "स्वचालित रखरखाव कार्य निष्पादित करें"
+            },
+            {
+              "id": "hi_u15_t2",
+              "role": "process",
+              "text": "जिससे नियमित रखरखाव कार्य स्वचालित रूप से चल सकें,",
+              "role_hint": "नया उपयोगकर्ता खाता बनाएं"
+            },
+            {
+              "id": "hi_u15_t3",
+              "role": "process",
+              "text": "`sudo adduser <username>` से नया उपयोगकर्ता खाता जोड़ें,",
+              "role_hint": "अनुपयोगी खाते को हटाकर पूरा करें"
+            },
+            {
+              "id": "hi_u15_t4",
+              "role": "result",
+              "text": "और `sudo deluser <username>` से पुराने खाते को हटा दें",
+              "role_hint": "प्रशासनिक चक्र पूरा हुआ"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "logical",
+              "text": "नया उपयोगकर्ता खाता बनाने के लिए `sudo deluser <username>` चलाएं,",
+              "penalty_explanation": "`deluser` कमांड उपयोगकर्ता को हटाने के लिए होती है, नया उपयोगकर्ता जोड़ने के लिए `adduser` का उपयोग होता है।"
+            },
+            {
+              "id": "hi_u15_d2",
+              "category": "grammatical",
+              "text": "शेल स्क्रिप्ट लिखने से पहले पुराने उपयोगकर्ताओं को हटा दें,",
+              "penalty_explanation": "स्क्रिप्टिंग और स्वचालन से पूर्व निरर्थक रूप से उपयोगकर्ता हटाने का क्रम गलत है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Shell scripts eliminate repetitive command entry, while `sudo adduser` and `sudo deluser` manage user account lifecycles safely.",
+        "hi": "शेल स्क्रिप्ट दोहराव वाले कमांड को स्वचालित करती हैं, जबकि `sudo adduser` और `sudo deluser` उपयोगकर्ता खातों का प्रबंधन करते हैं।"
+      }
+    }
+  ]
+}
