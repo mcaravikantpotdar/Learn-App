@@ -1,0 +1,2178 @@
+{
+  "chapter_id": "ch01_network_operating_system",
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Network Operating System & Linux Fundamentals",
+      "hi": "नेटवर्क ऑपरेटिंग सिस्टम और लिनक्स के मूल सिद्धांत"
+    },
+    "total_units": 20,
+    "scoring_model": {
+      "single_language_max": 10,
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "unit_id": "u01_networking_benefits_risks",
+      "topic": "Computer Networking: Definition, Benefits & Trade-offs",
+      "pedagogical_objective": "Define computer networks and evaluate the sharing of hardware, software, and communication channels alongside data security and reliability risks.",
+      "instruction": {
+        "title": {
+          "en": "Computer Networking: Resource Sharing and Trade-offs",
+          "hi": "कंप्यूटर नेटवर्किंग: संसाधन साझाकरण और चुनौतियां"
+        },
+        "theory": {
+          "en": "A computer network is an interconnection of two or more autonomous computing devices established via wired or wireless channels. Networking enables efficient sharing of hardware resources (printers, processors, storage), software packages, and communication facilities (email, video conferencing). However, it introduces trade-offs in data security and network reliability due to potential unauthorized access and connectivity failures.",
+          "hi": "कंप्यूटर नेटवर्क दो या दो से अधिक स्वायत्त कंप्यूटिंग उपकरणों का एक अंतर्संबंध है जो वायर्ड या वायरलेस माध्यमों से जुड़ा होता है। नेटवर्किंग हार्डवेयर संसाधनों (प्रिंटर, प्रोसेसर, स्टोरेज), सॉफ्टवेयर और संचार सुविधाओं (ईमेल, वीडियो कॉन्फ्रेंसिंग) को साझा करने में सक्षम बनाता है। हालांकि, यह अनधिकृत पहुंच और कनेक्टिविटी विफलताओं के कारण डेटा सुरक्षा और विश्वसनीयता संबंधी चुनौतियां भी प्रस्तुत करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Computer Network: Resource Sharing Architecture</text><rect x='240' y='80' width='160' height='45' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='108' fill='#38bdf8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Central Network Hub</text><rect x='50' y='170' width='140' height='65' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='120' y='198' fill='#4ade80' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Hardware Sharing</text><text x='120' y='218' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Printers / Storage</text><rect x='250' y='170' width='140' height='65' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1'/><text x='320' y='198' fill='#fbbf24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Software Sharing</text><text x='320' y='218' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Central Licenses</text><rect x='450' y='170' width='140' height='65' rx='6' fill='#1e293b' stroke='#f472b6' stroke-width='1'/><text x='520' y='198' fill='#f472b6' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Communication</text><text x='520' y='218' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Email / Conferencing</text><line x1='320' y1='125' x2='120' y2='170' stroke='#38bdf8' stroke-width='1.5' stroke-dasharray='4'/><line x1='320' y1='125' x2='320' y2='170' stroke='#38bdf8' stroke-width='1.5' stroke-dasharray='4'/><line x1='320' y1='125' x2='520' y2='170' stroke='#38bdf8' stroke-width='1.5' stroke-dasharray='4'/></svg>",
+          "caption": {
+            "en": "Central network topology distributing hardware, software, and communication channels.",
+            "hi": "हार्डवेयर, सॉफ्टवेयर और संचार चैनलों को वितरित करने वाली केंद्रीय नेटवर्क टोपोलॉजी।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Assemble the sequence outlining the definition and primary benefits of computer networking.",
+          "hint": "Start with interlinking computing devices, mention resource sharing, and conclude with the trade-offs.",
+          "target_sequence": [
+            {
+              "id": "en_u01_t1",
+              "role": "subject",
+              "text": "interlinking two or more computing devices establishes a computer network,",
+              "role_hint": "describe the functional sharing capabilities"
+            },
+            {
+              "id": "en_u01_t2",
+              "role": "process",
+              "text": "enabling distributed sharing of hardware, software, and communication services,",
+              "role_hint": "conclude with operational considerations"
+            },
+            {
+              "id": "en_u01_t3",
+              "role": "result",
+              "text": "while requiring robust safeguards against data security breaches and reliability failures",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u01_d1",
+              "category": "logical",
+              "text": "completely eliminating any need for transmission media or network protocols,",
+              "penalty_explanation": "Networking fundamentally requires wired or wireless transmission media and protocols."
+            },
+            {
+              "id": "en_u01_d2",
+              "category": "grammatical",
+              "text": "requiring each user to maintain isolated offline peripherals exclusively,",
+              "penalty_explanation": "Networking enables resource sharing rather than enforcing isolated offline hardware."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "कंप्यूटर नेटवर्किंग की परिभाषा और लाभों को दर्शाने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "उपकरणों को आपस में जोड़ने से शुरू करें, संसाधन साझाकरण बताएं और सुरक्षा चुनौतियों से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u01_t1",
+              "role": "subject",
+              "text": "दो या अधिक कंप्यूटिंग उपकरणों को आपस में जोड़ने से एक कंप्यूटर नेटवर्क बनता है,",
+              "role_hint": "संसाधनों के साझाकरण का वर्णन करें"
+            },
+            {
+              "id": "hi_u01_t2",
+              "role": "process",
+              "text": "हार्डवेयर, सॉफ्टवेयर और संचार सेवाओं के वितरित साझाकरण को सक्षम करते हुए,",
+              "role_hint": "सुरक्षा और विश्वसनीयता के पहलुओं के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u01_t3",
+              "role": "result",
+              "text": "जबकि डेटा सुरक्षा उल्लंघनों और विश्वसनीयता विफलताओं के खिलाफ मजबूत सुरक्षा उपायों की आवश्यकता होती है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u01_d1",
+              "category": "logical",
+              "text": "ट्रांसमिशन मीडिया या नेटवर्क प्रोटोकॉल की किसी भी आवश्यकता को पूरी तरह से समाप्त करते हुए,",
+              "penalty_explanation": "नेटवर्किंग के लिए वायर्ड या वायरलेस ट्रांसमिशन मीडिया और प्रोटोकॉल अनिवार्य हैं।"
+            },
+            {
+              "id": "hi_u01_d2",
+              "category": "grammatical",
+              "text": "प्रत्येक उपयोगकर्ता को केवल अलग-थलग ऑफ़लाइन उपकरणों को बनाए रखने के लिए बाध्य करते हुए,",
+              "penalty_explanation": "नेटवर्किंग संसाधनों को साझा करने की सुविधा देती है, न कि उन्हें अलग-थलग रखने की।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Computer networks link autonomous devices to share data, hardware, and communication tools, while requiring data security.",
+        "hi": "कंप्यूटर नेटवर्क डेटा, हार्डवेयर और संचार साझा करने के लिए उपकरणों को जोड़ते हैं, जिसके लिए डेटा सुरक्षा आवश्यक है।"
+      }
+    },
+    {
+      "unit_id": "u02_network_hardware_components",
+      "topic": "Network Hardware Elements: NIC, Hub, Switch, and Router",
+      "pedagogical_objective": "Distinguish network hardware components: client/server roles, transmission media, physical NIC interfacing, broadcasting hubs, direct-switching hubs, and multi-network routers.",
+      "instruction": {
+        "title": {
+          "en": "Hardware Components of a Computer Network",
+          "hi": "कंप्यूटर नेटवर्क के हार्डवेयर घटक"
+        },
+        "theory": {
+          "en": "A network operates through specialized hardware entities. The Server coordinates shared resources, while Clients issue requests. A Network Interface Card (NIC) connects the device to transmission media. At the device interconnect level, a Hub broadcasts incoming packets unselectively to all ports, whereas a Switch establishes direct, secure point-to-point connections to target MAC addresses. At the network boundary, a Router interconnects distinct sub-networks and routes packets toward the Internet.",
+          "hi": "एक नेटवर्क विशिष्ट हार्डवेयर घटकों के माध्यम से कार्य करता है। सर्वर साझा संसाधनों का प्रबंधन करता है, जबकि क्लाइंट सेवा अनुरोध भेजते हैं। नेटवर्क इंटरफेस कार्ड (NIC) डिवाइस को ट्रांसमिशन मीडिया से जोड़ता है। हब (Hub) आने वाले डेटा को सभी पोर्ट्स पर अंधाधुंध ब्रॉडकास्ट करता है, जबकि स्विच (Switch) लक्षित डिवाइस के साथ सीधा और सुरक्षित कनेक्शन बनाता है। राउटर (Router) कई अलग-अलग नेटवर्कों को आपस में जोड़ता है और इंटरनेट से जोड़ता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Network Hardware Interconnect Hierarchy</text><rect x='40' y='75' width='130' height='180' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1'/><text x='105' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>NIC</text><text x='105' y='135' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Network Interface Card</text><text x='105' y='165' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Physical Media Port</text><text x='105' y='215' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Hardware Layer Bridge</text><rect x='180' y='75' width='130' height='180' rx='6' fill='#1e293b' stroke='#ef4444' stroke-width='1'/><text x='245' y='105' fill='#ef4444' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Hub</text><text x='245' y='135' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Broadcast Engine</text><text x='245' y='165' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Sends to all ports</text><text x='245' y='215' fill='#ef4444' font-family='sans-serif' font-size='10' text-anchor='middle'>Slow &amp; Less Secure</text><rect x='320' y='75' width='130' height='180' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='385' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Switch</text><text x='385' y='135' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Direct Connection</text><text x='385' y='165' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Unicast Frame Routing</text><text x='385' y='215' fill='#4ade80' font-family='sans-serif' font-size='10' text-anchor='middle'>Fast &amp; Highly Secure</text><rect x='460' y='75' width='140' height='180' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='530' y='105' fill='#38bdf8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Router</text><text x='530' y='135' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Network Gateway</text><text x='530' y='165' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Connects Sub-nets</text><text x='530' y='215' fill='#38bdf8' font-family='sans-serif' font-size='10' text-anchor='middle'>Directs Internet Packets</text></svg>",
+          "caption": {
+            "en": "Hardware devices facilitating host interfacing (NIC), local frame distribution (Hub/Switch), and inter-network routing (Router).",
+            "hi": "होस्ट इंटरफेसिंग (NIC), स्थानीय फ्रेम वितरण (Hub/Switch), और इंटर-नेटवर्क रूटिंग (Router) की सुविधा देने वाले हार्डवेयर घटक।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence differentiating the roles of NICs, hubs, switches, and routers in a network.",
+          "hint": "Identify physical connectivity via the NIC, contrast broadcasting hubs with direct switches, and conclude with the router.",
+          "target_sequence": [
+            {
+              "id": "en_u02_t1",
+              "role": "subject",
+              "text": "the network interface card physically interfaces a computing device with transmission media,",
+              "role_hint": "contrast local distribution mechanisms"
+            },
+            {
+              "id": "en_u02_t2",
+              "role": "process",
+              "text": "where a hub broadcasts packets indiscriminately while a switch routes frames directly to target ports,",
+              "role_hint": "conclude with inter-network connectivity"
+            },
+            {
+              "id": "en_u02_t3",
+              "role": "result",
+              "text": "and a router interconnects disparate networks together to forward data toward the internet",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u02_d1",
+              "category": "logical",
+              "text": "a network hub examines encrypted packets to route frames to exact physical mac addresses,",
+              "penalty_explanation": "Hubs lack addressing logic and broadcast to all ports; switches handle MAC address routing."
+            },
+            {
+              "id": "en_u02_d2",
+              "category": "grammatical",
+              "text": "restricting routers strictly to operating inside individual computer mouse cables,",
+              "penalty_explanation": "Routers are standalone network appliances connecting separate network segments."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "नेटवर्क में NIC, हब, स्विच और राउटर की भूमिकाओं को दर्शाने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "NIC से शुरुआत करें, ब्रॉडकास्ट हब और डायरेक्ट स्विच की तुलना करें और राउटर से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u02_t1",
+              "role": "subject",
+              "text": "नेटवर्क इंटरफ़ेस कार्ड (NIC) कंप्यूटिंग डिवाइस को ट्रांसमिशन मीडिया से जोड़ता है,",
+              "role_hint": "हब और स्विच के अंतर का वर्णन करें"
+            },
+            {
+              "id": "hi_u02_t2",
+              "role": "process",
+              "text": "जहाँ हब डेटा को सभी पोर्ट्स पर ब्रॉडकास्ट करता है जबकि स्विच सीधे लक्षित पोर्ट पर भेजता है,",
+              "role_hint": "नेटवर्क कनेक्टिविटी के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u02_t3",
+              "role": "result",
+              "text": "और एक राउटर विभिन्न नेटवर्कों को आपस में जोड़कर डेटा को इंटरनेट की ओर अग्रेषित करता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u02_d1",
+              "category": "logical",
+              "text": "एक नेटवर्क हब डेटा को सटीक भौतिक MAC पते पर भेजने के लिए पैकेट की जांच करता है,",
+              "penalty_explanation": "हब में पता जांचने की तकनीक नहीं होती, यह सभी पोर्ट्स पर ब्रॉडकास्ट करता है; यह कार्य स्विच का है।"
+            },
+            {
+              "id": "hi_u02_d2",
+              "category": "grammatical",
+              "text": "राउटर को कंप्यूटर माउस के तारों के अंदर संचालित करने के लिए सीमित करते हुए,",
+              "penalty_explanation": "राउटर अलग-अलग नेटवर्कों को जोड़ने वाले स्वतंत्र उपकरण हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "NICs connect hosts to media, hubs broadcast data, switches direct frames securely, and routers link distinct networks.",
+        "hi": "NIC मीडिया से जोड़ता है, हब ब्रॉडकास्ट करता है, स्विच सीधे फ्रेम भेजता है और राउटर अलग नेटवर्कों को जोड़ता है।"
+      }
+    },
+    {
+      "unit_id": "u03_tcp_protocol_mechanics",
+      "topic": "Transmission Control Protocol (TCP): Segmentation & Reliability",
+      "pedagogical_objective": "Detail connection-oriented TCP mechanics: packet segmentation, packet reassembly, guaranteed delivery, and flow control.",
+      "instruction": {
+        "title": {
+          "en": "TCP Mechanics: Segmentation and Guaranteed Delivery",
+          "hi": "टीसीपी (TCP): पैकेट विभाजन और गारंटीकृत डिलीवरी"
+        },
+        "theory": {
+          "en": "Transmission Control Protocol (TCP) is a connection-oriented transport protocol operating within the TCP/IP suite. Before transmission, TCP establishes a virtual connection between sender and receiver. It fragments outgoing data streams into numbered data packets and ensures that all packets are received error-free and reassembled in correct sequential order at the destination. TCP enforces packet flow control and guarantees reliable packet delivery, indifferent to the physical paths the packets traverse.",
+          "hi": "ट्रांसमिशन कंट्रोल प्रोटोकॉल (TCP) TCP/IP सूट के अंतर्गत एक कनेक्शन-उन्मुख (connection-oriented) प्रोटोकॉल है। डेटा भेजने से पहले यह प्रेषक और रिसीवर के बीच कनेक्शन स्थापित करता है। यह डेटा को छोटे पैकेटों में विभाजित करता है और यह सुनिश्चित करता है कि रिसीवर के पास सभी पैकेट सही क्रम में प्राप्त हों। TCP डेटा प्रवाह को नियंत्रित करता है और पैकेट डिलीवरी की गारंटी देता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Transmission Control Protocol (TCP): Reliable Segmentation</text><rect x='40' y='80' width='140' height='150' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='110' y='110' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Sender Node</text><rect x='60' y='130' width='100' height='30' fill='#0f172a' stroke='#cbd5e1'/><text x='110' y='150' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Raw Data Stream</text><text x='110' y='190' fill='#38bdf8' font-family='sans-serif' font-size='11' text-anchor='middle'>Divides into Packets</text><text x='110' y='210' fill='#4ade80' font-family='sans-serif' font-size='10' text-anchor='middle'>[ P1 ] [ P2 ] [ P3 ]</text><rect x='240' y='95' width='160' height='120' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='320' y='125' fill='#38bdf8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>TCP Channel Rules</text><text x='320' y='150' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>• Connection-based</text><text x='320' y='170' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>• Flow Control</text><text x='320' y='190' fill='#4ade80' font-family='sans-serif' font-size='11' text-anchor='middle'>• Guaranteed Delivery</text><rect x='460' y='80' width='140' height='150' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='530' y='110' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Receiver Node</text><text x='530' y='150' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Reassembles packets</text><text x='530' y='175' fill='#4ade80' font-family='sans-serif' font-size='11' text-anchor='middle'>in correct sequence</text><text x='530' y='210' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Error-free reconstruction</text></svg>",
+          "caption": {
+            "en": "TCP divides data streams into numbered packets and guarantees ordered, error-free reassembly at the receiver.",
+            "hi": "TCP डेटा स्ट्रीम को क्रमांकित पैकेटों में विभाजित करता है और रिसीवर पर त्रुटिहीन पुनर्संयोजन की गारंटी देता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Arrange the sequence defining the operational mechanics of the Transmission Control Protocol.",
+          "hint": "Establish the connection, divide data into packets, and ensure ordered delivery and reassembly.",
+          "target_sequence": [
+            {
+              "id": "en_u03_t1",
+              "role": "subject",
+              "text": "as a connection-oriented protocol, tcp establishes a virtual link before data transmission,",
+              "role_hint": "explain data fragmentation"
+            },
+            {
+              "id": "en_u03_t2",
+              "role": "process",
+              "text": "divides data into numbered packets while managing flow control,",
+              "role_hint": "conclude with reassembly guarantees"
+            },
+            {
+              "id": "en_u03_t3",
+              "role": "result",
+              "text": "and guarantees the delivery and ordered reassembly of all packets at the receiver",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u03_d1",
+              "category": "logical",
+              "text": "discards half the transmitted packets intentionally to reduce bandwidth load,",
+              "penalty_explanation": "TCP is designed specifically for reliable delivery and retransmits lost packets rather than discarding them."
+            },
+            {
+              "id": "en_u03_d2",
+              "category": "grammatical",
+              "text": "operates as a connectionless protocol without requiring sender-receiver handshakes,",
+              "penalty_explanation": "TCP is explicitly connection-oriented; UDP and IP are connectionless."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "ट्रांसमिशन कंट्रोल प्रोटोकॉल (TCP) के संचालन तंत्र को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "कनेक्शन स्थापित करने से शुरू करें, पैकेटों में विभाजन बताएं और गारंटीकृत डिलीवरी से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u03_t1",
+              "role": "subject",
+              "text": "एक कनेक्शन-उन्मुख प्रोटोकॉल के रूप में, TCP ट्रांसमिशन से पहले एक लिंक स्थापित करता है,",
+              "role_hint": "डेटा विभाजन की व्याख्या करें"
+            },
+            {
+              "id": "hi_u03_t2",
+              "role": "process",
+              "text": "डेटा को छोटे पैकेटों में विभाजित करता है और प्रवाह नियंत्रण को संभालता है,",
+              "role_hint": "पुनर्संयोजन गारंटी के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u03_t3",
+              "role": "result",
+              "text": "और रिसीवर के पास सभी पैकेटों की डिलीवरी और सही क्रम में पुनर्संयोजन की गारंटी देता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u03_d1",
+              "category": "logical",
+              "text": "बैंडविड्थ कम करने के लिए आधे पैकेटों को जानबूझकर नष्ट करते हुए,",
+              "penalty_explanation": "TCP विश्वसनीय डिलीवरी की गारंटी देता है और खोए हुए पैकेटों को पुनः भेजता है।"
+            },
+            {
+              "id": "hi_u03_d2",
+              "category": "grammatical",
+              "text": "बिना कनेक्शन स्थापित किए कनेक्शन-रहित प्रोटोकॉल के रूप में कार्य करते हुए,",
+              "penalty_explanation": "TCP कनेक्शन-आधारित (connection-oriented) प्रोटोकॉल है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "TCP is a connection-oriented protocol that fragments data into packets and guarantees reliable, ordered delivery.",
+        "hi": "TCP एक कनेक्शन-उन्मुख प्रोटोकॉल है जो डेटा को पैकेटों में बांटता है और विश्वसनीय, क्रमित डिलीवरी सुनिश्चित करता है।"
+      }
+    },
+    {
+      "unit_id": "u04_ip_protocol_addressing",
+      "topic": "Internet Protocol (IP): Connectionless Packet Routing",
+      "pedagogical_objective": "Contrast connectionless IP routing and logical device addressing against transport-layer delivery guarantees.",
+      "instruction": {
+        "title": {
+          "en": "Internet Protocol: Addressing and Routing",
+          "hi": "इंटरनेट प्रोटोकॉल (IP): एड्रेसिंग और रूटिंग"
+        },
+        "theory": {
+          "en": "Internet Protocol (IP) operates as the primary network-layer protocol of the TCP/IP stack. Unlike TCP, IP is a connectionless protocol that does not establish a pre-arranged connection between sender and receiver. Its primary responsibilities are addressing (assigning unique logical IP addresses to every connected computing node) and routing (directing individual packets across intermediate routers to their target destination).",
+          "hi": "इंटरनेट प्रोटोकॉल (IP) TCP/IP स्टैक का मुख्य नेटवर्क-लेयर प्रोटोकॉल है। TCP के विपरीत, IP एक कनेक्शन-रहित (connectionless) प्रोटोकॉल है जिसे प्रेषक और रिसीवर के बीच पहले से कनेक्शन स्थापित करने की आवश्यकता नहीं होती है। इसकी मुख्य जिम्मेदारियां एड्रेसिंग (प्रत्येक डिवाइस को एक अद्वितीय IP पता सौंपना) और रूटिंग (डेटा पैकेटों को सही गंतव्य तक पहुंचाना) हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Internet Protocol: Addressing &amp; Connectionless Packet Routing</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='170' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>IP Addressing Responsibility</text><text x='170' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='12' text-anchor='middle'>Assigns Unique Logical Labels</text><rect x='70' y='155' width='200' height='35' rx='4' fill='#0f172a' stroke='#38bdf8'/><text x='170' y='178' fill='#38bdf8' font-family='monospace' font-size='13' text-anchor='middle'>192.168.1.105</text><text x='170' y='225' fill='#94a3b8' font-family='sans-serif' font-size='11' text-anchor='middle'>Ensures correct destination identification</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='470' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Connectionless Routing</text><text x='470' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='12' text-anchor='middle'>No Pre-Established Virtual Path</text><text x='470' y='165' fill='#4ade80' font-family='sans-serif' font-size='11' text-anchor='middle'>Packets routed hop-by-hop</text><text x='470' y='190' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Handles path routing dynamically</text><text x='470' y='225' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Delivers packets independently</text></svg>",
+          "caption": {
+            "en": "Internet Protocol duties: assigning logical IP addresses and routing independent packets without prior connection setup.",
+            "hi": "इंटरनेट प्रोटोकॉल के कार्य: लॉजिकल IP पते सौंपना और कनेक्शन स्थापित किए बिना स्वतंत्र पैकेट रूट करना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining the primary functions of the Internet Protocol.",
+          "hint": "Identify IP as a connectionless protocol, assign unique addresses, and guide packets to their destination.",
+          "target_sequence": [
+            {
+              "id": "en_u04_t1",
+              "role": "subject",
+              "text": "the internet protocol operates as a connectionless network communication mechanism,",
+              "role_hint": "describe addressing"
+            },
+            {
+              "id": "en_u04_t2",
+              "role": "process",
+              "text": "assigning a unique numerical ip address to every connected device on the network,",
+              "role_hint": "conclude with routing execution"
+            },
+            {
+              "id": "en_u04_t3",
+              "role": "result",
+              "text": "and handling the dynamic routing of independent data packets to their destination",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u04_d1",
+              "category": "logical",
+              "text": "guaranteeing packet reassembly order by establishing virtual circuits prior to transmission,",
+              "penalty_explanation": "Packet reassembly and connection establishment are duties of TCP, not connectionless IP."
+            },
+            {
+              "id": "en_u04_d2",
+              "category": "grammatical",
+              "text": "operating without assigning any numeric addresses to computers,",
+              "penalty_explanation": "Assigning unique numerical IP addresses is the foundational responsibility of IP."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "इंटरनेट प्रोटोकॉल (IP) के प्राथमिक कार्यों को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "कनेक्शन-रहित तंत्र से शुरू करें, अद्वितीय पता सौंपना बताएं और डायनामिक रूटिंग से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u04_t1",
+              "role": "subject",
+              "text": "इंटरनेट प्रोटोकॉल एक कनेक्शन-रहित नेटवर्क संचार तंत्र के रूप में कार्य करता है,",
+              "role_hint": "एड्रेसिंग का वर्णन करें"
+            },
+            {
+              "id": "hi_u04_t2",
+              "role": "process",
+              "text": "नेटवर्क पर प्रत्येक जुड़े उपकरण को एक अद्वितीय संख्यात्मक IP पता निर्दिष्ट करते हुए,",
+              "role_hint": "रूटिंग निष्पादन के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u04_t3",
+              "role": "result",
+              "text": "और स्वतंत्र डेटा पैकेटों को उनके गंतव्य तक पहुंचाने के लिए गतिशील रूटिंग को संभालता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u04_d1",
+              "category": "logical",
+              "text": "ट्रांसमिशन से पहले वर्चुअल सर्किट बनाकर पैकेट पुनर्संयोजन की गारंटी देते हुए,",
+              "penalty_explanation": "वर्चुअल सर्किट और डिलीवरी की गारंटी TCP का काम है, IP का नहीं।"
+            },
+            {
+              "id": "hi_u04_d2",
+              "category": "grammatical",
+              "text": "कंप्यूटरों को बिना कोई संख्यात्मक पता सौंपे कार्य करते हुए,",
+              "penalty_explanation": "अद्वितीय संख्यात्मक IP पता सौंपना ही IP का मुख्य कार्य है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "IP is a connectionless protocol responsible for unique device addressing and packet routing across networks.",
+        "hi": "IP एक कनेक्शन-रहित प्रोटोकॉल है जो उपकरणों को अद्वितीय पते सौंपने और पैकेट रूटिंग के लिए जिम्मेदार है।"
+      }
+    },
+    {
+      "unit_id": "u05_ipv4_octet_notation",
+      "topic": "IPv4 Architecture: 32-Bit Octets, Dotted Decimal, and Binary",
+      "pedagogical_objective": "Analyze the 32-bit IPv4 structure partitioned into four 8-bit octets represented in dotted-decimal and binary formats.",
+      "instruction": {
+        "title": {
+          "en": "IPv4 Address Architecture and Octet Notation",
+          "hi": "IPv4 एड्रेस संरचना और ऑक्टेट नोटेशन"
+        },
+        "theory": {
+          "en": "An IPv4 address is a 32-bit numerical identifier assigned to every network interface. These 32 bits are divided into four groups of 8 bits each, termed octets ($4 \\times 8 = 32\\text{ bits}$). IP addresses are expressed in two equivalent notations: Dotted Decimal, where each 8-bit octet is converted to a base-10 number separated by periods (e.g., `192.168.12.80`), and Dotted Binary, where each octet is represented as an 8-digit bitstring.",
+          "hi": "एक IPv4 पता एक 32-बिट संख्यात्मक पहचानकर्ता है जो प्रत्येक नेटवर्क डिवाइस को आवंटित किया जाता है। इन 32 बिट्स को 8-8 बिट के चार भागों में विभाजित किया गया है जिन्हें 'ऑक्टेट' (octets) कहा जाता है ($4 \\times 8 = 32\\text{ बिट्स}$)। इन्हें दो तरीकों से दर्शाया जाता है: डॉटेड दशमलव (Dotted Decimal, जैसे `192.168.12.80`) और डॉटेड बाइनरी (Dotted Binary, जैसे 8-बिट बाइनरी स्ट्रिंग के रूप में)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>IPv4 32-Bit Architecture: Four 8-Bit Octets</text><rect x='40' y='75' width='560' height='75' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1'/><text x='60' y='105' fill='#fbbf24' font-family='sans-serif' font-size='12' font-weight='bold'>Dotted Decimal Format:</text><text x='60' y='135' fill='#38bdf8' font-family='monospace' font-size='20'>192 . 168 . 12 . 80</text><rect x='40' y='165' width='560' height='85' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='60' y='195' fill='#4ade80' font-family='sans-serif' font-size='12' font-weight='bold'>Dotted Binary Format (32 Bits Total):</text><text x='60' y='225' fill='#cbd5e1' font-family='monospace' font-size='12'>11000000 . 10101000 . 00001100 . 01010000</text><text x='110' y='242' fill='#94a3b8' font-family='sans-serif' font-size='10'>Octet 1 (8b)</text><text x='250' y='242' fill='#94a3b8' font-family='sans-serif' font-size='10'>Octet 2 (8b)</text><text x='390' y='242' fill='#94a3b8' font-family='sans-serif' font-size='10'>Octet 3 (8b)</text><text x='530' y='242' fill='#94a3b8' font-family='sans-serif' font-size='10'>Octet 4 (8b)</text></svg>",
+          "caption": {
+            "en": "The 32-bit IPv4 structure split into four 8-bit octets in dotted decimal and binary representations.",
+            "hi": "चार 8-बिट ऑक्टेट में विभाजित 32-बिट IPv4 संरचना का दशमलव और बाइनरी निरूपण।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining the internal bit structure and representation of an IPv4 address.",
+          "hint": "Identify the total length of 32 bits, divide into four 8-bit octets, and describe dotted decimal notation.",
+          "target_sequence": [
+            {
+              "id": "en_u05_t1",
+              "role": "subject",
+              "text": "an ipv4 address is composed of a 32-bit numerical identifier,",
+              "role_hint": "explain its division"
+            },
+            {
+              "id": "en_u05_t2",
+              "role": "process",
+              "text": "partitioned into four distinct 8-bit sections termed octets,",
+              "role_hint": "conclude with notation formats"
+            },
+            {
+              "id": "en_u05_t3",
+              "role": "result",
+              "text": "and represented as base-10 integers separated by periods in dotted decimal notation",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u05_d1",
+              "category": "logical",
+              "text": "an ipv4 address consists strictly of two 64-bit hexadecimal blocks,",
+              "penalty_explanation": "IPv4 uses 32 bits divided into four 8-bit octets; hexadecimal blocks belong to 128-bit IPv6."
+            },
+            {
+              "id": "en_u05_d2",
+              "category": "grammatical",
+              "text": "separating octets strictly using colon delimiters like in URLs,",
+              "penalty_explanation": "IPv4 addresses use dot (period) delimiters, not colons."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "IPv4 पते की आंतरिक बिट संरचना और निरूपण को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "32-बिट संख्यात्मक पहचानकर्ता से शुरू करें, चार 8-बिट ऑक्टेट बताएं और डॉटेड दशमलव नोटेशन से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u05_t1",
+              "role": "subject",
+              "text": "एक IPv4 पता 32-बिट संख्यात्मक पहचानकर्ता से बना होता है,",
+              "role_hint": "इसके विभाजन की व्याख्या करें"
+            },
+            {
+              "id": "hi_u05_t2",
+              "role": "process",
+              "text": "जिसे ऑक्टेट कहे जाने वाले चार अलग-अलग 8-बिट भागों में विभाजित किया जाता है,",
+              "role_hint": "नोटेशन प्रारूप के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u05_t3",
+              "role": "result",
+              "text": "और डॉटेड दशमलव नोटेशन में डॉट्स द्वारा अलग की गई दशमलव संख्याओं के रूप में दर्शाया जाता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u05_d1",
+              "category": "logical",
+              "text": "एक IPv4 पता दो 64-बिट हेक्साडेसिमल ब्लॉकों से बना होता है,",
+              "penalty_explanation": "IPv4 में 32 बिट्स होते हैं जो चार 8-बिट ऑक्टेट में बंटे होते हैं; 128-बिट हेक्साडेसिमल संरचना IPv6 की है।"
+            },
+            {
+              "id": "hi_u05_d2",
+              "category": "grammatical",
+              "text": "ऑक्टेट्स को कोलन (:) प्रतीकों द्वारा अलग करने के लिए बाध्य करते हुए,",
+              "penalty_explanation": "IPv4 पतों में ऑक्टेट को अलग करने के लिए डॉट (.) का उपयोग होता है, कोलन का नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "An IPv4 address has 32 bits split into four 8-bit octets, written in dotted decimal (e.g., `192.168.12.80`).",
+        "hi": "IPv4 पते में 32 बिट्स होते हैं जो चार 8-बिट ऑक्टेट में बंटे होते हैं और डॉटेड दशमलव में लिखे जाते हैं।"
+      }
+    },
+    {
+      "unit_id": "u06_ip_classes_a_b_c",
+      "topic": "Unicast IP Classes: Class A, B, and C Allocations",
+      "pedagogical_objective": "Compare Network ID versus Host ID allocations, leading bits, and subnet masks across Class A, Class B, and Class C networks.",
+      "instruction": {
+        "title": {
+          "en": "Unicast Classes: Class A, B, and C",
+          "hi": "यूनिकास्ट श्रेणियां: क्लास A, B और C"
+        },
+        "theory": {
+          "en": "Every unicast IPv4 address is partitioned into a Network ID (identifying the network) and a Host ID (identifying the specific device). Classification depends on the first octet: Class A begins with bit `0` (range $0-127$, subnet mask `255.0.0.0`), allocating 8 bits to the Network ID and 24 bits to Host IDs for massive organizations. Class B begins with bits `10` (range $128-191$, mask `255.255.0.0`), allocating 16 bits to Network and 16 bits to Hosts. Class C begins with `110` (range $192-223$, mask `255.255.255.0`), dedicating 24 bits to Network and 8 bits to Hosts ($254$ devices) for small local networks.",
+          "hi": "प्रत्येक यूनिकास्ट IPv4 पते को नेटवर्क आईडी (नेटवर्क की पहचान) और होस्ट आईडी (डिवाइस की पहचान) में विभाजित किया गया है। क्लास A बिट `0` से शुरू होता है (रेंज $0-127$, सबनेट मास्क `255.0.0.0`), जिसमें 8 बिट नेटवर्क के लिए और 24 बिट होस्ट के लिए होते हैं। क्लास B बिट्स `10` से शुरू होता है (रेंज $128-191$, मास्क `255.255.0.0`), जिसमें 16 बिट नेटवर्क और 16 बिट होस्ट के लिए होते हैं। क्लास C बिट्स `110` से शुरू होता है (रेंज $192-223$, मास्क `255.255.255.0`), जिसमें 24 बिट नेटवर्क और 8 बिट होस्ट (254 डिवाइस) के लिए होते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Unicast Architecture: Class A, Class B, Class C</text><rect x='40' y='75' width='170' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='125' y='105' fill='#fbbf24' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Class A</text><text x='125' y='135' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='middle'>Leading bit: 0</text><text x='125' y='155' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='middle'>Range: 0 - 127</text><text x='125' y='180' fill='#38bdf8' font-family='sans-serif' font-size='11' text-anchor='middle'>Net: 8b | Host: 24b</text><text x='125' y='205' fill='#cbd5e1' font-family='monospace' font-size='10' text-anchor='middle'>Mask: 255.0.0.0</text><text x='125' y='235' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>16.7M hosts / Large</text><rect x='235' y='75' width='170' height='180' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='105' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Class B</text><text x='320' y='135' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='middle'>Leading bits: 10</text><text x='320' y='155' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='middle'>Range: 128 - 191</text><text x='320' y='180' fill='#38bdf8' font-family='sans-serif' font-size='11' text-anchor='middle'>Net: 16b | Host: 16b</text><text x='320' y='205' fill='#cbd5e1' font-family='monospace' font-size='10' text-anchor='middle'>Mask: 255.255.0.0</text><text x='320' y='235' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>65K hosts / Medium</text><rect x='430' y='75' width='170' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='515' y='105' fill='#4ade80' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Class C</text><text x='515' y='135' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='middle'>Leading bits: 110</text><text x='515' y='155' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='middle'>Range: 192 - 223</text><text x='515' y='180' fill='#38bdf8' font-family='sans-serif' font-size='11' text-anchor='middle'>Net: 24b | Host: 8b</text><text x='515' y='205' fill='#cbd5e1' font-family='monospace' font-size='10' text-anchor='middle'>Mask: 255.255.255.0</text><text x='515' y='235' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>254 hosts / Small</text></svg>",
+          "caption": {
+            "en": "Network and Host ID allocations, ranges, and default subnet masks across unicast Classes A, B, and C.",
+            "hi": "यूनिकास्ट क्लास A, B और C में नेटवर्क/होस्ट आईडी आवंटन, श्रेणियां और डिफ़ॉल्ट सबनेट मास्क।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence contrasting the network and host bit distribution across Classes A, B, and C.",
+          "hint": "Contrast Class A for massive hosts, Class B for balanced networks, and Class C for small local networks.",
+          "target_sequence": [
+            {
+              "id": "en_u06_t1",
+              "role": "subject",
+              "text": "class A reserves 8 bits for network ID and 24 bits for host IDs to serve massive organizations,",
+              "role_hint": "contrast with Class B"
+            },
+            {
+              "id": "en_u06_t2",
+              "role": "process",
+              "text": "while class B splits bits evenly with 16 network bits and 16 host bits for medium enterprises,",
+              "role_hint": "conclude with Class C"
+            },
+            {
+              "id": "en_u06_t3",
+              "role": "result",
+              "text": "and class C allocates 24 bits to network ID and 8 bits to hosts to serve small local networks",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u06_d1",
+              "category": "logical",
+              "text": "class C reserves 32 bits for hosts allowing over sixteen million connected devices per local subnet,",
+              "penalty_explanation": "Class C dedicates only 8 bits to hosts (254 devices); Class A supports 16.7 million hosts."
+            },
+            {
+              "id": "en_u06_d2",
+              "category": "grammatical",
+              "text": "prohibits subnet masks from using the value 255 in any octet,",
+              "penalty_explanation": "Subnet masks explicitly use 255 to mask network ID bits."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "क्लास A, B और C में नेटवर्क और होस्ट बिट्स के वितरण की तुलना करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "क्लास A के बड़े होस्ट से शुरू करें, क्लास B के 16-16 बिट बताएं और क्लास C के छोटे नेटवर्क से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u06_t1",
+              "role": "subject",
+              "text": "क्लास A बड़े संगठनों के लिए 8 बिट्स नेटवर्क ID और 24 बिट्स होस्ट ID के लिए आरक्षित करता है,",
+              "role_hint": "क्लास B के साथ तुलना करें"
+            },
+            {
+              "id": "hi_u06_t2",
+              "role": "process",
+              "text": "जबकि क्लास B मध्यम उद्यमों के लिए 16 नेटवर्क बिट्स और 16 होस्ट बिट्स को समान रूप से बांटता है,",
+              "role_hint": "क्लास C के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u06_t3",
+              "role": "result",
+              "text": "और क्लास C छोटे स्थानीय नेटवर्कों के लिए 24 बिट्स नेटवर्क ID और 8 बिट्स होस्ट के लिए आवंटित करता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u06_d1",
+              "category": "logical",
+              "text": "क्लास C होस्ट के लिए 32 बिट्स आरक्षित करता है जिससे प्रति सबनेट 1.6 करोड़ से अधिक डिवाइस जुड़ सकते हैं,",
+              "penalty_explanation": "क्लास C में केवल 8 बिट्स (254 डिवाइस) होते हैं; 1.6 करोड़ डिवाइस क्लास A में होते हैं।"
+            },
+            {
+              "id": "hi_u06_d2",
+              "category": "grammatical",
+              "text": "सबनेट मास्क को किसी भी ऑक्टेट में 255 मान का उपयोग करने से रोकते हुए,",
+              "penalty_explanation": "सबनेट मास्क नेटवर्क बिट्स को मास्क करने के लिए 255 का ही उपयोग करते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Class A (0-127) has 8 network bits, Class B (128-191) has 16, and Class C (192-223) has 24 network bits.",
+        "hi": "क्लास A (0-127) में 8 नेटवर्क बिट्स, क्लास B (128-191) में 16, और क्लास C (192-223) में 24 नेटवर्क बिट्स होते हैं।"
+      }
+    },
+    {
+      "unit_id": "u07_ip_classes_d_e_multicast",
+      "topic": "Specialized IP Classes: Class D (Multicast) & Class E (Experimental)",
+      "pedagogical_objective": "Differentiate Class D simultaneous multicasting allocations from reserved Class E experimental ranges.",
+      "instruction": {
+        "title": {
+          "en": "Specialized Classes: Class D (Multicast) and Class E",
+          "hi": "विशिष्ट श्रेणियां: क्लास D (मल्टीकास्ट) और क्लास E"
+        },
+        "theory": {
+          "en": "Beyond standard unicast host classes, IPv4 defines two specialized blocks lacking traditional Network and Host ID subdivisions. Class D covers the range $224.0.0.0$ to $239.255.255.255$ (leading bits `1110`) and is reserved exclusively for Multicasting—transmitting single packet streams to multiple receiving devices simultaneously. Class E spans $240.0.0.0$ to $255.255.255.255$ (leading bits `1111`) and is reserved for experimental research and development.",
+          "hi": "मानक यूनिकास्ट श्रेणियों के अलावा, IPv4 में दो विशेष श्रेणियां हैं जिनमें नेटवर्क और होस्ट आईडी का पारंपरिक विभाजन नहीं होता है। क्लास D की रेंज $224.0.0.0$ से $239.255.255.255$ (शुरुआती बिट्स `1110`) है और यह विशेष रूप से मल्टीकास्टिंग (एक साथ कई उपकरणों पर डेटा भेजना) के लिए आरक्षित है। क्लास E की रेंज $240.0.0.0$ से $255.255.255.255$ (शुरुआती बिट्स `1111`) है और यह प्रयोगात्मक और अनुसंधान उद्देश्यों के लिए आरक्षित है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Specialized Classes: Multicast Class D &amp; Experimental Class E</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#f472b6' stroke-width='1.5'/><text x='170' y='105' fill='#f472b6' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Class D: Multicasting</text><text x='170' y='135' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='middle'>Range: 224.0.0.0 - 239.255.255.255</text><text x='170' y='160' fill='#38bdf8' font-family='monospace' font-size='12' text-anchor='middle'>Leading Bits: 1110</text><text x='170' y='190' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>One-to-Many Packet Delivery</text><text x='170' y='210' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>No subnet mask / host division</text><text x='170' y='235' fill='#f472b6' font-family='sans-serif' font-size='10' text-anchor='middle'>Audio/video streams to groups</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='470' y='105' fill='#fbbf24' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Class E: Experimental</text><text x='470' y='135' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='middle'>Range: 240.0.0.0 - 255.255.255.255</text><text x='470' y='160' fill='#38bdf8' font-family='monospace' font-size='12' text-anchor='middle'>Leading Bits: 1111</text><text x='470' y='190' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Reserved for R&amp;D Research</text><text x='470' y='210' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Not for public routing</text><text x='470' y='235' fill='#fbbf24' font-family='sans-serif' font-size='10' text-anchor='middle'>Scientific and protocol testing</text></svg>",
+          "caption": {
+            "en": "Characteristics of specialized IPv4 allocations: Class D for multicast groups and Class E for experimental research.",
+            "hi": "विशिष्ट IPv4 श्रेणियों की विशेषताएं: मल्टीकास्ट के लिए क्लास D और प्रयोगात्मक अनुसंधान के लिए क्लास E।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence differentiating the roles of Class D and Class E IP address blocks.",
+          "hint": "Identify Class D spanning 224 to 239 for multicasting, then describe Class E spanning 240 to 255 for experimental research.",
+          "target_sequence": [
+            {
+              "id": "en_u07_t1",
+              "role": "subject",
+              "text": "class D operates across the range 224.0.0.0 to 239.255.255.255 with leading bits 1110,",
+              "role_hint": "explain multicast function"
+            },
+            {
+              "id": "en_u07_t2",
+              "role": "process",
+              "text": "dedicated exclusively to multicasting packets to multiple host devices simultaneously,",
+              "role_hint": "conclude with Class E research role"
+            },
+            {
+              "id": "en_u07_t3",
+              "role": "result",
+              "text": "while class E spans 240.0.0.0 to 255.255.255.255 reserved strictly for experimental scientific research",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u07_d1",
+              "category": "logical",
+              "text": "class D assigns individual web server host addresses across public internet cafes,",
+              "penalty_explanation": "Class D is reserved for multicast groups and cannot be assigned to individual host devices."
+            },
+            {
+              "id": "en_u07_d2",
+              "category": "grammatical",
+              "text": "prohibits experimental scientific research from testing network protocols,",
+              "penalty_explanation": "Class E is specifically set aside for experimental networking and scientific protocol testing."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "क्लास D और क्लास E IP एड्रेस ब्लॉक की भूमिकाओं में अंतर को दर्शाने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "मल्टीकास्टिंग के लिए 224 से 239 वाली क्लास D से शुरू करें और प्रयोगात्मक अनुसंधान के लिए 240 से 255 वाली क्लास E से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u07_t1",
+              "role": "subject",
+              "text": "क्लास D शुरुआती बिट्स 1110 के साथ 224.0.0.0 से 239.255.255.255 की सीमा में कार्य करता है,",
+              "role_hint": "मल्टीकास्ट कार्य की व्याख्या करें"
+            },
+            {
+              "id": "hi_u07_t2",
+              "role": "process",
+              "text": "एक साथ कई होस्ट उपकरणों पर पैकेट मल्टीकास्ट करने के लिए समर्पित होते हुए,",
+              "role_hint": "क्लास E अनुसंधान भूमिका के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u07_t3",
+              "role": "result",
+              "text": "जबकि क्लास E 240.0.0.0 से 255.255.255.255 तक प्रयोगात्मक वैज्ञानिक अनुसंधान के लिए आरक्षित है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u07_d1",
+              "category": "logical",
+              "text": "क्लास D सार्वजनिक इंटरनेट कैफे में अलग-अलग वेब सर्वर होस्ट पते असाइन करता है,",
+              "penalty_explanation": "क्लास D मल्टीकास्ट के लिए है, इसे व्यक्तिगत होस्ट मशीनों को असाइन नहीं किया जा सकता।"
+            },
+            {
+              "id": "hi_u07_d2",
+              "category": "grammatical",
+              "text": "प्रयोगात्मक अनुसंधान को नेटवर्क प्रोटोकॉल का परीक्षण करने से पूरी तरह रोकते हुए,",
+              "penalty_explanation": "क्लास E विशेष रूप से प्रोटोकॉल परीक्षण और अनुसंधान के लिए ही आरक्षित है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Class D (224-239) is reserved for multicast transmissions; Class E (240-255) is reserved for experimental R&D.",
+        "hi": "क्लास D (224-239) मल्टीकास्ट ट्रांसमिशन के लिए और क्लास E (240-255) प्रयोगात्मक अनुसंधान के लिए आरक्षित है।"
+      }
+    },
+    {
+      "unit_id": "u08_ip_routing_static_dynamic",
+      "topic": "IP Routing Protocols: Static ROUTE vs Dynamic RIP",
+      "pedagogical_objective": "Compare manual administrator-configured static routing tables with automated dynamic routing protocols (RIP).",
+      "instruction": {
+        "title": {
+          "en": "IP Routing: Static vs Dynamic Protocols",
+          "hi": "आईपी रूटिंग: स्टेटिक बनाम डायनामिक प्रोटोकॉल"
+        },
+        "theory": {
+          "en": "IP Routing is the process of selecting the optimal network path for data packets across interconnected networks. There are two primary routing methods: Static Routing requires network administrators to configure fixed routes manually in the routing table (using the `ROUTE` command); it offers tight security but cannot adapt to link failures. Dynamic Routing employs protocols like RIP (Routing Information Protocol) to calculate paths automatically, allowing routers to update routing tables dynamically when topology changes occur.",
+          "hi": "आईपी रूटिंग जुड़े हुए नेटवर्कों में डेटा पैकेटों के लिए सबसे अच्छा रास्ता चुनने की प्रक्रिया है। इसके दो मुख्य प्रकार हैं: स्टेटिक रूटिंग (Static Routing), जिसमें नेटवर्क प्रशासक 'ROUTE' कमांड का उपयोग करके रूटिंग टेबल में मैन्युअल रूप से रास्ते तय करता है; यह सुरक्षित है लेकिन लिंक टूटने पर अपने आप नहीं बदलता। डायनामिक रूटिंग (Dynamic Routing) RIP (Routing Information Protocol) जैसे प्रोटोकॉल का उपयोग करके नेटवर्क परिवर्तनों के आधार पर रास्तों को स्वचालित रूप से अपडेट करती है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Routing Paradigm: Manual Static Route vs Dynamic RIP Protocol</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='170' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Static Routing</text><text x='60' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='11'>• Configured manually by Admin</text><text x='60' y='165' fill='#fbbf24' font-family='monospace' font-size='11'>ROUTE command in shell</text><text x='60' y='190' fill='#cbd5e1' font-family='sans-serif' font-size='11'>• Fixed predetermined paths</text><text x='60' y='215' fill='#cbd5e1' font-family='sans-serif' font-size='11'>• High security, zero protocol load</text><text x='170' y='242' fill='#ef4444' font-family='sans-serif' font-size='10' text-anchor='middle'>Cannot reroute around broken links</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='470' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Dynamic Routing (RIP)</text><text x='360' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='11'>• Automated route discovery</text><text x='360' y='165' fill='#4ade80' font-family='monospace' font-size='11'>Routing Information Protocol</text><text x='360' y='190' fill='#cbd5e1' font-family='sans-serif' font-size='11'>• Tables update automatically</text><text x='360' y='215' fill='#cbd5e1' font-family='sans-serif' font-size='11'>• Adapts to network failures</text><text x='470' y='242' fill='#4ade80' font-family='sans-serif' font-size='10' text-anchor='middle'>Self-healing mesh topology</text></svg>",
+          "caption": {
+            "en": "Comparison between manual static route table configuration and automated dynamic RIP packet pathing.",
+            "hi": "मैन्युअल स्टेटिक रूट टेबल कॉन्फ़िगरेशन और स्वचालित डायनामिक RIP पैकेट पाथिंग के बीच तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence contrasting static routing against dynamic RIP routing.",
+          "hint": "Identify manual administrator configuration for static routes, then explain automated dynamic updates using RIP.",
+          "target_sequence": [
+            {
+              "id": "en_u08_t1",
+              "role": "subject",
+              "text": "static routing relies on network administrators to configure fixed paths manually using the `route` command,",
+              "role_hint": "contrast with dynamic routing"
+            },
+            {
+              "id": "en_u08_t2",
+              "role": "process",
+              "text": "whereas dynamic routing employs protocols like rip to discover optimal network paths automatically,",
+              "role_hint": "conclude with adaptive self-healing"
+            },
+            {
+              "id": "en_u08_t3",
+              "role": "result",
+              "text": "enabling routers to adapt and update their routing tables dynamically when topology changes occur",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u08_d1",
+              "category": "logical",
+              "text": "static routing automatically updates network tables within seconds of a cable disconnect,",
+              "penalty_explanation": "Static routes are fixed and do not update automatically when cables fail; dynamic routing handles automated updates."
+            },
+            {
+              "id": "en_u08_d2",
+              "category": "grammatical",
+              "text": "prohibits dynamic routers from exchanging routing information packets,",
+              "penalty_explanation": "Dynamic routing protocols depend entirely on routers exchanging routing updates."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "स्टेटिक रूटिंग और डायनामिक RIP रूटिंग के अंतर को दर्शाने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "प्रशासक द्वारा मैन्युअल 'route' कमांड से शुरू करें, RIP द्वारा स्वचालित खोज बताएं और डायनामिक टेबल अपडेट से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u08_t1",
+              "role": "subject",
+              "text": "स्टेटिक रूटिंग `route` कमांड का उपयोग करके मैन्युअल रूप से निश्चित मार्ग तय करने के लिए प्रशासक पर निर्भर करती है,",
+              "role_hint": "डायनामिक रूटिंग से तुलना करें"
+            },
+            {
+              "id": "hi_u08_t2",
+              "role": "process",
+              "text": "जबकि डायनामिक रूटिंग स्वचालित रूप से इष्टतम पथ खोजने के लिए RIP जैसे प्रोटोकॉल का उपयोग करती है,",
+              "role_hint": "अनुकूलनशीलता के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u08_t3",
+              "role": "result",
+              "text": "जिससे टोपोलॉजी परिवर्तन होने पर राउटर अपनी रूटिंग तालिकाओं को गतिशील रूप से अपडेट कर सकते हैं",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u08_d1",
+              "category": "logical",
+              "text": "स्टेटिक रूटिंग केबल कटने पर कुछ ही सेकंड में नेटवर्क टेबल को स्वचालित रूप से अपडेट कर देती है,",
+              "penalty_explanation": "स्टेटिक रूटिंग मैन्युअल होती है और अपने आप अपडेट नहीं होती; यह कार्य डायनामिक रूटिंग का है।"
+            },
+            {
+              "id": "hi_u08_d2",
+              "category": "grammatical",
+              "text": "डायनामिक राउटर को रूटिंग जानकारी का आदान-प्रदान करने से रोकते हुए,",
+              "penalty_explanation": "डायनामिक रूटिंग प्रोटोकॉल रूटिंग टेबल अपडेट करने के लिए ही सूचनाओं का आदान-प्रदान करते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Static routing uses manual administrator tables (`ROUTE`); dynamic routing uses protocols like RIP for automated pathing.",
+        "hi": "स्टेटिक रूटिंग मैन्युअल टेबल (`ROUTE`) का उपयोग करती है; डायनामिक रूटिंग स्वचालित पाथ के लिए RIP का उपयोग करती है।"
+      }
+    },
+    {
+      "unit_id": "u09_nos_definition_history",
+      "topic": "Network Operating Systems (NOS): NetWare to Modern Platforms",
+      "pedagogical_objective": "Define a Network Operating System, tracing its lineage from Novell NetWare (1985) to modern platforms like Windows NT and Linux.",
+      "instruction": {
+        "title": {
+          "en": "Network Operating Systems (NOS) Overview",
+          "hi": "नेटवर्क ऑपरेटिंग सिस्टम (NOS) का अवलोकन"
+        },
+        "theory": {
+          "en": "A Network Operating System (NOS) is specialized system software designed to manage, coordinate, and control shared hardware, storage, and user accounts across multiple interconnected devices on a network. Novell NetWare was the pioneering commercial NOS, released in 1985. Modern networked environments utilize advanced server platforms such as Windows NT, Windows MultiPoint Server, Sun Solaris, and Linux.",
+          "hi": "नेटवर्क ऑपरेटिंग सिस्टम (NOS) एक विशेष सिस्टम सॉफ्टवेयर है जो नेटवर्क पर कई कंप्यूटरों और उपकरणों के साझा हार्डवेयर, स्टोरेज और उपयोगकर्ता खातों का प्रबंधन और नियंत्रण करता है। नोवेल नेटवेयर (Novell NetWare) वर्ष 1985 में विकसित पहला प्रमुख NOS था। आधुनिक समय में विंडोज एनटी (Windows NT), विंडोज मल्टीपॉइंट सर्वर, सन सोलारिस (Sun Solaris) और लिनक्स (Linux) लोकप्रिय NOS हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Evolution of Network Operating Systems (NOS)</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='170' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Pioneering Era (1985)</text><text x='170' y='145' fill='#fbbf24' font-family='monospace' font-size='16' font-weight='bold' text-anchor='middle'>Novell NetWare</text><text x='170' y='175' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>First commercial LAN NOS</text><text x='170' y='195' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Dedicated server architecture</text><text x='170' y='225' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Pioneered file/print sharing</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='470' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Modern Server NOS</text><text x='470' y='140' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='middle'>• Linux (Ubuntu, Red Hat)</text><text x='470' y='165' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='middle'>• Windows NT / Server</text><text x='470' y='190' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='middle'>• Sun Solaris</text><text x='470' y='225' fill='#4ade80' font-family='sans-serif' font-size='10' text-anchor='middle'>Enterprise-scale resource orchestration</text></svg>",
+          "caption": {
+            "en": "Historical evolution from Novell NetWare (1985) to modern platforms like Windows NT, Solaris, and Linux.",
+            "hi": "नोवेल नेटवेयर (1985) से लेकर विंडोज एनटी, सोलारिस और लिनक्स जैसे आधुनिक प्लेटफार्मों तक ऐतिहासिक विकास।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining the role of a Network Operating System and its historical emergence.",
+          "hint": "Define the NOS coordinating resources across multiple machines, cite Novell NetWare in 1985, and list modern platforms.",
+          "target_sequence": [
+            {
+              "id": "en_u09_t1",
+              "role": "subject",
+              "text": "a network operating system manages and coordinates shared computing resources across multiple connected devices,",
+              "role_hint": "cite its historical pioneer"
+            },
+            {
+              "id": "en_u09_t2",
+              "role": "process",
+              "text": "originating commercially with novell netware in the year 1985,",
+              "role_hint": "conclude with modern platforms"
+            },
+            {
+              "id": "en_u09_t3",
+              "role": "result",
+              "text": "and evolving into powerful modern enterprise platforms including windows nt, sun solaris, and linux",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u09_d1",
+              "category": "logical",
+              "text": "restricting its operational management strictly to a single isolated offline calculator,",
+              "penalty_explanation": "An NOS manages multi-machine networks, whereas basic operating systems govern single standalone machines."
+            },
+            {
+              "id": "en_u09_d2",
+              "category": "grammatical",
+              "text": "prohibits multi-user account security from running on server hardware,",
+              "penalty_explanation": "Managing multi-user access security and accounts is a primary capability of an NOS."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "नेटवर्क ऑपरेटिंग सिस्टम (NOS) की भूमिका और इसके ऐतिहासिक उद्भव को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "संसाधनों का समन्वय करने वाले NOS से शुरू करें, 1985 के नोवेल नेटवेयर का उल्लेख करें और आधुनिक प्लेटफार्मों से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u09_t1",
+              "role": "subject",
+              "text": "एक नेटवर्क ऑपरेटिंग सिस्टम कई जुड़े उपकरणों में साझा कंप्यूटिंग संसाधनों का प्रबंधन और समन्वय करता है,",
+              "role_hint": "इसके ऐतिहासिक अग्रदूत का उल्लेख करें"
+            },
+            {
+              "id": "hi_u09_t2",
+              "role": "process",
+              "text": "वाणिज्यिक रूप से वर्ष 1985 में नोवेल नेटवेयर के साथ शुरू हुआ,",
+              "role_hint": "आधुनिक प्लेटफार्मों के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u09_t3",
+              "role": "result",
+              "text": "और विंडोज एनटी, सन सोलारिस और लिनक्स सहित शक्तिशाली आधुनिक एंटरप्राइज प्लेटफार्मों में विकसित हुआ",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u09_d1",
+              "category": "logical",
+              "text": "अपने परिचालन प्रबंधन को केवल एक अलग-थलग ऑफ़लाइन कैलकुलेटर तक सीमित रखते हुए,",
+              "penalty_explanation": "NOS नेटवर्क पर जुड़े कई कंप्यूटरों का प्रबंधन करता है, किसी स्टैंडअलोन कैलकुलेटर का नहीं।"
+            },
+            {
+              "id": "hi_u09_d2",
+              "category": "grammatical",
+              "text": "सर्वर हार्डवेयर पर मल्टी-यूज़र खाता सुरक्षा चलाने से रोकते हुए,",
+              "penalty_explanation": "मल्टी-यूज़र खाता प्रबंधन और सुरक्षा NOS की प्राथमिक क्षमता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "An NOS manages resources across networked systems; Novell NetWare debuted in 1985, succeeded by Windows NT and Linux.",
+        "hi": "NOS नेटवर्क संसाधनों का प्रबंधन करता है; नोवेल नेटवेयर 1985 में आया, जिसके बाद विंडोज एनटी और लिनक्स आए।"
+      }
+    },
+    {
+      "unit_id": "u10_linux_origins_distributions",
+      "topic": "Linux Architecture, Linus Torvalds, and Distributions",
+      "pedagogical_objective": "Identify Linux as a free, open-source Unix-like NOS created by Linus Torvalds in 1991, recognizing major distributions (Red Hat, Ubuntu, Debian, Fedora).",
+      "instruction": {
+        "title": {
+          "en": "Linux: Origins, Open Source, and Distributions",
+          "hi": "लिनक्स: उत्पत्ति, ओपन सोर्स और वितरण (Distributions)"
+        },
+        "theory": {
+          "en": "Linux is a free and open-source Unix-like operating system created by Finnish software engineer Linus Torvalds in 1991. Unlike proprietary platforms (such as Microsoft Windows and macOS), Linux provides accessible source code that users and organizations can inspect, modify, and redistribute. Packaged variations bundling the Linux kernel with specialized tools are called 'distributions' (distros), including Red Hat Enterprise Linux, Ubuntu, Debian, and Fedora.",
+          "hi": "लिनक्स (Linux) एक स्वतंत्र और ओपन-सोर्स यूनिक्स-आधारित ऑपरेटिंग सिस्टम है जिसे 1991 में लिनस टोरवाल्ड्स (Linus Torvalds) द्वारा विकसित किया गया था। मालिकाना (proprietary) सॉफ़्टवेयर के विपरीत, लिनक्स का सोर्स कोड मुफ़्त में उपलब्ध है और इसे संशोधित किया जा सकता है। कर्नेल को विभिन्न टूल्स के साथ मिलाकर बनाए गए संस्करणों को 'वितरण' (distributions) कहा जाता है, जैसे रेड हैट, उबंटू, डेबियन और फेडोरा।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Linux: Linus Torvalds (1991) and the Open-Source Ecosystem</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='170' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Open-Source Philosophy</text><text x='170' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='12' text-anchor='middle'>Created by Linus Torvalds (1991)</text><text x='170' y='165' fill='#4ade80' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Freely Accessible Source Code</text><text x='170' y='190' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Users can inspect and modify code</text><text x='170' y='230' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Alternative to proprietary OS models</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='470' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Major Linux Distributions</text><text x='470' y='135' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='middle'>• Red Hat Enterprise Linux</text><text x='470' y='160' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='middle'>• Ubuntu Linux</text><text x='470' y='185' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='middle'>• Debian</text><text x='470' y='210' fill='#cbd5e1' font-family='monospace' font-size='12' text-anchor='middle'>• Fedora</text><text x='470' y='242' fill='#4ade80' font-family='sans-serif' font-size='10' text-anchor='middle'>Tailored for desktops, servers, mobile</text></svg>",
+          "caption": {
+            "en": "The open-source Linux lineage initiated by Linus Torvalds and its prominent operating distributions.",
+            "hi": "लिनस टोरवाल्ड्स द्वारा शुरू की गई ओपन-सोर्स लिनक्स परंपरा और इसके प्रमुख ऑपरेटिंग वितरण।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining the origins, open-source nature, and distributions of Linux.",
+          "hint": "Identify Linus Torvalds in 1991, describe the accessible open-source code model, and list major distributions.",
+          "target_sequence": [
+            {
+              "id": "en_u10_t1",
+              "role": "subject",
+              "text": "created by linus torvalds in 1991, linux operates as an open-source unix-like operating system,",
+              "role_hint": "explain source code accessibility"
+            },
+            {
+              "id": "en_u10_t2",
+              "role": "process",
+              "text": "providing freely available source code that users can modify and customize without proprietary licensing fees,",
+              "role_hint": "conclude with distributions"
+            },
+            {
+              "id": "en_u10_t3",
+              "role": "result",
+              "text": "packaged into specialized distributions including red hat, ubuntu, debian, and fedora",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "logical",
+              "text": "linux operates as proprietary closed-source commercial software requiring expensive per-user licenses,",
+              "penalty_explanation": "Linux is open-source and free, explicitly contrasting with closed-source proprietary software."
+            },
+            {
+              "id": "en_u10_d2",
+              "category": "grammatical",
+              "text": "prohibits operating system execution on servers and mobile smartphones,",
+              "penalty_explanation": "Linux runs across diverse hardware from servers and desktops to Android smartphones."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "लिनक्स की उत्पत्ति, ओपन-सोर्स प्रकृति और वितरण को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "1991 में लिनस टोरवाल्ड्स से शुरू करें, मुफ़्त सोर्स कोड का उल्लेख करें और रेड हैट, उबंटू जैसे वितरणों से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u10_t1",
+              "role": "subject",
+              "text": "1991 में लिनस टोरवाल्ड्स द्वारा विकसित, लिनक्स एक ओपन-सोर्स यूनिक्स-आधारित ऑपरेटिंग सिस्टम है,",
+              "role_hint": "सोर्स कोड की उपलब्धता समझाएं"
+            },
+            {
+              "id": "hi_u10_t2",
+              "role": "process",
+              "text": "स्वतंत्र रूप से उपलब्ध सोर्स कोड प्रदान करता है जिसे उपयोगकर्ता बिना लाइसेंस शुल्क के संशोधित कर सकते हैं,",
+              "role_hint": "वितरणों (distributions) के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u10_t3",
+              "role": "result",
+              "text": "और रेड हैट, उबंटू, डेबियन और फेडोरा जैसे विभिन्न वितरणों में उपलब्ध है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "logical",
+              "text": "लिनक्स महंगे लाइसेंस की मांग करने वाले मालिकाना बंद-स्रोत सॉफ्टवेयर के रूप में संचालित होता है,",
+              "penalty_explanation": "लिनक्स मुफ़्त और ओपन-सोर्स है, यह मालिकाना बंद-स्रोत सॉफ़्टवेयर नहीं है।"
+            },
+            {
+              "id": "hi_u10_d2",
+              "category": "grammatical",
+              "text": "सर्वर और स्मार्टफ़ोन पर ऑपरेटिंग सिस्टम चलाने पर रोक लगाते हुए,",
+              "penalty_explanation": "लिनक्स सर्वर, डेस्कटॉप और स्मार्टफोन सभी पर व्यापक रूप से उपयोग किया जाता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Created by Linus Torvalds in 1991, Linux is a free, open-source NOS distributed as Red Hat, Ubuntu, Debian, and Fedora.",
+        "hi": "1991 में लिनस टोरवाल्ड्स द्वारा निर्मित लिनक्स एक मुफ़्त ओपन-सोर्स NOS है, जो रेड हैट, उबंटू और डेबियन के रूप में मिलता है।"
+      }
+    },
+    {
+      "unit_id": "u11_linux_three_tier_structure",
+      "topic": "Three-Tier Architecture of Linux: Kernel, Shell, and Applications",
+      "pedagogical_objective": "Deconstruct the three-tier Linux model: hardware-governing Kernel, command-interpreting Shell, and user-space Applications.",
+      "instruction": {
+        "title": {
+          "en": "Three-Tier Architecture of Linux",
+          "hi": "लिनक्स की त्रि-स्तरीय संरचना (Three-Tier Architecture)"
+        },
+        "theory": {
+          "en": "Linux is structured in three concentric structural tiers: The `Kernel` is the core (heart) of the system, interacting directly with physical hardware to manage the CPU, memory, storage devices, and networking. The `Shell` is the command-line interpreter that acts as an interface between the user and the kernel, parsing instructions. `Applications` are user-level software utilities (compilers, editors, web browsers) that run on top of the shell-kernel foundation.",
+          "hi": "लिनक्स तीन प्रमुख परतों में संरचित है: कर्नेल (`Kernel`) सिस्टम का दिल है जो सीधे हार्डवेयर के साथ इंटरैक्ट करता है और CPU, मेमोरी, स्टोरेज और नेटवर्किंग का प्रबंधन करता है। शेल (`Shell`) एक कमांड-लाइन इंटरप्रेटर है जो उपयोगकर्ता और कर्नेल के बीच एक इंटरफेस के रूप में कार्य करता है। एप्लिकेशन (`Applications`) शीर्ष पर चलने वाले उपयोगकर्ता-स्तरीय प्रोग्राम हैं (जैसे टेक्स्ट एडिटर, वेब ब्राउज़र)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Concentric Linux Architecture: Kernel, Shell, and Applications</text><circle cx='200' cy='160' r='95' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/><text x='200' y='85' fill='#38bdf8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Applications Tier</text><circle cx='200' cy='165' r='65' fill='#0f172a' stroke='#fbbf24' stroke-width='2'/><text x='200' y='125' fill='#fbbf24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Shell Tier</text><circle cx='200' cy='175' r='35' fill='#1e293b' stroke='#ef4444' stroke-width='2'/><text x='200' y='178' fill='#ef4444' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle'>Kernel</text><text x='200' y='193' fill='#ef4444' font-family='sans-serif' font-size='9' text-anchor='middle'>(Hardware)</text><rect x='330' y='75' width='270' height='180' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='345' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold'>Functional Responsibilities</text><text x='345' y='135' fill='#ef4444' font-family='sans-serif' font-size='11' font-weight='bold'>1. Kernel:</text><text x='410' y='135' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Direct hardware control, memory &amp; CPU</text><text x='345' y='165' fill='#fbbf24' font-family='sans-serif' font-size='11' font-weight='bold'>2. Shell:</text><text x='410' y='165' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Command-line parsing &amp; user interface</text><text x='345' y='195' fill='#38bdf8' font-family='sans-serif' font-size='11' font-weight='bold'>3. Apps:</text><text x='410' y='195' fill='#cbd5e1' font-family='sans-serif' font-size='11'>User utilities, browsers, compilers, editors</text><text x='345' y='235' fill='#94a3b8' font-family='sans-serif' font-size='10'>Layered isolation protects core hardware</text></svg>",
+          "caption": {
+            "en": "Three-tier concentric Linux model showing the central Kernel, intermediate Shell, and user Applications.",
+            "hi": "केंद्रीय कर्नेल, मध्यवर्ती शेल और उपयोगकर्ता अनुप्रयोगों को दर्शाने वाला तीन-स्तरीय लिनक्स मॉडल।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining the three architectural tiers of the Linux operating system.",
+          "hint": "Identify the hardware-controlling Kernel, place the Shell as the interpreter interface, and conclude with user Applications.",
+          "target_sequence": [
+            {
+              "id": "en_u011_t1",
+              "role": "subject",
+              "text": "the linux kernel forms the core foundation interacting directly with hardware to manage memory and cpu,",
+              "role_hint": "introduce the shell"
+            },
+            {
+              "id": "en_u011_t2",
+              "role": "process",
+              "text": "the shell operates as an intermediate command-line interpreter bridging users with the kernel,",
+              "role_hint": "conclude with user applications"
+            },
+            {
+              "id": "en_u011_t3",
+              "role": "result",
+              "text": "and user applications run atop the shell-kernel architecture to perform higher-level computing tasks",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u011_d1",
+              "category": "logical",
+              "text": "user applications communicate directly with physical memory registers by bypassing the kernel completely,",
+              "penalty_explanation": "Applications run in user space and must pass instructions through the shell and kernel to access hardware."
+            },
+            {
+              "id": "en_u011_d2",
+              "category": "grammatical",
+              "text": "positioning the command shell directly on physical motherboard silicon chips,",
+              "penalty_explanation": "The shell is a software command interpreter, not a physical silicon chip."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "लिनक्स ऑपरेटिंग सिस्टम के तीन संरचनात्मक स्तरों को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "हार्डवेयर-नियंत्रित कर्नेल से शुरू करें, शेल को इंटरप्रेटर बताएं और उपयोगकर्ता अनुप्रयोगों से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u011_t1",
+              "role": "subject",
+              "text": "लिनक्स कर्नेल मुख्य आधार बनाता है जो मेमोरी और CPU का प्रबंधन करने के लिए सीधे हार्डवेयर से जुड़ता है,",
+              "role_hint": "शेल का परिचय दें"
+            },
+            {
+              "id": "hi_u011_t2",
+              "role": "process",
+              "text": "शेल उपयोगकर्ताओं को कर्नेल से जोड़ने वाले एक मध्यवर्ती कमांड-लाइन इंटरप्रेटर के रूप में कार्य करता है,",
+              "role_hint": "अनुप्रयोगों के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u011_t3",
+              "role": "result",
+              "text": "और उपयोगकर्ता एप्लिकेशन विशिष्ट कंप्यूटिंग कार्यों को करने के लिए शेल-कर्नेल आधार पर चलते हैं",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u011_d1",
+              "category": "logical",
+              "text": "उपयोगकर्ता एप्लिकेशन कर्नेल को पूरी तरह से बायपास करके सीधे मेमोरी से संवाद करते हैं,",
+              "penalty_explanation": "हार्डवेयर संसाधनों तक सुरक्षित पहुंच केवल कर्नेल के माध्यम से ही संभव है।"
+            },
+            {
+              "id": "hi_u011_d2",
+              "category": "grammatical",
+              "text": "कमांड शेल को सीधे भौतिक मदरबोर्ड सिलिकॉन चिप्स पर स्थित करते हुए,",
+              "penalty_explanation": "शेल एक सॉफ्टवेयर कमांड इंटरप्रेटर है, कोई भौतिक सिलिकॉन चिप नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Linux is layered in three tiers: the Kernel (manages hardware), the Shell (interprets commands), and Applications (software).",
+        "hi": "लिनक्स की तीन परतें हैं: कर्नेल (हार्डवेयर नियंत्रण), शेल (कमांड इंटरप्रेटर), और एप्लिकेशन (सॉफ्टवेयर)।"
+      }
+    },
+    {
+      "unit_id": "u12_linux_shell_variants",
+      "topic": "Linux Shell Evolution: sh, csh, tcsh, ksh, and bash",
+      "pedagogical_objective": "Trace the functionality of Unix/Linux command interpreters from the original Bourne Shell (sh) to the modern Bourne Again Shell (bash).",
+      "instruction": {
+        "title": {
+          "en": "Evolution of Linux Shells: sh, csh, ksh, and bash",
+          "hi": "लिनक्स शेल्स का विकास: sh, csh, ksh, और bash"
+        },
+        "theory": {
+          "en": "Linux provides various command interpreters: The `Bourne Shell` (`sh`, by Stephen Bourne) was the earliest standard Unix shell. The `C-Shell` (`csh`) introduced scripting syntax mirroring the C programming language, while `TC-Shell` (`tcsh`) added inline command editing and history. The `Korn Shell` (`ksh`, by David Korn) merged Bourne and C-shell features. The `Bourne Again Shell` (`bash`) is an advanced, highly customizable default shell combining features of `sh`, `csh`, and `ksh`.",
+          "hi": "लिनक्स में कई शेल प्रकार हैं: `Bourne Shell` (`sh`, स्टीफन बॉर्न द्वारा) सबसे पुराना मानक यूनिक्स शेल था। `C-Shell` (`csh`) ने C भाषा जैसा सिंटैक्स पेश किया, जबकि `TC-Shell` (`tcsh`) ने इनलाइन संपादन और इतिहास जोड़ा। `Korn Shell` (`ksh`, डेविड कॉर्न द्वारा) ने बॉर्न और C-शेल दोनों की क्षमताओं को मिलाया। `Bourne Again Shell` (`bash`) सबसे लोकप्रिय डिफॉल्ट शेल है जिसमें `sh`, `csh` और `ksh` की सभी उन्नत सुविधाएं शामिल हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Lineage of Unix/Linux Command Interpreters</text><rect x='40' y='80' width='100' height='150' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1'/><text x='90' y='110' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>sh</text><text x='90' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Bourne Shell</text><text x='90' y='165' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Stephen Bourne</text><text x='90' y='210' fill='#94a3b8' font-family='sans-serif' font-size='9' text-anchor='middle'>Earliest Unix</text><rect x='150' y='80' width='100' height='150' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='200' y='110' fill='#38bdf8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>csh / tcsh</text><text x='200' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>C-Syntax</text><text x='200' y='165' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>History buffer</text><text x='200' y='210' fill='#94a3b8' font-family='sans-serif' font-size='9' text-anchor='middle'>Inline edits</text><rect x='260' y='80' width='100' height='150' rx='6' fill='#1e293b' stroke='#f472b6' stroke-width='1'/><text x='310' y='110' fill='#f472b6' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>ksh</text><text x='310' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Korn Shell</text><text x='310' y='165' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>David Korn</text><text x='310' y='210' fill='#94a3b8' font-family='sans-serif' font-size='9' text-anchor='middle'>sh + csh hybrid</text><rect x='370' y='75' width='230' height='160' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='2'/><text x='485' y='110' fill='#4ade80' font-family='sans-serif' font-size='16' font-weight='bold' text-anchor='middle'>bash (Bourne Again Shell)</text><text x='485' y='145' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Default Modern Linux Standard</text><text x='485' y='170' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Incorporates sh, csh, tcsh, and ksh</text><text x='485' y='195' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Advanced autocompletion &amp; utilities</text><text x='485' y='225' fill='#4ade80' font-family='sans-serif' font-size='10' text-anchor='middle'>Fully customizable interactive CLI</text></svg>",
+          "caption": {
+            "en": "Lineage of Linux shells leading from sh, csh, and ksh to the modern default bash interpreter.",
+            "hi": "sh, csh, और ksh से लेकर आधुनिक डिफ़ॉल्ट bash इंटरप्रेटर तक लिनक्स शेल का विकासक्रम।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence tracing the functional evolution of Unix and Linux shells.",
+          "hint": "Identify sh and csh, explain ksh merging features, and conclude with modern bash.",
+          "target_sequence": [
+            {
+              "id": "en_u012_t1",
+              "role": "subject",
+              "text": "the early bourne shell `sh` and c-programming styled `csh` established unix command line foundations,",
+              "role_hint": "explain ksh evolution"
+            },
+            {
+              "id": "en_u012_t2",
+              "role": "process",
+              "text": "which david korn synthesized into the hybrid korn shell `ksh`,",
+              "role_hint": "conclude with bash as the modern standard"
+            },
+            {
+              "id": "en_u012_t3",
+              "role": "result",
+              "text": "culminating in the bourne again shell `bash` as the modern customizable default interpreter for linux",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u012_d1",
+              "category": "logical",
+              "text": "`bash` completely removes command history and keyboard typing capabilities from the shell,",
+              "penalty_explanation": "Bash expands command history, inline command editing, and interactive capabilities."
+            },
+            {
+              "id": "en_u012_d2",
+              "category": "grammatical",
+              "text": "requiring users to run scripts exclusively inside analog television cathode ray tubes,",
+              "penalty_explanation": "Shells are software text-based CLI environments, completely independent of CRT display hardware."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "यूनिक्स और लिनक्स शेल्स के विकासक्रम को दर्शाने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "प्रारंभिक sh और csh से शुरू करें, ksh द्वारा संयोजन बताएं और आधुनिक डिफ़ॉल्ट bash से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u012_t1",
+              "role": "subject",
+              "text": "प्रारंभिक बॉर्न शेल `sh` और C-शैली के `csh` ने कमांड-लाइन की नींव रखी,",
+              "role_hint": "ksh विकास की व्याख्या करें"
+            },
+            {
+              "id": "hi_u012_t2",
+              "role": "process",
+              "text": "जिसे डेविड कॉर्न ने हाइब्रिड कॉर्न शेल `ksh` में संयोजित किया,",
+              "role_hint": "आधुनिक मानक bash के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u012_t3",
+              "role": "result",
+              "text": "और अंततः बॉर्न अगेन शेल `bash` लिनक्स के लिए आधुनिक अनुकूलन योग्य डिफ़ॉल्ट शेल बन गया",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u012_d1",
+              "category": "logical",
+              "text": "`bash` शेल से कमांड इतिहास और टाइपिंग क्षमताओं को पूरी तरह से हटा देता है,",
+              "penalty_explanation": "Bash कमांड इतिहास और संपादन सुविधाओं का विस्तार करता है, उन्हें हटाता नहीं है।"
+            },
+            {
+              "id": "hi_u012_d2",
+              "category": "grammatical",
+              "text": "उपयोगकर्ताओं को केवल एनालॉग सीआरटी स्क्रीन में स्क्रिप्ट चलाने के लिए बाध्य करते हुए,",
+              "penalty_explanation": "शेल एक सॉफ्टवेयर इंटरफ़ेस है, सीआरटी हार्डवेयर नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Linux shells evolved from `sh` and `csh` to `ksh`, culminating in `bash` as the versatile modern default standard.",
+        "hi": "लिनक्स शेल `sh` और `csh` से `ksh` में विकसित हुए, और अंत में `bash` आधुनिक डिफ़ॉल्ट शेल बना।"
+      }
+    },
+    {
+      "unit_id": "u13_user_system_commands",
+      "topic": "User & System Commands: who, whoami, pwd, date, cal",
+      "pedagogical_objective": "Execute fundamental environmental shell commands to inspect active sessions, usernames, working directories, and system clocks.",
+      "instruction": {
+        "title": {
+          "en": "User and System Environmental Commands",
+          "hi": "उपयोगकर्ता और सिस्टम कमांड्स (who, whoami, pwd, date, cal)"
+        },
+        "theory": {
+          "en": "Linux commands are entered at the shell prompt (denoted by `$`). Environmental commands query system and session states: `who` lists all users currently logged into the system; `whoami` outputs the current user's effective account username; `pwd` (print working directory) displays the absolute pathname of the active directory; `date` displays the current system date, time, and timezone; and `cal` displays a calendar for the current month.",
+          "hi": "लिनक्स कमांड शेल प्रॉम्प्ट (`$`) पर दर्ज किए जाते हैं। बुनियादी सिस्टम कमांड्स: `who` सिस्टम में लॉग इन किए गए सभी उपयोगकर्ताओं की सूची दिखाता है; `whoami` वर्तमान सक्रिय उपयोगकर्ता का नाम दिखाता है; `pwd` (print working directory) वर्तमान कार्यशील डायरेक्टरी का पूरा पथ प्रदर्शित करता है; `date` सिस्टम की वर्तमान तिथि और समय दिखाता है; और `cal` चालू माह का कैलेंडर प्रदर्शित करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Core Linux Environmental and Identity Commands</text><rect x='40' y='75' width='560' height='180' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='60' y='105' fill='#38bdf8' font-family='monospace' font-size='13'>$ whoami</text><text x='240' y='105' fill='#4ade80' font-family='monospace' font-size='12'># Displays active logged-in username</text><text x='60' y='135' fill='#38bdf8' font-family='monospace' font-size='13'>$ who</text><text x='240' y='135' fill='#4ade80' font-family='monospace' font-size='12'># Lists all concurrent logged-in users</text><text x='60' y='165' fill='#38bdf8' font-family='monospace' font-size='13'>$ pwd</text><text x='240' y='165' fill='#4ade80' font-family='monospace' font-size='12'># Print Working Directory path</text><text x='60' y='195' fill='#38bdf8' font-family='monospace' font-size='13'>$ date</text><text x='240' y='195' fill='#4ade80' font-family='monospace' font-size='12'># Outputs system clock, time, and day</text><text x='60' y='225' fill='#38bdf8' font-family='monospace' font-size='13'>$ cal</text><text x='240' y='225' fill='#4ade80' font-family='monospace' font-size='12'># Renders current calendar matrix</text></svg>",
+          "caption": {
+            "en": "System query commands inspecting user identity (whoami), session users (who), directory (pwd), and time (date/cal).",
+            "hi": "उपयोगकर्ता पहचान (whoami), सत्र उपयोगकर्ता (who), डायरेक्टरी (pwd) और समय (date/cal) की जांच करने वाले कमांड्स।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining environmental inspection using who, whoami, pwd, date, and cal.",
+          "hint": "Inspect user identities first, follow with the working directory, and conclude with date and calendar outputs.",
+          "target_sequence": [
+            {
+              "id": "en_u013_t1",
+              "role": "subject",
+              "text": "`who` lists all active users and `whoami` returns the current user identity,",
+              "role_hint": "describe directory path output"
+            },
+            {
+              "id": "en_u013_t2",
+              "role": "process",
+              "text": "`pwd` prints the absolute pathname of the active working directory,",
+              "role_hint": "conclude with clock and calendar utilities"
+            },
+            {
+              "id": "en_u013_t3",
+              "role": "result",
+              "text": "while `date` outputs the system time and `cal` renders the active monthly calendar",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u013_d1",
+              "category": "logical",
+              "text": "`pwd` permanently wipes the directory tree clean of all stored files,",
+              "penalty_explanation": "`pwd` stands for Print Working Directory; it only displays the pathname and deletes nothing."
+            },
+            {
+              "id": "en_u013_d2",
+              "category": "grammatical",
+              "text": "requiring users to run whoami strictly inside a graphic video editing timeline,",
+              "penalty_explanation": "`whoami` is a standard Linux shell command executed at the terminal prompt."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "who, whoami, pwd, date और cal का उपयोग करके सिस्टम निरीक्षण को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "उपयोगकर्ता पहचान से शुरू करें, कार्यशील डायरेक्टरी बताएं और तिथि व कैलेंडर आउटपुट से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u013_t1",
+              "role": "subject",
+              "text": "`who` सक्रिय उपयोगकर्ताओं को दिखाता है और `whoami` वर्तमान उपयोगकर्ता की पहचान देता है,",
+              "role_hint": "डायरेक्टरी पाथ का वर्णन करें"
+            },
+            {
+              "id": "hi_u013_t2",
+              "role": "process",
+              "text": "`pwd` वर्तमान कार्यशील डायरेक्टरी का पूरा पथ प्रदर्शित करता है,",
+              "role_hint": "घड़ी और कैलेंडर के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u013_t3",
+              "role": "result",
+              "text": "जबकि `date` सिस्टम समय दिखाता है और `cal` वर्तमान माह का कैलेंडर प्रदर्शित करता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u013_d1",
+              "category": "logical",
+              "text": "`pwd` डायरेक्टरी ट्री से सभी संग्रहीत फ़ाइलों को स्थायी रूप से मिटा देता है,",
+              "penalty_explanation": "`pwd` केवल डायरेक्टरी का नाम दिखाता है (Print Working Directory), फ़ाइलें नहीं हटाता।"
+            },
+            {
+              "id": "hi_u013_d2",
+              "category": "grammatical",
+              "text": "उपयोगकर्ताओं को वीडियो संपादन टाइमलाइन में whoami चलाने के लिए बाध्य करते हुए,",
+              "penalty_explanation": "`whoami` एक लिनक्स शेल टर्मिनल कमांड है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "`whoami`/`who` show user identity, `pwd` displays current path, while `date` and `cal` provide time and calendar data.",
+        "hi": "`whoami`/`who` पहचान बताते हैं, `pwd` वर्तमान पाथ दिखाता है, और `date`/`cal` समय और कैलेंडर दिखाते हैं।"
+      }
+    },
+    {
+      "unit_id": "u14_file_directory_operations",
+      "topic": "File & Directory Navigation: ls, cd, mkdir, rmdir, cp",
+      "pedagogical_objective": "Manage directory hierarchies and file operations using ls, cd, mkdir, rmdir, and cp.",
+      "instruction": {
+        "title": {
+          "en": "File and Directory Management Commands",
+          "hi": "फ़ाइल और डायरेक्टरी प्रबंधन कमांड्स (ls, cd, mkdir, rmdir, cp)"
+        },
+        "theory": {
+          "en": "File-system navigation and management rely on core shell commands: `ls` lists files and subdirectories within the current folder; `mkdir <name>` creates a new directory; `rmdir <name>` removes an empty directory; `cd <name>` changes the current working directory; and `cp <source> <dest>` duplicates a file or directory to a specified target location.",
+          "hi": "फ़ाइल सिस्टम नेविगेशन के लिए बुनियादी कमांड्स: `ls` वर्तमान फ़ोल्डर में सभी फ़ाइलों और डायरेक्टरीज़ की सूची दिखाता है; `mkdir <नाम>` एक नई डायरेक्टरी बनाता है; `rmdir <नाम>` खाली डायरेक्टरी को हटाता है; `cd <नाम>` वर्तमान कार्यशील डायरेक्टरी को बदलता है; और `cp <स्रोत> <गंतव्य>` किसी फ़ाइल या डायरेक्टरी की प्रतिलिपि (कॉपी) बनाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>File &amp; Directory Operations: Navigation, Creation, Copying</text><rect x='40' y='75' width='560' height='180' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='60' y='105' fill='#38bdf8' font-family='monospace' font-size='13'>$ ls</text><text x='250' y='105' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Lists files/folders in working directory</text><text x='60' y='135' fill='#38bdf8' font-family='monospace' font-size='13'>$ cd &lt;dir&gt;</text><text x='250' y='135' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Changes current active directory path</text><text x='60' y='165' fill='#38bdf8' font-family='monospace' font-size='13'>$ mkdir &lt;dir&gt;</text><text x='250' y='165' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Creates new directory folder</text><text x='60' y='195' fill='#38bdf8' font-family='monospace' font-size='13'>$ rmdir &lt;dir&gt;</text><text x='250' y='195' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Removes empty directory folder</text><text x='60' y='225' fill='#38bdf8' font-family='monospace' font-size='13'>$ cp src dest</text><text x='250' y='225' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Duplicates files/folders to destination</text></svg>",
+          "caption": {
+            "en": "Essential file management operations: listing (ls), traversing (cd), creating (mkdir), removing (rmdir), and copying (cp).",
+            "hi": "फ़ाइल प्रबंधन संचालन: सूची (ls), नेविगेट (cd), निर्माण (mkdir), हटाना (rmdir), और कॉपी (cp)।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining directory navigation and file manipulation using ls, cd, mkdir, rmdir, and cp.",
+          "hint": "List and change directories first, explain creating/deleting folders, and conclude with copying files.",
+          "target_sequence": [
+            {
+              "id": "en_u014_t1",
+              "role": "subject",
+              "text": "`ls` lists folder contents and `cd` changes the working directory path,",
+              "role_hint": "explain creating and deleting folders"
+            },
+            {
+              "id": "en_u014_t2",
+              "role": "process",
+              "text": "`mkdir` creates new directories while `rmdir` removes empty folders,",
+              "role_hint": "conclude with file copying"
+            },
+            {
+              "id": "en_u014_t3",
+              "role": "result",
+              "text": "and `cp` creates exact duplicate copies of files or directories in specified target locations",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u014_d1",
+              "category": "logical",
+              "text": "`rmdir` permanently deletes non-empty directories containing active system kernels,",
+              "penalty_explanation": "`rmdir` removes empty directories only; non-empty folders require recursive removal tools."
+            },
+            {
+              "id": "en_u014_d2",
+              "category": "grammatical",
+              "text": "causes `cp` to erase both the source and target files simultaneously,",
+              "penalty_explanation": "`cp` duplicates files and leaves the source file completely intact."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "ls, cd, mkdir, rmdir और cp का उपयोग करके फ़ाइल व डायरेक्टरी प्रबंधन के सही क्रम को व्यवस्थित करें।",
+          "hint": "फ़ोल्डर सूची और डायरेक्टरी बदलने से शुरू करें, फ़ोल्डर बनाने/हटाने का वर्णन करें और फ़ाइल कॉपी करने से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u014_t1",
+              "role": "subject",
+              "text": "`ls` फ़ोल्डर सामग्री को सूचीबद्ध करता है और `cd` कार्यशील डायरेक्टरी पथ को बदलता है,",
+              "role_hint": "फ़ोल्डर बनाने और हटाने का वर्णन करें"
+            },
+            {
+              "id": "hi_u014_t2",
+              "role": "process",
+              "text": "`mkdir` नई डायरेक्टरी बनाता है जबकि `rmdir` खाली फ़ोल्डरों को हटाता है,",
+              "role_hint": "फ़ाइल कॉपी करने के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u014_t3",
+              "role": "result",
+              "text": "और `cp` निर्दिष्ट स्थान पर फ़ाइलों या डायरेक्टरी की सटीक प्रतिलिपि बनाता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u014_d1",
+              "category": "logical",
+              "text": "`rmdir` सक्रिय कर्नेल वाली भरी हुई डायरेक्टरी को स्थायी रूप से हटा देता है,",
+              "penalty_explanation": "`rmdir` केवल खाली डायरेक्टरी को हटाता है।"
+            },
+            {
+              "id": "hi_u014_d2",
+              "category": "grammatical",
+              "text": "`cp` कमांड स्रोत और गंतव्य दोनों फ़ाइलों को एक साथ मिटा देता है,",
+              "penalty_explanation": "`cp` फ़ाइलों की कॉपी बनाता है, स्रोत फ़ाइल को नष्ट नहीं करता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "`ls` lists files, `cd` navigates paths, `mkdir`/`rmdir` manage directories, and `cp` copies files.",
+        "hi": "`ls` सूची दिखाता है, `cd` डायरेक्टरी बदलता है, `mkdir`/`rmdir` फ़ोल्डर संभालते हैं और `cp` कॉपी करता है।"
+      }
+    },
+    {
+      "unit_id": "u15_text_search_inspection_commands",
+      "topic": "Content Inspection & Search: cat, cmp, find, grep, netstat",
+      "pedagogical_objective": "Inspect, concatenate, compare, and search files and network statistics using cat, cmp, find, grep, and netstat.",
+      "instruction": {
+        "title": {
+          "en": "File Content Inspection and Search Commands",
+          "hi": "फ़ाइल सामग्री निरीक्षण और खोज कमांड्स"
+        },
+        "theory": {
+          "en": "Linux provides utilities for inspecting content: `cat` views file contents, creates files, or concatenates multiple files; `cmp` performs byte-by-byte comparisons of two files (returning nothing if identical); `find` locates files across storage directories; `grep` (Global Regular Expression Print) searches for specific text strings within files; and `netstat` displays active network connections, routing tables, and interface statistics.",
+          "hi": "सामग्री निरीक्षण और खोज के लिए लिनक्स कमांड्स: `cat` फ़ाइल सामग्री देखने, नई फ़ाइल बनाने या कई फ़ाइलों को जोड़ने के लिए उपयोग किया जाता है; `cmp` दो फ़ाइलों की तुलना करता है (समान होने पर कोई आउटपुट नहीं देता); `find` स्टोरेज में फ़ाइलों को खोजता है; `grep` (Global Regular Expression Print) किसी फ़ाइल में विशिष्ट टेक्स्ट या पैटर्न खोजता है; और `netstat` सक्रिय नेटवर्क कनेक्शन और आंकड़े प्रदर्शित करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>File Search and Content Inspection Utilities</text><rect x='40' y='75' width='560' height='180' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='60' y='105' fill='#fbbf24' font-family='monospace' font-size='12'>$ cat file.txt</text><text x='250' y='105' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Concatenate, view, or write file content</text><text x='60' y='135' fill='#fbbf24' font-family='monospace' font-size='12'>$ cmp f1 f2</text><text x='250' y='135' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Compares two files; silent if identical</text><text x='60' y='165' fill='#fbbf24' font-family='monospace' font-size='12'>$ find -name \"*.txt\"</text><text x='250' y='165' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Searches storage hierarchy for filenames</text><text x='60' y='195' fill='#fbbf24' font-family='monospace' font-size='12'>$ grep \"word\" f.txt</text><text x='250' y='195' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Pattern search inside file text content</text><text x='60' y='225' fill='#fbbf24' font-family='monospace' font-size='12'>$ netstat</text><text x='250' y='225' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Displays network connections and ports</text></svg>",
+          "caption": {
+            "en": "Content utilities: viewing files (cat), comparing (cmp), locating (find), searching text (grep), and checking networking (netstat).",
+            "hi": "सामग्री टूल्स: फ़ाइल देखना (cat), तुलना करना (cmp), खोजना (find), टेक्स्ट खोजना (grep), और नेटवर्क जांचना (netstat)।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining file inspection and search operations using cat, cmp, find, grep, and netstat.",
+          "hint": "Identify cat and cmp for viewing and comparing, explain find and grep for searching, and conclude with netstat.",
+          "target_sequence": [
+            {
+              "id": "en_u015_t1",
+              "role": "subject",
+              "text": "`cat` views or concatenates file content while `cmp` compares two files for differences,",
+              "role_hint": "explain file and string search"
+            },
+            {
+              "id": "en_u015_t2",
+              "role": "process",
+              "text": "`find` searches storage for file paths while `grep` searches for specific text patterns inside files,",
+              "role_hint": "conclude with network inspection"
+            },
+            {
+              "id": "en_u015_t3",
+              "role": "result",
+              "text": "and `netstat` inspects active network communication connections and routing statistics",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u015_d1",
+              "category": "logical",
+              "text": "`grep` physically cuts and splices video magnetic tapes inside vcr players,",
+              "penalty_explanation": "`grep` is a text pattern searching utility; it has nothing to do with video tape splicing."
+            },
+            {
+              "id": "en_u015_d2",
+              "category": "grammatical",
+              "text": "causes `cmp` to overwrite both files with empty spaces when differences exist,",
+              "penalty_explanation": "`cmp` compares files and prints byte offsets of differences; it does not overwrite files."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "cat, cmp, find, grep और netstat का उपयोग करके फ़ाइल निरीक्षण और खोज के सही क्रम को व्यवस्थित करें।",
+          "hint": "फ़ाइल देखने (cat) और तुलना (cmp) से शुरू करें, खोज (find/grep) बताएं और नेटवर्क निरीक्षण (netstat) से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u015_t1",
+              "role": "subject",
+              "text": "`cat` फ़ाइल सामग्री देखता है या जोड़ता है जबकि `cmp` अंतर के लिए दो फ़ाइलों की तुलना करता है,",
+              "role_hint": "खोज कमांड्स की व्याख्या करें"
+            },
+            {
+              "id": "hi_u015_t2",
+              "role": "process",
+              "text": "`find` स्टोरेज में फ़ाइलों को खोजता है जबकि `grep` फ़ाइलों के भीतर विशिष्ट टेक्स्ट पैटर्न खोजता है,",
+              "role_hint": "नेटवर्क निरीक्षण के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u015_t3",
+              "role": "result",
+              "text": "और `netstat` सक्रिय नेटवर्क संचार कनेक्शन और रूटिंग आंकड़ों का निरीक्षण करता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u015_d1",
+              "category": "logical",
+              "text": "`grep` वीसीआर प्लेयर के अंदर वीडियो मैग्नेटिक टेप को भौतिक रूप से काटता और जोड़ता है,",
+              "penalty_explanation": "`grep` एक टेक्स्ट पैटर्न सर्च टूल है, इसका वीडियो टेप से कोई संबंध नहीं है।"
+            },
+            {
+              "id": "hi_u015_d2",
+              "category": "grammatical",
+              "text": "अंतर होने पर `cmp` दोनों फ़ाइलों को खाली स्पेस से बदल देता है,",
+              "penalty_explanation": "`cmp` केवल अंतर दिखाता है, फ़ाइलों को ओवरराइट नहीं करता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "`cat` views/merges files, `cmp` compares bytes, `find` locates paths, `grep` searches text, and `netstat` monitors network state.",
+        "hi": "`cat` फ़ाइलें जोड़ता है, `cmp` तुलना करता है, `find` पाथ खोजता है, `grep` टेक्स्ट ढूंढता है और `netstat` नेटवर्क जांचता है।"
+      }
+    },
+    {
+      "unit_id": "u16_io_redirection_pipelines",
+      "topic": "I/O Redirection and Command Pipelines",
+      "pedagogical_objective": "Redirect standard input/output using '<' and '>' and chain sequential commands together using pipe operators ('|').",
+      "instruction": {
+        "title": {
+          "en": "I/O Redirection and Pipelines in Linux",
+          "hi": "लिनक्स में इनपुट/आउटपुट री-डायरेक्शन और पाइपलाइन"
+        },
+        "theory": {
+          "en": "By default, commands accept input from the keyboard (Standard Input) and send output to the monitor (Standard Output). Redirection operators alter this flow: `<` redirects input from a file instead of the keyboard (e.g., `$ cat < file.txt`), while `>` redirects command output into a file instead of the screen (e.g., `$ ls > file.txt`). A Pipeline (`|`) connects commands directly, channeling the standard output of one command as the standard input of the next (e.g., `$ ls | lpr`).",
+          "hi": "डिफ़ॉल्ट रूप से, कमांड कीबोर्ड से इनपुट (Standard Input) लेते हैं और मॉनिटर पर आउटपुट (Standard Output) भेजते हैं। री-डायरेक्शन ऑपरेटर इस प्रवाह को बदलते हैं: `<` कीबोर्ड के बजाय फ़ाइल से इनपुट लेता है (जैसे `$ cat < file.txt`), जबकि `>` मॉनिटर के बजाय आउटपुट को फ़ाइल में सहेजता है (जैसे `$ ls > file.txt`)। पाइपलाइन (`|`) एक कमांड के आउटपुट को सीधे दूसरे कमांड के इनपुट के रूप में जोड़ती है (जैसे `$ ls | lpr`)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Data Flow Redirection (&lt;, &gt;) and Pipeline Chaining (|)</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='170' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>I/O Redirection</text><text x='60' y='140' fill='#38bdf8' font-family='monospace' font-size='12'>&lt;  Input Redirection</text><text x='60' y='160' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Feeds input from file</text><text x='60' y='190' fill='#4ade80' font-family='monospace' font-size='12'>&gt;  Output Redirection</text><text x='60' y='210' fill='#cbd5e1' font-family='sans-serif' font-size='11'>Routes output into file</text><text x='170' y='240' fill='#94a3b8' font-family='monospace' font-size='10' text-anchor='middle'>$ ls &gt; out.txt</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='470' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Pipeline Operator (|)</text><rect x='360' y='130' width='60' height='35' rx='4' fill='#0f172a' stroke='#38bdf8'/><text x='390' y='152' fill='#38bdf8' font-family='monospace' font-size='12' text-anchor='middle'>ls</text><line x1='425' y1='147' x2='475' y2='147' stroke='#4ade80' stroke-width='2'/><polygon points='480,147 472,142 472,152' fill='#4ade80'/><text x='450' y='137' fill='#4ade80' font-family='monospace' font-size='14' text-anchor='middle'>|</text><rect x='485' y='130' width='60' height='35' rx='4' fill='#0f172a' stroke='#38bdf8'/><text x='515' y='152' fill='#38bdf8' font-family='monospace' font-size='12' text-anchor='middle'>lpr</text><text x='470' y='200' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Chains stdout directly into stdin</text><text x='470' y='225' fill='#94a3b8' font-family='sans-serif' font-size='10' text-anchor='middle'>Processes data through sequences</text></svg>",
+          "caption": {
+            "en": "Redirecting streams to/from files with < and >, and chaining command pipelines with the pipe operator (|).",
+            "hi": "< और > के साथ फ़ाइलों में स्ट्रीम री-डायरेक्ट करना, और पाइप ऑपरेटर (|) के साथ कमांड पाइपलाइनों को जोड़ना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining stream redirection and command pipelines in Linux.",
+          "hint": "Explain `<` for input, `>` for output redirection, and the pipe `|` for chaining commands.",
+          "target_sequence": [
+            {
+              "id": "en_u016_t1",
+              "role": "subject",
+              "text": "the input `<` and output `>` redirection operators re-route standard data streams to and from files,",
+              "role_hint": "explain the pipe operator"
+            },
+            {
+              "id": "en_u016_t2",
+              "role": "process",
+              "text": "while the pipeline operator `|` channels the standard output of one command into the input of another,",
+              "role_hint": "conclude with sequence processing"
+            },
+            {
+              "id": "en_u016_t3",
+              "role": "result",
+              "text": "enabling complex multi-stage data processing by linking sequential terminal utilities together",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u016_d1",
+              "category": "logical",
+              "text": "the `>` operator erases all command output permanently without writing to any target file,",
+              "penalty_explanation": "The `>` operator redirects output and writes it directly into the specified destination file."
+            },
+            {
+              "id": "en_u016_d2",
+              "category": "grammatical",
+              "text": "prohibits combining more than one terminal utility in a single command line,",
+              "penalty_explanation": "Pipelines specifically exist to chain multiple utilities together on a single line."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "लिनक्स में स्ट्रीम री-डायरेक्शन और कमांड पाइपलाइन को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "इनपुट `<` और आउटपुट `>` से शुरू करें, पाइप `|` द्वारा कमांड जोड़ने का वर्णन करें और बहु-चरणीय प्रोसेसिंग से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u016_t1",
+              "role": "subject",
+              "text": "इनपुट `<` और आउटपुट `>` री-डायरेक्शन ऑपरेटर डेटा स्ट्रीम को फ़ाइलों से और फ़ाइलों में पुनर्निर्देशित करते हैं,",
+              "role_hint": "पाइप ऑपरेटर की व्याख्या करें"
+            },
+            {
+              "id": "hi_u016_t2",
+              "role": "process",
+              "text": "जबकि पाइपलाइन ऑपरेटर `|` एक कमांड के आउटपुट को सीधे दूसरे कमांड के इनपुट में भेजता है,",
+              "role_hint": "श्रृंखलाबद्ध प्रोसेसिंग के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u016_t3",
+              "role": "result",
+              "text": "क्रमिक टर्मिनल उपयोगिताओं को एक साथ जोड़कर जटिल बहु-चरणीय डेटा प्रोसेसिंग को सक्षम करते हुए",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u016_d1",
+              "category": "logical",
+              "text": "`>` ऑपरेटर किसी भी फ़ाइल में लिखे बिना कमांड आउटपुट को स्थायी रूप से मिटा देता है,",
+              "penalty_explanation": "`>` ऑपरेटर आउटपुट को लक्षित फ़ाइल में लिखता है, मिटाता नहीं।"
+            },
+            {
+              "id": "hi_u016_d2",
+              "category": "grammatical",
+              "text": "एक ही कमांड लाइन में एक से अधिक टर्मिनल यूटिलिटी को संयोजित करने से रोकते हुए,",
+              "penalty_explanation": "पाइपलाइन का उद्देश्य ही कई कमांड्स को एक साथ जोड़ना है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "`<` reads input from a file, `>` writes output to a file, and `|` passes output of one command as input to the next.",
+        "hi": "`<` फ़ाइल से इनपुट लेता है, `>` आउटपुट को फ़ाइल में लिखता है, और `|` एक कमांड के आउटपुट को दूसरे के इनपुट में भेजता है।"
+      }
+    },
+    {
+      "unit_id": "u17_vi_editor_modal_architecture",
+      "topic": "Vi Editor Modal Architecture: Command, Insert, and Replace Modes",
+      "pedagogical_objective": "Master modal transitions in the Vi editor between Command mode, Insert mode, and Replacement mode.",
+      "instruction": {
+        "title": {
+          "en": "Vi Editor Modal Architecture",
+          "hi": "Vi एडिटर की मोडल संरचना (Command, Insert, Replace)"
+        },
+        "theory": {
+          "en": "Vi (Visual editor) is the standard modal text editor in Linux, launched with `$ vi filename`. Vi operates in three distinct modes: `Command Mode` is the default startup state where keystrokes act as navigation and editing commands (e.g., `h/j/k/l` to move, `x` to delete a character, `dd` to delete a line, and `:wq` to save and quit). Pressing `i` transitions to `Insert Mode` for typing text. Pressing `r` initiates `Replacement Mode` to overwrite characters. Pressing `Esc` always returns Vi to Command mode.",
+          "hi": "Vi (Visual Editor) लिनक्स में मानक टेक्स्ट एडिटर है, जिसे `$ vi फ़ाइलनाम` द्वारा खोला जाता है। यह तीन मुख्य मोड्स में कार्य करता है: `Command Mode` डिफ़ॉल्ट मोड है जहाँ कीस्ट्रोक्स कमांड के रूप में काम करते हैं (जैसे `h/j/k/l` कर्सर घुमाने, `x` अक्षर मिटाने, `dd` लाइन मिटाने, और `:wq` सेव करके बाहर निकलने के लिए)। `i` दबाने से `Insert Mode` शुरू होता है जहाँ टेक्स्ट टाइप किया जा सकता है। `r` दबाने से `Replacement Mode` शुरू होता है जो अक्षरों को बदलता है। `Esc` दबाने पर एडिटर हमेशा कमांड मोड में लौट आता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Vi Modal Transitions: Command, Insert, and Replace Modes</text><rect x='220' y='75' width='200' height='60' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='2'/><text x='320' y='100' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Command Mode (Default)</text><text x='320' y='120' fill='#cbd5e1' font-family='monospace' font-size='10' text-anchor='middle'>h,j,k,l, x, dd, :wq</text><rect x='50' y='180' width='180' height='60' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='140' y='205' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Insert Mode</text><text x='140' y='225' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Types and edits text</text><rect x='410' y='180' width='180' height='60' rx='8' fill='#1e293b' stroke='#f472b6' stroke-width='1.5'/><text x='500' y='205' fill='#f472b6' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Replacement Mode</text><text x='500' y='225' fill='#cbd5e1' font-family='sans-serif' font-size='10' text-anchor='middle'>Overwrites cursor char</text><line x1='270' y1='135' x2='170' y2='180' stroke='#4ade80' stroke-width='2'/><text x='210' y='155' fill='#4ade80' font-family='monospace' font-size='11'>press 'i'</text><line x1='190' y1='180' x2='290' y2='135' stroke='#fbbf24' stroke-width='1.5' stroke-dasharray='3'/><text x='250' y='170' fill='#fbbf24' font-family='monospace' font-size='10'>Esc</text><line x1='370' y1='135' x2='470' y2='180' stroke='#f472b6' stroke-width='2'/><text x='435' y='155' fill='#f472b6' font-family='monospace' font-size='11'>press 'r'</text><line x1='450' y1='180' x2='350' y2='135' stroke='#fbbf24' stroke-width='1.5' stroke-dasharray='3'/><text x='390' y='170' fill='#fbbf24' font-family='monospace' font-size='10'>Esc</text></svg>",
+          "caption": {
+            "en": "Modal workflow in Vi: entering Insert (i) or Replace (r) from Command mode, and returning via Escape.",
+            "hi": "Vi में मोडल वर्कफ़्लो: कमांड मोड से इन्सर्ट (i) या रिप्लेस (r) में जाना और Escape दबाकर वापस आना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining modal transitions and text entry within the Vi editor.",
+          "hint": "Start in default Command mode, switch to Insert mode with 'i', and return to Command mode via Esc.",
+          "target_sequence": [
+            {
+              "id": "en_u017_t1",
+              "role": "subject",
+              "text": "the vi editor initializes in default command mode where keystrokes execute navigation and deletion commands,",
+              "role_hint": "explain switching to insert mode"
+            },
+            {
+              "id": "en_u017_t2",
+              "role": "process",
+              "text": "pressing the `i` key transitions into insert mode to allow active typing and editing of text,",
+              "role_hint": "conclude with returning via Escape"
+            },
+            {
+              "id": "en_u017_t3",
+              "role": "result",
+              "text": "and pressing the `esc` key exits back to command mode to execute saving and quit commands like `:wq`",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u017_d1",
+              "category": "logical",
+              "text": "typing text directly in command mode saves files automatically without pressing `i`,",
+              "penalty_explanation": "Command mode interprets keystrokes as commands; typing text requires entering Insert mode via `i`."
+            },
+            {
+              "id": "en_u017_d2",
+              "category": "grammatical",
+              "text": "prohibits the use of the `esc` key during text editing sessions,",
+              "penalty_explanation": "The `Esc` key is essential in Vi to exit Insert or Replace modes and return to Command mode."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "Vi एडिटर में मोडल बदलाव और टेक्स्ट प्रविष्टि को परिभाषित करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "डिफ़ॉल्ट कमांड मोड से शुरू करें, 'i' से इन्सर्ट मोड में जाएं और Esc दबाकर कमांड मोड में लौटने से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u017_t1",
+              "role": "subject",
+              "text": "Vi एडिटर डिफ़ॉल्ट कमांड मोड में शुरू होता है जहाँ कीस्ट्रोक्स नेविगेशन और डिलीट कमांड चलाते हैं,",
+              "role_hint": "इन्सर्ट मोड में जाने की व्याख्या करें"
+            },
+            {
+              "id": "hi_u017_t2",
+              "role": "process",
+              "text": "`i` कुंजी दबाने से टेक्स्ट टाइप और एडिट करने के लिए इन्सर्ट मोड में स्विच किया जाता है,",
+              "role_hint": "Escape के साथ लौटने पर समाप्त करें"
+            },
+            {
+              "id": "hi_u017_t3",
+              "role": "result",
+              "text": "और `esc` कुंजी दबाने से `:wq` जैसे सेव और क्विट कमांड निष्पादित करने के लिए कमांड मोड में वापस आ जाते हैं",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u017_d1",
+              "category": "logical",
+              "text": "कमांड मोड में सीधे टेक्स्ट टाइप करने से `i` दबाए बिना फ़ाइलें अपने आप सेव हो जाती हैं,",
+              "penalty_explanation": "कमांड मोड केवल कमांड लेता है; टेक्स्ट लिखने के लिए `i` दबाकर इन्सर्ट मोड में जाना जरूरी है।"
+            },
+            {
+              "id": "hi_u017_d2",
+              "category": "grammatical",
+              "text": "टेक्स्ट संपादन के दौरान `esc` कुंजी के उपयोग को पूरी तरह से रोकते हुए,",
+              "penalty_explanation": "इन्सर्ट मोड से बाहर निकलने के लिए `Esc` कुंजी दबाना अनिवार्य है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Vi starts in Command mode; press `i` for Insert mode (typing), `r` for Replace, and `Esc` to return to Command mode.",
+        "hi": "Vi कमांड मोड में शुरू होता है; टाइपिंग के लिए `i` दबाएं, रिप्लेस के लिए `r`, और वापस लौटने के लिए `Esc` दबाएं।"
+      }
+    },
+    {
+      "unit_id": "u08_filesystem_hierarchy_standard",
+      "topic": "Filesystem Hierarchy Standard (FHS): /, /bin, /etc, /dev, /boot",
+      "pedagogical_objective": "Navigate the standardized root directory structure, mapping binaries (/bin), configurations (/etc), devices (/dev), and bootloader files (/boot).",
+      "instruction": {
+        "title": {
+          "en": "The Linux Filesystem Hierarchy Standard (FHS)",
+          "hi": "लिनक्स फाइलसिस्टम पदानुक्रम मानक (FHS)"
+        },
+        "theory": {
+          "en": "Linux organizes storage into a single inverted tree structure defined by the Filesystem Hierarchy Standard (FHS). The root directory (`/`) sits at the top of the hierarchy. Key system directories include: `/bin` (contains essential executable binaries and user commands), `/etc` (houses system and application configuration files), `/dev` (contains special device files representing connected hardware like disks and keyboards), and `/boot` (stores bootloader files and the Linux kernel required to start the computer).",
+          "hi": "लिनक्स फाइलसिस्टम पदानुक्रम मानक (FHS) द्वारा परिभाषित एक उल्टे पेड़ जैसी संरचना में स्टोरेज को व्यवस्थित करता है। रूट डायरेक्टरी (`/`) सबसे ऊपर होती है। प्रमुख डायरेक्टरीज़: `/bin` (बुनियादी सिस्टम प्रोग्राम और कमांड्स), `/etc` (सिस्टम और एप्लिकेशन कॉन्फ़िगरेशन फ़ाइलें), `/dev` (हार्डवेयर का प्रतिनिधित्व करने वाली डिवाइस फ़ाइलें), और `/boot` (कंप्यूटर शुरू करने के लिए बूटलोडर और कर्नेल फ़ाइलें)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Filesystem Hierarchy Standard (FHS): Root Tree Layout</text><rect x='280' y='75' width='80' height='35' rx='6' fill='#1e293b' stroke='#ef4444' stroke-width='2'/><text x='320' y='98' fill='#ef4444' font-family='monospace' font-size='16' font-weight='bold' text-anchor='middle'>/ (Root)</text><line x1='320' y1='110' x2='320' y2='140' stroke='#38bdf8' stroke-width='2'/><line x1='100' y1='140' x2='540' y2='140' stroke='#38bdf8' stroke-width='2'/><line x1='100' y1='140' x2='100' y2='165' stroke='#38bdf8' stroke-width='1.5'/><rect x='50' y='165' width='100' height='60' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1'/><text x='100' y='190' fill='#fbbf24' font-family='monospace' font-size='13' font-weight='bold' text-anchor='middle'>/bin</text><text x='100' y='210' fill='#cbd5e1' font-family='sans-serif' font-size='9' text-anchor='middle'>System Binaries</text><line x1='240' y1='140' x2='240' y2='165' stroke='#38bdf8' stroke-width='1.5'/><rect x='190' y='165' width='100' height='60' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='240' y='190' fill='#38bdf8' font-family='monospace' font-size='13' font-weight='bold' text-anchor='middle'>/etc</text><text x='240' y='210' fill='#cbd5e1' font-family='sans-serif' font-size='9' text-anchor='middle'>Configurations</text><line x1='400' y1='140' x2='400' y2='165' stroke='#38bdf8' stroke-width='1.5'/><rect x='350' y='165' width='100' height='60' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='400' y='190' fill='#4ade80' font-family='monospace' font-size='13' font-weight='bold' text-anchor='middle'>/dev</text><text x='400' y='210' fill='#cbd5e1' font-family='sans-serif' font-size='9' text-anchor='middle'>Device Files</text><line x1='540' y1='140' x2='540' y2='165' stroke='#38bdf8' stroke-width='1.5'/><rect x='490' y='165' width='100' height='60' rx='6' fill='#1e293b' stroke='#f472b6' stroke-width='1'/><text x='540' y='190' fill='#f472b6' font-family='monospace' font-size='13' font-weight='bold' text-anchor='middle'>/boot</text><text x='540' y='210' fill='#cbd5e1' font-family='sans-serif' font-size='9' text-anchor='middle'>Bootloader &amp; Kernel</text></svg>",
+          "caption": {
+            "en": "FHS hierarchical tree under root (/), mapping binaries (/bin), configurations (/etc), devices (/dev), and boot (/boot).",
+            "hi": "रूट (/) के तहत FHS पदानुक्रमित ट्री, जिसमें /bin, /etc, /dev, और /boot डायरेक्टरीज़ शामिल हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence mapping the primary directories defined under the Linux Filesystem Hierarchy Standard.",
+          "hint": "Identify the top-level root `/`, map binaries in `/bin` and configs in `/etc`, and finish with `/dev` and `/boot`.",
+          "target_sequence": [
+            {
+              "id": "en_u018_t1",
+              "role": "subject",
+              "text": "the filesystem hierarchy standard establishes the top-level root directory `/` as the parent of all files,",
+              "role_hint": "map binaries and configs"
+            },
+            {
+              "id": "en_u018_t2",
+              "role": "process",
+              "text": "housing executable system binaries in `/bin` and system configuration files in `/etc`,",
+              "role_hint": "conclude with device and boot files"
+            },
+            {
+              "id": "en_u018_t3",
+              "role": "result",
+              "text": "while mapping hardware peripherals under `/dev` and kernel bootloader files inside `/boot`",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u018_d1",
+              "category": "logical",
+              "text": "storing kernel bootloader files exclusively inside the empty temporary `/dev` trash folder,",
+              "penalty_explanation": "Bootloader files are stored in `/boot`; `/dev` holds hardware device node files."
+            },
+            {
+              "id": "en_u018_d2",
+              "category": "grammatical",
+              "text": "restricting all executable binaries strictly to analog magnetic vhs tapes,",
+              "penalty_explanation": "Executables reside in the digital Linux filesystem under directories such as `/bin`."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "लिनक्स फाइलसिस्टम पदानुक्रम मानक (FHS) के तहत प्रमुख डायरेक्टरीज़ को दर्शाने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "रूट `/` से शुरू करें, `/bin` और `/etc` का नक्शा बनाएं, और `/dev` व `/boot` से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u018_t1",
+              "role": "subject",
+              "text": "फाइलसिस्टम पदानुक्रम मानक शीर्ष-स्तरीय रूट डायरेक्टरी `/` को सभी फ़ाइलों के जनक के रूप में स्थापित करता है,",
+              "role_hint": "बाइनरी और कॉन्फ़िगरेशन का नक्शा बनाएं"
+            },
+            {
+              "id": "hi_u018_t2",
+              "role": "process",
+              "text": "निष्पादन योग्य सिस्टम बाइनरी को `/bin` में और कॉन्फ़िगरेशन फ़ाइलों को `/etc` में रखते हुए,",
+              "role_hint": "डिवाइस और बूट फ़ाइलों के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u018_t3",
+              "role": "result",
+              "text": "जबकि हार्डवेयर उपकरणों को `/dev` के तहत और कर्नेल बूटलोडर फ़ाइलों को `/boot` में रखा जाता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u018_d1",
+              "category": "logical",
+              "text": "कर्नेल बूटलोडर फ़ाइलों को विशेष रूप से अस्थायी `/dev` ट्रैश फ़ोल्डर के अंदर संग्रहीत करते हुए,",
+              "penalty_explanation": "बूटलोडर फ़ाइलें `/boot` में होती हैं; `/dev` हार्डवेयर डिवाइस फ़ाइलों के लिए है।"
+            },
+            {
+              "id": "hi_u018_d2",
+              "category": "grammatical",
+              "text": "सभी निष्पादन योग्य प्रोग्रामों को एनालॉग वीएचएस टेप तक सीमित रखते हुए,",
+              "penalty_explanation": "लिनक्स में प्रोग्राम `/bin` जैसी डिजिटल डायरेक्टरीज़ में रहते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "FHS is rooted at `/`, branching into `/bin` (binaries), `/etc` (configurations), `/dev` (devices), and `/boot` (boot files).",
+        "hi": "FHS संरचना रूट `/` से शुरू होती है: `/bin` (बाइनरी), `/etc` (सेटिंग्स), `/dev` (उपकरण), और `/boot` (बूट फ़ाइलें)।"
+      }
+    },
+    {
+      "unit_id": "u19_cybercrime_typology",
+      "topic": "Cybercrime Typologies: Hacking, Phishing, Identity Theft, and Fraud",
+      "pedagogical_objective": "Identify common computer-mediated criminal activities, distinguishing system intrusion (hacking), deceptive harvesting (phishing), credential misuse (identity theft), and online scams.",
+      "instruction": {
+        "title": {
+          "en": "Cybercrime Typologies and Offenses",
+          "hi": "साइबर अपराध के प्रकार और अपराध"
+        },
+        "theory": {
+          "en": "Cybercrime encompasses illicit criminal activities conducted using computers, digital networks, or the Internet. Major categories include: `Hacking` (unauthorized electronic intrusion into systems to steal data or disrupt operations), `Identity Theft` (fraudulently appropriating personal data, card numbers, or credentials for financial gain), `Phishing` (deceptive spoofed emails or fake websites designed to trick victims into revealing sensitive passwords), `Online Fraud/Scams` (fraudulent schemes such as fake lottery or job offers), and `Cyberbullying` (online harassment).",
+          "hi": "साइबर अपराध उन आपराधिक गतिविधियों को संदर्भित करता है जो कंप्यूटर, नेटवर्क या इंटरनेट का उपयोग करके की जाती हैं। मुख्य श्रेणियां: हैकिंग (`Hacking` - डेटा चोरी या संचालन बाधित करने के लिए अनधिकृत पहुंच), पहचान की चोरी (`Identity Theft` - वित्तीय लाभ के लिए किसी अन्य के व्यक्तिगत विवरण का दुरुपयोग), फ़िशिंग (`Phishing` - पासवर्ड या वित्तीय विवरण चुराने के लिए फर्जी ईमेल या वेबसाइट बनाना), ऑनलाइन धोखाधड़ी/घोटाले (`Online Fraud` - फर्जी लॉटरी या नौकरी के प्रस्ताव), और साइबरबुलिंग (`Cyberbullying` - ऑनलाइन उत्पीड़न)।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Taxonomy of Common Cybercrime Threats</text><rect x='40' y='75' width='130' height='180' rx='6' fill='#1e293b' stroke='#ef4444' stroke-width='1'/><text x='105' y='105' fill='#ef4444' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Hacking</text><text x='105' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Unauthorized</text><text x='105' y='160' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>system entry</text><text x='105' y='190' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Data theft / sabotage</text><rect x='180' y='75' width='130' height='180' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1'/><text x='245' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Identity Theft</text><text x='245' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Misusing personal</text><text x='245' y='160' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>credentials</text><text x='245' y='190' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Financial fraud</text><rect x='320' y='75' width='130' height='180' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='385' y='105' fill='#38bdf8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Phishing</text><text x='385' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Spoofed emails</text><text x='385' y='160' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Fake websites</text><text x='385' y='190' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Stealing logins</text><rect x='460' y='75' width='140' height='180' rx='6' fill='#1e293b' stroke='#f472b6' stroke-width='1'/><text x='530' y='105' fill='#f472b6' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Online Scams</text><text x='530' y='140' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Fake lottery offers</text><text x='530' y='160' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Job scams</text><text x='530' y='190' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Cyberbullying</text></svg>",
+          "caption": {
+            "en": "Classification of cyber offenses: network intrusion (hacking), credential theft, social engineering (phishing), and fraud.",
+            "hi": "साइबर अपराधों का वर्गीकरण: नेटवर्क घुसपैठ (हैकिंग), पहचान की चोरी, फ़िशिंग और ऑनलाइन धोखाधड़ी।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence classifying major cybercrime activities across computer networks.",
+          "hint": "Identify hacking as unauthorized intrusion, phishing as social engineering, and identity theft as fraudulent credential misuse.",
+          "target_sequence": [
+            {
+              "id": "en_u019_t1",
+              "role": "subject",
+              "text": "hacking breaches system defenses to steal digital data or disrupt network operations,",
+              "role_hint": "explain phishing social engineering"
+            },
+            {
+              "id": "en_u019_t2",
+              "role": "process",
+              "text": "while phishing employs deceptive emails and fake websites to harvest sensitive credentials,",
+              "role_hint": "conclude with identity theft and fraud"
+            },
+            {
+              "id": "en_u019_t3",
+              "role": "result",
+              "text": "enabling identity theft and online fraud where stolen information is exploited for illicit financial gain",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u019_d1",
+              "category": "logical",
+              "text": "phishing refers exclusively to the legal installation of antivirus definitions from authenticated vendors,",
+              "penalty_explanation": "Phishing is an illegal social engineering cybercrime, not legitimate antivirus installation."
+            },
+            {
+              "id": "en_u019_d2",
+              "category": "grammatical",
+              "text": "restricts cybercrime exclusively to offline paper letters sent through national postal vans,",
+              "penalty_explanation": "Cybercrime specifically involves digital computers, networks, and the Internet."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "कंप्यूटर नेटवर्क पर प्रमुख साइबर अपराध गतिविधियों को वर्गीकृत करने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "हैकिंग को अनधिकृत घुसपैठ के रूप में पहचानें, फ़िशिंग को फर्जी ईमेल बताएं और पहचान की चोरी से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u019_t1",
+              "role": "subject",
+              "text": "हैकिंग डेटा चोरी करने या नेटवर्क संचालन को बाधित करने के लिए सिस्टम सुरक्षा में सेंध लगाती है,",
+              "role_hint": "फ़िशिंग की व्याख्या करें"
+            },
+            {
+              "id": "hi_u019_t2",
+              "role": "process",
+              "text": "जबकि फ़िशिंग संवेदनशील क्रेडेंशियल चुराने के लिए भ्रामक ईमेल और नकली वेबसाइटों का उपयोग करती है,",
+              "role_hint": "पहचान की चोरी और धोखाधड़ी के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u019_t3",
+              "role": "result",
+              "text": "पहचान की चोरी और ऑनलाइन धोखाधड़ी को सक्षम करते हुए जहाँ अवैध वित्तीय लाभ के लिए जानकारी का दुरुपयोग होता है",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u019_d1",
+              "category": "logical",
+              "text": "फ़िशिंग विशेष रूप से प्रमाणित विक्रेताओं से एंटीवायरस डाउनलोड करने को संदर्भित करती है,",
+              "penalty_explanation": "फ़िशिंग एक अवैध साइबर अपराध है, वैध एंटीवायरस इंस्टॉलेशन नहीं।"
+            },
+            {
+              "id": "hi_u019_d2",
+              "category": "grammatical",
+              "text": "साइबर अपराध को केवल राष्ट्रीय डाक वैन द्वारा भेजे गए ऑफ़लाइन पत्रों तक सीमित करते हुए,",
+              "penalty_explanation": "साइबर अपराध में अनिवार्य रूप से डिजिटल कंप्यूटर, नेटवर्क और इंटरनेट शामिल होते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Cybercrimes include hacking (unauthorized intrusion), phishing (fake sites/emails), identity theft, and online scams.",
+        "hi": "साइबर अपराधों में हैकिंग (अनधिकृत घुसपैठ), फ़िशिंग (फर्जी ईमेल/साइटें), पहचान की चोरी और ऑनलाइन धोखाधड़ी शामिल हैं।"
+      }
+    },
+    {
+      "unit_id": "u20_cyber_law_it_act",
+      "topic": "Cyber Law & The Indian Information Technology Act (IT Act 2000/2008)",
+      "pedagogical_objective": "Understand the role of cyber legislation in regulating digital transactions and analyze the legal framework of the Indian IT Act, 2000 (and 2008 amendment).",
+      "instruction": {
+        "title": {
+          "en": "Cyber Law and the Indian Information Technology Act",
+          "hi": "साइबर कानून और भारतीय सूचना प्रौद्योगिकी अधिनियम (IT Act)"
+        },
+        "theory": {
+          "en": "Cyber Law represents the legal and regulatory framework governing digital activities, electronic commerce, online transactions, and cybersecurity on the Internet. In India, cyber legislation is primarily codified under the `Information Technology Act, 2000` (IT Act). The act was amended in `2008` to address evolving cyber threats, providing legal recognition for digital signatures and penalizing offenses such as hacking, identity theft, and cyber terrorism.",
+          "hi": "साइबर कानून उन कानूनी नियमों और विनियमों को संदर्भित करता है जो इंटरनेट पर साइबर गतिविधियों, ई-कॉमर्स, इलेक्ट्रॉनिक लेनदेन और साइबर सुरक्षा को नियंत्रित करते हैं। भारत में, साइबर कानून मुख्य रूप से `सूचना प्रौद्योगिकी अधिनियम, 2000` (IT Act 2000) में निहित है। साइबर स्पेस में उभरती चुनौतियों का समाधान करने के लिए इसमें वर्ष `2008` में संशोधन किया गया था, जो डिजिटल हस्ताक्षर को मान्यता देता है और हैकिंग तथा साइबर अपराधों के लिए दंड का प्रावधान करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "aspect_ratio": "16/9",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Legal Framework: The Indian Information Technology Act</text><rect x='40' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='170' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>IT Act, 2000</text><text x='170' y='135' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Foundational cyber legislation</text><text x='170' y='160' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Legalizes electronic commerce</text><text x='170' y='185' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Recognizes Digital Signatures</text><text x='170' y='210' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Regulates cyber transactions</text><text x='170' y='238' fill='#fbbf24' font-family='sans-serif' font-size='10' text-anchor='middle'>Initial regulatory framework</text><rect x='340' y='75' width='260' height='180' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='470' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>2008 Amendment</text><text x='470' y='135' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Addresses emerging cyber crimes</text><text x='470' y='160' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Stricter penalties for hacking</text><text x='470' y='185' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Child pornography &amp; identity theft</text><text x='470' y='210' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Defines Cyber Terrorism clauses</text><text x='470' y='238' fill='#4ade80' font-family='sans-serif' font-size='10' text-anchor='middle'>Updated modern cyber enforcement</text></svg>",
+          "caption": {
+            "en": "The legal structure of the Indian Information Technology Act (2000) and its modern 2008 amendments.",
+            "hi": "भारतीय सूचना प्रौद्योगिकी अधिनियम (2000) और इसके 2008 के आधुनिक संशोधनों की कानूनी रूपरेखा।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "max_score": 10,
+          "prompt": "Construct the sequence defining the mandate and evolution of Indian cyber law under the IT Act.",
+          "hint": "Define cyber law governing digital activities, cite the IT Act 2000, and explain the 2008 amendment.",
+          "target_sequence": [
+            {
+              "id": "en_u20_t1",
+              "role": "subject",
+              "text": "cyber law establishes legal rules governing electronic transactions and internet security,",
+              "role_hint": "cite the foundational Indian legislation"
+            },
+            {
+              "id": "en_u20_t2",
+              "role": "process",
+              "text": "codified in india under the information technology act of 2000,",
+              "role_hint": "conclude with the 2008 amendment"
+            },
+            {
+              "id": "en_u20_t3",
+              "role": "result",
+              "text": "and amended in 2008 to penalize emerging cyber crimes including hacking and identity theft",
+              "role_hint": "sequence is complete"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u20_d1",
+              "category": "logical",
+              "text": "the information technology act completely legalizes identity theft across commercial banks,",
+              "penalty_explanation": "The IT Act strictly criminalizes identity theft, financial fraud, and unauthorized hacking."
+            },
+            {
+              "id": "en_u20_d2",
+              "category": "grammatical",
+              "text": "restricting cyber law strictly to maritime sailing ships across international waters,",
+              "penalty_explanation": "Cyber law applies to digital activities, computer networks, and the Internet."
+            }
+          ]
+        },
+        "hi": {
+          "max_score": 10,
+          "prompt": "IT अधिनियम के तहत भारतीय साइबर कानून के उद्देश्य और विकास को दर्शाने वाले सही क्रम को व्यवस्थित करें।",
+          "hint": "इलेक्ट्रॉनिक लेनदेन को नियंत्रित करने वाले साइबर कानून से शुरू करें, IT Act 2000 का उल्लेख करें और 2008 संशोधन से समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u020_t1",
+              "role": "subject",
+              "text": "साइबर कानून इलेक्ट्रॉनिक लेनदेन और इंटरनेट सुरक्षा को नियंत्रित करने वाले नियम स्थापित करता है,",
+              "role_hint": "भारतीय कानून का उल्लेख करें"
+            },
+            {
+              "id": "hi_u020_t2",
+              "role": "process",
+              "text": "जो भारत में सूचना प्रौद्योगिकी अधिनियम 2000 (IT Act 2000) के तहत संहिताबद्ध है,",
+              "role_hint": "2008 संशोधन के साथ समाप्त करें"
+            },
+            {
+              "id": "hi_u020_t3",
+              "role": "result",
+              "text": "और हैकिंग तथा पहचान की चोरी जैसे अपराधों को दंडित करने के लिए 2008 में संशोधित किया गया",
+              "role_hint": "क्रम पूरा हो चुका है"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u020_d1",
+              "category": "logical",
+              "text": "सूचना प्रौद्योगिकी अधिनियम वाणिज्यिक बैंकों में पहचान की चोरी को पूरी तरह से वैध बनाता है,",
+              "penalty_explanation": "IT अधिनियम पहचान की चोरी और साइबर धोखाधड़ी को अपराध मानता है और इसके लिए दंड का प्रावधान करता है।"
+            },
+            {
+              "id": "hi_u020_d2",
+              "category": "grammatical",
+              "text": "साइबर कानून को केवल अंतरराष्ट्रीय समुद्री जहाजों तक सीमित रखते हुए,",
+              "penalty_explanation": "साइबर कानून का संबंध इंटरनेट, कंप्यूटर और डिजिटल लेनदेन से है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Cyber law regulates digital activities; India's IT Act 2000 (amended in 2008) provides legal rules and penalizes cybercrimes.",
+        "hi": "साइबर कानून डिजिटल गतिविधियों को नियंत्रित करता है; भारत का IT Act 2000 (2008 में संशोधित) साइबर अपराधों के लिए दंड तय करता है।"
+      }
+    }
+  ]
+}
