@@ -23,7 +23,7 @@
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Computer Networking Link</text><rect x=\"45\" y=\"75\" width=\"130\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"110\" y=\"102\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Computing Devices</text><rect x=\"235\" y=\"75\" width=\"130\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"102\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Interlinking</text><rect x=\"425\" y=\"75\" width=\"130\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"490\" y=\"102\" fill=\"#4ade80\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Resource Sharing</text><line x1=\"110\" y1=\"130\" x2=\"110\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"490\" y1=\"130\" x2=\"490\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"110\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"110\" dy=\"0\">Laptops &amp;</tspan><tspan x=\"110\" dy=\"1.2em\">Smartphones</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Wired or</tspan><tspan x=\"300\" dy=\"1.2em\">Wireless Media</tspan></text><text x=\"490\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"490\" dy=\"0\">Information &amp;</tspan><tspan x=\"490\" dy=\"1.2em\">Hardware</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Computer Networking Link</text><rect x=\"45\" y=\"75\" width=\"130\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"110\" y=\"102\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Computing Devices</text><rect x=\"235\" y=\"75\" width=\"130\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"102\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Interlinking</text><rect x=\"425\" y=\"75\" width=\"130\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"490\" y=\"102\" fill=\"#4ade80\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Resource Sharing</text><line x1=\"110\" y1=\"130\" x2=\"110\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"490\" y1=\"130\" x2=\"490\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"110\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"110\" dy=\"0\">Laptops &amp;</tspan><tspan x=\"110\" dy=\"1.2em\">Smartphones</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Wired or</tspan><tspan x=\"300\" dy=\"1.2em\">Wireless Media</tspan></text><text x=\"490\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"490\" dy=\"0\">Information &amp;</tspan><tspan x=\"490\" dy=\"1.2em\">Hardware</tspan></text></svg>",
           "caption": {
             "en": "Interlinking computing devices over wired or wireless media to form a network.",
             "hi": "वायर्ड या वायरलेस माध्यम से कंप्यूटिंग उपकरणों को जोड़कर एक नेटवर्क बनाना।"
@@ -32,69 +32,69 @@
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the harmonious definition of computer networking in correct sequential order.",
-          "hint": "Start with the linked devices, specify the physical medium, describe information exchange, and conclude with shared hardware.",
+          "prompt": "Construct the harmonious sentence defining computer networking in correct sequence.",
+          "hint": "Start with multiple computing devices, choose the transmission medium, mention sharing data, and conclude with pooling hardware resources.",
           "target_sequence": [
             {
               "id": "en_u1_t1",
-              "text": "A Computer network links multiple computing devices together,",
-              "role_hint": "Open with the main subject linking devices like laptops and computers"
+              "text": "A Computer network links multiple computing devices together",
+              "role_hint": "Lead with the primary subject linking computing devices"
             },
             {
               "id": "en_u1_t2",
-              "text": "using wired or wireless transmission media,",
-              "role_hint": "Specify the connecting communication channels"
+              "text": "by using wired or wireless transmission media",
+              "role_hint": "Specify the transmission channel connecting the nodes"
             },
             {
               "id": "en_u1_t3",
-              "text": "so that users can easily share data and information,",
-              "role_hint": "State the primary objective of sharing files and information"
+              "text": "so that users can seamlessly share data and information",
+              "role_hint": "Detail the primary information sharing purpose"
             },
             {
               "id": "en_u1_t4",
               "text": "while pooling hardware resources like printers and storage devices",
-              "role_hint": "Conclude smoothly with the sharing of physical hardware"
+              "role_hint": "Conclude smoothly on the shared physical hardware"
             }
           ],
           "distractors": [
             {
               "id": "en_u1_d1",
               "category": "logical",
-              "text": "while keeping each computing device completely isolated from others",
-              "penalty_explanation": "Networking interlinks devices to share resources rather than keeping them isolated."
+              "text": "by strictly isolating all computing devices from external communication",
+              "penalty_explanation": "Networking requires establishing links between devices to share data, not isolating them."
             }
           ]
         },
         "hi": {
-          "prompt": "कंप्यूटर नेटवर्किंग की सटीक परिभाषा प्रस्तुत करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "उपकरणों के जुड़ाव से शुरू करें, संचार माध्यम जोड़ें, जानकारी साझा करना बताएं, और हार्डवेयर साझा करने पर समाप्त करें।",
+          "prompt": "कंप्यूटर नेटवर्किंग की सटीक परिभाषा प्रस्तुत करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "उपकरणों के जुड़ाव से शुरू करें, माध्यम जोड़ें, डेटा साझा करना बताएं, और हार्डवेयर साझा करने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u1_t1",
-              "text": "कंप्यूटर नेटवर्क कई कंप्यूटिंग उपकरणों को आपस में जोड़ता है,",
+              "text": "कंप्यूटर नेटवर्क कई कंप्यूटिंग उपकरणों को आपस में जोड़ता है",
               "role_hint": "कंप्यूटर और लैपटॉप जैसे उपकरणों को जोड़ने वाले मुख्य उपवाक्य से शुरुआत करें"
             },
             {
               "id": "hi_u1_t2",
-              "text": "वायर्ड या वायरलेस संचार माध्यमों का उपयोग करके,",
+              "text": "वायर्ड या वायरलेस संचार माध्यमों का उपयोग करके",
               "role_hint": "उपकरणों को जोड़ने वाले माध्यम को स्पष्ट करें"
             },
             {
               "id": "hi_u1_t3",
-              "text": "ताकि उपयोगकर्ता आसानी से डेटा और जानकारी साझा कर सकें,",
+              "text": "ताकि उपयोगकर्ता आसानी से डेटा और जानकारी साझा कर सकें",
               "role_hint": "डेटा और सूचना साझा करने के मुख्य उद्देश्य को जोड़ें"
             },
             {
               "id": "hi_u1_t4",
               "text": "और साथ ही प्रिंटर व स्टोरेज जैसे हार्डवेयर संसाधनों का भी उपयोग कर सकें",
-              "role_hint": "हार्डवेयर साझा करने के साथ वाक्य को स्वाभाविक रूप से पूरा करें"
+              "role_hint": "हार्डवेयर साझा करने के साथ वाक्य को पूरा करें"
             }
           ],
           "distractors": [
             {
               "id": "hi_u1_d1",
               "category": "logical",
-              "text": "जबकि प्रत्येक डिवाइस को अन्य सभी उपकरणों से पूरी तरह अलग रखा जाता है",
+              "text": "सभी उपकरणों को बाहरी संचार से पूरी तरह अलग-थलग रखकर",
               "penalty_explanation": "नेटवर्किंग उपकरणों को जोड़ने और संसाधन साझा करने के लिए होती है, अलग रखने के लिए नहीं।"
             }
           ]
@@ -117,7 +117,7 @@
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Networking Advantages Overview</text><rect x=\"45\" y=\"75\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"100\" y=\"102\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Hardware</text><rect x=\"180\" y=\"75\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"235\" y=\"102\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Software</text><rect x=\"315\" y=\"75\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"370\" y=\"102\" fill=\"#4ade80\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Communication</text><rect x=\"450\" y=\"75\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"505\" y=\"102\" fill=\"#f87171\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Low Cost</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"235\" y1=\"130\" x2=\"235\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"370\" y1=\"130\" x2=\"370\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"505\" y1=\"130\" x2=\"505\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Printers &amp;</tspan><tspan x=\"100\" dy=\"1.2em\">Scanners</tspan></text><text x=\"235\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"235\" dy=\"0\">Single</tspan><tspan x=\"235\" dy=\"1.2em\">Copy</tspan></text><text x=\"370\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"370\" dy=\"0\">Email &amp;</tspan><tspan x=\"370\" dy=\"1.2em\">Chat</tspan></text><text x=\"505\" y=\"202\" fill=\"#f87171\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"505\" dy=\"0\">Fewer</tspan><tspan x=\"505\" dy=\"1.2em\">Devices</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Networking Advantages Overview</text><rect x=\"45\" y=\"75\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"100\" y=\"102\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Hardware</text><rect x=\"180\" y=\"75\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"235\" y=\"102\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Software</text><rect x=\"315\" y=\"75\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"370\" y=\"102\" fill=\"#4ade80\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Communication</text><rect x=\"450\" y=\"75\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"505\" y=\"102\" fill=\"#f87171\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Low Cost</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"235\" y1=\"130\" x2=\"235\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"370\" y1=\"130\" x2=\"370\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"505\" y1=\"130\" x2=\"505\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Printers &amp;</tspan><tspan x=\"100\" dy=\"1.2em\">Scanners</tspan></text><text x=\"235\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"235\" dy=\"0\">Single</tspan><tspan x=\"235\" dy=\"1.2em\">Copy</tspan></text><text x=\"370\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"370\" dy=\"0\">Email &amp;</tspan><tspan x=\"370\" dy=\"1.2em\">Chat</tspan></text><text x=\"505\" y=\"202\" fill=\"#f87171\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"505\" dy=\"0\">Fewer</tspan><tspan x=\"505\" dy=\"1.2em\">Devices</tspan></text></svg>",
           "caption": {
             "en": "Key advantages of networking including resource sharing, communication, and cost reduction.",
             "hi": "नेटवर्किंग के मुख्य लाभ: संसाधन साझा करना, संचार और लागत में कमी।"
@@ -126,28 +126,28 @@
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the fluent statement summarizing the primary advantages of networking.",
+          "prompt": "Construct the fluent sentence summarizing the primary advantages of networking.",
           "hint": "Start with sharing hardware, add shared software, include communication, and conclude with cost savings.",
           "target_sequence": [
             {
               "id": "en_u2_t1",
-              "text": "Sharing hardware like printers and scanners across a network,",
+              "text": "Sharing hardware like printers and scanners across a network",
               "role_hint": "Lead with the physical resource pooling advantage"
             },
             {
               "id": "en_u2_t2",
-              "text": "along with utilizing a single software copy on multiple devices,",
+              "text": "along with running a single software copy on multiple devices",
               "role_hint": "Add the software efficiency clause"
             },
             {
               "id": "en_u2_t3",
-              "text": "provides rich communication facilities like email and video conferencing,",
+              "text": "provides rich communication facilities like email and video conferencing",
               "role_hint": "Introduce interpersonal messaging capabilities"
             },
             {
               "id": "en_u2_t4",
               "text": "which significantly reduces overall equipment and deployment costs",
-              "role_hint": "Complete the sentence with the major financial benefit"
+              "role_hint": "Complete the thought on the major financial benefit"
             }
           ],
           "distractors": [
@@ -165,17 +165,17 @@
           "target_sequence": [
             {
               "id": "hi_u2_t1",
-              "text": "नेटवर्क पर प्रिंटर और स्कैनर जैसे हार्डवेयर साझा करना,",
+              "text": "नेटवर्क पर प्रिंटर और स्कैनर जैसे हार्डवेयर साझा करना",
               "role_hint": "हार्डवेयर संसाधनों के साझाकरण वाले मुख्य उपवाक्य से शुरुआत करें"
             },
             {
               "id": "hi_u2_t2",
-              "text": "तथा कई उपकरणों पर सॉफ्टवेयर की एक ही प्रति का उपयोग करना,",
+              "text": "तथा कई उपकरणों पर सॉफ्टवेयर की एक ही प्रति का उपयोग करना",
               "role_hint": "सॉफ्टवेयर की दक्षता से संबंधित उपवाक्य जोड़ें"
             },
             {
               "id": "hi_u2_t3",
-              "text": "ईमेल और वीडियो कॉन्फ्रेंसिंग जैसी बेहतर संचार सुविधाएं देता है,",
+              "text": "ईमेल और वीडियो कॉन्फ्रेंसिंग जैसी बेहतर संचार सुविधाएं देता है",
               "role_hint": "संचार और संवाद संबंधी सुविधाओं को शामिल करें"
             },
             {
@@ -211,7 +211,7 @@
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#f87171\"/><text x=\"300\" y=\"38\" fill=\"#f87171\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Disadvantages of Networking</text><rect x=\"70\" y=\"75\" width=\"200\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"170\" y=\"102\" fill=\"#f87171\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Security</text><rect x=\"330\" y=\"75\" width=\"200\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"430\" y=\"102\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Reliability Issues</text><line x1=\"170\" y1=\"130\" x2=\"170\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"430\" y1=\"130\" x2=\"430\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"170\" y=\"172\" fill=\"#f87171\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"170\" dy=\"0\">Risk of Misuse by</tspan><tspan x=\"170\" dy=\"1.2em\">Unauthorised Users</tspan></text><text x=\"430\" y=\"202\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"430\" dy=\"0\">Fail or Slow Down</tspan><tspan x=\"430\" dy=\"1.2em\">Due to Connectivity</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#f87171\"/><text x=\"300\" y=\"38\" fill=\"#f87171\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Disadvantages of Networking</text><rect x=\"70\" y=\"75\" width=\"200\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"170\" y=\"102\" fill=\"#f87171\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Security</text><rect x=\"330\" y=\"75\" width=\"200\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"430\" y=\"102\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Reliability Issues</text><line x1=\"170\" y1=\"130\" x2=\"170\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"430\" y1=\"130\" x2=\"430\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"170\" y=\"172\" fill=\"#f87171\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"170\" dy=\"0\">Risk of Misuse by</tspan><tspan x=\"170\" dy=\"1.2em\">Unauthorised Users</tspan></text><text x=\"430\" y=\"202\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"430\" dy=\"0\">Fail or Slow Down</tspan><tspan x=\"430\" dy=\"1.2em\">Due to Connectivity</tspan></text></svg>",
           "caption": {
             "en": "Primary operational risks of networking: security misuse and network downtime.",
             "hi": "नेटवर्किंग के मुख्य जोखिम: अनधिकृत सुरक्षा दुरुपयोग और नेटवर्क डाउनटाइम।"
@@ -225,17 +225,17 @@
           "target_sequence": [
             {
               "id": "en_u3_t1",
-              "text": "Sharing data over a computer network can be risky,",
+              "text": "Sharing data over a computer network can be risky",
               "role_hint": "Lead with the exposure of shared information"
             },
             {
               "id": "en_u3_t2",
-              "text": "because confidential files may be misused by unauthorised users,",
+              "text": "because confidential files may be misused by unauthorised users",
               "role_hint": "Add the data security vulnerability clause"
             },
             {
               "id": "en_u3_t3",
-              "text": "while unpredictable connectivity issues can also occur,",
+              "text": "while unpredictable connectivity issues can also occur",
               "role_hint": "Transition to physical connection issues"
             },
             {
@@ -259,17 +259,17 @@
           "target_sequence": [
             {
               "id": "hi_u3_t1",
-              "text": "कंप्यूटर नेटवर्क पर डेटा साझा करना जोखिम भरा हो सकता है,",
+              "text": "कंप्यूटर नेटवर्क पर डेटा साझा करना जोखिम भरा हो सकता है",
               "role_hint": "डेटा साझा करने से जुड़े जोखिम वाले मुख्य उपवाक्य से शुरुआत करें"
             },
             {
               "id": "hi_u3_t2",
-              "text": "क्योंकि गोपनीय फ़ाइलों का अनधिकृत उपयोगकर्ताओं द्वारा दुरुपयोग हो सकता है,",
+              "text": "क्योंकि गोपनीय फ़ाइलों का अनधिकृत उपयोगकर्ताओं द्वारा दुरुपयोग हो सकता है",
               "role_hint": "डेटा सुरक्षा और अनाधिकृत पहुंच से जुड़ा उपवाक्य जोड़ें"
             },
             {
               "id": "hi_u3_t3",
-              "text": "साथ ही कनेक्टिविटी से जुड़ी अप्रत्याशित समस्याएं भी आ सकती हैं,",
+              "text": "साथ ही कनेक्टिविटी से जुड़ी अप्रत्याशित समस्याएं भी आ सकती हैं",
               "role_hint": "कनेक्टिविटी बाधाओं से संबंधित उपवाक्य जोड़ें"
             },
             {
@@ -305,7 +305,7 @@
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"30\" y=\"20\" width=\"540\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client-Server Architecture</text><rect x=\"35\" y=\"70\" width=\"210\" height=\"60\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"140\" y=\"92\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client</text><text x=\"140\" y=\"112\" fill=\"#94a3b8\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Less Powerful Computer</text><rect x=\"355\" y=\"70\" width=\"210\" height=\"60\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"460\" y=\"92\" fill=\"#4ade80\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Server</text><text x=\"460\" y=\"112\" fill=\"#94a3b8\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Powerful Computer</text><line x1=\"245\" y1=\"85\" x2=\"355\" y2=\"85\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"355,85 347,81 347,89\" fill=\"#38bdf8\"/><text x=\"300\" y=\"77\" fill=\"#38bdf8\" font-size=\"10\" text-anchor=\"middle\">Sends Request</text><line x1=\"355\" y1=\"115\" x2=\"245\" y2=\"115\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"245,115 253,111 253,119\" fill=\"#fbbf24\"/><text x=\"300\" y=\"128\" fill=\"#fbbf24\" font-size=\"10\" text-anchor=\"middle\">Sends Information</text><line x1=\"85\" y1=\"135\" x2=\"85\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"185\" y1=\"135\" x2=\"185\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"410\" y1=\"135\" x2=\"410\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"510\" y1=\"135\" x2=\"510\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"85\" y=\"167\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"85\" dy=\"0\">Requires</tspan><tspan x=\"85\" dy=\"1.2em\">Services</tspan></text><text x=\"185\" y=\"202\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"185\" dy=\"0\">User</tspan><tspan x=\"185\" dy=\"1.2em\">Workstation</tspan></text><text x=\"410\" y=\"167\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"410\" dy=\"0\">Processes</tspan><tspan x=\"410\" dy=\"1.2em\">Request</tspan></text><text x=\"510\" y=\"202\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"510\" dy=\"0\">Provides</tspan><tspan x=\"510\" dy=\"1.2em\">Services</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"30\" y=\"20\" width=\"540\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client-Server Architecture</text><rect x=\"35\" y=\"70\" width=\"210\" height=\"60\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"140\" y=\"92\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client</text><text x=\"140\" y=\"112\" fill=\"#94a3b8\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Less Powerful Computer</text><rect x=\"355\" y=\"70\" width=\"210\" height=\"60\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"460\" y=\"92\" fill=\"#4ade80\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Server</text><text x=\"460\" y=\"112\" fill=\"#94a3b8\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Powerful Computer</text><line x1=\"245\" y1=\"85\" x2=\"355\" y2=\"85\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"355,85 347,81 347,89\" fill=\"#38bdf8\"/><text x=\"300\" y=\"77\" fill=\"#38bdf8\" font-size=\"10\" text-anchor=\"middle\">Sends Request</text><line x1=\"355\" y1=\"115\" x2=\"245\" y2=\"115\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"245,115 253,111 253,119\" fill=\"#fbbf24\"/><text x=\"300\" y=\"128\" fill=\"#fbbf24\" font-size=\"10\" text-anchor=\"middle\">Sends Information</text><line x1=\"85\" y1=\"135\" x2=\"85\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"185\" y1=\"135\" x2=\"185\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"410\" y1=\"135\" x2=\"410\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"510\" y1=\"135\" x2=\"510\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"85\" y=\"167\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"85\" dy=\"0\">Requires</tspan><tspan x=\"85\" dy=\"1.2em\">Services</tspan></text><text x=\"185\" y=\"202\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"185\" dy=\"0\">User</tspan><tspan x=\"185\" dy=\"1.2em\">Workstation</tspan></text><text x=\"410\" y=\"167\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"410\" dy=\"0\">Processes</tspan><tspan x=\"410\" dy=\"1.2em\">Request</tspan></text><text x=\"510\" y=\"202\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"510\" dy=\"0\">Provides</tspan><tspan x=\"510\" dy=\"1.2em\">Services</tspan></text></svg>",
           "caption": {
             "en": "Client-server architecture displaying request and response flow between computers.",
             "hi": "क्लाइंट और सर्वर कंप्यूटर के बीच अनुरोध और प्रतिक्रिया प्रवाह।"
@@ -319,17 +319,17 @@
           "target_sequence": [
             {
               "id": "en_u4_t1",
-              "text": "A client computer sends a service request,",
+              "text": "A client computer sends a service request",
               "role_hint": "Lead with the less powerful client initiating a service request"
             },
             {
               "id": "en_u4_t2",
-              "text": "which travels across the network to the server,",
+              "text": "which travels across the network to the server",
               "role_hint": "Add the transmission pathway clause"
             },
             {
               "id": "en_u4_t3",
-              "text": "where the powerful server accepts and processes that request,",
+              "text": "where the powerful server accepts and processes that request",
               "role_hint": "Explain the server-side handling and processing"
             },
             {
@@ -353,17 +353,17 @@
           "target_sequence": [
             {
               "id": "hi_u4_t1",
-              "text": "क्लाइंट कंप्यूटर किसी सेवा के लिए अनुरोध भेजता है,",
+              "text": "क्लाइंट कंप्यूटर किसी सेवा के लिए अनुरोध भेजता है",
               "role_hint": "क्लाइंट द्वारा सेवा अनुरोध शुरू करने वाले मुख्य उपवाक्य से शुरुआत करें"
             },
             {
               "id": "hi_u4_t2",
-              "text": "जो नेटवर्क के माध्यम से मुख्य सर्वर तक पहुँचता है,",
+              "text": "जो नेटवर्क के माध्यम से मुख्य सर्वर तक पहुँचता है",
               "role_hint": "नेटवर्क मार्ग से जुड़ा उपवाक्य जोड़ें"
             },
             {
               "id": "hi_u4_t3",
-              "text": "जहाँ शक्तिशाली सर्वर उस अनुरोध को स्वीकार करके संसाधित करता है,",
+              "text": "जहाँ शक्तिशाली सर्वर उस अनुरोध को स्वीकार करके संसाधित करता है",
               "role_hint": "सर्वर की प्रोसेसिंग क्रिया से जुड़ा उपवाक्य जोड़ें"
             },
             {
@@ -399,7 +399,7 @@
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Scripting Comparison: Browser vs. Server</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"102\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client-Side Scripting</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"102\" fill=\"#4ade80\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Server-Side Scripting</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Runs in</tspan><tspan x=\"100\" dy=\"1.2em\">Browser</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Faster Response /</tspan><tspan x=\"225\" dy=\"1.2em\">No Server DB</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Runs on</tspan><tspan x=\"375\" dy=\"1.2em\">Server</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Can Access</tspan><tspan x=\"500\" dy=\"1.2em\">Database &amp; Files</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Scripting Comparison: Browser vs. Server</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"102\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client-Side Scripting</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"102\" fill=\"#4ade80\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Server-Side Scripting</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Runs in</tspan><tspan x=\"100\" dy=\"1.2em\">Browser</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Faster Response /</tspan><tspan x=\"225\" dy=\"1.2em\">No Server DB</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Runs on</tspan><tspan x=\"375\" dy=\"1.2em\">Server</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Can Access</tspan><tspan x=\"500\" dy=\"1.2em\">Database &amp; Files</tspan></text></svg>",
           "caption": {
             "en": "Direct comparison between client-side and server-side script execution capabilities.",
             "hi": "क्लाइंट-साइड और सर्वर-साइड स्क्रिप्ट निष्पादन क्षमताओं की सीधी तुलना।"
@@ -413,17 +413,17 @@
           "target_sequence": [
             {
               "id": "en_u5_t1",
-              "text": "Client-side scripting runs directly in the user browser,",
+              "text": "Client-side scripting runs directly in the user browser",
               "role_hint": "Lead with client-side execution location"
             },
             {
               "id": "en_u5_t2",
-              "text": "providing faster response times without accessing the server database,",
+              "text": "providing faster response times without accessing the server database",
               "role_hint": "Add the performance and database restriction clause"
             },
             {
               "id": "en_u5_t3",
-              "text": "whereas server-side scripting executes on the remote server,",
+              "text": "whereas server-side scripting executes on the remote server",
               "role_hint": "Introduce server-side execution location"
             },
             {
@@ -447,17 +447,17 @@
           "target_sequence": [
             {
               "id": "hi_u5_t1",
-              "text": "क्लाइंट-साइड स्क्रिप्टिंग सीधे उपयोगकर्ता के ब्राउज़र में चलती है,",
+              "text": "क्लाइंट-साइड स्क्रिप्टिंग सीधे उपयोगकर्ता के ब्राउज़र में चलती है",
               "role_hint": "क्लाइंट स्क्रिप्ट के निष्पादन स्थान वाले मुख्य उपवाक्य से शुरुआत करें"
             },
             {
               "id": "hi_u5_t2",
-              "text": "जो सर्वर डेटाबेस तक पहुंचे बिना तेज़ प्रतिक्रिया देती है,",
+              "text": "जो सर्वर डेटाबेस तक पहुंचे बिना तेज़ प्रतिक्रिया देती है",
               "role_hint": "क्लाइंट स्क्रिप्ट की गति और डेटाबेस सीमाओं को जोड़ें"
             },
             {
               "id": "hi_u5_t3",
-              "text": "जबकि सर्वर-साइड स्क्रिप्टिंग मुख्य सर्वर कंप्यूटर पर चलती है,",
+              "text": "जबकि सर्वर-साइड स्क्रिप्टिंग मुख्य सर्वर कंप्यूटर पर चलती है",
               "role_hint": "सर्वर स्क्रिप्ट के निष्पादन स्थान से जुड़ा उपवाक्य जोड़ें"
             },
             {
@@ -493,7 +493,7 @@
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Publishing Requirements</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"102\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Development Software</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"102\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web-Server</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"102\" fill=\"#4ade80\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Internet Connection</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Creating</tspan><tspan x=\"120\" dy=\"1.2em\">Web Content</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Hosting &amp;</tspan><tspan x=\"300\" dy=\"1.2em\">Storing Pages</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Uploading</tspan><tspan x=\"480\" dy=\"1.2em\">to Internet</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Publishing Requirements</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"102\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Development Software</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"102\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web-Server</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"102\" fill=\"#4ade80\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Internet Connection</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Creating</tspan><tspan x=\"120\" dy=\"1.2em\">Web Content</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Hosting &amp;</tspan><tspan x=\"300\" dy=\"1.2em\">Storing Pages</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Uploading</tspan><tspan x=\"480\" dy=\"1.2em\">to Internet</tspan></text></svg>",
           "caption": {
             "en": "The three essential resources needed for publishing websites online.",
             "hi": "वेबसाइटों को ऑनलाइन प्रकाशित करने के लिए आवश्यक तीन मुख्य संसाधन।"
@@ -507,17 +507,17 @@
           "target_sequence": [
             {
               "id": "en_u6_t1",
-              "text": "Web publishing is the process of uploading content to the internet,",
+              "text": "Web publishing is the process of uploading content to the internet",
               "role_hint": "Lead with the primary definition of web publishing"
             },
             {
               "id": "en_u6_t2",
-              "text": "involving creating and updating web-pages and web-blogs,",
+              "text": "involving creating and updating web-pages and web-blogs",
               "role_hint": "Add the developmental tasks clause"
             },
             {
               "id": "en_u6_t3",
-              "text": "which requires dedicated web-development software and a web-server,",
+              "text": "which requires dedicated web-development software and a web-server",
               "role_hint": "Specify the authoring tool and hosting infrastructure"
             },
             {
@@ -541,17 +541,17 @@
           "target_sequence": [
             {
               "id": "hi_u6_t1",
-              "text": "वेब प्रकाशन इंटरनेट पर सामग्री अपलोड करने की प्रक्रिया है,",
+              "text": "वेब प्रकाशन इंटरनेट पर सामग्री अपलोड करने की प्रक्रिया है",
               "role_hint": "वेब प्रकाशन की मूल परिभाषा वाले मुख्य उपवाक्य से शुरुआत करें"
             },
             {
               "id": "hi_u6_t2",
-              "text": "जिसमें वेब-पेज और वेब-ब्लॉग बनाना और अपडेट करना शामिल है,",
+              "text": "जिसमें वेब-पेज और वेब-ब्लॉग बनाना और अपडेट करना शामिल है",
               "role_hint": "पेज बनाने और सुधारने से जुड़ा उपवाक्य जोड़ें"
             },
             {
               "id": "hi_u6_t3",
-              "text": "जिसके लिए वेब-विकास सॉफ्टवेयर और वेब-सर्वर की आवश्यकता होती है,",
+              "text": "जिसके लिए वेब-विकास सॉफ्टवेयर और वेब-सर्वर की आवश्यकता होती है",
               "role_hint": "उपकरण और सर्वर की आवश्यकता वाला उपवाक्य जोड़ें"
             },
             {
