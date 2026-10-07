@@ -1,2417 +1,461 @@
 {
-  "chapter_id": "ch05_html_fundamentals",
   "metadata": {
     "class": "Class 11",
     "subject": "Informatics Practices",
     "chapter_title": {
-      "en": "HTML Fundamentals & Document Structure",
-      "hi": "एचटीएमएल मूलभूत सिद्धांत और दस्तावेज़ संरचना"
-    },
-    "total_units": 20,
-    "scoring_model": {
-      "single_language_max": 10,
-      "dual_language_mastery_max": 20
+      "en": "HTML Fundamentals - Part 1",
+      "hi": "एचटीएमएल मूलभूत सिद्धांत - भाग 1"
     }
   },
   "learning_units": [
     {
-      "unit_id": "u01_html_intro_tools",
-      "topic": "HTML Overview & Editing Workflow",
-      "pedagogical_objective": "Understand the definition of Hypertext Markup Language, valid extensions, text editor requirements, and browser rendering.",
       "instruction": {
         "title": {
-          "en": "Introduction to HTML and Web Authoring",
-          "hi": "एचटीएमएल और वेब ऑथरिंग का परिचय"
+          "en": "HTML Document Skeleton",
+          "hi": "एचटीएमएल दस्तावेज़ का कंकाल"
         },
         "theory": {
-          "en": "HTML stands for Hypertext Markup Language and serves as the core language of the World Wide Web. An HTML document is fundamentally a plain-text file saved with either `.html` or `.htm` extension. Web pages are authored in editors like Notepad and interpreted by browsers like Google Chrome.",
-          "hi": "HTML का पूर्ण रूप Hypertext Markup Language है और यह इंटरनेट की मुख्य भाषा है। HTML दस्तावेज़ मूल रूप से एक प्लेन-टेक्स्ट फ़ाइल है जिसे `.html` या `.htm` एक्सटेंशन के साथ सहेजा जाता है। वेब पेज नोटपैड जैसे टेक्स्ट एडिटर में बनाए जाते हैं और गूगल क्रोम जैसे ब्राउज़र द्वारा प्रदर्शित किए जाते हैं।"
+          "en": "Every valid web page requires a strict organizational structure. The outer container is the `<html>` element. Inside it, `<head>` holds metadata and `<title>`. After `</head>` closes, `<body>` contains all visible content.",
+          "hi": "प्रत्येक वैध वेब पेज के लिए एक सख्त संगठनात्मक संरचना आवश्यक है। सबसे बाहरी कंटेनर `<html>` तत्व है। इसके अंदर, `<head>` में मेटाडेटा और `<title>` होता है। `</head>` बंद होने के बाद, `<body>` में सभी दृश्य सामग्री होती है।"
         },
         "media": {
           "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='25' width='580' height='40' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='50' fill='#38bdf8' font-family='sans-serif' font-size='15' font-weight='bold' text-anchor='middle'>HTML Document Lifecycle</text><rect x='40' y='90' width='160' height='120' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1.5'/><text x='120' y='125' fill='#fbbf24' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>1. Plain Text Editor</text><text x='120' y='155' fill='#cbd5e1' font-family='monospace' font-size='13' text-anchor='middle'>Notepad</text><text x='120' y='180' fill='#94a3b8' font-family='sans-serif' font-size='11' text-anchor='middle'>Write HTML tags</text><line x1='205' y1='150' x2='245' y2='150' stroke='#38bdf8' stroke-width='2' stroke-dasharray='4'/><polygon points='250,150 242,145 242,155' fill='#38bdf8'/><rect x='255' y='90' width='140' height='120' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='325' y='125' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>2. File Storage</text><text x='325' y='155' fill='#4ade80' font-family='monospace' font-size='13' text-anchor='middle'>page.html</text><text x='325' y='180' fill='#94a3b8' font-family='sans-serif' font-size='11' text-anchor='middle'>Save as All Files</text><line x1='400' y1='150' x2='440' y2='150' stroke='#38bdf8' stroke-width='2' stroke-dasharray='4'/><polygon points='445,150 437,145 437,155' fill='#38bdf8'/><rect x='450' y='90' width='150' height='120' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1.5'/><text x='525' y='125' fill='#4ade80' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>3. Web Browser</text><text x='525' y='155' fill='#cbd5e1' font-family='monospace' font-size='13' text-anchor='middle'>Google Chrome</text><text x='525' y='180' fill='#94a3b8' font-family='sans-serif' font-size='11' text-anchor='middle'>Renders web page</text></svg>",
+          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='40' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='45' fill='#38bdf8' font-family='sans-serif' font-size='15' font-weight='bold' text-anchor='middle'>HTML Skeleton Structure</text><rect x='40' y='80' width='560' height='170' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='60' y='110' fill='#38bdf8' font-family='monospace' font-size='14'>&lt;html&gt;</text><text x='85' y='135' fill='#fbbf24' font-family='monospace' font-size='14'>&lt;head&gt; &lt;title&gt; <tspan fill='#cbd5e1'>Page Title</tspan> &lt;/title&gt; &lt;/head&gt;</text><text x='85' y='165' fill='#f472b6' font-family='monospace' font-size='14'>&lt;body&gt; <tspan fill='#cbd5e1'>Webpage content</tspan> &lt;/body&gt;</text><text x='60' y='195' fill='#38bdf8' font-family='monospace' font-size='14'>&lt;/html&gt;</text></svg>",
           "caption": {
-            "en": "Three-stage workflow: writing markup in Notepad, saving with .html extension, and viewing in a browser.",
-            "hi": "त्रि-स्तरीय कार्यप्रवाह: नोटपैड में मार्कअप लिखना, .html एक्सटेंशन के साथ सहेजना, और ब्राउज़र में देखना।"
+            "en": "Correct tag hierarchy for an HTML document skeleton.",
+            "hi": "एचटीएमएल दस्तावेज़ कंकाल का सही टैग पदानुक्रम।"
           }
         }
       },
       "challenges": {
         "en": {
-          "max_score": 10,
-          "prompt": "Assemble the workflow sequence for preparing and viewing a basic HTML document.",
-          "hint": "Begin by opening a text editor, write your markup, save using the proper extension, and finish by rendering.",
+          "prompt": "Arrange the core HTML tags in correct hierarchical order.",
+          "hint": "Start with root html, open head, declare title, close head, open body, and close root.",
           "target_sequence": [
             {
-              "id": "en_u01_t1",
-              "role": "subject",
-              "text": "open a plain-text editor like Notepad,",
-              "role_hint": "next step is writing the code"
+              "id": "en_u1_t1",
+              "text": "`<html>`",
+              "role_hint": "Next, open the head container for metadata"
             },
             {
-              "id": "en_u01_t2",
-              "role": "process",
-              "text": "write the desired HTML tags and contents,",
-              "role_hint": "now save the file to disk"
+              "id": "en_u1_t2",
+              "text": "`<head><title>Title</title></head>`",
+              "role_hint": "Now open the body tag for visible webpage contents"
             },
             {
-              "id": "en_u01_t3",
-              "role": "process",
-              "text": "save the file with a `.html` extension,",
-              "role_hint": "finally open it in your browser"
+              "id": "en_u1_t3",
+              "text": "`<body>`",
+              "role_hint": "Close body and html root tags to finish"
             },
             {
-              "id": "en_u01_t4",
-              "role": "result",
-              "text": "open the saved file inside a web browser to display the page",
-              "role_hint": "sequence is complete"
+              "id": "en_u1_t4",
+              "text": "`</body></html>`",
+              "role_hint": "Sequence is complete!"
             }
           ],
           "distractors": [
             {
-              "id": "en_u01_d1",
+              "id": "en_u1_d1",
               "category": "logical",
-              "text": "compile the source code into binary machine code before viewing,",
-              "penalty_explanation": "HTML is an interpreted markup language; browsers parse it directly without binary compilation."
-            },
-            {
-              "id": "en_u01_d2",
-              "category": "grammatical",
-              "text": "save the file strictly with a `.exe` extension,",
-              "penalty_explanation": "Web pages require `.html` or `.htm` extensions, not executable binary extensions."
+              "text": "`<body><head>`",
+              "penalty_explanation": "The `<head>` section must close before the `<body>` tag opens."
             }
           ]
         },
         "hi": {
-          "max_score": 10,
-          "prompt": "एक बुनियादी HTML दस्तावेज़ तैयार करने और देखने के सही क्रम को व्यवस्थित करें।",
-          "hint": "टेक्स्ट एडिटर खोलकर शुरुआत करें, कोड लिखें, सही एक्सटेंशन के साथ सेव करें और ब्राउज़र में देखें।",
+          "prompt": "मुख्य एचटीएमएल टैगों को सही पदानुक्रमित क्रम में व्यवस्थित करें।",
+          "hint": "रूट html से शुरू करें, head खोलें, title घोषित करें, head बंद करें, body खोलें और समाप्त करें।",
           "target_sequence": [
             {
-              "id": "hi_u01_t1",
-              "role": "subject",
-              "text": "नोटपैड जैसा एक प्लेन-टेक्स्ट एडिटर खोलें,",
-              "role_hint": "अगला कदम कोड लिखना है"
+              "id": "hi_u1_t1",
+              "text": "`<html>`",
+              "role_hint": "इसके बाद मेटाडेटा के लिए head कंटेनर खोलें"
             },
             {
-              "id": "hi_u01_t2",
-              "role": "process",
-              "text": "वांछित HTML टैग और सामग्री टाइप करें,",
-              "role_hint": "अब फ़ाइल को डिस्क पर सेव करें"
+              "id": "hi_u1_t2",
+              "text": "`<head><title>Title</title></head>`",
+              "role_hint": "अब दृश्य सामग्री के लिए body टैग खोलें"
             },
             {
-              "id": "hi_u01_t3",
-              "role": "process",
-              "text": "फ़ाइल को `.html` एक्सटेंशन के साथ सेव करें,",
-              "role_hint": "अंत में इसे ब्राउज़र में खोलें"
+              "id": "hi_u1_t3",
+              "text": "`<body>`",
+              "role_hint": "समाप्त करने के लिए body और html रूट टैग बंद करें"
             },
             {
-              "id": "hi_u01_t4",
-              "role": "result",
-              "text": "वेब पेज प्रदर्शित करने के लिए सेव की गई फ़ाइल को वेब ब्राउज़र में खोलें",
-              "role_hint": "क्रम पूरा हो चुका है"
+              "id": "hi_u1_t4",
+              "text": "`</body></html>`",
+              "role_hint": "क्रम पूरा हो चुका है!"
             }
           ],
           "distractors": [
             {
-              "id": "hi_u01_d1",
+              "id": "hi_u1_d1",
               "category": "logical",
-              "text": "देखने से पहले स्रोत कोड को बाइनरी मशीन कोड में संकलित (compile) करें,",
-              "penalty_explanation": "HTML एक इंटरप्रेटेड मार्कअप भाषा है; ब्राउज़र इसे बिना कंपाइल किए सीधे प्रोसेस करते हैं।"
-            },
-            {
-              "id": "hi_u01_d2",
-              "category": "grammatical",
-              "text": "फ़ाइल को अनिवार्य रूप से `.exe` एक्सटेंशन के साथ सेव करें,",
-              "penalty_explanation": "वेब पेजों के लिए `.html` या `.htm` एक्सटेंशन की आवश्यकता होती है, बाइनरी की नहीं।"
+              "text": "`<body><head>`",
+              "penalty_explanation": "`<body>` टैग खुलने से पहले `<head>` सेक्शन बंद होना चाहिए।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "HTML is an interpreted markup language authored in plain-text editors, saved with `.html` or `.htm`, and rendered by browsers.",
-        "hi": "HTML एक इंटरप्रेटेड मार्कअप भाषा है जिसे टेक्स्ट एडिटर में लिखा जाता है, `.html` या `.htm` में सहेजा जाता है और ब्राउज़र में देखा जाता है।"
+        "en": "An HTML document requires `<html>` as root, enclosing `<head>` and `<body>` in strict sequence.",
+        "hi": "एचटीएमएल दस्तावेज़ में `<html>` रूट होता है, जिसके भीतर `<head>` और `<body>` सख्त क्रम में होते हैं।"
       }
     },
     {
-      "unit_id": "u02_tag_fundamentals",
-      "topic": "HTML Tag Syntax & Case Rules",
-      "pedagogical_objective": "Master the structural syntax of HTML tags written inside angled brackets and understand their case-insensitivity.",
       "instruction": {
         "title": {
-          "en": "HTML Tag Syntax and Case Sensitivity",
-          "hi": "एचटीएमएल टैग सिंटैक्स और केस असंवेदनशीलता"
+          "en": "Headings and Paragraphs",
+          "hi": "शीर्षक और पैराग्राफ"
         },
         "theory": {
-          "en": "HTML tags are instructions enclosed inside angled brackets like `<` and `>`. They notify web browsers how to format and display content. HTML tags are not case-sensitive, meaning `<HTML>`, `<html>`, and `<Html>` are treated identically by all web rendering engines.",
-          "hi": "HTML टैग कोण कोष्ठक `<` और `>` के भीतर लिखे गए निर्देश होते हैं। वे वेब ब्राउज़र को सामग्री प्रदर्शित करने का निर्देश देते हैं। HTML टैग केस-सेंसिटिव नहीं होते, अर्थात `<HTML>`, `<html>`, और `<Html>` सभी को ब्राउज़र द्वारा एक समान माना जाता है।"
+          "en": "HTML provides six levels of heading tags, from `<h1>` (most important) down to `<h6>` (least important). Paragraphs of body text are formatted using the `<p>` element, which automatically adds vertical space around text blocks.",
+          "hi": "एचटीएमएल छह स्तर के हेडिंग टैग प्रदान करता है, `<h1>` (सबसे महत्वपूर्ण) से लेकर `<h6>` (सबसे कम महत्वपूर्ण) तक। मुख्य पाठ के पैराग्राफों को `<p>` तत्व का उपयोग करके स्वरूपित किया जाता है, जो स्वचालित रूप से टेक्स्ट ब्लॉक के चारों ओर लंबवत स्थान जोड़ता है।"
         },
         "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='38' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='44' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Anatomy of an HTML Tag &amp; Case Equivalence</text><rect x='40' y='80' width='260' height='170' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='55' y='110' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold'>Tag Syntax Breakdown</text><text x='55' y='145' fill='#cbd5e1' font-family='monospace' font-size='16'>&lt;<tspan fill='#38bdf8'>tagname</tspan>&gt;</text><text x='55' y='180' fill='#94a3b8' font-family='sans-serif' font-size='11'>• &lt; : Opening angle bracket</text><text x='55' y='202' fill='#94a3b8' font-family='sans-serif' font-size='11'>• tagname : Element identifier</text><text x='55' y='224' fill='#94a3b8' font-family='sans-serif' font-size='11'>• &gt; : Closing angle bracket</text><rect x='330' y='80' width='270' height='170' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='345' y='110' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold'>Case Insensitivity Proof</text><text x='345' y='145' fill='#cbd5e1' font-family='monospace' font-size='14'>&lt;BODY&gt;  ==  &lt;body&gt;</text><text x='345' y='175' fill='#cbd5e1' font-family='monospace' font-size='14'>&lt;TITLE&gt; ==  &lt;title&gt;</text><text x='345' y='210' fill='#94a3b8' font-family='sans-serif' font-size='11'>Both uppercase &amp; lowercase parse</text><text x='345' y='226' fill='#94a3b8' font-family='sans-serif' font-size='11'>with zero behavioral difference.</text></svg>",
+          "type": "none",
+          "svg_code": "",
           "caption": {
-            "en": "HTML tag bracket syntax and equivalent uppercase/lowercase evaluation.",
-            "hi": "एचटीएमएल टैग ब्रैकेट सिंटैक्स और अपरकेस/लोअरकेस की समतुल्यता।"
+            "en": "",
+            "hi": ""
           }
         }
       },
       "challenges": {
         "en": {
-          "max_score": 10,
-          "prompt": "Construct the rule explaining how browsers interpret HTML tags and letter casing.",
-          "hint": "Identify the delimiter brackets first, followed by the browser instruction and case-insensitivity rule.",
+          "prompt": "Assemble a main heading followed by a styled paragraph.",
+          "hint": "Open heading 1, write text, close heading 1, then open paragraph and close paragraph.",
           "target_sequence": [
             {
-              "id": "en_u02_t1",
-              "role": "subject",
-              "text": "coded commands written within `<` and `>`,",
-              "role_hint": "specify what these tags tell the browser"
+              "id": "en_u2_t1",
+              "text": "`<h1>`",
+              "role_hint": "Add heading text and close the h1 tag"
             },
             {
-              "id": "en_u02_t2",
-              "role": "process",
-              "text": "instruct the web browser how to display content,",
-              "role_hint": "state the rule on case sensitivity"
+              "id": "en_u2_t2",
+              "text": "`Welcome</h1>`",
+              "role_hint": "Open the paragraph container next"
             },
             {
-              "id": "en_u02_t3",
-              "role": "condition",
-              "text": "operating without case sensitivity,",
-              "role_hint": "conclude with the equivalence"
+              "id": "en_u2_t3",
+              "text": "`<p>`",
+              "role_hint": "Add paragraph content and close the p tag"
             },
             {
-              "id": "en_u02_t4",
-              "role": "result",
-              "text": "allowing `<TITLE>` and `<title>` to function identically",
-              "role_hint": "sequence is complete"
+              "id": "en_u2_t4",
+              "text": "`Learn HTML easily.</p>`",
+              "role_hint": "Sequence is complete!"
             }
           ],
           "distractors": [
             {
-              "id": "en_u02_d1",
-              "category": "logical",
-              "text": "triggering strict syntax errors when uppercase characters are parsed,",
-              "penalty_explanation": "HTML is case-insensitive and never throws syntax errors due to uppercase tag names."
-            },
-            {
-              "id": "en_u02_d2",
+              "id": "en_u2_d1",
               "category": "grammatical",
-              "text": "enclosed strictly within curly braces `{` and `}`,",
-              "penalty_explanation": "HTML tags use angled brackets `< >`, not curly braces `{ }` which belong to CSS."
+              "text": "`<h1 text='Welcome'>`",
+              "penalty_explanation": "Heading text is placed between `<h1>` and `</h1>`, not inside an attribute."
             }
           ]
         },
         "hi": {
-          "max_score": 10,
-          "prompt": "ब्राउज़र द्वारा HTML टैग और उनके केस को समझने के नियम का सही क्रम बनाएं।",
-          "hint": "ब्रैकेट की पहचान से शुरू करें, फिर ब्राउज़र निर्देश और केस असंवेदनशीलता का नियम जोड़ें।",
+          "prompt": "एक मुख्य शीर्षक और उसके बाद एक पैराग्राफ जोड़ें।",
+          "hint": "heading 1 खोलें, टेक्स्ट लिखें, heading 1 बंद करें, फिर paragraph खोलें और बंद करें।",
           "target_sequence": [
             {
-              "id": "hi_u02_t1",
-              "role": "subject",
-              "text": "`<` और `>` के भीतर लिखे गए कोडित कमांड,",
-              "role_hint": "बताएं कि ये टैग ब्राउज़र को क्या निर्देश देते हैं"
+              "id": "hi_u2_t1",
+              "text": "`<h1>`",
+              "role_hint": "शीर्षक पाठ जोड़ें और h1 टैग बंद करें"
             },
             {
-              "id": "hi_u02_t2",
-              "role": "process",
-              "text": "वेब ब्राउज़र को सामग्री प्रदर्शित करने का निर्देश देते हैं,",
-              "role_hint": "केस संवेदनशीलता पर नियम बताएं"
+              "id": "hi_u2_t2",
+              "text": "`Welcome</h1>`",
+              "role_hint": "अब पैराग्राफ कंटेनर खोलें"
             },
             {
-              "id": "hi_u02_t3",
-              "role": "condition",
-              "text": "केस असंवेदनशील रूप से कार्य करते हुए,",
-              "role_hint": "समतुल्यता के साथ निष्कर्ष निकालें"
+              "id": "hi_u2_t3",
+              "text": "`<p>`",
+              "role_hint": "पैराग्राफ सामग्री जोड़ें और p टैग बंद करें"
             },
             {
-              "id": "hi_u02_t4",
-              "role": "result",
-              "text": "`<TITLE>` और `<title>` दोनों को एक समान संचालित करते हैं",
-              "role_hint": "क्रम पूरा हो चुका है"
+              "id": "hi_u2_t4",
+              "text": "`Learn HTML easily.</p>`",
+              "role_hint": "क्रम पूरा हो चुका है!"
             }
           ],
           "distractors": [
             {
-              "id": "hi_u02_d1",
-              "category": "logical",
-              "text": "अपरकेस अक्षरों का उपयोग करने पर गंभीर सिंटैक्स त्रुटियां उत्पन्न करते हुए,",
-              "penalty_explanation": "HTML केस-असंवेदनशील है और अपरकेस वर्णों पर कोई त्रुटि नहीं देता।"
-            },
-            {
-              "id": "hi_u02_d2",
+              "id": "hi_u2_d1",
               "category": "grammatical",
-              "text": "अनिवार्य रूप से कर्ली ब्रैकेट `{` और `}` के भीतर लिखे जाते हैं,",
-              "penalty_explanation": "HTML टैग कोण कोष्ठक `< >` में लिखे जाते हैं, कर्ली ब्रैकेट `{ }` में नहीं।"
+              "text": "`<h1 text='Welcome'>`",
+              "penalty_explanation": "हेडिंग टेक्स्ट `<h1>` और `</h1>` के बीच रखा जाता है, विशेषताओं में नहीं।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "HTML tags are written inside angled brackets `< >` and are completely case-insensitive.",
-        "hi": "HTML टैग कोण कोष्ठक `< >` के भीतर लिखे जाते हैं और पूरी तरह से केस-असंवेदनशील होते हैं।"
+        "en": "Use `<h1>` for main page titles and `<p>` for structured paragraph text.",
+        "hi": "मुख्य पृष्ठ शीर्षकों के लिए `<h1>` और संरचित पैराग्राफ टेक्स्ट के लिए `<p>` का उपयोग करें।"
       }
     },
     {
-      "unit_id": "u03_container_vs_empty",
-      "topic": "Container vs Empty Tags",
-      "pedagogical_objective": "Distinguish between paired container tags requiring closing tags and unpaired empty tags.",
       "instruction": {
         "title": {
-          "en": "Container Tags vs Empty Tags",
-          "hi": "कंटेनर टैग बनाम एम्प्टी टैग"
+          "en": "Hyperlinks with Anchor Tag",
+          "hi": "एंकर टैग के साथ हाइपरलिंक"
         },
         "theory": {
-          "en": "HTML tags fall into two categories: Container tags and Empty tags. Container tags (paired tags) require both an opening tag `<tag>` and a closing tag `</tag>` enclosing text or other elements, such as `<p>...</p>`. Empty tags (unpaired tags) require only an opening tag, such as `<br>` and `<hr>`.",
-          "hi": "HTML टैग दो प्रकार के होते हैं: Container टैग और Empty टैग। Container टैग (पेयर्ड टैग) में एक आरंभिक टैग `<tag>` और एक अंतिम टैग `</tag>` की आवश्यकता होती है, जैसे `<p>...</p>`। Empty टैग (अन-पेयर्ड टैग) में केवल शुरुआती टैग की आवश्यकता होती है, जैसे `<br>` और `<hr>`।"
+          "en": "Hyperlinks connect web pages across the internet. The `<a>` (anchor) tag uses the mandatory `href` attribute to specify the destination Web URL or file location.",
+          "hi": "हाइपरलिंक इंटरनेट पर वेब पृष्ठों को जोड़ते हैं। `<a>` (एंकर) टैग गंतव्य वेब यूआरएल या फ़ाइल स्थान निर्दिष्ट करने के लिए अनिवार्य `href` विशेषता का उपयोग करता है।"
         },
         "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='40' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='45' fill='#38bdf8' font-family='sans-serif' font-size='15' font-weight='bold' text-anchor='middle'>Tag Classification: Container vs Empty</text><rect x='40' y='80' width='260' height='175' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1.5'/><text x='170' y='110' fill='#4ade80' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Container (Paired) Tags</text><text x='60' y='145' fill='#cbd5e1' font-family='monospace' font-size='14'>&lt;B&gt; Important &lt;/B&gt;</text><text x='60' y='175' fill='#cbd5e1' font-family='monospace' font-size='14'>&lt;TITLE&gt; Page &lt;/TITLE&gt;</text><text x='60' y='210' fill='#94a3b8' font-family='sans-serif' font-size='12'>• Requires opening &amp; closing</text><text x='60' y='230' fill='#94a3b8' font-family='sans-serif' font-size='12'>• Encloses content inside</text><rect x='340' y='80' width='260' height='175' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1.5'/><text x='470' y='110' fill='#fbbf24' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Empty (Unpaired) Tags</text><text x='360' y='145' fill='#cbd5e1' font-family='monospace' font-size='14'>&lt;BR&gt;</text><text x='360' y='175' fill='#cbd5e1' font-family='monospace' font-size='14'>&lt;HR&gt; , &lt;IMG ...&gt;</text><text x='360' y='210' fill='#94a3b8' font-family='sans-serif' font-size='12'>• Opening tag only</text><text x='360' y='230' fill='#94a3b8' font-family='sans-serif' font-size='12'>• No closing &lt;/...&gt; needed</text></svg>",
+          "type": "none",
+          "svg_code": "",
           "caption": {
-            "en": "Structural distinction between paired container elements and unpaired empty elements.",
-            "hi": "पेयर्ड कंटेनर तत्वों और अन-पेयर्ड एम्प्टी तत्वों के बीच संरचनात्मक अंतर।"
+            "en": "",
+            "hi": ""
           }
         }
       },
       "challenges": {
         "en": {
-          "max_score": 10,
-          "prompt": "Arrange the logic that defines container and empty tags in HTML syntax.",
-          "hint": "Identify paired tags with closing slashes first, then introduce unpaired tags.",
+          "prompt": "Construct a functional hyperlink pointing to an external website.",
+          "hint": "Start anchor tag with href attribute, set URL target, add anchor text, and close anchor tag.",
           "target_sequence": [
             {
-              "id": "en_u03_t1",
-              "role": "subject",
-              "text": "container tags require both starting and ending tags,",
-              "role_hint": "give an example of a container tag"
+              "id": "en_u3_t1",
+              "text": "`<a href=\"https://ncert.nic.in\">`",
+              "role_hint": "Add visible text that users will click on"
             },
             {
-              "id": "en_u03_t2",
-              "role": "process",
-              "text": "enclosing text as seen in `<title>...</title>`,",
-              "role_hint": "contrast with empty tags"
+              "id": "en_u3_t2",
+              "text": "`Visit NCERT Portal`",
+              "role_hint": "Close the anchor element"
             },
             {
-              "id": "en_u03_t3",
-              "role": "condition",
-              "text": "while empty tags require only an opening tag,",
-              "role_hint": "provide examples of empty tags"
-            },
-            {
-              "id": "en_u03_t4",
-              "role": "result",
-              "text": "performing standalone actions like `<br>` and `<hr>`",
-              "role_hint": "sequence is complete"
+              "id": "en_u3_t3",
+              "text": "`</a>`",
+              "role_hint": "Sequence is complete!"
             }
           ],
           "distractors": [
             {
-              "id": "en_u03_d1",
-              "category": "logical",
-              "text": "requiring every empty tag to have a mandatory `</br>` closing companion,",
-              "penalty_explanation": "Empty tags do not require or use a closing companion tag in standard HTML."
-            },
-            {
-              "id": "en_u03_d2",
+              "id": "en_u3_d1",
               "category": "grammatical",
-              "text": "allowing container tags to omit their starting tags freely,",
-              "penalty_explanation": "Container tags must always include their starting tag."
+              "text": "`<a link=\"https://ncert.nic.in\">`",
+              "penalty_explanation": "The anchor tag uses `href`, not `link`, to define target URLs."
             }
           ]
         },
         "hi": {
-          "max_score": 10,
-          "prompt": "HTML सिंटैक्स में कंटेनर और एम्प्टी टैग को परिभाषित करने वाले तर्क को व्यवस्थित करें।",
-          "hint": "शुरुआती और अंतिम टैग वाले पेयर्ड टैग से शुरू करें, फिर अन-पेयर्ड टैग को जोड़ें।",
+          "prompt": "एक बाहरी वेबसाइट की ओर इशारा करते हुए एक कार्यात्मक हाइपरलिंक का निर्माण करें।",
+          "hint": "href विशेषता के साथ एंकर टैग शुरू करें, यूआरएल लक्ष्य निर्धारित करें, एंकर टेक्स्ट जोड़ें, और एंकर टैग बंद करें।",
           "target_sequence": [
             {
-              "id": "hi_u03_t1",
-              "role": "subject",
-              "text": "कंटेनर टैग में आरंभिक और अंतिम दोनों टैग आवश्यक होते हैं,",
-              "role_hint": "कंटेनर टैग का एक उदाहरण दें"
+              "id": "hi_u3_t1",
+              "text": "`<a href=\"https://ncert.nic.in\">`",
+              "role_hint": "दृश्यमान टेक्स्ट जोड़ें जिस पर उपयोगकर्ता क्लिक करेंगे"
             },
             {
-              "id": "hi_u03_t2",
-              "role": "process",
-              "text": "सामग्री को घेरते हुए जैसा कि `<title>...</title>` में देखा जाता है,",
-              "role_hint": "एम्प्टी टैग के साथ तुलना करें"
+              "id": "hi_u3_t2",
+              "text": "`Visit NCERT Portal`",
+              "role_hint": "एंकर तत्व बंद करें"
             },
             {
-              "id": "hi_u03_t3",
-              "role": "condition",
-              "text": "जबकि एम्प्टी टैग में केवल एक आरंभिक टैग की आवश्यकता होती है,",
-              "role_hint": "एम्प्टी टैग के उदाहरण प्रदान करें"
-            },
-            {
-              "id": "hi_u03_t4",
-              "role": "result",
-              "text": "`<br>` और `<hr>` की तरह स्वतंत्र कार्य निष्पादित करते हुए",
-              "role_hint": "क्रम पूरा हो चुका है"
+              "id": "hi_u3_t3",
+              "text": "`</a>`",
+              "role_hint": "क्रम पूरा हो चुका है!"
             }
           ],
           "distractors": [
             {
-              "id": "hi_u03_d1",
-              "category": "logical",
-              "text": "प्रत्येक एम्प्टी टैग के लिए अनिवार्य रूप से `</br>` क्लोजिंग टैग की मांग करते हुए,",
-              "penalty_explanation": "एम्प्टी टैग में क्लोजिंग टैग की आवश्यकता नहीं होती।"
-            },
-            {
-              "id": "hi_u03_d2",
+              "id": "hi_u3_d1",
               "category": "grammatical",
-              "text": "कंटेनर टैग को अपने शुरुआती टैग को छोड़ने की अनुमति देते हुए,",
-              "penalty_explanation": "कंटेनर टैग कभी भी अपना शुरुआती टैग नहीं छोड़ सकते।"
+              "text": "`<a link=\"https://ncert.nic.in\">`",
+              "penalty_explanation": "एंकर टैग लक्ष्य यूआरएल को परिभाषित करने के लिए `href` का उपयोग करता है, `link` का नहीं।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Container tags are paired (`<tag>...</tag>`), while empty tags are unpaired (`<tag>`) and do not enclose content.",
-        "hi": "कंटेनर टैग पेयर्ड होते हैं (`<tag>...</tag>`), जबकि एम्प्टी टैग अन-पेयर्ड होते हैं (`<tag>`) और किसी सामग्री को नहीं घेरते।"
+        "en": "The `<a>` tag requires `href=\"URL\"` to create clickable links.",
+        "hi": "क्लिक करने योग्य लिंक बनाने के लिए `<a>` टैग को `href=\"URL\"` की आवश्यकता होती है।"
       }
     },
     {
-      "unit_id": "u04_attributes_syntax",
-      "topic": "HTML Tag Attributes & Values",
-      "pedagogical_objective": "Master the syntax and role of attributes written inside opening tags to configure element properties.",
       "instruction": {
         "title": {
-          "en": "HTML Tag Attributes and Properties",
-          "hi": "एचटीएमएल टैग के ऐट्रिब्यूट्स और विशेषताएं"
+          "en": "Embedding Images",
+          "hi": "इमेज एम्बेड करना"
         },
         "theory": {
-          "en": "Attributes are special keywords placed strictly inside the opening tag of an HTML element. They provide additional properties and configuration values such as `color`, `size`, `border`, and `align`. Attributes typically follow the format `name=\"value\"`, for example `<font color=\"red\">`.",
-          "hi": "Attribute विशेष शब्द होते हैं जिन्हें केवल HTML एलिमेंट के शुरुआती टैग के अंदर लिखा जाता है। वे अतिरिक्त विशेषताएं प्रदान करते हैं जैसे `color`, `size`, `border`, और `align`। Attributes आमतौर पर `name=\"value\"` प्रारूप का पालन करते हैं, जैसे `<font color=\"red\">`।"
+          "en": "The `<img>` tag embeds visual media into web pages. It is an empty tag (no closing tag). It requires `src` to supply the file path and `alt` to provide descriptive alternative text for accessibility.",
+          "hi": "`<img>` टैग वेब पेजों में दृश्य मीडिया को एम्बेड करता है। यह एक एम्प्टी टैग है (कोई क्लोजिंग टैग नहीं)। इसके लिए फ़ाइल पथ की आपूर्ति के लिए `src` और एक्सेसिबिलिटी के लिए वर्णनात्मक वैकल्पिक टेक्स्ट प्रदान करने के लिए `alt` की आवश्यकता होती है।"
         },
         "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='40' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='45' fill='#38bdf8' font-family='sans-serif' font-size='15' font-weight='bold' text-anchor='middle'>Syntax of an HTML Attribute</text><rect x='40' y='80' width='560' height='160' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='60' y='130' fill='#cbd5e1' font-family='monospace' font-size='20'>&lt;<tspan fill='#38bdf8'>FONT</tspan> <tspan fill='#fbbf24'>color</tspan>=<tspan fill='#4ade80'>\"red\"</tspan>&gt; <tspan fill='#ffffff'>Text Content</tspan> &lt;/<tspan fill='#38bdf8'>FONT</tspan>&gt;</text><line x1='135' y1='145' x2='135' y2='190' stroke='#fbbf24' stroke-width='1.5'/><text x='135' y='210' fill='#fbbf24' font-family='sans-serif' font-size='12' text-anchor='middle'>Attribute Name</text><line x1='210' y1='145' x2='210' y2='190' stroke='#4ade80' stroke-width='1.5'/><text x='210' y='210' fill='#4ade80' font-family='sans-serif' font-size='12' text-anchor='middle'>Attribute Value</text><rect x='350' y='165' width='230' height='60' rx='4' fill='#0f172a' stroke='#38bdf8' stroke-width='1'/><text x='360' y='185' fill='#94a3b8' font-family='sans-serif' font-size='11'>Rule: Attributes NEVER appear</text><text x='360' y='205' fill='#94a3b8' font-family='sans-serif' font-size='11'>inside the closing tag &lt;/...&gt;</text></svg>",
+          "type": "none",
+          "svg_code": "",
           "caption": {
-            "en": "Proper placement of attribute name-value pairs exclusively inside opening tags.",
-            "hi": "शुरुआती टैग के अंदर ऐट्रिब्यूट नाम-मान युग्म का सही स्थान।"
+            "en": "",
+            "hi": ""
           }
         }
       },
       "challenges": {
         "en": {
-          "max_score": 10,
-          "prompt": "Assemble the syntactical structure for adding attributes to an HTML element.",
-          "hint": "Attributes sit exclusively inside the starting tag before the closing bracket.",
+          "prompt": "Assemble a complete image element with source file and alt text attributes.",
+          "hint": "Open img tag with src, set image file name, add alt attribute, and close tag bracket.",
           "target_sequence": [
             {
-              "id": "en_u04_t1",
-              "role": "subject",
-              "text": "attributes are declared inside the starting tag,",
-              "role_hint": "specify how they are structured"
+              "id": "en_u4_t1",
+              "text": "`<img src=\"logo.png\"`",
+              "role_hint": "Add alternative text description for accessibility"
             },
             {
-              "id": "en_u04_t2",
-              "role": "process",
-              "text": "specifying name and value pairs like `color=\"red\"`,",
-              "role_hint": "state their functional outcome"
+              "id": "en_u4_t2",
+              "text": "`alt=\"School Logo\"`",
+              "role_hint": "Close the tag bracket"
             },
             {
-              "id": "en_u04_t3",
-              "role": "result",
-              "text": "to provide extra styling or behavior to the element,",
-              "role_hint": "state the restriction regarding closing tags"
-            },
-            {
-              "id": "en_u04_t4",
-              "role": "modifier",
-              "text": "and must never be placed inside the closing tag",
-              "role_hint": "sequence is complete"
+              "id": "en_u4_t3",
+              "text": "`>`",
+              "role_hint": "Sequence is complete!"
             }
           ],
           "distractors": [
             {
-              "id": "en_u04_d1",
+              "id": "en_u4_d1",
               "category": "logical",
-              "text": "declared inside the closing tag as `</font color=\"red\">`,",
-              "penalty_explanation": "Attributes are never allowed inside closing tags."
-            },
-            {
-              "id": "en_u04_d2",
-              "category": "grammatical",
-              "text": "placed outside all angle brackets entirely,",
-              "penalty_explanation": "Attributes must be enclosed within the opening angle brackets of the tag."
+              "text": "`</img>`",
+              "penalty_explanation": "`<img>` is an empty tag and must never have a closing `</img>` tag."
             }
           ]
         },
         "hi": {
-          "max_score": 10,
-          "prompt": "HTML एलिमेंट में ऐट्रिब्यूट जोड़ने की सही संरचना को व्यवस्थित करें।",
-          "hint": "ऐट्रिब्यूट क्लोजिंग ब्रैकेट से पहले केवल शुरुआती टैग के अंदर होते हैं।",
+          "prompt": "सोर्स फ़ाइल और alt टेक्स्ट विशेषताओं के साथ एक पूर्ण इमेज एलिमेंट तैयार करें।",
+          "hint": "src के साथ img टैग खोलें, इमेज फ़ाइल नाम सेट करें, alt विशेषता जोड़ें, और टैग ब्रैकेट बंद करें।",
           "target_sequence": [
             {
-              "id": "hi_u04_t1",
-              "role": "subject",
-              "text": "attributes को शुरुआती टैग के अंदर घोषित किया जाता है,",
-              "role_hint": "बताएं कि वे कैसे संरचित होते हैं"
+              "id": "hi_u4_t1",
+              "text": "`<img src=\"logo.png\"`",
+              "role_hint": "एक्सेसिबिलिटी के लिए वैकल्पिक विवरण टेक्स्ट जोड़ें"
             },
             {
-              "id": "hi_u04_t2",
-              "role": "process",
-              "text": "`color=\"red\"` जैसे नाम और मान युग्म निर्दिष्ट करते हुए,",
-              "role_hint": "उनका कार्यात्मक परिणाम बताएं"
+              "id": "hi_u4_t2",
+              "text": "`alt=\"School Logo\"`",
+              "role_hint": "टैग ब्रैकेट बंद करें"
             },
             {
-              "id": "hi_u04_t3",
-              "role": "result",
-              "text": "तत्व को अतिरिक्त स्टाइलिंग या व्यवहार प्रदान करने के लिए,",
-              "role_hint": "क्लोजिंग टैग से संबंधित प्रतिबंध बताएं"
-            },
-            {
-              "id": "hi_u04_t4",
-              "role": "modifier",
-              "text": "और उन्हें कभी भी क्लोजिंग टैग के अंदर नहीं रखा जाना चाहिए",
-              "role_hint": "क्रम पूरा हो चुका है"
+              "id": "hi_u4_t3",
+              "text": "`>`",
+              "role_hint": "क्रम पूरा हो चुका है!"
             }
           ],
           "distractors": [
             {
-              "id": "hi_u04_d1",
+              "id": "hi_u4_d1",
               "category": "logical",
-              "text": "क्लोजिंग टैग के अंदर `</font color=\"red\">` के रूप में घोषित किया जाता है,",
-              "penalty_explanation": "क्लोजिंग टैग के अंदर कभी भी attributes नहीं लिखे जाते।"
-            },
-            {
-              "id": "hi_u04_d2",
-              "category": "grammatical",
-              "text": "पूरी तरह से सभी कोण कोष्ठकों के बाहर रखे जाते हैं,",
-              "penalty_explanation": "Attributes अनिवार्य रूप से टैग के कोण कोष्ठकों के अंदर होने चाहिए।"
+              "text": "`</img>`",
+              "penalty_explanation": "`<img>` एक एम्प्टी टैग है और इसमें कभी भी क्लोजिंग `</img>` टैग नहीं होना चाहिए।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Attributes provide extra configuration and are placed strictly within an element's opening tag.",
-        "hi": "Attributes अतिरिक्त विशेषताएँ प्रदान करते हैं और केवल एलिमेंट के शुरुआती टैग के भीतर लिखे जाते हैं।"
+        "en": "`<img>` is an empty tag using `src` for image path and `alt` for accessibility text.",
+        "hi": "`<img>` एक एम्प्टी टैग है जो इमेज पथ के लिए `src` और एक्सेसिबिलिटी टेक्स्ट के लिए `alt` का उपयोग करता है।"
       }
     },
     {
-      "unit_id": "u05_file_lifecycle",
-      "topic": "File Saving & Browser Execution",
-      "pedagogical_objective": "Execute the precise file saving procedure in Notepad using the Save As dialogue and .html extension.",
       "instruction": {
         "title": {
-          "en": "Saving and Launching HTML Files",
-          "hi": "एचटीएमएल फ़ाइल को सहेजना और निष्पादित करना"
+          "en": "Unordered and Ordered Lists",
+          "hi": "अव्यवस्थित और व्यवस्थित सूचियाँ"
         },
         "theory": {
-          "en": "To properly save an HTML file in Notepad, press `Ctrl+S` to open the Save As dialog. Enter the chosen filename followed by the `.html` extension (e.g., `index.html`). In the 'Save as type' dropdown, select 'All Files (*.*)' to prevent Notepad from appending `.txt` to the filename.",
-          "hi": "नोटपैड में HTML फ़ाइल को ठीक से सहेजने के लिए, Save As डायलॉग खोलने के लिए `Ctrl+S` दबाएं। फ़ाइल नाम के बाद `.html` एक्सटेंशन लिखें (जैसे `index.html`)। 'Save as type' ड्रॉप-डाउन में 'All Files (*.*)' चुनें ताकि नोटपैड फ़ाइल के नाम में अनपेक्षित `.txt` न जोड़े।"
+          "en": "HTML supports bulleted lists with `<ul>` (unordered) and numbered lists with `<ol>` (ordered). Individual items within both list types must be enclosed inside `<li>` (list item) tags.",
+          "hi": "एचटीएमएल `<ul>` (अव्यवस्थित) के साथ बुलेटेड सूचियों और `<ol>` (व्यवस्थित) के साथ क्रमांकित सूचियों का समर्थन करता है। दोनों सूची प्रकारों के भीतर व्यक्तिगत आइटमों को `<li>` (सूची आइटम) टैग के अंदर संलग्न किया जाना चाहिए।"
         },
         "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='40' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='45' fill='#38bdf8' font-family='sans-serif' font-size='15' font-weight='bold' text-anchor='middle'>Notepad 'Save As' Dialog Configuration</text><rect x='80' y='80' width='480' height='160' rx='8' fill='#1e293b' stroke='#cbd5e1' stroke-width='1'/><text x='110' y='120' fill='#cbd5e1' font-family='sans-serif' font-size='13'>File name:</text><rect x='220' y='102' width='280' height='26' rx='3' fill='#0f172a' stroke='#4ade80' stroke-width='1.5'/><text x='230' y='120' fill='#4ade80' font-family='monospace' font-size='13'>mypage.html</text><text x='110' y='165' fill='#cbd5e1' font-family='sans-serif' font-size='13'>Save as type:</text><rect x='220' y='148' width='280' height='26' rx='3' fill='#0f172a' stroke='#fbbf24' stroke-width='1.5'/><text x='230' y='166' fill='#fbbf24' font-family='sans-serif' font-size='13'>All Files (*.*)</text><rect x='410' y='190' width='90' height='30' rx='4' fill='#38bdf8'/><text x='455' y='210' fill='#0f172a' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Save</text></svg>",
+          "type": "none",
+          "svg_code": "",
           "caption": {
-            "en": "Configuring filename with .html and selecting All Files in the Save As dialog.",
-            "hi": "फ़ाइल नाम में .html जोड़ना और Save As डायलॉग में All Files का चयन करना।"
+            "en": "",
+            "hi": ""
           }
         }
       },
       "challenges": {
         "en": {
-          "max_score": 10,
-          "prompt": "Sequence the steps to save an HTML document in Notepad correctly.",
-          "hint": "Trigger the save dialogue, provide the extension, switch file types, and save.",
+          "prompt": "Build an unordered list with two list items.",
+          "hint": "Open ul tag, add list items with li tags, and close ul tag.",
           "target_sequence": [
             {
-              "id": "en_u05_t1",
-              "role": "subject",
-              "text": "press `Ctrl+S` to open the Save As dialog box,",
-              "role_hint": "specify what name to type"
+              "id": "en_u5_t1",
+              "text": "`<ul>`",
+              "role_hint": "Add the first list item"
             },
             {
-              "id": "en_u05_t2",
-              "role": "process",
-              "text": "type the filename followed by the `.html` extension,",
-              "role_hint": "change the file type dropdown"
+              "id": "en_u5_t2",
+              "text": "`<li>HTML</li>`",
+              "role_hint": "Add the second list item"
             },
             {
-              "id": "en_u05_t3",
-              "role": "process",
-              "text": "select `All Files (*.*)` from the Save as type menu,",
-              "role_hint": "complete the saving operation"
+              "id": "en_u5_t3",
+              "text": "`<li>CSS</li>`",
+              "role_hint": "Close the unordered list container"
             },
             {
-              "id": "en_u05_t4",
-              "role": "result",
-              "text": "click Save so the file can open in a web browser",
-              "role_hint": "sequence is complete"
+              "id": "en_u5_t4",
+              "text": "`</ul>`",
+              "role_hint": "Sequence is complete!"
             }
           ],
           "distractors": [
             {
-              "id": "en_u05_d1",
+              "id": "en_u5_d1",
               "category": "logical",
-              "text": "leave the Save as type dropdown permanently set to `Text Documents (*.txt)`,",
-              "penalty_explanation": "Leaving type as Text Documents causes Notepad to append .txt, preventing browser interpretation."
-            },
-            {
-              "id": "en_u05_d2",
-              "category": "grammatical",
-              "text": "omit all extensions and save as plain unformatted data,",
-              "penalty_explanation": "An explicit `.html` or `.htm` extension is required for browsers to recognize markup."
+              "text": "`<list>HTML</list>`",
+              "penalty_explanation": "List items must be wrapped in `<li>`, not `<list>`."
             }
           ]
         },
         "hi": {
-          "max_score": 10,
-          "prompt": "नोटपैड में HTML दस्तावेज़ को सही तरीके से सेव करने के चरणों को व्यवस्थित करें।",
-          "hint": "सेव डायलॉग खोलें, एक्सटेंशन दर्ज करें, फ़ाइल प्रकार बदलें और सेव करें।",
+          "prompt": "दो सूची वस्तुओं के साथ एक अनऑर्डर्ड सूची बनाएं।",
+          "hint": "ul टैग खोलें, li टैग के साथ सूची आइटम जोड़ें, और ul टैग बंद करें।",
           "target_sequence": [
             {
-              "id": "hi_u05_t1",
-              "role": "subject",
-              "text": "Save As डायलॉग बॉक्स खोलने के लिए `Ctrl+S` दबाएं,",
-              "role_hint": "बताएं कि क्या नाम टाइप करना है"
+              "id": "hi_u5_t1",
+              "text": "`<ul>`",
+              "role_hint": "पहला सूची आइटम जोड़ें"
             },
             {
-              "id": "hi_u05_t2",
-              "role": "process",
-              "text": "फ़ाइल नाम के बाद `.html` एक्सटेंशन टाइप करें,",
-              "role_hint": "फ़ाइल प्रकार ड्रॉपडाउन बदलें"
+              "id": "hi_u5_t2",
+              "text": "`<li>HTML</li>`",
+              "role_hint": "दूसरा सूची आइटम जोड़ें"
             },
             {
-              "id": "hi_u05_t3",
-              "role": "process",
-              "text": "Save as type मेनू से `All Files (*.*)` चुनें,",
-              "role_hint": "सेविंग ऑपरेशन पूरा करें"
+              "id": "hi_u5_t3",
+              "text": "`<li>CSS</li>`",
+              "role_hint": "अनऑर्डर्ड सूची कंटेनर बंद करें"
             },
             {
-              "id": "hi_u05_t4",
-              "role": "result",
-              "text": "Save पर क्लिक करें ताकि फ़ाइल वेब ब्राउज़र में खुल सके",
-              "role_hint": "क्रम पूरा हो चुका है"
+              "id": "hi_u5_t4",
+              "text": "`</ul>`",
+              "role_hint": "क्रम पूरा हो चुका है!"
             }
           ],
           "distractors": [
             {
-              "id": "hi_u05_d1",
+              "id": "hi_u5_d1",
               "category": "logical",
-              "text": "Save as type ड्रॉपडाउन को हमेशा `Text Documents (*.txt)` पर छोड़ दें,",
-              "penalty_explanation": "Text Documents छोड़ने से फ़ाइल में .txt जुड़ जाता है और ब्राउज़र इसे HTML नहीं पहचानता।"
-            },
-            {
-              "id": "hi_u05_d2",
-              "category": "grammatical",
-              "text": "सभी एक्सटेंशन छोड़ दें और सादे डेटा के रूप में सहेजें,",
-              "penalty_explanation": "ब्राउज़र पहचान के लिए `.html` एक्सटेंशन स्पष्ट रूप से आवश्यक है।"
+              "text": "`<list>HTML</list>`",
+              "penalty_explanation": "सूची वस्तुओं को `<li>` में लपेटा जाना चाहिए, `<list>` में नहीं।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Saving with the `.html` extension and selecting 'All Files (*.*)' ensures proper browser file association.",
-        "hi": "`.html` एक्सटेंशन के साथ सेव करना और 'All Files (*.*)' चुनना ब्राउज़र में सही रेंडरिंग सुनिश्चित करता है।"
-      }
-    },
-    {
-      "unit_id": "u06_document_skeleton",
-      "topic": "The Document Skeleton Hierarchy",
-      "pedagogical_objective": "Construct the mandatory four-tag structural skeleton: html, head, title, and body.",
-      "instruction": {
-        "title": {
-          "en": "The Core HTML Skeleton",
-          "hi": "एचटीएमएल का मूल संरचनात्मक ढांचा (Skeleton)"
-        },
-        "theory": {
-          "en": "Every HTML document is built upon a rigid four-tag structural hierarchy. The root tag is `<html>`. Inside `<html>`, the document splits into two primary siblings: `<head>` (containing metadata and the `<title>`) and `<body>` (containing all visible webpage content). The `<head>` tag must close before `<body>` opens.",
-          "hi": "प्रत्येक HTML दस्तावेज़ एक अनिवार्य चार-टैग संरचनात्मक पदानुक्रम पर बनता है। मूल रूट टैग `<html>` है। `<html>` के भीतर दस्तावेज़ दो मुख्य शाखाओं में विभाजित होता है: `<head>` (जिसमें मेटाडेटा और `<title>` होता है) और `<body>` (जिसमें दृश्य सामग्री होती है)। `<body>` खुलने से पहले `<head>` को बंद होना चाहिए।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='15' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='38' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>HTML Document Structural Hierarchy</text><rect x='40' y='65' width='560' height='200' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='60' y='90' fill='#38bdf8' font-family='monospace' font-size='14'>&lt;html&gt;</text><text x='85' y='115' fill='#fbbf24' font-family='monospace' font-size='14'>&lt;head&gt;</text><text x='110' y='140' fill='#4ade80' font-family='monospace' font-size='14'>&lt;title&gt; Page Title &lt;/title&gt;</text><text x='85' y='165' fill='#fbbf24' font-family='monospace' font-size='14'>&lt;/head&gt;</text><text x='85' y='195' fill='#f472b6' font-family='monospace' font-size='14'>&lt;body&gt;</text><text x='110' y='220' fill='#cbd5e1' font-family='monospace' font-size='13'>Visible webpage contents go here...</text><text x='85' y='242' fill='#f472b6' font-family='monospace' font-size='14'>&lt;/body&gt;</text><text x='60' y='260' fill='#38bdf8' font-family='monospace' font-size='14'>&lt;/html&gt;</text></svg>",
-          "caption": {
-            "en": "Hierarchy of fundamental HTML tags with head and body separation.",
-            "hi": "हेड और बॉडी के पृथक्करण के साथ मूलभूत एचटीएमएल टैग्स का पदानुक्रम।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Assemble the mandatory tag sequence of an HTML document skeleton.",
-          "hint": "Start with root, define the title inside head, close head, and then enter the body.",
-          "target_sequence": [
-            {
-              "id": "en_u06_t1",
-              "role": "subject",
-              "text": "open the root container `<html>`,",
-              "role_hint": "nest the metadata head next"
-            },
-            {
-              "id": "en_u06_t2",
-              "role": "process",
-              "text": "open `<head>` and declare `<title>...</title>`,",
-              "role_hint": "close the head container"
-            },
-            {
-              "id": "en_u06_t3",
-              "role": "process",
-              "text": "close `</head>` and open `<body>`,",
-              "role_hint": "close body and html"
-            },
-            {
-              "id": "en_u06_t4",
-              "role": "result",
-              "text": "insert visible content before closing `</body>` and `</html>`",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u06_d1",
-              "category": "logical",
-              "text": "nest the entire `<body>` section inside `<head>...</head>`,",
-              "penalty_explanation": "The body element contains rendered content and can never be nested inside the head section."
-            },
-            {
-              "id": "en_u06_d2",
-              "category": "grammatical",
-              "text": "close `</html>` before closing `</body>`,",
-              "penalty_explanation": "Child tags must always close before their parent tag."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "HTML दस्तावेज़ के मूलभूत कंकाल के सही टैग क्रम को व्यवस्थित करें।",
-          "hint": "रूट टैग से शुरू करें, हेड में टाइटल परिभाषित करें, हेड बंद करें और फिर बॉडी में जाएं।",
-          "target_sequence": [
-            {
-              "id": "hi_u06_t1",
-              "role": "subject",
-              "text": "रूट कंटेनर `<html>` खोलें,",
-              "role_hint": "इसके बाद मेटाडेटा हेड को नेस्ट करें"
-            },
-            {
-              "id": "hi_u06_t2",
-              "role": "process",
-              "text": "`<head>` खोलें और `<title>...</title>` घोषित करें,",
-              "role_hint": "हेड कंटेनर बंद करें"
-            },
-            {
-              "id": "hi_u06_t3",
-              "role": "process",
-              "text": "`</head>` बंद करें और `<body>` खोलें,",
-              "role_hint": "बॉडी और एचटीएमएल बंद करें"
-            },
-            {
-              "id": "hi_u06_t4",
-              "role": "result",
-              "text": "`</body>` और `</html>` बंद करने से पहले दृश्य सामग्री जोड़ें",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u06_d1",
-              "category": "logical",
-              "text": "पूरे `<body>` सेक्शन को `<head>...</head>` के अंदर नेस्ट करें,",
-              "penalty_explanation": "बॉडी तत्व दृश्य सामग्री रखता है और कभी भी हेड सेक्शन के अंदर नहीं आ सकता।"
-            },
-            {
-              "id": "hi_u06_d2",
-              "category": "grammatical",
-              "text": "`</body>` बंद करने से पहले `</html>` बंद करें,",
-              "penalty_explanation": "चाइल्ड टैग हमेशा अपने पैरेंट टैग से पहले बंद होने चाहिए।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "An HTML document requires `<html>` as root, enclosing `<head>` (metadata) and `<body>` (visible content) in strict order.",
-        "hi": "HTML दस्तावेज़ में `<html>` रूट होता है, जिसके भीतर `<head>` (मेटाडेटा) और `<body>` (दृश्य सामग्री) सख्त क्रम में होते हैं।"
-      }
-    },
-    {
-      "unit_id": "u07_body_appearance",
-      "topic": "Body Background Styling: bgcolor & background",
-      "pedagogical_objective": "Configure page background color and image wallpaper using the bgcolor and background attributes of the body element.",
-      "instruction": {
-        "title": {
-          "en": "Configuring Body Backgrounds",
-          "hi": "बॉडी बैकग्राउंड कॉन्फ़िगर करना"
-        },
-        "theory": {
-          "en": "The `<body>` tag supports two attributes for page backgrounds: `bgcolor` and `background`. The `bgcolor` attribute sets a solid background color (e.g., `<body bgcolor=\"yellow\">`). The `background` attribute sets a background wallpaper image via its file URL (e.g., `<body background=\"flower.jpg\">`).",
-          "hi": "`<body>` टैग पृष्ठभूमि के लिए दो प्रमुख attributes का समर्थन करता है: `bgcolor` और `background`। `bgcolor` attribute एक ठोस रंग सेट करता है (जैसे `<body bgcolor=\"yellow\">`)। `background` attribute फ़ाइल पाथ या URL के माध्यम से पृष्ठभूमि में एक छवि सेट करता है (जैसे `<body background=\"flower.jpg\">`)।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='40' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='45' fill='#38bdf8' font-family='sans-serif' font-size='15' font-weight='bold' text-anchor='middle'>Body Background Styling Attributes</text><rect x='40' y='80' width='260' height='170' rx='8' fill='#1e293b' stroke='#fbbf24' stroke-width='1'/><text x='170' y='110' fill='#fbbf24' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>bgcolor (Solid Color)</text><text x='55' y='150' fill='#cbd5e1' font-family='monospace' font-size='13'>&lt;body bgcolor=\"yellow\"&gt;</text><rect x='55' y='170' width='230' height='60' rx='4' fill='#fef08a'/><text x='170' y='205' fill='#713f12' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Solid Color Fill</text><rect x='340' y='80' width='260' height='170' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='470' y='110' fill='#4ade80' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>background (Image)</text><text x='355' y='150' fill='#cbd5e1' font-family='monospace' font-size='13'>&lt;body background=\"bg.jpg\"&gt;</text><rect x='355' y='170' width='230' height='60' rx='4' fill='#334155' stroke='#38bdf8' stroke-dasharray='4'/><text x='470' y='205' fill='#38bdf8' font-family='sans-serif' font-size='12' text-anchor='middle'>[ Wallpaper Image Tiled ]</text></svg>",
-          "caption": {
-            "en": "Distinction between bgcolor (color values) and background (image URL paths).",
-            "hi": "bgcolor (रंग मान) और background (इमेज URL पाथ) के बीच अंतर।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Arrange the syntax explaining body background attributes.",
-          "hint": "Identify the element first, configure the solid color attribute, and contrast with the image attribute.",
-          "target_sequence": [
-            {
-              "id": "en_u07_t1",
-              "role": "subject",
-              "text": "inside the starting `<body>` tag,",
-              "role_hint": "specify how to set a solid color"
-            },
-            {
-              "id": "en_u07_t2",
-              "role": "process",
-              "text": "apply `bgcolor=\"yellow\"` to paint a solid background color,",
-              "role_hint": "now introduce the image alternative"
-            },
-            {
-              "id": "en_u07_t3",
-              "role": "condition",
-              "text": "or apply `background=\"flower.jpg\"` to render an image,",
-              "role_hint": "conclude with the rendering outcome"
-            },
-            {
-              "id": "en_u07_t4",
-              "role": "result",
-              "text": "establishing the visual canvas for all visible elements",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u07_d1",
-              "category": "logical",
-              "text": "place `background=\"yellow\"` to assign a solid color,",
-              "penalty_explanation": "The background attribute expects an image URL, whereas bgcolor is used for colors."
-            },
-            {
-              "id": "en_u07_d2",
-              "category": "grammatical",
-              "text": "declare `bgcolor` strictly inside the `<head>` section,",
-              "penalty_explanation": "Page canvas attributes like bgcolor belong in the <body> tag, not <head>."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "बॉडी बैकग्राउंड ऐट्रिब्यूट्स के सिंटैक्स को सही क्रम में व्यवस्थित करें।",
-          "hint": "बॉडी टैग से शुरुआत करें, सॉलिड कलर ऐट्रिब्यूट जोड़ें और फिर इमेज ऐट्रिब्यूट से तुलना करें।",
-          "target_sequence": [
-            {
-              "id": "hi_u07_t1",
-              "role": "subject",
-              "text": "शुरुआती `<body>` टैग के अंदर,",
-              "role_hint": "सॉलिड रंग सेट करने का तरीका बताएं"
-            },
-            {
-              "id": "hi_u07_t2",
-              "role": "process",
-              "text": "सॉलिड रंग सेट करने के लिए `bgcolor=\"yellow\"` लागू करें,",
-              "role_hint": "अब इमेज विकल्प प्रस्तुत करें"
-            },
-            {
-              "id": "hi_u07_t3",
-              "role": "condition",
-              "text": "या पृष्ठभूमि छवि प्रदर्शित करने के लिए `background=\"flower.jpg\"` जोड़ें,",
-              "role_hint": "रेंडरिंग परिणाम के साथ निष्कर्ष निकालें"
-            },
-            {
-              "id": "hi_u07_t4",
-              "role": "result",
-              "text": "सभी दृश्य तत्वों के लिए विज़ुअल कैनवास स्थापित करते हुए",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u07_d1",
-              "category": "logical",
-              "text": "सॉलिड रंग निर्दिष्ट करने के लिए `background=\"yellow\"` का उपयोग करें,",
-              "penalty_explanation": "background attribute छवि URL लेता है, जबकि bgcolor रंग मान स्वीकार करता है।"
-            },
-            {
-              "id": "hi_u07_d2",
-              "category": "grammatical",
-              "text": "`bgcolor` को अनिवार्य रूप से `<head>` सेक्शन के अंदर घोषित करें,",
-              "penalty_explanation": "पृष्ठ पृष्ठभूमि ऐट्रिब्यूट्स <body> टैग में होते हैं, <head> में नहीं।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "In `<body>`, use `bgcolor` for solid colors and `background` for tiled background images.",
-        "hi": "`<body>` में ठोस रंगों के लिए `bgcolor` और पृष्ठभूमि छवि के लिए `background` का उपयोग किया जाता है।"
-      }
-    },
-    {
-      "unit_id": "u08_body_margins_links",
-      "topic": "Body Margins and Hyperlink States",
-      "pedagogical_objective": "Configure margin offsets (leftmargin, topmargin) and hyperlink state colors (link, alink, vlink) in the body tag.",
-      "instruction": {
-        "title": {
-          "en": "Body Margins and Global Link Colors",
-          "hi": "बॉडी मार्जिन और हाइपरलिंक रंग स्थितियां"
-        },
-        "theory": {
-          "en": "The `<body>` tag controls layout offsets and hyperlink states. `topmargin` and `leftmargin` define pixel distances from the window edges. For links, `link` defines the default unvisited link color, `alink` sets active link color (clicked state), and `vlink` sets visited link color.",
-          "hi": "`<body>` टैग लेआउट स्पेसिंग और हाइपरलिंक की स्थितियों को नियंत्रित करता है। `topmargin` और `leftmargin` विंडो किनारों से पिक्सेल दूरी तय करते हैं। लिंक के लिए, `link` अनविज़िटेड लिंक का रंग तय करता है, `alink` सक्रिय (क्लिक के समय) लिंक का रंग, और `vlink` विज़िट किए जा चुके लिंक का रंग तय करता है।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Body Margins &amp; Link State Color Attributes</text><rect x='40' y='75' width='270' height='180' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='55' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold'>Margin Spacing Attributes</text><text x='55' y='140' fill='#cbd5e1' font-family='monospace' font-size='12'>topmargin=\"150px\"</text><text x='55' y='165' fill='#94a3b8' font-family='sans-serif' font-size='11'>Distance from top edge of browser</text><text x='55' y='200' fill='#cbd5e1' font-family='monospace' font-size='12'>leftmargin=\"100px\"</text><text x='55' y='225' fill='#94a3b8' font-family='sans-serif' font-size='11'>Distance from left edge of browser</text><rect x='330' y='75' width='270' height='180' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='345' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold'>Hyperlink Color States</text><text x='345' y='140' fill='#38bdf8' font-family='monospace' font-size='12'>link=\"blue\"  (unvisited)</text><text x='345' y='175' fill='#f472b6' font-family='monospace' font-size='12'>alink=\"pink\" (active clicked)</text><text x='345' y='210' fill='#ef4444' font-family='monospace' font-size='12'>vlink=\"red\"  (visited)</text></svg>",
-          "caption": {
-            "en": "Controlling viewport margins and the three link state color properties inside body.",
-            "hi": "बॉडी टैग के अंदर व्यूपोर्ट मार्जिन और तीन लिंक स्टेट रंग विशेषताओं का नियंत्रण।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Construct the sequence defining margin spacing and link state styling in the body tag.",
-          "hint": "Set margin values first, then specify the three distinct link states.",
-          "target_sequence": [
-            {
-              "id": "en_u08_t1",
-              "role": "subject",
-              "text": "configure `leftmargin` and `topmargin` inside `<body>`,",
-              "role_hint": "specify what layout effect this achieves"
-            },
-            {
-              "id": "en_u08_t2",
-              "role": "process",
-              "text": "to define spacing between window borders and content,",
-              "role_hint": "now configure link colors"
-            },
-            {
-              "id": "en_u08_t3",
-              "role": "process",
-              "text": "while applying `link` for unvisited and `alink` for active links,",
-              "role_hint": "complete with the visited link state"
-            },
-            {
-              "id": "en_u08_t4",
-              "role": "result",
-              "text": "and concluding with `vlink` to set visited hyperlink colors",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u08_d1",
-              "category": "logical",
-              "text": "use `vlink` exclusively to style hyperlinks currently being clicked,",
-              "penalty_explanation": "The `alink` attribute styles active clicked links; `vlink` is reserved for previously visited links."
-            },
-            {
-              "id": "en_u08_d2",
-              "category": "grammatical",
-              "text": "declare `topmargin` as an attribute of `<head>`,",
-              "penalty_explanation": "Margins affect body rendering and can only be declared inside the `<body>` tag."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "बॉडी टैग में मार्जिन स्पेसिंग और लिंक स्टाइलिंग को परिभाषित करने वाले क्रम को बनाएं।",
-          "hint": "पहले मार्जिन मान सेट करें, फिर तीनों लिंक स्थितियों को जोड़ें।",
-          "target_sequence": [
-            {
-              "id": "hi_u08_t1",
-              "role": "subject",
-              "text": "`<body>` के अंदर `leftmargin` और `topmargin` कॉन्फ़िगर करें,",
-              "role_hint": "बताएं कि इससे क्या लेआउट प्रभाव प्राप्त होता है"
-            },
-            {
-              "id": "hi_u08_t2",
-              "role": "process",
-              "text": "विंडो सीमाओं और सामग्री के बीच दूरी परिभाषित करने के लिए,",
-              "role_hint": "अब लिंक रंग कॉन्फ़िगर करें"
-            },
-            {
-              "id": "hi_u08_t3",
-              "role": "process",
-              "text": "अनविज़िटेड के लिए `link` और सक्रिय लिंक के लिए `alink` लागू करते हुए,",
-              "role_hint": "विज़िट किए गए लिंक की स्थिति के साथ समाप्त करें"
-            },
-            {
-              "id": "hi_u08_t4",
-              "role": "result",
-              "text": "और विज़िट किए गए हाइपरलिंक के रंग सेट करने के लिए `vlink` जोड़ें",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u08_d1",
-              "category": "logical",
-              "text": "क्लिक किए जा रहे लिंक को स्टाइल करने के लिए केवल `vlink` का उपयोग करें,",
-              "penalty_explanation": "`alink` सक्रिय लिंक को स्टाइल करता है; `vlink` विज़िट किए गए लिंक के लिए है।"
-            },
-            {
-              "id": "hi_u08_d2",
-              "category": "grammatical",
-              "text": "`topmargin` को `<head>` के attribute के रूप में घोषित करें,",
-              "penalty_explanation": "मार्जिन <body> टैग में घोषित किए जाते हैं, <head> में नहीं।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "`<body>` handles page offsets via `leftmargin`/`topmargin` and link colors via `link`, `alink`, and `vlink`.",
-        "hi": "`<body>` टैग `leftmargin`/`topmargin` से मार्जिन और `link`, `alink`, `vlink` से लिंक के रंग नियंत्रित करता है।"
-      }
-    },
-    {
-      "unit_id": "u09_font_formatting",
-      "topic": "Text Styling with the Font Element",
-      "pedagogical_objective": "Format inline text appearance using face, color, and size attributes of the font container tag.",
-      "instruction": {
-        "title": {
-          "en": "Typography Control with FONT Tag",
-          "hi": "FONT टैग के साथ टाइपोग्राफी नियंत्रण"
-        },
-        "theory": {
-          "en": "The `<font>` tag is a container element used to customize text appearance. It provides three primary attributes: `face` (sets typeface, e.g., `face=\"broadway\"`), `color` (sets font color, e.g., `color=\"green\"`), and `size` (sets font magnitude using integer values, e.g., `size=\"18\"`).",
-          "hi": "`<font>` टैग एक कंटेनर तत्व है जिसका उपयोग टेक्स्ट के स्वरूप को अनुकूलित करने के लिए किया जाता है। इसके तीन मुख्य attributes हैं: `face` (फ़ॉन्ट-फ़ेस सेट करता है, जैसे `face=\"broadway\"`), `color` (टेक्स्ट का रंग बदलता है, जैसे `color=\"green\"`), और `size` (फ़ॉन्ट का आकार बदलता है, जैसे `size=\"18\"`)।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>FONT Tag Attributes &amp; Visual Output</text><rect x='40' y='75' width='560' height='60' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='60' y='110' fill='#cbd5e1' font-family='monospace' font-size='14'>&lt;FONT <tspan fill='#fbbf24'>face=\"Arial\"</tspan> <tspan fill='#4ade80'>color=\"green\"</tspan> <tspan fill='#38bdf8'>size=\"5\"</tspan>&gt; Sample &lt;/FONT&gt;</text><rect x='40' y='155' width='170' height='90' rx='6' fill='#1e293b' stroke='#fbbf24' stroke-width='1'/><text x='125' y='185' fill='#fbbf24' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>face</text><text x='125' y='215' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Changes font family</text><rect x='235' y='155' width='170' height='90' rx='6' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='320' y='185' fill='#4ade80' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>color</text><text x='320' y='215' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Sets text foreground color</text><rect x='430' y='155' width='170' height='90' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='515' y='185' fill='#38bdf8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>size</text><text x='515' y='215' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Controls font scale</text></svg>",
-          "caption": {
-            "en": "The three formatting attributes of the font container element.",
-            "hi": "फॉन्ट कंटेनर तत्व के तीन प्रारूपण ऐट्रिब्यूट्स।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Construct the sequence for styling text with the FONT element.",
-          "hint": "Open font with attributes, provide the text, and close the font container.",
-          "target_sequence": [
-            {
-              "id": "en_u09_t1",
-              "role": "subject",
-              "text": "open the `<font>` container tag,",
-              "role_hint": "specify attributes inside the tag"
-            },
-            {
-              "id": "en_u09_t2",
-              "role": "attribute",
-              "text": "specify `face`, `color`, and `size` attributes,",
-              "role_hint": "insert the text content"
-            },
-            {
-              "id": "en_u09_t3",
-              "role": "process",
-              "text": "insert the target text message to be styled,",
-              "role_hint": "close the element properly"
-            },
-            {
-              "id": "en_u09_t4",
-              "role": "result",
-              "text": "and close with `</font>` to isolate text styling",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u09_d1",
-              "category": "logical",
-              "text": "use `family` instead of `face` as the standard HTML font attribute,",
-              "penalty_explanation": "HTML font elements use `face` to define typeface; `font-family` belongs to CSS."
-            },
-            {
-              "id": "en_u09_d2",
-              "category": "grammatical",
-              "text": "treat `<font>` as an empty tag without any closing counterpart,",
-              "penalty_explanation": "The `<font>` tag is a container tag requiring a matching `</font>`."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "FONT एलिमेंट के साथ टेक्स्ट स्टाइल करने के सही क्रम को व्यवस्थित करें।",
-          "hint": "ऐट्रिब्यूट्स के साथ फॉन्ट खोलें, टेक्स्ट दर्ज करें और फॉन्ट कंटेनर बंद करें।",
-          "target_sequence": [
-            {
-              "id": "hi_u09_t1",
-              "role": "subject",
-              "text": "`<font>` कंटेनर टैग खोलें,",
-              "role_hint": "टैग के अंदर ऐट्रिब्यूट्स निर्दिष्ट करें"
-            },
-            {
-              "id": "hi_u09_t2",
-              "role": "attribute",
-              "text": "`face`, `color`, और `size` ऐट्रिब्यूट निर्दिष्ट करें,",
-              "role_hint": "वांछित टेक्स्ट सामग्री दर्ज करें"
-            },
-            {
-              "id": "hi_u09_t3",
-              "role": "process",
-              "text": "स्टाइल किए जाने वाले मुख्य टेक्स्ट को जोड़ें,",
-              "role_hint": "एलिमेंट को सही तरीके से बंद करें"
-            },
-            {
-              "id": "hi_u09_t4",
-              "role": "result",
-              "text": "और टेक्स्ट स्टाइलिंग को सीमित करने के लिए `</font>` से बंद करें",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u09_d1",
-              "category": "logical",
-              "text": "मानक HTML फ़ॉन्ट attribute के रूप में `face` के स्थान पर `family` का उपयोग करें,",
-              "penalty_explanation": "HTML फ़ॉन्ट तत्व `face` का उपयोग करता है; `font-family` CSS की प्रॉपर्टी है।"
-            },
-            {
-              "id": "hi_u09_d2",
-              "category": "grammatical",
-              "text": "`<font>` को बिना क्लोजिंग टैग वाले एक एम्प्टी टैग के रूप में उपयोग करें,",
-              "penalty_explanation": "`<font>` एक कंटेनर टैग है जिसमें `</font>` क्लोजिंग टैग आवश्यक होता है।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "The `<font>` container tag controls typeface (`face`), color (`color`), and dimension scale (`size`).",
-        "hi": "`<font>` कंटेनर टैग `face` (फ़ॉन्ट शैली), `color` (रंग), और `size` (आकार) को नियंत्रित करता है।"
-      }
-    },
-    {
-      "unit_id": "u10_line_breaks_br",
-      "topic": "Inline Flow Control with Line Break",
-      "pedagogical_objective": "Utilize the empty br element to insert single line breaks without starting a new paragraph.",
-      "instruction": {
-        "title": {
-          "en": "Controlling Line Breaks with BR",
-          "hi": "BR टैग से लाइन ब्रेक नियंत्रित करना"
-        },
-        "theory": {
-          "en": "Standard HTML collapses multiple spaces and carriage returns into a single space. To force a text line to terminate and wrap immediately to the next line without introducing paragraph margin spacing, use the `<br>` line break tag. Because `<br>` is an empty tag, it does not use a closing companion.",
-          "hi": "सामान्य HTML कई खाली स्थानों और एंटर कीज़ को एक स्पेस में बदल देता है। पैराग्राफ का अतिरिक्त स्पेस छोड़े बिना टेक्स्ट को अगली लाइन पर ले जाने के लिए `<br>` (लाइन-ब्रेक) टैग का उपयोग किया जाता है। चूंकि `<br>` एक एम्प्टी टैग है, इसमें क्लोजिंग टैग नहीं होता।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Line Break Flow Control (&lt;BR&gt;)</text><rect x='40' y='75' width='260' height='175' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='170' y='105' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Source HTML Code</text><text x='55' y='145' fill='#cbd5e1' font-family='monospace' font-size='13'>Hello,&lt;BR&gt;How are you?</text><text x='55' y='190' fill='#94a3b8' font-family='sans-serif' font-size='11'>• &lt;BR&gt; has no closing tag</text><text x='55' y='210' fill='#94a3b8' font-family='sans-serif' font-size='11'>• Unpaired empty element</text><rect x='340' y='75' width='260' height='175' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='470' y='105' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Rendered Browser Output</text><rect x='360' y='125' width='220' height='100' rx='4' fill='#0f172a' stroke='#334155' stroke-width='1'/><text x='375' y='155' fill='#ffffff' font-family='sans-serif' font-size='14'>Hello,</text><text x='375' y='185' fill='#ffffff' font-family='sans-serif' font-size='14'>How are you?</text><text x='375' y='212' fill='#4ade80' font-family='sans-serif' font-size='10'>Immediate carriage return</text></svg>",
-          "caption": {
-            "en": "Inserting an immediate carriage return into text using the unpaired br tag.",
-            "hi": "अनपेयर्ड br टैग का उपयोग करके टेक्स्ट में तत्काल लाइन ब्रेक लगाना।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Construct the rule explaining the implementation and effect of the BR tag.",
-          "hint": "Identify the element as empty, explain its placement in text, and describe the output effect.",
-          "target_sequence": [
-            {
-              "id": "en_u10_t1",
-              "role": "subject",
-              "text": "inserting the empty `<br>` tag into running text,",
-              "role_hint": "explain what happens to the text flow"
-            },
-            {
-              "id": "en_u10_t2",
-              "role": "process",
-              "text": "forces an immediate single-line carriage return,",
-              "role_hint": "contrast with paragraphs"
-            },
-            {
-              "id": "en_u10_t3",
-              "role": "condition",
-              "text": "without creating additional paragraph spacing,",
-              "role_hint": "conclude with its tag type behavior"
-            },
-            {
-              "id": "en_u10_t4",
-              "role": "result",
-              "text": "requiring no closing tag to complete execution",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u10_d1",
-              "category": "logical",
-              "text": "requiring a companion `</br>` tag to mark the end of the line,",
-              "penalty_explanation": "`<br>` is an empty tag and never accepts a closing `</br>` in standard HTML."
-            },
-            {
-              "id": "en_u10_d2",
-              "category": "grammatical",
-              "text": "adding blank margin bands identical to full paragraph breaks,",
-              "penalty_explanation": "`<br>` generates a single return without the margin spacing created by paragraph tags."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "BR टैग के प्रभाव और उपयोग को समझाने वाले नियम का सही क्रम बनाएं।",
-          "hint": "एम्प्टी टैग से शुरू करें, लाइन ब्रेक के प्रभाव को जोड़ें और क्लोजिंग नियम के साथ पूरा करें।",
-          "target_sequence": [
-            {
-              "id": "hi_u10_t1",
-              "role": "subject",
-              "text": "चल रहे टेक्स्ट में एम्प्टी `<br>` टैग जोड़ने पर,",
-              "role_hint": "बताएं कि टेक्स्ट फ्लो पर क्या प्रभाव पड़ता है"
-            },
-            {
-              "id": "hi_u10_t2",
-              "role": "process",
-              "text": "यह तुरंत एक सिंगल लाइन ब्रेक लागू करता है,",
-              "role_hint": "पैराग्राफ स्पेसिंग से तुलना करें"
-            },
-            {
-              "id": "hi_u10_t3",
-              "role": "condition",
-              "text": "अतिरिक्त पैराग्राफ खाली स्थान छोड़े बिना,",
-              "role_hint": "क्लोजिंग टैग की अनुपस्थिति के साथ समाप्त करें"
-            },
-            {
-              "id": "hi_u10_t4",
-              "role": "result",
-              "text": "निष्पादन पूरा करने के लिए किसी क्लोजिंग टैग की आवश्यकता नहीं होती",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u10_d1",
-              "category": "logical",
-              "text": "लाइन के अंत को चिह्नित करने के लिए साथी `</br>` टैग की मांग करते हुए,",
-              "penalty_explanation": "`<br>` एक एम्प्टी टैग है और कभी भी `</br>` क्लोजिंग टैग नहीं लेता।"
-            },
-            {
-              "id": "hi_u10_d2",
-              "category": "grammatical",
-              "text": "पूर्ण पैराग्राफ ब्रेक के समान अतिरिक्त खाली मार्जिन जोड़ते हुए,",
-              "penalty_explanation": "`<br>` केवल अगली पंक्ति में भेजता है, कोई मार्जिन स्थान नहीं जोड़ता।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "`<br>` is an empty tag that forces an immediate line break without paragraph margin margins.",
-        "hi": "`<br>` एक एम्प्टी टैग है जो बिना अतिरिक्त पैराग्राफ मार्जिन छोड़े तुरंत लाइन बदलता है।"
-      }
-    },
-    {
-      "unit_id": "u11_horizontal_rules_hr",
-      "topic": "Dividing Rules with the HR Tag",
-      "pedagogical_objective": "Configure thematic horizontal dividing lines using hr and its size, width, align, and color attributes.",
-      "instruction": {
-        "title": {
-          "en": "Thematic Dividers with HR Tag",
-          "hi": "HR टैग के साथ क्षैतिज रेखाएं (Dividers)"
-        },
-        "theory": {
-          "en": "The `<hr>` tag is an empty element that inserts a horizontal rule across a web page to separate sections visually. It accepts several styling attributes: `size` (thickness in pixels), `width` (length in pixels or percentage, e.g., `width=\"50%\"`), `align` (horizontal positioning: `left`, `center`, `right`), and `color`.",
-          "hi": "`<hr>` टैग एक एम्प्टी एलिमेंट है जो अनुभागों को अलग करने के लिए वेब पेज पर एक क्षैतिज रेखा (horizontal rule) प्रदर्शित करता है। इसके मुख्य attributes हैं: `size` (मोटाई पिक्सेल में), `width` (चौड़ाई पिक्सेल या प्रतिशत में, जैसे `width=\"50%\"`), `align` (`left`, `center`, `right`), और `color` (रेखा का रंग)।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Configuring &lt;HR&gt; Attributes</text><rect x='40' y='70' width='560' height='60' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='60' y='105' fill='#cbd5e1' font-family='monospace' font-size='13'>&lt;HR <tspan fill='#fbbf24'>size=\"6\"</tspan> <tspan fill='#38bdf8'>width=\"50%\"</tspan> <tspan fill='#4ade80'>align=\"center\"</tspan> <tspan fill='#f472b6'>color=\"blue\"</tspan>&gt;</text><rect x='40' y='145' width='560' height='115' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='320' y='175' fill='#cbd5e1' font-family='sans-serif' font-size='12' text-anchor='middle'>Rendered 50% Centered Horizontal Rule</text><rect x='160' y='195' width='320' height='8' rx='4' fill='#38bdf8'/><text x='320' y='230' fill='#94a3b8' font-family='sans-serif' font-size='11' text-anchor='middle'>size='6' (thickness) | color='blue' | width='50%'</text></svg>",
-          "caption": {
-            "en": "Anatomy of the hr tag specifying size, width, alignment, and color.",
-            "hi": "hr टैग की संरचना जो size, width, alignment, और color निर्दिष्ट करती है।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Assemble the instruction for rendering a styled horizontal dividing rule.",
-          "hint": "Start with the empty tag, assign dimensions and alignment, and conclude with color.",
-          "target_sequence": [
-            {
-              "id": "en_u11_t1",
-              "role": "subject",
-              "text": "declare the empty `<hr>` element,",
-              "role_hint": "specify thickness and width next"
-            },
-            {
-              "id": "en_u11_t2",
-              "role": "attribute",
-              "text": "configure `size=\"6\"` and `width=\"50%\"`,",
-              "role_hint": "add the alignment and color properties"
-            },
-            {
-              "id": "en_u11_t3",
-              "role": "attribute",
-              "text": "set `align=\"center\"` and `color=\"blue\"`,",
-              "role_hint": "conclude with the visual outcome"
-            },
-            {
-              "id": "en_u11_t4",
-              "role": "result",
-              "text": "to draw a centered thematic divider line across the page",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u11_d1",
-              "category": "logical",
-              "text": "enclose the dividing line inside a closing companion `</hr>`,",
-              "penalty_explanation": "`<hr>` is an empty tag and does not possess a closing `</hr>` tag."
-            },
-            {
-              "id": "en_u11_d2",
-              "category": "grammatical",
-              "text": "substitute `thickness` for the valid `size` attribute,",
-              "penalty_explanation": "HTML uses the `size` attribute to configure rule thickness, not `thickness`."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "एक स्टाइल की गई क्षैतिज रेखा (HR) बनाने के निर्देशों को सही क्रम में व्यवस्थित करें।",
-          "hint": "एम्प्टी टैग से शुरू करें, मोटाई और चौड़ाई जोड़ें, फिर अलाइनमेंट और रंग तय करें।",
-          "target_sequence": [
-            {
-              "id": "hi_u11_t1",
-              "role": "subject",
-              "text": "एम्प्टी `<hr>` एलिमेंट घोषित करें,",
-              "role_hint": "इसके बाद मोटाई और चौड़ाई निर्दिष्ट करें"
-            },
-            {
-              "id": "hi_u11_t2",
-              "role": "attribute",
-              "text": "`size=\"6\"` और `width=\"50%\"` कॉन्फ़िगर करें,",
-              "role_hint": "अलाइनमेंट और रंग जोड़ें"
-            },
-            {
-              "id": "hi_u11_t3",
-              "role": "attribute",
-              "text": "`align=\"center\"` और `color=\"blue\"` सेट करें,",
-              "role_hint": "विज़ुअल परिणाम के साथ निष्कर्ष निकालें"
-            },
-            {
-              "id": "hi_u11_t4",
-              "role": "result",
-              "text": "पेज पर एक केंद्रित क्षैतिज विभाजक रेखा खींचने के लिए",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u11_d1",
-              "category": "logical",
-              "text": "विभाजक रेखा को एक क्लोजिंग `</hr>` टैग के अंदर बंद करें,",
-              "penalty_explanation": "`<hr>` एक एम्प्टी टैग है और इसमें क्लोजिंग `</hr>` टैग नहीं होता।"
-            },
-            {
-              "id": "hi_u11_d2",
-              "category": "grammatical",
-              "text": "मान्य `size` attribute के स्थान पर `thickness` का उपयोग करें,",
-              "penalty_explanation": "HTML में मोटाई के लिए `size` का उपयोग किया जाता है, `thickness` का नहीं।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "`<hr>` is an empty tag used to draw horizontal dividers, styled via `size`, `width`, `align`, and `color`.",
-        "hi": "`<hr>` एक एम्प्टी टैग है जिससे क्षैतिज रेखाएं खींची जाती हैं, जिन्हें `size`, `width`, `align`, और `color` से सजाया जाता है।"
-      }
-    },
-    {
-      "unit_id": "u12_source_comments",
-      "topic": "Source Code Comments Syntax",
-      "pedagogical_objective": "Utilize comment delimiters <!-- and --> to insert non-rendered code documentation and disable code segments.",
-      "instruction": {
-        "title": {
-          "en": "HTML Source Code Comments",
-          "hi": "एचटीएमएल सोर्स कोड टिप्पणियाँ (Comments)"
-        },
-        "theory": {
-          "en": "HTML comments are written between `<!--` and `-->`. Any text, notes, or markup placed inside these comment delimiters will be completely ignored by the web browser and omitted from the rendered page. Comments are used to document logic, explain code sections, or temporarily disable tags during testing.",
-          "hi": "HTML टिप्पणियाँ `<!--` और `-->` के बीच लिखी जाती हैं। इन विभाजकों के अंदर रखी गई कोई भी सामग्री ब्राउज़र द्वारा अनदेखी कर दी जाती है और स्क्रीन पर प्रदर्शित नहीं होती। इनका उपयोग कोड समझाने या परीक्षण के दौरान कोड के किसी हिस्से को निष्क्रिय करने के लिए किया जाता है।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Comment Syntax and Browser Parsing</text><rect x='40' y='75' width='560' height='75' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='60' y='110' fill='#94a3b8' font-family='monospace' font-size='16'>&lt;!-- <tspan fill='#4ade80'>This is an internal developer comment</tspan> --&gt;</text><text x='60' y='135' fill='#fbbf24' font-family='sans-serif' font-size='11'>Ignored by parser | Visible only in View Source</text><rect x='40' y='165' width='265' height='90' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='172' y='195' fill='#38bdf8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Purpose 1: Documentation</text><text x='172' y='225' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Explains complex layouts &amp; sections</text><rect x='335' y='165' width='265' height='90' rx='6' fill='#1e293b' stroke='#f472b6' stroke-width='1'/><text x='467' y='195' fill='#f472b6' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Purpose 2: Disabling Code</text><text x='467' y='225' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Tests layout by hiding blocks of tags</text></svg>",
-          "caption": {
-            "en": "Syntax delimiters and functional applications of HTML comments.",
-            "hi": "HTML टिप्पणियों के सिंटैक्स विभाजक और व्यावहारिक उपयोग।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Construct the sequence defining the syntax and browser behavior of an HTML comment.",
-          "hint": "Open with comment syntax, include documentation, close delimiter, and state browser response.",
-          "target_sequence": [
-            {
-              "id": "en_u12_t1",
-              "role": "subject",
-              "text": "open with the comment delimiter `<!--`,",
-              "role_hint": "insert notes or tags inside"
-            },
-            {
-              "id": "en_u12_t2",
-              "role": "process",
-              "text": "insert internal developer documentation or disabled code,",
-              "role_hint": "close the comment tag"
-            },
-            {
-              "id": "en_u12_t3",
-              "role": "process",
-              "text": "terminate the block with `-->`,",
-              "role_hint": "describe browser rendering behavior"
-            },
-            {
-              "id": "en_u12_t4",
-              "role": "result",
-              "text": "ensuring the browser hides the enclosed contents from the rendered page",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u12_d1",
-              "category": "logical",
-              "text": "causing the browser to render the comment in bold red italicized text,",
-              "penalty_explanation": "Comments are completely omitted from the visual browser canvas and never rendered."
-            },
-            {
-              "id": "en_u12_d2",
-              "category": "grammatical",
-              "text": "open comments using C-style `//` double slashes,",
-              "penalty_explanation": "HTML requires `<!-- ... -->` delimiters; `//` is JavaScript or C++ syntax."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "HTML टिप्पणी के सिंटैक्स और ब्राउज़र व्यवहार को परिभाषित करने वाले क्रम को बनाएं।",
-          "hint": "कमेंट सिंटैक्स खोलें, नोट्स जोड़ें, सिंटैक्स बंद करें और ब्राउज़र प्रभाव बताएं।",
-          "target_sequence": [
-            {
-              "id": "hi_u12_t1",
-              "role": "subject",
-              "text": "टिप्पणी विभाजक `<!--` से शुरुआत करें,",
-              "role_hint": "अंदर नोट्स या कोड जोड़ें"
-            },
-            {
-              "id": "hi_u12_t2",
-              "role": "process",
-              "text": "आंतरिक विवरण या अक्षम किया गया कोड दर्ज करें,",
-              "role_hint": "टिप्पणी टैग बंद करें"
-            },
-            {
-              "id": "hi_u12_t3",
-              "role": "process",
-              "text": "`-->` के साथ ब्लॉक को समाप्त करें,",
-              "role_hint": "ब्राउज़र रेंडरिंग प्रभाव का वर्णन करें"
-            },
-            {
-              "id": "hi_u12_t4",
-              "role": "result",
-              "text": "यह सुनिश्चित करते हुए कि ब्राउज़र इस सामग्री को स्क्रीन पर प्रदर्शित न करे",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u12_d1",
-              "category": "logical",
-              "text": "ब्राउज़र को स्क्रीन पर टिप्पणी को बोल्ड लाल रंग में प्रदर्शित करने के लिए बाध्य करते हुए,",
-              "penalty_explanation": "टिप्पणियाँ ब्राउज़र स्क्रीन पर कभी नहीं दिखाई देती हैं।"
-            },
-            {
-              "id": "hi_u12_d2",
-              "category": "grammatical",
-              "text": "C-भाषा की तरह डबल स्लैश `//` का उपयोग करके टिप्पणियाँ खोलें,",
-              "penalty_explanation": "HTML में `<!-- ... -->` की आवश्यकता होती है; `//` जावास्क्रिप्ट का सिंटैक्स है।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "HTML comments are framed with `<!-- ... -->` and remain completely invisible in the rendered web page.",
-        "hi": "HTML टिप्पणियाँ `<!-- ... -->` के बीच लिखी जाती हैं और स्क्रीन पर पूरी तरह अदृश्य रहती हैं।"
-      }
-    },
-    {
-      "unit_id": "u13_headings_hierarchy",
-      "topic": "Heading Hierarchy: H1 through H6",
-      "pedagogical_objective": "Structure webpage sections using heading tags from H1 (largest) to H6 (smallest) and apply the align attribute.",
-      "instruction": {
-        "title": {
-          "en": "Heading Elements and Alignment",
-          "hi": "हेडिंग तत्व और संरेखण (Alignment)"
-        },
-        "theory": {
-          "en": "HTML provides six levels of section headings, indexed from `<h1>` down to `<h6>`. `<h1>` represents the highest importance and largest default font size, while `<h6>` represents the lowest hierarchy and smallest font size. Heading elements are container tags and support the `align` attribute (e.g., `<h2 align=\"right\">`).",
-          "hi": "HTML छह स्तर के हेडिंग टैग प्रदान करता है, `<h1>` से `<h6>` तक। `<h1>` सबसे बड़ा और मुख्य शीर्षक होता है, जबकि `<h6>` सबसे छोटा शीर्षक होता है। हेडिंग टैग पेयर्ड टैग होते हैं और `align` ऐट्रिब्यूट का समर्थन करते हैं (जैसे `<h2 align=\"right\">`)।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Heading Hierarchy: &lt;H1&gt; through &lt;H6&gt;</text><text x='50' y='90' fill='#4ade80' font-family='monospace' font-size='22' font-weight='bold'>&lt;H1&gt; Heading Level 1 (Largest)</text><text x='50' y='125' fill='#38bdf8' font-family='monospace' font-size='18' font-weight='bold'>&lt;H2&gt; Heading Level 2</text><text x='50' y='155' fill='#cbd5e1' font-family='monospace' font-size='15'>&lt;H3&gt; Heading Level 3</text><text x='50' y='185' fill='#fbbf24' font-family='monospace' font-size='13'>&lt;H4&gt; Heading Level 4</text><text x='50' y='210' fill='#f472b6' font-family='monospace' font-size='11'>&lt;H5&gt; Heading Level 5</text><text x='50' y='232' fill='#94a3b8' font-family='monospace' font-size='9'>&lt;H6&gt; Heading Level 6 (Smallest)</text><line x1='440' y1='75' x2='440' y2='245' stroke='#475569' stroke-width='1'/><text x='530' y='130' fill='#38bdf8' font-family='sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>Alignment Attribute</text><text x='530' y='160' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='middle'>align=\"center\"</text><text x='530' y='180' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='middle'>align=\"right\"</text><text x='530' y='200' fill='#cbd5e1' font-family='monospace' font-size='11' text-anchor='middle'>align=\"left\"</text></svg>",
-          "caption": {
-            "en": "Decreasing font scale from H1 to H6 and heading alignment configuration.",
-            "hi": "H1 से H6 तक घटता आकार और हेडिंग अलाइनमेंट का उपयोग।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Construct the sequence defining the heading hierarchy and alignment.",
-          "hint": "Select the highest heading level, apply alignment, add content, and close the tag.",
-          "target_sequence": [
-            {
-              "id": "en_u13_t1",
-              "role": "subject",
-              "text": "select a heading tag between `<h1>` and `<h6>`,",
-              "role_hint": "declare alignment inside the tag"
-            },
-            {
-              "id": "en_u13_t2",
-              "role": "attribute",
-              "text": "apply `align=\"center\"` inside the opening tag,",
-              "role_hint": "insert heading text"
-            },
-            {
-              "id": "en_u13_t3",
-              "role": "process",
-              "text": "insert the prominent section title,",
-              "role_hint": "close the heading container"
-            },
-            {
-              "id": "en_u13_t4",
-              "role": "result",
-              "text": "and close with matching `</h1>` preserving structural hierarchy",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u13_d1",
-              "category": "logical",
-              "text": "assume `<h6>` produces the largest font size among all headings,",
-              "penalty_explanation": "`<h1>` is the largest heading, while `<h6>` is the smallest."
-            },
-            {
-              "id": "en_u13_d2",
-              "category": "grammatical",
-              "text": "treat `<h1>` as an unpaired empty element without closing,",
-              "penalty_explanation": "All heading tags from `<h1>` to `<h6>` are paired container tags."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "हेडिंग पदानुक्रम और संरेखण (alignment) को परिभाषित करने वाले क्रम को व्यवस्थित करें।",
-          "hint": "हेडिंग स्तर चुनें, अलाइनमेंट लागू करें, टेक्स्ट जोड़ें और टैग बंद करें।",
-          "target_sequence": [
-            {
-              "id": "hi_u13_t1",
-              "role": "subject",
-              "text": "`<h1>` से `<h6>` के बीच एक हेडिंग टैग चुनें,",
-              "role_hint": "टैग के अंदर अलाइनमेंट लागू करें"
-            },
-            {
-              "id": "hi_u13_t2",
-              "role": "attribute",
-              "text": "शुरुआती टैग में `align=\"center\"` लागू करें,",
-              "role_hint": "मुख्य शीर्षक टेक्स्ट दर्ज करें"
-            },
-            {
-              "id": "hi_u13_t3",
-              "role": "process",
-              "text": "प्रमुख अनुभाग शीर्षक दर्ज करें,",
-              "role_hint": "हेडिंग कंटेनर को बंद करें"
-            },
-            {
-              "id": "hi_u13_t4",
-              "role": "result",
-              "text": "और पदानुक्रम बनाए रखते हुए मैचिंग `</h1>` से बंद करें",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u13_d1",
-              "category": "logical",
-              "text": "यह मानें कि `<h6>` सभी हेडिंग्स में सबसे बड़ा फ़ॉन्ट आकार उत्पन्न करता है,",
-              "penalty_explanation": "`<h1>` सबसे बड़ा शीर्षक उत्पन्न करता है, जबकि `<h6>` सबसे छोटा होता है।"
-            },
-            {
-              "id": "hi_u13_d2",
-              "category": "grammatical",
-              "text": "`<h1>` को बिना बंद किए एक अनपेयर्ड एम्प्टी टैग मानें,",
-              "penalty_explanation": "`<h1>` से `<h6>` तक के सभी टैग पेयर्ड कंटेनर टैग होते हैं।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "HTML headings range from `<h1>` (largest) to `<h6>` (smallest) and are paired container tags.",
-        "hi": "HTML हेडिंग टैग `<h1>` (सबसे बड़ा) से `<h6>` (सबसे छोटा) तक होते हैं और पेयर्ड कंटेनर टैग होते हैं।"
-      }
-    },
-    {
-      "unit_id": "u14_paragraph_alignment",
-      "topic": "Paragraph Structuring and Text Alignment",
-      "pedagogical_objective": "Format blocks of running text with the p container tag and align using left, right, center, and justify.",
-      "instruction": {
-        "title": {
-          "en": "Paragraph Structuring with P Tag",
-          "hi": "P टैग के साथ पैराग्राफ संरचना और अलाइनमेंट"
-        },
-        "theory": {
-          "en": "The `<p>` tag is a container element used to format paragraphs. Browsers automatically insert a single blank line before and after every paragraph. The `<p>` tag accepts the `align` attribute with four valid values: `left` (default), `center`, `right`, and `justify` (aligns both margins evenly).",
-          "hi": "`<p>` टैग एक कंटेनर तत्व है जिसका उपयोग पैराग्राफ बनाने के लिए किया जाता है। ब्राउज़र प्रत्येक `<p>` टैग से पहले और बाद में स्वचालित रूप से एक खाली पंक्ति जोड़ते हैं। `<p>` टैग में `align` attribute के चार मान होते हैं: `left`, `center`, `right`, और `justify` (दोनों किनारों को बराबर संरेखित करता है)।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Paragraph Alignment Values: &lt;P align=\"...\"&gt;</text><rect x='40' y='75' width='260' height='80' rx='6' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='55' y='100' fill='#fbbf24' font-family='monospace' font-size='12'>align=\"left\" / \"center\"</text><text x='55' y='125' fill='#94a3b8' font-family='sans-serif' font-size='11'>Left-aligned (default) or</text><text x='55' y='142' fill='#94a3b8' font-family='sans-serif' font-size='11'>centered across viewport</text><rect x='340' y='75' width='260' height='80' rx='6' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='355' y='100' fill='#4ade80' font-family='monospace' font-size='12'>align=\"justify\"</text><text x='355' y='125' fill='#94a3b8' font-family='sans-serif' font-size='11'>Stretches lines so both margins</text><text x='355' y='142' fill='#94a3b8' font-family='sans-serif' font-size='11'>align cleanly like a newspaper</text><rect x='40' y='170' width='560' height='85' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='60' y='198' fill='#cbd5e1' font-family='monospace' font-size='13'>&lt;P align=\"justify\"&gt; Paragraph content goes here... &lt;/P&gt;</text><text x='60' y='230' fill='#38bdf8' font-family='sans-serif' font-size='11'>Note: Browsers automatically append blank lines above and below.</text></svg>",
-          "caption": {
-            "en": "Configuring justify, center, and left alignment on paragraph containers.",
-            "hi": "पैराग्राफ कंटेनरों पर justify, center, और left अलाइनमेंट सेट करना।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Assemble the sequence to format a paragraph with justified text alignment.",
-          "hint": "Open p with justify attribute, insert text, and close the paragraph tag.",
-          "target_sequence": [
-            {
-              "id": "en_u14_t1",
-              "role": "subject",
-              "text": "open the `<p>` container element,",
-              "role_hint": "specify alignment attribute"
-            },
-            {
-              "id": "en_u14_t2",
-              "role": "attribute",
-              "text": "set `align=\"justify\"` inside the opening tag,",
-              "role_hint": "add the paragraph content"
-            },
-            {
-              "id": "en_u14_t3",
-              "role": "process",
-              "text": "write the narrative text block,",
-              "role_hint": "close the tag to trigger margins"
-            },
-            {
-              "id": "en_u14_t4",
-              "role": "result",
-              "text": "and close with `</p>` to append automated vertical margin spacing",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u14_d1",
-              "category": "logical",
-              "text": "use `align=\"middle\"` as the standard HTML paragraph alignment attribute,",
-              "penalty_explanation": "Valid alignment values for `<p>` are `left`, `right`, `center`, and `justify`, not `middle`."
-            },
-            {
-              "id": "en_u14_d2",
-              "category": "grammatical",
-              "text": "nest multiple `<title>` elements directly inside `<p>`,",
-              "penalty_explanation": "`<title>` belongs exclusively in `<head>`, never inside a body paragraph."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "Justified टेक्स्ट अलाइनमेंट के साथ पैराग्राफ बनाने के क्रम को व्यवस्थित करें।",
-          "hint": "justify ऐट्रिब्यूट के साथ p खोलें, टेक्स्ट दर्ज करें और पैराग्राफ टैग बंद करें।",
-          "target_sequence": [
-            {
-              "id": "hi_u14_t1",
-              "role": "subject",
-              "text": "`<p>` कंटेनर एलिमेंट खोलें,",
-              "role_hint": "अलाइनमेंट ऐट्रिब्यूट सेट करें"
-            },
-            {
-              "id": "hi_u14_t2",
-              "role": "attribute",
-              "text": "शुरुआती टैग के अंदर `align=\"justify\"` सेट करें,",
-              "role_hint": "पैराग्राफ टेक्स्ट जोड़ें"
-            },
-            {
-              "id": "hi_u14_t3",
-              "role": "process",
-              "text": "मुख्य वर्णनात्मक टेक्स्ट ब्लॉक लिखें,",
-              "role_hint": "मार्जिन लागू करने के लिए टैग बंद करें"
-            },
-            {
-              "id": "hi_u14_t4",
-              "role": "result",
-              "text": "और ऊपर-नीचे रिक्त पंक्ति जोड़ने के लिए `</p>` के साथ बंद करें",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u14_d1",
-              "category": "logical",
-              "text": "मानक HTML पैराग्राफ अलाइनमेंट के रूप में `align=\"middle\"` का उपयोग करें,",
-              "penalty_explanation": "`<p>` के लिए मान्य अलाइनमेंट मान `left`, `right`, `center`, और `justify` हैं, `middle` नहीं।"
-            },
-            {
-              "id": "hi_u14_d2",
-              "category": "grammatical",
-              "text": "`<p>` के अंदर सीधे कई `<title>` तत्व नेस्ट करें,",
-              "penalty_explanation": "`<title>` केवल `<head>` में होता है, कभी भी पैराग्राफ के अंदर नहीं।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "`<p>` formats text blocks with top and bottom margins, supporting `left`, `right`, `center`, and `justify` alignment.",
-        "hi": "`<p>` टैग ऊपर और नीचे खाली स्थान जोड़कर पैराग्राफ बनाता है और `justify` सहित चार अलाइनमेंट मान स्वीकार करता है।"
-      }
-    },
-    {
-      "unit_id": "u15_inline_text_styles",
-      "topic": "Physical Text Formatting: B, I, and U",
-      "pedagogical_objective": "Apply bold, italic, and underline styling tags individually and combined using proper nesting hierarchy.",
-      "instruction": {
-        "title": {
-          "en": "Physical Style Tags (B, I, U)",
-          "hi": "टेक्स्ट स्टाइलिंग टैग्स (B, I, U) और नेस्टिंग"
-        },
-        "theory": {
-          "en": "HTML provides three fundamental inline formatting tags: `<b>` (bold), `<i>` (italic), and `<u>` (underline). These tags can be combined simultaneously to style text. When nesting multiple formatting tags, they must close in reverse order of opening (Last In, First Out), e.g., `<b><i><u>Hello!</u></i></b>`.",
-          "hi": "HTML तीन बुनियादी टेक्स्ट स्वरूपण टैग प्रदान करता है: `<b>` (बोल्ड), `<i>` (इटैलिक), और `<u>` (अंडरलाइन)। इन टैगों को एक साथ भी इस्तेमाल किया जा सकता है। एक साथ उपयोग करते समय, इन्हें खुलने के उल्टे क्रम (LIFO) में बंद किया जाना चाहिए, जैसे `<b><i><u>Hello!</u></i></b>`।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Physical Style Tags &amp; LIFO Nesting</text><rect x='40' y='75' width='170' height='75' rx='6' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='125' y='105' fill='#cbd5e1' font-family='monospace' font-size='13' text-anchor='middle'>&lt;B&gt; Bold &lt;/B&gt;</text><text x='125' y='132' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Bold Text</text><rect x='235' y='75' width='170' height='75' rx='6' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='320' y='105' fill='#cbd5e1' font-family='monospace' font-size='13' text-anchor='middle'>&lt;I&gt; Italic &lt;/I&gt;</text><text x='320' y='132' fill='#fbbf24' font-family='sans-serif' font-size='13' font-style='italic' text-anchor='middle'>Italic Text</text><rect x='430' y='75' width='170' height='75' rx='6' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='515' y='105' fill='#cbd5e1' font-family='monospace' font-size='13' text-anchor='middle'>&lt;U&gt; Under &lt;/U&gt;</text><text x='515' y='132' fill='#38bdf8' font-family='sans-serif' font-size='13' text-decoration='underline' text-anchor='middle'>Underlined Text</text><rect x='40' y='165' width='560' height='90' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='320' y='195' fill='#f472b6' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Correct Nested Closing Order (LIFO)</text><text x='320' y='225' fill='#cbd5e1' font-family='monospace' font-size='15' text-anchor='middle'>&lt;B&gt;&lt;I&gt;&lt;U&gt; Hello! &lt;/U&gt;&lt;/I&gt;&lt;/B&gt;</text></svg>",
-          "caption": {
-            "en": "Proper nesting sequence of inline physical formatting elements.",
-            "hi": "टेक्स्ट स्टाइलिंग टैग्स का सही नेस्टिंग और बंद करने का क्रम।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Arrange the sequence for nesting bold, italic, and underline tags simultaneously.",
-          "hint": "Open all three tags sequentially, supply the text, then close them in exact reverse order.",
-          "target_sequence": [
-            {
-              "id": "en_u15_t1",
-              "role": "subject",
-              "text": "open `<b>`, `<i>`, and `<u>` in sequential order,",
-              "role_hint": "insert the text content"
-            },
-            {
-              "id": "en_u15_t2",
-              "role": "process",
-              "text": "insert the highlighted phrase,",
-              "role_hint": "close the innermost tag first"
-            },
-            {
-              "id": "en_u15_t3",
-              "role": "process",
-              "text": "close `</u>` followed immediately by `</i>`,",
-              "role_hint": "close the outer container tag"
-            },
-            {
-              "id": "en_u15_t4",
-              "role": "result",
-              "text": "and close `</b>` to preserve symmetrical tag nesting",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u15_d1",
-              "category": "logical",
-              "text": "close `</b>` first before closing `</u>` and `</i>`,",
-              "penalty_explanation": "Improper tag nesting. The innermost tag opened must be closed first."
-            },
-            {
-              "id": "en_u15_d2",
-              "category": "grammatical",
-              "text": "declare all three tags without any closing counterparts,",
-              "penalty_explanation": "`<b>`, `<i>`, and `<u>` are container tags requiring explicit closing tags."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "बोल्ड, इटैलिक और अंडरलाइन टैग को एक साथ नेस्ट करने के सही क्रम को व्यवस्थित करें।",
-          "hint": "तीनों टैग क्रम से खोलें, टेक्स्ट जोड़ें और फिर उल्टे क्रम में बंद करें।",
-          "target_sequence": [
-            {
-              "id": "hi_u15_t1",
-              "role": "subject",
-              "text": "क्रम में `<b>`, `<i>`, और `<u>` खोलें,",
-              "role_hint": "टेक्स्ट सामग्री जोड़ें"
-            },
-            {
-              "id": "hi_u15_t2",
-              "role": "process",
-              "text": "स्टाइल किया जाने वाला टेक्स्ट दर्ज करें,",
-              "role_hint": "सबसे आंतरिक टैग को पहले बंद करें"
-            },
-            {
-              "id": "hi_u15_t3",
-              "role": "process",
-              "text": "`</u>` बंद करें और तुरंत बाद `</i>` बंद करें,",
-              "role_hint": "सबसे बाहरी टैग को बंद करें"
-            },
-            {
-              "id": "hi_u15_t4",
-              "role": "result",
-              "text": "और सही नेस्टिंग बनाए रखने के लिए अंत में `</b>` बंद करें",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u15_d1",
-              "category": "logical",
-              "text": "`</u>` और `</i>` बंद करने से पहले सबसे बाहरी `</b>` को बंद करें,",
-              "penalty_explanation": "टैग नेस्टिंग गलत है। सबसे अंदर खुले टैग को सबसे पहले बंद होना चाहिए।"
-            },
-            {
-              "id": "hi_u15_d2",
-              "category": "grammatical",
-              "text": "बिना क्लोजिंग टैग लगाए तीनों टैग ऐसे ही छोड़ दें,",
-              "penalty_explanation": "`<b>`, `<i>`, और `<u>` कंटेनर टैग हैं और इन्हें बंद करना अनिवार्य है।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "Style tags `<b>`, `<i>`, and `<u>` must follow the Last In, First Out (LIFO) nesting rule when combined.",
-        "hi": "स्टाइल टैग्स `<b>`, `<i>`, और `<u>` को एक साथ उपयोग करते समय उल्टे क्रम (LIFO) में बंद करना अनिवार्य है।"
-      }
-    },
-    {
-      "unit_id": "u16_ordered_lists",
-      "topic": "Numbered Lists with OL and LI",
-      "pedagogical_objective": "Construct sequential ordered lists using ol and li, customizing start and type attributes.",
-      "instruction": {
-        "title": {
-          "en": "Ordered Lists (OL) and Numbering",
-          "hi": "ऑर्डर्ड लिस्ट (OL) और नंबरिंग"
-        },
-        "theory": {
-          "en": "An ordered list is defined using the `<ol>...</ol>` container tag, with individual entries marked by `<li>...</li>`. By default, list items are numbered with Arabic numerals (1, 2, 3...). The `type` attribute changes the numbering scheme (`1`, `a`, `A`, `i`, `I`), and the `start` attribute changes the starting integer value (e.g., `<ol type=\"i\" start=\"5\">`).",
-          "hi": "एक Ordered List को `<ol>...</ol>` कंटेनर टैग द्वारा परिभाषित किया जाता है, जिसमें प्रत्येक आइटम `<li>...</li>` से शुरू होता है। डिफ़ॉल्ट रूप से, इसमें प्राकृतिक संख्याएं (1, 2, 3...) आती हैं। `type` ऐट्रिब्यूट नंबरिंग का प्रकार बदलता है (`1`, `a`, `A`, `i`, `I`), और `start` ऐट्रिब्यूट प्रारंभिक संख्या को बदलता है (जैसे `<ol type=\"i\" start=\"5\">`)।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Ordered List Syntax and Custom Numbering</text><rect x='40' y='70' width='270' height='185' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='55' y='95' fill='#fbbf24' font-family='sans-serif' font-size='12' font-weight='bold'>HTML Markup</text><text x='55' y='125' fill='#cbd5e1' font-family='monospace' font-size='12'>&lt;OL type=\"i\" start=\"5\"&gt;</text><text x='75' y='150' fill='#cbd5e1' font-family='monospace' font-size='12'>&lt;LI&gt; Mango &lt;/LI&gt;</text><text x='75' y='175' fill='#cbd5e1' font-family='monospace' font-size='12'>&lt;LI&gt; Apple &lt;/LI&gt;</text><text x='75' y='200' fill='#cbd5e1' font-family='monospace' font-size='12'>&lt;LI&gt; Banana &lt;/LI&gt;</text><text x='55' y='225' fill='#cbd5e1' font-family='monospace' font-size='12'>&lt;/OL&gt;</text><rect x='330' y='70' width='270' height='185' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='345' y='95' fill='#4ade80' font-family='sans-serif' font-size='12' font-weight='bold'>Browser Rendered Output</text><text x='365' y='140' fill='#ffffff' font-family='sans-serif' font-size='14'>v.   Mango</text><text x='365' y='170' fill='#ffffff' font-family='sans-serif' font-size='14'>vi.  Apple</text><text x='365' y='200' fill='#ffffff' font-family='sans-serif' font-size='14'>vii. Banana</text></svg>",
-          "caption": {
-            "en": "Ordered list structure with lower roman type starting at index five.",
-            "hi": "रोमन अंकों के साथ ऑर्डर्ड लिस्ट संरचना, जो 5 से शुरू होती है।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Construct the sequence for creating an ordered list starting at roman numeral five.",
-          "hint": "Open ol with type and start attributes, nest list items, and close ol.",
-          "target_sequence": [
-            {
-              "id": "en_u16_t1",
-              "role": "subject",
-              "text": "open `<ol>` with `type=\"i\"` and `start=\"5\"`,",
-              "role_hint": "nest the list items next"
-            },
-            {
-              "id": "en_u16_t2",
-              "role": "process",
-              "text": "declare items using `<li>Mango</li>`,",
-              "role_hint": "add the remaining list elements"
-            },
-            {
-              "id": "en_u16_t3",
-              "role": "process",
-              "text": "add subsequent items with `<li>Apple</li>`,",
-              "role_hint": "close the list container"
-            },
-            {
-              "id": "en_u16_t4",
-              "role": "result",
-              "text": "and close with `</ol>` to display numbering from 'v' onwards",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u16_d1",
-              "category": "logical",
-              "text": "set `start=\"v\"` using a roman numeral character,",
-              "penalty_explanation": "The `start` attribute must always be defined as an integer value, even when type is roman."
-            },
-            {
-              "id": "en_u16_d2",
-              "category": "grammatical",
-              "text": "declare individual list items with `<dt>` instead of `<li>`,",
-              "penalty_explanation": "`<dt>` is for definition terms; ordered lists strictly use `<li>`."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "रोमन अंक पाँच से शुरू होने वाली ऑर्डर्ड लिस्ट बनाने के सही क्रम को व्यवस्थित करें।",
-          "hint": "type और start के साथ ol खोलें, li आइटम जोड़ें और ol बंद करें।",
-          "target_sequence": [
-            {
-              "id": "hi_u16_t1",
-              "role": "subject",
-              "text": "`<ol>` को `type=\"i\"` और `start=\"5\"` के साथ खोलें,",
-              "role_hint": "इसके बाद लिस्ट आइटम नेस्ट करें"
-            },
-            {
-              "id": "hi_u16_t2",
-              "role": "process",
-              "text": "`<li>Mango</li>` का उपयोग करके आइटम घोषित करें,",
-              "role_hint": "अगले लिस्ट आइटम जोड़ें"
-            },
-            {
-              "id": "hi_u16_t3",
-              "role": "process",
-              "text": "`<li>Apple</li>` के साथ बाद के आइटम जोड़ें,",
-              "role_hint": "लिस्ट कंटेनर को बंद करें"
-            },
-            {
-              "id": "hi_u16_t4",
-              "role": "result",
-              "text": "और 'v' से नंबरिंग प्रदर्शित करने के लिए `</ol>` से बंद करें",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u16_d1",
-              "category": "logical",
-              "text": "रोमन वर्ण का उपयोग करके सीधे `start=\"v\"` सेट करें,",
-              "penalty_explanation": "`start` attribute में हमेशा संख्यात्मक मान दिया जाता है, भले ही type रोमन हो।"
-            },
-            {
-              "id": "hi_u16_d2",
-              "category": "grammatical",
-              "text": "`<li>` के स्थान पर `<dt>` का उपयोग करके लिस्ट आइटम घोषित करें,",
-              "penalty_explanation": "`<dt>` परिभाषा सूची के लिए है; ऑर्डर्ड लिस्ट में केवल `<li>` का उपयोग होता है।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "`<ol>` encloses `<li>` items and accepts `type` for marker styling and numeric `start` for initial index.",
-        "hi": "`<ol>` टैग `<li>` आइटम को घेरता है और नंबरिंग प्रकार के लिए `type` और प्रारंभिक संख्या के लिए `start` स्वीकार करता है।"
-      }
-    },
-    {
-      "unit_id": "u17_unordered_lists",
-      "topic": "Bulleted Lists with UL and LI",
-      "pedagogical_objective": "Create bulleted collections using ul and li, customizing marker shapes via the type attribute.",
-      "instruction": {
-        "title": {
-          "en": "Unordered Lists (UL) and Bullets",
-          "hi": "अन-ऑर्डर्ड लिस्ट (UL) और बुलेट्स"
-        },
-        "theory": {
-          "en": "An unordered list is defined with the `<ul>...</ul>` container tag, enclosing items marked by `<li>...</li>`. Unlike ordered lists, unordered lists use bullet symbols. The default bullet is a solid disc. The `type` attribute changes the marker symbol, supporting `disc`, `circle`, and `square`.",
-          "hi": "एक Unordered List को `<ul>...</ul>` कंटेनर टैग द्वारा परिभाषित किया जाता है, जिसके अंदर प्रत्येक आइटम `<li>...</li>` से शुरू होता है। इसमें नंबरिंग के बजाय बुलेट्स का उपयोग होता है। डिफ़ॉल्ट रूप से सॉलिड डिस्क बुलेट होती है। `type` attribute से इसे `disc`, `circle`, या `square` में बदला जा सकता है।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Unordered List: Bullet Types</text><rect x='40' y='75' width='170' height='175' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='125' y='105' fill='#fbbf24' font-family='monospace' font-size='13' text-anchor='middle'>type=\"disc\"</text><circle cx='80' cy='145' r='5' fill='#ffffff'/><text x='100' y='150' fill='#cbd5e1' font-family='sans-serif' font-size='13'>Mango</text><circle cx='80' cy='180' r='5' fill='#ffffff'/><text x='100' y='185' fill='#cbd5e1' font-family='sans-serif' font-size='13'>Apple</text><text x='125' y='225' fill='#94a3b8' font-family='sans-serif' font-size='11' text-anchor='middle'>Default solid bullet</text><rect x='235' y='75' width='170' height='175' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='320' y='105' fill='#4ade80' font-family='monospace' font-size='13' text-anchor='middle'>type=\"circle\"</text><circle cx='275' cy='145' r='5' fill='none' stroke='#ffffff' stroke-width='2'/><text x='295' y='150' fill='#cbd5e1' font-family='sans-serif' font-size='13'>Mango</text><circle cx='275' cy='180' r='5' fill='none' stroke='#ffffff' stroke-width='2'/><text x='295' y='185' fill='#cbd5e1' font-family='sans-serif' font-size='13'>Apple</text><text x='320' y='225' fill='#94a3b8' font-family='sans-serif' font-size='11' text-anchor='middle'>Hollow ring bullet</text><rect x='430' y='75' width='170' height='175' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='515' y='105' fill='#38bdf8' font-family='monospace' font-size='13' text-anchor='middle'>type=\"square\"</text><rect x='470' y='140' width='8' height='8' fill='#ffffff'/><text x='490' y='150' fill='#cbd5e1' font-family='sans-serif' font-size='13'>Mango</text><rect x='470' y='175' width='8' height='8' fill='#ffffff'/><text x='490' y='185' fill='#cbd5e1' font-family='sans-serif' font-size='13'>Apple</text><text x='515' y='225' fill='#94a3b8' font-family='sans-serif' font-size='11' text-anchor='middle'>Solid square bullet</text></svg>",
-          "caption": {
-            "en": "Three bullet types of unordered lists: disc, circle, and square.",
-            "hi": "अन-ऑर्डर्ड लिस्ट के तीन बुलेट प्रकार: disc, circle, और square।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Arrange the sequence for building an unordered list styled with square bullets.",
-          "hint": "Open ul with the square type attribute, nest items, and close ul.",
-          "target_sequence": [
-            {
-              "id": "en_u17_t1",
-              "role": "subject",
-              "text": "open `<ul>` with `type=\"square\"`,",
-              "role_hint": "nest the first item"
-            },
-            {
-              "id": "en_u17_t2",
-              "role": "process",
-              "text": "declare first item with `<li>Mango</li>`,",
-              "role_hint": "declare next item"
-            },
-            {
-              "id": "en_u17_t3",
-              "role": "process",
-              "text": "declare second item with `<li>Apple</li>`,",
-              "role_hint": "close the list container"
-            },
-            {
-              "id": "en_u17_t4",
-              "role": "result",
-              "text": "and close with `</ul>` to display square bullets",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u17_d1",
-              "category": "logical",
-              "text": "apply `start=\"1\"` to define the bullet count in `<ul>`,",
-              "penalty_explanation": "The `start` attribute is unique to ordered lists (`<ol>`) and has no effect on `<ul>`."
-            },
-            {
-              "id": "en_u17_d2",
-              "category": "grammatical",
-              "text": "replace `<li>` with `<br>` to separate bulleted items,",
-              "penalty_explanation": "List elements must be enclosed inside `<li>` container tags, not separated by `<br>`."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "चौकोर (square) बुलेट्स वाली अन-ऑर्डर्ड लिस्ट बनाने के सही क्रम को व्यवस्थित करें।",
-          "hint": "square ऐट्रिब्यूट के साथ ul खोलें, li आइटम जोड़ें और ul बंद करें।",
-          "target_sequence": [
-            {
-              "id": "hi_u17_t1",
-              "role": "subject",
-              "text": "`<ul>` को `type=\"square\"` के साथ खोलें,",
-              "role_hint": "पहला आइटम नेस्ट करें"
-            },
-            {
-              "id": "hi_u17_t2",
-              "role": "process",
-              "text": "`<li>Mango</li>` के साथ पहला आइटम घोषित करें,",
-              "role_hint": "अगला आइटम घोषित करें"
-            },
-            {
-              "id": "hi_u17_t3",
-              "role": "process",
-              "text": "`<li>Apple</li>` के साथ दूसरा आइटम घोषित करें,",
-              "role_hint": "लिस्ट कंटेनर को बंद करें"
-            },
-            {
-              "id": "hi_u17_t4",
-              "role": "result",
-              "text": "और चौकोर बुलेट्स प्रदर्शित करने के लिए `</ul>` से बंद करें",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u17_d1",
-              "category": "logical",
-              "text": "`<ul>` में बुलेट संख्या गिनने के लिए `start=\"1\"` लागू करें,",
-              "penalty_explanation": "`start` attribute केवल ऑर्डर्ड लिस्ट (`<ol>`) में होता है, `<ul>` में नहीं।"
-            },
-            {
-              "id": "hi_u17_d2",
-              "category": "grammatical",
-              "text": "बुलेटेड आइटम को अलग करने के लिए `<li>` के स्थान पर `<br>` का उपयोग करें,",
-              "penalty_explanation": "लिस्ट आइटम अनिवार्य रूप से `<li>` कंटेनर टैग के अंदर होने चाहिए।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "`<ul>` structures bulleted collections using `<li>`, supporting `disc`, `circle`, and `square` markers.",
-        "hi": "`<ul>` टैग `<li>` के साथ बुलेटेड सूची बनाता है और `disc`, `circle`, तथा `square` प्रकारों का समर्थन करता है।"
-      }
-    },
-    {
-      "unit_id": "u18_definition_lists",
-      "topic": "Glossaries with DL, DT, and DD",
-      "pedagogical_objective": "Build unbulleted glossaries using the three-tier container dl, definition term dt, and definition description dd.",
-      "instruction": {
-        "title": {
-          "en": "Definition Lists (DL, DT, DD)",
-          "hi": "डेफिनिशन लिस्ट (DL, DT, DD)"
-        },
-        "theory": {
-          "en": "A definition list is designed for glossaries and term-description pairs. It begins with the `<dl>...</dl>` container. Inside, each vocabulary term is tagged with `<dt>...</dt>` (Definition Term), and each term's detailed explanation is nested inside `<dd>...</dd>` (Definition Description). Definition lists display without numbers or bullets.",
-          "hi": "Definition List का उपयोग शब्दावली और परिभाषाओं के जोड़े बनाने के लिए किया जाता है। यह `<dl>...</dl>` कंटेनर से शुरू होती है। इसके अंदर, प्रत्येक शब्द को `<dt>...</dt>` (Definition Term) में और उसके विवरण को `<dd>...</dd>` (Definition Description) में लिखा जाता है। इसमें बुलेट या संख्याएँ नहीं होतीं।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Definition List Structure: &lt;DL&gt;, &lt;DT&gt;, &lt;DD&gt;</text><rect x='40' y='70' width='270' height='185' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='55' y='95' fill='#fbbf24' font-family='sans-serif' font-size='12' font-weight='bold'>Markup Pattern</text><text x='55' y='125' fill='#cbd5e1' font-family='monospace' font-size='13'>&lt;DL&gt;</text><text x='75' y='150' fill='#38bdf8' font-family='monospace' font-size='13'>&lt;DT&gt; Sun &lt;/DT&gt;</text><text x='95' y='175' fill='#4ade80' font-family='monospace' font-size='13'>&lt;DD&gt; Star in solar system &lt;/DD&gt;</text><text x='55' y='205' fill='#cbd5e1' font-family='monospace' font-size='13'>&lt;/DL&gt;</text><rect x='330' y='70' width='270' height='185' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='345' y='95' fill='#38bdf8' font-family='sans-serif' font-size='12' font-weight='bold'>Visual Hierarchy</text><text x='345' y='140' fill='#ffffff' font-family='sans-serif' font-size='14' font-weight='bold'>Sun</text><text x='375' y='170' fill='#cbd5e1' font-family='sans-serif' font-size='12'>Star in solar system</text><text x='345' y='220' fill='#94a3b8' font-family='sans-serif' font-size='11'>No bullets; DD automatically indents</text></svg>",
-          "caption": {
-            "en": "Three-tier architecture of definition lists showing automated indentation of dd.",
-            "hi": "डेफिनिशन लिस्ट की त्रि-स्तरीय संरचना जिसमें dd का स्वतः इंडेंटेशन दिखाया गया है।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Construct the sequence for defining a glossary entry using DL, DT, and DD.",
-          "hint": "Open dl root, state the term inside dt, explain it in dd, and close dl.",
-          "target_sequence": [
-            {
-              "id": "en_u18_t1",
-              "role": "subject",
-              "text": "open the definition list container `<dl>`,",
-              "role_hint": "declare the glossary term next"
-            },
-            {
-              "id": "en_u18_t2",
-              "role": "process",
-              "text": "specify the term using `<dt>Sun</dt>`,",
-              "role_hint": "provide the description"
-            },
-            {
-              "id": "en_u18_t3",
-              "role": "process",
-              "text": "nest description with `<dd>Star in solar system</dd>`,",
-              "role_hint": "close the list container"
-            },
-            {
-              "id": "en_u18_t4",
-              "role": "result",
-              "text": "and close with `</dl>` to display indented definition pairs",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u18_d1",
-              "category": "logical",
-              "text": "nest `<dt>` directly inside an ordered list `<ol>` tag,",
-              "penalty_explanation": "`<dt>` can only be nested inside a `<dl>` definition list container."
-            },
-            {
-              "id": "en_u18_d2",
-              "category": "grammatical",
-              "text": "reverse the roles by placing terms in `<dd>` and descriptions in `<dt>`,",
-              "penalty_explanation": "`<dt>` stands for Definition Term and `<dd>` stands for Definition Description."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "DL, DT, और DD का उपयोग करके शब्दावली प्रविष्टि बनाने के क्रम को व्यवस्थित करें।",
-          "hint": "dl से शुरुआत करें, dt में शब्द लिखें, dd में विवरण दें और dl बंद करें।",
-          "target_sequence": [
-            {
-              "id": "hi_u18_t1",
-              "role": "subject",
-              "text": "डेफिनिशन लिस्ट कंटेनर `<dl>` खोलें,",
-              "role_hint": "इसके बाद शब्द घोषित करें"
-            },
-            {
-              "id": "hi_u18_t2",
-              "role": "process",
-              "text": "`<dt>Sun</dt>` का उपयोग करके शब्द निर्दिष्ट करें,",
-              "role_hint": "परिभाषा विवरण जोड़ें"
-            },
-            {
-              "id": "hi_u18_t3",
-              "role": "process",
-              "text": "`<dd>Star in solar system</dd>` के साथ विवरण जोड़ें,",
-              "role_hint": "लिस्ट कंटेनर को बंद करें"
-            },
-            {
-              "id": "hi_u18_t4",
-              "role": "result",
-              "text": "और इंडेंटेड परिभाषा जोड़े प्रदर्शित करने के लिए `</dl>` से बंद करें",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u18_d1",
-              "category": "logical",
-              "text": "`<dt>` को सीधे एक ऑर्डर्ड लिस्ट `<ol>` टैग के अंदर नेस्ट करें,",
-              "penalty_explanation": "`<dt>` केवल `<dl>` डेफिनिशन लिस्ट कंटेनर के अंदर ही मान्य है।"
-            },
-            {
-              "id": "hi_u18_d2",
-              "category": "grammatical",
-              "text": "`<dd>` में शब्द और `<dt>` में विवरण रखकर भूमिकाओं को उल्टा करें,",
-              "penalty_explanation": "`<dt>` का अर्थ Definition Term है और `<dd>` का अर्थ Definition Description है।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "Definition lists use `<dl>` to hold `<dt>` terms and `<dd>` descriptions without numbering or bullets.",
-        "hi": "डेफिनिशन लिस्ट में बिना नंबर या बुलेट के `<dl>` के अंदर `<dt>` (शब्द) और `<dd>` (विवरण) का उपयोग होता है।"
-      }
-    },
-    {
-      "unit_id": "u19_images_embedding",
-      "topic": "Embedding Images with the IMG Tag",
-      "pedagogical_objective": "Embed media using the empty img tag, configuring src, alt, width, and height attributes.",
-      "instruction": {
-        "title": {
-          "en": "Embedding Images with IMG Tag",
-          "hi": "IMG टैग के साथ इमेज एम्बेड करना"
-        },
-        "theory": {
-          "en": "The `<img>` tag is an unpaired empty element used to embed images. It requires the `src` attribute specifying the image file path or URL. It also supports `alt` (fallback text displayed if the image fails to load), and `width` and `height` (defined in pixels or percentages), e.g., `<img src=\"feather.jpeg\" width=\"60%\" height=\"300px\" alt=\"Peacock feather\">`.",
-          "hi": "`<img>` टैग एक अन-पेयर्ड एम्प्टी टैग है जिसका उपयोग वेब पेज में चित्र (इमेज) डालने के लिए किया जाता है। इसमें `src` attribute आवश्यक होता है जो इमेज का पाथ या URL बताता है। इसके अलावा `alt` (इमेज न दिखने पर प्रदर्शित होने वाला टेक्स्ट), और `width` व `height` (पिक्सेल या प्रतिशत में) attributes होते हैं।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='20' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='43' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>IMG Tag Attributes &amp; Fallback Mechanism</text><rect x='40' y='70' width='560' height='65' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='55' y='105' fill='#cbd5e1' font-family='monospace' font-size='13'>&lt;IMG <tspan fill='#fbbf24'>src=\"pic.jpg\"</tspan> <tspan fill='#4ade80'>width=\"60%\"</tspan> <tspan fill='#38bdf8'>height=\"300px\"</tspan> <tspan fill='#f472b6'>alt=\"Peacock\"</tspan>&gt;</text><rect x='40' y='150' width='260' height='105' rx='8' fill='#1e293b' stroke='#4ade80' stroke-width='1'/><text x='170' y='180' fill='#4ade80' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Mandatory: src Attribute</text><text x='170' y='210' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Specifies file location URL</text><text x='170' y='230' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Unpaired element (No &lt;/IMG&gt;)</text><rect x='340' y='150' width='260' height='105' rx='8' fill='#1e293b' stroke='#f472b6' stroke-width='1'/><text x='470' y='180' fill='#f472b6' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Fallback: alt Attribute</text><text x='470' y='210' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>Displays alternate description</text><text x='470' y='230' fill='#cbd5e1' font-family='sans-serif' font-size='11' text-anchor='middle'>when media file is broken or missing</text></svg>",
-          "caption": {
-            "en": "Attributes of the empty img element including source path and alt text.",
-            "hi": "एम्प्टी img एलिमेंट के मुख्य ऐट्रिब्यूट्स जिनमें सोर्स पाथ और alt टेक्स्ट शामिल हैं।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Construct the syntax sequence for embedding an image with alternate fallback text.",
-          "hint": "Open img, declare source path, set dimensions, and supply alternate text.",
-          "target_sequence": [
-            {
-              "id": "en_u19_t1",
-              "role": "subject",
-              "text": "open the empty `<img>` tag,",
-              "role_hint": "specify image path attribute"
-            },
-            {
-              "id": "en_u19_t2",
-              "role": "attribute",
-              "text": "set `src=\"feather.jpeg\"` to provide the file location,",
-              "role_hint": "define the sizing attributes"
-            },
-            {
-              "id": "en_u19_t3",
-              "role": "attribute",
-              "text": "configure `width=\"60%\"` and `height=\"300px\"`,",
-              "role_hint": "complete with accessibility text"
-            },
-            {
-              "id": "en_u19_t4",
-              "role": "result",
-              "text": "and provide `alt=\"Peacock feather\"` to display if the file is unavailable",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u19_d1",
-              "category": "logical",
-              "text": "close the element using a companion `</img>` closing container,",
-              "penalty_explanation": "`<img>` is an empty tag and must never have a closing `</img>`."
-            },
-            {
-              "id": "en_u19_d2",
-              "category": "grammatical",
-              "text": "use `href` instead of `src` to supply the image location,",
-              "penalty_explanation": "`<img>` uses `src` to load image data; `href` is used by anchor tags for hyperlinks."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "वैकल्पिक फॉलबैक टेक्स्ट के साथ इमेज एम्बेड करने के सिंटैक्स क्रम को व्यवस्थित करें।",
-          "hint": "img खोलें, सोर्स पाथ दें, आकार सेट करें और वैकल्पिक टेक्स्ट जोड़ें।",
-          "target_sequence": [
-            {
-              "id": "hi_u19_t1",
-              "role": "subject",
-              "text": "एम्प्टी `<img>` टैग खोलें,",
-              "role_hint": "इमेज पाथ attribute जोड़ें"
-            },
-            {
-              "id": "hi_u19_t2",
-              "role": "attribute",
-              "text": "फ़ाइल स्थान प्रदान करने के लिए `src=\"feather.jpeg\"` सेट करें,",
-              "role_hint": "आकार attributes को परिभाषित करें"
-            },
-            {
-              "id": "hi_u19_t3",
-              "role": "attribute",
-              "text": "`width=\"60%\"` और `height=\"300px\"` कॉन्फ़िगर करें,",
-              "role_hint": "वैकल्पिक टेक्स्ट के साथ समाप्त करें"
-            },
-            {
-              "id": "hi_u19_t4",
-              "role": "result",
-              "text": "और फ़ाइल अनुपलब्ध होने पर दिखाने के लिए `alt=\"Peacock feather\"` जोड़ें",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u19_d1",
-              "category": "logical",
-              "text": "`</img>` क्लोजिंग कंटेनर का उपयोग करके एलिमेंट को बंद करें,",
-              "penalty_explanation": "`<img>` एक एम्प्टी टैग है और इसमें कभी भी क्लोजिंग `</img>` नहीं होता।"
-            },
-            {
-              "id": "hi_u19_d2",
-              "category": "grammatical",
-              "text": "इमेज स्थान देने के लिए `src` के स्थान पर `href` का उपयोग करें,",
-              "penalty_explanation": "`<img>` टैग `src` का उपयोग करता है; `href` एंकर टैग के लिए होता है।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "`<img>` is an empty tag requiring `src` for the media URL and `alt` for fallback text.",
-        "hi": "`<img>` एक एम्प्टी टैग है जिसमें मीडिया URL के लिए `src` और वैकल्पिक टेक्स्ट के लिए `alt` आवश्यक होता है।"
-      }
-    },
-    {
-      "unit_id": "u20_hyperlinks_and_tables",
-      "topic": "Hyperlinks (A) and Tabular Data (TABLE)",
-      "pedagogical_objective": "Create web navigation using anchor tags with href/name, and construct grid structures using table, tr, th, and td.",
-      "instruction": {
-        "title": {
-          "en": "Hyperlinks and Tabular Data Structures",
-          "hi": "हाइपरलिंक और टेबल डेटा संरचनाएं"
-        },
-        "theory": {
-          "en": "Hyperlinks are created using `<a>...</a>`. The `href` attribute defines destination URLs (e.g., `<a href=\"page2.html\">`), while `name` creates internal anchors (e.g., `<a name=\"top\">`). For tabular data, HTML provides `<table>...</table>`. Rows are created using `<tr>...</tr>`, header cells using `<th>...</th>` (bold, centered), and standard data cells using `<td>...</td>`.",
-          "hi": "हाइपरलिंक `<a>...</a>` टैग से बनाए जाते हैं। `href` attribute गंतव्य URL तय करता है (जैसे `<a href=\"page2.html\">`), जबकि `name` आंतरिक बुकमार्क बनाता है। तालिका बनाने के लिए `<table>...</table>` का उपयोग किया जाता है। पंक्तियों को `<tr>...</tr>`, हेडर सेल को `<th>...</th>` (बोल्ड व केंद्रित), और डेटा सेल को `<td>...</td>` से परिभाषित किया जाता है।"
-        },
-        "media": {
-          "type": "svg",
-          "aspect_ratio": "16/9",
-          "svg_code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280' width='100%' height='100%'><rect width='640' height='280' fill='#0f172a'/><rect x='30' y='15' width='580' height='35' rx='6' fill='#1e293b' stroke='#38bdf8' stroke-width='1.5'/><text x='320' y='38' fill='#38bdf8' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>Hyperlinks (&lt;A&gt;) &amp; Data Tables (&lt;TABLE&gt;)</text><rect x='40' y='65' width='260' height='195' rx='8' fill='#1e293b' stroke='#475569' stroke-width='1'/><text x='170' y='90' fill='#fbbf24' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Anchor Linking</text><text x='55' y='120' fill='#cbd5e1' font-family='monospace' font-size='11'>&lt;a href=\"url\"&gt; External &lt;/a&gt;</text><text x='55' y='150' fill='#cbd5e1' font-family='monospace' font-size='11'>&lt;a href=\"#top\"&gt; Internal &lt;/a&gt;</text><text x='55' y='180' fill='#cbd5e1' font-family='monospace' font-size='11'>&lt;a name=\"top\"&gt; Bookmark &lt;/a&gt;</text><text x='55' y='215' fill='#94a3b8' font-family='sans-serif' font-size='11'>Default: Blue / Underlined</text><text x='55' y='235' fill='#94a3b8' font-family='sans-serif' font-size='11'>Cursor changes to hand pointer</text><rect x='330' y='65' width='270' height='195' rx='8' fill='#1e293b' stroke='#38bdf8' stroke-width='1'/><text x='465' y='90' fill='#38bdf8' font-family='sans-serif' font-size='13' font-weight='bold' text-anchor='middle'>Table Hierarchy</text><text x='345' y='120' fill='#cbd5e1' font-family='monospace' font-size='12'>&lt;table border=\"1\"&gt;</text><text x='365' y='145' fill='#4ade80' font-family='monospace' font-size='12'>&lt;tr&gt; &lt;th&gt; Head &lt;/th&gt; &lt;/tr&gt;</text><text x='365' y='170' fill='#f472b6' font-family='monospace' font-size='12'>&lt;tr&gt; &lt;td&gt; Data &lt;/td&gt; &lt;/tr&gt;</text><text x='345' y='195' fill='#cbd5e1' font-family='monospace' font-size='12'>&lt;/table&gt;</text><text x='345' y='230' fill='#94a3b8' font-family='sans-serif' font-size='11'>Attributes: border, bgcolor, align</text></svg>",
-          "caption": {
-            "en": "Anchor tag link syntax alongside table row, header, and data cell hierarchy.",
-            "hi": "एंकर टैग लिंकिंग सिंटैक्स और टेबल रो, हेडर, व डेटा सेल पदानुक्रम।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "max_score": 10,
-          "prompt": "Arrange the sequence for assembling an HTML data table containing a header row.",
-          "hint": "Open table with border, create row with tr, nest header cells with th, and close elements.",
-          "target_sequence": [
-            {
-              "id": "en_u20_t1",
-              "role": "subject",
-              "text": "open `<table>` with the `border=\"1\"` attribute,",
-              "role_hint": "create the first row container"
-            },
-            {
-              "id": "en_u20_t2",
-              "role": "process",
-              "text": "open a table row container with `<tr>`,",
-              "role_hint": "insert the header cells inside"
-            },
-            {
-              "id": "en_u20_t3",
-              "role": "process",
-              "text": "define bold centered headers using `<th>Roll No</th>`,",
-              "role_hint": "close the row and table"
-            },
-            {
-              "id": "en_u20_t4",
-              "role": "result",
-              "text": "close `</tr>` and terminate the grid with `</table>`",
-              "role_hint": "sequence is complete"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u20_d1",
-              "category": "logical",
-              "text": "nest `<th>` cells directly inside `<table>` without any enclosing `<tr>` row,",
-              "penalty_explanation": "Table cells (`<th>` and `<td>`) must always be encapsulated inside a `<tr>` table row container."
-            },
-            {
-              "id": "en_u20_d2",
-              "category": "grammatical",
-              "text": "declare links using `<href src=\"page.html\">` instead of anchor tags,",
-              "penalty_explanation": "`href` is an attribute of the `<a>` tag, never an independent HTML tag name."
-            }
-          ]
-        },
-        "hi": {
-          "max_score": 10,
-          "prompt": "हेडर पंक्ति वाली HTML डेटा तालिका (Table) बनाने के सही क्रम को व्यवस्थित करें।",
-          "hint": "border के साथ table खोलें, tr से पंक्ति बनाएं, th हेडर सेल जोड़ें और बंद करें।",
-          "target_sequence": [
-            {
-              "id": "hi_u20_t1",
-              "role": "subject",
-              "text": "`border=\"1\"` ऐट्रिब्यूट के साथ `<table>` खोलें,",
-              "role_hint": "पहली टेबल रो कंटेनर बनाएं"
-            },
-            {
-              "id": "hi_u20_t2",
-              "role": "process",
-              "text": "`<tr>` के साथ टेबल रो कंटेनर खोलें,",
-              "role_hint": "अंदर हेडर सेल जोड़ें"
-            },
-            {
-              "id": "hi_u20_t3",
-              "role": "process",
-              "text": "`<th>Roll No</th>` का उपयोग करके बोल्ड व केंद्रित हेडर परिभाषित करें,",
-              "role_hint": "पंक्ति और टेबल को बंद करें"
-            },
-            {
-              "id": "hi_u20_t4",
-              "role": "result",
-              "text": "`</tr>` बंद करें और ग्रिड को `</table>` के साथ समाप्त करें",
-              "role_hint": "क्रम पूरा हो चुका है"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u20_d1",
-              "category": "logical",
-              "text": "बिना किसी `<tr>` पंक्ति के सीधे `<table>` के अंदर `<th>` सेल जोड़ें,",
-              "penalty_explanation": "टेबल सेल (`<th>` और `<td>`) अनिवार्य रूप से `<tr>` पंक्ति के अंदर होने चाहिए।"
-            },
-            {
-              "id": "hi_u20_d2",
-              "category": "grammatical",
-              "text": "एंकर टैग के स्थान पर `<href src=\"page.html\">` के रूप में लिंक घोषित करें,",
-              "penalty_explanation": "`href` एंकर `<a>` टैग का attribute है, कोई स्वतंत्र टैग नहीं।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "Hyperlinks use `<a>` with `href`, while tables organize data through `<table>`, rows (`<tr>`), headers (`<th>`), and cells (`<td>`).",
-        "hi": "हाइपरलिंक `<a>` और `href` का उपयोग करते हैं, जबकि तालिकाएँ `<table>`, पंक्तियों (`<tr>`), हेडर (`<th>`) और सेल (`<td>`) से बनती हैं।"
+        "en": "Use `<ul>` for bulleted lists, `<ol>` for numbered lists, and `<li>` for list items.",
+        "hi": "बुलेटेड सूचियों के लिए `<ul>`, क्रमांकित सूचियों के लिए `<ol>`, और सूची वस्तुओं के लिए `<li>` का उपयोग करें।"
       }
     }
   ]
