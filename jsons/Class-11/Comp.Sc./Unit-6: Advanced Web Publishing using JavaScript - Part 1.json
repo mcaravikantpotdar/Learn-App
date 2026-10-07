@@ -1,0 +1,539 @@
+{
+  "metadata": {
+    "class": "Class 11",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Unit-6: Advanced Web Publishing using JavaScript - Part 1",
+      "hi": "यूनिट-6: जावास्क्रिप्ट का उपयोग करके उन्नत वेब प्रकाशन - भाग 1"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Computer Networking and Resource Sharing",
+          "hi": "कंप्यूटर नेटवर्किंग और संसाधन साझाकरण"
+        },
+        "theory": {
+          "en": "A computer network is an interconnection between two or more computing devices (such as desktops, laptops, or smartphones) established via wired or wireless media. Its primary objective is the sharing of data, software, and hardware resources (like printers or storage) alongside enabling communication channels.",
+          "hi": "कंप्यूटर नेटवर्क दो या दो से अधिक कंप्यूटिंग उपकरणों (जैसे डेस्कटॉप, लैपटॉप या स्मार्टफोन) के बीच वायर्ड या वायरलेस माध्यम से बना एक कनेक्शन है। इसका मुख्य उद्देश्य डेटा, सॉफ़्टवेयर और हार्डवेयर संसाधनों (जैसे प्रिंटर या स्टोरेज) को साझा करने के साथ-साथ संचार की सुविधा प्रदान करना है।"
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Arrange the core logical stages of setting up network resource sharing in sequence.",
+          "hint": "Start with physical links, define transmission medium, and conclude with the primary outcome.",
+          "target_sequence": [
+            {
+              "id": "en_u1_t1",
+              "text": "Link computing devices together",
+              "role_hint": "First, establish basic connections between individual nodes"
+            },
+            {
+              "id": "en_u1_t2",
+              "text": "through wired or wireless media",
+              "role_hint": "Specify the transmission channel connecting the nodes"
+            },
+            {
+              "id": "en_u1_t3",
+              "text": "to enable shared data access",
+              "role_hint": "Define the primary software and information objective"
+            },
+            {
+              "id": "en_u1_t4",
+              "text": "and pool hardware resources like printers",
+              "role_hint": "Conclude with peripheral resource distribution"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u1_d1",
+              "category": "logical",
+              "text": "by disconnecting peripheral nodes completely",
+              "penalty_explanation": "Networking requires linking devices together, not severing their connections."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "नेटवर्क संसाधन साझाकरण स्थापित करने के मुख्य चरणों को सही क्रम में व्यवस्थित करें।",
+          "hint": "डिवाइसों को जोड़ने से शुरू करें, माध्यम चुनें और संसाधन साझाकरण पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u1_t1",
+              "text": "कम्प्यूटिंग उपकरणों को आपस में जोड़ें",
+              "role_hint": "सबसे पहले अलग-अलग नोड्स के बीच बुनियादी कनेक्शन बनाएं"
+            },
+            {
+              "id": "hi_u1_t2",
+              "text": "वायर्ड या वायरलेस माध्यम का उपयोग करके",
+              "role_hint": "उपकरणों को जोड़ने वाले संचार माध्यम को निर्दिष्ट करें"
+            },
+            {
+              "id": "hi_u1_t3",
+              "text": "ताकि डेटा और जानकारी साझा की जा सके",
+              "role_hint": "प्राथमिक सॉफ़्टवेयर और सूचना साझाकरण उद्देश्य तय करें"
+            },
+            {
+              "id": "hi_u1_t4",
+              "text": "और प्रिंटर जैसे हार्डवेयर संसाधनों का उपयोग हो सके",
+              "role_hint": "संसाधनों के वितरण के साथ प्रक्रिया पूरी करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u1_d1",
+              "category": "logical",
+              "text": "सभी पेरिफेरल उपकरणों को पूरी तरह अलग करके",
+              "penalty_explanation": "नेटवर्किंग के लिए उपकरणों को आपस में जोड़ना अनिवार्य है, उन्हें अलग करना नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Networking connects autonomous devices over wired/wireless media to efficiently share hardware, software, and data.",
+        "hi": "नेटवर्किंग हार्डवेयर, सॉफ़्टवेयर और डेटा को कुशलतापूर्वक साझा करने के लिए वायर्ड/वायरलेस माध्यमों से उपकरणों को जोड़ती है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Advantages and Disadvantages of Networking",
+          "hi": "नेटवर्किंग के लाभ और हानियाँ"
+        },
+        "theory": {
+          "en": "Networking significantly lowers infrastructure expenditure by sharing expensive hardware and centralizing communication (email, video chat). Conversely, it introduces distinct vulnerabilities: data security risks through unauthorized interception and operational downtime caused by connectivity failure.",
+          "hi": "नेटवर्किंग महंगे हार्डवेयर को साझा करके और संचार (ईमेल, वीडियो कॉन्फ्रेंसिंग) को केंद्रीकृत करके बुनियादी लागत को काफी कम करती है। इसके विपरीत, इसमें कुछ कमियां भी हैं: अनधिकृत पहुंच के कारण डेटा सुरक्षा जोखिम और कनेक्टिविटी विफलता के कारण सिस्टम की विश्वसनीयता में कमी।"
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Assemble the structural trade-off statement contrasting network benefits with operational risks.",
+          "hint": "Begin with cost and communication benefits, contrast with security and downtime challenges.",
+          "target_sequence": [
+            {
+              "id": "en_u2_t1",
+              "text": "Deploying shared resources lowers hardware costs",
+              "role_hint": "Identify the primary financial benefit"
+            },
+            {
+              "id": "en_u2_t2",
+              "text": "while streamlining modern multi-user communication,",
+              "role_hint": "Add the collaborative interaction benefit"
+            },
+            {
+              "id": "en_u2_t3",
+              "text": "yet exposed channels risk data misuse",
+              "role_hint": "Introduce the data integrity vulnerability"
+            },
+            {
+              "id": "en_u2_t4",
+              "text": "and connectivity issues compromise reliability",
+              "role_hint": "Conclude with system failure concerns"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u2_d1",
+              "category": "logical",
+              "text": "because networks provide absolute immunity from downtime",
+              "penalty_explanation": "Networks are susceptible to connectivity issues and cannot guarantee absolute immunity from failure."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "नेटवर्किंग के लाभों और परिचालन जोखिमों की तुलना करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "लागत और संचार लाभ से शुरू करें, फिर सुरक्षा और विफलता के जोखिमों को जोड़ें।",
+          "target_sequence": [
+            {
+              "id": "hi_u2_t1",
+              "text": "संसाधनों को साझा करने से उपकरणों की लागत कम होती है",
+              "role_hint": "प्राथमिक वित्तीय लाभ को पहचानें"
+            },
+            {
+              "id": "hi_u2_t2",
+              "text": "और उपयोगकर्ताओं के बीच संचार की सुविधा मिलती है,",
+              "role_hint": "सहयोगात्मक संचार लाभ को जोड़ें"
+            },
+            {
+              "id": "hi_u2_t3",
+              "text": "लेकिन डेटा सुरक्षा में सेंधमारी का जोखिम रहता है",
+              "role_hint": "सुरक्षा संबंधी कमजोरी को दर्शाएं"
+            },
+            {
+              "id": "hi_u2_t4",
+              "text": "तथा कनेक्टिविटी की खराबी से सिस्टम धीमा हो सकता है",
+              "role_hint": "विश्वसनीयता संबंधी समस्या के साथ समाप्त करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u2_d1",
+              "category": "logical",
+              "text": "क्योंकि नेटवर्क पूरी तरह से तकनीकी खराबी से मुक्त होते हैं",
+              "penalty_explanation": "नेटवर्क कनेक्टिविटी समस्याओं और विफलता के अधीन होते हैं, वे कभी पूरी तरह जोखिम मुक्त नहीं होते।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "While networking minimizes resource cost and enables communication, it requires safeguards against data misuse and link failure.",
+        "hi": "नेटवर्किंग संसाधन लागत कम करने और संचार की सुविधा देने के साथ-साथ डेटा सुरक्षा और लिंक विफलता की चुनौतियाँ भी लाती है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Client-Server Architecture Fundamentals",
+          "hi": "क्लाइंट-सर्वर आर्किटेक्चर के मूल सिद्धांत"
+        },
+        "theory": {
+          "en": "In a client-server architecture, tasks are distributed between service requesters (clients) and service providers (servers). The client is typically a workstation requesting services, whereas the server is a high-capacity machine that processes incoming requests and delivers responses across the network.",
+          "hi": "क्लाइंट-सर्वर आर्किटेक्चर में कार्य सेवा अनुरोधकर्ताओं (क्लाइंट) और सेवा प्रदाताओं (सर्वर) के बीच विभाजित होते हैं। क्लाइंट एक ऐसा कंप्यूटर है जो सेवाओं का अनुरोध करता है, जबकि सर्वर एक शक्तिशाली कंप्यूटर है जो आने वाले अनुरोधों को संसाधित करता है और नेटवर्क पर प्रतिक्रिया भेजता है।"
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the complete communication loop of a standard client-server transaction.",
+          "hint": "Start with the client initiating an action, pass through the server processing phase, and return the result.",
+          "target_sequence": [
+            {
+              "id": "en_u3_t1",
+              "text": "The client dispatches a service request",
+              "role_hint": "Specify the initial request phase from the user node"
+            },
+            {
+              "id": "en_u3_t2",
+              "text": "over the communication network to the server,",
+              "role_hint": "Identify the transit pathway"
+            },
+            {
+              "id": "en_u3_t3",
+              "text": "the high-capacity server processes the task,",
+              "role_hint": "Detail the centralized execution stage"
+            },
+            {
+              "id": "en_u3_t4",
+              "text": "and transmits the computed response back",
+              "role_hint": "Complete the cycle with the returned result"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u3_d1",
+              "category": "logical",
+              "text": "which forces the client to process the central database",
+              "penalty_explanation": "Clients request services; they do not process the server's central database directly."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "एक मानक क्लाइंट-सर्वर संचार चक्र को सही क्रम में व्यवस्थित करें।",
+          "hint": "क्लाइंट के अनुरोध से शुरू करें, सर्वर प्रोसेसिंग पर जाएं और परिणाम वापसी पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u3_t1",
+              "text": "क्लाइंट किसी सेवा के लिए अनुरोध भेजता है",
+              "role_hint": "उपयोगकर्ता नोड से प्रारंभिक अनुरोध चरण को चुनें"
+            },
+            {
+              "id": "hi_u3_t2",
+              "text": "नेटवर्क के माध्यम से सर्वर मशीन की ओर,",
+              "role_hint": "संचार मार्ग को इंगित करें"
+            },
+            {
+              "id": "hi_u3_t3",
+              "text": "शक्तिशाली सर्वर उस अनुरोध को संसाधित करता है,",
+              "role_hint": "सर्वर की प्रोसेसिंग क्रिया को दर्शाएं"
+            },
+            {
+              "id": "hi_u3_t4",
+              "text": "और आवश्यक जानकारी क्लाइंट को वापस भेजता है",
+              "role_hint": "प्रतिक्रिया प्राप्त करने के साथ चक्र पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u3_d1",
+              "category": "logical",
+              "text": "जिससे क्लाइंट को मुख्य डेटाबेस खुद प्रोसेस करना पड़ता है",
+              "penalty_explanation": "क्लाइंट केवल अनुरोध भेजता है; मुख्य डेटाबेस प्रोसेसिंग का कार्य सर्वर द्वारा किया जाता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The client-server model functions on a unidirectional request-and-response protocol managed centrally by dedicated servers.",
+        "hi": "क्लाइंट-सर्वर मॉडल एक अनुरोध-और-प्रतिक्रिया प्रोटोकॉल पर काम करता है जिसे सर्वर द्वारा प्रबंधित किया जाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Client-Server Data Flow and Scripting Roles",
+          "hi": "क्लाइंट-सर्वर डेटा प्रवाह और स्क्रिप्टिंग की भूमिकाएं"
+        },
+        "theory": {
+          "en": "Client-side and server-side operations serve complementary roles in web architectures. Client scripts run locally in the browser to deliver rapid UI updates without direct backend file access. Server scripts execute remotely on the host machine to securely manage databases and file storage.",
+          "hi": "वेब आर्किटेक्चर में क्लाइंट-साइड और सर्वर-साइड ऑपरेशन पूरक भूमिका निभाते हैं। क्लाइंट स्क्रिप्ट सीधे बैकएंड फ़ाइलों तक पहुँच के बिना त्वरित प्रतिक्रिया के लिए ब्राउज़र में चलती हैं। सर्वर स्क्रिप्ट डेटाबेस और फ़ाइल सिस्टम को प्रबंधित करने के लिए रिमोट होस्ट मशीन पर चलती हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"30\" y=\"20\" width=\"540\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client-Server Execution Boundary</text><rect x=\"30\" y=\"70\" width=\"230\" height=\"60\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"145\" y=\"92\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client (Browser)</text><text x=\"145\" y=\"112\" fill=\"#94a3b8\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Local UI / Fast Response</text><rect x=\"340\" y=\"70\" width=\"230\" height=\"60\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"455\" y=\"92\" fill=\"#4ade80\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Server (Backend)</text><text x=\"455\" y=\"112\" fill=\"#94a3b8\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">DB Access / Secure Storage</text><line x1=\"265\" y1=\"85\" x2=\"335\" y2=\"85\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"335,85 327,81 327,89\" fill=\"#38bdf8\"/><text x=\"300\" y=\"77\" fill=\"#38bdf8\" font-size=\"10\" text-anchor=\"middle\">Request</text><line x1=\"335\" y1=\"115\" x2=\"265\" y2=\"115\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"265,115 273,111 273,119\" fill=\"#fbbf24\"/><text x=\"300\" y=\"128\" fill=\"#fbbf24\" font-size=\"10\" text-anchor=\"middle\">Response</text><line x1=\"90\" y1=\"135\" x2=\"90\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"195\" y1=\"135\" x2=\"195\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"400\" y1=\"135\" x2=\"400\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"505\" y1=\"135\" x2=\"505\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"90\" y=\"167\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"90\" dy=\"0\">Client</tspan><tspan x=\"90\" dy=\"1.2em\">Script</tspan></text><text x=\"195\" y=\"202\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"195\" dy=\"0\">No Direct</tspan><tspan x=\"195\" dy=\"1.2em\">DB Access</tspan></text><text x=\"400\" y=\"167\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"400\" dy=\"0\">Server</tspan><tspan x=\"400\" dy=\"1.2em\">Script</tspan></text><text x=\"505\" y=\"202\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"505\" dy=\"0\">Database &amp;</tspan><tspan x=\"505\" dy=\"1.2em\">Filesystem</tspan></text></svg>",
+          "caption": {
+            "en": "Architectural boundaries contrasting client-side local runtime with server-side persistent data handling.",
+            "hi": "क्लाइंट-साइड लोकल रनटाइम और सर्वर-साइड डेटा प्रबंधन की वास्तुशिल्प सीमाएं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Organize the technical contrasts between client-side execution and server-side processing.",
+          "hint": "Start with execution hosts, trace through performance, and finish with data access privileges.",
+          "target_sequence": [
+            {
+              "id": "en_u4_t1",
+              "text": "Client-side code executes in user browsers",
+              "role_hint": "Specify the local frontend execution environment"
+            },
+            {
+              "id": "en_u4_t2",
+              "text": "yielding immediate, fast user feedback,",
+              "role_hint": "State the frontend performance characteristic"
+            },
+            {
+              "id": "en_u4_t3",
+              "text": "whereas server-side code runs on remote hosts",
+              "role_hint": "Specify the centralized backend execution platform"
+            },
+            {
+              "id": "en_u4_t4",
+              "text": "with full access to databases and filesystems",
+              "role_hint": "Identify backend data persistence permissions"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u4_d1",
+              "category": "logical",
+              "text": "allowing browser scripts to alter server databases directly",
+              "penalty_explanation": "Client-side scripts cannot directly read or modify server databases."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "क्लाइंट-साइड निष्पादन और सर्वर-साइड प्रोसेसिंग के तकनीकी अंतरों को सही क्रम में व्यवस्थित करें।",
+          "hint": "निष्पादन स्थान से शुरू करें, प्रतिक्रिया समय बताएं और डेटाबेस पहुंच पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u4_t1",
+              "text": "क्लाइंट-साइड कोड वेब ब्राउज़र में चलता है",
+              "role_hint": "लोकल फ्रंटएंड निष्पादन वातावरण निर्दिष्ट करें"
+            },
+            {
+              "id": "hi_u4_t2",
+              "text": "जो अत्यंत तेज़ प्रतिक्रिया समय प्रदान करता है,",
+              "role_hint": "फ्रंटएंड की प्रदर्शन क्षमता बताएं"
+            },
+            {
+              "id": "hi_u4_t3",
+              "text": "जबकि सर्वर-साइड कोड रिमोट सर्वर पर चलता है",
+              "role_hint": "बैकएंड निष्पादन स्थान को इंगित करें"
+            },
+            {
+              "id": "hi_u4_t4",
+              "text": "और डेटाबेस तथा फ़ाइल सिस्टम तक सीधी पहुँच रखता है",
+              "role_hint": "डेटाबेस एक्सेस अधिकारों को स्पष्ट करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u4_d1",
+              "category": "logical",
+              "text": "जिससे ब्राउज़र स्क्रिप्ट सर्वर के डेटाबेस में सीधे बदलाव कर सके",
+              "penalty_explanation": "क्लाइंट-साइड स्क्रिप्ट सीधे सर्वर के डेटाबेस या फ़ाइल सिस्टम तक नहीं पहुँच सकती।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Client scripts execute in the browser without backend access, while server scripts handle databases on the remote host.",
+        "hi": "क्लाइंट स्क्रिप्ट बिना बैकएंड एक्सेस के ब्राउज़र में चलती हैं, जबकि सर्वर स्क्रिप्ट रिमोट होस्ट पर डेटाबेस प्रबंधित करती हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Web Publishing Workflow and Essentials",
+          "hi": "वेब प्रकाशन कार्यप्रवाह और आवश्यकताएं"
+        },
+        "theory": {
+          "en": "Web publishing is the process of building, uploading, and maintaining content (text, graphics, audio, and video) online. Fulfilling a complete web deployment requires three core components: web development software (authoring tools), a web server host (storage and serving), and active Internet connectivity (transmission medium).",
+          "hi": "वेब प्रकाशन इंटरनेट पर सामग्री (टेक्स्ट, ग्राफिक्स, ऑडियो और वीडियो) बनाने, अपलोड करने और प्रबंधित करने की प्रक्रिया है। एक सफल वेब परिनियोजन के लिए तीन मुख्य संसाधनों की आवश्यकता होती है: वेब-डेवलपमेंट सॉफ़्टवेयर (कोड निर्माण के लिए), वेब सर्वर (होस्टिंग और डिलीवरी के लिए), और इंटरनेट कनेक्शन (डेटा ट्रांसमिशन के लिए)।"
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Sequence the essential stages required to publish website assets to the internet.",
+          "hint": "Start with local authoring, secure necessary hosting, connect, and upload content.",
+          "target_sequence": [
+            {
+              "id": "en_u5_t1",
+              "text": "Design pages using web development software",
+              "role_hint": "Begin with local content authoring and scripting"
+            },
+            {
+              "id": "en_u5_t2",
+              "text": "provision space on a reachable web server",
+              "role_hint": "Identify the target deployment infrastructure"
+            },
+            {
+              "id": "en_u5_t3",
+              "text": "establish an active internet connection",
+              "role_hint": "Connect via the transmission carrier"
+            },
+            {
+              "id": "en_u5_t4",
+              "text": "and upload the finished digital assets",
+              "role_hint": "Complete the transfer of published files"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u5_d1",
+              "category": "logical",
+              "text": "without configuring an accessible web server",
+              "penalty_explanation": "A web server is a mandatory resource for hosting and serving web pages to public clients."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "वेबसाइट सामग्री को इंटरनेट पर प्रकाशित करने के आवश्यक चरणों को क्रमबद्ध करें।",
+          "hint": "पेज डिजाइन करने से शुरू करें, सर्वर तैयार करें, इंटरनेट जोड़ें और सामग्री अपलोड करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u5_t1",
+              "text": "वेब-डेवलपमेंट सॉफ़्टवेयर से पेज तैयार करें",
+              "role_hint": "सामग्री निर्माण और कोडिंग से शुरुआत करें"
+            },
+            {
+              "id": "hi_u5_t2",
+              "text": "एक वेब सर्वर पर आवश्यक स्थान की व्यवस्था करें",
+              "role_hint": "होस्टिंग इंफ्रास्ट्रक्चर की पहचान करें"
+            },
+            {
+              "id": "hi_u5_t3",
+              "text": "एक सक्रिय इंटरनेट कनेक्शन स्थापित करें",
+              "role_hint": "ट्रांसमिशन माध्यम को सक्रिय करें"
+            },
+            {
+              "id": "hi_u5_t4",
+              "text": "और तैयार डिजिटल सामग्री को सर्वर पर अपलोड करें",
+              "role_hint": "वेबसाइट फ़ाइलों को ट्रांसफर करके प्रकाशन पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u5_d1",
+              "category": "logical",
+              "text": "बिना किसी वेब सर्वर की आवश्यकता के सीधे प्रकाशित करें",
+              "penalty_explanation": "वेबसाइट को इंटरनेट पर उपलब्ध कराने के लिए एक वेब सर्वर अनिवार्य आवश्यकता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Web publishing converts authored local files into live public resources via an active internet uplink to a web server.",
+        "hi": "वेब प्रकाशन इंटरनेट और वेब सर्वर के माध्यम से स्थानीय फाइलों को सार्वजनिक ऑनलाइन संसाधनों में बदलता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Security and Scope of Web-Delivered Content",
+          "hi": "वेब-वितरित सामग्री की सुरक्षा और दायरा"
+        },
+        "theory": {
+          "en": "The scope of web publishing spans static sites, complex web applications, and multimedia portals. Because public clients download and view published code directly in their browsers, developers must distinguish between presentation assets intended for disclosure and backend assets that demand strict access controls.",
+          "hi": "वेब प्रकाशन का दायरा स्थिर साइटों, गतिशील वेब अनुप्रयोगों और मल्टीमीडिया पोर्टलों तक फैला हुआ है। चूंकि क्लाइंट प्रकाशित कोड को सीधे अपने ब्राउज़र में डाउनलोड और देख सकते हैं, इसलिए डेवलपर्स को सार्वजनिक संपत्तियों और बैकएंड संपत्तियों के बीच सख्त अंतर बनाए रखना चाहिए।"
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Order the architectural decisions that separate public client delivery from secure backend handling.",
+          "hint": "Identify publicly downloaded browser elements, evaluate visibility risks, and protect backend data.",
+          "target_sequence": [
+            {
+              "id": "en_u6_t1",
+              "text": "Transmit frontend code directly to the client browser",
+              "role_hint": "Start with standard delivery of client-side assets"
+            },
+            {
+              "id": "en_u6_t2",
+              "text": "where scripts and structures remain visible to users,",
+              "role_hint": "Note the transparent nature of browser execution"
+            },
+            {
+              "id": "en_u6_t3",
+              "text": "isolate database transactions strictly on the server,",
+              "role_hint": "Define the backend protective boundary"
+            },
+            {
+              "id": "en_u6_t4",
+              "text": "preventing unauthorized access to core resources",
+              "role_hint": "State the security outcome of this separation"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u6_d1",
+              "category": "logical",
+              "text": "by exposing all database credentials inside client script tags",
+              "penalty_explanation": "Database credentials must never be included in client-side code because browser scripts are viewable by any user."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "सार्वजनिक क्लाइंट डिलीवरी और सुरक्षित बैकएंड प्रबंधन को अलग करने वाले चरणों को सही क्रम में लगाएं।",
+          "hint": "ब्राउज़र डिलीवरी से शुरू करें, कोड दृश्यता बताएं, और बैकएंड सुरक्षा पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u6_t1",
+              "text": "फ्रंटएंड कोड को सीधे क्लाइंट ब्राउज़र पर भेजें",
+              "role_hint": "क्लाइंट-साइड संपत्तियों की डिलीवरी से शुरुआत करें"
+            },
+            {
+              "id": "hi_u6_t2",
+              "text": "जहाँ स्क्रिप्ट और मार्कअप उपयोगकर्ता को दिखाई देते हैं,",
+              "role_hint": "ब्राउज़र में कोड की दृश्यता की स्थिति बताएं"
+            },
+            {
+              "id": "hi_u6_t3",
+              "text": "डेटाबेस लेनदेन को केवल सर्वर पर ही रखें,",
+              "role_hint": "बैकएंड सुरक्षा सीमा को परिभाषित करें"
+            },
+            {
+              "id": "hi_u6_t4",
+              "text": "ताकि संवेदनशील संसाधनों का अनधिकृत उपयोग रोका जा सके",
+              "role_hint": "इस संरचना के सुरक्षा लाभ को स्पष्ट करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u6_d1",
+              "category": "logical",
+              "text": "डेटाबेस के पासवर्ड क्लाइंट स्क्रिप्ट में सीधे लिखकर",
+              "penalty_explanation": "डेटाबेस क्रेडेंशियल्स को कभी भी क्लाइंट-साइड कोड में शामिल नहीं किया जाना चाहिए क्योंकि यह कोड उपयोगकर्ताओं द्वारा देखा जा सकता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Public client-side code delivers interactivity locally, while proprietary data and business logic must reside safely on the server.",
+        "hi": "क्लाइंट-साइड कोड स्थानीय रूप से इंटरएक्टिविटी देता है, जबकि सुरक्षित डेटा और व्यावसायिक तर्क सर्वर पर रहने चाहिए।"
+      }
+    }
+  ]
+}
