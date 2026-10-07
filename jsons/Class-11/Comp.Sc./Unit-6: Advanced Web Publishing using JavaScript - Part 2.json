@@ -18,8 +18,8 @@
           "hi": "जावास्क्रिप्ट और इसका निष्पादन वातावरण क्या है?"
         },
         "theory": {
-          "en": "JavaScript is a web-development language used for creating dynamic and interactive web-pages[cite: 2]. JavaScript is a client-side scripting language because it runs on the client's browser, which means it is not a server-side scripting language[cite: 2].",
-          "hi": "जावास्क्रिप्ट एक वेब डेवलपमेंट भाषा है जिसका उपयोग क्रियाशील और इंटरैक्टिव वेब-पेज बनाने के लिए किया जाता है[cite: 2]। जावास्क्रिप्ट एक क्लाइंट-साइड स्क्रिप्टिंग भाषा है क्योंकि यह क्लाइंट के ब्राउज़र पर चलती है, अर्थात जावास्क्रिप्ट एक सर्वर-साइड स्क्रिप्टिंग भाषा नहीं है[cite: 2]।"
+          "en": "JavaScript is a web-development language used for creating dynamic and interactive web-pages. JavaScript is a client-side scripting language because it runs on the client's browser, which means it is not a server-side scripting language.",
+          "hi": "जावास्क्रिप्ट एक वेब डेवलपमेंट भाषा है जिसका उपयोग क्रियाशील और इंटरैक्टिव वेब-पेज बनाने के लिए किया जाता है। जावास्क्रिप्ट एक क्लाइंट-साइड स्क्रिप्टिंग भाषा है क्योंकि यह क्लाइंट के ब्राउज़र पर चलती है, अर्थात जावास्क्रिप्ट एक सर्वर-साइड स्क्रिप्टिंग भाषा नहीं है।"
         },
         "media": {
           "type": "svg",
@@ -32,8 +32,8 @@
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the complete, harmonious sentence defining JavaScript and its execution host in correct sequence.",
-          "hint": "Start with JavaScript as a web language, describe its primary purpose, state where it executes, and contrast it with server-side scripting.",
+          "prompt": "Construct the harmonious sentence defining JavaScript and its client-side execution environment in correct sequence.",
+          "hint": "Start with JavaScript as a web-development language, describe its purpose, state where it executes, and conclude with it creating interactive pages.",
           "target_sequence": [
             {
               "id": "en_u7_t1",
@@ -42,32 +42,32 @@
             },
             {
               "id": "en_u7_t2",
-              "text": "used for creating dynamic and interactive web-pages",
-              "role_hint": "Add the purpose of building interactive web interfaces"
+              "text": "which operates strictly as a client-side scripting language",
+              "role_hint": "Specify the client-side execution paradigm"
             },
             {
               "id": "en_u7_t3",
-              "text": "which operates strictly as a client-side scripting language",
-              "role_hint": "Specify the client-side execution category"
+              "text": "and by running directly inside the client web browser rather than on the server",
+              "role_hint": "Provide the method and runtime environment"
             },
             {
               "id": "en_u7_t4",
-              "text": "because it runs directly inside the client browser rather than on the server",
-              "role_hint": "Conclude with the exact runtime location"
+              "text": "it actively creates dynamic and interactive web-pages",
+              "role_hint": "Conclude with the resolving action and purpose"
             }
           ],
           "distractors": [
             {
               "id": "en_u7_d1",
               "category": "logical",
-              "text": "because it requires execution exclusively on remote web servers as server-side code",
-              "penalty_explanation": "JavaScript is explicitly a client-side scripting language running in the browser, not a server-side language."
+              "text": "by running exclusively on remote web servers as server-side code",
+              "penalty_explanation": "JavaScript is explicitly a client-side scripting language executed in the browser, not on the server."
             }
           ]
         },
         "hi": {
-          "prompt": "जावास्क्रिप्ट और इसके निष्पादन वातावरण को परिभाषित करने वाले पूर्ण वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "जावास्क्रिप्ट एक वेब विकास भाषा है से शुरू करें, उद्देश्य जोड़ें, क्लाइंट-साइड प्रकार बताएं, और ब्राउज़र में चलने पर समाप्त करें।",
+          "prompt": "जावास्क्रिप्ट और इसके क्लाइंट-साइड निष्पादन वातावरण को परिभाषित करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "जावास्क्रिप्ट एक वेब विकास भाषा है से शुरू करें, क्लाइंट-साइड प्रकार बताएं, ब्राउज़र में चलने का तरीका जोड़ें, और इंटरैक्टिव पेज बनाने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u7_t1",
@@ -76,33 +76,33 @@
             },
             {
               "id": "hi_u7_t2",
-              "text": "जिसका उपयोग क्रियाशील और इंटरैक्टिव वेब-पेज बनाने के लिए किया जाता है",
-              "role_hint": "इंटरैक्टिव वेब पेज निर्माण के उद्देश्य से जुड़ा उपवाक्य जोड़ें"
-            },
-            {
-              "id": "hi_u7_t3",
-              "text": "तथा यह मुख्य रूप से एक क्लाइंट-साइड स्क्रिप्टिंग भाषा है",
+              "text": "जो मुख्य रूप से एक क्लाइंट-साइड स्क्रिप्टिंग भाषा के रूप में कार्य करती है",
               "role_hint": "क्लाइंट-साइड श्रेणी को निर्दिष्ट करें"
             },
             {
+              "id": "hi_u7_t3",
+              "text": "और सर्वर के बजाय सीधे क्लाइंट के वेब-ब्राउज़र में चलकर",
+              "role_hint": "ब्राउज़र में निष्पादन का माध्यम और तरीका बताएं"
+            },
+            {
               "id": "hi_u7_t4",
-              "text": "क्योंकि यह सर्वर के बजाय सीधे क्लाइंट के वेब-ब्राउज़र में चलती है",
-              "role_hint": "ब्राउज़र निष्पादन के साथ वाक्य को स्वाभाविक रूप से पूरा करें"
+              "text": "यह प्रभावी रूप से क्रियाशील और इंटरैक्टिव वेब-पेज बनाती है",
+              "role_hint": "इंटरैक्टिव पेज निर्माण की मुख्य क्रिया के साथ वाक्य पूरा करें"
             }
           ],
           "distractors": [
             {
               "id": "hi_u7_d1",
               "category": "logical",
-              "text": "क्योंकि यह सर्वर-साइड भाषा के रूप में केवल रिमोट वेब सर्वर पर ही निष्पादित होती है",
-              "penalty_explanation": "जावास्क्रिप्ट एक क्लाइंट-साइड स्क्रिप्टिंग भाषा है जो ब्राउज़र पर चलती है, सर्वर पर नहीं।"
+              "text": "सर्वर-साइड कोड के रूप में केवल रिमोट वेब सर्वर पर निष्पादित होकर",
+              "penalty_explanation": "जावास्क्रिप्ट क्लाइंट-साइड भाषा है जो ब्राउज़र में निष्पादित होती है, सर्वर पर नहीं।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "JavaScript is a client-side web development language executed in the browser to create dynamic and interactive web pages[cite: 2].",
-        "hi": "जावास्क्रिप्ट एक क्लाइंट-साइड वेब विकास भाषा है जो ब्राउज़र में निष्पादित होकर क्रियाशील और इंटरैक्टिव वेब-पेज बनाती है[cite: 2]।"
+        "en": "JavaScript is a client-side web development language executed in the browser to create dynamic and interactive web pages.",
+        "hi": "जावास्क्रिप्ट एक क्लाइंट-साइड वेब विकास भाषा है जो ब्राउज़र में निष्पादित होकर क्रियाशील और इंटरैक्टिव वेब-पेज बनाती है।"
       }
     },
     {
@@ -112,8 +112,8 @@
           "hi": "भाषा की विशेषताएं और जावास्क्रिप्ट को एम्बेड करना"
         },
         "theory": {
-          "en": "JavaScript is an interpreted language rather than a compiled language, and it is event-based[cite: 3]. It is strictly case-sensitive, meaning all keywords must be written in lowercase only[cite: 3]. JavaScript is embedded directly into HTML code using the `<script type=\"text/javascript\">...</script>` tag[cite: 3].",
-          "hi": "जावास्क्रिप्ट एक इंटेरप्रेट की गई भाषा है न कि कम्पाइल की गई भाषा, और यह एक इवेंट-आधारित भाषा है[cite: 3]। जावास्क्रिप्ट एक केस-सेंसिटिव भाषा है, जिसका अर्थ है कि सभी कीवर्ड केवल लोअर-केस में लिखे जाते हैं[cite: 3]। जावास्क्रिप्ट को `<script type=\"text/javascript\">...</script>` टैग का उपयोग करके सीधे HTML कोड में एम्बेड किया जाता है[cite: 3]।"
+          "en": "JavaScript is an interpreted language rather than a compiled language, and it is event-based. It is strictly case-sensitive, meaning all keywords must be written in lowercase only. JavaScript is embedded directly into HTML code using the `<script type=\"text/javascript\">...</script>` tag.",
+          "hi": "जावास्क्रिप्ट एक इंटेरप्रेट की गई भाषा है न कि कम्पाइल की गई भाषा, और यह एक इवेंट-आधारित भाषा है। जावास्क्रिप्ट एक केस-सेंसिटिव भाषा है, जिसका अर्थ है कि सभी कीवर्ड केवल लोअर-केस में लिखे जाते हैं। जावास्क्रिप्ट को `<script type=\"text/javascript\">...</script>` टैग का उपयोग करके सीधे HTML कोड में एम्बेड किया जाता है।"
         },
         "media": {
           "type": "svg",
@@ -127,76 +127,76 @@
       "challenges": {
         "en": {
           "prompt": "Construct the fluent sentence describing the core syntax traits and HTML embedding rules of JavaScript.",
-          "hint": "Begin with JavaScript being interpreted and event-based, mention strict lowercase keywords, and explain embedding inside the script tag.",
+          "hint": "Start with JavaScript as interpreted and event-based, describe lowercase keywords, introduce the script tag method, and conclude with direct HTML embedding.",
           "target_sequence": [
             {
               "id": "en_u8_t1",
               "text": "JavaScript is an interpreted and event-based language",
-              "role_hint": "Lead with the primary execution paradigm and design model"
+              "role_hint": "Lead with the execution paradigm and design model"
             },
             {
               "id": "en_u8_t2",
-              "text": "that enforces strict case-sensitivity with lowercase keywords",
+              "text": "which is strictly case-sensitive with lowercase keywords",
               "role_hint": "Add the keyword casing and syntax constraint"
             },
             {
               "id": "en_u8_t3",
-              "text": "which developers embed directly inside HTML code",
-              "role_hint": "Introduce the HTML integration process"
+              "text": "and by using the enclosing `<script type=\"text/javascript\">` tag pair",
+              "role_hint": "Provide the embedding method and tag syntax"
             },
             {
               "id": "en_u8_t4",
-              "text": "using the enclosing `<script type=\"text/javascript\">` tag pair",
-              "role_hint": "Conclude with the exact script tag syntax"
+              "text": "it is directly embedded into HTML code",
+              "role_hint": "Conclude with the resolving HTML integration action"
             }
           ],
           "distractors": [
             {
               "id": "en_u8_d1",
               "category": "logical",
-              "text": "that requires full source compilation and allows uppercase reserved keywords",
-              "penalty_explanation": "JavaScript is an interpreted language, not compiled, and all keywords must be in lowercase."
+              "text": "and by relying on an external compiler to translate uppercase keywords",
+              "penalty_explanation": "JavaScript is an interpreted language requiring no compiler, and all keywords must be in lowercase."
             }
           ]
         },
         "hi": {
-          "prompt": "जावास्क्रिप्ट की सिंटैक्स विशेषताओं और HTML एम्बेडिंग नियमों को व्यक्त करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "इंटेरप्रेट और इवेंट-आधारित होने से शुरू करें, लोअर-केस कीवर्ड बताएं, HTML में एम्बेड करना जोड़ें, और स्क्रिप्ट टैग पर समाप्त करें।",
+          "prompt": "जावास्क्रिप्ट की सिंटैक्स विशेषताओं और HTML एम्बेडिंग नियमों को व्यक्त करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "इंटेरप्रेट और इवेंट-आधारित होने से शुरू करें, लोअर-केस कीवर्ड बताएं, स्क्रिप्ट टैग का उपयोग जोड़ें, और HTML में एम्बेड होने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u8_t1",
-              "text": "जावास्क्रिप्ट एक इंटेरप्रेट की गई और इवेंट-आधारित प्रोग्रामिंग भाषा है",
+              "text": "जावास्क्रिप्ट एक इंटेरप्रेट की गई और इवेंट-आधारित भाषा है",
               "role_hint": "निष्पादन प्रकृति और प्रोग्रामिंग मॉडल वाले मुख्य उपवाक्य से शुरुआत करें"
             },
             {
               "id": "hi_u8_t2",
-              "text": "जो सभी कीवर्ड को केवल लोअर-केस में लिखने का सख्त नियम लागू करती है",
+              "text": "जो लोअर-केस कीवर्ड के साथ पूरी तरह से केस-सेंसिटिव है",
               "role_hint": "केस-सेंसिटिव और लोअर-केस नियमों से जुड़ा उपवाक्य जोड़ें"
             },
             {
               "id": "hi_u8_t3",
-              "text": "तथा इसे सीधे HTML कोड के भीतर एम्बेड किया जाता है",
-              "role_hint": "HTML एकीकरण प्रक्रिया से जुड़ा उपवाक्य जोड़ें"
+              "text": "और `<script type=\"text/javascript\">` टैग जोड़ी का उपयोग करके",
+              "role_hint": "स्क्रिप्ट टैग द्वारा एम्बेड करने का तरीका जोड़ें"
             },
             {
               "id": "hi_u8_t4",
-              "text": "जोड़ीदार `<script type=\"text/javascript\">` टैग का उपयोग करके",
-              "role_hint": "सटीक स्क्रिप्ट टैग सिंटैक्स के साथ वाक्य पूरा करें"
+              "text": "इसे सीधे HTML कोड में एम्बेड किया जाता है",
+              "role_hint": "HTML में एम्बेड होने की मुख्य क्रिया के साथ वाक्य पूरा करें"
             }
           ],
           "distractors": [
             {
               "id": "hi_u8_d1",
               "category": "logical",
-              "text": "जिसमें पूर्व-कम्पाइलर अनिवार्य है और कीवर्ड को अपर-केस में लिखा जा सकता है",
+              "text": "और बाहरी कंपाइलर की मदद से अपर-केस कीवर्ड का उपयोग करके",
               "penalty_explanation": "जावास्क्रिप्ट एक इंटेरप्रेट की गई भाषा है और इसके सभी कीवर्ड केवल लोअर-केस में मान्य होते हैं।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "JavaScript is an interpreted, case-sensitive language embedded in HTML documents using the `<script>` tag[cite: 3].",
-        "hi": "जावास्क्रिप्ट एक इंटेरप्रेट की गई, केस-सेंसिटिव भाषा है जिसे HTML में `<script>` टैग द्वारा एम्बेड किया जाता है[cite: 3]।"
+        "en": "JavaScript is an interpreted, case-sensitive language embedded in HTML documents using the `<script>` tag.",
+        "hi": "जावास्क्रिप्ट एक इंटेरप्रेट की गई, केस-सेंसिटिव भाषा है जिसे HTML में `<script>` टैग द्वारा एम्बेड किया जाता है।"
       }
     },
     {
@@ -206,8 +206,8 @@
           "hi": "जावास्क्रिप्ट के लाभ और हानियाँ"
         },
         "theory": {
-          "en": "JavaScript offers major advantages: it is very fast because it runs in the client browser, very easy to learn and write, easy to debug and test, platform-independent, and has no need for a compiler[cite: 3]. Its primary disadvantage is that it is less secure because its code can be viewed directly in the client's web-browser[cite: 3].",
-          "hi": "जावास्क्रिप्ट के प्रमुख लाभ हैं: यह बहुत तेज़ है क्योंकि यह क्लाइंट के ब्राउज़र पर चलती है, इसे सीखना और लिखना आसान है, इसे डीबग और परीक्षण करना आसान है, यह प्लेटफ़ॉर्म-स्वतंत्र है, और इसे कंपाइलर की आवश्यकता नहीं है[cite: 3]। इसका मुख्य नुकसान यह है कि यह कम सुरक्षित है क्योंकि इसका कोड क्लाइंट के वेब-ब्राउज़र में देखा जा सकता है[cite: 3]।"
+          "en": "JavaScript offers major advantages: it is very fast because it runs in the client browser, very easy to learn and write, easy to debug and test, platform-independent, and has no need for a compiler. Its primary disadvantage is that it is less secure because its code can be viewed directly in the client's web-browser.",
+          "hi": "जावास्क्रिप्ट के प्रमुख लाभ हैं: यह बहुत तेज़ है क्योंकि यह क्लाइंट के ब्राउज़र पर चलती है, इसे सीखना और लिखना आसान है, इसे डीबग और परीक्षण करना आसान है, यह प्लेटफ़ॉर्म-स्वतंत्र है, और इसे कंपाइलर की आवश्यकता नहीं है। इसका मुख्य नुकसान यह है कि यह कम सुरक्षित है क्योंकि इसका कोड क्लाइंट के वेब-ब्राउज़र में देखा जा सकता है।"
         },
         "media": {
           "type": "svg",
@@ -221,7 +221,7 @@
       "challenges": {
         "en": {
           "prompt": "Construct the balanced sentence summarizing the operational advantages and security limitation of JavaScript.",
-          "hint": "Start with fast execution, add platform-independence, contrast with security, and conclude with browser code visibility.",
+          "hint": "Start with fast execution, add platform-independence, contrast with browser code visibility, and conclude with reduced security.",
           "target_sequence": [
             {
               "id": "en_u9_t1",
@@ -235,27 +235,27 @@
             },
             {
               "id": "en_u9_t3",
-              "text": "yet it remains comparatively less secure as a scripting language",
-              "role_hint": "Introduce the security vulnerability"
+              "text": "yet because its entire source code can be viewed directly in the client web-browser",
+              "role_hint": "Introduce the browser code exposure factor"
             },
             {
               "id": "en_u9_t4",
-              "text": "because its entire source code can be viewed directly in the client browser",
-              "role_hint": "Conclude with client-side code visibility"
+              "text": "it becomes a comparatively less secure scripting language",
+              "role_hint": "Conclude with the resolving security verdict"
             }
           ],
           "distractors": [
             {
               "id": "en_u9_d1",
               "category": "logical",
-              "text": "because its source code remains fully encrypted and invisible to client browsers",
+              "text": "because its code remains completely hidden from browser inspection tools",
               "penalty_explanation": "JavaScript is less secure specifically because its code can be inspected directly in the client's browser."
             }
           ]
         },
         "hi": {
-          "prompt": "जावास्क्रिप्ट के लाभों और सुरक्षा सीमाओं का संतुलन प्रस्तुत करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "तेज़ निष्पादन से शुरू करें, प्लेटफ़ॉर्म-स्वतंत्रता जोड़ें, सुरक्षा संबंधी कमी बताएं, और ब्राउज़र में कोड दिखने पर समाप्त करें।",
+          "prompt": "जावास्क्रिप्ट के लाभों और सुरक्षा सीमाओं का संतुलन प्रस्तुत करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "तेज़ निष्पादन से शुरू करें, प्लेटफ़ॉर्म-स्वतंत्रता जोड़ें, ब्राउज़र में कोड दिखने की स्थिति बताएं, और कम सुरक्षित होने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u9_t1",
@@ -269,28 +269,28 @@
             },
             {
               "id": "hi_u9_t3",
-              "text": "किंतु सुरक्षा के दृष्टिकोण से यह अपेक्षाकृत कम सुरक्षित भाषा मानी जाती है",
-              "role_hint": "सुरक्षा संबंधी कमी को दर्शाने वाला उपवाक्य जोड़ें"
+              "text": "किंतु इसका पूरा कोड क्लाइंट के वेब-ब्राउज़र में सीधे देखा जा सकने के कारण",
+              "role_hint": "ब्राउज़र में कोड दिखने की स्थिति दर्शाने वाला उपवाक्य जोड़ें"
             },
             {
               "id": "hi_u9_t4",
-              "text": "क्योंकि इसका पूरा कोड क्लाइंट के वेब-ब्राउज़र में सीधे देखा जा सकता है",
-              "role_hint": "ब्राउज़र में कोड दिखने के तथ्य के साथ वाक्य पूरा करें"
+              "text": "यह सुरक्षा की दृष्टि से अपेक्षाकृत कम सुरक्षित भाषा मानी जाती है",
+              "role_hint": "कम सुरक्षित होने के अंतिम निष्कर्ष के साथ वाक्य पूरा करें"
             }
           ],
           "distractors": [
             {
               "id": "hi_u9_d1",
               "category": "logical",
-              "text": "क्योंकि इसका सोर्स कोड हमेशा पूरी तरह एन्क्रिप्टेड और ब्राउज़र से अदृश्य रहता है",
+              "text": "क्योंकि इसका कोड वेब-ब्राउज़र में हमेशा पूरी तरह छुपा और सुरक्षित रहता है",
               "penalty_explanation": "जावास्क्रिप्ट कम सुरक्षित इसलिए है क्योंकि इसका कोड ब्राउज़र में आसानी से देखा जा सकता है।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "JavaScript is fast, easy to test, and compiler-free, but its client-side visibility reduces overall code security[cite: 3].",
-        "hi": "जावास्क्रिप्ट तेज़, परीक्षण में आसान और कंपाइलर-मुक्त है, किंतु ब्राउज़र में कोड दिखने के कारण कम सुरक्षित है[cite: 3]।"
+        "en": "JavaScript is fast, easy to test, and compiler-free, but its client-side visibility reduces overall code security.",
+        "hi": "जावास्क्रिप्ट तेज़, परीक्षण में आसान और कंपाइलर-मुक्त है, किंतु ब्राउज़र में कोड दिखने के कारण कम सुरक्षित है।"
       }
     },
     {
@@ -300,8 +300,8 @@
           "hi": "जावास्क्रिप्ट में वेरिएबल और घोषणा सिंटैक्स"
         },
         "theory": {
-          "en": "In JavaScript, a variable is a named storage location that holds a value, which can be changed at any time[cite: 3]. Declaring a variable is done by writing the variable name after the keyword `var`[cite: 3]. The assignment operator `=` is used to assign a value to the variable (e.g., `var A = 5;` or `var my_Name = \"Ravikant\";`)[cite: 3].",
-          "hi": "जावास्क्रिप्ट में एक वेरिएबल एक नाम है जो किसी मान को संग्रहीत करता है, और इस मान को किसी भी समय बदला जा सकता है[cite: 3]। कुंजी-शब्द `var` के बाद वेरिएबल का नाम लिखकर वेरिएबल घोषित किया जाता है[cite: 3]। वेरिएबल को मान निर्दिष्ट करने के लिए असाइनमेंट ऑपरेटर `=` का उपयोग किया जाता है (जैसे `var A = 5;` या `var my_Name = \"Ravikant\";`)[cite: 3]।"
+          "en": "In JavaScript, a variable is a named storage location that holds a value, which can be changed at any time. Declaring a variable is done by writing the variable name after the keyword `var`. The assignment operator `=` is used to assign a value to the variable (e.g., `var A = 5;` or `var my_Name = \"Ravikant\";`).",
+          "hi": "जावास्क्रिप्ट में एक वेरिएबल एक नाम है जो किसी मान को संग्रहीत करता है, और इस मान को किसी भी समय बदला जा सकता है। कुंजी-शब्द `var` के बाद वेरिएबल का नाम लिखकर वेरिएबल घोषित किया जाता है। वेरिएबल को मान निर्दिष्ट करने के लिए असाइनमेंट ऑपरेटर `=` का उपयोग किया जाता है (जैसे `var A = 5;` या `var my_Name = \"Ravikant\";`)।"
         },
         "media": {
           "type": "svg",
@@ -315,7 +315,7 @@
       "challenges": {
         "en": {
           "prompt": "Construct the complete, harmonious sentence describing how variables are declared and initialized in JavaScript.",
-          "hint": "Start with defining a variable as a named container, explain declaration with var, introduce the assignment operator, and conclude with dynamic value storage.",
+          "hint": "Start with defining a variable as a named memory location, explain declaration with var, introduce the assignment operator, and conclude with storing values.",
           "target_sequence": [
             {
               "id": "en_u10_t1",
@@ -329,27 +329,27 @@
             },
             {
               "id": "en_u10_t3",
-              "text": "which uses the assignment operator `=` to store an initial value",
-              "role_hint": "Introduce the assignment operator mechanism"
+              "text": "and by utilizing the assignment operator `=`",
+              "role_hint": "Specify the assignment operator mechanism"
             },
             {
               "id": "en_u10_t4",
-              "text": "allowing that stored data to be modified at any point during program execution",
-              "role_hint": "Conclude with the ability to change stored values over time"
+              "text": "it stores a changeable value that can be modified at any time",
+              "role_hint": "Conclude with the resolving action of value storage and mutability"
             }
           ],
           "distractors": [
             {
               "id": "en_u10_d1",
               "category": "logical",
-              "text": "which locks the stored value permanently so it can never be changed",
-              "penalty_explanation": "Variables are changeable containers whose values can be altered at any time."
+              "text": "it permanently locks a constant value that can never be altered",
+              "penalty_explanation": "Variables are mutable storage containers whose values can be changed at any time."
             }
           ]
         },
         "hi": {
-          "prompt": "जावास्क्रिप्ट में वेरिएबल घोषणा और मान निर्धारण को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "वेरिएबल एक नाम है से शुरू करें, var कीवर्ड से घोषणा बताएं, असाइनमेंट ऑपरेटर जोड़ें, और मान बदलने की क्षमता पर समाप्त करें।",
+          "prompt": "जावास्क्रिप्ट में वेरिएबल घोषणा और मान निर्धारण को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "वेरिएबल एक नाम है से शुरू करें, var कीवर्ड से घोषणा बताएं, असाइनमेंट ऑपरेटर जोड़ें, और परिवर्तनीय मान संग्रहीत करने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u10_t1",
@@ -363,28 +363,28 @@
             },
             {
               "id": "hi_u10_t3",
-              "text": "तथा असाइनमेंट ऑपरेटर `=` का उपयोग करके इसमें कोई मान निर्दिष्ट किया जाता है",
-              "role_hint": "असाइनमेंट ऑपरेटर से जुड़ा उपवाक्य जोड़ें"
+              "text": "और असाइनमेंट ऑपरेटर `=` का उपयोग करके",
+              "role_hint": "असाइनमेंट ऑपरेटर के माध्यम से जुड़ा उपवाक्य जोड़ें"
             },
             {
               "id": "hi_u10_t4",
-              "text": "और इस संग्रहीत मान को प्रोग्राम निष्पादन के दौरान किसी भी समय बदला जा सकता है",
-              "role_hint": "मान में परिवर्तन की स्वतंत्रता के साथ वाक्य पूरा करें"
+              "text": "यह किसी भी समय बदले जा सकने वाले मान को सुरक्षित रखता है",
+              "role_hint": "परिवर्तनीय मान संग्रहीत करने की मुख्य क्रिया के साथ वाक्य पूरा करें"
             }
           ],
           "distractors": [
             {
               "id": "hi_u10_d1",
               "category": "logical",
-              "text": "जिसमें संग्रहीत मान को स्थिर कर दिया जाता है ताकि उसे कभी बदला न जा सके",
+              "text": "यह एक अपरिवर्तनीय स्थिर मान को हमेशा के लिए लॉक कर देता है",
               "penalty_explanation": "वेरिएबल में संग्रहीत मान को प्रोग्राम में किसी भी समय बदला जा सकता है।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Variables are mutable named containers declared with `var` and assigned values using the `=` assignment operator[cite: 3].",
-        "hi": "वेरिएबल परिवर्तनशील कंटेनर हैं जिन्हें `var` द्वारा घोषित किया जाता है और `=` ऑपरेटर द्वारा मान दिया जाता है[cite: 3]।"
+        "en": "Variables are mutable named containers declared with `var` and assigned values using the `=` assignment operator.",
+        "hi": "वेरिएबल परिवर्तनशील कंटेनर हैं जिन्हें `var` द्वारा घोषित किया जाता है और `=` ऑपरेटर द्वारा मान दिया जाता है।"
       }
     },
     {
@@ -394,8 +394,8 @@
           "hi": "डायनामिक टाइपिंग और प्रिमिटिव डेटा-प्रकार"
         },
         "theory": {
-          "en": "JavaScript is a dynamically typed (loosely typed) language because developers do not need to specify data-types when declaring variables[cite: 4]. Predefined in-built data types are called primitive data types, which include `Number` (integers and floating-point values), `String` (characters enclosed in quotes), and `Boolean` (`true` or `false`)[cite: 4].",
-          "hi": "जावास्क्रिप्ट एक डाइनैमिक रूप से टाइप की गई भाषा (लूज़ टाइप) है क्योंकि वेरिएबल घोषित करते समय डेटा-प्रकार निर्दिष्ट करने की आवश्यकता नहीं होती है[cite: 4]। पूर्वनिर्धारित इन-बिल्ट डेटा प्रकारों को प्रिमिटिव डेटा-प्रकार कहा जाता है, जिसमें `Number` (पूर्णांक और दशमलव संख्याएं), `String` (उद्धरण चिह्नों में वर्ण), और `Boolean` (`true` या `false`) शामिल हैं[cite: 4]।"
+          "en": "JavaScript is a dynamically typed (loosely typed) language because developers do not need to specify data-types when declaring variables. Predefined in-built data types are called primitive data types, which include `Number` (integers and floating-point values), `String` (characters enclosed in quotes), and `Boolean` (`true` or `false`).",
+          "hi": "जावास्क्रिप्ट एक डाइनैमिक रूप से टाइप की गई भाषा (लूज़ टाइप) है क्योंकि वेरिएबल घोषित करते समय डेटा-प्रकार निर्दिष्ट करने की आवश्यकता नहीं होती है। पूर्वनिर्धारित इन-बिल्ट डेटा प्रकारों को प्रिमिटिव डेटा-प्रकार कहा जाता है, जिसमें `Number` (पूर्णांक और दशमलव संख्याएं), `String` (उद्धरण चिह्नों में वर्ण), और `Boolean` (`true` या `false`) शामिल हैं।"
         },
         "media": {
           "type": "svg",
@@ -418,32 +418,32 @@
             },
             {
               "id": "en_u11_t2",
-              "text": "where variables do not require explicit type declarations",
+              "text": "where variables are declared without explicit data types",
               "role_hint": "Explain how variables are declared without fixed types"
             },
             {
               "id": "en_u11_t3",
-              "text": "providing in-built primitive types like Number for integers and String for quoted text",
-              "role_hint": "Introduce numeric and text primitive types"
+              "text": "and through in-built primitive types like Number, String, and Boolean",
+              "role_hint": "Introduce numeric, text, and logical primitive types as the vehicle"
             },
             {
               "id": "en_u11_t4",
-              "text": "along with the Boolean data type for representing true or false values",
-              "role_hint": "Conclude with logical boolean values"
+              "text": "it directly represents numeric, textual, and logical values",
+              "role_hint": "Conclude with the resolving value representation action"
             }
           ],
           "distractors": [
             {
               "id": "en_u11_d1",
               "category": "logical",
-              "text": "mandating that every variable strictly declare its explicit data type before assignment",
+              "text": "and through mandatory static type declarations like int and string",
               "penalty_explanation": "JavaScript is dynamically typed (loosely typed), meaning data types are not declared manually."
             }
           ]
         },
         "hi": {
-          "prompt": "डाइनैमिक टाइपिंग और मुख्य प्रिमिटिव डेटा-प्रकारों का विवरण देने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "डाइनैमिक टाइपिंग से शुरू करें, डेटा प्रकार निर्दिष्ट न करने का नियम जोड़ें, Number और String बताएं, और Boolean पर समाप्त करें।",
+          "prompt": "डाइनैमिक टाइपिंग और मुख्य प्रिमिटिव डेटा-प्रकारों का विवरण देने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "डाइनैमिक टाइपिंग से शुरू करें, डेटा प्रकार निर्दिष्ट न करने का नियम जोड़ें, Number, String और Boolean प्रिमिटिव प्रकार लाएं, और मान दर्शाने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u11_t1",
@@ -452,33 +452,33 @@
             },
             {
               "id": "hi_u11_t2",
-              "text": "जहाँ वेरिएबल घोषित करते समय डेटा-प्रकार निर्दिष्ट करने की आवश्यकता नहीं होती",
+              "text": "जहाँ वेरिएबल किसी निश्चित डेटा-प्रकार के बिना घोषित किए जाते हैं",
               "role_hint": "डेटा-प्रकार निर्दिष्ट न करने से जुड़ा उपवाक्य जोड़ें"
             },
             {
               "id": "hi_u11_t3",
-              "text": "और यह संख्याओं के लिए `Number` तथा उद्धरण चिह्नों में लिखे टेक्स्ट के लिए `String` प्रदान करती है",
-              "role_hint": "Number और String प्रिमिटिव प्रकारों को जोड़ें"
+              "text": "और `Number`, `String` तथा `Boolean` जैसे इन-बिल्ट प्रिमिटिव प्रकारों के माध्यम से",
+              "role_hint": "प्रिमिटिव डेटा-प्रकारों के माध्यम से जुड़ा उपवाक्य जोड़ें"
             },
             {
               "id": "hi_u11_t4",
-              "text": "तथा तार्किक मानों को दर्शाने के लिए `Boolean` डेटा-प्रकार उपलब्ध कराती है",
-              "role_hint": "Boolean डेटा-प्रकार के साथ वाक्य को पूरा करें"
+              "text": "यह संख्यात्मक, टेक्स्ट और तार्किक मानों को सीधे दर्शाती है",
+              "role_hint": "मानों को दर्शाने की मुख्य क्रिया के साथ वाक्य को पूरा करें"
             }
           ],
           "distractors": [
             {
               "id": "hi_u11_d1",
               "category": "logical",
-              "text": "जिसमें वेरिएबल घोषित करते समय उसका निश्चित डेटा-प्रकार लिखना अनिवार्य होता है",
+              "text": "और अनिवार्य स्टैटिक टाइप घोषणाओं के माध्यम से",
               "penalty_explanation": "जावास्क्रिप्ट लूज़ टाइप भाषा है जिसमें वेरिएबल के साथ डेटा प्रकार लिखना जरूरी नहीं होता।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "JavaScript is dynamically typed and provides primitive types including Number, String, and Boolean[cite: 4].",
-        "hi": "जावास्क्रिप्ट डाइनैमिक रूप से टाइप की गई भाषा है जिसमें Number, String और Boolean जैसे प्रिमिटिव डेटा-प्रकार होते हैं[cite: 4]।"
+        "en": "JavaScript is dynamically typed and provides primitive types including Number, String, and Boolean.",
+        "hi": "जावास्क्रिप्ट डाइनैमिक रूप से टाइप की गई भाषा है जिसमें Number, String और Boolean जैसे प्रिमिटिव डेटा-प्रकार होते हैं।"
       }
     },
     {
@@ -488,8 +488,8 @@
           "hi": "विशेष प्रिमिटिव और नॉन-प्रिमिटिव डेटा-प्रकार"
         },
         "theory": {
-          "en": "In JavaScript, `Null` is a special primitive value representing nothing, distinct from zero or an empty space[cite: 4]. `Undefined` denotes a variable that has been declared but not assigned a value[cite: 4]. Data types derived from primitive types are known as non-primitive (or reference) data types, specifically `Array` and `Object`[cite: 4].",
-          "hi": "जावास्क्रिप्ट में `Null` एक विशेष मान है जो शून्य या स्पेस से भिन्न है क्योंकि शून्य एक संख्या है और स्पेस एक स्ट्रिंग है[cite: 4]। `Undefined` एक ऐसा वेरिएबल है जिसे कोई मान निर्दिष्ट नहीं किया गया है[cite: 4]। प्रिमिटिव प्रकारों से प्राप्त डेटा प्रकारों को नॉन-प्रिमिटिव (डिराइव्ड या रेफरेंस) डेटा-प्रकार कहा जाता है, जो `Array` और `Object` हैं[cite: 4]।"
+          "en": "In JavaScript, `Null` is a special primitive value representing nothing, distinct from zero or an empty space. `Undefined` denotes a variable that has been declared but not assigned a value. Data types derived from primitive types are known as non-primitive (or reference) data types, specifically `Array` and `Object`.",
+          "hi": "जावास्क्रिप्ट में `Null` एक विशेष मान है जो शून्य या स्पेस से भिन्न है क्योंकि शून्य एक संख्या है और स्पेस एक स्ट्रिंग है। `Undefined` एक ऐसा वेरिएबल है जिसे कोई मान निर्दिष्ट नहीं किया गया है। प्रिमिटिव प्रकारों से प्राप्त डेटा प्रकारों को नॉन-प्रिमिटिव (डिराइव्ड या रेफरेंस) डेटा-प्रकार कहा जाता है, जो `Array` और `Object` हैं।"
         },
         "media": {
           "type": "svg",
@@ -503,76 +503,76 @@
       "challenges": {
         "en": {
           "prompt": "Construct the complete, harmonious sentence distinguishing special primitive values from non-primitive data types.",
-          "hint": "Start with Null as a special value, explain Undefined as unassigned, transition to derived types, and conclude with arrays and objects.",
+          "hint": "Start with Null as a special value distinct from zero, contrast with Undefined for unassigned variables, introduce non-primitive reference types, and conclude with arrays and objects.",
           "target_sequence": [
             {
               "id": "en_u12_t1",
-              "text": "JavaScript defines Null as a special value distinct from zero or space",
+              "text": "JavaScript defines Null as a unique value distinct from zero or space",
               "role_hint": "Lead with Null as a unique primitive distinct from numbers or spaces"
             },
             {
               "id": "en_u12_t2",
-              "text": "while treating any declared variable without an assigned value as Undefined",
+              "text": "while categorizing any unassigned declared variable as Undefined",
               "role_hint": "Explain the unassigned state representing Undefined"
             },
             {
               "id": "en_u12_t3",
-              "text": "and derives complex non-primitive data types from these basic primitives",
-              "role_hint": "Introduce the non-primitive reference type category"
+              "text": "and by deriving non-primitive reference data types from these primitives",
+              "role_hint": "Introduce the derivation of reference data types as a connecting method"
             },
             {
               "id": "en_u12_t4",
-              "text": "which specifically include structured collections known as arrays and objects",
-              "role_hint": "Conclude with arrays and objects as non-primitive examples"
+              "text": "it provides structured collections known as arrays and objects",
+              "role_hint": "Conclude with arrays and objects as the resolving action"
             }
           ],
           "distractors": [
             {
               "id": "en_u12_d1",
               "category": "logical",
-              "text": "classifying arrays and objects as simple in-built primitive data types",
+              "text": "it classifies arrays and objects as simple in-built primitive values",
               "penalty_explanation": "Arrays and objects are non-primitive (derived/reference) data types, not primitive types."
             }
           ]
         },
         "hi": {
-          "prompt": "विशेष प्रिमिटिव मानों और नॉन-प्रिमिटिव डेटा-प्रकारों में अंतर स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "Null शून्य या स्पेस नहीं है से शुरू करें, Undefined को मान रहित बताएं, नॉन-प्रिमिटिव प्रकार जोड़ें, और array व object पर समाप्त करें।",
+          "prompt": "विशेष प्रिमिटिव मानों और नॉन-प्रिमिटिव डेटा-प्रकारों में अंतर स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "Null शून्य या स्पेस से अलग है से शुरू करें, Undefined को मान रहित बताएं, प्रिमिटिव से नॉन-प्रिमिटिव प्राप्त करने का तरीका जोड़ें, और array व object प्रदान करने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u12_t1",
-              "text": "जावास्क्रिप्ट में Null एक विशेष मान है जो शून्य या स्पेस से बिल्कुल अलग है",
+              "text": "जावास्क्रिप्ट में Null शून्य या स्पेस से पूरी तरह अलग एक विशेष मान है",
               "role_hint": "Null की विशेष स्थिति दर्शाने वाले मुख्य उपवाक्य से शुरुआत करें"
             },
             {
               "id": "hi_u12_t2",
-              "text": "जबकि बिना मान निर्दिष्ट किए गए वेरिएबल को Undefined माना जाता है",
+              "text": "जबकि बिना मान वाले किसी भी घोषित वेरिएबल को Undefined माना जाता है",
               "role_hint": "मान न दिए गए वेरिएबल के लिए Undefined वाला उपवाक्य जोड़ें"
             },
             {
               "id": "hi_u12_t3",
-              "text": "तथा प्रिमिटिव प्रकारों से प्राप्त प्रकारों को नॉन-प्रिमिटिव या रेफरेंस डेटा प्रकार कहा जाता है",
-              "role_hint": "नॉन-प्रिमिटिव श्रेणी से जुड़ा उपवाक्य जोड़ें"
+              "text": "और इन प्रिमिटिव प्रकारों से नॉन-प्रिमिटिव या रेफरेंस डेटा प्रकार प्राप्त करके",
+              "role_hint": "रेफरेंस प्रकार प्राप्त करने के माध्यम से जुड़ा उपवाक्य जोड़ें"
             },
             {
               "id": "hi_u12_t4",
-              "text": "जिनमें मुख्य रूप से संरचनात्मक संग्रह के रूप में array और object शामिल हैं",
-              "role_hint": "array और object के साथ वाक्य को स्वाभाविक रूप से पूरा करें"
+              "text": "यह `Array` और `Object` जैसे उपयोगी संरचनात्मक संग्रह प्रदान करती है",
+              "role_hint": "array और object प्रदान करने की मुख्य क्रिया के साथ वाक्य को पूरा करें"
             }
           ],
           "distractors": [
             {
               "id": "hi_u12_d1",
               "category": "logical",
-              "text": "और array तथा object को साधारण इन-बिल्ट प्रिमिटिव डेटा प्रकार माना जाता है",
+              "text": "यह `Array` और `Object` को साधारण इन-बिल्ट प्रिमिटिव मान मानती है",
               "penalty_explanation": "Array और object नॉन-प्रिमिटिव (डिराइव्ड) डेटा प्रकार हैं, प्रिमिटिव नहीं।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Null and Undefined represent empty states, while arrays and objects form non-primitive reference data types in JavaScript[cite: 4].",
-        "hi": "Null और Undefined विशेष रिक्त अवस्थाओं को दर्शाते हैं, जबकि array और object जावास्क्रिप्ट में नॉन-प्रिमिटिव रेफरेंस प्रकार हैं[cite: 4]।"
+        "en": "Null and Undefined represent empty states, while arrays and objects form non-primitive reference data types in JavaScript.",
+        "hi": "Null और Undefined विशेष रिक्त अवस्थाओं को दर्शाते हैं, जबकि array और object जावास्क्रिप्ट में नॉन-प्रिमिटिव रेफरेंस प्रकार हैं।"
       }
     }
   ]
