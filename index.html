@@ -33,7 +33,7 @@
             <header class="app-masthead">
                 <div class="masthead-badge">CBSE / NCERT Interactive Workbench</div>
                 <h1 class="masthead-title">LearnApp</h1>
-                <p class="masthead-subtitle">Master syntax, logical architectures, and algorithms through bilingual interactive sequencing.</p>
+                <p class="masthead-subtitle">Master syntax, logical architectures, and algorithms through side-by-side bilingual sequencing.</p>
             </header>
 
             <div id="errorMessage" class="system-banner error-banner" style="display:none;"></div>
@@ -78,4 +78,214 @@
 
                 <div class="portal-actions">
                     <button type="button" id="startQuiz" class="btn btn-primary btn-large btn-block" disabled>
-                        🚀
+                        🚀 Launch Interactive Module
+                    </button>
+                    <button type="button" id="viewScoreboardBtn" class="btn btn-outline btn-block">
+                        🏆 Global Leaderboard
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- ======================================================== -->
+        <!-- SCREEN 2: DUAL-COLUMN INTERACTIVE WORKBENCH SCREEN       -->
+        <!-- ======================================================== -->
+        <main id="quizScreen" class="screen-view">
+            <!-- Global Top Navigation Bar -->
+            <header class="workbench-header">
+                <div class="header-left">
+                    <button type="button" id="topHomeBtn" class="btn-icon" title="Return to Main Menu">🏠 Home</button>
+                    <div class="identity-capsule">
+                        <div id="displayStudentName" class="id-name">👤 Authenticating...</div>
+                        <div id="displaySchoolInfo" class="id-school">Class • Subject</div>
+                    </div>
+                </div>
+
+                <div class="header-center">
+                    <div class="chapter-indicator">
+                        <span id="chapterTitle" class="chapter-text">Loading Module...</span>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <div class="telemetry-pill">
+                        <span class="telemetry-label">UNIT</span>
+                        <span class="telemetry-val"><span id="currentUnitNum">1</span>/<span id="totalUnitsNum">--</span></span>
+                    </div>
+                    <div class="telemetry-pill">
+                        <span class="telemetry-label">MASTERY</span>
+                        <span class="telemetry-val"><span id="masteryScore">0</span>/<span id="maxScore">--</span></span>
+                    </div>
+                    <div class="telemetry-pill timer-pill">
+                        <span class="telemetry-label">TIME</span>
+                        <span id="timer" class="telemetry-val">00:00</span>
+                    </div>
+                    <button type="button" id="topQuitBtn" class="btn btn-danger btn-sm">Finish</button>
+                </div>
+            </header>
+
+            <!-- 54px Vertical Progression Rail & Workbench Layout -->
+            <div class="workbench-layout">
+                <aside class="progression-sidebar">
+                    <div class="sidebar-header">Units</div>
+                    <div id="unitGrid" class="unit-progress-column"></div>
+                </aside>
+
+                <section class="workbench-main">
+                    <!-- Global Unit Pedagogical Theory Viewport -->
+                    <article class="pedagogy-viewport">
+                        <h2 id="lesson-title" class="unit-title" style="margin-bottom: 20px; text-align: center;">Lesson Title</h2>
+
+                        <!-- Anti-Collision SVG Canvas Viewport -->
+                        <div id="media-container" class="media-viewport" style="display:none;"></div>
+                        <div id="media-caption" class="media-caption-text"></div>
+
+                        <!-- Side-by-Side Theory Grid -->
+                        <div class="theory-grid">
+                            <div class="theory-col">
+                                <span class="lang-badge">ENGLISH</span>
+                                <div id="lesson-theory-en" class="theory-body"></div>
+                            </div>
+                            <div class="theory-col">
+                                <span class="lang-badge">हिंदी</span>
+                                <div id="lesson-theory-hi" class="theory-body"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Side-by-Side Interactive Canvas Grid -->
+                    <section class="bilingual-workspace">
+                        
+                        <!-- LEFT COLUMN: ENGLISH -->
+                        <div class="interactive-col" id="col-en">
+                            <div class="challenge-directive">
+                                <span class="directive-badge">ENGLISH CHALLENGE</span>
+                                <div id="challenge-prompt-en" class="directive-text"></div>
+                            </div>
+                            
+                            <div class="construction-zone">
+                                <div class="zone-label">Target Sequence</div>
+                                <div id="target-zone-en" class="drop-target-area" data-lang="en"></div>
+                            </div>
+
+                            <div class="fragment-bank-container">
+                                <div class="zone-label">Fragment Bank</div>
+                                <div id="fragment-bank-en" class="fragment-chip-pool" data-lang="en"></div>
+                            </div>
+
+                            <div id="feedback-banner-en" class="feedback-notification" style="display:none;"></div>
+
+                            <div class="col-footer">
+                                <button type="button" id="btn-hint-en" class="btn btn-secondary btn-sm">💡 Hint</button>
+                                <button type="button" id="btn-submit-en" class="btn btn-primary btn-sm">Verify English (10 pts)</button>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT COLUMN: HINDI -->
+                        <div class="interactive-col" id="col-hi">
+                            <div class="challenge-directive">
+                                <span class="directive-badge">हिंदी चुनौती (HINDI)</span>
+                                <div id="challenge-prompt-hi" class="directive-text"></div>
+                            </div>
+                            
+                            <div class="construction-zone">
+                                <div class="zone-label">लक्ष्य क्रम (Target Sequence)</div>
+                                <div id="target-zone-hi" class="drop-target-area" data-lang="hi"></div>
+                            </div>
+
+                            <div class="fragment-bank-container">
+                                <div class="zone-label">टुकड़े (Fragment Bank)</div>
+                                <div id="fragment-bank-hi" class="fragment-chip-pool" data-lang="hi"></div>
+                            </div>
+
+                            <div id="feedback-banner-hi" class="feedback-notification" style="display:none;"></div>
+
+                            <div class="col-footer">
+                                <button type="button" id="btn-hint-hi" class="btn btn-secondary btn-sm">💡 Hint</button>
+                                <button type="button" id="btn-submit-hi" class="btn btn-primary btn-sm">Verify Hindi (10 pts)</button>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- Global Navigation Bar -->
+                    <footer class="workbench-global-footer">
+                        <button type="button" id="prevBtn" class="btn btn-outline" disabled>← Previous Unit</button>
+                        <div class="footer-status-text">Complete both sides to unlock Next Unit.</div>
+                        <button type="button" id="nextBtn" class="btn btn-success" disabled>Next Unit →</button>
+                    </footer>
+                </section>
+            </div>
+        </main>
+
+        <!-- ======================================================== -->
+        <!-- SCREEN 3: RESULTS & MASTERY SUMMARY SCREEN               -->
+        <!-- ======================================================== -->
+        <main id="resultsScreen" class="screen-view">
+            <div class="results-card">
+                <div class="results-icon">🎉</div>
+                <h2 class="results-title">Module Completed!</h2>
+                <p class="results-subtitle">Telemetry record successfully submitted to cloud database.</p>
+
+                <div class="metrics-dashboard">
+                    <div class="metric-card">
+                        <div class="metric-label">Mastery Points</div>
+                        <div class="metric-value highlight"><span id="finalScore">0</span> / <span id="totalPossible">0</span></div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Mastery Rate</div>
+                        <div id="percentage" class="metric-value">0%</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Time Consumed</div>
+                        <div id="totalTime" class="metric-value">00:00</div>
+                    </div>
+                </div>
+
+                <div class="results-actions">
+                    <button type="button" id="retakeBtn" class="btn btn-secondary">🔄 Retake Module</button>
+                    <button type="button" id="viewScoreboardFromResults" class="btn btn-primary">🏆 View Leaderboard</button>
+                    <button type="button" id="homeBtn" class="btn btn-outline">🏠 Main Menu</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- ======================================================== -->
+        <!-- SCREEN 4: GLOBAL SCOREBOARD & LEADERBOARD SCREEN          -->
+        <!-- ======================================================== -->
+        <main id="scoreboardScreen" class="screen-view">
+            <header class="scoreboard-header">
+                <div>
+                    <h2 class="scoreboard-title">Global Academic Scoreboard</h2>
+                    <p class="scoreboard-subtitle">Real-time telemetry and verified scores from cloud datastore.</p>
+                </div>
+                <button type="button" id="backFromScoreboard" class="btn btn-outline">✕ Return</button>
+            </header>
+
+            <section class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr id="leaderboardHeaders">
+                            <th data-sort="rank">RANK</th>
+                            <th data-sort="date">TIMESTAMP</th>
+                            <th data-sort="student">STUDENT & INSTITUTION</th>
+                            <th data-sort="class">CLASS</th>
+                            <th data-sort="subject">SUBJECT</th>
+                            <th data-sort="chapter">CHAPTER</th>
+                            <th data-sort="mode">MODE</th>
+                            <th data-sort="score">SCORE</th>
+                            <th data-sort="efficiency">TIME</th>
+                        </tr>
+                    </thead>
+                    <tbody id="scoreboardBody">
+                        <tr><td colspan="9" style="padding:40px; text-align:center;">Syncing...</td></tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <!-- Core Dynamic Controller Script -->
+    <script src="app.js"></script>
+</body>
+</html>
