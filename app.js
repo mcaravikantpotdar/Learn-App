@@ -1,7 +1,8 @@
 /**
  * LearnApp Core Controller (app.js)
- * Fully Aligned with Student Authentication (Sheet2), Real-Time GitHub Tree
- * Discovery, Interactive Sequencing, KaTeX, and Cloud Telemetry.
+ * Option 1: Side-by-Side Dual Columns with Unified "Verify Assembly"
+ * Integrated with Student Auth (Sheet2), Real-Time GitHub Tree Discovery,
+ * KaTeX, and Google Apps Script Telemetry.
  */
 
 const AppConfig = {
@@ -11,7 +12,6 @@ const AppConfig = {
 };
 
 const AppState = {
-    currentLang: 'en',
     repoCatalog: {}, 
     selectedClass: '',
     selectedSubject: '',
@@ -19,7 +19,11 @@ const AppState = {
     chapterTitleString: '',
     units: [],
     currentUnitIndex: 0,
-    assembly: [],
+    
+    // Independent Assembly State for Both Tracks
+    assemblyEn: [],
+    assemblyHi: [],
+    
     score: 0,
     maxScore: 0,
     unitProgress: {}, 
@@ -76,15 +80,29 @@ const DOM = {
     masteryScore: document.getElementById('masteryScore'),
     maxScore: document.getElementById('maxScore'),
     unitGrid: document.getElementById('unitGrid'),
-    btnEn: document.getElementById('btn-en'),
-    btnHi: document.getElementById('btn-hi'),
     lessonTitle: document.getElementById('lesson-title'),
     mediaContainer: document.getElementById('media-container'),
     mediaCaption: document.getElementById('media-caption'),
-    lessonTheory: document.getElementById('lesson-theory'),
-    challengePrompt: document.getElementById('challenge-prompt'),
-    targetZone: document.getElementById('target-zone'),
-    fragmentBank: document.getElementById('fragment-bank'),
+
+    // Side-by-Side Dual Column Panels
+    lessonTheoryEn: document.getElementById('lessonTheoryEn'),
+    lessonTheoryHi: document.getElementById('lessonTheoryHi'),
+    challengePromptEn: document.getElementById('challengePromptEn'),
+    challengePromptHi: document.getElementById('challengePromptHi'),
+    
+    // Left Track (English)
+    enStatusPill: document.getElementById('enStatusPill'),
+    targetZoneEn: document.getElementById('targetZoneEn'),
+    fragmentBankEn: document.getElementById('fragmentBankEn'),
+    feedbackEn: document.getElementById('feedbackEn'),
+
+    // Right Track (Hindi)
+    hiStatusPill: document.getElementById('hiStatusPill'),
+    targetZoneHi: document.getElementById('targetZoneHi'),
+    fragmentBankHi: document.getElementById('fragmentBankHi'),
+    feedbackHi: document.getElementById('feedbackHi'),
+
+    // Unified Feedback & Controls
     feedbackBanner: document.getElementById('feedback-banner'),
     prevBtn: document.getElementById('prevBtn'),
     hintBtn: document.getElementById('hintBtn'),
@@ -150,12 +168,8 @@ function bindGlobalEvents() {
     DOM.subjectSelect?.addEventListener('change', handleSubjectChange);
     DOM.startQuiz?.addEventListener('click', handleStartQuiz);
 
-    // Bilingual Toggles
-    DOM.btnEn?.addEventListener('click', () => setLanguage('en'));
-    DOM.btnHi?.addEventListener('click', () => setLanguage('hi'));
-
     // Workbench Interaction
-    DOM.btnSubmit?.addEventListener('click', verifyAssembly);
+    DOM.btnSubmit?.addEventListener('click', verifyUnifiedAssembly);
     DOM.nextBtn?.addEventListener('click', handleNextUnit);
     DOM.prevBtn?.addEventListener('click', handlePrevUnit);
     DOM.hintBtn?.addEventListener('click', handleShowHint);
@@ -244,7 +258,6 @@ async function scanRepositoryTree() {
     if (DOM.errorMessage) DOM.errorMessage.style.display = 'none';
 
     try {
-        // Standard clean GitHub Git Trees endpoint
         const url = `https://api.github.com/repos/${AppConfig.githubRepo}/git/trees/${AppConfig.branch}?recursive=1`;
         const res = await fetch(url);
         
@@ -257,7 +270,6 @@ async function scanRepositoryTree() {
             if (node.type === 'blob' && node.path.startsWith('jsons/') && node.path.toLowerCase().endsWith('.json')) {
                 const segments = node.path.split('/');
                 
-                // Matches structure: jsons / [Class] / [Subject] / [File.json]
                 if (segments.length >= 4) {
                     const cls = cleanTitleFormat(segments[1]);
                     const subj = cleanTitleFormat(segments[2]);
@@ -409,7 +421,6 @@ function setupQuizFromData(data) {
         return;
     }
 
-    // Dynamic max score based on units length
     const masteryPerUnit = data.metadata?.scoring_model?.dual_language_mastery_max || 20;
     AppState.maxScore = AppState.units.length * masteryPerUnit;
     AppState.chapterTitleString = data.metadata?.chapter_title?.en || "Learning Module";
@@ -424,7 +435,7 @@ function setupQuizFromData(data) {
     });
 
     if (DOM.chapterTitle) {
-        DOM.chapterTitle.innerText = data.metadata?.chapter_title?.[AppState.currentLang] || data.metadata?.chapter_title?.en || "Learning Module";
+        DOM.chapterTitle.innerText = `${data.metadata?.chapter_title?.en \vert{}\vert{} ''} / ${data.metadata?.chapter_title?.hi || ''}`;
     }
     if (DOM.displayStudentName) DOM.displayStudentName.innerText = `👤 ${AppState.studentAuth.studentName}`;
     if (DOM.displaySchoolInfo) DOM.displaySchoolInfo.innerText = `${AppState.selectedClass} •${AppState.selectedSubject}`;
@@ -506,7 +517,7 @@ function updateUnitGridStatus() {
         if (p.marks >= 20) {
             node.classList.add('correct');
         } else if (p.marks >= 10) {
-            node.classList.add('correct');
+            node.classList.add('attempted');
         } else if (p.attempted) {
             node.classList.add('attempted');
         }
@@ -520,18 +531,17 @@ function updateUnitGridStatus() {
         }
     });
 
-    updateLanguageButtonsStatus();
-}
-
-function updateLanguageButtonsStatus() {
-    const p = AppState.unitProgress[AppState.currentUnitIndex];
-    if (!p) return;
-
-    if (DOM.btnEn) {
-        DOM.btnEn.innerText = p.enSolved ? "English ✅ [10 pts]" : "English [10 pts]";
-    }
-    if (DOM.btnHi) {
-        DOM.btnHi.innerText = p.hiSolved ? "हिंदी ✅ [10 pts]" : "हिंदी [10 pts]";
+    // Update track pills
+    const curr = AppState.unitProgress[AppState.currentUnitIndex];
+    if (curr) {
+        if (DOM.enStatusPill) {
+            DOM.enStatusPill.className = `track-pill ${curr.enSolved ? 'solved' : ''}`;
+            DOM.enStatusPill.innerText = curr.enSolved ? 'Mastered ✅ (+10)' : 'Incomplete';
+        }
+        if (DOM.hiStatusPill) {
+            DOM.hiStatusPill.className = `track-pill ${curr.hiSolved ? 'solved' : ''}`;
+            DOM.hiStatusPill.innerText = curr.hiSolved ? 'पूर्ण ✅ (+10)' : 'अपूर्ण';
+        }
     }
 }
 
@@ -547,7 +557,11 @@ function formatMarkup(str) {
 
 function applyKaTeX() {
     if (typeof renderMathInElement === 'function') {
-        const containers = [DOM.lessonTheory, DOM.challengePrompt, DOM.targetZone, DOM.fragmentBank, DOM.feedbackBanner, DOM.mediaCaption];
+        const containers = [
+            DOM.lessonTheoryEn, DOM.lessonTheoryHi, DOM.challengePromptEn, DOM.challengePromptHi,
+            DOM.targetZoneEn, DOM.targetZoneHi, DOM.fragmentBankEn, DOM.fragmentBankHi,
+            DOM.feedbackBanner, DOM.mediaCaption, DOM.feedbackEn, DOM.feedbackHi
+        ];
         containers.forEach(el => {
             if (el) {
                 renderMathInElement(el, {
@@ -562,30 +576,24 @@ function applyKaTeX() {
     }
 }
 
-function setLanguage(lang) {
-    AppState.currentLang = lang;
-    if (lang === 'en') {
-        DOM.btnEn?.classList.add('active');
-        DOM.btnHi?.classList.remove('active');
-    } else {
-        DOM.btnHi?.classList.add('active');
-        DOM.btnEn?.classList.remove('active');
-    }
-    renderCurrentUnit();
-}
-
 function renderCurrentUnit() {
     const unit = AppState.units[AppState.currentUnitIndex];
     if (!unit) return;
 
-    const lang = AppState.currentLang;
-    const challenge = unit.challenges[lang] || unit.challenges.en;
+    const challengeEn = unit.challenges.en;
+    const challengeHi = unit.challenges.hi;
     const media = unit.instruction.media;
 
     if (DOM.currentUnitNum) DOM.currentUnitNum.innerText = AppState.currentUnitIndex + 1;
-    if (DOM.lessonTitle) DOM.lessonTitle.innerHTML = formatMarkup(unit.instruction.title[lang] || unit.instruction.title.en);
-    if (DOM.lessonTheory) DOM.lessonTheory.innerHTML = formatMarkup(unit.instruction.theory[lang] || unit.instruction.theory.en);
-    if (DOM.challengePrompt) DOM.challengePrompt.innerHTML = formatMarkup(challenge.prompt);
+    if (DOM.lessonTitle) {
+        DOM.lessonTitle.innerHTML = `${formatMarkup(unit.instruction.title.en)} <span style="font-weight:400; opacity:0.75;">| ${formatMarkup(unit.instruction.title.hi)}</span>`;
+    }
+
+    if (DOM.lessonTheoryEn) DOM.lessonTheoryEn.innerHTML = formatMarkup(unit.instruction.theory.en);
+    if (DOM.lessonTheoryHi) DOM.lessonTheoryHi.innerHTML = formatMarkup(unit.instruction.theory.hi);
+
+    if (DOM.challengePromptEn) DOM.challengePromptEn.innerHTML = formatMarkup(challengeEn.prompt);
+    if (DOM.challengePromptHi) DOM.challengePromptHi.innerHTML = formatMarkup(challengeHi.prompt);
 
     if (DOM.mediaContainer) {
         if (media && media.type === 'svg') {
@@ -598,57 +606,68 @@ function renderCurrentUnit() {
     }
 
     if (DOM.mediaCaption) {
-        DOM.mediaCaption.innerHTML = formatMarkup(media?.caption?.[lang] || media?.caption?.en || '');
+        DOM.mediaCaption.innerHTML = formatMarkup(`${media?.caption?.en || ''} — ${media?.caption?.hi || ''}`);
     }
 
+    // Reset feedback alerts
     if (DOM.feedbackBanner) {
         DOM.feedbackBanner.style.display = 'none';
         DOM.feedbackBanner.innerHTML = '';
     }
+    if (DOM.feedbackEn) DOM.feedbackEn.style.display = 'none';
+    if (DOM.feedbackHi) DOM.feedbackHi.style.display = 'none';
 
-    const currentProgress = AppState.unitProgress[AppState.currentUnitIndex];
-    const isAlreadySolved = (lang === 'en' && currentProgress.enSolved) || (lang === 'hi' && currentProgress.hiSolved);
+    const p = AppState.unitProgress[AppState.currentUnitIndex];
 
-    if (DOM.targetZone) {
-        if (isAlreadySolved) {
-            DOM.targetZone.classList.add('success-locked');
-            DOM.targetZone.style.pointerEvents = 'none';
-        } else {
-            DOM.targetZone.classList.remove('success-locked');
-            DOM.targetZone.style.pointerEvents = 'auto';
-        }
+    // Setup Target Zones locking
+    if (DOM.targetZoneEn) {
+        DOM.targetZoneEn.classList.toggle('success-locked', p.enSolved);
+        DOM.targetZoneEn.style.pointerEvents = p.enSolved ? 'none' : 'auto';
+    }
+    if (DOM.targetZoneHi) {
+        DOM.targetZoneHi.classList.toggle('success-locked', p.hiSolved);
+        DOM.targetZoneHi.style.pointerEvents = p.hiSolved ? 'none' : 'auto';
     }
 
-    if (DOM.btnSubmit) DOM.btnSubmit.disabled = isAlreadySolved;
-    if (DOM.nextBtn) DOM.nextBtn.disabled = !isAlreadySolved;
+    buildTrackFragmentPool('en', challengeEn, p.enSolved);
+    buildTrackFragmentPool('hi', challengeHi, p.hiSolved);
+
+    const isFullySolved = p.enSolved && p.hiSolved;
+    if (DOM.btnSubmit) DOM.btnSubmit.disabled = isFullySolved;
+    if (DOM.nextBtn) DOM.nextBtn.disabled = !isFullySolved;
     if (DOM.prevBtn) DOM.prevBtn.disabled = (AppState.currentUnitIndex === 0);
 
-    buildFragmentPool(challenge, isAlreadySolved);
     updateUnitGridStatus();
     applyKaTeX();
 }
 
 // ==========================================
-// 7. DRAG AND DROP & SELECTION SYSTEM
+// 7. DUAL-TRACK DRAG & DROP SELECTION SYSTEM
 // ==========================================
 
-let activeDraggedItem = null;
+let activeDraggedTrackItem = null;
 
-function buildFragmentPool(challenge, isLocked = false) {
-    AppState.assembly = [];
-    if (!DOM.targetZone || !DOM.fragmentBank) return;
+function buildTrackFragmentPool(lang, challenge, isLocked) {
+    const isEn = (lang === 'en');
+    const targetZone = isEn ? DOM.targetZoneEn : DOM.targetZoneHi;
+    const fragmentBank = isEn ? DOM.fragmentBankEn : DOM.fragmentBankHi;
 
-    DOM.targetZone.innerHTML = '';
-    DOM.fragmentBank.innerHTML = '';
+    if (!targetZone || !fragmentBank) return;
+    targetZone.innerHTML = '';
+    fragmentBank.innerHTML = '';
+
+    if (isEn) AppState.assemblyEn = [];
+    else AppState.assemblyHi = [];
 
     if (isLocked) {
         challenge.target_sequence.forEach(frag => {
             const chip = document.createElement('div');
             chip.className = 'fragment-chip';
             chip.dataset.id = frag.id;
+            chip.dataset.lang = lang;
             chip.innerHTML = formatMarkup(frag.text);
             chip.fragRef = frag;
-            DOM.targetZone.appendChild(chip);
+            targetZone.appendChild(chip);
         });
         return;
     }
@@ -667,58 +686,69 @@ function buildFragmentPool(challenge, isLocked = false) {
         const chip = document.createElement('div');
         chip.className = 'fragment-chip';
         chip.dataset.id = frag.id;
+        chip.dataset.lang = lang;
         chip.innerHTML = formatMarkup(frag.text);
         chip.fragRef = frag;
 
-        chip.addEventListener('click', () => toggleChipPlacement(chip));
+        chip.addEventListener('click', () => toggleChipPlacement(chip, lang));
         chip.draggable = true;
-        chip.addEventListener('dragstart', handleDragStart);
-        chip.addEventListener('dragend', handleDragEnd);
+        chip.addEventListener('dragstart', handleTrackDragStart);
+        chip.addEventListener('dragend', handleTrackDragEnd);
 
-        DOM.fragmentBank.appendChild(chip);
+        fragmentBank.appendChild(chip);
     });
 
-    DOM.targetZone.addEventListener('dragover', handleDragOverZone);
+    targetZone.addEventListener('dragover', (e) => handleTrackDragOverZone(e, targetZone, lang));
 }
 
-function toggleChipPlacement(chip) {
-    if (DOM.targetZone.classList.contains('success-locked')) return;
+function toggleChipPlacement(chip, lang) {
+    const isEn = (lang === 'en');
+    const targetZone = isEn ? DOM.targetZoneEn : DOM.targetZoneHi;
+    const fragmentBank = isEn ? DOM.fragmentBankEn : DOM.fragmentBankHi;
+
+    if (targetZone.classList.contains('success-locked')) return;
 
     AppState.unitProgress[AppState.currentUnitIndex].attempted = true;
     updateUnitGridStatus();
 
-    if (chip.parentElement === DOM.fragmentBank) {
-        DOM.targetZone.appendChild(chip);
+    if (chip.parentElement === fragmentBank) {
+        targetZone.appendChild(chip);
     } else {
-        DOM.fragmentBank.appendChild(chip);
+        fragmentBank.appendChild(chip);
     }
-    syncAssemblyFromDOM();
+    syncAssemblyFromTrackDOM(lang);
 }
 
-function handleDragStart(e) {
-    if (DOM.targetZone.classList.contains('success-locked')) {
+function handleTrackDragStart(e) {
+    const lang = this.dataset.lang;
+    const isEn = (lang === 'en');
+    const targetZone = isEn ? DOM.targetZoneEn : DOM.targetZoneHi;
+    if (targetZone.classList.contains('success-locked')) {
         e.preventDefault();
         return;
     }
-    activeDraggedItem = this;
+    activeDraggedTrackItem = this;
     this.classList.add('dragging');
 }
 
-function handleDragEnd() {
-    this.classList.remove('dragging');
-    activeDraggedItem = null;
-    syncAssemblyFromDOM();
+function handleTrackDragEnd() {
+    if (!activeDraggedTrackItem) return;
+    const lang = activeDraggedTrackItem.dataset.lang;
+    activeDraggedTrackItem.classList.remove('dragging');
+    activeDraggedTrackItem = null;
+    syncAssemblyFromTrackDOM(lang);
 }
 
-function handleDragOverZone(e) {
+function handleTrackDragOverZone(e, targetZone, lang) {
     e.preventDefault();
-    if (!activeDraggedItem || DOM.targetZone.classList.contains('success-locked')) return;
+    if (!activeDraggedTrackItem || activeDraggedTrackItem.dataset.lang !== lang) return;
+    if (targetZone.classList.contains('success-locked')) return;
 
-    const afterElement = getDropTargetElement(DOM.targetZone, e.clientX, e.clientY);
+    const afterElement = getDropTargetElement(targetZone, e.clientX, e.clientY);
     if (afterElement == null) {
-        DOM.targetZone.appendChild(activeDraggedItem);
+        targetZone.appendChild(activeDraggedTrackItem);
     } else {
-        DOM.targetZone.insertBefore(activeDraggedItem, afterElement);
+        targetZone.insertBefore(activeDraggedTrackItem, afterElement);
     }
 }
 
@@ -735,87 +765,127 @@ function getDropTargetElement(container, x, y) {
     }, { offset: Number.NEGATIVE_INFINITY }).element;
 }
 
-function syncAssemblyFromDOM() {
-    const chips = DOM.targetZone.querySelectorAll('.fragment-chip');
-    AppState.assembly = Array.from(chips).map(c => c.fragRef);
+function syncAssemblyFromTrackDOM(lang) {
+    const isEn = (lang === 'en');
+    const targetZone = isEn ? DOM.targetZoneEn : DOM.targetZoneHi;
+    const chips = targetZone.querySelectorAll('.fragment-chip');
+    
+    if (isEn) {
+        AppState.assemblyEn = Array.from(chips).map(c => c.fragRef);
+    } else {
+        AppState.assemblyHi = Array.from(chips).map(c => c.fragRef);
+    }
+
     if (DOM.btnSubmit) {
-        DOM.btnSubmit.disabled = (AppState.assembly.length === 0);
+        DOM.btnSubmit.disabled = (AppState.assemblyEn.length === 0 && AppState.assemblyHi.length === 0);
     }
 }
 
 // ==========================================
-// 8. VERIFICATION & FEEDBACK
+// 8. UNIFIED VERIFICATION & EVALUATION
 // ==========================================
 
-function verifyAssembly() {
+function verifyUnifiedAssembly() {
     const unit = AppState.units[AppState.currentUnitIndex];
-    const lang = AppState.currentLang;
-    const challenge = unit.challenges[lang] || unit.challenges.en;
-    const targetSeq = challenge.target_sequence;
     const p = AppState.unitProgress[AppState.currentUnitIndex];
-
     p.attempted = true;
 
-    const distractorHit = AppState.assembly.find(f => f.category === 'logical' || f.category === 'grammatical');
+    let enResult = evaluateTrack('en', unit.challenges.en, AppState.assemblyEn, p.enSolved);
+    let hiResult = evaluateTrack('hi', unit.challenges.hi, AppState.assemblyHi, p.hiSolved);
+
+    // Apply English verification outcome
+    if (!p.enSolved) {
+        if (enResult.status === 'correct') {
+            p.enSolved = true;
+            p.marks += 10;
+            AppState.score += 10;
+            DOM.targetZoneEn.classList.add('success-locked');
+            renderTrackFeedback('en', '✅ Correct English sequence!', '#10b981', 'rgba(16, 185, 129, 0.1)');
+        } else if (enResult.status === 'distractor') {
+            renderTrackFeedback('en', `❌ ${formatMarkup(enResult.message)}`, '#ef4444', 'rgba(239, 68, 68, 0.1)');
+        } else if (enResult.status === 'incomplete') {
+            renderTrackFeedback('en', `💡 Next Hint: ${formatMarkup(enResult.message)}`, '#0284c7', 'rgba(2, 132, 199, 0.1)');
+        } else {
+            renderTrackFeedback('en', '❌ Sequence incorrect. Reorder and recheck.', '#ef4444', 'rgba(239, 68, 68, 0.1)');
+        }
+    }
+
+    // Apply Hindi verification outcome
+    if (!p.hiSolved) {
+        if (hiResult.status === 'correct') {
+            p.hiSolved = true;
+            p.marks += 10;
+            AppState.score += 10;
+            DOM.targetZoneHi.classList.add('success-locked');
+            renderTrackFeedback('hi', '✅ सही हिंदी क्रम!', '#10b981', 'rgba(16, 185, 129, 0.1)');
+        } else if (hiResult.status === 'distractor') {
+            renderTrackFeedback('hi', `❌ ${formatMarkup(hiResult.message)}`, '#ef4444', 'rgba(239, 68, 68, 0.1)');
+        } else if (hiResult.status === 'incomplete') {
+            renderTrackFeedback('hi', `💡 संकेत: ${formatMarkup(hiResult.message)}`, '#0284c7', 'rgba(2, 132, 199, 0.1)');
+        } else {
+            renderTrackFeedback('hi', '❌ क्रम गलत है। टोकनों को पुनः व्यवस्थित करें।', '#ef4444', 'rgba(239, 68, 68, 0.1)');
+        }
+    }
+
+    if (DOM.masteryScore) DOM.masteryScore.innerText = AppState.score;
+    updateUnitGridStatus();
+
+    // Both tracks completed successfully
+    if (p.enSolved && p.hiSolved) {
+        const takeawayEn = unit.key_takeaway?.en || "Great job!";
+        const takeawayHi = unit.key_takeaway?.hi || "शानदार कार्य!";
+        renderFeedbackBanner(`✅ <strong>Mastered Both Languages! (+20 pts)</strong><br><br>• <strong>EN:</strong> ${formatMarkup(takeawayEn)}<br>• <strong>HI:</strong> ${formatMarkup(takeawayHi)}`, '#15803d', '#f0fdf4');
+        DOM.btnSubmit.disabled = true;
+        DOM.nextBtn.disabled = false;
+    } else if (p.enSolved || p.hiSolved) {
+        renderFeedbackBanner(`⚡ One track mastered (+10 pts)! Complete the second track to unlock the next unit.`, '#f59e0b', '#fffbeb');
+    }
+}
+
+function evaluateTrack(lang, challenge, assembly, alreadySolved) {
+    if (alreadySolved) return { status: 'correct' };
+    const targetSeq = challenge.target_sequence;
+
+    const distractorHit = assembly.find(f => f.category === 'logical' || f.category === 'grammatical');
     if (distractorHit) {
-        renderFeedback(`❌ ${formatMarkup(distractorHit.penalty_explanation)}`, '#ef4444', '#fef2f2');
-        updateUnitGridStatus();
-        return;
+        return { status: 'distractor', message: distractorHit.penalty_explanation };
     }
 
-    if (AppState.assembly.length < targetSeq.length) {
-        const nextTarget = targetSeq[AppState.assembly.length];
-        const hintMsg = nextTarget.role_hint?.[lang] || nextTarget.role_hint?.en || nextTarget.role_hint;
-        renderFeedback(`💡 <strong>Next Step Hint:</strong> ${formatMarkup(hintMsg)}`, '#0284c7', '#f0f9ff');
-        updateUnitGridStatus();
-        return;
+    if (assembly.length < targetSeq.length) {
+        const nextTarget = targetSeq[assembly.length];
+        const hintMsg = nextTarget.role_hint?.[lang] || nextTarget.role_hint?.en || nextTarget.role_hint || "Add the next element.";
+        return { status: 'incomplete', message: hintMsg };
     }
 
-    let correct = true;
+    let isCorrect = true;
     for (let i = 0; i < targetSeq.length; i++) {
-        if (AppState.assembly[i].id !== targetSeq[i].id) {
-            correct = false;
+        if (assembly[i].id !== targetSeq[i].id) {
+            isCorrect = false;
             break;
         }
     }
 
-    if (correct) {
-        const takeaway = unit.key_takeaway?.[lang] || unit.key_takeaway?.en || "Great work!";
-        renderFeedback(`✅ <strong>Mastered!</strong><br><br>${formatMarkup(takeaway)}`, '#15803d', '#f0fdf4');
-        
-        DOM.targetZone.classList.add('success-locked');
-        DOM.btnSubmit.disabled = true;
-        DOM.nextBtn.disabled = false;
+    return isCorrect ? { status: 'correct' } : { status: 'wrong' };
+}
 
-        if (lang === 'en' && !p.enSolved) {
-            p.enSolved = true;
-            p.marks += 10;
-            AppState.score += 10;
-        } else if (lang === 'hi' && !p.hiSolved) {
-            p.hiSolved = true;
-            p.marks += 10;
-            AppState.score += 10;
-        }
+function renderTrackFeedback(lang, html, color, bg) {
+    const el = (lang === 'en') ? DOM.feedbackEn : DOM.feedbackHi;
+    if (!el) return;
+    el.innerHTML = html;
+    el.style.cssText = `display:block; margin-top:8px; padding:8px 12px; border-radius:6px; border:1px solid ${color}; background:${bg}; color:${color}; font-size:12px;`;
+    applyKaTeX();
+}
 
-        if (DOM.masteryScore) DOM.masteryScore.innerText = AppState.score;
-        updateUnitGridStatus();
-    } else {
-        renderFeedback(`❌ Incorrect arrangement. Reorder the fragments and verify again.`, '#ef4444', '#fef2f2');
-        updateUnitGridStatus();
-    }
+function renderFeedbackBanner(html, color, bg) {
+    if (!DOM.feedbackBanner) return;
+    DOM.feedbackBanner.innerHTML = html;
+    DOM.feedbackBanner.style.cssText = `display:block; padding:12px 16px; margin-top:12px; border-radius:8px; border:1px solid ${color}; background:${bg}; color:${color}; font-size:13px;`;
+    applyKaTeX();
 }
 
 function handleShowHint() {
     const unit = AppState.units[AppState.currentUnitIndex];
-    const challenge = unit.challenges[AppState.currentLang] || unit.challenges.en;
-    renderFeedback(`💡 <strong>Hint:</strong> ${formatMarkup(challenge.hint)}`, '#0284c7', '#f0f9ff');
-}
-
-function renderFeedback(html, color, bg) {
-    if (!DOM.feedbackBanner) return;
-    DOM.feedbackBanner.innerHTML = html;
-    DOM.feedbackBanner.style.cssText = `display:block; padding:12px 16px; margin-top:12px; border-radius:8px; border:1px solid ${color}; background:${bg}; color:${color}; font-size:14px;`;
-    applyKaTeX();
+    renderFeedbackBanner(`💡 <strong>Hints:</strong><br>• <strong>EN:</strong> ${formatMarkup(unit.challenges.en.hint)}<br>• <strong>HI:</strong> ${formatMarkup(unit.challenges.hi.hint)}`, '#0284c7', '#f0f9ff');
 }
 
 function handleNextUnit() {
