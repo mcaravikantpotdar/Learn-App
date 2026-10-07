@@ -3,187 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn-App | Concept Builder</title>
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- KaTeX for Math & Code Rendering -->
+    <title>LearnApp - Interactive Pedagogical Platform</title>
+
+    <!-- External Fonts & KaTeX Engine -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+    <!-- Application Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- SCREEN 1: HOME & LIBRARY DISCOVERY -->
-    <div id="uploadScreen" class="screen active">
-        <div class="upload-card">
-            <div class="upload-icon">🎓</div>
-            <h1>Concept Builder Portal</h1>
-            <p class="subtitle">Enter your details and select a module to begin.</p>
-            
-            <div style="text-align: left; margin-bottom: 25px;">
-                <div style="margin-bottom: 15px;">
-                    <label style="display:block; font-weight:600; color:#475569; margin-bottom:5px;">Full Name</label>
-                    <input type="text" id="studentName" class="file-input" placeholder="e.g. Rahul Kumar" autocomplete="off">
-                </div>
-                <div>
-                    <label style="display:block; font-weight:600; color:#475569; margin-bottom:5px;">School / Institution</label>
-                    <input type="text" id="schoolName" class="file-input" placeholder="e.g. Govt Model School" autocomplete="off">
-                </div>
-            </div>
-
-            <div class="selection-workflow">
-                <div class="input-group">
-                    <label class="section-label">1. Select Class</label>
-                    <select id="classSelect" class="file-input"><option value="" disabled selected>Choose Class...</option></select>
-                </div>
-                <div id="subjectGroup" class="input-group" style="display: none;">
-                    <label class="section-label">2. Select Subject</label>
-                    <select id="subjectSelect" class="file-input"><option value="" disabled selected>Choose Subject...</option></select>
-                </div>
-                <div id="lessonGroup" class="input-group" style="display: none;">
-                    <label class="section-label">3. Select Lesson</label>
-                    <div class="quiz-library">
-                        <div id="quizList" class="quiz-list"><p style="padding:10px; opacity:0.6; font-size: 13px;">Select class & subject first</p></div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="errorMessage" class="error-message"></div>
-            
-            <div class="action-buttons" style="display:flex; flex-direction: column; gap: 10px;">
-                <button id="startQuiz" class="btn-primary" disabled>🚀 Start Learning Mode</button>
-                <button id="viewScoreboardBtn" class="btn-secondary">🏆 View Leaderboard</button>
-            </div>
-        </div>
+    <!-- Loading Indicator Overlay -->
+    <div id="loadingSpinner" class="loading-overlay">
+        <div class="spinner-core"></div>
+        <div class="spinner-text">Syncing with Repository & Cloud Database...</div>
     </div>
 
-    <!-- SCREEN 2: LEARNING WORKBENCH -->
-    <div id="quizScreen" class="screen">
-        <div class="quiz-header">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #f1f5f9;">
-                <button id="topHomeBtn" class="btn-icon" title="Home">🏠 Home</button>
-                <div style="flex:1; margin:0 10px; text-align:center;">
-                    <h2 id="chapterTitle" class="chapter-title">Loading...</h2>
-                </div>
-                <button id="topQuitBtn" class="btn-icon btn-danger-text" title="Finish">🏁 Finish</button>
-            </div>
-            
-            <div id="identityBar">
-                <div class="id-student-info">
-                    <div class="id-name" id="displayStudentName">👤 Student</div>
-                    <div class="id-school" id="displaySchoolInfo">Class • Subject</div>
-                </div>
-                <div class="stat-badge strict" style="background:#eff6ff; border-color:#bfdbfe; color:#1e40af;">LEARNING MODE</div>
-            </div>
+    <div class="app-viewport">
 
-            <div class="quiz-stats-row">
-                <div class="header-left">
-                    <div class="stat-badge">
-                        <span class="stat-label">Progress</span>
-                        <span class="stat-value"><span id="currentUnitNum">0</span>/<span id="totalUnitsNum">0</span></span>
+        <!-- ======================================================== -->
+        <!-- SCREEN 1: UPLOAD / CURRICULUM SELECTION & AUTHENTICATION -->
+        <!-- ======================================================== -->
+        <main id="uploadScreen" class="screen-view active">
+            <header class="app-masthead">
+                <div class="masthead-badge">CBSE / NCERT Interactive Workbench</div>
+                <h1 class="masthead-title">LearnApp</h1>
+                <p class="masthead-subtitle">Master syntax, logical architectures, and algorithms through bilingual interactive sequencing.</p>
+            </header>
+
+            <div id="errorMessage" class="system-banner error-banner" style="display:none;"></div>
+
+            <section class="portal-card">
+                <!-- 1. Student Verification Section (Sheet2 Lookup) -->
+                <div class="portal-section">
+                    <label class="form-label" for="studentIdInput">Student Authentication</label>
+                    <div class="auth-input-group">
+                        <input type="text" id="studentIdInput" class="form-control text-uppercase" placeholder="Enter Student ID (e.g., STU101)" autocomplete="off">
+                        <button type="button" id="verifyStudentBtn" class="btn btn-secondary">Verify</button>
+                    </div>
+                    <div id="authStatusBadge" class="auth-status-badge unverified">
+                        <span class="status-indicator"></span>
+                        <span id="authStatusText">Enter your Student ID to verify access</span>
                     </div>
                 </div>
-                <div class="header-right">
-                    <div class="stat-badge">
-                        <span class="stat-label">Time</span>
-                        <span class="stat-value" id="timer">00:00</span>
+
+                <div class="form-divider"></div>
+
+                <!-- 2. Curriculum Cascading Selectors -->
+                <div class="portal-section">
+                    <div class="form-group">
+                        <label class="form-label" for="classSelect">Target Class</label>
+                        <select id="classSelect" class="form-control">
+                            <option value="" disabled selected>Loading available classes...</option>
+                        </select>
                     </div>
-                    <div class="stat-badge score-badge">
-                        <span class="stat-label">Mastery Points</span>
-                        <span class="stat-value"><span id="masteryScore">0</span>/<span id="maxScore">0</span></span>
+
+                    <div id="subjectGroup" class="form-group" style="display:none;">
+                        <label class="form-label" for="subjectSelect">Discipline / Subject</label>
+                        <select id="subjectSelect" class="form-control">
+                            <option value="" disabled selected>Choose Subject...</option>
+                        </select>
+                    </div>
+
+                    <div id="lessonGroup" class="form-group" style="display:none;">
+                        <label class="form-label">Available Interactive Chapters</label>
+                        <div id="quizList" class="curriculum-item-grid"></div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="question-grid" id="unitGrid"></div>
-
-        <div class="question-area">
-            <div class="lang-toggle-container">
-                <button id="btn-en" class="lang-btn active">English [10 pts]</button>
-                <button id="btn-hi" class="lang-btn">हिंदी [10 pts]</button>
-            </div>
-
-            <section class="lesson-card" id="lesson-card">
-                <h3 id="lesson-title"></h3>
-                <div class="media-viewport" id="media-container" style="display: none;"></div>
-                <div class="media-caption" id="media-caption"></div>
-                <div class="theory-content math-render" id="lesson-theory"></div>
+                <div class="portal-actions">
+                    <button type="button" id="startQuiz" class="btn btn-primary btn-large btn-block" disabled>
+                        🚀 Launch Interactive Module
+                    </button>
+                    <button type="button" id="viewScoreboardBtn" class="btn btn-outline btn-block">
+                        🏆 Global Leaderboard
+                    </button>
+                </div>
             </section>
+        </main>
 
-            <div class="challenge-board">
-                <div class="prompt-bar" id="challenge-prompt"></div>
-                <div class="assembly-line math-render" id="target-zone"></div>
-                <div class="fragment-pool math-render" id="fragment-bank"></div>
-                <div class="feedback-banner" id="feedback-banner" style="display: none;"></div>
-
-                <div class="quiz-controls">
-                    <button id="prevBtn" class="btn-secondary">← Back</button>
-                    <div style="display: flex; gap: 8px;">
-                        <button id="hintBtn" class="btn-secondary" style="color: #0ea5e9; border-color: #bae6fd;">💡 Hint</button>
-                        <button id="btn-submit" class="btn-primary" disabled>Check Answer</button>
-                        <button id="nextBtn" class="btn-primary" style="background:#10b981;">Next Unit →</button>
+        <!-- ======================================================== -->
+        <!-- SCREEN 2: BILINGUAL INTERACTIVE WORKBENCH SCREEN        -->
+        <!-- ======================================================== -->
+        <main id="quizScreen" class="screen-view">
+            <!-- Global Top Navigation Bar -->
+            <header class="workbench-header">
+                <div class="header-left">
+                    <button type="button" id="topHomeBtn" class="btn-icon" title="Return to Main Menu">🏠 Home</button>
+                    <div class="identity-capsule">
+                        <div id="displayStudentName" class="id-name">👤 Authenticating...</div>
+                        <div id="displaySchoolInfo" class="id-school">Class • Subject</div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- SCREEN 3: RESULTS -->
-    <div id="resultsScreen" class="screen">
-        <div class="results-container">
-            <div class="results-header" style="background: #2563eb; color: white; padding: 30px; text-align: center;">
-                <h1>Module Complete</h1>
-                <div style="display: flex; justify-content: center; gap: 30px; margin-top: 15px; font-size: 18px; font-weight: 600;">
-                    <div><div style="font-size: 11px; opacity:0.8;">SCORE</div><span id="finalScore">0</span>/<span id="totalPossible">0</span></div>
-                    <div><div style="font-size: 11px; opacity:0.8;">MASTERY</div><span id="percentage">0%</span></div>
-                    <div><div style="font-size: 11px; opacity:0.8;">TIME</div><span id="totalTime">00:00</span></div>
+                <div class="header-center">
+                    <div class="chapter-indicator">
+                        <span id="chapterTitle" class="chapter-text">Loading Module...</span>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <div class="telemetry-pill">
+                        <span class="telemetry-label">UNIT</span>
+                        <span class="telemetry-val"><span id="currentUnitNum">1</span>/<span id="totalUnitsNum">--</span></span>
+                    </div>
+                    <div class="telemetry-pill">
+                        <span class="telemetry-label">MASTERY</span>
+                        <span class="telemetry-val"><span id="masteryScore">0</span>/<span id="maxScore">--</span></span>
+                    </div>
+                    <div class="telemetry-pill timer-pill">
+                        <span class="telemetry-label">TIME</span>
+                        <span id="timer" class="telemetry-val">00:00</span>
+                    </div>
+                    <button type="button" id="topQuitBtn" class="btn btn-danger btn-sm">Finish</button>
+                </div>
+            </header>
+
+            <!-- 54px Vertical Progression Rail & Workbench Layout -->
+            <div class="workbench-layout">
+                <aside class="progression-sidebar">
+                    <div class="sidebar-header">Module Units</div>
+                    <div id="unitGrid" class="unit-progress-column"></div>
+                </aside>
+
+                <section class="workbench-main">
+                    <!-- Unit Pedagogical Theory Viewport -->
+                    <article class="pedagogy-viewport">
+                        <div class="pedagogy-header">
+                            <h2 id="lesson-title" class="unit-title">Lesson Title</h2>
+                            <div class="lang-toggle-capsule">
+                                <button type="button" id="btn-en" class="btn-lang active">English [10 pts]</button>
+                                <button type="button" id="btn-hi" class="btn-lang">हिंदी [10 pts]</button>
+                            </div>
+                        </div>
+
+                        <!-- Anti-Collision SVG Canvas Viewport -->
+                        <div id="media-container" class="media-viewport" style="display:none;"></div>
+                        <div id="media-caption" class="media-caption-text"></div>
+
+                        <div id="lesson-theory" class="theory-body"></div>
+                    </article>
+
+                    <!-- Interactive Construction Canvas -->
+                    <section class="interactive-canvas">
+                        <div class="challenge-directive">
+                            <span class="directive-badge">CHALLENGE TASK</span>
+                            <div id="challenge-prompt" class="directive-text"></div>
+                        </div>
+
+                        <!-- Ordered Target Drop Zone -->
+                        <div class="construction-zone">
+                            <div class="zone-label">Construct Sequence Here (Click or Drag into place)</div>
+                            <div id="target-zone" class="drop-target-area"></div>
+                        </div>
+
+                        <!-- Available Dynamic Fragment Bank -->
+                        <div class="fragment-bank-container">
+                            <div class="zone-label">Available Tokens & Code Blocks</div>
+                            <div id="fragment-bank" class="fragment-chip-pool"></div>
+                        </div>
+
+                        <!-- Feedback Banner -->
+                        <div id="feedback-banner" class="feedback-notification" style="display:none;"></div>
+
+                        <!-- Navigation Bar -->
+                        <footer class="workbench-footer">
+                            <button type="button" id="prevBtn" class="btn btn-outline" disabled>← Previous</button>
+                            <button type="button" id="hintBtn" class="btn btn-secondary">💡 Step Hint</button>
+                            <button type="button" id="btn-submit" class="btn btn-primary" disabled>Verify Assembly</button>
+                            <button type="button" id="nextBtn" class="btn btn-success" disabled>Next Unit →</button>
+                        </footer>
+                    </section>
+                </section>
+            </div>
+        </main>
+
+        <!-- ======================================================== -->
+        <!-- SCREEN 3: RESULTS & MASTERY SUMMARY SCREEN               -->
+        <!-- ======================================================== -->
+        <main id="resultsScreen" class="screen-view">
+            <div class="results-card">
+                <div class="results-icon">🎉</div>
+                <h2 class="results-title">Module Completed!</h2>
+                <p class="results-subtitle">Telemetry record successfully submitted to cloud database.</p>
+
+                <div class="metrics-dashboard">
+                    <div class="metric-card">
+                        <div class="metric-label">Mastery Points</div>
+                        <div class="metric-value highlight"><span id="finalScore">0</span> / <span id="totalPossible">0</span></div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Mastery Rate</div>
+                        <div id="percentage" class="metric-value">0%</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Time Consumed</div>
+                        <div id="totalTime" class="metric-value">00:00</div>
+                    </div>
+                </div>
+
+                <div class="results-actions">
+                    <button type="button" id="retakeBtn" class="btn btn-secondary">🔄 Retake Module</button>
+                    <button type="button" id="viewScoreboardFromResults" class="btn btn-primary">🏆 View Leaderboard</button>
+                    <button type="button" id="homeBtn" class="btn btn-outline">🏠 Main Menu</button>
                 </div>
             </div>
-            <div style="padding: 25px; text-align: center;">
-                <p style="margin-bottom:20px; color:#475569;">Your results have been submitted to the database.</p>
-                <div style="display: flex; gap: 10px; justify-content: center; margin-bottom: 15px;">
-                    <button id="retakeBtn" class="btn-primary">🔄 Restart Module</button>
-                    <button id="viewScoreboardFromResults" class="btn-secondary">🏆 Leaderboard</button>
-                </div>
-                <button id="homeBtn" class="btn-secondary" style="width: 100%;">🏠 Main Menu</button>
-            </div>
-        </div>
-    </div>
+        </main>
 
-    <!-- SCREEN 4: SCOREBOARD -->
-    <div id="scoreboardScreen" class="screen">
-        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
-            <div style="background: #1e293b; padding:20px; display:flex; justify-content:space-between; align-items:center; color:white;">
-                <h1 style="margin:0; font-size: 20px;">🥇 Global Leaderboard</h1>
-                <button id="backFromScoreboard" class="btn-icon" style="background: rgba(255,255,255,0.1); color:white; border:none;">✕ Close</button>
-            </div>
-            <div style="overflow-x: auto;">
-                <table class="scoreboard-table">
+        <!-- ======================================================== -->
+        <!-- SCREEN 4: GLOBAL SCOREBOARD & LEADERBOARD SCREEN          -->
+        <!-- ======================================================== -->
+        <main id="scoreboardScreen" class="screen-view">
+            <header class="scoreboard-header">
+                <div>
+                    <h2 class="scoreboard-title">Global Academic Scoreboard</h2>
+                    <p class="scoreboard-subtitle">Real-time telemetry and verified scores from cloud datastore.</p>
+                </div>
+                <button type="button" id="backFromScoreboard" class="btn btn-outline">✕ Return</button>
+            </header>
+
+            <section class="table-container">
+                <table class="data-table">
                     <thead>
                         <tr id="leaderboardHeaders">
-                            <th data-sort="rank">Rank</th>
-                            <th data-sort="date">Date</th>
-                            <th data-sort="student">Student</th>
-                            <th data-sort="class">Class</th>
-                            <th data-sort="subject">Subject</th>
-                            <th data-sort="chapter">Module</th>
-                            <th data-sort="mode">Mode</th>
-                            <th data-sort="score">Score</th>
-                            <th data-sort="efficiency">Time</th>
+                            <th data-sort="rank">RANK</th>
+                            <th data-sort="date">TIMESTAMP</th>
+                            <th data-sort="student">STUDENT & INSTITUTION</th>
+                            <th data-sort="class">CLASS</th>
+                            <th data-sort="subject">SUBJECT</th>
+                            <th data-sort="chapter">CHAPTER</th>
+                            <th data-sort="mode">MODE</th>
+                            <th data-sort="score">SCORE</th>
+                            <th data-sort="efficiency">TIME</th>
                         </tr>
                     </thead>
                     <tbody id="scoreboardBody">
-                        <tr><td colspan="9" style="padding:40px; text-align:center; color: #64748b;">Syncing scores...</td></tr>
+                        <tr><td colspan="9" style="padding:40px; text-align:center;">Syncing...</td></tr>
                     </tbody>
                 </table>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
 
-    <div id="loadingSpinner" class="spinner"></div>
+    <!-- Core Dynamic Controller Script -->
     <script src="app.js"></script>
 </body>
 </html>
