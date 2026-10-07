@@ -1,8 +1,7 @@
 /**
  * LearnApp Core Controller (app.js)
  * Option 1: Side-by-Side Dual Columns with Unified "Verify Assembly"
- * Integrated with Student Auth (Sheet2), Real-Time GitHub Tree Discovery,
- * KaTeX, and Google Apps Script Telemetry.
+ * Includes Backward-Compatibility Fallbacks for Legacy JSON schemas.
  */
 
 const AppConfig = {
@@ -244,7 +243,6 @@ async function handleStudentVerification() {
 
 function setAuthBadgeState(state, message) {
     if (!DOM.authStatusBadge || !DOM.authStatusText) return;
-
     DOM.authStatusBadge.className = `auth-status-badge ${state}`;
     DOM.authStatusText.innerText = message;
 }
@@ -423,7 +421,10 @@ function setupQuizFromData(data) {
 
     const masteryPerUnit = data.metadata?.scoring_model?.dual_language_mastery_max || 20;
     AppState.maxScore = AppState.units.length * masteryPerUnit;
-    AppState.chapterTitleString = data.metadata?.chapter_title?.en || "Learning Module";
+    
+    // Safely extract chapter title string for DB submission
+    const safeTitleEn = typeof data.metadata?.chapter_title === 'string' ? data.metadata.chapter_title : (data.metadata?.chapter_title?.en || "Learning Module");
+    AppState.chapterTitleString = safeTitleEn;
 
     AppState.units.forEach((_, idx) => {
         AppState.unitProgress[idx] = {
@@ -435,8 +436,10 @@ function setupQuizFromData(data) {
     });
 
     if (DOM.chapterTitle) {
-        DOM.chapterTitle.innerText = `${data.metadata?.chapter_title?.en \vert{}\vert{} ''} / ${data.metadata?.chapter_title?.hi || ''}`;
+        const safeTitleHi = typeof data.metadata?.chapter_title === 'string' ? '' : (data.metadata?.chapter_title?.hi || '');
+        DOM.chapterTitle.innerText = `${safeTitleEn}${safeTitleHi ? ' / ' + safeTitleHi : ''}`;
     }
+    
     if (DOM.displayStudentName) DOM.displayStudentName.innerText = `👤 ${AppState.studentAuth.studentName}`;
     if (DOM.displaySchoolInfo) DOM.displaySchoolInfo.innerText = `${AppState.selectedClass} •${AppState.selectedSubject}`;
     if (DOM.totalUnitsNum) DOM.totalUnitsNum.innerText = AppState.units.length;
@@ -580,20 +583,29 @@ function renderCurrentUnit() {
     const unit = AppState.units[AppState.currentUnitIndex];
     if (!unit) return;
 
-    const challengeEn = unit.challenges.en;
-    const challengeHi = unit.challenges.hi;
+    // --- BULLETPROOF SCHEMA FALLBACKS (Prevents crashes on old JSONs) ---
+    const titleEn = typeof unit.instruction.title === 'string' ? unit.instruction.title : (unit.instruction.title?.en || 'Module');
+    const titleHi = typeof unit.instruction.title === 'string' ? '' : (unit.instruction.title?.hi || '');
+    
+    const theoryEn = typeof unit.instruction.theory === 'string' ? unit.instruction.theory : (unit.instruction.theory?.en || '');
+    const theoryHi = typeof unit.instruction.theory === 'string' ? '' : (unit.instruction.theory?.hi || '');
+    
+    const challengeEn = unit.challenges.en || unit.challenges; // Fallback to root challenges object
+    const challengeHi = unit.challenges.hi || unit.challenges; // Fallback to root challenges object
     const media = unit.instruction.media;
+    // -------------------------------------------------------------------
 
     if (DOM.currentUnitNum) DOM.currentUnitNum.innerText = AppState.currentUnitIndex + 1;
+    
     if (DOM.lessonTitle) {
-        DOM.lessonTitle.innerHTML = `${formatMarkup(unit.instruction.title.en)} <span style="font-weight:400; opacity:0.75;">| ${formatMarkup(unit.instruction.title.hi)}</span>`;
+        DOM.lessonTitle.innerHTML = `${formatMarkup(titleEn)} <span style="font-weight:400; opacity:0.75;">${titleHi ? '| ' + formatMarkup(titleHi) : ''}</span>`;
     }
 
-    if (DOM.lessonTheoryEn) DOM.lessonTheoryEn.innerHTML = formatMarkup(unit.instruction.theory.en);
-    if (DOM.lessonTheoryHi) DOM.lessonTheoryHi.innerHTML = formatMarkup(unit.instruction.theory.hi);
+    if (DOM.lessonTheoryEn) DOM.lessonTheoryEn.innerHTML = formatMarkup(theoryEn);
+    if (DOM.lessonTheoryHi) DOM.lessonTheoryHi.innerHTML = formatMarkup(theoryHi);
 
-    if (DOM.challengePromptEn) DOM.challengePromptEn.innerHTML = formatMarkup(challengeEn.prompt);
-    if (DOM.challengePromptHi) DOM.challengePromptHi.innerHTML = formatMarkup(challengeHi.prompt);
+    if (DOM.challengePromptEn) DOM.challengePromptEn.innerHTML = formatMarkup(challengeEn.prompt || '');
+    if (DOM.challengePromptHi) DOM.challengePromptHi.innerHTML = formatMarkup(challengeHi.prompt || '');
 
     if (DOM.mediaContainer) {
         if (media && media.type === 'svg') {
@@ -606,7 +618,7 @@ function renderCurrentUnit() {
     }
 
     if (DOM.mediaCaption) {
-        DOM.mediaCaption.innerHTML = formatMarkup(`${media?.caption?.en || ''} — ${media?.caption?.hi || ''}`);
+        DOM.mediaCaption.innerHTML = formatMarkup(`${media?.caption?.en || ''} ${media?.caption?.hi ? '— ' + media?.caption?.hi : ''}`);
     }
 
     // Reset feedback alerts
@@ -652,7 +664,7 @@ function buildTrackFragmentPool(lang, challenge, isLocked) {
     const targetZone = isEn ? DOM.targetZoneEn : DOM.targetZoneHi;
     const fragmentBank = isEn ? DOM.fragmentBankEn : DOM.fragmentBankHi;
 
-    if (!targetZone || !fragmentBank) return;
+    if (!targetZone || !fragmentBank || !challenge.target_sequence) return;
     targetZone.innerHTML = '';
     fragmentBank.innerHTML = '';
 
@@ -790,8 +802,12 @@ function verifyUnifiedAssembly() {
     const p = AppState.unitProgress[AppState.currentUnitIndex];
     p.attempted = true;
 
-    let enResult = evaluateTrack('en', unit.challenges.en, AppState.assemblyEn, p.enSolved);
-    let hiResult = evaluateTrack('hi', unit.challenges.hi, AppState.assemblyHi, p.hiSolved);
+    // Safely extract challenges fallback
+    const challengeEn = unit.challenges.en || unit.challenges;
+    const challengeHi = unit.challenges.hi || unit.challenges;
+
+    let enResult = evaluateTrack('en', challengeEn, AppState.assemblyEn, p.enSolved);
+    let hiResult = evaluateTrack('hi', challengeHi, AppState.assemblyHi, p.hiSolved);
 
     // Apply English verification outcome
     if (!p.enSolved) {
@@ -832,8 +848,8 @@ function verifyUnifiedAssembly() {
 
     // Both tracks completed successfully
     if (p.enSolved && p.hiSolved) {
-        const takeawayEn = unit.key_takeaway?.en || "Great job!";
-        const takeawayHi = unit.key_takeaway?.hi || "शानदार कार्य!";
+        const takeawayEn = typeof unit.key_takeaway === 'string' ? unit.key_takeaway : (unit.key_takeaway?.en || "Great job!");
+        const takeawayHi = typeof unit.key_takeaway === 'string' ? '' : (unit.key_takeaway?.hi || "शानदार कार्य!");
         renderFeedbackBanner(`✅ <strong>Mastered Both Languages! (+20 pts)</strong><br><br>• <strong>EN:</strong> ${formatMarkup(takeawayEn)}<br>• <strong>HI:</strong> ${formatMarkup(takeawayHi)}`, '#15803d', '#f0fdf4');
         DOM.btnSubmit.disabled = true;
         DOM.nextBtn.disabled = false;
@@ -844,7 +860,7 @@ function verifyUnifiedAssembly() {
 
 function evaluateTrack(lang, challenge, assembly, alreadySolved) {
     if (alreadySolved) return { status: 'correct' };
-    const targetSeq = challenge.target_sequence;
+    const targetSeq = challenge.target_sequence || [];
 
     const distractorHit = assembly.find(f => f.category === 'logical' || f.category === 'grammatical');
     if (distractorHit) {
@@ -853,8 +869,10 @@ function evaluateTrack(lang, challenge, assembly, alreadySolved) {
 
     if (assembly.length < targetSeq.length) {
         const nextTarget = targetSeq[assembly.length];
-        const hintMsg = nextTarget.role_hint?.[lang] || nextTarget.role_hint?.en || nextTarget.role_hint || "Add the next element.";
-        return { status: 'incomplete', message: hintMsg };
+        if (nextTarget) {
+             const hintMsg = nextTarget.role_hint?.[lang] || nextTarget.role_hint?.en || nextTarget.role_hint || "Add the next element.";
+             return { status: 'incomplete', message: hintMsg };
+        }
     }
 
     let isCorrect = true;
@@ -885,7 +903,9 @@ function renderFeedbackBanner(html, color, bg) {
 
 function handleShowHint() {
     const unit = AppState.units[AppState.currentUnitIndex];
-    renderFeedbackBanner(`💡 <strong>Hints:</strong><br>• <strong>EN:</strong> ${formatMarkup(unit.challenges.en.hint)}<br>• <strong>HI:</strong> ${formatMarkup(unit.challenges.hi.hint)}`, '#0284c7', '#f0f9ff');
+    const hintEn = typeof unit.challenges.en === 'object' ? unit.challenges.en.hint : (unit.challenges.hint || '');
+    const hintHi = typeof unit.challenges.hi === 'object' ? unit.challenges.hi.hint : '';
+    renderFeedbackBanner(`💡 <strong>Hints:</strong><br>• <strong>EN:</strong> ${formatMarkup(hintEn)}<br>• <strong>HI:</strong> ${formatMarkup(hintHi)}`, '#0284c7', '#f0f9ff');
 }
 
 function handleNextUnit() {
@@ -923,7 +943,6 @@ function finishModule() {
     if (DOM.percentage) DOM.percentage.innerText = `${percentage}%`;
     if (DOM.totalTime) DOM.totalTime.innerText = timeFormatted;
 
-    // Transmits verified Student Name & School from Sheet2
     const scorePayload = {
         action: 'submit',
         studentName: AppState.studentAuth.studentName,
