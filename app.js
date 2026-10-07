@@ -1,7 +1,6 @@
 /**
- * Learn-App Core Logic (app.js)
- * Fully Aligned with index.html DOM IDs & Google Apps Script Backend
- * Dynamic Scanning: Scans all classes, subjects, and topics from GitHub Tree API
+ * Learn-App Core Logic (app.js v2.0)
+ * Fully Aligned with index.html DOM IDs, Google Apps Script Backend & LocalStorage Progress Engine
  */
 
 const AppConfig = {
@@ -12,7 +11,7 @@ const AppConfig = {
 
 const AppState = {
     currentLang: 'en',
-    repoCatalog: {}, 
+    repoCatalog: {},
     selectedClass: '',
     selectedSubject: '',
     selectedQuizPath: '',
@@ -22,7 +21,8 @@ const AppState = {
     assembly: [],
     score: 0,
     maxScore: 0,
-    unitProgress: {}, 
+    unitProgress: {},
+    studentId: '',
     studentName: '',
     schoolName: '',
     timerSeconds: 0,
@@ -42,8 +42,18 @@ const DOM = {
     spinner: document.getElementById('loadingSpinner'),
     errorMessage: document.getElementById('errorMessage'),
 
-    studentName: document.getElementById('studentName'),
-    schoolName: document.getElementById('schoolName'),
+    // Student ID Verification & Resume Elements
+    studentIdInput: document.getElementById('studentIdInput'),
+    verifyIdBtn: document.getElementById('verifyIdBtn'),
+    idStatusMsg: document.getElementById('idStatusMsg'),
+    verifiedStudentCard: document.getElementById('verifiedStudentCard'),
+    verifiedName: document.getElementById('verifiedName'),
+    verifiedSchool: document.getElementById('verifiedSchool'),
+    resumeBanner: document.getElementById('resumeBanner'),
+    resumeDetails: document.getElementById('resumeDetails'),
+    resumeSessionBtn: document.getElementById('resumeSessionBtn'),
+    discardSessionBtn: document.getElementById('discardSessionBtn'),
+
     classSelect: document.getElementById('classSelect'),
     subjectGroup: document.getElementById('subjectGroup'),
     subjectSelect: document.getElementById('subjectSelect'),
@@ -94,10 +104,10 @@ const DOM = {
 // ==========================================
 // 1. INITIALIZATION & ROUTING
 // ==========================================
-
 document.addEventListener('DOMContentLoaded', () => {
     bindGlobalEvents();
     syncOfflineScores();
+    checkSavedSession();
     scanRepositoryTree();
 });
 
@@ -106,11 +116,17 @@ function bindGlobalEvents() {
     DOM.homeBtn?.addEventListener('click', resetToMainMenu);
     DOM.topQuitBtn?.addEventListener('click', finishModule);
     DOM.retakeBtn?.addEventListener('click', restartCurrentModule);
-    
+
+    // Student ID Verification Events
+    DOM.verifyIdBtn?.addEventListener('click', handleStudentVerification);
+    DOM.studentIdInput?.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') handleStudentVerification();
+    });
+
     const showScore = () => { switchScreen('scoreboard'); fetchScoreboard(); };
     DOM.viewScoreboardBtn?.addEventListener('click', showScore);
     DOM.viewScoreboardFromResults?.addEventListener('click', showScore);
-    
+
     DOM.backFromScoreboard?.addEventListener('click', () => {
         if (AppState.units.length > 0) switchScreen('quiz');
         else switchScreen('upload');
@@ -151,7 +167,7 @@ function resetToMainMenu() {
     AppState.selectedQuizPath = '';
     AppState.currentUnitIndex = 0;
     AppState.score = 0;
-    
+
     if (DOM.quizList) {
         document.querySelectorAll('.quiz-select-btn').forEach(b => b.classList.remove('selected'));
     }
@@ -164,30 +180,178 @@ function toggleSpinner(show) {
 }
 
 // ==========================================
-// 2. DYNAMIC GITHUB TREE SCANNER
+// 2. STUDENT ID VERIFICATION & LOCAL STORAGE
 // ==========================================
+async function handleStudentVerification() {
+    const studentId = DOM.studentIdInput?.value.trim() || '';
 
+    if (!studentId) {
+        if (DOM.idStatusMsg) {
+            DOM.idStatusMsg.style.color = '#dc2626';
+            DOM.idStatusMsg.innerText = '⚠️ Please enter a valid Student ID.';
+        }
+        return;
+    }
+
+    if (DOM.verifyIdBtn) {
+        DOM.verifyIdBtn.disabled = true;
+        DOM.verifyIdBtn.innerText = 'Verifying...';
+    }
+    if (DOM.idStatusMsg) {
+        DOM.idStatusMsg.style.color = '#475569';
+        DOM.idStatusMsg.innerText = 'Checking student records...';
+    }
+
+    try {
+        const response = await fetch(`\\({AppConfig.gasEndpoint}?action=verifyStudent&studentId=\\){encodeURIComponent(studentId)}`);
+        const result = await response.json();
+
+        if (result.success && result.found) {
+            AppState.studentId = result.studentId;
+            AppState.studentName = result.studentName;
+            AppState.schoolName = result.schoolName;
+
+            if (DOM.verifiedName) DOM.verifiedName.innerText = `👤 Welcome, \${result.studentName}!`;
+            if (DOM.verifiedSchool) DOM.verifiedSchool.innerText = `🏫 \${result.schoolName}`;
+            if (DOM.verifiedStudentCard) DOM.verifiedStudentCard.style.display = 'block';
+
+            if (DOM.idStatusMsg) {
+                DOM.idStatusMsg.style.color = '#166534';
+                DOM.idStatusMsg.innerText = '✅ ID verified successfully!';
+            }
+
+            if (DOM.classSelect) DOM.classSelect.disabled = false;
+            validateStartReady();
+        } else {
+            if (DOM.verifiedStudentCard) DOM.verifiedStudentCard.style.display = 'none';
+            if (DOM.idStatusMsg) {
+                DOM.idStatusMsg.style.color = '#dc2626';
+                DOM.idStatusMsg.innerText = `❌ \${result.message || 'Student ID not found in Sheet2.'}`;
+            }
+            if (DOM.classSelect) DOM.classSelect.disabled = true;
+            validateStartReady();
+        }
+    } catch (err) {
+        console.error("Verification Error:", err);
+        if (DOM.idStatusMsg) {
+            DOM.idStatusMsg.style.color = '#dc2626';
+            DOM.idStatusMsg.innerText = '⚠️ Could not connect to verification server. Please check your internet connection.';
+        }
+    } finally {
+        if (DOM.verifyIdBtn) {
+            DOM.verifyIdBtn.disabled = false;
+            DOM.verifyIdBtn.innerText = 'Verify ID';
+        }
+    }
+}
+
+function saveSessionProgress() {
+    if (!AppState.selectedQuizPath || !AppState.studentId) return;
+
+    const sessionData = {
+        studentId: AppState.studentId,
+        studentName: AppState.studentName,
+        schoolName: AppState.schoolName,
+        selectedClass: AppState.selectedClass,
+        selectedSubject: AppState.selectedSubject,
+        selectedQuizPath: AppState.selectedQuizPath,
+        chapterTitleString: AppState.chapterTitleString,
+        currentUnitIndex: AppState.currentUnitIndex,
+        unitProgress: AppState.unitProgress,
+        score: AppState.score,
+        timerSeconds: AppState.timerSeconds,
+        timestamp: new Date().getTime()
+    };
+
+    localStorage.setItem('learnApp_activeSession', JSON.stringify(sessionData));
+}
+
+function checkSavedSession() {
+    const saved = localStorage.getItem('learnApp_activeSession');
+    if (!saved) return;
+
+    try {
+        const session = JSON.parse(saved);
+        if (DOM.resumeBanner && DOM.resumeDetails) {
+            DOM.resumeDetails.innerText = `Saved progress for \${session.studentName} (\\({session.chapterTitleString || 'Lesson'}) — Unit \\){session.currentUnitIndex + 1}`;
+            DOM.resumeBanner.style.display = 'block';
+
+            if (DOM.resumeSessionBtn) {
+                DOM.resumeSessionBtn.onclick = () => resumeSession(session);
+            }
+            if (DOM.discardSessionBtn) {
+                DOM.discardSessionBtn.onclick = () => {
+                    localStorage.removeItem('learnApp_activeSession');
+                    DOM.resumeBanner.style.display = 'none';
+                };
+            }
+        }
+    } catch (e) {
+        localStorage.removeItem('learnApp_activeSession');
+    }
+}
+
+async function resumeSession(session) {
+    AppState.studentId = session.studentId;
+    AppState.studentName = session.studentName;
+    AppState.schoolName = session.schoolName;
+    AppState.selectedClass = session.selectedClass;
+    AppState.selectedSubject = session.selectedSubject;
+    AppState.selectedQuizPath = session.selectedQuizPath;
+
+    toggleSpinner(true);
+    try {
+        const url = `https://api.github.com/repos/\${AppConfig.githubRepo}/contents/\\({AppState.selectedQuizPath}?ref=\\){AppConfig.branch}`;
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`Fetch chapter error: \${res.statusText}`);
+
+        const fileJson = await res.json();
+        const rawContent = decodeURIComponent(escape(atob(fileJson.content)));
+        const parsed = JSON.parse(rawContent);
+
+        setupQuizFromData(parsed);
+
+        // Restore saved session indexes & progress
+        AppState.currentUnitIndex = session.currentUnitIndex || 0;
+        AppState.unitProgress = session.unitProgress || AppState.unitProgress;
+        AppState.score = session.score || 0;
+        AppState.timerSeconds = session.timerSeconds || 0;
+
+        if (DOM.masteryScore) DOM.masteryScore.innerText = AppState.score;
+        updateUnitGridStatus();
+        renderCurrentUnit();
+
+        if (DOM.resumeBanner) DOM.resumeBanner.style.display = 'none';
+    } catch (err) {
+        console.error("Resume Error:", err);
+        alert("Failed to load saved session quiz JSON.");
+    } finally {
+        toggleSpinner(false);
+    }
+}
+
+// ==========================================
+// 3. DYNAMIC GITHUB TREE SCANNER
+// ==========================================
 async function scanRepositoryTree() {
     toggleSpinner(true);
     if (DOM.errorMessage) DOM.errorMessage.style.display = 'none';
 
     try {
-        // Standard clean GitHub Git Trees endpoint
-        const url = `https://api.github.com/repos/${AppConfig.githubRepo}/git/trees/${AppConfig.branch}?recursive=1`;
+        const url = `https://api.github.com/repos/\\({AppConfig.githubRepo}/git/trees/\\){AppConfig.branch}?recursive=1`;
         const res = await fetch(url);
-        
+
         if (!res.ok) {
-            throw new Error(`GitHub API Error ${res.status}:${res.statusText}`);
+            throw new Error(`GitHub API Error \\({res.status}:\\){res.statusText}`);
         }
-        
+
         const data = await res.json();
         const catalog = {};
 
         (data.tree || []).forEach(node => {
             if (node.type === 'blob' && node.path.startsWith('jsons/') && node.path.toLowerCase().endsWith('.json')) {
                 const segments = node.path.split('/');
-                
-                // Matches paths: jsons / [Class] / [Subject] / [File.json]
+
                 if (segments.length >= 4) {
                     const cls = cleanTitleFormat(segments[1]);
                     const subj = cleanTitleFormat(segments[2]);
@@ -210,7 +374,7 @@ async function scanRepositoryTree() {
     } catch (err) {
         console.error("Scanner Error:", err);
         if (DOM.errorMessage) {
-            DOM.errorMessage.innerText = `Library Load Error: ${err.message}`;
+            DOM.errorMessage.innerText = `Library Load Error: \${err.message}`;
             DOM.errorMessage.style.display = 'block';
         }
     } finally {
@@ -225,10 +389,10 @@ function cleanTitleFormat(str) {
 function populateClassDropdown() {
     if (!DOM.classSelect) return;
     DOM.classSelect.innerHTML = '<option value="" disabled selected>Choose Class...</option>';
-    
+
     const classes = Object.keys(AppState.repoCatalog).sort();
     classes.forEach(cls => {
-        DOM.classSelect.innerHTML += `<option value="${cls}">${cls}</option>`;
+        DOM.classSelect.innerHTML += `<option value="\\({cls}">\\){cls}</option>`;
     });
 
     if (DOM.subjectGroup) DOM.subjectGroup.style.display = 'none';
@@ -243,7 +407,7 @@ function handleClassChange() {
 
     if (!DOM.subjectSelect) return;
     DOM.subjectSelect.innerHTML = '<option value="" disabled selected>Choose Subject...</option>';
-    
+
     if (DOM.quizList) {
         DOM.quizList.innerHTML = '<p style="padding:10px; opacity:0.6; font-size: 13px;">Select subject next</p>';
     }
@@ -251,7 +415,7 @@ function handleClassChange() {
     if (AppState.selectedClass && AppState.repoCatalog[AppState.selectedClass]) {
         const subjects = Object.keys(AppState.repoCatalog[AppState.selectedClass]).sort();
         subjects.forEach(subj => {
-            DOM.subjectSelect.innerHTML += `<option value="${subj}">${subj}</option>`;
+            DOM.subjectSelect.innerHTML += `<option value="\\({subj}">\\){subj}</option>`;
         });
         if (DOM.subjectGroup) DOM.subjectGroup.style.display = 'block';
     } else {
@@ -271,11 +435,11 @@ function handleSubjectChange() {
 
     if (AppState.selectedClass && AppState.selectedSubject) {
         const quizzes = AppState.repoCatalog[AppState.selectedClass][AppState.selectedSubject] || [];
-        
+
         quizzes.forEach(quiz => {
             const btn = document.createElement('div');
             btn.className = 'quiz-select-btn';
-            btn.innerText = `📂 ${quiz.title}`;
+            btn.innerText = `📂 \${quiz.title}`;
 
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.quiz-select-btn').forEach(b => b.classList.remove('selected'));
@@ -295,30 +459,22 @@ function handleSubjectChange() {
 }
 
 function validateStartReady() {
-    const nameValid = DOM.studentName?.value.trim().length > 0;
-    const schoolValid = DOM.schoolName?.value.trim().length > 0;
+    const idVerified = AppState.studentId && AppState.studentId.length > 0;
     const pathValid = AppState.selectedQuizPath && AppState.selectedQuizPath.length > 0;
     if (DOM.startQuiz) {
-        DOM.startQuiz.disabled = !(nameValid && schoolValid && pathValid);
+        DOM.startQuiz.disabled = !(idVerified && pathValid);
     }
 }
 
-DOM.studentName?.addEventListener('input', validateStartReady);
-DOM.schoolName?.addEventListener('input', validateStartReady);
-
 // ==========================================
-// 3. QUIZ INITIALIZATION & PARSING
+// 4. QUIZ INITIALIZATION & PARSING
 // ==========================================
-
 async function handleStartQuiz() {
-    AppState.studentName = DOM.studentName.value.trim();
-    AppState.schoolName = DOM.schoolName.value.trim();
-
     toggleSpinner(true);
     try {
-        const url = `https://api.github.com/repos/${AppConfig.githubRepo}/contents/${AppState.selectedQuizPath}?ref=${AppConfig.branch}`;
+        const url = `https://api.github.com/repos/\${AppConfig.githubRepo}/contents/\\({AppState.selectedQuizPath}?ref=\\){AppConfig.branch}`;
         const res = await fetch(url);
-        if (!res.ok) throw new Error(`Fetch chapter error: ${res.statusText}`);
+        if (!res.ok) throw new Error(`Fetch chapter error: \${res.statusText}`);
 
         const fileJson = await res.json();
         const rawContent = decodeURIComponent(escape(atob(fileJson.content)));
@@ -361,8 +517,8 @@ function setupQuizFromData(data) {
     if (DOM.chapterTitle) {
         DOM.chapterTitle.innerText = data.metadata?.chapter_title?.[AppState.currentLang] || data.metadata?.chapter_title?.en || "Learning Module";
     }
-    if (DOM.displayStudentName) DOM.displayStudentName.innerText = `👤 ${AppState.studentName}`;
-    if (DOM.displaySchoolInfo) DOM.displaySchoolInfo.innerText = `${AppState.selectedClass} •${AppState.selectedSubject}`;
+    if (DOM.displayStudentName) DOM.displayStudentName.innerText = `👤 \${AppState.studentName}`;
+    if (DOM.displaySchoolInfo) DOM.displaySchoolInfo.innerText = `\\({AppState.selectedClass} • \\){AppState.selectedSubject}`;
     if (DOM.totalUnitsNum) DOM.totalUnitsNum.innerText = AppState.units.length;
     if (DOM.maxScore) DOM.maxScore.innerText = AppState.maxScore;
     if (DOM.masteryScore) DOM.masteryScore.innerText = 0;
@@ -379,7 +535,12 @@ function restartCurrentModule() {
     AppState.timerSeconds = 0;
     AppState.unitProgress = {};
     AppState.units.forEach((_, idx) => {
-        AppState.unitProgress[idx] = { attempted: false, enSolved: false, hiSolved: false, marks: 0 };
+        AppState.unitProgress[idx] = {
+            attempted: false,
+            enSolved: false,
+            hiSolved: false,
+            marks: 0
+        };
     });
     if (DOM.masteryScore) DOM.masteryScore.innerText = 0;
     startTimer();
@@ -389,16 +550,15 @@ function restartCurrentModule() {
 }
 
 // ==========================================
-// 4. TIMER & QUESTION GRID (WITH MARKS)
+// 5. TIMER & QUESTION GRID
 // ==========================================
-
 function startTimer() {
     clearInterval(AppState.timerInterval);
     AppState.timerInterval = setInterval(() => {
         AppState.timerSeconds++;
         const mins = String(Math.floor(AppState.timerSeconds / 60)).padStart(2, '0');
         const secs = String(AppState.timerSeconds % 60).padStart(2, '0');
-        if (DOM.timer) DOM.timer.innerText = `${mins}:${secs}`;
+        if (DOM.timer) DOM.timer.innerText = `\\({mins}:\\){secs}`;
     }, 1000);
 }
 
@@ -414,10 +574,10 @@ function renderUnitGrid() {
         const div = document.createElement('div');
         div.className = 'question-number';
         div.dataset.index = idx;
-        
+
         div.innerHTML = `
-            <div class="q-number">${idx + 1}</div>
-            <div class="marks" id="marks-${idx}">0</div>
+            <div class="q-number">\${idx + 1}</div>
+            <div class="marks" id="marks-\${idx}">0</div>
         `;
 
         div.addEventListener('click', () => {
@@ -431,13 +591,13 @@ function renderUnitGrid() {
 
 function updateUnitGridStatus() {
     AppState.units.forEach((_, idx) => {
-        const node = document.querySelector(`.question-number[data-index="${idx}"]`);
-        const marksEl = document.getElementById(`marks-${idx}`);
+        const node = document.querySelector(`.question-number[data-index="\${idx}"]`);
+        const marksEl = document.getElementById(`marks-\${idx}`);
         const p = AppState.unitProgress[idx];
         if (!node) return;
 
         node.className = 'question-number';
-        
+
         if (p.marks >= 20) {
             node.classList.add('correct');
         } else if (p.marks >= 10) {
@@ -451,7 +611,7 @@ function updateUnitGridStatus() {
         }
 
         if (marksEl) {
-            marksEl.innerText = p.marks > 0 ? `+${p.marks}` : '0';
+            marksEl.innerText = p.marks > 0 ? `+\${p.marks}` : '0';
         }
     });
 
@@ -471,13 +631,12 @@ function updateLanguageButtonsStatus() {
 }
 
 // ==========================================
-// 5. RENDERING, KA-TEX & FORMATTING
+// 6. RENDERING, KATEX & VISUAL DROPZONE SLOTS
 // ==========================================
-
 function formatMarkup(str) {
     if (!str) return '';
     let sanitized = String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    return sanitized.replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>');
+    return sanitized.replace(/`([^`]+)`/g, '<code class="inline-code">\$1</code>');
 }
 
 function applyKaTeX() {
@@ -487,8 +646,8 @@ function applyKaTeX() {
             if (el) {
                 renderMathInElement(el, {
                     delimiters: [
-                        { left: '$$', right: '$$', display: true },
-                        { left: '$', right: '$', display: false }
+                        { left: '\\[', right: '\\]', display: true },
+                        { left: '\\(', right: '\\)', display: false }
                     ],
                     throwOnError: false
                 });
@@ -564,9 +723,8 @@ function renderCurrentUnit() {
 }
 
 // ==========================================
-// 6. DRAG AND DROP & SELECTION SYSTEM
+// 7. DRAG AND DROP & VISUAL SLOT ASSEMBLY
 // ==========================================
-
 let activeDraggedItem = null;
 
 function buildFragmentPool(challenge, isLocked = false) {
@@ -585,6 +743,7 @@ function buildFragmentPool(challenge, isLocked = false) {
             chip.fragRef = frag;
             DOM.targetZone.appendChild(chip);
         });
+        renderTargetZoneSlots(challenge.target_sequence.length);
         return;
     }
 
@@ -605,7 +764,7 @@ function buildFragmentPool(challenge, isLocked = false) {
         chip.innerHTML = formatMarkup(frag.text);
         chip.fragRef = frag;
 
-        chip.addEventListener('click', () => toggleChipPlacement(chip));
+        chip.addEventListener('click', () => toggleChipPlacement(chip, challenge.target_sequence.length));
         chip.draggable = true;
         chip.addEventListener('dragstart', handleDragStart);
         chip.addEventListener('dragend', handleDragEnd);
@@ -613,10 +772,41 @@ function buildFragmentPool(challenge, isLocked = false) {
         DOM.fragmentBank.appendChild(chip);
     });
 
+    renderTargetZoneSlots(challenge.target_sequence.length);
     DOM.targetZone.addEventListener('dragover', handleDragOverZone);
 }
 
-function toggleChipPlacement(chip) {
+function renderTargetZoneSlots(targetCount) {
+    if (!DOM.targetZone) return;
+
+    // Remove existing placeholder slots
+    const existingSlots = DOM.targetZone.querySelectorAll('.slot-placeholder');
+    existingSlots.forEach(s => s.remove());
+
+    const placedChips = DOM.targetZone.querySelectorAll('.fragment-chip');
+    const remainingSlots = targetCount - placedChips.length;
+
+    for (let i = 0; i < remainingSlots; i++) {
+        const slot = document.createElement('div');
+        slot.className = 'slot-placeholder';
+        slot.style.cssText = `
+            border: 1.5px dashed #93c5fd;
+            border-radius: 8px;
+            padding: 8px 14px;
+            font-size: 13px;
+            color: #93c5fd;
+            font-weight: 600;
+            background: #f0f7ff;
+            user-select: none;
+            display: inline-flex;
+            align-items: center;
+        `;
+        slot.innerText = `[ Slot ${placedChips.length + i + 1} ]`;
+        DOM.targetZone.appendChild(slot);
+    }
+}
+
+function toggleChipPlacement(chip, targetCount) {
     if (DOM.targetZone.classList.contains('success-locked')) return;
 
     AppState.unitProgress[AppState.currentUnitIndex].attempted = true;
@@ -627,7 +817,7 @@ function toggleChipPlacement(chip) {
     } else {
         DOM.fragmentBank.appendChild(chip);
     }
-    syncAssemblyFromDOM();
+    syncAssemblyFromDOM(targetCount);
 }
 
 function handleDragStart(e) {
@@ -642,7 +832,9 @@ function handleDragStart(e) {
 function handleDragEnd() {
     this.classList.remove('dragging');
     activeDraggedItem = null;
-    syncAssemblyFromDOM();
+    const unit = AppState.units[AppState.currentUnitIndex];
+    const challenge = unit.challenges[AppState.currentLang] || unit.challenges.en;
+    syncAssemblyFromDOM(challenge.target_sequence.length);
 }
 
 function handleDragOverZone(e) {
@@ -670,18 +862,20 @@ function getDropTargetElement(container, x, y) {
     }, { offset: Number.NEGATIVE_INFINITY }).element;
 }
 
-function syncAssemblyFromDOM() {
+function syncAssemblyFromDOM(targetCount) {
     const chips = DOM.targetZone.querySelectorAll('.fragment-chip');
     AppState.assembly = Array.from(chips).map(c => c.fragRef);
+
     if (DOM.btnSubmit) {
         DOM.btnSubmit.disabled = (AppState.assembly.length === 0);
     }
+
+    renderTargetZoneSlots(targetCount || AppState.assembly.length);
 }
 
 // ==========================================
-// 7. VERIFICATION & FEEDBACK
+// 8. VERIFICATION & FEEDBACK
 // ==========================================
-
 function verifyAssembly() {
     const unit = AppState.units[AppState.currentUnitIndex];
     const lang = AppState.currentLang;
@@ -695,6 +889,7 @@ function verifyAssembly() {
     if (distractorHit) {
         renderFeedback(`❌ ${formatMarkup(distractorHit.penalty_explanation)}`, '#ef4444', '#fef2f2');
         updateUnitGridStatus();
+        saveSessionProgress();
         return;
     }
 
@@ -703,6 +898,7 @@ function verifyAssembly() {
         const hintMsg = nextTarget.role_hint?.[lang] || nextTarget.role_hint?.en || nextTarget.role_hint;
         renderFeedback(`💡 <strong>Next Step Hint:</strong> ${formatMarkup(hintMsg)}`, '#0284c7', '#f0f9ff');
         updateUnitGridStatus();
+        saveSessionProgress();
         return;
     }
 
@@ -717,7 +913,7 @@ function verifyAssembly() {
     if (correct) {
         const takeaway = unit.key_takeaway?.[lang] || unit.key_takeaway?.en || "Great work!";
         renderFeedback(`✅ <strong>Mastered!</strong><br><br>${formatMarkup(takeaway)}`, '#15803d', '#f0fdf4');
-        
+
         DOM.targetZone.classList.add('success-locked');
         DOM.btnSubmit.disabled = true;
         DOM.nextBtn.disabled = false;
@@ -734,9 +930,11 @@ function verifyAssembly() {
 
         if (DOM.masteryScore) DOM.masteryScore.innerText = AppState.score;
         updateUnitGridStatus();
+        saveSessionProgress();
     } else {
         renderFeedback(`❌ Incorrect arrangement. Reorder the fragments and verify again.`, '#ef4444', '#fef2f2');
         updateUnitGridStatus();
+        saveSessionProgress();
     }
 }
 
@@ -770,9 +968,8 @@ function handlePrevUnit() {
 }
 
 // ==========================================
-// 8. MODULE COMPLETION & SYNC
+// 9. MODULE COMPLETION & SCORE TRANSMISSION
 // ==========================================
-
 function finishModule() {
     stopTimer();
     switchScreen('results');
@@ -788,6 +985,7 @@ function finishModule() {
     if (DOM.percentage) DOM.percentage.innerText = `${percentage}%`;
     if (DOM.totalTime) DOM.totalTime.innerText = timeFormatted;
 
+    // Zero-Touch 9-Column Score Payload matching original Sheet1 schema
     const scorePayload = {
         action: 'submit',
         studentName: AppState.studentName,
@@ -801,6 +999,7 @@ function finishModule() {
     };
 
     transmitScore(scorePayload);
+    localStorage.removeItem('learnApp_activeSession'); // Clear active session on module completion
 }
 
 async function transmitScore(payload) {
@@ -838,13 +1037,12 @@ async function syncOfflineScores() {
 }
 
 // ==========================================
-// 9. LEADERBOARD SYSTEM
+// 10. LEADERBOARD SYSTEM
 // ==========================================
-
 async function fetchScoreboard() {
     if (!DOM.scoreboardBody) return;
     DOM.scoreboardBody.innerHTML = '<tr><td colspan="9" style="padding:40px; text-align:center;">Syncing...</td></tr>';
-    
+
     try {
         const r = await fetch(`${AppConfig.gasEndpoint}?action=get&t=${Date.now()}`);
         AppState.scoreboardData = await r.json();
@@ -857,7 +1055,7 @@ async function fetchScoreboard() {
 
 function cleanEfficiency(s) {
     let raw = String(s || '').replace('⏱️', '').replace("'", "").trim();
-    if (raw.includes('T')) raw = raw.split('T')[1].split('.')[0];
+    if (raw.includes('T')) raw = raw.split('T')[1].split('.');
     if (raw.startsWith('00:')) raw = raw.substring(3);
     return raw || '0:00';
 }
@@ -869,7 +1067,7 @@ function sortScoreboard(key) {
         AppState.sortConfig.key = key;
         AppState.sortConfig.asc = (key === 'student' || key === 'class');
     }
-    
+
     const headers = document.querySelectorAll('#leaderboardHeaders th');
     headers.forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
     const active = document.querySelector(`#leaderboardHeaders th[data-sort="${key}"]`);
@@ -879,25 +1077,25 @@ function sortScoreboard(key) {
     data.sort((a, b) => {
         let vA, vB;
         switch (key) {
-            case 'rank': 
-            case 'score': 
-                vA = parseFloat(String(a[7] || '').split('/')[0]) || 0; 
-                vB = parseFloat(String(b[7] || '').split('/')[0]) || 0; 
+            case 'rank':
+            case 'score':
+                vA = parseFloat(String(a[3] || '').split('/')) || 0;
+                vB = parseFloat(String(b[3] || '').split('/')) || 0;
                 break;
-            case 'date': 
-                vA = new Date(a[0]); 
-                vB = new Date(b[0]); 
+            case 'date':
+                vA = new Date(a);
+                vB = new Date(b);
                 break;
             case 'student': vA = String(a[1]).toLowerCase(); vB = String(b[1]).toLowerCase(); break;
-            case 'class': vA = String(a[3]).toLowerCase(); vB = String(b[3]).toLowerCase(); break;
-            case 'subject': vA = String(a[4]).toLowerCase(); vB = String(b[4]).toLowerCase(); break;
-            case 'chapter': vA = String(a[5]).toLowerCase(); vB = String(b[5]).toLowerCase(); break;
-            case 'mode': vA = String(a[6]).toLowerCase(); vB = String(b[6]).toLowerCase(); break;
-            case 'efficiency': 
+            case 'class': vA = String(a[4]).toLowerCase(); vB = String(b[4]).toLowerCase(); break;
+            case 'subject': vA = String(a[5]).toLowerCase(); vB = String(b[5]).toLowerCase(); break;
+            case 'chapter': vA = String(a[6]).toLowerCase(); vB = String(b[6]).toLowerCase(); break;
+            case 'mode': vA = String(a[7]).toLowerCase(); vB = String(b[7]).toLowerCase(); break;
+            case 'efficiency':
                 const toSecs = (s) => {
                     const clean = cleanEfficiency(s);
                     const p = clean.split(':').map(Number);
-                    return p.length === 3 ? p[0]*3600 + p[1]*60 + p[2] : (p.length === 2 ? p[0]*60 + p[1] : parseFloat(clean) || 0);
+                    return p.length === 3 ? p * 3600 + p[1] * 60 + p[2] : (p.length === 2 ? p * 60 + p[1] : parseFloat(clean) || 0);
                 };
                 vA = toSecs(a[8]); vB = toSecs(b[8]); break;
             default: vA = 0; vB = 0;
@@ -909,14 +1107,14 @@ function sortScoreboard(key) {
 
     DOM.scoreboardBody.innerHTML = data.slice(0, 50).map((r, i) => `
         <tr>
-            <td style="padding:15px; font-weight:bold;">${i+1}</td>
-            <td style="padding:15px; font-size:11px;">${r[0] ? new Date(r[0]).toLocaleDateString('en-IN', {day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit'}) : '-'}</td>
+            <td style="padding:15px; font-weight:bold;">${i + 1}</td>
+            <td style="padding:15px; font-size:11px;">${r ? new Date(r).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' }) : '-'}</td>
             <td style="padding:15px;"><strong>${r[1]}</strong><br><small style="color:#64748b;">${r[2]}</small></td>
-            <td style="padding:15px; font-size:12px;">${r[3]}</td>
             <td style="padding:15px; font-size:12px;">${r[4]}</td>
             <td style="padding:15px; font-size:12px;">${r[5]}</td>
-            <td style="padding:15px;"><span style="background:#eff6ff; color:#1d4ed8; padding:3px 8px; border-radius:4px; font-size:11px; font-weight:600;">${r[6]}</span></td>
-            <td style="padding:15px; font-weight:800; color:#2563eb;">${r[7]}</td>
+            <td style="padding:15px; font-size:12px;">${r[6]}</td>
+            <td style="padding:15px;"><span style="background:#eff6ff; color:#1d4ed8; padding:3px 8px; border-radius:4px; font-size:11px; font-weight:600;">${r[7]}</span></td>
+            <td style="padding:15px; font-weight:800; color:#2563eb;">${r[3]}</td>
             <td style="padding:15px; font-size:12px;">⏱️ ${cleanEfficiency(r[8])}</td>
         </tr>
     `).join('');
