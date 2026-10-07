@@ -33,7 +33,7 @@
             <header class="app-masthead">
                 <div class="masthead-badge">CBSE / NCERT Interactive Workbench</div>
                 <h1 class="masthead-title">LearnApp</h1>
-                <p class="masthead-subtitle">Master syntax, logical architectures, and algorithms through side-by-side bilingual sequencing.</p>
+                <p class="masthead-subtitle">Master syntax, logical architectures, and algorithms through bilingual interactive sequencing.</p>
             </header>
 
             <div id="errorMessage" class="system-banner error-banner" style="display:none;"></div>
@@ -88,7 +88,7 @@
         </main>
 
         <!-- ======================================================== -->
-        <!-- SCREEN 2: DUAL-COLUMN INTERACTIVE WORKBENCH SCREEN       -->
+        <!-- SCREEN 2: DUAL-COLUMN BILINGUAL WORKBENCH SCREEN        -->
         <!-- ======================================================== -->
         <main id="quizScreen" class="screen-view">
             <!-- Global Top Navigation Bar -->
@@ -127,93 +127,86 @@
             <!-- 54px Vertical Progression Rail & Workbench Layout -->
             <div class="workbench-layout">
                 <aside class="progression-sidebar">
-                    <div class="sidebar-header">Units</div>
+                    <div class="sidebar-header">Module Units</div>
                     <div id="unitGrid" class="unit-progress-column"></div>
                 </aside>
 
                 <section class="workbench-main">
-                    <!-- Global Unit Pedagogical Theory Viewport -->
+                    <!-- Unit Pedagogical Theory Viewport (Side-by-Side Dual Column) -->
                     <article class="pedagogy-viewport">
-                        <h2 id="lesson-title" class="unit-title" style="margin-bottom: 20px; text-align: center;">Lesson Title</h2>
+                        <div class="pedagogy-header">
+                            <h2 id="lesson-title" class="unit-title">Lesson Title</h2>
+                            <div class="bilingual-mode-badge">BILINGUAL DUAL-TRACK (20 PTS)</div>
+                        </div>
 
                         <!-- Anti-Collision SVG Canvas Viewport -->
                         <div id="media-container" class="media-viewport" style="display:none;"></div>
                         <div id="media-caption" class="media-caption-text"></div>
 
-                        <!-- Side-by-Side Theory Grid -->
-                        <div class="theory-grid">
-                            <div class="theory-col">
-                                <span class="lang-badge">ENGLISH</span>
-                                <div id="lesson-theory-en" class="theory-body"></div>
+                        <!-- Side-by-Side Theory Columns -->
+                        <div class="dual-column-grid theory-grid">
+                            <div class="column-panel en-panel">
+                                <div class="panel-tag">ENGLISH THEORY</div>
+                                <div id="lessonTheoryEn" class="theory-body"></div>
                             </div>
-                            <div class="theory-col">
-                                <span class="lang-badge">हिंदी</span>
-                                <div id="lesson-theory-hi" class="theory-body"></div>
+                            <div class="column-panel hi-panel">
+                                <div class="panel-tag">हिंदी सिद्धांत</div>
+                                <div id="lessonTheoryHi" class="theory-body"></div>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Side-by-Side Interactive Canvas Grid -->
-                    <section class="bilingual-workspace">
-                        
-                        <!-- LEFT COLUMN: ENGLISH -->
-                        <div class="interactive-col" id="col-en">
-                            <div class="challenge-directive">
+                    <!-- Interactive Construction Canvas (Side-by-Side Dual Column) -->
+                    <section class="interactive-canvas">
+                        <div class="dual-column-grid prompt-grid">
+                            <div class="challenge-directive en-directive">
                                 <span class="directive-badge">ENGLISH CHALLENGE</span>
-                                <div id="challenge-prompt-en" class="directive-text"></div>
+                                <div id="challengePromptEn" class="directive-text"></div>
                             </div>
-                            
-                            <div class="construction-zone">
-                                <div class="zone-label">Target Sequence</div>
-                                <div id="target-zone-en" class="drop-target-area" data-lang="en"></div>
-                            </div>
-
-                            <div class="fragment-bank-container">
-                                <div class="zone-label">Fragment Bank</div>
-                                <div id="fragment-bank-en" class="fragment-chip-pool" data-lang="en"></div>
-                            </div>
-
-                            <div id="feedback-banner-en" class="feedback-notification" style="display:none;"></div>
-
-                            <div class="col-footer">
-                                <button type="button" id="btn-hint-en" class="btn btn-secondary btn-sm">💡 Hint</button>
-                                <button type="button" id="btn-submit-en" class="btn btn-primary btn-sm">Verify English (10 pts)</button>
+                            <div class="challenge-directive hi-directive">
+                                <span class="directive-badge">हिंदी चुनौती</span>
+                                <div id="challengePromptHi" class="directive-text"></div>
                             </div>
                         </div>
 
-                        <!-- RIGHT COLUMN: HINDI -->
-                        <div class="interactive-col" id="col-hi">
-                            <div class="challenge-directive">
-                                <span class="directive-badge">हिंदी चुनौती (HINDI)</span>
-                                <div id="challenge-prompt-hi" class="directive-text"></div>
-                            </div>
-                            
-                            <div class="construction-zone">
-                                <div class="zone-label">लक्ष्य क्रम (Target Sequence)</div>
-                                <div id="target-zone-hi" class="drop-target-area" data-lang="hi"></div>
-                            </div>
-
-                            <div class="fragment-bank-container">
-                                <div class="zone-label">टुकड़े (Fragment Bank)</div>
-                                <div id="fragment-bank-hi" class="fragment-chip-pool" data-lang="hi"></div>
+                        <!-- Dual Assembly Columns -->
+                        <div class="dual-column-grid workbench-grid">
+                            <!-- Left: English Interactive Workbench -->
+                            <div class="column-workbench en-workbench">
+                                <div class="zone-label-group">
+                                    <span class="zone-label">English Target Sequence</span>
+                                    <span id="enStatusPill" class="track-pill">Incomplete</span>
+                                </div>
+                                <div id="targetZoneEn" class="drop-target-area"></div>
+                                <div class="zone-label">Available Tokens (English)</div>
+                                <div id="fragmentBankEn" class="fragment-chip-pool"></div>
+                                <div id="feedbackEn" class="track-feedback" style="display:none;"></div>
                             </div>
 
-                            <div id="feedback-banner-hi" class="feedback-notification" style="display:none;"></div>
-
-                            <div class="col-footer">
-                                <button type="button" id="btn-hint-hi" class="btn btn-secondary btn-sm">💡 Hint</button>
-                                <button type="button" id="btn-submit-hi" class="btn btn-primary btn-sm">Verify Hindi (10 pts)</button>
+                            <!-- Right: Hindi Interactive Workbench -->
+                            <div class="column-workbench hi-workbench">
+                                <div class="zone-label-group">
+                                    <span class="zone-label">हिंदी लक्ष्य क्रम</span>
+                                    <span id="hiStatusPill" class="track-pill">अपूर्ण</span>
+                                </div>
+                                <div id="targetZoneHi" class="drop-target-area"></div>
+                                <div class="zone-label">उपलब्ध टोकन (हिंदी)</div>
+                                <div id="fragmentBankHi" class="fragment-chip-pool"></div>
+                                <div id="feedbackHi" class="track-feedback" style="display:none;"></div>
                             </div>
                         </div>
 
+                        <!-- Unified Module Feedback Banner -->
+                        <div id="feedback-banner" class="feedback-notification" style="display:none;"></div>
+
+                        <!-- Navigation & Unified Control Bar -->
+                        <footer class="workbench-footer">
+                            <button type="button" id="prevBtn" class="btn btn-outline" disabled>← Previous</button>
+                            <button type="button" id="hintBtn" class="btn btn-secondary">💡 Step Hint</button>
+                            <button type="button" id="btn-submit" class="btn btn-primary" disabled>Verify Assembly (Both Tracks)</button>
+                            <button type="button" id="nextBtn" class="btn btn-success" disabled>Next Unit →</button>
+                        </footer>
                     </section>
-
-                    <!-- Global Navigation Bar -->
-                    <footer class="workbench-global-footer">
-                        <button type="button" id="prevBtn" class="btn btn-outline" disabled>← Previous Unit</button>
-                        <div class="footer-status-text">Complete both sides to unlock Next Unit.</div>
-                        <button type="button" id="nextBtn" class="btn btn-success" disabled>Next Unit →</button>
-                    </footer>
                 </section>
             </div>
         </main>
