@@ -1,7 +1,7 @@
 /**
- * Learn-App Core Logic (app.js)
- * Fully Aligned with index.html DOM IDs & Google Apps Script Backend
- * Dynamic Scanning: Scans all classes, subjects, and topics from GitHub Tree API
+ * LearnApp Core Controller (app.js)
+ * Fully Aligned with Student Authentication (Sheet2), Real-Time GitHub Tree
+ * Discovery, Interactive Sequencing, KaTeX, and Cloud Telemetry.
  */
 
 const AppConfig = {
@@ -23,8 +23,15 @@ const AppState = {
     score: 0,
     maxScore: 0,
     unitProgress: {}, 
-    studentName: '',
-    schoolName: '',
+    
+    // Authenticated Student State (Loaded from Sheet2)
+    studentAuth: {
+        isVerified: false,
+        studentId: '',
+        studentName: '',
+        schoolName: ''
+    },
+
     timerSeconds: 0,
     timerInterval: null,
     scoreboardData: [],
@@ -42,8 +49,13 @@ const DOM = {
     spinner: document.getElementById('loadingSpinner'),
     errorMessage: document.getElementById('errorMessage'),
 
-    studentName: document.getElementById('studentName'),
-    schoolName: document.getElementById('schoolName'),
+    // Authentication Elements
+    studentIdInput: document.getElementById('studentIdInput'),
+    verifyStudentBtn: document.getElementById('verifyStudentBtn'),
+    authStatusBadge: document.getElementById('authStatusBadge'),
+    authStatusText: document.getElementById('authStatusText'),
+
+    // Curriculum Selection Elements
     classSelect: document.getElementById('classSelect'),
     subjectGroup: document.getElementById('subjectGroup'),
     subjectSelect: document.getElementById('subjectSelect'),
@@ -52,6 +64,7 @@ const DOM = {
     startQuiz: document.getElementById('startQuiz'),
     viewScoreboardBtn: document.getElementById('viewScoreboardBtn'),
 
+    // Workbench Elements
     topHomeBtn: document.getElementById('topHomeBtn'),
     topQuitBtn: document.getElementById('topQuitBtn'),
     chapterTitle: document.getElementById('chapterTitle'),
@@ -78,6 +91,7 @@ const DOM = {
     btnSubmit: document.getElementById('btn-submit'),
     nextBtn: document.getElementById('nextBtn'),
 
+    // Results Dashboard Elements
     finalScore: document.getElementById('finalScore'),
     totalPossible: document.getElementById('totalPossible'),
     percentage: document.getElementById('percentage'),
@@ -86,6 +100,7 @@ const DOM = {
     viewScoreboardFromResults: document.getElementById('viewScoreboardFromResults'),
     homeBtn: document.getElementById('homeBtn'),
 
+    // Scoreboard Elements
     backFromScoreboard: document.getElementById('backFromScoreboard'),
     leaderboardHeaders: document.getElementById('leaderboardHeaders'),
     scoreboardBody: document.getElementById('scoreboardBody')
@@ -102,6 +117,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function bindGlobalEvents() {
+    // Student Authentication Listeners
+    DOM.verifyStudentBtn?.addEventListener('click', handleStudentVerification);
+    DOM.studentIdInput?.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') handleStudentVerification();
+    });
+
+    // Navigation & Screen Switches
     DOM.topHomeBtn?.addEventListener('click', resetToMainMenu);
     DOM.homeBtn?.addEventListener('click', resetToMainMenu);
     DOM.topQuitBtn?.addEventListener('click', finishModule);
@@ -123,13 +145,16 @@ function bindGlobalEvents() {
         });
     }
 
+    // Curriculum Selection Cascades
     DOM.classSelect?.addEventListener('change', handleClassChange);
     DOM.subjectSelect?.addEventListener('change', handleSubjectChange);
     DOM.startQuiz?.addEventListener('click', handleStartQuiz);
 
+    // Bilingual Toggles
     DOM.btnEn?.addEventListener('click', () => setLanguage('en'));
     DOM.btnHi?.addEventListener('click', () => setLanguage('hi'));
 
+    // Workbench Interaction
     DOM.btnSubmit?.addEventListener('click', verifyAssembly);
     DOM.nextBtn?.addEventListener('click', handleNextUnit);
     DOM.prevBtn?.addEventListener('click', handlePrevUnit);
@@ -164,7 +189,54 @@ function toggleSpinner(show) {
 }
 
 // ==========================================
-// 2. DYNAMIC GITHUB TREE SCANNER
+// 2. STUDENT VERIFICATION SYSTEM (SHEET2)
+// ==========================================
+
+async function handleStudentVerification() {
+    const rawId = DOM.studentIdInput?.value.trim().toUpperCase();
+    if (!rawId) {
+        setAuthBadgeState('error', 'Please enter a valid Student ID.');
+        return;
+    }
+
+    toggleSpinner(true);
+    setAuthBadgeState('unverified', 'Verifying ID against student database...');
+
+    try {
+        const url = `${AppConfig.gasEndpoint}?action=verifyStudent&studentId=${encodeURIComponent(rawId)}`;
+        const res = await fetch(url);
+        const data = await res.json();
+
+        if (data.success && data.found) {
+            AppState.studentAuth.isVerified = true;
+            AppState.studentAuth.studentId = data.studentId;
+            AppState.studentAuth.studentName = data.studentName;
+            AppState.studentAuth.schoolName = data.schoolName;
+
+            setAuthBadgeState('verified', `Verified: ${data.studentName} (${data.schoolName})`);
+        } else {
+            AppState.studentAuth.isVerified = false;
+            setAuthBadgeState('error', data.message || 'Student ID not recognized in database.');
+        }
+    } catch (err) {
+        console.error("Auth Error:", err);
+        AppState.studentAuth.isVerified = false;
+        setAuthBadgeState('error', 'Server unreachable. Verification failed.');
+    } finally {
+        toggleSpinner(false);
+        validateStartReady();
+    }
+}
+
+function setAuthBadgeState(state, message) {
+    if (!DOM.authStatusBadge || !DOM.authStatusText) return;
+
+    DOM.authStatusBadge.className = `auth-status-badge ${state}`;
+    DOM.authStatusText.innerText = message;
+}
+
+// ==========================================
+// 3. DYNAMIC GITHUB TREE SCANNER
 // ==========================================
 
 async function scanRepositoryTree() {
@@ -176,9 +248,7 @@ async function scanRepositoryTree() {
         const url = `https://api.github.com/repos/${AppConfig.githubRepo}/git/trees/${AppConfig.branch}?recursive=1`;
         const res = await fetch(url);
         
-        if (!res.ok) {
-            throw new Error(`GitHub API Error ${res.status}:${res.statusText}`);
-        }
+        if (!res.ok) throw new Error(`GitHub API Error ${res.status}:${res.statusText}`);
         
         const data = await res.json();
         const catalog = {};
@@ -187,7 +257,7 @@ async function scanRepositoryTree() {
             if (node.type === 'blob' && node.path.startsWith('jsons/') && node.path.toLowerCase().endsWith('.json')) {
                 const segments = node.path.split('/');
                 
-                // Matches paths: jsons / [Class] / [Subject] / [File.json]
+                // Matches structure: jsons / [Class] / [Subject] / [File.json]
                 if (segments.length >= 4) {
                     const cls = cleanTitleFormat(segments[1]);
                     const subj = cleanTitleFormat(segments[2]);
@@ -233,7 +303,7 @@ function populateClassDropdown() {
 
     if (DOM.subjectGroup) DOM.subjectGroup.style.display = 'none';
     if (DOM.lessonGroup) DOM.lessonGroup.style.display = 'none';
-    if (DOM.startQuiz) DOM.startQuiz.disabled = true;
+    validateStartReady();
 }
 
 function handleClassChange() {
@@ -295,25 +365,19 @@ function handleSubjectChange() {
 }
 
 function validateStartReady() {
-    const nameValid = DOM.studentName?.value.trim().length > 0;
-    const schoolValid = DOM.schoolName?.value.trim().length > 0;
-    const pathValid = AppState.selectedQuizPath && AppState.selectedQuizPath.length > 0;
+    const isAuth = AppState.studentAuth.isVerified;
+    const isPathValid = AppState.selectedQuizPath && AppState.selectedQuizPath.length > 0;
+    
     if (DOM.startQuiz) {
-        DOM.startQuiz.disabled = !(nameValid && schoolValid && pathValid);
+        DOM.startQuiz.disabled = !(isAuth && isPathValid);
     }
 }
 
-DOM.studentName?.addEventListener('input', validateStartReady);
-DOM.schoolName?.addEventListener('input', validateStartReady);
-
 // ==========================================
-// 3. QUIZ INITIALIZATION & PARSING
+// 4. QUIZ INITIALIZATION & PARSING
 // ==========================================
 
 async function handleStartQuiz() {
-    AppState.studentName = DOM.studentName.value.trim();
-    AppState.schoolName = DOM.schoolName.value.trim();
-
     toggleSpinner(true);
     try {
         const url = `https://api.github.com/repos/${AppConfig.githubRepo}/contents/${AppState.selectedQuizPath}?ref=${AppConfig.branch}`;
@@ -327,7 +391,7 @@ async function handleStartQuiz() {
         setupQuizFromData(parsed);
     } catch (err) {
         console.error("Quiz Fetch Error:", err);
-        alert("Failed to load the selected chapter JSON. Please check file formatting.");
+        alert("Failed to load chapter JSON. Verify JSON syntax and integrity.");
     } finally {
         toggleSpinner(false);
     }
@@ -345,6 +409,7 @@ function setupQuizFromData(data) {
         return;
     }
 
+    // Dynamic max score based on units length
     const masteryPerUnit = data.metadata?.scoring_model?.dual_language_mastery_max || 20;
     AppState.maxScore = AppState.units.length * masteryPerUnit;
     AppState.chapterTitleString = data.metadata?.chapter_title?.en || "Learning Module";
@@ -361,7 +426,7 @@ function setupQuizFromData(data) {
     if (DOM.chapterTitle) {
         DOM.chapterTitle.innerText = data.metadata?.chapter_title?.[AppState.currentLang] || data.metadata?.chapter_title?.en || "Learning Module";
     }
-    if (DOM.displayStudentName) DOM.displayStudentName.innerText = `👤 ${AppState.studentName}`;
+    if (DOM.displayStudentName) DOM.displayStudentName.innerText = `👤 ${AppState.studentAuth.studentName}`;
     if (DOM.displaySchoolInfo) DOM.displaySchoolInfo.innerText = `${AppState.selectedClass} •${AppState.selectedSubject}`;
     if (DOM.totalUnitsNum) DOM.totalUnitsNum.innerText = AppState.units.length;
     if (DOM.maxScore) DOM.maxScore.innerText = AppState.maxScore;
@@ -389,7 +454,7 @@ function restartCurrentModule() {
 }
 
 // ==========================================
-// 4. TIMER & QUESTION GRID (WITH MARKS)
+// 5. TIMER & QUESTION GRID (WITH MARKS)
 // ==========================================
 
 function startTimer() {
@@ -471,7 +536,7 @@ function updateLanguageButtonsStatus() {
 }
 
 // ==========================================
-// 5. RENDERING, KA-TEX & FORMATTING
+// 6. RENDERING, KA-TEX & FORMATTING
 // ==========================================
 
 function formatMarkup(str) {
@@ -564,7 +629,7 @@ function renderCurrentUnit() {
 }
 
 // ==========================================
-// 6. DRAG AND DROP & SELECTION SYSTEM
+// 7. DRAG AND DROP & SELECTION SYSTEM
 // ==========================================
 
 let activeDraggedItem = null;
@@ -679,7 +744,7 @@ function syncAssemblyFromDOM() {
 }
 
 // ==========================================
-// 7. VERIFICATION & FEEDBACK
+// 8. VERIFICATION & FEEDBACK
 // ==========================================
 
 function verifyAssembly() {
@@ -770,7 +835,7 @@ function handlePrevUnit() {
 }
 
 // ==========================================
-// 8. MODULE COMPLETION & SYNC
+// 9. MODULE COMPLETION & SYNC (AUTHENTICATED)
 // ==========================================
 
 function finishModule() {
@@ -788,10 +853,11 @@ function finishModule() {
     if (DOM.percentage) DOM.percentage.innerText = `${percentage}%`;
     if (DOM.totalTime) DOM.totalTime.innerText = timeFormatted;
 
+    // Transmits verified Student Name & School from Sheet2
     const scorePayload = {
         action: 'submit',
-        studentName: AppState.studentName,
-        schoolName: AppState.schoolName,
+        studentName: AppState.studentAuth.studentName,
+        schoolName: AppState.studentAuth.schoolName,
         class: AppState.selectedClass,
         subject: AppState.selectedSubject,
         lesson: AppState.chapterTitleString,
@@ -838,7 +904,7 @@ async function syncOfflineScores() {
 }
 
 // ==========================================
-// 9. LEADERBOARD SYSTEM
+// 10. LEADERBOARD SYSTEM
 // ==========================================
 
 async function fetchScoreboard() {
