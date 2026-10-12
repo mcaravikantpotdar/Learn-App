@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 5: RDBMS Concepts & MySQL - Part 3",
+      "hi": "यूनिट 5: RDBMS अवधारणाएं और MySQL - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Data Definition Language and Table Creation Architecture",
+          "hi": "डेटा डेफिनिशन लैंग्वेज और टेबल निर्माण संरचना"
+        },
+        "theory": {
+          "en": "Data Definition Language (DDL) commands define, alter, and manage database structures without directly operating on individual rows of data[cite: 24]. The CREATE TABLE command allocates dedicated structural definitions in database memory by specifying table identifiers, column names, datatypes, sizes, and integrity constraints[cite: 24]. In our School Schema, executing CREATE TABLE initializes empty relational structures for STUDENT, TEACHER, SUBJECT, and MARKS before any data tuples are added[cite: 24].",
+          "hi": "डेटा डेफिनिशन लैंग्वेज (DDL) कमांड डेटा की व्यक्तिगत पंक्तियों पर काम किए बिना डेटाबेस संरचनाओं को परिभाषित, परिवर्तित और प्रबंधित करते हैं[cite: 24]। CREATE TABLE कमांड टेबल का नाम, कॉलम, डेटा प्रकार, आकार और अखंडता प्रतिबंध निर्दिष्ट करके डेटाबेस मेमोरी में संरचनात्मक परिभाषाएं बनाता है[cite: 24]। हमारे स्कूल स्कीमा में, CREATE TABLE कमांड किसी भी डेटा को जोड़ने से पहले STUDENT, TEACHER, SUBJECT और MARKS के लिए खाली रिलेशनल संरचनाओं को आरंभ करता है[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">CREATE TABLE Structural Allocation Lifecycle</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">BEFORE Execution</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">No Tables in Memory</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">AFTER Execution</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">4 Relational Schemas Initialized</text><line x1=\"280\" y1=\"102\" x2=\"320\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"320,102 312,98 312,106\" fill=\"#38bdf8\"/><line x1=\"162\" y1=\"130\" x2=\"162\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"437\" y1=\"130\" x2=\"437\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"162\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"162\" dy=\"0\">Empty Catalog</tspan><tspan x=\"162\" dy=\"1.2em\">Zero Definitions</tspan></text><text x=\"437\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"437\" dy=\"0\">STUDENT | TEACHER</tspan><tspan x=\"437\" dy=\"1.2em\">SUBJECT | MARKS</tspan></text></svg>",
+          "caption": {
+            "en": "Schema state transition showing database initialization transforming an empty catalog into four structured relational table objects.",
+            "hi": "स्कीमा स्थिति रूपांतरण जो एक खाली कैटलॉग को चार संरचित रिलेशनल टेबल ऑब्जेक्ट्स में बदलने की प्रक्रिया को दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the CREATE TABLE command establishes database structures.",
+          "hint": "Start with Data Definition Language statements structuring memory architecture, mention preparing relational tables for record management, explain allocating column types and key constraints via CREATE TABLE, and conclude with initializing schema blueprints without inserting raw data.",
+          "target_sequence": [
+            {
+              "id": "en_u11_t1",
+              "text": "Data Definition Language commands establish the foundational database architecture",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u11_t2",
+              "text": "before any operational records are inserted into physical storage",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u11_t3",
+              "text": "and by allocating column specifications, datatypes, and integrity rules using `CREATE TABLE`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u11_t4",
+              "text": "they initialize empty relational schemas ready to receive and validate incoming data tuples",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "logical",
+              "text": "they permanently insert thousands of unverified student records into unformatted text files",
+              "penalty_explanation": "CREATE TABLE builds structural schemas; it does not insert records into unformatted text files."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "CREATE TABLE कमांड द्वारा डेटाबेस संरचना स्थापित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "डेटा डेफिनिशन लैंग्वेज कमांड बुनियादी आर्किटेक्चर स्थापित करते हैं से शुरू करें, भौतिक स्टोरेज में रिकॉर्ड जोड़ने से पहले का संदर्भ दें, `CREATE TABLE` द्वारा कॉलम और प्रतिबंध आवंटित करने का तरीका बताएं, और स्कीमा तैयार करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u11_t1",
+              "text": "डेटा डेफिनिशन लैंग्वेज कमांड बुनियादी डेटाबेस आर्किटेक्चर स्थापित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u11_t2",
+              "text": "भौतिक स्टोरेज में किसी भी परिचालन रिकॉर्ड को प्रविष्ट करने से पहले",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u11_t3",
+              "text": "और `CREATE TABLE` द्वारा कॉलम विनिर्देशों, डेटा प्रकारों तथा अखंडता नियमों को आवंटित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u11_t4",
+              "text": "ये आने वाले टुपल्स को प्राप्त और मान्य करने के लिए खाली रिलेशनल स्कीमा तैयार करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "logical",
+              "text": "ये असंरचित टेक्स्ट फाइलों में हजारों असत्यापित छात्र रिकॉर्ड्स को स्थायी रूप से जोड़ते हैं",
+              "penalty_explanation": "CREATE TABLE स्कीमा संरचना बनाता है, यह असंरचित फाइलों में डेटा रिकॉर्ड्स नहीं जोड़ता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "CREATE TABLE is a DDL command that establishes empty relational structures, defining column names, datatypes, and constraints in the schema[cite: 24].",
+        "hi": "CREATE TABLE एक DDL कमांड है जो स्कीमा में कॉलम नाम, डेटा प्रकार और प्रतिबंधों को परिभाषित करके खाली रिलेशनल संरचनाएं बनाता है[cite: 24]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Schema Evolution: Adding Columns with ALTER TABLE ADD",
+          "hi": "स्कीमा विकास: ALTER TABLE ADD द्वारा नए कॉलम जोड़ना"
+        },
+        "theory": {
+          "en": "The ALTER TABLE command modifies the structural schema of an existing table without deleting its existing records[cite: 24]. The ADD clause appends a brand new column along with its specified datatype and constraints to an established table[cite: 24]. For example, running ALTER TABLE STUDENT ADD Email VARCHAR(40); expands the STUDENT table schema from five columns to six, automatically assigning default NULL entries to the new Email attribute for all preexisting rows[cite: 24].",
+          "hi": "ALTER TABLE कमांड मौजूदा रिकॉर्ड्स को हटाए बिना टेबल की संरचनात्मक स्कीमा में संशोधन करता है[cite: 24]। ADD क्लॉज किसी स्थापित टेबल में उसके निर्दिष्ट डेटा प्रकार और प्रतिबंधों के साथ एक नया कॉलम जोड़ता है[cite: 24]। उदाहरण के लिए, ALTER TABLE STUDENT ADD Email VARCHAR(40); चलाने से STUDENT टेबल की स्कीमा पाँच से बढ़कर छह कॉलम हो जाती है, और पहले से मौजूद सभी पंक्तियों के लिए नए Email कॉलम में स्वतः डिफ़ॉल्ट NULL मान सेट हो जाता है[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">ALTER TABLE ADD Structural Evolution</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">BEFORE (5 Attributes)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">[Roll_No, Name, Age, Gender, City]</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">AFTER (6 Attributes)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">[... City, Email VARCHAR(40)]</text><line x1=\"280\" y1=\"102\" x2=\"320\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"320,102 312,98 312,106\" fill=\"#38bdf8\"/><line x1=\"162\" y1=\"130\" x2=\"162\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"437\" y1=\"130\" x2=\"437\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"162\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"162\" dy=\"0\">Original Schema</tspan><tspan x=\"162\" dy=\"1.2em\">Degree = 5</tspan></text><text x=\"437\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"437\" dy=\"0\">Appended Column</tspan><tspan x=\"437\" dy=\"1.2em\">Degree = 6 (NULL Defaults)</tspan></text></svg>",
+          "caption": {
+            "en": "Structural expansion showing the addition of a new Email column to the STUDENT table schema without disrupting stored rows.",
+            "hi": "संरचनात्मक विस्तार जो मौजूदा पंक्तियों को प्रभावित किए बिना STUDENT टेबल स्कीमा में एक नया Email कॉलम जोड़ने की प्रक्रिया को दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how ALTER TABLE ADD extends an existing schema.",
+          "hint": "Start with structural evolution expanding relational definitions, mention accommodating new information requirements, explain executing the ALTER TABLE command with an ADD clause, and conclude with appending new columns while preserving stored data.",
+          "target_sequence": [
+            {
+              "id": "en_u12_t1",
+              "text": "Structural schema evolution accommodates expanding institutional requirements",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u12_t2",
+              "text": "within already established and populated database environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u12_t3",
+              "text": "and by executing the `ALTER TABLE` statement paired with an `ADD` column clause",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u12_t4",
+              "text": "it appends new attributes seamlessly while preserving all existing table records intact",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u12_d1",
+              "category": "logical",
+              "text": "it deletes all preexisting student rows instantly whenever a new column definition is appended",
+              "penalty_explanation": "ALTER TABLE ADD preserves existing rows intact rather than deleting them."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ALTER TABLE ADD द्वारा मौजूदा स्कीमा का विस्तार करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "संरचनात्मक स्कीमा विकास बढ़ती आवश्यकताओं को समायोजित करता है से शुरू करें, पहले से मौजूद डेटाबेस परिवेश का संदर्भ दें, `ALTER TABLE` के साथ `ADD` क्लॉज निष्पादित करने का तरीका बताएं, और मौजूदा रिकॉर्ड्स को सुरक्षित रखते हुए नए कॉलम जोड़ने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u12_t1",
+              "text": "संरचनात्मक स्कीमा विकास बढ़ती संस्थागत आवश्यकताओं को समायोजित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u12_t2",
+              "text": "पहले से स्थापित और डेटा से भरे डेटाबेस परिवेश के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u12_t3",
+              "text": "और `ALTER TABLE` स्टेटमेंट को `ADD` क्लॉज के साथ निष्पादित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u12_t4",
+              "text": "यह मौजूदा रिकॉर्ड्स को सुरक्षित रखते हुए टेबल में नए कॉलम को निर्बाध रूप से जोड़ता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u12_d1",
+              "category": "logical",
+              "text": "यह नया कॉलम जुड़ते ही पहले से मौजूद सभी छात्र रिकॉर्ड्स को तुरंत मिटा देता है",
+              "penalty_explanation": "ALTER TABLE ADD मौजूदा डेटा को सुरक्षित रखता है, पंक्तियों को नहीं मिटाता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "ALTER TABLE ADD appends new columns with their datatypes to an existing table schema while preserving all existing rows[cite: 24].",
+        "hi": "ALTER TABLE ADD मौजूदा डेटा को नुकसान पहुंचाए बिना टेबल स्कीमा में नए कॉलम और उनके डेटा प्रकार जोड़ता है[cite: 24]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Schema Modification: ALTER TABLE MODIFY and DROP COLUMN",
+          "hi": "स्कीमा संशोधन: ALTER TABLE MODIFY और DROP COLUMN"
+        },
+        "theory": {
+          "en": "Beyond adding attributes, the ALTER TABLE command refines or prunes existing column definitions[cite: 24]. The MODIFY clause alters the datatype, width, or constraints of a preexisting column, such as running ALTER TABLE STUDENT MODIFY Name VARCHAR(50); to increase storage allocation from 30 to 50 characters[cite: 24]. Conversely, the DROP COLUMN clause permanently removes an obsolete attribute and all its associated stored data from the schema, such as running ALTER TABLE STUDENT DROP COLUMN City;[cite: 24].",
+          "hi": "कॉलम जोड़ने के अलावा, ALTER TABLE कमांड मौजूदा कॉलम परिभाषाओं को संशोधित करने या हटाने की सुविधा भी देता है[cite: 24]। MODIFY क्लॉज पहले से मौजूद कॉलम के डेटा प्रकार, चौड़ाई या प्रतिबंधों को बदलता है, जैसे ALTER TABLE STUDENT MODIFY Name VARCHAR(50); चलाने से नाम की क्षमता 30 से बढ़कर 50 अक्षर हो जाती है[cite: 24]। इसके विपरीत, DROP COLUMN क्लॉज किसी अवांछित कॉलम और उसके पूरे डेटा को स्कीमा से स्थायी रूप से हटा देता है, जैसे ALTER TABLE STUDENT DROP COLUMN City;[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">ALTER TABLE Operations: MODIFY vs. DROP COLUMN</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">MODIFY Name VARCHAR(50)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Expands Size from 30 to 50</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">DROP COLUMN City</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Removes Column and Data</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Size Expansion</tspan><tspan x=\"100\" dy=\"1.2em\">Wider Text Field</tspan></text><text x=\"225\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Retains Row Data</tspan><tspan x=\"225\" dy=\"1.2em\">Safe Adjustment</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Attribute Removal</tspan><tspan x=\"375\" dy=\"1.2em\">Prunes Schema</tspan></text><text x=\"500\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Permanent Drop</tspan><tspan x=\"500\" dy=\"1.2em\">Deletes Column Data</tspan></text></svg>",
+          "caption": {
+            "en": "Schema modification mechanics showing column resizing via MODIFY and attribute removal via DROP COLUMN.",
+            "hi": "स्कीमा संशोधन प्रक्रिया जो MODIFY द्वारा कॉलम का आकार बदलने और DROP COLUMN द्वारा कॉलम को हटाने के अंतर को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how MODIFY and DROP COLUMN adjust table schemas.",
+          "hint": "Start with database developers adjusting existing schemas, mention managing ongoing column requirements, explain resizing definitions via MODIFY and eliminating obsolete attributes via DROP COLUMN, and conclude with evolving table specifications cleanly.",
+          "target_sequence": [
+            {
+              "id": "en_u13_t1",
+              "text": "Database developers refine structural table specifications",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u13_t2",
+              "text": "as data storage needs evolve throughout an application lifecycle",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u13_t3",
+              "text": "and by resizing datatypes with `MODIFY` alongside deleting unneeded columns with `DROP COLUMN`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u13_t4",
+              "text": "they adapt field boundaries and prune obsolete attributes without rebuilding entire tables",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "logical",
+              "text": "and by requiring the entire database engine to be reinstalled whenever a column width increases",
+              "penalty_explanation": "ALTER TABLE modifies schemas directly within the database without reinstalling the DBMS engine."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "MODIFY और DROP COLUMN द्वारा टेबल स्कीमा को संशोधित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "डेटाबेस डेवलपर्स टेबल विनिर्देशों को परिष्कृत करते हैं से शुरू करें, बदलती भंडारण आवश्यकताओं का संदर्भ दें, `MODIFY` से आकार बदलने और `DROP COLUMN` से कॉलम हटाने का तरीका बताएं, और पूरी टेबल दोबारा बनाए बिना अनुकूलन करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u13_t1",
+              "text": "डेटाबेस डेवलपर्स संरचनात्मक टेबल विनिर्देशों को परिष्कृत करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u13_t2",
+              "text": "जैसे-जैसे अनुप्रयोग के दौरान डेटा भंडारण की आवश्यकताएं बदलती हैं",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u13_t3",
+              "text": "और `MODIFY` से डेटा प्रकार बदलकर तथा `DROP COLUMN` से अनावश्यक कॉलम हटाकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u13_t4",
+              "text": "ये पूरी टेबल को फिर से बनाए बिना फ़ील्ड सीमाओं को अनुकूलित और दुरुस्त करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "logical",
+              "text": "और किसी कॉलम का आकार बदलते ही पूरे डेटाबेस इंजन को फिर से इंस्टॉल करने की मांग करके",
+              "penalty_explanation": "ALTER TABLE सीधे स्कीमा में संशोधन करता है, इसके लिए डेटाबेस री-इंस्टॉल करने की कोई आवश्यकता नहीं होती।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "ALTER TABLE MODIFY updates a column's datatype or width, whereas DROP COLUMN permanently removes an attribute and its data[cite: 24].",
+        "hi": "ALTER TABLE MODIFY कॉलम के डेटा प्रकार या आकार को बदलता है, जबकि DROP COLUMN किसी कॉलम और उसके डेटा को पूरी तरह हटा देता है[cite: 24]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Rapid Row Clearing: Space Deallocation via TRUNCATE TABLE",
+          "hi": "तीव्र डेटा निष्कासन: TRUNCATE TABLE द्वारा मेमोरी डी-एलोकेशन"
+        },
+        "theory": {
+          "en": "The TRUNCATE TABLE statement is a specialized DDL command designed to instantly wipe all data rows from a table while strictly preserving its structural schema and header definitions for future use[cite: 24]. Unlike row-by-row DML deletion, TRUNCATE deallocates the physical memory pages assigned to table records in a single operation[cite: 24]. The table remains registered in the active data dictionary, allowing new rows to be inserted immediately into the empty structure[cite: 24].",
+          "hi": "TRUNCATE TABLE एक विशिष्ट DDL कमांड है जिसे भविष्य में उपयोग के लिए टेबल की संरचना और हेडर परिभाषाओं को सुरक्षित रखते हुए उसके सभी डेटा रिकॉर्ड्स को तुरंत हटाने के लिए डिज़ाइन किया गया है[cite: 24]। पंक्ति-दर-पंक्ति DML विलोपन के विपरीत, TRUNCATE एक ही ऑपरेशन में डेटा के लिए आवंटित मेमोरी स्पेस को मुक्त कर देता है[cite: 24]। टेबल एक्टिव डेटा डिक्शनरी में बनी रहती है, जिससे खाली संरचना में तुरंत नया डेटा डाला जा सकता है[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">TRUNCATE TABLE: Data Wipe vs. Schema Retention</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Rows Wiped</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Memory Pages Deallocated</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Schema Retained</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Dictionary Headers Preserved</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Fast Bulk Clear</tspan><tspan x=\"100\" dy=\"1.2em\">Zero Tuples Left</tspan></text><text x=\"225\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Reclaims Space</tspan><tspan x=\"225\" dy=\"1.2em\">Storage Freed</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Table Stays Valid</tspan><tspan x=\"375\" dy=\"1.2em\">Catalog Intact</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Ready for INSERT</tspan><tspan x=\"500\" dy=\"1.2em\">Empty Container</tspan></text></svg>",
+          "caption": {
+            "en": "Execution dynamics of TRUNCATE showing the rapid deallocation of row data while preserving the table schema.",
+            "hi": "TRUNCATE की कार्यप्रणाली जो टेबल स्कीमा को बनाए रखते हुए सभी डेटा रिकॉर्ड्स को तुरंत मुक्त करने की प्रक्रिया को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how TRUNCATE TABLE resets data storage.",
+          "hint": "Start with TRUNCATE TABLE resetting relational data contents, mention operating directly at the data page level, explain deallocating record memory while preserving the schema in the data dictionary, and conclude with leaving an empty table ready for new insertions.",
+          "target_sequence": [
+            {
+              "id": "en_u14_t1",
+              "text": "The `TRUNCATE TABLE` command clears bulk row data instantly",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u14_t2",
+              "text": "at the physical storage allocation level inside the database engine",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u14_t3",
+              "text": "and by deallocating record memory while preserving structural schema definitions in the catalog",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u14_t4",
+              "text": "it leaves an empty, reusable table structure ready to receive new data insertions immediately",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "logical",
+              "text": "it destroys the table structure completely and deletes its name from the active dictionary",
+              "penalty_explanation": "TRUNCATE retains the table structure and its dictionary entry; destroying the schema requires DROP."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "TRUNCATE TABLE द्वारा डेटा संग्रहण को रीसेट करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "`TRUNCATE TABLE` कमांड थोक डेटा को तुरंत हटाता है से शुरू करें, भौतिक स्टोरेज स्तर का संदर्भ दें, स्कीमा सुरक्षित रखते हुए मेमोरी मुक्त करने का तरीका बताएं, और नए डेटा के लिए खाली ढांचा छोड़ने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u14_t1",
+              "text": "`TRUNCATE TABLE` कमांड थोक डेटा रिकॉर्ड्स को तुरंत साफ़ करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u14_t2",
+              "text": "डेटाबेस इंजन के भीतर भौतिक भंडारण आवंटन स्तर पर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u14_t3",
+              "text": "और कैटलॉग में स्कीमा परिभाषाओं को बनाए रखते हुए डेटा मेमोरी को मुक्त करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u14_t4",
+              "text": "यह तुरंत नई प्रविष्टियां प्राप्त करने के लिए एक खाली और पुन: प्रयोज्य टेबल छोड़ता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "logical",
+              "text": "यह टेबल संरचना को पूरी तरह नष्ट कर देता है और इसका नाम डिक्शनरी से मिटा देता है",
+              "penalty_explanation": "TRUNCATE संरचना को सुरक्षित रखता है, स्कीमा और नाम को नष्ट करने का कार्य DROP करता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "TRUNCATE TABLE deallocates all row data memory while preserving the table schema and column definitions in the data dictionary[cite: 24].",
+        "hi": "TRUNCATE TABLE टेबल स्कीमा और कॉलम परिभाषाओं को सुरक्षित रखते हुए सभी डेटा मेमोरी को तुरंत मुक्त करता है[cite: 24]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Schema Destruction: DROP TABLE vs. TRUNCATE TABLE",
+          "hi": "संरचनात्मक विनाश: DROP TABLE बनाम TRUNCATE TABLE"
+        },
+        "theory": {
+          "en": "While both DROP TABLE and TRUNCATE TABLE are DDL commands, their operational scopes are fundamentally different[cite: 24]. TRUNCATE TABLE removes only the data rows, resetting storage pages while preserving the table schema, column definitions, and integrity constraints for future use[cite: 24]. In contrast, DROP TABLE completely obliterates both the stored data and the entire schema definition, purging the table from the data dictionary and permanently freeing all associated memory[cite: 24]. Once dropped, the table ceases to exist.",
+          "hi": "यद्यपि DROP TABLE और TRUNCATE TABLE दोनों DDL कमांड हैं, लेकिन उनके प्रभाव में मौलिक अंतर है[cite: 24]। TRUNCATE TABLE केवल डेटा पंक्तियों को हटाता है, जिससे भविष्य के उपयोग के लिए टेबल स्कीमा, कॉलम परिभाषाएं और बाधाएं सुरक्षित रहती हैं[cite: 24]। इसके विपरीत, DROP TABLE डेटा और संपूर्ण स्कीमा संरचना दोनों को नष्ट कर देता है, जिससे टेबल डेटा डिक्शनरी से पूरी तरह मिट जाती है और उसकी मेमोरी मुक्त हो जाती है[cite: 24]। एक बार DROP करने के बाद टेबल का अस्तित्व समाप्त हो जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Destruction Comparison: TRUNCATE vs. DROP TABLE</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">TRUNCATE TABLE [DDL]</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Erased | Schema Survives</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">DROP TABLE [DDL]</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Erased | Schema Destroyed</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Preserves Table</tspan><tspan x=\"100\" dy=\"1.2em\">Retains Structure</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Quick Reset</tspan><tspan x=\"225\" dy=\"1.2em\">Ready for Reload</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Purges Metadata</tspan><tspan x=\"375\" dy=\"1.2em\">Wipes Dictionary</tspan></text><text x=\"500\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Total Erasure</tspan><tspan x=\"500\" dy=\"1.2em\">Requires Re-creation</tspan></text></svg>",
+          "caption": {
+            "en": "Architectural contrast demonstrating row wiping with schema retention in TRUNCATE versus complete structural destruction in DROP.",
+            "hi": "संरचनात्मक तुलना जो TRUNCATE में स्कीमा सुरक्षा के साथ डेटा मिटाने और DROP में टेबल के पूर्ण विनाश को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence contrasting the outcomes of DROP TABLE and TRUNCATE TABLE.",
+          "hint": "Start with database destruction commands operating with distinct architectural scopes, mention evaluating cleanup requirements, explain wiping rows while keeping schemas under TRUNCATE versus erasing both data and definitions under DROP, and conclude with distinguishing resets from total removal.",
+          "target_sequence": [
+            {
+              "id": "en_u15_t1",
+              "text": "Data Definition Language destruction statements produce fundamentally different outcomes",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u15_t2",
+              "text": "when purging relational objects from database environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u15_t3",
+              "text": "and by clearing rows while retaining schemas under `TRUNCATE` versus obliterating structures under `DROP`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u15_t4",
+              "text": "they distinguish rapid data resets from the complete permanent eradication of table definitions",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "logical",
+              "text": "and by preserving complete table definitions and constraint rules identically inside `DROP TABLE`",
+              "penalty_explanation": "DROP TABLE completely obliterates the table definition rather than preserving it."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "DROP TABLE और TRUNCATE TABLE के परिणामों के अंतर को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "डेटा डेफिनिशन लैंग्वेज कमांड भिन्न परिणाम उत्पन्न करते हैं से शुरू करें, रिलेशनल ऑब्जेक्ट्स को हटाने का संदर्भ दें, `TRUNCATE` में स्कीमा रखने और `DROP` में पूरी संरचना मिटाने का तरीका बताएं, और रीसेट व पूर्ण विनाश के अंतर पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u15_t1",
+              "text": "डेटा डेफिनिशन लैंग्वेज के विनाशक कमांड मौलिक रूप से भिन्न परिणाम उत्पन्न करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u15_t2",
+              "text": "डेटाबेस परिवेश से रिलेशनल ऑब्जेक्ट्स को हटाते समय",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u15_t3",
+              "text": "और `TRUNCATE` द्वारा स्कीमा को बनाए रखते हुए तथा `DROP` द्वारा पूरी संरचना को नष्ट करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u15_t4",
+              "text": "ये त्वरित डेटा रीसेट को टेबल परिभाषाओं के पूर्ण और स्थायी विनाश से अलग करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "logical",
+              "text": "और `DROP TABLE` के तहत टेबल परिभाषाओं और बाधाओं को बिल्कुल सुरक्षित बनाए रखकर",
+              "penalty_explanation": "DROP TABLE टेबल परिभाषा और स्कीमा को पूरी तरह नष्ट कर देता है, सुरक्षित नहीं रखता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "TRUNCATE TABLE empties row data while preserving the table structure, whereas DROP TABLE destroys both the data and the entire schema[cite: 24].",
+        "hi": "TRUNCATE TABLE टेबल संरचना को सुरक्षित रखते हुए डेटा को खाली करता है, जबकि DROP TABLE डेटा और पूरी संरचना दोनों को नष्ट कर देता है[cite: 24]।"
+      }
+    }
+  ]
+}
