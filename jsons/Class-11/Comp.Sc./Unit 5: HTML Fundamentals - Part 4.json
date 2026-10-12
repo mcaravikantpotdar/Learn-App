@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 11",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Unit 5: HTML Fundamentals - Part 4",
+      "hi": "यूनिट 5: HTML के मूल सिद्धांत - भाग 4"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Ordered Lists with Starting Values and Types",
+          "hi": "ऑर्डर्ड लिस्ट: प्रारंभिक मान और प्रकार"
+        },
+        "theory": {
+          "en": "An ordered list is a paired container tag structure starting with <OL> and ending with </OL>, where each individual list item is enclosed within <LI>...</LI> tags. By default, list items are numbered using natural Arabic numerals. The type attribute customizes the numbering style (such as uppercase or lowercase Roman numerals and letters), while the start attribute alters the initial starting index of the sequence.",
+          "hi": "ऑर्डर्ड लिस्ट (Ordered List) एक पेयर्ड कंटेनर संरचना है जो <OL> से शुरू होती है और </OL> पर समाप्त होती है, जिसमें प्रत्येक आइटम को <LI>...</LI> टैग के भीतर रखा जाता है। डिफ़ॉल्ट रूप से, लिस्ट आइटम प्राकृतिक संख्याओं से गिने जाते हैं। type विशेषता नंबरिंग शैली (जैसे रोमन संख्या या वर्णमाला) को बदलती है, जबकि start विशेषता सूची के प्रारंभिक मान को बदलती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Ordered List Structure: &lt;OL start=&quot;3&quot; type=&quot;A&quot;&gt;</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;OL type=&quot;A&quot; start=&quot;3&quot;&gt;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Alphabet Offset</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">C. Mango</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;LI&gt; Item 1&lt;/LI&gt;</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">D. Apple</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;LI&gt; Item 2&lt;/LI&gt;</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Configures Index</tspan><tspan x=\"120\" dy=\"1.2em\">Letters from C</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">First Sequential</tspan><tspan x=\"300\" dy=\"1.2em\">Entry (Index 3)</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Second Sequential</tspan><tspan x=\"480\" dy=\"1.2em\">Entry (Index 4)</tspan></text></svg>",
+          "caption": {
+            "en": "Ordered list generating alphabetized items beginning from letter C using type and start attributes.",
+            "hi": "type और start विशेषताओं का उपयोग करके C अक्षर से शुरू होने वाली वर्णमाला सूची उत्पन्न करती ऑर्डर्ड लिस्ट।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how ordered lists format sequential items.",
+          "hint": "Start with ordered lists defining numbered items, mention enclosing list items in LI tags, explain configuring type and start attributes, and conclude with rendering sequential lists.",
+          "target_sequence": [
+            {
+              "id": "en_u16_t1",
+              "text": "The paired `<ol>` container tag organizes structured sequential information",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u16_t2",
+              "text": "by enclosing each distinct entry within paired `<li>` item tags",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u16_t3",
+              "text": "and by configuring the optional `type` and `start` attributes in the opening tag",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u16_t4",
+              "text": "it renders customized numeral or alphabet sequences automatically",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u16_d1",
+              "category": "logical",
+              "text": "it replaces all numbers with unformatted plain bullets regardless of settings",
+              "penalty_explanation": "Ordered lists generate sequential numbers or letters; bulleted markers are generated by unordered lists."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ऑर्डर्ड लिस्ट द्वारा क्रमिक आइटम प्रदर्शित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "पेयर्ड `<ol>` कंटेनर टैग क्रमिक जानकारी को व्यवस्थित करता है से शुरू करें, प्रत्येक प्रविष्टि को `<li>` में रखने का संदर्भ दें, `type` और `start` कॉन्फ़िगर करने का तरीका जोड़ें, और स्वतः क्रमांकन बनाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u16_t1",
+              "text": "पेयर्ड `<ol>` कंटेनर टैग संरचित क्रमिक जानकारी को व्यवस्थित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u16_t2",
+              "text": "प्रत्येक अलग प्रविष्टि को पेयर्ड `<li>` आइटम टैग के भीतर रखकर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u16_t3",
+              "text": "और शुरुआती टैग में वैकल्पिक `type` तथा `start` विशेषताओं को कॉन्फ़िगर करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u16_t4",
+              "text": "यह अनुकूलित संख्यात्मक या वर्णमाला अनुक्रमों को स्वतः उत्पन्न करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u16_d1",
+              "category": "logical",
+              "text": "यह सेटिंग्स की परवाह किए बिना सभी संख्याओं को सादे बुलेट्स से बदल देता है",
+              "penalty_explanation": "ऑर्डर्ड लिस्ट संख्याओं या अक्षरों का क्रम बनाती है, बुलेट्स बनाने के लिए अनऑर्डर्ड लिस्ट का उपयोग किया जाता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The <OL> tag creates numbered lists with <LI> items, using type to choose numeral styles and start to offset numbering.",
+        "hi": "<OL> टैग <LI> के साथ क्रमांकित सूचियाँ बनाता है, जिसमें शैली के लिए type और शुरुआत बदलने के लिए start का उपयोग होता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Unordered Lists and Bullet Styles",
+          "hi": "अनऑर्डर्ड लिस्ट और बुलेट शैलियाँ"
+        },
+        "theory": {
+          "en": "An unordered list is a paired container tag starting with <UL> and closing with </UL>, used to present items where order is not numerical. Individual items are marked using paired <LI> tags. Browsers render solid disc bullets before each list item by default, but the type attribute allows authors to specify alternative bullet shapes such as circle or square.",
+          "hi": "अनऑर्डर्ड लिस्ट (Unordered List) एक पेयर्ड कंटेनर टैग है जो <UL> से शुरू होता है और </UL> पर समाप्त होता है, जिसका उपयोग गैर-संख्यात्मक मदों को दर्शाने के लिए किया जाता है। प्रत्येक आइटम को <LI> टैग द्वारा दर्शाया जाता है। डिफ़ॉल्ट रूप से ब्राउज़र ठोस डिस्क (disc) बुलेट दिखाते हैं, लेकिन type विशेषता circle या square जैसे विभिन्न बुलेट आकार चुनने की सुविधा देती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Unordered List Marker Styles: &lt;UL type=&quot;...&quot;&gt;</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><circle cx=\"75\" cy=\"102\" r=\"6\" fill=\"#fbbf24\"/><text x=\"130\" y=\"102\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">type=&quot;disc&quot;</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><circle cx=\"255\" cy=\"102\" r=\"6\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\"/><text x=\"310\" y=\"102\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">type=&quot;circle&quot;</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><rect x=\"429\" y=\"96\" width=\"12\" height=\"12\" fill=\"#4ade80\"/><text x=\"490\" y=\"102\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">type=&quot;square&quot;</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Solid Circle</tspan><tspan x=\"120\" dy=\"1.2em\">Default Marker</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Hollow Ring</tspan><tspan x=\"300\" dy=\"1.2em\">Outline Bullet</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Solid Block</tspan><tspan x=\"480\" dy=\"1.2em\">Square Bullet</tspan></text></svg>",
+          "caption": {
+            "en": "Unordered list bullet formats showing default solid discs alongside hollow circle and square variations.",
+            "hi": "अनऑर्डर्ड लिस्ट के बुलेट प्रकार जो डिफ़ॉल्ट ठोस डिस्क के साथ खोखले गोले और चौकोर बुलेट को दर्शाते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence explaining how unordered lists format bulleted items.",
+          "hint": "Start with unordered lists grouping items without numerical order, describe wrapping items inside LI tags, explain configuring bullet shapes via the type attribute, and conclude with displaying bulleted items.",
+          "target_sequence": [
+            {
+              "id": "en_u17_t1",
+              "text": "The paired `<ul>` container tag groups non-sequential items",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u17_t2",
+              "text": "by defining individual elements using child `<li>` tags",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u17_t3",
+              "text": "and by choosing `disc`, `circle`, or `square` inside the `type` attribute",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u17_t4",
+              "text": "it styles the visual bullet icons preceding each item neatly",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u17_d1",
+              "category": "logical",
+              "text": "it sorts all listed items into ascending numerical order automatically",
+              "penalty_explanation": "Unordered lists use visual bullet icons and do not sort items into numerical order."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "अनऑर्डर्ड लिस्ट द्वारा बुलेटेड आइटम प्रारूपित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "पेयर्ड `<ul>` कंटेनर टैग गैर-क्रमिक आइटमों को जोड़ता है से शुरू करें, `<li>` टैग में आइटम रखने की बात कहें, `type` विशेषता में बुलेट आकार तय करने का तरीका जोड़ें, और बुलेट आइकन प्रदर्शित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u17_t1",
+              "text": "पेयर्ड `<ul>` कंटेनर टैग गैर-क्रमिक वस्तुओं को समूहबद्ध करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u17_t2",
+              "text": "चाइल्ड `<li>` टैग के उपयोग से प्रत्येक प्रविष्टि को परिभाषित करके",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u17_t3",
+              "text": "और `type` विशेषता में `disc`, `circle` अथवा `square` का चयन करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u17_t4",
+              "text": "यह प्रत्येक आइटम के आगे दिखने वाले बुलेट आइकनों को सुंदरता से संवारता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u17_d1",
+              "category": "logical",
+              "text": "यह सभी सूचीबद्ध आइटमों को स्वतः बढ़ते हुए संख्यात्मक क्रम में व्यवस्थित कर देता है",
+              "penalty_explanation": "अनऑर्डर्ड लिस्ट में कोई संख्यात्मक क्रम नहीं होता, यह केवल विभिन्न प्रकार के बुलेट्स प्रदर्शित करती है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The <UL> tag creates bulleted lists with <LI> tags, modifying bullet shapes using type values disc, circle, or square.",
+        "hi": "<UL> टैग <LI> के साथ बुलेटेड सूचियाँ बनाता है, जिसमें disc, circle या square जैसे बुलेट आकार type द्वारा चुने जाते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Definition Lists: Terms and Descriptions",
+          "hi": "डेफिनिशन लिस्ट: शब्द और विवरण"
+        },
+        "theory": {
+          "en": "A definition list is a specialized list structure enclosed within <DL> and </DL> tags, designed for glossaries, vocabularies, and term definitions. Unlike ordered and unordered lists, definition lists contain neither numbers nor bullets. Each definition term is declared with the <DT> tag, followed by its corresponding definition description wrapped inside <DD> tags.",
+          "hi": "डेफिनिशन लिस्ट (Definition List) <DL> और </DL> टैग के भीतर लिखी जाने वाली एक विशेष सूची है, जिसे शब्दावली या परिभाषाओं के लिए डिज़ाइन किया गया है। ऑर्डर्ड और अनऑर्डर्ड लिस्ट के विपरीत, इसमें न तो संख्याएं होती हैं और न ही बुलेट्स। प्रत्येक परिभाषा-शब्द को <DT> टैग द्वारा घोषित किया जाता है, जिसके बाद उसका विवरण <DD> टैग के भीतर लिखा जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Definition List Architecture: &lt;DL&gt;, &lt;DT&gt;, &lt;DD&gt;</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;DL&gt; Container</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">No Bullets / Numbers</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;DT&gt; Sun &lt;/DT&gt;</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Definition Term</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;DD&gt; Star... &lt;/DD&gt;</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Indented Description</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Encloses Glossary</tspan><tspan x=\"120\" dy=\"1.2em\">Clean Layout</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Flushed Left</tspan><tspan x=\"300\" dy=\"1.2em\">Terminology Keyword</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Indented Text</tspan><tspan x=\"480\" dy=\"1.2em\">Term Explanation</tspan></text></svg>",
+          "caption": {
+            "en": "Glossary layout pairing left-aligned definition terms with indented definition descriptions.",
+            "hi": "बाएं संरेखित परिभाषा-शब्दों को इंडेंट किए गए विवरणों के साथ जोड़ने वाला ग्लॉसरी लेआउट।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the complete, harmonious sentence describing the structure of definition lists.",
+          "hint": "Start with definition lists structuring glossary terms, state the absence of markers or numbers, describe pairing DT terms with DD descriptions, and conclude with formatting technical vocabularies.",
+          "target_sequence": [
+            {
+              "id": "en_u18_t1",
+              "text": "The paired `<dl>` container tag formats glossary vocabularies",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u18_t2",
+              "text": "without displaying any default numbers or bullet markers",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u18_t3",
+              "text": "and by pairing each `<dt>` term with an indented `<dd>` description block",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u18_t4",
+              "text": "it presents technical terminology and explanations in clean structured pairs",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u18_d1",
+              "category": "logical",
+              "text": "and by requiring every `<dt>` term to possess an explicit numerical index",
+              "penalty_explanation": "Definition lists explicitly omit numbers and bullets, pairing terms directly with descriptive paragraphs."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "डेफिनिशन लिस्ट द्वारा शब्दावली और विवरण व्यवस्थित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "पेयर्ड `<dl>` कंटेनर टैग शब्दावली को प्रारूपित करता है से शुरू करें, बुलेट या नंबर न होने की बात कहें, `<dt>` शब्द को `<dd>` विवरण के साथ जोड़ने का तरीका बताएं, और पारिभाषिक शब्दों को प्रस्तुत करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u18_t1",
+              "text": "पेयर्ड `<dl>` कंटेनर टैग शब्दावली और परिभाषाओं को प्रारूपित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u18_t2",
+              "text": "बिना किसी संख्या या बुलेट मार्कर को प्रदर्शित किए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u18_t3",
+              "text": "और प्रत्येक `<dt>` शब्द को इंडेंट किए गए `<dd>` विवरण के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u18_t4",
+              "text": "यह तकनीकी शब्दों और उनकी व्याख्याओं को व्यवस्थित जोड़ों में प्रस्तुत करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u18_d1",
+              "category": "logical",
+              "text": "और प्रत्येक `<dt>` शब्द के लिए एक स्पष्ट संख्यात्मक अनुक्रम की मांग करके",
+              "penalty_explanation": "डेफिनिशन लिस्ट में कोई संख्या या बुलेट नहीं होती, यह सीधे शब्दों को विवरणों के साथ जोड़ती है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The <DL> tag builds marker-free glossary lists, pairing <DT> definition terms with indented <DD> descriptions.",
+        "hi": "<DL> टैग बिना बुलेट या नंबर वाली सूचियाँ बनाता है, जिसमें <DT> शब्द को इंडेंट किए गए <DD> विवरण के साथ जोड़ा जाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Image Embedding Anatomy and Dimensions",
+          "hi": "इमेज एम्बेडिंग संरचना और आयाम"
+        },
+        "theory": {
+          "en": "The <IMG> tag is an unpaired empty tag used to embed graphic images directly into an HTML webpage. It requires the src attribute to provide the file path or URL of the image resource. The width and height attributes establish the display dimensions of the image on the screen, specified either in absolute pixels or as a relative percentage of the window.",
+          "hi": "<IMG> टैग एक अन-पेयर्ड एम्प्टी टैग है जिसका उपयोग HTML वेब पेज में सीधे चित्र (इमेज) सम्मिलित करने के लिए किया जाता है। इसके लिए src विशेषता आवश्यक होती है जो छवि फ़ाइल का पथ या URL प्रदान करती है। width और height विशेषताएँ स्क्रीन पर छवि की चौड़ाई और ऊंचाई को पिक्सेल या प्रतिशत में निर्धारित करती हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Image Tag Anatomy: &lt;IMG src=&quot;...&quot; width=&quot;...&quot; height=&quot;...&quot;&gt;</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">src=&quot;flower.jpg&quot;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">File Path / URL</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">width=&quot;60%&quot;</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Horizontal Span</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">height=&quot;300px&quot;</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Vertical Measure</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Mandatory Source</tspan><tspan x=\"120\" dy=\"1.2em\">Location Target</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Scaled Width</tspan><tspan x=\"300\" dy=\"1.2em\">Pixels or Percent</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Scaled Height</tspan><tspan x=\"480\" dy=\"1.2em\">Pixels or Percent</tspan></text></svg>",
+          "caption": {
+            "en": "Unpaired image tag parameters locating graphic assets via src and bounding dimensions via width and height.",
+            "hi": "अन-पेयर्ड इमेज टैग के पैरामीटर जो src से छवि का पता लगाते हैं और width व height से उसका आकार तय करते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the image tag embeds graphical media.",
+          "hint": "Start with the unpaired image tag embedding graphics, mention operating without closing tags, explain supplying the src URL alongside width and height dimensions, and conclude with rendering visual illustrations.",
+          "target_sequence": [
+            {
+              "id": "en_u19_t1",
+              "text": "The unpaired `<IMG>` empty tag embeds graphic files directly",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u19_t2",
+              "text": "without requiring any closing tag syntax in the document",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u19_t3",
+              "text": "and by specifying the source path in `src` alongside `width` and `height` dimensions",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u19_t4",
+              "text": "it renders scaled photographs and illustrations seamlessly on the page",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u19_d1",
+              "category": "logical",
+              "text": "and by requiring a closing `</IMG>` tag to define the end of each graphic file",
+              "penalty_explanation": "The <IMG> tag is an unpaired empty tag and must never have a closing </IMG> tag."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "इमेज टैग द्वारा ग्राफ़िक मीडिया एम्बेड करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "अन-पेयर्ड `<IMG>` एम्प्टी टैग छवियों को जोड़ता है से शुरू करें, क्लोजिंग टैग की आवश्यकता न होना बताएं, `src`, `width` और `height` निर्दिष्ट करने का तरीका जोड़ें, और फ़ोटो प्रदर्शित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u19_t1",
+              "text": "अन-पेयर्ड `<IMG>` एम्प्टी टैग ग्राफ़िक फ़ाइलों को सीधे एम्बेड करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u19_t2",
+              "text": "दस्तावेज़ में बिना किसी क्लोजिंग टैग की आवश्यकता के",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u19_t3",
+              "text": "और `src` में स्रोत फ़ाइल पथ तथा `width` व `height` में आयाम निर्दिष्ट करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u19_t4",
+              "text": "यह वेब पेज पर फ़ोटो और चित्रों को सुचारू रूप से प्रदर्शित करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u19_d1",
+              "category": "logical",
+              "text": "और प्रत्येक फ़ाइल के अंत को दर्शाने के लिए क्लोजिंग `</IMG>` टैग की मांग करके",
+              "penalty_explanation": "<IMG> एक अन-पेयर्ड एम्प्टी टैग है, इसके साथ कभी भी क्लोजिंग </IMG> टैग नहीं लगाया जाता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The empty <IMG> tag embeds images using src for file location and width and height for display dimensions.",
+        "hi": "एम्प्टी <IMG> टैग फ़ाइल के पते के लिए src और आकार निर्धारित करने के लिए width व height विशेषताओं का उपयोग करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Accessible Images and the Alt Attribute",
+          "hi": "सुलभ छवियां और Alt विशेषता"
+        },
+        "theory": {
+          "en": "The alt attribute in the <IMG> tag provides alternate descriptive text for an image. If a graphic file fails to load due to broken URLs, network interruptions, or missing assets, the browser displays this alternate text in place of the image. The alt attribute is also essential for accessibility, allowing screen-reading software to describe visual media to visually impaired users.",
+          "hi": "<IMG> टैग में alt विशेषता किसी छवि के लिए वैकल्पिक विवरणात्मक टेक्स्ट (alternate text) प्रदान करती है। यदि गलत URL, नेटवर्क समस्या या फ़ाइल न मिलने के कारण छवि लोड नहीं हो पाती है, तो ब्राउज़र उस छवि के स्थान पर यह टेक्स्ट दिखाता है। यह विशेषता दृष्टिबाधित उपयोगकर्ताओं के लिए स्क्रीन-रीडिंग सॉफ़्टवेयर को छवि समझाने में भी मदद करती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Alternate Text Fallback Mechanism via alt</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Image Available</text><text x=\"120\" y=\"115\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Renders Graphic</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Network Error</text><text x=\"300\" y=\"115\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Missing File</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">alt=&quot;Peacock...&quot;</text><text x=\"480\" y=\"115\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Displays Fallback</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Normal Load</tspan><tspan x=\"120\" dy=\"1.2em\">Visual Photo</tspan></text><text x=\"300\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Asset Failure</tspan><tspan x=\"300\" dy=\"1.2em\">Broken Link</tspan></text><text x=\"480\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Fallback Text</tspan><tspan x=\"480\" dy=\"1.2em\">Explains Graphic</tspan></text></svg>",
+          "caption": {
+            "en": "Fallback workflow showing alternate text rendering on screen when an image resource fails to load.",
+            "hi": "फ़ॉलबैक वर्कफ़्लो जो दर्शाता है कि छवि लोड न होने पर स्क्रीन पर वैकल्पिक टेक्स्ट कैसे दिखाई देता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence explaining the fallback role of the alt attribute in image tags.",
+          "hint": "Start with the alt attribute providing backup text, mention broken links or slow networks, describe substituting text for missing graphics, and conclude with maintaining accessibility.",
+          "target_sequence": [
+            {
+              "id": "en_u20_t1",
+              "text": "The `alt` attribute defines meaningful descriptive text",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u20_t2",
+              "text": "whenever an image cannot be displayed due to network or link errors",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u20_t3",
+              "text": "and by rendering readable fallback descriptions in place of missing graphics",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u20_t4",
+              "text": "it ensures that page context remains clear and accessible for all users",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u20_d1",
+              "category": "logical",
+              "text": "it crashes the browser window whenever an image resource cannot be located",
+              "penalty_explanation": "The alt attribute provides a graceful text fallback; missing images never crash the browser window."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "इमेज टैग में alt विशेषता की फ़ॉलबैक भूमिका को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "alt विशेषता विवरणात्मक टेक्स्ट परिभाषित करती है से शुरू करें, लिंक त्रुटि के कारण छवि न दिखने का संदर्भ दें, अनुपलब्ध छवि के स्थान पर टेक्स्ट दिखाने का तरीका बताएं, और सामग्री को सुलभ बनाए रखने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u20_t1",
+              "text": "`alt` विशेषता उपयोगी विवरणात्मक टेक्स्ट को परिभाषित करती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u20_t2",
+              "text": "जब नेटवर्क या लिंक त्रुटि के कारण कोई छवि प्रदर्शित नहीं हो पाती",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u20_t3",
+              "text": "और अनुपलब्ध ग्राफ़िक्स के स्थान पर पठनीय फ़ॉलबैक विवरण प्रदर्शित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u20_t4",
+              "text": "यह सुनिश्चित करती है कि सभी उपयोगकर्ताओं के लिए पेज सामग्री सुलभ और स्पष्ट बनी रहे",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u20_d1",
+              "category": "logical",
+              "text": "यह छवि न मिलने पर ब्राउज़र विंडो को पूरी तरह क्रैश कर देती है",
+              "penalty_explanation": "alt विशेषता छवि न मिलने पर सुरक्षित टेक्स्ट विकल्प देती है, यह ब्राउज़र को क्रैश नहीं करती।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The alt attribute supplies alternate descriptive text that displays if an image fails to load and assists screen readers.",
+        "hi": "alt विशेषता वैकल्पिक टेक्स्ट प्रदान करती है जो छवि लोड न होने पर दिखता है और स्क्रीन रीडर्स की मदद करता है।"
+      }
+    }
+  ]
+}
