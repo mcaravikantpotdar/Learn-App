@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 11",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Unit 5: HTML Fundamentals - Part 1",
+      "hi": "यूनिट 5: HTML के मूल सिद्धांत - भाग 1"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "What is HTML, Extensions and Tooling",
+          "hi": "HTML क्या है, एक्सटेंशन और संबंधित टूल्स"
+        },
+        "theory": {
+          "en": "HTML stands for Hypertext Markup Language and is known as the language of the Internet used to design web pages. An HTML document is a plain-text file saved with a .html or .htm extension. Developers create and edit HTML files using text editors such as Notepad, while web browsers like Google Chrome render and display them as finished web pages.",
+          "hi": "HTML का पूर्ण रूप Hypertext Markup Language है और इसे इंटरनेट की भाषा कहा जाता है जिसका उपयोग वेब-पेज बनाने के लिए किया जाता है। HTML दस्तावेज़ एक सादा टेक्स्ट फ़ाइल है जिसे .html या .htm एक्सटेंशन के साथ सहेजा जाता है। इसे नोटपैड जैसे टेक्स्ट एडिटर का उपयोग करके बनाया और संपादित किया जाता है, जबकि Google Chrome जैसे वेब ब्राउज़र इसे वेब-पेज के रूप में प्रदर्शित करते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">HTML Authoring and Rendering Workflow</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Notepad Editor</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Plain Text Code</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">page.html</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">.htm / .html File</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Browser</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Google Chrome</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Source Authoring</tspan><tspan x=\"120\" dy=\"1.2em\">Text Input</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">File Storage</tspan><tspan x=\"300\" dy=\"1.2em\">Plain Text Format</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Parses Markup</tspan><tspan x=\"480\" dy=\"1.2em\">Renders Display</tspan></text></svg>",
+          "caption": {
+            "en": "Workflow of authoring HTML files in a text editor and rendering them inside a web browser.",
+            "hi": "टेक्स्ट एडिटर में HTML फाइल बनाने और उसे वेब ब्राउज़र में प्रदर्शित करने का पूरा वर्कफ़्लो।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the harmonious sentence defining HTML and its tool ecosystem in correct sequence.",
+          "hint": "Start with HTML as a markup language, explain saving files with .html, describe text editor creation, and conclude with browser rendering.",
+          "target_sequence": [
+            {
+              "id": "en_u1_t1",
+              "text": "Hypertext Markup Language serves as the foundation for web pages",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u1_t2",
+              "text": "as a plain-text document saved with a `.html` or `.htm` extension",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u1_t3",
+              "text": "and by writing source markup inside text editors like Notepad",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u1_t4",
+              "text": "it allows web browsers like Google Chrome to render finished visual pages",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u1_d1",
+              "category": "logical",
+              "text": "it requires a dedicated compiler to transform files into binary executable code",
+              "penalty_explanation": "HTML is an interpreted markup language parsed directly by browsers, requiring no compiler."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "HTML और इसके टूल्स को परिभाषित करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "HTML वेब पेजों की नींव है से शुरू करें, एक्सटेंशन का संदर्भ दें, नोटपैड में कोड लिखने का तरीका जोड़ें, और ब्राउज़र में पेज दिखाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u1_t1",
+              "text": "हाइपरटेक्स्ट मार्कअप लैंग्वेज वेब पेजों के निर्माण की प्राथमिक भाषा है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u1_t2",
+              "text": "जो `.html` या `.htm` एक्सटेंशन के साथ एक सादा टेक्स्ट फ़ाइल होती है",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u1_t3",
+              "text": "और नोटपैड जैसे टेक्स्ट एडिटर में इसका कोड लिखकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u1_t4",
+              "text": "यह वेब ब्राउज़र को तैयार वेब-पेज प्रदर्शित करने में सक्षम बनाती है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u1_d1",
+              "category": "logical",
+              "text": "यह बाइनरी फ़ाइल बनाने के लिए एक विशेष कंपाइलर की मांग करती है",
+              "penalty_explanation": "HTML सादे टेक्स्ट वाली मार्कअप भाषा है जिसे ब्राउज़र सीधे पढ़ते हैं, इसके लिए कंपाइलर की आवश्यकता नहीं होती।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "HTML is a plain-text markup language saved with .html or .htm extensions, written in text editors and viewed in browsers.",
+        "hi": "HTML एक सादा टेक्स्ट मार्कअप भाषा है जिसे .html या .htm एक्सटेंशन के साथ नोटपैड में लिखा और वेब ब्राउज़र में देखा जाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "HTML Tags: Container Tags and Empty Tags",
+          "hi": "HTML टैग: कंटेनर टैग और एम्प्टी टैग"
+        },
+        "theory": {
+          "en": "HTML tags are coded commands enclosed in angle brackets (< and >) that instruct the browser on how to display content. Tags are case-insensitive, meaning they can be written in lowercase or uppercase. Tags are divided into two categories: Container tags (paired tags that require both an opening and a closing tag with a forward slash, such as <HTML>...</HTML>) and Empty tags (unpaired tags that require only an opening tag, such as <BR> and <HR>).",
+          "hi": "HTML टैग कोण-कोष्ठक (< और >) के भीतर लिखे गए कोडित कमांड हैं जो वेब ब्राउज़र को बताते हैं कि सामग्री कैसे प्रदर्शित की जाए। HTML टैग केस-सेंसिटिव नहीं होते, इन्हें लोअर-केस या अपर-केस में लिखा जा सकता है। टैग दो प्रकार के होते हैं: कंटेनर टैग (पेयर्ड टैग जिन्हें शुरुआती और अंतिम दोनों टैग की आवश्यकता होती है, जैसे <HTML>...</HTML>) और एम्प्टी टैग (अन-पेयर्ड टैग जिन्हें केवल शुरुआती टैग की आवश्यकता होती है, जैसे <BR> और <HR>)।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">HTML Tag Classification: Paired vs. Unpaired</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Container (Paired)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;TITLE&gt;...&lt;/TITLE&gt;</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Empty (Unpaired)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;BR&gt; , &lt;HR&gt; , &lt;IMG&gt;</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Requires Opening</tspan><tspan x=\"100\" dy=\"1.2em\">&amp; Closing Tag</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Encloses Text</tspan><tspan x=\"225\" dy=\"1.2em\">or Child Tags</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Requires Only</tspan><tspan x=\"375\" dy=\"1.2em\">Starting Tag</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Standalone Item</tspan><tspan x=\"500\" dy=\"1.2em\">No End Tag</tspan></text></svg>",
+          "caption": {
+            "en": "Structural distinction between container tags requiring closing syntax and standalone empty tags.",
+            "hi": "कंटेनर टैग (जिन्हें क्लोजिंग टैग चाहिए) और स्टैंडअलोन एम्प्टी टैग के बीच संरचनात्मक अंतर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence classifying HTML container and empty tags.",
+          "hint": "Start with HTML tags written inside angle brackets, mention case-insensitivity, explain distinguishing paired container tags from empty tags, and conclude with governing browser layout.",
+          "target_sequence": [
+            {
+              "id": "en_u2_t1",
+              "text": "HTML tags are case-insensitive commands written inside angle brackets",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u2_t2",
+              "text": "to provide precise presentation instructions to the web browser",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u2_t3",
+              "text": "and by dividing elements into paired container tags and standalone empty tags",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u2_t4",
+              "text": "they accurately structure text headings, line breaks, and page formatting",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u2_d1",
+              "category": "logical",
+              "text": "and by requiring every single tag without exception to possess an end tag with a slash",
+              "penalty_explanation": "Empty tags such as <BR> and <HR> do not require closing tags."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "HTML कंटेनर और एम्प्टी टैग का वर्गीकरण प्रस्तुत करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "HTML टैग कोण-कोष्ठक में लिखे जाते हैं से शुरू करें, ब्राउज़र को निर्देश देना बताएं, कंटेनर व एम्प्टी टैग में बांटने का तरीका जोड़ें, और पेज स्वरूप तैयार करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u2_t1",
+              "text": "HTML टैग कोण-कोष्ठक के भीतर लिखे गए केस-इनसेंसिटिव कमांड होते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u2_t2",
+              "text": "जो वेब ब्राउज़र को सामग्री प्रदर्शित करने के स्पष्ट निर्देश देते हैं",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u2_t3",
+              "text": "और तत्वों को पेयर्ड कंटेनर टैग तथा स्टैंडअलोन एम्प्टी टैग में विभाजित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u2_t4",
+              "text": "ये वेब-पेज की सामग्री और संरचना को व्यवस्थित रूप से तैयार करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u2_d1",
+              "category": "logical",
+              "text": "और प्रत्येक टैग के लिए अनिवार्य रूप से क्लोजिंग टैग की मांग करके",
+              "penalty_explanation": "एम्प्टी टैग (जैसे <BR> और <HR>) के लिए क्लोजिंग टैग की आवश्यकता नहीं होती।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "HTML tags are case-insensitive markup commands categorized into paired container tags and standalone empty tags.",
+        "hi": "HTML टैग कोण-कोष्ठक में लिखे जाने वाले केस-इनसेंसिटिव कमांड हैं जो पेयर्ड कंटेनर टैग और स्टैंडअलोन एम्प्टी टैग में विभाजित होते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "HTML Tag Attributes and Value Syntax",
+          "hi": "HTML टैग के Attributes और वैल्यू सिंटैक्स"
+        },
+        "theory": {
+          "en": "Attributes are special keywords used to provide additional features and information to HTML tags. Attributes are written strictly inside the starting tag of an HTML element to specify properties such as color, size, border, alignment, or file sources. For example, in <FONT color=\"red\"> or <IMG src=\"flower.jpg\" width=\"300\" height=\"400\">, color, src, width, and height act as attributes modifying their respective tags.",
+          "hi": "Attributes विशेष शब्द होते हैं जिनका उपयोग HTML टैग्स को अतिरिक्त सुविधाएँ और जानकारी प्रदान करने के लिए किया जाता है। रंग, साइज़, बॉर्डर और अलाइनमेंट जैसी अतिरिक्त विशेषताएँ जोड़ने के लिए attributes को हमेशा शुरुआती टैग के अंदर लिखा जाता है। उदाहरण के लिए, <FONT color=\"red\"> या <IMG src=\"flower.jpg\" width=\"300\" height=\"400\"> में color, src, width और height संबंधित टैग्स के attributes हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Anatomy of an HTML Attribute</text><rect x=\"45\" y=\"75\" width=\"510\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"100\" y=\"102\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;FONT</text><text x=\"210\" y=\"102\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\">color</text><text x=\"285\" y=\"102\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\">=</text><text x=\"365\" y=\"102\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\">&quot;red&quot;&gt;</text><text x=\"470\" y=\"102\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Text&lt;/FONT&gt;</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"210\" y1=\"130\" x2=\"210\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"285\" y1=\"130\" x2=\"285\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"365\" y1=\"130\" x2=\"365\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Starting</tspan><tspan x=\"100\" dy=\"1.2em\">Tag Name</tspan></text><text x=\"210\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"210\" dy=\"0\">Attribute</tspan><tspan x=\"210\" dy=\"1.2em\">Name</tspan></text><text x=\"285\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"285\" dy=\"0\">Assignment</tspan><tspan x=\"285\" dy=\"1.2em\">Operator</tspan></text><text x=\"365\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"365\" dy=\"0\">Attribute</tspan><tspan x=\"365\" dy=\"1.2em\">Value</tspan></text></svg>",
+          "caption": {
+            "en": "Token breakdown showing attribute placement inside opening HTML tags alongside assigned values.",
+            "hi": "शुरुआती HTML टैग में attribute और उसके असाइन किए गए मान की टोकन संरचना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the complete, harmonious sentence describing how attributes enhance HTML tags.",
+          "hint": "Start with attributes as special modifiers, specify their placement in the opening tag, describe assigning values like color and dimensions, and conclude with extending default tag capabilities.",
+          "target_sequence": [
+            {
+              "id": "en_u3_t1",
+              "text": "Attributes act as special modifier words inside HTML elements",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u3_t2",
+              "text": "written exclusively within the opening tag of an element",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u3_t3",
+              "text": "and by defining custom values for properties like color, size, and source",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u3_t4",
+              "text": "they actively provide additional features and styling parameters to tags",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u3_d1",
+              "category": "logical",
+              "text": "written exclusively inside the closing tag of an element with a forward slash",
+              "penalty_explanation": "Attributes must always be placed in the opening tag; closing tags never contain attributes."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "HTML टैग में attributes की भूमिका को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "Attributes विशेष शब्द होते हैं से शुरू करें, शुरुआती टैग में लिखने का संदर्भ दें, रंग व साइज़ जैसे मान निर्धारित करने का तरीका जोड़ें, और टैग को अतिरिक्त सुविधाएं देने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u3_t1",
+              "text": "Attributes विशेष शब्द हैं जो HTML तत्वों को नियंत्रित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u3_t2",
+              "text": "जिन्हें केवल किसी तत्व के शुरुआती टैग के भीतर लिखा जाता है",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u3_t3",
+              "text": "और रंग, साइज़, बॉर्डर तथा स्रोत जैसी विशिष्टताओं के मान निर्धारित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u3_t4",
+              "text": "ये टैग्स को अतिरिक्त विशेषताएँ और कार्यक्षमता प्रदान करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u3_d1",
+              "category": "logical",
+              "text": "जिन्हें फॉरवर्ड स्लैश वाले अंतिम क्लोजिंग टैग के अंदर अनिवार्य रूप से लिखा जाता है",
+              "penalty_explanation": "Attributes केवल शुरुआती टैग में लिखे जाते हैं, क्लोजिंग टैग में कभी नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Attributes are placed within starting tags to supply additional properties and customization values such as color and size.",
+        "hi": "Attributes शुरुआती टैग में लिखे जाने वाले विशेष शब्द हैं जो रंग और साइज़ जैसे अतिरिक्त गुण प्रदान करते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Creating, Editing, and Saving an HTML File",
+          "hi": "HTML फ़ाइल बनाना, संपादित करना और सेव करना"
+        },
+        "theory": {
+          "en": "Creating and saving an HTML file follows a precise sequence: Step 1 is opening Notepad via the Run dialog (Windows+R, typing notepad, and pressing Enter). Step 2 is typing the desired HTML code into the editor. Step 3 is saving the file using Ctrl+S, where the user selects the destination, enters the file name followed by the .html extension, chooses All Files (*.*) under Save as type, and clicks Save to produce a viewable web document.",
+          "hi": "HTML फ़ाइल बनाने और सहेजने की एक निश्चित प्रक्रिया है: स्टेप 1 रन डायलॉग के माध्यम से नोटपैड खोलना है (Windows+R दबाकर notepad टाइप करना और Enter दबाना)। स्टेप 2 नोटपैड विंडो में आवश्यक HTML कोड टाइप करना है। स्टेप 3 फ़ाइल को Ctrl+S से सहेजना है, जहाँ फ़ाइल का नाम .html एक्सटेंशन के साथ लिखकर Save as type में All Files (*.*) का चयन किया जाता है और Save पर क्लिक करके वेब दस्तावेज़ तैयार किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Notepad Save Procedure for HTML Files</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Windows + R</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Launch Notepad</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Type Code</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;html&gt;...&lt;/html&gt;</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Save As Dialog</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">name.html | All Files</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Step 1</tspan><tspan x=\"120\" dy=\"1.2em\">Open Editor</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Step 2</tspan><tspan x=\"300\" dy=\"1.2em\">Author Source</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Step 3</tspan><tspan x=\"480\" dy=\"1.2em\">Save with .html</tspan></text></svg>",
+          "caption": {
+            "en": "Three-step authoring workflow: launching Notepad, typing code, and saving with .html extension under All Files.",
+            "hi": "तीन-चरणीय प्रक्रिया: नोटपैड खोलना, कोड टाइप करना और All Files के अंतर्गत .html एक्सटेंशन से सहेजना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the fluent sentence describing the workflow of creating and saving an HTML file.",
+          "hint": "Start with opening Notepad via the Run dialog, explain typing HTML source code, describe choosing .html under All Files, and finish with creating a viewable web document.",
+          "target_sequence": [
+            {
+              "id": "en_u4_t1",
+              "text": "The developer launches the Notepad text editor using Windows+R",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u4_t2",
+              "text": "to input the required HTML markup tags into the editor window",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u4_t3",
+              "text": "and by saving the file with a `.html` extension under All Files in the Save dialog",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u4_t4",
+              "text": "it produces a valid web document ready for display in any browser",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u4_d1",
+              "category": "logical",
+              "text": "and by saving the file strictly with a `.txt` extension to prevent browser execution",
+              "penalty_explanation": "Saving with a .txt extension prevents browsers from recognizing and rendering the file as an HTML webpage."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "HTML फ़ाइल बनाने और सेव करने की कार्यप्रणाली को सही क्रम में व्यवस्थित करें।",
+          "hint": "डेवलपर Windows+R से नोटपैड खोलता है से शुरू करें, कोड लिखने का संदर्भ दें, Save as में .html और All Files चुनने का तरीका जोड़ें, और वेब डॉक्यूमेंट तैयार करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u4_t1",
+              "text": "डेवलपर Windows+R दबाकर नोटपैड टेक्स्ट एडिटर को प्रारंभ करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u4_t2",
+              "text": "एडिटर विंडो में आवश्यक HTML कोड टाइप करने के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u4_t3",
+              "text": "और Save डायलॉग बॉक्स में All Files चुनकर फ़ाइल को `.html` एक्सटेंशन के साथ सहेज कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u4_t4",
+              "text": "यह ब्राउज़र में देखे जाने योग्य एक वैध वेब दस्तावेज़ तैयार करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u4_d1",
+              "category": "logical",
+              "text": "और ब्राउज़र निष्पादन को रोकने के लिए फ़ाइल को हमेशा `.txt` एक्सटेंशन के साथ सहेज कर",
+              "penalty_explanation": ".txt एक्सटेंशन के साथ सेव करने पर फ़ाइल सादे टेक्स्ट के रूप में खुलेगी, वेब पेज के रूप में नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "HTML files are created in Notepad and must be saved with a .html extension under the All Files (*.*) option.",
+        "hi": "HTML फ़ाइलें नोटपैड में बनाई जाती हैं और इन्हें Save as type में All Files (*.*) चुनकर .html एक्सटेंशन के साथ सहेजा जाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Structure of an HTML Document and Core Sections",
+          "hi": "HTML दस्तावेज़ की संरचना और मुख्य अनुभाग"
+        },
+        "theory": {
+          "en": "An HTML document is composed of distinct structural sections. The <html>...</html> tag forms the root section enclosing all other code. The <head>...</head> tag contains metadata and document information, including the <title>...</title> tag which specifies the title shown on the browser's title bar. The <body>...</body> tag encapsulates all visible content rendered on the web page, such as headings, paragraphs, images, and links.",
+          "hi": "एक HTML दस्तावेज़ विभिन्न अनुभागों से मिलकर बना होता है। <html>...</html> टैग पूरे दस्तावेज़ का मूल (root) भाग है जिसके अंदर अन्य सभी टैग लिखे जाते हैं। <head>...</head> टैग दस्तावेज़ की जानकारी रखता है, जिसमें <title>...</title> टैग शामिल होता है जो ब्राउज़र के टाइटल बार में दिखने वाला शीर्षक तय करता है। <body>...</body> टैग वेब पेज पर प्रदर्शित होने वाली सभी दृश्य सामग्री (जैसे टेक्स्ट, चित्र, लिंक) को शामिल करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"15\" width=\"520\" height=\"30\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"30\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Document Hierarchy: html, head, title, and body</text><rect x=\"45\" y=\"55\" width=\"510\" height=\"170\" rx=\"8\" fill=\"#1e293b\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><text x=\"60\" y=\"72\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\">&lt;html&gt; (Root Section)</text><rect x=\"65\" y=\"85\" width=\"470\" height=\"50\" rx=\"6\" fill=\"#0f172a\" stroke=\"#fbbf24\"/><text x=\"80\" y=\"102\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\">&lt;head&gt; (Document Info)</text><rect x=\"230\" y=\"92\" width=\"290\" height=\"32\" rx=\"4\" fill=\"#1e293b\" stroke=\"#fbbf24\" stroke-dasharray=\"3\"/><text x=\"375\" y=\"108\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;title&gt; Title Bar Text &lt;/title&gt;</text><rect x=\"65\" y=\"145\" width=\"470\" height=\"65\" rx=\"6\" fill=\"#0f172a\" stroke=\"#4ade80\"/><text x=\"80\" y=\"162\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\">&lt;body&gt; (Visible Content Area)</text><text x=\"300\" y=\"185\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Text, Images, Headings, Lists, Tables &amp; Hyperlinks</text><text x=\"60\" y=\"215\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\">&lt;/html&gt;</text></svg>",
+          "caption": {
+            "en": "Structural hierarchy of an HTML document enclosing head metadata and the visible body canvas.",
+            "hi": "HTML दस्तावेज़ का पदानुक्रम जो head मेटाडेटा और दृश्यमान body क्षेत्र को <html> के भीतर समाहित करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence explaining the fundamental structural sections of an HTML document.",
+          "hint": "Start with the html tag as the root section, explain housing head metadata and title, describe the body enclosing visible page elements, and conclude with assembling the complete document structure.",
+          "target_sequence": [
+            {
+              "id": "en_u5_t1",
+              "text": "The `<html>` root section encloses the entire web document",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u5_t2",
+              "text": "while dividing configuration metadata from displayable page content",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u5_t3",
+              "text": "and by placing title information inside `<head>` and all visible markup inside `<body>`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u5_t4",
+              "text": "it establishes the standard syntax required for proper browser rendering",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u5_d1",
+              "category": "logical",
+              "text": "and by placing visible body content directly inside the head section above the title",
+              "penalty_explanation": "The <head> section contains metadata like <title>; all visible content must reside inside the <body> tag."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "HTML दस्तावेज़ की बुनियादी संरचना को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "<html> रूट सेक्शन पूरे दस्तावेज़ को घेरता है से शुरू करें, मेटाडेटा और सामग्री अलग करना बताएं, head में शीर्षक और body में दृश्य सामग्री रखने का तरीका जोड़ें, और सिंटैक्स स्थापित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u5_t1",
+              "text": "`<html>` रूट सेक्शन पूरे वेब दस्तावेज़ को अपने भीतर समाहित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u5_t2",
+              "text": "दस्तावेज़ की तकनीकी जानकारी को मुख्य दृश्य सामग्री से अलग करते हुए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u5_t3",
+              "text": "और `<head>` में शीर्षक तथा `<body>` में सभी दृश्य तत्वों को व्यवस्थित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u5_t4",
+              "text": "यह ब्राउज़र में सही प्रदर्शन के लिए आवश्यक मानक संरचना स्थापित करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u5_d1",
+              "category": "logical",
+              "text": "और शीर्षक के ऊपर सीधे head सेक्शन में सभी दृश्य टेक्स्ट और चित्र रखकर",
+              "penalty_explanation": "दृश्य सामग्री केवल <body> टैग में लिखी जाती है, <head> सेक्शन में केवल मेटाडेटा और शीर्षक होता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "An HTML document starts with <html>, isolates metadata and title inside <head>, and places all visible content inside <body>.",
+        "hi": "HTML दस्तावेज़ <html> से शुरू होता है, शीर्षक को <head> में रखता है और सभी दृश्य सामग्री को <body> के भीतर समाहित करता है।"
+      }
+    }
+  ]
+}
