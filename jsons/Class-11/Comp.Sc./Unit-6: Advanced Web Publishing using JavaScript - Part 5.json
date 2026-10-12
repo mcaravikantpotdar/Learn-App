@@ -1,1 +1,485 @@
-
+{
+  "metadata": {
+    "class": "Class 11",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Unit-6: Advanced Web Publishing using JavaScript - Part 5",
+      "hi": "यूनिट-6: जावास्क्रिप्ट का उपयोग करके उन्नत वेब प्रकाशन - भाग 5"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Iteration Principles and the while Loop",
+          "hi": "पुनरावृत्ति सिद्धांत और while लूप"
+        },
+        "theory": {
+          "en": "Looping statements are used to execute a block of code repeatedly as long as a specified condition remains true. The while loop is an entry-controlled loop that tests its condition before executing any statements inside the loop body. If the condition evaluates to false at the very beginning, the body of the while loop does not execute even once.",
+          "hi": "लूपिंग कथनों का उपयोग कोड के एक ब्लॉक को तब तक बार-बार निष्पादित करने के लिए किया जाता है जब तक कि कोई निश्चित शर्त सत्य रहती है। while लूप एक एंट्री-नियंत्रित लूप है जो लूप बॉडी के भीतर किसी भी कथन को चलाने से पहले अपनी शर्त का परीक्षण करता है। यदि शर्त शुरुआत में ही असत्य पाई जाती है, तो while लूप का मुख्य भाग एक बार भी निष्पादित नहीं होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Entry-Controlled while Loop Flow</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">while (condition)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Pre-Test Check</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">{ statements; }</text><text x=\"300\" y=\"115\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Executes if TRUE</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Exit Loop</text><text x=\"480\" y=\"115\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">When FALSE</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Evaluated Before</tspan><tspan x=\"120\" dy=\"1.2em\">Block Entry</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Loops Back Until</tspan><tspan x=\"300\" dy=\"1.2em\">Condition Fails</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Bypasses Directly</tspan><tspan x=\"480\" dy=\"1.2em\">If Initial FALSE</tspan></text></svg>",
+          "caption": {
+            "en": "Entry-controlled while loop testing conditions prior to executing statements.",
+            "hi": "कथनों को चलाने से पहले शर्त की जांच करने वाला एंट्री-नियंत्रित while लूप।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the complete, harmonious sentence describing how the while loop executes.",
+          "hint": "Start with the while loop operating as an entry-controlled structure, explain testing the condition first, introduce looping on true, and conclude with bypassing the body on false.",
+          "target_sequence": [
+            {
+              "id": "en_u25_t1",
+              "text": "The `while` loop operates as an entry-controlled iterative structure",
+              "role_hint": "Lead with the while loop acting as an entry-controlled loop"
+            },
+            {
+              "id": "en_u25_t2",
+              "text": "by evaluating its test condition before executing the loop body",
+              "role_hint": "Explain the pre-test condition evaluation mechanism"
+            },
+            {
+              "id": "en_u25_t3",
+              "text": "and while the evaluated expression continues to return true",
+              "role_hint": "Introduce repeated execution during truth condition"
+            },
+            {
+              "id": "en_u25_t4",
+              "text": "it repeatedly runs the enclosed block until the condition becomes false",
+              "role_hint": "Conclude with the loop terminating when false"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u25_d1",
+              "category": "logical",
+              "text": "by executing the enclosed block once before checking any condition",
+              "penalty_explanation": "An entry-controlled while loop tests its condition before entering the body, never executing unconditionally."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "while लूप की कार्यप्रणाली को दर्शाने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "while लूप एक एंट्री-नियंत्रित संरचना है से शुरू करें, पहले शर्त जांचने का तरीका बताएं, शर्त सत्य रहने की स्थिति जोड़ें, और असत्य होने पर समाप्त होने का नियम बताएं।",
+          "target_sequence": [
+            {
+              "id": "hi_u25_t1",
+              "text": "`while` लूप एक एंट्री-नियंत्रित पुनरावृत्ति संरचना के रूप में कार्य करता है",
+              "role_hint": "एंट्री-नियंत्रित लूप वाले मुख्य उपवाक्य से शुरुआत करें"
+            },
+            {
+              "id": "hi_u25_t2",
+              "text": "लूप बॉडी को चलाने से पहले अपनी शर्त का परीक्षण करके",
+              "role_hint": "शर्त के पूर्व-परीक्षण के तरीके से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u25_t3",
+              "text": "और जब तक जांची गई अभिव्यक्ति सत्य यानी true बनी रहती है",
+              "role_hint": "शर्त सत्य रहने की निरंतरता से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u25_t4",
+              "text": "यह शर्त असत्य होने तक संलग्न कोड ब्लॉक को बार-बार चलाता रहता है",
+              "role_hint": "असत्य होने पर रुकने की मुख्य क्रिया के साथ वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u25_d1",
+              "category": "logical",
+              "text": "किसी भी शर्त की जांच किए बिना पहले कोड ब्लॉक को अनिवार्य रूप से चलाकर",
+              "penalty_explanation": "while लूप पहले शर्त जांचता है और शुरुआत में ही शर्त असत्य होने पर कोड को एक बार भी नहीं चलाता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The `while` loop checks its condition at the entry point and runs its body only while that condition remains true.",
+        "hi": "`while` लूप प्रवेश बिंदु पर शर्त की जांच करता है और केवल शर्त सत्य रहने तक ही अपने ब्लॉक को चलाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "The Exit-Controlled do while Loop",
+          "hi": "एग्जिट-नियंत्रित do while लूप"
+        },
+        "theory": {
+          "en": "The `do while` loop is an exit-controlled loop in JavaScript. Unlike the while loop, it executes its statement block first and checks the condition at the end of each iteration. Because the condition is tested at the bottom, the statements inside a do while loop are guaranteed to execute at least once, even if the condition is false right from the start.",
+          "hi": "`do while` लूप जावास्क्रिप्ट में एक एग्जिट-नियंत्रित लूप है। while लूप के विपरीत, यह पहले अपने स्टेटमेंट ब्लॉक को निष्पादित करता है और प्रत्येक चक्र के अंत में शर्त की जांच करता है। क्योंकि शर्त का परीक्षण सबसे नीचे होता है, इसलिए do while लूप के कथन कम से कम एक बार अवश्य निष्पादित होते हैं, भले ही शर्त शुरू से ही असत्य क्यों न हो।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Exit-Controlled do while Execution Flow</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">do { ... }</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Runs 1st Time</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">while (cond);</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Post-Test Check</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Guaranteed Run</text><text x=\"480\" y=\"115\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">At Least Once</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Executes Body</tspan><tspan x=\"120\" dy=\"1.2em\">Unconditionally</tspan></text><text x=\"300\" y=\"202\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Tests Condition</tspan><tspan x=\"300\" dy=\"1.2em\">At Bottom Exit</tspan></text><text x=\"480\" y=\"172\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Guarantees Minimum</tspan><tspan x=\"480\" dy=\"1.2em\">One Iteration</tspan></text></svg>",
+          "caption": {
+            "en": "Exit-controlled do while loop executing at least once prior to evaluating conditions.",
+            "hi": "शर्त की जांच करने से पहले कम से कम एक बार चलने वाला एग्जिट-नियंत्रित do while लूप।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the fluent sentence describing how the do while loop executes.",
+          "hint": "Start with the do while loop functioning as an exit-controlled structure, explain executing the code block first, introduce checking the condition at the exit point, and conclude with guaranteeing at least one execution.",
+          "target_sequence": [
+            {
+              "id": "en_u26_t1",
+              "text": "The `do while` statement functions as an exit-controlled loop",
+              "role_hint": "Lead with the exit-controlled classification"
+            },
+            {
+              "id": "en_u26_t2",
+              "text": "by executing its enclosed statements first before checking any test expression",
+              "role_hint": "Explain the unconditional initial pass"
+            },
+            {
+              "id": "en_u26_t3",
+              "text": "and by evaluating the condition only at the bottom exit point",
+              "role_hint": "Detail the post-test check location"
+            },
+            {
+              "id": "en_u26_t4",
+              "text": "it guarantees that the loop body runs at least once even if the condition is initially false",
+              "role_hint": "Conclude with the guaranteed single run"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u26_d1",
+              "category": "logical",
+              "text": "it skips execution entirely whenever the exit condition evaluates to true",
+              "penalty_explanation": "A do while loop continues iterating when its condition is true; it terminates when the condition evaluates to false."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "do while लूप के निष्पादन सिद्धांत को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "`do while` एक एग्जिट-नियंत्रित लूप है से शुरू करें, पहले कथनों को चलाने का तरीका बताएं, अंत में शर्त जांचने का नियम जोड़ें, और कम से कम एक बार चलने की गारंटी पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u26_t1",
+              "text": "`do while` स्टेटमेंट एक एग्जिट-नियंत्रित लूप के रूप में कार्य करता है",
+              "role_hint": "एग्जिट-नियंत्रित लूप वाले मुख्य उपवाक्य से शुरुआत करें"
+            },
+            {
+              "id": "hi_u26_t2",
+              "text": "किसी भी शर्त की जांच किए बिना पहले अपने संलग्न कथनों को चलाकर",
+              "role_hint": "शुरुआती बिना शर्त निष्पादन से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u26_t3",
+              "text": "और केवल सबसे नीचे निकास बिंदु पर शर्त का मूल्यांकन करके",
+              "role_hint": "अंतिम जांच बिंदु से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u26_t4",
+              "text": "यह शर्त शुरू से असत्य होने पर भी लूप बॉडी को कम से कम एक बार चलाने की गारंटी देता है",
+              "role_hint": "न्यूनतम एक बार चलने की मुख्य क्रिया के साथ वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u26_d1",
+              "category": "logical",
+              "text": "यह शर्त के सत्य होने पर लूप के निष्पादन को तुरंत पूरी तरह रोक देता है",
+              "penalty_explanation": "do while लूप शर्त सत्य रहने तक चलता रहता है, शर्त असत्य होने पर ही रुकता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The `do while` loop evaluates its condition at the exit, ensuring the code block executes at least once regardless of the condition.",
+        "hi": "`do while` लूप अपनी शर्त की जांच अंत में करता है, जिससे कोड ब्लॉक कम से कम एक बार अवश्य चलता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "The for Loop Structure and Header Anatomy",
+          "hi": "for लूप की संरचना और हेडर विभाजन"
+        },
+        "theory": {
+          "en": "The `for` loop provides a compact, structured loop construct in JavaScript. Its syntax unifies three key control expressions separated by semicolons into a single loop header: variable initialization, the test condition, and the increment or decrement step. Syntax: `for (initialization; condition; increment/decrement) { statement 1; statement 2; }`.",
+          "hi": "`for` लूप जावास्क्रिप्ट में एक संक्षिप्त और व्यवस्थित लूप संरचना प्रदान करता है। इसका सिंटैक्स सेमीकोलन द्वारा अलग किए गए तीन मुख्य नियंत्रण कथनों को एक ही हेडर में जोड़ता है: वेरिएबल इनिशियलाइजेशन (प्रारंभ), टेस्ट कंडीशन (शर्त), और इंक्रीमेंट या डिक्रीमेंट (वृद्धि/कमी)। सिंटैक्स: `for (initialization; condition; increment/decrement) { statement 1; statement 2; }`।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Anatomy of the for Loop Header</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">var i = 1;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Initialization</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">i &lt;= 10;</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Condition Check</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">i++</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Step Counter</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Executed Once</tspan><tspan x=\"120\" dy=\"1.2em\">At Inception</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Tested Before Each</tspan><tspan x=\"300\" dy=\"1.2em\">Loop Iteration</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Updates Counter</tspan><tspan x=\"480\" dy=\"1.2em\">After Each Pass</tspan></text></svg>",
+          "caption": {
+            "en": "Three-part for loop header combining initialization, condition testing, and increment/decrement.",
+            "hi": "आरंभीकरण, शर्त परीक्षण और वृद्धि/कमी को एक साथ जोड़ने वाला तीन-भागों का for लूप हेडर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the for loop organizes iteration.",
+          "hint": "Start with the for loop organizing execution inside a unified header, describe setting up the initial counter, explain evaluating the condition, and conclude with updating the counter on each iteration.",
+          "target_sequence": [
+            {
+              "id": "en_u27_t1",
+              "text": "The `for` loop organizes iteration within a single structured header",
+              "role_hint": "Lead with the single structured header concept"
+            },
+            {
+              "id": "en_u27_t2",
+              "text": "by declaring and initializing a loop counter variable first",
+              "role_hint": "Explain the initialization stage"
+            },
+            {
+              "id": "en_u27_t3",
+              "text": "and by checking the test condition prior to each iteration",
+              "role_hint": "Detail the pre-test condition check before every cycle"
+            },
+            {
+              "id": "en_u27_t4",
+              "text": "it automatically updates the counter using an increment or decrement step after every pass",
+              "role_hint": "Conclude with updating the counter value"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u27_d1",
+              "category": "logical",
+              "text": "by reinitializing the counter variable back to zero at the start of every single iteration",
+              "penalty_explanation": "Initialization runs only once at the beginning of the for loop, not on every iteration."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "for लूप द्वारा पुनरावृत्ति को प्रबंधित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "`for` लूप एक हेडर में पुनरावृत्ति आयोजित करता है से शुरू करें, काउंटर वेरिएबल को प्रारंभ करने का तरीका बताएं, प्रत्येक चक्र से पहले शर्त जांचना जोड़ें, और काउंटर को अपडेट करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u27_t1",
+              "text": "`for` लूप एक ही व्यवस्थित हेडर के भीतर पुनरावृत्ति को प्रबंधित करता है",
+              "role_hint": "सुव्यवस्थित हेडर वाले मुख्य उपवाक्य से शुरुआत करें"
+            },
+            {
+              "id": "hi_u27_t2",
+              "text": "सबसे पहले एक लूप काउंटर वेरिएबल को घोषित और प्रारंभ करके",
+              "role_hint": "आरंभीकरण की प्रक्रिया से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u27_t3",
+              "text": "और प्रत्येक पुनरावृत्ति से पहले परीक्षण शर्त की जांच करके",
+              "role_hint": "प्रत्येक चक्र से पहले शर्त की जांच से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u27_t4",
+              "text": "यह प्रत्येक चक्र के बाद इंक्रीमेंट या डिक्रीमेंट द्वारा काउंटर को स्वतः अपडेट करता है",
+              "role_hint": "काउंटर मान बदलने की मुख्य क्रिया के साथ वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u27_d1",
+              "category": "logical",
+              "text": "प्रत्येक चक्र की शुरुआत में काउंटर वेरिएबल को दोबारा शून्य पर रीसेट करके",
+              "penalty_explanation": "इनिशियलाइजेशन केवल लूप की शुरुआत में एक बार चलता है, हर चक्र में दोबारा रीसेट नहीं होता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The `for` loop combines initialization, condition evaluation, and counter updates into a concise three-part header.",
+        "hi": "`for` लूप आरंभीकरण, शर्त मूल्यांकन और काउंटर अपडेट को एक संक्षिप्त तीन-भागों के हेडर में समाहित करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Comparing Loops: Entry-Controlled vs. Exit-Controlled",
+          "hi": "लूप्स की तुलना: एंट्री-नियंत्रित बनाम एग्जिट-नियंत्रित"
+        },
+        "theory": {
+          "en": "JavaScript loops fall into two major categories based on when they evaluate their test conditions. Entry-controlled loops (like `while` and `for`) check the condition before executing the loop body; if the condition is false initially, the body does not execute. Exit-controlled loops (like `do while`) check the condition after running the body, guaranteeing at least one execution.",
+          "hi": "जावास्क्रिप्ट लूप्स को इस आधार पर दो मुख्य श्रेणियों में बांटा गया है कि वे अपनी परीक्षण शर्तों की जांच कब करते हैं। एंट्री-नियंत्रित लूप (जैसे `while` और `for`) लूप बॉडी को निष्पादित करने से पहले शर्त की जांच करते हैं; यदि शर्त शुरुआत में ही असत्य हो, तो कोड बिल्कुल नहीं चलता। एग्जिट-नियंत्रित लूप (जैसे `do while`) बॉडी चलाने के बाद शर्त की जांच करते हैं, जिससे कोड का कम से कम एक बार चलना सुनिश्चित होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Comparison of Loop Control Mechanisms</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Entry-Controlled (while, for)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Condition First</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Exit-Controlled (do while)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Body First</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Pre-Test</tspan><tspan x=\"100\" dy=\"1.2em\">Evaluation</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Zero Iterations</tspan><tspan x=\"225\" dy=\"1.2em\">Possible</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Post-Test</tspan><tspan x=\"375\" dy=\"1.2em\">Evaluation</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Minimum One Run</tspan><tspan x=\"500\" dy=\"1.2em\">Guaranteed</tspan></text></svg>",
+          "caption": {
+            "en": "Structural distinction between entry-controlled loops and exit-controlled loops.",
+            "hi": "एंट्री-नियंत्रित लूप और एग्जिट-नियंत्रित लूप के बीच संरचनात्मक अंतर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the complete compound sentence comparing entry-controlled and exit-controlled loops.",
+          "hint": "Start with entry-controlled loops testing conditions first, state that they allow zero iterations on false, contrast with exit-controlled loops checking at the end, and conclude with guaranteeing at least one run.",
+          "target_sequence": [
+            {
+              "id": "en_u28_t1",
+              "text": "Entry-controlled loops like `while` and `for` test their condition prior to execution",
+              "role_hint": "Lead with entry-controlled loop testing"
+            },
+            {
+              "id": "en_u28_t2",
+              "text": "which prevents the loop body from running if the condition is false initially",
+              "role_hint": "Explain the zero-iteration scenario"
+            },
+            {
+              "id": "en_u28_t3",
+              "text": "whereas the exit-controlled `do while` loop evaluates its condition after the body executes",
+              "role_hint": "Contrast with the exit-controlled testing point"
+            },
+            {
+              "id": "en_u28_t4",
+              "text": "ensuring that its statement block runs at least once under all circumstances",
+              "role_hint": "Conclude with the guaranteed single execution"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u28_d1",
+              "category": "logical",
+              "text": "ensuring that the while loop always executes more times than a do while loop",
+              "penalty_explanation": "Execution count depends on test conditions and inputs, not an inherent rule that while runs more times."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "एंट्री-नियंत्रित और एग्जिट-नियंत्रित लूप्स के अंतर को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "एंट्री-नियंत्रित लूप पहले शर्त जांचते हैं से शुरू करें, शर्त असत्य होने पर न चलने की बात कहें, एग्जिट-नियंत्रित लूप द्वारा अंत में जांच जोड़ें, और कम से कम एक बार चलने की गारंटी पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u28_t1",
+              "text": "`while` और `for` जैसे एंट्री-नियंत्रित लूप निष्पादन से पहले शर्त का परीक्षण करते हैं",
+              "role_hint": "एंट्री-नियंत्रित लूप के परीक्षण वाले मुख्य उपवाक्य से शुरुआत करें"
+            },
+            {
+              "id": "hi_u28_t2",
+              "text": "जिससे शुरुआत में ही शर्त असत्य होने पर लूप बॉडी एक बार भी नहीं चलती",
+              "role_hint": "शून्य पुनरावृत्ति की संभावना से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u28_t3",
+              "text": "जबकि एग्जिट-नियंत्रित `do while` लूप बॉडी चलने के बाद अपनी शर्त का मूल्यांकन करता है",
+              "role_hint": "एग्जिट-नियंत्रित लूप के विपरीत परीक्षण समय से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u28_t4",
+              "text": "जिससे इसके कथनों का प्रत्येक स्थिति में कम से कम एक बार चलना सुनिश्चित होता है",
+              "role_hint": "न्यूनतम एक बार चलने की मुख्य क्रिया के साथ वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u28_d1",
+              "category": "logical",
+              "text": "जिससे while लूप हमेशा do while लूप की तुलना में अधिक बार निष्पादित होता है",
+              "penalty_explanation": "लूप कितनी बार चलेगा यह दी गई शर्त और इनपुट पर निर्भर करता है, while लूप हमेशा अधिक बार नहीं चलता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Entry-controlled loops test conditions first and can execute zero times, while exit-controlled loops test at the end and always execute at least once.",
+        "hi": "एंट्री-नियंत्रित लूप पहले शर्त जांचते हैं और शून्य बार चल सकते हैं, जबकि एग्जिट-नियंत्रित लूप अंत में जांचते हैं और हमेशा कम से कम एक बार चलते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Browser Cookies and State Persistence",
+          "hi": "ब्राउज़र कुकीज़ और स्टेट पर्सिस्टेंस"
+        },
+        "theory": {
+          "en": "A cookie is a small piece of data sent from a web server and stored locally as a text file on the user's computer by the web browser. Cookies are primarily used to remember stateful information, retain user preferences, track browsing sessions, and maintain login authentication across multiple HTTP requests.",
+          "hi": "कुकी डेटा का एक छोटा सा टुकड़ा होती है जिसे वेब सर्वर द्वारा भेजा जाता है और वेब ब्राउज़र द्वारा उपयोगकर्ता के कंप्यूटर पर एक टेक्स्ट फ़ाइल के रूप में स्थानीय रूप से संग्रहीत किया जाता है। कुकीज़ का उपयोग मुख्य रूप से स्थिति संबंधी जानकारी याद रखने, उपयोगकर्ता की प्राथमिकताओं को बनाए रखने, ब्राउज़िंग सत्रों को ट्रैक करने और विभिन्न HTTP अनुरोधों में लॉगिन प्रमाणीकरण बनाए रखने के लिए किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Browser Cookie Storage Mechanism</text><rect x=\"45\" y=\"70\" width=\"150\" height=\"60\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"92\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Browser</text><text x=\"120\" y=\"112\" fill=\"#94a3b8\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Client Device</text><rect x=\"405\" y=\"70\" width=\"150\" height=\"60\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"92\" fill=\"#4ade80\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Server</text><text x=\"480\" y=\"112\" fill=\"#94a3b8\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Remote Host</text><line x1=\"195\" y1=\"85\" x2=\"405\" y2=\"85\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"405,85 397,81 397,89\" fill=\"#38bdf8\"/><text x=\"300\" y=\"77\" fill=\"#38bdf8\" font-size=\"10\" text-anchor=\"middle\">HTTP Request + Cookie</text><line x1=\"405\" y1=\"115\" x2=\"195\" y2=\"115\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"195,115 203,111 203,119\" fill=\"#fbbf24\"/><text x=\"300\" y=\"128\" fill=\"#fbbf24\" font-size=\"10\" text-anchor=\"middle\">HTTP Response (Set-Cookie)</text><line x1=\"120\" y1=\"135\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"135\" x2=\"480\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Stores Small</tspan><tspan x=\"120\" dy=\"1.2em\">Text Files Locally</tspan></text><text x=\"480\" y=\"202\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Identifies User &amp;</tspan><tspan x=\"480\" dy=\"1.2em\">Session State</tspan></text></svg>",
+          "caption": {
+            "en": "Exchange of cookie data between browser client storage and the web server.",
+            "hi": "ब्राउज़र क्लाइंट स्टोरेज और वेब सर्वर के बीच कुकी डेटा का आदान-प्रदान।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the fluent sentence describing how browser cookies maintain state.",
+          "hint": "Start with cookies as small text files, describe saving them on the client device, introduce their role during server requests, and conclude with remembering user state and preferences.",
+          "target_sequence": [
+            {
+              "id": "en_u29_t1",
+              "text": "Browser cookies are small text files created by web servers",
+              "role_hint": "Lead with the definition of cookies as small server-created text files"
+            },
+            {
+              "id": "en_u29_t2",
+              "text": "and stored locally on the client machine by the web browser",
+              "role_hint": "Detail client-side local storage"
+            },
+            {
+              "id": "en_u29_t3",
+              "text": "so that during subsequent interactions with the website",
+              "role_hint": "Introduce the context of subsequent network interactions"
+            },
+            {
+              "id": "en_u29_t4",
+              "text": "they consistently retain user preferences and active session states",
+              "role_hint": "Conclude with state persistence and session retention"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u29_d1",
+              "category": "logical",
+              "text": "which permanently install executable program files directly on the server hard drive",
+              "penalty_explanation": "Cookies are harmless plain text files stored on the client machine, not executable applications on the server."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ब्राउज़र कुकीज़ द्वारा उपयोगकर्ता की स्थिति बनाए रखने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "कुकीज़ सर्वर द्वारा बनाई गई टेक्स्ट फाइलें हैं से शुरू करें, ब्राउज़र द्वारा स्थानीय रूप से सहेजने का तरीका बताएं, बाद के संपर्कों का संदर्भ जोड़ें, और सत्र स्थिति याद रखने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u29_t1",
+              "text": "ब्राउज़र कुकीज़ वेब सर्वर द्वारा बनाई गई छोटी टेक्स्ट फाइलें होती हैं",
+              "role_hint": "कुकीज़ की मूल परिभाषा वाले मुख्य उपवाक्य से शुरुआत करें"
+            },
+            {
+              "id": "hi_u29_t2",
+              "text": "जिन्हें वेब ब्राउज़र द्वारा क्लाइंट मशीन पर स्थानीय रूप से संग्रहीत किया जाता है",
+              "role_hint": "क्लाइंट पर स्थानीय संग्रहण से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u29_t3",
+              "text": "ताकि वेबसाइट के साथ बाद में होने वाले सभी संपर्कों के दौरान",
+              "role_hint": "भविष्य के संचार संदर्भ से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u29_t4",
+              "text": "ये उपयोगकर्ता की प्राथमिकताओं और सक्रिय सत्र स्थिति को याद रख सकें",
+              "role_hint": "सत्र जानकारी सुरक्षित रखने की मुख्य क्रिया के साथ वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u29_d1",
+              "category": "logical",
+              "text": "जो सीधे मुख्य सर्वर की हार्ड ड्राइव पर निष्पादन योग्य प्रोग्राम फाइलें स्थापित करती हैं",
+              "penalty_explanation": "कुकीज़ क्लाइंट कंप्यूटर पर रखी जाने वाली सादी टेक्स्ट फाइलें होती हैं, सर्वर पर चलने वाले प्रोग्राम नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Cookies are small text files stored by the browser on the client machine to remember user preferences and session data.",
+        "hi": "कुकीज़ छोटी टेक्स्ट फाइलें हैं जिन्हें ब्राउज़र द्वारा क्लाइंट मशीन पर सहेजा जाता है ताकि उपयोगकर्ता की प्राथमिकताएं और सत्र डेटा याद रखा जा सके।"
+      }
+    }
+  ]
+}
