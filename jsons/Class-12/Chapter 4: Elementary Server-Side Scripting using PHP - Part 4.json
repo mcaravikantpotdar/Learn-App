@@ -1,0 +1,579 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Chapter 4: Elementary Server-Side Scripting using PHP - Part 4",
+      "hi": "अध्याय 4: PHP का उपयोग करके प्राथमिक सर्वर-साइड स्क्रिप्टिंग - भाग 4"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Decision Making: if and if-else Statements",
+          "hi": "निर्णय नियंत्रण: if और if-else स्टेटमेंट्स"
+        },
+        "theory": {
+          "en": "Conditional statements make decisions in PHP by executing different code blocks depending on Boolean evaluation. The basic if statement executes its enclosed block of code strictly when the tested condition evaluates to TRUE. The two-way if-else statement provides alternate execution paths, running statement block 1 if the condition is TRUE and branching to statement block 2 under else if the condition evaluates to FALSE.",
+          "hi": "कंडीशनल स्टेटमेंट्स बूलियन मूल्यांकन के आधार पर विभिन्न कोड ब्लॉक्स को निष्पादित करके PHP में निर्णय लेते हैं। बुनियादी if स्टेटमेंट अपने कोड ब्लॉक को केवल तभी निष्पादित करता है जब जांची गई शर्त TRUE होती है। दो-तरफ़ा if-else स्टेटमेंट वैकल्पिक निष्पादन पथ प्रदान करता है, जो शर्त TRUE होने पर पहले कथन ब्लॉक को चलाता है और शर्त FALSE होने पर else के तहत दूसरे ब्लॉक पर चला जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Branching Logic: if vs. if-else Flow</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">if ($x &gt;= 18)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Condition Gate</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">TRUE Branch</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Execute Block 1</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">else Branch</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Execute Block 2</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#f87171\" stroke-width=\"2\" stroke-dasharray=\"4\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Evaluates Boolean</tspan><tspan x=\"120\" dy=\"1.2em\">Truth Criteria</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Runs Primary</tspan><tspan x=\"300\" dy=\"1.2em\">Affirmative Code</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Runs Alternate</tspan><tspan x=\"480\" dy=\"1.2em\">Fallback Code</tspan></text></svg>",
+          "caption": {
+            "en": "Two-way conditional flow directing program execution down alternative paths depending on Boolean condition results.",
+            "hi": "दो-तरफ़ा कंडीशनल प्रवाह जो बूलियन शर्त के परिणामों के आधार पर प्रोग्राम निष्पादन को वैकल्पिक पथों पर निर्देशित करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how if and if-else statements handle conditional branching.",
+          "hint": "Start with conditional statements evaluating expressions, mention establishing branching execution paths, explain routing truth to primary code blocks and falsity to alternate blocks, and conclude with governing logical program flow.",
+          "target_sequence": [
+            {
+              "id": "en_u18_t1",
+              "text": "Conditional `if` and `if-else` statements evaluate test expressions",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u18_t2",
+              "text": "to determine the valid execution pathway within a PHP script",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u18_t3",
+              "text": "and by running the primary block when TRUE or branching to `else` when FALSE",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u18_t4",
+              "text": "they accurately direct program flow across mutually exclusive operational blocks",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u18_d1",
+              "category": "logical",
+              "text": "they execute both affirmative and fallback code blocks simultaneously regardless of conditions",
+              "penalty_explanation": "An if-else construct executes strictly one branch or the other, never both blocks simultaneously."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP में if और if-else स्टेटमेंट्स द्वारा कंडीशनल ब्रांचिंग को प्रबंधित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "`if` और `if-else` स्टेटमेंट्स परीक्षण अभिव्यक्तियों का मूल्यांकन करते हैं से शुरू करें, निष्पादन पथ निर्धारित करने का संदर्भ दें, TRUE पर पहला और FALSE पर `else` ब्लॉक चलाने का तरीका बताएं, और प्रोग्राम प्रवाह को निर्देशित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u18_t1",
+              "text": "कंडीशनल `if` और `if-else` स्टेटमेंट्स परीक्षण अभिव्यक्तियों का मूल्यांकन करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u18_t2",
+              "text": "किसी PHP स्क्रिप्ट के भीतर वैध निष्पादन पथ निर्धारित करने के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u18_t3",
+              "text": "और शर्त TRUE होने पर मुख्य ब्लॉक तथा FALSE होने पर `else` ब्लॉक को चलाकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u18_t4",
+              "text": "ये परस्पर अनन्य कोड वर्गों में प्रोग्राम प्रवाह को सटीक रूप से निर्देशित करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u18_d1",
+              "category": "logical",
+              "text": "ये शर्तों की परवाह किए बिना दोनों सकारात्मक और फ़ॉलबैक कोड ब्लॉक्स को एक साथ चलाते हैं",
+              "penalty_explanation": "if-else संरचना में केवल एक ही ब्लॉक निष्पादित होता है, दोनों ब्लॉक एक साथ कभी नहीं चलते।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The if statement executes code when a condition is TRUE, while if-else provides an alternate else block when FALSE.",
+        "hi": "if स्टेटमेंट शर्त TRUE होने पर कोड चलाता है, जबकि if-else शर्त FALSE होने पर वैकल्पिक else ब्लॉक निष्पादित करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Multi-Way Decisions: The if-elseif-else Ladder",
+          "hi": "बहु-मार्गी निर्णय: if-elseif-else लैडर"
+        },
+        "theory": {
+          "en": "The if-elseif-else construct handles complex decision making involving more than two mutually exclusive outcomes. PHP checks sequential conditions from top to bottom: as soon as a condition evaluates to TRUE, its corresponding statement block is executed and the remainder of the ladder is bypassed. If none of the conditions evaluate to TRUE, the trailing else statement executes as a fallback.",
+          "hi": "if-elseif-else संरचना दो से अधिक परस्पर अनन्य परिणामों वाले जटिल निर्णयों को संभालती है। PHP ऊपर से नीचे की ओर क्रमिक शर्तों की जांच करता है: जैसे ही कोई शर्त TRUE पाई जाती है, उससे संबंधित कोड ब्लॉक निष्पादित हो जाता है और बाकी लैडर को छोड़ दिया जाता है। यदि कोई भी शर्त सत्य नहीं होती है, तो अंतिम else ब्लॉक डिफ़ॉल्ट विकल्प के रूप में निष्पादित होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Cascading Decision Ladder ($marks = 72)</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">if ($x &gt;= 75)</text><text x=\"120\" y=\"115\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">FALSE &rarr; Skip</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">elseif ($x &gt;= 33)</text><text x=\"300\" y=\"115\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">TRUE &rarr; &quot;Pass&quot;</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">else</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Bypassed</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Initial Test</tspan><tspan x=\"120\" dy=\"1.2em\">Fails Condition</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Matching Test</tspan><tspan x=\"300\" dy=\"1.2em\">Executes Output</tspan></text><text x=\"480\" y=\"172\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Fallback Case</tspan><tspan x=\"480\" dy=\"1.2em\">Never Reached</tspan></text></svg>",
+          "caption": {
+            "en": "Sequential evaluation cascade executing the first matching branch and bypassing subsequent blocks.",
+            "hi": "क्रमिक मूल्यांकन लैडर जो पहले मेल खाने वाले ब्लॉक को चलाता है और बाद के सभी ब्लॉक्स को छोड़ देता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the if-elseif-else ladder executes multi-branch logic.",
+          "hint": "Start with the if-elseif-else ladder testing multiple conditions, mention proceeding sequentially down the construct, explain executing the first satisfied block and bypassing remainder, and conclude with providing a final fallback under else.",
+          "target_sequence": [
+            {
+              "id": "en_u19_t1",
+              "text": "The `if-elseif-else` ladder evaluates multiple successive criteria",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u19_t2",
+              "text": "in top-to-bottom sequence across multi-branch decision structures",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u19_t3",
+              "text": "and by running the first block matching TRUE while bypassing downstream cases",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u19_t4",
+              "text": "it provides an efficient cascading mechanism with an ultimate fallback under `else`",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u19_d1",
+              "category": "logical",
+              "text": "it runs every subsequent elseif block even after a preceding condition has succeeded",
+              "penalty_explanation": "Once a condition in an if-elseif-else ladder evaluates to TRUE, PHP executes that block and exits the ladder."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "if-elseif-else लैडर द्वारा बहु-मार्गी निर्णयों के निष्पादन को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "`if-elseif-else` लैडर कई क्रमिक मानदंडों की जांच करता है से शुरू करें, ऊपर से नीचे के क्रम का संदर्भ दें, पहले सत्य ब्लॉक को चलाने और बाकी को छोड़ने का तरीका बताएं, और `else` के तहत अंतिम फ़ॉलबैक देने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u19_t1",
+              "text": "`if-elseif-else` लैडर कई क्रमिक मानदंडों का मूल्यांकन करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u19_t2",
+              "text": "बहु-शाखीय निर्णय संरचनाओं के अंतर्गत ऊपर से नीचे के क्रम में",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u19_t3",
+              "text": "और TRUE मिलने वाले पहले ब्लॉक को चलाकर बाद के सभी मामलों को छोड़ते हुए",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u19_t4",
+              "text": "यह `else` के तहत अंतिम फ़ॉलबैक के साथ एक कुशल कैस्केडिंग तंत्र प्रदान करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u19_d1",
+              "category": "logical",
+              "text": "यह पूर्व शर्त सफल होने के बावजूद बाद के प्रत्येक elseif ब्लॉक को भी चलाता है",
+              "penalty_explanation": "एक शर्त सत्य हो जाने पर PHP उस ब्लॉक को चलाकर पूरी लैडर से बाहर निकल जाता है, अन्य ब्लॉक्स नहीं चलते।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The if-elseif-else ladder checks sequential conditions, executing the first TRUE match and falling back to else if none match.",
+        "hi": "if-elseif-else लैडर क्रमिक रूप से शर्तों की जांच करता है, पहली सत्य शर्त को चलाता है और किसी के न मिलने पर else पर जाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Discrete Value Dispatching: The switch Statement",
+          "hi": "निश्चित मान चयन: switch स्टेटमेंट"
+        },
+        "theory": {
+          "en": "The switch statement compares the evaluated value of a single variable or expression against multiple discrete case constants. When a matching case is found, the statements for that case execute. The break statement must follow each case block to terminate the switch construct; omitting break causes fall-through, executing downstream cases regardless of match. The default statement executes if no case matches.",
+          "hi": "switch स्टेटमेंट किसी एकल वैरिएबल या अभिव्यक्ति के मान की तुलना कई निश्चित case मानों से करता है। जब कोई मेल खाने वाला केस मिल जाता है, तो उसके कथन निष्पादित होते हैं। स्विच ब्लॉक से बाहर निकलने के लिए प्रत्येक केस के बाद break स्टेटमेंट का उपयोग करना आवश्यक है; break छोड़ने पर PHP अगले सभी केस को भी चला देता है। कोई भी केस न मिलने पर default स्टेटमेंट चलता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">The switch Dispatch Architecture with break</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">switch ($day)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Target Expression</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">case 5: break;</text><text x=\"300\" y=\"115\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Match &amp; Terminate</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">default:</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Catch-All Fallback</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Evaluates Value</tspan><tspan x=\"120\" dy=\"1.2em\">Once at Start</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">break Prevents</tspan><tspan x=\"300\" dy=\"1.2em\">Fall-Through Bug</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Non-Matching</tspan><tspan x=\"480\" dy=\"1.2em\">Safety Trap</tspan></text></svg>",
+          "caption": {
+            "en": "Value dispatch in switch constructs highlighting case matching, break isolation, and default safety handling.",
+            "hi": "switch संरचना में मान चयन जो केस मिलान, break द्वारा अलगाव और default सुरक्षा प्रबंधन को दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how the switch statement dispatches program execution.",
+          "hint": "Start with the switch statement matching variable values against cases, mention evaluating discrete constants, explain using break to exit blocks and default as fallback, and conclude with selecting execution paths cleanly.",
+          "target_sequence": [
+            {
+              "id": "en_u20_t1",
+              "text": "The `switch` statement compares an expression against discrete case labels",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u20_t2",
+              "text": "to select a specific execution block among multiple constant choices",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u20_t3",
+              "text": "and by terminating matched blocks with `break` while providing a fallback under `default`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u20_t4",
+              "text": "it prevents unwanted case fall-through and dispatches execution cleanly to target routines",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u20_d1",
+              "category": "logical",
+              "text": "it automatically terminates the switch block after matching a case even when break is completely omitted",
+              "penalty_explanation": "If break is omitted, PHP continues executing subsequent case statements even after finding a match."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP में switch स्टेटमेंट द्वारा निष्पादन चयन की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "`switch` स्टेटमेंट अभिव्यक्ति की तुलना केस लेबल से करता है से शुरू करें, कई विकल्पों में से चुनने का संदर्भ दें, `break` से ब्लॉक समाप्त करने व `default` का तरीका बताएं, और फ़ॉल-थ्रू रोककर निष्पादन करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u20_t1",
+              "text": "`switch` स्टेटमेंट किसी अभिव्यक्ति की तुलना निश्चित केस लेबल्स से करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u20_t2",
+              "text": "कई विकल्पों में से किसी एक विशिष्ट निष्पादन ब्लॉक का चयन करने के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u20_t3",
+              "text": "और मिलान वाले ब्लॉक को `break` से समाप्त करते हुए `default` के तहत फ़ॉलबैक देकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u20_t4",
+              "text": "यह अनचाहे फ़ॉल-थ्रू को रोकता है और लक्षित कोड को साफ़-सुथरे ढंग से निष्पादित करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u20_d1",
+              "category": "logical",
+              "text": "यह break को पूरी तरह छोड़ने पर भी मेल खाने के बाद स्विच ब्लॉक को स्वतः समाप्त कर देता है",
+              "penalty_explanation": "break न होने पर PHP अगले सभी केस को भी चला देता है, ब्लॉक अपने आप बंद नहीं होता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The switch statement matches values against cases, using break to prevent fall-through and default to catch unmatched values.",
+        "hi": "switch स्टेटमेंट मानों का केस से मिलान करता है, जिसमें फ़ॉल-थ्रू रोकने के लिए break और मेल न होने पर default चलता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Pre-Test Iteration: The while Loop",
+          "hi": "प्री-टेस्ट पुनरावृत्ति: while लूप"
+        },
+        "theory": {
+          "en": "Looping statements repeat a block of statements as long as a specified condition remains TRUE. The while loop is an entry-controlled (pre-test) loop because the condition is evaluated before the very first iteration runs. If the condition evaluates to FALSE initially, the body of the while loop will not execute even once, protecting the program from invalid data processing.",
+          "hi": "लूपिंग स्टेटमेंट कथनों के ब्लॉक को बार-बार तब तक निष्पादित करते हैं जब तक कि निर्दिष्ट शर्त TRUE बनी रहती है। while लूप एक एंट्री-नियंत्रित (प्री-टेस्ट) लूप है क्योंकि पहले पुनरावृत्ति के निष्पादन से पहले शर्त का मूल्यांकन किया जाता है। यदि शर्त शुरू में ही FALSE होती है, तो while लूप का मुख्य भाग एक बार भी निष्पादित नहीं होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Entry-Controlled while Loop Mechanics</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">$n = 1;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Initialization</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">while ($n &lt;= 10)</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Entry Guard Condition</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">echo $n; $n++;</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Loop Body &amp; Step</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Counter Setup</tspan><tspan x=\"120\" dy=\"1.2em\">Prior to Loop</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Checked at Entry</tspan><tspan x=\"300\" dy=\"1.2em\">May Run 0 Times</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Executes Statement</tspan><tspan x=\"480\" dy=\"1.2em\">Advances Counter</tspan></text></svg>",
+          "caption": {
+            "en": "Entry-controlled loop flow gating body execution behind initial condition evaluation.",
+            "hi": "एंट्री-नियंत्रित लूप प्रवाह जो प्रारंभिक शर्त की जांच के बाद ही लूप बॉडी को चलने की अनुमति देता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing the execution mechanics of the while loop.",
+          "hint": "Start with the while loop repeatedly executing statements, mention continuing as long as criteria remain true, explain evaluating conditions prior to entering the loop body, and conclude with skipping execution when initially false.",
+          "target_sequence": [
+            {
+              "id": "en_u21_t1",
+              "text": "The `while` loop iterates over a designated statement block",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u21_t2",
+              "text": "repeatedly as long as its controlling Boolean condition evaluates to TRUE",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u21_t3",
+              "text": "and by evaluating the condition guard strictly prior to the very first iteration",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u21_t4",
+              "text": "it ensures that the loop body will not run even once if the initial test evaluates to FALSE",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u21_d1",
+              "category": "logical",
+              "text": "it guarantees that the statement block will always execute at least once regardless of initial falsity",
+              "penalty_explanation": "A while loop tests before entry and will run zero times if the condition is false; do-while guarantees running once."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP में while लूप की कार्यप्रणाली को दर्शाने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "`while` लूप कथनों के ब्लॉक को दोहराता है से शुरू करें, शर्त सत्य रहने तक चलने का संदर्भ दें, पहले चक्र से पूर्व शर्त जांचने का तरीका बताएं, और शुरुआत में असत्य होने पर एक बार भी न चलने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u21_t1",
+              "text": "`while` लूप कथनों के एक निर्धारित ब्लॉक को बार-बार दोहराता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u21_t2",
+              "text": "जब तक कि इसकी नियंत्रक बूलियन शर्त TRUE बनी रहती है",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u21_t3",
+              "text": "और पहले चक्र के निष्पादन से पूर्व ही शर्त का सख्ती से मूल्यांकन करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u21_t4",
+              "text": "यह सुनिश्चित करता है कि शुरुआत में शर्त FALSE होने पर लूप एक बार भी न चले",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u21_d1",
+              "category": "logical",
+              "text": "यह गारंटी देता है कि शुरुआत में शर्त असत्य होने पर भी लूप कम से कम एक बार जरूर चलेगा",
+              "penalty_explanation": "while लूप पहले शर्त जांचता है और असत्य होने पर शून्य बार चलता है; कम से कम एक बार do-while लूप चलता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The while loop is an entry-controlled loop that checks conditions before iterations, running zero times if initially FALSE.",
+        "hi": "while लूप एक एंट्री-नियंत्रित लूप है जो पहले शर्त जांचता है, और शुरुआत में FALSE होने पर एक बार भी नहीं चलता।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Post-Test Iteration: The do-while Loop",
+          "hi": "पोस्ट-टेस्ट पुनरावृत्ति: do-while लूप"
+        },
+        "theory": {
+          "en": "The do-while loop is an exit-controlled (post-test) looping structure. In contrast to while, do-while executes the enclosed statement block first before evaluating the condition at the end of the iteration. Consequently, even if the condition is FALSE at the very beginning, the loop is guaranteed to execute unconditionally at least once before terminating.",
+          "hi": "do-while लूप एक एग्ज़िट-नियंत्रित (पोस्ट-टेस्ट) लूपिंग संरचना है। while के विपरीत, do-while लूप पुनरावृत्ति के अंत में शर्त की जांच करने से पहले अपने कोड ब्लॉक को पहले निष्पादित करता है। परिणामस्वरूप, यदि शर्त शुरुआत में ही FALSE हो, तब भी यह लूप समाप्त होने से पहले कम से कम एक बार बिना शर्त के अवश्य निष्पादित होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Exit-Controlled do-while Loop Mechanics</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">do { ... }</text><text x=\"120\" y=\"115\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Guaranteed Run</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">echo $n; $n++;</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Execute Body First</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">while ($n &lt;= 10);</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Post-Condition Test</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Unconditional Pass</tspan><tspan x=\"120\" dy=\"1.2em\">At Least Once</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Statements Run</tspan><tspan x=\"300\" dy=\"1.2em\">Before Evaluation</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Exit Evaluator</tspan><tspan x=\"480\" dy=\"1.2em\">Terminates Loop</tspan></text></svg>",
+          "caption": {
+            "en": "Exit-controlled looping construct executing statements prior to evaluating loop termination conditions.",
+            "hi": "एग्ज़िट-नियंत्रित लूपिंग संरचना जो लूप समाप्ति शर्त की जांच करने से पहले कथनों को निष्पादित करती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the do-while loop guarantees at least one execution pass.",
+          "hint": "Start with the do-while loop operating as an exit-controlled structure, mention executing code prior to checking conditions, explain placing evaluation at the end of iterations, and conclude with guaranteeing execution even when conditions fail.",
+          "target_sequence": [
+            {
+              "id": "en_u22_t1",
+              "text": "The `do-while` loop functions as an exit-controlled iteration construct",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u22_t2",
+              "text": "within procedural algorithms requiring guaranteed initial execution",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u22_t3",
+              "text": "and by testing the controlling Boolean condition after each iteration concludes",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u22_t4",
+              "text": "it guarantees that the loop statements will execute at least once unconditionally",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u22_d1",
+              "category": "logical",
+              "text": "it aborts all execution entirely without running if the initial condition is FALSE",
+              "penalty_explanation": "The do-while loop always runs at least once, even if the condition is initially FALSE."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP में do-while लूप द्वारा कम से कम एक बार निष्पादन सुनिश्चित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "`do-while` लूप एग्ज़िट-नियंत्रित संरचना के रूप में कार्य करता है से शुरू करें, प्रारंभिक निष्पादन की आवश्यकता का संदर्भ दें, प्रत्येक चक्र के बाद शर्त जांचने का तरीका बताएं, और बिना शर्त कम से कम एक बार चलने की गारंटी देने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u22_t1",
+              "text": "`do-while` लूप एक एग्ज़िट-नियंत्रित पुनरावृत्ति संरचना के रूप में कार्य करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u22_t2",
+              "text": "प्रारंभिक निष्पादन की अनिवार्यता वाले एल्गोरिदम के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u22_t3",
+              "text": "और प्रत्येक पुनरावृत्ति समाप्त होने के बाद नियंत्रक बूलियन शर्त का परीक्षण करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u22_t4",
+              "text": "यह गारंटी देता है कि लूप कथन बिना किसी शर्त के कम से कम एक बार अवश्य निष्पादित होंगे",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u22_d1",
+              "category": "logical",
+              "text": "यह प्रारंभिक शर्त FALSE होने पर बिना चले ही निष्पादन को तुरंत रद्द कर देता है",
+              "penalty_explanation": "do-while लूप शर्त के FALSE होने पर भी कम से कम एक बार जरूर चलता है, निष्पादन रद्द नहीं करता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The do-while loop evaluates conditions after execution, guaranteeing that statements run at least once.",
+        "hi": "do-while लूप निष्पादन के बाद शर्त की जांच करता है, जिससे कथन कम से कम एक बार अवश्य चलते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Counted Iteration: The for Loop Architecture",
+          "hi": "निश्चित पुनरावृत्ति: for लूप संरचना"
+        },
+        "theory": {
+          "en": "The for loop executes a statement block a predetermined number of times, making it ideal when the total iteration count is known in advance. Its header syntax contains three components separated by semicolons: counter initialization (executed once at the beginning), test condition (evaluated before each pass to permit or halt execution), and step update (increments or decrements the counter at the end of each pass).",
+          "hi": "for लूप कथनों के ब्लॉक को एक निश्चित संख्या में निष्पादित करता है, जो विशेष रूप से तब उपयोगी होता है जब चक्रों की कुल संख्या पहले से ज्ञात हो। इसके सिंटैक्स में सेमीकोलन द्वारा अलग किए गए तीन भाग होते हैं: काउंटर इनिशियलाइज़ेशन (शुरुआत में केवल एक बार चलता है), परीक्षण शर्त (चलाने या रोकने के लिए प्रत्येक चक्र से पहले जांची जाती है), और स्टेप अपडेट (प्रत्येक चक्र के अंत में काउंटर को बढ़ाता या घटाता है)।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">The for Loop 3-Part Header Lifecycle</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">$n = 1</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">1. Initialization</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">$n &lt;= 10</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">2. Condition Test</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">$n++</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">3. Step Update</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Executed Once</tspan><tspan x=\"120\" dy=\"1.2em\">At Startup</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Pre-Pass Check</tspan><tspan x=\"300\" dy=\"1.2em\">Guards Execution</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">End of Pass</tspan><tspan x=\"480\" dy=\"1.2em\">Adjusts Counter</tspan></text></svg>",
+          "caption": {
+            "en": "Three-component header structure coordinating initialization, conditional testing, and counter mutation.",
+            "hi": "तीन-घटक हेडर संरचना जो इनिशियलाइज़ेशन, कंडीशनल परीक्षण और काउंटर परिवर्तन का समन्वय करती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing the architecture and execution sequence of the for loop.",
+          "hint": "Start with the for loop coordinating counted iteration, mention knowing repetition numbers in advance, explain combining initialization, condition testing, and step updates in its header, and conclude with executing statements for fixed iterations.",
+          "target_sequence": [
+            {
+              "id": "en_u23_t1",
+              "text": "The `for` loop manages structured counted iteration",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u23_t2",
+              "text": "when the precise number of required repetitions is known beforehand",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u23_t3",
+              "text": "and by unifying counter initialization, conditional testing, and step updates within a single header",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u23_t4",
+              "text": "it executes statement blocks across a predetermined sequence of cycles cleanly and reliably",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u23_d1",
+              "category": "logical",
+              "text": "it re-initializes the counter variable to its beginning value repeatedly on every single pass",
+              "penalty_explanation": "Counter initialization in a for loop runs strictly once at the beginning of the loop, not on every iteration."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP में for लूप की संरचना और निष्पादन क्रम को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "`for` लूप संरचित निश्चित पुनरावृत्ति का प्रबंधन करता है से शुरू करें, चक्रों की संख्या पहले से ज्ञात होने का संदर्भ दें, हेडर में इनिशियलाइज़ेशन, शर्त व स्टेप अपडेट जोड़ने का तरीका बताएं, और चक्रों के अनुसार निष्पादित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u23_t1",
+              "text": "`for` लूप संरचित निश्चित पुनरावृत्ति का प्रबंधन करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u23_t2",
+              "text": "जब आवश्यक चक्रों की सटीक संख्या पहले से ज्ञात होती है",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u23_t3",
+              "text": "और एक ही हेडर के भीतर काउंटर इनिशियलाइज़ेशन, शर्त परीक्षण तथा स्टेप अपडेट को जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u23_t4",
+              "text": "यह कथनों के ब्लॉक को पूर्व-निर्धारित चक्रों के अनुसार साफ़-सुथरे और विश्वसनीय ढंग से चलाता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u23_d1",
+              "category": "logical",
+              "text": "यह प्रत्येक चक्र में काउंटर वैरिएबल को उसके प्रारंभिक मान पर बार-बार रीसेट करता है",
+              "penalty_explanation": "for लूप में काउंटर इनिशियलाइज़ेशन केवल एक बार शुरुआत में चलता है, हर चक्र में नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The for loop unifies initialization, condition, and step increment in its header to execute code for a set number of passes.",
+        "hi": "for लूप अपने हेडर में इनिशियलाइज़ेशन, शर्त और इंक्रीमेंट को जोड़कर कोड को निश्चित संख्या में चक्रों तक चलाता है।"
+      }
+    }
+  ]
+}
