@@ -1,0 +1,579 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Chapter 4: Elementary Server-Side Scripting using PHP - Part 2",
+      "hi": "अध्याय 4: PHP का उपयोग करके प्राथमिक सर्वर-साइड स्क्रिप्टिंग - भाग 2"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Embedding PHP Tags and File Extensions",
+          "hi": "PHP टैग एम्बेडिंग और फ़ाइल एक्सटेंशन"
+        },
+        "theory": {
+          "en": "PHP scripts are embedded seamlessly into standard HTML markup using the opening <?php and closing ?> delimiter tags[cite: 10]. Any file that contains PHP executable code must be saved with the .php file extension so that the server recognizes and parses the script[cite: 10]. When a browser requests a .php file, the server executes the code located between the delimiters and serves only the final output[cite: 10].",
+          "hi": "PHP स्क्रिप्ट को शुरुआती <?php और अंतिम ?> टैग का उपयोग करके मानक HTML मार्कअप में आसानी से सम्मिलित किया जाता है[cite: 10]। जिस फ़ाइल में PHP कोड शामिल होता है, उसे .php एक्सटेंशन के साथ सहेजा जाना चाहिए ताकि सर्वर स्क्रिप्ट को पहचान सके और निष्पादित कर सके[cite: 10]। जब कोई ब्राउज़र .php फ़ाइल का अनुरोध करता है, तो सर्वर टैग के बीच के कोड को निष्पादित करता है और केवल अंतिम परिणाम प्रस्तुत करता है[cite: 10]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">PHP Script Delimiters and Extension Workflow</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;?php ... ?&gt;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Embedded Tag</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">script.php</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">File Extension</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Server</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Parses Engine</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Open &amp; Close</tspan><tspan x=\"120\" dy=\"1.2em\">Tag Syntax</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Mandatory .php</tspan><tspan x=\"300\" dy=\"1.2em\">File Identity</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Executes Code</tspan><tspan x=\"480\" dy=\"1.2em\">Outputs HTML</tspan></text></svg>",
+          "caption": {
+            "en": "Embedding mechanism parsing executable PHP code enclosed within delimiters inside a .php document.",
+            "hi": "एम्बेडिंग प्रक्रिया जो .php दस्तावेज़ में टैग विभाजकों के भीतर मौजूद निष्पादन योग्य PHP कोड को पार्स करती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how PHP code is embedded and saved.",
+          "hint": "Start with PHP code integrating into HTML documents, mention saving files with the .php extension, describe enclosing statements within open and close delimiters, and conclude with enabling server execution.",
+          "target_sequence": [
+            {
+              "id": "en_u6_t1",
+              "text": "PHP scripts integrate seamlessly within standard HTML web documents",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u6_t2",
+              "text": "across files saved strictly with the `.php` extension",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u6_t3",
+              "text": "and by enclosing all executable programming instructions inside `<?php ... ?>` tags",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u6_t4",
+              "text": "they signal the web server to process the script before serving clean output",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u6_d1",
+              "category": "logical",
+              "text": "and by saving the file strictly with a `.html` extension to trigger server-side compilation",
+              "penalty_explanation": "Files containing PHP executable code must use the .php extension so the server knows to parse PHP blocks."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP कोड को एम्बेड करने और सहेजने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "PHP स्क्रिप्ट HTML में एकीकृत होती है से शुरू करें, .php एक्सटेंशन का संदर्भ दें, `<?php ... ?>` टैग में कोड रखने का तरीका बताएं, और सर्वर निष्पादन शुरू करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u6_t1",
+              "text": "PHP स्क्रिप्ट मानक HTML वेब दस्तावेज़ों के भीतर सहजता से एकीकृत होती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u6_t2",
+              "text": "अनिवार्य रूप से `.php` एक्सटेंशन के साथ सहेजी गई फ़ाइलों के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u6_t3",
+              "text": "और सभी निष्पादन योग्य प्रोग्रामिंग निर्देशों को `<?php ... ?>` टैग के भीतर रखकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u6_t4",
+              "text": "यह वेब सर्वर को सामग्री भेजने से पहले स्क्रिप्ट को प्रोसेस करने का स्पष्ट निर्देश देती है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u6_d1",
+              "category": "logical",
+              "text": "और सर्वर निष्पादन शुरू करने के लिए फ़ाइल को अनिवार्य रूप से `.html` एक्सटेंशन के साथ सहेज कर",
+              "penalty_explanation": "PHP कोड वाली फ़ाइल को .php एक्सटेंशन से सहेजना आवश्यक है, .html एक्सटेंशन से सर्वर स्क्रिप्ट को प्रोसेस नहीं करेगा।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "PHP code is embedded in HTML using <?php ... ?> tags and must be stored in files with a .php extension[cite: 10].",
+        "hi": "PHP कोड को <?php ... ?> टैग के साथ HTML में सम्मिलित किया जाता है और .php एक्सटेंशन वाली फ़ाइलों में सहेजा जाता है[cite: 10]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "PHP Variables and Strict Naming Conventions",
+          "hi": "PHP वैरिएबल और नामकरण के सख्त नियम"
+        },
+        "theory": {
+          "en": "A variable is a named memory location that stores a value which can change during script execution[cite: 10]. In PHP, variables are declared by prefixing the name with a dollar sign ($), such as $x = 5[cite: 10]. Variable names must strictly begin with a letter or underscore directly after the $, cannot contain spaces or start with a number, and are strictly case-sensitive, meaning $AB and $Ab represent two distinct variables[cite: 10].",
+          "hi": "वैरिएबल एक नामांकित मेमोरी स्थान है जो एक मान को संग्रहीत करता है, जिसे स्क्रिप्ट निष्पादन के दौरान बदला जा सकता है[cite: 10]। PHP में वैरिएबल को $ प्रतीक का उपयोग करके घोषित किया जाता है, जैसे $x = 5[cite: 10]। वैरिएबल का नाम $ के बाद अनिवार्य रूप से किसी अक्षर या अंडरस्कोर से शुरू होना चाहिए, इसमें कोई संख्या या खाली स्थान नहीं हो सकता, और यह केस-सेंसिटिव होता है, जिसका अर्थ है कि $AB और $Ab दो अलग-अलग वैरिएबल हैं[cite: 10]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">PHP Variable Naming Rules &amp; Syntax</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">$age = 18;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Starts with $</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">$_total / $a1</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Letter or _ Next</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">$1a / $a b</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Invalid Names</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Mandatory $</tspan><tspan x=\"120\" dy=\"1.2em\">Prefix Symbol</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Case-Sensitive</tspan><tspan x=\"300\" dy=\"1.2em\">$AB vs $Ab</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Syntax Error</tspan><tspan x=\"480\" dy=\"1.2em\">Digit or Space</tspan></text></svg>",
+          "caption": {
+            "en": "Variable naming rules illustrating mandatory dollar prefix, allowable characters, and invalid syntax patterns.",
+            "hi": "वैरिएबल नामकरण नियम जो अनिवार्य डॉलर उपसर्ग, मान्य वर्णों और अमान्य सिंटैक्स पैटर्न को दर्शाते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the complete, harmonious sentence defining variable declaration and naming rules in PHP.",
+          "hint": "Start with variables storing dynamic values, mention prefixing identifiers with the dollar symbol, describe requiring a letter or underscore without spaces, and conclude with enforcing strict case-sensitivity.",
+          "target_sequence": [
+            {
+              "id": "en_u7_t1",
+              "text": "Variables in PHP store mutable programmatic data values",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u7_t2",
+              "text": "by prefixing every identifier strictly with the `$` dollar symbol",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u7_t3",
+              "text": "and by starting the identifier name with a letter or underscore rather than numbers or spaces",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u7_t4",
+              "text": "they enforce strict case-sensitivity across all declared runtime references",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u7_d1",
+              "category": "logical",
+              "text": "they treat `$AB` and `$Ab` as identical interchangeable variable identifiers",
+              "penalty_explanation": "Variable names in PHP are strictly case-sensitive; $AB and $Ab refer to two completely different variables."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP में वैरिएबल घोषित करने और नामकरण नियमों को व्यक्त करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "PHP में वैरिएबल मानों को संग्रहीत करते हैं से शुरू करें, `$` प्रतीक लगाने का संदर्भ दें, अक्षर या अंडरस्कोर से शुरू करने का तरीका बताएं, और सख्त केस-सेंसिटिविटी लागू करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u7_t1",
+              "text": "PHP में वैरिएबल गतिशील प्रोग्रामिंग मानों को संग्रहीत करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u7_t2",
+              "text": "प्रत्येक पहचानकर्ता के आगे अनिवार्य रूप से `$` प्रतीक लगाकर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u7_t3",
+              "text": "और संख्या या खाली-स्थान के बजाय नाम की शुरुआत अक्षर या अंडरस्कोर से करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u7_t4",
+              "text": "ये सभी घोषित संदर्भों में सख्त केस-सेंसिटिविटी नियमों को लागू करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u7_d1",
+              "category": "logical",
+              "text": "ये `$AB` और `$Ab` को एक ही समान पहचानकर्ता मानकर प्रोसेस करते हैं",
+              "penalty_explanation": "PHP में वैरिएबल केस-सेंसिटिव होते हैं, इसलिए $AB और $Ab को समान नहीं माना जा सकता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "PHP variables start with $, followed by a letter or underscore, cannot contain spaces, and are strictly case-sensitive[cite: 10].",
+        "hi": "PHP वैरिएबल $ से शुरू होते हैं, जिसके बाद अक्षर या अंडरस्कोर आता है, इनमें स्पेस नहीं हो सकता और ये केस-सेंसिटिव होते हैं[cite: 10]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Scalar Data Types: String, Integer, Float, and Boolean",
+          "hi": "स्केलर डेटा प्रकार: स्ट्रिंग, इन्टिजर, फ्लोट और बूलियन"
+        },
+        "theory": {
+          "en": "Data types define the nature of values stored inside variables[cite: 10]. PHP supports four primary scalar types: String (sequences of characters enclosed in double quotes, such as \"James_Bond@007\")[cite: 10], Integer (whole positive or negative numbers without decimals, such as 50 or -10)[cite: 11], Float (numbers containing fractional decimal points, such as 50.69 or -10.65)[cite: 11], and Boolean (logical values representing exclusively TRUE or FALSE)[cite: 11].",
+          "hi": "डेटा प्रकार यह परिभाषित करते हैं कि एक वैरिएबल किस प्रकार का मान संग्रहीत कर सकता है[cite: 10]। PHP चार मुख्य स्केलर प्रकारों का समर्थन करता है: स्ट्रिंग (डबल कोट्स में संलग्न वर्णों की श्रृंखला, जैसे \"James_Bond@007\")[cite: 10], इन्टिजर (दशमलव बिंदु के बिना धनात्मक या ऋणात्मक पूर्ण संख्याएँ, जैसे 50 या -10)[cite: 11], फ्लोट (दशमलव बिंदु वाली संख्याएँ, जैसे 50.69 या -10.65)[cite: 11], और बूलियन (तार्किक मान जो केवल TRUE या FALSE होते हैं)[cite: 11]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">PHP Scalar Data Types Matrix</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">&quot;Hello&quot;</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">String</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">50 / -10</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Integer</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">50.69</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Float</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">TRUE/FALSE</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Boolean</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Text Glyphs</tspan><tspan x=\"102\" dy=\"1.2em\">Quotes Delimited</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Whole Numbers</tspan><tspan x=\"232\" dy=\"1.2em\">No Decimal Point</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Fractional Values</tspan><tspan x=\"362\" dy=\"1.2em\">Decimal Floating</tspan></text><text x=\"495\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Truth States</tspan><tspan x=\"495\" dy=\"1.2em\">Logical Output</tspan></text></svg>",
+          "caption": {
+            "en": "Four core scalar datatypes: quoted text strings, non-decimal integers, fractional floats, and binary booleans.",
+            "hi": "चार मुख्य स्केलर डेटा प्रकार: कोट्स वाली स्ट्रिंग्स, बिना दशमलव वाले इन्टिजर, दशमलव वाले फ्लोट और बाइनरी बूलियन।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence categorizing the four primary scalar data types in PHP.",
+          "hint": "Start with scalar datatypes categorizing stored data, mention distinguishing textual, numerical, and boolean types, explain allocating strings, integers, floats, and booleans, and conclude with validating runtime data values.",
+          "target_sequence": [
+            {
+              "id": "en_u8_t1",
+              "text": "Scalar data types in PHP classify variable storage requirements",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u8_t2",
+              "text": "according to the distinct mathematical or textual nature of values",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u8_t3",
+              "text": "and by allocating characters to String, whole digits to Integer, decimals to Float, and truth states to Boolean",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u8_t4",
+              "text": "they accurately manage memory representation and arithmetic operations during script execution",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u8_d1",
+              "category": "logical",
+              "text": "and by forcing all whole integer values to be stored exclusively within double quotes",
+              "penalty_explanation": "Placing numbers inside quotes converts them into strings rather than storing them as integers."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP में चार मुख्य स्केलर डेटा प्रकारों का वर्गीकरण दर्शाने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "स्केलर डेटा प्रकार मेमोरी आवश्यकताओं को वर्गीकृत करते हैं से शुरू करें, गणितीय या टेक्स्ट प्रकृति का संदर्भ दें, स्ट्रिंग, इन्टिजर, फ्लोट व बूलियन आवंटित करने का तरीका बताएं, और मेमोरी व अंकगणितीय संचालन प्रबंधित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u8_t1",
+              "text": "PHP में स्केलर डेटा प्रकार वैरिएबल की मेमोरी आवश्यकताओं को वर्गीकृत करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u8_t2",
+              "text": "मानों की विशिष्ट गणितीय अथवा टेक्स्ट प्रकृति के आधार पर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u8_t3",
+              "text": "और वर्णों को स्ट्रिंग, पूर्ण संख्याओं को इन्टिजर, दशमलव को फ्लोट तथा तार्किक मानों को बूलियन में आवंटित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u8_t4",
+              "text": "ये स्क्रिप्ट निष्पादन के दौरान मेमोरी और अंकगणितीय संचालन को सटीक रूप से प्रबंधित करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u8_d1",
+              "category": "logical",
+              "text": "और सभी पूर्ण इन्टिजर संख्याओं को अनिवार्य रूप से डबल कोट्स के भीतर संग्रहीत करके",
+              "penalty_explanation": "संख्याओं को कोट्स में रखने पर वे स्ट्रिंग बन जाती हैं, इन्टिजर नहीं रहतीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "PHP scalar data types include String (text), Integer (whole numbers), Float (decimals), and Boolean (TRUE/FALSE)[cite: 10, 11].",
+        "hi": "PHP स्केलर डेटा प्रकारों में स्ट्रिंग (टेक्स्ट), इन्टिजर (पूर्णांक), फ्लोट (दशमलव) और बूलियन (TRUE/FALSE) शामिल हैं[cite: 10, 11]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "The NULL Data Type and Absence of Value",
+          "hi": "NULL डेटा प्रकार और मान का अभाव"
+        },
+        "theory": {
+          "en": "NULL is a special data type that can hold only one possible value: NULL[cite: 11]. It indicates the intentional absence of any value assigned to a variable[cite: 11]. Crucially, NULL is fundamentally distinct from the number 0 (which is an Integer) and distinct from an empty space \" \" (which is a String)[cite: 11]. Setting a variable to NULL explicitly empties its contents without assigning a zero or text character[cite: 11].",
+          "hi": "NULL एक विशेष डेटा प्रकार है जो केवल एक ही मान रख सकता है, अर्थात NULL[cite: 11]। यह किसी वैरिएबल में मान के अभाव (absence of value) को दर्शाता है[cite: 11]। विशेष रूप से, NULL शून्य 0 से भिन्न है (क्योंकि 0 एक इन्टिजर है) और खाली स्थान \" \" से भी भिन्न है (क्योंकि स्पेस एक स्ट्रिंग है)[cite: 11]। किसी वैरिएबल को NULL पर सेट करने का अर्थ है कि उसमें कोई मान मौजूद नहीं है[cite: 11]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">NULL vs. Zero (0) vs. Empty String (&quot; &quot;)</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">$x = NULL;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">NULL Datatype</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">$y = 0;</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Integer Datatype</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">$z = &quot; &quot;;</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">String Datatype</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Absence of Value</tspan><tspan x=\"120\" dy=\"1.2em\">No Data Assigned</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Numeric Zero</tspan><tspan x=\"300\" dy=\"1.2em\">Holds Whole Digit</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Character Space</tspan><tspan x=\"480\" dy=\"1.2em\">Holds ASCII Space</tspan></text></svg>",
+          "caption": {
+            "en": "Conceptual distinction separating NULL value absence from numeric integer zero and string whitespace.",
+            "hi": "संकल्पनात्मक अंतर जो मान के अभाव (NULL) को संख्यात्मक 0 और स्ट्रिंग स्पेस से अलग करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence distinguishing the NULL data type from numeric zero and whitespace.",
+          "hint": "Start with the NULL data type signifying the absence of a value, contrast it with numbers and text, explain separating NULL from integer 0 and string spaces, and conclude with representing unassigned variables.",
+          "target_sequence": [
+            {
+              "id": "en_u9_t1",
+              "text": "The specialized `NULL` data type indicates the complete absence of a value",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u9_t2",
+              "text": "within memory allocations assigned to uninitialized variables",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u9_t3",
+              "text": "and by distinguishing itself fundamentally from numeric integer `0` and string space characters",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u9_t4",
+              "text": "it provides a dedicated identifier representing unassigned or cleared program variables",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u9_d1",
+              "category": "logical",
+              "text": "it functions identically to numeric zero and empty string spaces across all operations",
+              "penalty_explanation": "NULL represents the complete absence of a value, whereas 0 is an integer and space is a string."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "NULL डेटा प्रकार को संख्यात्मक शून्य और स्पेस से अलग स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "NULL डेटा प्रकार मान के पूर्ण अभाव को दर्शाता है से शुरू करें, मेमोरी आवंटन का संदर्भ दें, इन्टिजर 0 और स्ट्रिंग स्पेस से अलग करने का तरीका बताएं, और मान-रहित वैरिएबल का प्रतिनिधित्व करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u9_t1",
+              "text": "विशिष्ट `NULL` डेटा प्रकार किसी मान के पूर्ण अभाव को दर्शाता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u9_t2",
+              "text": "अघोषित या रिक्त वैरिएबल के मेमोरी आवंटन के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u9_t3",
+              "text": "और संख्यात्मक इन्टिजर `0` तथा स्ट्रिंग स्पेस वर्णों से स्वयं को मौलिक रूप से अलग करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u9_t4",
+              "text": "यह मान-रहित या साफ़ किए गए वैरिएबल का सटीक प्रतिनिधित्व प्रदान करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u9_d1",
+              "category": "logical",
+              "text": "यह सभी कार्यों में संख्यात्मक शून्य और खाली स्पेस वर्ण के बिल्कुल समान कार्य करता है",
+              "penalty_explanation": "NULL मान का अभाव है, यह इन्टिजर 0 या स्ट्रिंग स्पेस के समान नहीं होता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "NULL represents the absence of a value and is fundamentally different from integer 0 and string whitespace[cite: 11].",
+        "hi": "NULL मान के अभाव को दर्शाता है और यह इन्टिजर 0 तथा स्ट्रिंग स्पेस से पूरी तरह अलग होता है[cite: 11]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Variable Scope: Local, Global, and the Global Keyword",
+          "hi": "वैरिएबल स्कोप: लोकल, ग्लोबल और Global कीवर्ड"
+        },
+        "theory": {
+          "en": "Scope defines the region of a script where a variable can be accessed[cite: 11]. Variables declared inside a function possess local scope and are accessible only within that function, allowing different functions to reuse identical variable names without collision[cite: 11]. Variables declared outside all functions possess global scope and cannot be accessed inside functions directly unless explicitly imported using the global keyword[cite: 11].",
+          "hi": "स्कोप स्क्रिप्ट के उस हिस्से को परिभाषित करता है जहाँ किसी वैरिएबल को एक्सेस किया जा सकता है[cite: 11]। किसी फ़ंक्शन के अंदर घोषित वैरिएबल का स्कोप लोकल होता है और उसे केवल उसी फ़ंक्शन के भीतर इस्तेमाल किया जा सकता है, जिससे अलग-अलग फ़ंक्शन समान नाम वाले लोकल वैरिएबल रख सकते हैं[cite: 11]। फ़ंक्शन के बाहर घोषित वैरिएबल ग्लोबल स्कोप रखते हैं और उन्हें फ़ंक्शन के अंदर सीधे एक्सेस नहीं किया जा सकता, जब तक कि global कीवर्ड का उपयोग न किया जाए[cite: 11]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">PHP Variable Scopes: Local vs. Global Boundary</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Inside function()</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Local Scope Only</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Outside function()</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Global Scope</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Isolated Memory</tspan><tspan x=\"100\" dy=\"1.2em\">Function Confined</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Name Reuse Safe</tspan><tspan x=\"225\" dy=\"1.2em\">Across Functions</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Script Level</tspan><tspan x=\"375\" dy=\"1.2em\">External Access</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Requires &quot;global&quot;</tspan><tspan x=\"500\" dy=\"1.2em\">To Access Inside</tspan></text></svg>",
+          "caption": {
+            "en": "Scope isolation separating function local variables from external script globals accessed via global keyword.",
+            "hi": "स्कोप विभाजन जो फ़ंक्शन के लोकल वैरिएबल को बाहरी ग्लोबल वैरिएबल से अलग करता है जिसे global कीवर्ड से एक्सेस किया जाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence explaining the boundary between local and global scopes in PHP.",
+          "hint": "Start with variable scope restricting accessibility, describe confining local variables within functions, explain accessing global variables using the global keyword, and conclude with preventing naming collisions.",
+          "target_sequence": [
+            {
+              "id": "en_u10_t1",
+              "text": "Variable scope defines the precise regions of a PHP script",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u10_t2",
+              "text": "where declared variable identifiers can be validly accessed or modified",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u10_t3",
+              "text": "and by isolating local variables inside functions while requiring the `global` keyword for outer variables",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u10_t4",
+              "text": "it prevents accidental naming collisions between distinct functions across the application",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "logical",
+              "text": "and by automatically granting all functions direct unrestricted access to every global variable without keywords",
+              "penalty_explanation": "Global variables cannot be accessed directly inside functions without explicitly declaring the global keyword."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP में लोकल और ग्लोबल स्कोप की सीमाओं को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "वैरिएबल स्कोप स्क्रिप्ट के क्षेत्रों को परिभाषित करता है से शुरू करें, पहुंच और संशोधन का संदर्भ दें, लोकल को अलग रखने और `global` कीवर्ड का तरीका बताएं, और नाम के टकराव को रोकने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u10_t1",
+              "text": "वैरिएबल स्कोप किसी PHP स्क्रिप्ट के उन सटीक क्षेत्रों को परिभाषित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u10_t2",
+              "text": "जहाँ घोषित वैरिएबल पहचानकर्ताओं को वैध रूप से एक्सेस या संशोधित किया जा सकता है",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u10_t3",
+              "text": "और फ़ंक्शन के भीतर लोकल वैरिएबल को अलग रखते हुए बाहरी वैरिएबल के लिए `global` कीवर्ड की मांग करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u10_t4",
+              "text": "यह विभिन्न फ़ंक्शनों के बीच समान नाम वाले चरों के टकराव को पूरी तरह रोकता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "logical",
+              "text": "और बिना किसी कीवर्ड के सभी फ़ंक्शनों को हर ग्लोबल वैरिएबल तक सीधी पहुंच देकर",
+              "penalty_explanation": "फ़ंक्शन के अंदर ग्लोबल वैरिएबल तक पहुँचने के लिए global कीवर्ड का उपयोग अनिवार्य है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Local variables exist only within functions, while global variables require the global keyword to be accessed inside functions[cite: 11].",
+        "hi": "लोकल वैरिएबल केवल फ़ंक्शन के भीतर होते हैं, जबकि ग्लोबल वैरिएबल को फ़ंक्शन के अंदर इस्तेमाल करने के लिए global कीवर्ड चाहिए[cite: 11]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Static Scope: Retaining Variable Values Between Function Calls",
+          "hi": "स्टैटिक स्कोप: फ़ंक्शन कॉल के बीच मान बनाए रखना"
+        },
+        "theory": {
+          "en": "Normally, when a function completes execution, all values stored inside its local variables are automatically destroyed from memory[cite: 11]. If a developer needs a local variable to retain its value across consecutive function executions, the variable must be declared with the static keyword[cite: 11]. The variable remains local to the function, but preserves its updated value on each subsequent call[cite: 11].",
+          "hi": "सामान्यतः जब कोई फ़ंक्शन पूरी तरह निष्पादित हो जाता है, तो उसके लोकल वैरिएबल में संग्रहीत मान नष्ट हो जाते हैं[cite: 11]। यदि डेवलपर फ़ंक्शन समाप्त होने के बाद भी किसी लोकल वैरिएबल के मान को बनाए रखना चाहता है ताकि अगली कॉल में वह उपलब्ध रहे, तो उस वैरिएबल को static कीवर्ड के साथ घोषित किया जाता है[cite: 11]। यह वैरिएबल फ़ंक्शन के लिए लोकल ही रहता है लेकिन अपने मान को सुरक्षित रखता है[cite: 11]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Static Variable Persistence Across Function Calls</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Call 1: $count = 1</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">static $count = 0</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Call 2: $count = 2</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Retains Prior Value</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Call 3: $count = 3</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Accumulates State</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Initialization</tspan><tspan x=\"120\" dy=\"1.2em\">First Call Only</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Memory Preserved</tspan><tspan x=\"300\" dy=\"1.2em\">Not Deleted</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Persistent Scope</tspan><tspan x=\"480\" dy=\"1.2em\">Local Visibility</tspan></text></svg>",
+          "caption": {
+            "en": "Static keyword preserving variable states across multiple function invocations without reset.",
+            "hi": "static कीवर्ड जो बिना रीसेट किए कई फ़ंक्शन कॉलों के बीच वैरिएबल के मान को सुरक्षित रखता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how the static keyword preserves local variable state.",
+          "hint": "Start with the static keyword modifying variable persistence, mention retaining values across consecutive function calls, describe preserving state upon completion, and conclude with maintaining local accessibility.",
+          "target_sequence": [
+            {
+              "id": "en_u11_t1",
+              "text": "The `static` keyword alters the memory persistence of local variables",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u11_t2",
+              "text": "across repeated and consecutive function execution calls",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u11_t3",
+              "text": "and by preserving the updated value in memory after the function terminates",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u11_t4",
+              "text": "it prevents automated memory deletion while keeping the variable strictly local in scope",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "logical",
+              "text": "it deletes the variable value immediately upon the start of every function call",
+              "penalty_explanation": "The static keyword explicitly retains and preserves variable values across calls rather than deleting them."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "static कीवर्ड द्वारा लोकल वैरिएबल के मान को बनाए रखने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "`static` कीवर्ड लोकल वैरिएबल की मेमोरी निरंतरता को बदलता है से शुरू करें, बार-बार होने वाले फ़ंक्शन निष्पादन का संदर्भ दें, मान को मेमोरी में सुरक्षित रखने का तरीका बताएं, और स्कोप लोकल रखते हुए मान नष्ट होने से बचाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u11_t1",
+              "text": "`static` कीवर्ड लोकल वैरिएबल की मेमोरी निरंतरता को संशोधित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u11_t2",
+              "text": "बार-बार और क्रमिक रूप से होने वाले फ़ंक्शन कॉल्स के दौरान",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u11_t3",
+              "text": "और फ़ंक्शन समाप्त होने के बाद भी अद्यतन मान को मेमोरी में सुरक्षित रखकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u11_t4",
+              "text": "यह मान को नष्ट होने से बचाता है जबकि वैरिएबल का स्कोप पूरी तरह लोकल ही रहता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "logical",
+              "text": "यह प्रत्येक फ़ंक्शन कॉल की शुरुआत में ही वैरिएबल मान को तुरंत मिटा देता है",
+              "penalty_explanation": "static कीवर्ड मान को सुरक्षित रखता है, यह कॉल की शुरुआत में मान को मिटाता नहीं है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The static keyword retains a local variable's value between function calls without losing its data[cite: 11].",
+        "hi": "static कीवर्ड फ़ंक्शन समाप्त होने के बाद भी लोकल वैरिएबल के मान को बनाए रखता है और नष्ट नहीं होने देता[cite: 11]।"
+      }
+    }
+  ]
+}
