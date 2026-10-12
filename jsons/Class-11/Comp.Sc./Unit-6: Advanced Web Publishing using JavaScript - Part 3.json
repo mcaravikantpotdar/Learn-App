@@ -1,0 +1,579 @@
+{
+  "metadata": {
+    "class": "Class 11",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Unit-6: Advanced Web Publishing using JavaScript - Part 3",
+      "hi": "यूनिट-6: जावास्क्रिप्ट का उपयोग करके उन्नत वेब प्रकाशन - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Introduction to Operators in JavaScript",
+          "hi": "जावास्क्रिप्ट में ऑपरेटरों का परिचय"
+        },
+        "theory": {
+          "en": "Operators are special symbols used to manipulate values and perform operations on data[cite: 4]. In JavaScript, different categories of operators are used to modify distinct data types, primarily including arithmetic, comparison, logical, and string operators[cite: 4, 5].",
+          "hi": "ऑपरेटर वे विशेष चिन्ह हैं जिनका उपयोग मानों में हेरफेर करने और डेटा पर संचालन करने के लिए किया जाता है[cite: 4]। जावास्क्रिप्ट में, विभिन्न प्रकार के डेटा-प्रकारों को संशोधित करने के लिए विभिन्न श्रेणियों के ऑपरेटरों का उपयोग किया जाता है, जिनमें मुख्य रूप से अरिथमेटिक, तुलनात्मक, लॉजिकल और स्ट्रिंग ऑपरेटर शामिल हैं[cite: 4, 5]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">JavaScript Operator Classification</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"102\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Arithmetic</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"102\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Comparison</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"102\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Logical</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"102\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">String (+)</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Mathematical</tspan><tspan x=\"102\" dy=\"1.2em\">Calculations</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Relational</tspan><tspan x=\"232\" dy=\"1.2em\">Comparisons</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Boolean</tspan><tspan x=\"362\" dy=\"1.2em\">Evaluation</tspan></text><text x=\"495\" y=\"202\" fill=\"#f87171\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Text</tspan><tspan x=\"495\" dy=\"1.2em\">Concatenation</tspan></text></svg>",
+          "caption": {
+            "en": "Classification of core JavaScript operators designed to manipulate different types of data.",
+            "hi": "विभिन्न प्रकार के डेटा में हेरफेर करने के लिए बनाए गए मुख्य जावास्क्रिप्ट ऑपरेटरों का वर्गीकरण।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the complete, harmonious sentence explaining the fundamental role of operators in JavaScript.",
+          "hint": "Start with operators as symbols, describe their action on values, connect with multiple categories, and conclude with data manipulation.",
+          "target_sequence": [
+            {
+              "id": "en_u13_t1",
+              "text": "Operators are special predefined symbols in JavaScript",
+              "role_hint": "Lead with the primary definition of operators"
+            },
+            {
+              "id": "en_u13_t2",
+              "text": "which take variables and literal values as operands",
+              "role_hint": "Identify the data items they operate upon"
+            },
+            {
+              "id": "en_u13_t3",
+              "text": "and by dividing operations into arithmetic, relational, and logical categories",
+              "role_hint": "Provide the method and organizational categories"
+            },
+            {
+              "id": "en_u13_t4",
+              "text": "they systematically manipulate and evaluate stored program data",
+              "role_hint": "Conclude with the resolving operational outcome"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "logical",
+              "text": "they permanently lock numeric values against mathematical changes",
+              "penalty_explanation": "Operators are designed to manipulate and compute values, not lock them from modification."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "जावास्क्रिप्ट में ऑपरेटरों की मौलिक भूमिका को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "ऑपरेटर विशेष चिन्ह हैं से शुरू करें, ऑपरेंड का उल्लेख करें, विभिन्न श्रेणियों को जोड़ें, और डेटा में हेरफेर करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u13_t1",
+              "text": "ऑपरेटर जावास्क्रिप्ट में पूर्वनिर्धारित विशेष चिन्ह होते हैं",
+              "role_hint": "ऑपरेटर की मूल परिभाषा वाले मुख्य उपवाक्य से शुरुआत करें"
+            },
+            {
+              "id": "hi_u13_t2",
+              "text": "जो ऑपरेंड के रूप में वेरिएबल और मानों को स्वीकार करते हैं",
+              "role_hint": "संसाधित किए जाने वाले मानों से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u13_t3",
+              "text": "और विभिन्न कार्यों को अरिथमेटिक, तुलनात्मक व लॉजिकल श्रेणियों में बांटकर",
+              "role_hint": "वर्गीकरण और संचालन के तरीके से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u13_t4",
+              "text": "ये प्रोग्राम में संग्रहीत डेटा में व्यवस्थित रूप से हेरफेर करते हैं",
+              "role_hint": "डेटा मूल्यांकन की मुख्य क्रिया के साथ वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "logical",
+              "text": "ये गणितीय बदलावों से बचाने के लिए संख्यात्मक मानों को हमेशा के लिए स्थिर कर देते हैं",
+              "penalty_explanation": "ऑपरेटरों का उद्देश्य डेटा में हेरफेर और गणना करना होता है, उन्हें स्थिर रखना नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Operators are symbols that perform operations on operands to manipulate numeric, relational, logical, or string data.",
+        "hi": "ऑपरेटर वे चिन्ह हैं जो संख्यात्मक, संबंधपरक, तार्किक या स्ट्रिंग डेटा में हेरफेर करने के लिए ऑपरेंड पर कार्य करते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Basic Arithmetic Operators",
+          "hi": "मूल अरिथमेटिक ऑपरेटर"
+        },
+        "theory": {
+          "en": "Arithmetic operators are used to perform mathematical manipulation on numeric values[cite: 5]. The standard binary arithmetic operators include addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`), computing sum, difference, product, and quotient respectively[cite: 5].",
+          "hi": "अरिथमेटिक ऑपरेटर वे चिन्ह हैं जिनका उपयोग संख्यात्मक मानों पर गणितीय कार्य करने के लिए किया जाता है[cite: 5]। मुख्य बाइनरी अरिथमेटिक ऑपरेटरों में जोड़ (`+`), घटाव (`-`), गुणा (`*`) और भाग (`/`) शामिल हैं, जो क्रमशः योग, अंतर, गुणनफल और भागफल की गणना करते हैं[cite: 5]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Basic Arithmetic Computation</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">5 + 2</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Output: 7</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">5 - 2</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Output: 3</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">5 * 2</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Output: 10</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">5 / 2</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Output: 2.5</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Addition</tspan><tspan x=\"102\" dy=\"1.2em\">Sum (+)</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Subtraction</tspan><tspan x=\"232\" dy=\"1.2em\">Difference (-)</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Multiplication</tspan><tspan x=\"362\" dy=\"1.2em\">Product (*)</tspan></text><text x=\"495\" y=\"202\" fill=\"#f87171\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Division</tspan><tspan x=\"495\" dy=\"1.2em\">Quotient (/)</tspan></text></svg>",
+          "caption": {
+            "en": "Basic binary arithmetic operators performing standard mathematical calculations on numbers.",
+            "hi": "संख्याओं पर बुनियादी गणितीय गणना करने वाले मुख्य बाइनरी अरिथमेटिक ऑपरेटर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the fluent sentence describing standard arithmetic operations in JavaScript.",
+          "hint": "Start with standard arithmetic symbols, introduce numeric values as operands, explain execution of mathematical operations, and end with computing sums, products, and quotients.",
+          "target_sequence": [
+            {
+              "id": "en_u14_t1",
+              "text": "Basic arithmetic operators in JavaScript provide symbols like `+`, `-`, `*`, and `/`",
+              "role_hint": "Lead with the standard arithmetic symbols"
+            },
+            {
+              "id": "en_u14_t2",
+              "text": "which take numbers or numeric variables as input operands",
+              "role_hint": "Identify the numeric input operands"
+            },
+            {
+              "id": "en_u14_t3",
+              "text": "and by processing mathematical calculations between values",
+              "role_hint": "Describe the mathematical execution process"
+            },
+            {
+              "id": "en_u14_t4",
+              "text": "they accurately evaluate the resulting sum, difference, product, and quotient",
+              "role_hint": "Conclude with the calculated arithmetic outcomes"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "logical",
+              "text": "they always convert all participating numeric operands into boolean values",
+              "penalty_explanation": "Arithmetic operators compute numerical values rather than returning boolean true or false."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "जावास्क्रिप्ट में बुनियादी अरिथमेटिक संचालन का विवरण देने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "अरिथमेटिक ऑपरेटर `+`, `-`, `*`, `/` से शुरू करें, ऑपरेंड का उल्लेख करें, गणितीय गणना का तरीका जोड़ें, और परिणाम निकालने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u14_t1",
+              "text": "जावास्क्रिप्ट में बुनियादी अरिथमेटिक ऑपरेटर `+`, `-`, `*` और `/` जैसे चिन्ह प्रदान करते हैं",
+              "role_hint": "मूल अरिथमेटिक चिन्हों वाले मुख्य उपवाक्य से शुरुआत करें"
+            },
+            {
+              "id": "hi_u14_t2",
+              "text": "जो संख्यात्मक मानों या वेरिएबल को इनपुट ऑपरेंड के रूप में लेते हैं",
+              "role_hint": "संख्यात्मक ऑपरेंड से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u14_t3",
+              "text": "और इन मानों के बीच गणितीय गणना की प्रक्रिया पूरी करके",
+              "role_hint": "गणना करने की कार्यविधि वाला उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u14_t4",
+              "text": "ये सटीक रूप से योग, अंतर, गुणनफल और भागफल की गणना करते हैं",
+              "role_hint": "अंतिम गणितीय परिणाम निकालने की मुख्य क्रिया के साथ वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "logical",
+              "text": "ये सभी संख्यात्मक ऑपरेंड को हमेशा बूलियन मानों में बदल देते हैं",
+              "penalty_explanation": "अरिथमेटिक ऑपरेटर संख्यात्मक परिणाम देते हैं, बूलियन सत्य या असत्य मान नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Binary arithmetic operators (`+`, `-`, `*`, `/`) execute fundamental mathematical calculations on numeric operands.",
+        "hi": "बाइनरी अरिथमेटिक ऑपरेटर (`+`, `-`, `*`, `/`) संख्यात्मक ऑपरेंड पर बुनियादी गणितीय गणना करते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Advanced Arithmetic Operators: Modulus, Exponentiation, and Increments",
+          "hi": "उन्नत अरिथमेटिक ऑपरेटर: मापांक, घातांक और वृद्धि/कमी"
+        },
+        "theory": {
+          "en": "JavaScript includes specialized arithmetic operators for non-linear operations[cite: 5]. The modulus operator (`%`) calculates the division remainder (e.g., `5 % 2` produces `1`), while exponentiation (`**`) raises a base to a power (e.g., `5 ** 2` evaluates to `25`)[cite: 5]. Additionally, unary increment (`++`) and decrement (`--`) operators increase or decrease a value by one[cite: 5].",
+          "hi": "जावास्क्रिप्ट में विशिष्ट गणितीय कार्यों के लिए विशेष अरिथमेटिक ऑपरेटर शामिल हैं[cite: 5]। मापांक ऑपरेटर (`%`) भागफल के बाद शेषफल की गणना करता है (जैसे `5 % 2` का मान `1` होता है), जबकि घातांक (`**`) किसी संख्या को घात तक बढ़ाता है (जैसे `5 ** 2` का मान `25` होता है)[cite: 5]। इसके अतिरिक्त, इंक्रीमेंट (`++`) और डिक्रीमेंट (`--`) ऑपरेटर किसी मान को एक से बढ़ाते या घटाते हैं[cite: 5]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Modulus, Power, and Unary Operators</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">5 % 2</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Remainder: 1</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">5 ** 2</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Power: 25</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">5++</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Value: 6</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">2--</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Value: 1</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Modulus (%)</tspan><tspan x=\"102\" dy=\"1.2em\">Remainder</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Exponent (**)</tspan><tspan x=\"232\" dy=\"1.2em\">Power Product</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Increment (++)</tspan><tspan x=\"362\" dy=\"1.2em\">Adds 1</tspan></text><text x=\"495\" y=\"202\" fill=\"#f87171\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Decrement (--)</tspan><tspan x=\"495\" dy=\"1.2em\">Subtracts 1</tspan></text></svg>",
+          "caption": {
+            "en": "Advanced arithmetic operators computing division remainders, power values, and unary increments.",
+            "hi": "शेषफल, घातांक और एक-चर वृद्धि/कमी की गणना करने वाले उन्नत अरिथमेटिक ऑपरेटर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the complete sentence detailing how modulus, exponentiation, and unary operators operate.",
+          "hint": "Start with modulus and exponentiation symbols, explain calculating remainders and powers, introduce increment/decrement, and finish with adjusting numeric values by one.",
+          "target_sequence": [
+            {
+              "id": "en_u15_t1",
+              "text": "JavaScript supports specialized arithmetic operators like `%` and `**`",
+              "role_hint": "Lead with modulus and exponentiation operator symbols"
+            },
+            {
+              "id": "en_u15_t2",
+              "text": "for computing integer division remainders and exponential power values",
+              "role_hint": "Detail their specific mathematical roles"
+            },
+            {
+              "id": "en_u15_t3",
+              "text": "and by utilizing unary increment `++` and decrement `--` operators",
+              "role_hint": "Introduce the unary step operator mechanism"
+            },
+            {
+              "id": "en_u15_t4",
+              "text": "it directly steps variable quantities up or down by one unit",
+              "role_hint": "Conclude with changing the variable value by one"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "logical",
+              "text": "for multiplying the target variable by two on each successive iteration",
+              "penalty_explanation": "Increment (++) and decrement (--) add or subtract one unit, rather than multiplying by two."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "मापांक, घातांक और इंक्रीमेंट/डिक्रीमेंट ऑपरेटरों की कार्यप्रणाली को दर्शाने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "`%` और `**` ऑपरेटरों से शुरू करें, शेषफल और घात की गणना बताएं, `++` और `--` का तरीका जोड़ें, और मान में एक की वृद्धि/कमी पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u15_t1",
+              "text": "जावास्क्रिप्ट `%` और `**` जैसे विशेष अरिथमेटिक ऑपरेटरों का समर्थन करती है",
+              "role_hint": "विशिष्ट ऑपरेटर चिन्हों वाले मुख्य उपवाक्य से शुरुआत करें"
+            },
+            {
+              "id": "hi_u15_t2",
+              "text": "जो विभाजन के बाद शेषफल और घातांक मानों की गणना करते हैं",
+              "role_hint": "शेषफल और घात की गणना से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u15_t3",
+              "text": "और यूनेरी इंक्रीमेंट `++` तथा डिक्रीमेंट `--` ऑपरेटरों का उपयोग करके",
+              "role_hint": "यूनेरी ऑपरेटरों के माध्यम से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u15_t4",
+              "text": "यह किसी वेरिएबल के मान को सीधे एक इकाई से बढ़ाती या घटाती है",
+              "role_hint": "मान में 1 जोड़ने या घटाने की मुख्य क्रिया के साथ वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "logical",
+              "text": "यह प्रत्येक चरण में लक्ष्य वेरिएबल को दो से गुणा करती है",
+              "penalty_explanation": "इंक्रीमेंट (++) और डिक्रीमेंट (--) मान को एक से बदलते हैं, दो से गुणा नहीं करते।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Modulus (`%`) finds remainders, exponentiation (`**`) calculates powers, and increment/decrement (`++`, `--`) adjust values by one.",
+        "hi": "मापांक (`%`) शेषफल निकालता है, घातांक (`**`) घात की गणना करता है, और इंक्रीमेंट/डिक्रीमेंट (`++`, `--`) मान को एक से बदलते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Comparison and Relational Operators",
+          "hi": "तुलनात्मक और रिलेशनल ऑपरेटर"
+        },
+        "theory": {
+          "en": "Comparison operators (also known as relational operators) compare two values and evaluate to a logical boolean result: `TRUE` or `FALSE`[cite: 5]. These operators include equality (`==`), non-equality (`!=`), less than (`<`), less than or equal (`<=`), greater than (`>`), and greater than or equal (`>=`)[cite: 5].",
+          "hi": "कम्पैरिसन ऑपरेटर (जिन्हें रिलेशनल ऑपरेटर भी कहा जाता है) दो मानों के बीच तुलना करते हैं और तार्किक परिणाम प्रदान करते हैं: `TRUE` या `FALSE`[cite: 5]। इन ऑपरेटरों में समानता (`==`), गैर-समानता (`!=`), छोटा (`<`), छोटा या बराबर (`<=`), बड़ा (`>`), और बड़ा या बराबर (`>=`) शामिल हैं[cite: 5]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Relational Comparison and Boolean Results</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">5 == 5</text><text x=\"102\" y=\"115\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">TRUE</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">5 != 2</text><text x=\"232\" y=\"115\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">TRUE</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">5 &lt; 2</text><text x=\"362\" y=\"115\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">FALSE</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">5 &gt;= 5</text><text x=\"495\" y=\"115\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">TRUE</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Equality (==)</tspan><tspan x=\"102\" dy=\"1.2em\">Equal Values</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Inequality (!=)</tspan><tspan x=\"232\" dy=\"1.2em\">Not Equal</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Relational (&lt;)</tspan><tspan x=\"362\" dy=\"1.2em\">Less Than</tspan></text><text x=\"495\" y=\"202\" fill=\"#f87171\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Comparison (&gt;=)</tspan><tspan x=\"495\" dy=\"1.2em\">Greater/Equal</tspan></text></svg>",
+          "caption": {
+            "en": "Relational comparison operators evaluating operands into boolean TRUE or FALSE outputs.",
+            "hi": "ऑपरेंड की तुलना करके बूलियन TRUE या FALSE परिणाम देने वाले रिलेशनल ऑपरेटर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how comparison operators evaluate numeric relationships.",
+          "hint": "Start with comparison operators, describe testing values with equality and relational symbols, explain testing conditions, and finish with returning true or false.",
+          "target_sequence": [
+            {
+              "id": "en_u16_t1",
+              "text": "Comparison operators in JavaScript test relative values",
+              "role_hint": "Lead with the primary function of comparison operators"
+            },
+            {
+              "id": "en_u16_t2",
+              "text": "using relational symbols like `==`, `!=`, `<`, `<=`, `>`, and `>=`",
+              "role_hint": "List the relational operator symbols"
+            },
+            {
+              "id": "en_u16_t3",
+              "text": "and by evaluating whether left and right operands satisfy the specified relationship",
+              "role_hint": "Describe the condition evaluation between operands"
+            },
+            {
+              "id": "en_u16_t4",
+              "text": "they return a strict logical boolean outcome of TRUE or FALSE",
+              "role_hint": "Conclude with the final boolean resolution"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u16_d1",
+              "category": "logical",
+              "text": "they assign the left-hand operand value permanently into the right-hand variable",
+              "penalty_explanation": "Comparison operators evaluate equality and relation; they do not perform assignment."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "जावास्क्रिप्ट में तुलनात्मक ऑपरेटरों द्वारा मानों के मूल्यांकन को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "तुलनात्मक ऑपरेटर से शुरू करें, `==`, `!=`, `<`, `>` चिन्ह बताएं, दोनों तरफ के मानों की तुलना का तरीका जोड़ें, और TRUE या FALSE परिणाम पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u16_t1",
+              "text": "जावास्क्रिप्ट में तुलनात्मक ऑपरेटर मानों के बीच संबंध का परीक्षण करते हैं",
+              "role_hint": "तुलनात्मक ऑपरेटर के उद्देश्य वाले मुख्य उपवाक्य से शुरुआत करें"
+            },
+            {
+              "id": "hi_u16_t2",
+              "text": "`==`, `!=`, `<`, `<=`, `>`, और `>=` जैसे रिलेशनल चिन्हों का उपयोग करके",
+              "role_hint": "रिलेशनल चिन्हों की सूची वाला उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u16_t3",
+              "text": "और दोनों तरफ के ऑपरेंड के बीच दी गई शर्त की जांच करके",
+              "role_hint": "शर्त की जांच के तरीके से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u16_t4",
+              "text": "ये तार्किक परिणाम के रूप में केवल TRUE या FALSE प्रदान करते हैं",
+              "role_hint": "बूलियन परिणाम देने की मुख्य क्रिया के साथ वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u16_d1",
+              "category": "logical",
+              "text": "ये बाएँ हाथ के मान को दाएँ हाथ के वेरिएबल में स्थायी रूप से असाइन कर देते हैं",
+              "penalty_explanation": "तुलनात्मक ऑपरेटर केवल मानों की तुलना करते हैं, मान असाइन करने का कार्य असाइनमेंट ऑपरेटर करता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Comparison operators evaluate the relational status between operands, returning either TRUE or FALSE.",
+        "hi": "तुलनात्मक ऑपरेटर ऑपरेंड के बीच संबंध का मूल्यांकन करते हैं और परिणाम स्वरूप TRUE या FALSE देते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Logical Operators: AND, OR, and NOT",
+          "hi": "लॉजिकल ऑपरेटर: AND, OR और NOT"
+        },
+        "theory": {
+          "en": "Logical operators perform operations on boolean values and evaluate conditions[cite: 6]. The Logical AND operator (`&&`) returns `TRUE` only if both conditions are true[cite: 6]. The Logical OR operator (`||`) returns `TRUE` if at least one condition is true[cite: 6]. The Logical NOT operator (`!`) inverts truth values, converting true to false and false to true[cite: 6].",
+          "hi": "लॉजिकल ऑपरेटर बूलियन मानों के साथ तार्किक संचालन करते हैं और स्थितियों का मूल्यांकन करते हैं[cite: 6]। लॉजिकल AND ऑपरेटर (`&&`) केवल तभी `TRUE` देता है जब दोनों स्थितियां सत्य हों[cite: 6]। लॉजिकल OR ऑपरेटर (`||`) तब `TRUE` देता है जब दोनों में से कोई भी एक स्थिति सत्य हो[cite: 6]। लॉजिकल NOT ऑपरेटर (`!`) तार्किक मान को उलट देता है, अर्थात सत्य को असत्य और असत्य को सत्य बनाता है[cite: 6]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Logical Operators Truth Decision Matrix</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">T &amp;&amp; F</text><text x=\"120\" y=\"115\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Result: FALSE</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">T || F</text><text x=\"300\" y=\"115\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Result: TRUE</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">!TRUE</text><text x=\"480\" y=\"115\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Result: FALSE</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Logical AND (&amp;&amp;)</tspan><tspan x=\"120\" dy=\"1.2em\">Both Must Be True</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Logical OR (||)</tspan><tspan x=\"300\" dy=\"1.2em\">Either Can Be True</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Logical NOT (!)</tspan><tspan x=\"480\" dy=\"1.2em\">Inverts Value</tspan></text></svg>",
+          "caption": {
+            "en": "Truth outcomes for logical operators: strict AND, flexible OR, and inverting NOT.",
+            "hi": "लॉजिकल ऑपरेटरों के सत्य परिणाम: सख्त AND, लचीला OR और विपरीत करने वाला NOT।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the compound sentence explaining the evaluation mechanics of logical operators.",
+          "hint": "Start with logical operators combining boolean conditions, describe AND requiring both truths, contrast with OR needing either, and end with NOT inverting truth values.",
+          "target_sequence": [
+            {
+              "id": "en_u17_t1",
+              "text": "Logical operators in JavaScript evaluate multiple boolean conditions",
+              "role_hint": "Lead with the role of logical operators evaluating booleans"
+            },
+            {
+              "id": "en_u17_t2",
+              "text": "where Logical AND `&&` requires both participating expressions to be true",
+              "role_hint": "Detail the strict rule of the AND operator"
+            },
+            {
+              "id": "en_u17_t3",
+              "text": "while Logical OR `||` evaluates to true if either condition is satisfied",
+              "role_hint": "Contrast with the flexible OR operator rule"
+            },
+            {
+              "id": "en_u17_t4",
+              "text": "and Logical NOT `!` reverses any boolean value into its exact opposite",
+              "role_hint": "Conclude with the inverting action of NOT"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u17_d1",
+              "category": "logical",
+              "text": "where Logical AND evaluates to true whenever either operand evaluates to false",
+              "penalty_explanation": "Logical AND requires both conditions to be TRUE; if either is false, it evaluates to FALSE."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "जावास्क्रिप्ट में लॉजिकल ऑपरेटरों के कार्य नियमों को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "लॉजिकल ऑपरेटर बूलियन स्थितियों का मूल्यांकन करते हैं से शुरू करें, AND में दोनों सत्य होना बताएं, OR में किसी एक का सत्य होना जोड़ें, और NOT द्वारा मान पलटने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u17_t1",
+              "text": "जावास्क्रिप्ट में लॉजिकल ऑपरेटर एकाधिक बूलियन स्थितियों का मूल्यांकन करते हैं",
+              "role_hint": "लॉजिकल ऑपरेटरों के मुख्य कार्य से शुरुआत करें"
+            },
+            {
+              "id": "hi_u17_t2",
+              "text": "जहाँ लॉजिकल AND `&&` के लिए दोनों स्थितियों का सत्य होना अनिवार्य है",
+              "role_hint": "AND ऑपरेटर के सख्त नियम से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u17_t3",
+              "text": "जबकि लॉजिकल OR `||` किसी भी एक स्थिति के सत्य होने पर TRUE देता है",
+              "role_hint": "OR ऑपरेटर के नियम से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u17_t4",
+              "text": "और लॉजिकल NOT `!` किसी भी बूलियन मान को उसके ठीक विपरीत मान में बदल देता है",
+              "role_hint": "NOT ऑपरेटर द्वारा मान उलटने की मुख्य क्रिया के साथ वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u17_d1",
+              "category": "logical",
+              "text": "जहाँ लॉजिकल AND किसी भी एक स्थिति के असत्य होने पर भी TRUE देता है",
+              "penalty_explanation": "लॉजिकल AND दोनों स्थितियों के सत्य होने पर ही TRUE देता है, अन्यथा FALSE देता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Logical AND (`&&`) requires both conditions true, OR (`||`) requires at least one true, and NOT (`!`) inverts truth values.",
+        "hi": "लॉजिकल AND (`&&`) दोनों शर्तों के सत्य होने की मांग करता है, OR (`||`) कम से कम एक सत्य मांगता है, और NOT (`!`) मान को उलट देता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "String Concatenation Operator",
+          "hi": "स्ट्रिंग कॉन्केटेनेशन ऑपरेटर"
+        },
+        "theory": {
+          "en": "In JavaScript, the plus symbol (`+`) is overloaded to act as a string concatenation operator when used with text[cite: 6]. It joins two or more individual string sequences together into one unified string (for example, combining `\"I love\"` and `\" my country\"` to produce `\"I love my country\"`)[cite: 6].",
+          "hi": "जावास्क्रिप्ट में प्लस चिन्ह (`+`) का उपयोग टेक्स्ट के साथ किए जाने पर यह स्ट्रिंग कॉन्केटेनेशन ऑपरेटर के रूप में कार्य करता है[cite: 6]। इसका उपयोग दो या दो से अधिक स्ट्रिंग मानों को आपस में जोड़कर एक नई स्ट्रिंग बनाने के लिए किया जाता है (उदाहरण के लिए, `\"I love\"` और `\" my country\"` को जोड़कर `\"I love my country\"` बनाना)[cite: 6]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">String Concatenation Operation</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">var A = &quot;I love&quot;;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">String Operand 1</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">var B = &quot; Bharat&quot;;</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">String Operand 2</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">C = A + B;</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&quot;I love Bharat&quot;</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Initial</tspan><tspan x=\"120\" dy=\"1.2em\">String Text</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Concatenation</tspan><tspan x=\"300\" dy=\"1.2em\">Operator (+)</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Combined</tspan><tspan x=\"480\" dy=\"1.2em\">Output String</tspan></text></svg>",
+          "caption": {
+            "en": "String concatenation joining multiple text fragments into a single string using the plus operator.",
+            "hi": "प्लस ऑपरेटर का उपयोग करके कई टेक्स्ट स्ट्रिंग्स को एक साथ जोड़ने की प्रक्रिया।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the fluent sentence describing how strings are concatenated in JavaScript.",
+          "hint": "Start with the plus symbol acting on text, describe accepting strings as operands, explain joining sequences together, and conclude with producing a combined output string.",
+          "target_sequence": [
+            {
+              "id": "en_u18_t1",
+              "text": "The plus symbol `+` in JavaScript acts as a string operator",
+              "role_hint": "Lead with the plus symbol acting on text strings"
+            },
+            {
+              "id": "en_u18_t2",
+              "text": "whenever one or more participating operands are text strings",
+              "role_hint": "Identify the string operands condition"
+            },
+            {
+              "id": "en_u18_t3",
+              "text": "and by sequentially joining individual character sequences together",
+              "role_hint": "Explain the concatenation joining mechanism"
+            },
+            {
+              "id": "en_u18_t4",
+              "text": "it seamlessly creates a single unified combined string output",
+              "role_hint": "Conclude with the resulting unified string output"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u18_d1",
+              "category": "logical",
+              "text": "it subtracts matching characters from both strings to form a numeric remainder",
+              "penalty_explanation": "The plus operator concatenates (joins) strings; it never performs subtraction on text."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "जावास्क्रिप्ट में स्ट्रिंग जोड़ने की कार्यप्रणाली को व्यक्त करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "प्लस चिन्ह `+` एक स्ट्रिंग ऑपरेटर है से शुरू करें, टेक्स्ट ऑपरेंड की स्थिति बताएं, वर्णों को एक साथ जोड़ने का तरीका बताएं, और संयुक्त स्ट्रिंग बनाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u18_t1",
+              "text": "जावास्क्रिप्ट में प्लस चिन्ह `+` एक स्ट्रिंग ऑपरेटर के रूप में कार्य करता है",
+              "role_hint": "प्लस चिन्ह के स्ट्रिंग ऑपरेटर होने वाले मुख्य उपवाक्य से शुरुआत करें"
+            },
+            {
+              "id": "hi_u18_t2",
+              "text": "जब भाग लेने वाले ऑपरेंड में कोई भी टेक्स्ट स्ट्रिंग होती है",
+              "role_hint": "टेक्स्ट ऑपरेंड की शर्त से जुड़ा उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u18_t3",
+              "text": "और अलग-अलग वर्ण श्रृंखलाओं को एक के बाद एक आपस में जोड़कर",
+              "role_hint": "स्ट्रिंग्स को मिलाने की प्रक्रिया वाला उपवाक्य जोड़ें"
+            },
+            {
+              "id": "hi_u18_t4",
+              "text": "यह सुगमता से एक एकल संयुक्त स्ट्रिंग आउटपुट तैयार करता है",
+              "role_hint": "संयुक्त स्ट्रिंग तैयार करने की मुख्य क्रिया के साथ वाक्य पूरा करें"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u18_d1",
+              "category": "logical",
+              "text": "यह संख्यात्मक शेषफल बनाने के लिए दोनों स्ट्रिंग्स से मिलते-जुलते वर्णों को घटा देता है",
+              "penalty_explanation": "स्ट्रिंग में `+` ऑपरेटर शब्दों को जोड़ता है (कॉन्केटेनेशन करता है), वर्णों को घटाता नहीं है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The plus operator (`+`) concatenates string values, combining multiple text segments into a single string.",
+        "hi": "प्लस ऑपरेटर (`+`) स्ट्रिंग मानों को आपस में जोड़ता है, जिससे कई टेक्स्ट खंड मिलकर एक एकल स्ट्रिंग बनाते हैं।"
+      }
+    }
+  ]
+}
