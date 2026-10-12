@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 11",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Unit 5: HTML Fundamentals - Part 3",
+      "hi": "यूनिट 5: HTML के मूल सिद्धांत - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Heading Tag Hierarchy from H1 to H6",
+          "hi": "H1 से H6 तक हेडिंग टैग पदानुक्रम"
+        },
+        "theory": {
+          "en": "Heading tags are container tags used to present text as titles or headings on a web page. HTML offers six discrete heading levels ranging from <H1> to <H6>, where <H1> represents the largest heading size and <H6> produces the smallest heading. All heading tags are paired elements requiring opening and closing tags.",
+          "hi": "हेडिंग टैग कंटेनर टैग होते हैं जिनका उपयोग वेब पेज पर टेक्स्ट को शीर्षक या हेडिंग के रूप में प्रदर्शित करने के लिए किया जाता है। HTML में <H1> से <H6> तक छह अलग-अलग हेडिंग स्तर होते हैं, जहाँ <H1> सबसे बड़ी हेडिंग और <H6> सबसे छोटी हेडिंग दर्शाता है। सभी हेडिंग टैग पेयर्ड तत्व होते हैं जिन्हें क्लोजिंग टैग की आवश्यकता होती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Six Levels of Heading Tags: &lt;H1&gt; to &lt;H6&gt;</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;H1&gt; Largest</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Level 1 Heading</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;H3&gt; Medium</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Level 3 Heading</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;H6&gt; Smallest</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Level 6 Heading</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Maximum Visual</tspan><tspan x=\"120\" dy=\"1.2em\">Font Prominence</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Intermediate</tspan><tspan x=\"300\" dy=\"1.2em\">Subheading Scale</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Minimum Visual</tspan><tspan x=\"480\" dy=\"1.2em\">Font Prominence</tspan></text></svg>",
+          "caption": {
+            "en": "Visual hierarchy of HTML heading tags stepping down from largest level H1 to smallest level H6.",
+            "hi": "HTML हेडिंग टैग का दृश्य पदानुक्रम जो सबसे बड़े स्तर H1 से सबसे छोटे स्तर H6 तक घटता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing the hierarchy and structure of HTML heading tags.",
+          "hint": "Start with heading tags formatting document titles, describe the six distinct heading levels, explain stepping sizes from H1 down to H6, and conclude with structuring webpage typography.",
+          "target_sequence": [
+            {
+              "id": "en_u11_t1",
+              "text": "The paired heading tags define structured visual titles",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u11_t2",
+              "text": "across six hierarchical levels from `<H1>` to `<H6>`",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u11_t3",
+              "text": "and by scaling font prominence from the largest `<H1>` down to the smallest `<H6>`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u11_t4",
+              "text": "they establish a clear typographical content outline on the page",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "logical",
+              "text": "and by establishing `<H6>` as the largest font size while treating `<H1>` as the smallest heading",
+              "penalty_explanation": "In HTML, H1 produces the largest heading and H6 produces the smallest heading, not the reverse."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "HTML हेडिंग टैग्स के पदानुक्रम और संरचना को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "पेयर्ड हेडिंग टैग्स शीर्षकों को परिभाषित करते हैं से शुरू करें, H1 से H6 तक छह स्तर बताएं, H1 को सबसे बड़ा और H6 को सबसे छोटा रखने का तरीका जोड़ें, और स्पष्ट रूपरेखा स्थापित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u11_t1",
+              "text": "पेयर्ड हेडिंग टैग्स व्यवस्थित दृश्य शीर्षकों को परिभाषित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u11_t2",
+              "text": "`<H1>` से `<H6>` तक के छह पदानुक्रमित स्तरों के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u11_t3",
+              "text": "और सबसे बड़े `<H1>` से शुरू करके सबसे छोटे `<H6>` तक फ़ॉन्ट आकार घटाकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u11_t4",
+              "text": "ये वेब पेज पर सामग्री की स्पष्ट रूपरेखा और संरचना स्थापित करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "logical",
+              "text": "और `<H6>` को सबसे बड़ा फ़ॉन्ट आकार मानते हुए `<H1>` को सबसे छोटी हेडिंग बनाकर",
+              "penalty_explanation": "HTML में H1 सबसे बड़ा शीर्षक होता है और H6 सबसे छोटा शीर्षक होता है, इसका विपरीत नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "HTML provides six heading tags from <H1> (largest) to <H6> (smallest) to create structured titles.",
+        "hi": "HTML व्यवस्थित शीर्षक बनाने के लिए <H1> (सबसे बड़ा) से <H6> (सबसे छोटा) तक छह हेडिंग टैग प्रदान करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Heading Text Alignment Attributes",
+          "hi": "हेडिंग टेक्स्ट अलाइनमेंट विशेषताएँ"
+        },
+        "theory": {
+          "en": "Heading elements can be positioned horizontally across the web page using the align attribute. By specifying align=\"left\", align=\"center\", or align=\"right\" inside the opening heading tag (such as <H2 align=\"right\">), authors shift the heading's placement to suit layout requirements without altering its font weight or level.",
+          "hi": "हेडिंग तत्वों को align attribute का उपयोग करके वेब पेज पर क्षैतिज रूप से व्यवस्थित किया जा सकता है। शुरुआती हेडिंग टैग के भीतर align=\"left\", align=\"center\", या align=\"right\" लिखकर (जैसे <H2 align=\"right\">), शीर्षक के फ़ॉन्ट स्तर या बोल्डनेस को बदले बिना उसकी स्थिति बदली जा सकती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Heading Alignment: Left, Center, and Right</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">align=&quot;left&quot;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Left Border Dock</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">align=&quot;center&quot;</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Viewport Middle</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">align=&quot;right&quot;</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Right Border Dock</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Default Heading</tspan><tspan x=\"120\" dy=\"1.2em\">Horizontal Position</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Equidistant Margin</tspan><tspan x=\"300\" dy=\"1.2em\">Center Positioning</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Flushed Along</tspan><tspan x=\"480\" dy=\"1.2em\">Right Margin Edge</tspan></text></svg>",
+          "caption": {
+            "en": "Horizontal placement control shifting heading titles to left, center, or right margins via the align attribute.",
+            "hi": "align विशेषता द्वारा शीर्षकों को बाएं, मध्य या दाएं मार्जिन पर स्थानांतरित करने वाला क्षैतिज नियंत्रण।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the fluent sentence describing how the align attribute controls heading placement.",
+          "hint": "Start with heading tags supporting alignment, describe browser layout formatting, explain setting left, center, or right values, and conclude with positioning titles horizontally.",
+          "target_sequence": [
+            {
+              "id": "en_u12_t1",
+              "text": "Heading elements accept the optional `align` attribute",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u12_t2",
+              "text": "directly inside their opening tag definition",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u12_t3",
+              "text": "and by configuring parameters like `left`, `center`, or `right`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u12_t4",
+              "text": "they accurately shift title text along the horizontal axis of the browser window",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u12_d1",
+              "category": "logical",
+              "text": "they convert the text into an unaligned vertical column along the bottom margin",
+              "penalty_explanation": "The align attribute controls horizontal alignment (left, center, right), not vertical stacking."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "align विशेषता द्वारा हेडिंग की स्थिति तय करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "हेडिंग तत्व align विशेषता स्वीकार करते हैं से शुरू करें, शुरुआती टैग का संदर्भ दें, left, center या right सेट करने का तरीका जोड़ें, और शीर्षक को क्षैतिज रूप से स्थानांतरित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u12_t1",
+              "text": "हेडिंग तत्व वैकल्पिक `align` विशेषता को स्वीकार करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u12_t2",
+              "text": "अपनी शुरुआती टैग परिभाषा के भीतर सीधे तौर पर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u12_t3",
+              "text": "और `left`, `center` अथवा `right` जैसे मान निर्धारित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u12_t4",
+              "text": "ये शीर्षक टेक्स्ट को ब्राउज़र विंडो के क्षैतिज अक्ष पर सटीक रूप से व्यवस्थित करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u12_d1",
+              "category": "logical",
+              "text": "ये टेक्स्ट को निचले मार्जिन पर एक लंबवत कॉलम में बदल देते हैं",
+              "penalty_explanation": "align विशेषता केवल क्षैतिज संरेखण (बाएं, मध्य, दाएं) तय करती है, लंबवत कॉलम नहीं बनाती।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The align attribute in heading tags positions title text to the left, center, or right of the web page.",
+        "hi": "हेडिंग टैग में align विशेषता शीर्षक टेक्स्ट को वेब पेज के बाएं, मध्य या दाएं भाग में संरेखित करती है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Paragraph Tag Spacing and Text Alignment",
+          "hi": "पैराग्राफ टैग रिक्ति और टेक्स्ट अलाइनमेंट"
+        },
+        "theory": {
+          "en": "The <P>...</P> tag is a container tag used to organize running text into paragraphs. Web browsers automatically add a single blank line before and after each paragraph element to separate content blocks. The align attribute customizes paragraph text flow using values such as left, center, right, or justify (which aligns text evenly along both margins).",
+          "hi": "<P>...</P> टैग एक कंटेनर टैग है जिसका उपयोग सामान्य टेक्स्ट को पैराग्राफ के रूप में व्यवस्थित करने के लिए किया जाता है। वेब ब्राउज़र प्रत्येक पैराग्राफ से पहले और बाद में स्वतः एक रिक्त पंक्ति जोड़ते हैं ताकि सामग्री अलग दिखे। align विशेषता left, center, right या justify (जो दोनों किनारों से टेक्स्ट को बराबर संरेखित करती है) का उपयोग करके टेक्स्ट प्रवाह को नियंत्रित करती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Paragraph Box Model: Spacing and Justification</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Blank Line Before</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Auto Margin Top</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;P&gt; Content &lt;/P&gt;</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">align=&quot;justify&quot;</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Blank Line After</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Auto Margin Bottom</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Browser Appends</tspan><tspan x=\"120\" dy=\"1.2em\">Preceding Space</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Even Text Flush</tspan><tspan x=\"300\" dy=\"1.2em\">On Both Borders</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Browser Appends</tspan><tspan x=\"480\" dy=\"1.2em\">Following Space</tspan></text></svg>",
+          "caption": {
+            "en": "Paragraph layout mechanics illustrating automated blank line separation and multi-line text justification.",
+            "hi": "पैराग्राफ लेआउट संरचना जो स्वतः रिक्त पंक्ति अलगाव और टेक्स्ट जस्टिफिकेशन को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the harmonious sentence describing paragraph tag spacing and alignment options.",
+          "hint": "Start with the paragraph container tag structuring body text, mention automated boundary margins, describe applying the align attribute with justify, and conclude with presenting readable prose.",
+          "target_sequence": [
+            {
+              "id": "en_u13_t1",
+              "text": "The paired `<p>` container tag organizes continuous reading text",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u13_t2",
+              "text": "with automatic blank line spacing inserted before and after its boundary",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u13_t3",
+              "text": "and by configuring the `align` attribute with values like `justify`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u13_t4",
+              "text": "it aligns text evenly along both browser margins for clean visual flow",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "logical",
+              "text": "it merges all adjacent paragraphs into a single continuous unspaced block",
+              "penalty_explanation": "Browsers automatically add blank line spacing before and after paragraphs, preventing them from merging without space."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "पैराग्राफ टैग द्वारा रिक्ति और संरेखण प्रबंधित करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "पेयर्ड `<p>` कंटेनर टैग टेक्स्ट को व्यवस्थित करता है से शुरू करें, आगे-पीछे खाली पंक्ति जुड़ना बताएं, `justify` मान के साथ `align` जोड़ने का तरीका बताएं, और दोनों किनारों पर संरेखित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u13_t1",
+              "text": "पेयर्ड `<p>` कंटेनर टैग लंबे टेक्स्ट को पैराग्राफ के रूप में व्यवस्थित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u13_t2",
+              "text": "अपनी सीमाओं के पहले और बाद में स्वतः रिक्त पंक्ति जोड़ते हुए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u13_t3",
+              "text": "और `align` विशेषता में `justify` जैसे मानों को कॉन्फ़िगर करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u13_t4",
+              "text": "यह स्वच्छ दृश्य प्रवाह के लिए टेक्स्ट को दोनों किनारों पर समान रूप से संरेखित करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "logical",
+              "text": "यह सभी आस-पास के पैराग्राफों को बिना किसी स्पेस के एक साथ जोड़ देता है",
+              "penalty_explanation": "ब्राउज़र प्रत्येक <p> टैग के पहले और बाद में एक रिक्त पंक्ति जोड़ता है, जिससे वे आपस में चिपकते नहीं हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The <P> tag adds blank space above and below text and formats alignment using left, center, right, and justify.",
+        "hi": "<P> टैग टेक्स्ट के ऊपर और नीचे एक खाली पंक्ति जोड़ता है और left, center, right तथा justify द्वारा संरेखण करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Physical Style Tags: Bold, Italics, and Underline",
+          "hi": "फ़िज़िकल स्टाइल टैग: बोल्ड, इटैलिक और अंडरलाइन"
+        },
+        "theory": {
+          "en": "HTML provides physical style tags to format inline text emphasis. The <B>...</B> tag renders text in bold weight to draw attention, the <I>...</I> tag italicizes text with a forward slant, and the <U>...</U> tag draws a continuous underline beneath the enclosed words. All three tags are paired container elements.",
+          "hi": "HTML इनलाइन टेक्स्ट को उभारने के लिए फ़िज़िकल स्टाइल टैग प्रदान करता है। <B>...</B> टैग टेक्स्ट को गहरा (बोल्ड) बनाता है, <I>...</I> टैग टेक्स्ट को तिरछा (इटैलिक) करता है, और <U>...</U> टैग शब्दों के नीचे एक रेखा (अंडरलाइन) खींचता है। ये तीनों टैग पेयर्ड कंटेनर तत्व हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Physical Style Elements: &lt;B&gt;, &lt;I&gt;, and &lt;U&gt;</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;B&gt; Bold &lt;/B&gt;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Thick Weight</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-style=\"italic\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;I&gt; Italic &lt;/I&gt;</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Slanted Glyphs</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-decoration=\"underline\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;U&gt; Under &lt;/U&gt;</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Bottom Rule</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Heavy Stroke</tspan><tspan x=\"120\" dy=\"1.2em\">Visual Emphasis</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Oblique Angle</tspan><tspan x=\"300\" dy=\"1.2em\">Text Distinction</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Underline Line</tspan><tspan x=\"480\" dy=\"1.2em\">Content Anchor</tspan></text></svg>",
+          "caption": {
+            "en": "Inline style tags applying bold weight, italic slant, and underline strokes to words.",
+            "hi": "शब्दों पर बोल्ड मोटाई, इटैलिक झुकाव और अंडरलाइन रेखा लागू करने वाले इनलाइन स्टाइल टैग।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how physical style tags format inline text.",
+          "hint": "Start with physical style tags applying visual emphasis, describe operating on specific words, explain using bold, italic, and underline tags, and conclude with altering typography without affecting layout.",
+          "target_sequence": [
+            {
+              "id": "en_u14_t1",
+              "text": "Physical style tags apply distinctive inline formatting",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u14_t2",
+              "text": "to key words and phrases within sentences",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u14_t3",
+              "text": "and by enclosing target text within paired `<B>`, `<I>`, or `<U>` tags",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u14_t4",
+              "text": "they add bold weight, italic slant, and underlines without creating extra line breaks",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "logical",
+              "text": "they delete the enclosed text entirely from the rendered browser screen",
+              "penalty_explanation": "Style tags style and display text; they never delete or hide text from the screen."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "फ़िज़िकल स्टाइल टैग्स द्वारा टेक्स्ट को प्रारूपित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "फ़िज़िकल स्टाइल टैग्स इनलाइन फ़ॉर्मेटिंग लागू करते हैं से शुरू करें, वाक्यों के शब्दों का संदर्भ दें, `<B>`, `<I>` और `<U>` टैग्स में टेक्स्ट रखने का तरीका बताएं, और बोल्ड, इटैलिक व रेखांकित प्रभाव जोड़ने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u14_t1",
+              "text": "फ़िज़िकल स्टाइल टैग्स विशिष्ट इनलाइन फ़ॉर्मेटिंग लागू करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u14_t2",
+              "text": "वाक्यों के भीतर महत्वपूर्ण शब्दों और वाक्यांशों पर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u14_t3",
+              "text": "और लक्षित टेक्स्ट को पेयर्ड `<B>`, `<I>` अथवा `<U>` टैग्स के भीतर रखकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u14_t4",
+              "text": "ये बिना नई लाइन बनाए टेक्स्ट को बोल्ड, इटैलिक और रेखांकित रूप में प्रस्तुत करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "logical",
+              "text": "ये संबंधित टेक्स्ट को स्क्रीन से पूरी तरह हटाकर अदृश्य कर देते हैं",
+              "penalty_explanation": "स्टाइल टैग टेक्स्ट की शैली बदलते हैं, वे टेक्स्ट को मिटाते या छुपाते नहीं हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The paired tags <B>, <I>, and <U> apply bold, italic, and underline styling respectively to inline text.",
+        "hi": "पेयर्ड टैग <B>, <I> और <U> क्रमशः इनलाइन टेक्स्ट को बोल्ड, इटैलिक और अंडरलाइन रूप में प्रदर्शित करते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Nesting and Combining Inline Style Tags",
+          "hi": "इनलाइन स्टाइल टैग्स की नेस्टिंग और संयोजन"
+        },
+        "theory": {
+          "en": "Style tags can be combined together to apply multiple formatting effects simultaneously to the same text. When combining tags, proper nesting must be maintained following the Last In, First Out (LIFO) rule, meaning the tag opened last must be closed first. For example, <B><I><U> Hello! </U></I></B> applies bold, italic, and underline styling concurrently.",
+          "hi": "एक ही टेक्स्ट पर एक साथ कई प्रभाव लागू करने के लिए स्टाइल टैग्स को संयोजित किया जा सकता है। टैग्स को मिलाते समय सही नेस्टिंग का ध्यान रखना चाहिए, जिसमें जो टैग सबसे अंत में खोला गया है उसे सबसे पहले बंद किया जाना चाहिए (LIFO नियम)। उदाहरण के लिए, <B><I><U> Hello! </U></I></B> एक साथ बोल्ड, इटैलिक और अंडरलाइन तीनों प्रभाव लागू करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">LIFO Nesting Architecture: &lt;B&gt;&lt;I&gt;&lt;U&gt;...&lt;/U&gt;&lt;/I&gt;&lt;/B&gt;</text><rect x=\"45\" y=\"75\" width=\"510\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"90\" y=\"102\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;B&gt;</text><text x=\"150\" y=\"102\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;I&gt;</text><text x=\"210\" y=\"102\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;U&gt;</text><text x=\"300\" y=\"102\" fill=\"#f8fafc\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" font-style=\"italic\" text-decoration=\"underline\" text-anchor=\"middle\" dominant-baseline=\"central\">Hello!</text><text x=\"390\" y=\"102\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;/U&gt;</text><text x=\"450\" y=\"102\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;/I&gt;</text><text x=\"510\" y=\"102\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;/B&gt;</text><line x1=\"90\" y1=\"130\" x2=\"90\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"210\" y1=\"130\" x2=\"210\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"390\" y1=\"130\" x2=\"390\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"510\" y1=\"130\" x2=\"510\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"150\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"150\" dy=\"0\">Outer Tag: Opened 1st</tspan><tspan x=\"150\" dy=\"1.2em\">Closed Last (&lt;/B&gt;)</tspan></text><text x=\"450\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"450\" dy=\"0\">Inner Tag: Opened Last</tspan><tspan x=\"450\" dy=\"1.2em\">Closed 1st (&lt;/U&gt;)</tspan></text></svg>",
+          "caption": {
+            "en": "Proper nesting hierarchy where inner tags close before outer enclosing tags in a symmetrical structure.",
+            "hi": "सही नेस्टिंग पदानुक्रम जहाँ भीतरी टैग बाहरी टैग से पहले एक संतुलित संरचना में बंद होते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the complete, harmonious sentence describing how to nest and combine HTML style tags.",
+          "hint": "Start with multiple formatting tags combining on the same text, mention maintaining strict nesting order, explain closing the innermost tag first, and conclude with applying multiple styles concurrently.",
+          "target_sequence": [
+            {
+              "id": "en_u15_t1",
+              "text": "Multiple physical style tags can be applied to the same text",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u15_t2",
+              "text": "while maintaining symmetrical nesting order across all elements",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u15_t3",
+              "text": "and by closing the most recently opened tag first before terminating outer tags",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u15_t4",
+              "text": "they combine bold weight, italic slant, and underlines into a single unified style",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "logical",
+              "text": "they cause the browser parser to cancel all formatting and revert text to plain styling",
+              "penalty_explanation": "Combining style tags applies all formatting styles simultaneously rather than canceling them out."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "HTML स्टाइल टैग्स को नेस्ट और संयोजित करने की विधि को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक ही टेक्स्ट पर कई स्टाइल टैग्स लागू किए जा सकते हैं से शुरू करें, संतुलित नेस्टिंग बनाए रखना बताएं, सबसे अंत में खुले टैग को पहले बंद करने का तरीका बताएं, और तीनों प्रभाव एक साथ दिखाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u15_t1",
+              "text": "एकाधिक फ़िज़िकल स्टाइल टैग्स एक ही टेक्स्ट पर लागू किए जा सकते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u15_t2",
+              "text": "सभी तत्वों के बीच संतुलित नेस्टिंग क्रम बनाए रखते हुए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u15_t3",
+              "text": "और सबसे बाद में खोले गए टैग को बाहरी टैग से पहले बंद करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u15_t4",
+              "text": "ये बोल्ड, इटैलिक और अंडरलाइन तीनों प्रभावों को एक साथ प्रभावी रूप से जोड़ते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "logical",
+              "text": "ये ब्राउज़र रेंडरिंग को विफल करके टेक्स्ट को बिना किसी स्टाइल के सादे रूप में बदल देते हैं",
+              "penalty_explanation": "नेस्टिंग करने से सभी शैलियाँ एक साथ लागू होती हैं, फ़ॉर्मेटिंग रद्द नहीं होती।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Style tags can be nested together, provided tags close in reverse order of how they were opened.",
+        "hi": "स्टाइल टैग्स को एक साथ नेस्ट किया जा सकता है, बशर्ते टैग्स उसी क्रम के विपरीत बंद हों जिस क्रम में वे खोले गए थे।"
+      }
+    }
+  ]
+}
