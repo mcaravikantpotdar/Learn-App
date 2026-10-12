@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 5: RDBMS Concepts & MySQL - Part 5",
+      "hi": "यूनिट 5: RDBMS अवधारणाएं और MySQL - भाग 5"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "SQL Function Classification: Aggregate vs. Scalar Functions",
+          "hi": "SQL फ़ंक्शन वर्गीकरण: एग्रीगेट बनाम स्केलर फ़ंक्शन"
+        },
+        "theory": {
+          "en": "MySQL organizes built-in functions into two distinct functional categories based on how they process records. Aggregate functions operate across multiple row values within a column and return a single summary value. They automatically ignore NULL entries during calculation, with the sole exception of COUNT(*). In contrast, Scalar functions operate on an individual input value in each row and return a transformed scalar result for every processed row, evaluating to NULL whenever an input attribute contains NULL.",
+          "hi": "MySQL अपने फ़ंक्शंस को रिकॉर्ड्स प्रोसेस करने के तरीके के आधार पर दो अलग-अलग श्रेणियों में वर्गीकृत करता है। एग्रीगेट फ़ंक्शन किसी कॉलम की कई पंक्तियों के मानों पर गणना करके एक एकल सारांश मान लौटाते हैं। ये गणना के दौरान COUNT(*) को छोड़कर बाकी सभी मामलों में NULL मानों को स्वतः अनदेखा कर देते हैं। इसके विपरीत, स्केलर फ़ंक्शन प्रत्येक पंक्ति के व्यक्तिगत मान पर कार्य करते हैं और प्रत्येक पंक्ति के लिए एक रूपांतरित परिणाम देते हैं, तथा इनपुट NULL होने पर NULL लौटाते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">SQL Function Taxonomy: Aggregate vs. Scalar</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Aggregate Functions</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Many Rows &rarr; Single Value</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Scalar Functions</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Each Row &rarr; Transformed Row</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Column Summary</tspan><tspan x=\"100\" dy=\"1.2em\">Reduces Records</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Ignores NULLs</tspan><tspan x=\"225\" dy=\"1.2em\">SUM, AVG, MAX</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Per-Row Logic</tspan><tspan x=\"375\" dy=\"1.2em\">One-to-One Match</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Returns NULL</tspan><tspan x=\"500\" dy=\"1.2em\">UCASE, LENGTH</tspan></text></svg>",
+          "caption": {
+            "en": "Structural contrast comparing multi-row column reduction under aggregate functions with row-by-row scalar field transformation.",
+            "hi": "एग्रीगेट फ़ंक्शंस द्वारा कई पंक्तियों के मानों को एक मान में समेटने और स्केलर फ़ंक्शंस द्वारा पंक्ति-दर-पंक्ति रूपांतरण के बीच अंतर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence distinguishing aggregate functions from scalar functions in SQL.",
+          "hint": "Start with SQL function categories processing relational column records, describe operating on multiple rows versus individual values, explain reducing columns to a single summary versus transforming every row, and conclude with separating summary calculations from row transformations.",
+          "target_sequence": [
+            {
+              "id": "en_u21_t1",
+              "text": "SQL functions process stored relational attributes",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u21_t2",
+              "text": "across query evaluations within the database engine",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u21_t3",
+              "text": "and by condensing multiple column entries into one summary under aggregate functions versus transforming each row under scalar functions",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u21_t4",
+              "text": "they distinguish many-to-one column reductions from one-to-one field transformations cleanly",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u21_d1",
+              "category": "logical",
+              "text": "and by forcing aggregate functions to output an entirely new modified column for every individual input row",
+              "penalty_explanation": "Aggregate functions produce a single scalar summary value across multiple rows, not a modified row for every input entry."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "SQL में एग्रीगेट और स्केलर फ़ंक्शंस के अंतर को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "SQL फ़ंक्शंस रिलेशनल विशेषताओं को प्रोसेस करते हैं से शुरू करें, डेटाबेस इंजन के भीतर का संदर्भ दें, कई पंक्तियों को एक मान में बदलने बनाम प्रत्येक पंक्ति को रूपांतरित करने का तरीका बताएं, और सारांश गणना को व्यक्तिगत रूपांतरण से अलग करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u21_t1",
+              "text": "SQL फ़ंक्शंस रिलेशनल विशेषताओं को प्रोसेस करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u21_t2",
+              "text": "डेटाबेस इंजन के भीतर क्वेरी मूल्यांकन के दौरान",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u21_t3",
+              "text": "और एग्रीगेट द्वारा कई पंक्तियों को एक मान में समेटकर तथा स्केलर द्वारा प्रत्येक पंक्ति को व्यक्तिगत रूप से बदलकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u21_t4",
+              "text": "ये बहु-पंक्ति सारांश गणना को पंक्ति-दर-पंक्ति फ़ील्ड रूपांतरण से स्पष्ट रूप से अलग करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u21_d1",
+              "category": "logical",
+              "text": "और प्रत्येक इनपुट पंक्ति के लिए एग्रीगेट फ़ंक्शन से एक नया संशोधित कॉलम तैयार करवाकर",
+              "penalty_explanation": "एग्रीगेट फ़ंक्शंस कई पंक्तियों से केवल एक मान लौटाते हैं, वे प्रत्येक पंक्ति के लिए अलग मान नहीं देते।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Aggregate functions condense multiple row values into a single summary while ignoring NULLs, whereas scalar functions transform each individual row value.",
+        "hi": "एग्रीगेट फ़ंक्शन NULL मानों को छोड़कर कई पंक्तियों से एक सारांश मान देते हैं, जबकि स्केलर फ़ंक्शन प्रत्येक व्यक्तिगत पंक्ति के मान को बदलते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Multi-Row Aggregate Computations in MySQL",
+          "hi": "MySQL में बहु-पंक्ति एग्रीगेट गणनाएं"
+        },
+        "theory": {
+          "en": "MySQL provides dedicated aggregate functions to compute statistical summaries over numeric and entity columns. The COUNT(*) function tallies the total number of records matching query conditions, such as returning 4 for our populated STUDENT table. The AVG() function computes the arithmetic mean of numeric fields, such as calculating average salary across faculty in TEACHER. MAX() and MIN() identify extreme boundaries within columns (e.g., retrieving the highest exam score of 95.00 from MARKS), while SUM() totals all numeric entries into a single aggregate figure.",
+          "hi": "MySQL संख्यात्मक और इकाई कॉलमों पर सांख्यिकीय सारांश निकालने के लिए विशिष्ट एग्रीगेट फ़ंक्शन प्रदान करता है। COUNT(*) फ़ंक्शन शर्तों से मेल खाने वाले कुल रिकॉर्ड्स की संख्या गिनता है, जैसे हमारी STUDENT टेबल के लिए 4 लौटाना। AVG() फ़ंक्शन संख्यात्मक फ़ील्ड का औसत निकालता है, जैसे TEACHER टेबल में शिक्षकों का औसत वेतन। MAX() और MIN() फ़ंक्शन कॉलम के उच्चतम और न्यूनतम मान ज्ञात करते हैं (जैसे MARKS टेबल से अधिकतम 95.00 अंक प्राप्त करना), जबकि SUM() सभी मानों का कुल योग प्रदान करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Aggregate Reduction Pipeline (School Schema)</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">COUNT(*)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Total Students: 4</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">AVG(Salary)</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Faculty Mean Salary</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">MAX(Marks)</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Highest Score: 95.00</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Row Counting</tspan><tspan x=\"120\" dy=\"1.2em\">Total Entities</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Arithmetic Mean</tspan><tspan x=\"300\" dy=\"1.2em\">Skips NULL Salaries</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Upper Boundary</tspan><tspan x=\"480\" dy=\"1.2em\">Peak Examination</tspan></text></svg>",
+          "caption": {
+            "en": "Multi-row reduction pipeline executing COUNT, AVG, and MAX aggregate functions over populated school database tables.",
+            "hi": "बहु-पंक्ति एग्रीगेट प्रक्रिया जो स्कूल डेटाबेस तालिकाओं पर COUNT, AVG और MAX फ़ंक्शंस द्वारा सारांश मान निकालती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how multi-row aggregate functions summarize table data.",
+          "hint": "Start with multi-row aggregate functions evaluating column data, mention processing school database records, explain applying COUNT, AVG, MAX, MIN, and SUM across numerical attributes, and conclude with returning statistical metrics.",
+          "target_sequence": [
+            {
+              "id": "en_u22_t1",
+              "text": "Multi-row aggregate functions evaluate numerical attributes",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u22_t2",
+              "text": "across student exam results and faculty payroll tables",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u22_t3",
+              "text": "and by calculating totals, averages, boundary limits, and record counts with `SUM`, `AVG`, `MAX`, and `COUNT`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u22_t4",
+              "text": "they return high-level statistical summaries without altering underlying table entries",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u22_d1",
+              "category": "logical",
+              "text": "and by overwriting every stored salary value with the single calculated arithmetic average permanently",
+              "penalty_explanation": "Aggregate functions compute query summary results; they do not overwrite column values in table rows."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "बहु-पंक्ति एग्रीगेट फ़ंक्शंस द्वारा टेबल डेटा का सारांश निकालने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "बहु-पंक्ति एग्रीगेट फ़ंक्शन संख्यात्मक विशेषताओं का मूल्यांकन करते हैं से शुरू करें, परीक्षा परिणामों और वेतन तालिकाओं का संदर्भ दें, `SUM`, `AVG`, `MAX` और `COUNT` द्वारा कुल, औसत व सीमाओं की गणना का तरीका बताएं, और सांख्यिकीय सारांश देने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u22_t1",
+              "text": "बहु-पंक्ति एग्रीगेट फ़ंक्शन संख्यात्मक विशेषताओं का मूल्यांकन करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u22_t2",
+              "text": "छात्रों के परीक्षा परिणामों और शिक्षकों के वेतन तालिकाओं के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u22_t3",
+              "text": "और `SUM`, `AVG`, `MAX` तथा `COUNT` द्वारा कुल योग, औसत, सीमा और रिकॉर्ड संख्या की गणना करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u22_t4",
+              "text": "ये मूल रिकॉर्ड्स को बदले बिना उच्च स्तरीय सांख्यिकीय सारांश प्रस्तुत करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u22_d1",
+              "category": "logical",
+              "text": "और प्रत्येक वेतन रिकॉर्ड को हमेशा के लिए गिने गए औसत मान से बदलकर",
+              "penalty_explanation": "एग्रीगेट फ़ंक्शन केवल सारांश मान दिखाते हैं, वे टेबल के मूल डेटा को नहीं बदलते।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "COUNT tallies rows, AVG calculates arithmetic means, MAX and MIN find range extremes, and SUM totals column values.",
+        "hi": "COUNT पंक्तियों की गिनती करता है, AVG औसत निकालता है, MAX व MIN सीमाएं ढूंढते हैं, और SUM कॉलम का कुल योग करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Row-by-Row Scalar Field Transformations",
+          "hi": "पंक्ति-दर-पंक्ति स्केलर फ़ील्ड रूपांतरण"
+        },
+        "theory": {
+          "en": "Scalar functions in MySQL process individual values within each row, returning a corresponding output value for each record. String functions include UCASE() which converts text to uppercase (e.g., UCASE(Name) returning 'RAMESH SHARMA'), and LENGTH() which returns character counts. Mathematical functions like ROUND(val, d) round numeric values to a specified decimal precision (e.g., ROUND(45.678, 1) yielding 45.7). System functions like NOW() capture the current operating system date and time stamp.",
+          "hi": "MySQL में स्केलर फ़ंक्शन प्रत्येक पंक्ति के व्यक्तिगत मान को प्रोसेस करते हैं और प्रत्येक रिकॉर्ड के लिए एक रूपांतरित आउटपुट मान लौटाते हैं। स्ट्रिंग फ़ंक्शंस में UCASE() शामिल है जो टेक्स्ट को बड़े अक्षरों में बदलता है (जैसे UCASE(Name) 'RAMESH SHARMA' देता है), और LENGTH() जो वर्णों की कुल संख्या बताता है। गणितीय फ़ंक्शन जैसे ROUND(val, d) संख्या को निश्चित दशमलव स्थानों तक राउंड ऑफ करते हैं (जैसे ROUND(45.678, 1) का परिणाम 45.7 होता है)। सिस्टम फ़ंक्शन जैसे NOW() वर्तमान सिस्टम दिनांक और समय लौटाते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Scalar Transformation Suite (Text, Numeric &amp; System)</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">UCASE(Name)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&apos;RAMESH SHARMA&apos;</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">ROUND(45.678, 1)</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Returns 45.7</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">NOW()</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Current Date &amp; Time</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Text Casing</tspan><tspan x=\"120\" dy=\"1.2em\">Upper Formatting</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Numeric Precision</tspan><tspan x=\"300\" dy=\"1.2em\">1 Decimal Place</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">System Clock</tspan><tspan x=\"480\" dy=\"1.2em\">Live Timestamp</tspan></text></svg>",
+          "caption": {
+            "en": "Row-level scalar transformation showcasing case formatting with UCASE, numeric rounding with ROUND, and live timestamps with NOW.",
+            "hi": "पंक्ति-स्तरीय स्केलर रूपांतरण जो UCASE द्वारा अक्षरों को बड़ा करने, ROUND द्वारा दशमलव सीमित करने और NOW द्वारा वर्तमान समय प्राप्त करने को दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how scalar functions transform individual attribute values.",
+          "hint": "Start with scalar functions operating on individual row values, mention processing text, numbers, and system states, explain applying UCASE, LENGTH, ROUND, and NOW, and conclude with formatting outputs on a row-by-row basis.",
+          "target_sequence": [
+            {
+              "id": "en_u23_t1",
+              "text": "Scalar functions process individual attribute values",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u23_t2",
+              "text": "across every retrieved row record during query execution",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u23_t3",
+              "text": "and by converting casing with `UCASE`, measuring lengths with `LENGTH`, rounding with `ROUND`, and reading timestamps with `NOW`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u23_t4",
+              "text": "they format textual, numeric, and temporal outputs consistently on a row-by-row basis",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u23_d1",
+              "category": "logical",
+              "text": "and by collapsing all table rows into a single scalar value containing only the first record name",
+              "penalty_explanation": "Scalar functions produce an output for every individual row; they do not collapse the table into a single value."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "स्केलर फ़ंक्शंस द्वारा व्यक्तिगत विशेषताओं को रूपांतरित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "स्केलर फ़ंक्शन व्यक्तिगत विशेषता मानों को प्रोसेस करते हैं से शुरू करें, क्वेरी निष्पादन के दौरान का संदर्भ दें, `UCASE`, `LENGTH`, `ROUND` और `NOW` लागू करने का तरीका बताएं, और पंक्ति-दर-पंक्ति आधार पर आउटपुट फ़ॉर्मैट करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u23_t1",
+              "text": "स्केलर फ़ंक्शन व्यक्तिगत विशेषता मानों को प्रोसेस करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u23_t2",
+              "text": "क्वेरी निष्पादन के दौरान प्रत्येक प्राप्त पंक्ति रिकॉर्ड के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u23_t3",
+              "text": "और `UCASE` से अक्षर बदलकर, `LENGTH` से लंबाई मापकर, `ROUND` से दशमलव सीमित कर तथा `NOW` से समय प्राप्त करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u23_t4",
+              "text": "ये पंक्ति-दर-पंक्ति आधार पर टेक्स्ट, संख्यात्मक और समय आउटपुट को सटीक रूप से प्रारूपित करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u23_d1",
+              "category": "logical",
+              "text": "और सभी टेबल पंक्तियों को मिलाकर केवल पहले रिकॉर्ड वाले एकल मान में समेटकर",
+              "penalty_explanation": "स्केलर फ़ंक्शंस प्रत्येक पंक्ति के लिए अलग मान देते हैं, वे पंक्तियों को मिलाकर एक नहीं करते।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Scalar functions like UCASE, LENGTH, ROUND, and NOW transform values on a row-by-row basis rather than collapsing data.",
+        "hi": "UCASE, LENGTH, ROUND और NOW जैसे स्केलर फ़ंक्शन डेटा को समेटने के बजाय प्रत्येक पंक्ति के लिए व्यक्तिगत मान लौटाते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Database Transaction Architecture and the ACID Integrity Shield",
+          "hi": "डेटाबेस ट्रांजैक्शन आर्किटेक्चर और ACID अखंडता सुरक्षा"
+        },
+        "theory": {
+          "en": "A database transaction is an atomic sequence of multiple SQL operations executed as a single logical unit of work. To maintain data integrity against errors and crashes, transactions adhere to the four ACID properties. Atomicity enforces the 'All or Nothing' rule, ensuring all operations complete or all revert. Consistency guarantees the database transitions only between valid states satisfying all constraints. Isolation keeps uncommitted changes invisible to concurrent users. Durability ensures that committed modifications persist permanently on disk even during power or system failures.",
+          "hi": "डेटाबेस ट्रांजैक्शन कई SQL ऑपरेशनों का एक समूह होता है जिसे कार्य की एक एकल तार्किक इकाई के रूप में निष्पादित किया जाता है। सिस्टम विफलताओं के विरुद्ध डेटा अखंडता बनाए रखने के लिए, प्रत्येक ट्रांजैक्शन चार ACID गुणों का पालन करता है। एटोमिसिटी 'सभी या कोई नहीं' नियम लागू करती है, जिससे सभी कार्य पूरे होते हैं या सभी रद्द हो जाते हैं। कंसिस्टेंसी यह सुनिश्चित करती है कि सभी नियमों का पालन करते हुए डेटाबेस हमेशा सुसंगत स्थिति में रहे। आइसोलेशन अपूर्ण परिवर्तनों को अन्य समवर्ती उपयोगकर्ताओं से छिपाकर रखता है। ड्यूरेबिलिटी यह गारंटी देती है कि कमिट किए गए परिवर्तन सिस्टम विफलता में भी डिस्क पर स्थायी रहते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">ACID Transaction Integrity Shield</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Atomicity</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">All or Nothing</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Consistency</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Preserves Rules</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Isolation</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Hidden Uncommitted</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Durability</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Survives Crashes</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Full Success</tspan><tspan x=\"102\" dy=\"1.2em\">Or Total Revert</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Valid States</tspan><tspan x=\"232\" dy=\"1.2em\">Satisfies Keys</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Concurrency Lock</tspan><tspan x=\"362\" dy=\"1.2em\">Invisible Changes</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Permanent Disk</tspan><tspan x=\"495\" dy=\"1.2em\">Crash Resistant</tspan></text></svg>",
+          "caption": {
+            "en": "Four-pillar ACID architecture enforcing atomicity, consistency, isolation, and durability across relational transactions.",
+            "hi": "चार-स्तंभीय ACID संरचना जो रिलेशनल ट्रांजैक्शन में एटोमिसिटी, कंसिस्टेंसी, आइसोलेशन और ड्यूरेबिलिटी सुनिश्चित करती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how ACID properties protect transactional integrity.",
+          "hint": "Start with relational database transactions executing as single units of work, mention protecting data integrity across multi-step operations, explain enforcing atomicity, consistency, isolation, and durability, and conclude with preventing corruption during crashes and concurrent access.",
+          "target_sequence": [
+            {
+              "id": "en_u24_t1",
+              "text": "Relational database transactions execute multiple SQL statements",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u24_t2",
+              "text": "as a single indivisible logical unit of work",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u24_t3",
+              "text": "and by enforcing atomicity, consistency, isolation, and durability across all updates",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u24_t4",
+              "text": "they protect data integrity against partial failures, concurrent conflicts, and catastrophic crashes",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u24_d1",
+              "category": "logical",
+              "text": "and by discarding all committed updates immediately whenever an unexpected power failure occurs",
+              "penalty_explanation": "Durability guarantees that committed data persists permanently on disk even during power failures."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ACID गुणों द्वारा ट्रांजैक्शन अखंडता की रक्षा करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "रिलेशनल डेटाबेस ट्रांजैक्शन कई SQL कथनों को निष्पादित करते हैं से शुरू करें, कार्य की अविभाज्य तार्किक इकाई का संदर्भ दें, एटोमिसिटी, कंसिस्टेंसी, आइसोलेशन व ड्यूरेबिलिटी लागू करने का तरीका बताएं, और विफलताओं व टकरावों से डेटा की रक्षा करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u24_t1",
+              "text": "रिलेशनल डेटाबेस ट्रांजैक्शन कई SQL कथनों को निष्पादित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u24_t2",
+              "text": "कार्य की एक एकल अविभाज्य तार्किक इकाई के रूप में",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u24_t3",
+              "text": "और सभी अपडेट्स पर एटोमिसिटी, कंसिस्टेंसी, आइसोलेशन तथा ड्यूरेबिलिटी लागू करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u24_t4",
+              "text": "ये आंशिक विफलताओं, समवर्ती टकरावों और सिस्टम क्रैश से डेटा अखंडता की रक्षा करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u24_d1",
+              "category": "logical",
+              "text": "और अप्रत्याशित बिजली विफलता होने पर सभी कमिट किए गए अपडेट्स को तुरंत नष्ट करके",
+              "penalty_explanation": "ड्यूरेबिलिटी यह सुनिश्चित करती है कि कमिट किया गया डेटा बिजली जाने पर भी सुरक्षित रहे, नष्ट न हो।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "ACID properties ensure transactions are all-or-nothing (Atomicity), valid (Consistency), isolated (Isolation), and permanent (Durability).",
+        "hi": "ACID गुण यह सुनिश्चित करते हैं कि ट्रांजैक्शन पूर्ण या शून्य हों (एटोमिसिटी), मान्य हों (कंसिस्टेंसी), पृथक हों (आइसोलेशन) और स्थायी हों (ड्यूरेबिलिटी)।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Transaction Control with TCL and Access Governance with DCL",
+          "hi": "TCL द्वारा ट्रांजैक्शन नियंत्रण और DCL द्वारा पहुंच शासन"
+        },
+        "theory": {
+          "en": "Transaction Control Language (TCL) and Data Control Language (DCL) regulate transaction workflows and security privileges. TCL commands include COMMIT, which permanently writes modifications to disk, and SAVEPOINT, which sets intermediate rollback markers. If an error occurs, ROLLBACK TO savepoint_name undoes partial operations up to that marker, while COMMIT persists preceding valid work. DCL manages access rights: GRANT assigns specific permissions (such as SELECT or INSERT) to database users, while REVOKE withdraws previously granted privileges.",
+          "hi": "ट्रांजैक्शन कंट्रोल लैंग्वेज (TCL) और डेटा कंट्रोल लैंग्वेज (DCL) ट्रांजैक्शन प्रवाह और सुरक्षा अनुमतियों को नियंत्रित करते हैं। TCL कमांड में COMMIT शामिल है, जो परिवर्तनों को डिस्क पर स्थायी रूप से सहेजता है, और SAVEPOINT, जो मध्यवर्ती चेकपॉइंट बनाता है। त्रुटि होने पर, ROLLBACK TO savepoint_name केवल उस बिंदु तक के कार्यों को रद्द करता है, जबकि COMMIT पिछले मान्य कार्यों को सहेज लेता है। DCL पहुंच अधिकारों का प्रबंधन करता है: GRANT उपयोगकर्ताओं को विशिष्ट अनुमतियां (जैसे SELECT या INSERT) देता है, जबकि REVOKE दी गई अनुमतियों को वापस लेता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">TCL Checkpoint Timeline and DCL Access Control Gates</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">SAVEPOINT SP1</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Intermediate Checkpoint</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">ROLLBACK TO SP1</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Reverts Partial Work</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">GRANT &amp; REVOKE</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">DCL Permission Gates</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Safe Marker</tspan><tspan x=\"120\" dy=\"1.2em\">Stores State</tspan></text><text x=\"300\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Undo Faults</tspan><tspan x=\"300\" dy=\"1.2em\">Preserves Prior Work</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Access Rights</tspan><tspan x=\"480\" dy=\"1.2em\">User Security</tspan></text></svg>",
+          "caption": {
+            "en": "Operational timeline illustrating partial recovery with SAVEPOINT and ROLLBACK alongside access control with GRANT and REVOKE.",
+            "hi": "परिचालन समयरेखा जो SAVEPOINT और ROLLBACK द्वारा आंशिक पुनर्प्राप्ति तथा GRANT और REVOKE द्वारा पहुंच नियंत्रण को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how TCL and DCL govern transactions and user access.",
+          "hint": "Start with TCL and DCL commands managing operations and permissions, mention governing relational database environments, explain setting checkpoints, rolling back partial failures, and administering privileges via GRANT and REVOKE, and conclude with maintaining operational control and security.",
+          "target_sequence": [
+            {
+              "id": "en_u25_t1",
+              "text": "Transaction and data control language statements govern operational workflows",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u25_t2",
+              "text": "across secure relational database server environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u25_t3",
+              "text": "and by rolling back partial errors to `SAVEPOINT` markers while managing permissions through `GRANT` and `REVOKE`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u25_t4",
+              "text": "they provide fine-grained recovery control and enforce role-based access security across the organization",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u25_d1",
+              "category": "logical",
+              "text": "and by preventing the database administrator from ever revoking user privileges once granted",
+              "penalty_explanation": "DCL explicitly provides the REVOKE command to withdraw previously assigned user privileges."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "TCL और DCL द्वारा ट्रांजैक्शन नियंत्रण और उपयोगकर्ता पहुंच प्रबंधन की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "ट्रांजैक्शन और डेटा कंट्रोल लैंग्वेज कमांड परिचालन प्रवाह को नियंत्रित करते हैं से शुरू करें, सुरक्षित डेटाबेस सर्वर परिवेश का संदर्भ दें, `SAVEPOINT` से त्रुटि रद्द करने और `GRANT` व `REVOKE` से अनुमतियां प्रबंधित करने का तरीका बताएं, और पुनर्प्राप्ति व सुरक्षा बनाए रखने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u25_t1",
+              "text": "ट्रांजैक्शन और डेटा कंट्रोल लैंग्वेज कमांड परिचालन प्रवाह को नियंत्रित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u25_t2",
+              "text": "सुरक्षित रिलेशनल डेटाबेस सर्वर परिवेश के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u25_t3",
+              "text": "और `SAVEPOINT` से आंशिक त्रुटियों को वापस लाकर तथा `GRANT` व `REVOKE` से अनुमतियों का प्रबंधन करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u25_t4",
+              "text": "ये सटीक पुनर्प्राप्ति नियंत्रण प्रदान करते हैं और संगठन में भूमिका-आधारित सुरक्षा लागू करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u25_d1",
+              "category": "logical",
+              "text": "और एक बार अनुमति दिए जाने के बाद व्यवस्थापक को इसे वापस लेने से पूरी तरह रोककर",
+              "penalty_explanation": "DCL विशेष रूप से REVOKE कमांड प्रदान करता है ताकि दी गई अनुमतियों को वापस लिया जा सके।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "TCL commands (COMMIT, ROLLBACK, SAVEPOINT) manage transaction execution checkpoints, while DCL commands (GRANT, REVOKE) govern user security privileges.",
+        "hi": "TCL कमांड्स (COMMIT, ROLLBACK, SAVEPOINT) ट्रांजैक्शन चेकपॉइंट प्रबंधित करते हैं, जबकि DCL कमांड्स (GRANT, REVOKE) उपयोगकर्ता अनुमतियों को नियंत्रित करते हैं।"
+      }
+    }
+  ]
+}
