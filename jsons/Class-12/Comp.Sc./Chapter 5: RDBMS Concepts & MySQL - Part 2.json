@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 5: RDBMS Concepts & MySQL - Part 2",
+      "hi": "यूनिट 5: RDBMS अवधारणाएं और MySQL - भाग 2"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "The Relational Key Hierarchy: Primary, Candidate, and Alternate Keys",
+          "hi": "रिलेशनल कुंजी पदानुक्रम: प्राइमरी, कैंडिडेट और अल्टरनेट कीज"
+        },
+        "theory": {
+          "en": "Relational keys ensure distinct entity identity across database tables[cite: 24]. A Candidate Key represents any column or minimal set of columns capable of uniquely identifying a record[cite: 24]. The Database Administrator designates one primary candidate to serve as the Primary Key, which strictly forbids duplicate entries and NULL values[cite: 24]. All remaining candidate keys that were not chosen as the Primary Key are classified as Alternate Keys[cite: 24].",
+          "hi": "रिलेशनल कुंजियाँ डेटाबेस तालिकाओं में प्रत्येक रिकॉर्ड की विशिष्ट पहचान सुनिश्चित करती हैं[cite: 24]। कैंडिडेट की किसी भी ऐसे कॉलम या न्यूनतम कॉलम समूह को संदर्भित करती है जो किसी रिकॉर्ड को विशिष्ट रूप से पहचानने में सक्षम हो[cite: 24]। डेटाबेस एडमिनिस्ट्रेटर इनमें से एक प्रमुख कुंजी को प्राइमरी की के रूप में चुनता है, जिसमें डुप्लिकेट और रिक्त (NULL) मान पूरी तरह प्रतिबंधित होते हैं[cite: 24]। शेष सभी कैंडिडेट कुंजियाँ जिन्हें प्राइमरी की नहीं बनाया गया, वे अल्टरनेट कीज कहलाती हैं[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Candidate Key Filtering &amp; Selection Hierarchy</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Candidate Keys</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Roll_No, Reg_No</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Primary Key (PK)</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Chosen Identifier</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Alternate Key</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Unchosen Option</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#4ade80\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#c084fc\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#c084fc\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Eligible Pool</tspan><tspan x=\"120\" dy=\"1.2em\">Unique Attributes</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">No NULL Values</tspan><tspan x=\"300\" dy=\"1.2em\">Entity Integrity</tspan></text><text x=\"480\" y=\"172\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Secondary Keys</tspan><tspan x=\"480\" dy=\"1.2em\">Backup Identifiers</tspan></text></svg>",
+          "caption": {
+            "en": "Relational key selection pipeline promoting an eligible candidate key to primary key while designating remaining options as alternate keys.",
+            "hi": "रिलेशनल कुंजी चयन प्रक्रिया जो योग्य कैंडिडेट की को प्राइमरी की बनाती है और शेष विकल्पों को अल्टरनेट की के रूप में वर्गीकृत करती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how candidate keys are categorized into primary and alternate keys.",
+          "hint": "Start with relational database tables identifying unique candidate attributes, mention evaluating eligible identifier columns, explain selecting a single non-null primary key while designating remaining candidates as alternate keys, and conclude with guaranteeing distinct record identity.",
+          "target_sequence": [
+            {
+              "id": "en_u6_t1",
+              "text": "Relational database tables isolate all unique candidate attributes",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u6_t2",
+              "text": "during the initial logical schema definition phase",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u6_t3",
+              "text": "and by designating one non-null column as the Primary Key while categorizing remaining options as Alternate Keys",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u6_t4",
+              "text": "they guarantee absolute uniqueness across all stored row records without ambiguity",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u6_d1",
+              "category": "logical",
+              "text": "and by permitting primary keys to store multiple duplicate values alongside unassigned null entries",
+              "penalty_explanation": "A primary key strictly prohibits duplicate entries and null values under entity integrity rules."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "कैंडिडेट कीज को प्राइमरी और अल्टरनेट कीज में वर्गीकृत करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "रिलेशनल डेटाबेस टेबल अद्वितीय कैंडिडेट विशेषताओं को अलग करते हैं से शुरू करें, प्रारंभिक तार्किक स्कीमा का संदर्भ दें, एक कॉलम को प्राइमरी और शेष को अल्टरनेट बनाने का तरीका बताएं, और सभी रिकॉर्ड्स की विशिष्टता सुनिश्चित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u6_t1",
+              "text": "रिलेशनल डेटाबेस टेबल सभी अद्वितीय कैंडिडेट विशेषताओं को अलग करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u6_t2",
+              "text": "प्रारंभिक तार्किक स्कीमा परिभाषा चरण के दौरान",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u6_t3",
+              "text": "और एक गैर-शून्य कॉलम को प्राइमरी की बनाकर शेष विकल्पों को अल्टरनेट कीज के रूप में वर्गीकृत करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u6_t4",
+              "text": "ये बिना किसी अस्पष्टता के सभी संग्रहीत रिकॉर्ड्स की पूर्ण विशिष्टता की गारंटी देते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u6_d1",
+              "category": "logical",
+              "text": "और प्राइमरी की को खाली मानों के साथ-साथ डुप्लिकेट प्रविष्टियों को भी संग्रहीत करने की अनुमति देकर",
+              "penalty_explanation": "प्राइमरी की में कभी भी डुप्लिकेट या NULL मान नहीं हो सकते।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Candidate keys are all eligible unique identifiers; the chosen one becomes the Primary Key (no duplicates or NULLs), and the rest become Alternate Keys[cite: 24].",
+        "hi": "कैंडिडेट कीज अद्वितीय पहचान योग्य कॉलम होते हैं; चुनी गई कुंजी प्राइमरी की (अद्वितीय और गैर-शून्य) बनती है तथा शेष अल्टरनेट कीज कहलाती हैं[cite: 24]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Referential Integrity and Foreign Key Multi-Table Links",
+          "hi": "रेफ़रेंशियल इंटेग्रिटी और फॉरेन की द्वारा बहु-तालिका संबंध"
+        },
+        "theory": {
+          "en": "Referential Integrity ensures logical consistency across related relational tables[cite: 24]. A Foreign Key is an attribute or combination of attributes in a child table that references the Primary Key of a parent table[cite: 24]. In our School Schema, Teacher_ID inside the SUBJECT table acts as a Foreign Key referencing Teacher_ID in the parent TEACHER table[cite: 24]. The database engine strictly prevents inserting child records whose foreign key values do not exist in the parent table[cite: 24].",
+          "hi": "रेफ़रेंशियल इंटेग्रिटी संबंधित रिलेशनल तालिकाओं के बीच तार्किक निरंतरता सुनिश्चित करती है[cite: 24]। फॉरेन की एक चाइल्ड टेबल का ऐसा कॉलम होता है जो किसी पैरेंट टेबल की प्राइमरी की को संदर्भित करता है[cite: 24]। हमारे स्कूल स्कीमा में, SUBJECT तालिका का Teacher_ID कॉलम एक फॉरेन की है जो मूल TEACHER तालिका के Teacher_ID को संदर्भित करता है[cite: 24]। डेटाबेस इंजन चाइल्ड टेबल में ऐसे किसी भी मान को दर्ज करने से रोकता है जो मूल पैरेंट टेबल में मौजूद न हो[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Foreign Key Referential Mapping (TEACHER &rarr; SUBJECT)</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Parent: TEACHER</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Teacher_ID (PK: 501, 502)</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Child: SUBJECT</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Teacher_ID (FK points to PK)</text><line x1=\"280\" y1=\"102\" x2=\"320\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"280,102 288,98 288,106\" fill=\"#38bdf8\"/><line x1=\"162\" y1=\"130\" x2=\"162\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"437\" y1=\"130\" x2=\"437\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"162\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"162\" dy=\"0\">Parent Key Authority</tspan><tspan x=\"162\" dy=\"1.2em\">Source Records</tspan></text><text x=\"437\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"437\" dy=\"0\">Child References Parent</tspan><tspan x=\"437\" dy=\"1.2em\">Must Match Valid PK</tspan></text></svg>",
+          "caption": {
+            "en": "Cross-table referential link demonstrating how child table foreign keys point to parent table primary keys to prevent orphaned records.",
+            "hi": "बहु-तालिका संबंध जो दर्शाता है कि चाइल्ड टेबल की फॉरेन की पैरेंट टेबल की प्राइमरी की को संदर्भित करके अमान्य रिकॉर्ड्स को रोकती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how foreign keys maintain referential integrity across relational tables.",
+          "hint": "Start with child table foreign key columns establishing cross-table relationships, mention referencing parent primary key values, explain restricting input data to validated parent records, and conclude with preventing orphaned records across the database.",
+          "target_sequence": [
+            {
+              "id": "en_u7_t1",
+              "text": "Foreign Key attributes in subordinate child tables establish relational links",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u7_t2",
+              "text": "by pointing directly to the Primary Key of a parent table",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u7_t3",
+              "text": "and by requiring every child value to match an existing parent key entry",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u7_t4",
+              "text": "they enforce referential integrity and eliminate orphaned child records across the system",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u7_d1",
+              "category": "logical",
+              "text": "they allow child tables to store arbitrary foreign values that have no match in parent tables",
+              "penalty_explanation": "Referential integrity requires every foreign key value to exist in the referenced parent primary key."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "फॉरेन की द्वारा तालिकाओं के बीच रेफ़रेंशियल इंटेग्रिटी बनाए रखने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "चाइल्ड टेबल के फॉरेन की कॉलम रिलेशनल संबंध स्थापित करते हैं से शुरू करें, पैरेंट टेबल की प्राइमरी की को इंगित करने का संदर्भ दें, पैरेंट की प्रविष्टियों से मान मिलाने का तरीका बताएं, और अनाथ रिकॉर्ड्स को समाप्त करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u7_t1",
+              "text": "चाइल्ड टेबल के फॉरेन की कॉलम रिलेशनल संबंध स्थापित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u7_t2",
+              "text": "पैरेंट टेबल की प्राइमरी की को सीधे इंगित करके",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u7_t3",
+              "text": "और प्रत्येक चाइल्ड मान को पैरेंट की मौजूदा प्रविष्टि से मिलाने की अनिवार्यता लागू करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u7_t4",
+              "text": "ये रेफ़रेंशियल इंटेग्रिटी बनाए रखते हैं और डेटाबेस में अनाथ रिकॉर्ड्स को पूरी तरह रोकते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u7_d1",
+              "category": "logical",
+              "text": "ये चाइल्ड टेबल को ऐसे किसी भी मनमाने मान को जोड़ने की अनुमति देते हैं जो पैरेंट में नहीं है",
+              "penalty_explanation": "फॉरेन की नियम पैरेंट में मौजूद न होने वाले मनमाने मानों को जोड़ने पर पूर्ण प्रतिबंध लगाते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "A Foreign Key in a child table references a parent Primary Key, enforcing referential integrity by preventing unmatched foreign values[cite: 24].",
+        "hi": "चाइल्ड टेबल की फॉरेन की पैरेंट प्राइमरी की को संदर्भित करती है, जो अमान्य मानों को रोककर रेफ़रेंशियल इंटेग्रिटी बनाए रखती है[cite: 24]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Integrity Constraints: Domain, Entity, Key, and Default Rules",
+          "hi": "इंटेग्रिटी कंस्ट्रेंट्स: डोमेन, एंटीटी, की और डिफ़ॉल्ट नियम"
+        },
+        "theory": {
+          "en": "Integrity constraints are declarative rules enforced by the RDBMS engine to safeguard data accuracy and consistency during insertion and modification[cite: 24]. Domain constraints restrict column inputs to valid data types and ranges (e.g., Age INT)[cite: 24]. Entity integrity mandates that Primary Key attributes cannot contain NULL values[cite: 24]. Key constraints enforce strict uniqueness via the UNIQUE keyword[cite: 24]. The NOT NULL constraint prevents leaving fields empty, while DEFAULT automatically populates preset values (such as City DEFAULT 'Shimla') when input is omitted[cite: 24].",
+          "hi": "इंटेग्रिटी कंस्ट्रेंट्स RDBMS इंजन द्वारा लागू किए गए घोषणात्मक नियम हैं जो डेटा प्रविष्टि और संशोधन के दौरान सटीकता और निरंतरता की रक्षा करते हैं[cite: 24]। डोमेन कंस्ट्रेंट कॉलम मानों को वैध डेटा प्रकार और सीमा तक सीमित करते हैं (जैसे Age INT)[cite: 24]। एंटीटी इंटेग्रिटी यह सुनिश्चित करती है कि प्राइमरी की कभी NULL नहीं हो सकती[cite: 24]। की कंस्ट्रेंट UNIQUE कीवर्ड द्वारा अद्वितीयता लागू करते हैं[cite: 24]। NOT NULL फ़ील्ड को खाली छोड़ने से रोकता है, जबकि DEFAULT इनपुट न देने पर पूर्व-निर्धारित मान (जैसे City DEFAULT 'Shimla') स्वतः भर देता है[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">RDBMS Data Integrity Validation Barrier</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Domain</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Valid Type/Range</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Entity Integrity</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">PK != NULL</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">NOT NULL</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Mandatory Field</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">DEFAULT</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Auto Fallback</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Datatype Guard</tspan><tspan x=\"102\" dy=\"1.2em\">Type Safety</tspan></text><text x=\"232\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Primary Key Rule</tspan><tspan x=\"232\" dy=\"1.2em\">Never Blank</tspan></text><text x=\"362\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Required Data</tspan><tspan x=\"362\" dy=\"1.2em\">Cannot Omit</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Fallback Preset</tspan><tspan x=\"495\" dy=\"1.2em\">Auto-Populate</tspan></text></svg>",
+          "caption": {
+            "en": "Declarative integrity constraint barrier validating column domain types, entity integrity, mandatory presence, and preset defaults.",
+            "hi": "घोषणात्मक इंटेग्रिटी कंस्ट्रेंट अवरोध जो कॉलम डोमेन प्रकार, एंटीटी अखंडता, अनिवार्य उपस्थिति और डिफ़ॉल्ट मानों को मान्य करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how database integrity constraints validate stored records.",
+          "hint": "Start with database integrity constraints enforcing declarative validation rules, mention inspecting records during data insertion, explain combining domain bounds, entity integrity, NOT NULL, and DEFAULT values, and conclude with safeguarding database consistency.",
+          "target_sequence": [
+            {
+              "id": "en_u8_t1",
+              "text": "Database integrity constraints enforce declarative operational rules",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u8_t2",
+              "text": "whenever new rows are inserted or existing attributes modified",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u8_t3",
+              "text": "and by combining domain datatype limits with entity integrity, `NOT NULL`, and preset `DEFAULT` values",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u8_t4",
+              "text": "they prevent corrupt data entries and preserve table consistency across the system",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u8_d1",
+              "category": "logical",
+              "text": "they disable all attribute validation to allow arbitrary unformatted text inside integer fields",
+              "penalty_explanation": "Integrity constraints enforce strict validation rules rather than disabling attribute checking."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "डेटाबेस इंटेग्रिटी कंस्ट्रेंट्स द्वारा रिकॉर्ड्स को मान्य करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "डेटाबेस इंटेग्रिटी कंस्ट्रेंट्स घोषणात्मक परिचालन नियम लागू करते हैं से शुरू करें, नई पंक्तियों को जोड़ने का संदर्भ दें, डोमेन सीमा, एंटीटी अखंडता, `NOT NULL` व `DEFAULT` जोड़ने का तरीका बताएं, और तालिका की स्थिरता बनाए रखने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u8_t1",
+              "text": "डेटाबेस इंटेग्रिटी कंस्ट्रेंट्स घोषणात्मक परिचालन नियमों को लागू करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u8_t2",
+              "text": "जब भी नई पंक्तियाँ जोड़ी जाती हैं अथवा मौजूदा रिकॉर्ड्स संशोधित होते हैं",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u8_t3",
+              "text": "और डोमेन डेटा प्रकार सीमाओं को एंटीटी अखंडता, `NOT NULL` तथा पूर्व-निर्धारित `DEFAULT` मानों के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u8_t4",
+              "text": "ये अमान्य डेटा प्रविष्टियों को रोकते हैं और पूरे सिस्टम में तालिकाओं की स्थिरता सुरक्षित रखते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u8_d1",
+              "category": "logical",
+              "text": "ये पूर्णांक फ़ील्ड में किसी भी सादे टेक्स्ट को रखने की अनुमति देने के लिए सत्यापन बंद कर देते हैं",
+              "penalty_explanation": "कंस्ट्रेंट्स सत्यापन को बंद नहीं करते बल्कि डेटा प्रकारों की सख्त जांच करते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Integrity constraints enforce domain limits, non-null entity rules, uniqueness, and defaults to maintain complete database reliability[cite: 24].",
+        "hi": "इंटेग्रिटी कंस्ट्रेंट्स डोमेन सीमा, गैर-शून्य एंटीटी नियम, विशिष्टता और डिफ़ॉल्ट मान लागू करके डेटाबेस की विश्वसनीयता बनाए रखते हैं[cite: 24]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Memory Allocation: Fixed-Length CHAR vs. Variable-Length VARCHAR",
+          "hi": "मेमोरी आबंटन: निश्चित लंबाई CHAR बनाम परिवर्तनशील लंबाई VARCHAR"
+        },
+        "theory": {
+          "en": "MySQL provides two distinct text datatypes with fundamentally different memory allocation architectures[cite: 24]. CHAR(n) is fixed-length, always consuming exactly n bytes on disk regardless of actual string length by right-padding shorter strings with spaces (e.g., storing 'Raj' in CHAR(10) consumes 10 full bytes)[cite: 24]. VARCHAR(n) is variable-length, allocating only the actual character length plus a 1-byte length prefix without padding (e.g., 'Raj' in VARCHAR(10) consumes only 4 bytes)[cite: 24]. CHAR executes faster due to fixed disk offsets and suits fixed codes like gender or state abbreviations, whereas VARCHAR conserves storage for variable names and addresses[cite: 24].",
+          "hi": "MySQL दो अलग-अलग टेक्स्ट डेटा प्रकार प्रदान करता है जिनकी मेमोरी आवंटन संरचनाएं पूरी तरह भिन्न हैं[cite: 24]। CHAR(n) एक निश्चित लंबाई का प्रकार है, जो वास्तविक टेक्स्ट की लंबाई की परवाह किए बिना हमेशा डिस्क पर पूरे n बाइट्स लेता है और खाली जगह को स्पेस से भर देता है (जैसे CHAR(10) में 'Raj' रखने पर पूरे 10 बाइट्स लगते हैं)[cite: 24]। VARCHAR(n) परिवर्तनशील लंबाई का होता है, जो बिना स्पेस पैडिंग के केवल वास्तविक अक्षर और 1 बाइट का प्रीफ़िक्स लेता है (जैसे VARCHAR(10) में 'Raj' केवल 4 बाइट्स लेता है)[cite: 24]। CHAR निश्चित ऑफसेट के कारण तेज़ होता है और राज्य कोड या लिंग जैसे निश्चित मानों के लिए उपयुक्त है, जबकि VARCHAR नामों और पतों के लिए डिस्क स्थान बचाता है[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Memory Footprint: Storing &apos;Raj&apos; in CHAR(10) vs. VARCHAR(10)</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">CHAR(10): Fixed 10 Bytes</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">[&apos;R&apos;][&apos;a&apos;][&apos;j&apos;][ ][ ][ ][ ][ ][ ][ ]</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">VARCHAR(10): Dynamic 4 Bytes</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">[Len: 3][&apos;R&apos;][&apos;a&apos;][&apos;j&apos;]</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Space Padded</tspan><tspan x=\"100\" dy=\"1.2em\">Full 10 Bytes</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Fast Retrieval</tspan><tspan x=\"225\" dy=\"1.2em\">Static Offsets</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">1-Byte Prefix</tspan><tspan x=\"375\" dy=\"1.2em\">No Padding</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Saves Storage</tspan><tspan x=\"500\" dy=\"1.2em\">Dynamic Sizing</tspan></text></svg>",
+          "caption": {
+            "en": "Disk memory byte layout contrasting fixed 10-byte right-padded allocation in CHAR(10) with compact 4-byte prefix allocation in VARCHAR(10).",
+            "hi": "डिस्क मेमोरी बाइट संरचना जो CHAR(10) में 10 बाइट्स के निश्चित आवंटन और VARCHAR(10) में 4 बाइट्स के कॉम्पैक्ट आवंटन के अंतर को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence distinguishing memory allocation between CHAR and VARCHAR datatypes.",
+          "hint": "Start with text datatypes managing disk storage differently, mention processing strings in MySQL columns, explain allocating static padded bytes under CHAR versus variable length bytes plus prefix under VARCHAR, and conclude with balancing retrieval speed against storage efficiency.",
+          "target_sequence": [
+            {
+              "id": "en_u9_t1",
+              "text": "Textual datatypes manage physical storage allocations differently",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u9_t2",
+              "text": "when declaring column specifications inside relational schemas",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u9_t3",
+              "text": "and by allocating static right-padded bytes under `CHAR` versus dynamic character lengths plus a prefix under `VARCHAR`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u9_t4",
+              "text": "they balance rapid retrieval speeds for fixed codes against disk space conservation for variable names",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u9_d1",
+              "category": "logical",
+              "text": "they force `VARCHAR` to allocate full uncompressed fixed memory blocks for every short string entry",
+              "penalty_explanation": "VARCHAR allocates only the actual character length plus a prefix byte rather than full fixed memory blocks."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "CHAR और VARCHAR डेटा प्रकारों के बीच मेमोरी आवंटन के अंतर को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "टेक्स्ट डेटा प्रकार भौतिक स्टोरेज आवंटन को अलग तरह से प्रबंधित करते हैं से शुरू करें, रिलेशनल स्कीमा में कॉलम विनिर्देश का संदर्भ दें, `CHAR` में पैडेड बाइट्स और `VARCHAR` में डायनामिक लंबाई का तरीका बताएं, और गति व स्थान बचत को संतुलित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u9_t1",
+              "text": "टेक्स्ट डेटा प्रकार भौतिक स्टोरेज आवंटन को अलग तरह से प्रबंधित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u9_t2",
+              "text": "रिलेशनल स्कीमा के भीतर कॉलम विनिर्देशों की घोषणा करते समय",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u9_t3",
+              "text": "और `CHAR` के तहत निश्चित पैडेड बाइट्स तथा `VARCHAR` के तहत वास्तविक लंबाई व 1-बाइट प्रीफ़िक्स आवंटित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u9_t4",
+              "text": "ये निश्चित कोड के लिए तीव्र खोज गति तथा परिवर्तनशील नामों के लिए डिस्क स्थान की बचत को संतुलित करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u9_d1",
+              "category": "logical",
+              "text": "ये प्रत्येक छोटी स्ट्रिंग के लिए `VARCHAR` को पूर्ण अप्रयुक्त निश्चित मेमोरी ब्लॉक आवंटित करने पर बाध्य करते हैं",
+              "penalty_explanation": "VARCHAR केवल वास्तविक वर्ण और प्रीफ़िक्स बाइट आवंटित करता है, पूरा निश्चित ब्लॉक नहीं लेता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "CHAR(n) allocates fixed n bytes with space padding for faster execution, while VARCHAR(n) allocates actual characters + 1 byte to conserve disk space[cite: 24].",
+        "hi": "CHAR(n) तेज़ गति के लिए स्पेस पैडिंग के साथ निश्चित n बाइट्स लेता है, जबकि VARCHAR(n) डिस्क स्थान बचाने के लिए वास्तविक अक्षर + 1 बाइट लेता है[cite: 24]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Numeric, Precision Scale, and Temporal Datatypes",
+          "hi": "संख्यात्मक, सटीक दशमलव और समय डेटा प्रकार"
+        },
+        "theory": {
+          "en": "MySQL provides specialized datatypes tailored for mathematical computation, exact financial precision, and temporal tracking[cite: 24]. INT stores signed whole integers without fractions, making it ideal for identifiers like Roll_No[cite: 24]. DECIMAL(m,d) enforces exact precision and scale where m represents total digits and d represents decimal positions (e.g., DECIMAL(10,2) stores up to 10 total digits with 2 decimals, preventing rounding errors in Salary or Marks)[cite: 24]. Temporal types include DATE (formatted as YYYY-MM-DD), TIME (formatted as HH:MM:SS), and DATETIME which combines both into a single complete timestamp[cite: 24].",
+          "hi": "MySQL गणितीय गणना, सटीक वित्तीय आंकड़ों और समय के रिकॉर्ड के लिए विशिष्ट डेटा प्रकार प्रदान करता है[cite: 24]। INT बिना दशमलव वाले पूर्णांकों को संग्रहीत करता है, जो Roll_No जैसे पहचानकर्ताओं के लिए आदर्श है[cite: 24]। DECIMAL(m,d) सटीक दशमलव मान सुनिश्चित करता है जहाँ m कुल अंकों को और d दशमलव स्थानों को दर्शाता है (जैसे DECIMAL(10,2) कुल 10 अंकों में 2 दशमलव अंक रखता है, जो वेतन या अंकों में राउंडिंग त्रुटियों को रोकता है)[cite: 24]। समय संबंधी प्रकारों में DATE (YYYY-MM-DD फ़ॉर्मैट), TIME (HH:MM:SS फ़ॉर्मैट), और DATETIME शामिल हैं जो दोनों को एक साथ जोड़ते हैं[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Numeric Precision Scale and Temporal Architecture</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">INT (Whole)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Roll_No, Age</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">DECIMAL(10,2)</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Salary: 65000.50</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">DATETIME</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">YYYY-MM-DD HH:MM:SS</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Non-Decimal</tspan><tspan x=\"120\" dy=\"1.2em\">4-Byte Integers</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Exact Precision</tspan><tspan x=\"300\" dy=\"1.2em\">No Rounding Drift</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Temporal Stamp</tspan><tspan x=\"480\" dy=\"1.2em\">Date and Clock</tspan></text></svg>",
+          "caption": {
+            "en": "Structural layout comparing non-decimal integers, exact fixed-point decimals, and standardized temporal date-time values.",
+            "hi": "संरचनात्मक प्रारूप जो गैर-दशमलव पूर्णांकों, सटीक दशमलव मानों और मानकीकृत तिथि-समय प्रकारों की तुलना करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how numeric precision and temporal datatypes structure relational attributes.",
+          "hint": "Start with specialized relational datatypes structuring numeric and chronological values, mention defining attributes across enterprise tables, explain storing integers in INT, exact decimals in DECIMAL, and timestamps in DATETIME, and conclude with preventing rounding errors and preserving chronological accuracy.",
+          "target_sequence": [
+            {
+              "id": "en_u10_t1",
+              "text": "Specialized relational datatypes structure numerical and chronological values",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u10_t2",
+              "text": "across student academic marks and faculty payroll records",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u10_t3",
+              "text": "and by allocating whole numbers to `INT`, exact scaled fractions to `DECIMAL`, and timestamps to `DATETIME`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u10_t4",
+              "text": "they prevent arithmetic rounding drift and preserve temporal accuracy across database transactions",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "logical",
+              "text": "they force all decimal monetary amounts to be rounded into unformatted whole integers automatically",
+              "penalty_explanation": "DECIMAL preserves exact fractional decimal places rather than rounding numbers into integers."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "संख्यात्मक और समय डेटा प्रकारों द्वारा तालिकाओं के रिकॉर्ड्स को संरचित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "विशिष्ट रिलेशनल डेटा प्रकार संख्यात्मक और समय मानों को संरचित करते हैं से शुरू करें, शैक्षणिक अंकों और वेतन रिकॉर्ड का संदर्भ दें, `INT`, `DECIMAL` और `DATETIME` में मान आवंटित करने का तरीका बताएं, और राउंडिंग त्रुटियों को रोकने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u10_t1",
+              "text": "विशिष्ट रिलेशनल डेटा प्रकार संख्यात्मक और समय मानों को संरचित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u10_t2",
+              "text": "छात्रों के शैक्षणिक अंकों और शिक्षकों के वेतन रिकॉर्ड्स के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u10_t3",
+              "text": "और पूर्ण संख्याओं को `INT`, सटीक दशमलव भिन्नों को `DECIMAL` तथा समय को `DATETIME` में आवंटित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u10_t4",
+              "text": "ये अंकगणितीय राउंडिंग त्रुटियों को रोकते हैं और डेटाबेस में समय की सटीकता बनाए रखते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "logical",
+              "text": "ये सभी दशमलव मौद्रिक राशियों को स्वतः गोल करके केवल पूर्णांकों में बदलने पर मजबूर करते हैं",
+              "penalty_explanation": "DECIMAL(m,d) सटीक दशमलव स्थानों की रक्षा करता है, उन्हें पूर्णांक में गोल नहीं करता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "INT stores whole numbers, DECIMAL(m,d) preserves exact scale without rounding drift, and DATETIME records standard chronological timestamps[cite: 24].",
+        "hi": "INT पूर्णांकों को रखता है, DECIMAL(m,d) बिना राउंडिंग त्रुटि के सटीक दशमलव मान सुरक्षित रखता है, और DATETIME समय रिकॉर्ड करता है[cite: 24]।"
+      }
+    }
+  ]
+}
