@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 11",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Unit 5: HTML Fundamentals - Part 2",
+      "hi": "यूनिट 5: HTML के मूल सिद्धांत - भाग 2"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "BODY Tag Background and Text Presentation",
+          "hi": "BODY टैग बैकग्राउंड और टेक्स्ट प्रस्तुति"
+        },
+        "theory": {
+          "en": "The <body> tag encapsulates all visual content rendered within the browser window. Its presentation can be customized using specific attributes: bgcolor sets a solid background color, background specifies a repeating background image file, and text defines the default color of all standard text rendered across the page.",
+          "hi": "<body> टैग ब्राउज़र विंडो में प्रदर्शित होने वाली सभी दृश्य सामग्री को शामिल करता है। इसकी प्रस्तुति को विशिष्ट विशेषताओं द्वारा अनुकूलित किया जा सकता है: bgcolor एक ठोस पृष्ठभूमि रंग सेट करता है, background एक दोहराई जाने वाली पृष्ठभूमि छवि फ़ाइल निर्दिष्ट करता है, और text पूरे पृष्ठ पर प्रदर्शित होने वाले सामान्य टेक्स्ट का रंग निर्धारित करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">BODY Canvas Presentation Attributes</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">bgcolor=&quot;yellow&quot;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Canvas Fill</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">background=&quot;img&quot;</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Image Texture</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">text=&quot;blue&quot;</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Body Foreground</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Solid Color</tspan><tspan x=\"120\" dy=\"1.2em\">Background</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Graphic Wallpaper</tspan><tspan x=\"300\" dy=\"1.2em\">Overlays Fill</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Global Text</tspan><tspan x=\"480\" dy=\"1.2em\">Typography Color</tspan></text></svg>",
+          "caption": {
+            "en": "Presentation attributes modifying solid canvas background color, tiled image wallpaper, and global text color.",
+            "hi": "ठोस पृष्ठभूमि रंग, टाइल की गई वॉलपेपर छवि और सामान्य टेक्स्ट रंग को संशोधित करने वाले प्रस्तुति गुण।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the complete, harmonious sentence describing how the body tag controls background and text appearance.",
+          "hint": "Start with the body element defining the visible page area, explain managing visual properties, describe applying background and text attributes, and conclude with styling the webpage canvas.",
+          "target_sequence": [
+            {
+              "id": "en_u6_t1",
+              "text": "The `<body>` tag encapsulates the primary display canvas of a web page",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u6_t2",
+              "text": "across modern graphical desktop and mobile web browsers",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u6_t3",
+              "text": "and by configuring `bgcolor`, `background`, and `text` attributes inside the opening tag",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u6_t4",
+              "text": "it simultaneously defines solid backdrop colors, image wallpapers, and readable text palettes",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u6_d1",
+              "category": "logical",
+              "text": "it permanently locks the browser viewport into an immutable monochrome display scheme",
+              "penalty_explanation": "The body tag allows full color customization using attributes rather than locking down fixed schemes."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "body टैग द्वारा पृष्ठभूमि और टेक्स्ट की प्रस्तुति को नियंत्रित करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "body टैग प्राथमिक दृश्य कैनवास को समाहित करता है से शुरू करें, ब्राउज़र परिवेश का संदर्भ दें, bgcolor, background और text विशेषताओं को लागू करने का तरीका जोड़ें, और रंग संयोजन निर्धारित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u6_t1",
+              "text": "`<body>` टैग किसी वेब पेज के प्राथमिक दृश्य कैनवास को समाहित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u6_t2",
+              "text": "आधुनिक ग्राफिकल डेस्कटॉप और मोबाइल वेब ब्राउज़र के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u6_t3",
+              "text": "और शुरुआती टैग में `bgcolor`, `background` तथा `text` जैसी विशेषताओं को कॉन्फ़िगर करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u6_t4",
+              "text": "यह ठोस पृष्ठभूमि रंग, वॉलपेपर छवि और पठनीय टेक्स्ट के रंग को आसानी से निर्धारित करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u6_d1",
+              "category": "logical",
+              "text": "यह ब्राउज़र व्यूपोर्ट को अपरिवर्तनीय मोनोक्रोम डिस्प्ले स्कीम में हमेशा के लिए लॉक कर देता है",
+              "penalty_explanation": "body टैग वेब पेज के रंगों को अपनी इच्छानुसार बदलने की सुविधा देता है, उन्हें स्थिर लॉक नहीं करता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The <body> tag uses bgcolor for background colors, background for tiled images, and text for global text color.",
+        "hi": "<body> टैग पृष्ठभूमि रंग के लिए bgcolor, छवि के लिए background और सामान्य टेक्स्ट रंग के लिए text का उपयोग करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Hyperlink States and Document Margins",
+          "hi": "हाइपरलिंक अवस्थाएँ और दस्तावेज़ मार्जिन"
+        },
+        "theory": {
+          "en": "The <body> tag governs hyperlink interactivity colors across three distinct navigation states: link sets the color of unvisited links, alink defines the color of an active link at the moment of clicking, and vlink determines the color of previously visited links. Additionally, leftmargin and topmargin specify the pixel offset between the page content and the respective edges of the browser window.",
+          "hi": "<body> टैग तीन अलग-अलग नेविगेशन स्थितियों में हाइपरलिंक के रंगों को नियंत्रित करता है: link अनविज़िट किए गए लिंक का रंग सेट करता है, alink क्लिक करते समय सक्रिय लिंक का रंग तय करता है, और vlink पहले से विज़िट किए गए लिंक का रंग निर्धारित करता है। इसके अलावा, leftmargin और topmargin वेब पेज की सामग्री और ब्राउज़र विंडो के किनारों के बीच पिक्सेल की दूरी को परिभाषित करते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Hyperlink Color States &amp; Viewport Margins</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">link / alink / vlink</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">State Palettes</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">leftmargin=&quot;100px&quot;</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Left Inset Spacing</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">topmargin=&quot;150px&quot;</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Top Inset Spacing</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Navigation States</tspan><tspan x=\"120\" dy=\"1.2em\">Color Feedback</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Horizontal Gap</tspan><tspan x=\"300\" dy=\"1.2em\">To Window Edge</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Vertical Gap</tspan><tspan x=\"480\" dy=\"1.2em\">To Window Top</tspan></text></svg>",
+          "caption": {
+            "en": "Configuration of hyperlink state colors and pixel margin spacing between web content and browser boundaries.",
+            "hi": "हाइपरलिंक अवस्था के रंगों और वेब सामग्री व ब्राउज़र किनारों के बीच पिक्सेल मार्जिन दूरी का विन्यास।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how body attributes regulate hyperlink states and window margins.",
+          "hint": "Start with body attributes directing user navigation feedback, describe rendering interactive anchors, explain applying link states alongside pixel margins, and conclude with formatting link visual states and spacing.",
+          "target_sequence": [
+            {
+              "id": "en_u7_t1",
+              "text": "The specialized attributes of the `<body>` tag coordinate visual navigation feedback",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u7_t2",
+              "text": "during continuous user interaction across linked web documents",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u7_t3",
+              "text": "and by defining `link`, `alink`, and `vlink` alongside pixel-based margin offsets",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u7_t4",
+              "text": "they distinguish active navigation states while maintaining precise boundary spacing",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u7_d1",
+              "category": "logical",
+              "text": "and by suppressing all visual indications whenever a user hovers over interactive hyperlinks",
+              "penalty_explanation": "Body hyperlink attributes explicitly define visual color feedback for links rather than suppressing it."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "body टैग द्वारा हाइपरलिंक स्थितियों और विंडो मार्जिन को नियंत्रित करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "body टैग की विशेषताएं नेविगेशन फीडबैक देती हैं से शुरू करें, वेब दस्तावेज़ों के संदर्भ जोड़ें, link, alink, vlink और मार्जिन लागू करने का तरीका बताएं, और लिंक रंग व किनारों की दूरी तय करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u7_t1",
+              "text": "`<body>` टैग की विशिष्ट विशेषताएं दृश्य नेविगेशन फीडबैक को नियंत्रित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u7_t2",
+              "text": "परस्पर जुड़े वेब दस्तावेज़ों में निरंतर उपयोगकर्ता गतिविधि के दौरान",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u7_t3",
+              "text": "और पिक्सेल-आधारित मार्जिन के साथ `link`, `alink` तथा `vlink` को परिभाषित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u7_t4",
+              "text": "ये हाइपरलिंक की सक्रिय स्थितियों को स्पष्ट करते हुए विंडो किनारों से सटीक दूरी बनाए रखती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u7_d1",
+              "category": "logical",
+              "text": "और हाइपरलिंक पर कर्सर ले जाने पर सभी दृश्य संकेतों को पूरी तरह से छुपाकर",
+              "penalty_explanation": "ये विशेषताएं लिंक की स्थिति के अनुसार रंग बदलने के लिए होती हैं, दृश्यता छुपाने के लिए नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Hyperlink states (link, alink, vlink) signal navigation status, while leftmargin and topmargin establish whitespace to browser edges.",
+        "hi": "link, alink और vlink नेविगेशन स्थिति के रंग दर्शाते हैं, जबकि leftmargin और topmargin ब्राउज़र किनारों से दूरी तय करते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Typography Control with the FONT Tag",
+          "hi": "FONT टैग के माध्यम से टाइपोग्राफी नियंत्रण"
+        },
+        "theory": {
+          "en": "The <font>...</font> tag is a container tag used to alter the visual appearance of text within a webpage. It utilizes three primary attributes: face sets the typeface or font family (such as broadway), color specifies the text color (such as green), and size establishes the relative or absolute size of the text (such as 18).",
+          "hi": "<font>...</font> टैग एक कंटेनर टैग है जिसका उपयोग किसी वेब पेज में टेक्स्ट के दृश्य स्वरूप को बदलने के लिए किया जाता है। यह तीन मुख्य विशेषताओं का उपयोग करता है: face फ़ॉन्ट-शैली या फ़ॉन्ट-फेस निर्धारित करता है (जैसे broadway), color टेक्स्ट का रंग बदलता है (जैसे green), और size टेक्स्ट के आकार को निर्धारित करता है (जैसे 18)।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">FONT Tag Typography Control Attributes</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">face=&quot;broadway&quot;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Typeface Family</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">color=&quot;green&quot;</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Font Palette</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">size=&quot;18&quot;</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Scale Magnitude</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Font Family</tspan><tspan x=\"120\" dy=\"1.2em\">Stylistic Shape</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Text Tint</tspan><tspan x=\"300\" dy=\"1.2em\">Visual Contrast</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Font Dimension</tspan><tspan x=\"480\" dy=\"1.2em\">Point / Scale Size</tspan></text></svg>",
+          "caption": {
+            "en": "Typographic formatting elements adjusting font face, rendering color, and character dimensions.",
+            "hi": "फ़ॉन्ट-फ़ेस, प्रदर्शन रंग और वर्ण आकार को समायोजित करने वाले टाइपोग्राफ़िक स्वरूपण तत्व।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the fluent sentence describing how the font tag customizes text styling.",
+          "hint": "Start with the font tag functioning as a container element, describe modifying inline text, explain setting face, color, and size, and conclude with transforming typography appearance.",
+          "target_sequence": [
+            {
+              "id": "en_u8_t1",
+              "text": "The paired `<font>` container tag regulates inline textual presentation",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u8_t2",
+              "text": "within targeted sentences and paragraphs across the web document",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u8_t3",
+              "text": "and by configuring `face`, `color`, and `size` parameters in its opening tag",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u8_t4",
+              "text": "it directly modifies the typeface design, hue, and scale of rendered characters",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u8_d1",
+              "category": "logical",
+              "text": "and by converting all textual paragraphs permanently into external image assets",
+              "penalty_explanation": "The font tag formats live text directly in the browser; it does not convert text into image files."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "font टैग द्वारा टेक्स्ट के स्वरूप को बदलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "पेयर्ड font कंटेनर टैग टेक्स्ट को नियंत्रित करता है से शुरू करें, वेब दस्तावेज़ के संदर्भ दें, face, color और size तय करने का तरीका जोड़ें, और फ़ॉन्ट-शैली, रंग व आकार बदलने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u8_t1",
+              "text": "पेयर्ड `<font>` कंटेनर टैग इनलाइन टेक्स्ट प्रस्तुति को नियंत्रित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u8_t2",
+              "text": "वेब दस्तावेज़ के भीतर लक्षित वाक्यों और पैराग्राफों के बीच",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u8_t3",
+              "text": "और शुरुआती टैग में `face`, `color` तथा `size` विशेषताओं को निर्धारित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u8_t4",
+              "text": "यह वर्णों के फ़ॉन्ट-फ़ेस, रंग और प्रदर्शित आकार को सीधे रूपांतरित करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u8_d1",
+              "category": "logical",
+              "text": "और सभी टेक्स्ट पैराग्राफों को स्थायी रूप से बाहरी छवि फ़ाइलों में परिवर्तित करके",
+              "penalty_explanation": "font टैग टेक्स्ट की बनावट और स्टाइल बदलता है, यह टेक्स्ट को इमेज में नहीं बदलता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The <font> container tag modifies typography using face for font family, color for text shade, and size for dimensions.",
+        "hi": "<font> कंटेनर टैग फ़ॉन्ट शैली के लिए face, रंग के लिए color और आकार के लिए size विशेषता का उपयोग करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Structural Separators: Line Break BR and Horizontal Rule HR",
+          "hi": "संरचनात्मक विभाजक: लाइन ब्रेक BR और हॉरिजॉन्टल रूल HR"
+        },
+        "theory": {
+          "en": "HTML provides empty tags to control layout breaks and visual boundaries without closing tags. The <br> tag forces a single line break in text flow without adding extra paragraph margins. The <hr> tag draws a decorative horizontal dividing line across the page, which can be formatted using attributes: size (thickness), width (percentage or pixels), align (center, left, or right), and color.",
+          "hi": "HTML बिना क्लोजिंग टैग वाले एम्प्टी टैग प्रदान करता है जो लेआउट ब्रेक और दृश्य विभाजक बनाते हैं। <br> टैग अतिरिक्त पैराग्राफ स्पेस जोड़े बिना टेक्स्ट के बीच एक सिंगल-लाइन-ब्रेक डालता है। <hr> टैग पृष्ठ के आर-पार एक क्षैतिज रेखा (horizontal rule) खींचता है, जिसे size (मोटाई), width (चौड़ाई), align (संरेखण) और color जैसी विशेषताओं से सजाया जा सकता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Empty Separator Tags: &lt;BR&gt; vs. &lt;HR&gt;</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;BR&gt; (Line Break)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Single Line Drop</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;HR&gt; (Horizontal Rule)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">size, width, align, color</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Text Wrapping</tspan><tspan x=\"100\" dy=\"1.2em\">Next Row Start</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Zero Vertical</tspan><tspan x=\"225\" dy=\"1.2em\">Blank Spacing</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Visual Divider</tspan><tspan x=\"375\" dy=\"1.2em\">Horizontal Line</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Custom Border</tspan><tspan x=\"500\" dy=\"1.2em\">Thickness &amp; Span</tspan></text></svg>",
+          "caption": {
+            "en": "Structural divider empty tags creating single carriage line returns and decorative horizontal rules.",
+            "hi": "सिंगल लाइन ब्रेक और सजावटी क्षैतिज रेखाएं बनाने वाले संरचनात्मक विभाजक एम्प्टी टैग।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the compound sentence detailing how the BR and HR empty tags structure layout flow.",
+          "hint": "Start with empty tags BR and HR structuring page flow, describe placing layout dividers, explain breaking lines and inserting horizontal rules with attributes, and conclude with separating content blocks cleanly.",
+          "target_sequence": [
+            {
+              "id": "en_u9_t1",
+              "text": "The standalone `<br>` and `<hr>` empty tags structure layout transitions",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u9_t2",
+              "text": "without requiring any closing syntax or surrounding container blocks",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u9_t3",
+              "text": "and by inserting immediate text carriage drops alongside styled dividing rules",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u9_t4",
+              "text": "they partition complex text flow into cleanly organized visual sections",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u9_d1",
+              "category": "logical",
+              "text": "and by forcing the browser to close all open paragraph and heading elements immediately",
+              "penalty_explanation": "BR and HR do not terminate or close parent tags; they merely introduce inline breaks and rules."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "BR और HR एम्प्टी टैग द्वारा लेआउट को विभाजित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "BR और HR एम्प्टी टैग लेआउट को व्यवस्थित करते हैं से शुरू करें, क्लोजिंग टैग की आवश्यकता न होना बताएं, लाइन ब्रेक और क्षैतिज रेखाएं जोड़ने का तरीका बताएं, और सामग्री को अलग-अलग वर्गों में बांटने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u9_t1",
+              "text": "स्टैंडअलोन `<br>` और `<hr>` एम्प्टी टैग लेआउट बदलावों को व्यवस्थित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u9_t2",
+              "text": "बिना किसी क्लोजिंग टैग या बाहरी कंटेनर ब्लॉक की आवश्यकता के",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u9_t3",
+              "text": "और तत्काल लाइन ब्रेक डालने के साथ-साथ रंगीन क्षैतिज रेखाएँ खींचकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u9_t4",
+              "text": "ये जटिल टेक्स्ट प्रवाह को स्पष्ट रूप से व्यवस्थित दृश्य अनुभागों में विभाजित करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u9_d1",
+              "category": "logical",
+              "text": "और ब्राउज़र को सभी खुले पैराग्राफ और हेडिंग तत्वों को तुरंत बंद करने पर मजबूर करके",
+              "penalty_explanation": "BR और HR केवल लाइन तोड़ने और रेखा खींचने का काम करते हैं, वे पिछले टैग्स को बंद नहीं करते।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The empty tag <br> inserts a single line break, while <hr> draws a horizontal dividing line with size, width, align, and color attributes.",
+        "hi": "एम्प्टी टैग <br> एक लाइन ब्रेक डालता है, जबकि <hr> size, width, align और color विशेषताओं के साथ एक क्षैतिज रेखा खींचता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "HTML Source Code Comments",
+          "hi": "HTML सोर्स कोड टिप्पणियाँ (Comments)"
+        },
+        "theory": {
+          "en": "HTML comments are created using the syntax <!-- comment text -->. Because comments are completely ignored by the web browser rendering engine, any text placed inside a comment tag is not displayed on the screen. Comments are used by developers to explain code logic, leave notes for collaborators, or temporarily disable specific sections of HTML code during testing.",
+          "hi": "HTML टिप्पणियाँ (Comments) <!-- comment text --> सिंटैक्स का उपयोग करके लिखी जाती हैं। चूंकि ब्राउज़र का रेंडरिंग इंजन टिप्पणियों को पूरी तरह से अनदेखा कर देता है, इसलिए कमेंट टैग के भीतर लिखा गया टेक्स्ट स्क्रीन पर प्रदर्शित नहीं होता है। इनका उपयोग कोड को समझाने, अन्य डेवलपर्स के लिए नोट्स छोड़ने या परीक्षण के दौरान कोड के किसी हिस्से को अस्थायी रूप से निष्क्रिय करने के लिए किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">HTML Comment Parsing and Screen Exclusion</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;!-- Code Note --&gt;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Source Comment</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Browser Parser</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Ignores Content</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Visual Viewport</text><text x=\"480\" y=\"115\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Hidden from User</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Developer Note</tspan><tspan x=\"120\" dy=\"1.2em\">Documentation</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Bypasses Engine</tspan><tspan x=\"300\" dy=\"1.2em\">No Output Drawn</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Not Displayed</tspan><tspan x=\"480\" dy=\"1.2em\">In Final Webpage</tspan></text></svg>",
+          "caption": {
+            "en": "Comment syntax skipped by the browser parsing engine to document code or temporarily disable markup blocks.",
+            "hi": "कोड को समझाने या मार्कअप को अस्थायी रूप से निष्क्रिय करने के लिए ब्राउज़र द्वारा छोड़ी गई कमेंट संरचना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence explaining the purpose and parsing behavior of HTML comments.",
+          "hint": "Start with HTML comments enclosed within comment markers, describe authoring code documentation, explain skipping parsing during rendering, and conclude with leaving visible output unrendered.",
+          "target_sequence": [
+            {
+              "id": "en_u10_t1",
+              "text": "HTML comments written inside `<!-- ... -->` markers provide developer notes",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u10_t2",
+              "text": "throughout the internal source code of a web application",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u10_t3",
+              "text": "and by bypassing the layout rendering engine of the web browser completely",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u10_t4",
+              "text": "they document structural logic and disable code snippets without appearing on screen",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "logical",
+              "text": "they render as highlighted alert boxes directly across the center of the web page",
+              "penalty_explanation": "Comments are completely invisible to the user and never render on screen as alerts or text."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "HTML कमेंट्स के उद्देश्य और कार्यप्रणाली को दर्शाने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "`<!-- ... -->` में लिखी गई टिप्पणियां डेवलपर नोट्स प्रदान करती हैं से शुरू करें, आंतरिक कोड का संदर्भ दें, ब्राउज़र द्वारा अनदेखा करने का तरीका जोड़ें, और स्क्रीन पर दिखे बिना कोड समझाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u10_t1",
+              "text": "`<!-- ... -->` मार्कर्स के भीतर लिखी गई HTML टिप्पणियाँ उपयोगी नोट्स प्रदान करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u10_t2",
+              "text": "किसी वेब एप्लिकेशन के आंतरिक सोर्स कोड के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u10_t3",
+              "text": "और वेब ब्राउज़र के रेंडरिंग इंजन को पूरी तरह से बायपास करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u10_t4",
+              "text": "ये स्क्रीन पर दिखे बिना कोड लॉजिक का दस्तावेजीकरण करती हैं और कोड को निष्क्रिय करती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "logical",
+              "text": "ये वेब पेज के केंद्र में बड़े अलर्ट बॉक्स के रूप में स्क्रीन पर प्रदर्शित होती हैं",
+              "penalty_explanation": "कमेंट्स स्क्रीन पर कभी प्रदर्शित नहीं होते, वे केवल कोड में डेवलपर्स के पढ़ने के लिए होते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "HTML comments written as <!-- ... --> are ignored by browsers, serving to document logic or temporarily disable markup.",
+        "hi": "<!-- ... --> के रूप में लिखे गए HTML कमेंट्स ब्राउज़र द्वारा अनदेखे कर दिए जाते हैं और कोड को समझाने या अक्षम करने का काम करते हैं।"
+      }
+    }
+  ]
+}
