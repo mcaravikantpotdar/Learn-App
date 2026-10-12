@@ -18,8 +18,8 @@
           "hi": "जावास्क्रिप्ट में निर्णय लेना और कन्डिशनल स्टेटमेंट्स"
         },
         "theory": {
-          "en": "Conditional statements are used to make decisions in JavaScript by performing different actions based on different conditions[cite: 6]. The core decision-making constructs available in JavaScript include the simple `if` statement, two-way `if else`, multi-branch `if else if else`, and the multi-way `switch` statement[cite: 6].",
-          "hi": "जावास्क्रिप्ट में विभिन्न स्थितियों के आधार पर विभिन्न क्रियाएँ करके निर्णय लेने के लिए कन्डिशनल स्टेटमेंट्स का उपयोग किया जाता है[cite: 6]। जावास्क्रिप्ट में उपलब्ध मुख्य निर्णय लेने वाले ढाँचों में साधारण `if` स्टेटमेंट, दो-तरफा `if else`, बहु-शाखीय `if else if else`, और बहु-मार्गी `switch` स्टेटमेंट शामिल हैं[cite: 6]।"
+          "en": "Conditional statements are used to make decisions in JavaScript by performing different actions based on different conditions. The core decision-making constructs available in JavaScript include the simple if statement, two-way if else, multi-branch if else if else, and the multi-way switch statement.",
+          "hi": "जावास्क्रिप्ट में विभिन्न स्थितियों के आधार पर विभिन्न क्रियाएँ करके निर्णय लेने के लिए कन्डिशनल स्टेटमेंट्स का उपयोग किया जाता है। जावास्क्रिप्ट में उपलब्ध मुख्य निर्णय लेने वाले ढाँचों में साधारण if स्टेटमेंट, दो-तरफा if else, बहु-शाखीय if else if else, और बहु-मार्गी switch स्टेटमेंट शामिल हैं।"
         },
         "media": {
           "type": "svg",
@@ -33,7 +33,7 @@
       "challenges": {
         "en": {
           "prompt": "Construct the harmonious sentence describing decision making through conditional statements in JavaScript.",
-          "hint": "Start with conditional statements enabling decision making, describe evaluating diverse program conditions, introduce branching structures, and conclude with selecting distinct actions.",
+          "hint": "Start with conditional statements enabling decision making, describe evaluating dynamic truth conditions, introduce branching structures, and conclude with selecting distinct actions.",
           "target_sequence": [
             {
               "id": "en_u19_t1",
@@ -67,7 +67,7 @@
         },
         "hi": {
           "prompt": "जावास्क्रिप्ट में कन्डिशनल स्टेटमेंट्स द्वारा निर्णय लेने की प्रक्रिया को दर्शाने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "कन्डिशनल स्टेटमेंट्स निर्णय लेने में मदद करते हैं से शुरू करें, शर्तों के मूल्यांकन का तरीका बताएं, `if`, `if else` व `switch` ढांचे जोड़ें, और विभिन्न क्रियाएं करने पर समाप्त करें।",
+          "hint": "कन्डिशनल स्टेटमेंट्स निर्णय लेने में मदद करते हैं से शुरू करें, शर्तों के मूल्यांकन का तरीका बताएं, if, if else व switch ढांचे जोड़ें, और विभिन्न क्रियाएं करने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u19_t1",
@@ -101,8 +101,8 @@
         }
       },
       "key_takeaway": {
-        "en": "Conditional statements perform different actions based on evaluated conditions using `if`, `if else`, and `switch` structures[cite: 6].",
-        "hi": "कन्डिशनल स्टेटमेंट्स `if`, `if else` और `switch` संरचनाओं का उपयोग करके जांची गई शर्तों के आधार पर विभिन्न क्रियाएं करते हैं[cite: 6]।"
+        "en": "Conditional statements perform different actions based on evaluated conditions using if, if else, and switch structures.",
+        "hi": "कन्डिशनल स्टेटमेंट्स if, if else और switch संरचनाओं का उपयोग करके जांची गई शर्तों के आधार पर विभिन्न क्रियाएं करते हैं।"
       }
     },
     {
@@ -112,8 +112,8 @@
           "hi": "साधारण if स्टेटमेंट"
         },
         "theory": {
-          "en": "The `if` statement is used when a specific set of statements is to be executed only when a given condition evaluates to `TRUE`[cite: 7]. If the condition evaluates to `FALSE`, the statements enclosed within curly braces `{}` are bypassed entirely[cite: 7]. Syntax: `if (condition) { statement 1; statement 2; }`[cite: 7].",
-          "hi": "`if` स्टेटमेंट का उपयोग तब किया जाता है जब कथनों का एक सेट केवल तभी निष्पादित किया जाना हो जब कोई दी गई शर्त `TRUE` (सत्य) हो[cite: 7]। यदि शर्त `FALSE` हो जाती है, तो कर्ली ब्रेसेस `{}` के भीतर लिखे कथन निष्पादित नहीं होते[cite: 7]। सिंटैक्स: `if (condition) { statement 1; statement 2; }`[cite: 7]।"
+          "en": "The `if` statement is used when a specific set of statements is to be executed only when a given condition evaluates to TRUE. If the condition evaluates to FALSE, the statements enclosed within curly braces `{}` are bypassed entirely. Syntax: `if (condition) { statement 1; statement 2; }`.",
+          "hi": "`if` स्टेटमेंट का उपयोग तब किया जाता है जब कथनों का एक सेट केवल तभी निष्पादित किया जाना हो जब कोई दी गई शर्त TRUE (सत्य) हो। यदि शर्त FALSE हो जाती है, तो कर्ली ब्रेसेस `{}` के भीतर लिखे कथन निष्पादित नहीं होते। सिंटैक्स: `if (condition) { statement 1; statement 2; }`।"
         },
         "media": {
           "type": "svg",
@@ -161,7 +161,7 @@
         },
         "hi": {
           "prompt": "साधारण if स्टेटमेंट के निष्पादन नियंत्रण को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "साधारण `if` स्टेटमेंट कोष्ठक में शर्त जांचता है से शुरू करें, कर्ली ब्रेसेस में कोड रखने का विवरण दें, शर्त के TRUE होने की पुष्टि जोड़ें, और केवल सत्य होने पर चलाने पर समाप्त करें।",
+          "hint": "साधारण if स्टेटमेंट कोष्ठक में शर्त जांचता है से शुरू करें, कर्ली ब्रेसेस में कोड रखने का विवरण दें, शर्त के TRUE होने की पुष्टि जोड़ें, और केवल सत्य होने पर चलाने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u20_t1",
@@ -195,8 +195,8 @@
         }
       },
       "key_takeaway": {
-        "en": "The `if` statement executes its code block if and only if the specified test condition evaluates to TRUE[cite: 7].",
-        "hi": "`if` स्टेटमेंट अपने कोड ब्लॉक को केवल और केवल तभी निष्पादित करता है जब दी गई शर्त TRUE होती है[cite: 7]।"
+        "en": "The `if` statement executes its code block if and only if the specified test condition evaluates to TRUE.",
+        "hi": "`if` स्टेटमेंट अपने कोड ब्लॉक को केवल और केवल तभी निष्पादित करता है जब दी गई शर्त TRUE होती है।"
       }
     },
     {
@@ -206,8 +206,8 @@
           "hi": "if else स्टेटमेंट: दो-तरफा शाखाकरण"
         },
         "theory": {
-          "en": "The `if else` statement is used when a set of statements is to be executed when a condition is `TRUE`, and an alternative set of statements is executed when that condition is `FALSE`[cite: 7]. Syntax: `if (condition) { statement 1; statement 2; } else { statement 3; statement 4; }`[cite: 7].",
-          "hi": "`if else` स्टेटमेंट का उपयोग तब किया जाता है जब कथनों का एक सेट शर्त के `TRUE` होने पर निष्पादित होना हो, और शर्त के `FALSE` होने पर कथनों का दूसरा सेट निष्पादित होना हो[cite: 7]। सिंटैक्स: `if (condition) { statement 1; statement 2; } else { statement 3; statement 4; }`[cite: 7]।"
+          "en": "The `if else` statement is used when a set of statements is to be executed when a condition is TRUE, and an alternative set of statements is executed when that condition is FALSE. Syntax: `if (condition) { statement 1; statement 2; } else { statement 3; statement 4; }`.",
+          "hi": "`if else` स्टेटमेंट का उपयोग तब किया जाता है जब कथनों का एक सेट शर्त के TRUE होने पर निष्पादित होना हो, और शर्त के FALSE होने पर कथनों का दूसरा सेट निष्पादित होना हो। सिंटैक्स: `if (condition) { statement 1; statement 2; } else { statement 3; statement 4; }`।"
         },
         "media": {
           "type": "svg",
@@ -255,7 +255,7 @@
         },
         "hi": {
           "prompt": "if else स्टेटमेंट द्वारा प्रोग्राम प्रवाह को नियंत्रित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
-          "hint": "`if else` दो-तरफा निष्पादन स्थापित करता है से शुरू करें, प्रारंभिक `if` व वैकल्पिक `else` ब्लॉक बताएं, TRUE या FALSE मूल्यांकन का तरीका जोड़ें, और सही ब्लॉक चलाने पर समाप्त करें।",
+          "hint": "if else दो-तरफा निष्पादन स्थापित करता है से शुरू करें, प्रारंभिक if व वैकल्पिक else ब्लॉक बताएं, TRUE या FALSE मूल्यांकन का तरीका जोड़ें, और सही ब्लॉक चलाने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u21_t1",
@@ -289,8 +289,8 @@
         }
       },
       "key_takeaway": {
-        "en": "The `if else` construct executes one block when the condition is TRUE and an alternative block when it is FALSE[cite: 7].",
-        "hi": "`if else` संरचना शर्त सत्य होने पर एक ब्लॉक और असत्य होने पर दूसरा वैकल्पिक ब्लॉक चलाती है[cite: 7]।"
+        "en": "The `if else` construct executes one block when the condition is TRUE and an alternative block when it is FALSE.",
+        "hi": "`if else` संरचना शर्त सत्य होने पर एक ब्लॉक और असत्य होने पर दूसरा वैकल्पिक ब्लॉक चलाती है।"
       }
     },
     {
@@ -300,8 +300,8 @@
           "hi": "if else if else लैडर: बहु-शर्त शाखाकरण"
         },
         "theory": {
-          "en": "The `if else if else` statement is used to execute different sets of statements according to different conditions[cite: 8]. JavaScript evaluates conditions sequentially from top to bottom; as soon as a condition evaluates to `TRUE`, its associated block executes and the remaining ladder is bypassed[cite: 8]. If none of the conditions are true, the final fallback `else` block executes[cite: 8].",
-          "hi": "`if else if else` स्टेटमेंट का उपयोग विभिन्न स्थितियों के अनुसार कथनों के विभिन्न सेटों को निष्पादित करने के लिए किया जाता है[cite: 8]। जावास्क्रिप्ट ऊपर से नीचे की ओर क्रमबद्ध रूप से शर्तों का मूल्यांकन करता है; जैसे ही कोई शर्त `TRUE` होती है, उससे संबंधित ब्लॉक चलता है और शेष सीढ़ी छूट जाती है[cite: 8]। यदि कोई भी शर्त सत्य नहीं होती, तो अंतिम `else` ब्लॉक निष्पादित होता है[cite: 8]।"
+          "en": "The `if else if else` statement is used to execute different sets of statements according to different conditions. JavaScript evaluates conditions sequentially from top to bottom; as soon as a condition evaluates to TRUE, its associated block executes and the remaining ladder is bypassed. If none of the conditions are true, the final fallback `else` block executes.",
+          "hi": "`if else if else` स्टेटमेंट का उपयोग विभिन्न स्थितियों के अनुसार कथनों के विभिन्न सेटों को निष्पादित करने के लिए किया जाता है। जावास्क्रिप्ट ऊपर से नीचे की ओर क्रमबद्ध रूप से शर्तों का मूल्यांकन करता है; जैसे ही कोई शर्त TRUE होती है, उससे संबंधित ब्लॉक चलता है और शेष सीढ़ी छूट जाती है। यदि कोई भी शर्त सत्य नहीं होती, तो अंतिम `else` ब्लॉक निष्पादित होता है।"
         },
         "media": {
           "type": "svg",
@@ -383,8 +383,8 @@
         }
       },
       "key_takeaway": {
-        "en": "An `if else if else` ladder evaluates conditions sequentially, executing the first true block or defaulting to the final `else`[cite: 8].",
-        "hi": "`if else if else` लैडर क्रमिक रूप से शर्तों की जांच करता है, पहली सत्य शर्त को चलाता है या अंतिम `else` पर जाता है[cite: 8]।"
+        "en": "An `if else if else` ladder evaluates conditions sequentially, executing the first true block or defaulting to the final else.",
+        "hi": "`if else if else` लैडर क्रमिक रूप से शर्तों की जांच करता है, पहली सत्य शर्त को चलाता है या अंतिम else पर जाता है।"
       }
     },
     {
@@ -394,8 +394,8 @@
           "hi": "स्विच स्टेटमेंट और केस मिलान"
         },
         "theory": {
-          "en": "The `switch` statement is used to execute different statements according to different values of a variable or expression[cite: 8]. It compares the evaluated value against multiple `case` labels, executing the statements corresponding to the matching value[cite: 8]. Syntax: `switch (expression) { case value1: statement1; break; case value2: statement2; break; default: statement3; }`[cite: 8, 9].",
-          "hi": "`switch` स्टेटमेंट का उपयोग किसी वेरिएबल या एक्सप्रेशन के अलग-अलग मानों के अनुसार अलग-अलग स्टेटमेंट निष्पादित करने के लिए किया जाता है[cite: 8]। यह दिए गए मान की तुलना प्रत्येक `case` लेबल से करता है और मेल खाने वाले केस के कथनों को निष्पादित करता है[cite: 8]। सिंटैक्स: `switch (expression) { case value1: statement1; break; case value2: statement2; break; default: statement3; }`[cite: 8, 9]।"
+          "en": "The `switch` statement is used to execute different statements according to different values of a variable or expression. It compares the evaluated value against multiple `case` labels, executing the statements corresponding to the matching value. Syntax: `switch (expression) { case value1: statement1; break; case value2: statement2; break; default: statement3; }`.",
+          "hi": "`switch` स्टेटमेंट का उपयोग किसी वेरिएबल या एक्सप्रेशन के अलग-अलग मानों के अनुसार अलग-अलग स्टेटमेंट निष्पादित करने के लिए किया जाता है। यह दिए गए मान की तुलना प्रत्येक `case` लेबल से करता है और मेल खाने वाले केस के कथनों को निष्पादित करता है। सिंटैक्स: `switch (expression) { case value1: statement1; break; case value2: statement2; break; default: statement3; }`।"
         },
         "media": {
           "type": "svg",
@@ -443,7 +443,7 @@
         },
         "hi": {
           "prompt": "स्विच स्टेटमेंट द्वारा प्रोग्राम नियंत्रण को प्रेषित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
-          "hint": "`switch` स्टेटमेंट वेरिएबल या एक्सप्रेशन का मूल्यांकन करता है से शुरू करें, प्रत्येक `case` से तुलना का तरीका बताएं, मान मैच होने की स्थिति जोड़ें, और संबंधित स्टेटमेंट चलाने पर समाप्त करें।",
+          "hint": "switch स्टेटमेंट वेरिएबल या एक्सप्रेशन का मूल्यांकन करता है से शुरू करें, प्रत्येक case से तुलना का तरीका बताएं, मान मैच होने की स्थिति जोड़ें, और संबंधित स्टेटमेंट चलाने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u23_t1",
@@ -477,8 +477,8 @@
         }
       },
       "key_takeaway": {
-        "en": "The `switch` statement matches an expression's value against discrete `case` labels, executing the matching branch[cite: 8].",
-        "hi": "`switch` स्टेटमेंट किसी एक्सप्रेशन के मान का प्रत्येक `case` से मिलान करता है और मैच होने वाली शाखा को निष्पादित करता है[cite: 8]।"
+        "en": "The `switch` statement matches an expression's value against discrete case labels, executing the matching branch.",
+        "hi": "`switch` स्टेटमेंट किसी एक्सप्रेशन के मान का प्रत्येक case से मिलान करता है और मैच होने वाली शाखा को निष्पादित करता है।"
       }
     },
     {
@@ -488,8 +488,8 @@
           "hi": "स्विच में नियंत्रण प्रवाह: break और default स्टेटमेंट्स"
         },
         "theory": {
-          "en": "The `break` statement is used after each case to terminate the `switch` block once a matching case is found[cite: 8]. If `break` is omitted, execution continues into succeeding cases regardless of matches[cite: 8]. The `default` statement specifies fallback statements that execute when no matching case is found[cite: 9].",
-          "hi": "मैचिंग केस मिलने पर `switch` ब्लॉक को समाप्त करने के लिए प्रत्येक केस के बाद `break` स्टेटमेंट का उपयोग किया जाता है[cite: 8]। यदि `break` छोड़ दिया जाए, तो निष्पादन अगले सभी केसों में तब तक जारी रहता है जब तक ब्रेक न मिले[cite: 8]। `default` स्टेटमेंट उन कथनों को निष्पादित करता है जब कोई भी मैचिंग केस नहीं मिलता[cite: 9]।"
+          "en": "The `break` statement is used after each case to terminate the switch block once a matching case is found. If break is omitted, execution continues into succeeding cases regardless of matches. The `default` statement specifies fallback statements that execute when no matching case is found.",
+          "hi": "मैचिंग केस मिलने पर switch ब्लॉक को समाप्त करने के लिए प्रत्येक केस के बाद `break` स्टेटमेंट का उपयोग किया जाता है। यदि break छोड़ दिया जाए, तो निष्पादन अगले सभी केसों में तब तक जारी रहता है जब तक ब्रेक न मिले। `default` स्टेटमेंट उन कथनों को निष्पादित करता है जब कोई भी मैचिंग केस नहीं मिलता।"
         },
         "media": {
           "type": "svg",
@@ -537,7 +537,7 @@
         },
         "hi": {
           "prompt": "स्विच ब्लॉक में break और default के कार्य को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "`break` अनपेक्षित निष्पादन को रोकता है से शुरू करें, मैचिंग केस समाप्त करने का तरीका बताएं, break न लगाने का परिणाम जोड़ें, और `default` द्वारा बेमेल स्थिति संभालने पर समाप्त करें।",
+          "hint": "break अनपेक्षित निष्पादन को रोकता है से शुरू करें, मैचिंग केस समाप्त करने का तरीका बताएं, break न लगाने का परिणाम जोड़ें, और default द्वारा बेमेल स्थिति संभालने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u24_t1",
@@ -571,8 +571,8 @@
         }
       },
       "key_takeaway": {
-        "en": "`break` terminates a switch block after a matched case, while `default` handles scenarios where no cases match[cite: 8, 9].",
-        "hi": "`break` मैचिंग केस के बाद स्विच ब्लॉक को समाप्त करता है, जबकि `default` उस स्थिति को संभालता है जब कोई केस मैच नहीं होता[cite: 8, 9]।"
+        "en": "`break` terminates a switch block after a matched case, while `default` handles scenarios where no cases match.",
+        "hi": "`break` मैचिंग केस के बाद स्विच ब्लॉक को समाप्त करता है, जबकि `default` उस स्थिति को संभालता है जब कोई केस मैच नहीं होता।"
       }
     }
   ]
