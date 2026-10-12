@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Chapter 4: Elementary Server-Side Scripting using PHP - Part 1",
+      "hi": "अध्याय 4: PHP का उपयोग करके प्राथमिक सर्वर-साइड स्क्रिप्टिंग - भाग 1"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Dreamweaver and WYSIWYG Web Authoring",
+          "hi": "ड्रीमवीवर और WYSIWYG वेब डिजाइनिंग"
+        },
+        "theory": {
+          "en": "Dreamweaver is a website designing software application used to build and edit HTML and XHTML webpages. It features a WYSIWYG (What You See Is What You Get) interface, allowing developers to visually edit web pages while viewing an accurate preview of how they render in a browser. Dreamweaver supports integration across multiple web technologies including CSS, HTML, JavaScript, ASP, and PHP.",
+          "hi": "ड्रीमवीवर एक वेबसाइट डिज़ाइनिंग सॉफ़्टवेयर है जिसका उपयोग HTML और XHTML वेब पेज बनाने और संपादित करने के लिए किया जाता है। यह WYSIWYG (What You See Is What You Get) सुविधा प्रदान करता है, जिससे वेब पेज संपादन के दौरान वैसा ही दिखाई देता है जैसा वह वेब ब्राउज़र में दिखेगा। ड्रीमवीवर CSS, HTML, JavaScript, ASP और PHP जैसी कई भाषाओं का समर्थन करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Dreamweaver WYSIWYG Web Authoring Suite</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Visual Canvas</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">WYSIWYG Mode</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">HTML &amp; XHTML</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Code Editor</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Multi-Language</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">CSS / JS / PHP</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Visual Editing</tspan><tspan x=\"120\" dy=\"1.2em\">Live Rendering</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Markup Engine</tspan><tspan x=\"300\" dy=\"1.2em\">Standard Tags</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Backend Support</tspan><tspan x=\"480\" dy=\"1.2em\">Full Scripting</tspan></text></svg>",
+          "caption": {
+            "en": "Dreamweaver integrated development suite featuring visual WYSIWYG editing and multi-language script integration.",
+            "hi": "ड्रीमवीवर का एकीकृत डेवलपमेंट वातावरण जो विजुअल WYSIWYG संपादन और बहु-भाषी स्क्रिप्टिंग का समर्थन करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the complete, harmonious sentence describing the capabilities of Dreamweaver in web authoring.",
+          "hint": "Start with Dreamweaver providing visual website authoring, mention supporting HTML and XHTML, describe combining WYSIWYG editing with code view, and conclude with supporting scripting languages like CSS, JS, and PHP.",
+          "target_sequence": [
+            {
+              "id": "en_u1_t1",
+              "text": "Dreamweaver functions as a comprehensive web authoring software application",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u1_t2",
+              "text": "for designing and editing standard HTML and XHTML web pages",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u1_t3",
+              "text": "and by pairing a real-time WYSIWYG editing preview with multi-language code editors",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u1_t4",
+              "text": "it streamlines webpage development across CSS, JavaScript, ASP, and PHP",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u1_d1",
+              "category": "logical",
+              "text": "it strictly restricts authors to editing unformatted plain text files without visual design views",
+              "penalty_explanation": "Dreamweaver is specifically distinguished by its visual WYSIWYG design mode, not limited to plain text only."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "वेब डिज़ाइनिंग में ड्रीमवीवर की क्षमताओं को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "ड्रीमवीवर एक व्यापक वेब डिज़ाइनिंग सॉफ़्टवेयर है से शुरू करें, HTML और XHTML वेब पेजों का संदर्भ दें, WYSIWYG और कोड एडिटर को मिलाने का तरीका बताएं, और CSS, JS व PHP के विकास को सुगम बनाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u1_t1",
+              "text": "ड्रीमवीवर एक व्यापक वेबसाइट डिज़ाइनिंग सॉफ़्टवेयर के रूप में कार्य करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u1_t2",
+              "text": "मानक HTML और XHTML वेब पेजों के निर्माण और संपादन के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u1_t3",
+              "text": "और रीयल-टाइम WYSIWYG दृश्य पूर्वावलोकन को बहु-भाषी कोड एडिटर के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u1_t4",
+              "text": "यह CSS, जावास्क्रिप्ट, ASP और PHP में वेब विकास को अत्यंत सुगम बनाता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u1_d1",
+              "category": "logical",
+              "text": "यह डेवलपर्स को बिना किसी दृश्य डिज़ाइन के केवल सादे टेक्स्ट संपादन तक ही सीमित रखता है",
+              "penalty_explanation": "ड्रीमवीवर WYSIWYG तकनीक का उपयोग करता है जो दृश्य संपादन की पूरी सुविधा देती है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Dreamweaver is a web design tool offering WYSIWYG editing across HTML, CSS, JavaScript, and PHP.",
+        "hi": "ड्रीमवीवर एक वेब डिज़ाइनिंग टूल है जो HTML, CSS, जावास्क्रिप्ट और PHP में दृश्य WYSIWYG संपादन प्रदान करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "CSS Architecture: Selectors and Declarations",
+          "hi": "CSS संरचना: सिलेक्टर्स और डिक्लेरेशन्स"
+        },
+        "theory": {
+          "en": "CSS stands for Cascading Style Sheets and is used to define the visual layout and style of web pages across different devices. A CSS rule consists of two primary parts: a selector (which identifies the target HTML element to be styled) and a declaration block (enclosed in curly braces, specifying style properties and values separated by colons and semicolons, such as h1 { color: blue; font-size: 20px; }).",
+          "hi": "CSS का पूर्ण रूप Cascading Style Sheets है और इसका उपयोग वेब पेजों को विभिन्न डिवाइस पर आकर्षक लेआउट और स्टाइल प्रदान करने के लिए किया जाता है। एक CSS नियम में दो मुख्य भाग होते हैं: एक सिलेक्टर (जो उस HTML तत्व को चुनता है जिसे स्टाइल करना है) और डिक्लेरेशन ब्लॉक (जो कर्ली ब्रेसेस में प्रॉपर्टी और वैल्यू को निर्दिष्ट करता है, जैसे h1 { color: blue; font-size: 20px; })।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Anatomy of a CSS Rule</text><rect x=\"45\" y=\"75\" width=\"510\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"95\" y=\"102\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">h1</text><text x=\"165\" y=\"102\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\">{</text><text x=\"235\" y=\"102\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">color:</text><text x=\"300\" y=\"102\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">blue;</text><text x=\"380\" y=\"102\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">font-size:</text><text x=\"460\" y=\"102\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">20px;</text><text x=\"515\" y=\"102\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\">}</text><line x1=\"95\" y1=\"130\" x2=\"95\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"235\" y1=\"130\" x2=\"235\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"380\" y1=\"130\" x2=\"380\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><text x=\"95\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"95\" dy=\"0\">Target Selector</tspan><tspan x=\"95\" dy=\"1.2em\">HTML Element</tspan></text><text x=\"235\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"235\" dy=\"0\">Property Name</tspan><tspan x=\"235\" dy=\"1.2em\">Visual Attribute</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Property Value</tspan><tspan x=\"300\" dy=\"1.2em\">Applied Setting</tspan></text><text x=\"380\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"380\" dy=\"0\">Declaration Block</tspan><tspan x=\"380\" dy=\"1.2em\">Style Directives</tspan></text></svg>",
+          "caption": {
+            "en": "Structure of a CSS rule showing selector targeting and property-value declaration pairs enclosed in braces.",
+            "hi": "CSS नियम की संरचना जो सिलेक्टर लक्ष्यीकरण और कर्ली ब्रेसेस में प्रॉपर्टी-वैल्यू डिक्लेरेशन को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing the architecture and syntax of CSS rules.",
+          "hint": "Start with Cascading Style Sheets controlling presentation, mention targeting elements across screens, explain combining selectors with declaration blocks, and conclude with applying styling properties.",
+          "target_sequence": [
+            {
+              "id": "en_u2_t1",
+              "text": "Cascading Style Sheets control the visual presentation and layout of web pages",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u2_t2",
+              "text": "across a wide range of mobile and desktop viewing devices",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u2_t3",
+              "text": "and by combining element selectors with property-value declaration blocks in curly braces",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u2_t4",
+              "text": "they format colors, typography, and structural spacing with high precision",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u2_d1",
+              "category": "logical",
+              "text": "they overwrite underlying server databases to modify raw record storage permanently",
+              "penalty_explanation": "CSS manages the visual presentation in the browser and does not modify backend databases."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "CSS नियमों की संरचना और सिंटैक्स को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "Cascading Style Sheets दृश्य प्रस्तुति को नियंत्रित करती है से शुरू करें, विभिन्न डिवाइसों का संदर्भ दें, सिलेक्टर और डिक्लेरेशन ब्लॉक जोड़ने का तरीका बताएं, और रंग व टाइपोग्राफी को सटीक रूप से स्वरूपित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u2_t1",
+              "text": "कैस्केडिंग स्टाइल शीट्स वेब पेजों की दृश्य प्रस्तुति और लेआउट को नियंत्रित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u2_t2",
+              "text": "विभिन्न प्रकार के मोबाइल और डेस्कटॉप डिवाइसों के प्रदर्शन परिवेश में",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u2_t3",
+              "text": "और तत्व सिलेक्टर को कर्ली ब्रेसेस में प्रॉपर्टी-वैल्यू डिक्लेरेशन ब्लॉक के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u2_t4",
+              "text": "ये रंग, टाइपोग्राफी और संरचनात्मक स्पेसिंग को अत्यंत सटीक रूप से स्वरूपित करती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u2_d1",
+              "category": "logical",
+              "text": "ये डेटाबेस रिकॉर्ड को हमेशा के लिए बदलकर बैकएंड सर्वर पर नया डेटा लिखती हैं",
+              "penalty_explanation": "CSS केवल ब्राउज़र में वेब पेजों के स्वरूप और स्टाइल को बदलती है, डेटाबेस को नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "CSS rules combine selectors with declaration blocks containing property-value pairs to style HTML elements.",
+        "hi": "CSS नियम HTML तत्वों को स्टाइल करने के लिए सिलेक्टर्स को प्रॉपर्टी-वैल्यू वाले डिक्लेरेशन ब्लॉक्स के साथ जोड़ते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "CSS Application Methods: External, Internal, and Inline",
+          "hi": "CSS लागू करने की विधियाँ: एक्सटर्नल, इंटरनल और इनलाइन"
+        },
+        "theory": {
+          "en": "CSS styles can be incorporated into web documents via three primary methods. External CSS resides in dedicated .css files linked inside the HTML <head> section using the <link> tag. Internal CSS is written inside a <style> container block within the HTML file. Inline CSS applies styles directly to individual HTML elements using the style attribute. The cascading principle ensures that overlapping rules are resolved, with the most specific style rule taking precedence.",
+          "hi": "CSS को वेब दस्तावेज़ों में तीन मुख्य विधियों से लागू किया जा सकता है। एक्सटर्नल CSS को अलग .css फ़ाइलों में लिखकर <link> टैग द्वारा HTML फ़ाइल से जोड़ा जाता है। इंटरनल CSS को HTML फ़ाइल के भीतर <style> टैग के अंदर लिखा जाता है। इनलाइन CSS को सीधे किसी HTML तत्व में style विशेषता द्वारा लागू किया जाता है। 'कैस्केडिंग' का अर्थ है कि शैलियाँ ओवरलैप हो सकती हैं और सबसे विशिष्ट नियम प्राथमिकता प्राप्त करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Three Tiers of CSS Application &amp; Specificity</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">External .css</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;link rel=&quot;...&quot;&gt;</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Internal Block</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;style&gt; in &lt;head&gt;</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Inline Attribute</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">style=&quot;...&quot; in tag</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Site-Wide Styles</tspan><tspan x=\"120\" dy=\"1.2em\">Modular Files</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Single Page</tspan><tspan x=\"300\" dy=\"1.2em\">Document Scope</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Highest Priority</tspan><tspan x=\"480\" dy=\"1.2em\">Element Override</tspan></text></svg>",
+          "caption": {
+            "en": "Three implementation methods of CSS demonstrating external files, internal document styles, and inline element attributes.",
+            "hi": "CSS लागू करने की तीन विधियां जो एक्सटर्नल फ़ाइलों, इंटरनल दस्तावेज़ शैलियों और इनलाइन तत्व विशेषताओं को दर्शाती हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the complete, harmonious sentence describing how external, internal, and inline CSS styles are applied.",
+          "hint": "Start with web developers integrating CSS through multiple techniques, specify external files, internal blocks, and inline attributes, describe resolving overlapping rules through cascading, and conclude with enforcing style specificity.",
+          "target_sequence": [
+            {
+              "id": "en_u3_t1",
+              "text": "Web developers implement styling rules across external, internal, and inline tiers",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u3_t2",
+              "text": "using `.css` files with `<link>`, `<style>` blocks, or the `style` attribute",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u3_t3",
+              "text": "and by resolving conflicting visual instructions through the cascading hierarchy",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u3_t4",
+              "text": "they ensure that the most specific style rule takes final visual precedence on the screen",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u3_d1",
+              "category": "logical",
+              "text": "they disable all inline style attributes whenever an external stylesheet is present",
+              "penalty_explanation": "Inline styles have higher specificity and override external stylesheet rules rather than being disabled."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "एक्सटर्नल, इंटरनल और इनलाइन CSS शैलियों को लागू करने की कार्यप्रणाली को सही क्रम में व्यवस्थित करें।",
+          "hint": "वेब डेवलपर्स तीन स्तरों पर स्टाइलिंग नियम लागू करते हैं से शुरू करें, `.css` फ़ाइल, `<style>` और `style` विशेषता का संदर्भ दें, कैस्केडिंग पदानुक्रम द्वारा टकराव सुलझाने का तरीका बताएं, और सबसे विशिष्ट नियम को प्राथमिकता मिलने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u3_t1",
+              "text": "वेब डेवलपर्स एक्सटर्नल, इंटरनल और इनलाइन तीन स्तरों पर स्टाइलिंग नियमों को लागू करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u3_t2",
+              "text": "`<link>` द्वारा `.css` फ़ाइलों, `<style>` ब्लॉक्स अथवा `style` विशेषता के माध्यम से",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u3_t3",
+              "text": "और कैस्केडिंग पदानुक्रम के तहत ओवरलैप होने वाले नियमों को हल करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u3_t4",
+              "text": "ये सुनिश्चित करते हैं कि सबसे विशिष्ट स्टाइल नियम स्क्रीन पर अंतिम प्राथमिकता प्राप्त करे",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u3_d1",
+              "category": "logical",
+              "text": "ये एक्सटर्नल स्टाइलशीट मौजूद होने पर सभी इनलाइन स्टाइल विशेषताओं को पूरी तरह निष्क्रिय कर देते हैं",
+              "penalty_explanation": "इनलाइन शैलियों की प्राथमिकता सबसे अधिक होती है, वे एक्सटर्नल फ़ाइलों से निष्क्रिय नहीं होती हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "CSS can be external (.css), internal (<style>), or inline (style attribute), with the most specific rule applying via cascading.",
+        "hi": "CSS एक्सटर्नल (.css), इंटरनल (<style>) या इनलाइन (style) हो सकती है, जिसमें कैस्केडिंग के कारण सबसे विशिष्ट नियम लागू होता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "HTML vs. XHTML: Structural Strictness and Compliance",
+          "hi": "HTML बनाम XHTML: संरचनात्मक कठोरता और अनुपालन"
+        },
+        "theory": {
+          "en": "HTML and XHTML differ across core syntactic and structural standards. HTML (derived from SGML) is forgiving: tags are not case-sensitive, closing empty tags is optional, and attribute quoting can be relaxed. In contrast, XHTML (derived from XML) enforces strict syntax rules: all tags must be lowercase and case-sensitive, closing tags are strictly mandatory for all elements, and all attribute values must be explicitly quoted.",
+          "hi": "HTML और XHTML सिंटैक्स और संरचनात्मक मानकों में भिन्न हैं। HTML (SGML का अनुप्रयोग) लचीला है: टैग केस-सेंसिटिव नहीं होते, एम्प्टी टैग्स को बंद करना वैकल्पिक है, और ऐट्रिब्यूट मान वैकल्पिक हो सकते हैं। इसके विपरीत, XHTML (XML का अनुप्रयोग) सख्त नियमों को लागू करता है: सभी टैग केस-सेंसिटिव होते हैं, हर टैग के लिए क्लोजिंग टैग अनिवार्य है, और सभी ऐट्रिब्यूट मान अनिवार्य रूप से कोट्स में होने चाहिए।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Standards Comparison: HTML vs. XHTML</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">HTML (SGML Base)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Case-Insensitive | Optional Close</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">XHTML (XML Base)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Case-Sensitive | Mandatory Close</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Flexible Syntax</tspan><tspan x=\"100\" dy=\"1.2em\">Forgiving Parser</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">&lt;BR&gt; or &lt;br&gt;</tspan><tspan x=\"225\" dy=\"1.2em\">Unquoted Attr</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Rigid Validation</tspan><tspan x=\"375\" dy=\"1.2em\">XML Parser</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">&lt;br /&gt; Required</tspan><tspan x=\"500\" dy=\"1.2em\">Quoted Values</tspan></text></svg>",
+          "caption": {
+            "en": "Syntactic comparison contrasting HTML lenient SGML standards against XHTML strict XML markup rules.",
+            "hi": "HTML के लचीले SGML मानकों और XHTML के सख्त XML मार्कअप नियमों के बीच वाक्यात्मक तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence contrasting the syntactic requirements of HTML and XHTML.",
+          "hint": "Start with HTML and XHTML adhering to distinct markup specifications, mention SGML and XML foundations, describe enforcing case-sensitivity and closing tags, and conclude with contrasting parsing standards.",
+          "target_sequence": [
+            {
+              "id": "en_u4_t1",
+              "text": "HTML and XHTML follow distinct structural markup specifications",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u4_t2",
+              "text": "based respectively on traditional SGML and stricter XML roots",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u4_t3",
+              "text": "and by enforcing mandatory closing tags, strict case-sensitivity, and quoted attribute values in XHTML",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u4_t4",
+              "text": "they distinguish lenient web formatting from rigorous document validation standards",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u4_d1",
+              "category": "logical",
+              "text": "they permit XHTML developers to omit closing tags on all container and empty elements freely",
+              "penalty_explanation": "XHTML strictly requires every single tag (including empty tags) to be properly closed."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "HTML और XHTML के सिंटैक्स संबंधी अंतर को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "HTML और XHTML विभिन्न मार्कअप मानकों का पालन करते हैं से शुरू करें, SGML और XML आधार का संदर्भ दें, XHTML में अनिवार्य क्लोजिंग टैग व केस-सेंसिटिविटी का तरीका जोड़ें, और लचीले व सख्त मानकों को अलग करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u4_t1",
+              "text": "HTML और XHTML अलग-अलग संरचनात्मक मार्कअप विशिष्टताओं का पालन करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u4_t2",
+              "text": "क्रमशः पारंपरिक SGML और अपेक्षाकृत सख्त XML आधार पर निर्मित होकर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u4_t3",
+              "text": "और XHTML में अनिवार्य क्लोजिंग टैग, सख्त केस-सेंसिटिविटी तथा कोट्स वाले ऐट्रिब्यूट मान लागू करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u4_t4",
+              "text": "ये लचीले वेब फ़ॉर्मेटिंग को अत्यधिक सख्त दस्तावेज़ सत्यापन मानकों से अलग करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u4_d1",
+              "category": "logical",
+              "text": "ये XHTML में सभी कंटेनर और एम्प्टी तत्वों पर क्लोजिंग टैग को पूरी तरह से छोड़ने की अनुमति देते हैं",
+              "penalty_explanation": "XHTML में प्रत्येक टैग को बंद करना अनिवार्य होता है, इसे छोड़ा नहीं जा सकता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "HTML (SGML-based) is case-insensitive with optional tag closing, while XHTML (XML-based) requires lowercase, closed tags, and quoted attributes.",
+        "hi": "HTML केस-इनसेंसिटिव है और क्लोजिंग टैग वैकल्पिक हैं, जबकि XML-आधारित XHTML में केस-सेंसिटिविटी, अनिवार्य क्लोजिंग टैग और कोट्स आवश्यक हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Introduction to PHP and the Server-Side Execution Model",
+          "hi": "PHP का परिचय और सर्वर-साइड निष्पादन मॉडल"
+        },
+        "theory": {
+          "en": "PHP is an open-source, server-side scripting language used to build dynamic websites and web applications. Formerly an acronym for 'Personal Home Page', it now recursively stands for 'PHP Hypertext Preprocessor'. PHP scripts execute entirely on the web server rather than in the client's browser, enabling secure database connectivity, broad webserver compatibility, and dynamic HTML output without exposing source logic to end users.",
+          "hi": "PHP एक ओपन-सोर्स, सर्वर-साइड स्क्रिप्टिंग भाषा है जिसका उपयोग गतिशील वेबसाइट और वेब-एप्लिकेशन बनाने के लिए किया जाता है। पहले इसका पूर्ण रूप 'Personal Home Page' था, लेकिन अब इसका रिकर्सिव अर्थ 'PHP Hypertext Preprocessor' है। PHP स्क्रिप्ट क्लाइंट के ब्राउज़र के बजाय सीधे वेब सर्वर पर निष्पादित होती है, जो सुरक्षित डेटाबेस कनेक्टिविटी, वेब-सर्वर अनुकूलता और अंतिम उपयोगकर्ता को सोर्स कोड दिखाए बिना डायनामिक HTML परिणाम प्रदान करती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">PHP Server-Side Execution &amp; Response Cycle</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Client Browser</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Requests page.php</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">PHP Web Server</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Executes Engine</text><line x1=\"195\" y1=\"90\" x2=\"405\" y2=\"90\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"405,90 397,86 397,94\" fill=\"#38bdf8\"/><text x=\"300\" y=\"82\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\">HTTP Request (.php)</text><line x1=\"405\" y1=\"115\" x2=\"195\" y2=\"115\" stroke=\"#4ade80\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"195,115 203,111 203,119\" fill=\"#4ade80\"/><text x=\"300\" y=\"128\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\">Rendered HTML Output</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">User Viewport</tspan><tspan x=\"120\" dy=\"1.2em\">Sees Plain HTML</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Server Engine</tspan><tspan x=\"480\" dy=\"1.2em\">Runs PHP &amp; DB</tspan></text></svg>",
+          "caption": {
+            "en": "Server-side processing lifecycle where PHP code executes on the remote server and delivers rendered HTML to clients.",
+            "hi": "सर्वर-साइड प्रोसेसिंग चक्र जहाँ PHP कोड रिमोट सर्वर पर चलता है और क्लाइंट को तैयार HTML परिणाम भेजता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing the architecture and security of PHP server-side scripting.",
+          "hint": "Start with PHP operating as an open-source server-side language, mention powering dynamic web applications, describe executing code exclusively on the web server, and conclude with serving generated HTML while protecting source logic.",
+          "target_sequence": [
+            {
+              "id": "en_u5_t1",
+              "text": "PHP operates as a fast open-source server-side scripting language",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u5_t2",
+              "text": "for creating interactive dynamic websites and database-driven applications",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u5_t3",
+              "text": "and by processing all program logic on the remote web server rather than the client browser",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u5_t4",
+              "text": "it delivers pure HTML output while keeping proprietary source code secure from users",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u5_d1",
+              "category": "logical",
+              "text": "it downloads raw PHP executable code directly into the client browser for local compilation",
+              "penalty_explanation": "PHP is a server-side language; raw PHP code is never downloaded or executed directly in the client's browser."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP सर्वर-साइड स्क्रिप्टिंग की संरचना और सुरक्षा को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "PHP एक ओपन-सोर्स सर्वर-साइड स्क्रिप्टिंग भाषा के रूप में कार्य करती है से शुरू करें, डायनामिक वेबसाइटों का संदर्भ दें, सर्वर पर कोड निष्पादित करने का तरीका जोड़ें, और सोर्स कोड को सुरक्षित रखते हुए HTML आउटपुट देने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u5_t1",
+              "text": "PHP एक तीव्र और ओपन-सोर्स सर्वर-साइड स्क्रिप्टिंग भाषा के रूप में कार्य करती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u5_t2",
+              "text": "इंटरैक्टिव गतिशील वेबसाइटों और डेटाबेस अनुप्रयोगों के निर्माण के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u5_t3",
+              "text": "और क्लाइंट ब्राउज़र के बजाय रिमोट वेब सर्वर पर संपूर्ण प्रोग्राम लॉजिक को निष्पादित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u5_t4",
+              "text": "यह सोर्स कोड को सुरक्षित रखते हुए केवल तैयार HTML परिणाम को ही उपयोगकर्ताओं तक पहुँचाती है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u5_d1",
+              "category": "logical",
+              "text": "यह क्लाइंट ब्राउज़र में मूल PHP कोड को सीधे डाउनलोड करके स्थानीय रूप से निष्पादित करती है",
+              "penalty_explanation": "PHP सर्वर-साइड भाषा है, इसका कोड क्लाइंट ब्राउज़र में डाउनलोड नहीं होता बल्कि सर्वर पर ही चलता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "PHP (Hypertext Preprocessor) is an open-source server-side language that executes on the server to deliver dynamic HTML securely.",
+        "hi": "PHP (हाइपरटेक्स्ट प्रीप्रोसेसर) एक ओपन-सोर्स सर्वर-साइड भाषा है जो सर्वर पर चलती है और सुरक्षित रूप से डायनामिक HTML आउटपुट प्रदान करती है।"
+      }
+    }
+  ]
+}
