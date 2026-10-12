@@ -14,565 +14,565 @@
     {
       "instruction": {
         "title": {
-          "en": "What is a Computer Network and Networking?",
-          "hi": "कंप्यूटर नेटवर्क और नेटवर्किंग क्या है?"
+          "en": "Computer Networks and Resource Sharing",
+          "hi": "कंप्यूटर नेटवर्क और संसाधन साझाकरण"
         },
         "theory": {
-          "en": "A Computer network is a link (connection) between two or more computing devices like desktop computers, laptops, smart phones, printers, and storage devices. The process of interlinking two or more computing devices or networks is called networking, done using wired medium, wireless medium, or their combination.",
-          "hi": "एक कंप्यूटर नेटवर्क दो या दो से अधिक कंप्यूटिंग उपकरणों जैसे डेस्कटॉप कंप्यूटर, लैपटॉप, स्मार्ट फोन, प्रिंटर, स्टोरेज डिवाइस आदि के बीच एक कड़ी (कनेक्शन) है। दो या दो से अधिक कंप्यूटिंग डिवाइस या नेटवर्क को आपस में जोड़ने की प्रक्रिया को नेटवर्किंग कहा जाता है, जो वायर्ड माध्यम या वायरलेस माध्यम या उनके संयोजन का उपयोग करके की जाती है।"
+          "en": "A computer network is an interconnected group of computing devices and communication hardware linked across transmission media. By connecting independent computer systems together, a network enables reliable electronic data exchange, real-time communication, and collaborative hardware resource sharing such as printers and storage units.",
+          "hi": "कंप्यूटर नेटवर्क ट्रांसमिशन माध्यमों से जुड़े कंप्यूटिंग उपकरणों और संचार हार्डवेयर का एक परस्पर समूह है। स्वतंत्र कंप्यूटर सिस्टम को आपस में जोड़कर, एक नेटवर्क विश्वसनीय इलेक्ट्रॉनिक डेटा विनिमय, रीयल-टाइम संचार, और प्रिंटर व स्टोरेज इकाइयों जैसे सहयोगी हार्डवेयर संसाधनों को साझा करने में सक्षम बनाता है।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Computer Networking Link</text><rect x=\"45\" y=\"75\" width=\"130\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"110\" y=\"102\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Computing Devices</text><rect x=\"235\" y=\"75\" width=\"130\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"102\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Interlinking</text><rect x=\"425\" y=\"75\" width=\"130\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"490\" y=\"102\" fill=\"#4ade80\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Resource Sharing</text><line x1=\"110\" y1=\"130\" x2=\"110\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"490\" y1=\"130\" x2=\"490\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"110\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"110\" dy=\"0\">Laptops &amp;</tspan><tspan x=\"110\" dy=\"1.2em\">Smartphones</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Wired or</tspan><tspan x=\"300\" dy=\"1.2em\">Wireless Media</tspan></text><text x=\"490\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"490\" dy=\"0\">Information &amp;</tspan><tspan x=\"490\" dy=\"1.2em\">Hardware</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Network Topology: Shared Hardware &amp; Data Hub</text><rect x=\"45\" y=\"75\" width=\"140\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"115\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Workstation A</text><text x=\"115\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">IP: 192.168.1.10</text><rect x=\"230\" y=\"75\" width=\"140\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Switch / Hub</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Central Router</text><rect x=\"415\" y=\"75\" width=\"140\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"485\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Shared Printer</text><text x=\"485\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Hardware Resource</text><line x1=\"185\" y1=\"102\" x2=\"230\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><line x1=\"370\" y1=\"102\" x2=\"415\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\" stroke-dasharray=\"4\"/><line x1=\"115\" y1=\"130\" x2=\"115\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"485\" y1=\"130\" x2=\"485\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"115\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"115\" dy=\"0\">Client Node</tspan><tspan x=\"115\" dy=\"1.2em\">Originator</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Data Exchange</tspan><tspan x=\"300\" dy=\"1.2em\">Packet Switch</tspan></text><text x=\"485\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"485\" dy=\"0\">Shared Device</tspan><tspan x=\"485\" dy=\"1.2em\">Peripheral</tspan></text></svg>",
           "caption": {
-            "en": "Interlinking computing devices over wired or wireless media to form a network.",
-            "hi": "वायर्ड या वायरलेस माध्यम से कंप्यूटिंग उपकरणों को जोड़कर एक नेटवर्क बनाना।"
+            "en": "Network topology connecting autonomous workstations to central hubs and peripheral hardware resources.",
+            "hi": "केंद्रीय हब और साझा हार्डवेयर संसाधनों से जुड़े स्वतंत्र कंप्यूटर वर्कस्टेशन का नेटवर्क लेआउट।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the harmonious sentence defining computer networking in correct sequence.",
-          "hint": "Start with multiple computing devices, choose the transmission medium, mention sharing data, and conclude with pooling hardware resources.",
+          "prompt": "Construct the complete, harmonious sentence defining a computer network and its operational purpose.",
+          "hint": "Start with a computer network as an interconnected system, introduce its communication media, describe resource sharing, and conclude with facilitating collaboration.",
           "target_sequence": [
             {
               "id": "en_u1_t1",
-              "text": "A Computer network links multiple computing devices together",
-              "role_hint": "Lead with the primary subject linking computing devices"
+              "text": "A computer network links autonomous computing devices",
+              "role_hint": "Tile 1: Main subject anchor"
             },
             {
               "id": "en_u1_t2",
-              "text": "by using wired or wireless transmission media",
-              "role_hint": "Specify the transmission channel connecting the nodes"
+              "text": "across wired or wireless transmission media",
+              "role_hint": "Tile 2: Operational context"
             },
             {
               "id": "en_u1_t3",
-              "text": "so that users can seamlessly share data and information",
-              "role_hint": "Detail the primary information sharing purpose"
+              "text": "and by sharing peripheral hardware and digital data files",
+              "role_hint": "Tile 3: Method or mechanism"
             },
             {
               "id": "en_u1_t4",
-              "text": "while pooling hardware resources like printers and storage devices",
-              "role_hint": "Conclude smoothly on the shared physical hardware"
+              "text": "it actively facilitates seamless electronic collaboration",
+              "role_hint": "Tile 4: Resolving action"
             }
           ],
           "distractors": [
             {
               "id": "en_u1_d1",
               "category": "logical",
-              "text": "by strictly isolating all computing devices from external communication",
-              "penalty_explanation": "Networking requires establishing links between devices to share data, not isolating them."
+              "text": "and by strictly isolating all digital data files from interconnected external machines",
+              "penalty_explanation": "Networks are engineered specifically to share files and communicate, not to isolate data completely."
             }
           ]
         },
         "hi": {
-          "prompt": "कंप्यूटर नेटवर्किंग की सटीक परिभाषा प्रस्तुत करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "उपकरणों के जुड़ाव से शुरू करें, माध्यम जोड़ें, डेटा साझा करना बताएं, और हार्डवेयर साझा करने पर समाप्त करें।",
+          "prompt": "कंप्यूटर नेटवर्क और इसके मुख्य उद्देश्य को परिभाषित करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "कंप्यूटर नेटवर्क स्वतंत्र उपकरणों को जोड़ता है से शुरू करें, ट्रांसमिशन माध्यम बताएं, हार्डवेयर और डेटा साझा करने का तरीका जोड़ें, और सहयोग को सक्षम बनाने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u1_t1",
-              "text": "कंप्यूटर नेटवर्क कई कंप्यूटिंग उपकरणों को आपस में जोड़ता है",
-              "role_hint": "कंप्यूटर और लैपटॉप जैसे उपकरणों को जोड़ने वाले मुख्य उपवाक्य से शुरुआत करें"
+              "text": "एक कंप्यूटर नेटवर्क स्वतंत्र कंप्यूटिंग उपकरणों को आपस में जोड़ता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
             },
             {
               "id": "hi_u1_t2",
-              "text": "वायर्ड या वायरलेस संचार माध्यमों का उपयोग करके",
-              "role_hint": "उपकरणों को जोड़ने वाले माध्यम को स्पष्ट करें"
+              "text": "वायर्ड अथवा वायरलेस ट्रांसमिशन माध्यमों के द्वारा",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
             },
             {
               "id": "hi_u1_t3",
-              "text": "ताकि उपयोगकर्ता आसानी से डेटा और जानकारी साझा कर सकें",
-              "role_hint": "डेटा और सूचना साझा करने के मुख्य उद्देश्य को जोड़ें"
+              "text": "और सहयोगी हार्डवेयर उपकरणों तथा डिजिटल डेटा फ़ाइलों को साझा करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
             },
             {
               "id": "hi_u1_t4",
-              "text": "और साथ ही प्रिंटर व स्टोरेज जैसे हार्डवेयर संसाधनों का भी उपयोग कर सकें",
-              "role_hint": "हार्डवेयर साझा करने के साथ वाक्य को पूरा करें"
+              "text": "यह इलेक्ट्रॉनिक संचार और निर्बाध सहयोग को प्रभावी रूप से सक्षम बनाता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
             }
           ],
           "distractors": [
             {
               "id": "hi_u1_d1",
               "category": "logical",
-              "text": "सभी उपकरणों को बाहरी संचार से पूरी तरह अलग-थलग रखकर",
-              "penalty_explanation": "नेटवर्किंग उपकरणों को जोड़ने और संसाधन साझा करने के लिए होती है, अलग रखने के लिए नहीं।"
+              "text": "और बाहरी मशीनों से सभी डेटा फ़ाइलों को पूरी तरह से अलग और अवरुद्ध करके",
+              "penalty_explanation": "नेटवर्क का प्राथमिक उद्देश्य डेटा और हार्डवेयर को साझा करना है, उन्हें पूरी तरह अलग-थलग रखना नहीं।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "A computer network links computing devices via wired or wireless media to enable sharing of information and computing resources.",
-        "hi": "एक कंप्यूटर नेटवर्क जानकारी और कंप्यूटिंग संसाधनों को साझा करने के लिए वायर्ड या वायरलेस माध्यम से उपकरणों को आपस में जोड़ता है।"
+        "en": "A computer network links autonomous nodes across transmission media to share data and peripheral hardware resources.",
+        "hi": "कंप्यूटर नेटवर्क ट्रांसमिशन माध्यमों के जरिए स्वतंत्र नोड्स को जोड़कर डेटा और हार्डवेयर संसाधनों को साझा करने की सुविधा देता है।"
       }
     },
     {
       "instruction": {
         "title": {
-          "en": "Features and Advantages of Networking",
-          "hi": "नेटवर्किंग की विशेषताएं और लाभ"
+          "en": "Advantages and Limitations of Networking",
+          "hi": "नेटवर्किंग के लाभ और सीमाएँ"
         },
         "theory": {
-          "en": "Networking is done for sharing of information and sharing of computing resources. Features (advantages) include: Sharing of data and information stored in devices, Sharing of Hardware Resources (processors, memory, storage, printers, scanners), Sharing Software resources (a single copy used by multiple devices), Communication (email, chatting, video conferencing), and Low cost by sharing fewer resources among multiple users.",
-          "hi": "लिंक किए गए उपकरणों के बीच जानकारी और कंप्यूटिंग संसाधनों को साझा करने के लिए नेटवर्किंग की जाती है। नेटवर्किंग की विशेषताएं (लाभ): डेटा और जानकारी साझा करना, हार्डवेयर संसाधनों की साझेदारी (प्रोसेसर, मेमोरी, स्टोरेज, प्रिंटर, स्कैनर), सॉफ़्टवेयर संसाधन साझा करना (सॉफ़्टवेयर की एक प्रति का कई उपकरणों द्वारा उपयोग), संचार (ईमेल, चैटिंग, वीडियो कॉन्फ्रेंसिंग), और कई उपयोगकर्ताओं के बीच कम संसाधन साझा करके कम लागत।"
+          "en": "Computer networking provides substantial operational advantages: shared peripheral hardware reduces capital expenses, centralized file management accelerates collaboration, and instant electronic communication improves responsiveness. Conversely, networking introduces vulnerabilities: malicious threats can propagate across connected hosts, and centralized failures can compromise dependent systems.",
+          "hi": "कंप्यूटर नेटवर्किंग महत्वपूर्ण परिचालन लाभ प्रदान करती है: साझा हार्डवेयर परिधीय उपकरण लागत को कम करते हैं, केंद्रीकृत फ़ाइल प्रबंधन सहयोग को तेज़ करता है, और त्वरित इलेक्ट्रॉनिक संचार कार्यकुशलता बढ़ाता है। इसके विपरीत, नेटवर्किंग में सुरक्षा जोखिम भी होते हैं: दुर्भावनापूर्ण खतरे जुड़े हुए सिस्टमों में फैल सकते हैं और केंद्रीय विफलता निर्भर मशीनों को प्रभावित कर सकती है।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Networking Advantages Overview</text><rect x=\"45\" y=\"75\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"100\" y=\"102\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Hardware</text><rect x=\"180\" y=\"75\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"235\" y=\"102\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Software</text><rect x=\"315\" y=\"75\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"370\" y=\"102\" fill=\"#4ade80\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Communication</text><rect x=\"450\" y=\"75\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"505\" y=\"102\" fill=\"#f87171\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Low Cost</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"235\" y1=\"130\" x2=\"235\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"370\" y1=\"130\" x2=\"370\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"505\" y1=\"130\" x2=\"505\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Printers &amp;</tspan><tspan x=\"100\" dy=\"1.2em\">Scanners</tspan></text><text x=\"235\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"235\" dy=\"0\">Single</tspan><tspan x=\"235\" dy=\"1.2em\">Copy</tspan></text><text x=\"370\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"370\" dy=\"0\">Email &amp;</tspan><tspan x=\"370\" dy=\"1.2em\">Chat</tspan></text><text x=\"505\" y=\"202\" fill=\"#f87171\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"505\" dy=\"0\">Fewer</tspan><tspan x=\"505\" dy=\"1.2em\">Devices</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Networking Trade-Off: Efficiency vs. Exposure</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Resource Sharing</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">High Cost-Savings</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Security Exposure</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Malware / Breach Risk</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Shared Hardware</tspan><tspan x=\"100\" dy=\"1.2em\">Printers / Drives</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Instant Messaging</tspan><tspan x=\"225\" dy=\"1.2em\">Data Exchange</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Virus Spreading</tspan><tspan x=\"375\" dy=\"1.2em\">Network Traversal</tspan></text><text x=\"500\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Server Bottlenecks</tspan><tspan x=\"500\" dy=\"1.2em\">Central Failure</tspan></text></svg>",
           "caption": {
-            "en": "Key advantages of networking including resource sharing, communication, and cost reduction.",
-            "hi": "नेटवर्किंग के मुख्य लाभ: संसाधन साझा करना, संचार और लागत में कमी।"
+            "en": "Operational balance comparing resource cost-efficiency against systemic security risks.",
+            "hi": "हार्डवेयर संसाधन दक्षता और प्रणालीगत सुरक्षा जोखिमों के बीच संतुलन।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the fluent sentence summarizing the primary advantages of networking.",
-          "hint": "Start with sharing hardware, add shared software, include communication, and conclude with cost savings.",
+          "prompt": "Construct the balanced sentence examining the efficiency benefits and security vulnerabilities of computer networks.",
+          "hint": "Start with computer networks lowering operational costs, describe sharing hardware, introduce interconnected vulnerability, and conclude with exposing nodes to security risks.",
           "target_sequence": [
             {
               "id": "en_u2_t1",
-              "text": "Sharing hardware like printers and scanners across a network",
-              "role_hint": "Lead with the physical resource pooling advantage"
+              "text": "Computer networks significantly lower operational infrastructure costs",
+              "role_hint": "Tile 1: Main subject anchor"
             },
             {
               "id": "en_u2_t2",
-              "text": "along with running a single software copy on multiple devices",
-              "role_hint": "Add the software efficiency clause"
+              "text": "in corporate and educational computing environments",
+              "role_hint": "Tile 2: Operational context"
             },
             {
               "id": "en_u2_t3",
-              "text": "provides rich communication facilities like email and video conferencing",
-              "role_hint": "Introduce interpersonal messaging capabilities"
+              "text": "and by consolidating expensive hardware devices across shared communication lines",
+              "role_hint": "Tile 3: Method or mechanism"
             },
             {
               "id": "en_u2_t4",
-              "text": "which significantly reduces overall equipment and deployment costs",
-              "role_hint": "Complete the thought on the major financial benefit"
+              "text": "they expose connected workstations to systemic malware transmission and data breaches",
+              "role_hint": "Tile 4: Resolving action"
             }
           ],
           "distractors": [
             {
               "id": "en_u2_d1",
               "category": "logical",
-              "text": "which dramatically increases costs by requiring individual printers for every user",
-              "penalty_explanation": "Networking reduces cost by sharing resources rather than purchasing individual devices for every user."
+              "text": "they ensure complete physical immunity against all malicious virus transmission across systems",
+              "penalty_explanation": "Networks introduce vulnerability to malware propagation rather than providing physical immunity."
             }
           ]
         },
         "hi": {
-          "prompt": "नेटवर्किंग के प्रमुख लाभों का सार प्रस्तुत करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "हार्डवेयर साझा करने से शुरू करें, सॉफ्टवेयर साझा करना जोड़ें, संचार सुविधाओं को शामिल करें, और लागत में कमी पर समाप्त करें।",
+          "prompt": "कंप्यूटर नेटवर्क के दक्षता लाभों और सुरक्षा सीमाओं का संतुलन व्यक्त करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "कंप्यूटर नेटवर्क लागत को कम करते हैं से शुरू करें, कार्यालयी माहौल बताएं, हार्डवेयर साझा करने का तरीका जोड़ें, और सुरक्षा जोखिमों के संपर्क में आने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u2_t1",
-              "text": "नेटवर्क पर प्रिंटर और स्कैनर जैसे हार्डवेयर साझा करना",
-              "role_hint": "हार्डवेयर संसाधनों के साझाकरण वाले मुख्य उपवाक्य से शुरुआत करें"
+              "text": "कंप्यूटर नेटवर्क परिचालन और बुनियादी ढांचे की लागत को काफी कम करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
             },
             {
               "id": "hi_u2_t2",
-              "text": "तथा कई उपकरणों पर सॉफ्टवेयर की एक ही प्रति का उपयोग करना",
-              "role_hint": "सॉफ्टवेयर की दक्षता से संबंधित उपवाक्य जोड़ें"
+              "text": "व्यावसायिक और शैक्षणिक कंप्यूटिंग परिवेशों के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
             },
             {
               "id": "hi_u2_t3",
-              "text": "ईमेल और वीडियो कॉन्फ्रेंसिंग जैसी बेहतर संचार सुविधाएं देता है",
-              "role_hint": "संचार और संवाद संबंधी सुविधाओं को शामिल करें"
+              "text": "और साझा संचार लाइनों पर महंगे हार्डवेयर उपकरणों को एकीकृत करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
             },
             {
               "id": "hi_u2_t4",
-              "text": "जिससे उपकरणों की कुल खरीद और स्थापना लागत काफी कम हो जाती है",
-              "role_hint": "लागत बचत के अंतिम लाभ के साथ वाक्य पूरा करें"
+              "text": "ये जुड़े हुए वर्कस्टेशनों को मैलवेयर ट्रांसमिशन और डेटा सुरक्षा जोखिमों के प्रति संवेदनशील बनाते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
             }
           ],
           "distractors": [
             {
               "id": "hi_u2_d1",
               "category": "logical",
-              "text": "जिससे प्रत्येक उपयोगकर्ता के लिए अलग प्रिंटर खरीदकर खर्च काफी बढ़ जाता है",
-              "penalty_explanation": "नेटवर्किंग उपकरणों को साझा करके लागत कम करती है, प्रत्येक व्यक्ति के लिए अलग हार्डवेयर खरीदकर खर्च नहीं बढ़ाती।"
+              "text": "ये सभी परस्पर जुड़े सिस्टमों को वायरस और डेटा उल्लंघनों से पूर्ण प्रतिरक्षा प्रदान करते हैं",
+              "penalty_explanation": "नेटवर्किंग वास्तव में मैलवेयर फैलने का जोखिम बढ़ाती है, यह पूर्ण प्रतिरक्षा नहीं देती।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Networking allows multiple users to share data, hardware, and software, providing communication facilities while lowering overall deployment costs.",
-        "hi": "नेटवर्किंग कई उपयोगकर्ताओं को डेटा, हार्डवेयर और सॉफ़्टवेयर साझा करने की अनुमति देती है, जिससे संचार सुविधाएं मिलती हैं और लागत कम होती है।"
+        "en": "Networks maximize hardware efficiency and team communication but require security safeguards against malware propagation.",
+        "hi": "नेटवर्क हार्डवेयर दक्षता और संचार को बढ़ाते हैं, लेकिन मैलवेयर प्रसार के विरुद्ध सुरक्षा उपायों की मांग करते हैं।"
       }
     },
     {
       "instruction": {
         "title": {
-          "en": "Disadvantages of Networking: Security and Reliability",
-          "hi": "नेटवर्किंग के नुकसान: डेटा सुरक्षा और विश्वसनीयता"
+          "en": "Client-Server Architecture and Distributed Processing",
+          "hi": "क्लाइंट-सर्वर आर्किटेक्चर और वितरित प्रसंस्करण"
         },
         "theory": {
-          "en": "Disadvantages of Networking include: Data Security (sharing data over a network can be risky because sometimes it can be misused by unauthorised users) and Reliability (computer networks can sometimes fail or slow down due to connectivity issues).",
-          "hi": "नेटवर्किंग के नुकसान में शामिल हैं: डेटा सुरक्षा (किसी नेटवर्क पर डेटा साझा करना जोखिम भरा हो सकता है क्योंकि कभी-कभी अनधिकृत उपयोगकर्ताओं द्वारा इसका दुरुपयोग किया जा सकता है) और विश्वसनीयता (कनेक्टिविटी समस्याओं के कारण कंप्यूटर नेटवर्क कभी-कभी विफल या धीमा हो सकता है)।"
+          "en": "The client-server architecture is a distributed computing framework that divides workloads between service requesters (clients) and service providers (servers). The client machine issues queries or resource requests, while the dedicated server processes logic, accesses backend databases, and delivers formatted response payloads back across the network.",
+          "hi": "क्लाइंट-सर्वर आर्किटेक्चर एक वितरित कंप्यूटिंग ढाँचा है जो कार्यभार को सेवा अनुरोधकर्ताओं (क्लाइंट्स) और सेवा प्रदाताओं (सर्वर) के बीच विभाजित करता है। क्लाइंट मशीन अनुरोध भेजती है, जबकि समर्पित सर्वर तार्किक क्रियाएं निष्पादित करता है, बैकएंड डेटाबेस को प्रबंधित करता है और नेटवर्क पर प्रतिक्रिया वापस भेजता है।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#f87171\"/><text x=\"300\" y=\"38\" fill=\"#f87171\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Disadvantages of Networking</text><rect x=\"70\" y=\"75\" width=\"200\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"170\" y=\"102\" fill=\"#f87171\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Security</text><rect x=\"330\" y=\"75\" width=\"200\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"430\" y=\"102\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Reliability Issues</text><line x1=\"170\" y1=\"130\" x2=\"170\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"430\" y1=\"130\" x2=\"430\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"170\" y=\"172\" fill=\"#f87171\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"170\" dy=\"0\">Risk of Misuse by</tspan><tspan x=\"170\" dy=\"1.2em\">Unauthorised Users</tspan></text><text x=\"430\" y=\"202\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"430\" dy=\"0\">Fail or Slow Down</tspan><tspan x=\"430\" dy=\"1.2em\">Due to Connectivity</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client-Server Request-Response Lifecycle</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Client Node</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Browser / UI</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Server Host</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Database &amp; Logic</text><line x1=\"195\" y1=\"90\" x2=\"405\" y2=\"90\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"405,90 397,86 397,94\" fill=\"#38bdf8\"/><text x=\"300\" y=\"82\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\">HTTP Request Query</text><line x1=\"405\" y1=\"115\" x2=\"195\" y2=\"115\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"195,115 203,111 203,119\" fill=\"#fbbf24\"/><text x=\"300\" y=\"128\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\">Formatted Data Response</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Issues Query</tspan><tspan x=\"120\" dy=\"1.2em\">Requester</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Network Protocol</tspan><tspan x=\"300\" dy=\"1.2em\">HTTP / HTTPS</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Executes Logic</tspan><tspan x=\"480\" dy=\"1.2em\">Provider</tspan></text></svg>",
           "caption": {
-            "en": "Primary operational risks of networking: security misuse and network downtime.",
-            "hi": "नेटवर्किंग के मुख्य जोखिम: अनधिकृत सुरक्षा दुरुपयोग और नेटवर्क डाउनटाइम।"
+            "en": "Distributed workflow showing client service requests processed and answered by central servers.",
+            "hi": "क्लाइंट सेवा अनुरोधों और केंद्रीय सर्वर प्रतिक्रियाओं को प्रदर्शित करने वाला वितरित वर्कफ़्लो।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the balanced sentence detailing the dual disadvantages of computer networking.",
-          "hint": "Begin with the risk of sharing data, identify unauthorized misuse, introduce connectivity issues, and complete with system failure.",
+          "prompt": "Construct the fluent sentence describing workload separation in a client-server architecture.",
+          "hint": "Start with the client-server model organizing distributed workloads, specify network communications, describe submitting queries, and conclude with serving processed data.",
           "target_sequence": [
             {
               "id": "en_u3_t1",
-              "text": "Sharing data over a computer network can be risky",
-              "role_hint": "Lead with the exposure of shared information"
+              "text": "The client-server architecture organizes distributed computing workloads",
+              "role_hint": "Tile 1: Main subject anchor"
             },
             {
               "id": "en_u3_t2",
-              "text": "because confidential files may be misused by unauthorised users",
-              "role_hint": "Add the data security vulnerability clause"
+              "text": "across local and wide-area network boundaries",
+              "role_hint": "Tile 2: Operational context"
             },
             {
               "id": "en_u3_t3",
-              "text": "while unpredictable connectivity issues can also occur",
-              "role_hint": "Transition to physical connection issues"
+              "text": "and by transmitting discrete client requests to specialized server nodes",
+              "role_hint": "Tile 3: Method or mechanism"
             },
             {
               "id": "en_u3_t4",
-              "text": "causing the entire network system to slow down or fail completely",
-              "role_hint": "Conclude with the impact on reliability"
+              "text": "it delivers centralized database queries and computational responses efficiently",
+              "role_hint": "Tile 4: Resolving action"
             }
           ],
           "distractors": [
             {
               "id": "en_u3_d1",
               "category": "logical",
-              "text": "because computer networks operate with absolute immunity from hardware failure",
-              "penalty_explanation": "Networks are vulnerable to connectivity problems and can fail or slow down."
+              "text": "it forces all connected client workstations to store redundant complete copies of master databases",
+              "penalty_explanation": "Client-server architecture centralizes database storage on servers rather than duplicating it on clients."
             }
           ]
         },
         "hi": {
-          "prompt": "कंप्यूटर नेटवर्किंग की दोहरी कमियों को व्यक्त करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "डेटा साझा करने के जोखिम से शुरू करें, अनधिकृत दुरुपयोग बताएं, कनेक्टिविटी समस्याओं को जोड़ें, और सिस्टम विफलता पर समाप्त करें।",
+          "prompt": "क्लाइंट-सर्वर आर्किटेक्चर में कार्यभार वितरण को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "क्लाइंट-सर्वर आर्किटेक्चर कार्यभार व्यवस्थित करता है से शुरू करें, नेटवर्क का संदर्भ दें, सर्वर को अनुरोध भेजने का तरीका जोड़ें, और डेटाबेस प्रतिक्रिया देने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u3_t1",
-              "text": "कंप्यूटर नेटवर्क पर डेटा साझा करना जोखिम भरा हो सकता है",
-              "role_hint": "डेटा साझा करने से जुड़े जोखिम वाले मुख्य उपवाक्य से शुरुआत करें"
+              "text": "क्लाइंट-सर्वर आर्किटेक्चर वितरित कंप्यूटिंग कार्यभार को व्यवस्थित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
             },
             {
               "id": "hi_u3_t2",
-              "text": "क्योंकि गोपनीय फ़ाइलों का अनधिकृत उपयोगकर्ताओं द्वारा दुरुपयोग हो सकता है",
-              "role_hint": "डेटा सुरक्षा और अनाधिकृत पहुंच से जुड़ा उपवाक्य जोड़ें"
+              "text": "स्थानीय और व्यापक नेटवर्क सीमाओं के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
             },
             {
               "id": "hi_u3_t3",
-              "text": "साथ ही कनेक्टिविटी से जुड़ी अप्रत्याशित समस्याएं भी आ सकती हैं",
-              "role_hint": "कनेक्टिविटी बाधाओं से संबंधित उपवाक्य जोड़ें"
+              "text": "और समर्पित सर्वर नोड्स को विशिष्ट क्लाइंट अनुरोध भेजकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
             },
             {
               "id": "hi_u3_t4",
-              "text": "जिससे पूरा नेटवर्क धीमा हो सकता है या पूरी तरह विफल हो सकता है",
-              "role_hint": "विश्वसनीयता और सिस्टम विफलता के साथ वाक्य पूरा करें"
+              "text": "यह केंद्रीकृत डेटाबेस रिकॉर्ड और संगणना संबंधी प्रतिक्रियाएँ कुशलतापूर्वक प्रदान करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
             }
           ],
           "distractors": [
             {
               "id": "hi_u3_d1",
               "category": "logical",
-              "text": "क्योंकि कंप्यूटर नेटवर्क तकनीकी खराबी और रुकावटों से पूरी तरह सुरक्षित रहते हैं",
-              "penalty_explanation": "नेटवर्क कनेक्टिविटी समस्याओं के अधीन होते हैं और कभी भी धीमे या विफल हो सकते हैं।"
+              "text": "यह सभी क्लाइंट कंप्यूटरों पर मुख्य डेटाबेस की प्रतियां जबरन संग्रहीत करवाता है",
+              "penalty_explanation": "क्लाइंट-सर्वर मॉडल डेटाबेस को केंद्रीय सर्वर पर सुरक्षित रखता है, प्रत्येक क्लाइंट पर नहीं।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Data misuse by unauthorised users and reliability slowdowns from connectivity issues are primary network disadvantages.",
-        "hi": "अनधिकृत उपयोगकर्ताओं द्वारा डेटा का दुरुपयोग और कनेक्टिविटी समस्याओं से सिस्टम का धीमा होना नेटवर्किंग के मुख्य नुकसान हैं।"
+        "en": "Client-server architecture divides tasks between requesting client interfaces and centralized server processing hubs.",
+        "hi": "क्लाइंट-सर्वर मॉडल अनुरोध करने वाले क्लाइंट इंटरफ़ेस और केंद्रीय सर्वर के बीच कार्यों को विभाजित करता है।"
       }
     },
     {
       "instruction": {
         "title": {
-          "en": "Client-Server Architecture: Client vs. Server",
-          "hi": "क्लाइंट-सर्वर आर्किटेक्चर: क्लाइंट बनाम सर्वर"
+          "en": "Client-Side vs Server-Side Scripting Paradigms",
+          "hi": "क्लाइंट-साइड बनाम सर्वर-साइड स्क्रिप्टिंग प्रतिमान"
         },
         "theory": {
-          "en": "The client-server architecture refers to a networking system in which a server manages most of the resources and services that the client requests. A Client is a less powerful computer that requires services from a server; it sends a request to the server for a particular service. A Server is a powerful computer that accepts and processes the request and sends the information back to the client through the network.",
-          "hi": "क्लाइंट-सर्वर आर्किटेक्चर एक नेटवर्किंग सिस्टम को संदर्भित करता है जिसमें एक सर्वर क्लाइंट द्वारा अनुरोध किए जाने वाले अधिकांश संसाधनों और सेवाओं का प्रबंधन करता है। क्लाइंट एक कम शक्तिशाली कंप्यूटर है जिसे सर्वर से सेवाओं की आवश्यकता होती है; यह सर्वर को किसी विशेष सेवा के लिए अनुरोध भेजता है। सर्वर एक शक्तिशाली कंप्यूटर है जो अनुरोध को स्वीकार और संसाधित करता है और नेटवर्क के माध्यम से क्लाइंट को जानकारी वापस भेजता है।"
+          "en": "Web applications rely on two distinct execution tiers. Client-side scripts (such as JavaScript) run directly inside the user's web browser to provide responsive interfaces and form validations without constant server roundtrips. In contrast, server-side scripts (such as PHP, Python, or Node.js) execute strictly on remote web servers to process secure database records and generate customized HTML content.",
+          "hi": "वेब अनुप्रयोग दो अलग-अलग निष्पादन स्तरों पर निर्भर करते हैं। क्लाइंट-साइड स्क्रिप्ट्स (जैसे जावास्क्रिप्ट) सीधे उपयोगकर्ता के वेब ब्राउज़र में चलती हैं ताकि सर्वर पर बार-बार जाए बिना इंटरैक्टिव इंटरफ़ेस और फ़ॉर्म सत्यापन प्रदान किया जा सके। इसके विपरीत, सर्वर-साइड स्क्रिप्ट्स (जैसे PHP या Python) सुरक्षित डेटाबेस रिकॉर्ड और कस्टम HTML तैयार करने के लिए सीधे रिमोट वेब सर्वर पर निष्पादित होती हैं।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"30\" y=\"20\" width=\"540\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client-Server Architecture</text><rect x=\"35\" y=\"70\" width=\"210\" height=\"60\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"140\" y=\"92\" fill=\"#fbbf24\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client</text><text x=\"140\" y=\"112\" fill=\"#94a3b8\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Less Powerful Computer</text><rect x=\"355\" y=\"70\" width=\"210\" height=\"60\" rx=\"8\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"460\" y=\"92\" fill=\"#4ade80\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Server</text><text x=\"460\" y=\"112\" fill=\"#94a3b8\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Powerful Computer</text><line x1=\"245\" y1=\"85\" x2=\"355\" y2=\"85\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"355,85 347,81 347,89\" fill=\"#38bdf8\"/><text x=\"300\" y=\"77\" fill=\"#38bdf8\" font-size=\"10\" text-anchor=\"middle\">Sends Request</text><line x1=\"355\" y1=\"115\" x2=\"245\" y2=\"115\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"245,115 253,111 253,119\" fill=\"#fbbf24\"/><text x=\"300\" y=\"128\" fill=\"#fbbf24\" font-size=\"10\" text-anchor=\"middle\">Sends Information</text><line x1=\"85\" y1=\"135\" x2=\"85\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"185\" y1=\"135\" x2=\"185\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"410\" y1=\"135\" x2=\"410\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"510\" y1=\"135\" x2=\"510\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"85\" y=\"167\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"85\" dy=\"0\">Requires</tspan><tspan x=\"85\" dy=\"1.2em\">Services</tspan></text><text x=\"185\" y=\"202\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"185\" dy=\"0\">User</tspan><tspan x=\"185\" dy=\"1.2em\">Workstation</tspan></text><text x=\"410\" y=\"167\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"410\" dy=\"0\">Processes</tspan><tspan x=\"410\" dy=\"1.2em\">Request</tspan></text><text x=\"510\" y=\"202\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"510\" dy=\"0\">Provides</tspan><tspan x=\"510\" dy=\"1.2em\">Services</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Scripting Tiers: Client Browser vs. Server Engine</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client-Side Execution</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">JavaScript / DOM UI</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Server-Side Execution</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">PHP / SQL / Node.js</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Web Browser</tspan><tspan x=\"100\" dy=\"1.2em\">Runtime Engine</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Form Validation</tspan><tspan x=\"225\" dy=\"1.2em\">Zero Latency</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Web Server</tspan><tspan x=\"375\" dy=\"1.2em\">Runtime Engine</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Database Logic</tspan><tspan x=\"500\" dy=\"1.2em\">Secure Queries</tspan></text></svg>",
           "caption": {
-            "en": "Client-server architecture displaying request and response flow between computers.",
-            "hi": "क्लाइंट और सर्वर कंप्यूटर के बीच अनुरोध और प्रतिक्रिया प्रवाह।"
+            "en": "Execution boundary separating client-side browser interfaces from server-side database processing.",
+            "hi": "क्लाइंट ब्राउज़र इंटरफ़ेस और सर्वर-साइड डेटाबेस प्रोसेसिंग के निष्पादन क्षेत्रों का विभाजन।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the complete, harmonious sentence describing how the client-server architecture operates.",
-          "hint": "Start with the client sending a request, describe transmission across the network, detail server processing, and end with the returned information.",
+          "prompt": "Construct the compound sentence contrasting client-side and server-side script execution locations.",
+          "hint": "Start with client-side scripting executing in the web browser, specify real-time validation, contrast with server-side scripting on remote hosts, and conclude with safeguarding database operations.",
           "target_sequence": [
             {
               "id": "en_u4_t1",
-              "text": "A client computer sends a service request",
-              "role_hint": "Lead with the less powerful client initiating a service request"
+              "text": "Client-side scripting executes code directly inside the user's web browser",
+              "role_hint": "Tile 1: Main subject anchor"
             },
             {
               "id": "en_u4_t2",
-              "text": "which travels across the network to the server",
-              "role_hint": "Add the transmission pathway clause"
+              "text": "during active interface interaction and form input",
+              "role_hint": "Tile 2: Operational context"
             },
             {
               "id": "en_u4_t3",
-              "text": "where the powerful server accepts and processes that request",
-              "role_hint": "Explain the server-side handling and processing"
+              "text": "whereas by running proprietary business logic on remote server hosts",
+              "role_hint": "Tile 3: Method or mechanism"
             },
             {
               "id": "en_u4_t4",
-              "text": "and transmits the required information back to the client",
-              "role_hint": "Complete the cycle with the returned result"
+              "text": "server-side scripting securely manages confidential database transactions",
+              "role_hint": "Tile 4: Resolving action"
             }
           ],
           "distractors": [
             {
               "id": "en_u4_d1",
               "category": "logical",
-              "text": "demanding that the central server request operational services from the client",
-              "penalty_explanation": "Clients request services from the server; the server does not request services from the client."
+              "text": "server-side scripting transfers unencrypted master database passwords into the client browser",
+              "penalty_explanation": "Server-side scripts shield database credentials; they never leak unencrypted access keys to client browsers."
             }
           ]
         },
         "hi": {
-          "prompt": "क्लाइंट-सर्वर आर्किटेक्चर की कार्यप्रणाली को दर्शाने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "क्लाइंट द्वारा अनुरोध भेजने से शुरू करें, नेटवर्क पर जाने वाला भाग जोड़ें, सर्वर प्रोसेसिंग बताएं, और जानकारी वापस लौटने पर समाप्त करें।",
+          "prompt": "क्लाइंट-साइड और सर्वर-साइड स्क्रिप्टिंग के निष्पादन अंतर को दर्शाने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "क्लाइंट-साइड स्क्रिप्टिंग ब्राउज़र में चलती है से शुरू करें, फ़ॉर्म इनपुट का संदर्भ दें, सर्वर पर लॉजिक चलाने का तरीका जोड़ें, और डेटाबेस लेनदेन प्रबंधित करने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u4_t1",
-              "text": "क्लाइंट कंप्यूटर किसी सेवा के लिए अनुरोध भेजता है",
-              "role_hint": "क्लाइंट द्वारा सेवा अनुरोध शुरू करने वाले मुख्य उपवाक्य से शुरुआत करें"
+              "text": "क्लाइंट-साइड स्क्रिप्टिंग उपयोगकर्ता के वेब ब्राउज़र के भीतर सीधे कोड निष्पादित करती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
             },
             {
               "id": "hi_u4_t2",
-              "text": "जो नेटवर्क के माध्यम से मुख्य सर्वर तक पहुँचता है",
-              "role_hint": "नेटवर्क मार्ग से जुड़ा उपवाक्य जोड़ें"
+              "text": "सक्रिय इंटरफ़ेस इंटरैक्शन और फ़ॉर्म इनपुट के दौरान",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
             },
             {
               "id": "hi_u4_t3",
-              "text": "जहाँ शक्तिशाली सर्वर उस अनुरोध को स्वीकार करके संसाधित करता है",
-              "role_hint": "सर्वर की प्रोसेसिंग क्रिया से जुड़ा उपवाक्य जोड़ें"
+              "text": "जबकि रिमोट वेब सर्वर पर मुख्य व्यावसायिक लॉजिक को चलाकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
             },
             {
               "id": "hi_u4_t4",
-              "text": "और अंत में परिणामी जानकारी क्लाइंट को वापस लौटा दी जाती है",
-              "role_hint": "क्लाइंट को जानकारी मिलने के साथ वाक्य को स्वाभाविक रूप से पूरा करें"
+              "text": "सर्वर-साइड स्क्रिप्टिंग गोपनीय डेटाबेस लेनदेन को सुरक्षित रूप से प्रबंधित करती है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
             }
           ],
           "distractors": [
             {
               "id": "hi_u4_d1",
               "category": "logical",
-              "text": "जिससे मुख्य सर्वर को बुनियादी सेवाओं के लिए क्लाइंट से अनुरोध करना पड़ता है",
-              "penalty_explanation": "क्लाइंट सर्वर से सेवाओं का अनुरोध करता है, सर्वर क्लाइंट से सेवाओं की मांग नहीं करता।"
+              "text": "सर्वर-साइड स्क्रिप्टिंग डेटाबेस के मुख्य पासवर्ड सीधे क्लाइंट ब्राउज़र में भेज देती है",
+              "penalty_explanation": "सर्वर-साइड स्क्रिप्टिंग डेटाबेस विवरण को सुरक्षित रखती है, उन्हें क्लाइंट ब्राउज़र में नहीं भेजती।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Clients are less powerful devices that request services, while servers are powerful computers that process requests and deliver information.",
-        "hi": "क्लाइंट कम शक्तिशाली उपकरण हैं जो सेवाओं का अनुरोध करते हैं, जबकि सर्वर शक्तिशाली कंप्यूटर हैं जो अनुरोधों को संसाधित करके जानकारी प्रदान करते हैं।"
+        "en": "Client-side scripts run inside browsers for UI responsiveness, while server-side scripts run on servers for database transactions.",
+        "hi": "क्लाइंट-साइड स्क्रिप्ट ब्राउज़र में चलती हैं, जबकि सर्वर-साइड स्क्रिप्ट डेटाबेस सुरक्षा के लिए सर्वर पर निष्पादित होती हैं।"
       }
     },
     {
       "instruction": {
         "title": {
-          "en": "Client-Side Scripting vs. Server-Side Scripting",
-          "hi": "क्लाइंट-साइड स्क्रिप्टिंग बनाम सर्वर-साइड स्क्रिप्टिंग"
+          "en": "Web Publishing Foundations: Hosting and Domain Registration",
+          "hi": "वेब प्रकाशन के आधार: होस्टिंग और डोमेन पंजीकरण"
         },
         "theory": {
-          "en": "Client-side scripting is executed in the client's browser, has a faster response time because it runs on the client's computer, but cannot access the database or the file-system on the server. Server-side scripting is executed on the server, has a slower response time, and can access the database as well as the file-system on the server.",
-          "hi": "क्लाइंट-साइड स्क्रिप्टिंग क्लाइंट के ब्राउज़र में निष्पादित की जाती है, इसका प्रतिक्रिया समय तेज़ होता है क्योंकि यह क्लाइंट के कंप्यूटर पर चलती है, लेकिन यह सर्वर पर डेटाबेस या फ़ाइल सिस्टम तक नहीं पहुँच सकती। सर्वर-साइड स्क्रिप्टिंग सर्वर पर निष्पादित की जाती है, इसका प्रतिक्रिया समय धीमा होता है, और यह सर्वर पर डेटाबेस और फ़ाइल सिस्टम तक पहुँच सकती है।"
+          "en": "Web publishing is the process of building, deploying, and maintaining websites on the public Internet. Making a website accessible worldwide requires securing web hosting space on remote server hardware, registering an identifiable domain name via a Domain Name Registrar, and linking that unique domain to the hosting server's public IP address through the Domain Name System (DNS).",
+          "hi": "वेब प्रकाशन इंटरनेट पर वेबसाइटों के निर्माण, परिनियोजन और प्रबंधन की प्रक्रिया है। किसी वेबसाइट को विश्व स्तर पर उपलब्ध कराने के लिए रिमोट सर्वर पर वेब होस्टिंग स्पेस प्राप्त करना, डोमेन रजिस्ट्रार से एक पहचान योग्य डोमेन नाम पंजीकृत करना और डोमेन नेम सिस्टम (DNS) के जरिए उस डोमेन को सर्वर के आईपी एड्रेस से जोड़ना आवश्यक होता है।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Scripting Comparison: Browser vs. Server</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"102\" fill=\"#fbbf24\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client-Side Scripting</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"102\" fill=\"#4ade80\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Server-Side Scripting</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Runs in</tspan><tspan x=\"100\" dy=\"1.2em\">Browser</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Faster Response /</tspan><tspan x=\"225\" dy=\"1.2em\">No Server DB</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Runs on</tspan><tspan x=\"375\" dy=\"1.2em\">Server</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Can Access</tspan><tspan x=\"500\" dy=\"1.2em\">Database &amp; Files</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Publishing Stack: Domain, DNS, and Host Storage</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Domain Name</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">example.org</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">DNS Translation</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Maps Name to IP</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Host Server</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">HTML / CSS Storage</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Unique Brand</tspan><tspan x=\"120\" dy=\"1.2em\">Registrar Identity</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Resolves IP</tspan><tspan x=\"300\" dy=\"1.2em\">Network Routing</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">24/7 Server</tspan><tspan x=\"480\" dy=\"1.2em\">Storage Space</tspan></text></svg>",
           "caption": {
-            "en": "Direct comparison between client-side and server-side script execution capabilities.",
-            "hi": "क्लाइंट-साइड और सर्वर-साइड स्क्रिप्ट निष्पादन क्षमताओं की सीधी तुलना।"
+            "en": "Key components of web publishing: domain registration, DNS translation, and web hosting.",
+            "hi": "वेब प्रकाशन के मुख्य घटक: डोमेन नाम पंजीकरण, डीएनएस अनुवाद और वेब होस्टिंग स्टोरेज।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the compound sentence contrasting client-side and server-side script execution.",
-          "hint": "Begin with client scripting in the browser, state its fast response without database access, contrast with server execution, and state backend access rights.",
+          "prompt": "Construct the complete, harmonious sentence describing how web hosting and domain registration work together.",
+          "hint": "Start with web publishing deploying websites globally, describe public web infrastructure, explain linking registered domains to host servers, and conclude with serving files over the Internet.",
           "target_sequence": [
             {
               "id": "en_u5_t1",
-              "text": "Client-side scripting runs directly in the user browser",
-              "role_hint": "Lead with client-side execution location"
+              "text": "Web publishing deploys interactive website files globally",
+              "role_hint": "Tile 1: Main subject anchor"
             },
             {
               "id": "en_u5_t2",
-              "text": "providing faster response times without accessing the server database",
-              "role_hint": "Add the performance and database restriction clause"
+              "text": "across publicly accessible internet servers",
+              "role_hint": "Tile 2: Operational context"
             },
             {
               "id": "en_u5_t3",
-              "text": "whereas server-side scripting executes on the remote server",
-              "role_hint": "Introduce server-side execution location"
+              "text": "and by linking a registered domain name to allocated server hosting storage",
+              "role_hint": "Tile 3: Method or mechanism"
             },
             {
               "id": "en_u5_t4",
-              "text": "enabling full read and write access to the central file-system and database",
-              "role_hint": "Conclude with backend file-system and database access"
+              "text": "it makes digital web pages continuously accessible to global visitors",
+              "role_hint": "Tile 4: Resolving action"
             }
           ],
           "distractors": [
             {
               "id": "en_u5_d1",
               "category": "logical",
-              "text": "allowing client-side scripts to modify the server file-system directly",
-              "penalty_explanation": "Client-side scripting cannot access the file-system or database on the server."
+              "text": "and by strictly blocking all external domain name lookups across the internet",
+              "penalty_explanation": "Web publishing requires public DNS resolution so users worldwide can find and load the site."
             }
           ]
         },
         "hi": {
-          "prompt": "क्लाइंट-साइड और सर्वर-साइड स्क्रिप्टिंग के अंतर को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "ब्राउज़र में चलने वाली क्लाइंट स्क्रिप्ट से शुरू करें, तेज़ गति व डेटाबेस प्रतिबंध बताएं, सर्वर स्क्रिप्ट जोड़ें, और फ़ाइल सिस्टम एक्सेस पर समाप्त करें।",
+          "prompt": "वेब होस्टिंग और डोमेन पंजीकरण के समन्वय को दर्शाने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "वेब प्रकाशन वेबसाइट फाइलों को तैनात करता है से शुरू करें, इंटरनेट सर्वर बताएं, डोमेन को होस्टिंग स्टोरेज से जोड़ने का तरीका बताएं, और वेब पेजों को उपलब्ध कराने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u5_t1",
-              "text": "क्लाइंट-साइड स्क्रिप्टिंग सीधे उपयोगकर्ता के ब्राउज़र में चलती है",
-              "role_hint": "क्लाइंट स्क्रिप्ट के निष्पादन स्थान वाले मुख्य उपवाक्य से शुरुआत करें"
+              "text": "वेब प्रकाशन इंटरैक्टिव वेबसाइट फ़ाइलों को वैश्विक स्तर पर तैनात करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
             },
             {
               "id": "hi_u5_t2",
-              "text": "जो सर्वर डेटाबेस तक पहुंचे बिना तेज़ प्रतिक्रिया देती है",
-              "role_hint": "क्लाइंट स्क्रिप्ट की गति और डेटाबेस सीमाओं को जोड़ें"
+              "text": "सार्वजनिक रूप से सुलभ इंटरनेट सर्वरों के माध्यम से",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
             },
             {
               "id": "hi_u5_t3",
-              "text": "जबकि सर्वर-साइड स्क्रिप्टिंग मुख्य सर्वर कंप्यूटर पर चलती है",
-              "role_hint": "सर्वर स्क्रिप्ट के निष्पादन स्थान से जुड़ा उपवाक्य जोड़ें"
+              "text": "और पंजीकृत डोमेन नाम को आवंटित वेब होस्टिंग स्टोरेज से जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
             },
             {
               "id": "hi_u5_t4",
-              "text": "और यह सर्वर पर मौजूद डेटाबेस तथा फ़ाइल-सिस्टम तक पूरी पहुँच रखती है",
-              "role_hint": "सर्वर की डेटाबेस एक्सेस क्षमता के साथ वाक्य पूरा करें"
+              "text": "यह वेब पेजों को दुनिया भर के उपयोगकर्ताओं के लिए निरंतर उपलब्ध बनाता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
             }
           ],
           "distractors": [
             {
               "id": "hi_u5_d1",
               "category": "logical",
-              "text": "जिससे ब्राउज़र स्क्रिप्ट सीधे सर्वर के फ़ाइल सिस्टम में बदलाव कर सकती है",
-              "penalty_explanation": "क्लाइंट-साइड स्क्रिप्टिंग सर्वर पर डेटाबेस या फ़ाइल सिस्टम तक नहीं पहुँच सकती।"
+              "text": "और सार्वजनिक डीएनएस अनुवाद को स्थायी रूप से अक्षम और अवरुद्ध करके",
+              "penalty_explanation": "वेबसाइट को लाइव करने के लिए डीएनएस अनुवाद आवश्यक है, उसे अक्षम नहीं किया जाता।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Client-side scripts run fast in the browser without database access, while server-side scripts run on the server with database and file-system access.",
-        "hi": "क्लाइंट-साइड स्क्रिप्ट बिना डेटाबेस पहुंच के ब्राउज़र में तेज़ी से चलती हैं, जबकि सर्वर-साइड स्क्रिप्ट डेटाबेस और फ़ाइल सिस्टम पहुंच के साथ सर्वर पर चलती हैं।"
+        "en": "Web publishing connects registered domain names with remote hosting storage through DNS to deliver websites online.",
+        "hi": "वेब प्रकाशन पंजीकृत डोमेन नामों को डीएनएस के माध्यम से रिमोट होस्टिंग सर्वर से जोड़कर वेबसाइटों को ऑनलाइन उपलब्ध कराता है।"
       }
     },
     {
       "instruction": {
         "title": {
-          "en": "What is Web Publishing and Required Resources?",
-          "hi": "वेब प्रकाशन और आवश्यक संसाधन क्या हैं?"
+          "en": "File Transfer Protocol and Deployment Workflows",
+          "hi": "फ़ाइल ट्रांसफ़र प्रोटोकॉल और परिनियोजन वर्कफ़्लो"
         },
         "theory": {
-          "en": "The process of uploading content on the internet is called web-publishing. The published content can be text, graphics, videos as well as audio. Web publishing involves creating, uploading and updating web-pages, web-sites and web-blogs. For publishing a web site, we need three resources: Web-development software, Web-server, and Internet connection.",
-          "hi": "इंटरनेट पर सामग्री अपलोड करने की प्रक्रिया को वेब-प्रकाशन कहा जाता है। प्रकाशित सामग्री टेक्स्ट, ग्राफिक्स, वीडियो के साथ-साथ ऑडियो भी हो सकती है। वेब प्रकाशन में वेब पेज, वेब-साइट और वेब-ब्लॉग बनाना, अपलोड करना और अपडेट करना शामिल है। किसी वेब साइट को प्रकाशित करने के लिए हमें तीन संसाधनों की आवश्यकता होती है: वेब-विकास सॉफ्टवेयर, वेब सर्वर और इंटरनेट कनेक्शन।"
+          "en": "Once web pages, stylesheets, and scripts are developed locally, they must be deployed to the live hosting server. File Transfer Protocol (FTP) and its secure counterpart (SFTP) establish an authenticated communication session between the developer's computer and the remote server, enabling reliable uploading and synchronization of production assets.",
+          "hi": "वेब पेज, स्टाइलशीट और स्क्रिप्ट स्थानीय रूप से तैयार होने के बाद, उन्हें लाइव वेब सर्वर पर अपलोड करना आवश्यक होता है। फ़ाइल ट्रांसफ़र प्रोटोकॉल (FTP) और इसका सुरक्षित रूप (SFTP) डेवलपर के कंप्यूटर और रिमोट सर्वर के बीच एक प्रमाणित संचार सत्र स्थापित करते हैं, जिससे उत्पादन संपत्तियों का सुरक्षित और विश्वसनीय स्थानांतरण संभव होता है।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Publishing Requirements</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"102\" fill=\"#fbbf24\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Development Software</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"102\" fill=\"#38bdf8\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web-Server</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"102\" fill=\"#4ade80\" font-size=\"12\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Internet Connection</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Creating</tspan><tspan x=\"120\" dy=\"1.2em\">Web Content</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Hosting &amp;</tspan><tspan x=\"300\" dy=\"1.2em\">Storing Pages</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Uploading</tspan><tspan x=\"480\" dy=\"1.2em\">to Internet</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">FTP Deployment Pipeline: Local Workspace to Remote Server</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Local Machine</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">index.html / script.js</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">Live Web Server</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">public_html / www</text><line x1=\"195\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#38bdf8\"/><text x=\"300\" y=\"94\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\">FTP / SFTP Upload Stream</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Local Assets</tspan><tspan x=\"120\" dy=\"1.2em\">Developer Workstation</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Authenticated Channel</tspan><tspan x=\"300\" dy=\"1.2em\">Port 21 / 22 (SFTP)</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Document Root</tspan><tspan x=\"480\" dy=\"1.2em\">Production Storage</tspan></text></svg>",
           "caption": {
-            "en": "The three essential resources needed for publishing websites online.",
-            "hi": "वेबसाइटों को ऑनलाइन प्रकाशित करने के लिए आवश्यक तीन मुख्य संसाधन।"
+            "en": "FTP deployment channel transferring local development assets into live server production directories.",
+            "hi": "स्थानीय विकास फ़ाइलों को लाइव वेब सर्वर के प्रोडक्शन डायरेक्टरी में स्थानांतरित करने वाला FTP परिनियोजन चैनल।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the comprehensive sentence detailing web publishing and its mandatory resources.",
-          "hint": "Start with uploading content online, describe creating and updating pages, state the tools and hosting server, and conclude with internet connectivity.",
+          "prompt": "Construct the fluent sentence describing how File Transfer Protocol handles website deployment.",
+          "hint": "Start with FTP managing asset deployment, describe staging environments, explain opening authenticated channels, and conclude with publishing files online.",
           "target_sequence": [
             {
               "id": "en_u6_t1",
-              "text": "Web publishing is the process of uploading content to the internet",
-              "role_hint": "Lead with the primary definition of web publishing"
+              "text": "File Transfer Protocol coordinates asset deployment",
+              "role_hint": "Tile 1: Main subject anchor"
             },
             {
               "id": "en_u6_t2",
-              "text": "involving creating and updating web-pages and web-blogs",
-              "role_hint": "Add the developmental tasks clause"
+              "text": "between local development machines and remote web hosts",
+              "role_hint": "Tile 2: Operational context"
             },
             {
               "id": "en_u6_t3",
-              "text": "which requires dedicated web-development software and a web-server",
-              "role_hint": "Specify the authoring tool and hosting infrastructure"
+              "text": "and by establishing authenticated network connections across port channels",
+              "role_hint": "Tile 3: Method or mechanism"
             },
             {
               "id": "en_u6_t4",
-              "text": "along with an active internet connection to make the site accessible online",
-              "role_hint": "Conclude with network connectivity enabling publication"
+              "text": "it safely uploads and synchronizes website files to the live public server",
+              "role_hint": "Tile 4: Resolving action"
             }
           ],
           "distractors": [
             {
               "id": "en_u6_d1",
               "category": "logical",
-              "text": "which can easily publish live websites without deploying any web-server",
-              "penalty_explanation": "A web-server is explicitly one of the three mandatory resources required for publishing a website."
+              "text": "it deletes all existing remote web server directories before local files are created",
+              "penalty_explanation": "FTP synchronizes and uploads files to hosting folders; it does not wipe server directories unexpectedly."
             }
           ]
         },
         "hi": {
-          "prompt": "वेब प्रकाशन और उसके आवश्यक संसाधनों का विवरण देने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "सामग्री अपलोड करने की परिभाषा से शुरू करें, पेज बनाने का विवरण दें, सॉफ्टवेयर और वेब सर्वर जोड़ें, और इंटरनेट कनेक्शन पर समाप्त करें।",
+          "prompt": "फ़ाइल ट्रांसफ़र प्रोटोकॉल द्वारा वेबसाइट परिनियोजन की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "फ़ाइल ट्रांसफ़र प्रोटोकॉल परिनियोजन का समन्वय करता है से शुरू करें, स्थानीय व रिमोट मशीनें बताएं, प्रमाणित कनेक्शन स्थापित करने का तरीका जोड़ें, और फ़ाइलें अपलोड करने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u6_t1",
-              "text": "वेब प्रकाशन इंटरनेट पर सामग्री अपलोड करने की प्रक्रिया है",
-              "role_hint": "वेब प्रकाशन की मूल परिभाषा वाले मुख्य उपवाक्य से शुरुआत करें"
+              "text": "फ़ाइल ट्रांसफ़र प्रोटोकॉल वेबसाइट संपत्तियों के परिनियोजन का समन्वय करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
             },
             {
               "id": "hi_u6_t2",
-              "text": "जिसमें वेब-पेज और वेब-ब्लॉग बनाना और अपडेट करना शामिल है",
-              "role_hint": "पेज बनाने और सुधारने से जुड़ा उपवाक्य जोड़ें"
+              "text": "स्थानीय विकास मशीनों और रिमोट वेब सर्वरों के मध्य",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
             },
             {
               "id": "hi_u6_t3",
-              "text": "जिसके लिए वेब-विकास सॉफ्टवेयर और वेब-सर्वर की आवश्यकता होती है",
-              "role_hint": "उपकरण और सर्वर की आवश्यकता वाला उपवाक्य जोड़ें"
+              "text": "और पोर्ट चैनलों पर प्रमाणित नेटवर्क कनेक्शन स्थापित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
             },
             {
               "id": "hi_u6_t4",
-              "text": "तथा साइट को ऑनलाइन उपलब्ध कराने के लिए एक इंटरनेट कनेक्शन जरूरी है",
-              "role_hint": "इंटरनेट कनेक्टिविटी के साथ वाक्य को स्वाभाविक रूप से पूरा करें"
+              "text": "यह वेबसाइट फ़ाइलों को लाइव प्रोडक्शन सर्वर पर सुरक्षित रूप से अपलोड करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
             }
           ],
           "distractors": [
             {
               "id": "hi_u6_d1",
               "category": "logical",
-              "text": "जिसमें बिना किसी वेब-सर्वर के भी लाइव वेबसाइट प्रकाशित की जा सकती है",
-              "penalty_explanation": "वेबसाइट प्रकाशित करने के लिए वेब-सर्वर तीन अनिवार्य संसाधनों में से एक है।"
+              "text": "यह स्थानीय फ़ाइलें बनने से पहले ही सर्वर की सभी डायरेक्टरी को पूरी तरह हटा देता है",
+              "penalty_explanation": "FTP फ़ाइलों को व्यवस्थित रूप से सर्वर पर अपलोड करता है, सर्वर डायरेक्टरी को मनमाने ढंग से मिटाता नहीं है।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Web publishing is uploading text, graphics, video, and audio online, requiring web-development software, a web-server, and an internet connection.",
-        "hi": "वेब प्रकाशन इंटरनेट पर टेक्स्ट, ग्राफिक्स, वीडियो और ऑडियो अपलोड करना है, जिसके लिए वेब-विकास सॉफ्टवेयर, वेब सर्वर और इंटरनेट कनेक्शन की आवश्यकता होती है।"
+        "en": "FTP and SFTP establish authenticated connections to transfer locally created HTML, CSS, and script files to production servers.",
+        "hi": "FTP और SFTP स्थानीय रूप से निर्मित वेब फ़ाइलों को लाइव प्रोडक्शन सर्वर पर स्थानांतरित करने के लिए प्रमाणित कनेक्शन स्थापित करते हैं।"
       }
     }
   ]
