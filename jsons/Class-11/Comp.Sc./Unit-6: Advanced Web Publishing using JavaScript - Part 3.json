@@ -18,8 +18,8 @@
           "hi": "जावास्क्रिप्ट में ऑपरेटरों का परिचय"
         },
         "theory": {
-          "en": "Operators are special symbols used to manipulate values and perform operations on data[cite: 4]. In JavaScript, different categories of operators are used to modify distinct data types, primarily including arithmetic, comparison, logical, and string operators[cite: 4, 5].",
-          "hi": "ऑपरेटर वे विशेष चिन्ह हैं जिनका उपयोग मानों में हेरफेर करने और डेटा पर संचालन करने के लिए किया जाता है[cite: 4]। जावास्क्रिप्ट में, विभिन्न प्रकार के डेटा-प्रकारों को संशोधित करने के लिए विभिन्न श्रेणियों के ऑपरेटरों का उपयोग किया जाता है, जिनमें मुख्य रूप से अरिथमेटिक, तुलनात्मक, लॉजिकल और स्ट्रिंग ऑपरेटर शामिल हैं[cite: 4, 5]।"
+          "en": "Operators are special symbols used to manipulate values and perform operations on data. In JavaScript, different categories of operators are used to modify distinct data types, primarily including arithmetic, comparison, logical, and string operators.",
+          "hi": "ऑपरेटर वे विशेष चिन्ह हैं जिनका उपयोग मानों में हेरफेर करने और डेटा पर संचालन करने के लिए किया जाता है। जावास्क्रिप्ट में, विभिन्न प्रकार के डेटा-प्रकारों को संशोधित करने के लिए विभिन्न श्रेणियों के ऑपरेटरों का उपयोग किया जाता है, जिनमें मुख्य रूप से अरिथमेटिक, तुलनात्मक, लॉजिकल और स्ट्रिंग ऑपरेटर शामिल हैं।"
         },
         "media": {
           "type": "svg",
@@ -112,8 +112,8 @@
           "hi": "मूल अरिथमेटिक ऑपरेटर"
         },
         "theory": {
-          "en": "Arithmetic operators are used to perform mathematical manipulation on numeric values[cite: 5]. The standard binary arithmetic operators include addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`), computing sum, difference, product, and quotient respectively[cite: 5].",
-          "hi": "अरिथमेटिक ऑपरेटर वे चिन्ह हैं जिनका उपयोग संख्यात्मक मानों पर गणितीय कार्य करने के लिए किया जाता है[cite: 5]। मुख्य बाइनरी अरिथमेटिक ऑपरेटरों में जोड़ (`+`), घटाव (`-`), गुणा (`*`) और भाग (`/`) शामिल हैं, जो क्रमशः योग, अंतर, गुणनफल और भागफल की गणना करते हैं[cite: 5]।"
+          "en": "Arithmetic operators are used to perform mathematical manipulation on numeric values. The standard binary arithmetic operators include addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`), computing sum, difference, product, and quotient respectively.",
+          "hi": "अरिथमेटिक ऑपरेटर वे चिन्ह हैं जिनका उपयोग संख्यात्मक मानों पर गणितीय कार्य करने के लिए किया जाता है। मुख्य बाइनरी अरिथमेटिक ऑपरेटरों में जोड़ (`+`), घटाव (`-`), गुणा (`*`) और भाग (`/`) शामिल हैं, जो क्रमशः योग, अंतर, गुणनफल और भागफल की गणना करते हैं।"
         },
         "media": {
           "type": "svg",
@@ -206,8 +206,8 @@
           "hi": "उन्नत अरिथमेटिक ऑपरेटर: मापांक, घातांक और वृद्धि/कमी"
         },
         "theory": {
-          "en": "JavaScript includes specialized arithmetic operators for non-linear operations[cite: 5]. The modulus operator (`%`) calculates the division remainder (e.g., `5 % 2` produces `1`), while exponentiation (`**`) raises a base to a power (e.g., `5 ** 2` evaluates to `25`)[cite: 5]. Additionally, unary increment (`++`) and decrement (`--`) operators increase or decrease a value by one[cite: 5].",
-          "hi": "जावास्क्रिप्ट में विशिष्ट गणितीय कार्यों के लिए विशेष अरिथमेटिक ऑपरेटर शामिल हैं[cite: 5]। मापांक ऑपरेटर (`%`) भागफल के बाद शेषफल की गणना करता है (जैसे `5 % 2` का मान `1` होता है), जबकि घातांक (`**`) किसी संख्या को घात तक बढ़ाता है (जैसे `5 ** 2` का मान `25` होता है)[cite: 5]। इसके अतिरिक्त, इंक्रीमेंट (`++`) और डिक्रीमेंट (`--`) ऑपरेटर किसी मान को एक से बढ़ाते या घटाते हैं[cite: 5]।"
+          "en": "JavaScript includes specialized arithmetic operators for non-linear operations. The modulus operator (`%`) calculates the division remainder (e.g., `5 % 2` produces `1`), while exponentiation (`**`) raises a base to a power (e.g., `5 ** 2` evaluates to `25`). Additionally, unary increment (`++`) and decrement (`--`) operators increase or decrease a value by one.",
+          "hi": "जावास्क्रिप्ट में विशिष्ट गणितीय कार्यों के लिए विशेष अरिथमेटिक ऑपरेटर शामिल हैं। मापांक ऑपरेटर (`%`) भागफल के बाद शेषफल की गणना करता है (जैसे `5 % 2` का मान `1` होता है), जबकि घातांक (`**`) किसी संख्या को घात तक बढ़ाता है (जैसे `5 ** 2` का मान `25` होता है)। इसके अतिरिक्त, इंक्रीमेंट (`++`) और डिक्रीमेंट (`--`) ऑपरेटर किसी मान को एक से बढ़ाते या घटाते हैं।"
         },
         "media": {
           "type": "svg",
@@ -300,8 +300,8 @@
           "hi": "तुलनात्मक और रिलेशनल ऑपरेटर"
         },
         "theory": {
-          "en": "Comparison operators (also known as relational operators) compare two values and evaluate to a logical boolean result: `TRUE` or `FALSE`[cite: 5]. These operators include equality (`==`), non-equality (`!=`), less than (`<`), less than or equal (`<=`), greater than (`>`), and greater than or equal (`>=`)[cite: 5].",
-          "hi": "कम्पैरिसन ऑपरेटर (जिन्हें रिलेशनल ऑपरेटर भी कहा जाता है) दो मानों के बीच तुलना करते हैं और तार्किक परिणाम प्रदान करते हैं: `TRUE` या `FALSE`[cite: 5]। इन ऑपरेटरों में समानता (`==`), गैर-समानता (`!=`), छोटा (`<`), छोटा या बराबर (`<=`), बड़ा (`>`), और बड़ा या बराबर (`>=`) शामिल हैं[cite: 5]।"
+          "en": "Comparison operators (also known as relational operators) compare two values and evaluate to a logical boolean result: `TRUE` or `FALSE`. These operators include equality (`==`), non-equality (`!=`), less than (`<`), less than or equal (`<=`), greater than (`>`), and greater than or equal (`>=`).",
+          "hi": "कम्पैरिसन ऑपरेटर (जिन्हें रिलेशनल ऑपरेटर भी कहा जाता है) दो मानों के बीच तुलना करते हैं और तार्किक परिणाम प्रदान करते हैं: `TRUE` या `FALSE`। इन ऑपरेटरों में समानता (`==`), गैर-समानता (`!=`), छोटा (`<`), छोटा या बराबर (`<=`), बड़ा (`>`), और बड़ा या बराबर (`>=`) शामिल हैं।"
         },
         "media": {
           "type": "svg",
@@ -394,8 +394,8 @@
           "hi": "लॉजिकल ऑपरेटर: AND, OR और NOT"
         },
         "theory": {
-          "en": "Logical operators perform operations on boolean values and evaluate conditions[cite: 6]. The Logical AND operator (`&&`) returns `TRUE` only if both conditions are true[cite: 6]. The Logical OR operator (`||`) returns `TRUE` if at least one condition is true[cite: 6]. The Logical NOT operator (`!`) inverts truth values, converting true to false and false to true[cite: 6].",
-          "hi": "लॉजिकल ऑपरेटर बूलियन मानों के साथ तार्किक संचालन करते हैं और स्थितियों का मूल्यांकन करते हैं[cite: 6]। लॉजिकल AND ऑपरेटर (`&&`) केवल तभी `TRUE` देता है जब दोनों स्थितियां सत्य हों[cite: 6]। लॉजिकल OR ऑपरेटर (`||`) तब `TRUE` देता है जब दोनों में से कोई भी एक स्थिति सत्य हो[cite: 6]। लॉजिकल NOT ऑपरेटर (`!`) तार्किक मान को उलट देता है, अर्थात सत्य को असत्य और असत्य को सत्य बनाता है[cite: 6]।"
+          "en": "Logical operators perform operations on boolean values and evaluate conditions. The Logical AND operator (`&&`) returns `TRUE` only if both conditions are true. The Logical OR operator (`||`) returns `TRUE` if at least one condition is true. The Logical NOT operator (`!`) inverts truth values, converting true to false and false to true.",
+          "hi": "लॉजिकल ऑपरेटर बूलियन मानों के साथ तार्किक संचालन करते हैं और स्थितियों का मूल्यांकन करते हैं। लॉजिकल AND ऑपरेटर (`&&`) केवल तभी `TRUE` देता है जब दोनों स्थितियां सत्य हों। लॉजिकल OR ऑपरेटर (`||`) तब `TRUE` देता है जब दोनों में से कोई भी एक स्थिति सत्य हो। लॉजिकल NOT ऑपरेटर (`!`) तार्किक मान को उलट देता है, अर्थात सत्य को असत्य और असत्य को सत्य बनाता है।"
         },
         "media": {
           "type": "svg",
@@ -488,8 +488,8 @@
           "hi": "स्ट्रिंग कॉन्केटेनेशन ऑपरेटर"
         },
         "theory": {
-          "en": "In JavaScript, the plus symbol (`+`) is overloaded to act as a string concatenation operator when used with text[cite: 6]. It joins two or more individual string sequences together into one unified string (for example, combining `\"I love\"` and `\" my country\"` to produce `\"I love my country\"`)[cite: 6].",
-          "hi": "जावास्क्रिप्ट में प्लस चिन्ह (`+`) का उपयोग टेक्स्ट के साथ किए जाने पर यह स्ट्रिंग कॉन्केटेनेशन ऑपरेटर के रूप में कार्य करता है[cite: 6]। इसका उपयोग दो या दो से अधिक स्ट्रिंग मानों को आपस में जोड़कर एक नई स्ट्रिंग बनाने के लिए किया जाता है (उदाहरण के लिए, `\"I love\"` और `\" my country\"` को जोड़कर `\"I love my country\"` बनाना)[cite: 6]।"
+          "en": "In JavaScript, the plus symbol (`+`) is overloaded to act as a string concatenation operator when used with text. It joins two or more individual string sequences together into one unified string (for example, combining `\"I love\"` and `\" my country\"` to produce `\"I love my country\"`).",
+          "hi": "जावास्क्रिप्ट में प्लस चिन्ह (`+`) का उपयोग टेक्स्ट के साथ किए जाने पर यह स्ट्रिंग कॉन्केटेनेशन ऑपरेटर के रूप में कार्य करता है। इसका उपयोग दो या दो से अधिक स्ट्रिंग मानों को आपस में जोड़कर एक नई स्ट्रिंग बनाने के लिए किया जाता है (उदाहरण के लिए, `\"I love\"` और `\" my country\"` को जोड़कर `\"I love my country\"` बनाना)।"
         },
         "media": {
           "type": "svg",
