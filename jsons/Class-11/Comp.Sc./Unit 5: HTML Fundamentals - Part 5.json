@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 11",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Unit 5: HTML Fundamentals - Part 5",
+      "hi": "यूनिट 5: HTML के मूल सिद्धांत - भाग 5"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Hyperlinks, Pointer States and Default Colors",
+          "hi": "हाइपरलिंक, पॉइंटर अवस्थाएं और डिफ़ॉल्ट रंग"
+        },
+        "theory": {
+          "en": "Hyperlinks connect web pages to external sites or display another part of the same page using text or images. The container tag <a>...</a> establishes hyperlinks, automatically transforming the mouse arrow into a hand pointer upon hovering. Browsers apply consistent default styles: unvisited links are underlined and blue, visited links are underlined and purple, and active links are underlined and red.",
+          "hi": "हाइपरलिंक टेक्स्ट या इमेज का उपयोग करके वेब पेजों को बाहरी साइटों से जोड़ते हैं या उसी पेज के किसी अन्य भाग को दिखाते हैं। कंटेनर टैग <a>...</a> हाइपरलिंक बनाता है, जो कर्सर ले जाने पर माउस एरो को हाथ के पॉइंटर में बदल देता है। डिफ़ॉल्ट रूप से सभी ब्राउज़र में: अनविज़िट किया गया लिंक रेखांकित और नीला, विज़िट किया गया लिंक रेखांकित और बैंगनी, तथा सक्रिय लिंक रेखांकित और लाल दिखाई देता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Hyperlink Navigation and Color States</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-decoration=\"underline\" text-anchor=\"middle\" dominant-baseline=\"central\">Unvisited Link</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Default Blue</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-decoration=\"underline\" text-anchor=\"middle\" dominant-baseline=\"central\">Visited Link</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Default Purple</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-decoration=\"underline\" text-anchor=\"middle\" dominant-baseline=\"central\">Active Link</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Default Red</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Standard State</tspan><tspan x=\"120\" dy=\"1.2em\">Underlined Blue</tspan></text><text x=\"300\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">History Cached</tspan><tspan x=\"300\" dy=\"1.2em\">Underlined Purple</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Mouse Depressed</tspan><tspan x=\"480\" dy=\"1.2em\">Underlined Red</tspan></text></svg>",
+          "caption": {
+            "en": "Hyperlink visual feedback showing default color indicators for unvisited, visited, and active link states.",
+            "hi": "हाइपरलिंक का दृश्य स्वरूप जो अनविज़िट, विज़िट किए गए और सक्रिय लिंक के डिफ़ॉल्ट रंगों को दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how anchor tags provide visual hyperlink feedback.",
+          "hint": "Start with anchor tags enabling interactive hyperlinks, mention wrapping clickable text or images, explain shifting cursor shapes alongside color states, and conclude with signaling navigation status to users.",
+          "target_sequence": [
+            {
+              "id": "en_u21_t1",
+              "text": "The paired `<a>` anchor tag establishes interactive web hyperlinks",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u21_t2",
+              "text": "around clickable text phrases or embedded image elements",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u21_t3",
+              "text": "and by turning the mouse pointer into a hand alongside blue, purple, and red color states",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u21_t4",
+              "text": "it provides immediate visual confirmation of link status and target navigation",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u21_d1",
+              "category": "logical",
+              "text": "and by permanently freezing the mouse cursor whenever a user hovers over linked text",
+              "penalty_explanation": "Hovering over a hyperlink transforms the cursor into a hand pointer; it never freezes the mouse cursor."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "एंकर टैग द्वारा हाइपरलिंक स्थिति और दृश्य संकेत दर्शाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "पेयर्ड `<a>` एंकर टैग हाइपरलिंक स्थापित करता है से शुरू करें, क्लिक करने योग्य टेक्स्ट या इमेज का संदर्भ दें, कर्सर को हाथ में बदलने और रंगों का तरीका जोड़ें, और नेविगेशन स्थिति की पुष्टि करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u21_t1",
+              "text": "पेयर्ड `<a>` एंकर टैग इंटरैक्टिव वेब हाइपरलिंक स्थापित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u21_t2",
+              "text": "क्लिक करने योग्य टेक्स्ट शब्दों अथवा एम्बेडेड इमेज तत्वों के चारों ओर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u21_t3",
+              "text": "और माउस पॉइंटर को हाथ के निशान में बदलकर नीले, बैंगनी व लाल रंगों को लागू करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u21_t4",
+              "text": "यह उपयोगकर्ताओं को लिंक की स्थिति और नेविगेशन की त्वरित पुष्टि प्रदान करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u21_d1",
+              "category": "logical",
+              "text": "और कर्सर को लिंक पर ले जाने पर माउस एरो को स्क्रीन पर पूरी तरह स्थिर करके",
+              "penalty_explanation": "हाइपरलिंक पर माउस ले जाने पर एरो हाथ के पॉइंटर में बदलता है, कर्सर फ्रीज नहीं होता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Anchor tags create hyperlinks, turning the cursor into a hand and displaying blue, purple, or red underlines based on visit state.",
+        "hi": "एंकर टैग हाइपरलिंक बनाते हैं, जो कर्सर को हाथ में बदलते हैं और विज़िट स्थिति के अनुसार नीला, बैंगनी या लाल रंग दिखाते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "External vs Internal Linking: href and name Attributes",
+          "hi": "एक्सटर्नल बनाम इंटरनल लिंकिंग: href और name विशेषताएँ"
+        },
+        "theory": {
+          "en": "HTML supports two types of linking: external linking (which opens a separate web page or document) and internal linking (which jumps to another section within the same web page). The href attribute specifies the destination URL or internal bookmark target (e.g., href=\"#top\"), while the name attribute creates a named anchor identifier on the page (e.g., <a name=\"top\">) that acts as the internal target bookmark.",
+          "hi": "HTML में दो प्रकार की लिंकिंग होती है: एक्सटर्नल (बाहरी) लिंकिंग, जो किसी अन्य वेब पेज या दस्तावेज़ को खोलती है; और इंटरनल (आंतरिक) लिंकिंग, जो उसी वेब पेज के किसी अन्य भाग पर ले जाती है। href विशेषता गंतव्य URL या आंतरिक बुकमार्क लक्ष्य (जैसे href=\"#top\") निर्दिष्ट करती है, जबकि name विशेषता पृष्ठ पर एक नामांकित एंकर बनाती है (जैसे <a name=\"top\">) जो आंतरिक लक्ष्य के रूप में कार्य करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">External URL Routing vs. Internal Bookmark Jumps</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">href=&quot;http://...&quot;</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">External Webpage</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">href=&quot;#top&quot; &rarr; name=&quot;top&quot;</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Internal Section Jump</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Remote Host</tspan><tspan x=\"100\" dy=\"1.2em\">Loads Page</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Network Query</tspan><tspan x=\"225\" dy=\"1.2em\">Full URL Path</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Hash Prefix (#)</tspan><tspan x=\"375\" dy=\"1.2em\">Target Link</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Named Target</tspan><tspan x=\"500\" dy=\"1.2em\">Scrolls Viewport</tspan></text></svg>",
+          "caption": {
+            "en": "Dual linking modes contrasting external URL path requests against internal hash-based named anchor jumps.",
+            "hi": "दोहरे लिंकिंग मोड जो बाहरी URL अनुरोधों और आंतरिक हैश-आधारित एंकर जंप के बीच अंतर दर्शाते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the compound sentence explaining how external and internal hyperlinks route navigation.",
+          "hint": "Start with anchor tags supporting external and internal linking modes, mention managing navigational destinations, explain setting href destinations and named anchors, and conclude with routing visitors across pages or bookmarks.",
+          "target_sequence": [
+            {
+              "id": "en_u22_t1",
+              "text": "The anchor tag coordinates external and internal linking modes",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u22_t2",
+              "text": "across local file paths and wide-area web destinations",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u22_t3",
+              "text": "and by pairing `href` destination paths with `name` bookmark identifiers",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u22_t4",
+              "text": "it seamlessly loads remote pages or scrolls directly to designated internal headings",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u22_d1",
+              "category": "logical",
+              "text": "it strictly blocks users from jumping to any internal paragraph within the same web document",
+              "penalty_explanation": "Internal linking using href with # and named anchors is specifically designed to jump within the same page."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "एक्सटर्नल और इंटरनल हाइपरलिंक्स द्वारा नेविगेशन निर्देशित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "एंकर टैग एक्सटर्नल और इंटरनल लिंकिंग को जोड़ता है से शुरू करें, वेब गंतव्यों का संदर्भ दें, `href` और `name` विशेषताओं का उपयोग करने का तरीका बताएं, और नए पेज खोलने या उसी पेज पर स्क्रॉल करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u22_t1",
+              "text": "एंकर टैग एक्सटर्नल और इंटरनल दोनों प्रकार की लिंकिंग को संचालित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u22_t2",
+              "text": "स्थानीय फ़ाइलों और व्यापक वेब गंतव्यों के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u22_t3",
+              "text": "और `href` गंतव्य पथ को `name` बुकमार्क पहचानकर्ता के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u22_t4",
+              "text": "यह बाहरी वेब पेजों को खोलता है अथवा उसी पेज के निर्धारित भाग पर सीधे ले जाता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u22_d1",
+              "category": "logical",
+              "text": "यह उपयोगकर्ताओं को उसी वेब पेज के किसी भी आंतरिक भाग पर जाने से पूरी तरह रोक देता है",
+              "penalty_explanation": "इंटरनल लिंकिंग का मुख्य कार्य ही उसी पेज के किसी हिस्से पर ले जाना होता है, यह नेविगेशन को रोकता नहीं है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "External links use href with a URL to open other pages, while internal links pair href with named anchors to jump within the same page.",
+        "hi": "एक्सटर्नल लिंक URL के साथ दूसरे पेज खोलते हैं, जबकि इंटरनल लिंक उसी पेज के हिस्से पर जाने के लिए href और name का उपयोग करते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Data Table Architecture: TABLE, TR, TH, and TD",
+          "hi": "डेटा टेबल संरचना: TABLE, TR, TH और TD"
+        },
+        "theory": {
+          "en": "In HTML, tabular data is structured using the container tag <table>...</table>. Each horizontal row within the table is defined by <tr>...</tr> tags. Inside each row, header cells are marked using <th>...</th> (which automatically render bold, centered text for column titles), while standard data cells containing text or numbers are enclosed within <td>...</td> tags.",
+          "hi": "HTML में तालिका डेटा को <table>...</table> कंटेनर टैग का उपयोग करके संरचित किया जाता है। तालिका की प्रत्येक क्षैतिज पंक्ति को <tr>...</tr> टैग द्वारा परिभाषित किया जाता है। प्रत्येक पंक्ति के भीतर, हेडर सेल को <th>...</th> द्वारा चिह्नित किया जाता है (जो टेक्स्ट को बोल्ड और केंद्रित बनाता है), जबकि सामान्य डेटा सेल <td>...</td> टैग के भीतर लिखे जाते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Table Architecture: TABLE, TR, TH, and TD</text><rect x=\"45\" y=\"75\" width=\"510\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"95\" y=\"102\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;table&gt;</text><text x=\"190\" y=\"102\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;tr&gt;</text><text x=\"290\" y=\"102\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;th&gt; Roll &lt;/th&gt;</text><text x=\"405\" y=\"102\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;td&gt; 01 &lt;/td&gt;</text><text x=\"505\" y=\"102\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;/tr&gt;</text><line x1=\"95\" y1=\"130\" x2=\"95\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"190\" y1=\"130\" x2=\"190\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"290\" y1=\"130\" x2=\"290\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"405\" y1=\"130\" x2=\"405\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"95\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"95\" dy=\"0\">Outer Grid</tspan><tspan x=\"95\" dy=\"1.2em\">Container Tag</tspan></text><text x=\"190\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"190\" dy=\"0\">Row Boundary</tspan><tspan x=\"190\" dy=\"1.2em\">Horizontal Track</tspan></text><text x=\"290\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"290\" dy=\"0\">Header Cell</tspan><tspan x=\"290\" dy=\"1.2em\">Bold &amp; Centered</tspan></text><text x=\"405\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"405\" dy=\"0\">Data Cell</tspan><tspan x=\"405\" dy=\"1.2em\">Standard Content</tspan></text></svg>",
+          "caption": {
+            "en": "Nested hierarchy of HTML tables declaring rows with TR and populating cells using TH headers and TD data.",
+            "hi": "HTML टेबल का पदानुक्रम जो TR से पंक्तियों को बनाता है और TH हेडर व TD डेटा से सेल भरता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing the structural hierarchy of HTML data tables.",
+          "hint": "Start with the table tag enclosing grid data, mention defining horizontal rows with TR, explain structuring column headers with TH and cell records with TD, and conclude with assembling tabular records.",
+          "target_sequence": [
+            {
+              "id": "en_u23_t1",
+              "text": "The paired `<table>` container tag organizes two-dimensional data grids",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u23_t2",
+              "text": "by defining horizontal rows sequentially with child `<tr>` elements",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u23_t3",
+              "text": "and by populating column headers with `<th>` and individual cell records with `<td>`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u23_t4",
+              "text": "it builds fully formatted tables with distinct headings and structured data values",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u23_d1",
+              "category": "logical",
+              "text": "and by forbidding any `<td>` cells from residing inside table row `<tr>` tags",
+              "penalty_explanation": "All <td> data cells must be enclosed within <tr> table row tags to form valid table structures."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "HTML डेटा टेबल के संरचनात्मक पदानुक्रम को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "पेयर्ड `<table>` कंटेनर टैग ग्रिड को व्यवस्थित करता है से शुरू करें, `<tr>` द्वारा पंक्तियां बनाना बताएं, `<th>` से हेडर और `<td>` से डेटा भरने का तरीका जोड़ें, और पूरी तालिका तैयार करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u23_t1",
+              "text": "पेयर्ड `<table>` कंटेनर टैग द्विविमीय डेटा ग्रिड को व्यवस्थित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u23_t2",
+              "text": "चाइल्ड `<tr>` तत्वों के साथ क्षैतिज पंक्तियों को क्रमबद्ध रूप से परिभाषित करके",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u23_t3",
+              "text": "और `<th>` से कॉलम हेडर तथा `<td>` से व्यक्तिगत सेल रिकॉर्ड भरकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u23_t4",
+              "text": "यह स्पष्ट शीर्षकों और संरचित मानों के साथ पूरी तरह से स्वरूपित तालिका बनाता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u23_d1",
+              "category": "logical",
+              "text": "और तालिका पंक्ति `<tr>` के अंदर किसी भी `<td>` सेल को रखने पर प्रतिबंध लगाकर",
+              "penalty_explanation": "तालिका के सभी <td> डेटा सेल अनिवार्य रूप से <tr> टैग के भीतर ही लिखे जाते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Tables are defined by <table>, rows by <tr>, column headers by <th> (bold and centered), and data cells by <td>.",
+        "hi": "तालिकाएं <table> से शुरू होती हैं, पंक्तियां <tr> से, हेडर <th> से (बोल्ड और केंद्रित) और डेटा सेल <td> से बनते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Table Grid Attributes: border and bgcolor",
+          "hi": "टेबल ग्रिड विशेषताएँ: border और bgcolor"
+        },
+        "theory": {
+          "en": "The visual presentation of an HTML table can be enhanced using table-level attributes. The border attribute defines the thickness of the grid lines surrounding the table and cells (e.g., border=\"1\"), where omitting it results in a borderless table. The bgcolor attribute specifies a solid background color for the entire table grid (e.g., bgcolor=\"yellow\") to improve contrast.",
+          "hi": "HTML तालिका की दृश्य प्रस्तुति को तालिका-स्तरीय विशेषताओं द्वारा सुधारा जा सकता है। border विशेषता तालिका और सेलों के चारों ओर की ग्रिड लाइनों की मोटाई निर्धारित करती है (जैसे border=\"1\"), जिसके बिना तालिका बॉर्डर-रहित दिखाई देती है। bgcolor विशेषता कंट्रास्ट बढ़ाने के लिए पूरी तालिका के लिए एक ठोस पृष्ठभूमि रंग (जैसे bgcolor=\"yellow\") निर्दिष्ट करती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Table Styling: border and bgcolor</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">border=&quot;1&quot;</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Visible Cell Grid Lines</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">bgcolor=&quot;yellow&quot;</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Table Background Tint</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Outer Frame</tspan><tspan x=\"100\" dy=\"1.2em\">Grid Boundary</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Cell Separation</tspan><tspan x=\"225\" dy=\"1.2em\">Stroke Thickness</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Solid Color</tspan><tspan x=\"375\" dy=\"1.2em\">Canvas Fill</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Visual Contrast</tspan><tspan x=\"500\" dy=\"1.2em\">Behind Cell Data</tspan></text></svg>",
+          "caption": {
+            "en": "Table formatting controls configuring grid line borders and backdrop color fill across the matrix.",
+            "hi": "टेबल फ़ॉर्मेटिंग नियंत्रण जो ग्रिड लाइन बॉर्डर और पूरी तालिका के पृष्ठभूमि रंग को निर्धारित करते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how border and bgcolor style HTML tables.",
+          "hint": "Start with table styling attributes configuring presentation, describe rendering table boundaries, explain assigning border thickness and bgcolor values, and conclude with producing defined and shaded grids.",
+          "target_sequence": [
+            {
+              "id": "en_u24_t1",
+              "text": "The primary styling attributes of the `<table>` tag customize grid appearance",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u24_t2",
+              "text": "across all rows and columns displayed within the browser window",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u24_t3",
+              "text": "and by assigning pixel thickness to `border` alongside color values to `bgcolor`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u24_t4",
+              "text": "they render clearly outlined table frames with customized background canvas shades",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u24_d1",
+              "category": "logical",
+              "text": "they convert the entire table matrix into an unformatted continuous text paragraph",
+              "penalty_explanation": "Table attributes format borders and colors; they do not collapse tables into plain text paragraphs."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "border और bgcolor द्वारा टेबल को प्रारूपित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "`<table>` टैग की स्टाइलिंग विशेषताएं उपस्थिति को अनुकूलित करती हैं से शुरू करें, पंक्तियों और कॉलमों का संदर्भ दें, `border` और `bgcolor` मान निर्धारित करने का तरीका बताएं, और स्पष्ट रूपरेखा व रंगीन पृष्ठभूमि बनाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u24_t1",
+              "text": "`<table>` टैग की प्राथमिक स्टाइलिंग विशेषताएँ ग्रिड स्वरूप को अनुकूलित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u24_t2",
+              "text": "ब्राउज़र विंडो में प्रदर्शित होने वाली सभी पंक्तियों और कॉलमों के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u24_t3",
+              "text": "और `border` में पिक्सेल मोटाई तथा `bgcolor` में रंग के मान निर्दिष्ट करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u24_t4",
+              "text": "ये स्पष्ट रेखाओं वाली रूपरेखा और रंगीन पृष्ठभूमि कैनवास के साथ तालिका प्रदर्शित करती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u24_d1",
+              "category": "logical",
+              "text": "ये पूरी तालिका ग्रिड को बिना फ़ॉर्मेटिंग वाले एक सादे टेक्स्ट पैराग्राफ में बदल देती हैं",
+              "penalty_explanation": "ये विशेषताएं तालिका को सजाने के लिए होती हैं, उसे सादे पैराग्राफ में बदलने के लिए नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The border attribute defines grid line thickness, while bgcolor sets the background color of the entire table.",
+        "hi": "border विशेषता ग्रिड लाइनों की मोटाई तय करती है, जबकि bgcolor पूरी तालिका का पृष्ठभूमि रंग निर्धारित करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Alignment Mechanics: Table Grid vs Cell Data",
+          "hi": "संरेखण तंत्र: टेबल ग्रिड बनाम सेल डेटा"
+        },
+        "theory": {
+          "en": "The align attribute operates contextually depending on where it is applied. When placed inside the <table> tag (such as <table align=\"center\">), it positions the entire table matrix horizontally on the webpage. Conversely, when placed inside a <tr> tag (or individual <td> and <th> tags), align controls the horizontal alignment of the text and numbers within the cells of that row.",
+          "hi": "align विशेषता इसके उपयोग के स्थान के आधार पर कार्य करती है। जब इसे <table> टैग के अंदर रखा जाता है (जैसे <table align=\"center\">), तो यह पूरी तालिका को वेब पेज पर क्षैतिज रूप से संरेखित करती है। इसके विपरीत, जब इसे <tr> टैग (या अलग-अलग <td> व <th>) के अंदर रखा जाता है, तो यह उस पंक्ति के सेलों के भीतर टेक्स्ट और संख्याओं के संरेखण को नियंत्रित करती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Contextual Alignment: &lt;table align&gt; vs. &lt;tr align&gt;</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;table align=&quot;center&quot;&gt;</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Positions Table on Webpage</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">&lt;tr align=&quot;center&quot;&gt;</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Aligns Data Inside Cells</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Outer Grid Level</tspan><tspan x=\"100\" dy=\"1.2em\">Page Placement</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Shifts Whole Box</tspan><tspan x=\"225\" dy=\"1.2em\">To Center Screen</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Row Cell Level</tspan><tspan x=\"375\" dy=\"1.2em\">Data Placement</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Justifies Cell Text</tspan><tspan x=\"500\" dy=\"1.2em\">Inside Columns</tspan></text></svg>",
+          "caption": {
+            "en": "Scope of the align attribute positioning the entire table on the page versus aligning text inside row cells.",
+            "hi": "align विशेषता का दोहरा प्रभाव: पेज पर पूरी तालिका की स्थिति तय करना बनाम पंक्ति सेलों के भीतर टेक्स्ट संरेखित करना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence distinguishing how the align attribute functions across table and row levels.",
+          "hint": "Start with the align attribute providing contextual alignment, describe operating at document and row scopes, explain applying align to table versus tr tags, and conclude with positioning either the grid or the cell text.",
+          "target_sequence": [
+            {
+              "id": "en_u25_t1",
+              "text": "The versatile `align` attribute provides dual-level formatting control",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u25_t2",
+              "text": "depending on the specific container tag where it is declared",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u25_t3",
+              "text": "and by positioning the entire grid when placed in `<table>` while justifying cell contents when placed in `<tr>`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u25_t4",
+              "text": "it balances overall page placement alongside readable tabular cell presentation",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u25_d1",
+              "category": "logical",
+              "text": "and by forcing all cells in every row to permanently ignore any horizontal text positioning",
+              "penalty_explanation": "The align attribute explicitly defines horizontal text positioning rather than forcing cells to ignore it."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "table और tr स्तर पर align विशेषता के अंतर को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "`align` विशेषता दोहरे स्तर का नियंत्रण देती है से शुरू करें, संबंधित टैग का संदर्भ दें, `<table>` में तालिका और `<tr>` में सेल सामग्री संरेखित करने का तरीका बताएं, और पेज स्थिति व डेटा प्रस्तुति को संतुलित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u25_t1",
+              "text": "बहुमुखी `align` विशेषता दोहरे स्तर का फ़ॉर्मेटिंग नियंत्रण प्रदान करती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u25_t2",
+              "text": "उस विशिष्ट टैग के आधार पर जिसमें इसे लागू किया जाता है",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u25_t3",
+              "text": "और `<table>` में पूरी तालिका को स्थित करके तथा `<tr>` में सेल के टेक्स्ट को संरेखित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u25_t4",
+              "text": "यह समग्र पेज लेआउट के साथ-साथ पठनीय सेल डेटा प्रस्तुति को संतुलित करती है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u25_d1",
+              "category": "logical",
+              "text": "और सभी सेलों को किसी भी क्षैतिज टेक्स्ट संरेखण को हमेशा अनदेखा करने पर मजबूर करके",
+              "penalty_explanation": "align विशेषता स्पष्ट रूप से टेक्स्ट को बाएं, दाएं या बीच में संरेखित करती है, यह संरेखण को अनदेखा नहीं करती।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "In <table>, align positions the table on the page; in <tr> or <td>, align positions text inside the cells.",
+        "hi": "<table> में align पूरी तालिका को पेज पर रखता है; <tr> या <td> में align सेलों के अंदर टेक्स्ट को संरेखित करता है।"
+      }
+    }
+  ]
+}
