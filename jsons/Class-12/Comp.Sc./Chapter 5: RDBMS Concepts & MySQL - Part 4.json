@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 5: RDBMS Concepts & MySQL - Part 4",
+      "hi": "यूनिट 5: RDBMS अवधारणाएं और MySQL - भाग 4"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Populating Relational Records with INSERT INTO",
+          "hi": "INSERT INTO द्वारा रिलेशनल रिकॉर्ड्स की प्रविष्टि"
+        },
+        "theory": {
+          "en": "Data Manipulation Language commands manage, query, and manipulate data stored inside database tables. The INSERT INTO statement adds complete new rows of data into an existing table structure[cite: 24]. When supplying values for every column in its predefined order, the syntax INSERT INTO table_name VALUES (val1, val2, ...) is used[cite: 24]. In our School Schema, executing this command populates empty tables with validated records for STUDENT, TEACHER, SUBJECT, and MARKS[cite: 24].",
+          "hi": "डेटा मैनिपुलेशन लैंग्वेज कमांड डेटाबेस तालिकाओं में संग्रहीत डेटा को प्रबंधित, संशोधित और उपयोग करते हैं[cite: 24]। INSERT INTO स्टेटमेंट किसी मौजूदा टेबल संरचना में डेटा की पूरी नई पंक्तियाँ जोड़ता है[cite: 24]। जब प्रत्येक कॉलम के लिए पूर्व-निर्धारित क्रम में मान दिए जाते हैं, तो INSERT INTO table_name VALUES (val1, val2, ...) सिंटैक्स का उपयोग किया जाता है[cite: 24]। हमारे स्कूल स्कीमा में, यह कमांड STUDENT, TEACHER, SUBJECT और MARKS तालिकाओं में सत्यापित रिकॉर्ड्स भरता है[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">INSERT INTO Record Population Lifecycle</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">BEFORE: Empty Schema</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">STUDENT Table (0 Rows)</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">AFTER: 4 Rows Populated</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Roll_No 101 to 104 Added</text><line x1=\"280\" y1=\"102\" x2=\"320\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"320,102 312,98 312,106\" fill=\"#38bdf8\"/><line x1=\"162\" y1=\"130\" x2=\"162\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"437\" y1=\"130\" x2=\"437\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"162\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"162\" dy=\"0\">Empty Container</tspan><tspan x=\"162\" dy=\"1.2em\">Zero Data Tuples</tspan></text><text x=\"437\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"437\" dy=\"0\">Validated Records</tspan><tspan x=\"437\" dy=\"1.2em\">Ready for Queries</tspan></text></svg>",
+          "caption": {
+            "en": "Data population transformation showing the transition of an empty STUDENT schema into a populated table containing four validated rows[cite: 24].",
+            "hi": "डेटा प्रविष्टि रूपांतरण जो एक खाली STUDENT स्कीमा को चार सत्यापित पंक्तियों वाली तालिका में बदलने की प्रक्रिया दर्शाता है[cite: 24]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the INSERT INTO statement populates relational database tables.",
+          "hint": "Start with Data Manipulation Language commands populating empty table structures, mention providing matching data values in column order, explain executing the INSERT INTO statement paired with VALUES, and conclude with storing verified tuples across the database.",
+          "target_sequence": [
+            {
+              "id": "en_u16_t1",
+              "text": "Data Manipulation Language commands populate empty relational schemas",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u16_t2",
+              "text": "by supplying structured attribute values matching declared column datatypes",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u16_t3",
+              "text": "and by executing the standard `INSERT INTO` statement paired with the `VALUES` clause",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u16_t4",
+              "text": "they record operational data tuples reliably without altering table schema definitions",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u16_d1",
+              "category": "logical",
+              "text": "they delete underlying structural table schemas whenever a single new record is inserted",
+              "penalty_explanation": "INSERT INTO adds data records into tables and does not delete table schema definitions[cite: 24]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "INSERT INTO स्टेटमेंट द्वारा रिलेशनल टेबल में डेटा जोड़ने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "डेटा मैनिपुलेशन लैंग्वेज कमांड खाली रिलेशनल स्कीमा को भरते हैं से शुरू करें, कॉलम डेटा प्रकारों के अनुसार मान देने का संदर्भ दें, `INSERT INTO` और `VALUES` क्लॉज निष्पादित करने का तरीका बताएं, और स्कीमा बदले बिना रिकॉर्ड्स दर्ज करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u16_t1",
+              "text": "डेटा मैनिपुलेशन लैंग्वेज कमांड खाली रिलेशनल स्कीमा को भरते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u16_t2",
+              "text": "घोषित कॉलम डेटा प्रकारों से मेल खाने वाले मान प्रदान करके",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u16_t3",
+              "text": "और `VALUES` क्लॉज के साथ मानक `INSERT INTO` स्टेटमेंट को निष्पादित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u16_t4",
+              "text": "ये टेबल संरचना बदले बिना परिचालन डेटा रिकॉर्ड्स को सुरक्षित रूप से दर्ज करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u16_d1",
+              "category": "logical",
+              "text": "ये एक नया रिकॉर्ड जुड़ते ही संबंधित टेबल की मूल स्कीमा संरचना को तुरंत नष्ट कर देते हैं",
+              "penalty_explanation": "INSERT INTO डेटा जोड़ता है, यह टेबल की मूल संरचना को नष्ट नहीं करता है[cite: 24]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "INSERT INTO adds new data tuples into established tables by providing values in column order without altering the schema[cite: 24].",
+        "hi": "INSERT INTO स्कीमा बदले बिना कॉलम क्रम में मान प्रदान करके तालिकाओं में नए डेटा रिकॉर्ड्स जोड़ता है[cite: 24]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Data Retrieval and Equality Filtering with SELECT and WHERE",
+          "hi": "SELECT और WHERE द्वारा डेटा निष्कर्षण और समानता फ़िल्टरिंग"
+        },
+        "theory": {
+          "en": "The SELECT statement extracts data from relational tables without altering stored records[cite: 24]. Column projection specifies which attributes to display, while the WHERE clause filters rows using boolean conditions[cite: 24]. In our School Schema, executing SELECT Roll_No, Name, City FROM STUDENT WHERE City = 'Shimla'; inspects every record, isolates rows where City matches 'Shimla', and suppresses non-matching records[cite: 24].",
+          "hi": "SELECT स्टेटमेंट मूल रिकॉर्ड्स में कोई बदलाव किए बिना रिलेशनल तालिकाओं से डेटा निकालता है[cite: 24]। कॉलम प्रोजेक्शन यह तय करता है कि कौन से कॉलम प्रदर्शित करने हैं, जबकि WHERE क्लॉज बूलियन शर्तों के आधार पर पंक्तियों को फ़िल्टर करता है[cite: 24]। हमारे स्कूल स्कीमा में, SELECT Roll_No, Name, City FROM STUDENT WHERE City = 'Shimla'; चलाने पर केवल वही रिकॉर्ड्स प्राप्त होते हैं जहाँ City का मान 'Shimla' है[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">SELECT Projection and WHERE Equality Filtering</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Source: 4 Student Rows</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Delhi, Shimla, Solan, Shimla</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Result: WHERE City=&apos;Shimla&apos;</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">2 Rows Returned (Sujit, Pooja)</text><line x1=\"280\" y1=\"102\" x2=\"320\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"320,102 312,98 312,106\" fill=\"#38bdf8\"/><line x1=\"162\" y1=\"130\" x2=\"162\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"437\" y1=\"130\" x2=\"437\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"162\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"162\" dy=\"0\">Full Table Scan</tspan><tspan x=\"162\" dy=\"1.2em\">Evaluates Condition</tspan></text><text x=\"437\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"437\" dy=\"0\">Filtered Output</tspan><tspan x=\"437\" dy=\"1.2em\">Projected Columns</tspan></text></svg>",
+          "caption": {
+            "en": "Filtering pipeline isolating matching student rows based on equality checks inside the WHERE clause[cite: 24].",
+            "hi": "फ़िल्टरिंग प्रक्रिया जो WHERE क्लॉज में समानता की जांच करके केवल मेल खाने वाली पंक्तियों को निकालती है[cite: 24]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how SELECT queries project attributes and filter records.",
+          "hint": "Start with SELECT statements querying database tables, mention defining target columns for display, explain evaluating predicate criteria inside the WHERE clause, and conclude with returning matching records without modifying stored data.",
+          "target_sequence": [
+            {
+              "id": "en_u17_t1",
+              "text": "The `SELECT` query retrieves structured relational data records",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u17_t2",
+              "text": "by projecting specified attributes from database tables",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u17_t3",
+              "text": "and by evaluating conditional equality criteria inside the `WHERE` clause",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u17_t4",
+              "text": "it returns matching tuples precisely without modifying underlying stored records",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u17_d1",
+              "category": "logical",
+              "text": "it deletes all records that match the query filter condition permanently from disk",
+              "penalty_explanation": "SELECT reads and retrieves data; it does not delete records from disk[cite: 24]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "SELECT और WHERE द्वारा डेटा निकालने और फ़िल्टर करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "`SELECT` क्वेरी संरचित डेटा रिकॉर्ड्स निकालती है से शुरू करें, निर्दिष्ट कॉलम प्रदर्शित करने का संदर्भ दें, `WHERE` क्लॉज में समानता शर्तों का मूल्यांकन करने का तरीका बताएं, और डेटा बदले बिना परिणाम देने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u17_t1",
+              "text": "`SELECT` क्वेरी संरचित रिलेशनल डेटा रिकॉर्ड्स को निकालती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u17_t2",
+              "text": "डेटाबेस तालिकाओं से केवल निर्दिष्ट कॉलमों को प्रदर्शित करके",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u17_t3",
+              "text": "और `WHERE` क्लॉज के भीतर समानता शर्तों का सटीक मूल्यांकन करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u17_t4",
+              "text": "यह मूल डेटा को संशोधित किए बिना केवल मेल खाने वाली पंक्तियों को प्रस्तुत करती है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u17_d1",
+              "category": "logical",
+              "text": "यह फ़िल्टर शर्त से मेल खाने वाले सभी रिकॉर्ड्स को डिस्क से हमेशा के लिए मिटा देती है",
+              "penalty_explanation": "SELECT केवल डेटा प्रदर्शित करता है, यह रिकॉर्ड्स को डिस्क से मिटाता नहीं है[cite: 24]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "SELECT retrieves specified columns, while WHERE evaluates boolean conditions to filter and display matching rows[cite: 24].",
+        "hi": "SELECT निर्दिष्ट कॉलम प्रदर्शित करता है, जबकि WHERE शर्त के आधार पर मेल खाने वाली पंक्तियों को फ़िल्टर करता है[cite: 24]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Range Queries and Output Sorting with BETWEEN AND and ORDER BY",
+          "hi": "BETWEEN AND और ORDER BY द्वारा रेंज फ़िल्टरिंग और सॉर्टिंग"
+        },
+        "theory": {
+          "en": "SQL provides specialized operators to query continuous value intervals and sort output rows[cite: 24]. The BETWEEN ... AND operator checks whether an attribute value falls inclusively within a lower and upper boundary[cite: 24]. The ORDER BY clause arranges query results in ascending (ASC, default) or descending (DESC) sequence[cite: 24]. In our School Schema, SELECT Roll_No, Marks_Obtained FROM MARKS WHERE Marks_Obtained BETWEEN 70 AND 90 ORDER BY Marks_Obtained DESC; filters exam scores between 70.00 and 90.00 and sorts them from highest to lowest[cite: 24].",
+          "hi": "SQL मानों की एक निरंतर सीमा की जांच करने और आउटपुट पंक्तियों को क्रमबद्ध करने के लिए विशेष ऑपरेटर प्रदान करता है[cite: 24]। BETWEEN ... AND ऑपरेटर यह जांचता है कि कोई मान दोनों सीमाओं सहित एक न्यूनतम और अधिकतम सीमा के बीच आता है या नहीं[cite: 24]। ORDER BY क्लॉज परिणामों को आरोही (ASC) या अवरोही (DESC) क्रम में व्यवस्थित करता है[cite: 24]। हमारे स्कूल स्कीमा में, MARKS तालिका पर 70 से 90 के बीच के अंक निकालकर उन्हें DESC द्वारा उच्चतम से न्यूनतम क्रम में व्यवस्थित किया जाता है[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Range Interval Filtering and Descending Sort</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">BETWEEN 70 AND 90</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Inclusive Range Filter</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">ORDER BY Marks DESC</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">88.00 First, 74.00 Second</text><line x1=\"280\" y1=\"102\" x2=\"320\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"320,102 312,98 312,106\" fill=\"#38bdf8\"/><line x1=\"162\" y1=\"130\" x2=\"162\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"437\" y1=\"130\" x2=\"437\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"162\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"162\" dy=\"0\">Evaluates Bounds</tspan><tspan x=\"162\" dy=\"1.2em\">Matches [70..90]</tspan></text><text x=\"437\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"437\" dy=\"0\">Ranked Output</tspan><tspan x=\"437\" dy=\"1.2em\">Highest to Lowest</tspan></text></svg>",
+          "caption": {
+            "en": "Interval extraction and sorting workflow isolating marks within range limits and ordering results descending[cite: 24].",
+            "hi": "रेंज फ़िल्टरिंग और सॉर्टिंग प्रक्रिया जो निर्धारित सीमा के अंक निकालकर परिणामों को अवरोही क्रम में व्यवस्थित करती है[cite: 24]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how range filtering and sorting clauses organize query results.",
+          "hint": "Start with SQL query clauses structuring numerical output, mention evaluating attributes across record sets, explain filtering continuous intervals via BETWEEN AND alongside sorting with ORDER BY DESC, and conclude with producing prioritized result sets.",
+          "target_sequence": [
+            {
+              "id": "en_u18_t1",
+              "text": "Relational query clauses organize numerical and chronological output",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u18_t2",
+              "text": "across student academic evaluations and score tables",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u18_t3",
+              "text": "and by filtering inclusive intervals with `BETWEEN ... AND` while sequencing rows using `ORDER BY ... DESC`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u18_t4",
+              "text": "they isolate target ranges and present records in ranked order for clear analysis",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u18_d1",
+              "category": "logical",
+              "text": "they permanently shuffle physical disk blocks into random positions across physical hard drives",
+              "penalty_explanation": "ORDER BY sorts the returned query result set; it does not randomize physical disk blocks[cite: 24]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "BETWEEN AND और ORDER BY द्वारा रेंज फ़िल्टरिंग और सॉर्टिंग की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "रिलेशनल क्वेरी क्लॉज संख्यात्मक आउटपुट को व्यवस्थित करते हैं से शुरू करें, शैक्षणिक मूल्यांकन तालिकाओं का संदर्भ दें, `BETWEEN ... AND` से रेंज फ़िल्टर करने और `ORDER BY ... DESC` से क्रमबद्ध करने का तरीका बताएं, और स्पष्ट विश्लेषण के लिए प्रस्तुत करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u18_t1",
+              "text": "रिलेशनल क्वेरी क्लॉज संख्यात्मक आउटपुट को व्यवस्थित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u18_t2",
+              "text": "छात्रों के शैक्षणिक अंकों और मूल्यांकन तालिकाओं के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u18_t3",
+              "text": "और `BETWEEN ... AND` द्वारा सीमाओं को फ़िल्टर करके तथा `ORDER BY ... DESC` से पंक्तियों को क्रमबद्ध करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u18_t4",
+              "text": "ये लक्षित सीमा को अलग करते हैं और स्पष्ट विश्लेषण के लिए रिकॉर्ड्स को रैंक क्रम में प्रस्तुत करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u18_d1",
+              "category": "logical",
+              "text": "ये भौतिक हार्ड ड्राइव पर डिस्क ब्लॉक्स को हमेशा के लिए अनियमित क्रम में बदल देते हैं",
+              "penalty_explanation": "ORDER BY केवल स्क्रीन पर दिखने वाले परिणाम को क्रमबद्ध करता है, हार्ड ड्राइव के ब्लॉक्स को नहीं बदलता[cite: 24]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "BETWEEN ... AND filters values inclusively within a range, while ORDER BY sorts results in ascending or descending order[cite: 24].",
+        "hi": "BETWEEN ... AND मानों को दोनों सीमाओं सहित फ़िल्टर करता है, जबकि ORDER BY परिणामों को आरोही या अवरोही क्रम में लगाता है[cite: 24]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Pattern Matching and List Membership with LIKE and IN",
+          "hi": "LIKE और IN द्वारा पैटर्न और सूची मिलान"
+        },
+        "theory": {
+          "en": "SQL provides pattern-matching and set-membership operators to filter complex text strings and categorical values[cite: 24]. The LIKE operator uses wildcards, where the percent symbol (%) matches zero or more arbitrary characters, enabling searches for names ending in 'Sharma' using '%Sharma'[cite: 24]. The IN operator tests whether a column value matches any item in an explicit list, replacing multiple OR clauses[cite: 24]. In our School Schema, SELECT Name, City FROM STUDENT WHERE Name LIKE '%Sharma' AND City IN ('Delhi', 'Solan'); retrieves students with the surname Sharma residing in either Delhi or Solan[cite: 24].",
+          "hi": "SQL टेक्स्ट स्ट्रिंग्स और सूचियों में खोज करने के लिए विशेष ऑपरेटर प्रदान करता है[cite: 24]। LIKE ऑपरेटर वाइल्डकार्ड का उपयोग करता है, जहाँ प्रतिशत चिन्ह (%) शून्य या अधिक अक्षरों से मेल खाता है, जैसे '%Sharma' लिखने पर वे सभी नाम मिलते हैं जो Sharma पर समाप्त होते हैं[cite: 24]। IN ऑपरेटर यह जांचता है कि किसी कॉलम का मान दी गई सूची में मौजूद है या नहीं, जो कई OR क्लॉज का संक्षिप्त विकल्प है[cite: 24]। हमारे स्कूल स्कीमा में, यह क्वेरी दिल्ली या सोलन में रहने वाले शर्मा उपनाम वाले छात्रों को निकालती है[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Pattern Matching and Set Membership Evaluation</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Name LIKE &apos;%Sharma&apos;</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Wildcard Prefix Match</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">City IN (&apos;Delhi&apos;, &apos;Solan&apos;)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Discrete List Matching</text><line x1=\"280\" y1=\"102\" x2=\"320\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"320,102 312,98 312,106\" fill=\"#38bdf8\"/><line x1=\"162\" y1=\"130\" x2=\"162\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"437\" y1=\"130\" x2=\"437\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"162\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"162\" dy=\"0\">Matches Suffix</tspan><tspan x=\"162\" dy=\"1.2em\">Ramesh &amp; Ananya</tspan></text><text x=\"437\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"437\" dy=\"0\">Validates Locations</tspan><tspan x=\"437\" dy=\"1.2em\">Both In Target Cities</tspan></text></svg>",
+          "caption": {
+            "en": "Dual filtering evaluation combining LIKE wildcard string matching with IN discrete set membership[cite: 24].",
+            "hi": "दोहरी फ़िल्टरिंग प्रक्रिया जो LIKE वाइल्डकार्ड स्ट्रिंग मिलान और IN सूची सदस्यता परीक्षण को जोड़ती है[cite: 24]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how pattern matching and list membership evaluate string criteria.",
+          "hint": "Start with pattern matching and list membership clauses isolating text values, mention evaluating criteria across string fields, explain combining wildcard searches using LIKE with categorical list checks using IN, and conclude with retrieving records satisfying complex search patterns.",
+          "target_sequence": [
+            {
+              "id": "en_u19_t1",
+              "text": "Pattern matching and list membership clauses filter descriptive textual attributes",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u19_t2",
+              "text": "across student names and demographic location fields",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u19_t3",
+              "text": "and by pairing `%` wildcard string searches under `LIKE` with discrete set checks under `IN`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u19_t4",
+              "text": "they retrieve specific text records matching flexible patterns without writing cumbersome repetitive logic",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u19_d1",
+              "category": "logical",
+              "text": "and by forcing all student names to match strict identical single-character lengths automatically",
+              "penalty_explanation": "The percent wildcard in LIKE matches arbitrary character sequences of any length[cite: 24]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "LIKE और IN द्वारा पैटर्न और सूची मिलान करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "पैटर्न मिलान और सूची सदस्यता क्लॉज टेक्स्ट विशेषताओं को फ़िल्टर करते हैं से शुरू करें, छात्र नामों और शहरों का संदर्भ दें, `LIKE` में `%` वाइल्डकार्ड और `IN` में सूची परीक्षण का तरीका बताएं, और बिना जटिल कोड के रिकॉर्ड्स प्राप्त करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u19_t1",
+              "text": "पैटर्न मिलान और सूची सदस्यता क्लॉज विवरणात्मक टेक्स्ट विशेषताओं को फ़िल्टर करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u19_t2",
+              "text": "छात्रों के नामों और भौगोलिक स्थानों के रिकॉर्ड्स के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u19_t3",
+              "text": "और `LIKE` के तहत `%` वाइल्डकार्ड खोज को `IN` के तहत स्पष्ट सूची परीक्षण के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u19_t4",
+              "text": "ये जटिल और दोहराव वाले कोड के बिना लचीले पैटर्न से मेल खाने वाले रिकॉर्ड्स प्राप्त करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u19_d1",
+              "category": "logical",
+              "text": "और सभी छात्र नामों को केवल एक ही अक्षर की निश्चित लंबाई से मिलाने पर बाध्य करके",
+              "penalty_explanation": "LIKE में प्रतिशत (%) वाइल्डकार्ड किसी भी लंबाई के वर्णों से मेल खा सकता है[cite: 24]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "LIKE uses the % wildcard to match arbitrary string patterns, while IN checks whether an attribute belongs to a defined list[cite: 24].",
+        "hi": "LIKE ऑपरेटर % वाइल्डकार्ड से टेक्स्ट पैटर्न ढूंढता है, जबकि IN यह जांचता है कि मान दी गई सूची में है या नहीं[cite: 24]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Multi-Table Relational Joins and Record Updates with UPDATE and DELETE",
+          "hi": "बहु-तालिका संबंध क्वेरी और UPDATE तथा DELETE द्वारा रिकॉर्ड संशोधन"
+        },
+        "theory": {
+          "en": "Relational databases combine data from multiple tables using joins based on primary-foreign key relationships[cite: 24]. In our School Schema, querying SELECT S.Roll_No, S.Name, M.Sub_Code, M.Marks_Obtained FROM STUDENT S, MARKS M WHERE S.Roll_No = M.Roll_No AND M.Marks_Obtained >= 80.00; joins student profiles with their exam scores[cite: 24]. Additionally, DML updates and deletes targeted rows: UPDATE TEACHER SET Salary = Salary + 5000 WHERE Teacher_ID = 501; modifies existing values, while DELETE FROM STUDENT WHERE Roll_No = 102; removes a specific tuple without altering the table schema[cite: 24].",
+          "hi": "रिलेशनल डेटाबेस प्राइमरी और फॉरेन की संबंधों के आधार पर कई तालिकाओं के डेटा को एक साथ जोड़ने के लिए जॉइन का उपयोग करते हैं[cite: 24]। हमारे स्कूल स्कीमा में, STUDENT और MARKS को S.Roll_No = M.Roll_No द्वारा जोड़कर 80 या उससे अधिक अंक प्राप्त करने वाले छात्रों की संयुक्त जानकारी निकाली जाती है[cite: 24]। इसके अलावा, DML द्वारा डेटा संशोधित और हटाया जाता है: UPDATE TEACHER SET Salary = Salary + 5000 WHERE Teacher_ID = 501; वेतन बढ़ाता है, जबकि DELETE FROM STUDENT WHERE Roll_No = 102; स्कीमा बदले बिना विशिष्ट पंक्ति को हटाता है[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Multi-Table Relational Equi-Join and Mutation</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">STUDENT S</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Roll_No (PK)</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">S.Roll_No = M.Roll_No</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Relational Equi-Join</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">MARKS M</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Roll_No (FK)</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"375,102 383,98 383,106\" fill=\"#38bdf8\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Primary Key</tspan><tspan x=\"120\" dy=\"1.2em\">Source Identity</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Combined Tuples</tspan><tspan x=\"300\" dy=\"1.2em\">Unified Report</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Foreign Key</tspan><tspan x=\"480\" dy=\"1.2em\">Child Reference</tspan></text></svg>",
+          "caption": {
+            "en": "Relational equi-join pipeline connecting student identities with academic exam scores via primary-foreign key matching[cite: 24].",
+            "hi": "रिलेशनल जॉइन प्रक्रिया जो प्राइमरी-फॉरेन की मिलान द्वारा छात्र विवरण और परीक्षा अंकों को जोड़ती है[cite: 24]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how relational joins and DML statements coordinate data updates.",
+          "hint": "Start with relational joins and DML statements coordinating multi-table data, mention linking primary and foreign keys across schemas, explain updating values with UPDATE and removing rows with DELETE, and conclude with maintaining synchronized table records.",
+          "target_sequence": [
+            {
+              "id": "en_u20_t1",
+              "text": "Relational join operations and DML statements coordinate multi-table records",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u20_t2",
+              "text": "across interconnected student profiles and academic score sheets",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u20_t3",
+              "text": "and by linking keys in `WHERE` joins alongside mutating values via `UPDATE` and purging rows via `DELETE`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u20_t4",
+              "text": "they project unified cross-table insights and maintain accurate row data without altering table schemas",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u20_d1",
+              "category": "logical",
+              "text": "they permanently erase the entire student table structure whenever a single teacher salary is updated",
+              "penalty_explanation": "UPDATE modifies specific column values in rows and does not erase table structures[cite: 24]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "रिलेशनल जॉइन और DML कमांड्स द्वारा बहु-तालिका डेटा समन्वय की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "रिलेशनल जॉइन और DML स्टेटमेंट बहु-तालिका रिकॉर्ड्स का समन्वय करते हैं से शुरू करें, छात्र और अंक तालिकाओं का संदर्भ दें, जॉइन करने तथा `UPDATE` व `DELETE` से बदलाव का तरीका बताएं, और स्कीमा बदले बिना डेटा व्यवस्थित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u20_t1",
+              "text": "रिलेशनल जॉइन और DML स्टेटमेंट बहु-तालिका रिकॉर्ड्स का समन्वय करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u20_t2",
+              "text": "परस्पर जुड़े छात्र प्रोफाइल और शैक्षणिक अंक तालिकाओं के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u20_t3",
+              "text": "और कुंजियों को जॉइन करके तथा `UPDATE` से मान बदलकर व `DELETE` से पंक्तियाँ हटाकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u20_t4",
+              "text": "ये संयुक्त जानकारी प्रस्तुत करते हैं और स्कीमा बदले बिना सटीक डेटा बनाए रखते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u20_d1",
+              "category": "logical",
+              "text": "ये किसी शिक्षक का वेतन बदलते ही पूरी छात्र टेबल संरचना को हमेशा के लिए मिटा देते हैं",
+              "penalty_explanation": "UPDATE केवल लक्षित मानों को संशोधित करता है, यह टेबल संरचना को नहीं मिटाता है[cite: 24]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Relational joins unify cross-table data via key matching, while UPDATE modifies values and DELETE removes rows without altering schemas[cite: 24].",
+        "hi": "रिलेशनल जॉइन कुंजियों के मिलान से तालिकाओं को जोड़ते हैं, जबकि UPDATE मान बदलता है और DELETE स्कीमा बदले बिना पंक्तियाँ हटाता है[cite: 24]।"
+      }
+    }
+  ]
+}
