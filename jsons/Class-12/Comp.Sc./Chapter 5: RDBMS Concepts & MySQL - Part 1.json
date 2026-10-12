@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 5: RDBMS Concepts & MySQL - Part 1",
+      "hi": "यूनिट 5: RDBMS अवधारणाएं और MySQL - भाग 1"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Data vs. Information and Database Foundations",
+          "hi": "डेटा बनाम सूचना और डेटाबेस के मूल सिद्धांत"
+        },
+        "theory": {
+          "en": "Data represents raw, unorganized facts, figures, and symbols such as numbers or names without contextual meaning. Once processed, organized, and structured with context, it transforms into meaningful information that supports decision-making. A database acts as a centralized repository of logically related data, structured to minimize unnecessary redundancy while enabling rapid access and updates.",
+          "hi": "डेटा कच्चे, असंगठित तथ्यों, आंकड़ों और प्रतीकों को दर्शाता है जिनका अपने आप में कोई स्पष्ट संदर्भ नहीं होता। जब इसे संसाधित, व्यवस्थित और प्रासंगिक संदर्भ के साथ संरचित किया जाता है, तो यह अर्थपूर्ण सूचना में बदल जाता है। डेटाबेस तार्किक रूप से संबंधित डेटा का एक केंद्रीय संग्रह है, जिसे अनावश्यक दोहराव को समाप्त करते हुए तीव्र खोज और संशोधन के लिए व्यवस्थित किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Data to Information Processing Pipeline</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Raw Data Facts</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">101, Ramesh, 18</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">DBMS Engine</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Context &amp; Structure</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Information</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Student Passed: A</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Unorganized</tspan><tspan x=\"120\" dy=\"1.2em\">Input Elements</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Relational Storage</tspan><tspan x=\"300\" dy=\"1.2em\">Removes Duplication</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Structured Insight</tspan><tspan x=\"480\" dy=\"1.2em\">Meaningful Report</tspan></text></svg>",
+          "caption": {
+            "en": "Transformation pipeline converting unorganized raw facts into contextual information stored in a centralized database schema.",
+            "hi": "कच्चे असंगठित तथ्यों को केंद्रीय डेटाबेस स्कीमा में संग्रहीत अर्थपूर्ण सूचना में बदलने वाली प्रक्रिया।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how raw data transforms into structured database information.",
+          "hint": "Start with raw data elements lacking contextual meaning, describe processing and centralizing related facts, explain organizing storage without unnecessary redundancy, and conclude with producing actionable information.",
+          "target_sequence": [
+            {
+              "id": "en_u1_t1",
+              "text": "Raw unorganized data elements acquire meaningful context",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u1_t2",
+              "text": "through systematic processing inside a centralized database repository",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u1_t3",
+              "text": "and by organizing logically connected records without unnecessary duplication",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u1_t4",
+              "text": "they yield structured information that empowers reliable academic decision-making",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u1_d1",
+              "category": "logical",
+              "text": "they permanently lock facts into isolated text files requiring duplicate manual storage",
+              "penalty_explanation": "Databases eliminate isolated text duplication rather than locking data into disconnected manual files."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "कच्चे डेटा को संरचित डेटाबेस सूचना में बदलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "कच्चे असंगठित डेटा तत्व अर्थपूर्ण संदर्भ प्राप्त करते हैं से शुरू करें, केंद्रीय डेटाबेस में प्रसंस्करण का संदर्भ दें, अनावश्यक दोहराव के बिना रिकॉर्ड व्यवस्थित करने का तरीका बताएं, और निर्णय लेने योग्य सूचना प्रदान करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u1_t1",
+              "text": "कच्चे असंगठित डेटा तत्व अर्थपूर्ण संदर्भ प्राप्त करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u1_t2",
+              "text": "एक केंद्रीय डेटाबेस भंडार के भीतर व्यवस्थित प्रसंस्करण के माध्यम से",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u1_t3",
+              "text": "और अनावश्यक दोहराव के बिना तार्किक रूप से जुड़े रिकॉर्ड्स को व्यवस्थित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u1_t4",
+              "text": "ये संरचित सूचना उत्पन्न करते हैं जो सटीक शैक्षणिक निर्णय लेने में सहायता करती है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u1_d1",
+              "category": "logical",
+              "text": "ये तथ्यों को अलग-थलग टेक्स्ट फाइलों में बंद करके दोहराव वाले मैनुअल स्टोरेज की मांग करते हैं",
+              "penalty_explanation": "डेटाबेस अनावश्यक दोहराव और अलग-थलग फाइलों की समस्या को समाप्त करता है, बढ़ावा नहीं देता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Data consists of raw unorganized facts, whereas information is processed contextual data stored centrally without redundancy in a database.",
+        "hi": "डेटा कच्चे असंगठित तथ्य हैं, जबकि सूचना संसाधित प्रासंगिक डेटा है जिसे बिना दोहराव के केंद्रीय डेटाबेस में संग्रहीत किया जाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Traditional File Systems vs. RDBMS Architecture",
+          "hi": "पारंपरिक फाइल सिस्टम बनाम RDBMS आर्किटेक्चर"
+        },
+        "theory": {
+          "en": "Traditional file processing systems suffer from acute structural flaws: uncontrolled data redundancy (duplication across files), data inconsistency (partial updates causing conflicting values), lack of concurrent access (simultaneous writes cause corruption), and weak file-level security. In contrast, a Relational Database Management System (RDBMS) stores data in linked row-and-column tables called relations, enforcing strict integrity constraints, multi-user concurrency control, and robust centralized security.",
+          "hi": "पारंपरिक फाइल प्रोसेसिंग सिस्टम गंभीर संरचनात्मक कमियों से ग्रस्त होते हैं: अनियंत्रित डेटा दोहराव (अतिरेक), डेटा असंगतता (अधूरे अपडेट से विरोधाभासी प्रविष्टियां), समवर्ती पहुंच का अभाव (एक साथ लिखने पर डेटा क्षति), और कमजोर सुरक्षा। इसके विपरीत, एक रिलेशनल डेटाबेस मैनेजमेंट सिस्टम (RDBMS) डेटा को परस्पर जुड़ी तालिकाओं (रिलेशन) में पंक्तियों और कॉलमों के रूप में संग्रहीत करता है, जिससे सख्त अखंडता प्रतिबंध, बहु-उपयोगकर्ता समवर्ती नियंत्रण और उच्च सुरक्षा सुनिश्चित होती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">File System Isolation vs. RDBMS Relational Grid</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Traditional File System</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Redundant | Isolated Files</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Relational DBMS (RDBMS)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Linked Tables | Integrity</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Inconsistency</tspan><tspan x=\"100\" dy=\"1.2em\">Unsynced Edits</tspan></text><text x=\"225\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Single User</tspan><tspan x=\"225\" dy=\"1.2em\">No Concurrency</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Controlled Data</tspan><tspan x=\"375\" dy=\"1.2em\">Zero Duplication</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Multi-User Lock</tspan><tspan x=\"500\" dy=\"1.2em\">ACID Compliant</tspan></text></svg>",
+          "caption": {
+            "en": "Architectural contrast highlighting file system isolation hazards against interconnected, concurrent RDBMS relational tables.",
+            "hi": "पारंपरिक फाइल सिस्टम के बिखराव और RDBMS की परस्पर जुड़ी, समवर्ती तालिकाओं के बीच संरचनात्मक तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how RDBMS architecture resolves traditional file system flaws.",
+          "hint": "Start with Relational Database Management Systems replacing legacy file systems, mention eliminating isolated storage silos, explain enforcing centralized table links and integrity rules, and conclude with preventing data redundancy and inconsistency.",
+          "target_sequence": [
+            {
+              "id": "en_u2_t1",
+              "text": "Relational Database Management Systems replace legacy file systems",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u2_t2",
+              "text": "across enterprise multi-user operational environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u2_t3",
+              "text": "and by organizing structured records into interconnected tables governed by integrity constraints",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u2_t4",
+              "text": "they prevent data redundancy, eliminate inconsistency, and enable safe concurrent access",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u2_d1",
+              "category": "logical",
+              "text": "and by permitting uncontrolled duplicate copies across independent unlinked text files",
+              "penalty_explanation": "RDBMS strictly prevents uncontrolled duplication through central relational schemas."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "RDBMS द्वारा पारंपरिक फाइल सिस्टम की कमियों को दूर करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "रिलेशनल डेटाबेस मैनेजमेंट सिस्टम पुरानी फाइल प्रणालियों की जगह लेते हैं से शुरू करें, बहु-उपयोगकर्ता परिवेश का संदर्भ दें, अखंडता नियमों से बंधी तालिकाओं का तरीका बताएं, और दोहराव व असंगतता रोकने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u2_t1",
+              "text": "रिलेशनल डेटाबेस मैनेजमेंट सिस्टम पुरानी फाइल प्रणालियों का स्थान लेते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u2_t2",
+              "text": "व्यावसायिक बहु-उपयोगकर्ता परिचालन परिवेश के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u2_t3",
+              "text": "और अखंडता प्रतिबंधों द्वारा शासित परस्पर जुड़ी तालिकाओं में रिकॉर्ड्स को व्यवस्थित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u2_t4",
+              "text": "ये डेटा दोहराव को रोकते हैं, असंगतता मिटाते हैं और सुरक्षित समवर्ती पहुंच प्रदान करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u2_d1",
+              "category": "logical",
+              "text": "और स्वतंत्र असंबद्ध टेक्स्ट फाइलों में अनियंत्रित डुप्लिकेट प्रतियों की अनुमति देकर",
+              "penalty_explanation": "RDBMS डुप्लिकेट प्रतियों को रोकता है, उन्हें अनियंत्रित रूप से रखने की अनुमति नहीं देता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "RDBMS overcomes file system flaws by using interconnected tables that eliminate redundancy, prevent inconsistency, and support concurrent multi-user access.",
+        "hi": "RDBMS परस्पर जुड़ी तालिकाओं का उपयोग करके डेटा दोहराव और असंगतता को रोकता है तथा सुरक्षित बहु-उपयोगकर्ता पहुंच प्रदान करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Three-Level Database Architecture and Data Abstraction",
+          "hi": "त्रि-स्तरीय डेटाबेस आर्किटेक्चर और डेटा एब्स्ट्रैक्शन"
+        },
+        "theory": {
+          "en": "Data abstraction is the process of hiding complex, low-level physical storage details from end-users to ensure ease of access and data security. The standard ANSI/SPARC 3-level architecture organizes this into three tiers: the Physical/Internal Level (how data is physically stored on disk drives via blocks and pointers), the Conceptual/Logical Level (what data and entity relationships are stored in relational tables), and the External/View Level (how customized views like forms, tables, or graphs are displayed to distinct user roles).",
+          "hi": "डेटा एब्स्ट्रैक्शन डेटा पहुंच को सरल और सुरक्षित बनाने के लिए अंतिम उपयोगकर्ताओं से जटिल आंतरिक भंडारण विवरणों को छुपाने की प्रक्रिया है। मानक ANSI/SPARC त्रि-स्तरीय आर्किटेक्चर इसे तीन स्तरों में विभाजित करता है: भौतिक/आंतरिक स्तर (डेटा डिस्क ड्राइव पर ब्लॉक और पॉइंटर्स द्वारा कैसे संग्रहीत है), तार्किक/कन्सेप्चुअल स्तर (तालिकाओं में क्या डेटा और संबंध संग्रहीत हैं), और दृश्य/बाहरी स्तर (विभिन्न उपयोगकर्ताओं के लिए अनुकूलित दृश्य कैसे प्रस्तुत किए जाते हैं)।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Three-Level ANSI/SPARC Data Abstraction Framework</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">External / View</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">End-Users (HOW Seen)</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Conceptual / Logical</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">DBA (WHAT is Stored)</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Internal / Physical</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Engineers (HOW Stored)</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Tailored Views</tspan><tspan x=\"120\" dy=\"1.2em\">Hides Schema</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Table Schemas</tspan><tspan x=\"300\" dy=\"1.2em\">Entity Relations</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Disk Blocks</tspan><tspan x=\"480\" dy=\"1.2em\">Hardware Offsets</tspan></text></svg>",
+          "caption": {
+            "en": "Three-level abstraction hierarchy partitioning database complexity into external views, conceptual tables, and internal storage.",
+            "hi": "त्रि-स्तरीय एब्स्ट्रैक्शन पदानुक्रम जो जटिलता को बाहरी दृश्यों, तार्किक तालिकाओं और आंतरिक भौतिक भंडारण में विभाजित करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the three-level architecture delivers data abstraction.",
+          "hint": "Start with the three-level database architecture delivering data abstraction, mention separating user queries from storage hardware, explain structuring external views, conceptual tables, and physical storage blocks, and conclude with simplifying access while securing data.",
+          "target_sequence": [
+            {
+              "id": "en_u3_t1",
+              "text": "The three-level database architecture delivers systematic data abstraction",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u3_t2",
+              "text": "by separating end-user interfaces from underlying physical hardware",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u3_t3",
+              "text": "and by layering tailored external views above conceptual tables and internal storage blocks",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u3_t4",
+              "text": "it hides storage complexity while providing customized, secure access for all user roles",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u3_d1",
+              "category": "logical",
+              "text": "and by forcing every regular end-user to manage low-level disk cylinder addresses directly",
+              "penalty_explanation": "Data abstraction explicitly hides disk cylinder and block details from everyday end-users."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "त्रि-स्तरीय आर्किटेक्चर द्वारा डेटा एब्स्ट्रैक्शन प्रदान करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "त्रि-स्तरीय डेटाबेस आर्किटेक्चर व्यवस्थित डेटा एब्स्ट्रैक्शन प्रदान करता है से शुरू करें, उपयोगकर्ता इंटरफेस को हार्डवेयर से अलग करने का संदर्भ दें, बाहरी व्यू, तार्किक टेबल और आंतरिक ब्लॉक की परतें बनाने का तरीका बताएं, और सुरक्षित पहुंच प्रदान करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u3_t1",
+              "text": "त्रि-स्तरीय डेटाबेस आर्किटेक्चर व्यवस्थित डेटा एब्स्ट्रैक्शन प्रदान करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u3_t2",
+              "text": "उपयोगकर्ता इंटरफेस को निचले स्तर के भौतिक हार्डवेयर से अलग करके",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u3_t3",
+              "text": "और आंतरिक स्टोरेज तथा तार्किक तालिकाओं के ऊपर अनुकूलित बाहरी दृश्यों की परत बनाकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u3_t4",
+              "text": "यह आंतरिक जटिलता को छुपाता है तथा सभी उपयोगकर्ता भूमिकाओं को सुरक्षित पहुंच देता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u3_d1",
+              "category": "logical",
+              "text": "और प्रत्येक सामान्य उपयोगकर्ता को डिस्क सिलेंडर पते सीधे प्रबंधित करने पर मजबूर करके",
+              "penalty_explanation": "डेटा एब्स्ट्रैक्शन का उद्देश्य ही डिस्क पतों और हार्डवेयर जटिलताओं को उपयोगकर्ताओं से छुपाना है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The ANSI/SPARC 3-tier model separates data into Physical (how stored), Conceptual (what is stored), and External/View (how users see it) levels.",
+        "hi": "ANSI/SPARC त्रि-स्तरीय मॉडल डेटा को भौतिक (कैसे संग्रहीत है), तार्किक (क्या संग्रहीत है) और दृश्य (उपयोगकर्ता कैसे देखते हैं) स्तरों में बांटता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Database Administrator (DBA) Governance and Roles",
+          "hi": "डेटाबेस एडमिनिस्ट्रेटर (DBA) शासन और भूमिकाएं"
+        },
+        "theory": {
+          "en": "A Database Administrator (DBA) is the technical custodian responsible for the design, deployment, monitoring, and ongoing maintenance of an organization's database systems. The DBA possesses overall administrative and operational authority, performing core duties: defining all three levels of schema architecture, assisting application programmers, controlling user authorization (granting and revoking privileges), tuning performance, and executing periodic automated backup and disaster recovery plans.",
+          "hi": "डेटाबेस एडमिनिस्ट्रेटर (DBA) वह मुख्य तकनीकी व्यक्ति है जो संगठन के डेटाबेस सिस्टम को डिजाइन करने, लागू करने, निगरानी करने और बनाए रखने के लिए जिम्मेदार होता है। तकनीकी स्तर पर डेटाबेस का समग्र नियंत्रण DBA के पास होता है, जिसके मुख्य कार्यों में शामिल हैं: तीनों स्तरों की स्कीमा को परिभाषित करना, एप्लिकेशन प्रोग्रामर्स की सहायता करना, एक्सेस अनुमतियों (GRANT और REVOKE) को नियंत्रित करना, और नियमित बैकअप व डिजास्टर रिकवरी सुनिश्चित करना।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Database Administrator (DBA) Functional Core</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Schema Definition</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Tables &amp; Integrity</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Access Security</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">GRANT &amp; REVOKE</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Backup &amp; Recovery</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Disaster Protection</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Builds Layout</tspan><tspan x=\"120\" dy=\"1.2em\">All Three Tiers</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Assigns Privileges</tspan><tspan x=\"300\" dy=\"1.2em\">Protects Data</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Restores Lost Data</tspan><tspan x=\"480\" dy=\"1.2em\">In Case of Failure</tspan></text></svg>",
+          "caption": {
+            "en": "Operational governance pillars of the DBA coordinating schema definitions, access privileges, and automated disaster recovery.",
+            "hi": "DBA के मुख्य परिचालन स्तंभ जो स्कीमा परिभाषा, एक्सेस विशेषाधिकार और डेटा रिकवरी का समन्वय करते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing the administrative responsibilities of a Database Administrator.",
+          "hint": "Start with the Database Administrator serving as the primary technical custodian, mention maintaining organizational database infrastructure, explain defining schemas, managing access privileges, and scheduling recovery protocols, and conclude with ensuring integrity and continuity.",
+          "target_sequence": [
+            {
+              "id": "en_u4_t1",
+              "text": "The Database Administrator serves as the authoritative technical custodian",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u4_t2",
+              "text": "for managing an organization's relational database infrastructure",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u4_t3",
+              "text": "and by defining schemas, governing user privileges, and scheduling automated backup routines",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u4_t4",
+              "text": "they safeguard structural integrity, protect confidential records, and guarantee business continuity",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u4_d1",
+              "category": "logical",
+              "text": "and by delegating all security permissions and backup duties permanently to casual web visitors",
+              "penalty_explanation": "The DBA holds strict central control over security and never delegates core administration to outside visitors."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "डेटाबेस एडमिनिस्ट्रेटर (DBA) की प्रशासनिक जिम्मेदारियों को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "डेटाबेस एडमिनिस्ट्रेटर मुख्य तकनीकी संरक्षक के रूप में कार्य करता है से शुरू करें, संगठनात्मक डेटाबेस का संदर्भ दें, स्कीमा परिभाषित करने, अनुमतियां देने और बैकअप लेने का तरीका बताएं, और डेटा सुरक्षा व निरंतरता बनाए रखने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u4_t1",
+              "text": "डेटाबेस एडमिनिस्ट्रेटर प्रमुख तकनीकी संरक्षक के रूप में कार्य करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u4_t2",
+              "text": "संगठन के रिलेशनल डेटाबेस इंफ्रास्ट्रक्चर के प्रबंधन के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u4_t3",
+              "text": "और स्कीमा को परिभाषित करके, अनुमतियों को नियंत्रित करके तथा स्वचालित बैकअप शेड्यूल करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u4_t4",
+              "text": "यह संरचनात्मक अखंडता की रक्षा करता है और सिस्टम विफलता में त्वरित रिकवरी सुनिश्चित करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u4_d1",
+              "category": "logical",
+              "text": "और सभी सुरक्षा अनुमतियों व बैकअप कार्यों को आकस्मिक वेब विज़िटर्स को स्थायी रूप से सौंपकर",
+              "penalty_explanation": "DBA के पास सुरक्षा का पूर्ण केंद्रीय नियंत्रण होता है, वह इसे बाहरी विज़िटर्स को नहीं सौंपता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The DBA is responsible for overall database governance, including schema definition, user authorization, performance monitoring, and backup/recovery.",
+        "hi": "DBA डेटाबेस के समग्र प्रशासन के लिए जिम्मेदार होता है, जिसमें स्कीमा परिभाषा, उपयोगकर्ता अनुमतियां, प्रदर्शन और बैकअप/रिकवरी शामिल हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Active vs. Passive Data Dictionary Architecture",
+          "hi": "एक्टिव बनाम पैसिव डेटा डिक्शनरी आर्किटेक्चर"
+        },
+        "theory": {
+          "en": "A data dictionary stores metadata, which is 'data about data', describing table structures, relationships, column types, and constraints. An Active Data Dictionary resides directly inside the DBMS memory and updates automatically whenever DDL statements execute, guaranteeing 100% synchronization with running tables. In contrast, a Passive Data Dictionary is maintained manually outside the DBMS as independent documentation, creating severe risks of becoming outdated when schemas evolve.",
+          "hi": "डेटा डिक्शनरी मेटाडेटा संग्रहीत करती है, जो 'डेटा के बारे में डेटा' होता है और तालिकाओं की संरचना, संबंधों, प्रकारों और प्रतिबंधों का विवरण देता है। एक्टिव डेटा डिक्शनरी सीधे DBMS मेमोरी में रहती है और DDL स्टेटमेंट चलने पर स्वतः अपडेट होती है, जिससे वास्तविक तालिकाओं के साथ 100% सटीकता बनी रहती है। इसके विपरीत, पैसिव डेटा डिक्शनरी को DBMS से अलग मैनुअल दस्तावेज़ के रूप में बनाए रखा जाता है, जिसके कारण स्कीमा बदलने पर उसके पुराने और असंगत होने का जोखिम बना रहता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Dictionary Synchronization: Active vs. Passive</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Active Dictionary</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Auto-Updated by DDL</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Passive Dictionary</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Manual External Files</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">In-Memory</tspan><tspan x=\"100\" dy=\"1.2em\">DBMS Managed</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">100% Accurate</tspan><tspan x=\"225\" dy=\"1.2em\">Always in Sync</tspan></text><text x=\"375\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">External Docs</tspan><tspan x=\"375\" dy=\"1.2em\">Separated Files</tspan></text><text x=\"500\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Drift Hazard</tspan><tspan x=\"500\" dy=\"1.2em\">May Fall Outdated</tspan></text></svg>",
+          "caption": {
+            "en": "Metadata catalog synchronization contrasting internal automated active dictionaries with external manual passive records.",
+            "hi": "मेटाडेटा कैटलॉग तुलना जो आंतरिक स्वतः-अद्यतन एक्टिव डिक्शनरी और बाहरी मैन्युअल पैसिव रिकॉर्ड्स के अंतर को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence contrasting active and passive data dictionaries.",
+          "hint": "Start with data dictionaries cataloging database metadata, mention managing structural schemas across applications, explain contrasting automated in-engine updates with detached manual documentation, and conclude with maintaining consistency.",
+          "target_sequence": [
+            {
+              "id": "en_u5_t1",
+              "text": "Data dictionaries store essential system metadata",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u5_t2",
+              "text": "to describe schemas, table definitions, and constraints across relational systems",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u5_t3",
+              "text": "and by updating automatically inside DBMS memory in active mode versus relying on manual records in passive mode",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u5_t4",
+              "text": "they distinguish real-time schema synchronization from documentation that risks falling outdated",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u5_d1",
+              "category": "logical",
+              "text": "and by wiping out all table schema definitions whenever an automated DDL statement executes",
+              "penalty_explanation": "Active data dictionaries automatically update and preserve schema records rather than wiping them out."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "एक्टिव और पैसिव डेटा डिक्शनरी के अंतर को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "डेटा डिक्शनरी आवश्यक सिस्टम मेटाडेटा संग्रहीत करती हैं से शुरू करें, रिलेशनल सिस्टम में स्कीमा का संदर्भ दें, एक्टिव में स्वतः अपडेट और पैसिव में मैन्युअल रिकॉर्ड का तरीका बताएं, और वास्तविक समय तुल्यकालन के अंतर पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u5_t1",
+              "text": "डेटा डिक्शनरी आवश्यक सिस्टम मेटाडेटा को संग्रहीत करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u5_t2",
+              "text": "रिलेशनल सिस्टम में स्कीमा, टेबल परिभाषाओं और बाधाओं का विवरण देने के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u5_t3",
+              "text": "और एक्टिव मोड में DBMS द्वारा स्वतः अपडेट होकर तथा पैसिव मोड में बाहरी मैन्युअल रिकॉर्ड पर निर्भर रहकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u5_t4",
+              "text": "ये रीयल-टाइम स्कीमा तुल्यकालन को पुराने पड़ने के जोखिम वाले दस्तावेज़ों से अलग करती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u5_d1",
+              "category": "logical",
+              "text": "और DDL स्टेटमेंट निष्पादित होने पर सभी टेबल परिभाषाओं को मेमोरी से पूरी तरह मिटाकर",
+              "penalty_explanation": "डेटा डिक्शनरी DDL निष्पादन पर स्कीमा को अद्यतन करती है, उसे मिटाती नहीं है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Active data dictionaries update automatically with DDL changes inside the DBMS, while passive dictionaries are manually maintained external documentation.",
+        "hi": "एक्टिव डेटा डिक्शनरी DBMS में DDL परिवर्तनों के साथ स्वतः अपडेट होती है, जबकि पैसिव डिक्शनरी मैन्युअल रूप से तैयार किया गया बाहरी दस्तावेज़ है।"
+      }
+    }
+  ]
+}
