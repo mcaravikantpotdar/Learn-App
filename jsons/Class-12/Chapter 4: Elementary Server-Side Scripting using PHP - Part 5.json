@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Informatics Practices",
+    "chapter_title": {
+      "en": "Chapter 4: Elementary Server-Side Scripting using PHP - Part 5",
+      "hi": "अध्याय 4: PHP का उपयोग करके प्राथमिक सर्वर-साइड स्क्रिप्टिंग - भाग 5"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Indexed Arrays and Zero-Based Element Storage",
+          "hi": "इंडेक्स्ड ऐरे और शून्य-आधारित एलिमेंट स्टोरेज"
+        },
+        "theory": {
+          "en": "An array in PHP is a specialized variable capable of storing multiple values under a single identifier name. An indexed array assigns sequential numeric keys automatically starting from index position 0. Individual array elements are retrieved and manipulated by placing their non-negative numeric offset within square brackets directly after the variable identifier.",
+          "hi": "PHP में ऐरे एक विशेष प्रकार का वैरिएबल है जो एक ही पहचानकर्ता नाम के तहत कई मानों को संग्रहीत करने में सक्षम होता है। एक इंडेक्स किया गया ऐरे इंडेक्स स्थिति 0 से शुरू होकर स्वतः ही क्रमिक संख्यात्मक कुंजियाँ आवंटित करता है। वैरिएबल के नाम के बाद चौकोर कोष्ठक में गैर-ऋणात्मक संख्यात्मक मान लिखकर अलग-अलग ऐरे तत्वों को प्राप्त और उपयोग किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Zero-Based Indexed Array Architecture</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">$fruits[0]</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&quot;Apple&quot;</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">$fruits[1]</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&quot;Banana&quot;</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">$fruits[2]</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">&quot;Orange&quot;</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Index Zero</tspan><tspan x=\"120\" dy=\"1.2em\">First Element</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Index One</tspan><tspan x=\"300\" dy=\"1.2em\">Second Element</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Index Two</tspan><tspan x=\"480\" dy=\"1.2em\">Third Element</tspan></text></svg>",
+          "caption": {
+            "en": "Sequential zero-indexed array memory slots mapping sequential integer offsets to stored data items.",
+            "hi": "शून्य-आधारित इंडेक्स्ड ऐरे मेमोरी स्लॉट जो क्रमिक पूर्णांक ऑफसेट को संग्रहीत डेटा मानों से जोड़ते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how indexed arrays allocate and access multi-value memory slots.",
+          "hint": "Start with indexed arrays storing multiple values, mention sequential integer positions, explain referencing square-bracketed numeric keys starting from zero, and conclude with accessing stored elements without creating separate variables.",
+          "target_sequence": [
+            {
+              "id": "en_u24_t1",
+              "text": "Indexed arrays organize collections of multiple data elements",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u24_t2",
+              "text": "under a single common identifier name in PHP memory",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u24_t3",
+              "text": "and by referencing numeric indices enclosed in square brackets beginning strictly from zero",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u24_t4",
+              "text": "they retrieve and mutate specific positional values without declaring distinct isolated variables",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u24_d1",
+              "category": "logical",
+              "text": "and by forcing the initial element index to begin strictly at one rather than zero",
+              "penalty_explanation": "PHP indexed arrays are strictly zero-based by default, meaning the initial item starts at index 0 and not 1."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP में इंडेक्स्ड ऐरे द्वारा कई मानों को संग्रहीत और एक्सेस करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "इंडेक्स्ड ऐरे कई डेटा तत्वों के संग्रह को व्यवस्थित करते हैं से शुरू करें, एकल पहचानकर्ता नाम का संदर्भ दें, शून्य से शुरू होने वाले कोष्ठक इंडेक्स का तरीका बताएं, और अलग वैरिएबल बनाए बिना विशिष्ट मान प्राप्त करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u24_t1",
+              "text": "इंडेक्स्ड ऐरे कई डेटा तत्वों के संग्रह को व्यवस्थित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u24_t2",
+              "text": "PHP मेमोरी के भीतर एक ही सामान्य पहचानकर्ता नाम के तहत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u24_t3",
+              "text": "और शून्य से शुरू होकर चौकोर कोष्ठक में संलग्न संख्यात्मक इंडेक्स का संदर्भ देकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u24_t4",
+              "text": "ये अलग वैरिएबल घोषित किए बिना विशिष्ट स्थितिगत मानों को कुशलतापूर्वक प्राप्त और संशोधित करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u24_d1",
+              "category": "logical",
+              "text": "और शून्य के बजाय पहले एलिमेंट के इंडेक्स को अनिवार्य रूप से एक से शुरू करके",
+              "penalty_explanation": "PHP इंडेक्स्ड ऐरे डिफ़ॉल्ट रूप से शून्य-आधारित होते हैं, अर्थात पहली प्रविष्टि 0 से शुरू होती है न कि 1 से।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Arrays store multiple values under one name, with indexed arrays utilizing zero-based numeric keys like $fruits[0] to access items.",
+        "hi": "ऐरे एक नाम के तहत कई मान संग्रहीत करते हैं, जिसमें इंडेक्स्ड ऐरे तत्वों को प्राप्त करने के लिए $fruits[0] जैसे शून्य-आधारित इंडेक्स का उपयोग करते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "PHP Array Taxonomy: Indexed, Associative, and Multidimensional",
+          "hi": "PHP ऐरे वर्गीकरण: इंडेक्स्ड, एसोसिएटिव और मल्टीडायमेंशनल"
+        },
+        "theory": {
+          "en": "PHP supports three distinct architectural categories of arrays to handle various data modeling needs. Indexed arrays store data accessible via automatically assigned numeric keys. Associative arrays utilize named custom strings as keys to represent structured key-value maps. Multidimensional arrays contain one or more nested child arrays inside a parent container, creating complex tables or matrix structures.",
+          "hi": "PHP विभिन्न डेटा आवश्यकताओं को संभालने के लिए ऐरे की तीन अलग-अलग संरचनात्मक श्रेणियों का समर्थन करता है। इंडेक्स्ड ऐरे स्वचालित रूप से दिए गए संख्यात्मक कुंजियों के माध्यम से सुलभ डेटा संग्रहीत करते हैं। एसोसिएटिव ऐरे संरचित की-वैल्यू (key-value) मैप को दर्शाने के लिए नामित स्ट्रिंग्स को कुंजियों के रूप में उपयोग करते हैं। मल्टीडायमेंशनल ऐरे एक मूल ऐरे के भीतर एक या अधिक नेस्टेड चाइल्ड ऐरे शामिल करते हैं, जिससे मैट्रिक्स या टेबल संरचनाएं बनती हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">PHP Array Taxonomy and Structure Types</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Indexed Array</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Numeric Indices</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Associative Array</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Named String Keys</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Multidimensional</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Nested Matrices</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Numeric Offsets</tspan><tspan x=\"120\" dy=\"1.2em\">0, 1, 2, 3...</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Descriptive Labels</tspan><tspan x=\"300\" dy=\"1.2em\">Key-Value Pairs</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Arrays of Arrays</tspan><tspan x=\"480\" dy=\"1.2em\">Grid Coordinate Data</tspan></text></svg>",
+          "caption": {
+            "en": "Taxonomy of PHP array categories showing numeric indexed collections, associative key-value maps, and nested arrays.",
+            "hi": "PHP ऐरे श्रेणियों का वर्गीकरण जो संख्यात्मक इंडेक्स्ड संग्रह, एसोसिएटिव की-वैल्यू मैप और नेस्टेड ऐरे को दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence categorizing the three primary architectural types of PHP arrays.",
+          "hint": "Start with PHP structuring complex data collections, mention supporting diverse data modeling requirements, explain organizing into indexed, associative, and multidimensional categories, and conclude with accommodating single and multi-level data models.",
+          "target_sequence": [
+            {
+              "id": "en_u25_t1",
+              "text": "PHP structures diverse programmatic data collections",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u25_t2",
+              "text": "across three principal array classifications during runtime execution",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u25_t3",
+              "text": "and by distinguishing linear indexed offsets from associative text keys and nested multidimensional grids",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u25_t4",
+              "text": "it accommodates simple numerical sequences as well as multi-layered records flexibly and cleanly",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u25_d1",
+              "category": "logical",
+              "text": "and by disallowing any arrays from ever embedding subordinate child arrays inside their structure",
+              "penalty_explanation": "Multidimensional arrays explicitly support embedding subordinate arrays inside parent array structures."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP ऐरे की तीन मुख्य श्रेणियों के वर्गीकरण को दर्शाने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "PHP विविध प्रोग्रामिंग डेटा संग्रहों को संरचित करता है से शुरू करें, तीन प्रमुख ऐरे श्रेणियों का संदर्भ दें, इंडेक्स्ड, एसोसिएटिव और मल्टीडायमेंशनल में अंतर का तरीका बताएं, और एकल व बहुस्तरीय डेटा मॉडल को संभालने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u25_t1",
+              "text": "PHP विविध प्रोग्रामिंग डेटा संग्रहों को संरचित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u25_t2",
+              "text": "रनटाइम निष्पादन के दौरान तीन प्रमुख ऐरे वर्गीकरणों के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u25_t3",
+              "text": "और संख्यात्मक इंडेक्स्ड ऑफसेट, एसोसिएटिव टेक्स्ट कुंजियों तथा नेस्टेड मल्टीडायमेंशनल ग्रिड में भेद करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u25_t4",
+              "text": "यह सरल संख्यात्मक अनुक्रमों के साथ-साथ बहुस्तरीय रिकॉर्ड्स को भी लचीले ढंग से व्यवस्थित करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u25_d1",
+              "category": "logical",
+              "text": "और किसी भी ऐरे के भीतर सहायक चाइल्ड ऐरे को एम्बेड करने पर पूरी तरह प्रतिबंध लगाकर",
+              "penalty_explanation": "मल्टीडायमेंशनल ऐरे विशेष रूप से एक ऐरे के अंदर दूसरे ऐरे को रखने की पूरी अनुमति और सुविधा देते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "PHP provides three array categories: indexed arrays (numeric keys), associative arrays (named string keys), and multidimensional arrays (nested arrays).",
+        "hi": "PHP तीन प्रकार के ऐरे प्रदान करता है: इंडेक्स्ड ऐरे (संख्यात्मक कुंजियाँ), एसोसिएटिव ऐरे (नामित टेक्स्ट कुंजियाँ) और मल्टीडायमेंशनल ऐरे (नेस्टेड ऐरे)।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Built-in Core Functions and String Length Evaluation",
+          "hi": "बिल्ट-इन कोर फंक्शन्स और स्ट्रिंग लंबाई मूल्यांकन"
+        },
+        "theory": {
+          "en": "Functions represent reusable blocks of code that execute on demand whenever called by name. PHP includes over a thousand built-in functions within its standard runtime distribution, eliminating the need to re-implement routine operations. For instance, the built-in strlen() function accepts a string argument and computes its exact character length, returning 5 when passed \"Hello\".",
+          "hi": "फंक्शन्स कोड के ऐसे पुन: प्रयोज्य ब्लॉक होते हैं जिन्हें उनके नाम से कॉल करके आवश्यकतानुसार निष्पादित किया जाता है। PHP अपने मानक रनटाइम में एक हज़ार से अधिक बिल्ट-इन फंक्शन्स शामिल करता है, जिससे सामान्य कार्यों को बार-बार लिखने की आवश्यकता नहीं होती। उदाहरण के लिए, strlen() फ़ंक्शन किसी स्ट्रिंग को तर्क के रूप में स्वीकार करता है और उसकी सटीक लंबाई लौटाता है, जैसे \"Hello\" देने पर 5 लौटाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Built-in Function Invocation: strlen(&quot;Hello&quot;)</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">&quot;Hello&quot;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Input String Argument</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">strlen()</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Built-in Core Engine</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\">5</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Returned Integer</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Text Payload</tspan><tspan x=\"120\" dy=\"1.2em\">Passed to Parameter</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Counts Characters</tspan><tspan x=\"300\" dy=\"1.2em\">Standard Library</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Output Metric</tspan><tspan x=\"480\" dy=\"1.2em\">Evaluated Result</tspan></text></svg>",
+          "caption": {
+            "en": "Standard library execution passing a text parameter to the built-in strlen function to produce string character length.",
+            "hi": "मानक लाइब्रेरी निष्पादन जो स्ट्रिंग वर्ण लंबाई प्राप्त करने के लिए बिल्ट-इन strlen फ़ंक्शन में टेक्स्ट तर्क पास करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how built-in PHP functions evaluate arguments like string length.",
+          "hint": "Start with built-in functions providing pre-compiled capabilities, mention handling routine operations across scripts, explain passing arguments to standard library functions like strlen, and conclude with returning evaluated output without custom algorithm design.",
+          "target_sequence": [
+            {
+              "id": "en_u26_t1",
+              "text": "Built-in functions provide pre-compiled operational capabilities",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u26_t2",
+              "text": "directly within the standard PHP runtime environment",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u26_t3",
+              "text": "and by passing raw arguments into standard routines like `strlen` to inspect character counts",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u26_t4",
+              "text": "they return evaluated metrics instantly without requiring developers to write low-level algorithms",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u26_d1",
+              "category": "logical",
+              "text": "and by requiring developers to manually redefine `strlen` before every invocation",
+              "penalty_explanation": "Built-in functions are pre-compiled and available globally in PHP without manual re-definition."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP में बिल्ट-इन फंक्शन्स द्वारा स्ट्रिंग लंबाई जैसे तर्कों के मूल्यांकन की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "बिल्ट-इन फंक्शन्स पूर्व-संकलित क्षमताएं प्रदान करते हैं से शुरू करें, मानक PHP रनटाइम का संदर्भ दें, वर्णों की गिनती के लिए `strlen` जैसे रूटीन का तरीका बताएं, और बिना अतिरिक्त कोड के त्वरित परिणाम देने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u26_t1",
+              "text": "बिल्ट-इन फंक्शन्स पूर्व-संकलित परिचालन क्षमताएँ प्रदान करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u26_t2",
+              "text": "मानक PHP रनटाइम परिवेश के भीतर सीधे तौर पर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u26_t3",
+              "text": "और वर्णों की सटीक संख्या जांचने के लिए `strlen` जैसे मानक रूटीन में तर्क पास करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u26_t4",
+              "text": "ये डेवलपर्स द्वारा अलग से कोड लिखे बिना ही तुरंत सटीक परिणाम लौटाते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u26_d1",
+              "category": "logical",
+              "text": "और डेवलपर्स से प्रत्येक कॉल से पहले `strlen` को नए सिरे से परिभाषित करने की मांग करके",
+              "penalty_explanation": "बिल्ट-इन फंक्शन्स पहले से परिभाषित होते हैं, उन्हें दोबारा परिभाषित करने की आवश्यकता नहीं होती।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "PHP provides over 1,000 built-in functions, such as strlen() which evaluates and returns the total length of a string.",
+        "hi": "PHP 1,000 से अधिक बिल्ट-इन फंक्शन्स प्रदान करता है, जैसे strlen() जो किसी स्ट्रिंग की कुल लंबाई की गणना करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "User-Defined Functions and Invocation Syntax",
+          "hi": "उपयोगकर्ता-परिभाषित फंक्शन्स और इनवोकेशन सिंटैक्स"
+        },
+        "theory": {
+          "en": "User-defined functions allow programmers to encapsulate custom logic into named blocks for modular reuse. In PHP, a function is declared using the function keyword followed by a unique function name and parentheses. Function names must start with a letter or underscore rather than numbers, and unlike variable identifiers, function names in PHP are completely case-insensitive.",
+          "hi": "उपयोगकर्ता-परिभाषित (यूजर-डिफ़ाइंड) फंक्शन्स प्रोग्रामर को पुन: प्रयोज्यता के लिए कस्टम लॉजिक को कोड ब्लॉक्स में समेटने की अनुमति देते हैं। PHP में एक फ़ंक्शन को function कीवर्ड, उसके बाद एक अद्वितीय नाम और कोष्ठक का उपयोग करके घोषित किया जाता है। फ़ंक्शन का नाम किसी अक्षर या अंडरस्कोर से शुरू होना चाहिए, संख्या से नहीं, और वैरिएबल्स के विपरीत, PHP में फ़ंक्शन के नाम केस-इनसेंसिटिव होते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">User-Defined Function Declaration and Invocation</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">function write_msg() { ... }</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Function Declaration</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">write_msg();</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Function Call Invocation</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Keyword</tspan><tspan x=\"100\" dy=\"1.2em\">function</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Case-Insensitive</tspan><tspan x=\"225\" dy=\"1.2em\">Starts with Letter / _</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Triggers Call</tspan><tspan x=\"375\" dy=\"1.2em\">Executes Statements</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Reusable</tspan><tspan x=\"500\" dy=\"1.2em\">Multiple Cycles</tspan></text></svg>",
+          "caption": {
+            "en": "Function definition using the function keyword followed by invocation statements triggering custom routine execution.",
+            "hi": "function कीवर्ड का उपयोग करके फ़ंक्शन की परिभाषा और उसके बाद कस्टम रूटीन को चलाने वाले इनवोकेशन स्टेटमेंट्स।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how user-defined functions are structured and called in PHP.",
+          "hint": "Start with user-defined functions packaging custom operations, mention promoting clean code reusability, explain declaring blocks via the function keyword and invoking them case-insensitively, and conclude with executing statements across application components.",
+          "target_sequence": [
+            {
+              "id": "en_u27_t1",
+              "text": "User-defined functions encapsulate modular application tasks",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u27_t2",
+              "text": "to eliminate code duplication across large server-side applications",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u27_t3",
+              "text": "and by declaring blocks with the `function` keyword and invoking them case-insensitively",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u27_t4",
+              "text": "they execute bundled logic on demand whenever called by the script",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u27_d1",
+              "category": "logical",
+              "text": "and by enforcing strict case-sensitivity where uppercase and lowercase function calls fail to match",
+              "penalty_explanation": "In PHP, function names are case-insensitive, meaning write_msg() and WRITE_MSG() refer to the exact same function."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP में यूजर-डिफ़ाइंड फंक्शन्स को परिभाषित और कॉल करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "यूजर-डिफ़ाइंड फंक्शन्स एप्लिकेशन कार्यों को समाहित करते हैं से शुरू करें, कोड दोहराव समाप्त करने का संदर्भ दें, `function` कीवर्ड और केस-इनसेंसिटिव कॉल का तरीका बताएं, और आवश्यकतानुसार लॉजिक निष्पादित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u27_t1",
+              "text": "यूजर-डिफ़ाइंड फंक्शन्स मॉड्यूलर एप्लिकेशन कार्यों को समाहित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u27_t2",
+              "text": "बड़े सर्वर-साइड अनुप्रयोगों में अनावश्यक कोड दोहराव को समाप्त करने के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u27_t3",
+              "text": "और `function` कीवर्ड के साथ ब्लॉक घोषित करके तथा उन्हें केस-इनसेंसिटिव रूप से कॉल करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u27_t4",
+              "text": "ये स्क्रिप्ट द्वारा बुलाए जाने पर आवश्यकतानुसार संपूर्ण लॉजिक को तुरंत निष्पादित करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u27_d1",
+              "category": "logical",
+              "text": "और सख्त केस-सेंसिटिविटी लागू करके जहाँ छोटे और बड़े अक्षरों वाले फ़ंक्शन कॉल विफल हो जाते हैं",
+              "penalty_explanation": "PHP में फ़ंक्शन के नाम केस-इनसेंसिटिव होते हैं, इसलिए कैपिटल या छोटे अक्षरों में नाम लिखने से कोई अंतर नहीं पड़ता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "User-defined functions are declared using the function keyword, can begin with letters or underscores, and are case-insensitive.",
+        "hi": "यूजर-डिफ़ाइंड फंक्शन्स function कीवर्ड से बनाए जाते हैं, अक्षर या अंडरस्कोर से शुरू हो सकते हैं और केस-इनसेंसिटिव होते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Form Data Submission Methods: GET vs. POST",
+          "hi": "फ़ॉर्म डेटा ट्रांसमिशन विधियाँ: GET बनाम POST"
+        },
+        "theory": {
+          "en": "HTML forms transmit user input to PHP server scripts using either GET or POST. The GET method appends form variables directly to the browser URL address bar, exposing data visibly, capping payloads at approximately 2000 characters, enabling page bookmarking, and blocking binary files. In contrast, the POST method embeds form data securely inside the HTTP request body, keeping data hidden from the URL, allowing unlimited payload size, preventing URL bookmarking, and supporting binary media uploads.",
+          "hi": "HTML फ़ॉर्म उपयोगकर्ता डेटा को GET या POST विधि का उपयोग करके PHP सर्वर स्क्रिप्ट में भेजते हैं। GET विधि फ़ॉर्म डेटा को सीधे ब्राउज़र के URL में जोड़ती है, जिससे डेटा सभी को दिखाई देता है, इसकी सीमा लगभग 2000 वर्णों तक सीमित होती है, इसे बुकमार्क किया जा सकता है और यह बाइनरी फ़ाइलों को नहीं भेज सकती। इसके विपरीत, POST विधि डेटा को HTTP रिक्वेस्ट बॉडी के भीतर सुरक्षित रूप से भेजती है, जिससे डेटा URL में दिखाई नहीं देता, इसकी कोई आकार सीमा नहीं होती, इसे बुकमार्क नहीं किया जा सकता और यह बाइनरी मीडिया अपलोड का समर्थन करती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">HTTP Form Methods: GET vs. POST Architecture</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">GET: In URL String</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Visible | 2000 Char Limit</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">POST: In HTTP Request Body</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Hidden | No Size Limit</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Address Bar</tspan><tspan x=\"100\" dy=\"1.2em\">Bookmarkable</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Text Queries Only</tspan><tspan x=\"225\" dy=\"1.2em\">No Binary Data</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Encapsulated</tspan><tspan x=\"375\" dy=\"1.2em\">Not Bookmarkable</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Binary Support</tspan><tspan x=\"500\" dy=\"1.2em\">File Uploads</tspan></text></svg>",
+          "caption": {
+            "en": "Form submission architectural contrast comparing visible URL parameter strings in GET with encapsulated HTTP body payloads in POST.",
+            "hi": "फ़ॉर्म सबमिशन तुलना जो GET में दिखने वाले URL पैरामीटर स्ट्रिंग्स और POST में सुरक्षित HTTP बॉडी पेलोड को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence distinguishing the operational differences between GET and POST form methods.",
+          "hint": "Start with GET and POST regulating client data transmission, mention submitting data to server scripts, explain contrasting visible URL query strings against encapsulated request bodies, and conclude with distinguishing size, security, and binary capabilities.",
+          "target_sequence": [
+            {
+              "id": "en_u28_t1",
+              "text": "The HTTP `GET` and `POST` methods govern client data submission",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u28_t2",
+              "text": "when sending submitted form records to receiving server-side PHP scripts",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u28_t3",
+              "text": "and by sending visible parameters in URLs under `GET` while encapsulating unmetered payloads inside request bodies under `POST`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u28_t4",
+              "text": "they distinguish lightweight query handling from secure transmission capable of handling binary file uploads",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u28_d1",
+              "category": "logical",
+              "text": "and by allowing `GET` requests to transmit multi-gigabyte binary files directly inside browser address bars",
+              "penalty_explanation": "The GET method has an approximate limit of 2000 characters and cannot be used to transmit binary files."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PHP में फ़ॉर्म डेटा ट्रांसमिशन के लिए GET और POST विधियों के अंतर को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "HTTP `GET` और `POST` विधियाँ डेटा ट्रांसमिशन को नियंत्रित करती हैं से शुरू करें, सर्वर-साइड PHP स्क्रिप्ट का संदर्भ दें, URL में पैरामीटर भेजने और HTTP बॉडी में पेलोड छिपाने का तरीका बताएं, और सुरक्षा व बाइनरी अपलोड के अंतर पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u28_t1",
+              "text": "HTTP `GET` और `POST` विधियाँ क्लाइंट डेटा ट्रांसमिशन को नियंत्रित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u28_t2",
+              "text": "फ़ॉर्म इनपुट रिकॉर्ड्स को सर्वर-साइड PHP स्क्रिप्ट में भेजते समय",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u28_t3",
+              "text": "और `GET` द्वारा URL में दृश्य पैरामीटर भेजते हुए `POST` द्वारा रिक्वेस्ट बॉडी में असीमित पेलोड समाहित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u28_t4",
+              "text": "ये साधारण क्वेरी खोज को बाइनरी फ़ाइलों को संभालने में सक्षम सुरक्षित ट्रांसमिशन से अलग करती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u28_d1",
+              "category": "logical",
+              "text": "और `GET` को सीधे एड्रेस बार के भीतर कई गीगाबाइट बाइनरी फ़ाइलें भेजने की अनुमति देकर",
+              "penalty_explanation": "GET विधि की सीमा 2000 वर्णों की होती है और यह बाइनरी फ़ाइलें भेजने के लिए बिल्कुल उपयुक्त नहीं है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "GET exposes data in URLs with a 2000-character limit, whereas POST sends unlimited data inside the HTTP body and supports binary files.",
+        "hi": "GET डेटा को URL में 2000 अक्षरों की सीमा के साथ दिखाता है, जबकि POST असीमित डेटा को HTTP बॉडी में भेजता है और बाइनरी फ़ाइलों का समर्थन करता है।"
+      }
+    }
+  ]
+}
