@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 6: PL/SQL - Part 1",
+      "hi": "अध्याय 6: PL/SQL - भाग 1"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "PL/SQL Foundations, Superset Architecture, and Core Features",
+          "hi": "PL/SQL के मूल सिद्धांत, सुपरसेट संरचना और मुख्य विशेषताएं"
+        },
+        "theory": {
+          "en": "PL/SQL stands for Procedural Language / Structured Query Language and serves as a procedural superset of standard SQL[cite: 12]. While SQL is purely declarative and limited to individual data queries, PL/SQL combines standard SQL with the procedural power of traditional programming languages[cite: 12]. It provides block-structured application development, integrated error checking, variables, conditional branching, and iterative looping constructs[cite: 12, 13].",
+          "hi": "PL/SQL का अर्थ 'प्रोसीजरल लैंग्वेज / स्ट्रक्चर्ड क्वेरी लैंग्वेज' है और यह मानक SQL का एक प्रोसीजरल सुपरसेट है[cite: 12]। जहाँ SQL केवल घोषणात्मक है और एकल प्रश्नों तक सीमित है, वहीं PL/SQL पारंपरिक प्रोग्रामिंग भाषाओं की प्रोसीजरल क्षमताओं के साथ SQL को जोड़ता है[cite: 12]। यह ब्लॉक-संरचित अनुप्रयोग विकास, अंतर्निहित त्रुटि जाँच, वैरिएबल, कंडीशनल ब्रांचिंग और लूपिंग संरचनाएं प्रदान करता है[cite: 12, 13]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">PL/SQL Superset Architecture &amp; Extensions</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Standard SQL</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Subset (Queries)</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Procedural Core</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Variables &amp; Loops</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">PL/SQL Engine</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Unified Superset</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Declarative</tspan><tspan x=\"120\" dy=\"1.2em\">Data Extraction</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Control Flow</tspan><tspan x=\"300\" dy=\"1.2em\">Error Trapping</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Robust Applications</tspan><tspan x=\"480\" dy=\"1.2em\">Block Processing</tspan></text></svg>",
+          "caption": {
+            "en": "Architectural integration depicting declarative SQL expanding into the procedural PL/SQL application superset.",
+            "hi": "संरचनात्मक एकीकरण जो घोषणात्मक SQL के प्रोसीजरल PL/SQL एप्लिकेशन सुपरसेट में विस्तार को दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how PL/SQL extends SQL with procedural capabilities.",
+          "hint": "Start with PL/SQL operating as a procedural superset, mention integrating declarative database commands, explain combining variables, conditional branching, and error handling, and conclude with constructing complete database applications.",
+          "target_sequence": [
+            {
+              "id": "en_u1_t1",
+              "text": "PL/SQL functions as a procedural superset of SQL",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u1_t2",
+              "text": "within enterprise database application development environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u1_t3",
+              "text": "and by combining standard relational queries with variables, condition checks, and error handling",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u1_t4",
+              "text": "it builds sophisticated data-driven applications beyond the reach of standalone query commands",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u1_d1",
+              "category": "logical",
+              "text": "it strips away all relational query capabilities to force purely text-file manual processing",
+              "penalty_explanation": "PL/SQL tightly embeds and extends relational SQL rather than stripping away query capabilities."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PL/SQL द्वारा SQL को प्रोसीजरल क्षमताओं के साथ विस्तारित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "PL/SQL, SQL के एक प्रोसीजरल सुपरसेट के रूप में कार्य करता है से शुरू करें, डेटाबेस एप्लिकेशन परिवेश का संदर्भ दें, क्वेरी को वैरिएबल, शर्तों व एरर हैंडलिंग से जोड़ने का तरीका बताएं, और उन्नत एप्लिकेशन बनाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u1_t1",
+              "text": "PL/SQL, SQL के एक प्रोसीजरल सुपरसेट के रूप में कार्य करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u1_t2",
+              "text": "व्यावसायिक डेटाबेस एप्लिकेशन विकास परिवेश के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u1_t3",
+              "text": "और मानक रिलेशनल क्वेरी को वैरिएबल्स, कंडीशनल ब्रांचिंग तथा एरर हैंडलिंग के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u1_t4",
+              "text": "यह स्टैंडअलोन क्वेरी की सीमाओं से आगे बढ़कर परिष्कृत डेटा-संचालित एप्लिकेशन बनाता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u1_d1",
+              "category": "logical",
+              "text": "यह टेक्स्ट-फ़ाइल प्रोसेसिंग लागू करने के लिए सभी रिलेशनल क्वेरी क्षमताओं को पूरी तरह हटा देता है",
+              "penalty_explanation": "PL/SQL रिलेशनल SQL क्षमताओं को हटाता नहीं है, बल्कि उन्हें और सशक्त बनाता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "PL/SQL is a block-structured procedural superset of SQL that incorporates variables, control flow, and error handling for application development[cite: 12, 13].",
+        "hi": "PL/SQL, SQL का एक ब्लॉक-संरचित प्रोसीजरल सुपरसेट है जो एप्लिकेशन विकास के लिए वैरिएबल, कंट्रोल फ्लो और एरर हैंडलिंग को शामिल करता है[cite: 12, 13]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Technical Contrast: Declarative SQL vs. Procedural PL/SQL",
+          "hi": "तकनीकी अंतर: घोषणात्मक SQL बनाम प्रोसीजरल PL/SQL"
+        },
+        "theory": {
+          "en": "SQL and PL/SQL exhibit distinct execution models and architectural scopes[cite: 12, 13]. SQL executes a single command at a time, lacks procedural capabilities, does not support variables or custom error handling, and operates primarily to query tables[cite: 12, 13]. Conversely, PL/SQL executes entire blocks of multiple statements at once, supports procedural branching and iteration, provides variable memory storage, includes robust exception trapping, and can embed SQL statements directly within its procedural code[cite: 12, 13].",
+          "hi": "SQL और PL/SQL पूरी तरह से भिन्न निष्पादन मॉडल और संरचनात्मक दायरे प्रदर्शित करते हैं[cite: 12, 13]। SQL एक समय में केवल एक कमांड निष्पादित करता है, इसमें प्रोसीजरल सुविधाओं का अभाव होता है, यह वैरिएबल्स या एरर हैंडलिंग का समर्थन नहीं करता, और मुख्य रूप से डेटाबेस क्वेरी करने के काम आता है[cite: 12, 13]। इसके विपरीत, PL/SQL एक साथ कई कथनों के पूरे ब्लॉक को निष्पादित करता है, ब्रांचिंग व लूपिंग का समर्थन करता है, वैरिएबल मेमोरी प्रदान करता है, मजबूत अपवाद (एक्सेप्शन) हैंडलिंग शामिल करता है, और अपने कोड में SQL को सीधे एम्बेड कर सकता है[cite: 12, 13]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">SQL vs. PL/SQL Operational Pipeline</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Declarative SQL</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Single Command | No Variables</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Procedural PL/SQL</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Block Execution | Error Trapping</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Query Tool</tspan><tspan x=\"100\" dy=\"1.2em\">One-Shot Run</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">No Error Trap</tspan><tspan x=\"225\" dy=\"1.2em\">Non-Procedural</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Application Engine</tspan><tspan x=\"375\" dy=\"1.2em\">Batched Logic</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Embeds SQL</tspan><tspan x=\"500\" dy=\"1.2em\">Full Recovery</tspan></text></svg>",
+          "caption": {
+            "en": "Operational comparison contrasting single-command declarative SQL with batched, procedural PL/SQL block execution.",
+            "hi": "परिचालन तुलना जो एकल-कमांड घोषणात्मक SQL और बैच किए गए प्रोसीजरल PL/SQL ब्लॉक निष्पादन के अंतर को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence distinguishing declarative SQL from procedural PL/SQL.",
+          "hint": "Start with SQL and PL/SQL exhibiting contrasting computational architectures, mention executing queries across enterprise relational databases, explain running isolated single commands under SQL versus batched procedural blocks under PL/SQL, and conclude with separating query operations from application workflows.",
+          "target_sequence": [
+            {
+              "id": "en_u2_t1",
+              "text": "SQL and PL/SQL provide distinct computational architectures",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u2_t2",
+              "text": "when managing relational database operations",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u2_t3",
+              "text": "and by running isolated single statements under SQL versus multi-statement blocks with variables under PL/SQL",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u2_t4",
+              "text": "they separate standalone table querying from comprehensive transactional application engineering",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u2_d1",
+              "category": "logical",
+              "text": "they restrict PL/SQL to running strictly single statements while granting full procedural loops to SQL",
+              "penalty_explanation": "SQL cannot execute procedural loops, while PL/SQL executes batched multi-statement blocks."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "घोषणात्मक SQL और प्रोसीजरल PL/SQL के तकनीकी अंतर को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "SQL और PL/SQL विशिष्ट गणनात्मक संरचनाएं प्रदान करते हैं से शुरू करें, रिलेशनल डेटाबेस का संदर्भ दें, SQL में एकल कथन और PL/SQL में वैरिएबल युक्त बहु-कथन ब्लॉक का तरीका बताएं, और क्वेरी को एप्लिकेशन इंजीनियरिंग से अलग करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u2_t1",
+              "text": "SQL और PL/SQL विशिष्ट गणनात्मक संरचनाएं प्रदान करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u2_t2",
+              "text": "रिलेशनल डेटाबेस संचालन के प्रबंधन के दौरान",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u2_t3",
+              "text": "और SQL के तहत एकल कथन चलाकर तथा PL/SQL के तहत वैरिएबल युक्त बहु-कथन ब्लॉक निष्पादित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u2_t4",
+              "text": "ये साधारण टेबल क्वेरी को व्यापक ट्रांजैक्शनल एप्लिकेशन इंजीनियरिंग से अलग करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u2_d1",
+              "category": "logical",
+              "text": "ये PL/SQL को केवल एकल कथनों तक सीमित करते हैं जबकि SQL को पूर्ण प्रोसीजरल लूप सौंपते हैं",
+              "penalty_explanation": "SQL में लूपिंग नहीं होती, जबकि PL/SQL एक साथ कई कथनों के ब्लॉक और लूप चला सकता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "SQL processes single statements without variables or error trapping, whereas PL/SQL executes blocks of procedural commands with full error handling[cite: 12, 13].",
+        "hi": "SQL बिना वैरिएबल या एरर ट्रैपिंग के एकल कथन निष्पादित करता है, जबकि PL/SQL पूर्ण एरर हैंडलिंग के साथ प्रोसीजरल ब्लॉक चलाता है[cite: 12, 13]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "The Four-Section PL/SQL Block Layout",
+          "hi": "चार खंडों वाली PL/SQL ब्लॉक संरचना"
+        },
+        "theory": {
+          "en": "PL/SQL is a block-structured language where programs are partitioned into logical, modular compartments[cite: 13]. A standard block structure comprises four distinct sections: DECLARE, BEGIN, EXCEPTION, and END;[cite: 13, 14]. The DECLARE section introduces local variables, constants, cursors, and custom exceptions[cite: 13]. The BEGIN section encapsulates executable SQL statements, arithmetic assignments, and procedural control logic[cite: 13]. The EXCEPTION section traps runtime errors, and the block terminates with the closing keyword END;[cite: 13].",
+          "hi": "PL/SQL एक ब्लॉक-संरचित भाषा है जहाँ प्रोग्राम को तार्किक, मॉड्यूलर खंडों में विभाजित किया जाता है[cite: 13]। एक मानक ब्लॉक संरचना में चार खंड होते हैं: DECLARE, BEGIN, EXCEPTION और END;[cite: 13, 14]। DECLARE अनुभाग स्थानीय वैरिएबल्स, कॉन्स्टेंट, कर्सर और अपवादों को परिभाषित करता है[cite: 13]। BEGIN अनुभाग निष्पादन योग्य SQL कथनों, असाइनमेंट और प्रोसीजरल लॉजिक को समेटता है[cite: 13]। EXCEPTION अनुभाग रनटाइम त्रुटियों को संभालता है, और ब्लॉक का समापन END; कीवर्ड द्वारा होता है[cite: 13]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">PL/SQL 4-Section Block Architecture</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">DECLARE</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Optional: Vars</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">BEGIN</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Mandatory: Logic</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">EXCEPTION</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Optional: Traps</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">END;</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Mandatory: Close</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Object Setup</tspan><tspan x=\"102\" dy=\"1.2em\">Cursors &amp; Types</tspan></text><text x=\"232\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Execution Engine</tspan><tspan x=\"232\" dy=\"1.2em\">SQL &amp; Control</tspan></text><text x=\"362\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Error Handler</tspan><tspan x=\"362\" dy=\"1.2em\">Runtime Safety</tspan></text><text x=\"495\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Boundary Mark</tspan><tspan x=\"495\" dy=\"1.2em\">Block Terminus</tspan></text></svg>",
+          "caption": {
+            "en": "Modular 4-section layout of a PL/SQL block showing declarative setup, execution core, exception recovery, and closure.",
+            "hi": "PL/SQL ब्लॉक का 4-खंडीय लेआउट जो घोषणात्मक सेटअप, निष्पादन कोर, अपवाद रिकवरी और समापन को दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing the four-section layout of a PL/SQL block.",
+          "hint": "Start with PL/SQL organizing procedural code into logical blocks, mention structuring database application routines, explain partitioning statements into DECLARE, BEGIN, EXCEPTION, and END; sections, and conclude with delivering a clean, modular execution lifecycle.",
+          "target_sequence": [
+            {
+              "id": "en_u3_t1",
+              "text": "PL/SQL organizes procedural code into modular logical blocks",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u3_t2",
+              "text": "for structured execution within the database engine",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u3_t3",
+              "text": "and by partitioning routines into `DECLARE`, `BEGIN`, `EXCEPTION`, and `END;` sections",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u3_t4",
+              "text": "it delivers a clear lifecycle separating memory allocations from executable logic and error recovery",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u3_d1",
+              "category": "logical",
+              "text": "and by forbidding any separation between declaration and error handling inside unformatted text scripts",
+              "penalty_explanation": "PL/SQL explicitly enforces separation of concerns through modular sections."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PL/SQL ब्लॉक के चार खंडों वाली संरचना को सही क्रम में व्यवस्थित करें।",
+          "hint": "PL/SQL प्रोसीजरल कोड को मॉड्यूलर तार्किक ब्लॉक्स में व्यवस्थित करता है से शुरू करें, डेटाबेस इंजन में संरचित निष्पादन का संदर्भ दें, `DECLARE`, `BEGIN`, `EXCEPTION` और `END;` में विभाजित करने का तरीका बताएं, और मेमोरी, लॉजिक व एरर रिकवरी को अलग करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u3_t1",
+              "text": "PL/SQL प्रोसीजरल कोड को मॉड्यूलर तार्किक ब्लॉक्स में व्यवस्थित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u3_t2",
+              "text": "डेटाबेस इंजन के भीतर संरचित निष्पादन के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u3_t3",
+              "text": "और रूटीन को `DECLARE`, `BEGIN`, `EXCEPTION` तथा `END;` खंडों में विभाजित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u3_t4",
+              "text": "यह निष्पादन योग्य लॉजिक और त्रुटि निवारण से मेमोरी आवंटन को अलग करने वाला स्पष्ट चक्र प्रदान करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u3_d1",
+              "category": "logical",
+              "text": "और असंरचित टेक्स्ट स्क्रिप्ट में घोषणा तथा त्रुटि प्रबंधन के बीच किसी भी अलगाव को पूरी तरह प्रतिबंधित करके",
+              "penalty_explanation": "PL/SQL ब्लॉक संरचना कोड को मॉड्यूलर और अलग-अलग खंडों में व्यवस्थित करती है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "A PL/SQL block is logically divided into four sections: DECLARE (definitions), BEGIN (execution), EXCEPTION (error handling), and END; (termination)[cite: 13].",
+        "hi": "PL/SQL ब्लॉक चार खंडों में विभाजित होता है: DECLARE (परिभाषाएं), BEGIN (निष्पादन), EXCEPTION (त्रुटि प्रबंधन), और END; (समापन)[cite: 13]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Mandatory vs. Optional Block Execution Sections",
+          "hi": "अनिवार्य बनाम वैकल्पिक ब्लॉक निष्पादन अनुभाग"
+        },
+        "theory": {
+          "en": "In PL/SQL block design, sections are categorized strictly by execution necessity[cite: 13]. The DECLARE section is optional, used only when variables, cursors, or exceptions must be defined before runtime[cite: 13]. The EXCEPTION section is also optional, included solely when developers implement custom error-trapping routines[cite: 13]. In contrast, the BEGIN and END; boundaries are mandatory; a valid PL/SQL block must contain an executable body enclosed by BEGIN and terminated by END; to compile successfully[cite: 13].",
+          "hi": "PL/SQL ब्लॉक डिज़ाइन में, अनुभागों को निष्पादन आवश्यकता के आधार पर वर्गीकृत किया जाता है[cite: 13]। DECLARE अनुभाग वैकल्पिक है, इसका उपयोग केवल तब किया जाता है जब रनटाइम से पहले वैरिएबल, कर्सर या अपवाद परिभाषित करने हों[cite: 13]। EXCEPTION अनुभाग भी वैकल्पिक है, जिसे केवल कस्टम एरर हैंडलिंग के लिए शामिल किया जाता है[cite: 13]। इसके विपरीत, BEGIN और END; सीमाएं अनिवार्य हैं; एक वैध PL/SQL ब्लॉक में संकलित होने के लिए BEGIN से घिरा और END; पर समाप्त होने वाला निष्पादन योग्य भाग होना आवश्यक है[cite: 13]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Mandatory Boundaries vs. Optional Compartments</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Optional Sections</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">DECLARE and EXCEPTION</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Mandatory Sections</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">BEGIN and END;</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Omit If Unneeded</tspan><tspan x=\"100\" dy=\"1.2em\">Zero Variables</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Default Trapping</tspan><tspan x=\"225\" dy=\"1.2em\">Standard Handler</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Execution Core</tspan><tspan x=\"375\" dy=\"1.2em\">Strict Requirement</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Block Closing</tspan><tspan x=\"500\" dy=\"1.2em\">Required Semicolon</tspan></text></svg>",
+          "caption": {
+            "en": "Section compliance hierarchy distinguishing optional declarative and exception zones from mandatory executable BEGIN and END; boundaries.",
+            "hi": "अनुभाग अनुपालन पदानुक्रम जो वैकल्पिक DECLARE और EXCEPTION क्षेत्रों को अनिवार्य BEGIN और END; सीमाओं से अलग करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing the operational necessity of PL/SQL block sections.",
+          "hint": "Start with PL/SQL compiler syntax rules distinguishing section requirements, mention constructing procedural blocks, explain designating DECLARE and EXCEPTION as optional while requiring BEGIN and END;, and conclude with forming the minimal valid execution unit.",
+          "target_sequence": [
+            {
+              "id": "en_u4_t1",
+              "text": "PL/SQL compilation rules enforce strict structural boundaries",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u4_t2",
+              "text": "when validating procedural code blocks for database execution",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u4_t3",
+              "text": "and by treating `DECLARE` and `EXCEPTION` as optional while strictly requiring `BEGIN` and `END;`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u4_t4",
+              "text": "they establish the minimal viable program structure without unnecessary overhead",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u4_d1",
+              "category": "logical",
+              "text": "they require developers to omit `BEGIN` whenever running database updates inside executable blocks",
+              "penalty_explanation": "The BEGIN keyword is strictly mandatory for every executable PL/SQL block."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PL/SQL ब्लॉक अनुभागों की परिचालन आवश्यकता को सही क्रम में व्यवस्थित करें।",
+          "hint": "PL/SQL संकलन नियम सख्त संरचनात्मक सीमाएं लागू करते हैं से शुरू करें, डेटाबेस निष्पादन के लिए सत्यापन का संदर्भ दें, `DECLARE` व `EXCEPTION` को वैकल्पिक तथा `BEGIN` व `END;` को अनिवार्य मानने का तरीका बताएं, और न्यूनतम प्रोग्राम संरचना स्थापित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u4_t1",
+              "text": "PL/SQL संकलन नियम सख्त संरचनात्मक सीमाएं लागू करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u4_t2",
+              "text": "डेटाबेस निष्पादन के लिए प्रोसीजरल कोड ब्लॉक्स को मान्य करते समय",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u4_t3",
+              "text": "और `DECLARE` तथा `EXCEPTION` को वैकल्पिक मानते हुए `BEGIN` और `END;` को अनिवार्य बनाकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u4_t4",
+              "text": "ये अनावश्यक लोड के बिना न्यूनतम वैध प्रोग्राम संरचना स्थापित करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u4_d1",
+              "category": "logical",
+              "text": "ये निष्पादन योग्य ब्लॉक में डेटाबेस अपडेट चलाते समय डेवलपर्स को `BEGIN` छोड़ने पर मजबूर करते हैं",
+              "penalty_explanation": "BEGIN ब्लॉक का अनिवार्य हिस्सा है और इसे कभी छोड़ा नहीं जा सकता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "BEGIN and END; are mandatory for every PL/SQL block, while DECLARE and EXCEPTION are optional sections used as needed[cite: 13].",
+        "hi": "BEGIN और END; प्रत्येक PL/SQL ब्लॉक के लिए अनिवार्य हैं, जबकि DECLARE और EXCEPTION आवश्यकतानुसार उपयोग किए जाने वाले वैकल्पिक अनुभाग हैं[cite: 13]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Variable Allocation, Assignment, and DBMS_OUTPUT Display",
+          "hi": "वैरिएबल आवंटन, असाइनमेंट और DBMS_OUTPUT डिस्प्ले"
+        },
+        "theory": {
+          "en": "PL/SQL enables procedural state tracking through in-memory variables declared in the DECLARE section with specific types (e.g., age NUMBER)[cite: 16]. Values are assigned to variables using the assignment operator (:=) within the BEGIN executable block[cite: 16, 17]. To stream output, logs, or computational results to the screen buffer, PL/SQL invokes DBMS_OUTPUT.PUT_LINE(value), enabling interactive feedback during program execution[cite: 16, 17].",
+          "hi": "PL/SQL DECLARE अनुभाग में विशिष्ट प्रकारों (जैसे age NUMBER) के साथ घोषित इन-मेमोरी वैरिएबल्स के माध्यम से प्रोसीजरल स्थिति को ट्रैक करता है[cite: 16]। BEGIN निष्पादन ब्लॉक में असाइनमेंट ऑपरेटर (:=) का उपयोग करके वैरिएबल्स को मान सौंपे जाते हैं[cite: 16, 17]। स्क्रीन बफ़र पर आउटपुट, लॉग या गणना परिणाम प्रदर्शित करने के लिए, PL/SQL पैकेज DBMS_OUTPUT.PUT_LINE(value) को कॉल करता है, जिससे निष्पादन के दौरान इंटरैक्टिव फीडबैक मिलता है[cite: 16, 17]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Variable Lifecycle: Declare &rarr; Assign &rarr; Output</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">age NUMBER</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">DECLARE Section</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">age := 17;</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">BEGIN Assignment</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">PUT_LINE(age)</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Output Buffer</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Memory Allocation</tspan><tspan x=\"120\" dy=\"1.2em\">Numeric Slot</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Value Binding</tspan><tspan x=\"300\" dy=\"1.2em\">Walrus Operator</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Console Stream</tspan><tspan x=\"480\" dy=\"1.2em\">Terminal Output</tspan></text></svg>",
+          "caption": {
+            "en": "Variable state lifecycle demonstrating declaration in DECLARE, value assignment via := in BEGIN, and terminal printing via DBMS_OUTPUT.",
+            "hi": "वैरिएबल स्थिति जीवनचक्र जो DECLARE में घोषणा, BEGIN में := द्वारा मान असाइनमेंट और DBMS_OUTPUT द्वारा टर्मिनल प्रिंटिंग को दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how variables are allocated, assigned, and output in PL/SQL.",
+          "hint": "Start with in-memory variables managing program state, mention operating during block execution, explain declaring datatypes in DECLARE, binding values via :=, and printing through DBMS_OUTPUT.PUT_LINE, and conclude with delivering interactive feedback.",
+          "target_sequence": [
+            {
+              "id": "en_u5_t1",
+              "text": "In-memory variables maintain procedural application state",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u5_t2",
+              "text": "throughout the execution lifecycle of a PL/SQL block",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u5_t3",
+              "text": "and by declaring types in `DECLARE`, binding values using `:=`, and printing via `DBMS_OUTPUT.PUT_LINE`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u5_t4",
+              "text": "they compute dynamic metrics and stream formatted messages to the user interface cleanly",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u5_d1",
+              "category": "logical",
+              "text": "they wipe all assigned variable values from memory whenever an output statement executes",
+              "penalty_explanation": "Printing variables via DBMS_OUTPUT.PUT_LINE reads their values without wiping them from memory."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PL/SQL में वैरिएबल्स के आवंटन, असाइनमेंट और आउटपुट प्रदर्शन की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "इन-मेमोरी वैरिएबल्स प्रोसीजरल एप्लिकेशन स्थिति बनाए रखते हैं से शुरू करें, PL/SQL ब्लॉक के जीवनचक्र का संदर्भ दें, `DECLARE` में घोषणा, `:=` से मान सौंपने और `DBMS_OUTPUT.PUT_LINE` से प्रिंट करने का तरीका बताएं, और संदेश प्रदर्शित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u5_t1",
+              "text": "इन-मेमोरी वैरिएबल्स प्रोसीजरल एप्लिकेशन स्थिति को बनाए रखते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u5_t2",
+              "text": "एक PL/SQL ब्लॉक के संपूर्ण निष्पादन चक्र के दौरान",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u5_t3",
+              "text": "और `DECLARE` में प्रकार घोषित करके, `:=` से मान सौंपकर तथा `DBMS_OUTPUT.PUT_LINE` द्वारा प्रिंट करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u5_t4",
+              "text": "ये गतिशील गणना करते हैं और उपयोगकर्ता इंटरफ़ेस पर प्रारूपित संदेशों को सुचारू रूप से दिखाते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u5_d1",
+              "category": "logical",
+              "text": "ये आउटपुट स्टेटमेंट चलते ही सभी सौंपे गए वैरिएबल मानों को मेमोरी से तुरंत मिटा देते हैं",
+              "penalty_explanation": "DBMS_OUTPUT.PUT_LINE केवल मानों को पढ़ता और प्रदर्शित करता है, यह उन्हें मेमोरी से नहीं मिटाता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Variables are declared in DECLARE, assigned values using := in BEGIN, and printed to the console using DBMS_OUTPUT.PUT_LINE[cite: 16, 17].",
+        "hi": "वैरिएबल DECLARE में घोषित होते हैं, BEGIN में := द्वारा मान प्राप्त करते हैं, और DBMS_OUTPUT.PUT_LINE द्वारा कंसोल पर प्रिंट किए जाते हैं[cite: 16, 17]।"
+      }
+    }
+  ]
+}
