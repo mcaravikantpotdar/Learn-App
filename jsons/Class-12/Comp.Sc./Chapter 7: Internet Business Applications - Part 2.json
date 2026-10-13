@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 7: Internet Business Applications - Part 2",
+      "hi": "अध्याय 7: इंटरनेट बिजनेस एप्लिकेशन - भाग 2"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Net-Banking Architecture and Virtual Banking Operations",
+          "hi": "नेट-बैंकिंग संरचना और वर्चुअल बैंकिंग संचालन"
+        },
+        "theory": {
+          "en": "Net-banking, also known as internet-banking or online-banking, enables customers to execute banking transactions over the internet without visiting a physical branch[cite: 18]. The virtual banking system permits users to check account balances, transfer funds electronically, settle utility bills, and download detailed account statements remotely[cite: 18]. The service operates continuously across all hours and days of the week, enabling real-time financial oversight through personal computers and smartphones[cite: 18].",
+          "hi": "नेट-बैंकिंग, जिसे इंटरनेट-बैंकिंग या ऑनलाइन-बैंकिंग भी कहा जाता है, ग्राहकों को बैंक शाखा में जाए बिना इंटरनेट पर बैंकिंग लेनदेन करने में सक्षम बनाती है[cite: 18]। यह वर्चुअल बैंकिंग प्रणाली उपयोगकर्ताओं को खाते का बैलेंस जांचने, इलेक्ट्रॉनिक रूप से फंड ट्रांसफर करने, उपयोगिता बिलों का भुगतान करने और विस्तृत खाता विवरण डाउनलोड करने की अनुमति देती है[cite: 18]। यह सेवा सप्ताह के सभी दिनों और घंटों में निरंतर संचालित होती है, जिससे व्यक्तिगत कंप्यूटर और स्मार्टफोन के माध्यम से वित्तीय निगरानी संभव होती है[cite: 18]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Net-Banking Virtual Terminal Operations</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Client Terminal</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Phone / PC Browser</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Secure Portal</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Banking Gateway</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Core Services</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Transfers, Statements</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Remote User</tspan><tspan x=\"120\" dy=\"1.2em\">Zero Travel</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Virtual Session</tspan><tspan x=\"300\" dy=\"1.2em\">Encrypted Link</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Bank Ledgers</tspan><tspan x=\"480\" dy=\"1.2em\">Instant Processing</tspan></text></svg>",
+          "caption": {
+            "en": "Virtual banking architecture connecting client devices directly to core banking services without physical branch interaction[cite: 18].",
+            "hi": "वर्चुअल बैंकिंग आर्किटेक्चर जो शाखा में जाए बिना ग्राहक उपकरणों को सीधे मुख्य बैंकिंग सेवाओं से जोड़ता है[cite: 18]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how net-banking platforms deliver virtual financial services.",
+          "hint": "Start with net-banking platforms delivering virtual branch capabilities, mention connecting users via internet protocols, explain executing balance inquiries, fund transfers, and bill payments remotely, and conclude with eliminating physical bank counter visits.",
+          "target_sequence": [
+            {
+              "id": "en_u6_t1",
+              "text": "Net-banking platforms deliver comprehensive virtual financial services",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u6_t2",
+              "text": "by connecting account holders through secure web protocols",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u6_t3",
+              "text": "and by processing balance inquiries, electronic fund transfers, and bill settlements remotely",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u6_t4",
+              "text": "they provide continuous ledger access without requiring physical visits to bank branches",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u6_d1",
+              "category": "logical",
+              "text": "they require account holders to submit manual paper deposit slips physically at physical teller counters",
+              "penalty_explanation": "Net-banking is specifically designed to eliminate manual branch visits and paper slip processing[cite: 18]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "नेट-बैंकिंग प्लेटफॉर्म द्वारा वर्चुअल वित्तीय सेवाएं प्रदान करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "नेट-बैंकिंग प्लेटफॉर्म व्यापक वर्चुअल वित्तीय सेवाएं प्रदान करते हैं से शुरू करें, सुरक्षित वेब प्रोटोकॉल से जोड़ने का संदर्भ दें, बैलेंस पूछताछ, ट्रांसफर और बिल भुगतान का तरीका बताएं, और बैंक शाखा जाए बिना खाता एक्सेस पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u6_t1",
+              "text": "नेट-बैंकिंग प्लेटफॉर्म व्यापक वर्चुअल वित्तीय सेवाएं प्रदान करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u6_t2",
+              "text": "खाताधारकों को सुरक्षित वेब प्रोटोकॉल के माध्यम से जोड़कर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u6_t3",
+              "text": "और बैलेंस पूछताछ, फंड ट्रांसफर तथा बिल भुगतान को दूरस्थ रूप से संसाधित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u6_t4",
+              "text": "ये बैंक शाखाओं में भौतिक रूप से आए बिना निरंतर खाता एक्सेस सुनिश्चित करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u6_d1",
+              "category": "logical",
+              "text": "ये खाताधारकों को बैंक काउंटरों पर जाकर अनिवार्य रूप से कागजी पर्चियां भरने पर बाध्य करते हैं",
+              "penalty_explanation": "नेट-बैंकिंग का उद्देश्य बैंक शाखा जाने और कागजी काम को पूरी तरह समाप्त करना है[cite: 18]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Net-banking allows customers to check balances, transfer funds, pay bills, and view statements online without visiting physical bank branches[cite: 18].",
+        "hi": "नेट-बैंकिंग ग्राहकों को बैंक शाखा जाए बिना ऑनलाइन बैलेंस देखने, पैसे ट्रांसफर करने, बिल भरने और स्टेटमेंट प्राप्त करने की सुविधा देती है[cite: 18]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Net-Banking Authentication: User Credentials and One-Time Passwords",
+          "hi": "नेट-बैंकिंग प्रमाणीकरण: उपयोगकर्ता क्रेडेंशियल और वन-टाइम पासवर्ड"
+        },
+        "theory": {
+          "en": "Accessing net-banking requires individual credentials comprising a unique User-ID and secure password for initial account authentication[cite: 18]. To safeguard online fund transfers against unauthorized access, banking servers enforce two-factor verification using a dynamic One-Time Password (OTP)[cite: 18]. The OTP is transmitted as a temporary code to the account holder's registered mobile device, requiring explicit confirmation before debits are approved and executed[cite: 18].",
+          "hi": "नेट-बैंकिंग का उपयोग करने के लिए शुरुआती खाता प्रमाणीकरण हेतु एक अद्वितीय यूजर-आईडी और सुरक्षित पासवर्ड की आवश्यकता होती है[cite: 18]। ऑनलाइन फंड ट्रांसफर को अनधिकृत पहुंच से सुरक्षित रखने के लिए बैंकिंग सर्वर गतिशील वन-टाइम पासवर्ड (OTP) का उपयोग करके दो-चरणीय सत्यापन लागू करते हैं[cite: 18]। यह ओटीपी एक अस्थायी कोड के रूप में खाताधारक के पंजीकृत मोबाइल फोन पर भेजा जाता है, जिसे लेनदेन स्वीकृत होने से पहले दर्ज करना अनिवार्य होता है[cite: 18]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Two-Factor Authentication: Credentials + Mobile OTP</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Step 1: Login</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">User-ID &amp; Password</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Step 2: Transfer</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Dynamic OTP Sent</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Step 3: Approval</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Debit Executed</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Primary Identity</tspan><tspan x=\"120\" dy=\"1.2em\">Portal Entry</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Mobile Device SMS</tspan><tspan x=\"300\" dy=\"1.2em\">Time-Bound Key</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Verified Transfer</tspan><tspan x=\"480\" dy=\"1.2em\">Funds Dispatched</tspan></text></svg>",
+          "caption": {
+            "en": "Authentication gate requiring primary credential login followed by dynamic mobile OTP confirmation before funds transfer approval[cite: 18].",
+            "hi": "प्रमाणीकरण गेट जिसके तहत फंड ट्रांसफर की पुष्टि से पहले प्राथमिक क्रेडेंशियल लॉगिन और मोबाइल ओटीपी सत्यापन आवश्यक है[cite: 18]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how user credentials and OTPs secure net-banking transactions.",
+          "hint": "Start with net-banking security frameworks enforcing layered user authentication, mention verifying transactional actions across digital accounts, explain combining static User-IDs and passwords with dynamic SMS One-Time Passwords, and conclude with safeguarding online fund transfers from unauthorized debits.",
+          "target_sequence": [
+            {
+              "id": "en_u7_t1",
+              "text": "Net-banking security protocols enforce layered user authentication",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u7_t2",
+              "text": "whenever financial activities are initiated on online banking portals",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u7_t3",
+              "text": "and by pairing static User-IDs and passwords with dynamic SMS One-Time Passwords during fund transfers",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u7_t4",
+              "text": "they validate customer authorization and shield personal accounts from unauthorized electronic withdrawals",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u7_d1",
+              "category": "logical",
+              "text": "they transmit unencrypted fund transfers automatically without verifying any user password or mobile confirmation code",
+              "penalty_explanation": "Net-banking strictly requires User-ID, password, and mobile OTP verification for fund transfers[cite: 18]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "यूजर क्रेडेंशियल और ओटीपी द्वारा नेट-बैंकिंग लेन-देन सुरक्षित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "नेट-बैंकिंग सुरक्षा प्रोटोकॉल बहुस्तरीय प्रमाणीकरण लागू करते हैं से शुरू करें, ऑनलाइन बैंकिंग पोर्टल्स का संदर्भ दें, स्थिर आईडी-पासवर्ड को गतिशील एसएमएस ओटीपी से जोड़ने का तरीका बताएं, और अनधिकृत निकासी से सुरक्षा पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u7_t1",
+              "text": "नेट-बैंकिंग सुरक्षा प्रोटोकॉल बहुस्तरीय उपयोगकर्ता प्रमाणीकरण लागू करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u7_t2",
+              "text": "जब भी ऑनलाइन बैंकिंग पोर्टल्स पर वित्तीय गतिविधियां शुरू की जाती हैं",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u7_t3",
+              "text": "और फंड ट्रांसफर के दौरान यूजर-आईडी तथा पासवर्ड को गतिशील एसएमएस वन-टाइम पासवर्ड के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u7_t4",
+              "text": "ये ग्राहक की स्वीकृति को सत्यापित करते हैं और अनधिकृत इलेक्ट्रॉनिक निकासी से खातों की रक्षा करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u7_d1",
+              "category": "logical",
+              "text": "ये बिना किसी पासवर्ड या मोबाइल पुष्टि कोड के अपने आप असुरक्षित फंड ट्रांसफर को मंजूरी दे देते हैं",
+              "penalty_explanation": "नेट-बैंकिंग में फंड ट्रांसफर की सुरक्षा के लिए पासवर्ड और ओटीपी सत्यापन अनिवार्य है[cite: 18]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Net-banking relies on a User-ID and password for portal access and validates online fund transfers using a mobile OTP[cite: 18].",
+        "hi": "नेट-बैंकिंग लॉगिन के लिए यूजर-आईडी और पासवर्ड का उपयोग करती है और फंड ट्रांसफर को सुरक्षित करने के लिए मोबाइल ओटीपी का उपयोग करती है[cite: 18]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Net-Banking Tradeoff Profile: Operational Speed vs. Cyber Risks",
+          "hi": "नेट-बैंकिंग विश्लेषण: तीव्र गति बनाम साइबर जोखिम"
+        },
+        "theory": {
+          "en": "Net-banking provides notable operational benefits, including 24x7 service availability during bank holidays, remote home convenience, and instant electronic money transfers[cite: 18]. However, it presents systemic challenges: non-technical beginners may find the digital interface complex, and service halts completely if internet links fail or bank servers crash[cite: 18]. Furthermore, accounts face severe misuse risks if login passwords are compromised or if registered smartphones are stolen[cite: 18].",
+          "hi": "नेट-बैंकिंग उल्लेखनीय परिचालन लाभ प्रदान करती है, जिसमें बैंक छुट्टियों के दौरान भी 24x7 सेवा उपलब्धता, घर से काम करने की सुविधा और त्वरित इलेक्ट्रॉनिक फंड ट्रांसफर शामिल हैं[cite: 18]। हालांकि, इसमें कुछ चुनौतियाँ भी हैं: शुरुआती उपयोगकर्ताओं के लिए डिजिटल इंटरफ़ेस जटिल हो सकता है, और इंटरनेट सेवा बाधित होने या बैंक सर्वर डाउन होने पर यह अनुपयोगी हो जाती है[cite: 18]। इसके अतिरिक्त, पासवर्ड हैक होने या पंजीकृत स्मार्टफोन चोरी होने पर खाते के दुरुपयोग का गंभीर जोखिम रहता है[cite: 18]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Net-Banking Tradeoffs: Speed vs. Systemic Hazards</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Advantages</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">24x7 | Holiday Runs | Instant Transfer</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Disadvantages</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Server Down | Stolen Phone | Hacking</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">High Comfort</tspan><tspan x=\"100\" dy=\"1.2em\">Zero Branch Lines</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Fast Routing</tspan><tspan x=\"225\" dy=\"1.2em\">Real-Time Speed</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Network Outage</tspan><tspan x=\"375\" dy=\"1.2em\">Blocked Sessions</tspan></text><text x=\"500\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Credential Theft</tspan><tspan x=\"500\" dy=\"1.2em\">Financial Loss</tspan></text></svg>",
+          "caption": {
+            "en": "Tradeoff matrix balancing 24x7 convenience and instant electronic settlements against network dependencies and device theft vulnerabilities[cite: 18].",
+            "hi": "ट्रेडऑफ़ मैट्रिक्स जो 24x7 सुविधा और त्वरित निपटान को नेटवर्क निर्भरता तथा उपकरण चोरी के जोखिमों से संतुलित करता है[cite: 18]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence evaluating the advantages and vulnerabilities of net-banking systems.",
+          "hint": "Start with net-banking services accelerating personal financial operations, mention conducting transactions across internet banking applications, explain balancing 24x7 holiday access and instant transfers against server downtime and credential theft, and conclude with delivering convenience while requiring vigilant security awareness.",
+          "target_sequence": [
+            {
+              "id": "en_u8_t1",
+              "text": "Net-banking services accelerate personal financial management",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u8_t2",
+              "text": "through consumer smartphone and personal computer applications",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u8_t3",
+              "text": "and by balancing continuous 24x7 access and instant transfers against server outages and smartphone theft risks",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u8_t4",
+              "text": "they deliver unmatched transaction speed while requiring constant vigilance against password hacking and technical disruptions",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u8_d1",
+              "category": "logical",
+              "text": "they remain completely impervious to network connection drops or bank server failures under all circumstances",
+              "penalty_explanation": "Net-banking becomes entirely inaccessible whenever the internet is down or the bank server crashes[cite: 18]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "नेट-बैंकिंग प्रणाली के लाभों और कमजोरियों का मूल्यांकन करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "नेट-बैंकिंग सेवाएं व्यक्तिगत वित्तीय प्रबंधन को गति देती हैं से शुरू करें, स्मार्टफोन और कंप्यूटर का संदर्भ दें, 24x7 पहुंच को सर्वर डाउन और फोन चोरी के जोखिमों से संतुलित करने का तरीका बताएं, और तेज गति देने के साथ सुरक्षा सतर्कता की आवश्यकता पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u8_t1",
+              "text": "नेट-बैंकिंग सेवाएं व्यक्तिगत वित्तीय प्रबंधन को गति देती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u8_t2",
+              "text": "उपभोक्ता स्मार्टफोन और कंप्यूटर अनुप्रयोगों के माध्यम से",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u8_t3",
+              "text": "और निरंतर 24x7 पहुंच तथा त्वरित ट्रांसफर को सर्वर आउटेज व स्मार्टफोन चोरी के जोखिमों से संतुलित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u8_t4",
+              "text": "ये अद्वितीय लेनदेन गति प्रदान करती हैं लेकिन पासवर्ड हैकिंग और तकनीकी बाधाओं से निरंतर सतर्कता की मांग करती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u8_d1",
+              "category": "logical",
+              "text": "ये सभी परिस्थितियों में इंटरनेट कनेक्टिविटी जाने या सर्वर बंद होने की समस्याओं से पूरी तरह मुक्त रहती हैं",
+              "penalty_explanation": "इंटरनेट सेवा बंद होने या बैंक सर्वर डाउन होने पर नेट-बैंकिंग का उपयोग बिल्कुल नहीं किया जा सकता[cite: 18]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Net-banking provides 24x7 instant transfers from home, but relies entirely on active servers and requires strict protection of passwords and mobile devices[cite: 18].",
+        "hi": "नेट-बैंकिंग घर बैठे 24x7 त्वरित ट्रांसफर की सुविधा देती है, परंतु यह सक्रिय सर्वर पर निर्भर है और इसमें पासवर्ड व मोबाइल सुरक्षा अत्यंत आवश्यक है[cite: 18]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Online Form Submission: Digital Application Portals and Automated Confirmations",
+          "hi": "ऑनलाइन फॉर्म सबमिशन: डिजिटल आवेदन पोर्टल और स्वचालित पुष्टिकरण"
+        },
+        "theory": {
+          "en": "Online form submission replaces manual paper documents with web-based application interfaces for institutional procedures, including academic admissions, examination registrations, counselling seat allotments, and passport applications[cite: 19]. These digital interfaces are accessible 24x7, reduce operational costs, save time, minimize clerical errors, and accept validated data inputs[cite: 19]. Once submitted, digital platforms issue automated confirmations dispatched via SMS and email[cite: 19].",
+          "hi": "ऑनलाइन फॉर्म सबमिशन पारंपरिक कागजी दस्तावेजों को वेब-आधारित इंटरफेस से बदल देता है, जिसका उपयोग शैक्षणिक प्रवेश, परीक्षा पंजीकरण, काउंसलिंग और पासपोर्ट आवेदन जैसी प्रक्रियाओं में होता है[cite: 19]। ये डिजिटल फॉर्म 24x7 उपलब्ध होते हैं, खर्च और समय बचाते हैं, लिपिकीय त्रुटियों को कम करते हैं और मान्य डेटा स्वीकार करते हैं[cite: 19]। जमा होने के बाद, डिजिटल प्लेटफॉर्म एसएमएस और ईमेल के माध्यम से स्वचालित पावती या पुष्टिकरण भेजते हैं[cite: 19]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Digital Form Submission Lifecycle &amp; Alerts</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Portal Entry</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Exam / Passport Form</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Capture</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Validated Inputs</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Dispatch Alerts</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Email &amp; SMS Receipt</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">24x7 Portal</tspan><tspan x=\"120\" dy=\"1.2em\">Zero Paperwork</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Type Screening</tspan><tspan x=\"300\" dy=\"1.2em\">Lower Error Rates</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Delivery Proof</tspan><tspan x=\"480\" dy=\"1.2em\">Audit Number</tspan></text></svg>",
+          "caption": {
+            "en": "Digital form lifecycle showing 24x7 portal entry, input validation checks, and automatic confirmation via email and SMS[cite: 19].",
+            "hi": "डिजिटल फॉर्म प्रक्रिया जो 24x7 पोर्टल प्रवेश, इनपुट सत्यापन और ईमेल तथा एसएमएस द्वारा स्वचालित पुष्टिकरण को दर्शाती है[cite: 19]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how online form portals streamline administrative data collection.",
+          "hint": "Start with online form submission systems replacing conventional paper application packets, mention gathering citizen data across institutional education and governance portals, explain combining 24x7 availability with field-level data validation and instant SMS confirmations, and conclude with reducing clerical mistakes and administrative costs.",
+          "target_sequence": [
+            {
+              "id": "en_u9_t1",
+              "text": "Online form submission systems replace traditional paper applications",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u9_t2",
+              "text": "across educational admissions and public service portals",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u9_t3",
+              "text": "and by combining 24x7 access with automated input validation and instant SMS notifications",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u9_t4",
+              "text": "they eliminate physical transit costs while reducing clerical data entry mistakes across administrative offices",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u9_d1",
+              "category": "logical",
+              "text": "they mandate physical in-person hand delivery of duplicate paper documents to confirm web submissions",
+              "penalty_explanation": "Online form submission operates digitally and dispatches confirmation via SMS and email without requiring physical submission[cite: 19]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ऑनलाइन फॉर्म पोर्टल्स द्वारा प्रशासनिक डेटा संग्रह को सुव्यवस्थित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "ऑनलाइन फॉर्म सबमिशन सिस्टम पारंपरिक कागजी आवेदनों को बदलते हैं से शुरू करें, शैक्षणिक व नागरिक सेवा का संदर्भ दें, 24x7 पहुंच को स्वचालित सत्यापन व एसएमएस सूचनाओं से जोड़ने का तरीका बताएं, और यात्रा खर्च व क्लर्क की गलतियों को कम करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u9_t1",
+              "text": "ऑनलाइन फॉर्म सबमिशन सिस्टम पारंपरिक कागजी आवेदनों को बदलते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u9_t2",
+              "text": "शैक्षणिक प्रवेश और नागरिक सेवा पोर्टलों के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u9_t3",
+              "text": "और 24x7 पहुंच को स्वचालित इनपुट सत्यापन तथा तत्काल एसएमएस सूचनाओं के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u9_t4",
+              "text": "ये यात्रा खर्च को समाप्त करते हैं और प्रशासनिक कार्यालयों में क्लर्क द्वारा होने वाली गलतियों को घटाते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u9_d1",
+              "category": "logical",
+              "text": "ये वेब सबमिशन की पुष्टि के लिए बैंक या कार्यालय में जाकर कागजी प्रतियां व्यक्तिगत रूप से जमा करना अनिवार्य करते हैं",
+              "penalty_explanation": "डिजिटल फॉर्म सबमिशन में सबमिशन की पुष्टि एसएमएस या ईमेल द्वारा होती है, व्यक्तिगत रूप से दस्तावेज जमा करने की आवश्यकता नहीं होती[cite: 19]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Online forms provide 24x7 paperless application submission with input validation, lower error rates, and automated SMS/email confirmations[cite: 19].",
+        "hi": "ऑनलाइन फॉर्म 24x7 इनपुट सत्यापन, कम त्रुटियों और स्वचालित एसएमएस/ईमेल पुष्टिकरण के साथ पेपरलेस आवेदन की सुविधा देते हैं[cite: 19]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Data Validation Boundaries: Type Verification vs. Factual Accuracy",
+          "hi": "डेटा सत्यापन की सीमाएं: प्रकार सत्यापन बनाम तथ्यात्मक शुद्धता"
+        },
+        "theory": {
+          "en": "Online form submission engines incorporate automated validation rules, but their screening capability is fundamentally limited to data type and format checks (e.g., ensuring an age field receives numbers or an email contains an '@' symbol)[cite: 19]. These automated checks cannot verify the underlying factual correctness or real-world authenticity of submitted entries[cite: 19]. Furthermore, applicants encounter strict upload limits on attached document file sizes, and users remain vulnerable to data theft from deceptive, fraudulent online forms[cite: 19].",
+          "hi": "ऑनलाइन फॉर्म सबमिशन सिस्टम में स्वचालित सत्यापन नियम शामिल होते हैं, लेकिन उनकी जांच क्षमता केवल डेटा प्रकार और प्रारूप की जांच तक सीमित होती है (जैसे उम्र के स्थान पर केवल संख्या और ईमेल में '@' की जांच)[cite: 19]। ये स्वचालित जांच दर्ज की गई जानकारी की वास्तविक तथ्यात्मक शुद्धता या सत्यता को सत्यापित नहीं कर सकती हैं[cite: 19]। इसके अतिरिक्त, उपयोगकर्ताओं को दस्तावेज़ अपलोड के दौरान फ़ाइल साइज़ की सीमाओं का सामना करना पड़ता है, और फर्जी फॉर्मों के माध्यम से डेटा चोरी होने का जोखिम बना रहता है[cite: 19]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Online Form Validation: Format Screening vs. Truth Gap</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Format Check</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Type Validated</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Truth Boundary</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Cannot Verify Facts</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">File &amp; Phish Risks</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Size Limits, Spoofs</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#fbbf24\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#fbbf24\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Screens Inputs</tspan><tspan x=\"120\" dy=\"1.2em\">Numbers vs. Text</tspan></text><text x=\"300\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Factual Gap</tspan><tspan x=\"300\" dy=\"1.2em\">Accepts False Data</tspan></text><text x=\"480\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Size Caps</tspan><tspan x=\"480\" dy=\"1.2em\">Credential Phishing</tspan></text></svg>",
+          "caption": {
+            "en": "Validation screening boundary confirming input syntax and types while leaving factual authenticity unverified[cite: 19].",
+            "hi": "सत्यापन सीमा जो इनपुट प्रारूप और प्रकार की जांच करती है परंतु वास्तविक तथ्यात्मक शुद्धता को अप्रमाणित छोड़ देती है[cite: 19]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence distinguishing automated data format validation from factual authenticity verification.",
+          "hint": "Start with web-based application form validators enforcing programmatic screening checks, mention evaluating applicant entries in digital intake systems, explain restricting validation strictly to datatype formats rather than factual accuracy, and conclude with leaving portals vulnerable to incorrect entries alongside file upload limits.",
+          "target_sequence": [
+            {
+              "id": "en_u10_t1",
+              "text": "Web-based application form validators enforce automated input screening",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u10_t2",
+              "text": "throughout public and educational digital intake workflows",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u10_t3",
+              "text": "and by verifying structural datatypes rather than the underlying factual truth of submitted records",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u10_t4",
+              "text": "they eliminate simple formatting typos while remaining incapable of detecting fabricated biographical claims",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "logical",
+              "text": "they automatically verify the absolute real-world truth and legal authenticity of all submitted facts",
+              "penalty_explanation": "Online forms only validate data types and formats; they cannot independently verify the factual truth of submitted data[cite: 19]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "स्वचालित डेटा प्रारूप सत्यापन और तथ्यात्मक शुद्धता के अंतर को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "वेब-आधारित फॉर्म सत्यापनकर्ता स्वचालित इनपुट जांच लागू करते हैं से शुरू करें, डिजिटल प्रक्रियाओं का संदर्भ दें, तथ्यात्मक सत्यता के बजाय डेटा प्रकार की पुष्टि करने का तरीका बताएं, और टाइपिंग त्रुटियों को रोकने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u10_t1",
+              "text": "वेब-आधारित फॉर्म सत्यापनकर्ता स्वचालित इनपुट जांच लागू करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u10_t2",
+              "text": "सार्वजनिक और शैक्षणिक डिजिटल प्रक्रियाओं के दौरान",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u10_t3",
+              "text": "और प्रस्तुत रिकॉर्ड की वास्तविक तथ्यात्मक सत्यता के बजाय संरचनात्मक डेटा प्रकारों की पुष्टि करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u10_t4",
+              "text": "ये टाइपिंग की गलतियों को रोकते हैं लेकिन गलत या झूठी जानकारी को पहचानने में असमर्थ रहते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "logical",
+              "text": "ये दर्ज की गई सभी जानकारियों की वास्तविक तथ्यात्मक शुद्धता और कानूनी सत्यता की स्वचालित जांच कर लेते हैं",
+              "penalty_explanation": "ऑनलाइन फॉर्म केवल डेटा प्रकार को जांच सकते हैं, वे दर्ज तथ्यों की वास्तविक शुद्धता को प्रमाणित नहीं कर सकते[cite: 19]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Online forms validate input data types and formats but cannot verify factual truth, impose file upload size limits, and carry phishing risks[cite: 19].",
+        "hi": "ऑनलाइन फॉर्म डेटा प्रकार और प्रारूप की जांच करते हैं लेकिन तथ्यात्मक शुद्धता नहीं जांच सकते, इनमें फाइल साइज की सीमाएं और फिशिंग का जोखिम होता है[cite: 19]।"
+      }
+    }
+  ]
+}
