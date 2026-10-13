@@ -14,448 +14,582 @@
     {
       "instruction": {
         "title": {
-          "en": "Computer Networks: Foundations, Resource Sharing, and Vulnerabilities",
-          "hi": "कंप्यूटर नेटवर्क: मूल सिद्धांत, संसाधन साझाकरण और सुरक्षा जोखिम"
+          "en": "Computer Network Foundations and Resource Sharing Mechanics",
+          "hi": "कंप्यूटर नेटवर्क के मूल सिद्धांत और संसाधन साझाकरण तंत्र"
         },
         "theory": {
-          "en": "A computer network is an interconnection linking two or more computing devices, such as desktops, laptops, smartphones, printers, and storage disks, across wired or wireless transmission media[cite: 23, 24]. The Internet represents the largest worldwide public network linking digital systems globally[cite: 23]. Networking facilitates efficient resource pooling by allowing multiple users to share files, hardware devices, application licenses, and communication services like email and video conferencing[cite: 23]. However, interlinking devices exposes nodes to data security breaches from unauthorized users and reliability bottlenecks during connectivity failures[cite: 24].",
-          "hi": "एक कंप्यूटर नेटवर्क दो या दो से अधिक कंप्यूटिंग उपकरणों, जैसे डेस्कटॉप, लैपटॉप, स्मार्टफोन, प्रिंटर और स्टोरेज डिस्क को वायर्ड या वायरलेस ट्रांसमिशन माध्यमों से जोड़ने वाली कड़ी है[cite: 23, 24]। इंटरनेट दुनिया का सबसे बड़ा कंप्यूटर नेटवर्क है जो वैश्विक स्तर पर सभी डिजिटल प्रणालियों को जोड़ता है[cite: 23]। नेटवर्किंग संसाधनों के कुशल उपयोग को सुगम बनाती है, जिससे उपयोगकर्ता फाइलें, हार्डवेयर उपकरण, सॉफ्टवेयर लाइसेंस और संचार सेवाएं जैसे ईमेल व वीडियो कॉन्फ्रेंसिंग साझा कर सकते हैं[cite: 23]। हालांकि, उपकरणों को आपस में जोड़ने से अनधिकृत पहुंच का सुरक्षा जोखिम और नेटवर्क विफलता के दौरान विश्वसनीयता की समस्याएं भी उत्पन्न होती हैं[cite: 24]।"
+          "en": "A computer network is an interconnection of two or more autonomous computing devices established via wired, wireless, or hybrid transmission media to enable systematic data exchange and collaborative resource utilization[cite: 23]. Networking facilitates the shared use of centralized storage, high-speed processing power, peripheral hardware devices such as printers and scanners, and licensed application software across multiple nodes[cite: 23]. While this pooled architecture reduces deployment costs and powers communication services like email and video conferencing, it introduces vulnerabilities concerning data security and operational reliability during network outages.",
+          "hi": "कंप्यूटर नेटवर्क दो या दो से अधिक कंप्यूटिंग उपकरणों का एक इंटरकनेक्शन है जो वायर्ड, वायरलेस या मिश्रित ट्रांसमिशन माध्यमों के जरिए डेटा विनिमय और संसाधन साझाकरण के लिए स्थापित किया जाता है[cite: 23]। नेटवर्किंग कई नोड्स के बीच केंद्रीकृत स्टोरेज, हाई-स्पीड प्रोसेसिंग, प्रिंटर व स्कैनर जैसे परिधीय हार्डवेयर और सॉफ्टवेयर अनुप्रयोगों के साझा उपयोग की सुविधा देती है[cite: 23]। यद्यपि यह साझा वास्तुकला तैनाती लागत को कम करती है और संचार सेवाओं को सक्षम बनाती है, फिर भी यह नेटवर्क विफलता के दौरान डेटा सुरक्षा और परिचालन विश्वसनीयता से जुड़े जोखिम पैदा करती है[cite: 23, 24]।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Computer Network: Shared Resources vs. Security Risks</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Connected Nodes</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">PC, Laptop, Mobile</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Resource Sharing</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Data, Printers, Apps</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Vulnerabilities</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Breaches, Outage</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Wired or Wireless</tspan><tspan x=\"120\" dy=\"1.2em\">Interlinked Links</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Centralized Access</tspan><tspan x=\"300\" dy=\"1.2em\">Lower Deploy Cost</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Unauthorized Access</tspan><tspan x=\"480\" dy=\"1.2em\">Link Down Time</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Computer Network: Resource Sharing Architecture</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Computing Nodes</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">PCs, Phones, Laptops</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Shared Resources</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Printers, Storage, Apps</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Network Utility</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Low Cost, Fast Comms</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Multiple Terminals</tspan><tspan x=\"120\" dy=\"1.2em\">Wired / Wireless</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Pooled Infrastructure</tspan><tspan x=\"300\" dy=\"1.2em\">Centralized Peripherals</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">High Efficiency</tspan><tspan x=\"480\" dy=\"1.2em\">Security Exposure</tspan></text></svg>",
           "caption": {
-            "en": "Computer network topology highlighting shared resource pools balanced against network security risks and connectivity dependencies[cite: 23, 24].",
-            "hi": "कंप्यूटर नेटवर्क टोपोलॉजी जो साझा संसाधन पूल और नेटवर्क सुरक्षा जोखिमों व कनेक्टिविटी निर्भरता के संतुलन को दर्शाती है[cite: 23, 24]।"
+            "en": "Network topology model interconnecting autonomous terminals to pool hardware, storage, and communication resources[cite: 23].",
+            "hi": "नेटवर्क टोपोलॉजी मॉडल जो हार्डवेयर, स्टोरेज और संचार संसाधनों को साझा करने के लिए स्वायत्त टर्मिनलों को जोड़ता है[cite: 23]।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the balanced sentence describing how computer networks facilitate resource sharing while introducing system risks.",
-          "hint": "Start with computer networks interconnecting multiple computing devices, establish the operational context across transmission channels, state the mechanism of sharing hardware, software, and data pools, and conclude with the action of lowering deployment costs while managing security and reliability risks.",
+          "prompt": "Construct the balanced sentence describing the operational mechanics, resource-sharing advantages, and vulnerabilities of computer networks.",
+          "hint": "Start with computer networks establishing transmission links, specify connecting autonomous computing devices, detail pooling hardware, storage, and software resources, explain reducing infrastructural deployment costs, and conclude with exposing distributed systems to data security and connectivity risks.",
           "target_sequence": [
             {
               "id": "en_u1_t1",
-              "text": "Computer networks establish communication links between computing devices",
+              "text": "Computer networks establish integrated communication links",
               "role_hint": "Tile 1: Main subject anchor"
             },
             {
               "id": "en_u1_t2",
-              "text": "across wired and wireless physical transmission channels",
+              "text": "across autonomous desktop computers, mobile terminals, and peripheral devices",
               "role_hint": "Tile 2: Operational context"
             },
             {
               "id": "en_u1_t3",
-              "text": "and by consolidating access to shared files, hardware peripherals, and software application licenses",
+              "text": "and by pooling expensive hardware components, centralized storage volumes, and single software licenses across interconnected nodes",
               "role_hint": "Tile 3: Method or mechanism"
             },
             {
               "id": "en_u1_t4",
-              "text": "they lower infrastructure deployment costs while exposing networked nodes to data breaches and connectivity failures",
-              "role_hint": "Tile 4: Resolving action"
+              "text": "they lower overall organizational hardware deployment costs significantly",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u1_t5",
+              "text": "while introducing systemic dependencies on network reliability and exposing shared data to unauthorized security intrusions",
+              "role_hint": "Tile 5: Resolving action"
             }
           ],
           "distractors": [
             {
               "id": "en_u1_d1",
               "category": "logical",
-              "text": "and by forcing every computing workstation to operate as an isolated machine with dedicated physical printers",
-              "penalty_explanation": "Networking centralizes and shares peripherals rather than isolating devices with dedicated individual printers[cite: 23, 24]."
+              "text": "by forcing every network user to purchase separate physical printers and standalone processing units independently",
+              "penalty_explanation": "Networking pools hardware like printers to share resources rather than forcing separate hardware purchases[cite: 23, 24]."
             },
             {
               "id": "en_u1_d2",
-              "category": "syntactic",
-              "text": "they eliminate all data security hazards and prevent communication latency permanently without transmission media",
-              "penalty_explanation": "Computer networks introduce data security risks and remain reliant on transmission media[cite: 24]."
+              "category": "conceptual",
+              "text": "while guaranteeing that network lines remain completely immune to transmission slowdowns or unauthorized access threats",
+              "penalty_explanation": "Networks are explicitly subject to data security risks and reliability slowdowns."
             }
           ]
         },
         "hi": {
-          "prompt": "कंप्यूटर नेटवर्क द्वारा संसाधन साझाकरण को सुगम बनाने तथा सुरक्षा जोखिम उत्पन्न करने के क्रम को सही व्यवस्थित करें।",
-          "hint": "कंप्यूटर नेटवर्क कंप्यूटिंग उपकरणों के बीच संचार कड़ियां स्थापित करते हैं से शुरू करें, वायर्ड और वायरलेस चैनलों का संदर्भ दें, फ़ाइलों, हार्डवेयर व सॉफ़्टवेयर को साझा करने का तरीका बताएं, और लागत घटाने के साथ सुरक्षा जोखिमों पर समाप्त करें।",
+          "prompt": "कंप्यूटर नेटवर्क के परिचालन सिद्धांतों, संसाधन साझाकरण लाभों और प्रणालीगत जोखिमों को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "कंप्यूटर नेटवर्क एकीकृत संचार लिंक स्थापित करते हैं से शुरू करें, स्वायत्त उपकरणों के संदर्भ को जोड़ें, हार्डवेयर व सॉफ्टवेयर संसाधनों को साझा करने का तरीका बताएं, तैनाती लागत को कम करने का परिणाम दें, और विश्वसनीयता व सुरक्षा जोखिमों पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u1_t1",
-              "text": "कंप्यूटर नेटवर्क कंप्यूटिंग उपकरणों के बीच संचार कड़ियां स्थापित करते हैं",
+              "text": "कंप्यूटर नेटवर्क एकीकृत संचार लिंक स्थापित करते हैं",
               "role_hint": "ब्लॉक 1: मुख्य विषय"
             },
             {
               "id": "hi_u1_t2",
-              "text": "वायर्ड और वायरलेस भौतिक ट्रांसमिशन चैनलों के माध्यम से",
+              "text": "स्वायत्त कंप्यूटरों, मोबाइल उपकरणों और परिधीय हार्डवेयर के बीच",
               "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
             },
             {
               "id": "hi_u1_t3",
-              "text": "और साझा फ़ाइलों, हार्डवेयर उपकरणों तथा सॉफ़्टवेयर लाइसेंसों तक पहुंच प्रदान करके",
+              "text": "और महंगे हार्डवेयर संसाधनों, केंद्रीय स्टोरेज तथा एकल सॉफ्टवेयर प्रतियों को कई नोड्स के बीच साझा करके",
               "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
             },
             {
               "id": "hi_u1_t4",
-              "text": "ये बुनियादी ढांचे की लागत घटाते हैं परंतु नोड्स को डेटा सुरक्षा और कनेक्टिविटी विफलताओं के प्रति संवेदनशील बनाते हैं",
-              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+              "text": "ये व्यक्तिगत उपकरणों की तैनाती लागत को काफी कम कर देते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u1_t5",
+              "text": "जबकि साझा डेटा को अनधिकृत सुरक्षा जोखिमों और कनेक्टिविटी विफलता के प्रति संवेदनशील बना देते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
             }
           ],
           "distractors": [
             {
               "id": "hi_u1_d1",
               "category": "logical",
-              "text": "और प्रत्येक वर्कस्टेशन को समर्पित अलग प्रिंटर लगाकर पूरी तरह अलग-थलग कंप्यूटर के रूप में कार्य करने पर बाध्य करके",
-              "penalty_explanation": "नेटवर्किंग संसाधनों को साझा करती है, उपकरणों को अलग-थलग नहीं करती[cite: 23, 24]।"
+              "text": "प्रत्येक नोड के लिए स्वतंत्र हार्डवेयर की अनिवार्य खरीद को लागू करके और साझाकरण रोककर",
+              "penalty_explanation": "नेटवर्किंग संसाधनों को साझा करके लागत घटाती है, यह प्रत्येक उपयोगकर्ता के लिए अलग हार्डवेयर अनिवार्य नहीं करती[cite: 23, 24]।"
             },
             {
               "id": "hi_u1_d2",
-              "category": "syntactic",
-              "text": "ये सभी डेटा सुरक्षा जोखिमों को पूरी तरह मिटाकर बिना किसी ट्रांसमिशन माध्यम के स्थायी संचार सुनिश्चित करते हैं",
-              "penalty_explanation": "नेटवर्किंग में डेटा सुरक्षा के जोखिम मौजूद रहते हैं और ट्रांसमिशन माध्यम अनिवार्य होता है[cite: 24]।"
+              "category": "conceptual",
+              "text": "और नेटवर्क कनेक्टिविटी को धीमा होने अथवा सुरक्षा उल्लंघनों से पूरी तरह सुरक्षित बनाए रखकर",
+              "penalty_explanation": "कंप्यूटर नेटवर्क में कनेक्टिविटी समस्याओं के कारण मंदी और सुरक्षा से जुड़े जोखिम स्वाभाविक रूप से मौजूद रहते हैं।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "A computer network links multiple devices to share data, hardware, and software, reducing deployment costs while introducing security and reliability risks[cite: 23, 24].",
-        "hi": "कंप्यूटर नेटवर्क डेटा, हार्डवेयर और सॉफ़्टवेयर साझा करने के लिए कई उपकरणों को जोड़ता है, जिससे लागत कम होती है परंतु सुरक्षा और विश्वसनीयता के जोखिम बढ़ते हैं[cite: 23, 24]।"
+        "en": "Computer networks link computing devices to share hardware, software, and data economically, but introduce data security and reliability risks[cite: 23, 24].",
+        "hi": "कंप्यूटर नेटवर्क हार्डवेयर, सॉफ्टवेयर और डेटा को किफायती ढंग से साझा करने के लिए उपकरणों को जोड़ते हैं, लेकिन सुरक्षा और विश्वसनीयता से जुड़े जोखिम लाते हैं[cite: 23, 24]।"
       }
     },
     {
       "instruction": {
         "title": {
-          "en": "Network Hardware Components: Server-Client Architecture and Transmission Media",
-          "hi": "नेटवर्क हार्डवेयर घटक: सर्वर-क्लाइंट आर्किटेक्चर और ट्रांसमिशन मीडिया"
+          "en": "Client-Server Architecture and Physical Transmission Media",
+          "hi": "क्लाइंट-सर्वर संरचना और भौतिक ट्रांसमिशन मीडिया"
         },
         "theory": {
-          "en": "A computer network relies on dedicated hardware components to manage communication and service delivery[cite: 24]. The Server functions as the most powerful centralized computing machine on the network, hosting core software, managing file repositories, and allocating processing resources[cite: 24]. Clients represent less powerful user workstations that depend on the central server for file retrieval and computational requests[cite: 24]. All participating devices communicate across transmission media, which encompass physical cables (twisted pair, coaxial, optical fiber) or wireless signals (radio waves, satellite)[cite: 24].",
-          "hi": "एक कंप्यूटर नेटवर्क संचार और सेवा वितरण को प्रबंधित करने के लिए समर्पित हार्डवेयर घटकों पर निर्भर करता है[cite: 24]। सर्वर नेटवर्क के भीतर सबसे शक्तिशाली केंद्रीय कंप्यूटर के रूप में कार्य करता है, जो मुख्य सॉफ़्टवेयर होस्ट करता है, फ़ाइल रिपॉजिटरी प्रबंधित करता है और संसाधन आवंटित करता है[cite: 24]। क्लाइंट कम शक्तिशाली उपयोगकर्ता वर्कस्टेशन होते हैं जो फ़ाइलों और गणना संबंधी आवश्यकताओं के लिए केंद्रीय सर्वर पर निर्भर होते हैं[cite: 24]। सभी जुड़े हुए उपकरण ट्रांसमिशन मीडिया के माध्यम से संचार करते हैं, जिसमें वायर्ड केबल या वायरलेस सिग्नल शामिल होते हैं[cite: 24]।"
+          "en": "In a distributed computer network, nodes operate within a hierarchical client-server architecture[cite: 24]. The server represents the most powerful computing unit, holding primary hardware, central databases, and software applications that it provisions across the network[cite: 24]. Clients are subordinate workstations that depend on the central server for processing requests, retrieving files, and accessing network services[cite: 24]. All interconnected nodes communicate across transmission media, which utilize physical guided cables (wired) or unguided electromagnetic frequencies (wireless)[cite: 24].",
+          "hi": "वितरित कंप्यूटर नेटवर्क में नोड्स एक पदानुक्रमित क्लाइंट-सर्वर संरचना के तहत कार्य करते हैं[cite: 24]। सर्वर नेटवर्क का सबसे शक्तिशाली कंप्यूटर होता है, जो प्राथमिक हार्डवेयर, केंद्रीय डेटाबेस और सॉफ्टवेयर संसाधनों को नियंत्रित करता है जिन्हें वह अन्य उपकरणों के साथ साझा करता है[cite: 24]। क्लाइंट कम शक्तिशाली वर्कस्टेशन होते हैं जो डेटा, प्रोसेसिंग और हार्डवेयर आवश्यकताओं के लिए सर्वर पर निर्भर रहते हैं[cite: 24]। नेटवर्क के सभी उपकरण ट्रांसमिशन मीडिया के माध्यम से जुड़े होते हैं, जो वायर्ड या वायरलेस माध्यमों का संयोजन हो सकते हैं[cite: 24]।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Server-Client Architecture &amp; Transmission Channels</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Central Server</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">High-Power Core</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Transmission Media</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Wired or Wireless</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Workstation Clients</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Dependent Nodes</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Resource Host</tspan><tspan x=\"120\" dy=\"1.2em\">Maximum Hardware</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Physical Conduit</tspan><tspan x=\"300\" dy=\"1.2em\">Packet Carrier</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Service Requesters</tspan><tspan x=\"480\" dy=\"1.2em\">User Endpoints</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Client-Server Hierarchy &amp; Transmission Channels</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Client Nodes</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Workstation Requests</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Transmission Media</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Wired / Wireless Links</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Central Server</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">High-Power Resource Hub</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Consumer Terminals</tspan><tspan x=\"120\" dy=\"1.2em\">Dependent Stations</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Physical Conduit</tspan><tspan x=\"300\" dy=\"1.2em\">Signal Transmission</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Governs Network</tspan><tspan x=\"480\" dy=\"1.2em\">Stores Master Data</tspan></text></svg>",
           "caption": {
-            "en": "Centralized server provisioning dependent client endpoints across wired or wireless transmission media conduits[cite: 24].",
-            "hi": "केंद्रीकृत सर्वर जो वायर्ड या वायरलेस ट्रांसमिशन मीडिया के माध्यम से निर्भर क्लाइंट एंडपॉइंट्स को सेवाएं प्रदान करता है[cite: 24]।"
+            "en": "Client-server architecture routing service requests through wired and wireless media channels to a central host[cite: 24].",
+            "hi": "क्लाइंट-सर्वर संरचना जो सेवा अनुरोधों को वायर्ड और वायरलेस मीडिया चैनलों के माध्यम से केंद्रीय होस्ट तक पहुंचाती है[cite: 24]।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the balanced sentence detailing how server-client architecture routes network services over transmission media.",
-          "hint": "Start with centralized server nodes anchoring network infrastructure, frame the operational context across client-server computing topologies, explain transmitting requests over wired or wireless media, and conclude with delivering services to dependent client workstations.",
+          "prompt": "Construct the balanced sentence detailing the structural relationship between clients, servers, and transmission media.",
+          "hint": "Start with client-server network architectures organizing computational tasks, specify subordinate workstations initiating requests, detail routing signals across wired or wireless transmission media, explain fulfilling computational workloads via high-capacity servers, and conclude with maintaining centralized system management.",
           "target_sequence": [
             {
               "id": "en_u2_t1",
-              "text": "Centralized servers allocate shared computational resources",
+              "text": "Client-server network architectures partition distributed processing tasks",
               "role_hint": "Tile 1: Main subject anchor"
             },
             {
               "id": "en_u2_t2",
-              "text": "within structured server-client network architectures",
+              "text": "between subordinate client workstations and powerful centralized servers",
               "role_hint": "Tile 2: Operational context"
             },
             {
               "id": "en_u2_t3",
-              "text": "and by transmitting data signals across wired cables and wireless transmission media",
+              "text": "and by transmitting digital data signals across wired or wireless communication media",
               "role_hint": "Tile 3: Method or mechanism"
             },
             {
               "id": "en_u2_t4",
-              "text": "they service incoming data requests from less powerful client workstations across the local network",
-              "role_hint": "Tile 4: Resolving action"
+              "text": "they direct dependent client requests to the server for processing and storage fulfillment",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u2_t5",
+              "text": "thereby establishing robust centralized management across heterogeneous enterprise nodes",
+              "role_hint": "Tile 5: Resolving action"
             }
           ],
           "distractors": [
             {
               "id": "en_u2_d1",
-              "category": "logical",
-              "text": "and by forcing the high-power server to depend entirely on client workstations for operating system processing power",
-              "penalty_explanation": "Clients depend on the server for data and resources, not the other way around[cite: 24]."
+              "category": "conceptual",
+              "text": "by positioning clients as the most powerful machines that command and supply hardware resources to servers",
+              "penalty_explanation": "Servers are the most powerful machines that provide resources; clients are dependent workstations[cite: 24]."
             },
             {
               "id": "en_u2_d2",
-              "category": "syntactic",
-              "text": "they disconnect transmission media completely to ensure client terminals run without network infrastructure",
-              "penalty_explanation": "Transmission media is mandatory to interconnect devices in a network[cite: 24]."
+              "category": "logical",
+              "text": "they eliminate all physical or wireless transmission media channels to prevent data packets from traveling",
+              "penalty_explanation": "Networks require transmission media (wired or wireless) to interconnect devices and transmit data[cite: 24]."
             }
           ]
         },
         "hi": {
-          "prompt": "सर्वर-क्लाइंट आर्किटेक्चर द्वारा ट्रांसमिशन मीडिया पर नेटवर्क सेवाएं प्रदान करने के क्रम को सही व्यवस्थित करें।",
-          "hint": "केंद्रीकृत सर्वर साझा कंप्यूटेशनल संसाधन आवंटित करते हैं से शुरू करें, सर्वर-क्लाइंट नेटवर्क आर्किटेक्चर का संदर्भ दें, केबलों व वायरलेस मीडिया पर सिग्नल भेजने का तरीका बताएं, और क्लाइंट वर्कस्टेशनों के अनुरोधों को पूरा करने पर समाप्त करें।",
+          "prompt": "क्लाइंट, सर्वर और ट्रांसमिशन मीडिया के बीच संरचनात्मक संबंधों को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "क्लाइंट-सर्वर नेटवर्क संरचनाएं वितरित कार्यों को विभाजित करती हैं से शुरू करें, क्लाइंट वर्कस्टेशन व केंद्रीय सर्वर का संदर्भ जोड़ें, वायर्ड या वायरलेस मीडिया से सिग्नल भेजने का तरीका बताएं, डेटा व हार्डवेयर आवश्यकताओं की पूर्ति का परिणाम दें, और केंद्रीय प्रबंधन स्थापित करने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u2_t1",
-              "text": "केंद्रीकृत सर्वर साझा कंप्यूटेशनल संसाधन आवंटित करते हैं",
+              "text": "क्लाइंट-सर्वर नेटवर्क संरचनाएं वितरित प्रसंस्करण कार्यों को विभाजित करती हैं",
               "role_hint": "ब्लॉक 1: मुख्य विषय"
             },
             {
               "id": "hi_u2_t2",
-              "text": "संरचित सर्वर-क्लाइंट नेटवर्क आर्किटेक्चर के भीतर",
+              "text": "अधीनस्थ क्लाइंट वर्कस्टेशनों और शक्तिशाली केंद्रीय सर्वर के बीच",
               "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
             },
             {
               "id": "hi_u2_t3",
-              "text": "और वायर्ड केबलों तथा वायरलेस ट्रांसमिशन मीडिया पर डेटा सिग्नल भेजकर",
+              "text": "और वायर्ड या वायरलेस ट्रांसमिशन मीडिया के माध्यम से डेटा सिग्नलों को प्रसारित करके",
               "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
             },
             {
               "id": "hi_u2_t4",
-              "text": "ये स्थानीय नेटवर्क पर कम शक्तिशाली क्लाइंट वर्कस्टेशनों से आने वाले डेटा अनुरोधों को पूरा करते हैं",
-              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+              "text": "ये क्लाइंट्स की डेटा और हार्डवेयर आवश्यकताओं को पूरा करने के लिए अनुरोधों को सर्वर पर भेजती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u2_t5",
+              "text": "जिससे विभिन्न नेटवर्क उपकरणों पर मजबूत और एकीकृत नियंत्रण स्थापित होता है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
             }
           ],
           "distractors": [
             {
               "id": "hi_u2_d1",
-              "category": "logical",
-              "text": "और उच्च-क्षमता वाले सर्वर को प्रोसेसिंग शक्ति के लिए पूरी तरह क्लाइंट वर्कस्टेशनों पर निर्भर रहने पर बाध्य करके",
-              "penalty_explanation": "क्लाइंट सर्वर पर निर्भर होते हैं, सर्वर क्लाइंट पर निर्भर नहीं होता[cite: 24]।"
+              "category": "conceptual",
+              "text": "क्लाइंट्स को नेटवर्क का सबसे शक्तिशाली कंप्यूटर बनाकर सर्वर को उन पर निर्भर रखकर",
+              "penalty_explanation": "सर्वर सबसे शक्तिशाली इकाई होता है जिस पर क्लाइंट अपनी आवश्यकताओं के लिए निर्भर होते हैं[cite: 24]।"
             },
             {
               "id": "hi_u2_d2",
-              "category": "syntactic",
-              "text": "ये ट्रांसमिशन मीडिया को पूरी तरह हटाकर बिना किसी नेटवर्क बुनियादी ढांचे के क्लाइंट टर्मिनल संचालित करते हैं",
-              "penalty_explanation": "उपकरणों को आपस में जोड़ने के लिए ट्रांसमिशन माध्यम अनिवार्य है[cite: 24]।"
+              "category": "logical",
+              "text": "और किसी भी प्रकार के वायर्ड अथवा वायरलेस ट्रांसमिशन मीडिया की आवश्यकता को पूरी तरह समाप्त करके",
+              "penalty_explanation": "नेटवर्क में उपकरणों को आपस में जोड़ने के लिए वायर्ड या वायरलेस माध्यम अनिवार्य होता है[cite: 24]।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "The server is the central resource-rich machine, clients are dependent workstations, and transmission media provides the wired or wireless communication link[cite: 24].",
-        "hi": "सर्वर नेटवर्क का मुख्य शक्तिशाली संसाधन प्रदाता कंप्यूटर है, क्लाइंट उस पर निर्भर वर्कस्टेशन हैं, और ट्रांसमिशन मीडिया संचार का वायर्ड या वायरलेस माध्यम है[cite: 24]।"
+        "en": "Servers are powerful resource providers, clients are dependent requester nodes, and transmission media form the physical or wireless connection[cite: 24].",
+        "hi": "सर्वर सबसे शक्तिशाली संसाधन प्रदाता होते हैं, क्लाइंट निर्भर वर्कस्टेशन होते हैं, और ट्रांसमिशन मीडिया उनके बीच का संचार माध्यम है[cite: 24]।"
       }
     },
     {
       "instruction": {
         "title": {
-          "en": "Network Interconnect Hardware: NIC, Broadcasting Hubs, and Switching Devices",
-          "hi": "नेटवर्क इंटरकनेक्ट हार्डवेयर: एनआईसी, ब्रॉडकास्टिंग हब और स्विचिंग डिवाइस"
+          "en": "Physical Interconnect Hardware: NIC, Hub, and Switch Mechanics",
+          "hi": "भौतिक इंटरकनेक्ट हार्डवेयर: एनआईसी, हब और स्विच की कार्यप्रणाली"
         },
         "theory": {
-          "en": "Connecting physical endpoints to a local network requires specialized networking hardware[cite: 24]. The Network Interface Card (NIC) is a hardware component installed in a computing device that enables physical connectivity to network transmission media[cite: 24]. To aggregate multiple devices into a local area network, administrators use either a Hub or a Switch[cite: 24]. A Hub is an unmanaged multiport device that broadcasts incoming data packets to every connected port indiscriminately, resulting in higher traffic collisions, slower speeds, and lower security[cite: 24]. In contrast, a Switch uses direct connection switching technology to forward data frames strictly to the intended destination node, delivering faster transmission rates and enhanced data isolation[cite: 24].",
-          "hi": "भौतिक उपकरणों को स्थानीय नेटवर्क से जोड़ने के लिए विशिष्ट नेटवर्किंग हार्डवेयर की आवश्यकता होती है[cite: 24]। नेटवर्क इंटरफ़ेस कार्ड (NIC) एक हार्डवेयर डिवाइस है जो कंप्यूटर और उपकरणों को वायर्ड ट्रांसमिशन मीडिया से जोड़ने में मदद करता है[cite: 24]। कई उपकरणों को जोड़कर एक नेटवर्क बनाने के लिए हब या स्विच का उपयोग किया जाता है[cite: 24]। हब एक नेटवर्किंग डिवाइस है जो ब्रॉडकास्टिंग तकनीक का उपयोग करता है और आने वाले डेटा पैकेट को सभी जुड़े उपकरणों पर भेजता है, जिससे यह धीमा और कम सुरक्षित होता है[cite: 24]। इसके विपरीत, स्विच डायरेक्ट कनेक्शन तकनीक का उपयोग करता है जो डेटा को केवल लक्षित उपकरण पर भेजता है, जिससे यह अधिक सुरक्षित और तेज़ होता है[cite: 24]।"
+          "en": "Hardware interconnects bridge computing nodes with local transmission channels[cite: 24]. The Network Interface Card (NIC) is a physical expansion board that provides the electronic interface required to connect a computing device to wired media[cite: 24]. Within local multi-node configurations, hubs and switches serve as multi-port concentration points[cite: 24]. A hub uses broadcasting technology, retransmitting every incoming packet to all connected ports indiscriminately, which reduces security and creates network congestion[cite: 24]. Conversely, a switch establishes direct point-to-point connections, inspecting packet destination addresses to forward data solely to the intended device, making it faster and more secure[cite: 24]."
+          "hi": "हार्डवेयर इंटरकनेक्ट कंप्यूटिंग नोड्स को स्थानीय ट्रांसमिशन चैनलों से जोड़ते हैं[cite: 24]। नेटवर्क इंटरफेस कार्ड (NIC) एक हार्डवेयर उपकरण है जो कंप्यूटर को वायर्ड मीडिया से कनेक्ट करने के लिए आवश्यक भौतिक इंटरफेस प्रदान करता है[cite: 24]। कई उपकरणों को एक साथ जोड़कर नेटवर्क बनाने के लिए हब और स्विच का उपयोग किया जाता है[cite: 24]। हब ब्रॉडकास्टिंग तकनीक का उपयोग करता है, जो प्रत्येक डेटा पैकेट को सभी जुड़े उपकरणों पर अंधाधुंध भेजता है, जिससे यह धीमा और कम सुरक्षित होता है[cite: 24]। इसके विपरीत, स्विच डायरेक्ट कनेक्शन तकनीक का उपयोग करता है, जो डेटा पैकेट को केवल लक्षित डिवाइस पर भेजता है, जिससे यह तेज और अधिक सुरक्षित बनता है[cite: 24]।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Interconnect Hardware: NIC, Hub (Flood) vs. Switch (Direct)</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Hardware NIC</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Physical Link Card</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Broadcasting Hub</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Floods All Ports</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Direct Switch</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Point-to-Point Frame</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Physical Interface</tspan><tspan x=\"120\" dy=\"1.2em\">Media Adapter</tspan></text><text x=\"300\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Unmanaged Broadcast</tspan><tspan x=\"300\" dy=\"1.2em\">Slower, Less Secure</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Targeted Delivery</tspan><tspan x=\"480\" dy=\"1.2em\">Fast, Secure Forward</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Interconnect Hardware: NIC, Hub &amp; Switch</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">NIC Interface</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Wired Media Adapter</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Network Hub</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Broadcasts to All (Slow)</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Network Switch</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Direct Point-to-Point</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Physical Link</tspan><tspan x=\"120\" dy=\"1.2em\">Hardware Port</tspan></text><text x=\"300\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Floods Data Packets</tspan><tspan x=\"300\" dy=\"1.2em\">Insecure &amp; Collision</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Unicast Filtering</tspan><tspan x=\"480\" dy=\"1.2em\">High-Speed Fabric</tspan></text></svg>",
           "caption": {
-            "en": "LAN interconnect hardware contrasting physical NIC adapters with indiscriminate hub broadcasting and targeted switch forwarding[cite: 24].",
-            "hi": "लैन हार्डवेयर जो भौतिक एनआईसी एडेप्टर के साथ हब ब्रॉडकास्टिंग और स्विच के लक्षित डेटा फॉरवर्डिंग के अंतर को दर्शाता है[cite: 24]।"
+            "en": "Interconnect comparison contrasting broadcast flooding in hubs with intelligent direct switching in switches[cite: 24].",
+            "hi": "इंटरकनेक्ट तुलना जो हब के ब्रॉडकास्ट फ्लडिंग और स्विच के प्रत्यक्ष स्विचिंग तंत्र के अंतर को दर्शाती है[cite: 24]।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the balanced sentence detailing how NICs, hubs, and switches govern local device connectivity and data transmission.",
-          "hint": "Start with physical network adapters and concentrating devices connecting local nodes, set the context within local area network configurations, contrast broadcast flooding in hubs with direct targeted frame forwarding in switches, and conclude with optimizing data transmission speed and security.",
+          "prompt": "Construct the balanced sentence detailing how NIC adapters, hubs, and switches govern local link traffic.",
+          "hint": "Start with physical networking hardware establishing local connectivity, specify interfacing workstations via NICs, detail contrasting broadcast flooding in hubs with direct unicasting in switches, explain filtering packet traffic toward destination ports, and conclude with optimizing data transmission speed and security.",
           "target_sequence": [
             {
               "id": "en_u3_t1",
-              "text": "Network interface cards and concentrating interconnect hardware link workstation nodes",
+              "text": "Physical networking hardware components establish local connectivity",
               "role_hint": "Tile 1: Main subject anchor"
             },
             {
               "id": "en_u3_t2",
-              "text": "into coordinated local area network topologies",
+              "text": "by attaching devices to transmission lines using Network Interface Cards",
               "role_hint": "Tile 2: Operational context"
             },
             {
               "id": "en_u3_t3",
-              "text": "and by contrasting indiscriminate packet broadcasting through hubs against dedicated direct switching connections",
+              "text": "and by contrasting broadcast transmission across hubs with intelligent direct switching across switches",
               "role_hint": "Tile 3: Method or mechanism"
             },
             {
               "id": "en_u3_t4",
-              "text": "they replace slow and insecure collision domains with isolated and accelerated point-to-point data transmission",
-              "role_hint": "Tile 4: Resolving action"
+              "text": "they isolate point-to-point packet flows rather than flooding unneeded data across every connected port",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u3_t5",
+              "text": "thereby maximizing transmission throughput and ensuring heightened local traffic security",
+              "role_hint": "Tile 5: Resolving action"
             }
           ],
           "distractors": [
             {
               "id": "en_u3_d1",
-              "category": "logical",
-              "text": "and by forcing network switches to broadcast every incoming packet to all connected ports indiscriminately",
-              "penalty_explanation": "Switches use direct connections to target specific devices; hubs are the devices that broadcast to all ports[cite: 24]."
+              "category": "conceptual",
+              "text": "and by forcing switches to broadcast data packets to all ports while hubs deliver direct point-to-point transfers",
+              "penalty_explanation": "Hubs use broadcasting; switches use direct point-to-point switching technology[cite: 24]."
             },
             {
               "id": "en_u3_d2",
-              "category": "syntactic",
-              "text": "they disable NIC hardware controllers permanently to prevent any wired communication across local networks",
-              "penalty_explanation": "NIC hardware is required to enable communication with wired network media[cite: 24]."
+              "category": "technical",
+              "text": "by using Network Interface Cards solely as software protocols that do not connect to physical wired cables",
+              "penalty_explanation": "A NIC is a hardware device used to connect computers to physical wired media[cite: 24]."
             }
           ]
         },
         "hi": {
-          "prompt": "एनआईसी, हब और स्विच द्वारा डिवाइस कनेक्टिविटी और डेटा ट्रांसमिशन को नियंत्रित करने के क्रम को सही व्यवस्थित करें।",
-          "hint": "नेटवर्क इंटरफेस कार्ड और कनेक्टिंग हार्डवेयर वर्कस्टेशन नोड्स को जोड़ते हैं से शुरू करें, स्थानीय नेटवर्क टोपोलॉजी का संदर्भ दें, हब के ब्रॉडकास्ट और स्विच के डायरेक्ट कनेक्शन की तुलना का तरीका बताएं, और तेज व सुरक्षित ट्रांसमिशन पर समाप्त करें।",
+          "prompt": "एनआईसी, हब और स्विच द्वारा स्थानीय नेटवर्क ट्रैफ़िक प्रबंधित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "भौतिक नेटवर्किंग उपकरण स्थानीय कनेक्टिविटी स्थापित करते हैं से शुरू करें, एनआईसी द्वारा केबल से जोड़ने का संदर्भ दें, हब के ब्रॉडकास्टिंग और स्विच के डायरेक्ट कनेक्शन की तुलना का तरीका बताएं, पैकेट को लक्षित पोर्ट पर भेजने का परिणाम दें, और गति व सुरक्षा बढ़ाने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u3_t1",
-              "text": "नेटवर्क इंटरफेस कार्ड और कनेक्टिंग हार्डवेयर उपकरण वर्कस्टेशन नोड्स को जोड़ते हैं",
+              "text": "भौतिक नेटवर्किंग उपकरण स्थानीय कनेक्टिविटी स्थापित करते हैं",
               "role_hint": "ब्लॉक 1: मुख्य विषय"
             },
             {
               "id": "hi_u3_t2",
-              "text": "स्थानीय क्षेत्र नेटवर्क टोपोलॉजी के भीतर",
+              "text": "नेटवर्क इंटरफेस कार्ड का उपयोग करके उपकरणों को वायर्ड मीडिया से जोड़कर",
               "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
             },
             {
               "id": "hi_u3_t3",
-              "text": "और हब के माध्यम से होने वाली ब्रॉडकास्टिंग की तुलना स्विच के समर्पित डायरेक्ट कनेक्शन से करके",
+              "text": "और हब की ब्रॉडकास्टिंग तकनीक की तुलना स्विच की डायरेक्ट कनेक्शन तकनीक से करके",
               "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
             },
             {
               "id": "hi_u3_t4",
-              "text": "ये धीमी और कम सुरक्षित तकनीक के स्थान पर तेज़ और सुरक्षित पॉइंट-टू-पॉइंट डेटा ट्रांसमिशन प्रदान करते हैं",
-              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+              "text": "ये प्रत्येक पोर्ट पर डेटा बाढ़ की तरह भेजने के बजाय पैकेटों को सीधे लक्षित डिवाइस पर भेजते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u3_t5",
+              "text": "जिससे स्थानीय नेटवर्क में संचार की गति बढ़ जाती है और डेटा सुरक्षा अधिक मजबूत होती है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
             }
           ],
           "distractors": [
             {
               "id": "hi_u3_d1",
-              "category": "logical",
-              "text": "और नेटवर्क स्विच को सभी जुड़े हुए पोर्ट्स पर प्रत्येक पैकेट को अंधाधुंध ब्रॉडकास्ट करने पर मजबूर करके",
-              "penalty_explanation": "स्विच डायरेक्ट कनेक्शन तकनीक का उपयोग करता है, अंधाधुंध ब्रॉडकास्टिंग हब करता है[cite: 24]।"
+              "category": "conceptual",
+              "text": "और स्विच द्वारा सभी उपकरणों पर अंधाधुंध प्रसारण तथा हब द्वारा सुरक्षित पॉइंट-टू-पॉइंट कनेक्शन लागू करके",
+              "penalty_explanation": "हब सभी पोर्ट्स पर ब्रॉडकास्ट करता है, जबकि स्विच सुरक्षित पॉइंट-टू-पॉइंट कनेक्शन का उपयोग करता है[cite: 24]।"
             },
             {
               "id": "hi_u3_d2",
-              "category": "syntactic",
-              "text": "ये स्थानीय नेटवर्क में किसी भी वायर्ड संचार को रोकने के लिए एनआईसी हार्डवेयर को पूरी तरह अक्षम कर देते हैं",
-              "penalty_explanation": "एनआईसी कंप्यूटर को वायर्ड मीडिया से जोड़ने के लिए आवश्यक घटक है[cite: 24]।"
+              "category": "technical",
+              "text": "एनआईसी को एक सॉफ्टवेयर प्रोटोकॉल बनाकर जो भौतिक केबलों से जुड़ने में असमर्थ रहता है",
+              "penalty_explanation": "एनआईसी एक हार्डवेयर डिवाइस है जो कंप्यूटर को भौतिक केबलों से जोड़ने का कार्य करता है[cite: 24]।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "NIC connects computers to physical media, Hub broadcasts packets to all ports, and Switch forwards frames directly to specific destination devices[cite: 24].",
-        "hi": "एनआईसी कंप्यूटर को भौतिक मीडिया से जोड़ता है, हब सभी पोर्ट्स पर डेटा ब्रॉडकास्ट करता है, और स्विच डेटा को सीधे लक्षित डिवाइस पर भेजता है[cite: 24]।"
+        "en": "NICs connect devices to cables; hubs broadcast data to all ports (slow/insecure), while switches direct data solely to destination ports (fast/secure)[cite: 24].",
+        "hi": "एनआईसी कंप्यूटर को केबल से जोड़ता है; हब सभी पोर्ट्स पर ब्रॉडकास्ट करता है (धीमा/असुरक्षित), जबकि स्विच केवल लक्षित पोर्ट पर डेटा भेजता है (तेज/सुरक्षित)[cite: 24]।"
       }
     },
     {
       "instruction": {
         "title": {
-          "en": "Network Gateways: Routers and Inter-Network Bridging",
-          "hi": "नेटवर्क गेटवे: राउटर और अंतर-नेटवर्क संयोजन"
+          "en": "Network Gateways: Router Architecture and Inter-Network Bridging",
+          "hi": "नेटवर्क गेटवे: राउटर संरचना और अंतर-नेटवर्क संयोजन"
         },
         "theory": {
-          "en": "While hubs and switches connect devices within a single local network, expanding communication across different subnets requires a Router[cite: 24, 25]. A Router is a specialized networking device designed to interconnect multiple distinct networks into a larger wide-area architecture[cite: 24, 25]. Routers function as intermediate gateways that link small local area networks directly to the global Internet[cite: 25]. By analyzing network addresses, routers inspect incoming data packets and determine optimal transmission routes across network boundaries[cite: 25, 27].",
-          "hi": "जहाँ हब और स्विच एक ही नेटवर्क के भीतर उपकरणों को जोड़ते हैं, वहीं विभिन्न नेटवर्कों के बीच संचार स्थापित करने के लिए राउटर की आवश्यकता होती है[cite: 24, 25]। राउटर एक नेटवर्किंग डिवाइस है जिसका उपयोग कई अलग-अलग नेटवर्कों को आपस में जोड़कर एक बड़ा नेटवर्क बनाने के लिए किया जाता है[cite: 24, 25]। राउटर छोटे स्थानीय नेटवर्क को इंटरनेट से जोड़ने के लिए भी उपयोग किए जाते हैं[cite: 25]। नेटवर्क पतों का विश्लेषण करके, राउटर डेटा पैकेटों की जांच करते हैं और सीमाओं के पार सबसे अच्छा मार्ग तय करते हैं[cite: 25, 27]।"
+          "en": "While switches interconnect hosts within a single local area network, a router is an intelligent networking device used to interconnect multiple distinct networks to form larger internetworks[cite: 24]. Routers evaluate logical network addresses to select the most efficient transmission paths for forwarding data packets across disparate network boundaries. Additionally, routers act as the gateway bridging private local networks with the global public Internet, translating traffic protocols and directing inter-network communications.",
+          "hi": "जहां स्विच एक ही स्थानीय नेटवर्क के भीतर उपकरणों को जोड़ते हैं, वहीं राउटर एक नेटवर्किंग डिवाइस है जिसका उपयोग कई स्वतंत्र नेटवर्कों को आपस में जोड़कर एक बड़ा नेटवर्क बनाने के लिए किया जाता है[cite: 24]। राउटर विभिन्न नेटवर्क सीमाओं के पार डेटा पैकेट भेजने के लिए सबसे कुशल मार्ग (रूट) का चयन करते हैं। इसके अतिरिक्त, राउटर एक गेटवे के रूप में कार्य करते हैं जो छोटे स्थानीय नेटवर्कों को वैश्विक इंटरनेट से जोड़ते हैं।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Router Gateway: Interconnecting LANs to the Internet</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Local LAN A</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Private Subnet</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Network Router</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Inter-Network Gateway</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Global Internet</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Wide-Area Web</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Internal Nodes</tspan><tspan x=\"120\" dy=\"1.2em\">Switch Clustered</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Packet Forwarding</tspan><tspan x=\"300\" dy=\"1.2em\">Cross-Network Link</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Public WAN</tspan><tspan x=\"480\" dy=\"1.2em\">Worldwide Access</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Router Architecture: Inter-Network Gateway</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Local LAN A</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Switched Subnet</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Router Gateway</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Path Selection Logic</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Global Internet / LAN B</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">External Networks</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Internal Nodes</tspan><tspan x=\"120\" dy=\"1.2em\">Private Addressing</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Inspects IP Headers</tspan><tspan x=\"300\" dy=\"1.2em\">Routes Cross-Network</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Worldwide Web</tspan><tspan x=\"480\" dy=\"1.2em\">Interconnected Mesh</tspan></text></svg>",
           "caption": {
-            "en": "Network routing gateway linking isolated local area networks to external wide-area networks and the Internet[cite: 24, 25].",
-            "hi": "नेटवर्क राउटिंग गेटवे जो अलग-अलग स्थानीय क्षेत्र नेटवर्कों को बाहरी विस्तृत नेटवर्कों और इंटरनेट से जोड़ता है[cite: 24, 25]।"
+            "en": "Router topology connecting internal local area networks to external wide area networks and the Internet[cite: 24].",
+            "hi": "राउटर टोपोलॉजी जो स्थानीय लैन को बाहरी विस्तृत नेटवर्क और इंटरनेट से जोड़ती है[cite: 24]।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the balanced sentence detailing how routers bridge disparate networks and enable Internet access.",
-          "hint": "Start with routers operating as specialized inter-network gateway devices, frame their operational role in linking multiple subnets, explain routing data packets between distinct network boundaries, and conclude with bridging local area networks to the global Internet.",
+          "prompt": "Construct the balanced sentence describing how routers interconnect autonomous networks and the global Internet.",
+          "hint": "Start with routers functioning as advanced networking gateways, specify connecting multiple disparate network segments, detail inspecting destination addresses to determine optimal routing pathways, explain forwarding packets across network borders, and conclude with bridging private subnets with the worldwide Internet.",
           "target_sequence": [
             {
               "id": "en_u4_t1",
-              "text": "Routers operate as specialized inter-network gateway devices",
+              "text": "Routers operate as specialized inter-networking gateway devices",
               "role_hint": "Tile 1: Main subject anchor"
             },
             {
               "id": "en_u4_t2",
-              "text": "across complex multi-tier enterprise telecommunication infrastructures",
+              "text": "across complex topologies comprising multiple disparate local networks",
               "role_hint": "Tile 2: Operational context"
             },
             {
               "id": "en_u4_t3",
-              "text": "and by interconnecting multiple discrete networks and inspecting incoming packet headers",
+              "text": "and by evaluating logical IP addresses to select optimal data delivery pathways dynamically",
               "role_hint": "Tile 3: Method or mechanism"
             },
             {
               "id": "en_u4_t4",
-              "text": "they bridge private local area networks directly to the worldwide Internet while determining optimal routing paths",
-              "role_hint": "Tile 4: Resolving action"
+              "text": "they bridge separate network segments together into cohesive large-scale systems",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u4_t5",
+              "text": "while linking private local area networks directly to the global public Internet",
+              "role_hint": "Tile 5: Resolving action"
             }
           ],
           "distractors": [
             {
               "id": "en_u4_d1",
-              "category": "logical",
-              "text": "and by blocking all packet communication between different subnets to confine data exclusively to a single wire",
-              "penalty_explanation": "Routers connect multiple networks together rather than blocking inter-network communication[cite: 24, 25]."
+              "category": "conceptual",
+              "text": "by permanently isolating local area networks to prevent any transmission packets from ever reaching the global Internet",
+              "penalty_explanation": "A primary role of routers is to connect local networks to the Internet rather than isolating them."
             },
             {
               "id": "en_u4_d2",
-              "category": "syntactic",
-              "text": "they replace external internet links with unmanaged internal hubs that cannot parse logical IP headers",
-              "penalty_explanation": "Routers evaluate logical IP routing to bridge networks, which hubs cannot do[cite: 24, 25]."
+              "category": "technical",
+              "text": "they replace Network Interface Cards inside computers to act solely as physical monitor cables",
+              "penalty_explanation": "Routers are external networking devices, not internal adapter cards or display cables[cite: 24]."
             }
           ]
         },
         "hi": {
-          "prompt": "राउटर द्वारा अलग-अलग नेटवर्कों को जोड़ने और इंटरनेट सक्षम करने के क्रम को सही व्यवस्थित करें।",
-          "hint": "राउटर अंतर-नेटवर्क गेटवे डिवाइस के रूप में कार्य करते हैं से शुरू करें, एंटरप्राइज बुनियादी ढांचे का संदर्भ दें, कई नेटवर्कों को जोड़ने व पैकेट जांचने का तरीका बताएं, और स्थानीय नेटवर्क को वैश्विक इंटरनेट से जोड़ने पर समाप्त करें।",
+          "prompt": "राउटर द्वारा कई नेटवर्कों को जोड़ने और इंटरनेट गेटवे के रूप में कार्य करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "राउटर विशेष इंटर-नेटवर्किंग गेटवे के रूप में कार्य करते हैं से शुरू करें, विभिन्न नेटवर्कों के संदर्भ को जोड़ें, सर्वोत्तम मार्ग चुनने के तरीके को बताएं, बड़े पैमाने के सिस्टम में जोड़ने का परिणाम दें, और स्थानीय नेटवर्क को इंटरनेट से जोड़ने पर समाप्त करें।",
           "target_sequence": [
             {
               "id": "hi_u4_t1",
-              "text": "राउटर अंतर-नेटवर्क गेटवे डिवाइस के रूप में कार्य करते हैं",
+              "text": "राउटर विशेष इंटर-नेटवर्किंग गेटवे उपकरणों के रूप में कार्य करते हैं",
               "role_hint": "ब्लॉक 1: मुख्य विषय"
             },
             {
               "id": "hi_u4_t2",
-              "text": "जटिल मल्टी-टीयर दूरसंचार बुनियादी ढांचे के भीतर",
+              "text": "कई अलग-अलग स्थानीय नेटवर्कों से युक्त जटिल टोपोलॉजी के भीतर",
               "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
             },
             {
               "id": "hi_u4_t3",
-              "text": "और कई अलग-अलग नेटवर्कों को जोड़कर तथा पैकेट हेडर का निरीक्षण करके",
+              "text": "और सर्वोत्तम डेटा वितरण मार्गों का चयन करने के लिए तार्किक आईपी पतों का मूल्यांकन करके",
               "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
             },
             {
               "id": "hi_u4_t4",
-              "text": "ये स्थानीय क्षेत्र नेटवर्क को वैश्विक इंटरनेट से जोड़ते हैं और सबसे अच्छा मार्ग निर्धारित करते हैं",
-              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+              "text": "ये स्वतंत्र नेटवर्क खंडों को आपस में जोड़कर एक बड़ा नेटवर्क बनाते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u4_t5",
+              "text": "और स्थानीय नेटवर्क को सीधे वैश्विक इंटरनेट के साथ सुरक्षित रूप से जोड़ते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
             }
           ],
           "distractors": [
             {
               "id": "hi_u4_d1",
-              "category": "logical",
-              "text": "और डेटा को एक ही तार तक सीमित करने के लिए विभिन्न सबनेट्स के बीच सभी संचार को पूरी तरह अवरुद्ध करके",
-              "penalty_explanation": "राउटर कई नेटवर्कों को आपस में जोड़ने का कार्य करता है, संचार अवरुद्ध करने का नहीं[cite: 24, 25]।"
+              "category": "conceptual",
+              "text": "स्थानीय नेटवर्कों को हमेशा के लिए अलग-थलग रखकर ताकि कोई भी डेटा इंटरनेट तक न पहुंच सके",
+              "penalty_explanation": "राउटर का मुख्य कार्य कई नेटवर्कों को आपस में जोड़ना और छोटे नेटवर्क को इंटरनेट से लिंक करना है[cite: 24]।"
             },
             {
               "id": "hi_u4_d2",
-              "category": "syntactic",
-              "text": "ये इंटरनेट लिंक को हटाकर उनकी जगह अप्रबंधित हब स्थापित करते हैं जो आईपी हेडर नहीं पढ़ सकते",
-              "penalty_explanation": "राउटर अंतर-नेटवर्क रूटिंग के लिए उपयोग किए जाते हैं, वे हब द्वारा प्रतिस्थापित नहीं होते[cite: 24, 25]।"
+              "category": "technical",
+              "text": "कंप्यूटर के भीतर एनआईसी को हटाकर केवल मॉनिटर केबल के रूप में काम करते हुए",
+              "penalty_explanation": "राउटर स्वतंत्र नेटवर्किंग डिवाइस हैं जो नेटवर्क ट्रैफिक को रूट करते हैं, वे मॉनिटर केबल नहीं हैं[cite: 24]।"
             }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Routers connect multiple distinct networks together, select the best transmission path, and link local networks to the Internet[cite: 24, 25, 27].",
-        "hi": "राउटर कई अलग-अलग नेटवर्कों को आपस में जोड़ते हैं, डेटा पैकेट के लिए सर्वोत्तम मार्ग चुनते हैं और स्थानीय नेटवर्क को इंटरनेट से जोड़ते हैं[cite: 24, 25, 27]।"
+        "en": "Routers join multiple distinct networks into larger systems and route packets between private LANs and the Internet[cite: 24].",
+        "hi": "राउटर कई अलग-अलग नेटवर्कों को आपस में जोड़कर बड़ा नेटवर्क बनाते हैं और स्थानीय नेटवर्क को इंटरनेट से जोड़ते हैं[cite: 24]।"
       }
     },
     {
       "instruction": {
         "title": {
           "en": "The TCP/IP Suite: Connection-Oriented TCP vs. Connectionless IP",
-          "hi": "टीसीपी/आईपी सुइट: कनेक्शन-ओरिएंटेड टीसीपी बनाम कनेक्शनलेस आईपी"
+          "hi": "टीसीपी/आईपी प्रोटोकॉल सूट: कनेक्शन-आधारित टीसीपी बनाम कनेक्शन-रहित आईपी"
         },
         "theory": {
-          "en": "The Transmission Control Protocol / Internet Protocol (TCP/IP) suite provides the universal communication protocols that enable networked devices to identify and exchange data with one another[cite: 25]. Transmission Control Protocol (TCP) is a connection-oriented transport protocol that divides bulk data streams into smaller segments, guarantees reliable packet delivery, manages flow control, and reassembles incoming packets in correct sequential order at the receiver[cite: 25]. TCP is unconcerned with the underlying network paths taken by packets[cite: 25]. In contrast, Internet Protocol (IP) is a connectionless network-layer protocol that assigns unique numerical IP addresses to nodes and handles packet routing across diverse routes, ensuring each packet reaches its designated device[cite: 25].",
-          "hi": "ट्रांसमिशन कंट्रोल प्रोटोकॉल/इंटरनेट प्रोटोकॉल (TCP/IP) संचार प्रोटोकॉल का एक समूह है जो उपकरणों को एक-दूसरे की पहचान करने और डेटा संवाद करने में सक्षम बनाता है[cite: 25]। ट्रांसमिशन कंट्रोल प्रोटोकॉल (TCP) एक कनेक्शन-आधारित प्रोटोकॉल है जो डेटा को भेजने से पहले छोटे पैकेटों में विभाजित करता है, विश्वसनीय डिलीवरी की गारंटी देता है, प्रवाह नियंत्रण संभालता है और रिसीवर पर सही क्रम में पैकेटों को जोड़ता है[cite: 25]। टीसीपी पैकेट द्वारा लिए जाने वाले मार्ग के प्रति उदासीन रहता है[cite: 25]। इसके विपरीत, इंटरनेट प्रोटोकॉल (IP) एक कनेक्शन-रहित प्रोटोकॉल है जो प्रत्येक डिवाइस को अद्वितीय पता आवंटित करता है और पैकेटों की रूटिंग संभालता है ताकि वे सही डिवाइस तक पहुंच सकें[cite: 25]।"
+          "en": "The TCP/IP suite (Transmission Control Protocol / Internet Protocol) governs modern internetworking communication. Transmission Control Protocol (TCP) is a connection-oriented protocol that establishes a reliable virtual link between sender and receiver before transmission. TCP segments outbound data into smaller packets, verifies ordered sequence reassembly at the destination, manages flow control, and guarantees delivery. Conversely, Internet Protocol (IP) is a connectionless network protocol that assigns unique logical IP addresses to every node and routes packets independently toward their destination without requiring pre-established connections.",
+          "hi": "TCP/IP सूट (ट्रांसमिशन कंट्रोल प्रोटोकॉल/इंटरनेट प्रोटोकॉल) आधुनिक नेटवर्किंग संचार को नियंत्रित करता है। टीसीपी (TCP) एक कनेक्शन-आधारित प्रोटोकॉल है जिसे डेटा भेजने से पहले प्रेषक और रिसीवर के बीच कनेक्शन स्थापित करने की आवश्यकता होती है। यह डेटा को पैकेटों में विभाजित करता है, रिसीवर पर सही क्रम में पुनः संयोजन सुनिश्चित करता है, प्रवाह नियंत्रण संभालता है और डिलीवरी की गारंटी देता है। इसके विपरीत, आईपी (IP) एक कनेक्शन-रहित प्रोटोकॉल है जो प्रत्येक डिवाइस को अद्वितीय आईपी पता निर्दिष्ट करता है और डेटा पैकेटों की रूटिंग संभालता है।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">TCP/IP Protocol Suite: Segmentation &amp; Routing</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">TCP (Transport)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Connection-Oriented | Reliable</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">IP (Network)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Connectionless | Routing</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Packet Assembly</tspan><tspan x=\"100\" dy=\"1.2em\">Order Verified</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Delivery Guard</tspan><tspan x=\"225\" dy=\"1.2em\">Flow Control</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Address Labeling</tspan><tspan x=\"375\" dy=\"1.2em\">Unique IP Node</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Path Navigation</tspan><tspan x=\"500\" dy=\"1.2em\">Packet Routing</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">TCP/IP Protocol Stack: Dual-Layer Architecture</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">TCP: Transport Layer</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Connection-Based | Guaranteed</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">IP: Network Layer</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Connectionless | Addressing &amp; Route</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Packet Assembly</tspan><tspan x=\"100\" dy=\"1.2em\">Guaranteed Delivery</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Flow Control</tspan><tspan x=\"225\" dy=\"1.2em\">Orders Data Stream</tspan></text><text x=\"375\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Assigns IP Addresses</tspan><tspan x=\"375\" dy=\"1.2em\">Logical Labeling</tspan></text><text x=\"500\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Independent Routing</tspan><tspan x=\"500\" dy=\"1.2em\">No Handshake Link</tspan></text></svg>",
           "caption": {
-            "en": "Protocol division pairing reliable TCP packet sequencing and flow control with connectionless IP addressing and routing[cite: 25].",
-            "hi": "प्रोटोकॉल विभाजन जो विश्वसनीय टीसीपी पैकेट री-असेंबली और फ्लो कंट्रोल को कनेक्शनलेस आईपी एड्रेसिंग और रूटिंग के साथ जोड़ता है[cite: 25]।"
+            "en": "TCP/IP suite contrasting connection-oriented sequencing in TCP with connectionless logical routing in IP.",
+            "hi": "टीसीपी/आईपी सूट जो टीसीपी के कनेक्शन-आधारित अनुक्रमण और आईपी के कनेक्शन-रहित तार्किक रूटिंग की तुलना करता है।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the balanced sentence distinguishing TCP transport reliability from IP addressing and routing.",
-          "hint": "Start with the TCP/IP protocol suite coordinating network communications, identify its role across Internet transmission architectures, explain combining connection-oriented TCP segmentation and ordering with connectionless IP addressing and routing, and conclude with delivering complete and properly directed data packets.",
-          "target_sequence
+          "prompt": "Construct the balanced sentence detailing how TCP and IP collaborate to ensure structured, addressed packet delivery.",
+          "hint": "Start with the TCP/IP protocol suite governing end-to-end internet transmissions, specify routing traffic across public networks, detail dividing data and guaranteeing ordered delivery via connection-oriented TCP, explain assigning logical addresses via connectionless IP, and conclude with routing packets reliably to their target devices.",
+          "target_sequence": [
+            {
+              "id": "en_u5_t1",
+              "text": "The `TCP/IP` protocol suite governs end-to-end communication",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u5_t2",
+              "text": "across global and local heterogeneous computer networks",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u5_t3",
+              "text": "and by dividing data into ordered packets with guaranteed delivery through connection-oriented `TCP`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u5_t4",
+              "text": "while assigning unique logical addresses and selecting transmission routes through connectionless `IP`",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u5_t5",
+              "text": "it ensures that fragmented data streams reach their intended destinations and reassemble without loss",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u5_d1",
+              "category": "conceptual",
+              "text": "and by forcing IP to guarantee packet delivery through virtual circuits while TCP drops packet ordering entirely",
+              "penalty_explanation": "TCP provides ordered delivery and guarantees arrival, whereas IP is a connectionless routing protocol."
+            },
+            {
+              "id": "en_u5_d2",
+              "category": "technical",
+              "text": "by eliminating IP addresses to allow data packets to wander through networks without any destination label",
+              "penalty_explanation": "IP explicitly assigns unique logical addresses to every device so packets reach the correct host."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "टीसीपी और आईपी द्वारा संगठित और पते-सहित पैकेट वितरण सुनिश्चित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "टीसीपी/आईपी प्रोटोकॉल सूट संचार को नियंत्रित करता है से शुरू करें, वैश्विक और स्थानीय नेटवर्क का संदर्भ जोड़ें, टीसीपी द्वारा पैकेट विभाजन व डिलीवरी गारंटी का तरीका बताएं, आईपी द्वारा विशिष्ट पते व रूटिंग का कार्य दें, और सही डिवाइस तक डेटा पहुंचाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u5_t1",
+              "text": "`TCP/IP` प्रोटोकॉल सूट संपूर्ण संचार प्रक्रिया को नियंत्रित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u5_t2",
+              "text": "वैश्विक इंटरनेट और स्थानीय कंप्यूटर नेटवर्क के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u5_t3",
+              "text": "और कनेक्शन-आधारित `TCP` के जरिए डेटा को पैकेटों में बांटकर सही क्रम में डिलीवरी की गारंटी देकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u5_t4",
+              "text": "तथा कनेक्शन-रहित `IP` के माध्यम से प्रत्येक डिवाइस को अद्वितीय पता सौंपकर और रूटिंग संभालकर",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u5_t5",
+              "text": "यह सुनिश्चित करता है कि डेटा पैकेट अपने सही गंतव्य तक पहुंचकर बिना किसी त्रुटि के पुनः व्यवस्थित हों",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u5_d1",
+              "category": "conceptual",
+              "text": "और आईपी को डिलीवरी की गारंटी देने पर बाध्य करके जबकि टीसीपी पैकेट क्रम की जांच को छोड़ देता है",
+              "penalty_explanation": "टीसीपी डिलीवरी की गारंटी देता है और क्रम सुनिश्चित करता है; आईपी कनेक्शन-रहित रूटिंग प्रोटोकॉल है।"
+            },
+            {
+              "id": "hi_u5_d2",
+              "category": "technical",
+              "text": "आईपी पतों को पूरी तरह समाप्त करके ताकि डेटा पैकेट बिना किसी गंतव्य पहचान के नेटवर्क में घूमते रहें",
+              "penalty_explanation": "आईपी का मूल कार्य प्रत्येक डिवाइस को अद्वितीय आईपी पता आवंटित करना है ताकि पैकेट सही नोड पर पहुंचें।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "TCP divides data, manages flow control, and guarantees ordered delivery (connection-oriented), while IP assigns addresses and routes packets (connectionless).",
+        "hi": "टीसीपी डेटा को विभाजित करता है और डिलीवरी की गारंटी देता है (कनेक्शन-आधारित), जबकि आईपी पते निर्दिष्ट करता है और रूटिंग संभालता है (कनेक्शन-रहित)।"
+      }
+    }
+  ]
+}
