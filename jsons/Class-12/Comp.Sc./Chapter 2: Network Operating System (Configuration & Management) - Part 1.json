@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 2: Network Operating System (Configuration & Management) - Part 1",
+      "hi": "अध्याय 2: नेटवर्क ऑपरेटिंग सिस्टम (कॉन्फ़िगरेशन और प्रबंधन) - भाग 1"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Hardware and Network Operating System Maintenance Protocols",
+          "hi": "हार्डवेयर और नेटवर्क ऑपरेटिंग सिस्टम रखरखाव प्रोटोकॉल"
+        },
+        "theory": {
+          "en": "Hardware and network operating system maintenance refers to systematic activities performed to ensure the optimal performance, fault prevention, and reliability of a computer network. Essential maintenance practices include physical inspection and cleaning of connections, replacing or upgrading degraded hardware, applying firmware and BIOS updates, installing NOS patches, tracking performance metrics, performing security monitoring, and executing regular backup and recovery procedures.",
+          "hi": "हार्डवेयर और नेटवर्क ऑपरेटिंग सिस्टम रखरखाव उन व्यवस्थित गतिविधियों को संदर्भित करता है जो कंप्यूटर नेटवर्क के इष्टतम प्रदर्शन, समस्या निवारण और विश्वसनीयता को सुनिश्चित करने के लिए की जाती हैं[cite: 25]। आवश्यक रखरखाव कार्यों में हार्डवेयर और केबलों का भौतिक निरीक्षण व सफाई, हार्डवेयर को बदलना या अपग्रेड करना, फर्मवेयर/BIOS अपडेट करना, NOS पैच इंस्टॉल करना, प्रदर्शन और सुरक्षा की निगरानी करना, तथा नियमित बैकअप और रिकवरी प्रक्रियाएं शामिल हैं[cite: 25]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Network Maintenance Lifecycle</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Physical Checks</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Cleaning &amp; Wiring</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Software Updates</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">BIOS &amp; NOS Patches</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">System Safeguards</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Monitoring &amp; Backup</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Inspect Ports</tspan><tspan x=\"120\" dy=\"1.2em\">Hardware Upgrades</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Firmware Flash</tspan><tspan x=\"300\" dy=\"1.2em\">Kernel Hotfixes</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Traffic Audits</tspan><tspan x=\"480\" dy=\"1.2em\">Disaster Recovery</tspan></text></svg>",
+          "caption": {
+            "en": "Three-stage maintenance cycle combining physical port inspection, firmware/NOS patching, and continuous performance backup monitoring[cite: 25].",
+            "hi": "तीन-चरणीय रखरखाव चक्र जो भौतिक निरीक्षण, फर्मवेयर/NOS पैचिंग और प्रदर्शन व बैकअप निगरानी को जोड़ता है[cite: 25]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how systematic hardware and NOS maintenance procedures ensure network reliability.",
+          "hint": "Start with hardware and NOS maintenance routines executing preventive protocols, specify inspecting physical connections and updating system firmware, describe applying software patches alongside performance monitoring and backups, explain preventing hardware failures and troubleshooting network degradation, and conclude with maintaining operational reliability.",
+          "target_sequence": [
+            {
+              "id": "en_u1_t1",
+              "text": "Hardware and network maintenance routines execute systematic preventive protocols",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u1_t2",
+              "text": "across enterprise server infrastructure and physical transmission cables",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u1_t3",
+              "text": "and by combining physical hardware inspection with firmware upgrades, NOS patching, and regular data backups",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u1_t4",
+              "text": "they resolve emerging technical faults before critical system failures disrupt communications",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u1_t5",
+              "text": "thereby sustaining peak network performance and high operational reliability across connected devices",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u1_d1",
+              "category": "conceptual",
+              "text": "and by disabling all firmware updates and data backup procedures to avoid touching server storage",
+              "penalty_explanation": "Firmware updates, performance monitoring, and backups are essential core activities of network maintenance."
+            },
+            {
+              "id": "en_u1_d2",
+              "category": "technical",
+              "text": "they delete network operating system files permanently whenever an administrator inspects hardware",
+              "penalty_explanation": "Maintenance is designed to preserve and optimize NOS stability, not erase operating system files."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "व्यवस्थित हार्डवेयर और NOS रखरखाव प्रक्रियाओं द्वारा नेटवर्क विश्वसनीयता सुनिश्चित करने के वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "हार्डवेयर और नेटवर्क रखरखाव प्रक्रियाएं निवारक प्रोटोकॉल लागू करती हैं से शुरू करें, सर्वर व केबलों का संदर्भ दें, भौतिक सफाई को फर्मवेयर अपडेट, पैचिंग व बैकअप से जोड़ने का तरीका बताएं, गंभीर विफलताओं से पहले तकनीकी खराबी दूर करने का परिणाम दें, और उच्च विश्वसनीयता बनाए रखने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u1_t1",
+              "text": "हार्डवेयर और नेटवर्क रखरखाव प्रक्रियाएं व्यवस्थित निवारक प्रोटोकॉल लागू करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u1_t2",
+              "text": "सर्वर बुनियादी ढांचे और भौतिक ट्रांसमिशन केबलों के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u1_t3",
+              "text": "और भौतिक सफाई व निरीक्षण को फर्मवेयर अपडेट, NOS पैचिंग तथा नियमित बैकअप के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u1_t4",
+              "text": "ये गंभीर सिस्टम विफलताएं उत्पन्न होने से पहले ही तकनीकी समस्याओं का निवारण करती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u1_t5",
+              "text": "जिससे जुड़े हुए उपकरणों में इष्टतम कार्य-प्रदर्शन और उच्च परिचालन विश्वसनीयता बनी रहती है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u1_d1",
+              "category": "conceptual",
+              "text": "और सर्वर को छूने से बचने के लिए सभी फर्मवेयर अपडेट और डेटा बैकअप प्रक्रियाओं को पूरी तरह बंद करके",
+              "penalty_explanation": "फर्मवेयर/BIOS अपडेट और बैकअप व रिकवरी नियमित रखरखाव का अनिवार्य हिस्सा हैं।"
+            },
+            {
+              "id": "hi_u1_d2",
+              "category": "technical",
+              "text": "ये प्रशासक द्वारा हार्डवेयर का निरीक्षण करते ही ऑपरेटिंग सिस्टम की सभी फाइलों को हमेशा के लिए मिटा देती हैं",
+              "penalty_explanation": "रखरखाव का उद्देश्य समस्याओं को रोकना और सिस्टम सुधारना है, ऑपरेटिंग सिस्टम की फाइलें मिटाना नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Hardware and NOS maintenance combines physical cleaning, firmware/BIOS updates, NOS patching, monitoring, and backups to prevent failures and optimize reliability[cite: 25].",
+        "hi": "हार्डवेयर और NOS रखरखाव विफलताओं को रोकने और विश्वसनीयता बढ़ाने के लिए भौतिक निरीक्षण, फर्मवेयर/BIOS अपडेट, पैचिंग, निगरानी और बैकअप का संयोजन करता है[cite: 25]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Network Security Implementation: Monitoring, Firewalls, Antivirus, and Passwords",
+          "hi": "नेटवर्क सुरक्षा कार्यान्वयन: मॉनिटरिंग, फायरवॉल, एंटीवायरस और पासवर्ड"
+        },
+        "theory": {
+          "en": "Network security comprises preventive measures designed to protect computing devices, network channels, and confidential data from unauthorized access, misuse, and destruction[cite: 25]. Overseen by a network specialist or administrator, defensive measures include continuous hardware and software monitoring, firewalls that inspect and filter bidirectional network traffic, antivirus utilities that detect and eradicate malware (such as viruses, worms, Trojans, ransomware, and spyware), and enforcing strong passwords using complex combinations of letters, numbers, and special symbols[cite: 25].",
+          "hi": "नेटवर्क सुरक्षा उन निवारक उपायों की प्रक्रिया है जो कंप्यूटर, नेटवर्क और गोपनीय डेटा को अनधिकृत पहुंच, दुरुपयोग और क्षति से बचाते हैं[cite: 25]। इसे नेटवर्क विशेषज्ञ या प्रशासक द्वारा लागू किया जाता है, जिसमें हार्डवेयर और सॉफ्टवेयर की निरंतर निगरानी, आने-जाने वाले ट्रैफिक को नियंत्रित करने वाले फायरवॉल, वायरस, वर्म्स, ट्रोजन, रैनसमवेयर और स्पाइवेयर को हटाने वाले एंटीवायरस सॉफ्टवेयर, तथा अक्षरों, संख्याओं और विशेष वर्णों से बने मजबूत पासवर्ड शामिल हैं[cite: 25]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Layered Network Security Architecture</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Monitoring</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Fault Audit</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Firewall</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Traffic Filter</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Antivirus</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Malware Clean</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Credentials</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Strong Passwords</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Logs Traffic</tspan><tspan x=\"102\" dy=\"1.2em\">Hardware Scan</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">In / Out Rules</tspan><tspan x=\"232\" dy=\"1.2em\">Blocks Intrusion</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Worms &amp; Trojans</tspan><tspan x=\"362\" dy=\"1.2em\">Ransomware Purge</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">A-Z, 0-9, Symbols</tspan><tspan x=\"495\" dy=\"1.2em\">Access Control</tspan></text></svg>",
+          "caption": {
+            "en": "Defense-in-depth model combining network monitoring, firewall traffic control, antivirus remediation, and complex credentials[cite: 25].",
+            "hi": "बहुस्तरीय सुरक्षा मॉडल जो नेटवर्क निगरानी, फायरवॉल ट्रैफिक नियंत्रण, एंटीवायरस और जटिल पासवर्ड क्रेडेंशियल्स को जोड़ता है[cite: 25]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how layered network security defenses protect enterprise resources from cyber threats.",
+          "hint": "Start with network security architectures establishing layered protection, mention defending computing endpoints and databases, explain combining traffic firewalls and antivirus tools with strong password policies and monitoring, describe screening unauthorized access attempts and purging malware, and conclude with safeguarding digital assets against operational disruption.",
+          "target_sequence": [
+            {
+              "id": "en_u2_t1",
+              "text": "Network security architectures establish layered preventive defenses",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u2_t2",
+              "text": "across organizational computing devices, servers, and shared databases",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u2_t3",
+              "text": "and by combining continuous hardware monitoring with firewall traffic filters, antivirus scanners, and complex alphanumeric passwords",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u2_t4",
+              "text": "they block unauthorized packet intrusion while detecting and eliminating destructive viruses, worms, and ransomware",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u2_t5",
+              "text": "thereby protecting enterprise data from malicious misuse and operational sabotage",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u2_d1",
+              "category": "conceptual",
+              "text": "and by encouraging users to access confidential records using single-digit passwords without any firewall verification",
+              "penalty_explanation": "Network security explicitly mandates strong, complex passwords and firewall traffic inspection."
+            },
+            {
+              "id": "en_u2_d2",
+              "category": "technical",
+              "text": "they disable antivirus software completely to allow trojans and spyware to manage operating system permissions",
+              "penalty_explanation": "Antivirus software is used to detect, prevent, and remove malware, not grant it access."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "बहुस्तरीय नेटवर्क सुरक्षा तंत्र द्वारा संस्थागत संसाधनों को साइबर खतरों से बचाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "नेटवर्क सुरक्षा संरचनाएं बहुस्तरीय निवारक सुरक्षा स्थापित करती हैं से शुरू करें, सर्वर व डेटाबेस का संदर्भ दें, फायरवॉल और एंटीवायरस को जटिल पासवर्ड व निगरानी से जोड़ने का तरीका बताएं, अनधिकृत प्रवेश व वायरस रोकने का परिणाम दें, और डेटा को नुकसान से सुरक्षित रखने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u2_t1",
+              "text": "नेटवर्क सुरक्षा संरचनाएं बहुस्तरीय निवारक सुरक्षा उपाय स्थापित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u2_t2",
+              "text": "संगठनात्मक कंप्यूटिंग उपकरणों, सर्वरों और साझा डेटाबेसों के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u2_t3",
+              "text": "और निरंतर निगरानी को फायरवॉल ट्रैफ़िक फ़िल्टर, एंटीवायरस स्कैनर तथा जटिल अल्फ़ान्यूमेरिक पासवर्ड के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u2_t4",
+              "text": "ये अनधिकृत पहुंच को रोकती हैं और विनाशकारी वायरस, वर्म्स तथा रैनसमवेयर का पता लगाकर उन्हें समाप्त करती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u2_t5",
+              "text": "जिससे महत्वपूर्ण डेटा अनधिकृत दुरुपयोग और परिचालन क्षति से पूरी तरह सुरक्षित रहता है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u2_d1",
+              "category": "conceptual",
+              "text": "और उपयोगकर्ताओं को बिना किसी फ़ायरवॉल जांच के एक-अंकीय सरल पासवर्ड का उपयोग करने के लिए प्रोत्साहित करके",
+              "penalty_explanation": "सुरक्षा के लिए अक्षरों, संख्याओं और विशेष वर्णों से बने जटिल व मजबूत पासवर्ड आवश्यक होते हैं।"
+            },
+            {
+              "id": "hi_u2_d2",
+              "category": "technical",
+              "text": "ये एंटीवायरस को पूरी तरह अक्षम कर देती हैं ताकि ट्रोजन और स्पाइवेयर ऑपरेटिंग सिस्टम अनुमतियों को नियंत्रित कर सकें",
+              "penalty_explanation": "एंटीवायरस का उपयोग मैलवेयर को हटाने के लिए किया जाता है, उसे अनुमति देने के लिए नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Network security relies on monitoring, firewalls for traffic filtering, antivirus against malware, and complex passwords to block unauthorized access[cite: 25].",
+        "hi": "नेटवर्क सुरक्षा अनधिकृत पहुंच रोकने के लिए निगरानी, फायरवॉल, मैलवेयर-रोधी एंटीवायरस और मजबूत पासवर्ड पर निर्भर करती है[cite: 25]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Professional Career Pathways in Network Specialization",
+          "hi": "नेटवर्क विशेषज्ञता में व्यावसायिक करियर पथ"
+        },
+        "theory": {
+          "en": "The discipline of network management offers specialized career tracks with distinct functional responsibilities[cite: 25]:\n- Network Administrator: Manages ongoing day-to-day operations, including network troubleshooting, device configuration, user monitoring, and routine maintenance[cite: 25].\n- Network Engineer: Focuses on architectural engineering, designing network topologies, deploying physical infrastructure, and optimizing transmission protocols[cite: 25].\n- Network Security Specialist: Implements defensive safeguards, manages firewall rules, deploys Intrusion Detection Systems (IDS), and mitigates vulnerability risks[cite: 25].\n- Network Support Specialist: Provides helpdesk assistance directly to end users, diagnosing hardware connectivity faults and resolving service tickets[cite: 25].",
+          "hi": "नेटवर्क प्रबंधन का क्षेत्र विशिष्ट जिम्मेदारियों वाले कई करियर अवसर प्रदान करता है[cite: 25]:\n- नेटवर्क प्रशासक (Network Administrator): दैनिक संचालन, नेटवर्क समस्या निवारण, कॉन्फ़िगरेशन और निगरानी का प्रबंधन करता है[cite: 25]।\n- नेटवर्क इंजीनियर (Network Engineer): नेटवर्क के बुनियादी ढांचे (इन्फ्रास्ट्रक्चर) को डिजाइन, लागू और बनाए रखने का कार्य करता है[cite: 25]।\n- नेटवर्क सुरक्षा विशेषज्ञ (Network Security Specialist): फायरवॉल और घुसपैठ का पता लगाने वाली प्रणाली (IDS) जैसे सुरक्षा उपाय लागू करता है[cite: 25]।\n- नेटवर्क सहायता विशेषज्ञ (Network Support Specialist): अंतिम उपयोगकर्ताओं (एंड-यूजर्स) को तकनीकी सहायता प्रदान करता है और नेटवर्क समस्याओं का समाधान करता है[cite: 25]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Network Specialist Roles &amp; Responsibilities</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Administrator</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Config &amp; Monitor</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Engineer</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Design &amp; Deploy</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Security Spec</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Firewalls &amp; IDS</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Support Spec</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">End-User Help</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Troubleshoots</tspan><tspan x=\"102\" dy=\"1.2em\">Maintains Nodes</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Builds Layout</tspan><tspan x=\"232\" dy=\"1.2em\">Cabling &amp; Routers</tspan></text><text x=\"362\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Defends Edges</tspan><tspan x=\"362\" dy=\"1.2em\">Threat Auditing</tspan></text><text x=\"495\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Helpdesk Desk</tspan><tspan x=\"495\" dy=\"1.2em\">Fixes PC Issues</tspan></text></svg>",
+          "caption": {
+            "en": "Specialized roles matrix illustrating core duties across administration, engineering, security defense, and user technical support[cite: 25].",
+            "hi": "विशेषज्ञ भूमिकाओं का मैट्रिक्स जो प्रशासन, इंजीनियरिंग, सुरक्षा और तकनीकी सहायता में मुख्य कर्तव्यों को दर्शाता है[cite: 25]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how specialized career roles distribute technical responsibilities across network environments.",
+          "hint": "Start with network career specializations dividing technical duties, mention managing corporate enterprise networks, explain assigning topology design to Engineers, daily troubleshooting to Administrators, threat defense to Security Specialists, and end-user help to Support Specialists, describe maintaining operational continuity, and conclude with supporting organizational infrastructure.",
+          "target_sequence": [
+            {
+              "id": "en_u3_t1",
+              "text": "Network career specializations partition operational responsibilities",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u3_t2",
+              "text": "across modern corporate IT and communication departments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u3_t3",
+              "text": "and by assigning topology engineering to Engineers, system monitoring to Administrators, intrusion defense to Security Specialists, and helpdesk support to Support Specialists",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u3_t4",
+              "text": "they provide dedicated technical expertise across every stage of infrastructure planning and daily problem resolution",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u3_t5",
+              "text": "thereby maintaining resilient communications and responsive troubleshooting across the enterprise",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u3_d1",
+              "category": "conceptual",
+              "text": "and by restricting Network Engineers solely to answering end-user phone calls while Support Specialists design core routers",
+              "penalty_explanation": "Network Engineers design and deploy infrastructure; Support Specialists handle end-user support."
+            },
+            {
+              "id": "en_u3_d2",
+              "category": "technical",
+              "text": "they eliminate all administrative roles to let external automated malware manage firewall configurations",
+              "penalty_explanation": "Network Administrators and Security Specialists actively configure systems to prevent malware access."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "विशिष्ट नेटवर्क करियर भूमिकाओं द्वारा तकनीकी जिम्मेदारियों के वितरण को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "नेटवर्क करियर विशेषज्ञताएं परिचालन जिम्मेदारियों को विभाजित करती हैं से शुरू करें, कॉर्पोरेट आईटी विभागों का संदर्भ दें, इंजीनियरों को डिजाइन, प्रशासकों को निगरानी, सुरक्षा विशेषज्ञों को रक्षा और सहायता विशेषज्ञों को हेल्पडेस्क सौंपने का तरीका बताएं, तकनीकी विशेषज्ञता प्रदान करने का परिणाम दें, और मजबूत संचार बनाए रखने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u3_t1",
+              "text": "नेटवर्क करियर विशेषज्ञताएं परिचालन जिम्मेदारियों को विभाजित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u3_t2",
+              "text": "आधुनिक कॉर्पोरेट आईटी और संचार विभागों के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u3_t3",
+              "text": "और बुनियादी ढांचे के डिजाइन का कार्य इंजीनियरों को, दैनिक निगरानी प्रशासकों को, फ़ायरवॉल सुरक्षा विशेषज्ञों को तथा हेल्पडेस्क सहायता विशेषज्ञों को सौंपकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u3_t4",
+              "text": "ये बुनियादी ढांचे की योजना और दैनिक समस्या निवारण के प्रत्येक चरण में समर्पित तकनीकी विशेषज्ञता प्रदान करती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u3_t5",
+              "text": "जिससे संपूर्ण संगठन में लचीला नेटवर्क संचार और त्वरित तकनीकी समाधान सुनिश्चित होता है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u3_d1",
+              "category": "conceptual",
+              "text": "और नेटवर्क इंजीनियरों को केवल फोन कॉल उठाने तक सीमित करके सहायता विशेषज्ञों को मुख्य राउटर डिजाइन करने का कार्य देकर",
+              "penalty_explanation": "इंजीनियर बुनियादी ढांचे का निर्माण करते हैं, जबकि सहायता विशेषज्ञ एंड-यूजर समस्याओं का समाधान करते हैं।"
+            },
+            {
+              "id": "hi_u3_d2",
+              "category": "technical",
+              "text": "ये सभी प्रशासकों को हटाकर फ़ायरवॉल कॉन्फ़िगरेशन को मैलवेयर के नियंत्रण में छोड़ देती हैं",
+              "penalty_explanation": "नेटवर्क विशेषज्ञ सुरक्षा व्यवस्था को लागू करते हैं ताकि मैलवेयर नेटवर्क को नुकसान न पहुंचा सके।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Network careers comprise Administrators (configuration/monitoring), Engineers (infrastructure design), Security Specialists (firewalls/IDS), and Support Specialists (end-user help)[cite: 25].",
+        "hi": "नेटवर्क करियर में प्रशासक (कॉन्फ़िगरेशन/निगरानी), इंजीनियर (डिज़ाइन/रखरखाव), सुरक्षा विशेषज्ञ (फायरवॉल/IDS), और सहायता विशेषज्ञ (एंड-यूज़र सहायता) शामिल हैं[cite: 25]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Windows NT Architecture: 32-Bit System, NTFS Security, and Stability Issues",
+          "hi": "विंडोज एनटी संरचना: 32-बिट प्रणाली, NTFS सुरक्षा और स्थिरता की समस्याएं"
+        },
+        "theory": {
+          "en": "Windows NT (New Technology) is a 32-bit Network Operating System released by Microsoft Corporation in two distinct editions: Windows NT Server and Windows NT Workstation. It incorporates the New Technology File System (NTFS) as its default storage architecture, which provides support for high-capacity hard drives, user access permissions, and built-in file encryption. Additional advantages include a graphical user interface (GUI) and compatibility with legacy hardware[cite: 26]. However, Windows NT suffers from security vulnerabilities, contracting malware infections easily, and operational instability that causes system crashes requiring frequent patching and reboots[cite: 26].",
+          "hi": "विंडोज एनटी (Windows New Technology) माइक्रोसॉफ्ट कॉर्पोरेशन द्वारा विकसित एक 32-बिट नेटवर्क ऑपरेटिंग सिस्टम है, जिसे दो उत्पादों में प्रस्तुत किया गया था: विंडोज एनटी सर्वर और विंडोज एनटी वर्कस्टेशन[cite: 26]। यह डिफ़ॉल्ट रूप से NTFS (New Technology File System) का उपयोग करता है, जो बड़ी क्षमता वाली हार्ड डिस्क का समर्थन करता है और पर्मिशन व एन्क्रिप्शन जैसी सुरक्षा सुविधाएं देता है[cite: 26]। इसमें एक ग्राफिकल यूजर इंटरफेस (GUI) है और यह पुराने कंप्यूटरों पर भी कार्य कर सकता है[cite: 26]। हालांकि, यह मैलवेयर और वायरस से आसानी से संक्रमित हो जाता है, अस्थिर है, और बार-बार क्रैश होने के कारण इसे लगातार पैचिंग और रीबूटिंग की आवश्यकता होती है[cite: 26]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Windows NT: Dual Products &amp; NTFS Engine</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Dual Products</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Server &amp; Workstation</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">NTFS Engine</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Permissions &amp; Crypt</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Instability Risks</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Crashes &amp; Reboots</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">32-Bit Kernel</tspan><tspan x=\"120\" dy=\"1.2em\">Runs on Old PCs</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Large Disks</tspan><tspan x=\"300\" dy=\"1.2em\">Friendly GUI</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Frequent Crashes</tspan><tspan x=\"480\" dy=\"1.2em\">Malware Exposure</tspan></text></svg>",
+          "caption": {
+            "en": "Windows NT architectural schema pairing 32-bit dual editions and NTFS security features against system stability and malware vulnerabilities[cite: 26].",
+            "hi": "विंडोज एनटी की संरचना जो 32-बिट दोहरे संस्करणों और NTFS सुरक्षा को सिस्टम अस्थिरता और मैलवेयर जोखिमों के साथ दर्शाती है[cite: 26]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence evaluating the structural capabilities and stability tradeoffs of Windows NT.",
+          "hint": "Start with Windows NT delivering 32-bit network operating system capabilities, mention operating across Server and Workstation deployments, explain combining an intuitive GUI with NTFS file permissions and high-capacity disk support, describe facing recurrent system crashes and malware infections, and conclude with requiring frequent patches and reboots.",
+          "target_sequence": [
+            {
+              "id": "en_u4_t1",
+              "text": "Windows NT delivers 32-bit Network Operating System capabilities",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u4_t2",
+              "text": "across specialized Server and Workstation environment editions",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u4_t3",
+              "text": "and by pairing an accessible graphical user interface with NTFS file encryption, access permissions, and large disk capacity support",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u4_t4",
+              "text": "it runs effectively on older hardware architectures while suffering from systemic instability and elevated malware susceptibility",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u4_t5",
+              "text": "thereby requiring administrators to perform persistent security patching and frequent system reboots to maintain uptime",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u4_d1",
+              "category": "conceptual",
+              "text": "and by eliminating NTFS completely to prevent any access permissions or encryption keys from securing hard drives",
+              "penalty_explanation": "Windows NT uses NTFS as its default file system to provide access permissions and encryption."
+            },
+            {
+              "id": "en_u4_d2",
+              "category": "technical",
+              "text": "it guarantees complete immunity from all malware infections while running for decades without reboots",
+              "penalty_explanation": "Windows NT is unstable, frequently crashes, and is susceptible to malware, requiring regular reboots and patches."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "विंडोज एनटी की संरचनात्मक विशेषताओं और स्थिरता की सीमाओं का मूल्यांकन करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "विंडोज एनटी 32-बिट नेटवर्क ऑपरेटिंग सिस्टम क्षमताएं प्रदान करता है से शुरू करें, सर्वर और वर्कस्टेशन संस्करणों का संदर्भ दें, जीयूआई और NTFS सुरक्षा को जोड़ने का तरीका बताएं, पुराने हार्डवेयर पर चलने और मैलवेयर संवेदनशीलता का परिणाम दें, और बार-बार पैचिंग व रीबूटिंग की आवश्यकता पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u4_t1",
+              "text": "विंडोज एनटी 32-बिट नेटवर्क ऑपरेटिंग सिस्टम क्षमताएं प्रदान करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u4_t2",
+              "text": "विशिष्ट सर्वर और वर्कस्टेशन संस्करणों के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u4_t3",
+              "text": "और सुंदर GUI को NTFS फ़ाइल एन्क्रिप्शन, पर्मिशन तथा बड़ी हार्ड डिस्क समर्थन के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u4_t4",
+              "text": "यह पुराने कंप्यूटरों पर प्रभावी ढंग से चलता है परंतु प्रणालीगत अस्थिरता और वायरस संवेदनशीलता से जूझता है",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u4_t5",
+              "text": "जिससे सिस्टम को सुचारू रखने के लिए प्रशासकों को लगातार पैचिंग और बार-बार रीबूट करने की आवश्यकता पड़ती है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u4_d1",
+              "category": "conceptual",
+              "text": "और हार्ड डिस्क पर पर्मिशन या एन्क्रिप्शन रोकने के लिए NTFS फ़ाइल सिस्टम को पूरी तरह हटाकर",
+              "penalty_explanation": "विंडोज एनटी में NTFS डिफ़ॉल्ट फ़ाइल सिस्टम है जो पर्मिशन और एन्क्रिप्शन जैसी सुरक्षा प्रदान करता है।"
+            },
+            {
+              "id": "hi_u4_d2",
+              "category": "technical",
+              "text": "यह सभी मैलवेयर से पूर्ण सुरक्षा की गारंटी देता है और दशकों तक बिना रीबूट किए निरंतर चलता है",
+              "penalty_explanation": "विंडोज एनटी आसानी से मैलवेयर से संक्रमित हो जाता है और अस्थिर होने के कारण इसे बार-बार रीबूट करना पड़ता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Windows NT is a 32-bit NOS offering NTFS file security and a GUI, but suffers from system instability and high malware susceptibility[cite: 26].",
+        "hi": "विंडोज एनटी एक 32-बिट NOS है जो NTFS सुरक्षा और GUI प्रदान करता है, परंतु यह अस्थिर है और मैलवेयर से आसानी से प्रभावित होता है[cite: 26]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Architectural Comparison: Linux vs. Microsoft Windows",
+          "hi": "संरचनात्मक तुलना: लिनक्स बनाम माइक्रोसॉफ्ट विंडोज"
+        },
+        "theory": {
+          "en": "Linux and Microsoft Windows represent opposing operating system design paradigms across nine key dimensions[cite: 26]:\n1. Cost: Linux is free; Windows is an expensive commercial OS[cite: 26].\n2. Source Code: Linux is open-source; Windows is closed-source[cite: 26].\n3. Customization: Linux source code is user-modifiable; Windows cannot be altered by users[cite: 26].\n4. Licensing: Linux requires no purchased license; Windows requires paid licensing[cite: 26].\n5. Reliability: Linux runs reliably for long periods without reboots; Windows requires frequent patching and rebooting[cite: 26].\n6. Security: Linux provides high security; Windows offers comparatively lower security[cite: 26].\n7. Malware Resistance: Linux resists viruses and malware; Windows is easily infected[cite: 26].\n8. User Interface: Linux GUI is less intuitive for beginners; Windows GUI is easier to use[cite: 26].\n9. File Naming: Linux enforces case-sensitive file naming; Windows file names are case-insensitive[cite: 26].",
+          "hi": "लिनक्स और माइक्रोसॉफ्ट विंडोज नौ प्रमुख बिंदुओं पर एक दूसरे से भिन्न हैं[cite: 26]:\n1. लागत: लिनक्स मुफ़्त है; विंडोज़ महंगा है[cite: 26]।\n2. सोर्स कोड: लिनक्स ओपन-सोर्स है; विंडोज़ क्लोज्ड-सोर्स है[cite: 26]।\n3. अनुकूलन: लिनक्स उपयोगकर्ताओं द्वारा संशोधित किया जा सकता है; विंडोज़ को संशोधित नहीं किया जा सकता[cite: 26]।\n4. लाइसेंस: लिनक्स बिना लाइसेंस उपयोग हो सकता है; विंडोज़ के लिए खरीदा गया लाइसेंस अनिवार्य है[cite: 26]।\n5. विश्वसनीयता: लिनक्स बिना रीबूट लंबे समय तक चल सकता है; विंडोज़ को बार-बार पैच और रीबूट की आवश्यकता होती है[cite: 26]।\n6. सुरक्षा: लिनक्स अधिक सुरक्षा देता है; विंडोज़ अपेक्षाकृत कम सुरक्षा प्रदान करता है[cite: 26]।\n7. मैलवेयर संवेदनशीलता: लिनक्स वायरस से आसानी से प्रभावित नहीं होता; विंडोज़ आसानी से संक्रमित हो जाता है[cite: 26]।\n8. यूजर इंटरफेस: लिनक्स GUI शुरुआती लोगों के लिए कम आसान है; विंडोज़ GUI उपयोग में अधिक आसान है[cite: 26]।\n9. फ़ाइल नाम: लिनक्स में फ़ाइल नाम केस-संवेदी (case-sensitive) होते हैं; विंडोज़ में फ़ाइल नाम केस-संवेदी नहीं होते[cite: 26]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Linux vs. Windows Architectural Matrix</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Linux Architecture</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Free | Open | Stable | Case-Sensitive</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Windows Architecture</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Paid | Closed | Friendly GUI | Reboots</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Open Source</tspan><tspan x=\"100\" dy=\"1.2em\">Zero License Fee</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Malware Resilient</tspan><tspan x=\"225\" dy=\"1.2em\">Extended Uptime</tspan></text><text x=\"375\" y=\"167\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Commercial License</tspan><tspan x=\"375\" dy=\"1.2em\">Closed Binary</tspan></text><text x=\"500\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Intuitive GUI</tspan><tspan x=\"500\" dy=\"1.2em\">Frequent Patches</tspan></text></svg>",
+          "caption": {
+            "en": "Comparative model contrasting open-source security and uptime in Linux with GUI accessibility and proprietary licensing in Windows[cite: 26].",
+            "hi": "तुलनात्मक मॉडल जो लिनक्स की ओपन-सोर्स सुरक्षा व स्थिरता की तुलना विंडोज के आसान GUI और प्रोपराइटरी लाइसेंस से करता है[cite: 26]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence contrasting the operational paradigms of open-source Linux and proprietary Microsoft Windows.",
+          "hint": "Start with Linux and Microsoft Windows embodying opposing design philosophies, mention operating across client and server environments, explain contrasting open-source licensing, uptime stability, and case-sensitive naming with commercial licensing and friendly GUI interfaces, describe evaluating security defenses against ease of use, and conclude with addressing distinct administrative needs.",
+          "target_sequence": [
+            {
+              "id": "en_u5_t1",
+              "text": "Linux and Microsoft Windows embody contrasting operating system philosophies",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u5_t2",
+              "text": "across enterprise server datacenters and consumer desktop deployments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u5_t3",
+              "text": "and by contrasting free open-source licensing, extended rebootless uptime, and case-sensitive files in Linux against paid licenses, frequent patching, and intuitive GUIs in Windows",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u5_t4",
+              "text": "they balance high malware resilience and custom source code flexibility against desktop usability and consumer familiarity",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u5_t5",
+              "text": "thereby allowing organizations to select operating systems based on whether backend security or user accessibility is paramount",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u5_d1",
+              "category": "conceptual",
+              "text": "and by forcing Linux to become an expensive closed-source platform while Windows offers its full source code for free",
+              "penalty_explanation": "Linux is free and open-source, whereas Windows is commercial and closed-source."
+            },
+            {
+              "id": "en_u5_d2",
+              "category": "technical",
+              "text": "they make Windows file names strictly case-sensitive while removing all case rules from Linux storage systems",
+              "penalty_explanation": "File names are case-sensitive in Linux and case-insensitive in Windows."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ओपन-सोर्स लिनक्स और प्रोपराइटरी विंडोज के बीच परिचालन अंतर को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "लिनक्स और माइक्रोसॉफ्ट विंडोज विपरीत ऑपरेटिंग सिस्टम दर्शन का प्रतिनिधित्व करते हैं से शुरू करें, सर्वर व डेस्कटॉप का संदर्भ दें, लिनक्स के मुफ़्त ओपन-सोर्स व केस-संवेदी होने की तुलना विंडोज के लाइसेंस व GUI से करने का तरीका बताएं, सुरक्षा और उपयोग में आसानी का परिणाम दें, और संगठनात्मक प्राथमिकताओं के चयन पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u5_t1",
+              "text": "लिनक्स और माइक्रोसॉफ्ट विंडोज विपरीत ऑपरेटिंग सिस्टम दृष्टिकोण का प्रतिनिधित्व करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u5_t2",
+              "text": "एंटरप्राइज सर्वर डेटा केंद्रों और उपभोक्ता डेस्कटॉप परिवेश के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u5_t3",
+              "text": "और लिनक्स के मुफ़्त ओपन-सोर्स लाइसेंस, लंबी स्थिरता तथा केस-संवेदी फ़ाइलों की तुलना विंडोज़ के सशुल्क लाइसेंस, लगातार पैचिंग तथा सहज GUI से करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u5_t4",
+              "text": "ये उच्च मैलवेयर प्रतिरोध और सोर्स कोड अनुकूलन को आसान डेस्कटॉप उपयोगिता के साथ संतुलित करते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u5_t5",
+              "text": "जिससे संगठन बैकएंड सुरक्षा अथवा उपयोगकर्ता सुविधा के आधार पर उपयुक्त ऑपरेटिंग सिस्टम का चयन करते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u5_d1",
+              "category": "conceptual",
+              "text": "और लिनक्स को एक महंगा क्लोज-सोर्स ओएस बनाकर विंडोज़ को मुफ़्त व ओपन-सोर्स के रूप में वितरित करके",
+              "penalty_explanation": "लिनक्स एक मुफ़्त व ओपन-सोर्स OS है, जबकि विंडोज़ एक महंगा क्लोज-सोर्स OS है।"
+            },
+            {
+              "id": "hi_u5_d2",
+              "category": "technical",
+              "text": "ये विंडोज़ में फ़ाइल नामों को अनिवार्य रूप से केस-संवेदी बनाकर लिनक्स से यह नियम पूरी तरह हटा देते हैं",
+              "penalty_explanation": "लिनक्स में फ़ाइल नाम केस-संवेदी होते हैं, जबकि विंडोज़ में केस-संवेदी नहीं होते।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Linux is a free, open-source, case-sensitive OS with high stability and security, whereas Windows is commercial, closed-source, case-insensitive, and user-friendly[cite: 26].",
+        "hi": "लिनक्स मुफ़्त, ओपन-सोर्स, केस-संवेदी और उच्च स्थिरता वाला OS है, जबकि विंडोज़ सशुल्क, क्लोज-सोर्स, केस-असंवेदी और उपयोग में आसान है[cite: 26]।"
+      }
+    }
+  ]
+}
