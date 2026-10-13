@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 6: PL/SQL - Part 3",
+      "hi": "अध्याय 6: PL/SQL - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Iterative Control Architecture: Looping Fundamentals",
+          "hi": "पुनरावृत्ति नियंत्रण संरचना: लूपिंग के मूल सिद्धांत"
+        },
+        "theory": {
+          "en": "Looping structures, also known as iterative statements, execute a set of statements repeatedly based on condition evaluation or fixed counter limits[cite: 14, 19]. Rather than executing linearly, loops allow repetitive database operations without redundant code[cite: 12, 14]. PL/SQL categorizes loops into three primary architectural types: the Basic loop, the WHILE loop, and the FOR loop[cite: 15, 19].",
+          "hi": "लूपिंग संरचनाएं, जिन्हें पुनरावृत्ति कथन भी कहा जाता है, किसी शर्त के मूल्यांकन या निश्चित काउंटर सीमा के आधार पर कथनों के एक सेट को बार-बार निष्पादित करती हैं[cite: 14, 19]। एक सीधी रेखा में चलने के बजाय, लूप अनावश्यक कोड दोहराव के बिना बार-बार डेटाबेस संचालन की अनुमति देते हैं[cite: 12, 14]। PL/SQL लूप्स को तीन मुख्य श्रेणियों में विभाजित करता है: बेसिक लूप, WHILE लूप और FOR लूप[cite: 15, 19]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">PL/SQL Looping Architecture Spectrum</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Basic Loop</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Post-Test (Run &gt;= 1)</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">WHILE Loop</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Pre-Test (Run &gt;= 0)</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">FOR Loop</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Definite Counted</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">EXIT WHEN Guard</tspan><tspan x=\"120\" dy=\"1.2em\">Guaranteed First Pass</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Condition Checked First</tspan><tspan x=\"300\" dy=\"1.2em\">May Run Zero Times</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Predefined Range</tspan><tspan x=\"480\" dy=\"1.2em\">Auto-Incrementing</tspan></text></svg>",
+          "caption": {
+            "en": "Loop spectrum classifying PL/SQL iterative constructs into post-test basic loops, pre-test while loops, and definite counted for loops[cite: 15, 19, 20, 21].",
+            "hi": "लूप वर्गीकरण जो PL/SQL पुनरावृत्ति संरचनाओं को पोस्ट-टेस्ट बेसिक लूप, प्री-टेस्ट WHILE लूप और निश्चित FOR लूप में बांटता है[cite: 15, 19, 20, 21]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how iterative control structures operate in PL/SQL.",
+          "hint": "Start with iterative looping constructs executing repetitive procedural routines, mention managing statement flow inside database programs, explain providing basic, while, and for loop mechanics, and conclude with automating repetitive logic efficiently.",
+          "target_sequence": [
+            {
+              "id": "en_u11_t1",
+              "text": "Iterative looping constructs execute repetitive procedural routines",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u11_t2",
+              "text": "within transactional PL/SQL database blocks",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u11_t3",
+              "text": "and by offering basic, while, and for loop control mechanics",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u11_t4",
+              "text": "they automate repetitive computational cycles without writing redundant procedural statements",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "logical",
+              "text": "they permanently restrict programs to running each statement strictly once without any repetition",
+              "penalty_explanation": "Iterative constructs are explicitly designed to repeat statement blocks rather than restricting them to single runs."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PL/SQL में पुनरावृत्ति नियंत्रण संरचनाओं के कार्य करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "पुनरावृत्ति लूपिंग संरचनाएं दोहराव वाले प्रोसीजरल कार्यों को निष्पादित करती हैं से शुरू करें, PL/SQL ब्लॉक्स का संदर्भ दें, बेसिक, WHILE और FOR लूप तंत्र प्रदान करने का तरीका बताएं, और अनावश्यक कोड दोहराव समाप्त करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u11_t1",
+              "text": "पुनरावृत्ति लूपिंग संरचनाएं दोहराव वाले प्रोसीजरल कार्यों को निष्पादित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u11_t2",
+              "text": "ट्रांजैक्शनल PL/SQL डेटाबेस ब्लॉक्स के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u11_t3",
+              "text": "और बेसिक, WHILE तथा FOR लूप नियंत्रण तंत्र प्रदान करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u11_t4",
+              "text": "ये अनावश्यक कोड दोहराव के बिना बार-बार होने वाले चक्रों को स्वचालित रूप से चलाती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "logical",
+              "text": "ये प्रोग्राम को प्रत्येक कथन को बिना किसी पुनरावृत्ति के केवल एक बार चलाने पर बाध्य करती हैं",
+              "penalty_explanation": "लूपिंग संरचनाओं का उद्देश्य कथनों को बार-बार दोहराना है, उन्हें केवल एक बार चलाने तक सीमित करना नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "PL/SQL provides three looping constructs—Basic loop, WHILE loop, and FOR loop—to repeat statements without redundant code[cite: 15, 19].",
+        "hi": "PL/SQL कथनों को बिना दोहराव के बार-बार निष्पादित करने के लिए तीन लूप प्रदान करता है—बेसिक लूप, WHILE लूप और FOR लूप[cite: 15, 19]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "The Basic Loop: Unconditional Entry and EXIT WHEN Termination",
+          "hi": "बेसिक लूप: बिना शर्त प्रवेश और EXIT WHEN समाप्ति"
+        },
+        "theory": {
+          "en": "The Basic loop begins with the LOOP keyword and terminates with END LOOP;[cite: 19, 20]. It has unconditional entry, meaning statements inside the body execute immediately without pre-checking[cite: 19]. To prevent infinite repetition, the loop requires an explicit termination clause, typically EXIT WHEN condition;[cite: 19, 20]. Because this termination condition is checked after the body runs, the Basic loop executes at least once under all circumstances, even if the condition is initially FALSE[cite: 19].",
+          "hi": "बेसिक लूप LOOP कीवर्ड से शुरू होता है और END LOOP; पर समाप्त होता है[cite: 19, 20]। इसमें बिना शर्त प्रवेश होता है, जिसका अर्थ है कि मुख्य भाग के कथन बिना किसी प्रारंभिक जांच के तुरंत निष्पादित होते हैं[cite: 19]। अनंत पुनरावृत्ति को रोकने के लिए इसमें एक स्पष्ट समाप्ति क्लॉज की आवश्यकता होती है, जो सामान्यतः EXIT WHEN condition; होता है[cite: 19, 20]। चूंकि समाप्ति शर्त की जांच कथनों के चलने के बाद होती है, इसलिए बेसिक लूप हर हाल में कम से कम एक बार अवश्य चलता है[cite: 19]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Basic Loop: Guaranteed Execution and EXIT WHEN</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">LOOP Entry</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Unconditional Pass</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Body Statements</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">PUT_LINE(a); a:=a+1</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">EXIT WHEN a &gt; 10</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Post-Execution Test</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">No Pre-Check</tspan><tspan x=\"120\" dy=\"1.2em\">Direct First Pass</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Executes Logic</tspan><tspan x=\"300\" dy=\"1.2em\">Updates Counter</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Evaluates Exit</tspan><tspan x=\"480\" dy=\"1.2em\">Terminates Loop</tspan></text></svg>",
+          "caption": {
+            "en": "Execution trace of the Basic loop demonstrating unconditional body execution prior to the EXIT WHEN condition check[cite: 19, 20].",
+            "hi": "बेसिक लूप का निष्पादन प्रवाह जो EXIT WHEN शर्त की जांच से पहले मुख्य भाग के बिना शर्त निष्पादन को दर्शाता है[cite: 19, 20]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how the Basic loop executes and terminates.",
+          "hint": "Start with the Basic loop opening unconditionally with LOOP, mention processing operations within procedural algorithms, explain evaluating the EXIT WHEN clause at the end of each pass, and conclude with guaranteeing at least one execution pass.",
+          "target_sequence": [
+            {
+              "id": "en_u12_t1",
+              "text": "The Basic loop opens execution unconditionally with the `LOOP` keyword",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u12_t2",
+              "text": "within procedural algorithms requiring guaranteed initial runs",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u12_t3",
+              "text": "and by evaluating the `EXIT WHEN` termination condition strictly after each cycle concludes",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u12_t4",
+              "text": "it guarantees that the enclosed statement block executes at least once before halting",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u12_d1",
+              "category": "logical",
+              "text": "it aborts all execution immediately without running even once if the counter variable begins at one",
+              "penalty_explanation": "A Basic loop never aborts on entry; it always runs at least once because the test is evaluated after execution."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PL/SQL में बेसिक लूप के निष्पादन और समापन की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "बेसिक लूप `LOOP` कीवर्ड से बिना शर्त निष्पादन शुरू करता है से शुरू करें, प्रारंभिक निष्पादन की आवश्यकता का संदर्भ दें, प्रत्येक चक्र के अंत में `EXIT WHEN` जांचने का तरीका बताएं, और कम से कम एक बार चलने की गारंटी देने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u12_t1",
+              "text": "बेसिक लूप `LOOP` कीवर्ड के साथ बिना शर्त निष्पादन शुरू करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u12_t2",
+              "text": "प्रारंभिक निष्पादन की अनिवार्यता वाले प्रोसीजरल एल्गोरिदम के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u12_t3",
+              "text": "और प्रत्येक चक्र के समाप्त होने के बाद `EXIT WHEN` शर्त का मूल्यांकन करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u12_t4",
+              "text": "यह गारंटी देता है कि कथनों का ब्लॉक रुकने से पहले कम से कम एक बार अवश्य चलेगा",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u12_d1",
+              "category": "logical",
+              "text": "यह काउंटर वैरिएबल का मान एक होने पर बिना एक बार भी चले निष्पादन को तुरंत रद्द कर देता है",
+              "penalty_explanation": "बेसिक लूप प्रवेश पर कभी नहीं रुकता, यह हमेशा कम से कम एक बार चलता है क्योंकि शर्त बाद में जांची जाती है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The Basic loop executes statements first and checks EXIT WHEN afterward, ensuring the loop runs at least once[cite: 19, 20].",
+        "hi": "बेसिक लूप पहले कथनों को चलाता है और बाद में EXIT WHEN की जांच करता है, जिससे यह कम से कम एक बार अवश्य चलता है[cite: 19, 20]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "The WHILE Loop: Pre-Test Entry-Controlled Iteration",
+          "hi": "WHILE लूप: प्री-टेस्ट प्रवेश-नियंत्रित पुनरावृत्ति"
+        },
+        "theory": {
+          "en": "The WHILE loop is an entry-controlled (pre-test) looping construct that begins with WHILE condition LOOP and concludes with END LOOP;[cite: 20]. The controlling boolean condition is evaluated before every pass, including the very first one[cite: 20]. As long as the condition evaluates to TRUE, the enclosed statements execute[cite: 20]. However, if the condition evaluates to FALSE at startup, the loop body is bypassed entirely and executes zero times[cite: 20].",
+          "hi": "WHILE लूप एक प्रवेश-नियंत्रित (प्री-टेस्ट) लूपिंग संरचना है जो WHILE condition LOOP से शुरू होकर END LOOP; पर समाप्त होती है[cite: 20]। नियंत्रक बूलियन शर्त का मूल्यांकन पहले चक्र सहित प्रत्येक पुनरावृत्ति से पहले किया जाता है[cite: 20]। जब तक शर्त TRUE रहती है, तब तक ब्लॉक के कथन चलते रहते हैं[cite: 20]। यदि शर्त शुरुआत में ही FALSE होती है, तो मुख्य भाग पूरी तरह से छूट जाता है और एक बार भी निष्पादित नहीं होता[cite: 20]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">WHILE Loop: Pre-Test Entry Gate Mechanics</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">x := 1;</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Setup Counter</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">WHILE x &lt;= 10</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Entry Gate Check</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Loop Body</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">PUT_LINE; Step x</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Initialization</tspan><tspan x=\"120\" dy=\"1.2em\">Prior to Loop</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Tested Before Entry</tspan><tspan x=\"300\" dy=\"1.2em\">May Run 0 Times</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Executes Statements</tspan><tspan x=\"480\" dy=\"1.2em\">Must Increment x</tspan></text></svg>",
+          "caption": {
+            "en": "Pre-test entry gating in the WHILE loop requiring truth evaluation prior to granting entry to the statement body[cite: 20, 21].",
+            "hi": "WHILE लूप में प्री-टेस्ट प्रवेश तंत्र जो मुख्य भाग में प्रवेश देने से पहले शर्त के सत्य होने की पुष्टि करता है[cite: 20, 21]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how the WHILE loop gates execution on entry.",
+          "hint": "Start with the WHILE loop functioning as an entry-controlled structure, mention controlling iteration inside procedural code, explain testing conditions strictly before each pass, and conclude with skipping execution if initially false.",
+          "target_sequence": [
+            {
+              "id": "en_u13_t1",
+              "text": "The `WHILE` loop operates as an entry-controlled iteration structure",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u13_t2",
+              "text": "across procedural algorithms requiring prerequisite truth verification",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u13_t3",
+              "text": "and by evaluating the boolean condition guard strictly before the initial cycle",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u13_t4",
+              "text": "it ensures that the statement body runs zero times if the starting test resolves to FALSE",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "logical",
+              "text": "it guarantees unconditional execution of the statement body even when the entry condition is FALSE",
+              "penalty_explanation": "A WHILE loop tests before entry and never executes if the condition evaluates to FALSE initially."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PL/SQL में WHILE लूप द्वारा प्रवेश पर निष्पादन नियंत्रित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "`WHILE` लूप एक प्रवेश-नियंत्रित पुनरावृत्ति संरचना के रूप में कार्य करता है से शुरू करें, शर्त सत्यापन की आवश्यकता का संदर्भ दें, पहले चक्र से पूर्व शर्त जांचने का तरीका बताएं, और शुरुआत में असत्य होने पर शून्य बार चलने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u13_t1",
+              "text": "`WHILE` लूप एक प्रवेश-नियंत्रित पुनरावृत्ति संरचना के रूप में कार्य करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u13_t2",
+              "text": "प्रारंभिक शर्त सत्यापन की अनिवार्यता वाले प्रोसीजरल एल्गोरिदम के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u13_t3",
+              "text": "और पहले चक्र के शुरू होने से पूर्व ही बूलियन शर्त का सख्ती से मूल्यांकन करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u13_t4",
+              "text": "यह सुनिश्चित करता है कि शुरुआती शर्त FALSE होने पर मुख्य भाग शून्य बार चले",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "logical",
+              "text": "यह प्रवेश शर्त FALSE होने पर भी मुख्य कथनों के बिना शर्त निष्पादन की गारंटी देता है",
+              "penalty_explanation": "WHILE लूप पहले शर्त जांचता है और शर्त FALSE होने पर कभी भी कथनों को निष्पादित नहीं करता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The WHILE loop evaluates its condition prior to entry, repeating while TRUE and executing zero times if initially FALSE[cite: 20].",
+        "hi": "WHILE लूप प्रवेश से पहले शर्त जांचता है, TRUE रहने तक चलता है और शुरुआत में FALSE होने पर एक बार भी नहीं चलता[cite: 20]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "The FOR Loop: Definite Counted Iteration and Range Stepping",
+          "hi": "FOR लूप: निश्चित पुनरावृत्ति और रेंज स्टेपिंग"
+        },
+        "theory": {
+          "en": "The FOR loop executes statements a predetermined number of times across an explicit integer bounds range[cite: 21]. Its header syntax, FOR variable_name IN start_value..end_value LOOP, defines both the starting and terminal boundaries separated by two dots[cite: 21]. Unlike Basic and WHILE loops, the FOR loop does not require manual counter incrementing or manual exit conditions[cite: 21]. The PL/SQL engine manages counter progression and termination checks automatically[cite: 21].",
+          "hi": "FOR लूप कथनों को एक स्पष्ट पूर्णांक सीमा के तहत पूर्व-निर्धारित संख्या में निष्पादित करता है[cite: 21]। इसका हेडर सिंटैक्स, FOR variable_name IN start_value..end_value LOOP, दो बिंदुओं द्वारा अलग की गई प्रारंभिक और अंतिम सीमाओं को परिभाषित करता है[cite: 21]। बेसिक और WHILE लूप के विपरीत, FOR लूप में काउंटर को मैन्युअल रूप से बढ़ाने या बाहर निकलने की शर्त लिखने की आवश्यकता नहीं होती[cite: 21]। PL/SQL इंजन काउंटर वृद्धि और समाप्ति की जांच स्वतः प्रबंधित करता है[cite: 21]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">FOR Loop: Predetermined Integer Range Engine</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">FOR x IN 1..10</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Boundaries: 1 to 10</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Auto-Stepping</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">No Manual x:=x+1</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">END LOOP;</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Auto Termination</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Predefined Count</tspan><tspan x=\"120\" dy=\"1.2em\">start..end Range</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Managed Counter</tspan><tspan x=\"300\" dy=\"1.2em\">Implicit Increment</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Stops at Upper Bound</tspan><tspan x=\"480\" dy=\"1.2em\">Clean Completion</tspan></text></svg>",
+          "caption": {
+            "en": "Counted iteration engine of the FOR loop showing automated counter stepping over an explicit integer range[cite: 21].",
+            "hi": "FOR लूप का निश्चित पुनरावृत्ति इंजन जो एक स्पष्ट पूर्णांक सीमा पर स्वचालित काउंटर वृद्धि को दर्शाता है[cite: 21]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing the architecture and execution sequence of the FOR loop.",
+          "hint": "Start with the FOR loop coordinating counted iteration, mention knowing repetition numbers in advance, explain automating counter increments across start and end boundaries, and conclude with executing fixed iterations reliably.",
+          "target_sequence": [
+            {
+              "id": "en_u14_t1",
+              "text": "The `FOR` loop manages structured counted iteration",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u14_t2",
+              "text": "when the precise number of required repetitions is known beforehand",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u14_t3",
+              "text": "and by managing counter increments across integer range boundaries automatically",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u14_t4",
+              "text": "it executes statement blocks across a predetermined sequence of cycles cleanly and reliably",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "logical",
+              "text": "it requires programmers to write explicit condition checking statements inside every loop pass",
+              "penalty_explanation": "A FOR loop handles counter incrementing and boundary checking automatically without manual code."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PL/SQL में FOR लूप की संरचना और निष्पादन क्रम को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "`FOR` लूप संरचित निश्चित पुनरावृत्ति का प्रबंधन करता है से शुरू करें, चक्रों की संख्या पहले से ज्ञात होने का संदर्भ दें, सीमाओं के आर-पार काउंटर वृद्धि को स्वचालित करने का तरीका बताएं, और पूर्व-निर्धारित चक्रों में चलाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u14_t1",
+              "text": "`FOR` लूप संरचित निश्चित पुनरावृत्ति का प्रबंधन करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u14_t2",
+              "text": "जब आवश्यक चक्रों की सटीक संख्या पहले से ज्ञात होती है",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u14_t3",
+              "text": "और पूर्णांक सीमा के आर-पार काउंटर वृद्धि को स्वचालित रूप से प्रबंधित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u14_t4",
+              "text": "यह कथनों के ब्लॉक को पूर्व-निर्धारित चक्रों के अनुसार साफ़-सुथरे और विश्वसनीय ढंग से चलाता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "logical",
+              "text": "यह प्रोग्रामर से प्रत्येक लूप चक्र के भीतर स्पष्ट शर्त जांच कथन लिखने की मांग करता है",
+              "penalty_explanation": "FOR लूप में किसी मैन्युअल शर्त जांच की आवश्यकता नहीं होती, यह सीमा तक स्वतः चलता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The FOR loop iterates over a defined integer range (start..end), handling counter increments and termination automatically[cite: 21].",
+        "hi": "FOR लूप एक निश्चित पूर्णांक सीमा (start..end) पर चलता है, और काउंटर वृद्धि व समाप्ति को स्वतः संभालता है[cite: 21]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Loop Selection Matrix: Comparative Architectural Tradeoffs",
+          "hi": "लूप चयन मैट्रिक्स: तुलनात्मक संरचनात्मक अंतर"
+        },
+        "theory": {
+          "en": "Choosing between PL/SQL looping constructs depends on iteration requirements and entry conditions[cite: 19, 20, 21]. The Basic loop fits scenarios where the body must execute at least once before inspecting an exit state[cite: 19]. The WHILE loop is optimal when statements should not execute unless a prerequisite condition is verified as TRUE[cite: 20]. The FOR loop is preferred whenever the exact number of iterations is fixed and known in advance, eliminating manual loop variable maintenance[cite: 21].",
+          "hi": "PL/SQL लूप्स के बीच चयन पुनरावृत्ति की आवश्यकताओं और प्रवेश शर्तों पर निर्भर करता है[cite: 19, 20, 21]। बेसिक लूप उन परिस्थितियों के लिए उपयुक्त है जहाँ समाप्ति शर्त जांचने से पहले कथनों को कम से कम एक बार चलाना आवश्यक हो[cite: 19]। WHILE लूप तब सबसे अच्छा होता है जब कथनों को केवल तभी चलाना हो जब कोई पूर्व-शर्त सत्य सत्यापित हो[cite: 20]। जब चक्रों की सटीक संख्या पहले से ज्ञात हो, तब FOR लूप सबसे उपयुक्त होता है, क्योंकि इसमें मैन्युअल काउंटर प्रबंधन की आवश्यकता नहीं होती[cite: 21]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">PL/SQL Loop Selection &amp; Decision Matrix</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Basic Loop</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">At Least 1 Run</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">WHILE Loop</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Conditional Guard</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">FOR Loop</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Predetermined Count</text><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Post-Test Evaluation</tspan><tspan x=\"120\" dy=\"1.2em\">Guaranteed Execution</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Pre-Test Entry</tspan><tspan x=\"300\" dy=\"1.2em\">Guards Zero Runs</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Known Boundaries</tspan><tspan x=\"480\" dy=\"1.2em\">Automated Stepping</tspan></text></svg>",
+          "caption": {
+            "en": "Loop selection criteria contrasting post-test execution, pre-test validation guards, and fixed counted bounds[cite: 19, 20, 21].",
+            "hi": "लूप चयन मानदंड जो पोस्ट-टेस्ट निष्पादन, प्री-टेस्ट सत्यापन गार्ड और निश्चित संख्यात्मक सीमाओं की तुलना करते हैं[cite: 19, 20, 21]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how developers select among PL/SQL looping constructs.",
+          "hint": "Start with developers selecting appropriate looping constructs, mention matching specific algorithmic requirements, explain evaluating guaranteed first passes versus entry guards versus known count ranges, and conclude with optimizing program efficiency.",
+          "target_sequence": [
+            {
+              "id": "en_u15_t1",
+              "text": "Database developers select appropriate looping constructs",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u15_t2",
+              "text": "to match specific procedural operational requirements",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u15_t3",
+              "text": "and by balancing guaranteed first passes in basic loops against pre-test guards in while loops and fixed ranges in for loops",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u15_t4",
+              "text": "they optimize algorithmic execution flow while preventing infinite execution loops",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "logical",
+              "text": "they arbitrarily replace all counted for loops with infinite basic loops that have no exit statements",
+              "penalty_explanation": "Basic loops require an EXIT WHEN statement; omitting termination creates an infinite loop."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PL/SQL में उपयुक्त लूप संरचना चुनने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "डेटाबेस डेवलपर्स उपयुक्त लूप संरचनाओं का चयन करते हैं से शुरू करें, विशिष्ट आवश्यकताओं का संदर्भ दें, बेसिक में न्यूनतम एक चक्र, WHILE में प्री-टेस्ट और FOR में निश्चित सीमा का तरीका बताएं, और अनंत लूप से बचाव पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u15_t1",
+              "text": "डेटाबेस डेवलपर्स उपयुक्त लूप संरचनाओं का चयन करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u15_t2",
+              "text": "विशिष्ट प्रोसीजरल परिचालन आवश्यकताओं को पूरा करने के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u15_t3",
+              "text": "और बेसिक लूप में प्रथम चक्र, WHILE में प्री-टेस्ट तथा FOR लूप में निश्चित सीमा को संतुलित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u15_t4",
+              "text": "ये अनंत निष्पादन लूप को रोकते हुए एल्गोरिदम प्रवाह को अनुकूलित करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "logical",
+              "text": "ये सभी निश्चित FOR लूप्स को बिना किसी एग्ज़िट कथन वाले अनंत बेसिक लूप्स से बदल देते हैं",
+              "penalty_explanation": "बेसिक लूप में EXIT WHEN का होना अनिवार्य है, अन्यथा प्रोग्राम अनंत लूप में फंस जाएगा।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Use Basic loop for at least one run, WHILE loop when pre-testing is required, and FOR loop when the iteration count is known[cite: 19, 20, 21].",
+        "hi": "कम से कम एक बार चलाने के लिए बेसिक लूप, पूर्व-शर्त जांचने के लिए WHILE लूप और ज्ञात चक्रों के लिए FOR लूप चुनें[cite: 19, 20, 21]।"
+      }
+    }
+  ]
+}
