@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 2: Network Operating System (Configuration & Management) - Part 4",
+      "hi": "अध्याय 2: नेटवर्क ऑपरेटिंग सिस्टम (कॉन्फ़िगरेशन और प्रबंधन) - भाग 4"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Linux Swap Space and Virtual Memory Management",
+          "hi": "लिनक्स स्वैप स्पेस और वर्चुअल मेमोरी प्रबंधन"
+        },
+        "theory": {
+          "en": "In Linux, swap space is a dedicated area configured on secondary storage (such as a hard drive partition or swap file) that extends system virtual memory. Swap space is actively engaged when the system's physical main memory (RAM) reaches maximum capacity[cite: 19]. The operating system identifies memory pages belonging to idle or low-priority processes and temporarily transfers them into swap space[cite: 19]. This paging mechanism frees valuable physical RAM blocks to accommodate active, high-priority processes and prevent out-of-memory system panics[cite: 19].",
+          "hi": "लिनक्स में, स्वैप स्पेस (Swap Space) हार्ड डिस्क पर एक समर्पित क्षेत्र है जो सिस्टम की वर्चुअल मेमोरी का विस्तार करता है[cite: 19]। स्वैप स्पेस का उपयोग तब किया जाता है जब सिस्टम की मुख्य मेमोरी (RAM) पूरी तरह भर जाती है[cite: 19]। ऑपरेटिंग सिस्टम निष्क्रिय या कम-प्राथमिकता वाली प्रक्रियाओं के मेमोरी पेजों की पहचान करता है और उन्हें अस्थायी रूप से स्वैप स्पेस में स्थानांतरित कर देता है[cite: 19]। यह प्रक्रिया सक्रिय और उच्च-प्राथमिकता वाली प्रक्रियाओं के लिए भौतिक रैम को खाली करती है ताकि सिस्टम सुचारू रूप से कार्य करता रहे[cite: 19]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Virtual Memory: Physical RAM &amp; Swap Space</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Main Memory (RAM)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">High-Priority Active Pages</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Swap Space (Disk)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Idle &amp; Low-Priority Pages</text><line x1=\"280\" y1=\"95\" x2=\"320\" y2=\"95\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"320,95 312,91 312,99\" fill=\"#38bdf8\"/><line x1=\"320\" y1=\"110\" x2=\"280\" y2=\"110\" stroke=\"#fbbf24\" stroke-width=\"2\"/><polygon points=\"280,110 288,106 288,114\" fill=\"#fbbf24\"/><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Fast Hardware</tspan><tspan x=\"100\" dy=\"1.2em\">Primary Execution</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Fills to Max</tspan><tspan x=\"225\" dy=\"1.2em\">Triggers Eviction</tspan></text><text x=\"375\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Secondary Drive</tspan><tspan x=\"375\" dy=\"1.2em\">Dedicated Area</tspan></text><text x=\"500\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Temporary Hold</tspan><tspan x=\"500\" dy=\"1.2em\">Buffers Inactive Tasks</tspan></text></svg>",
+          "caption": {
+            "en": "Virtual memory paging mechanism migrating idle pages from full physical RAM to dedicated disk swap space[cite: 19].",
+            "hi": "वर्चुअल मेमोरी पेज़िंग तंत्र जो मुख्य रैम भर जाने पर निष्क्रिय पेजों को डिस्क स्वैप स्पेस में स्थानांतरित करता है[cite: 19]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how Linux utilizes swap space to maintain virtual memory operations.",
+          "hint": "Start with swap space operating as a dedicated secondary storage partition, mention managing memory under heavy multi-tasking workloads, explain migrating idle and low-priority process pages from full physical RAM, describe releasing physical memory for high-priority processes, and conclude with maintaining system stability without crashing.",
+          "target_sequence": [
+            {
+              "id": "en_u16_t1",
+              "text": "Linux swap space operates as a dedicated secondary storage reserve",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u16_t2",
+              "text": "when system workloads exhaust available physical main memory",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u16_t3",
+              "text": "and by offloading memory pages belonging to idle or low-priority processes to disk",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u16_t4",
+              "text": "it reclaims valuable physical RAM blocks to serve active high-priority processes",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u16_t5",
+              "text": "thereby preventing operating system crashes and sustaining stable multi-tasking performance",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u16_d1",
+              "category": "conceptual",
+              "text": "and by terminating all active user programs immediately whenever physical RAM reaches half capacity",
+              "penalty_explanation": "Swap space temporarily pages out idle tasks to preserve system execution rather than terminating active programs."
+            },
+            {
+              "id": "en_u16_d2",
+              "category": "technical",
+              "text": "it deletes the entire Linux filesystem hierarchy standard from disk to expand RAM capacity",
+              "penalty_explanation": "Swap space uses dedicated disk space to hold process memory pages; it does not delete system directories."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "लिनक्स में स्वैप स्पेस द्वारा वर्चुअल मेमोरी प्रबंधन को सुगम बनाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "लिनक्स स्वैप स्पेस एक समर्पित सेकेंडरी स्टोरेज रिज़र्व के रूप में कार्य करता है से शुरू करें, रैम भर जाने का संदर्भ दें, निष्क्रिय पेजों को डिस्क पर भेजने का तरीका बताएं, रैम को सक्रिय प्रक्रियाओं के लिए खाली करने का परिणाम दें, और स्थिरता बनाए रखने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u16_t1",
+              "text": "लिनक्स स्वैप स्पेस एक समर्पित सेकेंडरी स्टोरेज रिज़र्व के रूप में कार्य करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u16_t2",
+              "text": "जब सिस्टम वर्कलोड भौतिक मुख्य मेमोरी (RAM) को पूरी तरह भर देता है",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u16_t3",
+              "text": "और निष्क्रिय अथवा कम-प्राथमिकता वाली प्रक्रियाओं के मेमोरी पेजों को डिस्क पर स्थानांतरित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u16_t4",
+              "text": "यह सक्रिय और उच्च-प्राथमिकता वाले कार्यों को चलाने के लिए भौतिक रैम को खाली करता है",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u16_t5",
+              "text": "जिससे ऑपरेटिंग सिस्टम क्रैश होने से बचता है और स्थिर मल्टीटास्किंग प्रदर्शन बना रहता है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u16_d1",
+              "category": "conceptual",
+              "text": "और रैम आधी भरते ही सभी सक्रिय उपयोगकर्ता प्रोग्रामों को तुरंत बंद करके",
+              "penalty_explanation": "स्वैप स्पेस निष्क्रिय पेजों को डिस्क पर सुरक्षित रखता है ताकि सक्रिय कार्य बिना बंद हुए सुचारू रूप से चल सकें।"
+            },
+            {
+              "id": "hi_u16_d2",
+              "category": "technical",
+              "text": "यह रैम बढ़ाने के लिए डिस्क से पूरी लिनक्स डायरेक्टरी संरचना को हमेशा के लिए मिटा देता है",
+              "penalty_explanation": "स्वैप स्पेस केवल आवंटित डिस्क क्षेत्र का उपयोग करता है, यह सिस्टम फाइलों को नहीं मिटाता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Swap space is a dedicated disk area used when RAM is full, holding idle process pages to keep active high-priority processes running smoothly[cite: 19].",
+        "hi": "स्वैप स्पेस हार्ड डिस्क पर वह समर्पित क्षेत्र है जिसका उपयोग रैम भरने पर निष्क्रिय पेजों को रखने और सक्रिय प्रक्रियाओं को सुचारू बनाए रखने के लिए किया जाता है[cite: 19]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Storage Integration Architecture: Mount Points and mount/unmount Commands",
+          "hi": "स्टोरेज एकीकरण संरचना: माउंट पॉइंट्स और mount/unmount कमांड्स"
+        },
+        "theory": {
+          "en": "In Linux, newly attached storage media and external partitions do not appear as isolated drive letters; instead, they are integrated into the filesystem using mount points[cite: 19]. A mount point is an existing directory within the directory hierarchy through which an external or additional storage device is made accessible to users[cite: 19]. While administrators typically establish dedicated directories for mounting storage hardware, any existing directory can serve as a mount point[cite: 19]. The `mount` command attaches the device filesystem to the specified directory, and the `unmount` command detaches the storage device safely before removal[cite: 19].",
+          "hi": "लिनक्स में नए जुड़े स्टोरेज मीडिया और बाहरी पार्टिशन अलग ड्राइव अक्षरों के रूप में नहीं दिखते, बल्कि उन्हें माउंट पॉइंट (Mount Point) का उपयोग करके फ़ाइल सिस्टम में जोड़ा जाता है[cite: 19]। माउंट पॉइंट डायरेक्टरी पदानुक्रम में एक मौजूदा डायरेक्टरी होती है जिसके माध्यम से किसी बाहरी या अतिरिक्त स्टोरेज डिवाइस को उपयोगकर्ताओं के लिए सुलभ बनाया जाता है[cite: 19]। हालांकि इसके लिए आमतौर पर समर्पित डायरेक्टरी बनाई जाती है, फिर भी उपयोगकर्ता किसी भी मौजूदा डायरेक्टरी को माउंट पॉइंट के रूप में उपयोग कर सकते हैं[cite: 19]। स्टोरेज डिवाइस को जोड़ने के लिए `mount` कमांड और हटाने से पहले सुरक्षित रूप से अलग करने के लिए `unmount` कमांड का उपयोग किया जाता है[cite: 19]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Storage Integration: Mount Point Architecture</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">External Device</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">USB / Secondary Disk</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Mount Command</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Attaches to Directory</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Directory Tree</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Transparent Access</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Storage Partition</tspan><tspan x=\"120\" dy=\"1.2em\">Hardware Node</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">mount &amp; unmount</tspan><tspan x=\"300\" dy=\"1.2em\">Kernel Hook</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Mount Point Node</tspan><tspan x=\"480\" dy=\"1.2em\">Integrated Root Path</tspan></text></svg>",
+          "caption": {
+            "en": "Storage mounting architecture attaching secondary storage devices to directory nodes using mount and unmount utilities[cite: 19].",
+            "hi": "स्टोरेज माउंटिंग संरचना जो mount और unmount यूटिलिटीज का उपयोग करके सेकेंडरी स्टोरेज को डायरेक्टरी से जोड़ती है[cite: 19]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how mount points and mount/unmount commands integrate storage devices into Linux.",
+          "hint": "Start with mount point mechanisms integrating secondary hardware, mention operating within the unified Linux directory hierarchy, explain attaching raw storage partitions to existing directories via the mount command, describe disengaging devices safely using unmount, and conclude with providing transparent file access to users.",
+          "target_sequence": [
+            {
+              "id": "en_u17_t1",
+              "text": "Mount point architectures integrate external storage hardware",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u17_t2",
+              "text": "directly into the unified hierarchical Linux filesystem tree",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u17_t3",
+              "text": "and by binding drive volumes to designated directory paths through the `mount` command",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u17_t4",
+              "text": "while safely detaching storage interfaces prior to hardware removal via the `unmount` command",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u17_t5",
+              "text": "they provide users with seamless transparent file access without requiring separate drive letters",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u17_d1",
+              "category": "conceptual",
+              "text": "and by forcing every storage device to overwrite the root directory `/` to erase all existing files",
+              "penalty_explanation": "Mounting connects storage to an existing directory node; it does not overwrite or erase the root directory."
+            },
+            {
+              "id": "en_u17_d2",
+              "category": "technical",
+              "text": "they require all secondary storage drives to run without any mount point or filesystem integration",
+              "penalty_explanation": "In Linux, storage devices must be mounted to a directory (mount point) to become accessible to users."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "माउंट पॉइंट्स और mount/unmount कमांड्स द्वारा लिनक्स में स्टोरेज डिवाइस को जोड़ने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "माउंट पॉइंट संरचनाएं बाहरी स्टोरेज हार्डवेयर को जोड़ती हैं से शुरू करें, एकीकृत डायरेक्टरी ट्री का संदर्भ दें, `mount` कमांड से डायरेक्टरी में जोड़ने का तरीका बताएं, `unmount` से सुरक्षित अलग करने का परिणाम दें, और पारदर्शी पहुंच प्रदान करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u17_t1",
+              "text": "माउंट पॉइंट संरचनाएं बाहरी स्टोरेज हार्डवेयर को जोड़ती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u17_t2",
+              "text": "एकीकृत पदानुक्रमित लिनक्स फ़ाइल सिस्टम ट्री के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u17_t3",
+              "text": "और `mount` कमांड का उपयोग करके स्टोरेज वॉल्यूम को किसी मौजूदा डायरेक्टरी पाथ से जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u17_t4",
+              "text": "तथा हार्डवेयर हटाने से पहले `unmount` कमांड द्वारा डिवाइस को सुरक्षित रूप से अलग करके",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u17_t5",
+              "text": "ये उपयोगकर्ताओं को बिना अलग ड्राइव अक्षरों के निर्बाध और पारदर्शी फ़ाइल पहुंच प्रदान करती हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u17_d1",
+              "category": "conceptual",
+              "text": "और सभी मौजूदा फ़ाइलों को मिटाने के लिए प्रत्येक डिवाइस को रूट डायरेक्टरी को ओवरराइट करने पर बाध्य करके",
+              "penalty_explanation": "माउंटिंग किसी डायरेक्टरी से स्टोरेज को जोड़ती है, यह रूट डायरेक्टरी या फाइलों को मिटाती नहीं है।"
+            },
+            {
+              "id": "hi_u17_d2",
+              "category": "technical",
+              "text": "ये सभी अतिरिक्त ड्राइव्स को बिना किसी माउंट पॉइंट के अदृश्य और अनुपयोगी बनाए रखती हैं",
+              "penalty_explanation": "लिनक्स में स्टोरेज का उपयोग करने के लिए उसे एक माउंट पॉइंट डायरेक्टरी से जोड़ना आवश्यक होता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "A mount point is an existing directory where secondary storage is made accessible using the `mount` command, detached via `unmount`[cite: 19].",
+        "hi": "माउंट पॉइंट वह डायरेक्टरी है जहाँ `mount` कमांड द्वारा स्टोरेज डिवाइस को सुलभ बनाया जाता है और `unmount` द्वारा हटाया जाता है[cite: 19]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Shell Scripting Architecture: Batch Execution and Process Automation",
+          "hi": "शेल स्क्रिप्टिंग संरचना: बैच निष्पादन और प्रक्रिया स्वचालन"
+        },
+        "theory": {
+          "en": "Shell scripting is a fundamental administrative methodology where users execute multiple shell commands in batch mode[cite: 19]. The ordered sequence of commands is written into an executable plain-text file known as a shell script or shell program[cite: 19]. Rather than requiring system administrators to manually re-type lengthy terminal instructions repeatedly, shell scripts automate routine, complex, and repetitive tasks—such as automated system backups, log rotation, network audits, and bulk user provisioning—improving productivity and eliminating human typing errors[cite: 19].",
+          "hi": "शेल-स्क्रिप्टिंग (Shell-Scripting) एक महत्वपूर्ण प्रशासनिक प्रक्रिया है जिसके माध्यम से उपयोगकर्ता एक साथ कई शेल कमांड निष्पादित कर सकते हैं[cite: 19]। चलाए जाने वाले शेल कमांड के अनुक्रम को 'शेल-स्क्रिप्ट' या 'शेल-प्रोग्राम' नामक एक टेक्स्ट-फ़ाइल में लिखा जाता है[cite: 19]। प्रशासक को बार-बार मैन्युअल रूप से कमांड टाइप करने की आवश्यकता के बजाय, शेल-स्क्रिप्टिंग नियमित और दोहराव वाले कार्यों (जैसे बैकअप, लॉग जांच और नेटवर्क ऑडिट) को स्वचालित करती है, जिससे समय बचता है और मानवीय गलतियां दूर होती हैं[cite: 19]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Shell Scripting: Batch Process Automation</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Script File (.sh)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Sequence of Commands</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Shell Interpreter</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Executes at Once</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Automated Task</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Zero Re-typing Needed</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Text Program</tspan><tspan x=\"120\" dy=\"1.2em\">Batch Logic</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Single Invocation</tspan><tspan x=\"300\" dy=\"1.2em\">Direct Processing</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">High Efficiency</tspan><tspan x=\"480\" dy=\"1.2em\">Error Reduction</tspan></text></svg>",
+          "caption": {
+            "en": "Shell scripting pipeline bundling ordered terminal commands into a single executable text file for automated execution[cite: 19].",
+            "hi": "शेल स्क्रिप्टिंग प्रक्रिया जो स्वचालित निष्पादन के लिए क्रमिक टर्मिनल कमांड्स को एक निष्पादन योग्य टेक्स्ट फ़ाइल में जोड़ती है[cite: 19]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how shell scripting streamlines administrative workflows through batch execution.",
+          "hint": "Start with shell scripting methodologies consolidating terminal operations, mention managing system administration tasks, explain assembling sequences of shell commands into executable text files, describe triggering batch execution without repetitive manual typing, and conclude with increasing operational productivity while mitigating typographical mistakes.",
+          "target_sequence": [
+            {
+              "id": "en_u18_t1",
+              "text": "Shell scripting frameworks consolidate multiple terminal commands",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u18_t2",
+              "text": "across routine Linux server administration and maintenance workflows",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u18_t3",
+              "text": "and by writing ordered instructions into an executable text file termed a shell script",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u18_t4",
+              "text": "they execute batch administrative operations simultaneously without requiring repetitive manual keyboard input",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u18_t5",
+              "text": "thereby automating maintenance routines while eliminating human operational errors during complex system management",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u18_d1",
+              "category": "conceptual",
+              "text": "and by forcing system administrators to type every single command by hand thirty times into the terminal prompt",
+              "penalty_explanation": "Shell scripting explicitly eliminates the need for manual, repetitive command typing."
+            },
+            {
+              "id": "en_u18_d2",
+              "category": "technical",
+              "text": "they delete all shell interpreters so that terminal scripts can never be evaluated by the Linux kernel",
+              "penalty_explanation": "Shell scripts rely directly on shell interpreters (like bash) to evaluate and execute commands."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "शेल स्क्रिप्टिंग द्वारा बैच निष्पादन और प्रशासनिक स्वचालन को लागू करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "शेल स्क्रिप्टिंग ढांचे कई टर्मिनल कमांड्स को जोड़ते हैं से शुरू करें, सर्वर रखरखाव का संदर्भ दें, आदेशों को निष्पादन योग्य टेक्स्ट फ़ाइल में लिखने का तरीका बताएं, दोहराव वाली टाइपिंग के बिना बैच निष्पादन का परिणाम दें, और मानवीय त्रुटियां समाप्त करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u18_t1",
+              "text": "शेल स्क्रिप्टिंग ढांचे कई टर्मिनल कमांड्स को समेकित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u18_t2",
+              "text": "नियमित लिनक्स सर्वर प्रशासन और रखरखाव वर्कफ़्लो के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u18_t3",
+              "text": "और क्रमिक निर्देशों को शेल-स्क्रिप्ट नामक एक निष्पादन योग्य टेक्स्ट फ़ाइल में लिखकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u18_t4",
+              "text": "ये बार-बार कीबोर्ड से टाइप किए बिना एक साथ कई प्रशासनिक कार्यों को स्वचालित रूप से निष्पादित करते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u18_t5",
+              "text": "जिससे नियमित रखरखाव कार्य स्वचालित हो जाते हैं और जटिल प्रबंधन के दौरान मानवीय गलतियों की संभावना समाप्त हो जाती है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u18_d1",
+              "category": "conceptual",
+              "text": "और प्रशासकों को प्रत्येक कमांड को कीबोर्ड से तीस बार हाथ से टाइप करने पर बाध्य करके",
+              "penalty_explanation": "शेल स्क्रिप्टिंग का उद्देश्य बार-बार कमांड टाइप करने की परेशानी को समाप्त करना है।"
+            },
+            {
+              "id": "hi_u18_d2",
+              "category": "technical",
+              "text": "ये सभी शेल इंटरप्रेटर्स को मिटा देते हैं ताकि कोई भी स्क्रिप्ट कर्नेल द्वारा निष्पादित न की जा सके",
+              "penalty_explanation": "शेल स्क्रिप्ट्स को निष्पादित करने के लिए शेल इंटरप्रेटर की आवश्यकता होती है, इसे मिटाया नहीं जाता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Shell scripting writes multiple shell commands into an executable text file to automate repetitive administrative tasks without manual typing[cite: 19].",
+        "hi": "शेल-स्क्रिप्टिंग कई कमांड्स को एक टेक्स्ट फ़ाइल में लिखकर दोहराव वाले कार्यों को स्वचालित करती है ताकि बार-बार टाइप न करना पड़े[cite: 19]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "User Account Provisioning: Creation via sudo adduser",
+          "hi": "उपयोगकर्ता खाता प्रावधान: sudo adduser द्वारा खाता बनाना"
+        },
+        "theory": {
+          "en": "In multi-user Linux operating systems, user account provisioning is governed by superuser privileges[cite: 19]. To add a new user account to the system, the administrator executes the command `$ sudo adduser <username>`[cite: 19]. This command creates the user's dedicated home directory within `/home`, configures default shell profiles, prompts for secure password credentials, and registers account metadata within system authentication databases (`/etc/passwd` and `/etc/shadow`), establishing secure user workspace isolation[cite: 19].",
+          "hi": "मल्टी-यूज़र लिनक्स ऑपरेटिंग सिस्टम में उपयोगकर्ता खातों का प्रबंधन सुपरयूज़र विशेषाधिकारों द्वारा नियंत्रित किया जाता है[cite: 19]। सिस्टम में एक नया उपयोगकर्ता खाता जोड़ने के लिए प्रशासक `$ sudo adduser <username>` कमांड का उपयोग करता है[cite: 19]। यह कमांड उपयोगकर्ता के लिए `/home` में एक समर्पित होम डायरेक्टरी बनाती है, शेल प्रोफाइल कॉन्फ़िगर करती है, पासवर्ड दर्ज करने का संकेत देती है, और खाते को सिस्टम सुरक्षा डेटाबेस में पंजीकृत करती है[cite: 19]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">User Creation Pipeline: sudo adduser</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Command Exec</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">sudo adduser</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">System Action</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Creates /home/user</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Credentials</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Password &amp; Registry</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Superuser Priv</tspan><tspan x=\"120\" dy=\"1.2em\">Invoked by Admin</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Allocates Storage</tspan><tspan x=\"300\" dy=\"1.2em\">Sets Default Shell</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Sets Password</tspan><tspan x=\"480\" dy=\"1.2em\">Authenticates Account</tspan></text></svg>",
+          "caption": {
+            "en": "User account provisioning pipeline demonstrating automated directory and credential setup via `sudo adduser`[cite: 19].",
+            "hi": "उपयोगकर्ता खाता निर्माण प्रक्रिया जो `sudo adduser` द्वारा डायरेक्टरी और क्रेडेंशियल सेटअप को दर्शाती है[cite: 19]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the sudo adduser command provisions new user accounts in Linux.",
+          "hint": "Start with user administration routines managing multi-user access, mention operating across Linux environments, explain executing the sudo adduser utility with superuser rights, describe allocating personal home directories and setting password credentials, and conclude with registering new users securely.",
+          "target_sequence": [
+            {
+              "id": "en_u19_t1",
+              "text": "User account provisioning procedures regulate system access",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u19_t2",
+              "text": "across secure multi-user Linux operating system environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u19_t3",
+              "text": "and by executing the administrative command `sudo adduser` followed by the designated username",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u19_t4",
+              "text": "they configure isolated home directories and establish secure initial login passwords",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u19_t5",
+              "text": "thereby registering authenticated new user entities into the system authentication registry",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u19_d1",
+              "category": "technical",
+              "text": "and by running `sudo deluser` to create and register five hundred new user profiles instantly",
+              "penalty_explanation": "`sudo deluser` deletes users; user creation requires the `sudo adduser` command."
+            },
+            {
+              "id": "en_u19_d2",
+              "category": "conceptual",
+              "text": "they delete all user passwords to ensure that accounts can never log into the shell prompt",
+              "penalty_explanation": "`sudo adduser` prompts the administrator to set a secure password for user authentication."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "sudo adduser कमांड द्वारा लिनक्स में नया उपयोगकर्ता खाता बनाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "उपयोगकर्ता खाता निर्माण प्रक्रियाएं सिस्टम पहुंच को नियंत्रित करती हैं से शुरू करें, मल्टी-यूज़र लिनक्स परिवेश का संदर्भ दें, `sudo adduser` कमांड निष्पादित करने का तरीका बताएं, होम डायरेक्टरी व पासवर्ड स्थापित करने का परिणाम दें, और उपयोगकर्ता को पंजीकृत करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u19_t1",
+              "text": "उपयोगकर्ता खाता निर्माण प्रक्रियाएं सिस्टम पहुंच को नियंत्रित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u19_t2",
+              "text": "सुरक्षित मल्टी-यूज़र लिनक्स ऑपरेटिंग सिस्टम परिवेश के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u19_t3",
+              "text": "और प्रशासनिक कमांड `sudo adduser` के साथ वांछित उपयोगकर्ता नाम को निष्पादित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u19_t4",
+              "text": "ये समर्पित होम डायरेक्टरी बनाती हैं और सुरक्षित लॉगिन पासवर्ड स्थापित करती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u19_t5",
+              "text": "जिससे नए प्रमाणित उपयोगकर्ता सिस्टम रजिस्ट्री में सफलतापूर्वक पंजीकृत हो जाते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u19_d1",
+              "category": "technical",
+              "text": "और नए उपयोगकर्ताओं को जोड़ने के लिए `sudo deluser` कमांड का उपयोग करके",
+              "penalty_explanation": "`sudo deluser` का उपयोग उपयोगकर्ता को हटाने के लिए किया जाता है, जोड़ने के लिए `sudo adduser` का उपयोग होता है।"
+            },
+            {
+              "id": "hi_u19_d2",
+              "category": "conceptual",
+              "text": "ये सभी पासवर्ड हटा देती हैं ताकि कोई भी उपयोगकर्ता कभी भी लॉगिन न कर सके",
+              "penalty_explanation": "`sudo adduser` खाता सुरक्षित करने के लिए पासवर्ड सेट करने का संकेत देता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "In Linux, new user accounts are created using the command `sudo adduser <username>`, configuring home folders and credentials[cite: 19].",
+        "hi": "लिनक्स में नया उपयोगकर्ता खाता बनाने के लिए `sudo adduser <username>` कमांड का उपयोग किया जाता है, जो होम फोल्डर और पासवर्ड सेट करता है[cite: 19]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "User Account Decommissioning: Removal via sudo deluser",
+          "hi": "उपयोगकर्ता खाता विलोपन: sudo deluser द्वारा खाता हटाना"
+        },
+        "theory": {
+          "en": "When a user departs an organization or an account becomes obsolete, administrators decommission the account to prevent unauthorized access. In Linux, user removal is performed using the command `$ sudo deluser <username>`[cite: 20]. This utility strips the account's authentication credentials from system files (`/etc/passwd` and `/etc/shadow`), revokes its access permissions, and locks down its login privileges. Administrators can additionally specify flags to purge or archive the user's home directory, ensuring orphaned files do not consume disk space[cite: 19].",
+          "hi": "जब कोई उपयोगकर्ता संगठन छोड़ता है या खाता अनुपयोगी हो जाता है, तो अनधिकृत पहुंच को रोकने के लिए व्यवस्थापक उस खाते को हटा देते हैं[cite: 19, 20]। लिनक्स में उपयोगकर्ता को हटाने के लिए `$ sudo deluser <username>` कमांड का उपयोग किया जाता है[cite: 20]। यह कमांड सिस्टम फ़ाइलों से उपयोगकर्ता के लॉगिन अधिकारों और क्रेडेंशियल्स को समाप्त कर देती है[cite: 19, 20]। प्रशासक उपयोगकर्ता की होम डायरेक्टरी को हटाने या संग्रहीत करने का विकल्प भी चुन सकते हैं, जिससे डिस्क स्पेस सुरक्षित रहता है[cite: 19]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">User Decommissioning Pipeline: sudo deluser</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Command Exec</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">sudo deluser</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Revocation</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Removes Credentials</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Cleanup</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Secures Storage</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Admin Authority</tspan><tspan x=\"120\" dy=\"1.2em\">Account Deletion</tspan></text><text x=\"300\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Locks Login</tspan><tspan x=\"300\" dy=\"1.2em\">Strips Permissions</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Purges Orphan Data</tspan><tspan x=\"480\" dy=\"1.2em\">Closes Threat Vector</tspan></text></svg>",
+          "caption": {
+            "en": "User account de-provisioning pipeline revoking authentication rights and clearing account access via `sudo deluser`[cite: 19, 20].",
+            "hi": "खाता हटाने की प्रक्रिया जो `sudo deluser` द्वारा प्रमाणीकरण अधिकारों को समाप्त करने और पहुंच बंद करने को दर्शाती है[cite: 19, 20]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the sudo deluser command decommissions obsolete user accounts in Linux.",
+          "hint": "Start with user account decommissioning routines enforcing security hygiene, mention operating across Linux environments, explain executing the sudo deluser utility with superuser permissions, describe revoking system credentials and terminating login privileges, and conclude with closing unauthorized access pathways.",
+          "target_sequence": [
+            {
+              "id": "en_u20_t1",
+              "text": "User account decommissioning routines maintain system integrity",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u20_t2",
+              "text": "by removing obsolete accounts across enterprise Linux environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u20_t3",
+              "text": "and by executing the administrative utility `sudo deluser` targeting the specific username",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u20_t4",
+              "text": "they strip user authentication records and revoke shell login privileges immediately",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u20_t5",
+              "text": "thereby closing dormant access vectors and protecting system resources against unauthorized perimeter penetration",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u20_d1",
+              "category": "technical",
+              "text": "and by running `sudo adduser` to grant permanent root ownership rights to the departing account",
+              "penalty_explanation": "`sudo adduser` creates accounts; account decommissioning is done using `sudo deluser`."
+            },
+            {
+              "id": "en_u20_d2",
+              "category": "conceptual",
+              "text": "they format the primary boot disk completely whenever a single user is removed from the system",
+              "penalty_explanation": "`sudo deluser` removes the specified user; it does not format the operating system or boot disk."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "sudo deluser कमांड द्वारा लिनक्स में अनुपयोगी उपयोगकर्ता खाते को हटाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "उपयोगकर्ता खाता विलोपन प्रक्रियाएं सिस्टम सुरक्षा बनाए रखती हैं से शुरू करें, अनुपयोगी खातों को हटाने का संदर्भ दें, `sudo deluser` कमांड चलाने का तरीका बताएं, लॉगिन अधिकार समाप्त करने का परिणाम दें, और अनधिकृत पहुंच को रोकने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u20_t1",
+              "text": "उपयोगकर्ता खाता विलोपन प्रक्रियाएं सिस्टम अखंडता को बनाए रखती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u20_t2",
+              "text": "एंटरप्राइज लिनक्स वातावरण से अनुपयोगी खातों को हटाकर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u20_t3",
+              "text": "और विशिष्ट उपयोगकर्ता नाम के साथ प्रशासनिक यूटिलिटी `sudo deluser` को निष्पादित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u20_t4",
+              "text": "ये उपयोगकर्ता के प्रमाणीकरण रिकॉर्ड को हटाती हैं और शेल लॉगिन अधिकारों को तुरंत समाप्त करती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u20_t5",
+              "text": "जिससे निष्क्रिय खातों के जरिए अनधिकृत पहुंच के संभावित खतरे पूरी तरह समाप्त हो जाते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u20_d1",
+              "category": "technical",
+              "text": "और जाने वाले उपयोगकर्ता को स्थायी रूट अधिकार देने के लिए `sudo adduser` चलाकर",
+              "penalty_explanation": "खाता हटाने के लिए `sudo deluser` का उपयोग होता है, `sudo adduser` का नहीं।"
+            },
+            {
+              "id": "hi_u20_d2",
+              "category": "conceptual",
+              "text": "ये किसी भी उपयोगकर्ता को हटाते समय पूरी बूट डिस्क को हमेशा के लिए फॉर्मेट कर देती हैं",
+              "penalty_explanation": "`sudo deluser` केवल लक्षित उपयोगकर्ता खाते को हटाता है, यह डिस्क को फॉर्मेट नहीं करता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "In Linux, obsolete user accounts are deleted using `sudo deluser <username>`, revoking login permissions and closing security vectors[cite: 20].",
+        "hi": "लिनक्स में अनुपयोगी उपयोगकर्ता खातों को हटाने के लिए `sudo deluser <username>` कमांड का उपयोग किया जाता है, जिससे लॉगिन अधिकार समाप्त हो जाते हैं[cite: 20]।"
+      }
+    }
+  ]
+}
