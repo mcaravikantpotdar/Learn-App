@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 7: Internet Business Applications - Part 3",
+      "hi": "अध्याय 7: इंटरनेट बिजनेस एप्लिकेशन - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Online Reservation Systems and Travel Service Aggregation",
+          "hi": "ऑनलाइन आरक्षण प्रणालियाँ और यात्रा सेवा एकत्रीकरण"
+        },
+        "theory": {
+          "en": "Online reservation systems enable users to book transport and hospitality services like buses, trains, flights, hotels, and movie seats remotely using personal computers or smartphones[cite: 19]. Rather than visiting physical booking counters, users access centralized web platforms that aggregate essential travel information, including tourist destinations, transit modes, hotels, and homestays[cite: 19]. Prominent digital reservation portals include makemytrip.com, goibibo.com, oyo.com, irctc.com, and bookmyshow.com[cite: 19, 20].",
+          "hi": "ऑनलाइन आरक्षण प्रणालियाँ उपयोगकर्ताओं को कंप्यूटर या स्मार्टफोन के माध्यम से बस, ट्रेन, उड़ान, होटल और मूवी टिकट जैसी सेवाओं की बुकिंग दूरस्थ रूप से करने में सक्षम बनाती हैं[cite: 19]। भौतिक बुकिंग काउंटरों पर जाने के बजाय, उपयोगकर्ता केंद्रीकृत वेब पोर्टलों का उपयोग करते हैं जो पर्यटन स्थलों, यात्रा साधनों, होटलों और होमस्टे के बारे में जानकारी एकत्र करते हैं[cite: 19]। प्रमुख डिजिटल आरक्षण पोर्टलों में makemytrip.com, goibibo.com, oyo.com, irctc.com और bookmyshow.com शामिल हैं[cite: 19, 20]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Online Reservation Hub &amp; Multi-Service Aggregation</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">User Terminal</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Phone / Laptop</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Booking Portals</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">IRCTC, MMT, Oyo</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Service Output</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Seats &amp; Room Keys</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Remote Request</tspan><tspan x=\"120\" dy=\"1.2em\">Anytime Access</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Aggregates Info</tspan><tspan x=\"300\" dy=\"1.2em\">Live Inventory Check</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Confirmed Tickets</tspan><tspan x=\"480\" dy=\"1.2em\">Direct Digital Pass</tspan></text></svg>",
+          "caption": {
+            "en": "Online reservation system aggregating travel schedules, room availability, and tickets into unified digital portals[cite: 19].",
+            "hi": "ऑनलाइन आरक्षण प्रणाली जो यात्रा समय, कमरे की उपलब्धता और टिकटों को एकीकृत डिजिटल पोर्टलों में जोड़ती है[cite: 19]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how online reservation systems aggregate travel and hospitality bookings.",
+          "hint": "Start with online reservation systems centralizing transport and accommodation bookings, mention accessing web platforms on personal devices, explain consolidating transit schedules, hotel rooms, and cinema tickets on dedicated portals, and conclude with eliminating the necessity of visiting physical booking counters.",
+          "target_sequence": [
+            {
+              "id": "en_u11_t1",
+              "text": "Online reservation systems consolidate diverse travel and entertainment bookings",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u11_t2",
+              "text": "through consumer personal computers and internet-connected smartphones",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u11_t3",
+              "text": "and by aggregating transit schedules, lodging options, and cinema tickets into specialized digital portals",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u11_t4",
+              "text": "they provide instant remote booking access without requiring physical visits to ticket counters",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "logical",
+              "text": "and by requiring customers to collect paper stamp approvals manually at bus depots before completing reservations",
+              "penalty_explanation": "Online reservation systems operate entirely digitally, eliminating the need to visit physical booking depots[cite: 19]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ऑनलाइन आरक्षण प्रणालियों द्वारा यात्रा और आतिथ्य सेवाओं के एकत्रीकरण को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "ऑनलाइन आरक्षण प्रणालियाँ विविध यात्रा और मनोरंजन बुकिंग को जोड़ती हैं से शुरू करें, कंप्यूटर और स्मार्टफोन का संदर्भ दें, समय सारिणी, होटल और मूवी टिकट को एक पोर्टल पर लाने का तरीका बताएं, और भौतिक टिकट काउंटरों पर जाने की अनिवार्यता समाप्त करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u11_t1",
+              "text": "ऑनलाइन आरक्षण प्रणालियाँ विविध यात्रा और मनोरंजन बुकिंग को समेकित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u11_t2",
+              "text": "उपभोक्ता पर्सनल कंप्यूटर और इंटरनेट से जुड़े स्मार्टफोन के माध्यम से",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u11_t3",
+              "text": "और यात्रा समय-सारणी, होटल के विकल्पों तथा मूवी टिकटों को विशेष डिजिटल पोर्टलों में एकत्रित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u11_t4",
+              "text": "ये भौतिक टिकट काउंटरों पर जाए बिना तुरंत दूरस्थ बुकिंग की सुविधा प्रदान करती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "logical",
+              "text": "और आरक्षण पूरा करने से पहले बस डिपो पर जाकर मोहर लगे कागजी फॉर्म जमा करना अनिवार्य करके",
+              "penalty_explanation": "ऑनलाइन आरक्षण प्रणाली पूरी तरह डिजिटल है, इसमें डिपो जाकर कागजी औपचारिकताएं पूरी नहीं करनी पड़ती हैं[cite: 19]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Online reservation systems allow remote booking of buses, trains, flights, hotels, and movies using portals like IRCTC, MakeMyTrip, and BookMyShow[cite: 19, 20].",
+        "hi": "ऑनलाइन आरक्षण प्रणालियाँ आईआरसीटीसी, मेकमाईट्रिप और बुकमाईशो जैसे पोर्टलों के जरिए घर बैठे बस, ट्रेन, उड़ान, होटल और मूवी टिकट बुक करने की सुविधा देती हैं[cite: 19, 20]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Online Reservation Evaluation: Advantages and Fraud Vulnerabilities",
+          "hi": "ऑनलाइन आरक्षण का मूल्यांकन: लाभ और धोखाधड़ी के जोखिम"
+        },
+        "theory": {
+          "en": "Online reservation provides distinct operational conveniences, allowing travelers to secure promotional discounts, plan trips well in advance, and select from a broad variety of flights, lodging, and seat configurations[cite: 20]. However, online booking carries operational risks: users may make unintended booking mistakes leading to wasted money and time, the service requires an active internet connection, and deceptive fake websites can defraud customers[cite: 20].",
+          "hi": "ऑनलाइन आरक्षण कई व्यावहारिक लाभ प्रदान करता है, जिससे यात्री विशेष छूट प्राप्त कर सकते हैं, पहले से यात्रा की योजना बना सकते हैं और उड़ानों, होटलों तथा सीटों के व्यापक विकल्पों में से चुनाव कर सकते हैं[cite: 20]। हालांकि, इसमें परिचालन संबंधी जोखिम भी हैं: गलत बुकिंग के कारण समय और धन की हानि हो सकती है, सेवा केवल इंटरनेट होने पर ही काम करती है, और फर्जी वेबसाइटों के माध्यम से उपयोगकर्ता धोखाधड़ी का शिकार हो सकते हैं[cite: 20]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Online Reservation: Benefits vs. Operational Pitfalls</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Key Benefits</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Discounts | Advance Plan | Large Choice</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Operational Risks</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Wrong Bookings | Fake Scam Portals</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Seat Variety</tspan><tspan x=\"100\" dy=\"1.2em\">Flexible Choice</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Price Savings</tspan><tspan x=\"225\" dy=\"1.2em\">Online Deals</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Input Errors</tspan><tspan x=\"375\" dy=\"1.2em\">Non-Refundable Loss</tspan></text><text x=\"500\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Fake Websites</tspan><tspan x=\"500\" dy=\"1.2em\">Phishing Fraud</tspan></text></svg>",
+          "caption": {
+            "en": "Tradeoff evaluation balancing promotional discounts and seating options against unintended user errors and fake ticketing websites[cite: 20].",
+            "hi": "ट्रेडऑफ़ मूल्यांकन जो छूट और सीट चयन की सुविधा को उपयोगकर्ता की गलतियों और फर्जी टिकट वेबसाइटों के जोखिम से संतुलित करता है[cite: 20]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence evaluating the advantages and hazards of online reservation systems.",
+          "hint": "Start with online reservation platforms empowering travelers with booking flexibility, mention accessing global transit and lodging options, explain balancing advance discounts and broad seating choices against user booking errors and fake websites, and conclude with delivering convenience while requiring verification caution.",
+          "target_sequence": [
+            {
+              "id": "en_u12_t1",
+              "text": "Online reservation portals provide extensive booking flexibility",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u12_t2",
+              "text": "across modern tourism, transit, and hospitality markets",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u12_t3",
+              "text": "and by balancing promotional discounts and diverse seating choices against accidental user errors and fraudulent websites",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u12_t4",
+              "text": "they facilitate efficient advance itinerary planning while demanding careful verification against deceptive ticketing platforms",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u12_d1",
+              "category": "logical",
+              "text": "they prevent all incorrect date selections automatically while guaranteeing immunity from any deceptive online portal",
+              "penalty_explanation": "Users can still make accidental booking mistakes, and fake websites present a real fraud risk in online reservations[cite: 20]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ऑनलाइन आरक्षण प्रणालियों के लाभों और खतरों का मूल्यांकन करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "ऑनलाइन आरक्षण पोर्टल बुकिंग में व्यापक लचीलापन प्रदान करते हैं से शुरू करें, पर्यटन और यात्रा बाजार का संदर्भ दें, छूट और सीट विकल्पों को मानवीय गलतियों व फर्जी वेबसाइटों से संतुलित करने का तरीका बताएं, और सावधानीपूर्वक सत्यापन की मांग पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u12_t1",
+              "text": "ऑनलाइन आरक्षण पोर्टल बुकिंग में व्यापक लचीलापन प्रदान करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u12_t2",
+              "text": "आधुनिक पर्यटन, परिवहन और आतिथ्य बाजारों के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u12_t3",
+              "text": "और प्रचार छूट तथा विविध सीट विकल्पों को अनजाने में हुई गलतियों व फर्जी वेबसाइटों के जोखिम से संतुलित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u12_t4",
+              "text": "ये अग्रिम यात्रा योजना को आसान बनाते हैं परंतु भ्रामक टिकटिंग पोर्टलों के प्रति सावधानीपूर्वक सत्यापन की मांग करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u12_d1",
+              "category": "logical",
+              "text": "ये तारीख के गलत चयन को अपने आप रोककर फर्जी वेबसाइटों के खतरों को शून्य कर देते हैं",
+              "penalty_explanation": "ऑनलाइन बुकिंग में उपयोगकर्ताओं से गलती हो सकती है और फर्जी वेबसाइटों द्वारा ठगे जाने का जोखिम बना रहता है[cite: 20]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Online reservations offer discounts, advance planning, and wide options, but depend on internet access and carry risks of booking errors and scam sites[cite: 20].",
+        "hi": "ऑनलाइन आरक्षण छूट, अग्रिम योजना और विस्तृत विकल्प देता है, परंतु यह इंटरनेट पर निर्भर है और इसमें बुकिंग त्रुटियों व फर्जी वेबसाइटों का जोखिम रहता है[cite: 20]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Online Customer Support: Multi-Channel Assistance and Queue Constraints",
+          "hi": "ऑनलाइन ग्राहक सहायता: बहु-चैनल सहायता और कतार की सीमाएं"
+        },
+        "theory": {
+          "en": "Online customer support services enable enterprises to assist consumers using interactive web chat and voice communication[cite: 20]. Whenever customers encounter operational issues or require product guidance, customer care channels provide resolutions and troubleshooting information[cite: 20]. These systems typically operate 24x7, support multiple languages, and reduce enterprise handling costs[cite: 20]. However, heavy ticket volumes can lead to extended wait times, service requires trained staff, and non-technical users may struggle with the digital support interface[cite: 20, 21].",
+          "hi": "ऑनलाइन ग्राहक सहायता सेवाएं कंपनियों को वेब चैट और फोन के माध्यम से उपभोक्ताओं की समस्याओं को हल करने में सक्षम बनाती हैं[cite: 20]। जब भी ग्राहकों को कोई समस्या आती है या जानकारी की आवश्यकता होती है, तो वे ग्राहक सेवा से संपर्क करके समाधान प्राप्त कर सकते हैं[cite: 20]। ये सेवाएं आमतौर पर 24x7 उपलब्ध होती हैं, कई भाषाओं में सहायता देती हैं और समय व धन बचाती हैं[cite: 20]। हालांकि, अत्यधिक कार्यभार के कारण प्रतीक्षा समय बढ़ सकता है, इसके लिए प्रशिक्षित कर्मचारियों की आवश्यकता होती है और कुछ उपयोगकर्ताओं को इसका उपयोग कठिन लग सकता है[cite: 20, 21]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Online Customer Support Dispatcher &amp; Helpdesk Queue</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">User Inquiry</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Live Chat / Phone</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Support Helpdesk</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">24x7 Multi-Language</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Resolution</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Issue Solved</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Customer Calls</tspan><tspan x=\"120\" dy=\"1.2em\">Web Chat Ticket</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Trained Agents</tspan><tspan x=\"300\" dy=\"1.2em\">Peak Queue Latency</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Quick Answers</tspan><tspan x=\"480\" dy=\"1.2em\">Troubleshooting Done</tspan></text></svg>",
+          "caption": {
+            "en": "Customer service pipeline routing user inquiries through 24x7 multilingual support queues to trained resolution agents[cite: 20, 21].",
+            "hi": "ग्राहक सेवा प्रक्रिया जो उपयोगकर्ता के प्रश्नों को 24x7 बहुभाषी कतारों के माध्यम से प्रशिक्षित समाधान एजेंटों तक पहुंचाती है[cite: 20, 21]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how online customer support teams resolve consumer inquiries.",
+          "hint": "Start with online customer care infrastructures resolving consumer queries, mention managing issues across digital commerce environments, explain combining 24x7 multi-language chat and phone lines with trained helpdesk agents, and conclude with delivering solutions despite high-volume queue delays.",
+          "target_sequence": [
+            {
+              "id": "en_u13_t1",
+              "text": "Online customer support infrastructures handle consumer grievances and inquiries",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u13_t2",
+              "text": "throughout corporate digital service and commerce platforms",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u13_t3",
+              "text": "and by deploying 24x7 multilingual chat and telephony lines managed by trained technical personnel",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u13_t4",
+              "text": "they provide timely guidance and problem resolutions despite occasional peak-load queue delays",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "logical",
+              "text": "and by eliminating trained support personnel entirely to force consumers to solve software glitches unassisted",
+              "penalty_explanation": "Customer support requires well-trained staff to communicate with users and resolve their problems[cite: 21]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ऑनलाइन ग्राहक सहायता टीमों द्वारा उपभोक्ता समस्याओं के समाधान की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "ऑनलाइन ग्राहक सहायता प्रणालियाँ शिकायतों और प्रश्नों का समाधान करती हैं से शुरू करें, डिजिटल सेवा और कॉमर्स का संदर्भ दें, 24x7 बहुभाषी चैट व फोन को प्रशिक्षित कर्मचारियों से जोड़ने का तरीका बताएं, और पीक-लोड के बावजूद समाधान देने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u13_t1",
+              "text": "ऑनलाइन ग्राहक सहायता प्रणालियाँ उपभोक्ता शिकायतों और प्रश्नों का समाधान करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u13_t2",
+              "text": "व्यावसायिक डिजिटल सेवा और ई-कॉमर्स प्लेटफॉर्मों के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u13_t3",
+              "text": "और प्रशिक्षित कर्मचारियों द्वारा संचालित 24x7 बहुभाषी चैट तथा टेलीफोन लाइनों का उपयोग करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u13_t4",
+              "text": "ये कार्यभार के दौरान कतार में प्रतीक्षा के बावजूद समय पर मार्गदर्शन और समाधान प्रदान करती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "logical",
+              "text": "और प्रशिक्षित कर्मचारियों को हटाकर उपभोक्ताओं को तकनीकी समस्याएं खुद हल करने पर बाध्य करके",
+              "penalty_explanation": "ग्राहक सहायता के लिए प्रशिक्षित कर्मचारियों की आवश्यकता होती है ताकि उपयोगकर्ताओं को सही समाधान मिल सके[cite: 21]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Online customer support provides 24x7, multilingual assistance via chat and phone, though high traffic can cause queue delays and requires trained agents[cite: 20, 21].",
+        "hi": "ऑनलाइन ग्राहक सहायता चैट और फोन द्वारा 24x7 बहुभाषी सहायता देती है, परंतु अधिक काम के समय प्रतीक्षा करनी पड़ सकती है और प्रशिक्षित स्टाफ आवश्यक होता है[cite: 20, 21]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Digital Marketing Strategies: Email, Banner, and Social Advertising",
+          "hi": "डिजिटल मार्केटिंग रणनीतियाँ: ईमेल, बैनर और सोशल मीडिया विज्ञापन"
+        },
+        "theory": {
+          "en": "Digital marketing, also referred to as internet marketing, is the process of advertising and promoting products and commercial services via web technologies[cite: 21]. Instead of relying exclusively on print media or physical billboards, businesses deliver targeted promotional campaigns using electronic mail, online banner ads, search engine promotions, and social media platforms[cite: 21]. This approach allows businesses to connect with prospective customers across the internet with measurable engagement[cite: 21].",
+          "hi": "डिजिटल मार्केटिंग, जिसे इंटरनेट मार्केटिंग भी कहा जाता है, इंटरनेट तकनीकों के माध्यम से उत्पादों और व्यावसायिक सेवाओं के विज्ञापन और प्रचार की प्रक्रिया है[cite: 21]। केवल प्रिंट मीडिया या होर्डिंग्स पर निर्भर रहने के बजाय, व्यवसाय ईमेल, ऑनलाइन विज्ञापनों और सोशल मीडिया प्लेटफॉर्मों का उपयोग करके प्रचार करते हैं[cite: 21]। यह दृष्टिकोण कंपनियों को इंटरनेट पर लक्षित उपभोक्ताओं तक आसानी से पहुंचने में मदद करता है[cite: 21]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Digital Marketing Channels &amp; Targeted Promotion</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">E-Mail Campaigns</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Direct Inbox Outreach</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Online Banner Ads</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Display Web Banners</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Social Media Ads</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Targeted Feeds</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Direct Mail</tspan><tspan x=\"120\" dy=\"1.2em\">Product Offers</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Web Display</tspan><tspan x=\"300\" dy=\"1.2em\">Affiliate Networks</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Audience Targeting</tspan><tspan x=\"480\" dy=\"1.2em\">High Engagement</tspan></text></svg>",
+          "caption": {
+            "en": "Multi-channel digital marketing engine promoting commercial offerings through email campaigns, display banners, and social media[cite: 21].",
+            "hi": "डिजिटल मार्केटिंग का बहु-चैनल ढांचा जो ईमेल, डिस्प्ले बैनर और सोशल मीडिया के जरिए वाणिज्यिक उत्पादों का प्रचार करता है[cite: 21]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how internet marketing leverages digital channels for commercial outreach.",
+          "hint": "Start with internet marketing campaigns advertising commercial goods and services, mention engaging prospective consumers across internet channels, explain combining email marketing with online banner advertisements and social media campaigns, and conclude with driving business visibility.",
+          "target_sequence": [
+            {
+              "id": "en_u14_t1",
+              "text": "Digital marketing strategies promote commercial goods and services",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u14_t2",
+              "text": "across global online media and search networks",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u14_t3",
+              "text": "and by combining targeted email outreach with web display banners and social media advertisements",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u14_t4",
+              "text": "they build brand awareness and engage targeted customer demographics far beyond conventional print billboards",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "logical",
+              "text": "and by completely blocking online advertisements across all web browsers and electronic mail inboxes",
+              "penalty_explanation": "Online marketing actively uses emails, display ads, and social media rather than blocking them[cite: 21]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "इंटरनेट मार्केटिंग द्वारा प्रचार के लिए डिजिटल चैनलों का उपयोग करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "डिजिटल मार्केटिंग रणनीतियाँ उत्पादों और सेवाओं का प्रचार करती हैं से शुरू करें, ऑनलाइन मीडिया का संदर्भ दें, ईमेल को वेब बैनर और सोशल मीडिया विज्ञापनों से जोड़ने का तरीका बताएं, और व्यापक उपभोक्ता पहुंच स्थापित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u14_t1",
+              "text": "डिजिटल मार्केटिंग रणनीतियाँ वाणिज्यिक उत्पादों और सेवाओं का प्रचार करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u14_t2",
+              "text": "वैश्विक ऑनलाइन मीडिया और सर्च नेटवर्क के माध्यम से",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u14_t3",
+              "text": "और लक्षित ईमेल अभियानों को वेब डिस्प्ले बैनरों तथा सोशल मीडिया विज्ञापनों के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u14_t4",
+              "text": "ये पारंपरिक प्रिंट होर्डिंग्स की तुलना में लक्षित उपभोक्ताओं तक व्यापक और प्रभावी पहुंच स्थापित करती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "logical",
+              "text": "और सभी वेब ब्राउज़रों तथा ईमेल इनबॉक्स में वाणिज्यिक विज्ञापनों को पूरी तरह से प्रतिबंधित करके",
+              "penalty_explanation": "डिजिटल मार्केटिंग में ईमेल, वेब विज्ञापनों और सोशल मीडिया का सक्रिय उपयोग किया जाता है, उन्हें ब्लॉक नहीं किया जाता[cite: 21]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Online marketing uses digital channels like emails, banner advertisements, and social media ads to promote products and services to consumers[cite: 21].",
+        "hi": "ऑनलाइन मार्केटिंग उपभोक्ताओं तक उत्पादों और सेवाओं के प्रचार के लिए ईमेल, बैनर विज्ञापन और सोशल मीडिया विज्ञापनों का उपयोग करती है[cite: 21]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Online Shopping Ecosystems: Catalogs, Marketplaces, and Retail Fulfillment",
+          "hi": "ऑनलाइन शॉपिंग प्रणाली: कैटलॉग, मार्केटप्लेस और रिटेल डिलीवरी"
+        },
+        "theory": {
+          "en": "Online shopping is the process of purchasing products or services directly from various digital commerce platforms via the web[cite: 21]. Consumers browse electronic catalogs, compare product specifications, add items to digital shopping carts, and complete cashless transactions for door-to-door delivery[cite: 21]. Popular retail platforms encompass broad e-commerce marketplaces (amazon.in, flipkart.com, snapdeal.com), fashion portals (myntra.com), quick-commerce grocery services (blinkit.com), and social retail platforms (meesho.com)[cite: 21].",
+          "hi": "ऑनलाइन शॉपिंग विभिन्न ई-कॉमर्स प्लेटफॉर्मों से इंटरनेट के माध्यम से सीधे उत्पाद या सेवाएं खरीदने की प्रक्रिया है[cite: 21]। उपभोक्ता डिजिटल कैटलॉग ब्राउज़ करते हैं, कीमतों व गुणवत्ता की तुलना करते हैं, वस्तुओं को डिजिटल कार्ट में जोड़ते हैं और होम डिलीवरी के लिए कैशलेस भुगतान करते हैं[cite: 21]। लोकप्रिय खुदरा प्लेटफॉर्मों में व्यापक मार्केटप्लेस (amazon.in, flipkart.com, snapdeal.com), फैशन पोर्टल (myntra.com), क्विक-कॉमर्स किराना सेवाएं (blinkit.com) और सोशल रिटेल प्लेटफॉर्म (meesho.com) शामिल हैं[cite: 21]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Online Shopping Pipeline: Catalog &rarr; Cart &rarr; Doorstep</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Browse Catalog</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Amazon, Flipkart</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Digital Cart</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Cashless Checkout</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Fulfillment</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Doorstep Delivery</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Product Research</tspan><tspan x=\"120\" dy=\"1.2em\">Compare Options</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Secure Gateway</tspan><tspan x=\"300\" dy=\"1.2em\">UPI / Card Payment</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Courier Network</tspan><tspan x=\"480\" dy=\"1.2em\">Direct to Home</tspan></text></svg>",
+          "caption": {
+            "en": "Online retail workflow from catalog discovery and digital cart checkout to home logistics fulfillment[cite: 21].",
+            "hi": "ऑनलाइन खुदरा प्रक्रिया जो कैटलॉग खोज, डिजिटल कार्ट चेकआउट और होम डिलीवरी लॉजिस्टिक्स को दर्शाती है[cite: 21]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how online shopping platforms coordinate consumer retail purchases.",
+          "hint": "Start with online shopping platforms managing digital retail trade, mention browsing consumer goods across web platforms, explain combining interactive digital catalogs with virtual carts and electronic payment gateways, and conclude with delivering purchased items directly to homes.",
+          "target_sequence": [
+            {
+              "id": "en_u15_t1",
+              "text": "Online shopping platforms coordinate modern retail commerce",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u15_t2",
+              "text": "across specialized web and mobile marketplace applications",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u15_t3",
+              "text": "and by combining searchable digital catalogs with virtual shopping carts and integrated electronic payments",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u15_t4",
+              "text": "they fulfill consumer purchases conveniently through structured logistics and doorstep parcel deliveries",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "logical",
+              "text": "and by requiring customers to travel physically to wholesale warehouses to collect and pack ordered products",
+              "penalty_explanation": "Online shopping is designed to deliver products directly to consumer doorsteps via courier services[cite: 21]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ऑनलाइन शॉपिंग प्लेटफॉर्मों द्वारा खुदरा खरीद के समन्वय की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "ऑनलाइन शॉपिंग प्लेटफॉर्म आधुनिक खुदरा व्यापार का समन्वय करते हैं से शुरू करें, वेब और मोबाइल मार्केटप्लेस का संदर्भ दें, डिजिटल कैटलॉग को वर्चुअल कार्ट और इलेक्ट्रॉनिक भुगतान से जोड़ने का तरीका बताएं, और होम डिलीवरी पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u15_t1",
+              "text": "ऑनलाइन शॉपिंग प्लेटफॉर्म आधुनिक खुदरा व्यापार का समन्वय करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u15_t2",
+              "text": "विशिष्ट वेब और मोबाइल मार्केटप्लेस अनुप्रयोगों के माध्यम से",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u15_t3",
+              "text": "और खोज योग्य डिजिटल कैटलॉग को वर्चुअल शॉपिंग कार्ट तथा इलेक्ट्रॉनिक भुगतान प्रणालियों के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u15_t4",
+              "text": "ये सुव्यवस्थित लॉजिस्टिक्स और होम पार्सल डिलीवरी के जरिए उपभोक्ता खरीद को सुविधाजनक बनाते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "logical",
+              "text": "और ग्राहकों को खरीदे गए सामान को पैक करने के लिए थोक गोदामों में व्यक्तिगत रूप से जाने पर बाध्य करके",
+              "penalty_explanation": "ऑनलाइन शॉपिंग में सामान कूरियर के जरिए सीधे ग्राहक के घर पहुंचाया जाता है, गोदाम जाने की आवश्यकता नहीं होती[cite: 21]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Online shopping lets users purchase products from web platforms like Amazon, Flipkart, Myntra, and Blinkit for doorstep delivery[cite: 21].",
+        "hi": "ऑनलाइन शॉपिंग उपभोक्ताओं को अमेज़न, फ्लिपकार्ट, मिंत्रा और ब्लिंकिट जैसे प्लेटफॉर्मों से घर बैठे सामान खरीदने और होम डिलीवरी पाने की सुविधा देती है[cite: 21]।"
+      }
+    }
+  ]
+}
