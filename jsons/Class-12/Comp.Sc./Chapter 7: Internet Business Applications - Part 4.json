@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 7: Internet Business Applications - Part 4",
+      "hi": "अध्याय 7: इंटरनेट बिजनेस एप्लिकेशन - भाग 4"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Social Networking Architecture and Digital Profile Foundations",
+          "hi": "सोशल नेटवर्किंग संरचना और डिजिटल प्रोफाइल के मूल सिद्धांत"
+        },
+        "theory": {
+          "en": "Social networking is an online service that enables users to establish social relations and connect with people who share similar interests, activities, backgrounds, or real-life bonds[cite: 21]. To use a social network, an individual establishes an online social profile containing personal photos, biographical data, educational background, hobbies, and personal interests[cite: 21]. This structured profile allows discovery algorithms and other members to identify shared affinities, follow public updates, and communicate via private direct chat.",
+          "hi": "सोशल नेटवर्किंग एक ऑनलाइन सेवा है जो उपयोगकर्ताओं को समान रुचियों, गतिविधियों, पृष्ठभूमि या वास्तविक जीवन के संबंधों को साझा करने वाले लोगों के साथ सामाजिक संबंध स्थापित करने में सक्षम बनाती है[cite: 21]। सोशल नेटवर्क का उपयोग करने के लिए व्यक्ति को एक ऑनलाइन प्रोफाइल बनानी होती है जिसमें तस्वीरें, बायोडाटा, शैक्षणिक विवरण, शौक और रुचियां शामिल होती हैं[cite: 21]। यह प्रोफाइल उपयोगकर्ताओं को समान रुचि वाले लोगों को खोजने, उनके अपडेट फॉलो करने और व्यक्तिगत चैट करने की अनुमति देती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Social Networking Profile Architecture &amp; Discovery</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">User Profile</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Bio, Photos, Hobbies</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Interest Graph</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Shared Background</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Peer Connections</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Follow &amp; Private Chat</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Identity Metadata</tspan><tspan x=\"120\" dy=\"1.2em\">Personal Portfolio</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Affinity Matching</tspan><tspan x=\"300\" dy=\"1.2em\">Algorithmic Link</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Direct Engagement</tspan><tspan x=\"480\" dy=\"1.2em\">Community Building</tspan></text></svg>",
+          "caption": {
+            "en": "Social networking architecture showing user profile data linking through shared affinities to establish direct peer connections[cite: 21, 22].",
+            "hi": "सोशल नेटवर्किंग संरचना जो उपयोगकर्ता प्रोफाइल डेटा को आपसी रुचियों से जोड़कर सीधे सामाजिक संबंध स्थापित करने की प्रक्रिया दर्शाती है[cite: 21, 22]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how social profiles facilitate online community relationships.",
+          "hint": "Start with social networking platforms building interpersonal relationships, mention connecting users across web environments, explain combining detailed biographical profiles with hobby and interest matching, and conclude with enabling private messaging and page following.",
+          "target_sequence": [
+            {
+              "id": "en_u16_t1",
+              "text": "Social networking platforms cultivate interpersonal relationships",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u16_t2",
+              "text": "across global web and mobile application environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u16_t3",
+              "text": "and by pairing personal biographical profiles with shared interests and educational backgrounds",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u16_t4",
+              "text": "they help individuals discover like-minded peers, follow public feeds, and engage in direct private conversations",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u16_d1",
+              "category": "logical",
+              "text": "they require individuals to maintain completely anonymous accounts without disclosing any hobbies or interests",
+              "penalty_explanation": "Social networking profiles explicitly rely on photos, bio details, education, and hobbies to connect users[cite: 21]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "सोशल प्रोफाइल द्वारा ऑनलाइन संबंध और समुदाय स्थापित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "सोशल नेटवर्किंग प्लेटफॉर्म पारस्परिक संबंध विकसित करते हैं से शुरू करें, वेब और मोबाइल परिवेश का संदर्भ दें, प्रोफाइल विवरण को रुचियों और शिक्षा से जोड़ने का तरीका बताएं, और समान विचारधारा वाले लोगों से जुड़ने व चैट करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u16_t1",
+              "text": "सोशल नेटवर्किंग प्लेटफॉर्म पारस्परिक संबंध विकसित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u16_t2",
+              "text": "वैश्विक वेब और मोबाइल एप्लिकेशन परिवेश के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u16_t3",
+              "text": "और व्यक्तिगत प्रोफाइल विवरणों को साझा रुचियों तथा शैक्षणिक पृष्ठभूमि के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u16_t4",
+              "text": "ये समान विचारधारा वाले लोगों को खोजने, सार्वजनिक पोस्ट फॉलो करने और सीधे संवाद करने में मदद करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u16_d1",
+              "category": "logical",
+              "text": "ये उपयोगकर्ताओं को बिना किसी शौक या रुचि की जानकारी दिए पूरी तरह गुप्त खाते संचालित करने पर मजबूर करते हैं",
+              "penalty_explanation": "सोशल नेटवर्किंग में प्रोफाइल के भीतर तस्वीरें, शौक और शिक्षा का विवरण देना आवश्यक होता है ताकि लोग जुड़ सकें[cite: 21]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Social networks connect people through user profiles containing bios, photos, education, and hobbies, enabling following and private messaging[cite: 21, 22].",
+        "hi": "सोशल नेटवर्क फोटो, बायोडाटा, शिक्षा और शौक से युक्त प्रोफाइल के जरिए लोगों को जोड़ते हैं, जिससे पेज फॉलो और निजी चैट संभव होती है[cite: 21, 22]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Public Social Platforms: Facebook and Instagram Media Distribution",
+          "hi": "सार्वजनिक सोशल प्लेटफॉर्म: फेसबुक और इंस्टाग्राम मीडिया वितरण"
+        },
+        "theory": {
+          "en": "Mainstream social platforms serve distinct interaction models[cite: 22]. Facebook focuses on maintaining connections with family and friends, allowing members to share text posts, photographs, and news updates while participating in interest-based community groups[cite: 22]. Conversely, Instagram specializes in visual media distribution, emphasizing photo sharing, short video reels, and temporary stories[cite: 22]. It serves as a creative hub widely used for tracking lifestyle trends, discovering creative content, and following public figures.",
+          "hi": "प्रमुख सोशल प्लेटफॉर्म अलग-अलग संचार प्रारूपों की पूर्ति करते हैं[cite: 22]। Facebook परिवार और दोस्तों से जुड़े रहने पर केंद्रित है, जहाँ उपयोगकर्ता पोस्ट, तस्वीरें और समाचार साझा करते हैं तथा विभिन्न रुचि-आधारित समूहों में भाग लेते हैं[cite: 22]। इसके विपरीत, Instagram विजुअल मीडिया पर केंद्रित है, जिसमें फोटो, छोटे वीडियो (रील्स) और स्टोरीज़ साझा करने पर जोर दिया जाता है[cite: 22]। यह नए ट्रेंड्स देखने, रचनात्मकता दिखाने और मशहूर हस्तियों को फॉलो करने के लिए अत्यधिक लोकप्रिय है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Public Media Ecosystems: Facebook vs. Instagram</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Facebook Hub</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Friends, News &amp; Groups</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Instagram Hub</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Photos, Reels &amp; Trends</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Community Groups</tspan><tspan x=\"100\" dy=\"1.2em\">Discussion Feeds</tspan></text><text x=\"225\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Family &amp; Relatives</tspan><tspan x=\"225\" dy=\"1.2em\">Broad Connectivity</tspan></text><text x=\"375\" y=\"167\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Visual Showcase</tspan><tspan x=\"375\" dy=\"1.2em\">Short Video Reels</tspan></text><text x=\"500\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Cultural Trends</tspan><tspan x=\"500\" dy=\"1.2em\">Celebrity Pages</tspan></text></svg>",
+          "caption": {
+            "en": "Structural focus comparing Facebook's text and community discussion architecture with Instagram's photo, reel, and visual storytelling feed[cite: 22].",
+            "hi": "संरचनात्मक तुलना जो फेसबुक के समुदाय आधारित चर्चा मॉडल और इंस्टाग्राम के फोटो, रील्स व विजुअल स्टोरी मॉडल के अंतर को दर्शाती है[cite: 22]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence distinguishing public media interaction on Facebook from visual distribution on Instagram.",
+          "hint": "Start with public social networks structuring distinct user interaction patterns, mention engaging audiences across digital channels, explain pairing family updates and interest groups on Facebook with photo sharing and video reels on Instagram, and conclude with addressing social discussion and creative visual expression.",
+          "target_sequence": [
+            {
+              "id": "en_u17_t1",
+              "text": "Public social platforms cultivate distinct communication formats",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u17_t2",
+              "text": "across global media sharing ecosystems",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u17_t3",
+              "text": "and by combining community groups and news updates on Facebook with photo showcases and short video reels on Instagram",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u17_t4",
+              "text": "they support both family-centric text discussions and trend-driven visual expression across modern internet culture",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u17_d1",
+              "category": "logical",
+              "text": "and by limiting both platforms strictly to audio-only voice phone calls without permitting photos or video posts",
+              "penalty_explanation": "Facebook and Instagram are primarily visual and text-based platforms built around posts, photos, news, and videos[cite: 22]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "फेसबुक के सामुदायिक संचार और इंस्टाग्राम के विजुअल मीडिया वितरण के अंतर को सही क्रम में व्यवस्थित करें।",
+          "hint": "सार्वजनिक सोशल प्लेटफॉर्म विशिष्ट संचार प्रारूपों को बढ़ावा देते हैं से शुरू करें, मीडिया साझाकरण का संदर्भ दें, फेसबुक के समूहों व समाचारों को इंस्टाग्राम की तस्वीरों व रील्स से जोड़ने का तरीका बताएं, और पारिवारिक चर्चा तथा रचनात्मक अभिव्यक्ति पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u17_t1",
+              "text": "सार्वजनिक सोशल प्लेटफॉर्म विशिष्ट संचार प्रारूपों को बढ़ावा देते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u17_t2",
+              "text": "वैश्विक मीडिया साझाकरण परिवेश के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u17_t3",
+              "text": "और फेसबुक पर सामुदायिक समूहों तथा समाचारों को इंस्टाग्राम पर फोटो प्रदर्शन व वीडियो रील्स के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u17_t4",
+              "text": "ये आधुनिक संस्कृति में पारिवारिक चर्चाओं और रुझान-आधारित दृश्य अभिव्यक्ति दोनों को पूरा करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u17_d1",
+              "category": "logical",
+              "text": "और फोटो अथवा वीडियो पोस्ट पर पूरी तरह प्रतिबंध लगाकर दोनों को केवल साधारण फोन कॉल तक सीमित करके",
+              "penalty_explanation": "फेसबुक और इंस्टाग्राम का मुख्य कार्य पोस्ट, फोटो, वीडियो और रील्स साझा करना है, वे केवल फोन कॉल तक सीमित नहीं हैं[cite: 22]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Facebook connects friends and community groups through posts and news, while Instagram focuses on photos, short video reels, and visual trends[cite: 22].",
+        "hi": "फेसबुक पोस्ट और समाचारों के माध्यम से दोस्तों और समूहों को जोड़ता है, जबकि इंस्टाग्राम फोटो, रील्स और विजुअल ट्रेंड्स पर केंद्रित है[cite: 22]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Direct Messaging and Video Streaming: WhatsApp and YouTube",
+          "hi": "डायरेक्ट मैसेजिंग और वीडियो स्ट्रीमिंग: व्हाट्सएप और यूट्यूब"
+        },
+        "theory": {
+          "en": "WhatsApp and YouTube address direct communication and open broadcast content delivery. WhatsApp is an instant messaging service enabling users to transmit text notes, recorded audio clips, photographs, and document files, alongside real-time voice and video calls. Conversely, YouTube is a video-sharing and streaming platform. It enables creators and organizations to publish video content for learning, academic tutorials, skills training, and entertainment.",
+          "hi": "व्हाट्सएप और यूट्यूब व्यक्तिगत संचार और सार्वजनिक सामग्री प्रसारण के प्रमुख माध्यम हैं। WhatsApp मुख्य रूप से एक त्वरित मैसेजिंग एप्लिकेशन है जिसका उपयोग टेक्स्ट संदेश, ऑडियो नोट्स, फोटो, दस्तावेज भेजने और वॉयस या वीडियो कॉल करने के लिए किया जाता है। इसके विपरीत, YouTube एक वीडियो-साझाकरण और स्ट्रीमिंग प्लेटफॉर्म है। यह उपयोगकर्ताओं को शैक्षिक ट्यूटोरियल, कौशल विकास, ज्ञान और मनोरंजन से जुड़े वीडियो देखने और अपलोड करने की सुविधा देता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Communication Channels: WhatsApp vs. YouTube</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">WhatsApp Messaging</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Text, Media, Calls</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">YouTube Broadcast</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Video Hosting &amp; Learning</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Direct Chat</tspan><tspan x=\"100\" dy=\"1.2em\">Instant Documents</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Voice &amp; Video</tspan><tspan x=\"225\" dy=\"1.2em\">Private Calls</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Video Catalog</tspan><tspan x=\"375\" dy=\"1.2em\">Educational Content</tspan></text><text x=\"500\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Global Reach</tspan><tspan x=\"500\" dy=\"1.2em\">Tutorial Broadcasts</tspan></text></svg>",
+          "caption": {
+            "en": "Communication paradigms contrasting peer-to-peer messaging and calls on WhatsApp with open video broadcast and tutorials on YouTube.",
+            "hi": "संचार माध्यमों की तुलना जो व्हाट्सएप के व्यक्तिगत मैसेजिंग व कॉलिंग मॉडल और यूट्यूब के खुले वीडियो प्रसारण व ट्यूटोरियल मॉडल को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how WhatsApp and YouTube serve interpersonal messaging and public video broadcast.",
+          "hint": "Start with internet communication platforms fulfilling targeted interaction needs, mention facilitating digital connectivity across global networks, explain combining direct text, document, and call exchanges on WhatsApp with open video tutorials on YouTube, and conclude with delivering private communication and public knowledge access.",
+          "target_sequence": [
+            {
+              "id": "en_u18_t1",
+              "text": "Internet communication utilities fulfill distinct interaction requirements",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u18_t2",
+              "text": "across personal smartphones and computer web environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u18_t3",
+              "text": "and by combining private text, document, and video call exchanges on WhatsApp with open educational video hosting on YouTube",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u18_t4",
+              "text": "they provide instantaneous one-to-one messaging alongside unrestricted broadcast access to tutorials, entertainment, and knowledge",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u18_d1",
+              "category": "logical",
+              "text": "and by barring YouTube from streaming tutorial videos while restricting WhatsApp solely to postal text mail deliveries",
+              "penalty_explanation": "YouTube streams video tutorials, and WhatsApp operates as an electronic instant messaging platform without paper mail."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "व्हाट्सएप की व्यक्तिगत मैसेजिंग और यूट्यूब के वीडियो प्रसारण के अंतर को सही क्रम में व्यवस्थित करें।",
+          "hint": "इंटरनेट संचार माध्यम विशिष्ट आवश्यकताओं की पूर्ति करते हैं से शुरू करें, स्मार्टफोन और कंप्यूटर का संदर्भ दें, व्हाट्सएप के संदेशों, दस्तावेजों व कॉल को यूट्यूब के वीडियो से जोड़ने का तरीका बताएं, और व्यक्तिगत बातचीत तथा ज्ञान के प्रसार पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u18_t1",
+              "text": "इंटरनेट संचार माध्यम विशिष्ट आवश्यकताओं की पूर्ति करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u18_t2",
+              "text": "स्मार्टफोन और कंप्यूटर आधारित वेब परिवेश के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u18_t3",
+              "text": "और व्हाट्सएप पर निजी संदेशों, दस्तावेजों व वीडियो कॉल को यूट्यूब पर शैक्षिक वीडियो होस्टिंग के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u18_t4",
+              "text": "ये व्यक्तिगत स्तर पर त्वरित बातचीत और सार्वजनिक स्तर पर ट्यूटोरियल, मनोरंजन तथा ज्ञान तक सीधी पहुंच प्रदान करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u18_d1",
+              "category": "logical",
+              "text": "और यूट्यूब को शैक्षिक वीडियो दिखाने से रोककर व्हाट्सएप को केवल कागजी डाक तक सीमित करके",
+              "penalty_explanation": "यूट्यूब वीडियो होस्टिंग व ट्यूटोरियल का केंद्र है और व्हाट्सएप डिजिटल मैसेजिंग ऐप है, कोई डाक सेवा नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "WhatsApp provides direct messaging, media transfer, and voice/video calling, whereas YouTube serves as a video-sharing platform for tutorials and learning.",
+        "hi": "व्हाट्सएप सीधे मैसेज, मीडिया ट्रांसफर और वॉयस/वीडियो कॉल की सुविधा देता है, जबकि यूट्यूब सीखने और ट्यूटोरियल के लिए वीडियो होस्टिंग प्रदान करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Professional Networking and Career Development: LinkedIn Architecture",
+          "hi": "व्यावसायिक नेटवर्किंग और करियर विकास: लिंक्डइन संरचना"
+        },
+        "theory": {
+          "en": "LinkedIn operates as a dedicated professional networking platform tailored for career management, employment recruitment, and corporate relationships. Instead of casual social interaction, members establish professional profiles functioning as digital resumes that highlight work history, certifications, academic credentials, and core competencies. The platform enables individuals to build career connections with industry peers, publish professional achievements, research organizational cultures, and apply for employment opportunities.",
+          "hi": "LinkedIn एक समर्पित व्यावसायिक (प्रोफेशनल) नेटवर्किंग साइट है जो करियर प्रबंधन, रोजगार और उद्योग संपर्कों के लिए तैयार की गई है। अनौपचारिक बातचीत के बजाय, उपयोगकर्ता यहाँ पेशेवर प्रोफाइल बनाते हैं जो एक डिजिटल रिज्यूमे के रूप में कार्य करती है और उनके कार्य अनुभव, शिक्षा, उपलब्धियों और कौशलों को दर्शाती है। यह मंच लोगों को कार्यक्षेत्र के साथियों से जुड़ने, उपलब्धियां साझा करने और नई नौकरियों की खोज करने की अनुमति देता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">LinkedIn Professional Career &amp; Recruitment Hub</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Digital Resume</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Skills, Certs, Work</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Industry Network</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Peer Connections</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Recruitment</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Job Applications</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Professional Profile</tspan><tspan x=\"120\" dy=\"1.2em\">Career Records</tspan></text><text x=\"300\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Corporate Contacts</tspan><tspan x=\"300\" dy=\"1.2em\">Knowledge Sharing</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Career Openings</tspan><tspan x=\"480\" dy=\"1.2em\">Hiring Pipeline</tspan></text></svg>",
+          "caption": {
+            "en": "LinkedIn career platform connecting digital resume portfolios and professional networks to corporate recruitment pipelines.",
+            "hi": "लिंक्डइन करियर प्लेटफॉर्म जो डिजिटल रिज्यूमे प्रोफाइल और व्यावसायिक संपर्कों को सीधे कॉर्पोरेट भर्ती प्रक्रियाओं से जोड़ता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how LinkedIn facilitates professional networking and job acquisition.",
+          "hint": "Start with LinkedIn operating as a specialized career development ecosystem, mention connecting professionals across commercial and industrial sectors, explain combining resume profiles with industry connections and achievements, and conclude with empowering users to explore vacancies and recruit candidates.",
+          "target_sequence": [
+            {
+              "id": "en_u19_t1",
+              "text": "LinkedIn operates as a dedicated professional networking framework",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u19_t2",
+              "text": "across modern corporate enterprise and employment markets",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u19_t3",
+              "text": "and by combining structured digital resumes with career achievement sharing and industry peer networking",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u19_t4",
+              "text": "it enables professionals to build workplace reputations, discover career openings, and secure corporate employment",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u19_d1",
+              "category": "logical",
+              "text": "and by forbidding corporate recruiters from posting any employment opportunities or reviewing applicant skills",
+              "penalty_explanation": "LinkedIn is designed for career development, actively encouraging job postings and recruiter hiring."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "लिंक्डइन द्वारा व्यावसायिक नेटवर्किंग और रोजगार प्राप्ति में सहायता की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "लिंक्डइन एक समर्पित व्यावसायिक नेटवर्किंग ढांचे के रूप में कार्य करता है से शुरू करें, कॉर्पोरेट और रोजगार बाजार का संदर्भ दें, डिजिटल रिज्यूमे को उपलब्धियों और संपर्कों से जोड़ने का तरीका बताएं, और प्रतिष्ठा बनाने व नौकरी पाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u19_t1",
+              "text": "लिंक्डइन एक समर्पित व्यावसायिक नेटवर्किंग ढांचे के रूप में कार्य करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u19_t2",
+              "text": "आधुनिक कॉर्पोरेट उद्यम और रोजगार बाजारों के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u19_t3",
+              "text": "और संरचित डिजिटल रिज्यूमे को उपलब्धियों को साझा करने तथा उद्योग संपर्कों के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u19_t4",
+              "text": "यह पेशेवरों को अपनी साख मजबूत करने, करियर के अवसरों को खोजने और नौकरियां पाने में सक्षम बनाता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u19_d1",
+              "category": "logical",
+              "text": "और नियोक्ताओं को नौकरी के अवसर पोस्ट करने अथवा उम्मीदवारों के कौशल देखने से पूरी तरह रोककर",
+              "penalty_explanation": "लिंक्डइन का मुख्य उद्देश्य ही करियर के अवसर प्रदान करना और नियोक्ताओं को सही उम्मीदवार खोजने में मदद करना है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "LinkedIn is a professional networking site where users create digital resumes, showcase achievements, build career contacts, and find jobs.",
+        "hi": "लिंक्डइन एक पेशेवर नेटवर्किंग साइट है जहाँ लोग डिजिटल रिज्यूमे बनाते हैं, उपलब्धियां साझा करते हैं, करियर संपर्क बनाते हैं और नौकरियां खोजते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Social Media Dynamics: Global Collaboration vs. Addiction and Security Hazards",
+          "hi": "सोशल मीडिया विश्लेषण: वैश्विक सहयोग बनाम लत और सुरक्षा के खतरे"
+        },
+        "theory": {
+          "en": "Social networking delivers notable social benefits by bridging geographic distances to keep friends and family connected, facilitating communities of like-minded thinkers, and providing an open platform to broadcast ideas globally[cite: 22]. However, these services carry clear psychological and security hazards: compulsive use can lead to digital addiction and substantial loss of productive time and finances[cite: 22]. Furthermore, users face risks from fraudulent schemes run by fake accounts, and risk account takeover or data theft by malicious hackers who post unauthorized or irrelevant content[cite: 22].",
+          "hi": "सोशल नेटवर्किंग दूर-दराज रहने वाले दोस्तों और रिश्तेदारों को जोड़कर, समान विचारधारा वाले लोगों के नए समूह बनाकर और विचारों को वैश्विक मंच देकर महत्वपूर्ण लाभ प्रदान करती है[cite: 22]। हालांकि, इसमें गंभीर मनोवैज्ञानिक और सुरक्षा संबंधी खतरे भी हैं: इसका अत्यधिक उपयोग लत (एडिक्शन) का रूप ले सकता है, जिससे समय और धन की बर्बादी होती है[cite: 22]। इसके अलावा, लोग फर्जी उपयोगकर्ताओं द्वारा धोखाधड़ी का शिकार हो सकते हैं, और हैकर्स द्वारा प्रोफाइल हैक करके डेटा चुराने या आपत्तिजनक सामग्री पोस्ट करने का निरंतर जोखिम बना रहता है[cite: 22]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Social Media Dynamics: Global Utility vs. Cyber Hazards</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Positive Social Utility</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Global Ties | Communities | Idea Hub</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Security &amp; Behavioral Risks</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Addiction | Fake Accounts | Hacking</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Family Connections</tspan><tspan x=\"100\" dy=\"1.2em\">Bridges Distance</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Community Voice</tspan><tspan x=\"225\" dy=\"1.2em\">Knowledge Sharing</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Screen Addiction</tspan><tspan x=\"375\" dy=\"1.2em\">Time Wastage</tspan></text><text x=\"500\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Account Takeover</tspan><tspan x=\"500\" dy=\"1.2em\">Data Hijacking</tspan></text></svg>",
+          "caption": {
+            "en": "Evaluation matrix contrasting global connectivity and community building against addiction habits, fake identity scams, and cyber hijacking[cite: 22].",
+            "hi": "मूल्यांकन मैट्रिक्स जो वैश्विक संपर्क और ज्ञान साझाकरण की तुलना सोशल मीडिया की लत, फर्जी खातों और हैकिंग के खतरों से करता है[cite: 22]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence evaluating the social utilities and operational hazards of social media networks.",
+          "hint": "Start with social media networks transforming human connectivity across borders, mention operating throughout global communications channels, explain balancing family ties and international communities against digital addiction, fake profile scams, and account hijacking, and conclude with delivering social reach while demanding user security caution.",
+          "target_sequence": [
+            {
+              "id": "en_u20_t1",
+              "text": "Social media networks revolutionize interpersonal human connectivity",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u20_t2",
+              "text": "across global telecommunication and digital media landscapes",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u20_t3",
+              "text": "and by balancing distant family ties and community building against digital addiction, fake identity scams, and account hijackings",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u20_t4",
+              "text": "they offer broad knowledge sharing while requiring disciplined personal usage and vigilant cyber safety precautions",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u20_d1",
+              "category": "logical",
+              "text": "and by preventing any fraudulent or unauthorized content from ever appearing across public social feeds",
+              "penalty_explanation": "Social networks carry inherent vulnerabilities to fake profiles, scams, and unauthorized posts by hackers[cite: 22]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "सोशल मीडिया नेटवर्क के सामाजिक लाभों और परिचालन खतरों का मूल्यांकन करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "सोशल मीडिया नेटवर्क पारस्परिक मानव संपर्क में क्रांति लाते हैं से शुरू करें, डिजिटल मीडिया परिदृश्य का संदर्भ दें, पारिवारिक संबंधों व समुदायों को लत, फर्जी खातों व हैकिंग से संतुलित करने का तरीका बताएं, और ज्ञान साझा करने के साथ साइबर सुरक्षा की आवश्यकता पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u20_t1",
+              "text": "सोशल मीडिया नेटवर्क पारस्परिक मानव संपर्क में क्रांति लाते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u20_t2",
+              "text": "वैश्विक दूरसंचार और डिजिटल मीडिया परिदृश्य के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u20_t3",
+              "text": "और पारिवारिक संबंधों व सामुदायिक निर्माण को स्क्रीन की लत, फर्जी प्रोफाइल घोटालों और खाता हैकिंग के साथ संतुलित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u20_t4",
+              "text": "ये व्यापक ज्ञान साझा करने की सुविधा देते हैं परंतु अनुशासित उपयोग और सतर्क साइबर सुरक्षा सावधानियों की मांग करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u20_d1",
+              "category": "logical",
+              "text": "और सार्वजनिक सोशल मीडिया फीड पर किसी भी फर्जी या अनधिकृत सामग्री के आने को पूरी तरह से रोककर",
+              "penalty_explanation": "सोशल मीडिया प्लेटफॉर्म पर फर्जी उपयोगकर्ताओं, धोखाधड़ी और हैकर्स द्वारा गलत सामग्री पोस्ट करने का वास्तविक खतरा होता है[cite: 22]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Social media bridges geographic distances and shares ideas globally, but users must guard against behavioral addiction, fraudulent fake profiles, and account hacking[cite: 22].",
+        "hi": "सोशल मीडिया भौगोलिक दूरियों को मिटाता है और विचारों को साझा करता है, परंतु उपयोगकर्ताओं को इसकी लत, फर्जी खातों और हैकिंग से सावधान रहना चाहिए[cite: 22]।"
+      }
+    }
+  ]
+}
