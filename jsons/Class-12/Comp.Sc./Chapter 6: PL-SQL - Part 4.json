@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 6: PL/SQL - Part 4",
+      "hi": "अध्याय 6: PL/SQL - भाग 4"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Database Triggers and Automated Event Handling",
+          "hi": "डेटाबेस ट्रिगर्स और स्वचालित घटना प्रबंधन"
+        },
+        "theory": {
+          "en": "Database triggers are stored PL/SQL blocks that execute automatically whenever specified modification events occur on a table[cite: 22]. Rather than executing via manual user calls, a trigger fires automatically upon data modifications like INSERT, UPDATE, or DELETE[cite: 22]. Triggers automate derived column value generation, enforce complex referential integrity, maintain security audit trails, log database events, and coordinate automated backups[cite: 22, 23].",
+          "hi": "डेटाबेस ट्रिगर संग्रहीत PL/SQL ब्लॉक होते हैं जो किसी तालिका में विशिष्ट संशोधन घटनाएं घटित होने पर स्वचालित रूप से निष्पादित होते हैं[cite: 22]। मैन्युअल कॉल के बजाय, ट्रिगर INSERT, UPDATE या DELETE जैसे डेटा संशोधनों पर स्वतः सक्रिय होते हैं[cite: 22]। ट्रिगर स्वचालित रूप से मान उत्पन्न करने, जटिल अखंडता लागू करने, ऑडिटिंग करने, इवेंट लॉग करने और बैकअप लेने में मदद करते हैं[cite: 22, 23]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Database Trigger Architecture &amp; Auto-Execution</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Table Event</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">INSERT / UPDATE</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Trigger Intercept</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Auto-Fired Block</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Automated Action</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Audit Log / Backup</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Triggering Event</tspan><tspan x=\"120\" dy=\"1.2em\">Database Change</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Automatic Firing</tspan><tspan x=\"300\" dy=\"1.2em\">No User Call Needed</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Enforces Business Rules</tspan><tspan x=\"480\" dy=\"1.2em\">Audit &amp; Integrity</tspan></text></svg>",
+          "caption": {
+            "en": "Database trigger architecture showing event-driven auto-execution upon relational table modification[cite: 22].",
+            "hi": "डेटाबेस ट्रिगर संरचना जो रिलेशनल टेबल संशोधन पर घटना-आधारित स्वचालित निष्पादन को दर्शाती है[cite: 22]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how database triggers execute and maintain data integrity.",
+          "hint": "Start with database triggers operating as stored procedural blocks, mention monitoring relational table modifications, explain firing automatically upon DML events, and conclude with enforcing audit logging and referential integrity.",
+          "target_sequence": [
+            {
+              "id": "en_u16_t1",
+              "text": "Database triggers function as stored procedural blocks",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u16_t2",
+              "text": "to monitor relational data modification events continuously",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u16_t3",
+              "text": "and by firing automatically without manual user invocation upon table modifications",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u16_t4",
+              "text": "they enforce complex referential integrity, record security audit trails, and maintain derived values reliably",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u16_d1",
+              "category": "logical",
+              "text": "they require manual invocation commands from external terminal users before processing any data modification",
+              "penalty_explanation": "Triggers fire automatically when database events occur; they cannot be called manually by users."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "डेटाबेस ट्रिगर्स द्वारा स्वचालित निष्पादन और अखंडता बनाए रखने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "डेटाबेस ट्रिगर संग्रहीत प्रोसीजरल ब्लॉक के रूप में कार्य करते हैं से शुरू करें, तालिका संशोधनों की निगरानी का संदर्भ दें, DML घटनाओं पर स्वतः सक्रिय होने का तरीका बताएं, और अखंडता व ऑडिटिंग बनाए रखने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u16_t1",
+              "text": "डेटाबेस ट्रिगर संग्रहीत प्रोसीजरल ब्लॉक के रूप में कार्य करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u16_t2",
+              "text": "रिलेशनल डेटा संशोधन घटनाओं की निरंतर निगरानी करने के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u16_t3",
+              "text": "और तालिका संशोधनों पर उपयोगकर्ता के मैन्युअल आह्वान के बिना स्वतः सक्रिय होकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u16_t4",
+              "text": "ये जटिल अखंडता नियम लागू करते हैं और सुरक्षा ऑडिट ट्रेल्स को विश्वसनीय रूप से दर्ज करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u16_d1",
+              "category": "logical",
+              "text": "ये किसी भी डेटा संशोधन को संसाधित करने से पहले टर्मिनल उपयोगकर्ताओं द्वारा मैन्युअल आह्वान की मांग करते हैं",
+              "penalty_explanation": "ट्रिगर्स स्वचालित रूप से सक्रिय होते हैं, उन्हें उपयोगकर्ताओं द्वारा मैन्युअल रूप से कॉल नहीं किया जा सकता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Triggers are stored PL/SQL blocks that fire automatically on table events to enforce integrity, generate logs, and maintain derived values[cite: 22, 23].",
+        "hi": "ट्रिगर संग्रहीत PL/SQL ब्लॉक होते हैं जो अखंडता लागू करने, लॉग बनाने और मान प्रबंधित करने के लिए स्वचालित रूप से सक्रिय होते हैं[cite: 22, 23]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Trigger Classification: Timing and Granularity",
+          "hi": "ट्रिगर वर्गीकरण: निष्पादन समय और स्तर"
+        },
+        "theory": {
+          "en": "PL/SQL categorizes database triggers across two operational dimensions: timing and execution granularity[cite: 22]. In terms of timing, a BEFORE trigger fires prior to executing the triggering statement, whereas an AFTER trigger fires immediately following statement execution[cite: 22]. In terms of granularity, Statement-level triggers fire exactly once for the triggering command regardless of how many rows are affected[cite: 22]. In contrast, Row-level triggers fire repeatedly for every individual row modified by the triggering statement[cite: 22].",
+          "hi": "PL/SQL डेटाबेस ट्रिगर्स को दो प्रमुख आयामों में वर्गीकृत करता है: निष्पादन का समय और निष्पादन स्तर[cite: 22]। समय के संदर्भ में, BEFORE ट्रिगर ट्रिगरिंग स्टेटमेंट के निष्पादन से पहले सक्रिय होता है, जबकि AFTER ट्रिगर स्टेटमेंट के निष्पादन के तुरंत बाद सक्रिय होता है[cite: 22]। स्तर के संदर्भ में, स्टेटमेंट-लेवल ट्रिगर प्रभावित पंक्तियों की संख्या की परवाह किए बिना केवल एक बार सक्रिय होता है[cite: 22]। इसके विपरीत, रो-लेवल ट्रिगर स्टेटमेंट द्वारा प्रभावित होने वाली प्रत्येक व्यक्तिगत पंक्ति के लिए बार-बार सक्रिय होता है[cite: 22]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Trigger Classification: Timing vs. Granularity</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">BEFORE</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Prior to DML</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">AFTER</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Following DML</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Statement-Level</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Fires Once</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Row-Level</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Per Affected Row</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Pre-Validation</tspan><tspan x=\"102\" dy=\"1.2em\">Guards Action</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Post-Execution</tspan><tspan x=\"232\" dy=\"1.2em\">Audit Trail</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Single Firing</tspan><tspan x=\"362\" dy=\"1.2em\">Regardless of Rows</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Repeated Firing</tspan><tspan x=\"495\" dy=\"1.2em\">Each Modified Tuple</tspan></text></svg>",
+          "caption": {
+            "en": "Trigger taxonomy contrasting execution timing (BEFORE vs. AFTER) with processing granularity (Statement vs. Row level)[cite: 22].",
+            "hi": "ट्रिगर वर्गीकरण जो निष्पादन समय (BEFORE बनाम AFTER) और प्रसंस्करण स्तर (स्टेटमेंट बनाम रो लेवल) की तुलना करता है[cite: 22]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence distinguishing trigger timing and execution granularity.",
+          "hint": "Start with database triggers operating across timing and granularity dimensions, mention executing logic during table updates, explain coordinating BEFORE or AFTER events alongside statement-level or row-level firing, and conclude with customizing automated responses.",
+          "target_sequence": [
+            {
+              "id": "en_u17_t1",
+              "text": "Database triggers operate across distinct timing and granularity categories",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u17_t2",
+              "text": "during relational table modification procedures",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u17_t3",
+              "text": "and by coordinating `BEFORE` or `AFTER` execution with statement-wide or row-by-row firing rules",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u17_t4",
+              "text": "they provide precise automated control whether evaluating pre-checks once or logging every modified row",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u17_d1",
+              "category": "logical",
+              "text": "and by forcing statement-level triggers to execute repeatedly for every individual tuple modified in the table",
+              "penalty_explanation": "Statement-level triggers fire strictly once per statement; repeated per-row execution is exclusive to row-level triggers."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ट्रिगर के समय और निष्पादन स्तर के वर्गीकरण को दर्शाने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "डेटाबेस ट्रिगर विशिष्ट समय और स्तर की श्रेणियों में कार्य करते हैं से शुरू करें, तालिका संशोधनों का संदर्भ दें, `BEFORE` व `AFTER` तथा स्टेटमेंट व रो-लेवल नियमों का तरीका बताएं, और स्वचालित नियंत्रण प्रदान करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u17_t1",
+              "text": "डेटाबेस ट्रिगर विशिष्ट समय और स्तर की श्रेणियों में कार्य करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u17_t2",
+              "text": "रिलेशनल तालिका संशोधन प्रक्रियाओं के निष्पादन के दौरान",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u17_t3",
+              "text": "और `BEFORE` या `AFTER` निष्पादन को स्टेटमेंट-स्तरीय अथवा रो-स्तरीय नियमों के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u17_t4",
+              "text": "ये सटीक नियंत्रण प्रदान करते हैं चाहे एकल जांच करनी हो या प्रत्येक बदली हुई पंक्ति को लॉग करना हो",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u17_d1",
+              "category": "logical",
+              "text": "और तालिका में संशोधित प्रत्येक व्यक्तिगत पंक्ति के लिए स्टेटमेंट-स्तरीय ट्रिगर्स को बार-बार चलाने पर बाध्य करके",
+              "penalty_explanation": "स्टेटमेंट-स्तरीय ट्रिगर केवल एक बार चलता है, प्रत्येक पंक्ति के लिए बार-बार चलने का कार्य रो-लेवल ट्रिगर करता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "BEFORE and AFTER determine trigger timing, while Statement-level fires once and Row-level fires for every modified row[cite: 22].",
+        "hi": "BEFORE और AFTER ट्रिगर का समय तय करते हैं, जबकि स्टेटमेंट-लेवल एक बार और रो-लेवल प्रत्येक संशोधित पंक्ति के लिए चलता है[cite: 22]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Context Area and Active Set Architecture",
+          "hi": "कॉन्टेक्स्ट एरिया और एक्टिव सेट आर्किटेक्चर"
+        },
+        "theory": {
+          "en": "Whenever an SQL statement is processed, the PL/SQL engine allocates a dedicated memory workspace known as the context area[cite: 23]. This area stores essential processing data, including row data and query status structures[cite: 23]. A cursor is a pointer referencing this context area[cite: 23]. The specific collection of rows retrieved and held within the context area by a query is defined as the Active Set[cite: 23].",
+          "hi": "जब भी किसी SQL स्टेटमेंट को प्रोसेस किया जाता है, तो PL/SQL इंजन एक समर्पित मेमोरी क्षेत्र आवंटित करता है जिसे कॉन्टेक्स्ट एरिया कहा जाता है[cite: 23]। यह क्षेत्र क्वेरी के लिए आवश्यक जानकारी और पंक्तियों को संग्रहीत करता है[cite: 23]। कर्सर इस कॉन्टेक्स्ट एरिया को संदर्भित करने वाला एक पॉइंटर (सूचक) होता है[cite: 23]। किसी क्वेरी द्वारा इस मेमोरी क्षेत्र में प्राप्त और रखी गई पंक्तियों के सेट को 'एक्टिव सेट' कहा जाता है[cite: 23]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Cursor Pointer &amp; Context Area Active Set</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">SQL Query</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">SELECT Statement</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Context Area</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Memory Workspace</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Cursor Pointer</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Manages Active Set</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Triggers Memory</tspan><tspan x=\"120\" dy=\"1.2em\">Allocation on Run</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Holds Active Set</tspan><tspan x=\"300\" dy=\"1.2em\">Returned Data Rows</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Pointer Reference</tspan><tspan x=\"480\" dy=\"1.2em\">Tracks Record State</tspan></text></svg>",
+          "caption": {
+            "en": "Cursor architecture showing a memory pointer targeting the context area workspace holding the query active set[cite: 23].",
+            "hi": "कर्सर संरचना जो क्वेरी के एक्टिव सेट को रखने वाले कॉन्टेक्स्ट एरिया मेमोरी को लक्षित करने वाले पॉइंटर को दर्शाती है[cite: 23]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how cursors point to the context area and manage the active set.",
+          "hint": "Start with cursors acting as structural memory pointers, mention executing query statements in PL/SQL, explain targeting the private context area holding the active set, and conclude with managing retrieved rows.",
+          "target_sequence": [
+            {
+              "id": "en_u18_t1",
+              "text": "Cursors operate as structural memory pointers",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u18_t2",
+              "text": "whenever SQL query commands are executed within a PL/SQL block",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u18_t3",
+              "text": "and by referencing the allocated context area that stores the retrieved active set of rows",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u18_t4",
+              "text": "they enable programmatic navigation and state tracking across returned database records",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u18_d1",
+              "category": "logical",
+              "text": "and by permanently deleting the context area workspace memory before any data rows can be loaded",
+              "penalty_explanation": "The context area must be created and maintained to store the active set of rows; it is not deleted prior to loading."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "कर्सर द्वारा कॉन्टेक्स्ट एरिया और एक्टिव सेट को प्रबंधित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "कर्सर संरचनात्मक मेमोरी पॉइंटर्स के रूप में कार्य करते हैं से शुरू करें, क्वेरी कमांड के निष्पादन का संदर्भ दें, एक्टिव सेट रखने वाले कॉन्टेक्स्ट एरिया को संदर्भित करने का तरीका बताएं, और रिकॉर्ड्स के प्रबंधन पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u18_t1",
+              "text": "कर्सर संरचनात्मक मेमोरी पॉइंटर्स के रूप में कार्य करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u18_t2",
+              "text": "जब भी किसी PL/SQL ब्लॉक में SQL क्वेरी निष्पादित की जाती है",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u18_t3",
+              "text": "और पंक्तियों के एक्टिव सेट को संग्रहीत करने वाले आवंटित कॉन्टेक्स्ट एरिया का संदर्भ देकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u18_t4",
+              "text": "ये प्राप्त डेटाबेस रिकॉर्ड्स के बीच प्रोग्रामेटिक नेविगेशन और स्थिति ट्रैकिंग को सक्षम करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u18_d1",
+              "category": "logical",
+              "text": "और किसी भी डेटा पंक्ति के लोड होने से पहले ही कॉन्टेक्स्ट एरिया मेमोरी को हमेशा के लिए मिटाकर",
+              "penalty_explanation": "कॉन्टेक्स्ट एरिया एक्टिव सेट को सुरक्षित रखने के लिए बनाया जाता है, डेटा आने से पहले इसे मिटाया नहीं जाता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "A context area is the memory workspace allocated for SQL processing, the active set is the rows it holds, and a cursor points to it[cite: 23].",
+        "hi": "कॉन्टेक्स्ट एरिया SQL प्रोसेसिंग के लिए आवंटित मेमोरी क्षेत्र है, एक्टिव सेट इसकी पंक्तियाँ हैं, और कर्सर इसे इंगित करने वाला पॉइंटर है[cite: 23]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Implicit vs. Explicit Cursor Management",
+          "hi": "इम्प्लिसिट बनाम एक्सप्लिसिट कर्सर प्रबंधन"
+        },
+        "theory": {
+          "en": "PL/SQL establishes two distinct operational models for cursor management: implicit and explicit[cite: 23]. An implicit cursor is generated automatically by the engine whenever an SQL statement runs without an explicit cursor declaration[cite: 23]. Developers cannot control an implicit cursor's lifecycle, and the engine automatically closes it after execution[cite: 23]. An explicit cursor is declared by the programmer in the DECLARE section for multi-row queries, providing developer control over opening, fetching, and closing[cite: 23]. Explicit cursors remain open until explicitly closed[cite: 23].",
+          "hi": "PL/SQL कर्सर प्रबंधन के लिए दो अलग-अलग मॉडल स्थापित करता है: इम्प्लिसिट और एक्सप्लिसिट[cite: 23]। जब भी कोई SQL स्टेटमेंट बिना किसी एक्सप्लिसिट घोषणा के चलता है, तो इंजन स्वचालित रूप से एक इम्प्लिसिट कर्सर बनाता है[cite: 23]। डेवलपर्स इम्प्लिसिट कर्सर को नियंत्रित नहीं कर सकते, और इंजन इसे निष्पादन के तुरंत बाद स्वतः बंद कर देता है[cite: 23]। इसके विपरीत, एक एक्सप्लिसिट कर्सर प्रोग्रामर द्वारा DECLARE अनुभाग में घोषित किया जाता है, जो इसे खोलने, डेटा निकालने और बंद करने पर पूर्ण नियंत्रण प्रदान करता है[cite: 23]। एक्सप्लिसिट कर्सर स्वतः बंद नहीं होते[cite: 23]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Implicit vs. Explicit Cursor Lifecycle</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Implicit Cursor</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Auto-Created | Auto-Closed</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Explicit Cursor</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Declared in DECLARE | Controlled</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Engine Managed</tspan><tspan x=\"100\" dy=\"1.2em\">Default Execution</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Closes Automatically</tspan><tspan x=\"225\" dy=\"1.2em\">No User Control</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Programmer Defined</tspan><tspan x=\"375\" dy=\"1.2em\">DECLARE Section</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Manual Lifecycle</tspan><tspan x=\"500\" dy=\"1.2em\">OPEN / FETCH / CLOSE</tspan></text></svg>",
+          "caption": {
+            "en": "Cursor lifecycle comparison contrasting engine-managed implicit auto-closure with programmer-managed explicit declarations[cite: 23].",
+            "hi": "कर्सर जीवनचक्र तुलना जो इंजन द्वारा प्रबंधित स्वतः-समाप्त इम्प्लिसिट कर्सर और प्रोग्रामर द्वारा घोषित एक्सप्लिसिट कर्सर के अंतर को दर्शाती है[cite: 23]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence distinguishing implicit cursors from explicit cursors.",
+          "hint": "Start with implicit and explicit cursors providing contrasting memory controls, mention executing relational queries in PL/SQL, explain closing automatically under implicit mode versus requiring declared developer management under explicit mode, and conclude with separating automated execution from fine-grained record retrieval.",
+          "target_sequence": [
+            {
+              "id": "en_u19_t1",
+              "text": "Implicit and explicit cursors provide distinct operational controls",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u19_t2",
+              "text": "over SQL statement processing within procedural routines",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u19_t3",
+              "text": "and by closing automatically under engine management versus requiring explicit declaration, opening, and fetching",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u19_t4",
+              "text": "they distinguish automated query execution from fine-grained, developer-controlled multi-row record navigation",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u19_d1",
+              "category": "logical",
+              "text": "and by forcing explicit cursors to terminate and close automatically before any rows can be fetched",
+              "penalty_explanation": "Explicit cursors remain open for row fetching and must be closed manually by the developer."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "इम्प्लिसिट और एक्सप्लिसिट कर्सर के अंतर को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "इम्प्लिसिट और एक्सप्लिसिट कर्सर विशिष्ट परिचालन नियंत्रण प्रदान करते हैं से शुरू करें, प्रोसीजरल रूटीन का संदर्भ दें, स्वतः बंद होने बनाम मैन्युअल घोषणा व प्रबंधन का तरीका बताएं, और स्वचालित निष्पादन को नियंत्रित नेविगेशन से अलग करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u19_t1",
+              "text": "इम्प्लिसिट और एक्सप्लिसिट कर्सर विशिष्ट परिचालन नियंत्रण प्रदान करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u19_t2",
+              "text": "प्रोसीजरल रूटीन के भीतर SQL स्टेटमेंट प्रोसेसिंग के दौरान",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u19_t3",
+              "text": "और इंजन द्वारा स्वतः बंद होकर बनाम प्रोग्रामर द्वारा स्पष्ट घोषणा, ओपन और फेच की मांग करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u19_t4",
+              "text": "ये स्वचालित क्वेरी निष्पादन को डेवलपर-नियंत्रित बहु-पंक्ति रिकॉर्ड नेविगेशन से अलग करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u19_d1",
+              "category": "logical",
+              "text": "और एक्सप्लिसिट कर्सर को पंक्तियों को निकालने से पहले ही स्वतः बंद होने पर मजबूर करके",
+              "penalty_explanation": "एक्सप्लिसिट कर्सर पंक्तियों को निकालने के लिए खुले रहते हैं और प्रोग्रामर द्वारा मैन्युअल रूप से बंद किए जाते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Implicit cursors are created and closed automatically by the engine, whereas explicit cursors are declared and managed manually by the programmer[cite: 23].",
+        "hi": "इम्प्लिसिट कर्सर इंजन द्वारा स्वतः बनाए और बंद किए जाते हैं, जबकि एक्सप्लिसिट कर्सर प्रोग्रामर द्वारा घोषित और प्रबंधित किए जाते हैं[cite: 23]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Cursor Status Attributes: FOUND, NOTFOUND, ISOPEN, and ROWCOUNT",
+          "hi": "कर्सर स्थिति विशेषताएं: FOUND, NOTFOUND, ISOPEN और ROWCOUNT"
+        },
+        "theory": {
+          "en": "PL/SQL exposes four status attributes to inspect cursor execution and row results[cite: 23, 24]. The %FOUND attribute returns TRUE if an SQL statement affected or fetched one or more rows[cite: 23]. Conversely, %NOTFOUND returns TRUE if no rows were affected[cite: 23, 24]. The %ISOPEN attribute evaluates to TRUE if an explicit cursor is open; it always returns FALSE for implicit cursors because the engine closes them automatically upon execution[cite: 24]. Finally, %ROWCOUNT returns an integer count representing the total number of rows affected by the statement[cite: 24].",
+          "hi": "PL/SQL कर्सर निष्पादन और पंक्तियों के परिणामों की जांच के लिए चार स्थिति विशेषताओं को प्रस्तुत करता है[cite: 23, 24]। %FOUND विशेषता TRUE लौटाती है यदि SQL स्टेटमेंट ने एक या अधिक पंक्तियों को प्रभावित या प्राप्त किया हो[cite: 23]। इसके विपरीत, %NOTFOUND तब TRUE लौटाती है जब कोई पंक्ति प्रभावित न हुई हो[cite: 23, 24]। %ISOPEN विशेषता TRUE लौटाती है यदि कोई एक्सप्लिसिट कर्सर खुला हो; इम्प्लिसिट कर्सर के लिए यह हमेशा FALSE लौटाती है क्योंकि इंजन उन्हें तुरंत बंद कर देता है[cite: 24]। अंत में, %ROWCOUNT स्टेटमेंट द्वारा प्रभावित कुल पंक्तियों की संख्या को एक पूर्णांक के रूप में लौटाता है[cite: 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">PL/SQL Cursor Attributes Dashboard</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">%FOUND</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Rows Affected: TRUE</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">%NOTFOUND</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">No Rows: TRUE</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">%ISOPEN</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Cursor Open Check</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">%ROWCOUNT</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Total Row Count</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Row Exists</tspan><tspan x=\"102\" dy=\"1.2em\">Success Flag</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Empty Fetch</tspan><tspan x=\"232\" dy=\"1.2em\">Loop Exit Check</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">State Monitor</tspan><tspan x=\"362\" dy=\"1.2em\">FALSE for Implicit</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Affected Tally</tspan><tspan x=\"495\" dy=\"1.2em\">Total Rows Tracked</tspan></text></svg>",
+          "caption": {
+            "en": "Cursor attribute dashboard illustrating status metrics for row detection, loop termination, open state, and row count tracking[cite: 23, 24].",
+            "hi": "कर्सर विशेषता डैशबोर्ड जो पंक्ति का पता लगाने, लूप समाप्ति, ओपन स्थिति और पंक्ति गणना के मेट्रिक्स को दर्शाता है[cite: 23, 24]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how cursor attributes report SQL statement execution results.",
+          "hint": "Start with cursor attributes providing status feedback, mention inspecting execution outcomes in PL/SQL blocks, explain tracking success with %FOUND, misses with %NOTFOUND, open states with %ISOPEN, and tallying with %ROWCOUNT, and conclude with empowering conditional loop control.",
+          "target_sequence": [
+            {
+              "id": "en_u20_t1",
+              "text": "Cursor status attributes report essential execution feedback",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u20_t2",
+              "text": "following relational query execution inside a PL/SQL block",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u20_t3",
+              "text": "and by tracking row matches with `%FOUND`, empty results with `%NOTFOUND`, open status with `%ISOPEN`, and counts with `%ROWCOUNT`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u20_t4",
+              "text": "they empower robust conditional branching and verify record processing metrics accurately",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u20_d1",
+              "category": "logical",
+              "text": "and by forcing `%ISOPEN` to return TRUE for implicit cursors even after the engine has closed them",
+              "penalty_explanation": "Implicit cursors are closed automatically after execution, so %ISOPEN always evaluates to FALSE for them."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "कर्सर विशेषताओं द्वारा SQL निष्पादन परिणामों की रिपोर्ट करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "कर्सर स्थिति विशेषताएं आवश्यक निष्पादन फीडबैक प्रदान करती हैं से शुरू करें, क्वेरी निष्पादन का संदर्भ दें, `%FOUND`, `%NOTFOUND`, `%ISOPEN` और `%ROWCOUNT` द्वारा ट्रैकिंग का तरीका बताएं, और कंडीशनल ब्रांचिंग को सशक्त करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u20_t1",
+              "text": "कर्सर स्थिति विशेषताएं आवश्यक निष्पादन फीडबैक प्रदान करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u20_t2",
+              "text": "एक PL/SQL ब्लॉक में रिलेशनल क्वेरी निष्पादन के बाद",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u20_t3",
+              "text": "और `%FOUND` से मैच, `%NOTFOUND` से शून्य परिणाम, `%ISOPEN` से ओपन स्थिति तथा `%ROWCOUNT` से कुल संख्या ट्रैक करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u20_t4",
+              "text": "ये मजबूत कंडीशनल ब्रांचिंग को सशक्त करती हैं और रिकॉर्ड प्रोसेसिंग मेट्रिक्स को सटीक रूप से सत्यापित करती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u20_d1",
+              "category": "logical",
+              "text": "और इंजन द्वारा बंद किए जाने के बाद भी इम्प्लिसिट कर्सर के लिए `%ISOPEN` को TRUE लौटाने पर मजबूर करके",
+              "penalty_explanation": "इम्प्लिसिट कर्सर स्वतः बंद हो जाते हैं, इसलिए उनके लिए %ISOPEN हमेशा FALSE होता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "%FOUND and %NOTFOUND test row presence, %ISOPEN checks if an explicit cursor is active, and %ROWCOUNT tallies affected rows[cite: 23, 24].",
+        "hi": "%FOUND और %NOTFOUND पंक्ति उपस्थिति की जांच करते हैं, %ISOPEN कर्सर खुला होने की जांच करता है, और %ROWCOUNT प्रभावित पंक्तियों की गिनती करता है[cite: 23, 24]।"
+      }
+    }
+  ]
+}
