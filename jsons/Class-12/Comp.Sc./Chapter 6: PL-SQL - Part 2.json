@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 6: PL/SQL - Part 2",
+      "hi": "अध्याय 6: PL/SQL - भाग 2"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Flow-Control Architecture: Conditional vs. Looping Structures",
+          "hi": "फ्लो-कंट्रोल संरचना: कंडीशनल बनाम लूपिंग संरचनाएं"
+        },
+        "theory": {
+          "en": "In PL/SQL, flow-control structures govern the execution sequence of code blocks based on conditions or iteration rules[cite: 14]. These mechanisms divide into conditional structures (branching) and looping structures (iterative control)[cite: 14]. Conditional structures evaluate boolean criteria to direct execution along specific execution paths[cite: 14], whereas looping structures repeat statements until terminating conditions are satisfied[cite: 14].",
+          "hi": "PL/SQL में, फ्लो-कंट्रोल संरचनाएं शर्तों या पुनरावृत्ति नियमों के आधार पर कोड ब्लॉक्स के निष्पादन क्रम को नियंत्रित करती हैं[cite: 14]। ये तंत्र कंडीशनल संरचनाओं (ब्रांचिंग) और लूपिंग संरचनाओं (पुनरावृत्ति नियंत्रण) में विभाजित होते हैं[cite: 14]। कंडीशनल संरचनाएं बूलियन मानदंडों का मूल्यांकन करके विशिष्ट पथों पर निष्पादन को निर्देशित करती हैं[cite: 14], जबकि लूपिंग संरचनाएं समाप्ति शर्त पूरी होने तक कथनों को दोहराती हैं[cite: 14]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">PL/SQL Flow-Control Architecture</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Flow Control</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Execution Sequence</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Conditional</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Branching (IF)</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Looping</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Iterative (LOOP)</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Governs Order</tspan><tspan x=\"120\" dy=\"1.2em\">Logic Routing</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Evaluates Criteria</tspan><tspan x=\"300\" dy=\"1.2em\">Mutually Exclusive</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Repeats Execution</tspan><tspan x=\"480\" dy=\"1.2em\">Counted or Tested</tspan></text></svg>",
+          "caption": {
+            "en": "Taxonomy of PL/SQL flow control distinguishing conditional branching logic from iterative looping routines[cite: 14].",
+            "hi": "PL/SQL फ्लो कंट्रोल का वर्गीकरण जो कंडीशनल ब्रांचिंग लॉजिक को पुनरावृत्ति लूपिंग रूटीन से अलग करता है[cite: 14]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how flow-control structures regulate PL/SQL program execution.",
+          "hint": "Start with flow-control structures managing statement sequencing, mention evaluating operational logic inside code blocks, explain separating conditional branching routes from iterative looping cycles, and conclude with directing program execution.",
+          "target_sequence": [
+            {
+              "id": "en_u6_t1",
+              "text": "Flow-control structures regulate the sequence of statement execution",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u6_t2",
+              "text": "throughout procedural PL/SQL application blocks",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u6_t3",
+              "text": "and by dividing logic into conditional branching pathways alongside iterative looping cycles",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u6_t4",
+              "text": "they direct program execution dynamically according to changing database conditions",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u6_d1",
+              "category": "logical",
+              "text": "they force every single program statement to execute in strict linear succession without condition checks",
+              "penalty_explanation": "Flow-control structures allow conditional jumping and looping rather than enforcing rigid linear execution."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PL/SQL में फ्लो-कंट्रोल संरचनाओं द्वारा प्रोग्राम निष्पादन को नियंत्रित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "फ्लो-कंट्रोल संरचनाएं कथनों के निष्पादन क्रम को नियंत्रित करती हैं से शुरू करें, प्रोसीजरल ब्लॉक्स का संदर्भ दें, कंडीशनल ब्रांचिंग और लूपिंग में विभाजित करने का तरीका बताएं, और प्रोग्राम को गतिशील रूप से निर्देशित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u6_t1",
+              "text": "फ्लो-कंट्रोल संरचनाएं कथनों के निष्पादन क्रम को नियंत्रित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u6_t2",
+              "text": "प्रोसीजरल PL/SQL एप्लिकेशन ब्लॉक्स के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u6_t3",
+              "text": "और लॉजिक को कंडीशनल ब्रांचिंग मार्गों तथा पुनरावृत्ति लूपिंग चक्रों में विभाजित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u6_t4",
+              "text": "ये बदलती डेटाबेस परिस्थितियों के अनुसार प्रोग्राम को गतिशील रूप से निर्देशित करती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u6_d1",
+              "category": "logical",
+              "text": "ये बिना किसी शर्त की जांच के प्रत्येक कथन को अनिवार्य रूप से एक सीधी रेखा में चलाने पर मजबूर करती हैं",
+              "penalty_explanation": "कंट्रोल-फ्लो संरचनाएं सीधी रेखा में चलने के बजाय शर्तों और लूप के आधार पर मार्ग बदलती हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Flow-control structures govern execution paths in PL/SQL by dividing logic into conditional branching and iterative looping[cite: 14].",
+        "hi": "फ्लो-कंट्रोल संरचनाएं लॉजिक को कंडीशनल ब्रांचिंग और लूपिंग में विभाजित करके PL/SQL निष्पादन पथ को नियंत्रित करती हैं[cite: 14]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Single-Path Decision Guard: IF-THEN-END IF",
+          "hi": "एकल-पथ निर्णय गार्ड: IF-THEN-END IF"
+        },
+        "theory": {
+          "en": "The IF-THEN-END IF statement represents the fundamental one-way conditional decision construct in PL/SQL[cite: 14, 16]. It evaluates a boolean test condition: if the condition resolves to TRUE, the enclosed sequence of statements between THEN and END IF executes[cite: 16]. If the condition evaluates to FALSE or NULL, the enclosed block is skipped entirely without error, proceeding directly to subsequent code[cite: 16, 17].",
+          "hi": "IF-THEN-END IF कथन PL/SQL में बुनियादी एक-तरफ़ा कंडीशनल निर्णय संरचना का प्रतिनिधित्व करता है[cite: 14, 16]। यह एक बूलियन परीक्षण शर्त का मूल्यांकन करता है: यदि शर्त TRUE होती है, तो THEN और END IF के बीच संलग्न कथनों का क्रम निष्पादित होता है[cite: 16]। यदि शर्त FALSE या NULL होती है, तो संलग्न ब्लॉक को पूरी तरह से छोड़ दिया जाता है और निष्पादन आगे बढ़ जाता है[cite: 16, 17]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">IF-THEN One-Way Decision Gate</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">IF age &gt;= 18</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Condition Gate</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">TRUE Route</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">PUT_LINE(&apos;Vote&apos;)</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">FALSE Route</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Bypassed Silently</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#4ade80\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#f87171\" stroke-width=\"2\" stroke-dasharray=\"4\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#f87171\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Evaluates Boolean</tspan><tspan x=\"120\" dy=\"1.2em\">Truth Criteria</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Executes Action</tspan><tspan x=\"300\" dy=\"1.2em\">Affirmative Code</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Zero Output</tspan><tspan x=\"480\" dy=\"1.2em\">Clean Skip</tspan></text></svg>",
+          "caption": {
+            "en": "Single-direction condition guard directing execution to action statements when TRUE or bypassing cleanly when FALSE[cite: 16, 17].",
+            "hi": "एकल-दिशा शर्त गार्ड जो शर्त सत्य होने पर कोड निष्पादित करता है और असत्य होने पर बिना आउटपुट दिए आगे बढ़ जाता है[cite: 16, 17]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing the execution mechanics of the IF-THEN statement.",
+          "hint": "Start with the IF-THEN conditional construct evaluating boolean test expressions, mention determining execution eligibility inside procedural code, explain executing statements when true while skipping when false, and conclude with managing single-path decision logic.",
+          "target_sequence": [
+            {
+              "id": "en_u7_t1",
+              "text": "The `IF-THEN` conditional statement evaluates boolean test criteria",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u7_t2",
+              "text": "during procedural execution inside a PL/SQL block",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u7_t3",
+              "text": "and by running enclosed statements strictly when TRUE while bypassing execution silently when FALSE",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u7_t4",
+              "text": "it provides single-path conditional execution without requiring an alternate fallback branch",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u7_d1",
+              "category": "logical",
+              "text": "it triggers a fatal compiler crash whenever the test condition evaluates to a false state",
+              "penalty_explanation": "When an IF-THEN condition is FALSE, PL/SQL simply skips the block without throwing an error."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PL/SQL में IF-THEN स्टेटमेंट की कार्यप्रणाली को दर्शाने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "`IF-THEN` कंडीशनल स्टेटमेंट बूलियन परीक्षण मानदंडों का मूल्यांकन करता है से शुरू करें, निष्पादन के संदर्भ को बताएं, शर्त सत्य होने पर चलाने व असत्य पर छोड़ने का तरीका बताएं, और बिना वैकल्पिक शाखा के निर्णय करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u7_t1",
+              "text": "`IF-THEN` कंडीशनल स्टेटमेंट बूलियन परीक्षण मानदंडों का मूल्यांकन करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u7_t2",
+              "text": "एक PL/SQL ब्लॉक के भीतर निष्पादन के दौरान",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u7_t3",
+              "text": "और शर्त TRUE होने पर कथनों को चलाकर तथा FALSE होने पर चुपचाप आगे बढ़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u7_t4",
+              "text": "यह बिना किसी वैकल्पिक फ़ॉलबैक शाखा के एकल-पथ कंडीशनल निष्पादन प्रदान करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u7_d1",
+              "category": "logical",
+              "text": "यह शर्त असत्य होने पर पूरे प्रोग्राम को क्रैश करके एक घातक त्रुटि उत्पन्न करता है",
+              "penalty_explanation": "शर्त FALSE होने पर PL/SQL ब्लॉक को छोड़ देता है, कोई त्रुटि उत्पन्न नहीं करता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "IF-THEN executes enclosed statements strictly when the condition is TRUE; if FALSE, the statements are bypassed without action[cite: 16, 17].",
+        "hi": "IF-THEN कथनों को केवल तभी चलाता है जब शर्त TRUE हो; शर्त FALSE होने पर कथनों को बिना किसी कार्रवाई के छोड़ दिया जाता है[cite: 16, 17]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Two-Way Alternative Branching: IF-THEN-ELSE-END IF",
+          "hi": "दो-तरफ़ा वैकल्पिक ब्रांचिंग: IF-THEN-ELSE-END IF"
+        },
+        "theory": {
+          "en": "The IF-THEN-ELSE-END IF construct establishes a mutually exclusive two-way decision pathway in PL/SQL[cite: 14, 17]. When the condition evaluates to TRUE, the primary statement block following THEN executes[cite: 17]. When the condition resolves to FALSE or NULL, control diverts to the secondary statement block governed by ELSE[cite: 17]. This guarantees that exactly one of the two code blocks will execute under all operational outcomes[cite: 17].",
+          "hi": "IF-THEN-ELSE-END IF संरचना PL/SQL में परस्पर अनन्य दो-तरफ़ा निर्णय पथ स्थापित करती है[cite: 14, 17]। जब शर्त TRUE होती है, तो THEN के बाद वाला प्राथमिक कथन ब्लॉक चलता है[cite: 17]। जब शर्त FALSE या NULL होती है, तो नियंत्रण ELSE के तहत दिए गए द्वितीयक कथन ब्लॉक पर चला जाता है[cite: 17]। यह गारंटी देता है कि सभी परिस्थितियों में दोनों में से ठीक एक कोड ब्लॉक अवश्य निष्पादित होगा[cite: 17]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">IF-THEN-ELSE Binary Execution Flow</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">IF age &gt;= 18</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Boolean Test</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">THEN Branch</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">PUT_LINE(&apos;Vote&apos;)</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">ELSE Branch</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">PUT_LINE(&apos;Cannot&apos;)</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#4ade80\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#f87171\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#f87171\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Evaluates Age</tspan><tspan x=\"120\" dy=\"1.2em\">Value = 17</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Affirmative Path</tspan><tspan x=\"300\" dy=\"1.2em\">Condition TRUE</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Fallback Path</tspan><tspan x=\"480\" dy=\"1.2em\">Condition FALSE</tspan></text></svg>",
+          "caption": {
+            "en": "Binary execution branching routing program flow to either the affirmative THEN block or fallback ELSE block based on truth evaluation[cite: 17].",
+            "hi": "द्वि-मार्गी निष्पादन प्रवाह जो सत्यता मूल्यांकन के आधार पर प्रोग्राम को THEN ब्लॉक या ELSE फ़ॉलबैक ब्लॉक पर भेजता है[cite: 17]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the IF-THEN-ELSE statement handles two-way conditional branching.",
+          "hint": "Start with the IF-THEN-ELSE construct establishing mutually exclusive paths, mention managing program routing inside executable blocks, explain executing primary code when true and fallback code under ELSE when false, and conclude with guaranteeing execution of one valid branch.",
+          "target_sequence": [
+            {
+              "id": "en_u8_t1",
+              "text": "The `IF-THEN-ELSE` construct establishes mutually exclusive execution paths",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u8_t2",
+              "text": "across procedural branches within a PL/SQL block",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u8_t3",
+              "text": "and by running the primary block when TRUE while routing control to `ELSE` when FALSE",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u8_t4",
+              "text": "it guarantees that exactly one designated statement set executes without operational ambiguity",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u8_d1",
+              "category": "logical",
+              "text": "it runs both the primary affirmative block and the fallback else block simultaneously on every pass",
+              "penalty_explanation": "An IF-THEN-ELSE statement executes strictly one branch or the other, never both simultaneously."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "IF-THEN-ELSE स्टेटमेंट द्वारा दो-तरफ़ा कंडीशनल ब्रांचिंग संभालने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "`IF-THEN-ELSE` संरचना परस्पर अनन्य निष्पादन पथ स्थापित करती है से शुरू करें, PL/SQL ब्लॉक का संदर्भ दें, TRUE पर पहला और FALSE पर `ELSE` ब्लॉक चलाने का तरीका बताएं, और ठीक एक ब्लॉक चलने की गारंटी पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u8_t1",
+              "text": "`IF-THEN-ELSE` संरचना परस्पर अनन्य निष्पादन पथ स्थापित करती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u8_t2",
+              "text": "एक PL/SQL ब्लॉक के भीतर प्रोसीजरल शाखाओं के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u8_t3",
+              "text": "और शर्त TRUE होने पर मुख्य ब्लॉक चलाकर तथा FALSE होने पर `ELSE` पर नियंत्रण भेजकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u8_t4",
+              "text": "यह गारंटी देती है कि बिना किसी अस्पष्टता के ठीक एक निर्धारित कथन सेट अवश्य चलेगा",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u8_d1",
+              "category": "logical",
+              "text": "यह प्रत्येक चक्र में मुख्य सकारात्मक ब्लॉक और फ़ॉलबैक एल्स ब्लॉक दोनों को एक साथ चलाती है",
+              "penalty_explanation": "IF-THEN-ELSE संरचना में दोनों ब्लॉक एक साथ कभी नहीं चलते, केवल एक ही निष्पादित होता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "IF-THEN-ELSE routes execution to the THEN block when TRUE, or falls back to the ELSE block when FALSE[cite: 17].",
+        "hi": "IF-THEN-ELSE शर्त TRUE होने पर THEN ब्लॉक चलाता है, और FALSE होने पर वैकल्पिक ELSE ब्लॉक पर जाता है[cite: 17]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Multi-Branch Decision Ladder: IF-THEN-ELSIF-ELSE-END IF",
+          "hi": "बहु-शाखीय निर्णय लैडर: IF-THEN-ELSIF-ELSE-END IF"
+        },
+        "theory": {
+          "en": "The IF-THEN-ELSIF-ELSE-END IF construct evaluates multi-tier conditional logic where more than two distinct outcomes exist[cite: 14, 18]. The PL/SQL engine checks test conditions sequentially from top to bottom: the moment any condition evaluates to TRUE, its corresponding statement block executes and the entire remaining ladder is bypassed[cite: 18]. If none of the tested conditions evaluate to TRUE, execution defaults to the trailing ELSE statement[cite: 18].",
+          "hi": "IF-THEN-ELSIF-ELSE-END IF संरचना बहु-स्तरीय कंडीशनल लॉजिक का मूल्यांकन करती है जहाँ दो से अधिक परिणाम होते हैं[cite: 14, 18]। PL/SQL इंजन ऊपर से नीचे की ओर क्रमिक रूप से शर्तों की जांच करता है: जैसे ही कोई शर्त TRUE मिलती है, उसका संबंधित ब्लॉक निष्पादित हो जाता है और बाकी पूरी लैडर को छोड़ दिया जाता है[cite: 18]। यदि कोई भी शर्त सत्य नहीं होती है, तो निष्पादन स्वतः अंतिम ELSE कथन पर चला जाता है[cite: 18]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Cascading Decision Ladder ($m = 65)</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">IF m &gt;= 75</text><text x=\"120\" y=\"115\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">FALSE &rarr; Skip</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">ELSIF m &gt;= 33</text><text x=\"300\" y=\"115\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">TRUE &rarr; &apos;Pass&apos;</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">ELSE</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Bypassed Exit</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#38bdf8\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Initial Test</tspan><tspan x=\"120\" dy=\"1.2em\">Distinction Missed</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Matches Test</tspan><tspan x=\"300\" dy=\"1.2em\">Executes Output</tspan></text><text x=\"480\" y=\"172\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Fallback Path</tspan><tspan x=\"480\" dy=\"1.2em\">Never Reached</tspan></text></svg>",
+          "caption": {
+            "en": "Sequential decision ladder evaluating conditions in order, executing the first satisfied branch, and bypassing remaining clauses[cite: 18].",
+            "hi": "क्रमिक निर्णय लैडर जो ऊपर से नीचे शर्तों की जांच करती है, पहली सत्य शर्त को चलाती है और शेष को छोड़ देती है[cite: 18]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how the IF-THEN-ELSIF ladder processes cascading decisions.",
+          "hint": "Start with the IF-THEN-ELSIF construct evaluating multi-tier conditions, mention processing sequential tests inside procedural code, explain executing the first true branch while bypassing downstream clauses, and conclude with providing an ultimate fallback under ELSE.",
+          "target_sequence": [
+            {
+              "id": "en_u9_t1",
+              "text": "The `IF-THEN-ELSIF-ELSE` construct evaluates multi-tier conditional criteria",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u9_t2",
+              "text": "in top-to-bottom sequence across complex decision workflows",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u9_t3",
+              "text": "and by running the first block matching TRUE while bypassing all subsequent clauses",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u9_t4",
+              "text": "it provides an efficient cascading dispatch with an ultimate fallback under `ELSE`",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u9_d1",
+              "category": "logical",
+              "text": "it evaluates every single downstream ELSIF block even after an earlier condition has already evaluated to TRUE",
+              "penalty_explanation": "Once a condition in an ELSIF ladder evaluates to TRUE, PL/SQL executes that block and exits the construct immediately."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "IF-THEN-ELSIF लैडर द्वारा बहु-शाखीय निर्णयों के प्रसंस्करण को सही क्रम में व्यवस्थित करें।",
+          "hint": "`IF-THEN-ELSIF-ELSE` संरचना बहु-स्तरीय मानदंडों की जांच करती है से शुरू करें, ऊपर से नीचे के क्रम का संदर्भ दें, पहले सत्य ब्लॉक को चलाने व बाकी को छोड़ने का तरीका बताएं, और `ELSE` के तहत अंतिम फ़ॉलबैक देने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u9_t1",
+              "text": "`IF-THEN-ELSIF-ELSE` संरचना बहु-स्तरीय कंडीशनल मानदंडों का मूल्यांकन करती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u9_t2",
+              "text": "जटिल निर्णय प्रवाह के अंतर्गत ऊपर से नीचे के क्रम में",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u9_t3",
+              "text": "और TRUE मिलने वाले पहले ब्लॉक को चलाकर बाद के सभी क्लॉज़ को छोड़ते हुए",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u9_t4",
+              "text": "यह `ELSE` के तहत अंतिम फ़ॉलबैक के साथ एक कुशल कैस्केडिंग डिस्पैच प्रदान करती है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u9_d1",
+              "category": "logical",
+              "text": "यह किसी पूर्व शर्त के TRUE होने के बाद भी नीचे के प्रत्येक ELSIF ब्लॉक का मूल्यांकन करती है",
+              "penalty_explanation": "एक शर्त सत्य हो जाने पर PL/SQL उस ब्लॉक को चलाकर पूरी लैडर से बाहर निकल जाता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "IF-THEN-ELSIF checks conditions sequentially, executing the first TRUE block and falling back to ELSE if no conditions match[cite: 18].",
+        "hi": "IF-THEN-ELSIF क्रमिक रूप से शर्तों की जांच करता है, पहली सत्य शर्त को चलाता है और किसी के न मिलने पर ELSE पर जाता है[cite: 18]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Conditional Keyword Rules: ELSIF Syntax and END IF Closure",
+          "hi": "कंडीशनल कीवर्ड नियम: ELSIF सिंटैक्स और END IF समापन"
+        },
+        "theory": {
+          "en": "PL/SQL enforces precise keyword syntax across all conditional structures[cite: 16, 17, 18]. Crucially, the intermediate conditional keyword is spelled strictly as ELSIF (without an 'e' between S and I)[cite: 18]; spelling it as 'ELSEIF' triggers a fatal compiler error. Every conditional construct initiated by IF must terminate with the mandatory closing statement END IF;[cite: 16, 17, 18]. Missing the trailing semicolon or omitting END IF violates block boundary grammar, preventing compilation[cite: 16, 17, 18].",
+          "hi": "PL/SQL सभी कंडीशनल संरचनाओं में सटीक कीवर्ड सिंटैक्स लागू करता है[cite: 16, 17, 18]। विशेष रूप से, मध्यवर्ती शर्त कीवर्ड की वर्तनी सख्ती से ELSIF (S और I के बीच 'e' के बिना) होती है[cite: 18]; इसे 'ELSEIF' लिखने पर कंपाइलर त्रुटि आती है। IF से शुरू होने वाली प्रत्येक संरचना का समापन अनिवार्य रूप से END IF; द्वारा होना चाहिए[cite: 16, 17, 18]। अंतिम सेमीकोलन छोड़ना या END IF न लिखना ब्लॉक की व्याकरण का उल्लंघन करता है, जिससे संकलन रुक जाता है[cite: 16, 17, 18]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">PL/SQL Conditional Keyword Grammar Rules</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Valid: ELSIF</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">No &apos;e&apos; (ELSIF condition THEN)</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Closure: END IF;</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Mandatory Semicolon &amp; Space</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Correct Spelling</tspan><tspan x=\"100\" dy=\"1.2em\">ELSIF Keyword</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Compiler Error</tspan><tspan x=\"225\" dy=\"1.2em\">Avoid &apos;ELSEIF&apos;</tspan></text><text x=\"375\" y=\"167\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Block Boundary</tspan><tspan x=\"375\" dy=\"1.2em\">Closes Branch</tspan></text><text x=\"500\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Grammar Rule</tspan><tspan x=\"500\" dy=\"1.2em\">Requires ;</tspan></text></svg>",
+          "caption": {
+            "en": "Syntax rules enforcing the exact spelling of ELSIF and the mandatory closing statement END IF; in PL/SQL[cite: 16, 18].",
+            "hi": "सिंटैक्स नियम जो PL/SQL में ELSIF की सटीक वर्तनी और समापन कथन END IF; की अनिवार्यता को लागू करते हैं[cite: 16, 18]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing keyword syntax rules in PL/SQL conditional blocks.",
+          "hint": "Start with PL/SQL compiler grammar enforcing keyword syntax, mention structuring decision logic, explain spelling intermediate conditions strictly as ELSIF and closing with END IF;, and conclude with avoiding compilation errors.",
+          "target_sequence": [
+            {
+              "id": "en_u10_t1",
+              "text": "PL/SQL compiler grammar enforces strict keyword conventions",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u10_t2",
+              "text": "when validating conditional branching blocks for execution",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u10_t3",
+              "text": "and by spelling intermediate branches strictly as `ELSIF` while terminating every construct with `END IF;`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u10_t4",
+              "text": "it maintains syntactical integrity and prevents fatal parser errors during compilation",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "logical",
+              "text": "it allows developers to substitute the keyword `ELSEIF` interchangeably without triggering syntax faults",
+              "penalty_explanation": "PL/SQL strictly requires the spelling ELSIF; using ELSEIF causes a syntax error."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "PL/SQL कंडीशनल ब्लॉक्स में कीवर्ड सिंटैक्स नियमों को स्पष्ट करने वाले स्वाभाविक वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "PL/SQL कंपाइलर व्याकरण सख्त कीवर्ड नियम लागू करता है से शुरू करें, सत्यापन का संदर्भ दें, `ELSIF` लिखने और `END IF;` से समाप्त करने का तरीका बताएं, और कंपाइलेशन त्रुटियों से बचने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u10_t1",
+              "text": "PL/SQL कंपाइलर व्याकरण सख्त कीवर्ड नियमों को लागू करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u10_t2",
+              "text": "निष्पादन के लिए कंडीशनल ब्रांचिंग ब्लॉक्स को मान्य करते समय",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u10_t3",
+              "text": "और मध्यवर्ती शाखाओं को सख्ती से `ELSIF` लिखकर तथा प्रत्येक संरचना को `END IF;` से समाप्त करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u10_t4",
+              "text": "यह सिंटैक्स अखंडता बनाए रखता है और संकलन के दौरान पार्सर त्रुटियों को रोकता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "logical",
+              "text": "यह डेवलपर्स को बिना किसी त्रुटि के `ELSEIF` कीवर्ड का उपयोग करने की पूरी छूट देता है",
+              "penalty_explanation": "PL/SQL में केवल ELSIF मान्य है, ELSEIF का उपयोग करने पर सिंटैक्स एरर आती है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "PL/SQL requires spelling the multi-branch keyword strictly as ELSIF and terminating all condition blocks with END IF;[cite: 16, 18].",
+        "hi": "PL/SQL में बहु-शाखा कीवर्ड को सख्ती से ELSIF लिखा जाता है और सभी शर्त ब्लॉक्स को END IF; द्वारा समाप्त किया जाता है[cite: 16, 18]।"
+      }
+    }
+  ]
+}
