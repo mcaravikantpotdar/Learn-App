@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 7: Internet Business Applications - Part 1",
+      "hi": "अध्याय 7: इंटरनेट बिजनेस एप्लिकेशन - भाग 1"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Online Services: Core Functions, Utilities, and Infrastructure Risks",
+          "hi": "ऑनलाइन सेवाएं: मुख्य कार्य, उपयोगिता और बुनियादी ढांचे के जोखिम"
+        },
+        "theory": {
+          "en": "An online service refers to any digital capability, information resource, or commercial service delivered over the internet[cite: 14]. These services enable interpersonal communication via email and video conferencing, broad knowledge retrieval using search engines, digital academic study, online gaming, and electronic banking[cite: 14]. While online services deliver high operational speed and home convenience, they remain heavily reliant on stable internet connectivity and expose users to potential digital frauds[cite: 14].",
+          "hi": "ऑनलाइन सेवा से तात्पर्य इंटरनेट पर प्रदान की जाने वाली किसी भी डिजिटल सुविधा, सूचना संसाधन या वाणिज्यिक सेवा से है[cite: 14]। ये सेवाएं ईमेल और वीडियो कॉन्फ्रेंसिंग के माध्यम से संचार, सर्च इंजन द्वारा सूचना पुनर्प्राप्ति, ऑनलाइन अध्ययन, गेमिंग और डिजिटल बैंकिंग को संभव बनाती हैं[cite: 14]। हालांकि ऑनलाइन सेवाएं तीव्र गति और घरेलू सुविधा प्रदान करती हैं, फिर भी वे स्थिर इंटरनेट कनेक्टिविटी पर अत्यधिक निर्भर हैं और उपयोगकर्ताओं को संभावित ऑनलाइन धोखाधड़ी के जोखिम में डालती हैं[cite: 14]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Online Services: Communication, Commerce &amp; Risks</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Utilities</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Chat, Study, Bank</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Benefits</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">High Speed, Comfort</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Vulnerabilities</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Down Links, Frauds</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Broad Utilities</tspan><tspan x=\"120\" dy=\"1.2em\">Web Services</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Remote Access</tspan><tspan x=\"300\" dy=\"1.2em\">Instant Processing</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Network Reliance</tspan><tspan x=\"480\" dy=\"1.2em\">Security Exposure</tspan></text></svg>",
+          "caption": {
+            "en": "Operational spectrum of online services balancing multi-sector digital utilities against internet dependencies and cyber security risks[cite: 14].",
+            "hi": "ऑनलाइन सेवाओं का दायरा जो इंटरनेट निर्भरता और सुरक्षा जोखिमों के साथ डिजिटल उपयोगिताओं को संतुलित करता है[cite: 14]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how online services deliver digital utility while managing operational risks.",
+          "hint": "Start with online services delivering diverse computational and commercial capabilities, mention routing transactions across internet infrastructure, explain combining home convenience and communication with speed, and conclude with exposing users to network dependency and fraud vulnerabilities.",
+          "target_sequence": [
+            {
+              "id": "en_u1_t1",
+              "text": "Online services provide diverse computational and commercial utilities",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u1_t2",
+              "text": "by transmitting data through public internet infrastructure",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u1_t3",
+              "text": "and by combining rapid electronic communication with remote home convenience",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u1_t4",
+              "text": "they expand modern productivity while remaining susceptible to network outages and online fraud",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u1_d1",
+              "category": "logical",
+              "text": "they completely eliminate the requirement for internet connectivity to guarantee zero security risks",
+              "penalty_explanation": "Online services inherently require active internet connectivity and face cyber security risks like fraud[cite: 14]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ऑनलाइन सेवाओं द्वारा डिजिटल उपयोगिता प्रदान करने तथा परिचालन जोखिमों से जुड़े वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "ऑनलाइन सेवाएं विविध डिजिटल और वाणिज्यिक उपयोगिता प्रदान करती हैं से शुरू करें, इंटरनेट के माध्यम से डेटा संचरण का संदर्भ दें, तीव्र संचार और घरेलू सुविधा जोड़ने का तरीका बताएं, और कनेक्टिविटी निर्भरता व धोखाधड़ी के जोखिम पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u1_t1",
+              "text": "ऑनलाइन सेवाएं विविध डिजिटल और वाणिज्यिक उपयोगिता प्रदान करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u1_t2",
+              "text": "सार्वजनिक इंटरनेट बुनियादी ढांचे के माध्यम से डेटा संचारित करके",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u1_t3",
+              "text": "और तीव्र इलेक्ट्रॉनिक संचार को घर बैठे काम करने की सुविधा के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u1_t4",
+              "text": "ये आधुनिक उत्पादकता बढ़ाती हैं लेकिन नेटवर्क विफलता और ऑनलाइन धोखाधड़ी के प्रति संवेदनशील रहती हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u1_d1",
+              "category": "logical",
+              "text": "ये शून्य सुरक्षा जोखिम सुनिश्चित करने के लिए इंटरनेट कनेक्टिविटी की आवश्यकता को पूरी तरह समाप्त कर देती हैं",
+              "penalty_explanation": "ऑनलाइन सेवाएं अनिवार्य रूप से इंटरनेट कनेक्टिविटी पर निर्भर होती हैं और इनमें धोखाधड़ी के जोखिम मौजूद रहते हैं[cite: 14]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Online services deliver rapid communication, commerce, and learning over the internet but remain dependent on connectivity and vulnerable to fraud[cite: 14].",
+        "hi": "ऑनलाइन सेवाएं इंटरनेट के माध्यम से तीव्र संचार, व्यापार और अध्ययन की सुविधा देती हैं, परंतु वे कनेक्टिविटी पर निर्भर और धोखाधड़ी के प्रति संवेदनशील होती हैं[cite: 14]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "E-Commerce Core Characteristics: 24x7 Availability and Cashless Operations",
+          "hi": "ई-कॉमर्स की मुख्य विशेषताएं: 24x7 उपलब्धता और कैश-लेस संचालन"
+        },
+        "theory": {
+          "en": "E-commerce (electronic commerce) encompasses buying, selling, or exchanging goods, commercial services, and transactional information via the internet[cite: 14]. A distinguishing feature is 24x7 round-the-clock availability, operating non-stop through day, night, and public holidays without physical store closures[cite: 14, 15]. Furthermore, e-commerce operates in a cashless environment, replacing physical currency notes with digital settlement rails including UPI, debit cards, credit cards, net-banking, NEFT, and RTGS[cite: 15].",
+          "hi": "ई-कॉमर्स (इलेक्ट्रॉनिक कॉमर्स) में इंटरनेट के माध्यम से वस्तुओं, वाणिज्यिक सेवाओं और सूचनाओं को खरीदने, बेचने या आदान-प्रदान करने की प्रक्रिया शामिल है[cite: 14]। इसकी सबसे प्रमुख विशेषता 24x7 चौबीसों घंटे उपलब्धता है, जो दिन, रात और सार्वजनिक छुट्टियों में भी बिना किसी स्टोर बंदी के निरंतर चलती है[cite: 14, 15]। इसके अतिरिक्त, ई-कॉमर्स कैश-लेस प्रणाली पर कार्य करता है, जिसमें नकद मुद्रा के स्थान पर यूपीआई, डेबिट कार्ड, क्रेडिट कार्ड, नेट-बैंकिंग, एनईएफटी और आरटीजीएस जैसी इलेक्ट्रॉनिक भुगतान विधियों का उपयोग होता है[cite: 15]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">E-Commerce Core Dimensions: 24x7 &amp; Cashless Rails</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">24x7 Access</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">No Holiday Shuts</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Electronic Rails</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">UPI, Cards, NEFT</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Cashless Trade</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Zero Paper Notes</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Round The Clock</tspan><tspan x=\"120\" dy=\"1.2em\">Day &amp; Night</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Digital Gateways</tspan><tspan x=\"300\" dy=\"1.2em\">Instant Settlement</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Frictionless Deals</tspan><tspan x=\"480\" dy=\"1.2em\">Secure Ledger</tspan></text></svg>",
+          "caption": {
+            "en": "Structural pillars of e-commerce highlighting round-the-clock availability across holidays and cashless transactions via electronic payment gateways[cite: 14, 15].",
+            "hi": "ई-कॉमर्स के प्रमुख आधार जो छुट्टियों के दौरान भी चौबीसों घंटे उपलब्धता और इलेक्ट्रॉनिक भुगतान गेटवे द्वारा कैश-लेस लेनदेन को दर्शाते हैं[cite: 14, 15]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing the defining characteristics of modern e-commerce.",
+          "hint": "Start with electronic commerce transforming retail and trade models, mention conducting operations over web networks, explain combining round-the-clock 24x7 service with cashless electronic payment methods, and conclude with eliminating physical store schedules and paper cash.",
+          "target_sequence": [
+            {
+              "id": "en_u2_t1",
+              "text": "Electronic commerce reshapes commercial business interactions",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u2_t2",
+              "text": "across global internet marketplace environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u2_t3",
+              "text": "and by combining round-the-clock 24x7 availability with cashless payment methods like UPI and net-banking",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u2_t4",
+              "text": "it enables continuous consumer transactions without physical shop hours or paper currency limitations",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u2_d1",
+              "category": "logical",
+              "text": "and by mandating physical paper currency payments while shutting down web servers entirely during public holidays",
+              "penalty_explanation": "E-commerce operates 24x7 through public holidays and relies on cashless digital payment systems[cite: 14, 15]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "आधुनिक ई-कॉमर्स की मुख्य विशेषताओं को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "इलेक्ट्रॉनिक कॉमर्स व्यावसायिक लेनदेन को नया रूप देता है से शुरू करें, वैश्विक इंटरनेट बाजारों का संदर्भ दें, 24x7 उपलब्धता को यूपीआई व नेट-बैंकिंग जैसे कैश-लेस तरीकों से जोड़ने का तरीका बताएं, और दुकानों के समय व कागजी मुद्रा की सीमाओं को समाप्त करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u2_t1",
+              "text": "इलेक्ट्रॉनिक कॉमर्स व्यावसायिक लेनदेन को नया रूप देता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u2_t2",
+              "text": "वैश्विक इंटरनेट बाज़ार परिवेश के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u2_t3",
+              "text": "और 24x7 उपलब्धता को यूपीआई तथा नेट-बैंकिंग जैसे कैश-लेस भुगतान तरीकों के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u2_t4",
+              "text": "यह भौतिक दुकानों के सीमित समय या कागजी मुद्रा की बाधाओं के बिना निरंतर व्यापार संभव बनाता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u2_d1",
+              "category": "logical",
+              "text": "और केवल नकद मुद्रा अनिवार्य करके सार्वजनिक छुट्टियों पर वेब सर्वर को पूरी तरह बंद रखकर",
+              "penalty_explanation": "ई-कॉमर्स सार्वजनिक छुट्टियों पर भी 24x7 खुला रहता है और कैश-लेस डिजिटल भुगतान पर निर्भर करता है[cite: 14, 15]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "E-commerce enables buying and selling over the internet with 24x7 availability and cashless payment methods like UPI, cards, and net-banking[cite: 14, 15].",
+        "hi": "ई-कॉमर्स इंटरनेट पर 24x7 उपलब्धता और यूपीआई, कार्ड व नेट-बैंकिंग जैसी कैश-लेस भुगतान विधियों के साथ व्यापार की सुविधा देता है[cite: 14, 15]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Comparative Analysis: Traditional Commerce vs. E-Commerce",
+          "hi": "तुलनात्मक विश्लेषण: पारंपरिक कॉमर्स बनाम ई-कॉमर्स"
+        },
+        "theory": {
+          "en": "Traditional commerce and e-commerce differ in operational channels, customer interaction, and scalability[cite: 15, 16]. Traditional commerce requires physical presence, direct face-to-face interaction, manual ledger processing, physical product examination, and instant item handover within a limited local geography[cite: 15, 16]. E-commerce operates through digital web platforms, automated transaction engines, non-contact interactions, and nationwide or worldwide delivery networks, functioning round-the-clock with standardized digital practices[cite: 15, 16].",
+          "hi": "पारंपरिक कॉमर्स और ई-कॉमर्स संचालन माध्यमों, ग्राहक संपर्क और व्यापार क्षेत्र में पूरी तरह भिन्न हैं[cite: 15, 16]। पारंपरिक कॉमर्स में भौतिक उपस्थिति, आमने-सामने सीधा संपर्क, हाथ से लेन-देन प्रसंस्करण, सामान की प्रत्यक्ष जांच और स्थानीय बाजार के भीतर तुरंत डिलीवरी शामिल होती है[cite: 15, 16]। इसके विपरीत, ई-कॉमर्स डिजिटल वेब प्लेटफॉर्म, स्वचालित लेन-देन, संपर्क-रहित प्रणाली और विश्वव्यापी वितरण नेटवर्क द्वारा चौबीसों घंटे समान मानकों के साथ कार्य करता है[cite: 15, 16]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Traditional Commerce vs. E-Commerce Infrastructure</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Traditional Commerce</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Physical Shop | Local Reach</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">E-Commerce</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Platform | Worldwide Reach</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Direct Contact</tspan><tspan x=\"100\" dy=\"1.2em\">Instant Handover</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Manual Flow</tspan><tspan x=\"225\" dy=\"1.2em\">Limited Hours</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Automated Flow</tspan><tspan x=\"375\" dy=\"1.2em\">Transit Delivery</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">24x7 Web Access</tspan><tspan x=\"500\" dy=\"1.2em\">Standard Practices</tspan></text></svg>",
+          "caption": {
+            "en": "Architectural contrast separating local manual storefront operations from automated worldwide digital e-commerce platforms[cite: 15, 16].",
+            "hi": "संरचनात्मक तुलना जो स्थानीय स्तर की भौतिक दुकानों को स्वचालित विश्वव्यापी ई-कॉमर्स प्लेटफॉर्म से अलग करती है[cite: 15, 16]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence contrasting traditional retail commerce with electronic commerce.",
+          "hint": "Start with traditional commerce relying on physical locations and direct interactions, mention conducting consumer trade within limited geographic zones, explain contrasting manual face-to-face transactions with automated 24x7 web platforms, and conclude with expanding market scale while introducing delivery transit times.",
+          "target_sequence": [
+            {
+              "id": "en_u3_t1",
+              "text": "Traditional commerce relies on physical storefronts and direct personal interactions",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u3_t2",
+              "text": "within geographically restricted neighborhood retail markets",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u3_t3",
+              "text": "and by contrasting manual localized sales against automated 24x7 web platforms with worldwide reach",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u3_t4",
+              "text": "it trades instant in-person product inspection for vast electronic catalog access and scheduled shipping delivery",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u3_d1",
+              "category": "logical",
+              "text": "and by granting traditional storefronts unlimited worldwide reach while confining e-commerce platforms to tiny physical market stalls",
+              "penalty_explanation": "Traditional commerce is geographically limited to a local area, whereas e-commerce has worldwide reach[cite: 15, 16]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "पारंपरिक कॉमर्स और ई-कॉमर्स के अंतर को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "पारंपरिक कॉमर्स भौतिक दुकानों और प्रत्यक्ष संपर्कों पर निर्भर करता है से शुरू करें, सीमित स्थानीय बाजारों का संदर्भ दें, मैन्युअल बिक्री की तुलना 24x7 स्वचालित वेब प्लेटफॉर्म से करने का तरीका बताएं, और तुरंत सामान जांचने बनाम विस्तृत कैटलॉग व डिलीवरी पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u3_t1",
+              "text": "पारंपरिक कॉमर्स भौतिक दुकानों और प्रत्यक्ष व्यक्तिगत संपर्कों पर निर्भर करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u3_t2",
+              "text": "भौगोलिक रूप से सीमित स्थानीय खुदरा बाजारों के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u3_t3",
+              "text": "और मैन्युअल स्थानीय बिक्री की तुलना विश्वव्यापी पहुंच वाले स्वचालित 24x7 वेब प्लेटफॉर्म से करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u3_t4",
+              "text": "यह सामान के त्वरित भौतिक निरीक्षण के बदले विशाल डिजिटल कैटलॉग और निर्धारित होम डिलीवरी प्रदान करता है",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u3_d1",
+              "category": "logical",
+              "text": "और पारंपरिक दुकानों को असीमित वैश्विक पहुंच देकर ई-कॉमर्स को केवल छोटे स्थानीय स्टालों तक सीमित करके",
+              "penalty_explanation": "पारंपरिक कॉमर्स का दायरा स्थानीय होता है जबकि ई-कॉमर्स असीमित और विश्वव्यापी हो सकता है[cite: 15, 16]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Traditional commerce is manual, local, and instant upon purchase, whereas e-commerce is automated, worldwide, 24x7, and requires transit time for delivery[cite: 15, 16].",
+        "hi": "पारंपरिक कॉमर्स मैन्युअल, स्थानीय और तुरंत डिलीवरी वाला होता है, जबकि ई-कॉमर्स स्वचालित, वैश्विक, 24x7 और डिलीवरी में समय लेने वाला होता है[cite: 15, 16]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Taxonomy of E-Commerce Models: B2B, B2C, C2C, and C2B",
+          "hi": "ई-कॉमर्स मॉडल्स का वर्गीकरण: B2B, B2C, C2C और C2B"
+        },
+        "theory": {
+          "en": "E-commerce transactions are classified by the market entities involved in the commercial exchange[cite: 16]. Business-to-Business (B2B) describes enterprises or wholesalers trading with retailers (e.g., IndiaMART, AliExpress)[cite: 16]. Business-to-Consumer (B2C) occurs when consumers purchase retail goods directly for personal consumption (e.g., Amazon, Flipkart)[cite: 16]. Consumer-to-Consumer (C2C) facilitates peer-to-peer sales between individual users (e.g., OLX)[cite: 16]. Consumer-to-Business (C2B) occurs when individual consumers order customized goods or freelance services from businesses (e.g., Printvenue)[cite: 16]. Additionally, public-sector frameworks govern Business-to-Government (B2G), Government-to-Business (G2B), and Government-to-Consumer (G2C) exchanges[cite: 16].",
+          "hi": "लेन-देन में शामिल पक्षों के आधार पर ई-कॉमर्स को विभिन्न मॉडलों में वर्गीकृत किया जाता है[cite: 16]। बिजनेस-टू-बिजनेस (B2B) में थोक व्यापारी या उद्यम खुदरा दुकानदारों को सामान बेचते हैं (जैसे IndiaMART, AliExpress)[cite: 16]। बिजनेस-टू-कंज्यूमर (B2C) में आम उपभोक्ता अपने निजी उपयोग के लिए व्यवसायों से उत्पाद खरीदते हैं (जैसे Amazon, Flipkart)[cite: 16]। कंज्यूमर-टू-कंज्यूमर (C2C) उपभोक्ताओं के बीच सीधे पुराने या नए सामान की खरीद-बिक्री की सुविधा देता है (जैसे OLX)[cite: 16]। कंज्यूमर-टू-बिजनेस (C2B) में उपभोक्ता विक्रेताओं से अनुकूलित (कस्टमाइज्ड) उत्पाद या सेवाएं खरीदते हैं (जैसे Printvenue)[cite: 16]। इसके अतिरिक्त सरकारी मॉडल B2G, G2B और G2C सार्वजनिक क्षेत्र के लेनदेन को नियंत्रित करते हैं[cite: 16]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">E-Commerce Market Participant Matrix</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">B2B</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">indiamart.com</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">B2C</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">amazon, flipkart</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">C2C</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">olx.com</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">C2B</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">printvenue.com</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Wholesaler Trade</tspan><tspan x=\"102\" dy=\"1.2em\">Bulk Volumes</tspan></text><text x=\"232\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Retail Shopper</tspan><tspan x=\"232\" dy=\"1.2em\">Direct End User</tspan></text><text x=\"362\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Peer Exchange</tspan><tspan x=\"362\" dy=\"1.2em\">Used Goods</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Custom Orders</tspan><tspan x=\"495\" dy=\"1.2em\">Consumer Quotes</tspan></text></svg>",
+          "caption": {
+            "en": "Classification matrix mapping participant interactions across wholesale B2B, retail B2C, peer-to-peer C2C, and customized C2B transaction channels[cite: 16].",
+            "hi": "ई-कॉमर्स मॉडल्स का वर्गीकरण जो थोक B2B, खुदरा B2C, आपसी C2C और अनुकूलित C2B लेन-देन चैनलों को दर्शाता है[cite: 16]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how e-commerce models categorize commercial transactions.",
+          "hint": "Start with e-commerce business models categorizing commercial exchanges, mention identifying transaction participants across digital platforms, explain distinguishing wholesale B2B, retail B2C, peer-to-peer C2C, and custom C2B operations, and conclude with structuring commercial relationships.",
+          "target_sequence": [
+            {
+              "id": "en_u4_t1",
+              "text": "E-commerce architectural frameworks categorize digital transactions",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u4_t2",
+              "text": "based on the participating entities operating across internet marketplaces",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u4_t3",
+              "text": "and by distinguishing wholesale `B2B`, consumer retail `B2C`, peer-to-peer `C2C`, and custom `C2B` channels",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u4_t4",
+              "text": "they structure electronic supply chains and consumer trade to match specific commercial needs",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u4_d1",
+              "category": "logical",
+              "text": "and by forcing all retail shoppers to purchase bulk wholesale inventory exclusively through `C2C` platforms",
+              "penalty_explanation": "C2C facilitates peer-to-peer consumer trades rather than bulk wholesale commerce[cite: 16]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ई-कॉमर्स मॉडल्स द्वारा व्यावसायिक लेनदेन को वर्गीकृत करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "ई-कॉमर्स संरचनात्मक ढांचे डिजिटल लेनदेन को वर्गीकृत करते हैं से शुरू करें, भाग लेने वाली इकाइयों का संदर्भ दें, थोक `B2B`, खुदरा `B2C`, आपसी `C2C` और कस्टम `C2B` में अंतर करने का तरीका बताएं, और व्यावसायिक जरूरतों के अनुसार व्यापार को व्यवस्थित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u4_t1",
+              "text": "ई-कॉमर्स संरचनात्मक ढांचे डिजिटल लेनदेन को वर्गीकृत करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u4_t2",
+              "text": "इंटरनेट बाजारों में भाग लेने वाली व्यावसायिक इकाइयों के आधार पर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u4_t3",
+              "text": "और थोक `B2B`, खुदरा `B2C`, आपसी `C2C` तथा अनुकूलित `C2B` चैनलों में स्पष्ट अंतर करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u4_t4",
+              "text": "ये विशिष्ट व्यावसायिक आवश्यकताओं को पूरा करने के लिए इलेक्ट्रॉनिक आपूर्ति श्रृंखला और उपभोक्ता व्यापार को संरचित करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u4_d1",
+              "category": "logical",
+              "text": "और सभी खुदरा खरीदारों को `C2C` प्लेटफॉर्म के माध्यम से थोक सामान खरीदने पर मजबूर करके",
+              "penalty_explanation": "C2C उपभोक्ताओं के बीच आपसी लेनदेन है, यह थोक व्यापार का मॉडल नहीं है[cite: 16]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "E-commerce is classified by participants into B2B (wholesale), B2C (retail), C2C (peer-to-peer), and C2B (customized consumer-to-business) models[cite: 16].",
+        "hi": "ई-कॉमर्स को प्रतिभागियों के आधार पर B2B (थोक), B2C (खुदरा), C2C (उपभोक्ता से उपभोक्ता), और C2B (अनुकूलित सेवा) में वर्गीकृत किया जाता है[cite: 16]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "The Electronic Payment Ecosystem: UPI, Cards, Net-Banking, NEFT, and RTGS",
+          "hi": "इलेक्ट्रॉनिक भुगतान प्रणाली: यूपीआई, कार्ड, नेट-बैंकिंग, एनईएफटी और आरटीजीएस"
+        },
+        "theory": {
+          "en": "Electronic payment mechanisms form the financial settlement layer enabling cashless transactions across e-commerce platforms[cite: 15, 16, 17]. Unified Payment Interface (UPI) provides instant mobile-driven bank-to-bank settlements[cite: 16]. Debit Cards deduct money directly from the user's available bank balance, whereas Credit Cards draw upon an authorized revolving line of bank credit[cite: 16, 17]. For inter-bank digital fund transfers, National Electronic Fund Transfer (NEFT) processes transactions in deferred electronic batches, while Real Time Gross Settlement (RTGS) settles high-value transactions individually and continuously on a real-time basis[cite: 17].",
+          "hi": "इलेक्ट्रॉनिक भुगतान प्रणालियाँ ई-कॉमर्स में कैश-लेस लेनदेन को संचालित करने वाला मुख्य वित्तीय आधार हैं[cite: 15, 16, 17]। यूनिफाइड पेमेंट्स इंटरफेस (UPI) मोबाइल ऐप के जरिए तुरंत बैंक-टू-बैंक ट्रांसफर की सुविधा देता है[cite: 16]। डेबिट कार्ड उपयोगकर्ता के मौजूदा बैंक खाते से तुरंत राशि काटते हैं, जबकि क्रेडिट कार्ड बैंक द्वारा स्वीकृत ऋण सीमा (क्रेडिट) से भुगतान करते हैं[cite: 16, 17]। अंतर-बैंक फंड ट्रांसफर के लिए, नेशनल इलेक्ट्रॉनिक फंड ट्रांसफर (NEFT) बैचों में फंड ट्रांसफर करता है, जबकि रियल टाइम ग्रॉस सेटलमेंट (RTGS) उच्च-मूल्य के लेनदेन को वास्तविक समय में तुरंत निपटाता है[cite: 17]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Digital Payment Ecosystem &amp; Transfer Rails</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">UPI</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Instant Mobile P2P</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Debit / Credit</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Direct / Loan Rail</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">NEFT</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Batched Transfer</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">RTGS</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Real-Time Gross</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Fast Smartphone</tspan><tspan x=\"102\" dy=\"1.2em\">Direct Routing</tspan></text><text x=\"232\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Plastic Cards</tspan><tspan x=\"232\" dy=\"1.2em\">Payment Gateways</tspan></text><text x=\"362\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Scheduled Batches</tspan><tspan x=\"362\" dy=\"1.2em\">Standard Settlement</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">High Value</tspan><tspan x=\"495\" dy=\"1.2em\">Immediate Gross</tspan></text></svg>",
+          "caption": {
+            "en": "Electronic payment matrix comparing mobile UPI channels, card gateways, batched NEFT clearing, and high-value RTGS settlements[cite: 16, 17].",
+            "hi": "इलेक्ट्रॉनिक भुगतान प्रणालियों की तुलना जो मोबाइल यूपीआई, कार्ड, बैच-आधारित एनईएफटी और बड़े लेनदेन वाले आरटीजीएस को दर्शाती है[cite: 16, 17]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing how diverse electronic payment rails settle digital transactions.",
+          "hint": "Start with electronic payment gateways facilitating cashless online transactions, mention securing fund transfers across modern financial networks, explain combining mobile UPI, cards, and net-banking with NEFT and RTGS, and conclude with settling balances reliably across e-commerce platforms.",
+          "target_sequence": [
+            {
+              "id": "en_u5_t1",
+              "text": "Electronic payment gateways facilitate cashless digital transactions",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u5_t2",
+              "text": "across modern internet-based banking networks",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u5_t3",
+              "text": "and by combining instant UPI payments and cards with batched `NEFT` and gross `RTGS` transfers",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u5_t4",
+              "text": "they settle retail and commercial balances reliably without handling physical currency",
+              "role_hint": "Tile 4: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u5_d1",
+              "category": "logical",
+              "text": "and by forcing users to mail physical cash envelopes directly to commercial banks before each online purchase",
+              "penalty_explanation": "Electronic payment systems process funds digitally through secure networks without physical paper cash[cite: 15, 16, 17]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "विभिन्न इलेक्ट्रॉनिक भुगतान प्रणालियों द्वारा डिजिटल लेनदेन के निपटान की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "इलेक्ट्रॉनिक भुगतान गेटवे कैश-लेस डिजिटल लेनदेन को सुगम बनाते हैं से शुरू करें, आधुनिक इंटरनेट बैंकिंग नेटवर्क का संदर्भ दें, यूपीआई और कार्ड को `NEFT` व `RTGS` के साथ जोड़ने का तरीका बताएं, और नकद मुद्रा के बिना लेनदेन निपटाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u5_t1",
+              "text": "इलेक्ट्रॉनिक भुगतान गेटवे कैश-लेस डिजिटल लेनदेन को सुगम बनाते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u5_t2",
+              "text": "आधुनिक इंटरनेट-आधारित बैंकिंग नेटवर्क के माध्यम से",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u5_t3",
+              "text": "और त्वरित यूपीआई व कार्ड भुगतानों को बैच-आधारित `NEFT` तथा `RTGS` ट्रांसफर के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u5_t4",
+              "text": "ये भौतिक मुद्रा के उपयोग के बिना खुदरा और व्यावसायिक भुगतानों का सुरक्षित निपटान करते हैं",
+              "role_hint": "ब्लॉक 4: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u5_d1",
+              "category": "logical",
+              "text": "और प्रत्येक ऑनलाइन खरीद से पहले उपयोगकर्ताओं को डाक द्वारा बैंक में नकद लिफाफे भेजने पर मजबूर करके",
+              "penalty_explanation": "डिजिटल भुगतान प्रणालियों में नकद मुद्रा या डाक का उपयोग नहीं होता, सारा लेनदेन इलेक्ट्रॉनिक होता है[cite: 15, 16, 17]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Digital payments use UPI, debit/credit cards, and net-banking along with interbank settlement rails like NEFT (batched) and RTGS (real-time gross)[cite: 16, 17].",
+        "hi": "डिजिटल भुगतान में यूपीआई, डेबिट/क्रेडिट कार्ड और नेट-बैंकिंग के साथ-साथ एनईएफटी (बैच) और आरटीजीएस (रियल-टाइम ग्रॉस) जैसी अंतर-बैंक प्रणालियों का उपयोग होता है[cite: 16, 17]।"
+      }
+    }
+  ]
+}
