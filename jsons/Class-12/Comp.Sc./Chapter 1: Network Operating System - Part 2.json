@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 1: Network Operating System - Part 2",
+      "hi": "अध्याय 1: नेटवर्क ऑपरेटिंग सिस्टम - भाग 2"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "IPv4 Addressing Architecture and Dotted Notations",
+          "hi": "IPv4 एड्रेसिंग संरचना और डॉटेड नोटेशन"
+        },
+        "theory": {
+          "en": "An Internet Protocol (IP) address is a unique 32-bit numerical identifier assigned to every computing device participating in an internetwork. The 32 bits are divided into four 8-bit groups called octets, separated by periods. IPv4 addresses are commonly expressed in Dotted Decimal notation (such as 192.168.12.80) for human comprehension, or in Dotted Binary notation (such as 11000000.10101000.00001100.01010000) for machine processing.",
+          "hi": "इंटरनेट प्रोटोकॉल (IP) पता एक विशिष्ट 32-बिट संख्यात्मक पहचानकर्ता है जो कंप्यूटर नेटवर्क में भाग लेने वाले प्रत्येक उपकरण को आवंटित किया जाता है। इन 32 बिट्स को चार बराबर 8-बिट भागों में विभाजित किया जाता है जिन्हें 'ऑक्टेट' कहा जाता है, और ये डॉट (बिंदु) द्वारा अलग किए जाते हैं। IPv4 पते को मानवीय समझ के लिए डॉटेड डेसिमल नोटेशन (जैसे 192.168.12.80) या मशीन प्रोसेसिंग के लिए डॉटेड बाइनरी नोटेशन (जैसे 11000000.10101000.00001100.01010000) में दर्शाया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">IPv4 32-Bit Octet Architecture</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Octet 1 (8b)</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">192 (11000000)</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Octet 2 (8b)</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">168 (10101000)</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Octet 3 (8b)</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">12 (00001100)</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Octet 4 (8b)</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">80 (01010000)</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">First Octet</tspan><tspan x=\"102\" dy=\"1.2em\">Network Class Range</tspan></text><text x=\"232\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Second Octet</tspan><tspan x=\"232\" dy=\"1.2em\">Subnet Extension</tspan></text><text x=\"362\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Third Octet</tspan><tspan x=\"362\" dy=\"1.2em\">Host or Subnet Bit</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Fourth Octet</tspan><tspan x=\"495\" dy=\"1.2em\">Specific Host Node</tspan></text></svg>",
+          "caption": {
+            "en": "Structural representation of a 32-bit IPv4 address divided into four 8-bit octets with dotted decimal and binary representations.",
+            "hi": "चार 8-बिट ऑक्टेट में विभाजित 32-बिट IPv4 एड्रेस का संरचनात्मक विवरण जिसमें दशमलव और बाइनरी रूप दिखाए गए हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing the structural formation and representation of 32-bit IPv4 addresses.",
+          "hint": "Start with IPv4 addressing allocating identifiers, mention identifying nodes across network topologies, explain partitioning 32 bits into four period-delimited octets, describe representing values in dotted decimal or dotted binary notation, and conclude with enabling systematic packet routing.",
+          "target_sequence": [
+            {
+              "id": "en_u6_t1",
+              "text": "IPv4 addressing establishes unique logical numerical identifiers",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u6_t2",
+              "text": "for every computing device communicating across an internetwork",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u6_t3",
+              "text": "and by partitioning a 32-bit address into four 8-bit octets separated by period symbols",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u6_t4",
+              "text": "it expresses network coordinates in either dotted decimal or dotted binary formats",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u6_t5",
+              "text": "thereby enabling routers and hosts to identify target nodes consistently across distributed networks",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u6_d1",
+              "category": "technical",
+              "text": "and by dividing a 128-bit address into eight 16-bit blocks delimited by colons",
+              "penalty_explanation": "IPv4 uses 32 bits divided into four 8-bit octets, not 128 bits divided into eight blocks."
+            },
+            {
+              "id": "en_u6_d2",
+              "category": "conceptual",
+              "text": "it restricts all networked computers to sharing one static non-unique decimal integer without octets",
+              "penalty_explanation": "Every host must receive a unique IP address partitioned into four distinct octets."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "32-बिट IPv4 पतों के संरचनात्मक गठन और निरूपण को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "IPv4 एड्रेसिंग तार्किक संख्यात्मक पहचानकर्ता प्रदान करती है से शुरू करें, नेटवर्क उपकरणों के संदर्भ को जोड़ें, 32 बिट्स को चार ऑक्टेट में विभाजित करने का तरीका बताएं, डॉटेड दशमलव या बाइनरी प्रारूप में दर्शाने का परिणाम दें, और विशिष्ट नोड्स की पहचान पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u6_t1",
+              "text": "IPv4 एड्रेसिंग अद्वितीय तार्किक संख्यात्मक पहचानकर्ता प्रदान करती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u6_t2",
+              "text": "नेटवर्क में संचार करने वाले प्रत्येक कंप्यूटिंग डिवाइस के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u6_t3",
+              "text": "और 32 बिट्स को डॉट प्रतीकों द्वारा अलग किए गए चार 8-बिट ऑक्टेट में विभाजित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u6_t4",
+              "text": "यह पते को डॉटेड दशमलव अथवा डॉटेड बाइनरी प्रारूप में व्यक्त करती है",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u6_t5",
+              "text": "जिससे विभिन्न नेटवर्क पर विशिष्ट नोड्स की पहचान और डेटा पैकेट की डिलीवरी संभव होती है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u6_d1",
+              "category": "technical",
+              "text": "और 128 बिट्स को कोलन द्वारा अलग किए गए आठ 16-बिट ब्लॉकों में विभाजित करके",
+              "penalty_explanation": "IPv4 में केवल 32 बिट्स होते हैं जिन्हें चार 8-बिट ऑक्टेट में बांटा जाता है, 128 बिट्स नहीं।"
+            },
+            {
+              "id": "hi_u6_d2",
+              "category": "conceptual",
+              "text": "यह सभी कंप्यूटरों को बिना किसी ऑक्टेट विभाजन के एक ही गैर-अद्वितीय संख्या का उपयोग करने पर बाध्य करती है",
+              "penalty_explanation": "IPv4 प्रत्येक उपकरण को चार अलग-अलग ऑक्टेट में संरचित एक अद्वितीय पता सौंपता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "An IPv4 address consists of 32 bits divided into four 8-bit octets separated by dots, written in dotted decimal or dotted binary notation.",
+        "hi": "IPv4 एड्रेस में 32 बिट्स होते हैं जिन्हें डॉट द्वारा अलग किए गए चार 8-बिट ऑक्टेट में बांटा जाता है, और इसे डॉटेड दशमलव या बाइनरी में लिखा जाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Hierarchical Addressing: Network ID vs. Host ID Boundaries",
+          "hi": "पदानुक्रमित एड्रेसिंग: नेटवर्क आईडी बनाम होस्ट आईडी सीमाएं"
+        },
+        "theory": {
+          "en": "Every IPv4 address is functionally split into two hierarchical components: the Network ID (Net ID) and the Host ID. The Network ID specifies the overall network domain to which the host belongs, allowing intermediate routers to forward data packets across internetworks without needing node-level details. The Host ID uniquely identifies the specific computing device within that targeted network domain. Devices residing on the same physical or logical local area network share an identical Network ID while possessing unique Host IDs.",
+          "hi": "प्रत्येक IPv4 पता कार्यात्मक रूप से दो पदानुक्रमित भागों में विभाजित होता है: नेटवर्क आईडी (Net ID) और होस्ट आईडी (Host ID)। नेटवर्क आईडी उस विशिष्ट नेटवर्क डोमेन की पहचान करता है जिससे उपकरण संबंधित है, जिससे राउटर बिना किसी व्यक्तिगत नोड विवरण के पैकेट अग्रेषित कर सकते हैं। होस्ट आईडी उस लक्षित नेटवर्क के भीतर विशिष्ट कंप्यूटिंग डिवाइस (होस्ट) की विशिष्ट पहचान करता है। एक ही स्थानीय नेटवर्क पर मौजूद सभी उपकरणों की नेटवर्क आईडी समान होती है, जबकि उनकी होस्ट आईडी एक दूसरे से भिन्न होती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">IPv4 Dual-Part Hierarchy: Network ID vs. Host ID</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Network ID</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Identifies Network Segment</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Host ID</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Identifies Specific Device</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Domain Locator</tspan><tspan x=\"100\" dy=\"1.2em\">Shared by All Nodes</tspan></text><text x=\"225\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Global Route</tspan><tspan x=\"225\" dy=\"1.2em\">Inter-Network Flow</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Node Locator</tspan><tspan x=\"375\" dy=\"1.2em\">Unique per Machine</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Local Delivery</tspan><tspan x=\"500\" dy=\"1.2em\">Final Endpoint Link</tspan></text></svg>",
+          "caption": {
+            "en": "Hierarchical boundary splitting IPv4 addresses into a shared Network ID and an individual Host ID.",
+            "hi": "पदानुक्रमित विभाजन जो IPv4 पते को एक साझा नेटवर्क आईडी और एक व्यक्तिगत होस्ट आईडी में अलग करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the Network ID and Host ID coordinate hierarchical packet addressing.",
+          "hint": "Start with hierarchical IP address structures dividing logical addresses, mention routing across complex routed enterprise networks, explain dedicating prefix bits to identify the parent network domain, describe allocating remaining bits to distinguish individual host machines, and conclude with routing packets to target endpoints without ambiguity.",
+          "target_sequence": [
+            {
+              "id": "en_u7_t1",
+              "text": "Hierarchical IP address architectures divide each 32-bit address",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u7_t2",
+              "text": "across interconnected routed internetworking systems",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u7_t3",
+              "text": "and by dedicating leading bits to the Network ID for locating the parent network domain",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u7_t4",
+              "text": "while reserving remaining bits for the Host ID to distinguish individual local computing machines",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u7_t5",
+              "text": "they permit routers to guide packets toward the correct network segment before completing final device delivery",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u7_d1",
+              "category": "conceptual",
+              "text": "while forcing all computers globally to share the exact same Host ID to eliminate individual hardware addressing",
+              "penalty_explanation": "Host IDs must be unique within a network segment so individual devices can be distinguished."
+            },
+            {
+              "id": "en_u7_d2",
+              "category": "technical",
+              "text": "and by using the Host ID to route packets between continents while the Network ID only identifies the keyboard",
+              "penalty_explanation": "The Network ID guides inter-network routing across segments, while the Host ID identifies the device on that local network."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "नेटवर्क आईडी और होस्ट आईडी द्वारा पदानुक्रमित पैकेट एड्रेसिंग के समन्वय को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "पदानुक्रमित आईपी एड्रेस संरचनाएं प्रत्येक 32-बिट पते को विभाजित करती हैं से शुरू करें, रूटेड इंटरनेटवर्किंग सिस्टम का संदर्भ दें, नेटवर्क डोमेन की पहचान के लिए नेटवर्क आईडी समर्पित करने का तरीका बताएं, विशिष्ट उपकरणों की पहचान के लिए होस्ट आईडी आवंटित करने का परिणाम दें, और सही नेटवर्क खंड तक पैकेट पहुंचाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u7_t1",
+              "text": "पदानुक्रमित आईपी एड्रेस संरचनाएं प्रत्येक 32-बिट पते को विभाजित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u7_t2",
+              "text": "आपस में जुड़े जटिल रूटेड इंटरनेटवर्किंग सिस्टम के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u7_t3",
+              "text": "और मुख्य नेटवर्क डोमेन का पता लगाने के लिए प्रारंभिक बिट्स को नेटवर्क आईडी के रूप में समर्पित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u7_t4",
+              "text": "तथा स्थानीय कंप्यूटरों की विशिष्ट पहचान हेतु शेष बिट्स को होस्ट आईडी के लिए आरक्षित करके",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u7_t5",
+              "text": "ये राउटर्स को डेटा पैकेट सही नेटवर्क खंड तक भेजने और लक्षित उपकरण तक पहुंचाने में सक्षम बनाती हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u7_d1",
+              "category": "conceptual",
+              "text": "और सभी उपकरणों को एक ही समान होस्ट आईडी साझा करने पर बाध्य करके ताकि व्यक्तिगत पहचान समाप्त हो सके",
+              "penalty_explanation": "एक ही नेटवर्क पर प्रत्येक डिवाइस का होस्ट आईडी अलग होना अनिवार्य है ताकि उसकी विशिष्ट पहचान हो सके।"
+            },
+            {
+              "id": "hi_u7_d2",
+              "category": "technical",
+              "text": "तथा होस्ट आईडी का उपयोग देशों के बीच रूटिंग के लिए करके जबकि नेटवर्क आईडी केवल इनपुट डिवाइस की पहचान करे",
+              "penalty_explanation": "नेटवर्क आईडी नेटवर्क डोमेन की पहचान करता है, जबकि होस्ट आईडी उस नेटवर्क के अंदर विशिष्ट उपकरण की पहचान करता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Every IP address is split into a Network ID (which identifies the network domain) and a Host ID (which identifies the specific host device).",
+        "hi": "प्रत्येक आईपी पता नेटवर्क आईडी (जो नेटवर्क डोमेन की पहचान करता है) और होस्ट आईडी (जो विशिष्ट डिवाइस की पहचान करता है) में विभाजित होता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Classful Addressing Spectrum: Classes A, B, and C Architecture",
+          "hi": "क्लासफुल एड्रेसिंग स्पेक्ट्रम: क्लास ए, बी और सी की संरचना"
+        },
+        "theory": {
+          "en": "Traditional IPv4 architecture categorizes commercial unicast addresses into Classes A, B, and C based on the leading bits of their first octet. Class A addresses begin with binary bit 0, spanning decimal 0 to 127 with default subnet mask 255.0.0.0; they allocate 8 bits to the Network ID and 24 bits to the Host ID, serving up to 128 large networks containing 16,777,216 hosts each. Class B addresses begin with bits 10, spanning 128 to 191 with subnet mask 255.255.0.0; they split the address into 16 network bits and 16 host bits, accommodating 16,384 medium networks with 65,536 hosts each. Class C addresses begin with bits 110, spanning 192 to 223 with subnet mask 255.255.255.0; they assign 24 bits to the Network ID and 8 bits to the Host ID, serving 2,097,152 small networks with 254 hosts each.",
+          "hi": "पारंपरिक IPv4 संरचना पहले ऑक्टेट के प्रारंभिक बिट्स के आधार पर यूनिकास्ट पतों को क्लास ए, बी और सी में वर्गीकृत करती है। क्लास ए का पहला बिट 0 होता है, जिसकी रेंज 0 से 127 और सबनेट मास्क 255.0.0.0 है; यह 8 बिट्स नेटवर्क आईडी और 24 बिट्स होस्ट आईडी को आवंटित करता है, जो 128 बड़े नेटवर्कों में प्रत्येक में 1,67,77,216 होस्ट का समर्थन करता है। क्लास बी के प्रारंभिक बिट्स 10 होते हैं, जिसकी रेंज 128 से 191 और सबनेट मास्क 255.255.0.0 है; यह 16 बिट्स नेटवर्क और 16 बिट्स होस्ट को देकर 16,384 मध्यम नेटवर्कों में प्रत्येक में 65,536 होस्ट का समर्थन करता है। क्लास सी के प्रारंभिक बिट्स 110 होते हैं, जिसकी रेंज 192 से 223 और सबनेट मास्क 255.255.255.0 है; यह 24 बिट्स नेटवर्क आईडी और 8 बिट्स होस्ट आईडी को देकर 20,97,152 छोटे नेटवर्कों में प्रत्येक में 254 होस्ट का समर्थन करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Classful Unicast Allocation: Class A, B &amp; C</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Class A (0 - 127)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">N.H.H.H | 255.0.0.0</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Class B (128 - 191)</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">N.N.H.H | 255.255.0.0</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Class C (192 - 223)</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">N.N.N.H | 255.255.255.0</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Large Scale</tspan><tspan x=\"120\" dy=\"1.2em\">16.7M Hosts / Net</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Medium Scale</tspan><tspan x=\"300\" dy=\"1.2em\">65,536 Hosts / Net</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Small Scale</tspan><tspan x=\"480\" dy=\"1.2em\">254 Hosts / Net</tspan></text></svg>",
+          "caption": {
+            "en": "Classful spectrum mapping Classes A, B, and C by first-octet boundaries, subnet masks, and network capacity.",
+            "hi": "क्लासफुल स्पेक्ट्रम जो प्रथम ऑक्टेट सीमाओं, सबनेट मास्क और होस्ट क्षमता के आधार पर क्लास ए, बी और सी को दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how Classes A, B, and C categorize IP addresses by network size and prefix conventions.",
+          "hint": "Start with classful IP network schemes categorizing addresses, mention scaling deployments from enterprise backbones to local workgroups, explain evaluating the first octet range alongside default subnet masks, describe balancing network IDs against host capacities across Classes A, B, and C, and conclude with matching organizational sizing requirements.",
+          "target_sequence": [
+            {
+              "id": "en_u8_t1",
+              "text": "Classful IPv4 addressing schemes categorize commercial unicast ranges",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u8_t2",
+              "text": "across large, medium, and small organizational network deployments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u8_t3",
+              "text": "and by evaluating first-octet numerical boundaries alongside default subnet masks of Classes A, B, and C",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u8_t4",
+              "text": "they partition the available 32 bits into varying ratios of Network ID and Host ID allocations",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u8_t5",
+              "text": "thereby accommodating massive networks with millions of hosts down to small local subnets supporting 254 devices",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u8_d1",
+              "category": "technical",
+              "text": "and by defining Class C with an 8-bit Network ID and 24-bit Host ID using subnet mask 255.0.0.0",
+              "penalty_explanation": "Class C uses a 24-bit Network ID, an 8-bit Host ID, and subnet mask 255.255.255.0 (this describes Class A)."
+            },
+            {
+              "id": "en_u8_d2",
+              "category": "conceptual",
+              "text": "they assign all IP addresses from 0 to 223 to a single fixed class where every network holds only 2 hosts",
+              "penalty_explanation": "The 0–223 range is split into Classes A, B, and C, each offering widely different host capacities."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "क्लास ए, बी और सी द्वारा नेटवर्क आकार और सबनेट मास्क के आधार पर वर्गीकरण को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "क्लासफुल IPv4 एड्रेसिंग योजनाएं यूनिकास्ट पतों को वर्गीकृत करती हैं से शुरू करें, विभिन्न संगठनात्मक नेटवर्कों का संदर्भ दें, प्रथम ऑक्टेट और सबनेट मास्क का मूल्यांकन करने का तरीका बताएं, नेटवर्क व होस्ट बिट्स के विभाजन का परिणाम दें, और संस्थागत आवश्यकताओं को पूरा करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u8_t1",
+              "text": "क्लासफुल IPv4 एड्रेसिंग योजनाएं यूनिकास्ट पतों को वर्गीकृत करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u8_t2",
+              "text": "बड़े, मध्यम और छोटे संगठनात्मक नेटवर्कों की आवश्यकताओं के अनुसार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u8_t3",
+              "text": "और क्लास ए, बी तथा सी के पहले ऑक्टेट की सीमाओं व डिफ़ॉल्ट सबनेट मास्क का मूल्यांकन करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u8_t4",
+              "text": "ये 32 बिट्स को नेटवर्क आईडी और होस्ट आईडी के विभिन्न अनुपातों में विभाजित करती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u8_t5",
+              "text": "जिससे करोड़ों होस्ट वाले विशाल नेटवर्कों से लेकर 254 उपकरणों वाले छोटे नेटवर्कों को उपयुक्त पते मिल पाते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u8_d1",
+              "category": "technical",
+              "text": "और क्लास सी को 8-बिट नेटवर्क आईडी व 24-बिट होस्ट आईडी देकर सबनेट मास्क 255.0.0.0 निर्धारित करके",
+              "penalty_explanation": "क्लास सी में 24-बिट नेटवर्क आईडी और 8-बिट होस्ट आईडी होती है तथा इसका सबनेट मास्क 255.255.255.0 होता है।"
+            },
+            {
+              "id": "hi_u8_d2",
+              "category": "conceptual",
+              "text": "ये 0 से 223 तक के सभी पतों को एक ही क्लास में डालकर प्रत्येक नेटवर्क को केवल 2 उपकरणों तक सीमित रखती हैं",
+              "penalty_explanation": "0 से 223 की रेंज को क्लास ए, बी और सी में बांटा गया है, जिनमें से प्रत्येक की होस्ट क्षमता भिन्न होती है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Class A (0–127, /8), Class B (128–191, /16), and Class C (192–223, /24) balance Network and Host IDs to serve large, medium, and small networks.",
+        "hi": "क्लास ए (0–127, /8), क्लास बी (128–191, /16) और क्लास सी (192–223, /24) नेटवर्क और होस्ट आईडी को विभाजित करके बड़े, मध्यम और छोटे नेटवर्क का समर्थन करते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Specialized IP Ranges: Class D Multicast and Class E Research",
+          "hi": "विशिष्ट आईपी रेंज: क्लास डी मल्टीकास्ट और क्लास ई रिसर्च"
+        },
+        "theory": {
+          "en": "Beyond standard unicast communication, IPv4 allocates two specialized blocks: Class D and Class E. Class D addresses begin with leading binary bits 1110, covering decimal values 224 to 239 (224.0.0.0 to 239.255.255.255). Class D does not define standard Network and Host IDs and has no subnet mask; it is reserved exclusively for multicasting, where a single stream of packets is delivered simultaneously to a designated group of subscribed hosts. Class E addresses begin with bits 1111, spanning 240 to 255 (240.0.0.0 to 255.255.255.255). Class E is strictly reserved for experimental research and development and is not deployed for general public networking.",
+          "hi": "सामान्य यूनिकास्ट संचार के अलावा, IPv4 दो विशिष्ट श्रेणियों को आरक्षित करता है: क्लास डी और क्लास ई। क्लास डी के पहले ऑक्टेट के प्रारंभिक बाइनरी बिट्स 1110 होते हैं, जो दशमलव 224 से 239 (224.0.0.0 से 239.255.255.255) तक फैले हैं। क्लास डी में नेटवर्क और होस्ट आईडी तथा सबनेट मास्क अपरिभाषित होते हैं; यह विशेष रूप से मल्टीकास्टिंग के लिए उपयोग किया जाता है जिसमें डेटा एक साथ कई उपकरणों पर भेजा जाता है। क्लास ई के प्रारंभिक बिट्स 1111 होते हैं, जिसकी रेंज 240 से 255 (240.0.0.0 से 255.255.255.255) है। क्लास ई को प्रयोगात्मक और अनुसंधान उद्देश्यों के लिए आरक्षित रखा गया है और इसका उपयोग सामान्य नेटवर्किंग में नहीं किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Specialized IP Ranges: Class D &amp; Class E</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Class D (224 - 239)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">First Bits: 1110 | Multicast</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Class E (240 - 255)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">First Bits: 1111 | Experimental</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">One-to-Many</tspan><tspan x=\"100\" dy=\"1.2em\">Multi-Device Stream</tspan></text><text x=\"225\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">No Subnet Mask</tspan><tspan x=\"225\" dy=\"1.2em\">Dedicated Groups</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Lab Research</tspan><tspan x=\"375\" dy=\"1.2em\">Not in General LANs</tspan></text><text x=\"400\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Future Standards</tspan><tspan x=\"500\" dy=\"1.2em\">Reserved Space</tspan></text></svg>",
+          "caption": {
+            "en": "Specialized IPv4 ranges contrasting Class D one-to-many multicasting with Class E experimental research reservations.",
+            "hi": "विशिष्ट IPv4 श्रेणियां जो क्लास डी की मल्टीकास्टिंग और क्लास ई के प्रयोगात्मक अनुसंधान आरक्षण के अंतर को दर्शाती हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing the specialized functional allocations of Class D and Class E IP ranges.",
+          "hint": "Start with specialized IPv4 address classifications allocating upper numerical blocks, mention distinguishing non-unicast traffic from research testing, explain assigning 224 to 239 for multicasting transmissions in Class D, describe reserving 240 to 255 for experimental research in Class E, and conclude with safeguarding specialized multi-destination data flows without assigning them to regular hosts.",
+          "target_sequence": [
+            {
+              "id": "en_u9_t1",
+              "text": "Specialized IPv4 address allocations reserve the upper numerical ranges",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u9_t2",
+              "text": "for non-traditional networking operations and scientific laboratory testing",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u9_t3",
+              "text": "and by dedicating Class D addresses spanning 224 to 239 to one-to-many multicast data transmission",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u9_t4",
+              "text": "while reserving Class E addresses spanning 240 to 255 exclusively for experimental engineering research",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u9_t5",
+              "text": "they isolate group broadcast streaming and research protocols from general public host assignments",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u9_d1",
+              "category": "technical",
+              "text": "and by using Class D addresses as default public gateway IPs for standard personal home computers",
+              "penalty_explanation": "Class D addresses are reserved strictly for multicast groups and cannot be assigned to individual client computers."
+            },
+            {
+              "id": "en_u9_d2",
+              "category": "conceptual",
+              "text": "while deploying Class E as the primary subnet mask format used across all small retail business offices",
+              "penalty_explanation": "Class E is reserved for experimental research; it is never used as a subnet mask or in commercial offices."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "क्लास डी और क्लास ई आईपी श्रेणियों के विशिष्ट आवंटन को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "विशिष्ट IPv4 एड्रेस आवंटन उच्च संख्यात्मक श्रेणियों को आरक्षित करते हैं से शुरू करें, गैर-पारंपरिक नेटवर्किंग का संदर्भ दें, क्लास डी को 224-239 मल्टीकास्टिंग के लिए समर्पित करने का तरीका बताएं, क्लास ई को 240-255 प्रयोगात्मक अनुसंधान के लिए आरक्षित करने का परिणाम दें, और सामान्य उपकरणों से अलग रखने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u9_t1",
+              "text": "विशिष्ट IPv4 एड्रेस आवंटन उच्च संख्यात्मक श्रेणियों को आरक्षित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u9_t2",
+              "text": "गैर-पारंपरिक नेटवर्किंग और वैज्ञानिक अनुसंधान आवश्यकताओं के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u9_t3",
+              "text": "और 224 से 239 तक की क्लास डी को एक साथ कई उपकरणों में मल्टीकास्ट डेटा ट्रांसमिशन हेतु समर्पित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u9_t4",
+              "text": "तथा 240 से 255 तक की क्लास ई को विशेष रूप से प्रयोगात्मक अनुसंधान के लिए सुरक्षित रखकर",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u9_t5",
+              "text": "ये समूह मल्टीकास्ट स्ट्रीमिंग और अनुसंधान कार्यों को सामान्य कंप्यूटर आवंटन से पूरी तरह अलग रखते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u9_d1",
+              "category": "technical",
+              "text": "और क्लास डी पतों को सभी सामान्य घरेलू कंप्यूटरों के लिए प्राथमिक यूनिकास्ट आईपी के रूप में लागू करके",
+              "penalty_explanation": "क्लास डी मल्टीकास्ट के लिए आरक्षित है, इसे सामान्य घरेलू कंप्यूटरों को आवंटित नहीं किया जा सकता।"
+            },
+            {
+              "id": "hi_u9_d2",
+              "category": "conceptual",
+              "text": "तथा क्लास ई को छोटे खुदरा कार्यालयों में मुख्य सबनेट मास्क के रूप में अनिवार्य करके",
+              "penalty_explanation": "क्लास ई प्रयोगात्मक अनुसंधान के लिए है, इसका उपयोग सामान्य नेटवर्किंग या सबनेट मास्क के रूप में नहीं होता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Class D (224–239) is dedicated to multicast transmission, while Class E (240–255) is reserved exclusively for experimental research.",
+        "hi": "क्लास डी (224–239) मल्टीकास्ट ट्रांसमिशन के लिए समर्पित है, जबकि क्लास ई (240–255) प्रयोगात्मक अनुसंधान के लिए आरक्षित है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "IP Routing Paradigms: Static Administration vs. Dynamic RIP Automation",
+          "hi": "आईपी रूटिंग प्रतिमान: स्टेटिक एडमिनिस्ट्रेशन बनाम डायनेमिक आरआईपी स्वचालन"
+        },
+        "theory": {
+          "en": "IP routing is the foundational network layer process of selecting the optimal path for data packets across interconnected networks. Routing operates under two primary models: Static Routing and Dynamic Routing. In Static Routing, pathways are manually defined and configured by a network administrator who modifies the routing table directly using the ROUTE command. While static routes are predictable and computationally lightweight, they cannot adjust automatically to sudden link failures. In Dynamic Routing, routers automatically discover paths and update their routing tables in real time using autonomous routing protocols such as RIP (Router Information Protocol) according to changing topology conditions.",
+          "hi": "आईपी रूटिंग कई नेटवर्कों के पार डेटा पैकेटों के लिए सबसे अच्छा रास्ता (मार्ग) चुनने की प्रक्रिया है। रूटिंग मुख्य रूप से दो प्रकार की होती है: स्टेटिक रूटिंग और डायनेमिक रूटिंग। स्टेटिक रूटिंग में मार्गों का चयन नेटवर्क प्रशासक द्वारा मैन्युअल रूप से किया जाता है, जो 'ROUTE' कमांड का उपयोग करके रूटिंग टेबल में मार्ग जोड़ता या बदलता है। हालांकि यह अनुमानित और सरल है, लेकिन लिंक विफल होने पर यह स्वतः बदल नहीं सकता। डायनेमिक रूटिंग में आरआईपी (Router Information Protocol) जैसे प्रोटोकॉल के माध्यम से मार्गों का चयन स्वचालित रूप से किया जाता है, जिससे नेटवर्क आवश्यकताओं के अनुसार रूटिंग तालिका स्वतः अपडेट होती रहती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">IP Routing Mechanics: Static vs. Dynamic RIP</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Static Routing</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Manual Admin | 'ROUTE' Command</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Dynamic Routing</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">RIP Protocol | Auto-Updated</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Manual Config</tspan><tspan x=\"100\" dy=\"1.2em\">Administrator Set</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Fixed Path</tspan><tspan x=\"225\" dy=\"1.2em\">No Auto Reroute</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Adaptive RIP</tspan><tspan x=\"375\" dy=\"1.2em\">Real-Time Discovery</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Auto Recovery</tspan><tspan x=\"500\" dy=\"1.2em\">Dynamic Path Updates</tspan></text></svg>",
+          "caption": {
+            "en": "Routing paradigms contrasting administrator-managed static route configuration with RIP automated dynamic discovery.",
+            "hi": "रूटिंग प्रतिमान जो प्रशासक द्वारा प्रबंधित स्टेटिक रूटिंग और आरआईपी स्वचालित डायनेमिक रूटिंग के अंतर को दर्शाते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how static and dynamic IP routing govern data packet forwarding.",
+          "hint": "Start with IP routing mechanisms selecting delivery paths, mention steering traffic across multi-network environments, explain contrasting manual ROUTE configuration against automated RIP updates, describe calculating path decisions across routing tables, and conclude with maintaining reliable packet delivery across changing topologies.",
+          "target_sequence": [
+            {
+              "id": "en_u10_t1",
+              "text": "IP routing mechanisms determine the optimal transmission path",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u10_t2",
+              "text": "for forwarding data packets across interconnected multi-network systems",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u10_t3",
+              "text": "and by contrasting manual administrator table configurations using the `ROUTE` command in static routing",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u10_t4",
+              "text": "against automated real-time route calculations managed by the Router Information Protocol in dynamic routing",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u10_t5",
+              "text": "they enable network architectures to balance predictable manual oversight with adaptive automatic failover",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "conceptual",
+              "text": "and by forcing the `ROUTE` command to automatically guess dynamic link failures without any administrator input",
+              "penalty_explanation": "The ROUTE command is used for manual static route management, not automatic dynamic discovery."
+            },
+            {
+              "id": "en_u10_d2",
+              "category": "technical",
+              "text": "against disabling all routing tables permanently to force packets to travel without direction or routes",
+              "penalty_explanation": "Routers rely on routing tables to steer traffic; routing tables are never disabled."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "स्टेटिक और डायनेमिक आईपी रूटिंग द्वारा डेटा पैकेट अग्रेषण को नियंत्रित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "आईपी रूटिंग तंत्र इष्टतम ट्रांसमिशन मार्ग निर्धारित करते हैं से शुरू करें, बहु-नेटवर्क प्रणालियों का संदर्भ दें, स्टेटिक में 'ROUTE' कमांड द्वारा मैन्युअल सेटअप का तरीका बताएं, डायनेमिक में RIP द्वारा स्वचालित अपडेट का परिणाम दें, और विश्वसनीयता बनाए रखने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u10_t1",
+              "text": "आईपी रूटिंग तंत्र इष्टतम ट्रांसमिशन मार्ग निर्धारित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u10_t2",
+              "text": "आपस में जुड़े बहु-नेटवर्क प्रणालियों के पार डेटा पैकेट भेजने के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u10_t3",
+              "text": "और स्टेटिक रूटिंग में `ROUTE` कमांड का उपयोग करके नेटवर्क प्रशासक द्वारा मैन्युअल तालिका प्रबंधन",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u10_t4",
+              "text": "तथा डायनेमिक रूटिंग में राउटर इंफॉर्मेशन प्रोटोकॉल द्वारा स्वचालित वास्तविक समय रूट गणना की तुलना करके",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u10_t5",
+              "text": "ये नेटवर्क आर्किटेक्चर को अनुमानित मैन्युअल नियंत्रण और स्वचालित अनुकूलनशीलता दोनों प्रदान करते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "conceptual",
+              "text": "और `ROUTE` कमांड को बिना किसी प्रशासक इनपुट के स्वचालित रूप से गतिशील लिंक विफलता का अनुमान लगाने पर बाध्य करके",
+              "penalty_explanation": "ROUTE कमांड का उपयोग प्रशासक द्वारा मैन्युअल स्टेटिक रूटिंग के लिए किया जाता है, यह स्वचालित नहीं होता।"
+            },
+            {
+              "id": "hi_u10_d2",
+              "category": "technical",
+              "text": "तथा सभी रूटिंग तालिकाओं को हमेशा के लिए अक्षम करके ताकि पैकेट बिना किसी दिशा के भटकते रहें",
+              "penalty_explanation": "राउटर रूटिंग टेबल पर निर्भर करते हैं, रूटिंग टेबल को कभी अक्षम नहीं किया जाता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Static routing involves manual path configuration via the ROUTE command, whereas dynamic routing updates paths automatically using protocols like RIP.",
+        "hi": "स्टेटिक रूटिंग में 'ROUTE' कमांड द्वारा मैन्युअल मार्ग निर्धारण होता है, जबकि डायनेमिक रूटिंग में RIP जैसे प्रोटोकॉल द्वारा मार्ग स्वतः अपडेट होते हैं।"
+      }
+    }
+  ]
+}
