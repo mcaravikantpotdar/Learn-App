@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 1: Network Operating System - Part 3",
+      "hi": "अध्याय 1: नेटवर्क ऑपरेटिंग सिस्टम - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Network Operating System Architecture and Centralized Resource Control",
+          "hi": "नेटवर्क ऑपरेटिंग सिस्टम संरचना और केंद्रीकृत संसाधन नियंत्रण"
+        },
+        "theory": {
+          "en": "A Network Operating System (NOS) is specialized system software that coordinates, manages, and shares network resources across multiple interconnected computers and devices. Unlike standalone operating systems like Windows and macOS that manage the hardware and local files of a single computer, a NOS orchestrates shared network printers, storage volumes, authentication databases, and inter-device communication. Novell NetWare was the first commercial NOS, developed in 1985. Other prominent network operating systems include Windows NT, Windows MultiPoint Server, Linux, and Sun Solaris.",
+          "hi": "नेटवर्क ऑपरेटिंग सिस्टम (NOS) एक विशेष सिस्टम सॉफ्टवेयर है जो कई जुड़े हुए कंप्यूटरों और उपकरणों के बीच नेटवर्क संसाधनों का प्रबंधन, समन्वय और नियंत्रण करता है। स्टैंडअलोन ऑपरेटिंग सिस्टम (जैसे विंडोज और macOS), जो केवल एक कंप्यूटर के संसाधनों का प्रबंधन करते हैं, के विपरीत एक NOS साझा नेटवर्क प्रिंटर, स्टोरेज, प्रमाणीकरण डेटाबेस और अंतर-उपकरण संचार का समन्वय करता है। नोवेल नेटवेयर (Novell NetWare) वर्ष 1985 में विकसित पहला वाणिज्यिक NOS था। अन्य प्रमुख नेटवर्क ऑपरेटिंग सिस्टम में विंडोज एनटी, विंडोज मल्टीपॉइंट सर्वर, लिनक्स और सन सोलारिस शामिल हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Network Operating System Architecture</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Desktop OS</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Single Node Focus</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">NOS Core Engine</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Multi-Device Control</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Managed Network</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Servers &amp; Workstations</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Local Peripherals</tspan><tspan x=\"120\" dy=\"1.2em\">Isolated Workstation</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Central Coordination</tspan><tspan x=\"300\" dy=\"1.2em\">Novell NetWare, Linux</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Unified Enterprise</tspan><tspan x=\"480\" dy=\"1.2em\">Shared Remote Nodes</tspan></text></svg>",
+          "caption": {
+            "en": "Architectural contrast separating standalone desktop operating systems from multi-node Network Operating Systems coordinating enterprise clusters.",
+            "hi": "संरचनात्मक तुलना जो एकल डेस्कटॉप ऑपरेटिंग सिस्टम को कई नोड्स वाले नेटवर्क ऑपरेटिंग सिस्टम से अलग करती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how a Network Operating System manages and shares resources across distributed computer networks.",
+          "hint": "Start with Network Operating Systems functioning as specialized system software, mention coordinating interconnected multi-node environments, explain managing shared files, hardware peripherals, and security databases, describe differentiating distributed control from standalone single-user operating systems, and conclude with maintaining centralized administration across network nodes.",
+          "target_sequence": [
+            {
+              "id": "en_u11_t1",
+              "text": "Network Operating Systems function as specialized system software platforms",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u11_t2",
+              "text": "across distributed environments comprising multiple interconnected computers and devices",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u11_t3",
+              "text": "and by coordinating shared storage pools, peripheral hardware, and central authentication databases",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u11_t4",
+              "text": "they distinguish network-wide resource control from standalone single-computer operating systems",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u11_t5",
+              "text": "thereby enabling seamless collaborative processing and unified administration across enterprise nodes",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "conceptual",
+              "text": "and by restricting resource management strictly to the local internal memory of an isolated standalone laptop",
+              "penalty_explanation": "A NOS manages resources across multiple networked computers, unlike a standalone OS that manages an isolated computer."
+            },
+            {
+              "id": "en_u11_d2",
+              "category": "technical",
+              "text": "thereby requiring each connected client computer to operate without any shared files or network communication protocols",
+              "penalty_explanation": "A primary objective of a NOS is to enable shared file access and coordinated communication across all nodes."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "नेटवर्क ऑपरेटिंग सिस्टम द्वारा वितरित नेटवर्क में संसाधनों के समन्वय और नियंत्रण को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "नेटवर्क ऑपरेटिंग सिस्टम विशेष सिस्टम सॉफ्टवेयर के रूप में कार्य करते हैं से शुरू करें, जुड़े हुए उपकरणों के परिवेश का संदर्भ जोड़ें, स्टोरेज और हार्डवेयर के समन्वय का तरीका बताएं, एकल सिस्टम से अंतर का परिणाम दें, और एकीकृत प्रशासनिक नियंत्रण स्थापित करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u11_t1",
+              "text": "नेटवर्क ऑपरेटिंग सिस्टम विशेष सिस्टम सॉफ्टवेयर प्लेटफॉर्म के रूप में कार्य करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u11_t2",
+              "text": "आपस में जुड़े कई कंप्यूटरों और उपकरणों वाले वितरित वातावरण के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u11_t3",
+              "text": "और साझा स्टोरेज, परिधीय हार्डवेयर तथा केंद्रीय प्रमाणीकरण डेटाबेस का समन्वय करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u11_t4",
+              "text": "ये नेटवर्क-व्यापी संसाधन नियंत्रण को एकल-उपयोगकर्ता ऑपरेटिंग सिस्टम से अलग करते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u11_t5",
+              "text": "जिससे विभिन्न नोड्स पर निर्बाध सहयोगात्मक प्रसंस्करण और एकीकृत प्रशासनिक नियंत्रण स्थापित होता है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "conceptual",
+              "text": "और संसाधन प्रबंधन को केवल एक अलग-थलग लैपटॉप की आंतरिक मेमोरी तक सीमित रखकर",
+              "penalty_explanation": "NOS कई कंप्यूटरों और उपकरणों के नेटवर्क संसाधनों का प्रबंधन करता है, यह किसी एकल अलग-थलग सिस्टम तक सीमित नहीं होता।"
+            },
+            {
+              "id": "hi_u11_d2",
+              "category": "technical",
+              "text": "जिससे प्रत्येक क्लाइंट कंप्यूटर बिना किसी नेटवर्क संचार या फ़ाइल शेयरिंग के पूरी तरह अलग कार्य करे",
+              "penalty_explanation": "NOS का मुख्य उद्देश्य नेटवर्क के सभी उपकरणों के बीच संसाधनों और संचार को साझा करना है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "A Network Operating System manages and shares resources across multiple networked devices, unlike standalone desktop operating systems.",
+        "hi": "नेटवर्क ऑपरेटिंग सिस्टम कई नेटवर्क उपकरणों के संसाधनों का प्रबंधन और साझाकरण करता है, जो एकल डेस्कटॉप सिस्टम से भिन्न होता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Linux Architecture: Unix Heritage, Open-Source Licensing, and Stability",
+          "hi": "लिनक्स संरचना: यूनिक्स विरासत, ओपन-सोर्स लाइसेंसिंग और स्थिरता"
+        },
+        "theory": {
+          "en": "Linux is an open-source Network Operating System based on Unix, created by Linus Torvalds in 1991. Unlike proprietary platforms like Microsoft Windows and macOS, Linux provides freely accessible source code, allowing system administrators and developers to inspect, modify, and customize the operating system for specific hardware architectures. Linux is renowned for its operational stability, running for extended periods without crashes or performance degradation. It provides built-in enterprise security mechanisms including firewalls, encryption, and granular access controls, and is distributed through popular releases like Red Hat Linux, Ubuntu, Fedora, and Debian.",
+          "hi": "लिनक्स एक ओपन-सोर्स नेटवर्क ऑपरेटिंग सिस्टम है जो यूनिक्स (Unix) पर आधारित है और इसे 1991 में लाइनस टोरवाल्ड्स (Linus Torvalds) द्वारा विकसित किया गया था। माइक्रोसॉफ्ट विंडोज और macOS जैसे प्रोपराइटरी सॉफ्टवेयर के विपरीत, लिनक्स का सोर्स कोड स्वतंत्र रूप से उपलब्ध है, जिससे प्रशासक इसे अपनी आवश्यकताओं के अनुसार संशोधित और अनुकूलित कर सकते हैं। लिनक्स अपनी असाधारण स्थिरता और विश्वसनीयता के लिए प्रसिद्ध है और बिना क्रैश हुए लंबे समय तक चल सकता है। इसमें फायरवॉल, एन्क्रिप्शन और एक्सेस कंट्रोल जैसी मजबूत सुरक्षा सुविधाएं हैं, और यह रेड हैट, उबंटू, फेडोरा और डेबियन जैसे लोकप्रिय वितरणों में उपलब्ध है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Linux Heritage: Open-Source Engine &amp; Distributions</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Unix Roots (1991)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Linus Torvalds</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Core Properties</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Open Source &amp; Stable</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Distributions</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Ubuntu, RHEL, Debian</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Free Kernel</tspan><tspan x=\"120\" dy=\"1.2em\">Unix Architecture</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">High Reliability</tspan><tspan x=\"300\" dy=\"1.2em\">Zero Crash Uptime</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Enterprise Variants</tspan><tspan x=\"480\" dy=\"1.2em\">Servers &amp; Mobile</tspan></text></svg>",
+          "caption": {
+            "en": "Ecosystem overview of Linux tracing its Unix origin, open-source licensing model, and multi-platform enterprise distributions.",
+            "hi": "लिनक्स की उत्पत्ति, ओपन-सोर्स लाइसेंसिंग मॉडल और विभिन्न एंटरप्राइज वितरणों का पारिस्थितिकी तंत्र अवलोकन।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how Linux leverages Unix heritage and open-source licensing to deliver stable enterprise networking.",
+          "hint": "Start with Linux establishing an open-source Unix-based operating system, mention deploying services across diverse server and client hardware architectures, explain combining freely customizable source code with enterprise firewalls and access controls, describe running for prolonged periods without system crashes, and conclude with empowering enterprise environments via flexible distributions like Ubuntu and Red Hat.",
+          "target_sequence": [
+            {
+              "id": "en_u12_t1",
+              "text": "Linux provides an open-source Unix-based operating system framework",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u12_t2",
+              "text": "across diverse desktop workstations, mobile units, and enterprise network servers",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u12_t3",
+              "text": "and by combining freely accessible source code with native firewalls and granular access controls",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u12_t4",
+              "text": "it delivers high operational stability and uptime without system slowdowns or frequent reboot crashes",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u12_t5",
+              "text": "thereby supporting secure custom configurations through distributions such as Ubuntu, Fedora, and Red Hat",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u12_d1",
+              "category": "conceptual",
+              "text": "and by locking its underlying source code under strict proprietary secrecy to prevent any administrative customization",
+              "penalty_explanation": "Linux is open-source; its source code is freely available for inspection and modification."
+            },
+            {
+              "id": "en_u12_d2",
+              "category": "technical",
+              "text": "it restricts server deployment exclusively to single-core desktop motherboards that restart automatically every hour",
+              "penalty_explanation": "Linux supports a wide variety of hardware architectures and is renowned for running for long periods without reboots or crashes."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "यूनिक्स विरासत और ओपन-सोर्स लाइसेंसिंग द्वारा लिनक्स की स्थिरता व सुरक्षा को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "लिनक्स ओपन-सोर्स यूनिक्स-आधारित ढांचा प्रदान करता है से शुरू करें, विभिन्न उपकरणों के परिवेश का संदर्भ जोड़ें, स्वतंत्र सोर्स कोड को फायरवॉल व एक्सेस कंट्रोल से जोड़ने का तरीका बताएं, बिना क्रैश हुए लंबे समय तक चलने का परिणाम दें, और विभिन्न वितरणों द्वारा समर्थन पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u12_t1",
+              "text": "लिनक्स एक ओपन-सोर्स यूनिक्स-आधारित ऑपरेटिंग सिस्टम ढांचा प्रदान करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u12_t2",
+              "text": "विभिन्न प्रकार के वर्कस्टेशनों, सर्वरों और मोबाइल उपकरणों के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u12_t3",
+              "text": "और स्वतंत्र रूप से उपलब्ध सोर्स कोड को अंतर्निहित फायरवॉल तथा एक्सेस कंट्रोल के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u12_t4",
+              "text": "यह बार-बार क्रैश या धीमे हुए बिना असाधारण परिचालन स्थिरता और विश्वसनीयता प्रदान करता है",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u12_t5",
+              "text": "जिससे रेड हैट, उबंटू और डेबियन जैसे वितरणों के माध्यम से अनुकूलित और सुरक्षित समाधान संभव होते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u12_d1",
+              "category": "conceptual",
+              "text": "और अपने सोर्स कोड को पूरी तरह गोपनीय और मालिकाना रखकर ताकि कोई इसे संशोधित न कर सके",
+              "penalty_explanation": "लिनक्स एक मुफ़्त और ओपन-सोर्स NOS है जिसका सोर्स कोड स्वतंत्र रूप से उपलब्ध और अनुकूलन योग्य है।"
+            },
+            {
+              "id": "hi_u12_d2",
+              "category": "technical",
+              "text": "यह सिस्टम को प्रत्येक घंटे अनिवार्य रूप से क्रैश करने के लिए मजबूर करके स्थिरता घटाता है",
+              "penalty_explanation": "लिनक्स अपनी स्थिरता के लिए प्रसिद्ध है और बिना क्रैश हुए बहुत लंबे समय तक लगातार चल सकता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Created by Linus Torvalds in 1991, Linux is an open-source, Unix-based NOS known for stability, security, and distributions like Ubuntu and Red Hat.",
+        "hi": "1991 में लाइनस टोरवाल्ड्स द्वारा विकसित, लिनक्स एक ओपन-सोर्स और यूनिक्स-आधारित NOS है जो स्थिरता, सुरक्षा और उबंटू व रेड हैट जैसे वितरणों के लिए जाना जाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "The Linux Three-Tier System Architecture: Kernel, Shell, and Applications",
+          "hi": "लिनक्स की त्रि-स्तरीय प्रणाली संरचना: कर्नल, शेल और एप्लिकेशन"
+        },
+        "theory": {
+          "en": "The internal architecture of Linux is structured into three fundamental components: the Kernel, the Shell, and Applications. The Kernel serves as the core engine ('heart') of the system that interacts directly with physical hardware components. It manages memory allocation, processor scheduling, storage volumes, I/O devices, file systems, security enforcement, and network connectivity. The Shell acts as a command-line interpreter that mediates between users and the Kernel, translating entered commands and scripts into system calls. Applications and utilities comprise pre-installed or downloaded programs that perform specialized operational tasks for users.",
+          "hi": "लिनक्स की आंतरिक संरचना को तीन मुख्य घटकों में विभाजित किया गया है: कर्नल (Kernel), शेल (Shell) और एप्लिकेशन (Applications)। कर्नल लिनक्स का मुख्य घटक और 'दिल' है जो सीधे हार्डवेयर के साथ संपर्क करता है। यह मेमोरी आवंटन, प्रोसेसर शेड्यूलिंग, स्टोरेज, I/O डिवाइस, फाइल सिस्टम, सुरक्षा और नेटवर्क प्रबंधन को नियंत्रित करता है। शेल एक कमांड-लाइन इंटरप्रेटर के रूप में कार्य करता है जो उपयोगकर्ता और कर्नल के बीच इंटरफेस प्रदान करता है और कमांड्स को कर्नल के लिए अनुवादित करता है। एप्लिकेशन और यूटिलिटीज वे प्रोग्राम हैं जिनका उपयोग विभिन्न उपयोगकर्ता कार्यों को पूरा करने के लिए किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Linux Three-Tier Architecture: Hardware to User</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Tier 1: Kernel</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Heart | Hardware Link</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Tier 2: Shell</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">CLI Interpreter ($)</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Tier 3: Apps</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">User Utilities &amp; Tools</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Manages Memory</tspan><tspan x=\"120\" dy=\"1.2em\">CPU, Disks &amp; I/O</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Translates Input</tspan><tspan x=\"300\" dy=\"1.2em\">Invokes Kernel Calls</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Executes Workloads</tspan><tspan x=\"480\" dy=\"1.2em\">Compilers &amp; Editors</tspan></text></svg>",
+          "caption": {
+            "en": "Three-tier architecture of Linux illustrating how the Kernel interfaces directly with hardware while the Shell mediates between applications and the core.",
+            "hi": "लिनक्स की त्रि-स्तरीय संरचना जो दर्शाती है कि कर्नल सीधे हार्डवेयर से जुड़ता है जबकि शेल अनुप्रयोगों और कोर के बीच मध्यस्थता करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the Kernel, Shell, and Applications collaborate within the Linux three-tier architecture.",
+          "hint": "Start with the three-tier Linux system architecture structuring operating tasks, mention coordinating computing activities from raw silicon to end-user programs, explain allowing the Kernel to govern physical hardware and memory directly, describe utilizing the Shell as a command-line interpreter to relay instructions from user applications, and conclude with maintaining stable execution across software utilities.",
+          "target_sequence": [
+            {
+              "id": "en_u13_t1",
+              "text": "The three-tier Linux system architecture coordinates operational duties",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u13_t2",
+              "text": "between physical computer hardware, operating internals, and user software programs",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u13_t3",
+              "text": "and by positioning the Kernel as the central engine managing memory, processors, and peripheral devices directly",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u13_t4",
+              "text": "while utilizing the Shell as a command-line interpreter to pass interpreted commands from user applications to the Kernel",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u13_t5",
+              "text": "it provides a secure abstraction layer ensuring seamless execution across diverse user utilities and system services",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "conceptual",
+              "text": "and by forcing the Shell to communicate directly with hardware silicon while bypassing the Kernel completely",
+              "penalty_explanation": "The Kernel is the component that interacts directly with physical hardware; the Shell communicates with the Kernel."
+            },
+            {
+              "id": "en_u13_d2",
+              "category": "technical",
+              "text": "it eliminates the need for user applications by requiring all calculations to occur only inside the unbooted motherboard BIOS",
+              "penalty_explanation": "Applications are the third tier of Linux, performing varied tasks on top of the Kernel and Shell."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "लिनक्स त्रि-स्तरीय संरचना में कर्नल, शेल और एप्लिकेशन के समन्वय को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "त्रि-स्तरीय लिनक्स प्रणाली संरचना कार्यों का समन्वय करती है से शुरू करें, हार्डवेयर और सॉफ्टवेयर के संदर्भ को जोड़ें, कर्नल द्वारा मेमोरी और सीपीयू का सीधा प्रबंधन बताएं, शेल द्वारा एप्लिकेशन कमांड्स को कर्नल तक पहुंचाने का परिणाम दें, और विभिन्न यूटिलिटीज के सुरक्षित निष्पादन पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u13_t1",
+              "text": "त्रि-स्तरीय लिनक्स प्रणाली संरचना परिचालन कर्तव्यों का समन्वय करती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u13_t2",
+              "text": "भौतिक कंप्यूटर हार्डवेयर, ऑपरेटिंग सिस्टम और उपयोगकर्ता प्रोग्रामों के बीच",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u13_t3",
+              "text": "और कर्नल को मुख्य घटक बनाकर जो मेमोरी, प्रोसेसर और हार्डवेयर उपकरणों का सीधा प्रबंधन करता है",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u13_t4",
+              "text": "तथा शेल को कमांड-लाइन इंटरप्रेटर के रूप में उपयोग करके जो उपयोगकर्ता अनुप्रयोगों के निर्देशों को कर्नल तक पहुंचाता है",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u13_t5",
+              "text": "यह विभिन्न अनुप्रयोगों और सिस्टम सेवाओं के बीच सुरक्षित और सुगम निष्पादन सुनिश्चित करती है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "conceptual",
+              "text": "और शेल को सीधे हार्डवेयर से जोड़कर कर्नल की भूमिका को पूरी तरह समाप्त कर देती है",
+              "penalty_explanation": "कर्नल सीधे हार्डवेयर से इंटरैक्ट करता है, जबकि शेल उपयोगकर्ता और कर्नल के बीच इंटरफेस का काम करता है।"
+            },
+            {
+              "id": "hi_u13_d2",
+              "category": "technical",
+              "text": "यह उपयोगकर्ता अनुप्रयोगों की आवश्यकता को समाप्त करके सभी गणनाएं केवल बायोस चिप में करने पर बाध्य करती है",
+              "penalty_explanation": "लिनक्स की संरचना में एप्लिकेशन तीसरा महत्वपूर्ण स्तर है जो विभिन्न कार्यों को निष्पादित करता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Linux comprises three tiers: the Kernel (hardware/memory manager), the Shell (command interpreter), and Applications (user utilities).",
+        "hi": "लिनक्स में तीन घटक होते हैं: कर्नल (हार्डवेयर/मेमोरी प्रबंधक), शेल (कमांड इंटरप्रेटर), और एप्लिकेशन (उपयोगकर्ता यूटिलिटीज)।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Linux Shell Evolution: From sh, csh, tcsh, and ksh to Modern bash",
+          "hi": "लिनक्स शेल विकास: sh, csh, tcsh और ksh से आधुनिक bash तक"
+        },
+        "theory": {
+          "en": "The command-line interface in Unix and Linux has evolved through a succession of specialized shells. The Bourne Shell (sh), developed by Stephen Bourne, was an early foundational Unix command interpreter. The C-Shell (csh) introduced scripting syntax modeled closely after the C programming language. The TC-Shell (tcsh) enhanced the C-Shell by incorporating inline command editing and interactive history mechanisms. The Korn Shell (ksh), developed by David Korn, merged features of the Bourne Shell, C-Shell, and TC-Shell. The Bourne Again Shell (bash) serves as the modern standard default shell, synthesizing the strengths of sh, csh, tcsh, and ksh while adding extensive customization and built-in scripting utilities.",
+          "hi": "यूनिक्स और लिनक्स में कमांड-लाइन इंटरफेस कई शेल्स के माध्यम से विकसित हुआ है। बॉर्न शेल (sh), जिसे स्टीफन बॉर्न द्वारा विकसित किया गया था, शुरुआती यूनिक्स शेल्स में से एक था। सी-शेल (csh) ने सी-प्रोग्रामिंग भाषा के समान सिंटैक्स पेश किया। टीसी-शेल (tcsh) सी-शेल का एक उन्नत संस्करण था जिसमें इनलाइन कमांड संपादन और कमांड इतिहास की सुविधाएं जोड़ी गईं। कॉर्न शेल (ksh), जिसे डेविड कॉर्न ने बनाया था, ने sh, csh और tcsh की क्षमताओं को एकीकृत किया। बॉर्न अगेन शेल (bash) आधुनिक मानक शेल है, जो sh, csh, tcsh और ksh की सभी क्षमताओं को जोड़ते हुए उन्नत अनुकूलन और इन-बिल्ट यूटिलिटीज प्रदान करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Linux Shell Taxonomy &amp; Evolution Tree</text><rect x=\"45\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"92\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">sh (Bourne)</text><text x=\"92\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Stephen Bourne</text><rect x=\"150\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"197\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">csh / tcsh</text><text x=\"197\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">C Syntax &amp; Edit</text><rect x=\"255\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"302\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">ksh (Korn)</text><text x=\"302\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">David Korn</text><rect x=\"360\" y=\"75\" width=\"195\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"457\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">bash (Bourne Again)</text><text x=\"457\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Standard Modern Default</text><line x1=\"92\" y1=\"130\" x2=\"92\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"197\" y1=\"130\" x2=\"197\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"302\" y1=\"130\" x2=\"302\" y2=\"155\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><line x1=\"457\" y1=\"130\" x2=\"457\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"92\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"92\" dy=\"0\">Original Unix</tspan><tspan x=\"92\" dy=\"1.2em\">Early Standard</tspan></text><text x=\"197\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"197\" dy=\"0\">C-Language Style</tspan><tspan x=\"197\" dy=\"1.2em\">History &amp; Editing</tspan></text><text x=\"302\" y=\"172\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"302\" dy=\"0\">Hybrid Features</tspan><tspan x=\"302\" dy=\"1.2em\">sh + csh + tcsh</tspan></text><text x=\"457\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"457\" dy=\"0\">Complete Synthesis</tspan><tspan x=\"457\" dy=\"1.2em\">Standard Interactive CLI</tspan></text></svg>",
+          "caption": {
+            "en": "Taxonomy of Linux shells tracing command interpreter development from sh, csh, tcsh, and ksh to the modern bash environment.",
+            "hi": "लिनक्स शेल वर्गीकरण जो sh, csh, tcsh और ksh से लेकर आधुनिक bash तक कमांड इंटरप्रेटर के विकास को दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence describing the functional evolution of Linux command shells from early implementations to modern bash.",
+          "hint": "Start with Unix and Linux command-line interpreters progressing through specialized shells, mention interpreting terminal commands across diverse operating environments, explain advancing from the original Bourne Shell through C-Shell syntax, TC-Shell inline editing, and Korn Shell consolidation, describe culminating in the Bourne Again Shell, and conclude with delivering modern interactive terminal environments.",
+          "target_sequence": [
+            {
+              "id": "en_u14_t1",
+              "text": "Linux command-line interpreter environments evolved across generations of specialized shells",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u14_t2",
+              "text": "to translate interactive user terminal commands and automated administrative scripts",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u14_t3",
+              "text": "and by progressing from the foundational Bourne Shell through C-Shell syntax, TC-Shell editing, and Korn Shell unification",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u14_t4",
+              "text": "they culminated in the modern Bourne Again Shell containing built-in utilities and customization options",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u14_t5",
+              "text": "thereby establishing `bash` as the versatile default interactive shell standard across contemporary distributions",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "conceptual",
+              "text": "and by removing all script execution abilities from `bash` so that users must control servers using punched cards",
+              "penalty_explanation": "Bash is an advanced shell that expands scripting and customization capabilities; it does not eliminate them."
+            },
+            {
+              "id": "en_u14_d2",
+              "category": "technical",
+              "text": "they forced `tcsh` to discard all command editing features and revert to non-interactive batch-only execution",
+              "penalty_explanation": "TC-Shell specifically added inline command editing and command history to improve interactivity."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "लिनक्स शेल के ऐतिहासिक विकास और आधुनिक bash की विशेषताओं को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "लिनक्स कमांड-लाइन इंटरप्रेटर विभिन्न पीढ़ियों में विकसित हुए से शुरू करें, टर्मिनल कमांड्स के अनुवाद का संदर्भ दें, sh, csh, tcsh और ksh से आगे बढ़ने का तरीका बताएं, आधुनिक bash में परिणत होने का परिणाम दें, और मानक शेल के रूप में स्थापित होने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u14_t1",
+              "text": "लिनक्स कमांड-लाइन इंटरप्रेटर वातावरण विभिन्न पीढ़ियों के शेल्स के माध्यम से विकसित हुआ",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u14_t2",
+              "text": "उपयोगकर्ता कमांड्स और स्वचालित प्रशासनिक स्क्रिप्ट्स का अनुवाद करने के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u14_t3",
+              "text": "और शुरुआती बॉर्न शेल से लेकर सी-शेल सिंटैक्स, टीसी-शेल एडिटिंग तथा कॉर्न शेल के एकीकरण से आगे बढ़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u14_t4",
+              "text": "यह आधुनिक बॉर्न अगेन शेल में परिणत हुआ जिसमें इन-बिल्ट यूटिलिटीज और अनुकूलन क्षमताएं शामिल हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u14_t5",
+              "text": "जिससे `bash` आधुनिक लिनक्स वितरणों में सबसे बहुमुखी और डिफ़ॉल्ट इंटरैक्टिव शेल के रूप में स्थापित हुआ",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "conceptual",
+              "text": "और `bash` से सभी स्क्रिप्टिंग क्षमताओं को हटाकर सर्वर नियंत्रण को केवल पंच कार्ड तक सीमित करके",
+              "penalty_explanation": "Bash में स्क्रिप्टिंग और इन-बिल्ट यूटिलिटीज का अत्यधिक विस्तार किया गया है, इसे हटाया नहीं गया है।"
+            },
+            {
+              "id": "hi_u14_d2",
+              "category": "technical",
+              "text": "यह टीसी-शेल से सभी इनलाइन एडिटिंग सुविधाओं को हटाकर इसे गैर-इंटरैक्टिव सिस्टम में बदल देता है",
+              "penalty_explanation": "टीसी-शेल ने विशेष रूप से इनलाइन कमांड एडिटिंग और कमांड इतिहास जैसी सुविधाएं जोड़ी थीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "From early sh, csh, tcsh, and ksh, Linux evolved to bash, which synthesizes earlier shell features with advanced customization.",
+        "hi": "शुरुआती sh, csh, tcsh और ksh से विकसित होकर लिनक्स में bash मानक बना, जो सभी पिछली क्षमताओं को उन्नत अनुकूलन के साथ जोड़ता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Core Linux Shell Commands: Identity, Navigation, and File Operations",
+          "hi": "प्रमुख लिनक्स शेल कमांड्स: पहचान, नेविगेशन और फ़ाइल संचालन"
+        },
+        "theory": {
+          "en": "Linux shell commands are instructions entered at the shell prompt ($) to interact with the system. User and session commands include who (lists active logged-in users) and whoami (displays current user identity). Navigation and directory commands include pwd (print working directory), cd (change directory), ls (list directory contents), mkdir (create new directory), and rmdir (remove empty directory). System utilities include date, cal, and echo. File manipulation commands include cp (copy files), cat (concatenate, view, or create files), cmp (compare two files byte-by-byte), find (locate files in storage), grep (Global Regular Expression Print, search text patterns), and netstat (display network statistics and active connections).",
+          "hi": "लिनक्स शेल कमांड उपयोगकर्ता द्वारा शेल प्रॉम्प्ट ($) पर दर्ज किए गए निर्देश होते हैं। उपयोगकर्ता और सत्र कमांड में who (वर्तमान में सक्रिय उपयोगकर्ताओं की सूची) और whoami (वर्तमान उपयोगकर्ता का नाम) शामिल हैं। नेविगेशन और डायरेक्टरी कमांड में pwd (प्रिंट वर्किंग डायरेक्टरी), cd (डायरेक्टरी बदलना), ls (फाइलों की सूची), mkdir (नई डायरेक्टरी बनाना) और rmdir (डायरेक्टरी हटाना) शामिल हैं। सिस्टम यूटिलिटीज में date, cal और echo शामिल हैं। फ़ाइल प्रबंधन में cp (फ़ाइल कॉपी करना), cat (फ़ाइलों को जोड़ना, देखना या बनाना), cmp (दो फ़ाइलों की तुलना करना), find (फ़ाइलें खोजना), grep (फ़ाइल के भीतर पैटर्न खोजना) और netstat (नेटवर्क आंकड़े और सक्रिय कनेक्शन देखना) शामिल हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Linux Shell Command Suite</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Identity &amp; Nav</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">who, pwd, cd, ls</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Directories</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">mkdir, rmdir</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">File Ops</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">cp, cat, cmp</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Search &amp; Net</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">find, grep, netstat</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Session Context</tspan><tspan x=\"102\" dy=\"1.2em\">Current Location</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Folder Control</tspan><tspan x=\"232\" dy=\"1.2em\">Create &amp; Remove</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Data Transfer</tspan><tspan x=\"362\" dy=\"1.2em\">Concat &amp; Compare</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Pattern &amp; Traffic</tspan><tspan x=\"495\" dy=\"1.2em\">Network Stats</tspan></text></svg>",
+          "caption": {
+            "en": "Functional breakdown of essential Linux shell commands across user identity, navigation, file management, pattern search, and network diagnostics.",
+            "hi": "उपयोगकर्ता पहचान, नेविगेशन, फ़ाइल प्रबंधन, पैटर्न खोज और नेटवर्क डायग्नोस्टिक्स में आवश्यक लिनक्स शेल कमांड्स का कार्यात्मक विवरण।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how core Linux shell commands govern user navigation, file processing, and network diagnostics.",
+          "hint": "Start with Linux shell utilities executing command routines, mention operating at the interactive shell prompt, explain combining navigation commands like pwd and cd with file operations like cp and cat, describe utilizing grep for pattern filtering and netstat for network reporting, and conclude with empowering administrators to manage file systems and network states efficiently.",
+          "target_sequence": [
+            {
+              "id": "en_u15_t1",
+              "text": "Core Linux shell commands execute versatile administrative routines",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u15_t2",
+              "text": "directly from the interactive terminal command prompt",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u15_t3",
+              "text": "and by pairing directory navigation via `pwd`, `cd`, and `ls` with file handling via `cp`, `cat`, and `cmp`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u15_t4",
+              "text": "alongside pattern searching with `grep` and connection tracking with `netstat`",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u15_t5",
+              "text": "they provide system administrators with precise control over storage hierarchies, file content, and network interfaces",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "technical",
+              "text": "and by forcing `netstat` to delete directories while `rmdir` displays network traffic statistics",
+              "penalty_explanation": "`netstat` displays network statistics, and `rmdir` removes empty directories; their roles cannot be swapped."
+            },
+            {
+              "id": "en_u15_d2",
+              "category": "conceptual",
+              "text": "they disable terminal keyboard input permanently so that users cannot view file listings or directory paths",
+              "penalty_explanation": "Shell commands require keyboard input at the prompt ($) to execute and display directory or file details."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "लिनक्स शेल कमांड्स द्वारा नेविगेशन, फ़ाइल प्रबंधन और नेटवर्क डायग्नोस्टिक्स को नियंत्रित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "प्रमुख लिनक्स शेल कमांड्स प्रशासनिक कार्यों को निष्पादित करती हैं से शुरू करें, टर्मिनल प्रॉम्प्ट का संदर्भ दें, नेविगेशन व फ़ाइल प्रबंधन कमांड्स को जोड़ने का तरीका बताएं, grep व netstat द्वारा सर्च व नेटवर्क ट्रैकिंग का परिणाम दें, और स्टोरेज व नेटवर्क पर पूर्ण नियंत्रण प्रदान करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u15_t1",
+              "text": "प्रमुख लिनक्स शेल कमांड्स बहुमुखी प्रशासनिक कार्यों को निष्पादित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u15_t2",
+              "text": "शेल प्रॉम्प्ट के माध्यम से सीधे इंटरैक्टिव टर्मिनल पर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u15_t3",
+              "text": "और `pwd`, `cd` तथा `ls` जैसी नेविगेशन कमांड्स को `cp`, `cat` तथा `cmp` जैसी फ़ाइल ऑपरेशनों से जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u15_t4",
+              "text": "साथ ही `grep` से पैटर्न खोजने और `netstat` से नेटवर्क कनेक्शन तथा आंकड़ों को ट्रैक करके",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u15_t5",
+              "text": "ये सिस्टम प्रशासकों को स्टोरेज पदानुक्रम, फ़ाइल सामग्री और नेटवर्क इंटरफेस पर सटीक नियंत्रण प्रदान करती हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "technical",
+              "text": "और `netstat` द्वारा फ़ाइलों को मिटाने तथा `rmdir` द्वारा नेटवर्क आंकड़े प्रदर्शित करने के लिए मजबूर करके",
+              "penalty_explanation": "netstat नेटवर्क आंकड़े दिखाता है और rmdir डायरेक्टरी हटाता है; इनके कार्य विपरीत नहीं होते।"
+            },
+            {
+              "id": "hi_u15_d2",
+              "category": "conceptual",
+              "text": "ये टर्मिनल कीबोर्ड इनपुट को हमेशा के लिए बंद कर देती हैं ताकि कोई फ़ाइल सूची न देख सके",
+              "penalty_explanation": "शेल कमांड्स कीबोर्ड के माध्यम से दर्ज की जाती हैं ताकि फ़ाइलें और डायरेक्टरी व्यवस्थित रूप से देखी और प्रबंधित की जा सकें।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Commands like who, pwd, ls, cat, grep, and netstat provide command-line management for users, files, search patterns, and network traffic.",
+        "hi": "who, pwd, ls, cat, grep और netstat जैसी कमांड्स उपयोगकर्ताओं, फाइलों, पैटर्न सर्च और नेटवर्क ट्रैफ़िक के प्रबंधन के लिए आवश्यक उपकरण हैं।"
+      }
+    }
+  ]
+}
