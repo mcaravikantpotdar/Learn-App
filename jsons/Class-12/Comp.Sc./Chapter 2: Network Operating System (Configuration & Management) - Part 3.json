@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 2: Network Operating System (Configuration & Management) - Part 3",
+      "hi": "अध्याय 2: नेटवर्क ऑपरेटिंग सिस्टम (कॉन्फ़िगरेशन और प्रबंधन) - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Filesystem Hierarchy Standard and Directory Roles",
+          "hi": "फ़ाइलसिस्टम हाइरार्की स्टैंडर्ड और डायरेक्टरी की भूमिकाएं"
+        },
+        "theory": {
+          "en": "Linux enforces the Filesystem Hierarchy Standard (FHS) to maintain an organized single-rooted directory tree across distributions. The root directory `/` serves as the top-level parent under which all other files, mounted storage volumes, and directories reside[cite: 18]. Key structural directories include `/bin`, which holds essential executable binary programs for core system commands[cite: 18]; `/etc`, which houses configuration files for the operating system and installed services[cite: 18]; and `/dev`, which contains special device files that represent hardware devices such as hard disks, keyboards, and printers[cite: 18].",
+          "hi": "लिनक्स सभी वितरणों में एक व्यवस्थित एकल-रूट डायरेक्टरी ट्री बनाए रखने के लिए 'फ़ाइलसिस्टम हाइरार्की स्टैंडर्ड' (FHS) लागू करता है[cite: 18]। सर्वोच्च रूट डायरेक्टरी `/` मुख्य पैरेंट डायरेक्टरी के रूप में कार्य करती है जिसके अंतर्गत अन्य सभी फ़ाइलें, स्टोरेज वॉल्यूम और डायरेक्टरी स्थित होती हैं[cite: 18]। मुख्य संरचनात्मक डायरेक्टरी में `/bin` शामिल है, जिसमें बुनियादी कमांड के लिए आवश्यक निष्पादन योग्य बाइनरी प्रोग्राम होते हैं[cite: 18]; `/etc`, जिसमें ऑपरेटिंग सिस्टम और सेवाओं की कॉन्फ़िगरेशन फ़ाइलें संग्रहीत होती हैं[cite: 18]; और `/dev`, जिसमें हार्डवेयर उपकरणों (जैसे हार्ड डिस्क, कीबोर्ड और प्रिंटर) का प्रतिनिधित्व करने वाली डिवाइस फ़ाइलें होती हैं[cite: 18]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Linux Filesystem Hierarchy Standard (FHS)</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">/ (Root)</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Top-Level Node</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">/bin</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">System Binaries</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">/etc</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Config Files</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">/dev</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Device Nodes</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Parent Root</tspan><tspan x=\"102\" dy=\"1.2em\">Base of Tree</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Executable Tools</tspan><tspan x=\"232\" dy=\"1.2em\">Standard Apps</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">System Settings</tspan><tspan x=\"362\" dy=\"1.2em\">App Parameters</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Hardware Nodes</tspan><tspan x=\"495\" dy=\"1.2em\">Disks &amp; Printers</tspan></text></svg>",
+          "caption": {
+            "en": "FHS directory layout displaying root `/` branching into `/bin` for executables, `/etc` for configurations, and `/dev` for hardware nodes[cite: 18].",
+            "hi": "FHS डायरेक्टरी लेआउट जो रूट `/` से निष्पादन योग्य प्रोग्रामों के लिए `/bin`, कॉन्फ़िगरेशन के लिए `/etc` और हार्डवेयर के लिए `/dev` में शाखाओं को दर्शाता है[cite: 18]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the Filesystem Hierarchy Standard organizes Linux system directories under root.",
+          "hint": "Start with the Filesystem Hierarchy Standard organizing directory layouts, mention governing Linux distributions, explain establishing the master root directory to house all files, describe classifying executable binaries in /bin, configuration files in /etc, and hardware nodes in /dev, and conclude with maintaining predictable administration.",
+          "target_sequence": [
+            {
+              "id": "en_u11_t1",
+              "text": "The Filesystem Hierarchy Standard establishes a structured directory layout",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u11_t2",
+              "text": "across modern enterprise and workstation Linux distributions",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u11_t3",
+              "text": "and by positioning the root `/` directory as the top-level parent containing all subdirectories",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u11_t4",
+              "text": "while assigning executable binaries to `/bin`, configuration files to `/etc`, and hardware device nodes to `/dev`",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u11_t5",
+              "text": "it provides a predictable filesystem architecture for system administrators and installed applications",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "technical",
+              "text": "while placing hardware device node files directly into `/bin` and executable programs inside `/etc`",
+              "penalty_explanation": "Under FHS, `/bin` contains executable binaries, `/etc` holds configuration files, and `/dev` represents hardware device nodes."
+            },
+            {
+              "id": "en_u11_d2",
+              "category": "conceptual",
+              "text": "and by eliminating the master root `/` directory completely so that files exist without any parent path",
+              "penalty_explanation": "All Linux directories and files descend from the top-level master root directory `/`."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "फ़ाइलसिस्टम हाइरार्की स्टैंडर्ड द्वारा लिनक्स सिस्टम डायरेक्टरी को व्यवस्थित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "फ़ाइलसिस्टम हाइरार्की स्टैंडर्ड एक संरचित डायरेक्टरी लेआउट स्थापित करता है से शुरू करें, लिनक्स वितरणों का संदर्भ दें, रूट `/` को मुख्य पैरेंट डायरेक्टरी बनाने का तरीका बताएं, `/bin`, `/etc` और `/dev` में फाइलों के वर्गीकरण का परिणाम दें, और अनुमानित आर्किटेक्चर प्रदान करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u11_t1",
+              "text": "फ़ाइलसिस्टम हाइरार्की स्टैंडर्ड एक संरचित डायरेक्टरी लेआउट स्थापित करता है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u11_t2",
+              "text": "विभिन्न प्रकार के लिनक्स वितरणों और ऑपरेटिंग सिस्टम के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u11_t3",
+              "text": "और सर्वोच्च रूट `/` डायरेक्टरी को मुख्य पैरेंट बनाकर जिसके अंतर्गत सभी सब-डायरेक्टरी स्थित होती हैं",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u11_t4",
+              "text": "तथा निष्पादन योग्य प्रोग्रामों को `/bin`, सेटिंग्स को `/etc` और हार्डवेयर उपकरणों को `/dev` में निर्दिष्ट करके",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u11_t5",
+              "text": "यह प्रशासकों और अनुप्रयोगों के लिए एक सुव्यवस्थित और अनुमानित फ़ाइल सिस्टम ढांचा सुनिश्चित करता है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "technical",
+              "text": "तथा हार्डवेयर नोड्स को सीधे `/bin` में और निष्पादन योग्य प्रोग्रामों को `/etc` में विपरीत रखकर",
+              "penalty_explanation": "FHS में बाइनरी निष्पादन योग्य प्रोग्राम `/bin` में और हार्डवेयर डिवाइस फ़ाइलें `/dev` में रखी जाती हैं।"
+            },
+            {
+              "id": "hi_u11_d2",
+              "category": "conceptual",
+              "text": "और रूट `/` डायरेक्टरी को पूरी तरह हटाकर ताकि सभी फ़ाइलें बिना किसी पैरेंट पाथ के स्वतंत्र रहें",
+              "penalty_explanation": "लिनक्स में सभी डायरेक्टरी और फाइलें अनिवार्य रूप से सर्वोच्च रूट डायरेक्टरी `/` के नीचे स्थित होती हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The FHS defines an inverted tree rooted at `/`, housing binary executables in `/bin`, system configurations in `/etc`, and device files in `/dev`[cite: 18].",
+        "hi": "FHS रूट `/` से शुरू होने वाली ट्री संरचना को परिभाषित करता है, जिसमें `/bin` में बाइनरी, `/etc` में सेटिंग्स और `/dev` में डिवाइस फ़ाइलें होती हैं[cite: 18]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Linux File Permission Groups: Owner, Group, Others, and All",
+          "hi": "लिनक्स फ़ाइल अनुमति समूह: ओनर (u), ग्रुप (g), अदर्स (o) और ऑल (a)"
+        },
+        "theory": {
+          "en": "File permissions in Linux regulate who can access files and directories and what operations they may perform[cite: 18]. Access control is categorized into four distinct permission entities:\n1. Owner (`u`): The specific user account that created or owns the file.\n2. Group (`g`): A collection of users who share common project or departmental access rights to the file.\n3. Others (`o`): Any other system user account outside the ownership group[cite: 19].\n4. All (`a`): Shorthand representing all three user categories (`u`, `g`, and `o`) simultaneously[cite: 19].",
+          "hi": "लिनक्स में फ़ाइल अनुमतियां (पर्मिशन) यह निर्धारित करती हैं कि सिस्टम पर फ़ाइलों और डायरेक्टरी तक कौन पहुंच सकता है और क्या कार्य कर सकता है[cite: 18]। एक्सेस कंट्रोल को चार श्रेणियों में विभाजित किया गया है[cite: 18, 19]:\n1. ओनर / Owner (`u`): वह विशिष्ट उपयोगकर्ता जिसने फ़ाइल बनाई है या जो उसका स्वामी है[cite: 19]।\n2. ग्रुप / Group (`g`): उपयोगकर्ताओं का एक समूह जिसके पास फ़ाइल के लिए साझा अधिकार होते हैं[cite: 19]।\n3. अदर्स / Others (`o`): ओनर और ग्रुप के अतिरिक्त सिस्टम के अन्य सभी उपयोगकर्ता[cite: 19]।\n4. ऑल / All (`a`): एक संयुक्त संक्षिप्त नाम जो तीनों उपयोगकर्ता श्रेणियों (`u`, `g` और `o`) का एक साथ प्रतिनिधित्व करता है[cite: 19]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Linux Permission Target Groups (u, g, o, a)</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Owner (u)</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">File Creator</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Group (g)</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Shared Domain</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Others (o)</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Public Users</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">All (a)</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">u + g + o</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Individual Account</tspan><tspan x=\"102\" dy=\"1.2em\">Primary Rights</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Team Members</tspan><tspan x=\"232\" dy=\"1.2em\">Collaborative Pool</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Unrelated Users</tspan><tspan x=\"362\" dy=\"1.2em\">Restricted View</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Universal Scope</tspan><tspan x=\"495\" dy=\"1.2em\">Complete Coverage</tspan></text></svg>",
+          "caption": {
+            "en": "Linux access governance partitioning security contexts into Owner (`u`), Group (`g`), Others (`o`), and All Users (`a`)[cite: 18, 19].",
+            "hi": "लिनक्स सुरक्षा विभाजन जो अनुमतियों को ओनर (`u`), ग्रुप (`g`), अदर्स (`o`) और ऑल (`a`) में बांटता है[cite: 18, 19]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how Linux partitions access rights across distinct permission groups.",
+          "hint": "Start with Linux permission mechanisms organizing user security contexts, mention governing multi-user system access, explain categorizing permissions into Owner for creators, Group for teammates, Others for public accounts, and All for universal coverage, describe applying granular privilege scopes, and conclude with safeguarding confidential files.",
+          "target_sequence": [
+            {
+              "id": "en_u12_t1",
+              "text": "Linux permission mechanisms structure access control contexts",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u12_t2",
+              "text": "across shared files and directories in multi-user environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u12_t3",
+              "text": "and by dividing user privileges into Owner `u`, collaborative Group `g`, unrelated Others `o`, and universal All `a`",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u12_t4",
+              "text": "they assign isolated security boundaries tailored to each user tier",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u12_t5",
+              "text": "thereby protecting private administrative documents from unauthorized exposure to general system users",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u12_d1",
+              "category": "conceptual",
+              "text": "and by designating Others `o` as the sole entity permitted to modify root system configurations",
+              "penalty_explanation": "Others (`o`) represents general unrelated users, who are typically restricted, not given exclusive root control."
+            },
+            {
+              "id": "en_u12_d2",
+              "category": "technical",
+              "text": "they force every single file to grant full read and write access to unauthorized external accounts",
+              "penalty_explanation": "Permission groups allow administrators to restrict access rather than exposing files universally."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "लिनक्स में अनुमति समूहों द्वारा फ़ाइल पहुंच अधिकारों को नियंत्रित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "लिनक्स पर्मिशन तंत्र एक्सेस कंट्रोल को संरचित करते हैं से शुरू करें, मल्टी-यूजर परिवेश का संदर्भ दें, ओनर `u`, ग्रुप `g`, अदर्स `o` और ऑल `a` में विभाजित करने का तरीका बताएं, अलग-अलग सुरक्षा सीमाएं लागू करने का परिणाम दें, और अनधिकृत पहुंच से फाइलों की रक्षा करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u12_t1",
+              "text": "लिनक्स पर्मिशन तंत्र एक्सेस कंट्रोल संरचना को व्यवस्थित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u12_t2",
+              "text": "मल्टी-यूजर परिवेश में साझा की गई फ़ाइलों और डायरेक्टरी के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u12_t3",
+              "text": "और उपयोगकर्ता अधिकारों को ओनर `u`, समूह `g`, अन्य `o` तथा सर्वव्यापी ऑल `a` में विभाजित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u12_t4",
+              "text": "ये प्रत्येक उपयोगकर्ता स्तर के लिए अलग-अलग सुरक्षा सीमाएं तय करते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u12_t5",
+              "text": "जिससे निजी और प्रशासनिक दस्तावेजों को सामान्य उपयोगकर्ताओं द्वारा अनधिकृत रूप से देखने से रोका जा सके",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u12_d1",
+              "category": "conceptual",
+              "text": "और अदर्स `o` को रूट सिस्टम सेटिंग्स को बदलने का एकमात्र अधिकार देकर",
+              "penalty_explanation": "अदर्स (`o`) बाहरी सामान्य उपयोगकर्ताओं का समूह है, इसे रूट सेटिंग्स बदलने का एकमात्र अधिकार नहीं दिया जाता।"
+            },
+            {
+              "id": "hi_u12_d2",
+              "category": "technical",
+              "text": "ये प्रत्येक फ़ाइल को बिना किसी सुरक्षा जांच के सभी बाहरी उपयोगकर्ताओं के लिए खुला छोड़ देते हैं",
+              "penalty_explanation": "अनुमति समूहों का उद्देश्य फाइलों को सुरक्षित रखना और अनधिकृत पहुंच को रोकना होता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Linux file access is partitioned across four target entities: Owner (`u`), Group (`g`), Others (`o`), and All Users (`a`)[cite: 18, 19].",
+        "hi": "लिनक्स फ़ाइल अनुमतियां चार समूहों में विभाजित होती हैं: ओनर (`u`), ग्रुप (`g`), अदर्स (`o`), और ऑल (`a`)[cite: 18, 19]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Permission Rights: Read (r), Write (w), and Execute (x) Mechanics",
+          "hi": "अनुमति अधिकार: रीड (r), राइट (w) और निष्पादन/एग्जीक्यूट (x) की कार्यप्रणाली"
+        },
+        "theory": {
+          "en": "Linux evaluates three primary permission rights for files and directories[cite: 19]:\n1. Read (`r`): Grants permission to open and view the text or binary contents of a file[cite: 19]. On directories, it allows listing file entries[cite: 19].\n2. Write (`w`): Grants permission to modify, edit, overwrite, or delete file contents[cite: 19]. On directories, it allows creating or removing files[cite: 19].\n3. Execute (`x`): Grants permission to run the file directly as an executable binary program or shell script[cite: 19]. On directories, execute permission is required to enter or traverse into that directory path[cite: 19].",
+          "hi": "लिनक्स फ़ाइलों और डायरेक्टरी के लिए तीन प्राथमिक अनुमति प्रकारों का मूल्यांकन करता है[cite: 19]:\n1. रीड / Read (`r`): फ़ाइल की सामग्री को पढ़ने और देखने की अनुमति देता है[cite: 19]। डायरेक्टरी पर यह फाइलों की सूची देखने की अनुमति देता है[cite: 19]।\n2. राइट / Write (`w`): फ़ाइल की सामग्री को संशोधित करने, संपादित करने या मिटाने की अनुमति देता है[cite: 19]। डायरेक्टरी पर यह नई फाइलें बनाने या हटाने की अनुमति देता है[cite: 19]।\n3. एग्जीक्यूट / Execute (`x`): फ़ाइल को एक निष्पादन योग्य प्रोग्राम या स्क्रिप्ट के रूप में चलाने की अनुमति देता है[cite: 19]। डायरेक्टरी पर यह उस पाथ के भीतर प्रवेश करने या नेविगेट करने के लिए आवश्यक है[cite: 19]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Permission Modes: Read, Write &amp; Execute</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Read (r)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">View File Contents</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Write (w)</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Modify &amp; Delete</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Execute (x)</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Run Programs / Scripts</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Open Records</tspan><tspan x=\"120\" dy=\"1.2em\">List Directory</tspan></text><text x=\"300\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Alter Text</tspan><tspan x=\"300\" dy=\"1.2em\">Append Content</tspan></text><text x=\"480\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Launch Process</tspan><tspan x=\"480\" dy=\"1.2em\">Compiled Binaries</tspan></text></svg>",
+          "caption": {
+            "en": "Three-tier operational permission rights granting viewing (`r`), modification (`w`), and process execution (`x`)[cite: 19].",
+            "hi": "तीन-स्तरीय परिचालन अनुमतियां जो सामग्री देखने (`r`), संशोधन (`w`) और निष्पादन (`x`) की अनुमति देती हैं[cite: 19]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how Read, Write, and Execute rights regulate user interactions with Linux files.",
+          "hint": "Start with Linux permission attributes defining distinct operational rights, mention regulating access to files and directories, explain granting Read `r` to view data, Write `w` to modify content, and Execute `x` to run programs, describe enforcing least privilege policies, and conclude with preventing accidental tampering and unauthorized execution.",
+          "target_sequence": [
+            {
+              "id": "en_u13_t1",
+              "text": "Linux permission attributes define discrete operational rights",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u13_t2",
+              "text": "across local file systems and executable script repositories",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u13_t3",
+              "text": "and by evaluating Read `r` for viewing contents, Write `w` for modifying records, and Execute `x` for running binary programs",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u13_t4",
+              "text": "they restrict sensitive actions strictly to users holding explicitly granted privileges",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u13_t5",
+              "text": "thereby preventing accidental data corruption and blocking unauthorized binary program execution",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "technical",
+              "text": "and by forcing Execute `x` to display plain text while Read `r` deletes the operating system kernel",
+              "penalty_explanation": "Read (`r`) views file contents, Write (`w`) modifies files, and Execute (`x`) runs executable programs."
+            },
+            {
+              "id": "en_u13_d2",
+              "category": "conceptual",
+              "text": "they convert every non-executable text memo into an automated bootloader file",
+              "penalty_explanation": "Permission flags manage operational access; they do not transform regular text files into bootloaders."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "रीड, राइट और एग्जीक्यूट अनुमतियों द्वारा फ़ाइल संचालन को नियंत्रित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "लिनक्स पर्मिशन गुण विशिष्ट परिचालन अधिकार निर्धारित करते हैं से शुरू करें, स्थानीय फ़ाइल सिस्टम का संदर्भ दें, रीड `r` से सामग्री देखने, राइट `w` से संशोधन और एग्जीक्यूट `x` से प्रोग्राम चलाने का तरीका बताएं, संवेदनशील कार्यों को अधिकृत उपयोगकर्ताओं तक सीमित करने का परिणाम दें, और अनधिकृत निष्पादन को रोकने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u13_t1",
+              "text": "लिनक्स पर्मिशन गुण विशिष्ट परिचालन अधिकार निर्धारित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u13_t2",
+              "text": "स्थानीय फ़ाइल सिस्टम और निष्पादन योग्य प्रोग्रामों के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u13_t3",
+              "text": "और सामग्री देखने के लिए रीड `r`, संशोधन के लिए राइट `w` तथा प्रोग्राम चलाने के लिए एग्जीक्यूट `x` का मूल्यांकन करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u13_t4",
+              "text": "ये संवेदनशील कार्यों को केवल स्पष्ट रूप से अधिकृत उपयोगकर्ताओं तक सीमित करते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u13_t5",
+              "text": "जिससे फ़ाइल डेटा के आकस्मिक संपादन और दुर्भावनापूर्ण बाइनरी निष्पादन को रोका जा सके",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "technical",
+              "text": "और एग्जीक्यूट `x` द्वारा टेक्स्ट देखने तथा रीड `r` द्वारा कर्नेल को मिटाने के विपरीत नियम लागू करके",
+              "penalty_explanation": "रीड (`r`) सामग्री देखने के लिए और एग्जीक्यूट (`x`) प्रोग्राम चलाने के लिए होता है, इनके कार्य विपरीत नहीं होते।"
+            },
+            {
+              "id": "hi_u13_d2",
+              "category": "conceptual",
+              "text": "ये प्रत्येक सामान्य टेक्स्ट नोट को अपने आप सिस्टम बूटलोडर में बदल देते हैं",
+              "penalty_explanation": "अनुमतियां केवल एक्सेस अधिकार निर्धारित करती हैं, वे फ़ाइलों के प्रकार या बूटलोडर को नहीं बदलती हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "File permissions comprise Read (`r` - view contents), Write (`w` - edit/delete), and Execute (`x` - run as a program/script)[cite: 19].",
+        "hi": "फ़ाइल अनुमतियों में रीड (`r` - सामग्री पढ़ना), राइट (`w` - संपादित/संशोधित करना), और एग्जीक्यूट (`x` - प्रोग्राम निष्पादित करना) शामिल हैं[cite: 19]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Inspecting File Permissions via ls -l",
+          "hi": "ls -l कमांड द्वारा फ़ाइल अनुमतियों का निरीक्षण"
+        },
+        "theory": {
+          "en": "In Linux, file permissions can be viewed using the long-listing terminal command `$ ls -l`[cite: 19]. The resulting output presents a 10-character string detailing the file's mode[cite: 19]:\n- The first character indicates file type (e.g., `-` for a regular file, `d` for a directory)[cite: 18].\n- Characters 2–4 represent Owner permissions (`r`, `w`, `x`)[cite: 19].\n- Characters 5–7 represent Group permissions (`r`, `w`, `x`)[cite: 19].\n- Characters 8–10 represent Others permissions (`r`, `w`, `x`)[cite: 19].\nA hyphen `-` within any position signifies that the corresponding permission is denied.",
+          "hi": "लिनक्स में फ़ाइल अनुमतियों को लॉन्ग-लिस्टिंग कमांड `$ ls -l` चलाकर देखा जा सकता है[cite: 19]। इसका आउटपुट 10-वर्णों की एक स्ट्रिंग प्रदर्शित करता है[cite: 19]:\n- पहला वर्ण फ़ाइल का प्रकार दर्शाता है (जैसे सामान्य फ़ाइल के लिए `-` और डायरेक्टरी के लिए `d`)[cite: 18]।\n- 2 से 4 तक के वर्ण ओनर की अनुमतियों (`r`, `w`, `x`) को दर्शाते हैं[cite: 19]।\n- 5 से 7 तक के वर्ण ग्रुप की अनुमतियों (`r`, `w`, `x`) को दर्शाते हैं[cite: 19]।\n- 8 से 10 तक के वर्ण अदर्स की अनुमतियों (`r`, `w`, `x`) को दर्शाते हैं[cite: 19]।\nकिसी भी स्थान पर हाइफ़न `-` का अर्थ है कि वह संबंधित अनुमति अस्वीकृत या निष्क्रिय है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Permission Parsing: $ ls -l Output</text><rect x=\"45\" y=\"75\" width=\"80\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"85\" y=\"95\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Type</text><text x=\"85\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">- or d</text><rect x=\"135\" y=\"75\" width=\"130\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"200\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Owner (u)</text><text x=\"200\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">r w x</text><rect x=\"275\" y=\"75\" width=\"130\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"340\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Group (g)</text><text x=\"340\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">r w -</text><rect x=\"415\" y=\"75\" width=\"140\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"485\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Others (o)</text><text x=\"485\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">r - -</text><line x1=\"85\" y1=\"130\" x2=\"85\" y2=\"155\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"200\" y1=\"130\" x2=\"200\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"340\" y1=\"130\" x2=\"340\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"485\" y1=\"130\" x2=\"485\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"85\" y=\"172\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"85\" dy=\"0\">File Node</tspan><tspan x=\"85\" dy=\"1.2em\">Pos 1</tspan></text><text x=\"200\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"200\" dy=\"0\">Creator Rights</tspan><tspan x=\"200\" dy=\"1.2em\">Pos 2 - 4</tspan></text><text x=\"340\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"340\" dy=\"0\">Team Rights</tspan><tspan x=\"340\" dy=\"1.2em\">Pos 5 - 7</tspan></text><text x=\"485\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"485\" dy=\"0\">Public Rights</tspan><tspan x=\"485\" dy=\"1.2em\">Pos 8 - 10</tspan></text></svg>",
+          "caption": {
+            "en": "Structural breakdown of `ls -l` permission notation parsing file type, Owner triad, Group triad, and Others triad[cite: 19].",
+            "hi": "`ls -l` पर्मिशन आउटपुट का विभाजन जो फ़ाइल प्रकार, ओनर समूह, ग्रुप समूह और अदर्स समूह को दर्शाता है[cite: 19]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the ls -l command decodes and displays Linux file permission settings.",
+          "hint": "Start with the long listing command ls -l executing terminal queries, mention evaluating directory items, explain outputting permission strings divided into file type, Owner, Group, and Others triads, describe representing active rights with r, w, and x alongside denied rights with hyphens, and conclude with enabling instant security auditing.",
+          "target_sequence": [
+            {
+              "id": "en_u14_t1",
+              "text": "The terminal command `ls -l` generates long-listing directory reports",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u14_t2",
+              "text": "to audit file metadata and storage security attributes",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u14_t3",
+              "text": "and by displaying a ten-character string detailing file type alongside Owner, Group, and Others permission triads",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u14_t4",
+              "text": "where active permissions appear as `r`, `w`, or `x` and absent rights appear as hyphens",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u14_t5",
+              "text": "it provides administrators with instant visual verification of who can access or modify each file",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "technical",
+              "text": "and by executing the `deluser` utility automatically whenever a user views directory listings",
+              "penalty_explanation": "`ls -l` simply lists file permissions and metadata; it does not delete user accounts."
+            },
+            {
+              "id": "en_u14_d2",
+              "category": "conceptual",
+              "text": "it encrypts all filenames permanently so that administrators cannot read permissions on screen",
+              "penalty_explanation": "`ls -l` is designed to display permissions transparently, not scramble or encrypt filenames."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ls -l कमांड द्वारा लिनक्स फ़ाइल अनुमतियों को प्रदर्शित और व्याख्यायित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "टर्मिनल कमांड `ls -l` विस्तृत रिपोर्ट उत्पन्न करती है से शुरू करें, सुरक्षा विशेषताओं का संदर्भ दें, 10-वर्णों की स्ट्रिंग में ओनर, ग्रुप और अदर्स के विभाजन का तरीका बताएं, अनुमतियों को `r`, `w`, `x` और हाइफ़न में दर्शाने का परिणाम दें, और एक्सेस अधिकारों के सत्यापन पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u14_t1",
+              "text": "टर्मिनल कमांड `ls -l` विस्तृत डायरेक्टरी रिपोर्ट तैयार करती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u14_t2",
+              "text": "फ़ाइल मेटाडेटा और स्टोरेज सुरक्षा विशेषताओं का निरीक्षण करने के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u14_t3",
+              "text": "और दस वर्णों की स्ट्रिंग में फ़ाइल प्रकार के साथ ओनर, ग्रुप तथा अदर्स के तीन-तीन अनुमति समूहों को प्रदर्शित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u14_t4",
+              "text": "जहाँ सक्रिय अनुमतियां `r`, `w` या `x` के रूप में तथा निष्क्रिय अधिकार हाइफ़न के रूप में दिखाई देते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u14_t5",
+              "text": "यह प्रशासकों को यह तुरंत सत्यापित करने की सुविधा देती है कि प्रत्येक फ़ाइल तक किसकी पहुंच है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "technical",
+              "text": "और जब भी कोई उपयोगकर्ता लिस्टिंग देखता है तो `deluser` कमांड को स्वतः निष्पादित करके",
+              "penalty_explanation": "`ls -l` केवल फ़ाइल अनुमतियों को प्रदर्शित करता है, यह उपयोगकर्ताओं को डिलीट नहीं करता।"
+            },
+            {
+              "id": "hi_u14_d2",
+              "category": "conceptual",
+              "text": "यह सभी फ़ाइल नामों को हमेशा के लिए एन्क्रिप्ट कर देती है ताकि कोई भी स्क्रीन पर पर्मिशन न देख सके",
+              "penalty_explanation": "`ls -l` कमांड अनुमतियों को स्पष्ट रूप से स्क्रीन पर दिखाने के लिए बनाई गई है, छुपाने के लिए नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Running `ls -l` outputs file permissions as a 10-character string detailing file type, Owner (`u`), Group (`g`), and Others (`o`) access[cite: 19].",
+        "hi": "`ls -l` कमांड फ़ाइल अनुमतियों को 10 वर्णों की स्ट्रिंग में दिखाती है, जिसमें फ़ाइल प्रकार, ओनर (`u`), ग्रुप (`g`) और अदर्स (`o`) के अधिकार स्पष्ट होते हैं[cite: 19]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Modifying File Permissions: The chmod Command and Symbolic Operators",
+          "hi": "फ़ाइल अनुमतियों में संशोधन: chmod कमांड और प्रतीकात्मक ऑपरेटर्स"
+        },
+        "theory": {
+          "en": "File permissions in Linux are updated using the `chmod` (change mode) command[cite: 19]. Permissions can be adjusted symbolically using target entities (`u`, `g`, `o`, `a`), rights (`r`, `w`, `x`), and mathematical operator symbols[cite: 19]:\n- The plus `+` symbol is used to grant or add permissions[cite: 19].\n- The minus `-` symbol is used to revoke or remove permissions[cite: 19].\nFor instance, executing `$ chmod ugo+rwx file01.txt` grants full read, write, and execute permissions to the owner, group, and others simultaneously[cite: 19]. Conversely, executing `$ chmod o-w file01.txt` removes write privileges from all users outside the owner group.",
+          "hi": "लिनक्स में फ़ाइल अनुमतियों को `chmod` (चेंज मोड) कमांड का उपयोग करके संशोधित किया जाता है[cite: 19]। अनुमतियों को लक्षित संस्थाओं (`u`, `g`, `o`, `a`), अधिकारों (`r`, `w`, `x`), और ऑपरेटर प्रतीकों के माध्यम से बदला जाता है[cite: 19]:\n- अनुमति जोड़ने के लिए `+` चिन्ह का उपयोग किया जाता है[cite: 19]।\n- अनुमति हटाने के लिए `-` चिन्ह का उपयोग किया जाता है[cite: 19]।\nउदाहरण के लिए, `$ chmod ugo+rwx file01.txt` निष्पादित करने पर फ़ाइल के ओनर, ग्रुप और अदर्स तीनों को एक साथ पूर्ण रीड, राइट और एग्जीक्यूट अनुमतियां मिल जाती हैं[cite: 19]। इसके विपरीत, `$ chmod o-w file01.txt` चलाने से अदर्स समूह से राइट अनुमति वापस ले ली जाती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Modifying Rights: chmod Syntax &amp; Operators</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Entities</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">u, g, o, a</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Operators</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">+ (Add) | - (Revoke)</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Permissions</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">r, w, x</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Select Target</tspan><tspan x=\"120\" dy=\"1.2em\">User Tiers</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Action Toggle</tspan><tspan x=\"300\" dy=\"1.2em\">Grant or Revoke</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Target Right</tspan><tspan x=\"480\" dy=\"1.2em\">Read, Write, Exec</tspan></text></svg>",
+          "caption": {
+            "en": "Syntax mechanism of `chmod` combining target entities (`u`, `g`, `o`, `a`), mathematical operators (`+`, `-`), and permission rights (`r`, `w`, `x`)[cite: 19].",
+            "hi": "`chmod` का सिंटैक्स तंत्र जो लक्षित समूहों (`u`, `g`, `o`, `a`), ऑपरेटर्स (`+`, `-`) और अनुमति अधिकारों (`r`, `w`, `x`) को जोड़ता है[cite: 19]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the chmod command updates file permissions using symbolic operators.",
+          "hint": "Start with the administrative utility chmod modifying security attributes, mention adjusting access control on targeted files, explain pairing entities u, g, and o with the plus operator to grant rights and the minus operator to revoke rights, describe modifying read, write, and execute flags dynamically, and conclude with enforcing precise storage security policies.",
+          "target_sequence": [
+            {
+              "id": "en_u15_t1",
+              "text": "The administrative utility `chmod` updates file security modes",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u15_t2",
+              "text": "across local file systems and shared storage directories",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u15_t3",
+              "text": "and by combining target entities `u`, `g`, `o`, or `a` with `+` to add rights or `-` to revoke rights",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u15_t4",
+              "text": "it toggles Read `r`, Write `w`, and Execute `x` attributes on designated files",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u15_t5",
+              "text": "thereby enabling administrators to enforce strict least-privilege access rules across all system assets",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "technical",
+              "text": "and by using the `-` symbol to add permissions and the `+` symbol to remove permissions",
+              "penalty_explanation": "In `chmod`, `+` is explicitly used to add permissions and `-` is used to remove permissions."
+            },
+            {
+              "id": "en_u15_d2",
+              "category": "conceptual",
+              "text": "it formats the entire hard disk drive whenever a single file permission flag is altered",
+              "penalty_explanation": "`chmod` modifies metadata flags on specified files; it never formats storage drives."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "chmod कमांड और प्रतीकात्मक ऑपरेटर्स द्वारा फ़ाइल अनुमतियों को बदलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "प्रशासनिक यूटिलिटी `chmod` सुरक्षा अनुमतियों को अपडेट करती है से शुरू करें, स्थानीय फ़ाइल सिस्टम का संदर्भ दें, समूहों को `+` (जोड़ने) और `-` (हटाने) से जोड़ने का तरीका बताएं, रीड, राइट व एग्जीक्यूट फ्लैग बदलने का परिणाम दें, और सख्त एक्सेस नियम लागू करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u15_t1",
+              "text": "प्रशासनिक यूटिलिटी `chmod` फ़ाइल सुरक्षा अनुमतियों को अपडेट करती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u15_t2",
+              "text": "स्थानीय फ़ाइल सिस्टम और साझा स्टोरेज डायरेक्टरी के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u15_t3",
+              "text": "और लक्षित समूहों `u`, `g`, `o` अथवा `a` को अनुमति जोड़ने के लिए `+` तथा हटाने के लिए `-` के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u15_t4",
+              "text": "यह निर्दिष्ट फ़ाइलों पर रीड `r`, राइट `w` और एग्जीक्यूट `x` विशेषताओं को संशोधित करती है",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u15_t5",
+              "text": "जिससे प्रशासक सिस्टम परिसंपत्तियों पर सख्त और सुरक्षित एक्सेस नियंत्रण नियम लागू कर पाते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "technical",
+              "text": "और अनुमति जोड़ने के लिए `-` चिन्ह का तथा अनुमति हटाने के लिए `+` चिन्ह का विपरीत उपयोग करके",
+              "penalty_explanation": "`chmod` में `+` का उपयोग अनुमति जोड़ने के लिए और `-` का उपयोग अनुमति हटाने के लिए किया जाता है।"
+            },
+            {
+              "id": "hi_u15_d2",
+              "category": "conceptual",
+              "text": "यह किसी भी फ़ाइल की अनुमति बदलते ही पूरी हार्ड डिस्क को स्वतः फॉर्मेट कर देती है",
+              "penalty_explanation": "`chmod` केवल फ़ाइल की अनुमतियों को बदलती है, यह डिस्क को फॉर्मेट नहीं करती।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The `chmod` command modifies file permissions symbolically using `+` to grant and `-` to revoke `r`, `w`, and `x` rights for users[cite: 19].",
+        "hi": "`chmod` कमांड अनुमतियों को बदलने के लिए उपयोग की जाती है, जिसमें `+` अनुमति जोड़ने और `-` अनुमति हटाने के लिए प्रयुक्त होता है[cite: 19]।"
+      }
+    }
+  ]
+}
