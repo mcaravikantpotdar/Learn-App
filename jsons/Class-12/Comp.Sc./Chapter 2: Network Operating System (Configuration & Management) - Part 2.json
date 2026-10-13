@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "class": "Class 12",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Chapter 2: Network Operating System (Configuration & Management) - Part 2",
+      "hi": "अध्याय 2: नेटवर्क ऑपरेटिंग सिस्टम (कॉन्फ़िगरेशन और प्रबंधन) - भाग 2"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Firewall Architecture: Software Filters vs. Hardware Appliances",
+          "hi": "फ़ायरवॉल संरचना: सॉफ़्टवेयर फ़िल्टर बनाम हार्डवेयर उपकरण"
+        },
+        "theory": {
+          "en": "A firewall is a core perimeter defense system that monitors and controls incoming and outgoing network traffic to block unauthorized access[cite: 17]. Firewalls are deployed across two structural implementations[cite: 17]:\n1. Software Firewalls: Application programs installed directly on a server operating system[cite: 17]. While less expensive to deploy, they consume host processing resources and offer comparatively lower reliability[cite: 17].\n2. Hardware Firewalls: Dedicated physical hardware appliances positioned at network gateways[cite: 17]. They are more expensive to procure but provide superior reliability, standalone processing, and robust perimeter security[cite: 17].",
+          "hi": "फ़ायरवॉल एक प्रमुख नेटवर्क सुरक्षा प्रणाली है जो अनधिकृत पहुंच को रोकने के लिए इनकमिंग और आउटगोइंग नेटवर्क ट्रैफ़िक की निगरानी और नियंत्रण करती है[cite: 17]। फ़ायरवॉल दो प्रकार से लागू किए जाते हैं[cite: 17]:\n1. सॉफ़्टवेयर फ़ायरवॉल: यह एक एप्लिकेशन सॉफ़्टवेयर है जो अनधिकृत पहुंच को रोकने के लिए सर्वर पर स्थापित किया जाता है[cite: 17]। यह कम खर्चीला होता है परंतु सर्वर संसाधनों का उपयोग करता है और अपेक्षाकृत कम विश्वसनीय होता है[cite: 17]।\n2. हार्डवेयर फ़ायरवॉल: यह एक समर्पित भौतिक हार्डवेयर डिवाइस है जिसका उपयोग अनधिकृत पहुंच को रोकने के लिए किया जाता है[cite: 17]। यह अधिक महंगा होता है लेकिन उच्च विश्वसनीयता और मजबूत सुरक्षा प्रदान करता है[cite: 17]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Firewall Taxonomy: Software vs. Hardware</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Software Firewall</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Server App | Low Cost | Lower Reliability</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Hardware Firewall</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Dedicated Appliance | Expensive | High Reliability</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Host-Based Daemon</tspan><tspan x=\"100\" dy=\"1.2em\">Shared CPU / RAM</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Budget Friendly</tspan><tspan x=\"225\" dy=\"1.2em\">OS Vulnerability</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Perimeter Gateway</tspan><tspan x=\"375\" dy=\"1.2em\">Isolated Hardware</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Enterprise Defense</tspan><tspan x=\"500\" dy=\"1.2em\">Independent Uptime</tspan></text></svg>",
+          "caption": {
+            "en": "Structural comparison contrasting server-installed software firewalls with dedicated perimeter hardware firewall appliances[cite: 17].",
+            "hi": "संरचनात्मक तुलना जो सर्वर पर स्थापित सॉफ़्टवेयर फ़ायरवॉल की तुलना समर्पित हार्डवेयर फ़ायरवॉल उपकरण से करती है[cite: 17]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how software and hardware firewalls govern incoming and outgoing network traffic.",
+          "hint": "Start with firewall security architectures regulating bidirectional packet traffic, mention protecting enterprise servers and local networks, explain contrasting cost-effective server-installed software firewalls with dedicated standalone hardware appliances, describe screening unauthorized ingress attempts, and conclude with safeguarding internal subnets against cyber intrusions.",
+          "target_sequence": [
+            {
+              "id": "en_u6_t1",
+              "text": "Firewall security systems regulate bidirectional packet traffic flows",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u6_t2",
+              "text": "across organizational network boundaries and server environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u6_t3",
+              "text": "and by contrasting low-cost host-installed software firewalls against dedicated high-reliability hardware appliances",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u6_t4",
+              "text": "they filter unauthorized data packets according to strict security inspection rules",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u6_t5",
+              "text": "thereby preventing malicious remote intrusions from penetrating internal computing resources",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u6_d1",
+              "category": "conceptual",
+              "text": "and by forcing hardware firewalls to run solely as background screen-saver programs on client laptops",
+              "penalty_explanation": "Hardware firewalls are dedicated physical devices deployed at network boundaries, not desktop screen-saver software."
+            },
+            {
+              "id": "en_u6_d2",
+              "category": "technical",
+              "text": "they grant unmonitored access to all external worms and viruses to bypass packet inspection rules",
+              "penalty_explanation": "The fundamental purpose of firewalls is to inspect traffic and block unauthorized or malicious data."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "सॉफ़्टवेयर और हार्डवेयर फ़ायरवॉल द्वारा नेटवर्क ट्रैफ़िक को नियंत्रित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "फ़ायरवॉल सुरक्षा प्रणालियां द्विदिशी पैकेट ट्रैफ़िक को नियंत्रित करती हैं से शुरू करें, नेटवर्क सीमाओं का संदर्भ दें, कम लागत वाले सॉफ़्टवेयर फ़ायरवॉल की तुलना समर्पित हार्डवेयर उपकरणों से करने का तरीका बताएं, अनधिकृत पैकेटों को फ़िल्टर करने का परिणाम दें, और आंतरिक संसाधनों की रक्षा पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u6_t1",
+              "text": "फ़ायरवॉल सुरक्षा प्रणालियां दोनों दिशाओं के डेटा ट्रैफ़िक को नियंत्रित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u6_t2",
+              "text": "संगठनात्मक नेटवर्क सीमाओं और सर्वर परिवेश के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u6_t3",
+              "text": "और कम लागत वाले सर्वर-आधारित सॉफ़्टवेयर फ़ायरवॉल की तुलना उच्च-विश्वसनीयता वाले समर्पित हार्डवेयर उपकरणों से करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u6_t4",
+              "text": "ये कड़े सुरक्षा नियमों के आधार पर अनधिकृत डेटा पैकेटों की निगरानी और रोकथाम करती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u6_t5",
+              "text": "जिससे आंतरिक कंप्यूटिंग संसाधनों में बाहरी दुर्भावनापूर्ण घुसपैठ को प्रभावी ढंग से रोका जा सकता है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u6_d1",
+              "category": "conceptual",
+              "text": "और हार्डवेयर फ़ायरवॉल को केवल व्यक्तिगत लैपटॉप पर एक स्क्रीनसेवर ऐप के रूप में चलाकर",
+              "penalty_explanation": "हार्डवेयर फ़ायरवॉल एक समर्पित भौतिक डिवाइस है जो नेटवर्क स्तर पर कार्य करता है, कोई स्क्रीनसेवर नहीं।"
+            },
+            {
+              "id": "hi_u6_d2",
+              "category": "technical",
+              "text": "ये सभी बाहरी वायरस और मैलवेयर को बिना किसी जांच के नेटवर्क में आने की खुली अनुमति दे देती हैं",
+              "penalty_explanation": "फ़ायरवॉल का मुख्य उद्देश्य ही अनधिकृत और हानिकारक ट्रैफ़िक को रोकना होता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Firewalls filter incoming and outgoing traffic to block unauthorized access, deployed either as low-cost software programs or highly reliable dedicated hardware appliances[cite: 17].",
+        "hi": "फ़ायरवॉल अनधिकृत पहुंच को रोकने के लिए इनकमिंग और आउटगोइंग ट्रैफ़िक को फ़िल्टर करते हैं, जिन्हें कम लागत वाले सॉफ़्टवेयर या अत्यधिक विश्वसनीय समर्पित हार्डवेयर के रूप में तैनात किया जाता है[cite: 17]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Traditional Disk Partitioning: Slicing Mechanics and the Partition Table",
+          "hi": "पारंपरिक डिस्क विभाजन: स्लाइसिंग तंत्र और विभाजन तालिका (पार्टिशन टेबल)"
+        },
+        "theory": {
+          "en": "Disk partitioning, also referred to as disk slicing, is the process of dividing a single physical hard drive into one or more logical regions called partitions[cite: 18]. The operating system treats these separate logical regions as distinct, individual disks[cite: 18]. The structural layout, boundaries, and metadata of these partitions are recorded in a dedicated sector called the Partition Table[cite: 18]. System administrators can create, delete, and modify partitions according to storage requirements[cite: 18].",
+          "hi": "डिस्क विभाजन (स्लाइसिंग) एक भौतिक हार्ड डिस्क को एक या अधिक तार्किक विभाजनों (पार्टिशन) में विभाजित करने की प्रक्रिया है[cite: 18]। ऑपरेटिंग सिस्टम इन अलग-अलग तार्किक क्षेत्रों को स्वतंत्र व्यक्तिगत डिस्क के रूप में प्रदर्शित करता है[cite: 18]। डिस्क पार्टिशन की यह जानकारी 'विभाजन तालिका' (पार्टिशन टेबल) नामक एक विशेष क्षेत्र में संग्रहीत की जाती है[cite: 18]। सिस्टम प्रशासक आवश्यकताओं के अनुसार डिस्क पार्टिशन बना सकते हैं, हटा सकते हैं और उनमें संशोधन कर सकते हैं[cite: 18]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Disk Partitioning: Slicing &amp; Partition Table</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Physical Disk</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Raw Drive Volume</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Partition Table</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Sector Map &amp; Bounds</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Logical Slices</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Appears as Disks</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Single Platter</tspan><tspan x=\"120\" dy=\"1.2em\">Hardware Unit</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Stores Metadata</tspan><tspan x=\"300\" dy=\"1.2em\">Sector Boundaries</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Separate Regions</tspan><tspan x=\"480\" dy=\"1.2em\">Admin Managed</tspan></text></svg>",
+          "caption": {
+            "en": "Traditional disk partitioning showing a physical drive sliced into logical regions mapped by the Partition Table[cite: 18].",
+            "hi": "पारंपरिक डिस्क विभाजन जो विभाजन तालिका (पार्टिशन टेबल) द्वारा मैप किए गए तार्किक क्षेत्रों में डिस्क स्लाइसिंग को दर्शाता है[cite: 18]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how disk partitioning slices physical drives into distinct logical regions.",
+          "hint": "Start with traditional disk partitioning mechanisms dividing physical storage drives, mention managing operating system filesystems, explain recording boundary metadata within the Partition Table, describe presenting separated logical regions as individual disks, and conclude with allowing administrators to modify partition structures.",
+          "target_sequence": [
+            {
+              "id": "en_u7_t1",
+              "text": "Disk partitioning mechanisms divide a single physical hard drive",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u7_t2",
+              "text": "across local workstation and server operating system environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u7_t3",
+              "text": "and by recording boundary sector information within a dedicated Partition Table structure",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u7_t4",
+              "text": "they present isolated logical regions that appear to the system as separate individual disks",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u7_t5",
+              "text": "thereby enabling administrators to create, delete, and configure storage boundaries according to system needs",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u7_d1",
+              "category": "conceptual",
+              "text": "and by erasing the physical hard disk completely whenever an administrator views the partition boundaries",
+              "penalty_explanation": "Viewing partition structures does not erase the disk; the Partition Table safely stores layout details."
+            },
+            {
+              "id": "en_u7_d2",
+              "category": "technical",
+              "text": "they forbid the operating system from recognizing any partition as an individual storage volume",
+              "penalty_explanation": "Partitions are specifically designed to appear to the operating system as separate, individual disks[cite: 18]."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "पारंपरिक डिस्क विभाजन द्वारा भौतिक ड्राइव को अलग-अलग तार्किक क्षेत्रों में बांटने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "डिस्क विभाजन तंत्र एक भौतिक हार्ड डिस्क को विभाजित करते हैं से शुरू करें, ऑपरेटिंग सिस्टम परिवेश का संदर्भ दें, पार्टिशन टेबल में सीमाओं को दर्ज करने का तरीका बताएं, अलग-अलग डिस्क के रूप में प्रदर्शित करने का परिणाम दें, और प्रशासक द्वारा प्रबंधन पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u7_t1",
+              "text": "डिस्क विभाजन तंत्र एक भौतिक हार्ड डिस्क को विभाजित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u7_t2",
+              "text": "ऑपरेटिंग सिस्टम और सर्वर स्टोरेज परिवेश के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u7_t3",
+              "text": "और विभाजन तालिका (पार्टिशन टेबल) नामक एक समर्पित क्षेत्र में सीमा संबंधी जानकारी दर्ज करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u7_t4",
+              "text": "ये अलग-अलग तार्किक क्षेत्रों को स्वतंत्र व्यक्तिगत डिस्क के रूप में प्रदर्शित करते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u7_t5",
+              "text": "जिससे सिस्टम प्रशासक आवश्यकतानुसार स्टोरेज विभाजनों को बनाने, हटाने और संशोधित करने में सक्षम होते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u7_d1",
+              "category": "conceptual",
+              "text": "और जब भी कोई प्रशासक विभाजन देखता है तो पूरी हार्ड डिस्क को स्वतः मिटाकर",
+              "penalty_explanation": "विभाजन तालिका सुरक्षित रूप से विभाजन की जानकारी रखती है, यह डिस्क को मिटाती नहीं है[cite: 18]।"
+            },
+            {
+              "id": "hi_u7_d2",
+              "category": "technical",
+              "text": "ये ऑपरेटिंग सिस्टम को किसी भी विभाजन को एक व्यक्तिगत डिस्क के रूप में पहचानने से पूरी तरह रोकते हैं",
+              "penalty_explanation": "डिस्क पार्टिशन को ऑपरेटिंग सिस्टम द्वारा अलग-अलग व्यक्तिगत डिस्क के रूप में ही देखा जाता है[cite: 18]।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Disk partitioning divides a single hard drive into logical regions displayed as individual disks, with metadata stored in the Partition Table[cite: 18].",
+        "hi": "डिस्क विभाजन एक हार्ड डिस्क को तार्किक क्षेत्रों में बांटता है जो अलग-अलग डिस्क के रूप में दिखते हैं, और इनकी जानकारी पार्टिशन टेबल में रहती है[cite: 18]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Physical Capacity Constraints of Traditional Partitions",
+          "hi": "पारंपरिक विभाजनों की भौतिक क्षमता सीमाएं"
+        },
+        "theory": {
+          "en": "A fundamental architectural limitation of traditional disk slicing is that a partition's storage capacity is strictly confined to the physical space available on that single disk drive[cite: 18]. Even if a server houses multiple physical hard drives, a traditional disk partition cannot dynamically aggregate or expand across drive boundaries[cite: 18]. If an application exceeds the space of that specific drive, the administrator must perform complex manual data migration or repartitioning, creating an administrative bottleneck[cite: 18].",
+          "hi": "पारंपरिक डिस्क स्लाइसिंग की एक प्रमुख सीमा यह है कि किसी डिस्क पार्टिशन की अधिकतम भंडारण क्षमता केवल उसी एक भौतिक डिस्क पर उपलब्ध स्पेस तक सीमित होती है[cite: 18]। भले ही सर्वर में कई भौतिक हार्ड डिस्क मौजूद हों, एक पारंपरिक पार्टिशन स्वचालित रूप से दूसरी डिस्क में नहीं फैल सकता[cite: 18]। यदि कोई एप्लिकेशन उस डिस्क की सीमा से अधिक डेटा उत्पन्न करता है, तो प्रशासक को जटिल माइग्रेशन करना पड़ता है, जो एक बड़ी परिचालन चुनौती है[cite: 18]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Traditional Partition: Single Disk Capacity Barrier</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Physical Disk 1 (500GB)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Partition Cap: Max 500GB</text><line x1=\"290\" y1=\"75\" x2=\"290\" y2=\"130\" stroke=\"#f87171\" stroke-width=\"3\" stroke-dasharray=\"4\"/><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Physical Disk 2 (500GB)</text><text x=\"437\" y=\"115\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Cannot Cross Boundary</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Strict Upper Limit</tspan><tspan x=\"100\" dy=\"1.2em\">One Physical Drive</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Fixed Slices</tspan><tspan x=\"225\" dy=\"1.2em\">No Dynamic Stretch</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Isolated Disk 2</tspan><tspan x=\"375\" dy=\"1.2em\">Separate Volume</tspan></text><text x=\"500\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Spanning Blocked</tspan><tspan x=\"500\" dy=\"1.2em\">Static Limitation</tspan></text></svg>",
+          "caption": {
+            "en": "Capacity barrier illustrating how traditional partitions are strictly confined to the available space of one physical disk[cite: 18].",
+            "hi": "क्षमता सीमा जो दर्शाती है कि पारंपरिक पार्टिशन का आकार केवल एक भौतिक डिस्क पर उपलब्ध स्पेस तक ही सीमित रहता है[cite: 18]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how physical capacity constraints restrict traditional disk partitioning architectures.",
+          "hint": "Start with traditional disk partitioning architectures imposing physical storage limits, mention managing growing database filesystems, explain confining maximum partition capacity to the space of a single physical disk, describe preventing volumes from stretching across adjacent drive units, and conclude with requiring administrative intervention when storage fills up.",
+          "target_sequence": [
+            {
+              "id": "en_u8_t1",
+              "text": "Traditional disk partitioning architectures enforce rigid capacity boundaries",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u8_t2",
+              "text": "when managing expanding enterprise filesystems and database volumes",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u8_t3",
+              "text": "and by confining the maximum storage capacity of any partition strictly to the space available on a single physical disk",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u8_t4",
+              "text": "they prevent individual logical volumes from spanning across multiple separate disk drives automatically",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u8_t5",
+              "text": "thereby creating administrative storage bottlenecks whenever a filesystem exceeds physical drive limits",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u8_d1",
+              "category": "conceptual",
+              "text": "and by permitting standard partitions to expand infinitely across thousands of drives without any hardware limit",
+              "penalty_explanation": "Traditional partitions are strictly limited to the capacity of a single physical disk[cite: 18]."
+            },
+            {
+              "id": "en_u8_d2",
+              "category": "technical",
+              "text": "they automatically convert all connected physical hard disks into random access memory modules",
+              "penalty_explanation": "Disk partitioning manages persistent secondary storage, not volatile RAM."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "पारंपरिक डिस्क विभाजन की भौतिक भंडारण सीमाओं को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "पारंपरिक डिस्क विभाजन संरचनाएं कड़ी क्षमता सीमाएं लागू करती हैं से शुरू करें, बढ़ते डेटाबेस वॉल्यूम का संदर्भ दें, क्षमता को केवल एक भौतिक डिस्क तक सीमित रखने का तरीका बताएं, कई डिस्क पर स्वतः फैलने से रोकने का परिणाम दें, और क्षमता समाप्त होने पर रुकावट उत्पन्न करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u8_t1",
+              "text": "पारंपरिक डिस्क विभाजन संरचनाएं कड़ी भंडारण क्षमता सीमाएं लागू करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u8_t2",
+              "text": "संगठनों में निरंतर बढ़ते फ़ाइल सिस्टम और डेटाबेस के प्रबंधन के दौरान",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u8_t3",
+              "text": "और किसी भी पार्टिशन की अधिकतम भंडारण क्षमता को केवल एक भौतिक डिस्क पर उपलब्ध स्पेस तक सीमित रखकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u8_t4",
+              "text": "ये तार्किक पार्टिशन को कई अलग-अलग डिस्क ड्राइवों पर स्वतः फैलने से रोकती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u8_t5",
+              "text": "जिससे भौतिक डिस्क भर जाने पर सिस्टम में प्रशासनिक रुकावटें और माइग्रेशन की जटिलताएं उत्पन्न होती हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u8_d1",
+              "category": "conceptual",
+              "text": "और मानक पार्टिशन को बिना किसी हार्डवेयर सीमा के हजारों अलग-अलग ड्राइवों में अनंत रूप से फैलाकर",
+              "penalty_explanation": "पारंपरिक पार्टिशन की क्षमता एक भौतिक डिस्क की सीमा से आगे नहीं बढ़ सकती[cite: 18]।"
+            },
+            {
+              "id": "hi_u8_d2",
+              "category": "technical",
+              "text": "ये सभी जुड़ी हुई हार्ड डिस्क को अपने आप रैम (RAM) मेमोरी में बदल देती हैं",
+              "penalty_explanation": "डिस्क पार्टिशनिंग सेकेंडरी हार्ड ड्राइव स्टोरेज से संबंधित है, सिस्टम रैम से नहीं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "A traditional disk partition is strictly capped by the storage capacity of a single physical disk and cannot span across drives[cite: 18].",
+        "hi": "एक पारंपरिक डिस्क पार्टिशन का आकार केवल एक भौतिक डिस्क पर उपलब्ध स्पेस तक सीमित होता है और यह कई डिस्क में नहीं फैल सकता[cite: 18]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Logical Volume Manager: Physical Volumes and Volume Groups",
+          "hi": "लॉजिकल वॉल्यूम मैनेजर: भौतिक वॉल्यूम (PV) और वॉल्यूम ग्रुप (VG)"
+        },
+        "theory": {
+          "en": "The Logical Volume Manager (LVM) is an advanced storage management system that overcomes the rigid constraints of traditional disk partitioning[cite: 18]. LVM abstracts raw storage by combining one or more individual hard drives or partitions, known as Physical Volumes (PVs), into a unified storage pool called a Volume Group (VG)[cite: 18]. The Volume Group serves as a centralized pool of storage capacity that can be elastically allocated, expanded, or repartitioned without disrupting active filesystems[cite: 18].",
+          "hi": "लॉजिकल वॉल्यूम मैनेजर (LVM) एक उन्नत स्टोरेज प्रबंधन प्रणाली है जो पारंपरिक डिस्क विभाजन की सीमाओं को दूर करती है[cite: 18]। एलवीएम कई भौतिक वॉल्यूम (Physical Volumes) को एक या अधिक वॉल्यूम-समूहों (Volume Groups) में संयोजित करके एक एकीकृत स्टोरेज पूल बनाता है[cite: 18]। यह वॉल्यूम ग्रुप स्टोरेज का एक केंद्रीकृत पूल बन जाता है, जिससे आवश्यकतानुसार स्टोरेज को बिना किसी बाधा के गतिशील रूप से आवंटित और विस्तारित किया जा सकता है[cite: 18]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">LVM Tier 1 &amp; 2: Physical Volumes to Volume Group</text><rect x=\"45\" y=\"150\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"170\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">PV 1 (Disk A)</text><text x=\"120\" y=\"190\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Physical Volume</text><rect x=\"225\" y=\"150\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"170\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">PV 2 (Disk B)</text><text x=\"300\" y=\"190\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Physical Volume</text><rect x=\"405\" y=\"150\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"170\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">PV 3 (Disk C)</text><text x=\"480\" y=\"190\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Physical Volume</text><rect x=\"135\" y=\"75\" width=\"330\" height=\"45\" rx=\"22\" fill=\"#1e293b\" stroke=\"#38bdf8\" stroke-width=\"2\"/><text x=\"300\" y=\"97\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Unified Volume Group (VG)</text><line x1=\"120\" y1=\"150\" x2=\"230\" y2=\"120\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><polygon points=\"230,120 221,123 226,130\" fill=\"#fbbf24\"/><line x1=\"300\" y1=\"150\" x2=\"300\" y2=\"120\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><polygon points=\"300,120 296,128 304,128\" fill=\"#fbbf24\"/><line x1=\"480\" y1=\"150\" x2=\"370\" y2=\"120\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><polygon points=\"370,120 374,130 379,123\" fill=\"#fbbf24\"/></svg>",
+          "caption": {
+            "en": "LVM aggregation combining separate Physical Volumes (PVs) into a unified Volume Group (VG) pool[cite: 18].",
+            "hi": "LVM एकत्रीकरण जो अलग-अलग भौतिक वॉल्यूम (PV) को एक एकीकृत वॉल्यूम ग्रुप (VG) में जोड़ता है[cite: 18]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how LVM aggregates physical volumes into unified volume groups.",
+          "hint": "Start with Logical Volume Manager architectures abstracting physical storage boundaries, mention operating across multi-disk server configurations, explain aggregating multiple physical volumes into unified volume groups, describe creating centralized storage pools, and conclude with eliminating the constraints of single hardware drives.",
+          "target_sequence": [
+            {
+              "id": "en_u9_t1",
+              "text": "The Logical Volume Manager storage architecture abstracts hardware limits",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u9_t2",
+              "text": "across multi-disk Linux server and enterprise storage environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u9_t3",
+              "text": "and by aggregating multiple individual physical volumes into unified shared volume groups",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u9_t4",
+              "text": "it pools raw drive capacity into a centralized flexible storage framework",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u9_t5",
+              "text": "thereby freeing system administrators from the rigid boundaries of individual hard drives",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u9_d1",
+              "category": "conceptual",
+              "text": "and by permanently locking each physical volume so it can never join any volume group or pool",
+              "penalty_explanation": "LVM is specifically designed to combine multiple physical volumes into volume groups[cite: 18]."
+            },
+            {
+              "id": "en_u9_d2",
+              "category": "technical",
+              "text": "it deletes all physical storage volumes to ensure that the operating system has zero disk capacity",
+              "penalty_explanation": "LVM pools storage capacity to manage disks efficiently, not erase storage capacity."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "LVM द्वारा भौतिक वॉल्यूम को एकीकृत वॉल्यूम ग्रुप में संयोजित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "लॉजिकल वॉल्यूम मैनेजर संरचना हार्डवेयर सीमाओं को दूर करती है से शुरू करें, मल्टी-डिस्क सर्वर का संदर्भ दें, कई भौतिक वॉल्यूम को वॉल्यूम ग्रुप में संयोजित करने का तरीका बताएं, केंद्रीकृत स्टोरेज पूल बनाने का परिणाम दें, और व्यक्तिगत ड्राइव की सीमाओं से मुक्त करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u9_t1",
+              "text": "लॉजिकल वॉल्यूम मैनेजर संरचना हार्डवेयर सीमाओं को दूर करती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u9_t2",
+              "text": "मल्टी-डिस्क लिनक्स सर्वर और संस्थागत स्टोरेज परिवेश के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u9_t3",
+              "text": "और कई अलग-अलग भौतिक वॉल्यूम को एक या अधिक एकीकृत वॉल्यूम-समूहों में संयोजित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u9_t4",
+              "text": "यह उपलब्ध डिस्क क्षमता को एक केंद्रीकृत और लचीले स्टोरेज पूल में बदलती है",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u9_t5",
+              "text": "जिससे सिस्टम प्रशासक एकल हार्ड ड्राइव की कठोर भौतिक सीमाओं से मुक्त हो जाते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u9_d1",
+              "category": "conceptual",
+              "text": "और प्रत्येक भौतिक वॉल्यूम को अलग रखकर किसी भी वॉल्यूम ग्रुप में जुड़ने से हमेशा के लिए रोककर",
+              "penalty_explanation": "एलवीएम का मूल कार्य ही कई भौतिक वॉल्यूम को जोड़कर वॉल्यूम-समूह बनाना है[cite: 18]।"
+            },
+            {
+              "id": "hi_u9_d2",
+              "category": "technical",
+              "text": "यह सभी स्टोरेज ड्राइव्स को हटा देती है ताकि ऑपरेटिंग सिस्टम के पास कोई क्षमता न रहे",
+              "penalty_explanation": "एलवीएम स्टोरेज क्षमता को संयोजित और प्रबंधित करता है, उसे समाप्त नहीं करता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "LVM combines multiple Physical Volumes (PVs) into a unified Volume Group (VG) to create an elastic, centralized storage pool[cite: 18].",
+        "hi": "LVM कई भौतिक वॉल्यूम (PV) को एक एकीकृत वॉल्यूम ग्रुप (VG) में जोड़कर एक लचीला और केंद्रीकृत स्टोरेज पूल बनाता है[cite: 18]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "LVM Logical Volumes: Dynamic Multi-Disk Spanning",
+          "hi": "LVM लॉजिकल वॉल्यूम: कई डिस्क में गतिशील विस्तार (मल्टी-डिस्क स्पैनिंग)"
+        },
+        "theory": {
+          "en": "Once storage capacity is pooled into a Volume Group, the administrator carves it into one or more Logical Volumes (LVs)[cite: 18]. Unlike traditional disk partitions, the storage capacity of a Logical Volume is not limited to a single physical disk[cite: 18]. Instead, a Logical Volume can span seamlessly across multiple physical disks within the Volume Group[cite: 18]. This enables online volume expansion, dynamic resizing, and simplified capacity management without downtime[cite: 18].",
+          "hi": "जब स्टोरेज क्षमता को एक वॉल्यूम ग्रुप में एकत्रित कर लिया जाता है, तो प्रशासक इसे विभिन्न लॉजिकल-वॉल्यूम (Logical Volumes) में विभाजित कर सकता है[cite: 18]। पारंपरिक डिस्क पार्टिशन के विपरीत, एक लॉजिकल वॉल्यूम की भंडारण क्षमता किसी एक डिस्क तक सीमित नहीं होती है[cite: 18]। यह आवश्यकता पड़ने पर वॉल्यूम ग्रुप के भीतर कई भौतिक डिस्कों में निर्बाध रूप से फैल सकती है[cite: 18]। इससे बिना किसी रुकावट के वॉल्यूम का आकार बढ़ाया जा सकता है और आसान क्षमता प्रबंधन संभव होता है[cite: 18]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">LVM Multi-Disk Spanning Architecture</text><rect x=\"135\" y=\"110\" width=\"330\" height=\"45\" rx=\"22\" fill=\"#1e293b\" stroke=\"#38bdf8\" stroke-width=\"2\"/><text x=\"300\" y=\"132\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Volume Group (Pool)</text><rect x=\"80\" y=\"180\" width=\"120\" height=\"40\" rx=\"6\" fill=\"#1e293b\" stroke=\"#fbbf24\"/><text x=\"140\" y=\"200\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Disk 1 (PV)</text><rect x=\"240\" y=\"180\" width=\"120\" height=\"40\" rx=\"6\" fill=\"#1e293b\" stroke=\"#fbbf24\"/><text x=\"300\" y=\"200\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Disk 2 (PV)</text><rect x=\"400\" y=\"180\" width=\"120\" height=\"40\" rx=\"6\" fill=\"#1e293b\" stroke=\"#fbbf24\"/><text x=\"460\" y=\"200\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Disk 3 (PV)</text><line x1=\"140\" y1=\"180\" x2=\"220\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"180\" x2=\"300\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"460\" y1=\"180\" x2=\"380\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><rect x=\"80\" y=\"60\" width=\"190\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#4ade80\"/><text x=\"175\" y=\"77\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Logical Volume 1 (Spanning)</text><rect x=\"330\" y=\"60\" width=\"190\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#4ade80\"/><text x=\"425\" y=\"77\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Logical Volume 2 (Spanning)</text><line x1=\"230\" y1=\"110\" x2=\"175\" y2=\"95\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><polygon points=\"175,95 184,98 181,105\" fill=\"#4ade80\"/><line x1=\"370\" y1=\"110\" x2=\"425\" y2=\"95\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><polygon points=\"425,95 419,105 416,98\" fill=\"#4ade80\"/></svg>",
+          "caption": {
+            "en": "LVM three-tier hierarchy showing Logical Volumes spanning dynamically across multiple underlying physical disks[cite: 18].",
+            "hi": "LVM त्रि-स्तरीय पदानुक्रम जो कई भौतिक डिस्कों में गतिशील रूप से फैले लॉजिकल वॉल्यूम को दर्शाता है[cite: 18]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how LVM Logical Volumes span across multiple physical disks to deliver elastic storage.",
+          "hint": "Start with Logical Volumes carved out of Volume Groups, mention serving dynamic enterprise storage requirements, explain spanning capacity seamlessly across multiple physical drives, describe eliminating single-disk storage bottlenecks, and conclude with delivering scalable volume resizing without downtime.",
+          "target_sequence": [
+            {
+              "id": "en_u10_t1",
+              "text": "Logical Volumes provisioned from unified Volume Groups",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u10_t2",
+              "text": "deliver dynamic elastic storage capacity across enterprise filesystems",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u10_t3",
+              "text": "and by spanning their allocated storage boundaries across multiple physical hard disks",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u10_t4",
+              "text": "they overcome the single-disk capacity limits inherent to traditional disk partitions",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u10_t5",
+              "text": "thereby enabling administrators to resize and expand volumes dynamically without interrupting system operations",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "conceptual",
+              "text": "and by restricting every logical volume strictly to half of a single floppy disk",
+              "penalty_explanation": "Logical Volumes can span across multiple hard disks, overcoming single-disk limits[cite: 18]."
+            },
+            {
+              "id": "en_u10_d2",
+              "category": "technical",
+              "text": "they shut down all server services permanently whenever a logical volume requires an additional sector",
+              "penalty_explanation": "LVM supports online dynamic resizing without requiring permanent system shutdowns."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "LVM लॉजिकल वॉल्यूम द्वारा कई डिस्क में फैलकर लचीला स्टोरेज प्रदान करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "वॉल्यूम ग्रुप से बनाए गए लॉजिकल वॉल्यूम से शुरू करें, गतिशील स्टोरेज का संदर्भ दें, कई भौतिक डिस्कों में फैलने का तरीका बताएं, एकल-डिस्क की सीमा को पार करने का परिणाम दें, और बिना रुकावट के आकार बढ़ाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u10_t1",
+              "text": "एकीकृत वॉल्यूम ग्रुप से बनाए गए लॉजिकल वॉल्यूम",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u10_t2",
+              "text": "फ़ाइल सिस्टम की गतिशील आवश्यकताओं के लिए लचीली क्षमता प्रदान करते हैं",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u10_t3",
+              "text": "और अपनी भंडारण क्षमता को कई भौतिक हार्ड डिस्कों के पार निर्बाध रूप से फैलाकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u10_t4",
+              "text": "ये पारंपरिक डिस्क पार्टिशन की एकल-डिस्क क्षमता सीमाओं को पूरी तरह पार कर जाते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u10_t5",
+              "text": "जिससे प्रशासक सिस्टम संचालन को बाधित किए बिना वॉल्यूम का आकार गतिशील रूप से बढ़ा सकते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "conceptual",
+              "text": "और प्रत्येक लॉजिकल वॉल्यूम को केवल एक फ्लॉपी डिस्क के आधे हिस्से तक सीमित रखकर",
+              "penalty_explanation": "लॉजिकल वॉल्यूम की क्षमता एक डिस्क तक सीमित नहीं होती, यह कई डिस्क में फैल सकती है[cite: 18]।"
+            },
+            {
+              "id": "hi_u10_d2",
+              "category": "technical",
+              "text": "ये अतिरिक्त स्पेस की आवश्यकता होने पर सभी सर्वर सेवाओं को हमेशा के लिए बंद कर देते हैं",
+              "penalty_explanation": "LVM में बिना सर्वर बंद किए ऑनलाइन वॉल्यूम का आकार आसानी से बदला जा सकता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "LVM Logical Volumes can span across multiple physical disks within a Volume Group, allowing dynamic resizing and eliminating single-disk limits[cite: 18].",
+        "hi": "LVM लॉजिकल वॉल्यूम कई भौतिक डिस्कों में फैल सकते हैं, जिससे एकल-डिस्क की सीमा समाप्त होती है और वॉल्यूम का आकार गतिशील रूप से बढ़ाया जा सकता है[cite: 18]।"
+      }
+    }
+  ]
+}
