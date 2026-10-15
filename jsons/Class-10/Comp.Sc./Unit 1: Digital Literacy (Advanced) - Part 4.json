@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 1: Digital Literacy (Advanced) - Part 4",
+      "hi": "इकाई 1: डिजिटल साक्षरता (एडवांस) - भाग 4"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Facsimile Architecture: Optical Scanners, Internal Modems & PSTN Transmission",
+          "hi": "फैक्स मशीन संरचना: ऑप्टिकल स्कैनर, आंतरिक मोडेम और PSTN ट्रांसमिशन"
+        },
+        "theory": {
+          "en": "A Fax Machine (Facsimile Machine) is a telecommunication peripheral that scans printed documents, converts the visual content into audio tones, transmits them across Public Switched Telephone Network (PSTN) copper lines, and prints exact physical duplicates at the receiving machine. Its internal architecture integrates four functional subsystems: an optical Charge-Coupled Device (CCD) or Contact Image Sensor (CIS) scanner that digitizes paper text into binary pixels (0s for white, 1s for black); an internal modem that modulates digital bits into analog audio tones for wire transmission and demodulates incoming tones back into bits; a thermal or inkjet print assembly to output hard copies; and an auto-dialer keypad controller managing telephone signaling and line handshaking.",
+          "hi": "फैक्स मशीन (फैक्सिमिली मशीन) एक दूरसंचार उपकरण है जो मुद्रित दस्तावेजों को स्कैन करके दृश्य सामग्री को ऑडियो टोन में बदलता है, टेलीफोन लाइनों (PSTN) पर भेजता है, और प्राप्तकर्ता की मशीन पर हूबहू हार्ड कॉपी प्रिंट करता है[cite: 21]। इसकी आंतरिक संरचना में चार प्रमुख घटक शामिल हैं: एक आंतरिक ऑप्टिकल स्कैनर (CCD या CIS) जो कागज़ को बाइनरी पिक्सेल डेटा (0 सफेद, 1 काला) में बदलता है; एक आंतरिक मोडेम जो डिजिटल बिट्स को फोन लाइन पर भेजने हेतु एनालॉग ऑडियो टोन में बदलता है (मॉड्यूलेशन) और प्राप्त टोन को पुनः डिजिटल में बदलता है (डिमॉड्यूलेशन); थर्मल या इंकजेट प्रिंटिंग असेंबली; तथा टेलीफोन नंबर डायल करने और हैंडशेकिंग सिग्नल प्रबंधित करने वाला कंट्रोलर[cite: 21, 22]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Fax Architecture: CCD Scanner &rarr; Modem &rarr; PSTN Line</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">CCD / CIS Scanner</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Paper &rarr; Binary 0/1</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Internal Modem</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Modulate &amp; Demodulate</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">PSTN / Print Head</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Phone Line &rarr; Hard Copy</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Line-by-Line</tspan><tspan x=\"120\" dy=\"1.2em\">Optical Digitizer</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Audio Tones</tspan><tspan x=\"300\" dy=\"1.2em\">Copper Wire Link</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Thermal Roller</tspan><tspan x=\"480\" dy=\"1.2em\">Exact Replica</tspan></text></svg>",
+          "caption": {
+            "en": "Fax machine architecture demonstrating optical page digitization, modem tone modulation, and transmission across telephone lines[cite: 21, 22].",
+            "hi": "फैक्स मशीन संरचना जो ऑप्टिकल डिजिटाइजेशन, मोडेम टोन मॉड्यूलेशन और टेलीफोन लाइनों पर ट्रांसमिशन को दर्शाती है[cite: 21, 22]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how a fax machine digitizes, modulates, and transmits hard copy documents over telephone networks.",
+          "hint": "Start with fax telecommunication machines transmitting official hardcopy documents, mention operating across public switched telephone copper networks, explain combining optical sensor digitization with internal modem modulation and thermal printing mechanisms, describe translating paper pixels into analog audio frequency tones, and conclude with printing duplicate documents at remote receiving stations.",
+          "target_sequence": [
+            {
+              "id": "en_u16_t1",
+              "text": "Facsimile telecommunication machines transmit signed physical paperwork",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u16_t2",
+              "text": "across standard public switched telephone network copper lines",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u16_t3",
+              "text": "and by combining line-by-line optical image scanning with internal modem audio tone modulation and thermal print assemblies",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u16_t4",
+              "text": "they convert reflected visual pixel patterns into audible transmission frequencies for wire delivery",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u16_t5",
+              "text": "thereby reconstructing identical hard copy documents at distant destination offices without delay",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u16_d1",
+              "category": "technical",
+              "text": "and by turning off the internal modem to force optical scanners to communicate through Morse code telegraph hammers",
+              "penalty_explanation": "Fax machines use electronic internal modems to modulate audio tones over PSTN lines, not manual Morse telegraph hammers."
+            },
+            {
+              "id": "en_u16_d2",
+              "category": "conceptual",
+              "text": "they incinerate all incoming phone signals to prevent receiving units from printing duplicate copies",
+              "penalty_explanation": "The primary objective of a fax machine is to reconstruct and print physical duplicates of received transmissions."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "फैक्स मशीन द्वारा दस्तावेज़ों को स्कैन करने, ऑडियो टोन में बदलने और टेलीफोन लाइन पर भेजने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "फैक्स मशीनें हस्ताक्षरित भौतिक दस्तावेज़ भेजती हैं से शुरू करें, टेलीफोन नेटवर्क का संदर्भ दें, ऑप्टिकल स्कैनर, आंतरिक मोडेम और थर्मल प्रिंटिंग का तरीका बताएं, पिक्सेल को ऑडियो टोन में बदलने का परिणाम दें, और दूरस्थ कार्यालय में हूबहू हार्ड कॉपी प्रिंट करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u16_t1",
+              "text": "फैक्स मशीनें हस्ताक्षरित आधिकारिक भौतिक दस्तावेज़ प्रसारित करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u16_t2",
+              "text": "मानक पब्लिक स्विच्ड टेलीफोन नेटवर्क लाइनों के माध्यम से",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u16_t3",
+              "text": "और ऑप्टिकल इमेज स्कैनिंग को आंतरिक मोडेम के ऑडियो टोन मॉड्यूलेशन तथा प्रिंटिंग असेंबली के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u16_t4",
+              "text": "ये दृश्य पिक्सेल पैटर्न को टेलीफोन तारों पर यात्रा करने वाली एनालॉग ध्वनि तरंगों में बदलती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u16_t5",
+              "text": "जिससे दूर स्थित गंतव्य कार्यालयों में हूबहू हार्ड कॉपी तुरंत मुद्रित होकर प्राप्त हो जाती है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u16_d1",
+              "category": "technical",
+              "text": "और मोडेम को बंद करके केवल पुराने मोर्स कोड टेलीग्राफ हथौड़ों द्वारा सिग्नल भेजने के लिए मजबूर करके",
+              "penalty_explanation": "फैक्स मशीनें डेटा को टेलीफोन लाइन पर भेजने के लिए आंतरिक इलेक्ट्रॉनिक मोडेम का उपयोग करती हैं।"
+            },
+            {
+              "id": "hi_u16_d2",
+              "category": "conceptual",
+              "text": "ये प्राप्त होने वाले सभी सिग्नलों को नष्ट करके रिसीवर को हार्ड कॉपी प्रिंट करने से पूरी तरह रोक देती हैं",
+              "penalty_explanation": "फैक्स का मुख्य कार्य ही प्राप्त सिग्नलों से कागज़ पर सटीक प्रतिलिपि प्रिंट करना है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Fax machines scan documents via CCD/CIS sensors, modulate digital bits into audio tones via modem, and transmit over PSTN lines for printing[cite: 21, 22].",
+        "hi": "फैक्स मशीन CCD/CIS सेंसर से स्कैन करती है, मोडेम द्वारा डिजिटल को ऑडियो टोन में बदलती है और टेलीफोन लाइनों पर हार्ड कॉपी प्रिंट करने हेतु भेजती है[cite: 21, 22]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Step-by-Step Fax Transmission Pipeline and Modern Internet e-Fax Services",
+          "hi": "फैक्स भेजने की चरण-दर-चरण प्रक्रिया और आधुनिक इंटरनेट ई-फैक्स सेवाएं"
+        },
+        "theory": {
+          "en": "Sending a physical fax involves a standardized 6-step operational procedure:\n1. Turn on the machine and verify paper and ink or thermal roll availability[cite: 22].\n2. Insert the document into the automatic document feeder tray (face-down or face-up as per arrow guidelines)[cite: 22].\n3. Dial the recipient's fax phone number on the numeric keypad, including STD/ISD area codes[cite: 22].\n4. Press the 'Start' or 'Send' button on the control panel[cite: 22].\n5. The machine scans the page, establishes line handshaking with the remote fax, and transmits data[cite: 22].\n6. Receive the printed Transmission Confirmation Report confirming delivery[cite: 22].\nIn contemporary enterprise environments, traditional standalone fax machines using thermal rolls and dedicated copper wires have largely transitioned to Multi-Function Printers (MFP) and cloud-based Internet e-Fax services, which route encrypted digital documents directly across IP networks without physical paper feeds or copper telephone wires[cite: 21].",
+          "hi": "भौतिक फैक्स मशीन से दस्तावेज़ भेजने की एक मानक 6-चरणीय प्रक्रिया होती है[cite: 22]:\n1. मशीन ऑन करें और सुनिश्चित करें कि कागज़ तथा स्याही या थर्मल रोल उपलब्ध हैं[cite: 22]।\n2. दस्तावेज़ को डॉक्यूमेंट फीडर ट्रे में सही दिशा (दिशा-निर्देश तीर के अनुसार) में रखें[cite: 22]।\n3. संख्यात्मक कीपैड पर एसटीडी/आईएसडी कोड सहित प्राप्तकर्ता का फैक्स नंबर डायल करें[cite: 22]।\n4. कंट्रोल पैनल पर 'स्टार्ट' (Start) या 'सेंड' (Send) बटन दबाएं[cite: 22]।\n5. मशीन पेज स्कैन करती है, दूसरी मशीन से हैंडशेक टोन मिलाती है और डेटा भेजती है[cite: 22]।\n6. सफल डिलीवरी की पुष्टि करने वाली 'ट्रांसमिशन रिपोर्ट' (Confirmation Slip) प्राप्त करें[cite: 22]।\nआधुनिक कार्यालयों में पारंपरिक स्टैंडअलोन फैक्स मशीनों का स्थान मल्टी-फंक्शन प्रिंटर (MFP) और क्लाउड-आधारित इंटरनेट ई-फैक्स (e-Fax) सेवाओं ने ले लिया है, जो बिना टेलीफोन तारों और कागज़ के सीधे कंप्यूटर नेटवर्क पर सुरक्षित इलेक्ट्रॉनिक दस्तावेज़ भेजती हैं[cite: 21]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Fax Protocol: 6-Step Workflow &amp; Modern e-Fax Transition</text><rect x=\"45\" y=\"80\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"100\" y=\"100\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Feed &amp; Dial</text><text x=\"100\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Tray + Keypad</text><rect x=\"175\" y=\"80\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"100\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Handshake</text><text x=\"232\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Speed Negotiate</text><rect x=\"310\" y=\"80\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"370\" y=\"100\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Delivery Slip</text><text x=\"370\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Confirmation</text><rect x=\"450\" y=\"80\" width=\"105\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"502\" y=\"100\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">e-Fax / MFP</text><text x=\"502\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Cloud IP Route</text><line x1=\"155\" y1=\"107\" x2=\"175\" y2=\"107\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"175,107 167,103 167,111\" fill=\"#38bdf8\"/><line x1=\"290\" y1=\"107\" x2=\"310\" y2=\"107\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"310,107 302,103 302,111\" fill=\"#4ade80\"/><line x1=\"430\" y1=\"107\" x2=\"450\" y2=\"107\" stroke=\"#c084fc\" stroke-width=\"2\"/><polygon points=\"450,107 442,103 442,111\" fill=\"#c084fc\"/><text x=\"100\" y=\"165\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">Steps 1 - 3</text><text x=\"232\" y=\"185\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">Steps 4 - 5</text><text x=\"370\" y=\"165\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">Step 6 Report</text><text x=\"502\" y=\"185\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">No Phone Wire</text></svg>",
+          "caption": {
+            "en": "Step-by-step fax transmission sequence from tray insertion and dialing to delivery confirmation reports and modern cloud e-Fax routing[cite: 21, 22].",
+            "hi": "चरण-दर-चरण फैक्स ट्रांसमिशन प्रक्रिया जो ट्रे लोडिंग और डायलिंग से लेकर डिलीवरी रिपोर्ट और क्लाउड ई-फैक्स रूटिंग को दर्शाती है[cite: 21, 22]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how presenters send documents via the 6-step fax transmission pipeline and modern digital transitions.",
+          "hint": "Start with operators following standard operational procedures, mention executing transmission across physical fax machines and cloud networks, explain loading documents, dialing destination numbers, initiating audio handshaking, and verifying delivery slips, describe transitioning legacy thermal hardware toward digital multi-function printers, and conclude with maintaining verifiable business communications.",
+          "target_sequence": [
+            {
+              "id": "en_u17_t1",
+              "text": "Office administrators execute the standardized six-step fax procedure",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u17_t2",
+              "text": "across enterprise legal, healthcare, and governmental telecommunication channels",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u17_t3",
+              "text": "and by feeding pages into tray guides, dialing recipient numbers, negotiating line handshakes, and printing confirmation receipts",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u17_t4",
+              "text": "they verify the successful remote reception of signed contracts while migrating legacy copper hardware toward Internet e-Fax platforms",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u17_t5",
+              "text": "thereby preserving auditable delivery proof while modernizing paper workflows into secure cloud document transmissions",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u17_d1",
+              "category": "technical",
+              "text": "and by soaking documents in water before dialing so that feeder trays catch fire automatically",
+              "penalty_explanation": "Documents must be kept clean, dry, and flat to pass through the automatic feeder tray without jamming or damaging hardware."
+            },
+            {
+              "id": "en_u17_d2",
+              "category": "conceptual",
+              "text": "they shred the transmission confirmation report immediately to ensure delivery can never be proven legally",
+              "penalty_explanation": "The printed confirmation report is specifically retained by businesses as legal audit proof of successful transmission."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "मानक 6-चरणीय प्रक्रिया और आधुनिक ई-फैक्स द्वारा दस्तावेज़ भेजने की कार्यप्रणाली को सही क्रम में व्यवस्थित करें।",
+          "hint": "कार्यालय प्रशासक मानक छह-चरणीय फैक्स प्रक्रिया निष्पादित करते हैं से शुरू करें, कानूनी और सरकारी चैनलों का संदर्भ दें, ट्रे में पेज रखने, नंबर डायल करने, हैंडशेक करने और रिपोर्ट लेने का तरीका बताएं, डिलीवरी सत्यापित करने और ई-फैक्स की ओर बढ़ने का परिणाम दें, और सुरक्षित क्लाउड ट्रांसमिशन पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u17_t1",
+              "text": "कार्यालय प्रशासक मानक छह-चरणीय फैक्स ट्रांसमिशन प्रक्रिया निष्पादित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u17_t2",
+              "text": "संस्थागत कानूनी, स्वास्थ्य सेवा और प्रशासनिक संचार चैनलों के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u17_t3",
+              "text": "और फीडर ट्रे में पेज रखने, नंबर डायल करने, लाइन हैंडशेक करने तथा डिलीवरी रिपोर्ट प्राप्त करने का पालन करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u17_t4",
+              "text": "ये अनुबंधों के सफल पारेषण को सत्यापित करते हैं तथा पुरानी मशीनों को इंटरनेट ई-फैक्स की ओर स्थानांतरित करते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u17_t5",
+              "text": "जिससे कानूनी डिलीवरी प्रमाण सुरक्षित रहते हुए कागज़ी वर्कफ़्लो आधुनिक क्लाउड नेटवर्क में बदल जाता है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u17_d1",
+              "category": "technical",
+              "text": "और डायल करने से पहले कागज़ को पानी में भिगोकर ताकि फीडर ट्रे तुरंत जलकर नष्ट हो जाए",
+              "penalty_explanation": "दस्तावेज़ सूखे और साफ होने चाहिए ताकि वे मशीन के अंदर बिना फंसे स्कैन हो सकें।"
+            },
+            {
+              "id": "hi_u17_d2",
+              "category": "conceptual",
+              "text": "ये ट्रांसमिशन रिपोर्ट को तुरंत फाड़ देते हैं ताकि डिलीवरी का कोई भी कानूनी रिकॉर्ड साबित न हो सके",
+              "penalty_explanation": "ट्रांसमिशन रिपोर्ट को दस्तावेज़ के सफल पहुंचने के प्रमाण के रूप में सुरक्षित रखा जाता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Sending a physical fax follows a 6-step cycle culminating in a confirmation report, while modern offices increasingly use digital Internet e-Fax[cite: 21, 22].",
+        "hi": "फैक्स भेजने की 6-चरणीय प्रक्रिया पुष्टि रिपोर्ट (slip) पर समाप्त होती है, जबकि आधुनिक कार्यालय इंटरनेट ई-फैक्स अपना रहे हैं[cite: 21, 22]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Computer Audio Architecture: Sound Card Digital-to-Analog Converters & Amplification",
+          "hi": "कंप्यूटर ऑडियो संरचना: साउंड कार्ड डिजिटल-टू-एनालॉग कनवर्टर (DAC) और एम्प्लीफिकेशन"
+        },
+        "theory": {
+          "en": "Computer sound systems are electro-acoustic output environments that translate binary software data into audible sound waves[cite: 22, 23]. Binary audio formats (.mp3, .wav) store sound as discrete digital numeric samples that cannot directly oscillate a physical speaker. The internal Sound Card bridges this gap using a Digital-to-Analog Converter (DAC). The DAC decodes the binary bitstream into continuous electrical analog voltage signals proportional to the sound's amplitude and frequency. These analog electrical signals travel through transmission paths—such as standard 3.5mm stereo Aux cables, USB lines, or wireless Bluetooth channels—into an internal pre-amplifier that boosts signal strength to drive speaker acoustic hardware without harmonic clipping[cite: 23].",
+          "hi": "कंप्यूटर ऑडियो सिस्टम इलेक्ट्रो-एकॉस्टिक आउटपुट उपकरण हैं जो बाइनरी सॉफ्टवेयर डेटा को सुनने योग्य ध्वनि तरंगों में बदलते हैं[cite: 22, 23]। बाइनरी ऑडियो फाइलें (.mp3, .wav) ध्वनि को डिजिटल नंबरों में सहेजती हैं, जो भौतिक स्पीकर को सीधे कंपन नहीं करा सकतीं[cite: 23]। कंप्यूटर का साउंड कार्ड इस अंतर को डिजिटल-टू-एनालॉग कनवर्टर (DAC) की सहायता से दूर करता है[cite: 23]। DAC बाइनरी बिट्स को निरंतर एनालॉग विद्युत वोल्टेज सिग्नलों में बदलता है[cite: 23]। इसके बाद ये एनालॉग सिग्नल 3.5 मिमी औक्स (Aux) केबल, यूएसबी या वायरलेस ब्लूटूथ के माध्यम से स्पीकर के एम्प्लीफायर में पहुँचते हैं, जहाँ सिग्नल की शक्ति बढ़ाकर उसे स्पीकर चलाने के योग्य बनाया जाता है[cite: 23]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Audio Signal Flow: Digital File &rarr; Sound Card DAC &rarr; Aux Line</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Digital Audio</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">.mp3 / .wav Bits</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Sound Card DAC</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Binary &rarr; Voltage</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Amplifier Stage</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">3.5mm Aux / Power</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Discrete Stream</tspan><tspan x=\"120\" dy=\"1.2em\">Computer File</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Analog Wave</tspan><tspan x=\"300\" dy=\"1.2em\">Voltage Levels</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Gain Boost</tspan><tspan x=\"480\" dy=\"1.2em\">Pre-Acoustic Step</tspan></text></svg>",
+          "caption": {
+            "en": "Audio processing pathway transforming binary files into analog voltages via the sound card DAC before amplifier routing[cite: 23].",
+            "hi": "ऑडियो प्रोसेसिंग मार्ग जो साउंड कार्ड DAC द्वारा बाइनरी फाइलों को एनालॉग वोल्टेज में बदलकर एम्प्लीफायर तक पहुंचाता है[cite: 23]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the sound card DAC converts digital audio files into amplified analog voltages.",
+          "hint": "Start with computer sound card hardware architectures translating binary media files, mention operating across desktop gaming, video playback, and telecommunication systems, explain routing discrete bitstreams through Digital-to-Analog Converters to generate analog electrical voltages, describe boosting signal gain via pre-amplification stages, and conclude with driving external speaker systems without audio distortion.",
+          "target_sequence": [
+            {
+              "id": "en_u18_t1",
+              "text": "Computer sound card architectures process digitized multimedia streams",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u18_t2",
+              "text": "across gaming systems, workstation audio editors, and desktop video playback interfaces",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u18_t3",
+              "text": "and by translating discrete binary audio files into continuous electrical voltage waves through dedicated Digital-to-Analog Converters",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u18_t4",
+              "text": "they transmit analog waveform frequencies across shielded 3.5mm Aux lines and internal pre-amplifiers",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u18_t5",
+              "text": "thereby boosting electrical audio gain sufficiently to drive external speaker systems without signal clipping",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u18_d1",
+              "category": "technical",
+              "text": "and by converting sound card DAC chips into mechanical ink rollers that imprint braille characters on printer ribbons",
+              "penalty_explanation": "Sound card DAC chips convert digital audio numbers into analog electrical voltages; they are not mechanical ink rollers."
+            },
+            {
+              "id": "en_u18_d2",
+              "category": "conceptual",
+              "text": "they delete all electrical current to ensure sound cards communicate solely through flashlight optical flickers",
+              "penalty_explanation": "Audio cards rely on continuous analog electrical voltages traveling through conductive wires to feed speaker amplifiers."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "साउंड कार्ड के DAC द्वारा डिजिटल ऑडियो फाइलों को एनालॉग वोल्टेज और एम्प्लीफाइड सिग्नल में बदलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "साउंड कार्ड संरचनाएं डिजिटल मल्टीमीडिया फाइलों को प्रोसेस करती हैं से शुरू करें, वीडियो और गेमिंग का संदर्भ दें, DAC द्वारा बाइनरी को निरंतर एनालॉग वोल्टेज में बदलने का तरीका बताएं, 3.5 मिमी औक्स और एम्प्लीफायर से सिग्नल बढ़ाने का परिणाम दें, और बिना रुकावट के बाहरी स्पीकर चलाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u18_t1",
+              "text": "साउंड कार्ड संरचनाएं डिजिटल मल्टीमीडिया फाइलों को प्रोसेस करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u18_t2",
+              "text": "गेमिंग सिस्टम, वीडियो प्लेबैक और कंप्यूटर डेस्कटॉप परिवेश के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u18_t3",
+              "text": "और समर्पित डिजिटल-टू-एनालॉग कनवर्टर (DAC) द्वारा बाइनरी फाइलों को निरंतर एनालॉग वोल्टेज तरंगों में बदलकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u18_t4",
+              "text": "ये 3.5 मिमी औक्स (Aux) केबलों और आंतरिक एम्प्लीफायर के माध्यम से ऑडियो सिग्नलों की शक्ति को बढ़ाती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u18_t5",
+              "text": "जिससे बाहरी स्पीकर सिस्टम बिना किसी विकृति के स्पष्ट और संतुलित ध्वनि उत्पन्न करने में सक्षम होते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u18_d1",
+              "category": "technical",
+              "text": "और DAC चिप्स को स्याही वाले रोलर में बदलकर प्रिंटर रिबन पर ब्रेल लिपि छापने के लिए",
+              "penalty_explanation": "साउंड कार्ड का DAC केवल ऑडियो सिग्नलों को डिजिटल से एनालॉग में बदलता है, इसका प्रिंटर से कोई संबंध नहीं है।"
+            },
+            {
+              "id": "hi_u18_d2",
+              "category": "conceptual",
+              "text": "ये सभी तारों को काटकर साउंड कार्ड को केवल टॉर्च की रोशनी द्वारा ध्वनि प्रसारित करने पर बाध्य करती हैं",
+              "penalty_explanation": "ऑडियो सिग्नल विद्युत तारों और वोल्टेज के माध्यम से एम्प्लीफायर तक पहुंचते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The Sound Card uses a Digital-to-Analog Converter (DAC) to transform binary audio into analog electrical voltages, which are amplified to drive speakers[cite: 23].",
+        "hi": "साउंड कार्ड डिजिटल-टू-एनालॉग कनवर्टर (DAC) द्वारा बाइनरी फाइलों को एनालॉग वोल्टेज में बदलता है, जिसे एम्प्लीफाई करके स्पीकर चलाए जाते हैं[cite: 23]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Electro-Acoustic Speaker Mechanics: Voice Coils, Magnetic Flux, and Diaphragm Vibration",
+          "hi": "इलेक्ट्रो-एकॉस्टिक स्पीकर कार्यप्रणाली: वॉयस कॉइल, चुंबकीय क्षेत्र और डायफ्राम कंपन"
+        },
+        "theory": {
+          "en": "A Computer Speaker is an electro-acoustic peripheral that converts electrical voltages into human-audible sound waves through electromagnetic induction[cite: 22, 23]. The physical mechanism centers on a cylindrical voice coil suspended directly within the magnetic flux gap of a fixed permanent magnet[cite: 23]. When amplified analog alternating current (AC) from the sound card flows through the voice coil, it generates a fluctuating electromagnetic field that alternates polarity[cite: 23]. This fluctuation induces rapid magnetic attraction and repulsion against the fixed magnet, driving the coil rapidly back and forth[cite: 23]. Because the coil is attached to a flexible paper, plastic, or fabric speaker cone (diaphragm), its rapid movement compresses and decompresses adjacent air molecules, producing audible acoustic sound waves between 20 Hz and 20,000 Hz[cite: 23].",
+          "hi": "कंप्यूटर स्पीकर एक इलेक्ट्रो-एकॉस्टिक आउटपुट उपकरण है जो विद्युत वोल्टेज को विद्युत-चुंबकीय प्रेरण द्वारा सुनने योग्य ध्वनि तरंगों में बदलता है[cite: 22, 23]। इसका भौतिक तंत्र एक स्थायी चुंबक के चुंबकीय क्षेत्र में स्थित वॉयस कॉइल (तार की कुंडली) पर आधारित होता है[cite: 23]। जब साउंड कार्ड से आने वाला एनालॉग करंट वॉयस कॉइल में प्रवाहित होता है, तो यह एक बदलता हुआ चुंबकीय क्षेत्र बनाता है[cite: 23]। इसके कारण वॉयस कॉइल स्थायी चुंबक के साथ तीव्र आकर्षण और प्रतिकर्षण का अनुभव करती है और आगे-पीछे तेजी से गति करती है[cite: 23]। चूंकि यह कॉइल एक लचीले स्पीकर कोन (डायफ्राम) से जुड़ी होती है, इसलिए इसकी गति हवा के अणुओं को दबाती और फैलाती है, जिससे हवा में 20 Hz से 20,000 Hz की सुनने योग्य ध्वनि तरंगें उत्पन्न होती हैं[cite: 23]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Speaker Mechanics: Voice Coil &rarr; Magnet &rarr; Diaphragm Wave</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Voice Coil Wire</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Alternating Current</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Permanent Magnet</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Magnetic Attraction</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Flexible Diaphragm</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Air Wave Compression</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Current Flow</tspan><tspan x=\"120\" dy=\"1.2em\">Polarity Shifts</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Push / Pull Force</tspan><tspan x=\"300\" dy=\"1.2em\">Mechanical Motion</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Air Vibration</tspan><tspan x=\"480\" dy=\"1.2em\">Audible Sound Wave</tspan></text></svg>",
+          "caption": {
+            "en": "Electro-acoustic speaker mechanics illustrating voice coil electromagnetic oscillations vibrating the flexible cone diaphragm to generate audible air waves[cite: 23].",
+            "hi": "इलेक्ट्रो-एकॉस्टिक स्पीकर प्रणाली जो वॉयस कॉइल के दोलनों द्वारा लचीले डायफ्राम को कंपित करके ध्वनि तरंगें बनाने को दर्शाती है[cite: 23]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the speaker voice coil and flexible diaphragm vibrate air to produce audible sound waves.",
+          "hint": "Start with electro-acoustic speaker mechanisms converting electrical currents into physical sound, mention operating across personal and multimedia computing environments, explain conducting analog alternating current through suspended voice coils against permanent magnetic fields, describe vibrating flexible cone diaphragms to compress and decompress surrounding air molecules, and conclude with producing audible audio frequencies.",
+          "target_sequence": [
+            {
+              "id": "en_u19_t1",
+              "text": "Electro-acoustic speaker mechanisms translate analog electrical current waves",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u19_t2",
+              "text": "across desktop listening setups, multimedia auditoriums, and voice conferencing workstations",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u19_t3",
+              "text": "and by conducting fluctuating alternating currents through a cylindrical voice coil suspended within a permanent magnetic field",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u19_t4",
+              "text": "they drive rapid magnetic attraction and repulsion that physically moves a flexible cone diaphragm back and forth",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u19_t5",
+              "text": "thereby compressing and decompressing adjacent air molecules to generate human-audible sound waves across the listening space",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u19_d1",
+              "category": "technical",
+              "text": "and by welding the speaker cone to a solid block of lead to ensure that air molecules never vibrate",
+              "penalty_explanation": "The speaker cone must remain highly flexible to vibrate back and forth and compress air molecules into sound waves."
+            },
+            {
+              "id": "en_u19_d2",
+              "category": "conceptual",
+              "text": "they disable the permanent magnet to require human breath to push the voice coil mechanically",
+              "penalty_explanation": "Electromagnetic attraction and repulsion against a permanent magnet drive the voice coil; human breath is not involved."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "स्पीकर की वॉयस कॉइल, स्थायी चुंबक और डायफ्राम द्वारा हवा में ध्वनि तरंगें उत्पन्न करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "इलेक्ट्रो-एकॉस्टिक स्पीकर एनालॉग विद्युत तरंगों को ध्वनि में बदलते हैं से शुरू करें, मल्टीमीडिया परिवेश का संदर्भ दें, वॉयस कॉइल में करंट प्रवाहित करके चुंबकीय आकर्षण-प्रतिकर्षण का तरीका बताएं, लचीले डायफ्राम को हिलाकर हवा के अणुओं को कंपित करने का परिणाम दें, और सुनने योग्य ध्वनि तरंगें उत्पन्न करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u19_t1",
+              "text": "इलेक्ट्रो-एकॉस्टिक स्पीकर तंत्र एनालॉग विद्युत करंट तरंगों को ध्वनि में रूपांतरित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u19_t2",
+              "text": "डेस्कटॉप कार्यस्थलों, मल्टीमीडिया कक्षाओं और कॉन्फ्रेंसिंग परिवेश के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u19_t3",
+              "text": "और स्थायी चुंबकीय क्षेत्र में स्थित वॉयस कॉइल में बदलते हुए करंट को प्रवाहित कराकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u19_t4",
+              "text": "ये तीव्र चुंबकीय आकर्षण और प्रतिकर्षण उत्पन्न करके लचीले डायफ्राम कोन को आगे-पीछे हिलाते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u19_t5",
+              "text": "जिससे आसपास की हवा के अणु संकुचित और विस्तृत होकर सुनने योग्य वास्तविक ध्वनि तरंगें उत्पन्न करते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u19_d1",
+              "category": "technical",
+              "text": "और डायफ्राम को ठोस सीसे से वेल्ड करके ताकि हवा का कोई भी अणु कभी भी कंपित न हो सके",
+              "penalty_explanation": "डायफ्राम का लचीला होना अनिवार्य है ताकि वह कंपन करके हवा में ध्वनि तरंगें पैदा कर सके।"
+            },
+            {
+              "id": "hi_u19_d2",
+              "category": "conceptual",
+              "text": "ये स्थायी चुंबक को हटाकर वॉयस कॉइल को केवल मुंह से फूंक मारकर चलाने पर निर्भर रहती हैं",
+              "penalty_explanation": "स्पीकर में चुंबकीय क्षेत्र और विद्युत धारा के कारण कॉइल स्वचालित रूप से गति करती है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Current in the voice coil creates magnetic forces against a permanent magnet, vibrating the diaphragm to compress air and produce sound waves[cite: 23].",
+        "hi": "वॉयस कॉइल में करंट बहने से स्थायी चुंबक के साथ चुंबकीय बल बनता है, जो डायफ्राम को हिलाकर हवा में ध्वनि तरंगें पैदा करता है[cite: 23]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Audio Configuration Interfaces: Equalization Controls (Bass/Treble), 3.5mm Aux & Bluetooth",
+          "hi": "ऑडियो कॉन्फ़िगरेशन इंटरफेस: इक्वलाइज़र नियंत्रण (बास/ट्रेबल), 3.5 मिमी औक्स और ब्लूटूथ"
+        },
+        "theory": {
+          "en": "Computer audio devices feature dedicated hardware and software controls to optimize playback fidelity and manage acoustic environments[cite: 23, 24]:\n1. Built-in vs. External Powered Speakers: Laptops and desktop monitors house low-power internal speakers; connecting external powered speakers automatically disables or overrides internal units[cite: 23].\n2. Power & Volume Amplification: Active desktop speakers integrate dedicated volume knobs, master power toggles, and hardware tone control dials[cite: 23].\n3. Equalization Controls (EQ): Allow frequency spectrum tuning by adjusting low frequencies (Bass) and high frequencies (Treble) to achieve high-fidelity response for speech, music, or gaming soundscapes[cite: 23].\n4. Connection Interfaces: Sound signals interface via standard analog 3.5mm TRS stereo mini-jacks, RCA line-in ports, USB digital audio streams, and wireless Bluetooth 5.0 protocols[cite: 23, 24].",
+          "hi": "कंप्यूटर ऑडियो उपकरण ध्वनि की गुणवत्ता को नियंत्रित करने और सुनने के अनुभव को बेहतर बनाने के लिए विशिष्ट नियंत्रण प्रदान करते हैं[cite: 23, 24]:\n1. इनबिल्ट बनाम बाहरी स्पीकर्स: लैपटॉप और मॉनिटर में कम क्षमता के आंतरिक स्पीकर होते हैं; बाहरी पावर्ड स्पीकर्स को 3.5 मिमी जैक से जोड़ने पर इनबिल्ट स्पीकर अपने आप बंद हो जाते हैं[cite: 23]।\n2. पावर और वॉल्यूम नियंत्रण: बाहरी एक्टिव स्पीकर्स में समर्पित वॉल्यूम नॉब, पावर ऑन/ऑफ स्विच और बास/ट्रेबल डायल होते हैं[cite: 23]।\n3. इक्वलाइज़र नियंत्रण (EQ): यह उपयोगकर्ताओं को लो-फ्रीक्वेंसी (बास) और हाई-फ्रीक्वेंसी (ट्रेबल) को संतुलित करने की सुविधा देता है ताकि संगीत या आवाज़ स्पष्ट सुनाई दे[cite: 23]।\n4. कनेक्शन इंटरफेस: ऑडियो सिग्नल मानक 3.5 मिमी स्टीरियो ऑडियो जैक, आरसीए (RCA) केबल, यूएसबी पोर्ट और वायरलेस ब्लूटूथ तकनीक द्वारा प्रसारित होते हैं[cite: 23, 24]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Audio Interface Stack: EQ Controls &amp; Physical Links</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Equalizer (EQ)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Bass &amp; Treble Dials</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Analog 3.5mm Aux</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Auto-Disables Internal</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Digital &amp; Wireless</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">USB &amp; Bluetooth 5.0</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Low &amp; High Band</tspan><tspan x=\"120\" dy=\"1.2em\">Acoustic Tuning</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">TRS Mini-Jack</tspan><tspan x=\"300\" dy=\"1.2em\">Hardware Port</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Cord-Free Link</tspan><tspan x=\"480\" dy=\"1.2em\">Universal Pair</tspan></text></svg>",
+          "caption": {
+            "en": "Audio management interface stack linking bass/treble equalization controls with 3.5mm Aux ports and wireless Bluetooth connectivity[cite: 23, 24].",
+            "hi": "ऑडियो प्रबंधन इंटरफेस जो बास/ट्रेबल इक्वलाइज़र नियंत्रणों को 3.5 मिमी औक्स पोर्ट और वायरलेस ब्लूटूथ कनेक्टिविटी से जोड़ता है[cite: 23, 24]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how audio equalization controls and physical interface ports optimize acoustic fidelity.",
+          "hint": "Start with audio interface configurations regulating acoustic frequency responses, mention operating across consumer laptops and professional multimedia stations, explain pairing bass and treble equalization dials with 3.5mm analog jacks, USB buses, and Bluetooth protocols, describe overriding low-power laptop speakers to balance sound tones, and conclude with delivering high-fidelity audio output.",
+          "target_sequence": [
+            {
+              "id": "en_u20_t1",
+              "text": "Audio interface configurations regulate acoustic frequency reproduction",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u20_t2",
+              "text": "across desktop workstations, portable laptops, and high-fidelity multimedia suites",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u20_t3",
+              "text": "and by coupling hardware Bass and Treble equalization dials with 3.5mm stereo mini-jacks, USB channels, and wireless Bluetooth protocols",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u20_t4",
+              "text": "they automatically override weak internal speakers while tailoring acoustic frequency curves to specific listening environments",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u20_t5",
+              "text": "thereby delivering crisp vocal clarity, powerful low-end resonance, and distortion-free multimedia sound reproduction",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u20_d1",
+              "category": "technical",
+              "text": "and by muting all external speakers permanently whenever a 3.5mm audio jack is physically plugged into the port",
+              "penalty_explanation": "Plugging in a 3.5mm jack engages the external speakers and disables internal speakers, not the other way around."
+            },
+            {
+              "id": "en_u20_d2",
+              "category": "conceptual",
+              "text": "they delete every audio equalizer setting to ensure that all music files sound like telephone dial tones",
+              "penalty_explanation": "Equalizers are intentionally designed to tune and optimize frequency bands for rich, clear sound."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "इक्वलाइज़र नियंत्रण (बास/ट्रेबल) और 3.5 मिमी औक्स व ब्लूटूथ इंटरफेस द्वारा ध्वनि की गुणवत्ता सुधारने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "ऑडियो इंटरफेस कॉन्फ़िगरेशन ध्वनि आवृत्ति को नियंत्रित करते हैं से शुरू करें, लैपटॉप और मल्टीमीडिया का संदर्भ दें, बास व ट्रेबल डायल को 3.5 मिमी औक्स तथा ब्लूटूथ से जोड़ने का तरीका बताएं, इनबिल्ट स्पीकर्स को बंद करके ध्वनि टोन संतुलित करने का परिणाम दें, और स्पष्ट व समृद्ध आवाज़ प्राप्त करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u20_t1",
+              "text": "ऑडियो इंटरफेस कॉन्फ़िगरेशन ध्वनि आवृत्ति के पुनरुत्पादन को नियंत्रित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u20_t2",
+              "text": "डेस्कटॉप कार्यस्थलों, पोर्टेबल लैपटॉप और मल्टीमीडिया स्टूडियो के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u20_t3",
+              "text": "और बास तथा ट्रेबल इक्वलाइज़र डायल को 3.5 मिमी स्टीरियो जैक, यूएसबी पोर्ट तथा ब्लूटूथ के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u20_t4",
+              "text": "ये कमजोर इनबिल्ट स्पीकर्स को स्वतः बंद करते हुए ध्वनि तरंगों को कमरे की बनावट के अनुसार अनुकूलित करते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u20_t5",
+              "text": "जिससे आवाज़ की स्पष्टता, गहरा बास और बिना किसी विकृति के उच्च-गुणवत्ता वाला ऑडियो अनुभव प्राप्त होता है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u20_d1",
+              "category": "technical",
+              "text": "और 3.5 मिमी ऑडियो जैक लगाते ही बाहरी स्पीकर्स को हमेशा के लिए म्यूट करने के लिए मजबूर करके",
+              "penalty_explanation": "ऑडियो जैक लगाने से बाहरी स्पीकर सक्रिय होते हैं और लैपटॉप के इनबिल्ट स्पीकर बंद होते हैं।"
+            },
+            {
+              "id": "hi_u20_d2",
+              "category": "conceptual",
+              "text": "ये सभी इक्वलाइज़र सेटिंग्स हटाकर सभी गानों को केवल टेलीफोन की डायल टोन में बदल देती हैं",
+              "penalty_explanation": "इक्वलाइज़र का मुख्य कार्य ही आवाज़ और संगीत के विभिन्न स्तरों (बास और ट्रेबल) को बेहतरीन बनाना है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Audio systems feature EQ controls (bass/treble) and connect via 3.5mm Aux, USB, or Bluetooth, automatically overriding internal laptop speakers[cite: 23, 24].",
+        "hi": "ऑडियो सिस्टम बास/ट्रेबल इक्वलाइज़र द्वारा ध्वनि नियंत्रित करते हैं और 3.5 मिमी औक्स या ब्लूटूथ से जुड़कर इनबिल्ट स्पीकर को बंद कर देते हैं[cite: 23, 24]।"
+      }
+    }
+  ]
+}
