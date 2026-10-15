@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 1: Digital Literacy (Advanced) - Part 3",
+      "hi": "इकाई 1: डिजिटल साक्षरता (एडवांस) - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Printer Taxonomy: Mechanical Striking vs. Non-Contact Printing",
+          "hi": "प्रिंटर वर्गीकरण: यांत्रिक प्रहार बनाम संपर्क-रहित प्रिंटिंग"
+        },
+        "theory": {
+          "en": "A printer is a primary electronic output peripheral that accepts digitized text and graphics from a computer to produce physical hard copy documents on paper or labels. Printer hardware is divided into two major technological families based on how marks are formed on media:\n1. Impact Printers: Rely on physical mechanical striking, where tiny wire pins or embossed character dies strike against an inked fabric ribbon to press ink onto the underlying paper, similar to a typewriter.\n2. Non-Impact Printers: Deposit characters and images without physical contact between the print head and paper, utilizing electro-photographic laser beams, chemical thermal fusion, or high-pressure liquid ink droplets[cite: 51].",
+          "hi": "प्रिंटर एक प्राथमिक इलेक्ट्रॉनिक आउटपुट डिवाइस है जो कंप्यूटर से डिजिटल टेक्स्ट और ग्राफिक्स प्राप्त करके कागज़ या लेबल पर स्थायी भौतिक हार्ड कॉपी तैयार करता है[cite: 51]। कागज़ पर निशान कैसे बनाए जाते हैं, इसके आधार पर प्रिंटर दो मुख्य तकनीकी परिवारों में विभाजित हैं[cite: 51]:\n1. इम्पैक्ट प्रिंटर: ये यांत्रिक प्रहार तकनीक पर कार्य करते हैं, जहाँ छोटी धातु की पिनें या उकेरे गए अक्षर स्याही वाले रिबन पर चोट करके कागज़ पर स्याही स्थानांतरित करते हैं, ठीक एक टाइपराइटर की तरह[cite: 51, 52]।\n2. नॉन-इम्पैक्ट प्रिंटर: ये प्रिंट हेड और कागज़ के बीच बिना किसी भौतिक संपर्क के कार्य करते हैं, और इलेक्ट्रो-फोटोग्राफिक लेज़र बीम, ऊष्मीय प्रभाव या तरल स्याही की बूंदों का उपयोग करके प्रिंट तैयार करते हैं[cite: 51]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Printer Hardware Taxonomy: Impact vs. Non-Impact</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Impact Printers</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Pins / Dies Strike Inked Ribbon</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Non-Impact Printers</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Laser / Spray (Non-Contact)</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Mechanical Force</tspan><tspan x=\"100\" dy=\"1.2em\">Typewriter Action</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Multipart Copies</tspan><tspan x=\"225\" dy=\"1.2em\">Carbon Pressure</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Fluid / Powder</tspan><tspan x=\"375\" dy=\"1.2em\">Electrostatic Drum</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Silent &amp; Crisp</tspan><tspan x=\"500\" dy=\"1.2em\">High-Speed Pages</tspan></text></svg>",
+          "caption": {
+            "en": "Printer architectural taxonomy categorizing hardware into mechanical ribbon-striking impact devices and silent non-contact printing engines[cite: 51, 52].",
+            "hi": "प्रिंटर संरचनात्मक वर्गीकरण जो हार्डवेयर को यांत्रिक रिबन प्रहार इम्पैक्ट उपकरणों और शांत संपर्क-रहित प्रिंटिंग इंजनों में बांटता है[cite: 51, 52]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the architectural taxonomy separates mechanical impact printers from non-impact printing technologies.",
+          "hint": "Start with printer hardware architectures categorizing document production devices, mention operating across modern offices and data processing centers, explain contrasting mechanical ribbon-striking impact units with contact-free electrostatic and fluid non-impact systems, describe generating physical hard copies without head-to-paper collision in modern engines, and conclude with accommodating requirements from carbon receipts to high-speed publication documents.",
+          "target_sequence": [
+            {
+              "id": "en_u11_t1",
+              "text": "Printer hardware architectures categorize physical document production devices",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u11_t2",
+              "text": "across corporate computing, industrial accounting, and personal desktop environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u11_t3",
+              "text": "and by distinguishing mechanical ribbon-striking impact systems from contact-free laser and liquid non-impact engines",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u11_t4",
+              "text": "they transfer alphanumeric text, complex schematics, and photographic images onto paper media without mechanical head friction",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u11_t5",
+              "text": "thereby addressing diverse requirements ranging from multipart carbon billing forms to whisper-quiet publication publishing",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "technical",
+              "text": "and by forcing non-impact laser engines to pound heavy steel hammers through fabric ribbons fifty times every second",
+              "penalty_explanation": "Non-impact printers do not use mechanical striking pins, hammers, or inked fabric ribbons."
+            },
+            {
+              "id": "en_u11_d2",
+              "category": "conceptual",
+              "text": "they mandate that all impact printers operate completely submerged in liquid nitrogen to prevent loud sound waves",
+              "penalty_explanation": "Impact printers operate in normal office and industrial environments; they are not submerged in liquid nitrogen."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "इम्पैक्ट और नॉन-इम्पैक्ट प्रिंटर तकनीकों के बीच वर्गीकरण और कार्यप्रणाली को सही क्रम में व्यवस्थित करें।",
+          "hint": "प्रिंटर हार्डवेयर संरचनाएं दस्तावेज़ निर्माण उपकरणों को वर्गीकृत करती हैं से शुरू करें, कार्यालयी परिवेश का संदर्भ दें, यांत्रिक प्रहार इम्पैक्ट और संपर्क-रहित नॉन-इम्पैक्ट के अंतर का तरीका बताएं, बिना हेड टकराव के टेक्स्ट और चित्र छापने का परिणाम दें, और विभिन्न मुद्रण आवश्यकताओं को पूरा करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u11_t1",
+              "text": "प्रिंटर हार्डवेयर संरचनाएं भौतिक दस्तावेज़ निर्माण उपकरणों को वर्गीकृत करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u11_t2",
+              "text": "व्यावसायिक कार्यालयों, औद्योगिक बिलिंग और व्यक्तिगत कंप्यूटिंग परिवेश के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u11_t3",
+              "text": "और स्याही वाले रिबन पर यांत्रिक प्रहार करने वाले इम्पैक्ट सिस्टम को संपर्क-रहित लेज़र तथा लिक्विड नॉन-इम्पैक्ट इंजनों से अलग करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u11_t4",
+              "text": "ये यांत्रिक घर्षण के बिना कागज़ की सतह पर टेक्स्ट और चित्रों को स्थानांतरित करती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u11_t5",
+              "text": "जिससे मल्टीपार्ट कार्बन बिलिंग रसीदों से लेकर अत्यंत शांत और उच्च-गुणवत्ता वाले प्रकाशन मुद्रण की आवश्यकताएं पूरी होती हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "technical",
+              "text": "और नॉन-इम्पैक्ट लेज़र प्रिंटर को स्याही वाले रिबन पर भारी हथौड़ों से लगातार प्रहार करने के लिए बाध्य करके",
+              "penalty_explanation": "नॉन-इम्पैक्ट प्रिंटर संपर्क-रहित तकनीक का उपयोग करते हैं, इनमें कोई हथौड़ा या रिबन प्रहार नहीं होता।"
+            },
+            {
+              "id": "hi_u11_d2",
+              "category": "conceptual",
+              "text": "ये सभी इम्पैक्ट प्रिंटरों को शोर रोकने के लिए तरल नाइट्रोजन में डुबोकर चलाने की अनिवार्य शर्त लागू करती हैं",
+              "penalty_explanation": "इम्पैक्ट प्रिंटर सामान्य वातावरण में यांत्रिक प्रहार से कार्य करते हैं, इन्हें तरल नाइट्रोजन में नहीं डुबोया जाता।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Printers are classified as Impact (striking pins/dies against ribbon for multipart forms) or Non-Impact (contact-free laser/inkjet for quiet, high-resolution printing)[cite: 51, 52].",
+        "hi": "प्रिंटर दो श्रेणियों में आते हैं: इम्पैक्ट (कार्बन प्रतियों हेतु रिबन पर यांत्रिक प्रहार) और नॉन-इम्पैक्ट (शांत और उच्च गुणवत्ता हेतु संपर्क-रहित लेज़र/इंकजेट)[cite: 51, 52]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Dot Matrix Printers: Wire Pin Matrices, Tractor Feeds, and Carbon Copies",
+          "hi": "डॉट मैट्रिक्स प्रिंटर: वायर पिन मैट्रिक्स, ट्रैक्टर फीड और कार्बन कॉपियां"
+        },
+        "theory": {
+          "en": "A Dot Matrix Printer (DMP) is an impact character printer that creates text and basic line graphics by driving a vertical column of electromagnetic wire pins against an inked fabric ribbon onto paper[cite: 51, 52]. Print heads typically house 9 pins (standard draft speed) or 24 pins (Letter Quality / LQ mode), forming each character out of a 5x7 or 9x7 matrix dot pattern[cite: 52]. Operational speed is measured in Characters Per Second (CPS), ranging from 100 to over 600 CPS[cite: 26, 52]. Dot Matrix printers feed continuous fanfold paper with perforated edges using tractor-feed sprockets[cite: 52]. Because the electromagnetic solenoids strike the ribbon with physical pressure, DMPs can print multiple carbon duplicate copies (multipart forms) in a single pass, maintaining low per-page operating costs in harsh, dust-prone industrial environments despite loud operational noise and low resolution (72–240 DPI)[cite: 52].",
+          "hi": "डॉट मैट्रिक्स प्रिंटर (DMP) एक इम्पैक्ट कैरेक्टर प्रिंटर है जो स्याही लगे फैब्रिक रिबन पर इलेक्ट्रोमैग्नेटिक वायर पिनों के प्रहार द्वारा कागज़ पर टेक्स्ट और रेखाचित्र बनाता है[cite: 51, 52]। इसके प्रिंट हेड में वर्टिकल पंक्ति में आमतौर पर 9 पिन (ड्राफ्ट मोड) या 24 पिन (लेटर क्वालिटी मोड) होती हैं, जो 5x7 या 9x7 मैट्रिक्स डॉट्स द्वारा अक्षर बनाती हैं[cite: 52]। इसकी गति को कैरेक्टर प्रति सेकंड (CPS) में मापा जाता है, जो 100 से 600+ CPS तक होती है[cite: 26, 52]। यह पंक्चर किनारों वाले निरंतर फैनफोल्ड कागज़ को खींचने के लिए ट्रैक्टर-फीड का उपयोग करता है[cite: 52]। यांत्रिक दबाव के कारण, यह एक ही बार में कार्बन पेपर द्वारा कई कार्बन कॉपियां (मल्टीपार्ट फॉर्म) प्रिंट कर सकता है, जिससे अत्यधिक शोर और कम रिज़ॉल्यूशन (72-240 DPI) के बावजूद यह औद्योगिक और धूल भरे परिवेश में बहुत कम लागत पर कार्य करता है[cite: 52]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Dot Matrix Printer (DMP) Solenoid &amp; Pin Array</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">9 / 24 Wire Pins</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Solenoid Actuators</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Inked Fabric Ribbon</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Mechanical Strike</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Tractor-Feed Paper</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Continuous Fanfold</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">5x7 / 9x7 Grids</tspan><tspan x=\"120\" dy=\"1.2em\">100-600 CPS</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Physical Impact</tspan><tspan x=\"300\" dy=\"1.2em\">Multipart Carbon</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Sprocket Holes</tspan><tspan x=\"480\" dy=\"1.2em\">Low Page Cost</tspan></text></svg>",
+          "caption": {
+            "en": "Dot matrix architecture detailing electromagnetic solenoid pins striking fabric ribbons onto tractor-fed continuous multipart forms[cite: 52].",
+            "hi": "डॉट मैट्रिक्स संरचना जो इलेक्ट्रोमैग्नेटिक सोलेनोइड पिनों को ट्रैक्टर-फीड निरंतर कागज़ पर रिबन प्रहार करते दर्शाती है[cite: 52]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how dot matrix printers generate multipart carbon documents via electromagnetic pin arrays.",
+          "hint": "Start with Dot Matrix character impact printers generating durable hardcopy text, mention serving industrial billing, logistics, and railway ticketing operations, explain driving arrays of 9 or 24 electromagnetic wire pins against an inked fabric ribbon, describe pressing carbon duplicate layers onto continuous tractor-fed perforated paper, and conclude with maintaining low operational page costs despite loud mechanical noise.",
+          "target_sequence": [
+            {
+              "id": "en_u12_t1",
+              "text": "Dot Matrix impact character printers generate durable text documentation",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u12_t2",
+              "text": "across railway reservation counters, banking ledgers, and harsh warehouse terminals",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u12_t3",
+              "text": "and by firing electromagnetic solenoids to drive arrays of 9 or 24 vertical wire pins against an inked fabric ribbon",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u12_t4",
+              "text": "they exert mechanical pressure across multiple carbon duplicate sheets loaded on sprocket tractor-feed paper",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u12_t5",
+              "text": "thereby delivering simultaneous multipart invoice copies with exceptionally low consumable operating costs",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u12_d1",
+              "category": "technical",
+              "text": "and by spraying heated liquid toner through piezoelectric nozzles to avoid touching the tractor paper",
+              "penalty_explanation": "Dot matrix printers strike pins mechanically against an inked ribbon; they do not spray liquid toner."
+            },
+            {
+              "id": "en_u12_d2",
+              "category": "conceptual",
+              "text": "they delete every sprocket hole from fanfold paper to make continuous feeding physically impossible",
+              "penalty_explanation": "DMPs rely specifically on perforated sprocket holes to advance continuous fanfold paper through the tractor feed."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "डॉट मैट्रिक्स प्रिंटर द्वारा इलेक्ट्रोमैग्नेटिक पिनों के माध्यम से मल्टीपार्ट कार्बन दस्तावेज़ प्रिंट करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "डॉट मैट्रिक्स इम्पैक्ट कैरेक्टर प्रिंटर स्थायी टेक्स्ट प्रिंट करते हैं से शुरू करें, रेलवे काउंटर और वेयरहाउस का संदर्भ दें, 9 या 24 वायर पिनों को स्याही वाले रिबन पर चलाने का तरीका बताएं, ट्रैक्टर-फीड कागज़ पर कार्बन प्रतियों पर दबाव डालने का परिणाम दें, और कम लागत में बिल रसीदें निकालने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u12_t1",
+              "text": "डॉट मैट्रिक्स इम्पैक्ट कैरेक्टर प्रिंटर टिकाऊ टेक्स्ट दस्तावेज़ तैयार करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u12_t2",
+              "text": "रेलवे आरक्षण काउंटरों, बैंक लेज़रों और औद्योगिक वेयरहाउस टर्मिनलों के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u12_t3",
+              "text": "और इलेक्ट्रोमैग्नेटिक सोलेनोइड्स द्वारा 9 या 24 वर्टिकल वायर पिनों को स्याही लगे रिबन पर प्रहार कराकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u12_t4",
+              "text": "ये ट्रैक्टर-फीड द्वारा खींचे जाने वाले निरंतर कागज़ और कार्बन शीटों पर यांत्रिक दबाव डालते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u12_t5",
+              "text": "जिससे एक साथ कई कार्बन रसीदें अत्यंत कम प्रति-पृष्ठ परिचालन लागत पर आसानी से प्राप्त हो जाती हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u12_d1",
+              "category": "technical",
+              "text": "और गर्म लिक्विड टोनर को नोजल से छिड़ककर कागज़ को बिना छुए प्रिंट करने के लिए मजबूर करके",
+              "penalty_explanation": "डॉट मैट्रिक्स प्रिंटर यांत्रिक पिनों से रिबन पर चोट करते हैं, यह स्याही का छिड़काव नहीं करते।"
+            },
+            {
+              "id": "hi_u12_d2",
+              "category": "conceptual",
+              "text": "ये निरंतर कागज़ से सभी ट्रैक्टर छेद हटाकर रोल को आगे बढ़ने से हमेशा के लिए रोक देते हैं",
+              "penalty_explanation": "ट्रैक्टर-फीड प्रिंटर में पंक्चर छेद कागज़ को सुचारू रूप से आगे बढ़ाने के लिए अनिवार्य होते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Dot matrix printers use 9 or 24 pins striking a ribbon (100–600 CPS) to print multipart carbon copies on continuous tractor-feed paper[cite: 26, 52].",
+        "hi": "डॉट मैट्रिक्स प्रिंटर 9 या 24 पिनों से रिबन पर प्रहार करके (100-600 CPS) निरंतर ट्रैक्टर कागज़ पर एक साथ कई कार्बन प्रतियां बनाते हैं[cite: 26, 52]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "High-Speed Impact Line Printers: Revolving Drums and Chain Mechanisms",
+          "hi": "उच्च-गति इम्पैक्ट लाइन प्रिंटर: घूर्णन ड्रम और चेन तंत्र"
+        },
+        "theory": {
+          "en": "Line printers are heavy-duty impact output devices designed to print an entire complete line of text simultaneously rather than individual characters one by one. Operational throughput is measured in Lines Per Minute (LPM), scaling from 300 LPM to over 3,000 LPM. Historically deployed across enterprise mainframe data centers for bulk payroll accounting and high-volume utility billing, line printers belong to two mechanical architectures:\n1. Drum Printers: Feature a solid metallic cylinder with complete sets of embossed characters running in circumferential bands across every printable print column position. As the cylindrical drum spins rapidly, magnetic hammers positioned behind the paper fire forward at precise microseconds to press the paper and ribbon against the matching rotating character.\n2. Chain / Band Printers: Utilize a horizontal metallic chain or steel band carrying repeating character fonts that spins laterally past print positions. A bank of electromagnetic print hammers strikes from behind the paper when desired characters align with designated column tracks.",
+          "hi": "लाइन प्रिंटर भारी-भरकम इम्पैक्ट आउटपुट डिवाइस हैं जो एक-एक अक्षर के बजाय एक साथ पूरी की पूरी टेक्स्ट लाइन प्रिंट करते हैं। इनकी मुद्रण गति को लाइन प्रति मिनट (LPM) में मापा जाता है, जो 300 LPM से 3,000 LPM तक होती है। मेनफ्रेम डेटा सेंटरों में थोक बिलिंग और पेरोल अकाउंटिंग के लिए उपयोग किए जाने वाले लाइन प्रिंटर दो मुख्य यांत्रिक संरचनाओं में आते हैं:\n1. ड्रम प्रिंटर: इसमें एक ठोस बेलनाकार धातु का ड्रम होता है जिसकी सतह पर प्रत्येक कॉलम में अक्षरों के पूरे सेट उभरे होते हैं। ड्रम के उच्च गति पर घूमने के दौरान, कागज़ के पीछे लगे चुंबकीय हथौड़े (हैमर) उस सटीक माइक्रोसेकंड में प्रहार करते हैं जब वांछित अक्षर सामने आता है।\n2. चेन / बैंड प्रिंटर: इसमें तेजी से घूमने वाली क्षैतिज धातु की चेन या स्टील बैंड होता है जिस पर कैरेक्टर सेट लगे होते हैं। जब उपयुक्त अक्षर संबंधित कॉलम के सामने आता है, तो पीछे से मैग्नेटिक हैमर कागज़ को रिबन पर दबा देता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Line Impact Printers: Drum vs. Chain Architecture</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Drum Line Printer</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Embossed Cylinder Tracks</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Chain / Band Printer</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Horizontal Rotating Steel Band</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Microsecond Timing</tspan><tspan x=\"100\" dy=\"1.2em\">Hammer Bank Fire</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">300-3000 LPM</tspan><tspan x=\"225\" dy=\"1.2em\">Bulk Billing Runs</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Lateral Motion</tspan><tspan x=\"375\" dy=\"1.2em\">Selective Hammers</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Fixed Font Bands</tspan><tspan x=\"500\" dy=\"1.2em\">Zero Graphics Support</tspan></text></svg>",
+          "caption": {
+            "en": "High-speed line printer architectures contrasting revolving cylindrical character drums with rotating horizontal chain bands.",
+            "hi": "उच्च-गति लाइन प्रिंटर संरचनाएं जो घूर्णन बेलनाकार कैरेक्टर ड्रम और क्षैतिज चेन बैंड के यांत्रिक अंतर को दर्शाती हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how drum and chain line printers achieve high throughput by printing whole lines simultaneously.",
+          "hint": "Start with high-speed impact line printers executing bulk data output, mention serving mainframe accounting and utility billing centers, explain synchronizing rapidly rotating character drums or chain bands with electromagnetic print hammers, describe pressing entire text lines onto continuous paper simultaneously, and conclude with delivering thousands of lines per minute despite deafening noise and fixed typography.",
+          "target_sequence": [
+            {
+              "id": "en_u13_t1",
+              "text": "High-speed impact line printers execute heavy-duty document output",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u13_t2",
+              "text": "across mainframe enterprise data centers, telecommunication billing facilities, and banking networks",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u13_t3",
+              "text": "and by synchronizing revolving embossed metallic drums or horizontal steel chain bands with banks of electromagnetic striking hammers",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u13_t4",
+              "text": "they press full lines of alphanumeric characters onto ribbon and continuous paper simultaneously during precise rotational fractions",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u13_t5",
+              "text": "thereby achieving speeds exceeding three thousand lines per minute despite rigid font designs and loud mechanical noise",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "technical",
+              "text": "and by disabling all electromagnetic hammers to project laser beams through glass slides onto photographic film",
+              "penalty_explanation": "Line printers are mechanical impact devices using striking hammers; they do not project laser beams or use photographic film."
+            },
+            {
+              "id": "en_u13_d2",
+              "category": "conceptual",
+              "text": "they restrict line printers strictly to printing one single letter every sixty minutes to avoid waking system administrators",
+              "penalty_explanation": "Line printers print complete lines at rapid speeds of 300 to 3,000 lines per minute."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ड्रम और चेन लाइन प्रिंटर द्वारा एक साथ पूरी लाइन प्रिंट करके उच्च गति प्राप्त करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "उच्च-गति इम्पैक्ट लाइन प्रिंटर भारी डेटा आउटपुट तैयार करते हैं से शुरू करें, मेनफ्रेम बिलिंग का संदर्भ दें, घूमते धातु के ड्रम या स्टील चेन के साथ मैग्नेटिक हैमर्स का तरीका बताएं, एक साथ पूरी लाइन छापने का परिणाम दें, और हजारों लाइन प्रति मिनट गति प्राप्त करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u13_t1",
+              "text": "उच्च-गति इम्पैक्ट लाइन प्रिंटर बड़े पैमाने पर डेटा आउटपुट तैयार करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u13_t2",
+              "text": "मेनफ्रेम एंटरप्राइज डेटा सेंटरों, उपयोगिता बिलिंग केंद्रों और बड़े वित्तीय संस्थानों के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u13_t3",
+              "text": "और घूमने वाले धातु के ड्रम अथवा क्षैतिज स्टील चेन बैंड को मैग्नेटिक हैमर्स के सटीक प्रहार के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u13_t4",
+              "text": "ये एक-एक अक्षर के बजाय पूरी की पूरी टेक्स्ट लाइन को रिबन और कागज़ पर एक साथ दबाते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u13_t5",
+              "text": "जिससे अत्यधिक यांत्रिक शोर के बावजूद तीन हजार लाइन प्रति मिनट तक की तीव्र मुद्रण गति प्राप्त होती है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "technical",
+              "text": "और सभी हैमर्स को बंद करके कांच की स्लाइडों से लेज़र बीम प्रोजेक्ट करने के लिए बाध्य करके",
+              "penalty_explanation": "लाइन प्रिंटर यांत्रिक हथौड़ों के प्रहार से कार्य करते हैं, इनमें कोई लेज़र प्रोजेक्शन नहीं होता।"
+            },
+            {
+              "id": "hi_u13_d2",
+              "category": "conceptual",
+              "text": "ये शोर से बचने के लिए गति को घटाकर प्रति घंटे केवल एक अक्षर प्रिंट करने का नियम लागू करते हैं",
+              "penalty_explanation": "लाइन प्रिंटर अत्यंत तेज़ होते हैं जो प्रति मिनट 300 से 3,000 लाइनें प्रिंट करते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Line printers (Drum and Chain) print complete lines simultaneously (300–3,000 LPM) using revolving character bands and hammer banks.",
+        "hi": "लाइन प्रिंटर (ड्रम और चेन) घूमते हुए कैरेक्टर सेट और हैमर्स द्वारा एक साथ पूरी लाइन प्रिंट करते हैं (300-3,000 LPM)।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Laser Page Printers: OPC Drums and the 6-Stage Electro-Photographic Process",
+          "hi": "लेज़र पेज प्रिंटर: ओपीसी ड्रम और 6-चरणीय इलेक्ट्रो-फोटोग्राफिक प्रक्रिया"
+        },
+        "theory": {
+          "en": "A Laser Printer is a high-speed, non-impact page printer that produces high-resolution text and graphics (600 to 2400 DPI) at speeds ranging from 15 to over 70 Pages Per Minute (PPM). Laser printing relies on a 6-stage electro-photographic engine[cite: 29]:\n1. Charging: A high-voltage primary corona wire applies a uniform negative electrostatic charge across a revolving photosensitive Organic Photoconductor (OPC) drum[cite: 29].\n2. Exposure: A semiconductor laser diode beams pulses onto a spinning polygonal mirror, sweeping light across the drum to discharge specific areas and write an invisible 'latent' electrostatic image[cite: 29].\n3. Developing: Fine, dry, negatively charged plastic toner powder is attracted electrostatically only to the discharged latent image spots on the drum[cite: 29].\n4. Transfer: A positive charge applied behind the paper pulls the toner off the drum onto the sheet[cite: 29].\n5. Fusing: The paper passes between heated Teflon and pressure rollers ($~200^\circ\text{C} / 390^\circ\text{F}$), melting and permanently bonding the plastic toner into the paper fibers[cite: 29].\n6. Cleaning: A rubber wiper blade sweeps residual toner from the drum while erase lamps neutralize remaining charges[cite: 29].",
+          "hi": "लेज़र प्रिंटर एक उच्च-गति, नॉन-इम्पैक्ट पेज प्रिंटर है जो 600 से 2400 DPI के रिज़ॉल्यूशन पर 15 से 70+ पेज प्रति मिनट (PPM) की गति से टेक्स्ट और चित्र प्रिंट करता है[cite: 29]। यह एक 6-चरणीय इलेक्ट्रो-फोटोग्राफिक प्रक्रिया पर कार्य करता है[cite: 29]:\n1. चार्जिंग (Charging): एक हाई-वोल्टेज वायर घूमने वाले फोटोसेंसिटिव ऑर्गेनिक फोटोकंडक्टर (OPC) ड्रम को एकसमान नकारात्मक चार्ज देता है[cite: 29]।\n2. एक्सपोज़र (Exposure): लेज़र बीम घूमते शीशे से टकराकर ड्रम पर पड़ती है और उस स्थान का चार्ज हटाकर एक अदृश्य 'इलेक्ट्रोस्टैटिक' छवि बनाती है[cite: 29]।\n3. डेवलपिंग (Developing): सूखा, नकारात्मक रूप से चार्ज टोनर पाउडर ड्रम के उन डिस्चार्ज हिस्सों से चिपक जाता है जहाँ लेज़र पड़ी थी[cite: 29]।\n4. ट्रांसफर (Transfer): कागज़ के पीछे से दिया गया सकारात्मक चार्ज टोनर को ड्रम से खींचकर कागज़ पर ले आता है[cite: 29]।\n5. फ्यूजिंग (Fusing): कागज़ लगभग $200^\circ\text{C}$ गर्म फ्यूजर रोलर्स के बीच से गुजरता है जो टोनर को पिघलाकर कागज़ के रेशों में स्थायी रूप से चिपका देते हैं[cite: 29]।\n6. क्लीनिंग (Cleaning): रबर ब्लेड ड्रम से बचा हुआ टोनर साफ करता है ताकि अगला पेज प्रिंट किया जा सके[cite: 29]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Laser Electro-Photographic Engine: 6-Stage Process</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Laser &amp; OPC Drum</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Charging &amp; Exposure</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Toner Transfer</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Electrostatic Pull</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Fuser Rollers</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Heat (~200&deg;C) &amp; Pressure</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#f87171\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#f87171\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Latent Image</tspan><tspan x=\"120\" dy=\"1.2em\">Neg Corona Wire</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Dry Powder</tspan><tspan x=\"300\" dy=\"1.2em\">Drum to Paper</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Melt into Fibers</tspan><tspan x=\"480\" dy=\"1.2em\">Permanent Hardcopy</tspan></text></svg>",
+          "caption": {
+            "en": "The electro-photographic cycle linking laser exposure on the OPC drum with electrostatic toner transfer and 200°C heated fuser rollers[cite: 29].",
+            "hi": "इलेक्ट्रो-फोटोग्राफिक चक्र जो ओपीसी ड्रम पर लेज़र एक्सपोज़र, इलेक्ट्रोस्टैटिक टोनर ट्रांसफर और 200°C गर्म फ्यूजर रोलर्स को जोड़ता है[cite: 29]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how a laser printer executes the six-stage electro-photographic process to bind toner onto paper.",
+          "hint": "Start with laser page printers executing high-resolution electro-photographic printing, mention operating across modern publishing, commercial, and enterprise offices, explain charging the OPC drum and exposing latent images before transferring dry plastic toner, describe melting powdered particles via 200-degree heated fuser rollers, and conclude with delivering crisp permanent pages at high speeds.",
+          "target_sequence": [
+            {
+              "id": "en_u14_t1",
+              "text": "Laser page printers execute high-resolution electro-photographic printing",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u14_t2",
+              "text": "across modern publication studios, corporate offices, and institutional documentation centers",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u14_t3",
+              "text": "and by charging an Organic Photoconductor drum, scanning a latent laser image, and attracting negatively charged dry toner powder",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u14_t4",
+              "text": "they transfer developed resin particles onto paper and melt them permanently into fibers using 200-degree heated fuser rollers",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u14_t5",
+              "text": "thereby delivering crisp whisper-quiet text and graphic pages at speeds exceeding fifty pages per minute",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "technical",
+              "text": "and by freezing the OPC drum to absolute zero using liquid helium to solidify wet watercolor pigments",
+              "penalty_explanation": "Laser printers use an electrostatic charging and laser exposure process, followed by heated fuser rollers at ~200°C, not cryogenic liquid helium."
+            },
+            {
+              "id": "en_u14_d2",
+              "category": "conceptual",
+              "text": "they shatter the fuser rollers with hammers so dry plastic powder blows away before touching any paper",
+              "penalty_explanation": "Fuser rollers apply heat and pressure to melt and bond toner permanently into the paper fibers."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "लेज़र प्रिंटर द्वारा 6-चरणीय इलेक्ट्रो-फोटोग्राफिक प्रक्रिया से टोनर को कागज़ पर चिपकाने की कार्यप्रणाली को सही क्रम में व्यवस्थित करें।",
+          "hint": "लेज़र पेज प्रिंटर उच्च-रिज़ॉल्यूशन इलेक्ट्रो-फोटोग्राफिक मुद्रण करते हैं से शुरू करें, कॉर्पोरेट कार्यालयों का संदर्भ दें, ओपीसी ड्रम पर चार्जिंग, लेज़र से अदृश्य छवि और टोनर लगाने का तरीका बताएं, 200 डिग्री गर्म फ्यूजर रोलर्स से टोनर पिघलाने का परिणाम दें, और तीव्र गति से स्पष्ट पेज देने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u14_t1",
+              "text": "लेज़र पेज प्रिंटर उच्च-रिज़ॉल्यूशन इलेक्ट्रो-फोटोग्राफिक मुद्रण निष्पादित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u14_t2",
+              "text": "आधुनिक प्रकाशन स्टूडियो, कॉर्पोरेट कार्यालयों और संस्थागत दस्तावेज़ केंद्रों के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u14_t3",
+              "text": "और ओपीसी ड्रम को चार्ज करके लेज़र बीम से अदृश्य छवि बनाने तथा सूखे टोनर पाउडर को आकर्षित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u14_t4",
+              "text": "ये टोनर को कागज़ पर स्थानांतरित करते हैं और 200 डिग्री गर्म फ्यूज़र रोलर्स से पिघलाकर रेशों में चिपकाते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u14_t5",
+              "text": "जिससे पचास पेज प्रति मिनट से अधिक की गति पर अत्यंत स्पष्ट, शांत और स्थायी मुद्रण प्राप्त होता है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "technical",
+              "text": "और ओपीसी ड्रम को तरल हीलियम से ठंडा करके गीले रंगों को पत्थर की तरह जमाने के लिए",
+              "penalty_explanation": "लेज़र प्रिंटर में सूखे पाउडर को पिघलाने के लिए लगभग 200°C गर्म फ्यूज़र रोलर्स का उपयोग होता है, तरल हीलियम का नहीं।"
+            },
+            {
+              "id": "hi_u14_d2",
+              "category": "conceptual",
+              "text": "ये फ्यूज़र रोलर्स को हथौड़े से तोड़ देती हैं ताकि टोनर कागज़ पर चिपकने के बजाय हवा में उड़ जाए",
+              "penalty_explanation": "फ्यूज़र रोलर्स टोनर को गर्मी और दबाव से कागज़ में स्थायी रूप से सील करने का कार्य करते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Laser printers write latent images on an OPC drum, transfer dry toner, and melt it into paper fibers using heated fuser rollers (~200°C)[cite: 29].",
+        "hi": "लेज़र प्रिंटर ओपीसी ड्रम पर अदृश्य छवि बनाकर सूखा टोनर आकर्षित करते हैं और ~200°C गर्म फ्यूज़र रोलर्स द्वारा उसे कागज़ में चिपकाते हैं[cite: 29]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Inkjet Printers: Thermal Bubble vs. Piezoelectric Ejection & CMYK Color Space",
+          "hi": "इंकजेट प्रिंटर: थर्मल बबल बनाम पीज़ोइलेक्ट्रिक इजेक्शन और CMYK कलर मॉडल"
+        },
+        "theory": {
+          "en": "An Inkjet Printer is a non-impact peripheral that produces text and rich photographic output by propelling microscopic droplets of liquid ink through precision nozzle arrays directly onto paper. Liquid ejection relies on two primary physical mechanisms:\n1. Thermal Bubble Technology: A tiny heating resistor vaporizes a thin film of ink inside the nozzle chamber, creating an expanding vapor bubble that forces a droplet out through the aperture before collapsing to draw fresh ink.\n2. Piezoelectric Technology: An electrical voltage is applied to a piezo crystal element behind the chamber, causing it to flex and generate mechanical pressure that pumps ink droplets forward smoothly without heat.\nInkjet printers construct continuous-tone colors using the subtractive CMYK color model: Cyan, Magenta, Yellow, and Key/Black[cite: 25, 52]. Offering high resolutions from 1440x720 DPI to 5760x1440 DPI at speeds of 10 to 35 PPM, inkjets provide quiet, vivid color photo rendering, though ink cartridge replacement costs are higher than monochrome toner.",
+          "hi": "इंकजेट प्रिंटर एक नॉन-इम्पैक्ट पेरिफेरल है जो सटीक नोजल के माध्यम से तरल स्याही की सूक्ष्म बूंदों को कागज़ पर छिड़ककर टेक्स्ट और रंगीन फोटो प्रिंट करता है। स्याही की बूंदों को बाहर निकालने के लिए दो मुख्य तकनीकों का उपयोग किया जाता है:\n1. थर्मल बबल तकनीक: इसमें एक छोटा हीटिंग रेसिस्टर स्याही को गर्म करके वाष्प का बुलबुला बनाता है, जो दबाव डालकर स्याही की बूंद को नोजल से बाहर धकेलता है।\n2. पीज़ोइलेक्ट्रिक तकनीक: इसमें एक पीज़ो क्रिस्टल पर विद्युत चार्ज दिया जाता है, जिससे वह मुड़कर यांत्रिक दबाव बनाता है और बिना गर्म किए स्याही को नोजल से बाहर छिड़कता है।\nइंकजेट प्रिंटर CMYK कलर मॉडल का उपयोग करते हैं—सयान (Cyan), मैजेंटा (Magenta), येलो (Yellow), और ब्लैक (Key/Black)[cite: 25, 52]। ये $1440\times720$ DPI से $5760\times1440$ DPI तक का उच्च रिज़ॉल्यूशन और 10 से 35 PPM की गति प्रदान करते हैं, जिससे शांत संचालन और जीवंत रंगीन फोटो मुद्रण संभव होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Inkjet Droplet Mechanics: Thermal Bubble vs. Piezoelectric</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Thermal Bubble</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Heat Element Vapor</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Piezo Crystal</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Mechanical Flex Pump</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">CMYK Color Model</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">C, M, Y, &amp; Key/Black</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Expanding Bubble</tspan><tspan x=\"120\" dy=\"1.2em\">Thermal Ejection</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Voltage Pressure</tspan><tspan x=\"300\" dy=\"1.2em\">Heat-Free Pulse</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Up to 5760 DPI</tspan><tspan x=\"480\" dy=\"1.2em\">Photo Realism</tspan></text></svg>",
+          "caption": {
+            "en": "Inkjet liquid droplet generation mechanisms contrasting thermal bubble expansion with piezoelectric crystal flexing in CMYK color space[cite: 25].",
+            "hi": "इंकजेट स्याही बूंद तकनीक जो CMYK कलर मॉडल में थर्मल बबल विस्तार और पीज़ोइलेक्ट्रिक क्रिस्टल के मुड़ने की तुलना करती है[cite: 25]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how inkjet printers utilize thermal bubble and piezoelectric ejection to produce vibrant CMYK color graphics.",
+          "hint": "Start with inkjet non-impact printing mechanisms generating vibrant color output, mention operating across home office, graphic arts, and desktop photography spaces, explain combining thermal vapor expansion or piezoelectric crystal pulses with CMYK liquid cartridge tanks, describe propelling microscopic droplets through micro-nozzles directly onto paper, and conclude with delivering ultra-high resolution photographic prints.",
+          "target_sequence": [
+            {
+              "id": "en_u15_t1",
+              "text": "Inkjet non-impact printing mechanisms render vivid continuous-tone graphics",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u15_t2",
+              "text": "across personal desktop workstations, graphic design studios, and digital photo kiosks",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u15_t3",
+              "text": "and by combining thermal resistor vapor bubbles or piezoelectric crystal flexing with Cyan, Magenta, Yellow, and Black liquid ink reservoirs",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u15_t4",
+              "text": "they propel microscopic liquid droplets through precision nozzle channels directly onto paper media without surface impact",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u15_t5",
+              "text": "thereby delivering ultra-high photographic resolutions up to 5760 DPI with silent operational performance",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "technical",
+              "text": "and by substituting dry powdered toner cartridges for liquid ink so that zero droplets ever enter the nozzles",
+              "penalty_explanation": "Inkjet printers spray liquid ink from liquid cartridges; dry powdered toner is used exclusively in laser printers."
+            },
+            {
+              "id": "en_u15_d2",
+              "category": "conceptual",
+              "text": "they require users to strike the print head with a hammer to smash ink bottles open during printing",
+              "penalty_explanation": "Inkjets are non-impact printers that eject droplets automatically using thermal bubbles or piezoelectric crystals."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "इंकजेट प्रिंटर द्वारा थर्मल बबल और पीज़ोइलेक्ट्रिक तकनीकों से CMYK रंगीन मुद्रण करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "इंकजेट नॉन-इम्पैक्ट प्रिंटिंग तंत्र जीवंत रंगीन चित्र तैयार करते हैं से शुरू करें, फोटो स्टूडियो का संदर्भ दें, थर्मल बबल या पीज़ोइलेक्ट्रिक क्रिस्टल को CMYK स्याही से जोड़ने का तरीका बताएं, सूक्ष्म बूंदों को सीधे कागज़ पर छिड़कने का परिणाम दें, और 5760 DPI तक की स्पष्टता प्राप्त करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u15_t1",
+              "text": "इंकजेट नॉन-इम्पैक्ट प्रिंटिंग तंत्र जीवंत रंगीन चित्र और फोटोग्राफ तैयार करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u15_t2",
+              "text": "व्यक्तिगत कार्यस्थलों, ग्राफिक डिजाइन स्टूडियो और डिजिटल फोटो कियोस्क के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u15_t3",
+              "text": "और थर्मल बबल अथवा पीज़ोइलेक्ट्रिक क्रिस्टल दबाव को सयान, मैजेंटा, येलो और ब्लैक तरल स्याही टैंकों के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u15_t4",
+              "text": "ये सूक्ष्म नोजल के माध्यम से तरल स्याही की नन्हीं बूंदों को बिना किसी प्रहार के सीधे कागज़ पर छिड़कते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u15_t5",
+              "text": "जिससे शांत संचालन के साथ 5760 DPI तक के असाधारण रिज़ॉल्यूशन पर शानदार रंगीन प्रिंट प्राप्त होते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "technical",
+              "text": "और तरल स्याही के स्थान पर सूखा प्लास्टिक टोनर डालकर ताकि नोजल से कोई भी बूंद बाहर न निकल सके",
+              "penalty_explanation": "इंकजेट प्रिंटर तरल स्याही का उपयोग करते हैं; सूखा टोनर पाउडर लेज़र प्रिंटर में उपयोग होता है।"
+            },
+            {
+              "id": "hi_u15_d2",
+              "category": "conceptual",
+              "text": "ये उपयोगकर्ता को प्रिंटिंग के दौरान स्याही की बोतलों पर हथौड़ा मारकर उन्हें फोड़ने के लिए मजबूर करते हैं",
+              "penalty_explanation": "इंकजेट प्रिंटर सूक्ष्म बूंदों को इलेक्ट्रॉनिक और ऊष्मीय दबाव द्वारा स्वचालित रूप से बाहर फेंकते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Inkjet printers spray liquid ink droplets using Thermal Bubble or Piezoelectric technology, rendering color photos via the CMYK model up to 5760 DPI[cite: 25].",
+        "hi": "इंकजेट प्रिंटर थर्मल बबल या पीज़ोइलेक्ट्रिक तकनीक द्वारा तरल स्याही छिड़कते हैं और CMYK मॉडल से 5760 DPI तक रंगीन फोटो बनाते हैं[cite: 25]।"
+      }
+    }
+  ]
+}
