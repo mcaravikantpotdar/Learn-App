@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 1: Digital Literacy (Advanced) - Part 2",
+      "hi": "इकाई 1: डिजिटल साक्षरता (एडवांस) - भाग 2"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Vector Graphics vs. Raster Grids: Mathematical Coordinates & Infinite Scaling",
+          "hi": "वेक्टर ग्राफिक्स बनाम रास्टर ग्रिड्स: गणितीय निर्देशांक और असीमित स्केलिंग"
+        },
+        "theory": {
+          "en": "Computer visual rendering relies on two contrasting graphical paradigms: Raster Graphics and Vector Graphics[cite: 41]. Raster graphics compose images using a fixed matrix of pixel dots; scaling these images causes visible pixelation, jagged edges, and resolution loss[cite: 41, 42]. In contrast, vector graphics represent visual elements using mathematical coordinate geometry—defining lines, curves, arcs, and polygons via exact mathematical formulas[cite: 24, 41]. Because vector files store relational mathematical equations rather than static pixel matrices, they possess infinite scalar resolution, permitting limitless magnification and reduction without distortion[cite: 41, 42]. Consequently, vector graphics serve as the definitive standard for Computer-Aided Design (CAD), architectural blueprints, and engineering schematics[cite: 41, 42].",
+          "hi": "कंप्यूटर विजुअल रेंडरिंग दो परस्पर विपरीत ग्राफिक तकनीकों पर आधारित है: रास्टर ग्राफिक्स और वेक्टर ग्राफिक्स[cite: 41]। रास्टर ग्राफिक्स पिक्सेल डॉट्स के एक निश्चित मैट्रिक्स का उपयोग करके चित्र बनाते हैं; इन चित्रों को बड़ा (ज़ूम) करने पर पिक्सेल फटने लगते हैं और रिज़ॉल्यूशन खराब हो जाता है[cite: 41, 42]। इसके विपरीत, वेक्टर ग्राफिक्स दृश्य तत्वों को गणितीय निर्देशांक ज्यामिति के माध्यम से परिभाषित करते हैं—जहाँ रेखाओं, वक्रों और बहुभुजों को सटीक गणितीय सूत्रों द्वारा दर्शाया जाता है[cite: 24, 41]। क्योंकि वेक्टर फाइलें स्थिर पिक्सेल के बजाय गणितीय समीकरणों को संग्रहीत करती हैं, इसलिए इनमें असीमित स्केलर रिज़ॉल्यूशन होता है, जिससे बिना किसी विकृति के असीमित आकार परिवर्तन किया जा सकता है[cite: 41, 42]। यही कारण है कि वेक्टर ग्राफिक्स कंप्यूटर-एडेड डिज़ाइन (CAD), ब्लूप्रिंट और इंजीनियरिंग नक्शों के लिए प्राथमिक मानक हैं[cite: 41, 42]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Raster (Pixel Grid) vs. Vector (Coordinate Geometry)</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Raster Graphics</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Pixel Dot Matrix | Fixed DPI</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Vector Graphics</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Math Formulas | Infinite Scaling</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Pixel Distortion</tspan><tspan x=\"100\" dy=\"1.2em\">Jagged on Zoom</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Inkjet / Laser</tspan><tspan x=\"225\" dy=\"1.2em\">Bitmap Layouts</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">X-Y Geometry</tspan><tspan x=\"375\" dy=\"1.2em\">Smooth Curves</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Plotter Output</tspan><tspan x=\"500\" dy=\"1.2em\">CAD Schematics</tspan></text></svg>",
+          "caption": {
+            "en": "Structural comparison contrasting raster pixel arrays subject to magnification distortion with resolution-independent vector geometry[cite: 41, 42].",
+            "hi": "संरचनात्मक तुलना जो आवर्धन पर विकृत होने वाले रास्टर पिक्सेल और रिज़ॉल्यूशन-मुक्त वेक्टर ज्यामिति के अंतर को दर्शाती है[cite: 41, 42]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how vector graphics utilize mathematical coordinate formulas to deliver infinite scalar resolution.",
+          "hint": "Start with vector graphics architectures executing geometric image generation, mention operating within precision technical drawing workflows, explain rendering visual objects through mathematical X-Y coordinate formulas rather than fixed pixel grids, describe preserving razor-sharp lines across arbitrary magnification scales, and conclude with delivering flawless outputs for computer-aided engineering design.",
+          "target_sequence": [
+            {
+              "id": "en_u6_t1",
+              "text": "Vector graphics rendering engines generate geometric technical visual structures",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u6_t2",
+              "text": "within professional engineering and architectural drafting environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u6_t3",
+              "text": "and by calculating relational mathematical coordinate formulas rather than depositing static pixel dot matrices",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u6_t4",
+              "text": "they preserve flawless line sharpness, curve continuity, and geometric proportion across infinite magnification scales",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u6_t5",
+              "text": "thereby eliminating visual pixelation errors during precision computer-aided blueprint generation",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u6_d1",
+              "category": "technical",
+              "text": "and by forcing all vector lines to shatter into jagged bitmap blocks whenever magnified by optical lenses",
+              "penalty_explanation": "Vector graphics maintain smooth, continuous lines when magnified because they are rendered using mathematical equations rather than bitmap pixels."
+            },
+            {
+              "id": "en_u6_d2",
+              "category": "conceptual",
+              "text": "they delete every coordinate formula to convert the blueprint into a non-functional analog audio wave",
+              "penalty_explanation": "Vector engines calculate geometric coordinate formulas; they do not erase design math to create audio waves."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "वेक्टर ग्राफिक्स द्वारा गणितीय सूत्रों और निर्देशांकों के माध्यम से असीमित स्केलिंग प्रदान करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "वेक्टर ग्राफिक्स रेंडरिंग इंजन ज्यामितीय विजुअल संरचनाएं बनाते हैं से शुरू करें, इंजीनियरिंग डिजाइन का संदर्भ दें, स्थिर पिक्सेल के बजाय गणितीय निर्देशांक सूत्रों का तरीका बताएं, असीमित ज़ूम पर भी स्पष्टता बनाए रखने का परिणाम दें, और पिक्सेल फटने की समस्या समाप्त करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u6_t1",
+              "text": "वेक्टर ग्राफिक्स रेंडरिंग इंजन ज्यामितीय तकनीकी आकृतियां निर्मित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u6_t2",
+              "text": "व्यावसायिक इंजीनियरिंग और आर्किटेक्चरल डिज़ाइन परिवेश के अंतर्गत",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u6_t3",
+              "text": "और स्थिर पिक्सेल ग्रिड के बजाय गणितीय निर्देशांक सूत्रों तथा वक्र समीकरणों की गणना करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u6_t4",
+              "text": "ये असीमित आवर्धन स्तरों पर भी रेखाओं की स्पष्टता और ज्यामितीय अनुपात को पूर्णतः सुरक्षित रखते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u6_t5",
+              "text": "जिससे कंप्यूटर-एडेड ब्लूप्रिंट निर्माण के दौरान पिक्सेल फटने और धुंधलेपन की समस्या पूरी तरह समाप्त हो जाती है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u6_d1",
+              "category": "technical",
+              "text": "और आवर्धित करते ही सभी वेक्टर रेखाओं को टूटे हुए बिटमैप ब्लॉकों में बदलने के लिए बाध्य करके",
+              "penalty_explanation": "वेक्टर ग्राफिक्स गणितीय सूत्रों पर आधारित होते हैं, इसलिए ज़ूम करने पर इनके पिक्सेल कभी नहीं फटते।"
+            },
+            {
+              "id": "hi_u6_d2",
+              "category": "conceptual",
+              "text": "ये सभी निर्देशांक मिटाकर तकनीकी नक्शों को अनुपयोगी एनालॉग ध्वनि तरंगों में बदल देते हैं",
+              "penalty_explanation": "वेक्टर तकनीक सटीक गणितीय निर्देशांकों की रक्षा करती है, यह नक्शों को ध्वनि तरंगों में नहीं बदलती।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Vector graphics use mathematical X-Y formulas rather than pixel grids, delivering infinite scalar resolution without pixelation for CAD blueprints[cite: 41, 42].",
+        "hi": "वेक्टर ग्राफिक्स पिक्सेल के बजाय गणितीय X-Y निर्देशांक सूत्रों का उपयोग करते हैं, जिससे CAD ब्लूप्रिंट बिना पिक्सेल फटे असीमित स्केलिंग प्राप्त करते हैं[cite: 41, 42]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Flatbed Plotters: Stationary Vacuum Bed and Dual-Axis Stepper Motor Gantries",
+          "hi": "फ्लैटबेड प्लॉटर: स्थिर वैक्यूम बेड और द्वि-अक्षीय स्टेपर मोटर गैंट्री"
+        },
+        "theory": {
+          "en": "A Flatbed Plotter is a specialized vector output peripheral where the drawing sheet (paper, vellum, or mylar film) rests completely stationary on a rigid rectangular drafting bed[cite: 41, 42]. The plotting surface employs electrostatic attraction or internal vacuum suction to anchor the drawing media firmly in place throughout operation[cite: 42]. Drawing mechanics are governed by an overhead motorized gantry arm that spans across the bed[cite: 42]. Dual high-precision stepper motors drive the pen carriage across two physical dimensions: moving horizontally along the X-axis (width) and vertically along the Y-axis (length)[cite: 42]. Simultaneously, an integrated Z-axis electromagnetic solenoid rapidly lowers or lifts the pen tip onto the paper surface to initiate or terminate ink line deposition, ensuring high mechanical precision[cite: 42, 43].",
+          "hi": "फ्लैटबेड प्लॉटर एक विशेष वेक्टर आउटपुट पेरिफेरल है जिसमें कागज़ या ड्राइंग शीट एक सपाट आयताकार बेड की सतह पर पूरी तरह स्थिर रखी जाती है[cite: 41, 42]। प्लॉटिंग के दौरान कागज़ को मजबूती से स्थिर रखने के लिए इलेक्ट्रोस्टैटिक आकर्षण या आंतरिक वैक्यूम सक्शन का उपयोग किया जाता है[cite: 42]। रेखांकन तंत्र को बेड के ऊपर फैली एक मोटराइज्ड गैंट्री या कैरिज आर्म द्वारा संचालित किया जाता है[cite: 42]। दोहरे उच्च-सटीक स्टेपर मोटर पेन को दो दिशाओं में चलाते हैं: X-अक्ष (चौड़ाई) के साथ क्षैतिज गति और Y-अक्ष (लंबाई) के साथ लंबवत गति[cite: 42]। साथ ही, एक एकीकृत Z-अक्ष सोलेनोइड पेन की नोक को कागज़ पर उठाने और गिराने का कार्य करता है ताकि आवश्यकतानुसार रेखाएं खींची जा सकें[cite: 42, 43]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Flatbed Plotter Mechanics: Stationary Bed &amp; X-Y Gantry</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Stationary Bed</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Vacuum / Static Hold</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">X-Y Gantry Arm</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Dual Stepper Motors</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Z-Axis Solenoid</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Pen Up / Down Action</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Rigid Surface</tspan><tspan x=\"120\" dy=\"1.2em\">Zero Paper Slip</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Dual Axis Rails</tspan><tspan x=\"300\" dy=\"1.2em\">Micro-Step Motion</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Liquid Ink Heads</tspan><tspan x=\"480\" dy=\"1.2em\">Continuous Strokes</tspan></text></svg>",
+          "caption": {
+            "en": "Flatbed plotter architecture highlighting the stationary vacuum drafting bed, dual-axis X-Y carriage rails, and Z-axis pen lifter[cite: 42, 43].",
+            "hi": "फ्लैटबेड प्लॉटर संरचना जो स्थिर वैक्यूम बेड, द्वि-अक्षीय X-Y कैरिज रेल और Z-अक्ष पेन लिफ्टर को दर्शाती है[cite: 42, 43]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how a flatbed plotter utilizes stationary beds and motorized gantries to draft engineering drawings.",
+          "hint": "Start with flatbed plotter mechanical assemblies executing precision drafting, mention operating across technical engineering and blueprint design environments, explain anchoring paper stationary on flat vacuum beds while driving pen carriages along X and Y axes via stepper motors, describe raising and lowering pen tips with Z-axis solenoids, and conclude with tracing smooth continuous vector lines onto drawing sheets.",
+          "target_sequence": [
+            {
+              "id": "en_u7_t1",
+              "text": "Flatbed plotter mechanical assemblies execute high-precision vector line drafting",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u7_t2",
+              "text": "across specialized architectural, structural, and civil engineering design offices",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u7_t3",
+              "text": "and by immobilizing the drawing paper on a flat bed using vacuum suction while propelling pen carriages across X and Y axes via stepper motors",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u7_t4",
+              "text": "they engage vertical Z-axis solenoids to raise and lower liquid ink pens at precise coordinate nodes",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u7_t5",
+              "text": "thereby depositing continuous smooth ink lines onto stationary sheets without mechanical paper slippage",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u7_d1",
+              "category": "technical",
+              "text": "and by spinning the flat rectangular bed on a vertical spit roast at seven thousand revolutions per minute",
+              "penalty_explanation": "In a flatbed plotter, the rectangular bed and drawing paper remain completely stationary; the pen carriage moves across it."
+            },
+            {
+              "id": "en_u7_d2",
+              "category": "conceptual",
+              "text": "they permanently glue the pen carriage to the base frame to prevent any horizontal X-axis movement",
+              "penalty_explanation": "The pen carriage must move freely across dual axes (X and Y) to trace two-dimensional technical designs."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "फ्लैटबेड प्लॉटर द्वारा स्थिर बेड और मोटराइज्ड गैंट्री के माध्यम से इंजीनियरिंग आरेख बनाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "फ्लैटबेड प्लॉटर यांत्रिक असेंबली उच्च-सटीक रेखांकन निष्पादित करती है से शुरू करें, इंजीनियरिंग डिजाइन का संदर्भ दें, वैक्यूम बेड पर कागज़ स्थिर रखकर X और Y अक्षों पर पेन चलाने का तरीका बताएं, Z-अक्ष सोलेनोइड द्वारा पेन उठाने-गिराने का परिणाम दें, और बिना फिसले चिकनी रेखाएं खींचने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u7_t1",
+              "text": "फ्लैटबेड प्लॉटर यांत्रिक असेंबली उच्च-सटीक वेक्टर रेखांकन निष्पादित करती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u7_t2",
+              "text": "वास्तुशिल्प और सिविल इंजीनियरिंग ब्लूप्रिंट डिजाइन कार्यालयों के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u7_t3",
+              "text": "और कागज़ को वैक्यूम सक्शन द्वारा स्थिर रखकर स्टेपर मोटरों की सहायता से पेन कैरिज को X और Y अक्षों पर चलाकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u7_t4",
+              "text": "यह Z-अक्ष सोलेनोइड द्वारा सटीक निर्देशांकों पर स्याही वाले पेन को कागज़ पर उठाती और गिराती है",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u7_t5",
+              "text": "जिससे कागज़ के हिले बिना सतह पर अत्यंत चिकनी और स्पष्ट तकनीकी रेखाएं खींची जाती हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u7_d1",
+              "category": "technical",
+              "text": "और सपाट आयताकार बेड को सात हजार चक्कर प्रति मिनट की गति से लंबवत घुमाकर",
+              "penalty_explanation": "फ्लैटबेड प्लॉटर में बेड और कागज़ पूरी तरह स्थिर रहते हैं, केवल पेन की कैरिज चलती है।"
+            },
+            {
+              "id": "hi_u7_d2",
+              "category": "conceptual",
+              "text": "यह पेन कैरिज को मुख्य फ्रेम से स्थायी रूप से चिपकाकर किसी भी क्षैतिज गति को रोक देती है",
+              "penalty_explanation": "ड्राइंग बनाने के लिए पेन कैरिज का X और Y दोनों अक्षों पर स्वतंत्र रूप से घूमना अनिवार्य है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Flatbed plotters hold drawing paper stationary via vacuum suction while dual stepper motors and a Z-axis solenoid drive pen carriages across X-Y axes[cite: 42, 43].",
+        "hi": "फ्लैटबेड प्लॉटर कागज़ को वैक्यूम सक्शन से स्थिर रखते हैं जबकि स्टेपर मोटर और Z-अक्ष सोलेनोइड पेन को X और Y अक्षों पर चलाते हैं[cite: 42, 43]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Drum Plotters: Rotating Cylindrical Paper Feed and Lateral Pen Carriages",
+          "hi": "ड्रम प्लॉटर: घूर्णी बेलनाकार पेपर फीड और पार्श्व पेन कैरिज"
+        },
+        "theory": {
+          "en": "A Drum Plotter (also termed a Roller Plotter) employs a dynamic mechanical architecture designed to plot extensive engineering drawings while maintaining a compact physical footprint[cite: 43]. Unlike flatbed devices that require massive stationary tables, a drum plotter mounts drawing paper over a motorized cylindrical drum[cite: 43]. Bidirectional rotation of the drum moves the paper forward and backward along the vertical Y-axis[cite: 43]. Simultaneously, a pen carriage holding single or multi-colored technical pens slides laterally across a fixed horizontal overhead track along the X-axis[cite: 43]. By combining the vertical rotation of the paper drum with the horizontal travel of the pen carriage, the system plots intricate continuous curves, diagonal vector lines, and endless continuous-roll output without geographic length restrictions[cite: 43].",
+          "hi": "ड्रम प्लॉटर (जिसे रोलर प्लॉटर भी कहा जाता है) एक गतिशील यांत्रिक प्रणाली का उपयोग करता है जो कॉम्पैक्ट आकार में विशाल इंजीनियरिंग ड्राइंग प्रिंट करने के लिए डिज़ाइन की गई है[cite: 43]। फ्लैटबेड उपकरणों के विपरीत जिनमें बड़ी मेज की आवश्यकता होती है, ड्रम प्लॉटर में कागज़ को एक बेलनाकार ड्रम के चारों ओर लपेटा जाता है[cite: 43]। ड्रम का आगे-पीछे घूमना कागज़ को लंबवत Y-अक्ष पर चलाता है[cite: 43]। साथ ही, एक या एक से अधिक रंगीन पेन वाला कैरिज ड्रम के ऊपर एक क्षैतिज ट्रैक पर X-अक्ष के साथ बाएं-दाएं स्लाइड करता है[cite: 43]। पेपर ड्रम के घूर्णन और पेन कैरिज की क्षैतिज गति के समन्वय से यह जटिल वक्र, विकर्ण रेखाएं और बिना किसी लंबाई सीमा के निरंतर रोल पर नक्शे बना सकता है[cite: 43]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Drum Plotter Architecture: Rotating Cylinder &amp; Lateral Pen</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Rotating Drum</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Y-Axis Paper Feed</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Overhead Track</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">X-Axis Pen Carriage</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Continuous Roll</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Unlimited Length</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Bidirectional Roll</tspan><tspan x=\"120\" dy=\"1.2em\">Vertical Motion</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Lateral Slider</tspan><tspan x=\"300\" dy=\"1.2em\">Multi-Color Pens</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Long Topo Maps</tspan><tspan x=\"480\" dy=\"1.2em\">Compact Footprint</tspan></text></svg>",
+          "caption": {
+            "en": "Mechanical operation of a drum plotter combining bidirectional cylindrical drum rotation (Y-axis) with lateral pen travel (X-axis)[cite: 43].",
+            "hi": "ड्रम प्लॉटर की यांत्रिक कार्यप्रणाली जो ड्रम के द्विदिशीय घूर्णन (Y-अक्ष) को पेन कैरिज की क्षैतिज गति (X-अक्ष) के साथ जोड़ती है[cite: 43]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how a drum plotter coordinates cylindrical rotation and lateral pen movement to generate continuous vector graphics.",
+          "hint": "Start with drum plotter mechanical systems coordinating bidirectional movements, mention plotting large-scale architectural and geographic schematics, explain rotating paper vertically over a motorized cylindrical drum while sliding the pen carriage horizontally along a lateral track, describe synchronizing paper feeding with pen travel, and conclude with drafting vector diagrams of unrestricted physical length.",
+          "target_sequence": [
+            {
+              "id": "en_u8_t1",
+              "text": "Drum plotter mechanical architectures coordinate multidirectional plotting motions",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u8_t2",
+              "text": "for extensive geographical survey maps and structural engineering designs",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u8_t3",
+              "text": "and by combining the bidirectional vertical rotation of a motorized paper drum with the lateral horizontal travel of an overhead pen carriage",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u8_t4",
+              "text": "they synchronize paper feed displacement with continuous ink deposition across both spatial axes simultaneously",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u8_t5",
+              "text": "thereby drafting complex technical curves and long continuous-roll schematics within a compact hardware footprint",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u8_d1",
+              "category": "technical",
+              "text": "and by locking the cylindrical drum stationary so paper never moves during twenty-hour plotting operations",
+              "penalty_explanation": "In a drum plotter, the drum must rotate actively to move the paper along the Y-axis."
+            },
+            {
+              "id": "en_u8_d2",
+              "category": "conceptual",
+              "text": "they slice the paper roll into microscopic confetti strips before any ink touches the surface",
+              "penalty_explanation": "Drum plotters preserve continuous paper rolls to produce seamless, long-format blueprints and maps."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "ड्रम प्लॉटर द्वारा बेलनाकार ड्रम और पेन कैरिज के समन्वय से निरंतर वेक्टर आरेख बनाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "ड्रम प्लॉटर यांत्रिक संरचनाएं बहु-दिशात्मक गतिविधियों का समन्वय करती हैं से शुरू करें, भौगोलिक नक्शों का संदर्भ दें, पेपर ड्रम के घूर्णन और पेन कैरिज की क्षैतिज गति का तरीका बताएं, दोनों अक्षों पर एक साथ रेखांकन का परिणाम दें, और असीमित लंबाई के ब्लूप्रिंट बनाने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u8_t1",
+              "text": "ड्रम प्लॉटर यांत्रिक संरचनाएं बहु-दिशात्मक गतिविधियों का समन्वय करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u8_t2",
+              "text": "विशाल भौगोलिक सर्वेक्षण मानचित्रों और इंजीनियरिंग डिजाइनों के लिए",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u8_t3",
+              "text": "और मोटर चालित पेपर ड्रम के लंबवत घूर्णन को ओवरहेड पेन कैरिज की क्षैतिज गति के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u8_t4",
+              "text": "ये दोनों अक्षों पर कागज़ के विस्थापन और स्याही के प्रवाह को एक साथ समयबद्ध करती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u8_t5",
+              "text": "जिससे कम स्थान घेरने वाली मशीन में भी असीमित लंबाई के निरंतर रोल ब्लूप्रिंट आसानी से बन जाते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u8_d1",
+              "category": "technical",
+              "text": "और बेलनाकार ड्रम को पूरी तरह लॉक करके ताकि कागज़ कभी भी आगे या पीछे न घूम सके",
+              "penalty_explanation": "ड्रम प्लॉटर में Y-अक्ष पर गति उत्पन्न करने के लिए ड्रम का घूमना अनिवार्य होता है।"
+            },
+            {
+              "id": "hi_u8_d2",
+              "category": "conceptual",
+              "text": "ये स्याही लगाने से पहले पूरे पेपर रोल को बारीक टुकड़ों में काटकर नष्ट कर देती हैं",
+              "penalty_explanation": "ड्रम प्लॉटर बिना कटे लंबे कागज़ के रोल पर निरंतर और विस्तृत तकनीकी नक्शे बनाते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Drum plotters rotate paper over a cylindrical drum (Y-axis) while moving pens horizontally (X-axis), enabling long continuous-roll drafting[cite: 43].",
+        "hi": "ड्रम प्लॉटर बेलनाकार ड्रम पर कागज़ को लंबवत (Y-अक्ष) और पेन को क्षैतिज (X-अक्ष) चलाकर लंबे रोल पर निरंतर रेखांकन करते हैं[cite: 43]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Digital-to-Mechanical Control Pipeline: CAD Vector Generation and HPGL Interpretation",
+          "hi": "डिजिटल-टू-मैकेनिकल कंट्रोल पाइपलाइन: CAD वेक्टर निर्माण और HPGL व्याख्या"
+        },
+        "theory": {
+          "en": "The generation of physical vector drawings follows a standardized 4-step digital-to-mechanical control pipeline[cite: 44]:\n1. Design Creation: Architects and engineers construct geometric models in Computer-Aided Design (CAD) or Geographic Information Systems (GIS) software, establishing relational mathematical entities (lines, arcs, polygons)[cite: 41, 44].\n2. Protocol Translation: The specialized plotter driver translates digital geometries into standard vector instruction strings, predominantly Hewlett-Packard Graphics Language (HPGL) commands—such as `PA` (Plot Absolute coordinates), `PD` (Pen Down to paper), `PR` (Plot Relative offset), and `PU` (Pen Up off paper)[cite: 44, 45].\n3. Controller Interpretation: The plotter's onboard microprocessor receives the HPGL string and computes motor pulse frequencies[cite: 44].\n4. Mechanical Actuation: The onboard controller pulses precise electrical steps to the stepper motors and solenoids, physically maneuvering ink pens across drafting media with high positional accuracy[cite: 41, 44].",
+          "hi": "भौतिक वेक्टर आरेख बनाने की प्रक्रिया एक मानकीकृत 4-चरणीय डिजिटल-टू-मैकेनिकल नियंत्रण पाइपलाइन का पालन करती है[cite: 44]:\n1. डिज़ाइन निर्माण: आर्किटेक्ट और इंजीनियर CAD या GIS सॉफ़्टवेयर में रेखाओं, चापों और कोणों से युक्त गणितीय ज्यामितीय मॉडल तैयार करते हैं[cite: 41, 44]।\n2. प्रोटोकॉल अनुवाद: प्लॉटर ड्राइवर इन आकृतियों को मानक वेक्टर भाषा HPGL (ह्यूलेट-पैकर्ड ग्राफिक्स लैंग्वेज) कमांड में बदलता है—जैसे `PA` (Plot Absolute), `PD` (Pen Down), `PR` (Plot Relative) और `PU` (Pen Up)[cite: 44, 45]।\n3. कंट्रोलर व्याख्या: प्लॉटर का माइक्रोप्रोसेसर इन HPGL कमांड स्ट्रिंग्स को पढ़कर स्टेपर मोटर के लिए पल्स आवृत्तियों की गणना करता है[cite: 44]।\n4. यांत्रिक क्रियान्वयन: कंट्रोलर स्टेपर मोटरों और सोलेनोइड्स को विद्युत पल्स भेजता है, जिससे पेन कागज़ पर सटीक निर्देशांकों पर चलकर स्थायी स्याही रेखाएं बनाता है[cite: 41, 44]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Plotter Pipeline: CAD Design &rarr; HPGL &rarr; Motor Pulses &rarr; Pen</text><rect x=\"45\" y=\"80\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"100\" y=\"100\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">1. CAD / GIS</text><text x=\"100\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Vector Math</text><rect x=\"175\" y=\"80\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"100\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">2. HPGL Code</text><text x=\"232\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">PA, PD, PU, PR</text><rect x=\"310\" y=\"80\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"370\" y=\"100\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">3. Controller</text><text x=\"370\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Stepper Pulses</text><rect x=\"450\" y=\"80\" width=\"105\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"502\" y=\"100\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">4. Pen Action</text><text x=\"502\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Ink Deposition</text><line x1=\"155\" y1=\"107\" x2=\"175\" y2=\"107\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"175,107 167,103 167,111\" fill=\"#38bdf8\"/><line x1=\"290\" y1=\"107\" x2=\"310\" y2=\"107\" stroke=\"#c084fc\" stroke-width=\"2\"/><polygon points=\"310,107 302,103 302,111\" fill=\"#c084fc\"/><line x1=\"430\" y1=\"107\" x2=\"450\" y2=\"107\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"450,107 442,103 442,111\" fill=\"#4ade80\"/><text x=\"100\" y=\"165\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">Lines &amp; Arcs</text><text x=\"232\" y=\"185\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">Motion Syntax</text><text x=\"370\" y=\"165\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">X-Y-Z Signals</text><text x=\"502\" y=\"185\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">Physical Drawing</text></svg>",
+          "caption": {
+            "en": "Digital-to-mechanical control pipeline translating CAD geometry into HPGL strings and electrical stepper motor pulses[cite: 44].",
+            "hi": "डिजिटल-टू-मैकेनिकल नियंत्रण पाइपलाइन जो CAD आकृतियों को HPGL कमांड्स और स्टेपर मोटर पल्स में बदलती है[cite: 44]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how the digital-to-mechanical pipeline translates CAD designs into physical plotter pen motions.",
+          "hint": "Start with the digital-to-mechanical control pipeline translating technical models, mention connecting CAD applications to hardware plotting mechanisms, explain converting geometric vector coordinates into standardized HPGL instruction strings, describe calculating electrical motor pulses within the onboard microprocessor controller, and conclude with steering mechanical pens along precise drafting paths.",
+          "target_sequence": [
+            {
+              "id": "en_u9_t1",
+              "text": "The digital-to-mechanical control pipeline converts architectural vector models",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u9_t2",
+              "text": "between software design suites and physical hardware drafting controllers",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u9_t3",
+              "text": "and by translating CAD geometric entities into standardized HPGL instruction commands like Pen Down and Plot Absolute",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u9_t4",
+              "text": "it computes precise electrical step-pulse frequencies within the onboard microprocessor",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u9_t5",
+              "text": "thereby steering stepper motors and solenoids to deposit liquid ink along exact coordinate vectors",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u9_d1",
+              "category": "technical",
+              "text": "and by converting all HPGL commands into random acoustic beeps that crash the motherboard",
+              "penalty_explanation": "HPGL commands are decoded by the plotter controller into motor movement coordinates, not random motherboard-crashing beeps."
+            },
+            {
+              "id": "en_u9_d2",
+              "category": "conceptual",
+              "text": "they delete every stepper motor driver to force users to pull the pen carriage manually with cotton strings",
+              "penalty_explanation": "Plotters rely on automated stepper motors governed by microprocessor pulses to move pens accurately."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "डिजिटल-टू-मैकेनिकल पाइपलाइन द्वारा CAD डिज़ाइनों को HPGL कमांड और पेन गतिविधियों में बदलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "डिजिटल-टू-मैकेनिकल कंट्रोल पाइपलाइन आर्किटेक्चरल वेक्टर मॉडल्स को बदलती है से शुरू करें, सॉफ्टवेयर और हार्डवेयर का संदर्भ दें, CAD को HPGL कमांड्स (जैसे Pen Down और Plot Absolute) में बदलने का तरीका बताएं, माइक्रोप्रोसेसर द्वारा मोटर पल्स की गणना का परिणाम दें, और सटीक निर्देशांकों पर रेखाएं खींचने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u9_t1",
+              "text": "डिजिटल-टू-मैकेनिकल कंट्रोल पाइपलाइन आर्किटेक्चरल वेक्टर मॉडलों को रूपांतरित करती है",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u9_t2",
+              "text": "सॉफ्टवेयर डिज़ाइन अनुप्रयोगों और भौतिक हार्डवेयर प्लॉटिंग नियंत्रकों के बीच",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u9_t3",
+              "text": "और CAD ज्यामितीय आकृतियों को मानकीकृत HPGL कमांडों जैसे पेन-डाउन और प्लॉट-एब्सोल्यूट में अनुवादित करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u9_t4",
+              "text": "यह आंतरिक माइक्रोप्रोसेसर के भीतर सटीक स्टेपर मोटर पल्स आवृत्तियों की गणना करती है",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u9_t5",
+              "text": "जिससे स्टेपर मोटरें और सोलेनोइड्स स्याही वाले पेन को सटीक निर्देशांकों पर चलाकर ब्लूप्रिंट तैयार करते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u9_d1",
+              "category": "technical",
+              "text": "और सभी HPGL कमांडों को बेतरतीब ऑडियो बीप में बदलकर मदरबोर्ड को क्रैश करने के लिए",
+              "penalty_explanation": "HPGL कमांड्स मोटर नियंत्रण के लिए होते हैं, ये मदरबोर्ड को क्रैश करने वाली आवाज़ें नहीं बनाते।"
+            },
+            {
+              "id": "hi_u9_d2",
+              "category": "conceptual",
+              "text": "ये सभी मोटर ड्राइवरों को हटाकर उपयोगकर्ताओं को धागे से पेन खींचने पर मजबूर करती हैं",
+              "penalty_explanation": "प्लॉटर पूरी तरह स्वचालित स्टेपर मोटरों और इलेक्ट्रॉनिक पल्स द्वारा संचालित होते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The vector pipeline translates CAD geometries into HPGL strings (`PA`, `PD`, `PU`), which microprocessor controllers convert into electrical stepper motor pulses[cite: 44, 45].",
+        "hi": "वेक्टर पाइपलाइन CAD आकृतियों को HPGL स्ट्रिंग्स (`PA`, `PD`, `PU`) में बदलती है, जिन्हें माइक्रोप्रोसेसर स्टेपर मोटर पल्स में बदलकर पेन चलाता है[cite: 44, 45]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Industrial Applications and Evolution: Vinyl Cutting and Large-Format Inkjets",
+          "hi": "औद्योगिक अनुप्रयोग और विकास: विनाइल कटिंग और लार्ज-फॉर्मेट इंकजेट"
+        },
+        "theory": {
+          "en": "Vector plotting technology supports major industrial drafting domains[cite: 44]:\n1. Specialized Applications: Architectural blueprints (structural layouts, plumbing, electrical grids), engineering schematics (micro-circuits, aerospace parts), and Geographic Information Systems (GIS topographical maps)[cite: 44].\n2. Vinyl Cutting Plotters: In commercial signage, ink pens are replaced with precision razor blades, allowing the X-Y gantry to slice self-adhesive vinyl sheets into vehicle graphics, signs, and lettering[cite: 44].\n3. Modern Evolution to Large-Format Inkjets: While traditional mechanical pen plotters delivered unmatched line sharpness, they were inherently slow, lacked continuous photographic shading, and suffered from pen clogs and ink refills[cite: 44, 45]. Modern engineering firms have transitioned to Large-Format Inkjet Plotters (Raster Plotters)[cite: 44, 45]. These modern units combine vector rendering with high-speed piezoelectric printheads, spraying microscopic ink droplets across 24-inch to 60-inch paper rolls to deliver both vector precision and full-color graphics[cite: 45].",
+          "hi": "वेक्टर प्लॉटिंग तकनीक प्रमुख औद्योगिक और तकनीकी क्षेत्रों में कार्य करती है[cite: 44]:\n1. विशिष्ट अनुप्रयोग: आर्किटेक्चरल ब्लूप्रिंट (भवन निर्माण, प्लंबिंग और विद्युत लेआउट), इंजीनियरिंग स्कीमेटिक्स (सर्किट आरेख और एयरोस्पेस पार्ट्स), तथा भौगोलिक सूचना प्रणाली (GIS टोपोग्राफिक नक्शे)[cite: 44]।\n2. विनाइल कटिंग प्लॉटर: व्यावसायिक साइनेज में, स्याही वाले पेन के स्थान पर तेज रेज़र ब्लेड लगाया जाता है, जिससे X-Y गैंट्री चिपकने वाले विनाइल को काटकर विज्ञापनों और गाड़ियों के लिए स्टिकर व लेटरिंग तैयार करती है[cite: 44]।\n3. लार्ज-फॉर्मेट इंकजेट में आधुनिक विकास: हालांकि पारंपरिक पेन प्लॉटर सटीक रेखाएं खींचते थे, लेकिन वे धीमे थे, रंगीन शेडिंग नहीं कर सकते थे, और उनमें पेन सूखने की समस्या थी[cite: 44, 45]। आधुनिक कार्यालयों में इनका स्थान लार्ज-फॉर्मेट इंकजेट प्लॉटर (रास्टर प्लॉटर) ने ले लिया है[cite: 44, 45]। ये नए प्लॉटर 24 से 60 इंच चौड़े पेपर रोल पर पीज़ोइलेक्ट्रिक प्रिंटहेड से तरल स्याही की सूक्ष्म बूंदें छिड़ककर तीव्र गति और पूर्ण-रंगीन फोटो गुणवत्ता प्रदान करते हैं[cite: 45]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Plotter Applications &amp; Evolution to Large-Format Inkjet</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">CAD &amp; GIS Mapping</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Blueprints &amp; Land Surveys</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Cutting Plotter</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Blade Replaces Pen</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Large-Format Inkjet</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Piezo Droplets 24&quot;-60&quot;</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Civil Schematics</tspan><tspan x=\"120\" dy=\"1.2em\">Circuit Diagrams</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Razor Carving</tspan><tspan x=\"300\" dy=\"1.2em\">Signage &amp; Vinyl</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Fast Color Shading</tspan><tspan x=\"480\" dy=\"1.2em\">Replaces Pen Rigs</tspan></text></svg>",
+          "caption": {
+            "en": "Industrial application spectrum spanning CAD drafting, vinyl sign cutting, and high-speed large-format inkjet plotting[cite: 44, 45].",
+            "hi": "औद्योगिक अनुप्रयोग स्पेक्ट्रम जो CAD रेखांकन, विनाइल साइन कटिंग और तीव्र गति वाले लार्ज-फॉर्मेट इंकजेट प्लॉटिंग को जोड़ता है[cite: 44, 45]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how vector plotting technology evolved from mechanical pen systems to vinyl cutting and large-format inkjets.",
+          "hint": "Start with vector plotting technologies supporting industrial drafting and manufacturing workflows, mention operating across architectural, cartographic, and commercial signage industries, explain adapting mechanical pen gantries with razor blades for vinyl cutting while transitioning toward wide-roll piezoelectric inkjet engines, describe overcoming traditional liquid pen clogs and slow drawing speeds, and conclude with delivering high-speed color rendering alongside vector accuracy.",
+          "target_sequence": [
+            {
+              "id": "en_u10_t1",
+              "text": "Vector plotting technologies support specialized technical drafting",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u10_t2",
+              "text": "across architectural construction, geographic cartography, and commercial signage sectors",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u10_t3",
+              "text": "and by substituting razor blades for pens in vinyl cutting plotters while transitioning engineering offices toward large-format piezoelectric inkjet systems",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u10_t4",
+              "text": "they eliminate the mechanical friction, liquid ink clogging, and slow output speeds of traditional pen rigs",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u10_t5",
+              "text": "thereby uniting mathematical vector precision with high-speed full-color photographic printing across wide media rolls",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u10_d1",
+              "category": "technical",
+              "text": "and by replacing inkjet heads with manual sewing needles that puncture paper into perforated tea bags",
+              "penalty_explanation": "Large-format plotters use high-resolution piezoelectric inkjet nozzles or razor blades, not sewing needles."
+            },
+            {
+              "id": "en_u10_d2",
+              "category": "conceptual",
+              "text": "they ban all large-format printers to require architectural blueprints to be sketched with chalk on outdoor sidewalks",
+              "penalty_explanation": "Modern engineering relies on high-precision large-format digital plotters for durable documentation."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "वेक्टर प्लॉटिंग तकनीक के अनुप्रयोगों और पारंपरिक पेन से आधुनिक लार्ज-फॉर्मेट इंकजेट में विकास को सही क्रम में व्यवस्थित करें।",
+          "hint": "वेक्टर प्लॉटिंग तकनीकें विशिष्ट तकनीकी रेखांकन का समर्थन करती हैं से शुरू करें, वास्तुकला और वाणिज्यिक साइनेज का संदर्भ दें, विनाइल कटिंग हेतु ब्लेड लगाने तथा लार्ज-फॉर्मेट इंकजेट अपनाने का तरीका बताएं, पेन सूखने और धीमी गति की समस्या समाप्त करने का परिणाम दें, और उच्च गति व रंगीन प्रिंटिंग प्रदान करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u10_t1",
+              "text": "वेक्टर प्लॉटिंग तकनीकें विशिष्ट तकनीकी रेखांकन कार्यों को संपन्न करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u10_t2",
+              "text": "आर्किटेक्चरल निर्माण, भौगोलिक मानचित्रण और वाणिज्यिक साइनेज उद्योगों के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u10_t3",
+              "text": "और विनाइल कटिंग हेतु पेन के स्थान पर ब्लेड लगाकर तथा इंजीनियरिंग कार्यालयों को लार्ज-फॉर्मेट पीज़ोइलेक्ट्रिक इंकजेट की ओर ले जाकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u10_t4",
+              "text": "ये पारंपरिक पेन प्लॉटर की धीमी गति, स्याही सूखने और बार-बार रिफिल करने की बाधाओं को दूर करती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u10_t5",
+              "text": "जिससे चौड़े पेपर रोल पर गणितीय वेक्टर सटीकता के साथ तीव्र गति वाली रंगीन प्रिंटिंग संभव होती है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u10_d1",
+              "category": "technical",
+              "text": "और इंकजेट नोजल को सिलाई की सुइयों से बदलकर कागज़ में छेद करने के लिए मजबूर करके",
+              "penalty_explanation": "लार्ज-फॉर्मेट प्लॉटर तरल स्याही की सूक्ष्म बूंदें छिड़कने वाले इंकजेट नोजल का उपयोग करते हैं, सुइयों का नहीं।"
+            },
+            {
+              "id": "hi_u10_d2",
+              "category": "conceptual",
+              "text": "ये सभी आधुनिक प्रिंटरों पर रोक लगाकर ब्लूप्रिंट को फुटपाथ पर चाक से बनाने के लिए बाध्य करती हैं",
+              "penalty_explanation": "आधुनिक उद्योग उच्च सटीकता वाले डिजिटल लार्ज-फॉर्मेट प्लॉटरों का उपयोग करते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Plotters support CAD blueprints and vinyl cutting (using blades), but have largely transitioned to Large-Format Inkjets for fast full-color output[cite: 44, 45].",
+        "hi": "प्लॉटर CAD ब्लूप्रिंट और विनाइल कटिंग (ब्लेड द्वारा) में उपयोगी हैं, लेकिन अब तीव्र रंगीन प्रिंटिंग हेतु लार्ज-फॉर्मेट इंकजेट में विकसित हो चुके हैं[cite: 44, 45]।"
+      }
+    }
+  ]
+}
