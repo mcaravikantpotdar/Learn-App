@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "class": "Class 9",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 1: Digital Literacy (Basics of Computer) - Part 3",
+      "hi": "इकाई 1: डिजिटल साक्षरता (कंप्यूटर की बुनियादी बातें) - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Specialized Document Digitization: Digital Cameras, OCR, and MICR",
+          "hi": "विशिष्ट दस्तावेज़ डिजिटलीकरण: डिजिटल कैमरा, OCR और MICR"
+        },
+        "theory": {
+          "en": "Specialized optical recognition peripherals automate document capture and data processing across diverse enterprise sectors. Digital cameras record still photographs and video files directly onto solid-state memory cards rather than traditional photographic film. Optical Character Recognition (OCR) systems scan physical documents or handwritten pages and translate individual character shapes into editable, machine-readable text codes[cite: 11]. Magnetic Ink Character Readers (MICR) use specialized magnetic sensors to read bank code and cheque numbers printed with magnetic ink containing iron oxide particles, enabling high-speed automated cheque clearance in the banking industry[cite: 11].",
+          "hi": "विशिष्ट ऑप्टिकल पहचान उपकरण विभिन्न क्षेत्रों में दस्तावेज़ कैप्चर और डेटा प्रोसेसिंग को स्वचालित बनाते हैं[cite: 11]। डिजिटल कैमरा पारंपरिक फोटोग्राफिक फिल्म के बजाय सीधे आंतरिक मेमोरी कार्ड पर डिजिटल छवियों और वीडियो को सहेजता है[cite: 11]। ऑप्टिकल कैरेक्टर रिकॉग्निशन (OCR) मुद्रित या हस्तलिखित टेक्स्ट को स्कैन करके अक्षरों के आकारों को मशीन-पठनीय संपादन योग्य टेक्स्ट कोड में बदलता है[cite: 11]। मैग्नेटिक इंक कैरेक्टर रीडर (MICR) बैंक कोड और चेक नंबरों को पढ़ने के लिए विशेष चुंबकीय सेंसर का उपयोग करता है जो आयरन ऑक्साइड कणों वाली चुंबकीय स्याही से मुद्रित होते हैं, जिससे बैंकिंग क्षेत्र में चेक क्लीयरेंस तीव्र गति से संपन्न होती है[cite: 11]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Document Recognition: Camera, OCR, &amp; MICR</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Digital Camera</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Flash Memory Media</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">OCR System</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Text Shape Code</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Bank MICR</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Iron Oxide Ink</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Replaces Film</tspan><tspan x=\"120\" dy=\"1.2em\">Direct Digital Save</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Editable ASCII</tspan><tspan x=\"300\" dy=\"1.2em\">Book Archiving</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Magnetic Sensor</tspan><tspan x=\"480\" dy=\"1.2em\">Cheque Processing</tspan></text></svg>",
+          "caption": {
+            "en": "Automated optical input hardware linking digital photographic capture, OCR text conversion, and bank MICR cheque validation[cite: 11].",
+            "hi": "स्वचालित ऑप्टिकल इनपुट हार्डवेयर जो डिजिटल फोटोग्राफी, OCR टेक्स्ट रूपांतरण और बैंक MICR चेक सत्यापन को जोड़ता है[cite: 11]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how digital cameras, OCR systems, and MICR readers digitize optical records for computer systems.",
+          "hint": "Start with specialized optical recognition peripherals executing automated capture, mention processing documents across institutional workflows, explain combining flash photo capture in digital cameras with text shape translation in OCR and magnetic cheque sensing in MICR, describe converting physical marks into machine-readable digital data, and conclude with accelerating publishing and financial operations.",
+          "target_sequence": [
+            {
+              "id": "en_u11_t1",
+              "text": "Specialized optical recognition peripherals execute automated data capture",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u11_t2",
+              "text": "across modern publishing, archiving, and banking environments",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u11_t3",
+              "text": "and by pairing solid-state image recording in digital cameras with font conversion in OCR and iron-oxide ink detection in MICR readers",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u11_t4",
+              "text": "they translate physical document marks, photographic scenes, and magnetic bank symbols into digital computer codes",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u11_t5",
+              "text": "thereby accelerating document archival workflows and enabling high-speed bank cheque clearance",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u11_d1",
+              "category": "technical",
+              "text": "and by using MICR sensors to project video movies onto classroom auditorium screens",
+              "penalty_explanation": "MICR readers process magnetic ink on bank cheques; they do not project video displays."
+            },
+            {
+              "id": "en_u11_d2",
+              "category": "conceptual",
+              "text": "they force digital cameras to use wet chemical darkroom paper instead of electronic memory cards",
+              "penalty_explanation": "Digital cameras store images directly on digital memory cards without chemical film."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "डिजिटल कैमरा, OCR और MICR द्वारा ऑप्टिकल व बैंकिंग डेटा को डिजिटल कोड में बदलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "विशिष्ट ऑप्टिकल पहचान उपकरण स्वचालित डेटा कैप्चर करते हैं से शुरू करें, प्रकाशन और बैंकिंग का संदर्भ दें, डिजिटल कैमरा, OCR और MICR के विशिष्ट कार्यों का तरीका बताएं, भौतिक चिह्नों को डिजिटल कोड में बदलने का परिणाम दें, और चेक क्लीयरेंस व दस्तावेज़ संरक्षण को गति देने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u11_t1",
+              "text": "विशिष्ट ऑप्टिकल पहचान उपकरण स्वचालित डेटा कैप्चर निष्पादित करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u11_t2",
+              "text": "आधुनिक प्रकाशन, दस्तावेज़ अभिलेखागार और बैंकिंग परिवेश के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u11_t3",
+              "text": "और डिजिटल कैमरे द्वारा मेमोरी कार्ड पर चित्र सहेजने, OCR द्वारा अक्षरों के अनुवाद तथा MICR द्वारा चुंबकीय स्याही पढ़ने को जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u11_t4",
+              "text": "ये भौतिक दस्तावेज़ों, फोटोग्राफिक दृश्यों और बैंक प्रतीकों को मशीन-पठनीय डिजिटल कोड में बदलते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u11_t5",
+              "text": "जिससे मुद्रित पुस्तकों का संपादन योग्य डिजिटलीकरण और बैंक चेकों का तीव्र सत्यापन संभव होता है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u11_d1",
+              "category": "technical",
+              "text": "और MICR सेंसर द्वारा प्रोजेक्टर की तरह दीवार पर वीडियो फिल्म प्रदर्शित करके",
+              "penalty_explanation": "MICR केवल बैंक चेक पर चुंबकीय स्याही से लिखे कोड पढ़ता है, यह वीडियो प्रोजेक्ट नहीं करता।"
+            },
+            {
+              "id": "hi_u11_d2",
+              "category": "conceptual",
+              "text": "ये डिजिटल कैमरे को मेमोरी कार्ड के बजाय रासायनिक फिल्म रोल पर निर्भर रहने के लिए बाध्य करते हैं",
+              "penalty_explanation": "डिजिटल कैमरा रासायनिक फिल्म के स्थान पर इलेक्ट्रॉनिक मेमोरी कार्ड का उपयोग करता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Digital cameras store pictures on memory cards, OCR converts printed text into editable computer code, and MICR reads magnetic ink on bank cheques[cite: 11].",
+        "hi": "डिजिटल कैमरा छवियों को मेमोरी कार्ड में सहेजता है, OCR मुद्रित अक्षरों को डिजिटल टेक्स्ट में बदलता है और MICR बैंक चेक की चुंबकीय स्याही को पढ़ता है[cite: 11]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Retail and Credential Capture: Barcode Scanners and Magnetic Stripe Readers",
+          "hi": "खुदरा और क्रेडेंशियल कैप्चर: बारकोड स्कैनर और मैग्नेटिक स्ट्रिप रीडर"
+        },
+        "theory": {
+          "en": "Automated data-capture peripherals eliminate manual data-entry errors in retail and identification systems[cite: 11]:\n- Barcode Reader: A handheld or flatbed optical scanner equipped with a light source and photosensitive sensor[cite: 11]. It projects light across printed parallel barcode lines of varying thickness and measures reflected light patterns to translate the lines into alphanumeric item codes, accelerating supermarket checkouts and warehouse inventory management[cite: 11].\n- Magnetic Stripe Reader: A hardware peripheral containing an electromagnetic read head that detects magnetized iron particles embedded within the dark magnetic stripe on the reverse side of plastic identification cards[cite: 11]. It reads encoded financial, personal, or access credentials for Automated Teller Machine (ATM) cards, credit cards, and security access badges[cite: 11].",
+          "hi": "स्वचालित डेटा-कैप्चर उपकरण खुदरा और पहचान प्रणालियों में मैन्युअल टाइपिंग की त्रुटियों को समाप्त करते हैं[cite: 11]:\n- बारकोड रीडर (Barcode Reader): यह एक हैंडहेल्ड या फ्लैटबेड ऑप्टिकल स्कैनर है जिसमें प्रकाश स्रोत और सेंसर होता है[cite: 11]। यह विभिन्न मोटाई की समानांतर काली रेखाओं पर प्रकाश डालकर परावर्तित प्रकाश के माध्यम से उत्पाद कोड को संख्याओं में बदलता है, जिससे सुपरमार्केट बिलिंग और इन्वेंट्री नियंत्रण तीव्र होता है[cite: 11]।\n- मैग्नेटिक स्ट्रिप रीडर (Magnetic Stripe Reader): यह प्लास्टिक कार्ड के पीछे लगी चुंबकीय पट्टी (मैग्नेटिक स्ट्रिप) में एन्कोड किए गए डेटा को पढ़ने वाला उपकरण है[cite: 11]। यह एटीएम कार्ड, क्रेडिट कार्ड और पहचान पत्रों से बैंक खाता या उपयोगकर्ता क्रेडेंशियल्स को तुरंत पढ़कर सिस्टम को भेजता है[cite: 11]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Retail Capture: Barcode Scanner &amp; Magstripe Reader</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Barcode Scanner</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Optical Lines &rarr; Product Number</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Magnetic Stripe Reader</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Magnetic Band &rarr; Account Auth</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Light Reflection</tspan><tspan x=\"100\" dy=\"1.2em\">Varying Width Bars</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Supermarket POS</tspan><tspan x=\"225\" dy=\"1.2em\">Stock Management</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Electromagnetic Head</tspan><tspan x=\"375\" dy=\"1.2em\">Swipe Card Track</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">ATM Banking</tspan><tspan x=\"500\" dy=\"1.2em\">Security Access Gate</tspan></text></svg>",
+          "caption": {
+            "en": "Retail and security data capture comparing optical reflected-light barcode scanning with electromagnetic magnetic stripe card swiping[cite: 11].",
+            "hi": "खुदरा और सुरक्षा डेटा कैप्चर जो परावर्तित प्रकाश वाले बारकोड स्कैनर और इलेक्ट्रोमैग्नेटिक मैग्नेटिक स्ट्रिप स्वाइप की तुलना करता है[cite: 11]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how barcode scanners and magnetic stripe readers capture retail and authentication records.",
+          "hint": "Start with automated data collection peripherals capturing commercial information, mention operating across supermarkets, retail stores, and financial terminals, explain combining light reflection from printed bar lines with electromagnetic detection across plastic card stripes, describe translating line patterns and magnetic tracks into digital identifiers, and conclude with eliminating manual cashier keystrokes.",
+          "target_sequence": [
+            {
+              "id": "en_u12_t1",
+              "text": "Automated data collection peripherals capture retail and authentication records",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u12_t2",
+              "text": "across supermarket point-of-sale registers, warehouses, and automated teller kiosks",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u12_t3",
+              "text": "and by combining optical beam reflection from printed barcode patterns with electromagnetic sensing across card magnetic stripes",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u12_t4",
+              "text": "they convert reflected light variations and magnetized particles into verified product codes and account numbers",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u12_t5",
+              "text": "thereby eliminating manual data-entry delays and preventing human typing errors during financial and retail checkouts",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u12_d1",
+              "category": "technical",
+              "text": "and by forcing barcode scanners to punch physical holes through plastic credit cards to process transactions",
+              "penalty_explanation": "Barcode scanners use non-destructive optical light beams to read printed lines without punching holes."
+            },
+            {
+              "id": "en_u12_d2",
+              "category": "conceptual",
+              "text": "they require all supermarket barcode symbols to be painted with wet liquid oil paints every morning",
+              "penalty_explanation": "Barcodes are permanently printed labels or packaging codes read by optical sensors."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "बारकोड स्कैनर और मैग्नेटिक स्ट्रिप रीडर द्वारा खुदरा और प्रमाणीकरण डेटा कैप्चर करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "स्वचालित डेटा संग्रहण उपकरण व्यावसायिक रिकॉर्ड कैप्चर करते हैं से शुरू करें, सुपरमार्केट और एटीएम का संदर्भ दें, बारकोड से परावर्तित प्रकाश और मैग्नेटिक पट्टी के सेंसिंग का तरीका बताएं, उत्पाद कोड और खाता संख्याओं में बदलने का परिणाम दें, और बिलिंग में टाइपिंग त्रुटियां रोकने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u12_t1",
+              "text": "स्वचालित डेटा संग्रहण उपकरण व्यावसायिक और प्रमाणीकरण रिकॉर्ड प्राप्त करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u12_t2",
+              "text": "सुपरमार्केट पॉइंट-ऑफ-सेल काउंटरों, गोदामों और एटीएम कियोस्क के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u12_t3",
+              "text": "और मुद्रित बारकोड रेखाओं से परावर्तित प्रकाश को कार्ड की चुंबकीय पट्टी की इलेक्ट्रोमैग्नेटिक सेंसिंग के साथ जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u12_t4",
+              "text": "ये प्रकाश विविधताओं और चुंबकीय कणों को सत्यापित उत्पाद कोड तथा खाता संख्याओं में बदलते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u12_t5",
+              "text": "जिससे बिलिंग में होने वाली मैन्युअल टाइपिंग की देरी और मानवीय गलतियां पूरी तरह समाप्त हो जाती हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u12_d1",
+              "category": "technical",
+              "text": "और लेन-देन के सत्यापन के लिए बारकोड स्कैनर द्वारा प्लास्टिक कार्डों में भौतिक छेद पंच करके",
+              "penalty_explanation": "बारकोड स्कैनर केवल प्रकाश किरणों से कोड पढ़ते हैं, वे कार्डों में छेद नहीं करते।"
+            },
+            {
+              "id": "hi_u12_d2",
+              "category": "conceptual",
+              "text": "ये सभी सुपरमार्केट पैकेटों पर गीले तेल के रंगों से प्रतिदिन नए बारकोड हाथ से पेंट करने पर बाध्य करते हैं",
+              "penalty_explanation": "बारकोड उत्पादों पर स्थायी रूप से छपे होते हैं जिन्हें ऑप्टिकल स्कैनर द्वारा पढ़ा जाता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Barcode readers scan printed product lines using reflected light, while magnetic stripe readers decode electromagnetic data on card stripes[cite: 11].",
+        "hi": "बारकोड रीडर परावर्तित प्रकाश से उत्पाद कोड पढ़ते हैं, जबकि मैग्नेटिक स्ट्रिप रीडर प्लास्टिक कार्ड की चुंबकीय पट्टी से डेटा प्राप्त करते हैं[cite: 11]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Visual Softcopy Displays: CRT Vacuum Tubes vs. Flat-Panel Monitors",
+          "hi": "विजुअल सॉफ्टकॉपी डिस्प्ले: सीआरटी वैक्यूम ट्यूब बनाम फ्लैट-पैनल मॉनिटर"
+        },
+        "theory": {
+          "en": "The monitor, or Visual Display Unit (VDU), is the primary softcopy visual output peripheral of a computer system. Screen dimensions are measured diagonally across the display surface in inches (e.g., 15\", 17\", 19\", 21\"). Display images are composed of thousands of microscopic picture elements called pixels; smaller and more densely packed pixels produce higher resolution and sharper image clarity[cite: 12]. Monitors belong to two technological eras[cite: 12]:\n1. Cathode-Ray Tube (CRT) Monitors: Older, bulky displays that use glass vacuum tubes and electron guns firing beams onto a phosphor-coated inner glass screen; they suffer from high electrical power consumption, heavy weight, and high heat dissipation[cite: 12].\n2. Flat-Panel Monitors: Modern slim displays employing Liquid Crystal Display (LCD), Light Emitting Diode (LED), or plasma panels; they provide lightweight form factors, minimal electrical power usage, sharp resolution, and compact wall-mountable designs for desktops and laptops[cite: 12].",
+          "hi": "मॉनिटर या विजुअल डिस्प्ले यूनिट (VDU) कंप्यूटर सिस्टम का प्राथमिक सॉफ्टकॉपी आउटपुट डिवाइस है[cite: 12]। स्क्रीन का आकार विकर्ण रूप से (diagonally) इंचों में मापा जाता है (जैसे 15\", 17\", 19\", 21\")[cite: 12]। स्क्रीन पर दिखने वाली छवि हजारों छोटे-छोटे बिंदुओं से मिलकर बनती है जिन्हें पिक्सल (pixels) कहा जाता है; पिक्सल जितने छोटे और घने होंगे, स्क्रीन का रिज़ॉल्यूशन और स्पष्टता उतनी ही बेहतर होगी[cite: 12]। मॉनिटर दो मुख्य तकनीकों में आते हैं[cite: 12]:\n1. कैथोड-रे ट्यूब (CRT) मॉनिटर: पुरानी वैक्यूम ट्यूब तकनीक पर आधारित भारी और बड़े मॉनिटर, जिनमें फॉस्फोर-लेपित स्क्रीन पर इलेक्ट्रॉन गन से किरणें छोड़ी जाती हैं; ये अधिक बिजली की खपत करते हैं और अत्यधिक गर्मी उत्पन्न करते हैं[cite: 12]।\n2. फ्लैट-पैनल मॉनिटर: लिक्विड क्रिस्टल डिस्प्ले (LCD), लाइट एमिटिंग डायोड (LED) या प्लाज्मा तकनीक पर आधारित आधुनिक पतले मॉनिटर; ये हल्के होते हैं, बहुत कम बिजली की खपत करते हैं, और लैपटॉप व आधुनिक कंप्यूटरों में उपयोग होते हैं[cite: 12]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Visual Display Units: CRT vs. Flat-Panel (LCD/LED)</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">CRT Display</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Vacuum Tube | Heavy | High Power</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Flat-Panel Display</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">LCD / LED | Slim | Low Energy</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Electron Gun</tspan><tspan x=\"100\" dy=\"1.2em\">Phosphor Glass</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Bulky Housing</tspan><tspan x=\"225\" dy=\"1.2em\">Thermal Dissipation</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Liquid Crystals</tspan><tspan x=\"375\" dy=\"1.2em\">Dense Pixel Grid</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Wall Mountable</tspan><tspan x=\"500\" dy=\"1.2em\">Laptops &amp; Desktops</tspan></text></svg>",
+          "caption": {
+            "en": "Visual display evolution contrasting heavy electron-gun CRT monitors with compact, energy-efficient LCD/LED flat-panel screens[cite: 12].",
+            "hi": "विजुअल डिस्प्ले का विकास जो भारी इलेक्ट्रॉन-गन सीआरटी मॉनिटर की तुलना आधुनिक ऊर्जा-कुशल LCD/LED फ्लैट-पैनल स्क्रीन से करता है[cite: 12]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence contrasting Cathode-Ray Tube displays with modern flat-panel monitors.",
+          "hint": "Start with computer visual display units rendering temporary softcopy graphical output, mention presenting information measured diagonally in inches, explain contrasting bulky phosphor-coated CRT vacuum tubes with slim LCD and LED flat panels, describe organizing display images into grids of microscopic pixels, and conclude with delivering high-resolution visual output.",
+          "target_sequence": [
+            {
+              "id": "en_u13_t1",
+              "text": "Visual Display Units generate interactive softcopy graphical images",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u13_t2",
+              "text": "across diagonal display surfaces measured standardly in inches",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u13_t3",
+              "text": "and by transitioning from bulky high-power electron-gun Cathode-Ray Tubes to slim Liquid Crystal and Light Emitting Diode panels",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u13_t4",
+              "text": "they concentrate thousands of microscopic colored pixels into dense visual screen grids",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u13_t5",
+              "text": "thereby delivering crisp high-resolution text and graphics while significantly minimizing electrical energy consumption",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u13_d1",
+              "category": "technical",
+              "text": "and by replacing all screen pixels with wet carbon paper ribbons to imprint permanent hardcopy pages",
+              "penalty_explanation": "Monitors produce temporary electronic softcopy displays on pixel screens; printers produce physical hardcopies."
+            },
+            {
+              "id": "en_u13_d2",
+              "category": "conceptual",
+              "text": "they restrict flat-panel LED monitors to consuming ten times more electricity than ancient vacuum tubes",
+              "penalty_explanation": "Flat-panel LCD and LED screens consume far less electrical power than older CRT vacuum tube monitors."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "सीआरटी वैक्यूम ट्यूब मॉनिटर और आधुनिक फ्लैट-पैनल डिस्प्ले के तुलनात्मक विकास को सही क्रम में व्यवस्थित करें।",
+          "hint": "विजुअल डिस्प्ले यूनिट्स सॉफ्टकॉपी आउटपुट उत्पन्न करती हैं से शुरू करें, विकर्ण इंच आकार का संदर्भ दें, भारी सीआरटी ट्यूब की तुलना पतले एलसीडी/एलईडी पैनल से करने का तरीका बताएं, हजारों रंगीन पिक्सेल केंद्रित करने का परिणाम दें, और उच्च रिज़ॉल्यूशन व कम बिजली खपत पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u13_t1",
+              "text": "विजुअल डिस्प्ले यूनिट्स स्क्रीन पर सॉफ्टकॉपी आउटपुट उत्पन्न करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u13_t2",
+              "text": "इंचों में मापी जाने वाली विकर्ण डिस्प्ले सतहों के आर-पार",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u13_t3",
+              "text": "और भारी व अधिक बिजली खपत करने वाली कैथोड-रे ट्यूब से पतले लिक्विड क्रिस्टल तथा एलईडी पैनलों की ओर विकसित होकर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u13_t4",
+              "text": "ये हजारों सूक्ष्म रंगीन पिक्सेल को घने और व्यवस्थित ग्रिड में केंद्रित करती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u13_t5",
+              "text": "जिससे कम बिजली की खपत में उच्च रिज़ॉल्यूशन वाली स्पष्ट छवियां और टेक्स्ट प्रदर्शित होते हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u13_d1",
+              "category": "technical",
+              "text": "और स्क्रीन से सभी पिक्सेल हटाकर कार्बन पेपर रिबन द्वारा स्थाई कागजी प्रिंट निकालने के लिए बाध्य करके",
+              "penalty_explanation": "मॉनिटर इलेक्ट्रॉनिक सॉफ्टकॉपी डिस्प्ले देते हैं, स्थायी प्रिंट निकालना प्रिंटर का काम है।"
+            },
+            {
+              "id": "hi_u13_d2",
+              "category": "conceptual",
+              "text": "ये आधुनिक एलईडी फ्लैट मॉनिटर को पुरानी वैक्यूम ट्यूब से दस गुना अधिक बिजली खर्च करने पर मजबूर करती हैं",
+              "penalty_explanation": "फ्लैट-पैनल मॉनिटर की सबसे बड़ी विशेषता यह है कि वे पुरानी सीआरटी ट्यूब की तुलना में बहुत कम बिजली खर्च करते हैं।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Monitors provide softcopy output composed of pixels, evolving from bulky high-power CRT tubes to lightweight, energy-efficient LCD/LED flat panels[cite: 12].",
+        "hi": "मॉनिटर पिक्सल से बना सॉफ्टकॉपी आउटपुट देते हैं, जो भारी और अधिक बिजली वाले CRT से बदलकर पतले और ऊर्जा-कुशल LCD/LED फ्लैट पैनल में विकसित हुए हैं[cite: 12]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Hardcopy Print Mechanics: Dot Matrix, Inkjet, and Laser Printers",
+          "hi": "हार्डकॉपी प्रिंट तकनीक: डॉट मैट्रिक्स, इंकजेट और लेज़र प्रिंटर"
+        },
+        "theory": {
+          "en": "Printers produce permanent physical output on paper, referred to as hardcopy[cite: 12]. Print quality is evaluated in Dots Per Inch (DPI), while operational speed is measured in Characters Per Second (CPS), Lines Per Minute (LPM), or Pages Per Minute (PPM)[cite: 12]. Printers are classified into two technological categories[cite: 12]:\n1. Impact Printers (Dot Matrix Printer): Physical pins strike an inked fabric ribbon directly against continuous tractor paper to form characters out of dots; they are slow, noisy, and have low DPI resolution, but are inexpensive and support multi-part carbon copies[cite: 12].\n2. Non-Impact Printers (Inkjet & Laser): Mechanisms print without physical pin-striking[cite: 12]. Inkjet printers spray microscopic liquid ink droplets to output high-resolution color graphics quietly[cite: 12]. Laser printers use electrostatic photocopying technology—directing laser beams onto a drum to fuse dry powdered toner onto full pages at high speeds with high resolution and low cost-per-page[cite: 12].",
+          "hi": "प्रिंटर कागज़ पर स्थायी भौतिक आउटपुट प्रदान करते हैं, जिसे हार्डकॉपी (hardcopy) कहा जाता है[cite: 12]। प्रिंट गुणवत्ता को डॉट्स पर इंच (DPI) में मापा जाता है, जबकि प्रिंटिंग गति को कैरेक्टर प्रति सेकंड (CPS), लाइन प्रति मिनट (LPM), या पेज प्रति मिनट (PPM) में मापा जाता है[cite: 12]। प्रिंटर दो मुख्य श्रेणियों में आते हैं[cite: 12]:\n1. इम्पैक्ट प्रिंटर (डॉट मैट्रिक्स प्रिंटर): इसमें छोटे पिन एक स्याही वाले रिबन पर चोट करके कागज़ पर बिंदुओं के संयोजन से अक्षर बनाते हैं; यह धीमा और शोर करने वाला होता है, परंतु सस्ता है और कार्बन कॉपी निकालने के लिए उपयोगी है[cite: 12]।\n2. नॉन-इम्पैक्ट प्रिंटर (इंकजेट और लेज़र): ये बिना किसी चोट के प्रिंट करते हैं[cite: 12]। इंकजेट प्रिंटर तरल स्याही की सूक्ष्म बूंदों को कागज़ पर छिड़क कर शांत गति से उच्च गुणवत्ता वाला रंगीन प्रिंट देते हैं[cite: 12]। लेज़र प्रिंटर फोटोकॉपी तकनीक पर आधारित होते हैं, जो लेज़र बीम, इलेक्ट्रोस्टैटिक ड्रम और सूखे पाउडर वाले टोनर का उपयोग करके पूरे पृष्ठ को तीव्र गति और उच्च स्पष्टता से प्रिंट करते हैं[cite: 12]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Printer Technologies: Dot Matrix, Inkjet, Laser</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Dot Matrix (Impact)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Pins &amp; Ribbon | Noisy</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Inkjet (Non-Impact)</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Liquid Spray | Color</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Laser (Page Printer)</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Toner &amp; Drum | Fast</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Strikes Paper</tspan><tspan x=\"120\" dy=\"1.2em\">Slow CPS / LPM</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Liquid Droplets</tspan><tspan x=\"300\" dy=\"1.2em\">Cartridge Cost</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Dry Powder Toner</tspan><tspan x=\"480\" dy=\"1.2em\">High-Speed PPM</tspan></text></svg>",
+          "caption": {
+            "en": "Printer taxonomy comparing physical striking in impact Dot Matrix printers with liquid spraying in Inkjets and laser toner fusion in Laser printers[cite: 12].",
+            "hi": "प्रिंटर वर्गीकरण जो डॉट मैट्रिक्स की इम्पैक्ट चोट, इंकजेट के लिक्विड स्प्रे और लेज़र प्रिंटर के टोनर फ्यूजन की तुलना करता है[cite: 12]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how impact and non-impact printers produce permanent hardcopy output on paper.",
+          "hint": "Start with printer hardware generating permanent hardcopy output, mention measuring performance in dots per inch and pages per minute, explain contrasting physical ribbon-striking dot matrix printers with liquid-spray inkjets and powdered-toner laser page printers, describe transferring text and graphics onto paper sheets, and conclude with supporting administrative and commercial documentation.",
+          "target_sequence": [
+            {
+              "id": "en_u14_t1",
+              "text": "Printer hardware systems deliver permanent hardcopy output",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u14_t2",
+              "text": "evaluated across Dots Per Inch resolution and page throughput speeds",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u14_t3",
+              "text": "and by contrasting ribbon-striking impact Dot Matrix printers against non-impact liquid Inkjets and electrostatic dry-toner Laser engines",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u14_t4",
+              "text": "they transfer alphanumeric characters, full-page diagrams, and photographic color images onto paper media",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u14_t5",
+              "text": "thereby accommodating demands ranging from inexpensive continuous receipts to high-speed enterprise document publishing",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u14_d1",
+              "category": "technical",
+              "text": "and by requiring laser printers to strike inked cloth ribbons with heavy mechanical hammers thirty times per second",
+              "penalty_explanation": "Laser printers are non-impact page printers that fuse dry toner; dot matrix printers use mechanical pins on ribbons."
+            },
+            {
+              "id": "en_u14_d2",
+              "category": "conceptual",
+              "text": "they dissolve all printed paper pages into liquid chemicals to prevent any permanent documentation",
+              "penalty_explanation": "Printers create permanent physical hardcopy records on paper sheets for durable documentation."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "इम्पैक्ट और नॉन-इम्पैक्ट प्रिंटर तकनीकों (डॉट मैट्रिक्स, इंकजेट और लेज़र) द्वारा हार्डकॉपी प्रिंटिंग की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "प्रिंटर हार्डवेयर प्रणालियां स्थायी हार्डकॉपी आउटपुट देती हैं से शुरू करें, DPI रिज़ॉल्यूशन और PPM गति का संदर्भ दें, डॉट मैट्रिक्स, इंकजेट और लेज़र के तंत्र का तरीका बताएं, अक्षरों और रंगीन चित्रों को कागज़ पर छापने का परिणाम दें, और विभिन्न दस्तावेज़ीकरण आवश्यकताओं को पूरा करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u14_t1",
+              "text": "प्रिंटर हार्डवेयर प्रणालियां कागज़ पर स्थायी हार्डकॉपी आउटपुट प्रदान करती हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u14_t2",
+              "text": "डॉट्स प्रति इंच गुणवत्ता और पृष्ठ प्रति मिनट गति के आधार पर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u14_t3",
+              "text": "और रिबन पर चोट करने वाले डॉट मैट्रिक्स की तुलना लिक्विड इंकजेट तथा ड्राई टोनर वाले लेज़र प्रिंटर से करके",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u14_t4",
+              "text": "ये अल्फ़ान्यूमेरिक अक्षरों, विस्तृत आरेखों और रंगीन चित्रों को भौतिक कागज़ पर स्थानांतरित करती हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u14_t5",
+              "text": "जिससे सस्ते निरंतर बिल रसीदों से लेकर तीव्र गति वाले कार्यालयी दस्तावेज़ मुद्रण की आवश्यकताएं पूरी होती हैं",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u14_d1",
+              "category": "technical",
+              "text": "और लेज़र प्रिंटर को स्याही वाले रिबन पर भारी हथौड़ों से लगातार प्रहार करके प्रिंट निकालने पर बाध्य करके",
+              "penalty_explanation": "लेज़र प्रिंटर बिना किसी चोट के लेज़र बीम और टोनर से प्रिंट करते हैं; रिबन पर चोट डॉट मैट्रिक्स प्रिंटर करता है।"
+            },
+            {
+              "id": "hi_u14_d2",
+              "category": "conceptual",
+              "text": "ये कागज़ के प्रिंट को पानी में घोलकर किसी भी स्थायी दस्तावेज़ को सुरक्षित रखने से रोक देती हैं",
+              "penalty_explanation": "प्रिंटर का मुख्य उद्देश्य ही लंबे समय तक सुरक्षित रहने वाली स्थायी हार्डकॉपी तैयार करना है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Printers generate hardcopy evaluated by DPI and PPM; Impact Dot Matrix uses pins on ribbon, while Non-Impact Inkjet sprays liquid and Laser fuses powdered toner[cite: 12].",
+        "hi": "प्रिंटर DPI और PPM पर आंके जाने वाले स्थायी हार्डकॉपी आउटपुट देते हैं; डॉट मैट्रिक्स रिबन पर चोट करता है, जबकि इंकजेट स्याही छिड़कता है और लेज़र टोनर पाउडर का उपयोग करता है[cite: 12]।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Specialized Output Hardware: Plotters, Speakers, and Video Projectors",
+          "hi": "विशिष्ट आउटपुट हार्डवेयर: प्लॉटर, स्पीकर और वीडियो प्रोजेक्टर"
+        },
+        "theory": {
+          "en": "Beyond standard monitors and desktop page printers, specialized output hardware provides engineering vector drawings, audible acoustic sound waves, and large-format optical projections:\n- Plotter: A specialized hardcopy drafting device designed to produce high-precision vector graphics, architectural blueprints, engineering schematics, and giant geographic maps[cite: 12]. Unlike printers that deposit tiny discrete dots, a plotter maneuvers automated motorized pens (raising, lowering, and gliding continuously across large paper rolls) to draw smooth vector lines[cite: 12, 13].\n- Speaker: An audio peripheral that receives digital audio data from the internal sound card, converting electrical waveforms into human-audible sound waves across wired Aux cables or wireless Bluetooth links[cite: 13].\n- Projector: An optical projection system that takes video signals from the computer and projects high-intensity enlarged displays onto giant projection screens or classroom walls for group presentations[cite: 13].",
+          "hi": "साधारण मॉनिटर और प्रिंटर के अलावा कंप्यूटर में इंजीनियरिंग ड्राइंग, ऑडियो और बड़े विजुअल प्रदर्शन के लिए विशिष्ट आउटपुट उपकरण होते हैं[cite: 12, 13]:\n- प्लॉटर (Plotter): यह एक विशेष हार्डकॉपी उपकरण है जिसका उपयोग बड़े पैमाने पर इंजीनियरिंग ब्लूप्रिंट, वास्तुशिल्प नक्शे और भौगोलिक मानचित्र बनाने के लिए किया जाता है[cite: 12]। सामान्य प्रिंटर के विपरीत जो डॉट्स छापते हैं, प्लॉटर कंप्यूटर नियंत्रित मोटराइज्ड पेनों का उपयोग करता है जो कागज़ पर लगातार चलकर बिना टूटी चिकनी रेखाएं खींचते हैं[cite: 12, 13]।\n- स्पीकर (Speaker): यह एक ऑडियो आउटपुट डिवाइस है जो कंप्यूटर के साउंड कार्ड से डिजिटल सिग्नल प्राप्त करके उन्हें सुनने योग्य ध्वनि तरंगों में बदलता है[cite: 13]।\n- प्रोजेक्टर (Projector): यह एक ऑप्टिकल आउटपुट डिवाइस है जो कंप्यूटर से वीडियो सिग्नल लेकर स्क्रीन या दीवार पर बड़ी छवि प्रदर्शित करता है; इसका व्यापक उपयोग स्मार्ट क्लासरूम और सम्मेलनों में होता है[cite: 13]।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Specialized Output: Plotter, Speaker, Projector</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Plotter</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Motorized Vector Pens</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Audio Speaker</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Sound Waves / Aux</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Digital Projector</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Optical Big Screen</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Continuous Lines</tspan><tspan x=\"120\" dy=\"1.2em\">CAD Blueprints</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Audio Converter</tspan><tspan x=\"300\" dy=\"1.2em\">Sound Wave Out</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Wall Projection</tspan><tspan x=\"480\" dy=\"1.2em\">Smart Classrooms</tspan></text></svg>",
+          "caption": {
+            "en": "Specialized output systems: continuous vector-line plotters, acoustic sound wave speakers, and wall-projection display systems[cite: 12, 13].",
+            "hi": "विशिष्ट आउटपुट सिस्टम: सतत वेक्टर-लाइन प्लॉटर, ध्वनि तरंग स्पीकर और बड़ी दीवार पर प्रदर्शित करने वाले प्रोजेक्टर[cite: 12, 13]।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Construct the balanced sentence detailing how plotters, speakers, and projectors provide specialized engineering, acoustic, and presentation outputs.",
+          "hint": "Start with specialized output peripherals broadening computer delivery formats, mention addressing engineering, multimedia, and presentation applications, explain combining continuous vector pen drafting in plotters with acoustic sound wave generation in speakers and optical enlargement in video projectors, describe converting digital signals into large physical and sensory outputs, and conclude with supporting architectural blueprints, audio listening, and classroom instruction.",
+          "target_sequence": [
+            {
+              "id": "en_u15_t1",
+              "text": "Specialized output peripherals broaden sensory presentation formats",
+              "role_hint": "Tile 1: Main subject anchor"
+            },
+            {
+              "id": "en_u15_t2",
+              "text": "across modern engineering design, multimedia audio, and auditorium instructional spaces",
+              "role_hint": "Tile 2: Operational context"
+            },
+            {
+              "id": "en_u15_t3",
+              "text": "and by combining robotic pen line drawing in plotters with acoustic sound synthesis in speakers and optical wall casting in digital projectors",
+              "role_hint": "Tile 3: Method or mechanism"
+            },
+            {
+              "id": "en_u15_t4",
+              "text": "they convert machine code instructions into continuous vector blueprints, audible voice frequencies, and magnified video displays",
+              "role_hint": "Tile 4: Intermediate outcome"
+            },
+            {
+              "id": "en_u15_t5",
+              "text": "thereby supporting professional architectural schematics, multimedia entertainment, and interactive group classroom lectures",
+              "role_hint": "Tile 5: Resolving action"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "en_u15_d1",
+              "category": "technical",
+              "text": "and by forcing audio speakers to draw physical architectural blueprints on tractor-feed paper sheets",
+              "penalty_explanation": "Speakers output audio sound waves; drawing physical engineering blueprints is performed by plotters."
+            },
+            {
+              "id": "en_u15_d2",
+              "category": "conceptual",
+              "text": "they disable all video output so that projectors display only silent darkness without lens focus",
+              "penalty_explanation": "Projectors actively project high-intensity enlarged video images onto large projection screens."
+            }
+          ]
+        },
+        "hi": {
+          "prompt": "प्लॉटर, स्पीकर और डिजिटल प्रोजेक्टर द्वारा विशेष आउटपुट (वेक्टर नक्शे, ध्वनि और बड़ी स्क्रीन छवि) देने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "विशिष्ट आउटपुट उपकरण प्रस्तुति के माध्यमों का विस्तार करते हैं से शुरू करें, इंजीनियरिंग, ऑडियो और कक्षा का संदर्भ दें, प्लॉटर के पेन, स्पीकर की ध्वनि और प्रोजेक्टर के लेंस का तरीका बताएं, मशीन कोड को ब्लूप्रिंट, आवाज़ और वीडियो में बदलने का परिणाम दें, और विभिन्न क्षेत्रों में सहायता प्रदान करने पर समाप्त करें।",
+          "target_sequence": [
+            {
+              "id": "hi_u15_t1",
+              "text": "विशिष्ट आउटपुट उपकरण प्रस्तुति और संचार माध्यमों का विस्तार करते हैं",
+              "role_hint": "ब्लॉक 1: मुख्य विषय"
+            },
+            {
+              "id": "hi_u15_t2",
+              "text": "इंजीनियरिंग डिज़ाइन, मल्टीमीडिया ऑडियो और सभागार शिक्षण परिवेश के भीतर",
+              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
+            },
+            {
+              "id": "hi_u15_t3",
+              "text": "और प्लॉटर द्वारा पेन से निरंतर रेखाएं खींचने, स्पीकर द्वारा ध्वनि तरंगें उत्पन्न करने तथा प्रोजेक्टर द्वारा दीवार पर छवि प्रक्षेपित करने को जोड़कर",
+              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
+            },
+            {
+              "id": "hi_u15_t4",
+              "text": "ये कंप्यूटर सिग्नलों को चिकने वेक्टर ब्लूप्रिंट, सुनने योग्य आवाज़ तथा बड़े आकार के वीडियो डिस्प्ले में बदलते हैं",
+              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
+            },
+            {
+              "id": "hi_u15_t5",
+              "text": "जिससे जटिल वास्तुशिल्प नक्शे तैयार करने, संगीत सुनने और स्मार्ट कक्षाओं में सामूहिक प्रस्तुतीकरण में सहायता मिलती है",
+              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
+            }
+          ],
+          "distractors": [
+            {
+              "id": "hi_u15_d1",
+              "category": "technical",
+              "text": "और ऑडियो स्पीकर द्वारा कागज़ पर नक्शे और ब्लूप्रिंट के चित्र बनाने के लिए बाध्य करके",
+              "penalty_explanation": "स्पीकर केवल ध्वनि आउटपुट देता है; कागज़ पर नक्शे और ब्लूप्रिंट प्लॉटर द्वारा बनाए जाते हैं।"
+            },
+            {
+              "id": "hi_u15_d2",
+              "category": "conceptual",
+              "text": "ये प्रोजेक्टर को बिना किसी प्रकाश या लेंस के केवल बंद कमरे में अंधेरा रखने के लिए काम में लाती हैं",
+              "penalty_explanation": "प्रोजेक्टर उच्च तीव्रता वाले प्रकाश और लेंस के माध्यम से बड़ी स्क्रीन पर वीडियो डिस्प्ले दिखाता है।"
+            }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Plotters draw smooth vector blueprints using motorized pens, speakers output audible sound waves, and projectors enlarge visual displays for screens[cite: 12, 13].",
+        "hi": "प्लॉटर पेन की सहायता से चिकने वेक्टर नक्शे बनाता है, स्पीकर ध्वनि तरंगें उत्पन्न करता है और प्रोजेक्टर बड़ी स्क्रीन पर वीडियो प्रदर्शित करता है[cite: 12, 13]।"
+      }
+    }
+  ]
+}
