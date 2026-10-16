@@ -14,581 +14,217 @@
     {
       "instruction": {
         "title": {
-          "en": "Origin, Definition, and the Input-Process-Output-Storage Cycle",
-          "hi": "कंप्यूटर की उत्पत्ति, परिभाषा और इनपुट-प्रोसेस-आउटपुट-स्टोरेज चक्र"
+          "en": "Origin, Definition & The IPOS Cycle",
+          "hi": "कंप्यूटर की उत्पत्ति, परिभाषा और आईपीओएस (IPOS) चक्र"
         },
         "theory": {
-          "en": "The word 'Computer' originates from the Latin term 'compute', meaning to calculate[cite: 21]. A computer is an electronic machine that accepts raw data and instructions as input, processes them through the CPU, produces human-readable output, and stores the results for future reference[cite: 21, 22]. This sequence forms the Input-Process-Output-Storage (IPOS) cycle, the foundational operational pipeline of computing systems[cite: 6, 21, 22].",
-          "hi": "'कंप्यूटर' शब्द की उत्पत्ति लैटिन शब्द 'कम्प्यूट' से हुई है, जिसका अर्थ गणना करना होता है[cite: 21]। कंप्यूटर एक इलेक्ट्रॉनिक मशीन है जो उपयोगकर्ता से इनपुट के रूप में कच्चा डेटा और निर्देश प्राप्त करती है, सीपीयू के माध्यम से उन्हें प्रोसेस करती है, उपयोगी आउटपुट देती है, और भविष्य के संदर्भ के लिए परिणामों को स्टोर करती है[cite: 21, 22]। यह पूरी प्रक्रिया इनपुट-प्रोसेस-आउटपुट-स्टोरेज (IPOS) चक्र कहलाती है[cite: 6, 21, 22]।"
+          "en": "The term computer originates from the Latin root compute, meaning to calculate. An electronic computer accepts raw data and instructions as input, processes them through its central processing unit, delivers meaningful output results to the user, and retains information in storage devices for future reference. This four-stage operational sequence forms the fundamental Input-Process-Output-Storage (IPOS) cycle of modern computing systems.",
+          "hi": "कंप्यूटर शब्द की उत्पत्ति लैटिन भाषा के शब्द कंप्यूट से हुई है, जिसका अर्थ गणना करना होता है। कंप्यूटर एक इलेक्ट्रॉनिक मशीन है जो उपयोगकर्ता से इनपुट के रूप में कच्चा डेटा और निर्देश ग्रहण करती है, सेंट्रल प्रोसेसिंग यूनिट द्वारा उन्हें प्रोसेस करती है, उपयोगी आउटपुट परिणाम देती है, तथा भविष्य के संदर्भ के लिए सूचना को स्टोरेज में सहेजती है। यह चार चरणों वाला क्रम कंप्यूटर का मुख्य आईपीओएस (IPOS) चक्र कहलाता है।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">The IPOS Functional Cycle</text><rect x=\"45\" y=\"80\" width=\"100\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"95\" y=\"100\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">1. Input</text><text x=\"95\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Raw Data</text><rect x=\"180\" y=\"80\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"235\" y=\"100\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">2. Process</text><text x=\"235\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">CPU Execution</text><rect x=\"325\" y=\"80\" width=\"110\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"380\" y=\"100\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">3. Output</text><text x=\"380\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Results / Info</text><rect x=\"470\" y=\"80\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"517\" y=\"100\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">4. Storage</text><text x=\"517\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Saved Data</text><line x1=\"145\" y1=\"107\" x2=\"180\" y2=\"107\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"180,107 172,103 172,111\" fill=\"#38bdf8\"/><line x1=\"290\" y1=\"107\" x2=\"325\" y2=\"107\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"325,107 317,103 317,111\" fill=\"#4ade80\"/><line x1=\"435\" y1=\"107\" x2=\"470\" y2=\"107\" stroke=\"#c084fc\" stroke-width=\"2\"/><polygon points=\"470,107 462,103 462,111\" fill=\"#c084fc\"/><path d=\"M 517 135 L 517 190 L 235 190 L 235 135\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/><text x=\"376\" y=\"205\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">Secondary Recall / Iteration</text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">The Core Functional IPOS Cycle</text><rect x=\"45\" y=\"80\" width=\"105\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"97\" y=\"100\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">1. Input</text><text x=\"97\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Data &amp; Rules</text><rect x=\"180\" y=\"80\" width=\"105\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"100\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">2. Process</text><text x=\"232\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">CPU Execution</text><rect x=\"315\" y=\"80\" width=\"105\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"367\" y=\"100\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">3. Output</text><text x=\"367\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Result Display</text><rect x=\"450\" y=\"80\" width=\"105\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"502\" y=\"100\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">4. Storage</text><text x=\"502\" y=\"120\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Saved Files</text><line x1=\"150\" y1=\"107\" x2=\"180\" y2=\"107\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"180,107 172,103 172,111\" fill=\"#38bdf8\"/><line x1=\"285\" y1=\"107\" x2=\"315\" y2=\"107\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"315,107 307,103 307,111\" fill=\"#4ade80\"/><line x1=\"420\" y1=\"107\" x2=\"450\" y2=\"107\" stroke=\"#c084fc\" stroke-width=\"2\"/><polygon points=\"450,107 442,103 442,111\" fill=\"#c084fc\"/><text x=\"97\" y=\"165\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">Keyboard / Mouse</text><text x=\"232\" y=\"185\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">Control &amp; ALU</text><text x=\"367\" y=\"165\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">Monitor / Print</text><text x=\"502\" y=\"185\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\">Disk / Flash Drive</text></svg>",
           "caption": {
-            "en": "The continuous Input-Process-Output-Storage pipeline linking peripheral capture to CPU processing and memory retention[cite: 6, 21, 22].",
-            "hi": "निरंतर इनपुट-प्रोसेस-आउटपुट-स्टोरेज पाइपलाइन जो इनपुट पेरिफेरल्स को सीपीयू प्रोसेसिंग और मेमोरी स्टोरेज से जोड़ती है[cite: 6, 21, 22]।"
+            "en": "The continuous four-stage IPOS pipeline showing data ingestion, processor execution, result output, and persistent storage retention.",
+            "hi": "चार चरणों वाला निरंतर आईपीओएस चक्र जो डेटा इनपुट, प्रोसेसर निष्पादन, परिणाम प्रदर्शन और स्थायी भंडारण को दर्शाता है।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the balanced sentence detailing how the Input-Process-Output-Storage cycle transforms raw data into persistent information.",
-          "hint": "Start with the electronic computer executing operations, mention operating across the foundational IPOS architecture, explain taking user data through input devices and computing it via the CPU, describe generating human-readable outputs while storing results in memory, and conclude with completing the foundational computing cycle.",
+          "prompt": "Reconstruct the sentence showing how an electronic computer processes data through its core operational cycle.",
+          "hint": "Start with the electronic computer, show it receiving input data, describe processing it in the CPU, and conclude with delivering output and storing results.",
           "target_sequence": [
-            {
-              "id": "en_u1_t1",
-              "text": "The electronic computer executes automated functional routines",
-              "role_hint": "Tile 1: Main subject anchor"
-            },
-            {
-              "id": "en_u1_t2",
-              "text": "across the foundational Input-Process-Output-Storage cycle",
-              "role_hint": "Tile 2: Operational context"
-            },
-            {
-              "id": "en_u1_t3",
-              "text": "and by capturing raw data through input units to execute arithmetic and logical processing inside the processor",
-              "role_hint": "Tile 3: Method or mechanism"
-            },
-            {
-              "id": "en_u1_t4",
-              "text": "it delivers human-readable output while saving intermediate and final records into system memory",
-              "role_hint": "Tile 4: Intermediate outcome"
-            },
-            {
-              "id": "en_u1_t5",
-              "text": "thereby completing the core operational pipeline of modern digital computation",
-              "role_hint": "Tile 5: Resolving action"
-            }
+            { "id": "en_u1_t1", "text": "An electronic computer", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u1_t2", "text": "takes raw input data", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u1_t3", "text": "processes instructions in the CPU", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u1_t4", "text": "and provides output for storage", "role_hint": "Tile 4: Direct System Outcome" }
           ],
           "distractors": [
-            {
-              "id": "en_u1_d1",
-              "category": "conceptual",
-              "text": "and by discarding all input data immediately to prevent the CPU from executing instructions",
-              "penalty_explanation": "Computers process input data systematically; they do not discard it before execution."
-            },
-            {
-              "id": "en_u1_d2",
-              "category": "technical",
-              "text": "it converts storage drives into manual analog typewriters without generating screen output",
-              "penalty_explanation": "The IPOS cycle uses digital storage and electronic display output rather than converting drives into analog typewriters."
-            }
+            { "id": "en_u1_d1", "category": "conceptual", "text": "deletes all user files before processing", "penalty_explanation": "Computers process instructions to generate useful output; they do not erase input files prior to calculation." },
+            { "id": "en_u1_d2", "category": "technical", "text": "requires human mechanical pedaling to calculate", "penalty_explanation": "Computers are automated electronic machines powered by electrical current, not human mechanical pedals." }
           ]
         },
         "hi": {
-          "prompt": "इनपुट-प्रोसेस-आउटपुट-स्टोरेज चक्र द्वारा कच्चे डेटा को उपयोगी जानकारी में बदलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
-          "hint": "इलेक्ट्रॉनिक कंप्यूटर स्वचालित परिचालन चक्र चलाता है से शुरू करें, आईपीओएस चक्र का संदर्भ दें, इनपुट से डेटा लेकर सीपीयू द्वारा प्रोसेस करने का तरीका बताएं, आउटपुट देने और मेमोरी में सुरक्षित रखने का परिणाम दें, और डिजिटल कार्यप्रणाली पूरी करने पर समाप्त करें।",
+          "prompt": "कंप्यूटर द्वारा अपने मूल आईपीओएस (IPOS) चक्र के माध्यम से कार्य करने के क्रम को व्यवस्थित करें।",
+          "hint": "इलेक्ट्रॉनिक कंप्यूटर से शुरू करें, इनपुट डेटा ग्रहण करने का उल्लेख करें, सीपीयू द्वारा प्रोसेसिंग का तरीका बताएं, और आउटपुट व स्टोरेज पर समाप्त करें।",
           "target_sequence": [
-            {
-              "id": "hi_u1_t1",
-              "text": "इलेक्ट्रॉनिक कंप्यूटर स्वचालित कार्यात्मक क्रियाएं निष्पादित करता है",
-              "role_hint": "ब्लॉक 1: मुख्य विषय"
-            },
-            {
-              "id": "hi_u1_t2",
-              "text": "बुनियादी इनपुट-प्रोसेस-आउटपुट-स्टोरेज चक्र के परिचालन ढांचे में",
-              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
-            },
-            {
-              "id": "hi_u1_t3",
-              "text": "और इनपुट उपकरणों द्वारा कच्चा डेटा ग्रहण करके प्रोसेसर के भीतर गणितीय तथा तार्किक गणनाएं करके",
-              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
-            },
-            {
-              "id": "hi_u1_t4",
-              "text": "यह मानव-पठनीय आउटपुट प्रदान करता है और परिणामों को सिस्टम मेमोरी में सुरक्षित रखता है",
-              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
-            },
-            {
-              "id": "hi_u1_t5",
-              "text": "जिससे आधुनिक डिजिटल कंप्यूटिंग की मुख्य कार्यप्रणाली सफलतापूर्वक संपन्न होती है",
-              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
-            }
+            { "id": "hi_u1_t1", "text": "एक इलेक्ट्रॉनिक कंप्यूटर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u1_t2", "text": "उपयोगकर्ता से इनपुट लेकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u1_t3", "text": "सीपीयू में निर्देश प्रोसेस करता है", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u1_t4", "text": "और उपयोगी आउटपुट प्रदान करता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
           ],
           "distractors": [
-            {
-              "id": "hi_u1_d1",
-              "category": "conceptual",
-              "text": "और सीपीयू को किसी भी निर्देश को प्रोसेस करने से रोकने के लिए सभी इनपुट डेटा को तुरंत नष्ट करके",
-              "penalty_explanation": "कंप्यूटर प्राप्त इनपुट डेटा को नष्ट नहीं करता बल्कि उसे सीपीयू के माध्यम से प्रोसेस करता है।"
-            },
-            {
-              "id": "hi_u1_d2",
-              "category": "technical",
-              "text": "यह स्क्रीन आउटपुट देने के बजाय स्टोरेज ड्राइव्स को पुराने एनालॉग टाइपराइटर में बदल देता है",
-              "penalty_explanation": "आईपीओएस चक्र डिजिटल आउटपुट और स्टोरेज प्रदान करता है, यह हार्डवेयर को टाइपराइटर में नहीं बदलता।"
-            }
+            { "id": "hi_u1_d1", "category": "conceptual", "text": "प्रोसेसिंग से पहले सभी फाइलें मिटा देता है", "penalty_explanation": "कंप्यूटर इनपुट डेटा पर गणना करके परिणाम बनाता है, यह प्रोसेसिंग से पहले डेटा मिटाता नहीं है।" },
+            { "id": "hi_u1_d2", "category": "technical", "text": "केवल साइकिल के पैडल से बिजली बनाता है", "penalty_explanation": "कंप्यूटर इलेक्ट्रॉनिक बिजली से चलने वाली स्वचालित मशीन है, यह पैडल से नहीं चलती।" }
           ]
         }
       },
       "key_takeaway": {
-        "en": "The computer operates on the IPOS cycle: accepting Input, Processing via CPU, producing Output, and Storing results for future use[cite: 6, 21, 22].",
-        "hi": "कंप्यूटर IPOS चक्र पर कार्य करता है: इनपुट ग्रहण करना, CPU द्वारा प्रोसेसिंग, आउटपुट प्रदान करना और भविष्य के लिए स्टोरेज में सुरक्षित रखना[cite: 6, 21, 22]।"
+        "en": "Derived from the Latin compute, a computer executes the IPOS cycle: accepting input, processing data via the CPU, displaying output, and storing results.",
+        "hi": "कंप्यूटर लैटिन शब्द कंप्यूट से बना है, जो आईपीओएस (IPOS) चक्र पर कार्य करता है: इनपुट लेना, सीपीयू में प्रोसेस करना, आउटपुट देना और परिणाम सहेजना।"
       }
     },
     {
       "instruction": {
         "title": {
-          "en": "Classification by Scale: Micro, Mini, Mainframe, and Supercomputers",
-          "hi": "क्षमता और आकार के आधार पर वर्गीकरण: माइक्रो, मिनी, मेनफ्रेम और सुपरकंप्यूटर"
+          "en": "Scale Taxonomy: Micro to Supercomputers",
+          "hi": "कंप्यूटर का वर्गीकरण: माइक्रोकंप्यूटर से सुपरकंप्यूटर"
         },
         "theory": {
-          "en": "Based on size, processing capacity, purpose, and cost, computers are grouped into four categories[cite: 22]:\n1. Microcomputers: Compact, single-user systems for personal, school, and office use[cite: 22, 23].\n2. Minicomputers: Medium-sized multi-user systems offering higher performance for scientific labs and engineering design[cite: 23].\n3. Mainframe Computers: Large-scale, high-capacity multi-user engines used by banks, government ministries, and airlines for processing massive transaction volumes[cite: 23].\n4. Supercomputers: The fastest, most powerful, and most expensive systems globally, equipped with vast parallel processing power for weather forecasting, nuclear research, and space exploration[cite: 23].",
-          "hi": "आकार, क्षमता, उद्देश्य और लागत के आधार पर कंप्यूटरों को चार श्रेणियों में विभाजित किया गया है[cite: 22]:\n1. माइक्रोकंप्यूटर: व्यक्तिगत, स्कूल और कार्यालय उपयोग के लिए छोटे, किफायती और एकल-उपयोगकर्ता कंप्यूटर[cite: 22, 23]।\n2. मिनी कंप्यूटर: मध्यम आकार के मल्टी-यूजर सिस्टम जो वैज्ञानिक अनुसंधान और इंजीनियरिंग कार्यों के लिए उच्च गति प्रदान करते हैं[cite: 23]।\n3. मेनफ्रेम कंप्यूटर: बड़े और शक्तिशाली सिस्टम जिनका उपयोग बैंकों, एयरलाइंस और सरकारी विभागों द्वारा भारी मात्रा में डेटा प्रोसेसिंग के लिए किया जाता है[cite: 23]।\n4. सुपरकंप्यूटर: दुनिया के सबसे तेज़, सबसे शक्तिशाली और सबसे महंगे कंप्यूटर, जिनका उपयोग मौसम पूर्वानुमान, अंतरिक्ष अनुसंधान और रक्षा जैसे जटिल क्षेत्रों में होता है[cite: 23]।"
+          "en": "Computers are classified into four major categories based on their operational size, speed, cost, and capacity. Microcomputers are compact, affordable single-user systems used in homes and offices. Minicomputers support multiple concurrent users with higher processing power for laboratory and engineering tasks. Mainframe computers handle massive volumes of simultaneous transactions for national banks and airline reservation grids. Supercomputers represent the fastest, most expensive tier, executing billions of complex mathematical operations per second for weather forecasting, space science, and defense research.",
+          "hi": "कंप्यूटरों को उनके आकार, गति, मूल्य और कार्य क्षमता के आधार पर चार मुख्य श्रेणियों में वर्गीकृत किया गया है। माइक्रोकंप्यूटर छोटे, किफायती एकल-उपयोगकर्ता कंप्यूटर हैं जिनका उपयोग घरों और कार्यालयों में होता है। मिनीकंप्यूटर मध्यम आकार के शक्तिशाली कंप्यूटर हैं जो वैज्ञानिक प्रयोगशालाओं में कई उपयोगकर्ताओं को सेवाएं देते हैं। मेनफ्रेम कंप्यूटर विशाल डेटा और लाखों लेन-देन को एक साथ संभालने के लिए बैंकों और सरकारी विभागों में लगाए जाते हैं। सुपरकंप्यूटर दुनिया के सबसे तेज़ और महंगे कंप्यूटर हैं, जिनका उपयोग अंतरिक्ष अनुसंधान, मौसम पूर्वानुमान और रक्षा सिमुलेशन जैसी जटिल गणनाओं के लिए किया जाता है।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Computer Classification by Scale &amp; Power</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Microcomputer</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">PC, Laptop, Desk</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Minicomputer</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Labs &amp; Research</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Mainframe</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Banks &amp; Airlines</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Supercomputer</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Space &amp; Weather</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Single-User</tspan><tspan x=\"102\" dy=\"1.2em\">Affordable</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Multi-User</tspan><tspan x=\"232\" dy=\"1.2em\">Mid-Tier Engine</tspan></text><text x=\"362\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Bulk Transactions</tspan><tspan x=\"362\" dy=\"1.2em\">Enterprise Hub</tspan></text><text x=\"495\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Maximum Speed</tspan><tspan x=\"495\" dy=\"1.2em\">Trillions OPS</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Classification by Scale &amp; Performance</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Microcomputer</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Personal Desktop</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Minicomputer</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Multi-User Lab</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Mainframe</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Banks &amp; Airlines</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Supercomputer</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Weather &amp; Space</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Single User</tspan><tspan x=\"102\" dy=\"1.2em\">Affordable</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Mid-Sized Power</tspan><tspan x=\"232\" dy=\"1.2em\">Engineering</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Bulk Database</tspan><tspan x=\"362\" dy=\"1.2em\">High Security</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Fastest Tier</tspan><tspan x=\"495\" dy=\"1.2em\">Trillions OPS</tspan></text></svg>",
           "caption": {
-            "en": "Hierarchy of computer systems categorizing hardware scale from desktop microcomputers to scientific supercomputers[cite: 22, 23, 24].",
-            "hi": "कंप्यूटर प्रणालियों का पदानुक्रम जो व्यक्तिगत माइक्रोकंप्यूटर से वैज्ञानिक सुपरकंप्यूटर तक हार्डवेयर क्षमता को दर्शाता है[cite: 22, 23, 24]।"
+            "en": "Hierarchy of computer systems categorizing hardware from personal microcomputers up to high-speed scientific supercomputers.",
+            "hi": "कंप्यूटर प्रणालियों का पदानुक्रम जो एकल माइक्रोकंप्यूटर से लेकर उच्च-गति वाले वैज्ञानिक सुपरकंप्यूटर तक का वर्गीकरण दर्शाता है।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the balanced sentence detailing how computers are classified across operational scale and processing capability.",
-          "hint": "Start with computing systems being classified into distinct categories, mention scaling across individual and organizational operational environments, explain spanning from affordable personal microcomputers to multi-user minicomputers, enterprise mainframes, and supercomputers, describe matching varied institutional processing workloads, and conclude with supporting computing needs from homes to research laboratories.",
+          "prompt": "Reconstruct the sentence explaining the primary role of supercomputers in scientific fields.",
+          "hint": "Identify supercomputers, describe processing complex calculations, mention advanced research laboratories, and conclude with running weather and space simulations.",
           "target_sequence": [
-            {
-              "id": "en_u2_t1",
-              "text": "Computing systems are categorized into four structural classifications",
-              "role_hint": "Tile 1: Main subject anchor"
-            },
-            {
-              "id": "en_u2_t2",
-              "text": "based on hardware size, operational speed, and processing capacity",
-              "role_hint": "Tile 2: Operational context"
-            },
-            {
-              "id": "en_u2_t3",
-              "text": "and by scaling from single-user microcomputers through scientific minicomputers and high-volume transaction mainframes up to massive supercomputers",
-              "role_hint": "Tile 3: Method or mechanism"
-            },
-            {
-              "id": "en_u2_t4",
-              "text": "they align specialized hardware resources with specific institutional and personal operational demands",
-              "role_hint": "Tile 4: Intermediate outcome"
-            },
-            {
-              "id": "en_u2_t5",
-              "text": "thereby accommodating workloads ranging from household tasks to planetary climate simulations",
-              "role_hint": "Tile 5: Resolving action"
-            }
+            { "id": "en_u2_t1", "text": "Dedicated supercomputers", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u2_t2", "text": "execute massive calculations", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u2_t3", "text": "in national research centers", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u2_t4", "text": "to forecast complex weather patterns", "role_hint": "Tile 4: Direct System Outcome" }
           ],
           "distractors": [
-            {
-              "id": "en_u2_d1",
-              "category": "technical",
-              "text": "and by restricting supercomputers to handling only simple four-function calculator arithmetic",
-              "penalty_explanation": "Supercomputers handle massive scientific calculations and complex simulations, not just basic arithmetic."
-            },
-            {
-              "id": "en_u2_d2",
-              "category": "conceptual",
-              "text": "they require all national banking systems to run exclusively on battery-powered palmtop devices",
-              "penalty_explanation": "Enterprise banking relies on powerful mainframe systems, not palmtop organizers."
-            }
+            { "id": "en_u2_d1", "category": "conceptual", "text": "act only as pocket wristwatches for students", "penalty_explanation": "Supercomputers are room-sized high-performance installations, not consumer pocket wristwatches." },
+            { "id": "en_u2_d2", "category": "technical", "text": "run slower than simple handheld calculators", "penalty_explanation": "Supercomputers are the fastest calculating systems in existence, capable of trillions of operations per second." }
           ]
         },
         "hi": {
-          "prompt": "क्षमता, आकार और प्रदर्शन के आधार पर कंप्यूटरों के वर्गीकरण को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "कंप्यूटर प्रणालियों को चार मुख्य श्रेणियों में वर्गीकृत किया गया है से शुरू करें, आकार और गति का संदर्भ दें, माइक्रोकंप्यूटर, मिनी कंप्यूटर, मेनफ्रेम और सुपरकंप्यूटर तक विस्तार का तरीका बताएं, विशिष्ट संगठनात्मक जरूरतों को पूरा करने का परिणाम दें, और घरेलू कार्यों से लेकर वैज्ञानिक अनुसंधान तक सक्षम बनाने पर समाप्त करें।",
+          "prompt": "वैज्ञानिक अनुसंधान में सुपरकंप्यूटर की कार्यप्रणाली को दर्शाने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "सुपरकंप्यूटर से शुरुआत करें, जटिल गणनाएं करने का उल्लेख करें, वैज्ञानिक केंद्रों का संदर्भ दें, और मौसम पूर्वानुमान पर समाप्त करें।",
           "target_sequence": [
-            {
-              "id": "hi_u2_t1",
-              "text": "कंप्यूटर प्रणालियों को चार संरचनात्मक श्रेणियों में वर्गीकृत किया गया है",
-              "role_hint": "ब्लॉक 1: मुख्य विषय"
-            },
-            {
-              "id": "hi_u2_t2",
-              "text": "हार्डवेयर आकार, परिचालन गति और प्रोसेसिंग क्षमता के आधार पर",
-              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
-            },
-            {
-              "id": "hi_u2_t3",
-              "text": "और व्यक्तिगत माइक्रोकंप्यूटर से लेकर वैज्ञानिक मिनी कंप्यूटर, मेनफ्रेम तथा विशाल सुपरकंप्यूटर तक विस्तृत होकर",
-              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
-            },
-            {
-              "id": "hi_u2_t4",
-              "text": "ये विशिष्ट हार्डवेयर संसाधनों को व्यक्तिगत और संस्थागत आवश्यकताओं के अनुसार उपलब्ध कराते हैं",
-              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
-            },
-            {
-              "id": "hi_u2_t5",
-              "text": "जिससे घरेलू कार्यों से लेकर जटिल अंतरिक्ष और मौसम अनुसंधान के कार्य सुगम बनते हैं",
-              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
-            }
+            { "id": "hi_u2_t1", "text": "शक्तिशाली सुपरकंप्यूटर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u2_t2", "text": "अरबों जटिल गणनाएं करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u2_t3", "text": "वैज्ञानिक अनुसंधान केंद्रों में", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u2_t4", "text": "सटीक मौसम पूर्वानुमान सक्षम बनाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
           ],
           "distractors": [
-            {
-              "id": "hi_u2_d1",
-              "category": "technical",
-              "text": "और सुपरकंप्यूटर को केवल साधारण पॉकेट कैलकुलेटर जितनी गणनाओं तक सीमित करके",
-              "penalty_explanation": "सुपरकंप्यूटर दुनिया की सबसे जटिल वैज्ञानिक गणनाएं और सिमुलेशन निष्पादित करते हैं।"
-            },
-            {
-              "id": "hi_u2_d2",
-              "category": "conceptual",
-              "text": "ये राष्ट्रीय बैंकों को केवल हाथ में पकड़े जाने वाले पामटॉप उपकरणों पर निर्भर रहने के लिए बाध्य करते हैं",
-              "penalty_explanation": "राष्ट्रीयकृत बैंक और बड़े संस्थान मेनफ्रेम कंप्यूटरों का उपयोग करते हैं, पामटॉप का नहीं।"
-            }
+            { "id": "hi_u2_d1", "category": "conceptual", "text": "केवल स्कूल बैग में रखने वाली घड़ी हैं", "penalty_explanation": "सुपरकंप्यूटर अत्यंत विशाल और महंगे उपकरण होते हैं, ये हाथ में पहनने वाली घड़ी नहीं हैं।" },
+            { "id": "hi_u2_d2", "category": "technical", "text": "साधारण कैलकुलेटर से भी धीमे चलते हैं", "penalty_explanation": "सुपरकंप्यूटर दुनिया के सबसे तेज़ कंप्यूटर हैं जो एक सेकंड में खरबों गणनाएं करते हैं।" }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Computers are categorized by capacity and scale into Microcomputers (personal), Minicomputers (labs), Mainframes (enterprise), and Supercomputers (scientific research)[cite: 22, 23, 24].",
-        "hi": "कंप्यूटरों को क्षमता और आकार के आधार पर माइक्रोकंप्यूटर (व्यक्तिगत), मिनी कंप्यूटर (प्रयोगशालाएं), मेनफ्रेम (बड़े बैंक/संस्थान) और सुपरकंप्यूटर (वैज्ञानिक अनुसंधान) में बांटा गया है[cite: 22, 23, 24]।"
+        "en": "Computers scale across four tiers: single-user Microcomputers, multi-user Minicomputers, enterprise Mainframes, and calculation-intensive Supercomputers.",
+        "hi": "कंप्यूटर चार श्रेणियों में आते हैं: एकल माइक्रोकंप्यूटर, बहु-उपयोगकर्ता मिनीकंप्यूटर, संस्थागत मेनफ्रेम और जटिल गणनाओं वाले सुपरकंप्यूटर।"
       }
     },
     {
       "instruction": {
         "title": {
-          "en": "Microcomputer Varieties: Desktop PC, Laptop, Notebook, Palmtop, and Tablet",
-          "hi": "माइक्रोकंप्यूटर के प्रकार: डेस्कटॉप पीसी, लैपटॉप, नोटबुक, पामटॉप और टैबलेट"
+          "en": "Personal Microcomputer Form Factors",
+          "hi": "पर्सनल माइक्रोकंप्यूटर के विभिन्न रूप"
         },
         "theory": {
-          "en": "Microcomputers, commonly termed Personal Computers (PCs), are designed for single-user productivity across homes and offices[cite: 22]. They exist in various form factors[cite: 22]:\n- Desktop PC: Positioned permanently on a desk, used for general office tasks, gaming, and programming[cite: 22].\n- Laptop: A portable, lightweight personal computer with an integrated screen, keyboard, and rechargeable battery for mobile productivity[cite: 22].\n- Notebook: An ultra-compact and lighter iteration of the laptop emphasizing enhanced portability and extended battery life[cite: 22].\n- Palmtop: A handheld, battery-powered personal organizer with a small display and compact keyboard that fits in the palm[cite: 22].\n- Tablet: A thin, wireless mobile device operated via a touchscreen interface without requiring a physical keyboard[cite: 22].",
-          "hi": "माइक्रोकंप्यूटर, जिन्हें आमतौर पर पर्सनल कंप्यूटर (PC) कहा जाता है, घरों और कार्यालयों में व्यक्तिगत उपयोग के लिए बनाए गए हैं[cite: 22]। इनके प्रमुख प्रकार निम्नलिखित हैं[cite: 22]:\n- डेस्कटॉप पीसी: मेज पर स्थिर रखकर इस्तेमाल होने वाला कंप्यूटर, जो सामान्य कार्यों, प्रोग्रामिंग और गेमिंग के लिए उपयुक्त है[cite: 22]।\n- लैपटॉप: एक पोर्टेबल और हल्का कंप्यूटर जिसमें स्क्रीन, कीबोर्ड और रिचार्जेबल बैटरी एकीकृत होती है[cite: 22]।\n- नोटबुक: लैपटॉप का अधिक पतला और हल्का रूप, जो यात्रा के दौरान उच्च पोर्टेबिलिटी और लंबी बैटरी लाइफ प्रदान करता है[cite: 22]।\n- पामटॉप: हथेली में समा जाने वाला छोटा, बैटरी से चलने वाला कंप्यूटर, जिसका उपयोग पर्सनल आयोजक के रूप में होता है[cite: 22]।\n- टैबलेट: टचस्क्रीन इंटरफ़ेस से संचालित होने वाला पतला, पोर्टेबल डिवाइस जिसमें अलग भौतिक कीबोर्ड की आवश्यकता नहीं होती[cite: 22]।"
+          "en": "Microcomputers, commonly termed Personal Computers (PCs), are engineered in diverse physical form factors to meet specific mobility and computing needs. Desktop PCs remain stationary on an office or study desk, providing stable expansion and processing for general business and gaming. Laptops integrate a screen, keyboard, and rechargeable battery into a clamshell chassis for portable travel. Notebooks provide an even lighter, ultra-thin laptop footprint with extended battery runtimes. Palmtops represent handheld pocket computers with compact keyboards, while Tablets deliver ultra-portable computing via a dedicated touchscreen interface without a physical keyboard.",
+          "hi": "माइक्रोकंप्यूटर, जिन्हें सामान्यतः पर्सनल कंप्यूटर (PC) कहा जाता है, विभिन्न भौतिक आकारों में आते हैं ताकि कार्यक्षमता और पोर्टेबिलिटी की आवश्यकताओं को पूरा किया जा सके। डेस्कटॉप पीसी मेज पर रखकर चलाए जाने वाले स्थायी कंप्यूटर हैं, जो ऑफिस और गेमिंग में काम आते हैं। लैपटॉप स्क्रीन, कीबोर्ड और रिचार्जेबल बैटरी को एक साथ जोड़कर यात्रा में काम करने की सुविधा देते हैं। नोटबुक लैपटॉप से भी पतले और हल्के होते हैं जिनकी बैटरी अधिक चलती है। पामटॉप हथेली में आने वाले छोटे पॉकेट कंप्यूटर हैं, जबकि टैबलेट बिना अलग कीबोर्ड के केवल टचस्क्रीन से संचालित होने वाले पतले स्लेट कंप्यूटर हैं।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Microcomputer Form Factors &amp; Portability</text><rect x=\"45\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"92\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Desktop</text><text x=\"92\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Fixed on Desk</text><rect x=\"150\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"197\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Laptop</text><text x=\"197\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Battery / Mobile</text><rect x=\"255\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"302\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Notebook</text><text x=\"302\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Ultra-Portable</text><rect x=\"360\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"407\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Palmtop</text><text x=\"407\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Handheld Size</text><rect x=\"465\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"512\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Tablet</text><text x=\"512\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Touchscreen</text><line x1=\"92\" y1=\"130\" x2=\"92\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"197\" y1=\"130\" x2=\"197\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"302\" y1=\"130\" x2=\"302\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"407\" y1=\"130\" x2=\"407\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><line x1=\"512\" y1=\"130\" x2=\"512\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"92\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"92\" dy=\"0\">Non-Portable</tspan><tspan x=\"92\" dy=\"1.2em\">Wired Power</tspan></text><text x=\"197\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"197\" dy=\"0\">Foldable Body</tspan><tspan x=\"197\" dy=\"1.2em\">Full Keyboard</tspan></text><text x=\"302\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"302\" dy=\"0\">Slim Profile</tspan><tspan x=\"302\" dy=\"1.2em\">Extended Run</tspan></text><text x=\"407\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"407\" dy=\"0\">Palm Sized</tspan><tspan x=\"407\" dy=\"1.2em\">Pocket Organizer</tspan></text><text x=\"512\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"512\" dy=\"0\">No Physical Keys</tspan><tspan x=\"512\" dy=\"1.2em\">Direct Touch</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Microcomputer Form Factors &amp; Portability</text><rect x=\"45\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"92\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Desktop PC</text><text x=\"92\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Stationary Desk</text><rect x=\"150\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"197\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Laptop</text><text x=\"197\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Battery Clamshell</text><rect x=\"255\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"302\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Notebook</text><text x=\"302\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Ultra-Lightweight</text><rect x=\"360\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"407\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Palmtop</text><text x=\"407\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Handheld Size</text><rect x=\"465\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"512\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Tablet</text><text x=\"512\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Touch Interface</text><line x1=\"92\" y1=\"130\" x2=\"92\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"197\" y1=\"130\" x2=\"197\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"302\" y1=\"130\" x2=\"302\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"407\" y1=\"130\" x2=\"407\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><line x1=\"512\" y1=\"130\" x2=\"512\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"92\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"92\" dy=\"0\">Fixed Setup</tspan><tspan x=\"92\" dy=\"1.2em\">Wired Power</tspan></text><text x=\"197\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"197\" dy=\"0\">Foldable Bag</tspan><tspan x=\"197\" dy=\"1.2em\">Mobile Work</tspan></text><text x=\"302\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"302\" dy=\"0\">Slim Profile</tspan><tspan x=\"302\" dy=\"1.2em\">Long Battery</tspan></text><text x=\"407\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"407\" dy=\"0\">Pocket Fits</tspan><tspan x=\"407\" dy=\"1.2em\">Mini Keypad</tspan></text><text x=\"512\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"512\" dy=\"0\">Direct Tap</tspan><tspan x=\"512\" dy=\"1.2em\">No Key Unit</tspan></text></svg>",
           "caption": {
-            "en": "Classification of personal microcomputers spanning non-portable desktops to battery-powered laptops, handheld palmtops, and touchscreen tablets[cite: 22].",
-            "hi": "माइक्रोकंप्यूटरों का वर्गीकरण जो स्थिर डेस्कटॉप से लेकर पोर्टेबल लैपटॉप, पामटॉप और टचस्क्रीन टैबलेट तक के रूपों को दर्शाता है[cite: 22]।"
+            "en": "Spectrum of personal microcomputers balancing stationary processing power against portable, battery-powered form factors.",
+            "hi": "पर्सनल माइक्रोकंप्यूटर का स्पेक्ट्रम जो मेज पर रखे जाने वाले डेस्कटॉप से लेकर पोर्टेबल बैटरी चालित उपकरणों को दर्शाता है।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the balanced sentence detailing how microcomputers offer diverse form factors for personal computing.",
-          "hint": "Start with microcomputer architectures presenting diverse form factors, mention serving individual computing requirements, explain spanning stationary desktops, portable laptops, notebooks, handheld palmtops, and touch-enabled tablets, describe balancing processing power against physical mobility, and conclude with supporting flexible user workflows.",
+          "prompt": "Reconstruct the sentence explaining how portable laptop computers operate on the move.",
+          "hint": "Start with portable laptop computers, describe utilizing rechargeable internal batteries, mention travel environments, and conclude with delivering desktop-level processing on the go.",
           "target_sequence": [
-            {
-              "id": "en_u3_t1",
-              "text": "Microcomputer architectures provide specialized physical form factors",
-              "role_hint": "Tile 1: Main subject anchor"
-            },
-            {
-              "id": "en_u3_t2",
-              "text": "for individual educational, business, and personal productivity requirements",
-              "role_hint": "Tile 2: Operational context"
-            },
-            {
-              "id": "en_u3_t3",
-              "text": "and by spanning stationary desktop units, rechargeable laptops, ultra-slim notebooks, palmtop organizers, and touchscreen tablets",
-              "role_hint": "Tile 3: Method or mechanism"
-            },
-            {
-              "id": "en_u3_t4",
-              "text": "they balance local hardware performance against physical mobility and interface flexibility",
-              "role_hint": "Tile 4: Intermediate outcome"
-            },
-            {
-              "id": "en_u3_t5",
-              "text": "thereby allowing users to compute seamlessly across stationary offices and mobile travel environments",
-              "role_hint": "Tile 5: Resolving action"
-            }
+            { "id": "en_u3_t1", "text": "Portable laptop computers", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u3_t2", "text": "utilize rechargeable internal batteries", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u3_t3", "text": "during travel and mobile work", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u3_t4", "text": "to deliver full personal computing", "role_hint": "Tile 4: Direct System Outcome" }
           ],
           "distractors": [
-            {
-              "id": "en_u3_d1",
-              "category": "conceptual",
-              "text": "and by eliminating all rechargeable batteries to ensure laptops cannot function outside stationary server rooms",
-              "penalty_explanation": "Laptops and notebooks rely directly on rechargeable batteries to enable portable use away from desks."
-            },
-            {
-              "id": "en_u3_d2",
-              "category": "technical",
-              "text": "they require tablets to be connected to mechanical typewriter ribbons to process touch gestures",
-              "penalty_explanation": "Tablets utilize digital touchscreen interfaces rather than physical typewriter ribbons."
-            }
+            { "id": "en_u3_d1", "category": "conceptual", "text": "cement themselves permanently to concrete desks", "penalty_explanation": "Laptops are specifically built to be lightweight, foldable, and portable, not permanently anchored." },
+            { "id": "en_u3_d2", "category": "technical", "text": "require thirty pounds of coal fuel to run", "penalty_explanation": "Laptops run on rechargeable electronic batteries, not solid combustible fuels like coal." }
           ]
         },
         "hi": {
-          "prompt": "माइक्रोकंप्यूटर के विभिन्न रूपों और पोर्टेबिलिटी विशेषताओं को स्पष्ट करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
-          "hint": "माइक्रोकंप्यूटर संरचनाएं विभिन्न भौतिक रूप प्रदान करती हैं से शुरू करें, व्यक्तिगत उपयोग का संदर्भ दें, डेस्कटॉप, लैपटॉप, नोटबुक, पामटॉप और टैबलेट का तरीका बताएं, प्रदर्शन और पोर्टेबिलिटी में संतुलन का परिणाम दें, और विभिन्न स्थानों पर कार्य करने में सक्षम बनाने पर समाप्त करें।",
+          "prompt": "पोर्टेबल लैपटॉप के संचालन और उपयोग को दर्शाने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "पोर्टेबल लैपटॉप से शुरुआत करें, रिचार्जेबल बैटरी का उल्लेख करें, यात्रा व भ्रमण का संदर्भ दें, और संपूर्ण कंप्यूटिंग प्रदान करने पर समाप्त करें।",
           "target_sequence": [
-            {
-              "id": "hi_u3_t1",
-              "text": "माइक्रोकंप्यूटर संरचनाएं विशिष्ट भौतिक रूप प्रदान करती हैं",
-              "role_hint": "ब्लॉक 1: मुख्य विषय"
-            },
-            {
-              "id": "hi_u3_t2",
-              "text": "व्यक्तिगत, शैक्षणिक और व्यावसायिक उत्पादकता की जरूरतों के लिए",
-              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
-            },
-            {
-              "id": "hi_u3_t3",
-              "text": "और स्थिर डेस्कटॉप, रिचार्जेबल लैपटॉप, स्लिम नोटबुक, पामटॉप और टचस्क्रीन टैबलेट तक विस्तृत होकर",
-              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
-            },
-            {
-              "id": "hi_u3_t4",
-              "text": "ये हार्डवेयर प्रदर्शन को भौतिक गतिशीलता और उपयोग में आसानी के साथ संतुलित करते हैं",
-              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
-            },
-            {
-              "id": "hi_u3_t5",
-              "text": "जिससे उपयोगकर्ता कार्यालय की मेज से लेकर यात्रा के दौरान भी सुचारू रूप से कार्य कर पाते हैं",
-              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
-            }
+            { "id": "hi_u3_t1", "text": "पोर्टेबल लैपटॉप कंप्यूटर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u3_t2", "text": "रिचार्जेबल बैटरी का उपयोग करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u3_t3", "text": "यात्रा और फील्ड कार्य के दौरान", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u3_t4", "text": "डेस्कटॉप जैसी कार्यक्षमता प्रदान करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
           ],
           "distractors": [
-            {
-              "id": "hi_u3_d1",
-              "category": "conceptual",
-              "text": "और सभी रिचार्जेबल बैटरी को हटाकर ताकि लैपटॉप केवल बिजली के मुख्य बोर्ड से बंधे रहें",
-              "penalty_explanation": "लैपटॉप और नोटबुक रिचार्जेबल बैटरी का उपयोग करते हैं जिससे उन्हें यात्रा के दौरान कहीं भी चलाया जा सके।"
-            },
-            {
-              "id": "hi_u3_d2",
-              "category": "technical",
-              "text": "ये टचस्क्रीन टैबलेट को केवल पुराने मैकेनिकल टाइपराइटर रिबन से संचालित होने पर बाध्य करते हैं",
-              "penalty_explanation": "टैबलेट में टचस्क्रीन इंटरफेस होता है, इसमें किसी रिबन या भौतिक कीबोर्ड की आवश्यकता नहीं होती।"
-            }
+            { "id": "hi_u3_d1", "category": "conceptual", "text": "मेज पर सीमेंट से स्थायी रूप से चिपके रहते हैं", "penalty_explanation": "लैपटॉप को बैग में रखकर कहीं भी ले जाया जा सकता है, यह मेज पर चिपका हुआ नहीं होता।" },
+            { "id": "hi_u3_d2", "category": "technical", "text": "चलाने के लिए कोयला भट्टी की आवश्यकता होती है", "penalty_explanation": "लैपटॉप इलेक्ट्रॉनिक बैटरी से संचालित होते हैं, इनमें किसी कोयले की आवश्यकता नहीं होती।" }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Microcomputers encompass stationary Desktop PCs and mobile variations like Laptops, Notebooks, Palmtops, and touch-driven Tablets[cite: 22].",
-        "hi": "माइक्रोकंप्यूटर में स्थिर डेस्कटॉप पीसी तथा पोर्टेबल विकल्प जैसे लैपटॉप, नोटबुक, पामटॉप और टचस्क्रीन टैबलेट शामिल हैं[cite: 22]।"
+        "en": "Microcomputers vary from stationary desktop PCs to portable clamshell laptops, ultra-light notebooks, handheld palmtops, and slate tablets.",
+        "hi": "माइक्रोकंप्यूटर मेज पर रखे जाने वाले डेस्कटॉप पीसी से लेकर पोर्टेबल लैपटॉप, हल्की नोटबुक, हथेली के पामटॉप और टचस्क्रीन टैबलेट तक विस्तृत हैं।"
       }
     },
     {
       "instruction": {
         "title": {
-          "en": "System Characteristics vs. Inherent Limitations: GIGO and Zero-IQ",
-          "hi": "सिस्टम की विशेषताएं बनाम सीमाएं: GIGO सिद्धांत और शून्य आईक्यू"
+          "en": "Operational Characteristics & Inherent Constraints",
+          "hi": "कंप्यूटर की विशेषताएं और स्वाभाविक सीमाएं"
         },
         "theory": {
-          "en": "A computer system demonstrates significant operational characteristics that surpass human capabilities: extraordinary processing speed (millions of instructions per second), total accuracy, automation, vast storage capacity, diligence (working 24/7 without fatigue or boredom), and versatility across varied tasks[cite: 24]. However, it possesses fundamental limitations: zero self-intelligence (Zero IQ), inability to make independent decisions, complete dependence on user instructions, and susceptibility to the Garbage In, Garbage Out (GIGO) principle—where erroneous input inevitably produces incorrect results[cite: 24, 25].",
-          "hi": "कंप्यूटर सिस्टम में कई विशिष्ट विशेषताएं होती हैं: अत्यधिक गति (प्रति सेकंड लाखों निर्देशों की प्रोसेसिंग), पूर्ण सटीकता, स्वचालन, विशाल भंडारण क्षमता, लगन या अथक कार्यशीलता (बिना थके 24/7 निरंतर कार्य), और बहुमुखी प्रतिभा[cite: 24]। लेकिन इसकी कुछ सीमाएं भी हैं: शून्य स्व-बुद्धिमत्ता (Zero IQ), स्वतंत्र निर्णय लेने में असमर्थता, मानवीय निर्देशों पर पूर्ण निर्भरता, और GIGO (Garbage In, Garbage Out) का नियम—जिसके अनुसार गलत इनपुट देने पर परिणाम भी अनिवार्य रूप से गलत ही प्राप्त होता है[cite: 24, 25]।"
+          "en": "A computer system offers notable operational advantages: extraordinary speed calculating millions of instructions per second, 100% precision accuracy, continuous tire-free diligence (working 24x7 without fatigue), massive storage capacity, and versatile multitasking. However, it is governed by strict technical limitations. A computer has zero self-intelligence (Zero IQ), cannot think or originate creative ideas, and cannot make decisions outside programmed rules. It strictly follows the Garbage In, Garbage Out (GIGO) principle, meaning incorrect user inputs or flawed instructions will produce incorrect outputs without automated self-correction.",
+          "hi": "कंप्यूटर सिस्टम में कई अद्वितीय विशेषताएं होती हैं: लाखों निर्देशों को प्रति सेकंड हल करने वाली गति, शत-प्रतिशत सटीकता, बिना थके 24x7 काम करने की लगन (डिलिजेंस), विशाल भंडारण क्षमता और एक साथ कई काम करने की बहुमुखी प्रतिभा। लेकिन इसकी कुछ गंभीर सीमाएं भी हैं। कंप्यूटर में अपनी बुद्धि नहीं होती (Zero IQ), यह स्वतंत्र निर्णय नहीं ले सकता और न ही भावनाओं को समझता है। यह जीआईजीओ (GIGO - Garbage In, Garbage Out) सिद्धांत पर चलता है; यदि उपयोगकर्ता गलत डेटा या निर्देश देगा, तो कंप्यूटर बिना सुधारे गलत परिणाम ही उत्पन्न करेगा।"
         },
         "media": {
           "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Strengths vs. Inherent Limitations: GIGO &amp; Zero IQ</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">System Characteristics</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Speed, Accuracy, Diligence</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Inherent Limitations</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Zero IQ, GIGO, No Discretion</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">High Precision</tspan><tspan x=\"100\" dy=\"1.2em\">Flawless Math</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Tireless 24/7</tspan><tspan x=\"225\" dy=\"1.2em\">Versatile Engine</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Zero Thinking</tspan><tspan x=\"375\" dy=\"1.2em\">Zero Native IQ</tspan></text><text x=\"500\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">GIGO Rule</tspan><tspan x=\"500\" dy=\"1.2em\">Echoes Bad Input</tspan></text></svg>",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Strengths vs. Inherent System Limits (GIGO)</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Core Strengths</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Speed | Accuracy | Diligence</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">System Limits</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Zero IQ | GIGO Principle</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">High Speed</tspan><tspan x=\"100\" dy=\"1.2em\">Millions Ops/Sec</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Never Tires</tspan><tspan x=\"225\" dy=\"1.2em\">24x7 Continuity</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Cannot Think</tspan><tspan x=\"375\" dy=\"1.2em\">Needs User Code</tspan></text><text x=\"500\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Garbage In</tspan><tspan x=\"500\" dy=\"1.2em\">Garbage Out</tspan></text></svg>",
           "caption": {
-            "en": "Comparative architectural overview balancing system strengths (speed, diligence, accuracy) against structural constraints (Zero IQ, GIGO)[cite: 24, 25].",
-            "hi": "सिस्टम की शक्तियों (गति, लगन, सटीकता) और संरचनात्मक सीमाओं (शून्य आईक्यू, GIGO) का तुलनात्मक अवलोकन[cite: 24, 25]।"
+            "en": "Comparison balancing high-speed calculation, accuracy, and diligence against the GIGO rule and absence of self-intelligence.",
+            "hi": "कंप्यूटर की तीव्र गति, सटीकता और लगन की तुलना उसके शून्य आईक्यू तथा जीआईजीओ (GIGO) की स्वाभाविक सीमाओं से।"
           }
         }
       },
       "challenges": {
         "en": {
-          "prompt": "Construct the balanced sentence contrasting computer characteristics with their inherent behavioral limitations.",
-          "hint": "Start with computing systems delivering high processing capabilities, mention executing instructions across varied tasks, explain pairing extreme speed, accuracy, and diligence with the lack of native intelligence, describe reflecting erroneous input under the GIGO principle, and conclude with requiring explicit human instructions for execution.",
+          "prompt": "Reconstruct the sentence illustrating how the GIGO principle governs computer calculation accuracy.",
+          "hint": "Start with the computer system, describe processing user inputs according to GIGO, mention relying on programmed logic, and conclude with generating flawed output when fed erroneous data.",
           "target_sequence": [
-            {
-              "id": "en_u4_t1",
-              "text": "Computing machines deliver extraordinary operational capabilities",
-              "role_hint": "Tile 1: Main subject anchor"
-            },
-            {
-              "id": "en_u4_t2",
-              "text": "through exceptional calculation speed, mathematical accuracy, and tireless diligence",
-              "role_hint": "Tile 2: Operational context"
-            },
-            {
-              "id": "en_u4_t3",
-              "text": "yet by operating with zero self-intelligence and strictly obeying the Garbage In Garbage Out principle",
-              "role_hint": "Tile 3: Method or mechanism"
-            },
-            {
-              "id": "en_u4_t4",
-              "text": "they reproduce erroneous results whenever fed with incorrect data or faulty instructions",
-              "role_hint": "Tile 4: Intermediate outcome"
-            },
-            {
-              "id": "en_u4_t5",
-              "text": "thereby remaining entirely dependent on explicit human programming for logical problem resolution",
-              "role_hint": "Tile 5: Resolving action"
-            }
+            { "id": "en_u4_t1", "text": "The computer system", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u4_t2", "text": "follows the GIGO principle", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u4_t3", "text": "under programmed software instructions", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u4_t4", "text": "producing errors from incorrect inputs", "role_hint": "Tile 4: Direct System Outcome" }
           ],
           "distractors": [
-            {
-              "id": "en_u4_d1",
-              "category": "conceptual",
-              "text": "yet by automatically correcting all flawed human inputs through spontaneous emotional intuition",
-              "penalty_explanation": "Computers possess no intuition or feelings and cannot automatically correct wrong input instructions."
-            },
-            {
-              "id": "en_u4_d2",
-              "category": "technical",
-              "text": "they shut down all processors whenever asked to perform repetitive arithmetic operations",
-              "penalty_explanation": "Diligence ensures computers perform repetitive calculations continuously without stopping."
-            }
+            { "id": "en_u4_d1", "category": "conceptual", "text": "reads user human minds to fix all mistakes", "penalty_explanation": "Computers possess Zero IQ and cannot read minds or automatically correct faulty input data." },
+            { "id": "en_u4_d2", "category": "technical", "text": "refuses to calculate any numbers higher than five", "penalty_explanation": "Computers routinely calculate billions of mathematical values without numerical limits." }
           ]
         },
         "hi": {
-          "prompt": "कंप्यूटर की विशेषताओं और उसकी आंतरिक सीमाओं (GIGO व शून्य आईक्यू) के संबंध को सही क्रम में व्यवस्थित करें।",
-          "hint": "कंप्यूटर मशीनें असाधारण परिचालन क्षमताएं प्रदान करती हैं से शुरू करें, गति और लगन का संदर्भ दें, शून्य आईक्यू और GIGO सिद्धांत का तरीका बताएं, गलत इनपुट से गलत परिणाम मिलने का परिणाम दें, और मानवीय निर्देशों पर निर्भर रहने पर समाप्त करें।",
+          "prompt": "कंप्यूटर के जीआईजीओ (GIGO) सिद्धांत और कार्यप्रणाली को दर्शाने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "कंप्यूटर सिस्टम से शुरुआत करें, जीआईजीओ नियम का उल्लेख करें, प्रोग्राम किए गए निर्देशों का संदर्भ दें, और गलत इनपुट से गलत परिणाम देने पर समाप्त करें।",
           "target_sequence": [
-            {
-              "id": "hi_u4_t1",
-              "text": "कंप्यूटर मशीनें असाधारण परिचालन क्षमताएं प्रदान करती हैं",
-              "role_hint": "ब्लॉक 1: मुख्य विषय"
-            },
-            {
-              "id": "hi_u4_t2",
-              "text": "तीव्र गणना गति, पूर्ण सटीकता और अथक लगन के माध्यम से",
-              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
-            },
-            {
-              "id": "hi_u4_t3",
-              "text": "परंतु शून्य स्व-बुद्धिमत्ता के साथ कार्य करने और गारबेज इन गारबेज आउट नियम का पालन करने के कारण",
-              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
-            },
-            {
-              "id": "hi_u4_t4",
-              "text": "ये गलत डेटा या त्रुटिपूर्ण निर्देश दिए जाने पर गलत परिणाम ही उत्पन्न करते हैं",
-              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
-            },
-            {
-              "id": "hi_u4_t5",
-              "text": "जिससे तार्किक निर्णय और समस्या समाधान के लिए ये मानवीय निर्देशों पर पूरी तरह निर्भर रहते हैं",
-              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
-            }
+            { "id": "hi_u4_t1", "text": "कंप्यूटर प्रणाली", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u4_t2", "text": "जीआईजीओ सिद्धांत का पालन करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u4_t3", "text": "दिए गए निर्देशों के अनुसार", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u4_t4", "text": "गलत इनपुट पर गलत परिणाम देती है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
           ],
           "distractors": [
-            {
-              "id": "hi_u4_d1",
-              "category": "conceptual",
-              "text": "परंतु अपनी मानवीय भावनाओं और सहज ज्ञान से सभी गलत निर्देशों को अपने आप सही करके",
-              "penalty_explanation": "कंप्यूटर में कोई भावनाएं या आत्म-ज्ञान नहीं होता, वह गलत इनपुट को अपने आप सही नहीं कर सकता।"
-            },
-            {
-              "id": "hi_u4_d2",
-              "category": "technical",
-              "text": "ये दोहराव वाली गणनाएं करने का निर्देश मिलते ही तुरंत बंद हो जाते हैं",
-              "penalty_explanation": "लगन (Diligence) के कारण कंप्यूटर बिना थके लाखों बार दोहराव वाली गणनाएं निरंतर कर सकता है।"
-            }
+            { "id": "hi_u4_d1", "category": "conceptual", "text": "मनुष्य के मन की बात जानकर गलतियां सुधारती है", "penalty_explanation": "कंप्यूटर में स्वयं सोचने की क्षमता नहीं होती, यह मन की बात जानकर डेटा स्वतः ठीक नहीं कर सकता।" },
+            { "id": "hi_u4_d2", "category": "technical", "text": "पांच से बड़ी किसी भी संख्या को जोड़ने से मना करती है", "penalty_explanation": "कंप्यूटर असीमित बड़ी संख्याओं की सटीक गणना करने में पूर्णतः सक्षम है।" }
           ]
         }
       },
       "key_takeaway": {
-        "en": "Computers offer high speed, accuracy, and diligence, but have Zero IQ and follow GIGO (Garbage In, Garbage Out)[cite: 24, 25].",
-        "hi": "कंप्यूटर में उच्च गति, सटीकता और अथक लगन होती है, परंतु इसका अपना कोई दिमाग (Zero IQ) नहीं होता और यह GIGO सिद्धांत पर चलता है[cite: 24, 25]।"
-      }
-    },
-    {
-      "instruction": {
-        "title": {
-          "en": "CPU Sub-Units: Control Unit, Arithmetic Logic Unit, and Memory Unit",
-          "hi": "सीपीयू के मुख्य घटक: कंट्रोल यूनिट, अर्थमैटिक एंड लॉजिक यूनिट और मेमोरी यूनिट"
-        },
-        "theory": {
-          "en": "The Central Processing Unit (CPU) is the brain of the computer, orchestrating data processing and program execution[cite: 7]. The CPU is divided into three primary functional sub-units[cite: 7]:\n1. Memory Unit (MU / Registers): High-speed internal semiconductor storage cells that hold active instructions, data, and intermediate computation results before writing them to main memory[cite: 7].\n2. Control Unit (CU): Acts as the supervisor or traffic director; it fetches instructions from memory, decodes them, and dispatches control signals via the control bus to coordinate all hardware units[cite: 7].\n3. Arithmetic Logic Unit (ALU): The computational engine of the processor, executing all basic arithmetic calculations (addition, subtraction, multiplication, division) and logical relational comparisons (AND, OR, NOT, greater than, less than)[cite: 7].",
-          "hi": "सेंट्रल प्रोसेसिंग यूनिट (CPU) को कंप्यूटर का 'दिमाग' कहा जाता है, जो संपूर्ण डेटा प्रोसेसिंग और निष्पादन का संचालन करता है[cite: 7]। सीपीयू को तीन मुख्य कार्यात्मक इकाइयों में विभाजित किया गया है[cite: 7]:\n1. मेमोरी यूनिट (MU / रजिस्टर्स): आंतरिक उच्च गति वाले स्टोरेज सेल जो सक्रिय निर्देशों, डेटा और मध्यवर्ती गणितीय परिणामों को अस्थायी रूप से सहेज कर रखते हैं[cite: 7]।\n2. कंट्रोल यूनिट (CU): यह प्रोसेसर के केंद्रीय पर्यवेक्षक (सुपरवाइजर) के रूप में कार्य करता है; यह निर्देशों को प्राप्त करता है, उन्हें डिकोड करता है और सभी घटकों के समन्वय के लिए कंट्रोल सिग्नल भेजता है[cite: 7]।\n3. अर्थमैटिक एंड लॉजिक यूनिट (ALU): सीपीयू का मुख्य गणना इंजन, जो सभी अंकगणितीय संचालन (जोड़, घटाव, गुणा, भाग) और तार्किक तुलनाएं (AND, OR, NOT, बड़ा/छोटा/बराबर) करता है[cite: 7]।"
-        },
-        "media": {
-          "type": "svg",
-          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Internal CPU Architecture: CU, ALU &amp; Registers</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Control Unit (CU)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Supervisor &amp; Timing</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">ALU (AU + LU)</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Math &amp; Logic Ops</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Memory Unit / Regs</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Fast Storage Cells</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Decodes Signals</tspan><tspan x=\"120\" dy=\"1.2em\">Directs System Bus</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Math Calculations</tspan><tspan x=\"300\" dy=\"1.2em\">Boolean Decisions</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Intermediate Store</tspan><tspan x=\"480\" dy=\"1.2em\">Holds Active Words</tspan></text></svg>",
-          "caption": {
-            "en": "Three-part CPU architecture linking the Control Unit (supervisor), the Arithmetic Logic Unit (computational engine), and internal Registers[cite: 7].",
-            "hi": "तीन-भागों वाली सीपीयू संरचना जो कंट्रोल यूनिट (पर्यवेक्षक), अर्थमैटिक लॉजिक यूनिट (गणना इंजन) और आंतरिक रजिस्टरों को जोड़ती है[cite: 7]।"
-          }
-        }
-      },
-      "challenges": {
-        "en": {
-          "prompt": "Construct the balanced sentence detailing how the Control Unit, ALU, and Memory Unit cooperate inside the Central Processing Unit.",
-          "hint": "Start with the Central Processing Unit coordinating digital operations, mention executing instructions within computer hardware, explain combining the supervisor role of the Control Unit with the calculation power of the ALU and storage of internal registers, describe decoding commands and evaluating operations, and conclude with maintaining unified processor execution.",
-          "target_sequence": [
-            {
-              "id": "en_u5_t1",
-              "text": "The Central Processing Unit coordinates digital data operations",
-              "role_hint": "Tile 1: Main subject anchor"
-            },
-            {
-              "id": "en_u5_t2",
-              "text": "as the functional computational brain of the entire computer architecture",
-              "role_hint": "Tile 2: Operational context"
-            },
-            {
-              "id": "en_u5_t3",
-              "text": "and by combining instruction decoding in the Control Unit with arithmetic logic evaluation in the ALU and high-speed buffering in internal registers",
-              "role_hint": "Tile 3: Method or mechanism"
-            },
-            {
-              "id": "en_u5_t4",
-              "text": "it directs hardware communication signals while calculating mathematical and comparative program routines",
-              "role_hint": "Tile 4: Intermediate outcome"
-            },
-            {
-              "id": "en_u5_t5",
-              "text": "thereby driving the continuous execution of software applications without operational delay",
-              "role_hint": "Tile 5: Resolving action"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "en_u5_d1",
-              "category": "technical",
-              "text": "and by forcing the ALU to act as a mechanical paper tractor feed that deletes control signals",
-              "penalty_explanation": "The ALU performs arithmetic and logic computations; it is not a mechanical printer feed."
-            },
-            {
-              "id": "en_u5_d2",
-              "category": "conceptual",
-              "text": "it disables the Control Unit to ensure that timing signals are never dispatched across system buses",
-              "penalty_explanation": "The Control Unit actively generates and sends control timing signals to synchronize operations."
-            }
-          ]
-        },
-        "hi": {
-          "prompt": "कंट्रोल यूनिट, ALU और मेमोरी यूनिट द्वारा सीपीयू के भीतर मिलकर कार्य करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
-          "hint": "सेंट्रल प्रोसेसिंग यूनिट डिजिटल डेटा कार्यों का समन्वय करती है से शुरू करें, कंप्यूटर के दिमाग का संदर्भ दें, कंट्रोल यूनिट द्वारा डिकोडिंग, ALU द्वारा गणना और रजिस्टरों द्वारा बफरिंग का तरीका बताएं, सिग्नल भेजने और गणना करने का परिणाम दें, और अनुप्रयोगों का निष्पादन सुचारू रखने पर समाप्त करें।",
-          "target_sequence": [
-            {
-              "id": "hi_u5_t1",
-              "text": "सेंट्रल प्रोसेसिंग यूनिट डिजिटल डेटा कार्यों का समन्वय करती है",
-              "role_hint": "ब्लॉक 1: मुख्य विषय"
-            },
-            {
-              "id": "hi_u5_t2",
-              "text": "संपूर्ण कंप्यूटर संरचना के कार्यात्मक दिमाग के रूप में",
-              "role_hint": "ब्लॉक 2: परिचालन संदर्भ"
-            },
-            {
-              "id": "hi_u5_t3",
-              "text": "और कंट्रोल यूनिट द्वारा निर्देश डिकोडिंग को ALU की गणनाओं तथा आंतरिक रजिस्टरों की तीव्र स्टोरेज के साथ जोड़कर",
-              "role_hint": "ब्लॉक 3: प्रक्रिया या माध्यम"
-            },
-            {
-              "id": "hi_u5_t4",
-              "text": "यह हार्डवेयर सिग्नलों का मार्गदर्शन करती है और गणितीय तथा तार्किक प्रोग्राम रूटीन की गणना करती है",
-              "role_hint": "ब्लॉक 4: मध्यवर्ती परिणाम"
-            },
-            {
-              "id": "hi_u5_t5",
-              "text": "जिससे सभी सॉफ्टवेयर अनुप्रयोगों का निरंतर और त्रुटिरहित निष्पादन सुनिश्चित होता है",
-              "role_hint": "ब्लॉक 5: मुख्य क्रिया"
-            }
-          ],
-          "distractors": [
-            {
-              "id": "hi_u5_d1",
-              "category": "technical",
-              "text": "और ALU को प्रिंटर के पेपर फीड की तरह चलाकर सभी कंट्रोल सिग्नलों को नष्ट करके",
-              "penalty_explanation": "ALU अंकगणितीय और तार्किक गणनाएं करता है, यह प्रिंटर का हिस्सा नहीं है।"
-            },
-            {
-              "id": "hi_u5_d2",
-              "category": "conceptual",
-              "text": "यह कंट्रोल यूनिट को बंद कर देती है ताकि सिस्टम बस में कोई भी सिग्नल न जा सके",
-              "penalty_explanation": "कंट्रोल यूनिट हार्डवेयर के समन्वय के लिए लगातार कंट्रोल सिग्नल भेजती है।"
-            }
-          ]
-        }
-      },
-      "key_takeaway": {
-        "en": "The CPU consists of the Control Unit (supervising signals), the ALU (arithmetic and logic processing), and internal Registers/Memory Unit (holding active data)[cite: 7].",
-        "hi": "CPU तीन भागों से मिलकर बनता है: कंट्रोल यूनिट (सिग्नल समन्वय), ALU (गणना और तार्किक कार्य) और मेमोरी यूनिट/रजिस्टर्स (सक्रिय डेटा भंडारण)[cite: 7]।"
+        "en": "Computers deliver immense speed, accuracy, and continuous diligence, but lack independent intelligence (Zero IQ) and strictly obey the GIGO rule.",
+        "hi": "कंप्यूटर अत्यधिक गति, सटीकता और लगन प्रदान करता है, परंतु इसमें अपनी बुद्धि नहीं होती (Zero IQ) और यह जीआईजीओ (GIGO) नियम पर चलता है।"
       }
     }
   ]
