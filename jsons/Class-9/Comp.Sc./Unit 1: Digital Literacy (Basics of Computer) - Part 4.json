@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 9",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 1: Digital Literacy (Basics of Computer) - Part 4",
+      "hi": "इकाई 1: डिजिटल साक्षरता (कंप्यूटर की बुनियादी बातें) - भाग 4"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Memory Measurement Hierarchy: Bits to Petabytes",
+          "hi": "मेमोरी मापन पदानुक्रम: बिट्स से पेटाबाइट्स"
+        },
+        "theory": {
+          "en": "Computer memory stores data in binary form as electrical zeros and ones. The smallest measurement unit is a single Binary Digit, known as a Bit. A group of 4 bits forms a Nibble, while 8 bits (or 2 nibbles) form a Byte, which represents a single text character. Memory storage scales by factors of 1024 (2 to the power of 10): 1 Kilobyte (KB) equals 1024 Bytes, 1 Megabyte (MB) equals 1024 KB, 1 Gigabyte (GB) equals 1024 MB, 1 Terabyte (TB) equals 1024 GB, and 1 Petabyte (PB) equals 1024 TB.",
+          "hi": "कंप्यूटर मेमोरी सभी डेटा को 0 और 1 के बाइनरी रूप में सहेजती है। मेमोरी की सबसे छोटी मापन इकाई बाइनरी डिजिट है, जिसे बिट कहा जाता है। 4 बिट्स का समूह एक निबल कहलाता है, जबकि 8 बिट्स (या 2 निबल) मिलकर एक बाइट बनाते हैं, जो एक अक्षर को दर्शाता है। मेमोरी की बड़ी इकाइयों को 1024 (2 की घात 10) के गुणक में मापा जाता है: 1 किलोबाइट (KB) में 1024 बाइट्स, 1 मेगाबाइट (MB) में 1024 KB, 1 गीगाबाइट (GB) में 1024 MB, 1 टेराबाइट (TB) में 1024 GB, और 1 पेटाबाइट (PB) में 1024 TB होते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Memory Capacity Units Hierarchy (x1024)</text><rect x=\"45\" y=\"75\" width=\"85\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"87\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Bit / Nibble</text><text x=\"87\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">0/1 | 4 Bits</text><rect x=\"145\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"192\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Byte (8b)</text><text x=\"192\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">1 Character</text><rect x=\"255\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"302\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">KB &amp; MB</text><text x=\"302\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">1024B | 1024KB</text><rect x=\"365\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"412\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">GB &amp; TB</text><text x=\"412\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">1024MB | 1024GB</text><rect x=\"475\" y=\"75\" width=\"80\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"515\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Petabyte</text><text x=\"515\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">1024 TB</text><line x1=\"87\" y1=\"130\" x2=\"87\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"130\" x2=\"192\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"302\" y1=\"130\" x2=\"302\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"412\" y1=\"130\" x2=\"412\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><line x1=\"515\" y1=\"130\" x2=\"515\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"87\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"87\" dy=\"0\">Base Unit</tspan><tspan x=\"87\" dy=\"1.2em\">Smallest Size</tspan></text><text x=\"192\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"192\" dy=\"0\">Text Storage</tspan><tspan x=\"192\" dy=\"1.2em\">2 Nibbles</tspan></text><text x=\"302\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"302\" dy=\"0\">Files &amp; Music</tspan><tspan x=\"302\" dy=\"1.2em\">Main RAM</tspan></text><text x=\"412\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"412\" dy=\"0\">Hard Drives</tspan><tspan x=\"412\" dy=\"1.2em\">System SSD</tspan></text><text x=\"515\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"515\" dy=\"0\">Cloud Data</tspan><tspan x=\"515\" dy=\"1.2em\">Big Datacenters</tspan></text></svg>",
+          "caption": {
+            "en": "Binary memory measurement hierarchy scaling from individual bits and 8-bit bytes up to multi-terabyte storage.",
+            "hi": "बाइनरी मेमोरी मापन पदानुक्रम जो एकल बिट्स और 8-बिट बाइट्स से लेकर बड़े टेराबाइट स्टोरेज तक की वृद्धि को दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence showing how computer memory units scale from single bits to multi-gigabyte capacities.",
+          "hint": "Start with standardized memory measurement units, describe scaling by multipliers of 1024, mention expanding from bits and bytes, and conclude with measuring large file sizes.",
+          "target_sequence": [
+            { "id": "en_u13_t1", "text": "Standard memory measurement units", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u13_t2", "text": "scale by factors of 1024", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u13_t3", "text": "from binary bits and bytes", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u13_t4", "text": "to quantify digital storage capacity", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u13_d1", "category": "conceptual", "text": "shrink all storage drives to exactly zero bytes when turned on", "penalty_explanation": "Memory units represent standard mathematical capacities that do not disappear when electrical power is connected." },
+            { "id": "en_u13_d2", "category": "technical", "text": "define a single byte as containing ten thousand copper wires", "penalty_explanation": "A byte is defined mathematically as a group of exactly 8 bits or 2 nibbles." }
+          ]
+        },
+        "hi": {
+          "prompt": "मेमोरी मापन इकाइयों द्वारा डिजिटल स्टोरेज क्षमता निर्धारित करने के क्रम को व्यवस्थित करें।",
+          "hint": "मानक मेमोरी मापन इकाइयां से शुरू करें, 1024 के गुणक में बढ़ने का उल्लेख करें, बिट्स और बाइट्स का संदर्भ दें, और स्टोरेज क्षमता निर्धारित करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u13_t1", "text": "मानक मेमोरी मापन इकाइयां", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u13_t2", "text": "1024 के गुणक में बढ़कर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u13_t3", "text": "बिट्स और बाइट्स के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u13_t4", "text": "डिजिटल स्टोरेज क्षमता निर्धारित करती हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u13_d1", "category": "conceptual", "text": "कंप्यूटर चालू होते ही सारी मेमोरी को शून्य बाइट कर देती हैं", "penalty_explanation": "मेमोरी इकाइयां स्थायी गणितीय मापन मान हैं जो बिजली चालू होने पर नष्ट नहीं होतीं।" },
+            { "id": "hi_u13_d2", "category": "technical", "text": "एक बाइट को दस हजार तांबे के तारों के बराबर मानती हैं", "penalty_explanation": "एक बाइट में ठीक 8 बिट्स (या 2 निबल) होते हैं, इसका तारों की संख्या से संबंध नहीं है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Data is measured from bits (0 or 1) and nibbles (4 bits) to bytes (8 bits), scaling by factors of 1024 through KB, MB, GB, TB, and PB.",
+        "hi": "डेटा को बिट (0 या 1), निबल (4 बिट्स) और बाइट (8 बिट्स) में मापा जाता है, जो 1024 के गुणक में KB, MB, GB, TB और PB तक बढ़ता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Primary Semiconductor Memory: RAM vs. ROM Technologies",
+          "hi": "प्राथमिक सेमीकंडक्टर मेमोरी: रैम बनाम रोम तकनीकें"
+        },
+        "theory": {
+          "en": "Primary memory consists of semiconductor integrated circuits accessed directly by the CPU. Random Access Memory (RAM) is the main read-and-write workspace; it is volatile, meaning all stored data is lost immediately when power is cut. Static RAM (SRAM) uses transistor flip-flops, requires no refreshing, is very fast, and forms CPU cache memory. Dynamic RAM (DRAM) uses capacitors that leak charge, requires frequent refreshing, and forms the main system memory. Read Only Memory (ROM) is non-volatile permanent memory that retains startup BIOS instructions even when switched off. ROM types include PROM (programmable once), EPROM (erasable with ultraviolet light), and EEPROM (electrically erasable block-by-block).",
+          "hi": "प्राथमिक मेमोरी सेमीकंडक्टर चिप्स से बनी होती है जिसे सीपीयू सीधे एक्सेस करता है। रैंडम एक्सेस मेमोरी (RAM) कंप्यूटर की मुख्य रीड-एंड-राइट मेमोरी है; यह वोलेटाइल (अस्थायी) होती है, अर्थात बिजली बंद होते ही इसका सारा डेटा मिट जाता है। स्टैटिक रैम (SRAM) फ्लिप-फ्लॉप का उपयोग करती है, इसे रिफ्रेश करने की आवश्यकता नहीं होती, यह अत्यंत तेज़ होती है और कैश मेमोरी बनाती है। डायनामिक रैम (DRAM) कैपेसिटर का उपयोग करती है जिसे बार-बार रिफ्रेश करना पड़ता है और यह मुख्य सिस्टम रैम बनाती है। रीड ओनली मेमोरी (ROM) नॉन-वोलेटाइल (स्थायी) होती है जिसमें बूटस्ट्रैप BIOS कोड सुरक्षित रहता है। इसके प्रकारों में PROM (एक बार प्रोग्राम योग्य), EPROM (पराबैंगनी प्रकाश से मिटने योग्य), और EEPROM (बिजली से मिटने योग्य) शामिल हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Primary Memory: RAM (SRAM/DRAM) vs. ROM (BIOS)</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">RAM (Volatile)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Read &amp; Write Workspace</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Cache Memory</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Fast SRAM Buffer</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">ROM (Non-Volatile)</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Permanent Startup BIOS</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Lost on Power Off</tspan><tspan x=\"120\" dy=\"1.2em\">DRAM System Memory</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">CPU-RAM Bridge</tspan><tspan x=\"300\" dy=\"1.2em\">Zero Refresh</tspan></text><text x=\"480\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Permanent Code</tspan><tspan x=\"480\" dy=\"1.2em\">PROM, EPROM, EEPROM</tspan></text></svg>",
+          "caption": {
+            "en": "Primary semiconductor architecture distinguishing volatile read-write RAM and high-speed cache from permanent non-volatile ROM firmware.",
+            "hi": "प्राथमिक सेमीकंडक्टर संरचना जो वोलेटाइल रैम और तेज़ कैश मेमोरी की तुलना स्थायी नॉन-वोलेटाइल रोम से करती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how volatile RAM and non-volatile ROM coordinate primary computing tasks.",
+          "hint": "Start with primary semiconductor memory, describe combining volatile RAM and permanent ROM, mention operating under direct CPU access, and conclude with supporting system execution.",
+          "target_sequence": [
+            { "id": "en_u14_t1", "text": "Primary semiconductor memory", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u14_t2", "text": "combines volatile RAM and permanent ROM", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u14_t3", "text": "under direct CPU bus access", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u14_t4", "text": "to support active system execution", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u14_d1", "category": "conceptual", "text": "erases the permanent BIOS code every time power turns on", "penalty_explanation": "ROM is non-volatile memory; its startup BIOS instructions remain permanently intact across power cycles." },
+            { "id": "en_u14_d2", "category": "technical", "text": "replaces high-speed memory chips with slow spinning vinyl records", "penalty_explanation": "Primary memory consists of semiconductor integrated circuits, not mechanical audio vinyl records." }
+          ]
+        },
+        "hi": {
+          "prompt": "वोलेटाइल रैम और स्थायी रोम द्वारा प्राथमिक कंप्यूटिंग कार्यों के समन्वय को सही क्रम में व्यवस्थित करें।",
+          "hint": "प्राथमिक सेमीकंडक्टर मेमोरी से शुरुआत करें, वोलेटाइल रैम और स्थायी रोम के संयोजन का उल्लेख करें, सीधे सीपीयू एक्सेस का संदर्भ दें, और सिस्टम संचालन पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u14_t1", "text": "प्राथमिक सेमीकंडक्टर मेमोरी", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u14_t2", "text": "वोलेटाइल रैम और स्थायी रोम को जोड़कर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u14_t3", "text": "सीधे सीपीयू बस एक्सेस द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u14_t4", "text": "सक्रिय सिस्टम संचालन बनाए रखती है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u14_d1", "category": "conceptual", "text": "कंप्यूटर ऑन होते ही रोम में लिखा बूट कोड मिटा देती है", "penalty_explanation": "रोम एक नॉन-वोलेटाइल स्थायी मेमोरी है, इसका डेटा कभी नहीं मिटता।" },
+            { "id": "hi_u14_d2", "category": "technical", "text": "मेमोरी चिप्स हटाकर पुराने घूमने वाले विनाइल रिकॉर्ड लगाती है", "penalty_explanation": "प्राथमिक मेमोरी आधुनिक सेमीकंडक्टर सिलिकॉन चिप्स पर आधारित होती है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "RAM is volatile read-write workspace (SRAM for cache, DRAM for main memory), whereas ROM is permanent non-volatile memory holding the startup BIOS.",
+        "hi": "रैम वोलेटाइल रीड-राइट मेमोरी है (कैश के लिए SRAM, मुख्य मेमोरी के लिए DRAM), जबकि रोम स्थायी नॉन-वोलेटाइल मेमोरी है जिसमें स्टार्टअप BIOS होता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Secondary Storage Media: Magnetic, Optical & Solid-State",
+          "hi": "सेकंडरी स्टोरेज मीडिया: मैग्नेटिक, ऑप्टिकल और सॉलिड-स्टेट"
+        },
+        "theory": {
+          "en": "Secondary storage provides permanent, non-volatile, high-capacity retention for user documents, applications, and operating systems. Hard Disk Drives (HDD) use rotating magnetic platters spinning at 5400 or 7200 RPM, where read/write heads record data in circular tracks and sectors. Optical storage devices use laser beams to read microscopic pits and lands on reflective discs, including Compact Discs (CD, 700 MB), Digital Versatile Discs (DVD, 4.7 GB to 17 GB), and high-density Blu-ray Discs (BD, 25 GB to 50 GB). Solid-State Storage (SSD, Pen Drives, SD Cards) utilizes non-volatile EEPROM flash silicon; with zero moving parts, SSDs deliver much faster read/write speeds, silent operation, and high durability.",
+          "hi": "सेकंडरी स्टोरेज फाइलों, सॉफ्टवेयर और ऑपरेटिंग सिस्टम के लिए स्थायी, नॉन-वोलेटाइल और विशाल भंडारण प्रदान करता है। हार्ड डिस्क ड्राइव (HDD) 5400 या 7200 RPM पर घूमने वाले चुंबकीय प्लैटर्स का उपयोग करती है, जहाँ रीड/राइट हेड डेटा को ट्रैक्स और सेक्टर्स में रिकॉर्ड करते हैं। ऑप्टिकल डिस्क लेज़र बीम द्वारा सूक्ष्म गड्ढों (pits) और सतह (lands) को पढ़कर डेटा प्रोसेस करती हैं, जिनमें कॉम्पैक्ट डिस्क (CD, 700 MB), डिजिटल वर्सेटाइल डिस्क (DVD, 4.7 GB से 17 GB), और ब्लू-रे डिस्क (BD, 25 GB से 50 GB) शामिल हैं। सॉलिड-स्टेट स्टोरेज (SSD, पेन ड्राइव, मेमोरी कार्ड) फ्लैश मेमोरी चिप्स पर कार्य करता है; बिना किसी घूमने वाले हिस्से के ये अत्यंत तेज़, शांत और टिकाऊ होते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Secondary Media: Magnetic, Optical, &amp; Solid-State</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Magnetic (HDD)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Spinning Platters &amp; Heads</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Optical (CD/DVD/BD)</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Laser Pits &amp; Lands</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Solid-State (SSD)</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">EEPROM Flash Silicon</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Tracks &amp; Sectors</tspan><tspan x=\"120\" dy=\"1.2em\">5400/7200 RPM</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Laser Wavelength</tspan><tspan x=\"300\" dy=\"1.2em\">700MB - 50GB</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Zero Moving Parts</tspan><tspan x=\"480\" dy=\"1.2em\">High Read/Write</tspan></text></svg>",
+          "caption": {
+            "en": "Secondary storage taxonomy contrasting mechanical magnetic platters, laser optical discs, and solid-state flash memory.",
+            "hi": "सेकंडरी स्टोरेज वर्गीकरण जो यांत्रिक चुंबकीय प्लैटर्स, लेज़र ऑप्टिकल डिस्क और सॉलिड-स्टेट फ्लैश मेमोरी की तुलना करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence detailing how secondary storage devices preserve high-capacity data archives permanently.",
+          "hint": "Start with secondary storage devices, mention preserving high-capacity archives, specify across magnetic, optical, and solid-state drives, and conclude with keeping data safe when power is turned off.",
+          "target_sequence": [
+            { "id": "en_u15_t1", "text": "Secondary storage devices", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u15_t2", "text": "preserve high-capacity archives", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u15_t3", "text": "across magnetic optical and solid-state drives", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u15_t4", "text": "without losing data when powered off", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u15_d1", "category": "conceptual", "text": "burn up in flames whenever a computer file is saved", "penalty_explanation": "Secondary storage devices safely and reliably store computer files across many years." },
+            { "id": "en_u15_d2", "category": "technical", "text": "require steam engines to rotate internal solid-state chips", "penalty_explanation": "Solid-state drives use electronic semiconductor circuits with zero moving mechanical parts." }
+          ]
+        },
+        "hi": {
+          "prompt": "सेकंडरी स्टोरेज उपकरणों द्वारा दीर्घकालिक डेटा सुरक्षित रखने के क्रम को व्यवस्थित करें।",
+          "hint": "सेकंडरी स्टोरेज उपकरण से शुरुआत करें, बड़ी फाइलों को सहेजने का उल्लेख करें, मैग्नेटिक, ऑप्टिकल और सॉलिड-स्टेट ड्राइव का संदर्भ दें, और बिना बिजली के डेटा सुरक्षित रखने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u15_t1", "text": "सेकंडरी स्टोरेज उपकरण", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u15_t2", "text": "बड़ी फाइलों को सहेजकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u15_t3", "text": "मैग्नेटिक ऑप्टिकल और सॉलिड-स्टेट ड्राइव द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u15_t4", "text": "बिना बिजली के डेटा सुरक्षित रखते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u15_d1", "category": "conceptual", "text": "कोई भी फाइल सेव होते ही अपने आप जलकर खाक हो जाते हैं", "penalty_explanation": "सेकंडरी स्टोरेज उपकरण फाइलों को सुरक्षित रखने के लिए बनाए गए हैं, ये जलते नहीं हैं।" },
+            { "id": "hi_u15_d2", "category": "technical", "text": "सॉलिड-स्टेट चिप्स को घुमाने के लिए भाप के इंजन पर निर्भर रहते हैं", "penalty_explanation": "सॉलिड-स्टेट ड्राइव (SSD) में कोई घूमने वाला भाग नहीं होता, यह पूरी तरह इलेक्ट्रॉनिक चिप्स पर चलती है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Secondary storage retains data permanently: HDDs use spinning magnetic platters, optical discs (CD/DVD/BD) use laser pits, and SSDs use fast flash memory chips.",
+        "hi": "सेकंडरी स्टोरेज डेटा को स्थायी रखता है: HDD चुंबकीय प्लैटर्स का उपयोग करता है, ऑप्टिकल डिस्क लेज़र गड्ढों का उपयोग करती है और SSD तेज़ फ्लैश चिप्स पर कार्य करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Societal Integration: Education, Banking, Healthcare & E-Governance",
+          "hi": "सामाजिक एकीकरण: शिक्षा, बैंकिंग, चिकित्सा और ई-गवर्नेंस"
+        },
+        "theory": {
+          "en": "Computers form the foundation of modern infrastructure across major sectors of society. In education, computers power interactive smartboards, digital libraries, and online examination portals. In banking and finance, interconnected computer networks support Automated Teller Machines (ATMs), internet banking, and instant electronic fund transfers (NEFT, UPI). In healthcare and hospitals, computers manage 3D diagnostic scans (MRI, CT scans), ICU patient monitors, and electronic health records. In government and public administration, e-governance citizen portals automate public licensing, civic registries, and utility services, delivering high operational speed and transparency.",
+          "hi": "कंप्यूटर आधुनिक मानव समाज और वैश्विक बुनियादी ढांचे का मुख्य आधार बन चुके हैं। शिक्षा के क्षेत्र में कंप्यूटर स्मार्ट क्लासरूम, डिजिटल पुस्तकालय और ऑनलाइन परीक्षा प्रणाली संचालित करते हैं। बैंकिंग और वित्त में कंप्यूटर नेटवर्क एटीएम (ATM), नेट बैंकिंग और त्वरित फंड ट्रांसफर (NEFT, UPI) जैसी 24/7 सेवाएं प्रदान करते हैं। स्वास्थ्य सेवा और अस्पतालों में कंप्यूटर 3D डायग्नोस्टिक इमेजिंग (MRI, CT स्कैन), आईसीयू रोगी निगरानी और इलेक्ट्रॉनिक स्वास्थ्य रिकॉर्ड प्रबंधित करते हैं। सरकार और प्रशासन में ई-गवर्नेंस पोर्टल सार्वजनिक सेवाओं, लाइसेंस और नागरिक अभिलेखों को पारदर्शी और सुलभ बनाते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Societal Domains of Computer Integration</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Education</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Smartboards &amp; CAL</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Banking</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">ATMs &amp; Online UPI</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Healthcare</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">MRI, CT &amp; ICU Care</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">E-Governance</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Public Digital Portals</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">E-Learning</tspan><tspan x=\"102\" dy=\"1.2em\">Online Exams</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">24x7 Cashless</tspan><tspan x=\"232\" dy=\"1.2em\">Fast Transfer</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">3D Scanners</tspan><tspan x=\"362\" dy=\"1.2em\">Patient History</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Civic Records</tspan><tspan x=\"495\" dy=\"1.2em\">Direct Service</tspan></text></svg>",
+          "caption": {
+            "en": "Cross-sector impact of computing across education, 24/7 banking networks, healthcare diagnostics, and public e-governance.",
+            "hi": "शिक्षा, 24/7 वित्तीय बैंकिंग, चिकित्सा निदान और नागरिक प्रशासन में कंप्यूटर का बहुक्षेत्रीय प्रभाव।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence detailing how computer systems automate services across modern society.",
+          "hint": "Start with digital computer systems, describe automating critical institutional services, specify across education banking and healthcare, and conclude with improving everyday public life.",
+          "target_sequence": [
+            { "id": "en_u16_t1", "text": "Digital computer systems", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u16_t2", "text": "automate critical institutional services", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u16_t3", "text": "across education banking and healthcare", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u16_t4", "text": "to improve everyday public life", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u16_d1", "category": "conceptual", "text": "shut down all hospital scanners to force manual surgery for simple cuts", "penalty_explanation": "Computers enhance hospital care through accurate diagnostic imaging like CT and MRI scans." },
+            { "id": "en_u16_d2", "category": "technical", "text": "forbid schools from using any screens to require stone tablet carving", "penalty_explanation": "Computers facilitate modern digital learning, interactive smartboards, and online exams." }
+          ]
+        },
+        "hi": {
+          "prompt": "कंप्यूटर प्रणालियों द्वारा आधुनिक समाज में सेवाओं को स्वचालित करने के क्रम को व्यवस्थित करें।",
+          "hint": "डिजिटल कंप्यूटर प्रणालियां से शुरुआत करें, संस्थागत सेवाओं को स्वचालित करने का उल्लेख करें, शिक्षा बैंकिंग और चिकित्सा का संदर्भ दें, और जनजीवन को बेहतर बनाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u16_t1", "text": "डिजिटल कंप्यूटर प्रणालियां", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u16_t2", "text": "संस्थागत सेवाओं को स्वचालित करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u16_t3", "text": "शिक्षा बैंकिंग और चिकित्सा के क्षेत्र में", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u16_t4", "text": "दैनिक जनजीवन को बेहतर बनाती हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u16_d1", "category": "conceptual", "text": "अस्पतालों की सभी सीटी स्कैन मशीनें बंद करके साधारण चोट के लिए बड़ी सर्जरी अनिवार्य करती हैं", "penalty_explanation": "कंप्यूटर सुरक्षित डायग्नोस्टिक तकनीकें प्रदान करके चिकित्सा को सुगम बनाते हैं।" },
+            { "id": "hi_u16_d2", "category": "technical", "text": "परीक्षा में छात्रों को पत्थर की पट्टियों पर हथौड़े से उत्तर लिखने के लिए मजबूर करती हैं", "penalty_explanation": "कंप्यूटर शिक्षा में डिजिटल लर्निंग और ऑनलाइन मूल्यांकन प्रणाली को बढ़ावा देते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Computers drive modern society through smartboards in education, 24/7 ATM and online banking, MRI/CT healthcare diagnostics, and e-governance citizen portals.",
+        "hi": "कंप्यूटर शिक्षा में स्मार्टबोर्ड, 24/7 बैंकिंग और एटीएम, एमआरआई/सीटी चिकित्सा निदान और ई-गवर्नेंस नागरिक सेवाओं के माध्यम से समाज को सशक्त बनाते हैं।"
+      }
+    }
+  ]
+}
