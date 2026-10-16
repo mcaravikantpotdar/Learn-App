@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 9",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 1: Digital Literacy (Basics of Computer) - Part 2",
+      "hi": "इकाई 1: डिजिटल साक्षरता (कंप्यूटर की बुनियादी बातें) - भाग 2"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "The Five Functional Computer Operations",
+          "hi": "कंप्यूटर के पांच बुनियादी कार्य"
+        },
+        "theory": {
+          "en": "A computer system executes five fundamental operations to process programs and data: Input, Storage, Processing, Output, and Control. Input devices accept raw data and user instructions from the outside world. Memory units store active data, intermediate calculations, and final results. The processing unit executes arithmetic and logical operations to transform data into meaningful information. Output devices present human-readable results, while the control unit directs and synchronizes the sequence of all system operations.",
+          "hi": "कंप्यूटर सिस्टम किसी भी निर्देश या प्रोग्राम को चलाने के लिए पांच बुनियादी कार्य करता है: इनपुट, स्टोरेज, प्रोसेसिंग, आउटपुट और कंट्रोल। इनपुट डिवाइस उपयोगकर्ता से कच्चा डेटा और निर्देश प्राप्त करते हैं। स्टोरेज यूनिट डेटा, मध्यवर्ती गणनाओं और अंतिम परिणामों को सहेजती है। प्रोसेसिंग यूनिट उपयोगी जानकारी बनाने के लिए अंकगणितीय और तार्किक कार्य करती है। आउटपुट डिवाइस परिणाम प्रदर्शित करते हैं, तथा कंट्रोल यूनिट पूरे सिस्टम में सभी कार्यों के प्रवाह को निर्देशित और नियंत्रित करती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">The Five Core Functional Operations</text><rect x=\"45\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"92\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">1. Input</text><text x=\"92\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Ingestion</text><rect x=\"150\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"197\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">2. Store</text><text x=\"197\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Memory Retention</text><rect x=\"255\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"302\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">3. Process</text><text x=\"302\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">ALU Calculation</text><rect x=\"360\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"407\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">4. Output</text><text x=\"407\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Result Display</text><rect x=\"465\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"512\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">5. Control</text><text x=\"512\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">System Manager</text><line x1=\"92\" y1=\"130\" x2=\"92\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"197\" y1=\"130\" x2=\"197\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"302\" y1=\"130\" x2=\"302\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"407\" y1=\"130\" x2=\"407\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><line x1=\"512\" y1=\"130\" x2=\"512\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"92\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"92\" dy=\"0\">Key &amp; Mouse</tspan><tspan x=\"92\" dy=\"1.2em\">Raw Inflow</tspan></text><text x=\"197\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"197\" dy=\"0\">RAM &amp; ROM</tspan><tspan x=\"197\" dy=\"1.2em\">Hold State</tspan></text><text x=\"302\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"302\" dy=\"0\">Math &amp; Logic</tspan><tspan x=\"302\" dy=\"1.2em\">Information</tspan></text><text x=\"407\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"407\" dy=\"0\">Screen &amp; Print</tspan><tspan x=\"407\" dy=\"1.2em\">User Readable</tspan></text><text x=\"512\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"512\" dy=\"0\">Signal Timing</tspan><tspan x=\"512\" dy=\"1.2em\">Flow Control</tspan></text></svg>",
+          "caption": {
+            "en": "The five core operations coordinating input reception, storage, arithmetic processing, output delivery, and central supervisory control.",
+            "hi": "पांच बुनियादी कार्य जो इनपुट ग्रहण, स्टोरेज, अंकगणितीय प्रोसेसिंग, आउटपुट प्रदर्शन और केंद्रीय नियंत्रण का समन्वय करते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence showing how a computer system coordinates its five primary functional operations.",
+          "hint": "Start with the computer system, describe coordinating five basic operations, mention passing through input, processing, and memory units, and conclude with delivering meaningful output results.",
+          "target_sequence": [
+            { "id": "en_u5_t1", "text": "The computer system", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u5_t2", "text": "coordinates five basic operations", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u5_t3", "text": "across input processing and storage units", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u5_t4", "text": "to deliver meaningful output results", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u5_d1", "category": "conceptual", "text": "skips memory storage to display results before receiving data", "penalty_explanation": "A computer must receive input and store instructions before it can process data and display output." },
+            { "id": "en_u5_d2", "category": "technical", "text": "burns internal circuits to stop data execution", "penalty_explanation": "Computers manage operational flow using electronic control signals, not destructive circuit damage." }
+          ]
+        },
+        "hi": {
+          "prompt": "कंप्यूटर प्रणाली द्वारा अपने पांच मुख्य बुनियादी कार्यों के समन्वय को दर्शाने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "कंप्यूटर प्रणाली से शुरुआत करें, पांच कार्यों के समन्वय का उल्लेख करें, इनपुट प्रोसेसिंग और मेमोरी का संदर्भ दें, और उपयोगी आउटपुट देने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u5_t1", "text": "कंप्यूटर प्रणाली", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u5_t2", "text": "पांच बुनियादी कार्यों का समन्वय करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u5_t3", "text": "इनपुट प्रोसेसिंग और मेमोरी के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u5_t4", "text": "उपयोगी आउटपुट परिणाम प्रदान करती है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u5_d1", "category": "conceptual", "text": "इनपुट मिलने से पहले ही अंतिम परिणाम प्रदर्शित कर देती है", "penalty_explanation": "कंप्यूटर बिना इनपुट प्राप्त किए और प्रोसेस किए सीधे परिणाम नहीं दे सकता।" },
+            { "id": "hi_u5_d2", "category": "technical", "text": "डेटा रोकने के लिए अपने आंतरिक सर्किट जला देती है", "penalty_explanation": "कंप्यूटर इलेक्ट्रॉनिक कंट्रोल सिग्नल से डेटा नियंत्रित करता है, सर्किट जलाकर नहीं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Computing relies on five fundamental operations: Input for data entry, Storage for memory, Processing for calculations, Output for results, and Control for coordination.",
+        "hi": "कंप्यूटिंग पांच बुनियादी कार्यों पर आधारित है: इनपुट द्वारा डेटा ग्रहण, स्टोरेज में सुरक्षित रखना, प्रोसेसिंग में गणना, आउटपुट में परिणाम और कंट्रोल द्वारा समन्वय।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "The CPU Triad: Control Unit, ALU & Memory Registers",
+          "hi": "सीपीयू के मुख्य घटक: कंट्रोल यूनिट, एएलयू और मेमोरी रजिस्टर्स"
+        },
+        "theory": {
+          "en": "Known as the brain of the computer system, the Central Processing Unit (CPU) contains three primary interconnected sub-units that execute instructions. The Control Unit (CU) acts as the central supervisor, fetching instructions from main memory into the Instruction Register, decoding them, and issuing control signals. The Arithmetic Logic Unit (ALU) serves as the primary execution engine, split into an Arithmetic Unit for mathematical operations (addition, subtraction, multiplication, division) and a Logic Unit for comparisons (greater than, less than, equal to, AND, OR, NOT). The Memory Unit (MU) consists of internal high-speed registers that temporarily hold active data, instructions, and intermediate results.",
+          "hi": "कंप्यूटर सिस्टम का दिमाग कहलाने वाले सेंट्रल प्रोसेसिंग यूनिट (CPU) के तीन प्रमुख आंतरिक घटक होते हैं जो निर्देशों को निष्पादित करते हैं। कंट्रोल यूनिट (CU) केंद्रीय पर्यवेक्षक की तरह कार्य करता है, जो मुख्य मेमोरी से निर्देश लाता है, उन्हें डिकोड करता है और सिस्टम बस पर कंट्रोल सिग्नल भेजता है। अर्थमैटिक लॉजिक यूनिट (ALU) गणना का मुख्य इंजन है, जिसमें गणितीय गणनाओं (जोड़, घटाव, गुणा, भाग) के लिए अर्थमैटिक यूनिट और तार्किक तुलनाओं के लिए लॉजिक यूनिट होती है। मेमोरी यूनिट (MU) उच्च-गति वाले आंतरिक रजिस्टरों का सेट है जो सक्रिय डेटा और मध्यवर्ती परिणामों को अस्थायी रूप से सहेजता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Central Processing Unit (CPU) Architecture</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Control Unit (CU)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Supervisor &amp; Decoder</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Arithmetic Logic (ALU)</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Math &amp; Logic Operations</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Registers (MU)</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">High-Speed Temp Storage</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Fetches Code</tspan><tspan x=\"120\" dy=\"1.2em\">Directs Timing</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">AU (+ - * /)</tspan><tspan x=\"300\" dy=\"1.2em\">LU (&gt; &lt; = AND)</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Bytes Capacity</tspan><tspan x=\"480\" dy=\"1.2em\">Fast Buffer</tspan></text></svg>",
+          "caption": {
+            "en": "Internal CPU architecture detailing the operational triad of the Control Unit, Arithmetic Logic Unit, and internal Register memory.",
+            "hi": "आंतरिक सीपीयू संरचना जो कंट्रोल यूनिट, अर्थमैटिक लॉजिक यूनिट और आंतरिक रजिस्टर मेमोरी के त्रिकोण को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how the Central Processing Unit executes program instructions.",
+          "hint": "Identify the Central Processing Unit, mention coordinating internal sub-units, specify control and arithmetic logic circuits, and conclude with executing program instructions.",
+          "target_sequence": [
+            { "id": "en_u6_t1", "text": "The Central Processing Unit", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u6_t2", "text": "coordinates internal sub-units", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u6_t3", "text": "through control and arithmetic logic circuits", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u6_t4", "text": "to execute program instructions", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u6_d1", "category": "conceptual", "text": "sends all raw mathematical calculations to the printer to solve", "penalty_explanation": "The printer is an output device that prints text; mathematical operations are executed by the CPU's ALU." },
+            { "id": "en_u6_d2", "category": "technical", "text": "deletes its internal registers whenever an addition is performed", "penalty_explanation": "Registers store active numbers and intermediate answers during arithmetic operations rather than deleting them." }
+          ]
+        },
+        "hi": {
+          "prompt": "सेंट्रल प्रोसेसिंग यूनिट (CPU) द्वारा प्रोग्राम निर्देशों को निष्पादित करने के क्रम को व्यवस्थित करें।",
+          "hint": "सेंट्रल प्रोसेसिंग यूनिट से शुरू करें, आंतरिक घटकों के समन्वय का उल्लेख करें, कंट्रोल और अर्थमैटिक लॉजिक परिपथों का संदर्भ दें, और प्रोग्राम निर्देश निष्पादित करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u6_t1", "text": "सेंट्रल प्रोसेसिंग यूनिट", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u6_t2", "text": "आंतरिक घटकों का समन्वय करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u6_t3", "text": "कंट्रोल और अर्थमैटिक लॉजिक परिपथों द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u6_t4", "text": "प्रोग्राम निर्देशों को निष्पादित करती है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u6_d1", "category": "conceptual", "text": "गणित के सभी सवाल हल करने के लिए प्रिंटर को भेज देती है", "penalty_explanation": "प्रिंटर केवल कागज़ पर आउटपुट छापता है, गणनाएं सीपीयू का ALU करता है।" },
+            { "id": "hi_u6_d2", "category": "technical", "text": "कोई भी जोड़ करते ही अपने आंतरिक रजिस्टरों को मिटा देती है", "penalty_explanation": "रजिस्टर गणना के दौरान मानों को सुरक्षित रखते हैं ताकि परिणाम प्राप्त हो सके।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The CPU functions as the computer's brain, using the Control Unit to direct operations, the ALU to perform calculations and comparisons, and Registers to hold immediate data.",
+        "hi": "सीपीयू कंप्यूटर का दिमाग है, जो कार्यों के प्रबंधन हेतु कंट्रोल यूनिट, गणनाओं हेतु ALU, और तात्कालिक डेटा सहेजने हेतु रजिस्टरों का उपयोग करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "System Bus Architecture: Control, Data & Address Lines",
+          "hi": "सिस्टम बस संरचना: कंट्रोल, डेटा और एड्रेस लाइन्स"
+        },
+        "theory": {
+          "en": "A System Bus is a collection of parallel electronic wires that transmits signals and binary data between the CPU, primary memory, and peripheral components. The bus architecture is organized into three distinct pathways: the Control Bus, the Data Bus, and the Address Bus. The Control Bus carries command and timing signals (such as Memory Read or Write) issued by the Control Unit. The Data Bus is bidirectional, moving actual data bytes back and forth between the processor, memory chips, and input/output interfaces. The Address Bus is unidirectional, carrying specific memory location addresses generated solely by the CPU to identify where data must be retrieved or stored.",
+          "hi": "सिस्टम बस समानांतर इलेक्ट्रॉनिक तारों का एक समूह है जो सीपीयू, प्राथमिक मेमोरी और पेरीफेरल उपकरणों के बीच सिग्नल और बाइनरी डेटा पहुंचाता है। यह संरचना तीन अलग-अलग मार्गों में बंटी होती है: कंट्रोल बस, डेटा बस और एड्रेस बस। कंट्रोल बस कंट्रोल यूनिट द्वारा भेजे गए कमांड और टाइमिंग सिग्नल (जैसे मेमोरी रीड या राइट) ले जाती है। डेटा बस द्विदिशीय (bidirectional) होती है, जो प्रोसेसर, मेमोरी और इनपुट/आउटपुट उपकरणों के बीच वास्तविक डेटा ले जाती है। एड्रेस बस एकदिशीय (unidirectional) होती है, जो सीपीयू द्वारा उत्पन्न विशिष्ट मेमोरी एड्रेस ले जाती है ताकि डेटा का सही स्थान पहचाना जा सके।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Tripartite System Bus Architecture</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Control Bus</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Timing &amp; Commands</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Bus</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Bidirectional Bytes</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Address Bus</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Unidirectional Locators</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Read / Write</tspan><tspan x=\"120\" dy=\"1.2em\">CU Signals</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">CPU &harr; RAM</tspan><tspan x=\"300\" dy=\"1.2em\">Two-Way Travel</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">CPU &rarr; Memory</tspan><tspan x=\"480\" dy=\"1.2em\">One-Way Path</tspan></text></svg>",
+          "caption": {
+            "en": "System bus pathways distinguishing timing command signals on the Control Bus, bidirectional bytes on the Data Bus, and unidirectional addresses on the Address Bus.",
+            "hi": "सिस्टम बस मार्ग जो कंट्रोल बस पर कमांड सिग्नल, डेटा बस पर द्विदिशीय डेटा, और एड्रेस बस पर एकदिशीय मेमोरी पते दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence detailing how the system bus transmits signals between processor components.",
+          "hint": "Start with the system bus architecture, state that it transfers signals and bytes, describe traveling across control, data, and address lines, and conclude with connecting processor components.",
+          "target_sequence": [
+            { "id": "en_u7_t1", "text": "The system bus architecture", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u7_t2", "text": "transfers signals and bytes", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u7_t3", "text": "across dedicated control data and address lines", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u7_t4", "text": "to connect processor components", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u7_d1", "category": "conceptual", "text": "carries gasoline fuel to power internal computer chips", "penalty_explanation": "Buses are electronic copper signal pathways carrying electrical voltages, not liquid combustible fuels." },
+            { "id": "en_u7_d2", "category": "technical", "text": "forces all memory addresses to travel backward through the mouse", "penalty_explanation": "The address bus is driven by the CPU to locate memory cells; memory addresses do not route through pointing mice." }
+          ]
+        },
+        "hi": {
+          "prompt": "सिस्टम बस द्वारा कंप्यूटर घटकों के बीच डेटा और सिग्नल पहुंचाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "सिस्टम बस संरचना से शुरुआत करें, सिग्नलों और डेटा ले जाने का उल्लेख करें, कंट्रोल, डेटा और एड्रेस लाइनों का संदर्भ दें, और घटकों तक पहुंचाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u7_t1", "text": "सिस्टम बस संरचना", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u7_t2", "text": "सिग्नलों और डेटा को", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u7_t3", "text": "कंट्रोल डेटा और एड्रेस लाइनों के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u7_t4", "text": "सभी कंप्यूटर घटकों तक पहुंचाती है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u7_d1", "category": "conceptual", "text": "चिप्स को बिजली देने के लिए पेट्रोल का परिवहन करती है", "penalty_explanation": "सिस्टम बस धातु के तारों से बनी इलेक्ट्रॉनिक लाइन है, यह पेट्रोल नहीं ले जाती।" },
+            { "id": "hi_u7_d2", "category": "technical", "text": "सभी मेमोरी पतों को माउस के रास्ते उल्टा भेज देती है", "penalty_explanation": "एड्रेस बस सीपीयू से सीधे मेमोरी की ओर एकदिशीय रूप से पते ले जाती है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The system bus links CPU, memory, and devices using three specialized lines: Control for timing commands, Data (bidirectional) for information, and Address (unidirectional) for memory targets.",
+        "hi": "सिस्टम बस तीन लाइनों से सीपीयू और मेमोरी को जोड़ती है: कंट्रोल बस (कमांड हेतु), डेटा बस (द्विदिशीय डेटा हेतु), और एड्रेस बस (एकदिशीय पतों हेतु)।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Execution Memory Flow: Disk to RAM to CPU Registers",
+          "hi": "निष्पादन मेमोरी प्रवाह: डिस्क से रैम और सीपीयू रजिस्टर्स"
+        },
+        "theory": {
+          "en": "Computer program execution follows a multi-tier memory staging pipeline. Programs and data stored permanently on secondary storage devices, such as hard disk drives or solid-state drives, cannot be executed directly by the CPU. When a user launches an application, the operating system copies the necessary program code from secondary storage into volatile primary memory (RAM). The Central Processing Unit then fetches individual instructions from RAM into its internal high-speed registers, decodes and processes them via the Arithmetic Logic Unit under Control Unit supervision, and sends final results to memory or display devices.",
+          "hi": "कंप्यूटर में किसी भी प्रोग्राम का निष्पादन एक बहु-स्तरीय मेमोरी पाइपलाइन के माध्यम से होता है। हार्ड डिस्क या सॉलिड-स्टेट ड्राइव जैसे सेकेंडरी स्टोरेज में सहेजे गए प्रोग्राम सीधे सीपीयू द्वारा नहीं चलाए जा सकते। जब उपयोगकर्ता कोई प्रोग्राम शुरू करता है, तो ऑपरेटिंग सिस्टम जरूरी फाइलों को सेकेंडरी स्टोरेज से निकालकर प्राथमिक मेमोरी (रैम) में लोड करता है। इसके बाद सीपीयू रैम से निर्देशों को अपने आंतरिक उच्च-गति रजिस्टरों में लाता है, कंट्रोल यूनिट की देखरेख में ALU द्वारा उन्हें प्रोसेस करता है, और परिणाम मेमोरी या स्क्रीन पर भेजता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Program Execution Memory Staging Pipeline</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Secondary Storage</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Hard Disk / SSD</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Primary Memory</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Volatile RAM Workspace</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">CPU Registers</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">ALU Instruction Fetch</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Non-Volatile</tspan><tspan x=\"120\" dy=\"1.2em\">Program Files</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">OS Load Stage</tspan><tspan x=\"300\" dy=\"1.2em\">Active Memory</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Internal Buffer</tspan><tspan x=\"480\" dy=\"1.2em\">Fast Execution</tspan></text></svg>",
+          "caption": {
+            "en": "Three-tier execution pathway showing software staging from non-volatile disk storage into RAM before instruction fetching by CPU registers.",
+            "hi": "तीन-स्तरीय निष्पादन प्रक्रिया जो स्थायी डिस्क स्टोरेज से प्राथमिक रैम में प्रोग्राम लोड होने और सीपीयू रजिस्टरों द्वारा निष्पादित होने को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence showing how the operating system stages application software for CPU execution.",
+          "hint": "Start with the operating system, describe staging application programs, specify moving from secondary storage into primary RAM, and conclude with fast CPU register execution.",
+          "target_sequence": [
+            { "id": "en_u8_t1", "text": "The operating system", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u8_t2", "text": "stages application programs", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u8_t3", "text": "from secondary storage into primary RAM", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u8_t4", "text": "for fast CPU register execution", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u8_d1", "category": "conceptual", "text": "permanently erases the hard drive before loading any program into memory", "penalty_explanation": "The operating system reads program files from secondary storage without erasing the drive contents." },
+            { "id": "en_u8_d2", "category": "technical", "text": "runs application software directly from disconnected plastic disc boxes", "penalty_explanation": "Software must be read from connected storage drives into RAM to be processed by the CPU." }
+          ]
+        },
+        "hi": {
+          "prompt": "ऑपरेटिंग सिस्टम द्वारा प्रोग्रामों को मेमोरी में लाकर सीपीयू में निष्पादित कराने के क्रम को व्यवस्थित करें।",
+          "hint": "ऑपरेटिंग सिस्टम से शुरुआत करें, प्रोग्रामों को लाने का उल्लेख करें, सेकेंडरी स्टोरेज से प्राथमिक रैम का संदर्भ दें, और सीपीयू रजिस्टरों में निष्पादन पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u8_t1", "text": "ऑपरेटिंग सिस्टम", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u8_t2", "text": "एप्लिकेशन प्रोग्रामों को", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u8_t3", "text": "सेकंडरी स्टोरेज से प्राथमिक रैम में लाकर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u8_t4", "text": "सीपीयू रजिस्टरों में निष्पादित कराता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u8_d1", "category": "conceptual", "text": "रैम में लोड करने से पहले हार्ड डिस्क का सारा डेटा हमेशा के लिए मिटा देता है", "penalty_explanation": "ऑपरेटिंग सिस्टम केवल फाइलों को पढ़कर कॉपी करता है, हार्ड डिस्क को मिटाता नहीं है।" },
+            { "id": "hi_u8_d2", "category": "technical", "text": "बिना कनेक्ट किए प्लास्टिक डिस्क के खाली डिब्बे से सीधे प्रोग्राम चलाता है", "penalty_explanation": "प्रोग्राम चलाने के लिए डेटा का ड्राइव से रैम में आना अनिवार्य है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Programs stored permanently on secondary storage must first load into primary RAM so the CPU can fetch and execute instructions through internal registers.",
+        "hi": "सेकेंडरी स्टोरेज में सहेजे गए प्रोग्राम पहले प्राथमिक रैम में लोड होते हैं, जिसके बाद सीपीयू उन्हें आंतरिक रजिस्टरों के माध्यम से निष्पादित करता है।"
+      }
+    }
+  ]
+}
