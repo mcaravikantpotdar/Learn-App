@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 9",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 1: Digital Literacy (Basics of Computer) - Part 3",
+      "hi": "इकाई 1: डिजिटल साक्षरता (कंप्यूटर की बुनियादी बातें) - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Primary Text & Pointing Input: Keyboard & Mouse Mechanics",
+          "hi": "प्राथमिक टेक्स्ट और पॉइंटिंग इनपुट: कीबोर्ड और माउस"
+        },
+        "theory": {
+          "en": "Input devices allow users to enter raw data and instructions into a computer system. The keyboard is the primary text entry device, featuring a standard 104-key layout divided into five functional clusters: Alphabetical keys (A-Z), Numeric keys (0-9) with a 17-key keypad, Function keys (F1-F12), Special or Multimedia keys (Ctrl, Alt, Shift, Enter), and Navigation arrow keys. The mouse is the primary handheld pointing device used to manipulate the on-screen cursor, select icons, and trigger commands using three physical controls: left button (click to select, double-click to open), right button (context menu), and scroll wheel (canvas navigation).",
+          "hi": "इनपुट डिवाइस उपयोगकर्ता को कंप्यूटर में कच्चा डेटा और निर्देश दर्ज करने की अनुमति देते हैं। कीबोर्ड प्राथमिक टेक्स्ट इनपुट डिवाइस है, जिसमें 104 कुंजियों का मानक लेआउट होता है जो पांच मुख्य समूहों में बंटा होता है: अक्षर कुंजियां (A-Z), संख्यात्मक कुंजियां (0-9) व 17-कुंजी कीपैड, फंक्शन कुंजियां (F1-F12), विशेष या मल्टीमीडिया कुंजियां (Ctrl, Alt, Shift, Enter), और दिशासूचक तीर कुंजियां। माउस प्राथमिक पॉइंटिंग डिवाइस है जिसका उपयोग स्क्रीन पर कर्सर चलाने, विकल्प चुनने और कमांड देने के लिए किया जाता है; इसमें तीन नियंत्रण होते हैं: बायां बटन (क्लिक और डबल-क्लिक), दायां बटन (शॉर्टकट मेन्यू), और स्क्रॉल व्हील (पेज ऊपर-नीचे करना)।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Primary Input: 104-Key Layout &amp; Pointing Controls</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">104-Key Keyboard</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Alpha | Num | Func | Special | Nav</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Handheld Mouse</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Left Click | Right Click | Scroll Wheel</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Text Entry</tspan><tspan x=\"100\" dy=\"1.2em\">Letters &amp; Codes</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">F1 to F12</tspan><tspan x=\"225\" dy=\"1.2em\">App Functions</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Left Select</tspan><tspan x=\"375\" dy=\"1.2em\">Double Tap Run</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Right Menu</tspan><tspan x=\"500\" dy=\"1.2em\">Wheel Scrolling</tspan></text></svg>",
+          "caption": {
+            "en": "Functional architecture of primary input hardware contrasting the 104-key typing array with three-button pointing mouse mechanics.",
+            "hi": "प्राथमिक इनपुट हार्डवेयर की संरचना जो 104-कुंजी कीबोर्ड लेआउट और तीन-बटन वाले माउस नियंत्रण को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence showing how keyboard and mouse input devices send user data to the computer.",
+          "hint": "Start with standard input hardware, mention generating electrical signals, specify through keypresses and mouse clicks, and conclude with sending instructions to the processor.",
+          "target_sequence": [
+            { "id": "en_u9_t1", "text": "Standard input hardware", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u9_t2", "text": "generates electronic signals", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u9_t3", "text": "through keypresses and mouse clicks", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u9_t4", "text": "to deliver instructions to the processor", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u9_d1", "category": "conceptual", "text": "prints physical paper hard copies whenever a letter is pressed", "penalty_explanation": "Keyboards send electronic input signals to the CPU; printing paper copies is an output action performed by printers." },
+            { "id": "en_u9_d2", "category": "technical", "text": "disconnects all system memory to display blank screens", "penalty_explanation": "Input devices deliver user commands to the CPU and active memory rather than disconnecting system storage." }
+          ]
+        },
+        "hi": {
+          "prompt": "कीबोर्ड और माउस द्वारा कंप्यूटर को निर्देश भेजने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "मानक इनपुट उपकरण से शुरू करें, इलेक्ट्रॉनिक सिग्नल बनाने का उल्लेख करें, कीबोर्ड और माउस क्लिक के माध्यम का संदर्भ दें, और प्रोसेसर तक निर्देश पहुंचाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u9_t1", "text": "मानक इनपुट उपकरण", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u9_t2", "text": "इलेक्ट्रॉनिक सिग्नल उत्पन्न करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u9_t3", "text": "कीबोर्ड टाइपिंग और माउस क्लिक द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u9_t4", "text": "प्रोसेसर तक उपयोगकर्ता निर्देश पहुंचाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u9_d1", "category": "conceptual", "text": "कोई भी बटन दबाते ही कागज़ पर स्याही से प्रिंट निकालने लगते हैं", "penalty_explanation": "कीबोर्ड केवल इनपुट सिग्नल भेजता है, कागज़ पर प्रिंट निकालने का कार्य प्रिंटर का होता है।" },
+            { "id": "hi_u9_d2", "category": "technical", "text": "स्क्रीन बंद करने के लिए सारी मेमोरी को तुरंत नष्ट कर देते हैं", "penalty_explanation": "इनपुट उपकरण प्रोसेसर को चलाने के लिए डेटा भेजते हैं, मेमोरी नष्ट नहीं करते।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The 104-key keyboard enters text across five key clusters, while the mouse provides pointing, clicking, shortcut menus, and wheel scrolling.",
+        "hi": "104-कुंजी कीबोर्ड पांच समूहों द्वारा टेक्स्ट इनपुट करता है, जबकि माउस कर्सर चलाने, क्लिक करने, शॉर्टकट मेन्यू खोलने और स्क्रॉल करने की सुविधा देता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Specialized Optical & Credential Capture (OCR, MICR, Barcode)",
+          "hi": "विशिष्ट ऑप्टिकल और क्रेडेंशियल कैप्चर (OCR, MICR, बारकोड)"
+        },
+        "theory": {
+          "en": "Beyond basic typing, dedicated data ingestion devices automate document capture and record processing. Optical Character Recognition (OCR) systems scan printed or handwritten text and translate character shapes into editable computer text code. Magnetic Ink Character Readers (MICR) use magnetic sensing to read bank codes and cheque account numbers printed with special iron-oxide ink, enabling rapid cheque clearance. Barcode Readers project optical light across alternating dark and light parallel lines of varying widths, decoding reflected light into numeric product identifiers for retail billing and warehouse stock management.",
+          "hi": "सामान्य टाइपिंग के अलावा, विशेष डेटा कैप्चर उपकरण दस्तावेज़ों और रिकॉर्ड्स को स्वचालित रूप से पढ़ने का कार्य करते हैं। ऑप्टिकल कैरेक्टर रिकॉग्निशन (OCR) मुद्रित या हस्तलिखित टेक्स्ट को स्कैन करके अक्षरों के आकार को संपादन योग्य डिजिटल टेक्स्ट कोड में बदलता है। मैग्नेटिक इंक कैरेक्टर रीडर (MICR) चुंबकीय सेंसर द्वारा बैंक कोड और चेक नंबरों को पढ़ता है जो आयरन-ऑक्साइड युक्त चुंबकीय स्याही से छपे होते हैं, जिससे बैंकों में चेक क्लीयरेंस तेज़ होती है। बारकोड रीडर विभिन्न मोटाई की समानांतर काली रेखाओं पर प्रकाश डालकर परावर्तित प्रकाश को उत्पाद कोड में बदलता है, जिससे दुकानों में बिलिंग और इन्वेंट्री का प्रबंधन तीव्र होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Specialized Optical &amp; Magnetic Recognition</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">OCR System</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Printed Text &rarr; Editable</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">MICR Reader</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Iron Oxide Bank Ink</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Barcode Scanner</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Reflected Light Lines</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Text Shapes</tspan><tspan x=\"120\" dy=\"1.2em\">Book Scanning</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Magnetic Sensor</tspan><tspan x=\"300\" dy=\"1.2em\">Cheque Clearance</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Stock Codes</tspan><tspan x=\"480\" dy=\"1.2em\">Retail Billing</tspan></text></svg>",
+          "caption": {
+            "en": "Specialized data capture peripherals contrasting OCR character recognition, MICR magnetic ink cheque reading, and optical barcode scanning.",
+            "hi": "विशिष्ट डेटा कैप्चर उपकरण जो OCR टेक्स्ट पहचान, MICR चुंबकीय चेक वाचन और ऑप्टिकल बारकोड स्कैनिंग की तुलना दर्शाते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how bank MICR devices read and verify cheques.",
+          "hint": "Start with banking MICR readers, mention detecting magnetic iron-oxide ink, specify reading cheque numbers, and conclude with speeding up cheque clearance.",
+          "target_sequence": [
+            { "id": "en_u10_t1", "text": "Banking MICR readers", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u10_t2", "text": "detect magnetic ink particles", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u10_t3", "text": "across printed cheque identification lines", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u10_t4", "text": "to accelerate bank clearance processing", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u10_d1", "category": "conceptual", "text": "shred the cheque paper into tiny pieces to prevent verification", "penalty_explanation": "MICR devices are non-destructive readers that scan magnetic ink lines without harming cheques." },
+            { "id": "en_u10_d2", "category": "technical", "text": "project video movies onto classroom wall screens", "penalty_explanation": "MICR readers are banking data-entry sensors, not visual video projectors." }
+          ]
+        },
+        "hi": {
+          "prompt": "बैंकिंग में MICR उपकरण द्वारा चेक पढ़ने की कार्यप्रणाली को दर्शाने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "बैंकिंग MICR रीडर से शुरुआत करें, चुंबकीय स्याही पहचानने का उल्लेख करें, चेक पर छपे नंबरों का संदर्भ दें, और चेक क्लीयरेंस तेज़ करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u10_t1", "text": "बैंकिंग MICR रीडर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u10_t2", "text": "चुंबकीय स्याही के कणों को पहचानकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u10_t3", "text": "चेक पर छपे नंबरों को पढ़कर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u10_t4", "text": "चेक क्लीयरेंस को तीव्र बनाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u10_d1", "category": "conceptual", "text": "चेक को फाड़कर नष्ट कर देते हैं ताकि कोई बैंक न जा सके", "penalty_explanation": "MICR रीडर चेक को सुरक्षित रखकर केवल उस पर छपे कोड को पढ़ते हैं।" },
+            { "id": "hi_u10_d2", "category": "technical", "text": "दीवार पर फिल्म प्रोजेक्ट करने के लिए लाइट फेंकते हैं", "penalty_explanation": "MICR चुंबकीय सेंसर हैं जो चेक पढ़ते हैं, ये वीडियो प्रोजेक्टर नहीं हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "OCR digitizes printed characters into editable text, MICR reads magnetic ink on bank cheques, and barcode scanners decode optical line patterns for retail tracking.",
+        "hi": "OCR मुद्रित अक्षरों को संपादन योग्य टेक्स्ट में बदलता है, MICR चेक पर चुंबकीय स्याही पढ़ता है, और बारकोड स्कैनर उत्पाद कोड पहचानते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Visual Softcopy Displays: CRT Vacuum Tubes vs. Flat Panels",
+          "hi": "विजुअल सॉफ्टकॉपी डिस्प्ले: सीआरटी वैक्यूम ट्यूब बनाम फ्लैट पैनल"
+        },
+        "theory": {
+          "en": "The monitor, or Visual Display Unit (VDU), is the primary softcopy visual output device of a computer system. Screen dimensions are measured diagonally in inches (such as 15\", 17\", 19\", and 21\"). Images on screen are constructed from thousands of tiny individual picture elements called pixels; higher pixel density delivers sharper screen resolution and image clarity. Traditional Cathode-Ray Tube (CRT) monitors relied on glass vacuum tubes and electron guns firing beams onto a phosphor screen, resulting in heavy, bulky units with high electrical consumption and high heat dissipation. Modern Flat-Panel Displays (LCD, LED, and Plasma) provide slim, lightweight, compact designs with low power usage that can be easily mounted on walls and integrated into laptops.",
+          "hi": "मॉनिटर या विजुअल डिस्प्ले यूनिट (VDU) कंप्यूटर का प्राथमिक सॉफ्टकॉपी आउटपुट डिवाइस है। स्क्रीन का आकार विकर्ण रूप से (diagonally) इंच में मापा जाता है (जैसे 15\", 17\", 19\", 21\")। स्क्रीन की छवि हजारों सूक्ष्म रंगीन बिंदुओं से मिलकर बनती है जिन्हें पिक्सल (pixels) कहा जाता है; पिक्सल जितने घने होंगे, स्क्रीन का रिज़ॉल्यूशन और स्पष्टता उतनी ही बेहतर होगी। पुराने कैथोड-रे ट्यूब (CRT) मॉनिटर वैक्यूम ट्यूब और इलेक्ट्रॉन गन पर आधारित थे, जो बहुत भारी थे और अत्यधिक बिजली व गर्मी खर्च करते थे। आधुनिक फ्लैट-पैनल मॉनिटर (LCD, LED, प्लाज्मा) पतले, हल्के और ऊर्जा-कुशल होते हैं, जिन्हें आसानी से दीवार पर लगाया जा सकता है और लैपटॉप में उपयोग किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Visual Display Technologies: CRT vs. Flat-Panel</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">CRT Vacuum Tube</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Electron Gun | Heavy | High Wattage</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Flat-Panel (LCD / LED)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Slim Profile | Low Energy | Compact</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Phosphor Glass</tspan><tspan x=\"100\" dy=\"1.2em\">Deep Depth</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Heat Generation</tspan><tspan x=\"225\" dy=\"1.2em\">Desktop Only</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Liquid Crystals</tspan><tspan x=\"375\" dy=\"1.2em\">Dense Pixels</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Wall Mountable</tspan><tspan x=\"500\" dy=\"1.2em\">Laptops &amp; PCs</tspan></text></svg>",
+          "caption": {
+            "en": "Structural evolution of computer monitors contrasting deep, power-heavy CRT vacuum tube displays with modern lightweight LCD and LED flat panels.",
+            "hi": "कंप्यूटर मॉनिटर का तकनीकी विकास जो भारी सीआरटी वैक्यूम ट्यूब और आधुनिक पतले, ऊर्जा-कुशल LCD/LED फ्लैट पैनल के अंतर को दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence comparing modern flat-panel monitors with bulky CRT displays.",
+          "hint": "Start with modern flat-panel monitors, describe using compact LCD and LED screens, mention consuming minimal electrical power, and conclude with replacing heavy CRT displays.",
+          "target_sequence": [
+            { "id": "en_u11_t1", "text": "Modern flat-panel monitors", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u11_t2", "text": "use compact LCD screens", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u11_t3", "text": "with minimal electrical power consumption", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u11_t4", "text": "to replace heavy CRT displays", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u11_d1", "category": "conceptual", "text": "print thirty physical carbon copies on fanfold paper", "penalty_explanation": "Monitors produce temporary electronic softcopy displays on screens, not printed carbon copies on paper." },
+            { "id": "en_u11_d2", "category": "technical", "text": "draw ten thousand watts of power through lead pipes", "penalty_explanation": "Flat-panel monitors are energy-efficient devices that consume low electrical power." }
+          ]
+        },
+        "hi": {
+          "prompt": "आधुनिक फ्लैट-पैनल मॉनिटर द्वारा पुराने सीआरटी मॉनिटर को प्रतिस्थापित करने के क्रम को व्यवस्थित करें।",
+          "hint": "आधुनिक फ्लैट-पैनल मॉनिटर से शुरू करें, पतली स्क्रीन के उपयोग का उल्लेख करें, कम बिजली खपत का संदर्भ दें, और भारी सीआरटी की जगह लेने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u11_t1", "text": "आधुनिक फ्लैट-पैनल मॉनिटर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u11_t2", "text": "पतली एलसीडी स्क्रीन का उपयोग करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u11_t3", "text": "अति-कम बिजली की खपत के साथ", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u11_t4", "text": "भारी सीआरटी मॉनिटरों को प्रतिस्थापित करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u11_d1", "category": "conceptual", "text": "कागज़ पर कार्बन कॉपी प्रिंट करके बाहर निकाल देते हैं", "penalty_explanation": "मॉनिटर केवल स्क्रीन पर सॉफ्टकॉपी दिखाते हैं, कागज़ पर प्रिंट निकालने का काम प्रिंटर करता है।" },
+            { "id": "hi_u11_d2", "category": "technical", "text": "हजारों लीटर पानी पीकर भाप से स्क्रीन चलाते हैं", "penalty_explanation": "मॉनिटर इलेक्ट्रॉनिक स्क्रीन हैं जो बिजली से चलती हैं, भाप से नहीं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Monitors provide temporary softcopy output measured diagonally in inches and composed of pixels; modern LCD and LED flat panels have superseded heavy, power-hungry CRT displays.",
+        "hi": "मॉनिटर पिक्सल से बना सॉफ्टकॉपी आउटपुट देते हैं जिसे इंच में मापा जाता है; पतले और ऊर्जा-कुशल LCD/LED पैनलों ने भारी CRT मॉनिटरों की जगह ले ली है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Hardcopy Print Technologies: Impact vs. Non-Impact",
+          "hi": "हार्डकॉपी प्रिंट तकनीक: इम्पैक्ट बनाम नॉन-इम्पैक्ट"
+        },
+        "theory": {
+          "en": "Printers create permanent physical records on paper, known as hardcopy output. Print clarity is evaluated in Dots Per Inch (DPI), while printing speed is measured in Characters Per Second (CPS), Lines Per Minute (LPM), or Pages Per Minute (PPM). Printers are divided into two fundamental families: Impact and Non-Impact. Impact printers, such as Dot Matrix printers, form characters by mechanically striking wire pins against an inked fabric ribbon onto paper; they are noisy and slow but can generate multi-part carbon copies at very low cost. Non-Impact printers create text and graphics without physical striking: Inkjet printers spray microscopic liquid ink droplets for vibrant color graphics, while Laser printers use electrostatic drums and heated fuser rollers to melt dry powdered toner into paper at high speeds.",
+          "hi": "प्रिंटर कागज़ पर स्थायी भौतिक रिकॉर्ड बनाते हैं, जिसे हार्डकॉपी आउटपुट कहा जाता है। प्रिंट गुणवत्ता को डॉट्स प्रति इंच (DPI) में मापा जाता है, जबकि मुद्रण गति को कैरेक्टर प्रति सेकंड (CPS), लाइन प्रति मिनट (LPM), या पृष्ठ प्रति मिनट (PPM) में मापा जाता है। प्रिंटर दो मुख्य श्रेणियों में विभाजित हैं: इम्पैक्ट और नॉन-इम्पैक्ट। इम्पैक्ट प्रिंटर, जैसे डॉट मैट्रिक्स प्रिंटर, स्याही वाले रिबन पर धातु की पिनों से प्रहार करके अक्षर बनाते हैं; ये धीमे और शोर करने वाले होते हैं परंतु सस्ती कार्बन कॉपियां निकालने में सक्षम हैं। नॉन-इम्पैक्ट प्रिंटर बिना किसी यांत्रिक चोट के प्रिंट करते हैं: इंकजेट प्रिंटर रंगीन फोटो के लिए तरल स्याही की नन्हीं बूंदें छिड़कते हैं, जबकि लेज़र प्रिंटर इलेक्ट्रोस्टैटिक ड्रम और गर्म फ्यूज़र रोलर्स से सूखे टोनर पाउडर को कागज़ पर पिघलाकर अत्यंत तेज़ गति से प्रिंट करते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Printer Technologies: Dot Matrix, Inkjet, Laser</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Dot Matrix (Impact)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Pins Strike Ribbon</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Inkjet (Non-Impact)</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Liquid Droplet Spray</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Laser (Non-Impact)</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Toner &amp; Drum Fusion</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Carbon Copies</tspan><tspan x=\"120\" dy=\"1.2em\">CPS Speed | Noisy</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Color Photos</tspan><tspan x=\"300\" dy=\"1.2em\">Cartridge Cost</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">High-Speed PPM</tspan><tspan x=\"480\" dy=\"1.2em\">Low Page Cost</tspan></text></svg>",
+          "caption": {
+            "en": "Printer taxonomy contrasting ribbon-striking impact Dot Matrix printers with non-contact liquid Inkjets and dry-toner Laser engines.",
+            "hi": "प्रिंटर तकनीक वर्गीकरण जो रिबन पर चोट करने वाले डॉट मैट्रिक्स प्रिंटर की तुलना संपर्क-रहित इंकजेट और लेज़र प्रिंटर से करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence detailing how laser page printers produce crisp physical documents.",
+          "hint": "Start with laser page printers, describe fusing dry toner powder, specify using electrostatic drums and heat rollers, and conclude with delivering fast high-resolution hardcopy pages.",
+          "target_sequence": [
+            { "id": "en_u12_t1", "text": "Laser page printers", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u12_t2", "text": "fuse dry toner powder", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u12_t3", "text": "across electrostatic drums and heated rollers", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u12_t4", "text": "to deliver fast high-resolution pages", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u12_d1", "category": "conceptual", "text": "smash heavy mechanical hammers into cloth ribbons twenty times per second", "penalty_explanation": "Laser printers are non-impact page printers that fuse dry toner; mechanical striking is used by impact dot matrix printers." },
+            { "id": "en_u12_d2", "category": "technical", "text": "dissolve all paper sheets into water to stop permanent printing", "penalty_explanation": "Printers are designed to produce permanent, dry hardcopy records on paper sheets." }
+          ]
+        },
+        "hi": {
+          "prompt": "लेज़र प्रिंटर द्वारा उच्च गुणवत्ता वाले स्थायी दस्तावेज़ प्रिंट करने के क्रम को व्यवस्थित करें।",
+          "hint": "लेज़र पेज प्रिंटर से शुरुआत करें, सूखा टोनर पाउडर पिघलाने का उल्लेख करें, इलेक्ट्रोस्टैटिक ड्रम और गर्म रोलर्स का संदर्भ दें, और तीव्र गति से स्पष्ट पेज देने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u12_t1", "text": "लेज़र पेज प्रिंटर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u12_t2", "text": "सूखे टोनर पाउडर को पिघलाकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u12_t3", "text": "इलेक्ट्रोस्टैटिक ड्रम और गर्म रोलर्स के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u12_t4", "text": "तीव्र गति से स्पष्ट पृष्ठ प्रदान करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u12_d1", "category": "conceptual", "text": "कपड़े के रिबन पर लोहे के हथौड़ों से लगातार चोट करते हैं", "penalty_explanation": "लेज़र प्रिंटर संपर्क-रहित तकनीक से प्रिंट करते हैं, रिबन पर चोट डॉट मैट्रिक्स प्रिंटर करता है।" },
+            { "id": "hi_u12_d2", "category": "technical", "text": "कागज़ को पानी में घोलकर नष्ट करने के लिए बाध्य करते हैं", "penalty_explanation": "प्रिंटर का प्राथमिक उद्देश्य कागज़ पर टिकाऊ और स्थायी रिकॉर्ड तैयार करना होता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Printers provide permanent hardcopy evaluated by DPI and PPM; Impact Dot Matrix uses pins on ribbon for carbon copies, while Non-Impact Inkjet sprays liquid and Laser fuses powdered toner.",
+        "hi": "प्रिंटर DPI और PPM पर आंके जाने वाले स्थायी हार्डकॉपी आउटपुट देते हैं; डॉट मैट्रिक्स रिबन पर चोट करता है, जबकि इंकजेट स्याही छिड़कता है और लेज़र टोनर पाउडर को पिघलाता है।"
+      }
+    }
+  ]
+}
