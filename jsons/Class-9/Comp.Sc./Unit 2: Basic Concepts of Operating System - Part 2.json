@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 9",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 2: Basic Concepts of Operating System - Part 2",
+      "hi": "इकाई 2: ऑपरेटिंग सिस्टम की बुनियादी अवधारणाएं - भाग 2"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "The Desktop Workspace & Core System Icons",
+          "hi": "डेस्कटॉप कार्यक्षेत्र और मुख्य सिस्टम आइकन"
+        },
+        "theory": {
+          "en": "The Desktop is the primary screen area where your work is laid out after Windows starts up. Right-clicking any empty space on the desktop opens a pop-up menu to customize its appearance. Small graphical pictures called icons act like buttons representing files, folders, and programs, which open when double-clicked. Core system icons include My Computer (accessing hard drives and storage media), Network (viewing network settings), User's Files (storing personal documents, downloads, pictures, and music), and Shortcut icons marked with a small arrow in the lower-left corner.",
+          "hi": "कंप्यूटर चालू होने पर स्क्रीन पर दिखाई देने वाला पहला कार्यक्षेत्र डेस्कटॉप कहलाता है। डेस्कटॉप के किसी भी खाली स्थान पर राइट-क्लिक करने से इसके रूप को बदलने के लिए एक पॉप-अप मेन्यू खुलता है। स्क्रीन पर दिखने वाले छोटे चित्रों को आइकन कहते हैं, जो फाइलों, फोल्डरों और प्रोग्रामों को दर्शाते हैं और डबल-क्लिक करने पर खुलते हैं। मुख्य सिस्टम आइकन में माय कंप्यूटर (हार्ड ड्राइव और स्टोरेज तक पहुंच), नेटवर्क (नेटवर्क सेटिंग्स), यूजर फाइल्स (दस्तावेज़, डाउनलोड और चित्र सहेजने हेतु), तथा निचले बाएं कोने में तीर के निशान वाले शॉर्टकट आइकन शामिल हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Windows Desktop Workspace &amp; Core System Icons</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">My Computer</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Drives &amp; Storage</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Network Icon</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Connection Setup</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">User's Files</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Personal Folders</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Shortcut Icons</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Corner Arrow Link</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Local Disks</tspan><tspan x=\"102\" dy=\"1.2em\">Hardware Access</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">LAN &amp; Wi-Fi</tspan><tspan x=\"232\" dy=\"1.2em\">Shared Devices</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Docs &amp; Downloads</tspan><tspan x=\"362\" dy=\"1.2em\">Music &amp; Pictures</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Quick Pointer</tspan><tspan x=\"495\" dy=\"1.2em\">Double-Click Open</tspan></text></svg>",
+          "caption": {
+            "en": "Primary Windows desktop icons distinguishing system storage drives, network settings, personal user libraries, and shortcut pointers.",
+            "hi": "विंडोज डेस्कटॉप के मुख्य आइकन जो सिस्टम ड्राइव, नेटवर्क सेटिंग्स, व्यक्तिगत फोल्डर और शॉर्टकट लिंक को दर्शाते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how desktop icons allow users to open system drives and programs.",
+          "hint": "Start with graphical desktop icons, describe acting as clickable buttons, mention across the primary screen workspace, and conclude with opening drives files and programs.",
+          "target_sequence": [
+            { "id": "en_u5_t1", "text": "Graphical desktop icons", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u5_t2", "text": "act as interactive buttons", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u5_t3", "text": "across the main screen workspace", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u5_t4", "text": "to open drives files and programs", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u5_d1", "category": "conceptual", "text": "permanently lock all hard drives from user access", "penalty_explanation": "Icons like My Computer specifically provide quick graphical access to hard drives, folders, and programs." },
+            { "id": "en_u5_d2", "category": "technical", "text": "indicate physical printer paper jams with corner arrows", "penalty_explanation": "A small arrow in the lower-left corner of an icon indicates a program or file shortcut link, not a printer error." }
+          ]
+        },
+        "hi": {
+          "prompt": "डेस्कटॉप आइकन द्वारा सिस्टम ड्राइव और प्रोग्राम खोलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "ग्राफिकल डेस्कटॉप आइकन से शुरुआत करें, बटन की तरह कार्य करने का उल्लेख करें, मुख्य स्क्रीन कार्यक्षेत्र का संदर्भ दें, और ड्राइव व प्रोग्राम खोलने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u5_t1", "text": "ग्राफिकल डेस्कटॉप आइकन", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u5_t2", "text": "इंटरैक्टिव बटन की तरह कार्य करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u5_t3", "text": "मुख्य स्क्रीन कार्यक्षेत्र पर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u5_t4", "text": "ड्राइव फाइलें और प्रोग्राम खोलते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u5_d1", "category": "conceptual", "text": "सभी हार्ड ड्राइव को उपयोगकर्ता के लिए स्थायी रूप से लॉक कर देते हैं", "penalty_explanation": "माय कंप्यूटर जैसे आइकन कंप्यूटर की सभी ड्राइव और फोल्डरों तक आसान पहुंच प्रदान करते हैं।" },
+            { "id": "hi_u5_d2", "category": "technical", "text": "कोने में तीर के निशान से प्रिंटर में कागज़ फंसने की चेतावनी देते हैं", "penalty_explanation": "आइकन के निचले बाएं कोने में बना तीर यह दर्शाता है कि वह एक शॉर्टकट आइकन है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The Desktop is the initial work screen where double-clicking icons opens My Computer drives, Network settings, User's Files, or arrow-marked Shortcuts.",
+        "hi": "डेस्कटॉप कंप्यूटर की प्रारंभिक स्क्रीन है जहाँ आइकन पर डबल-क्लिक करके माय कंप्यूटर ड्राइव, नेटवर्क, यूजर फाइल्स या तीर वाले शॉर्टकट खोले जाते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Recycle Bin & File Restoration Mechanics",
+          "hi": "रीसायकल बिन और फाइल पुनर्स्थापना प्रक्रिया"
+        },
+        "theory": {
+          "en": "When you delete a file or folder from its original location in Windows, it is not permanently erased immediately; instead, it is moved to a temporary holding folder called the Recycle Bin. If you delete an item by mistake, you can open the Recycle Bin, select the file or folder, and click Restore this item to return it safely to its original location. To erase files permanently and free disk space, you must delete them from inside the Recycle Bin or select Empty the Recycle Bin.",
+          "hi": "जब आप विंडोज में किसी फाइल या फोल्डर को उसके स्थान से डिलीट करते हैं, तो वह तुरंत स्थायी रूप से नहीं मिटती, बल्कि अस्थायी रूप से रीसायकल बिन (Recycle Bin) में चली जाती है। यदि कोई फाइल गलती से डिलीट हो जाए, तो आप रीसायकल बिन खोलकर उस फाइल को चुन सकते हैं और रिस्टोर (Restore) विकल्प दबाकर उसे वापस उसके मूल स्थान पर ला सकते हैं। फाइलों को कंप्यूटर से स्थायी रूप से हटाने के लिए उन्हें रीसायकल बिन से भी डिलीट करना या रीसायकल बिन को खाली (Empty) करना आवश्यक होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Recycle Bin: Temporary Holding vs. Permanent Delete</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Active Folder</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Press Delete Key</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Recycle Bin</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Temporary Safety Net</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Empty Bin</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Permanent Erasure</text><line x1=\"195\" y1=\"96\" x2=\"225\" y2=\"96\" stroke=\"#fbbf24\" stroke-width=\"2\"/><polygon points=\"225,96 217,92 217,100\" fill=\"#fbbf24\"/><line x1=\"225\" y1=\"112\" x2=\"195\" y2=\"112\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"195,112 203,108 203,116\" fill=\"#4ade80\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#f87171\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#f87171\"/><text x=\"120\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Restore Item</tspan><tspan x=\"120\" dy=\"1.2em\">Returns to Origin</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Recoverable Files</tspan><tspan x=\"300\" dy=\"1.2em\">Mistake Protection</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Second Delete</tspan><tspan x=\"480\" dy=\"1.2em\">Frees Disk Space</tspan></text></svg>",
+          "caption": {
+            "en": "File deletion lifecycle showing temporary storage inside the Recycle Bin, restoration to original folders, or permanent removal.",
+            "hi": "फाइल डिलीट चक्र जो रीसायकल बिन में अस्थायी भंडारण, मूल स्थान पर पुनर्स्थापना और स्थायी रूप से मिटाने की प्रक्रिया दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how the Recycle Bin protects deleted files from accidental permanent loss.",
+          "hint": "Start with the Windows Recycle Bin, describe holding deleted files temporarily, mention until restored or emptied, and conclude with protecting against accidental data loss.",
+          "target_sequence": [
+            { "id": "en_u6_t1", "text": "The Windows Recycle Bin", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u6_t2", "text": "holds deleted files temporarily", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u6_t3", "text": "until restored or emptied by users", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u6_t4", "text": "to prevent accidental data loss", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u6_d1", "category": "conceptual", "text": "emails all deleted documents automatically to public websites", "penalty_explanation": "The Recycle Bin is a local storage folder on your computer; it does not upload or email deleted files." },
+            { "id": "en_u6_d2", "category": "technical", "text": "makes file recovery impossible once the Delete key is pressed", "penalty_explanation": "Standard deletion moves items to the Recycle Bin where they can be easily recovered using the Restore command." }
+          ]
+        },
+        "hi": {
+          "prompt": "रीसायकल बिन द्वारा डिलीट की गई फाइलों को सुरक्षित रखने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "विंडोज रीसायकल बिन से शुरुआत करें, डिलीट फाइलों को अस्थायी रूप से रखने का उल्लेख करें, रिस्टोर या खाली करने तक का संदर्भ दें, और डेटा हानि रोकने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u6_t1", "text": "विंडोज रीसायकल बिन", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u6_t2", "text": "डिलीट फाइलों को अस्थायी रूप से रखकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u6_t3", "text": "रिस्टोर या खाली किए जाने तक", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u6_t4", "text": "गलती से होने वाली डेटा हानि रोकता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u6_d1", "category": "conceptual", "text": "सभी डिलीट फाइलों को इंटरनेट पर सार्वजनिक रूप से भेज देता है", "penalty_explanation": "रीसायकल बिन कंप्यूटर का स्थानीय फोल्डर है जो फाइलों को केवल आपके कंप्यूटर में सहेजता है।" },
+            { "id": "hi_u6_d2", "category": "technical", "text": "डिलीट कुंजी दबाते ही फाइलों की वापसी को असंभव बना देता है", "penalty_explanation": "रीसायकल बिन से रिस्टोर विकल्प द्वारा डिलीट फाइलों को आसानी से वापस लाया जा सकता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Deleted files move temporarily to the Recycle Bin where they can be restored to their original folders; permanent removal requires deleting them from the Recycle Bin.",
+        "hi": "डिलीट की गई फाइलें अस्थायी रूप से रीसायकल बिन में जाती हैं जहाँ से उन्हें रिस्टोर किया जा सकता है; स्थायी रूप से हटाने के लिए रीसायकल बिन खाली करना होता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Taskbar Anatomy & Notification Area",
+          "hi": "टास्कबार की संरचना और नोटिफिकेशन एरिया"
+        },
+        "theory": {
+          "en": "The Taskbar is the long horizontal bar located at the bottom of the Windows desktop screen. It is organized into three main functional sections: the Start button and Quick Launch icons on the far left for opening menus and programs; the middle section displaying buttons for all currently open applications and windows; and the Notification Area (System Tray) on the far right displaying system sound, network connection, clock, date, and background program icons. A narrow Show Desktop rectangle next to the clock minimizes all open windows with one click.",
+          "hi": "टास्कबार विंडोज डेस्कटॉप स्क्रीन के सबसे निचले भाग में स्थित एक लंबी क्षैतिज पट्टी है। यह तीन मुख्य भागों में बंटी होती है: बाईं ओर स्टार्ट बटन और क्विक लॉन्च आइकन जो मेन्यू व प्रोग्राम खोलते हैं; बीच का भाग जो वर्तमान में खुले हुए सभी प्रोग्रामों और विंडोज के बटन दिखाता है; और दाईं ओर नोटिफिकेशन एरिया (सिस्टम ट्रे) जो ध्वनि, नेटवर्क, घड़ी, दिनांक और प्रोग्रामों की स्थिति दर्शाता है। घड़ी के ठीक दाईं ओर एक पतला शो डेस्कटॉप (Show Desktop) बटन होता है जो सभी खुली विंडोज को मिनिमाइज कर देता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Windows Taskbar Sections &amp; System Tray</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Left: Start Button</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Menu &amp; Quick Launch</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Middle: Active Apps</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Open Window Buttons</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Right: System Tray</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Sound, Net, Clock, Peek</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#fbbf24\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Program Launcher</tspan><tspan x=\"120\" dy=\"1.2em\">Pinned Shortcuts</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Task Switching</tspan><tspan x=\"300\" dy=\"1.2em\">Running Windows</tspan></text><text x=\"480\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Status Alerts</tspan><tspan x=\"480\" dy=\"1.2em\">Show Desktop Edge</tspan></text></svg>",
+          "caption": {
+            "en": "Horizontal Windows Taskbar layout mapping the left Start launcher, middle active program tabs, and right notification system tray.",
+            "hi": "विंडोज टास्कबार की क्षैतिज संरचना जो बाएं स्टार्ट बटन, मध्य सक्रिय विंडो और दाएं नोटिफिकेशन सिस्टम ट्रे को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence detailing the three functional sections of the Windows Taskbar.",
+          "hint": "Start with the horizontal desktop taskbar, describe organizing the Start button active windows and system tray, mention along the bottom screen edge, and conclude with simplifying program switching and system monitoring.",
+          "target_sequence": [
+            { "id": "en_u7_t1", "text": "The horizontal desktop taskbar", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u7_t2", "text": "organizes Start menu open windows and system tray icons", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u7_t3", "text": "along the bottom screen edge", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u7_t4", "text": "to simplify program switching and status checks", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u7_d1", "category": "conceptual", "text": "stores physical paper sheets inside the monitor bezel", "penalty_explanation": "The taskbar is a digital graphical bar on screen, not a physical storage compartment." },
+            { "id": "en_u7_d2", "category": "technical", "text": "closes all running software whenever the Start button is clicked", "penalty_explanation": "Clicking the Start button opens the Start menu to launch applications rather than terminating open programs." }
+          ]
+        },
+        "hi": {
+          "prompt": "विंडोज टास्कबार के तीनों भागों और उनके कार्य को दर्शाने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "क्षैतिज डेस्कटॉप टास्कबार से शुरुआत करें, स्टार्ट मेन्यू सक्रिय विंडो और सिस्टम ट्रे का उल्लेख करें, स्क्रीन के निचले हिस्से का संदर्भ दें, और प्रोग्राम बदलने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u7_t1", "text": "क्षैतिज डेस्कटॉप टास्कबार", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u7_t2", "text": "स्टार्ट मेन्यू खुले प्रोग्राम और सिस्टम ट्रे को व्यवस्थित करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u7_t3", "text": "स्क्रीन के निचले हिस्से में", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u7_t4", "text": "प्रोग्राम संचालन और स्थिति जांच आसान बनाता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u7_d1", "category": "conceptual", "text": "मॉनिटर के भीतर भौतिक कागज़ सुरक्षित रखता है", "penalty_explanation": "टास्कबार स्क्रीन पर दिखाई देने वाली डिजिटल नियंत्रण पट्टी है, कागज़ रखने की जगह नहीं।" },
+            { "id": "hi_u7_d2", "category": "technical", "text": "स्टार्ट बटन दबाते ही कंप्यूटर के सभी प्रोग्राम बंद कर देता है", "penalty_explanation": "स्टार्ट बटन दबाने से स्टार्ट मेन्यू खुलता है जिससे नए प्रोग्राम चलाए जा सकते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The bottom Taskbar comprises the Start button (left), active application buttons (middle), and the Notification Area with sound, network, clock, and Show Desktop (right).",
+        "hi": "स्क्रीन के नीचे स्थित टास्कबार में बाईं ओर स्टार्ट बटन, बीच में खुले हुए प्रोग्राम, और दाईं ओर घड़ी, नेटवर्क व शो डेस्कटॉप वाला नोटिफिकेशन एरिया होता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Launching Applications (Win+R Run) & Date/Time Settings",
+          "hi": "एप्लिकेशन चलाना (Win+R Run) और दिनांक/समय सेटिंग्स"
+        },
+        "theory": {
+          "en": "Applications can be launched via the Start Menu (All Programs) or directly through the Run dialog box using the keyboard shortcut Win+R, where typing an executable name or path opens the program immediately. To adjust the system clock, right-click the Date/Time display in the taskbar notification area, select Adjust Date/Time, click Change date and time, enter the updated values, and confirm changes.",
+          "hi": "किसी एप्लिकेशन को स्टार्ट मेन्यू (All Programs) या कीबोर्ड शॉर्टकट Win+R से खुलने वाले रन (Run) डायलॉग बॉक्स में प्रोग्राम का नाम या पाथ टाइप करके सीधे चलाया जा सकता है। कंप्यूटर की घड़ी और तारीख बदलने के लिए टास्कबार के दाएं कोने में दिनांक/समय पर राइट-क्लिक करें, Adjust Date/Time चुनें, Change date and time बटन दबाकर नया समय और तारीख दर्ज करें और परिवर्तनों को सहेजें।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Direct App Launch (Win+R) &amp; System Clock Setup</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Run Dialog (Win + R)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Type App Name &rarr; Press OK</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">System Date &amp; Time</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Taskbar Clock &rarr; Adjust</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Start Menu</tspan><tspan x=\"100\" dy=\"1.2em\">All Programs</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Direct Path</tspan><tspan x=\"225\" dy=\"1.2em\">Fast Execution</tspan></text><text x=\"375\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Right-Click Tray</tspan><tspan x=\"375\" dy=\"1.2em\">Adjust Dialog</tspan></text><text x=\"500\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Change Settings</tspan><tspan x=\"500\" dy=\"1.2em\">Time Zone Sync</tspan></text></svg>",
+          "caption": {
+            "en": "System workflows for launching applications directly via the Win+R Run command and configuring system clock settings from the taskbar.",
+            "hi": "सिस्टम कार्यप्रणाली जो Win+R रन कमांड से सीधे प्रोग्राम चलाने और टास्कबार घड़ी से सिस्टम दिनांक व समय बदलने की विधि दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how the Run dialog launches software applications directly.",
+          "hint": "Start with the Windows Run command, describe accepting program names or file paths, mention via the Win+R keyboard shortcut, and conclude with opening applications directly.",
+          "target_sequence": [
+            { "id": "en_u8_t1", "text": "The Windows Run command", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u8_t2", "text": "accepts program names or paths", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u8_t3", "text": "via the Win+R keyboard shortcut", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u8_t4", "text": "to launch applications directly", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u8_d1", "category": "conceptual", "text": "changes the physical room temperature using keyboard keys", "penalty_explanation": "The Win+R Run dialog launches computer programs and files; it does not control physical room air conditioning." },
+            { "id": "en_u8_d2", "category": "technical", "text": "requires unplugging the monitor before adjusting system time", "penalty_explanation": "System date and time are updated directly through the taskbar clock dialog while viewing the monitor." }
+          ]
+        },
+        "hi": {
+          "prompt": "रन (Run) कमांड द्वारा सीधे एप्लिकेशन खोलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "विंडोज रन कमांड से शुरुआत करें, प्रोग्राम का नाम या पाथ लेने का उल्लेख करें, Win+R कीबोर्ड शॉर्टकट का संदर्भ दें, और एप्लिकेशन खोलने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u8_t1", "text": "विंडोज रन कमांड", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u8_t2", "text": "प्रोग्राम का नाम या पाथ लेकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u8_t3", "text": "Win+R कीबोर्ड शॉर्टकट द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u8_t4", "text": "सीधे एप्लिकेशन प्रोग्राम खोलता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u8_d1", "category": "conceptual", "text": "कीबोर्ड बटन दबाने से कमरे का तापमान बदलने लगता है", "penalty_explanation": "रन कमांड का उपयोग कंप्यूटर के प्रोग्राम और दस्तावेज़ सीधे खोलने के लिए किया जाता है।" },
+            { "id": "hi_u8_d2", "category": "technical", "text": "घड़ी का समय बदलने के लिए मॉनिटर का तार निकालना अनिवार्य करता है", "penalty_explanation": "दिनांक और समय टास्कबार की घड़ी पर राइट-क्लिक करके सीधे स्क्रीन पर बदले जाते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Programs can be launched via Start Menu or the Win+R Run dialog, while system clock and calendar settings are modified through the taskbar Notification Area.",
+        "hi": "प्रोग्राम को स्टार्ट मेन्यू या Win+R रन बॉक्स से सीधे चलाया जा सकता है, जबकि दिनांक और समय को टास्कबार के नोटिफिकेशन एरिया से बदला जाता है।"
+      }
+    }
+  ]
+}
