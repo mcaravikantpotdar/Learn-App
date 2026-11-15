@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 9",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 2: Basic Concepts of Operating System - Part 1",
+      "hi": "इकाई 2: ऑपरेटिंग सिस्टम की बुनियादी अवधारणाएं - भाग 1"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "MS Windows & Graphical User Interface (GUI)",
+          "hi": "एमएस विंडोज और ग्राफिकल यूजर इंटरफेस (GUI)"
+        },
+        "theory": {
+          "en": "Microsoft Windows is a multitasking operating system that connects users to the computer through a Graphical User Interface (GUI). Unlike older text-based interfaces, a GUI allows people to interact visually using windows, icons, menus, and buttons. Users rely heavily on pointing devices like a mouse alongside a keyboard to enter data and control programs.",
+          "hi": "माइक्रोसॉफ्ट विंडोज एक मल्टीटास्किंग ऑपरेटिंग सिस्टम है जो ग्राफिकल यूजर इंटरफेस (GUI) के माध्यम से उपयोगकर्ता को कंप्यूटर से जोड़ता है। पुराने टेक्स्ट-आधारित इंटरफेस के विपरीत, GUI उपयोगकर्ताओं को विंडो, आइकन, मेन्यू और बटनों का उपयोग करके कंप्यूटर से संवाद करने में मदद करता है। डेटा दर्ज करने और प्रोग्राम चलाने के लिए मुख्य रूप से माउस और कीबोर्ड का उपयोग किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">MS Windows Graphical User Interface (GUI)</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">User Input</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Mouse &amp; Keyboard</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Visual GUI Layer</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Windows, Icons, Menus</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Multitasking OS</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Concurrent Programs</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Point &amp; Click</tspan><tspan x=\"120\" dy=\"1.2em\">Text Entry</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Graphical Elements</tspan><tspan x=\"300\" dy=\"1.2em\">Easy Navigation</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">User-Hardware Link</tspan><tspan x=\"480\" dy=\"1.2em\">Multiple Tasks</tspan></text></svg>",
+          "caption": {
+            "en": "MS Windows graphical user interface linking mouse and keyboard inputs to visual windows, icons, and menus.",
+            "hi": "एमएस विंडोज का ग्राफिकल यूजर इंटरफेस जो माउस और कीबोर्ड इनपुट को विंडोज, आइकन और मेन्यू से जोड़ता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how MS Windows links users to the computer.",
+          "hint": "Start with Microsoft Windows, describe providing a graphical user interface, mention using windows icons and menus, and conclude with linking users to the computer.",
+          "target_sequence": [
+            { "id": "en_u1_t1", "text": "Microsoft Windows", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u1_t2", "text": "provides a graphical user interface", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u1_t3", "text": "using windows icons and menus", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u1_t4", "text": "to link users to the computer", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u1_d1", "category": "conceptual", "text": "blocks mouse and keyboard inputs permanently", "penalty_explanation": "A GUI relies heavily on mouse clicks and keyboard typing to control and manipulate computer tasks." },
+            { "id": "en_u1_d2", "category": "technical", "text": "operates strictly as a physical printing press", "penalty_explanation": "MS Windows is multitasking operating system software, not a mechanical printing machine." }
+          ]
+        },
+        "hi": {
+          "prompt": "एमएस विंडोज द्वारा उपयोगकर्ता को कंप्यूटर से जोड़ने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "माइक्रोसॉफ्ट विंडोज से शुरू करें, ग्राफिकल यूजर इंटरफेस प्रदान करने का उल्लेख करें, विंडो आइकन और मेन्यू का संदर्भ दें, और उपयोगकर्ता को जोड़ने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u1_t1", "text": "माइक्रोसॉफ्ट विंडोज", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u1_t2", "text": "ग्राफिकल यूजर इंटरफेस प्रदान करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u1_t3", "text": "विंडो आइकन और मेन्यू के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u1_t4", "text": "उपयोगकर्ता को कंप्यूटर से जोड़ता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u1_d1", "category": "conceptual", "text": "माउस और कीबोर्ड के उपयोग को पूरी तरह रोक देता है", "penalty_explanation": "GUI मुख्य रूप से माउस और कीबोर्ड के माध्यम से ही कंप्यूटर संचालित करने की सुविधा देता है।" },
+            { "id": "hi_u1_d2", "category": "technical", "text": "केवल कागज़ छापने वाली एक भौतिक मशीन है", "penalty_explanation": "एमएस विंडोज एक ऑपरेटिंग सिस्टम सॉफ्टवेयर है, कोई प्रिंटिंग मशीन नहीं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "MS Windows is a multitasking operating system that uses a Graphical User Interface (windows, icons, menus) and mouse/keyboard inputs to connect users with hardware.",
+        "hi": "एमएस विंडोज एक मल्टीटास्किंग ऑपरेटिंग सिस्टम है जो विंडोज, आइकन और मेन्यू वाले ग्राफिकल यूजर इंटरफेस (GUI) के माध्यम से उपयोगकर्ता को कंप्यूटर से जोड़ता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Operating System Interface & Platform Examples",
+          "hi": "ऑपरेटिंग सिस्टम इंटरफेस और प्रमुख उदाहरण"
+        },
+        "theory": {
+          "en": "An Operating System (OS) is essential system software that acts as a bridge or interface between application software, human users, and physical computer hardware. Without an OS, a user cannot communicate with hardware components to perform useful tasks. Widely used desktop and mobile operating systems include Windows XP, Windows 7, Windows 8, Windows 10, MacOS, Disk Operating System (DOS), Android, and iOS.",
+          "hi": "ऑपरेटिंग सिस्टम (OS) एक अनिवार्य सिस्टम सॉफ्टवेयर है जो उपयोगकर्ता, एप्लिकेशन सॉफ्टवेयर और कंप्यूटर हार्डवेयर के बीच एक सेतु (इंटरफेस) का कार्य करता है। ऑपरेटिंग सिस्टम के बिना उपयोगकर्ता हार्डवेयर से संवाद करके कोई उपयोगी कार्य नहीं कर सकता। प्रमुख ऑपरेटिंग सिस्टम के उदाहरणों में विंडोज XP, विंडोज 7, विंडोज 8, विंडोज 10, मैकओएस (MacOS), डिस्क ऑपरेटिंग सिस्टम (DOS), एंड्रॉइड (Android) और आईओएस (iOS) शामिल हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">System Stack: Users &harr; OS Bridge &harr; Hardware</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Users &amp; Apps</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Human Commands</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Operating System</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Central Interface</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">System Hardware</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">CPU, RAM &amp; I/O</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><polygon points=\"195,102 203,98 203,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><polygon points=\"375,102 383,98 383,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Word, Paint</tspan><tspan x=\"120\" dy=\"1.2em\">Browsers</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Windows, MacOS</tspan><tspan x=\"300\" dy=\"1.2em\">Android, iOS, DOS</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Physical Devices</tspan><tspan x=\"480\" dy=\"1.2em\">Requires OS</tspan></text></svg>",
+          "caption": {
+            "en": "Layered system architecture showing the Operating System bridging human users and applications with physical hardware.",
+            "hi": "स्तरीय सिस्टम संरचना जो ऑपरेटिंग सिस्टम को मानव उपयोगकर्ताओं और एप्लिकेशन सॉफ्टवेयर को भौतिक हार्डवेयर से जोड़ते हुए दिखाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence defining the primary role of an operating system.",
+          "hint": "Start with the operating system, state that it acts as a vital interface, mention connecting users and software, and conclude with communicating with physical hardware.",
+          "target_sequence": [
+            { "id": "en_u2_t1", "text": "The operating system", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u2_t2", "text": "acts as a vital interface", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u2_t3", "text": "between users and application software", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u2_t4", "text": "to communicate with physical hardware", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u2_d1", "category": "conceptual", "text": "replaces physical CPU chips with paper cards", "penalty_explanation": "An operating system is system software that manages hardware; it does not physically replace computer chips." },
+            { "id": "en_u2_d2", "category": "technical", "text": "functions only as an optical barcode scanner", "penalty_explanation": "Windows, MacOS, Android, and iOS are full operating systems, not barcode input scanners." }
+          ]
+        },
+        "hi": {
+          "prompt": "ऑपरेटिंग सिस्टम की मुख्य भूमिका को परिभाषित करने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "ऑपरेटिंग सिस्टम से शुरुआत करें, आवश्यक इंटरफेस होने का उल्लेख करें, उपयोगकर्ता और सॉफ्टवेयर का संदर्भ दें, और हार्डवेयर से संवाद करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u2_t1", "text": "ऑपरेटिंग सिस्टम", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u2_t2", "text": "एक आवश्यक इंटरफेस बनकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u2_t3", "text": "उपयोगकर्ता और एप्लिकेशन सॉफ्टवेयर को", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u2_t4", "text": "भौतिक हार्डवेयर से संवाद कराता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u2_d1", "category": "conceptual", "text": "सीपीयू चिप को हटाकर कागज़ के कार्ड लगा देता है", "penalty_explanation": "ऑपरेटिंग सिस्टम एक सॉफ्टवेयर है जो हार्डवेयर का संचालन करता है, यह चिप्स को नहीं बदलता।" },
+            { "id": "hi_u2_d2", "category": "technical", "text": "केवल दुकान का बारकोड पढ़ने वाला स्कैनर है", "penalty_explanation": "विंडोज, एंड्रॉइड और मैकओएस पूर्ण ऑपरेटिंग सिस्टम हैं, बारकोड स्कैनर नहीं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "An Operating System (like Windows, MacOS, DOS, Android, or iOS) serves as the essential interface allowing users and applications to interact with computer hardware.",
+        "hi": "ऑपरेटिंग सिस्टम (जैसे Windows, MacOS, DOS, Android, iOS) वह अनिवार्य इंटरफेस है जो उपयोगकर्ता और सॉफ्टवेयर को हार्डवेयर से जोड़ता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "The Five Basic Functions of an Operating System",
+          "hi": "ऑपरेटिंग सिस्टम के पांच बुनियादी कार्य"
+        },
+        "theory": {
+          "en": "Every operating system performs five core duties to keep a computer running smoothly: first, providing an interface between the user and the hardware; second, coordinating physical hardware components; third, providing a stable environment for application software to function; fourth, providing an organized structure for data management; and fifth, continuously monitoring overall system health and functionality.",
+          "hi": "कंप्यूटर को सुचारू रूप से चलाने के लिए प्रत्येक ऑपरेटिंग सिस्टम पांच मुख्य बुनियादी कार्य करता है: पहला, उपयोगकर्ता और हार्डवेयर के बीच इंटरफेस प्रदान करना; दूसरा, सभी हार्डवेयर घटकों के बीच समन्वय स्थापित करना; तीसरा, एप्लिकेशन सॉफ्टवेयर के काम करने के लिए उपयुक्त वातावरण देना; चौथा, डेटा प्रबंधन के लिए व्यवस्थित संरचना प्रदान करना; और पांचवां, पूरे सिस्टम के स्वास्थ्य और कार्यक्षमता की निगरानी करना।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Five Core Operating System Functions</text><rect x=\"45\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"92\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">1. Interface</text><text x=\"92\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">User-Hardware</text><rect x=\"150\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"197\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">2. Coordinate</text><text x=\"197\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Hardware Units</text><rect x=\"255\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"302\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">3. App Host</text><text x=\"302\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Software Env</text><rect x=\"360\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"407\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">4. Data Files</text><text x=\"407\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">File Structure</text><rect x=\"465\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"512\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">5. Monitor</text><text x=\"512\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">System Health</text><line x1=\"92\" y1=\"130\" x2=\"92\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"197\" y1=\"130\" x2=\"197\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"302\" y1=\"130\" x2=\"302\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"407\" y1=\"130\" x2=\"407\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><line x1=\"512\" y1=\"130\" x2=\"512\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"92\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"92\" dy=\"0\">GUI Bridge</tspan><tspan x=\"92\" dy=\"1.2em\">User Access</tspan></text><text x=\"197\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"197\" dy=\"0\">Device Sync</tspan><tspan x=\"197\" dy=\"1.2em\">Smooth Flow</tspan></text><text x=\"302\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"302\" dy=\"0\">Run Programs</tspan><tspan x=\"302\" dy=\"1.2em\">App Support</tspan></text><text x=\"407\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"407\" dy=\"0\">Directories</tspan><tspan x=\"407\" dy=\"1.2em\">Storage Org</tspan></text><text x=\"512\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"512\" dy=\"0\">Error Check</tspan><tspan x=\"512\" dy=\"1.2em\">Performance</tspan></text></svg>",
+          "caption": {
+            "en": "The five foundational duties of an operating system spanning user interfacing, hardware coordination, software execution, file structure, and health monitoring.",
+            "hi": "ऑपरेटिंग सिस्टम के पांच बुनियादी कार्य जो यूजर इंटरफेस, हार्डवेयर समन्वय, सॉफ्टवेयर वातावरण, डेटा संरचना और सिस्टम निगरानी को दर्शाते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence summarizing the core responsibilities of an operating system.",
+          "hint": "Start with the operating system, describe coordinating hardware and data structures, mention across active software environments, and conclude with maintaining system health.",
+          "target_sequence": [
+            { "id": "en_u3_t1", "text": "The operating system", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u3_t2", "text": "coordinates hardware and data structures", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u3_t3", "text": "across active software environments", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u3_t4", "text": "to maintain reliable system health", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u3_d1", "category": "conceptual", "text": "prevents all application software from running on the computer", "penalty_explanation": "A basic function of an operating system is providing a supportive environment for applications to run." },
+            { "id": "en_u3_d2", "category": "technical", "text": "destroys file directories whenever health checks run", "penalty_explanation": "Operating systems provide organized structures for data management and monitor health without erasing files." }
+          ]
+        },
+        "hi": {
+          "prompt": "ऑपरेटिंग सिस्टम के बुनियादी कार्यों को दर्शाने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "ऑपरेटिंग सिस्टम से शुरुआत करें, हार्डवेयर और डेटा संरचनाओं के समन्वय का उल्लेख करें, सॉफ्टवेयर वातावरण का संदर्भ दें, और सिस्टम स्वास्थ्य बनाए रखने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u3_t1", "text": "ऑपरेटिंग सिस्टम", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u3_t2", "text": "हार्डवेयर और डेटा संरचनाओं का समन्वय करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u3_t3", "text": "सक्रिय सॉफ्टवेयर वातावरण के भीतर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u3_t4", "text": "विश्वसनीय सिस्टम स्वास्थ्य बनाए रखता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u3_d1", "category": "conceptual", "text": "कंप्यूटर पर किसी भी एप्लिकेशन सॉफ्टवेयर को चलने से रोकता है", "penalty_explanation": "ऑपरेटिंग सिस्टम सॉफ्टवेयर को चलाने के लिए अनुकूल वातावरण प्रदान करता है।" },
+            { "id": "hi_u3_d2", "category": "technical", "text": "सिस्टम निगरानी के दौरान सभी फाइल फोल्डरों को नष्ट कर देता है", "penalty_explanation": "ऑपरेटिंग सिस्टम डेटा प्रबंधन के लिए व्यवस्थित संरचना देता है, फाइलों को नष्ट नहीं करता।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "An OS performs five basic functions: interfacing user and hardware, coordinating hardware, hosting applications, structuring data, and monitoring system health.",
+        "hi": "ऑपरेटिंग सिस्टम पांच मुख्य कार्य करता है: यूजर-हार्डवेयर इंटरफेस, हार्डवेयर समन्वय, सॉफ्टवेयर वातावरण, डेटा प्रबंधन संरचना और सिस्टम स्वास्थ्य निगरानी।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Resource Allocation, Memory & Process Management",
+          "hi": "संसाधन आवंटन, मेमोरी और प्रोसेस प्रबंधन"
+        },
+        "theory": {
+          "en": "Beyond basic operations, an operating system provides critical technical management advantages. It manages primary memory using techniques like paging and swapping, controls all input and output (I/O) devices, and allocates hardware or file resources fairly among active tasks. Furthermore, the OS converts passive programs into active executing processes, synchronizes multiple processes running concurrently, and detects and handles hardware or software interrupts smoothly.",
+          "hi": "बुनियादी कार्यों के अलावा, ऑपरेटिंग सिस्टम कई महत्वपूर्ण तकनीकी प्रबंधन लाभ प्रदान करता है। यह पेजिंग (paging) और स्वैपिंग (swapping) जैसी तकनीकों से मेमोरी का प्रबंधन करता है, सभी इनपुट और आउटपुट (I/O) उपकरणों को नियंत्रित करता है, और सभी कार्यों को कुशलतापूर्वक संसाधन (फाइल, हार्डवेयर) आवंटित करता है। इसके अतिरिक्त, यह निष्क्रिय प्रोग्रामों को सक्रिय प्रोसेस में बदलता है, समानांतर प्रोसेस को सिंक्रनाइज़ करता है, और इंटरप्ट्स (interrupts) को सुचारू रूप से संभालता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">OS Technical Management &amp; Resource Control</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Memory &amp; I/O</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Paging, Swapping, Devices</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Process Control</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Convert &amp; Synchronize</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Interrupts &amp; Share</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Resource Allocation</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">RAM Allocation</tspan><tspan x=\"120\" dy=\"1.2em\">Peripheral Control</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Program &rarr; Process</tspan><tspan x=\"300\" dy=\"1.2em\">Task Alignment</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Fair Sharing</tspan><tspan x=\"480\" dy=\"1.2em\">Signal Handling</tspan></text></svg>",
+          "caption": {
+            "en": "Operating system technical advantages encompassing paging/swapping memory management, I/O control, process synchronization, and interrupt handling.",
+            "hi": "ऑपरेटिंग सिस्टम के तकनीकी प्रबंधन लाभ जिनमें मेमोरी पेजिंग व स्वैपिंग, I/O नियंत्रण, प्रोसेस सिंक्रनाइज़ेशन और इंटरप्ट हैंडलिंग शामिल हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence detailing how an operating system manages memory, processes, and resources.",
+          "hint": "Start with the operating system, describe managing memory and I/O devices, mention across synchronized running processes, and conclude with ensuring efficient resource allocation.",
+          "target_sequence": [
+            { "id": "en_u4_t1", "text": "The operating system", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u4_t2", "text": "manages memory and I/O devices", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u4_t3", "text": "across synchronized running processes", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u4_t4", "text": "to ensure efficient resource allocation", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u4_d1", "category": "conceptual", "text": "blocks all interrupts to crash active software programs", "penalty_explanation": "Operating systems actively detect and handle interrupts smoothly to keep programs running reliably." },
+            { "id": "en_u4_d2", "category": "technical", "text": "prevents programs from ever converting into active processes", "penalty_explanation": "A primary advantage of an OS is converting static programs into active executing processes." }
+          ]
+        },
+        "hi": {
+          "prompt": "ऑपरेटिंग सिस्टम द्वारा मेमोरी, प्रोसेस और संसाधनों के प्रबंधन को सही क्रम में व्यवस्थित करें।",
+          "hint": "ऑपरेटिंग सिस्टम से शुरुआत करें, मेमोरी और I/O उपकरणों के प्रबंधन का उल्लेख करें, सिंक्रनाइज़ प्रोसेस का संदर्भ दें, और कुशल संसाधन आवंटन पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u4_t1", "text": "ऑपरेटिंग सिस्टम", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u4_t2", "text": "मेमोरी और I/O उपकरणों का प्रबंधन करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u4_t3", "text": "सिंक्रनाइज़ चल रहे प्रोसेस के बीच", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u4_t4", "text": "कुशल संसाधन आवंटन सुनिश्चित करता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u4_d1", "category": "conceptual", "text": "सभी इंटरप्ट्स को रोककर चल रहे प्रोग्रामों को क्रैश कर देता है", "penalty_explanation": "ऑपरेटिंग सिस्टम इंटरप्ट्स को संभालकर सिस्टम को सुचारू रूप से चलाता है।" },
+            { "id": "hi_u4_d2", "category": "technical", "text": "प्रोग्रामों को कभी भी सक्रिय प्रोसेस में बदलने नहीं देता", "penalty_explanation": "ऑपरेटिंग सिस्टम प्रोग्राम को सक्रिय प्रोसेस में परिवर्तित करके निष्पादित करता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Key OS advantages include memory management (paging/swapping), I/O device control, converting programs into synchronized processes, fair resource allocation, and interrupt handling.",
+        "hi": "ऑपरेटिंग सिस्टम के प्रमुख लाभों में मेमोरी प्रबंधन (पेजिंग/स्वैपिंग), I/O नियंत्रण, प्रोग्राम को सिंक्रनाइज़ प्रोसेस में बदलना, संसाधन आवंटन और इंटरप्ट हैंडलिंग शामिल हैं।"
+      }
+    }
+  ]
+}
