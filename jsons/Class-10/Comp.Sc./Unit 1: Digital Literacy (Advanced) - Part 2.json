@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 1: Digital Literacy (Advanced) - Part 2",
+      "hi": "इकाई 1: डिजिटल साक्षरता (उन्नत) - भाग 2"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Digital Graphic Plotters: Flatbed vs. Drum Mechanisms",
+          "hi": "डिजिटल ग्राफिक प्लॉटर: फ्लैटबेड बनाम ड्रम तंत्र"
+        },
+        "theory": {
+          "en": "A Digital Graphic Plotter is a specialized hardcopy output device used in Computer-Aided Design (CAD) to produce large vector designs such as architectural blueprints and engineering drawings. Unlike standard printers that simulate lines using closely spaced dots, plotters draw continuous smooth lines by moving motorized pens across paper. Flatbed plotters keep the paper stationary on a flat surface while moving the pen up, down, left, and right. Drum plotters move the pen along one axis while rotating a cylindrical drum to move the paper back and forth, allowing multi-color plotting in a compact footprint.",
+          "hi": "डिजिटल ग्राफिक प्लॉटर एक विशेष हार्डकॉपी आउटपुट डिवाइस है जिसका उपयोग कंप्यूटर-एडेड डिज़ाइन (CAD) में वास्तुशिल्प ब्लूप्रिंट और बड़े वेक्टर चित्र बनाने के लिए किया जाता है। सामान्य प्रिंटरों के विपरीत जो बिंदुओं (dots) से रेखाएं बनाते हैं, प्लॉटर मोटर चालित पेन की मदद से कागज़ पर निरंतर सीधी रेखाएं खींचता है। फ्लैटबेड प्लॉटर में कागज़ स्थिर रहता है और पेन ऊपर-नीचे व दाएं-बाएं घूमता है। ड्रम प्लॉटर में एक बेलनाकार ड्रम घूमकर कागज़ को आगे-पीछे चलाता है जबकि पेन एक अक्ष पर चलता है, जिससे कम जगह में बहु-रंगीय बड़े चित्र बनते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Digital Graphic Plotters: Flatbed vs. Drum</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Flatbed Plotter</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Fixed Paper | 2-Axis Pen</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Drum Plotter</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Rotating Cylinder | Multi-Pen</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Stationary Bed</tspan><tspan x=\"100\" dy=\"1.2em\">X-Y Pen Carriage</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Continuous Lines</tspan><tspan x=\"225\" dy=\"1.2em\">CAD Blueprints</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Paper Rolls</tspan><tspan x=\"375\" dy=\"1.2em\">Compact Footprint</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Multiple Pens</tspan><tspan x=\"500\" dy=\"1.2em\">Vector Line Art</tspan></text></svg>",
+          "caption": {
+            "en": "Vector graphic plotter mechanisms contrasting stationary-sheet Flatbed plotters with rotating-cylinder Drum plotters.",
+            "hi": "वेक्टर ग्राफिक प्लॉटर तंत्र जो स्थिर कागज़ वाले फ्लैटबेड प्लॉटर और घूमने वाले सिलेंडर युक्त ड्रम प्लॉटर का अंतर दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how digital graphic plotters produce continuous architectural drawings.",
+          "hint": "Start with digital graphic plotters, describe moving motorized pens across paper, mention using flatbed or rotating drum mechanisms, and conclude with drawing continuous CAD vector blueprints.",
+          "target_sequence": [
+            { "id": "en_u5_t1", "text": "Digital graphic plotters", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u5_t2", "text": "move motorized pens across paper", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u5_t3", "text": "using flatbed or rotating drum mechanisms", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u5_t4", "text": "to draw continuous CAD vector blueprints", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u5_d1", "category": "conceptual", "text": "simulate lines by striking metal pins against an inked fabric ribbon", "penalty_explanation": "Striking pins against a ribbon is the impact mechanism of dot matrix printers; plotters draw continuous lines using pens." },
+            { "id": "en_u5_d2", "category": "technical", "text": "project glowing charged-gas images onto classroom walls without paper", "penalty_explanation": "Plotters are hardcopy vector drawing devices that mark physical paper sheets, not plasma wall displays." }
+          ]
+        },
+        "hi": {
+          "prompt": "डिजिटल ग्राफिक प्लॉटर द्वारा निरंतर वेक्टर ब्लूप्रिंट बनाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "डिजिटल ग्राफिक प्लॉटर से शुरुआत करें, कागज़ पर मोटर चालित पेन चलाने का उल्लेख करें, फ्लैटबेड या ड्रम तंत्र का संदर्भ दें, और CAD ब्लूप्रिंट बनाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u5_t1", "text": "डिजिटल ग्राफिक प्लॉटर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u5_t2", "text": "कागज़ पर मोटर चालित पेन चलाकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u5_t3", "text": "फ्लैटबेड या घूमने वाले ड्रम तंत्र द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u5_t4", "text": "निरंतर CAD वेक्टर ब्लूप्रिंट बनाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u5_d1", "category": "conceptual", "text": "स्याही वाले कपड़े के रिबन पर धातु की पिनों से चोट करके रेखाएं बनाते हैं", "penalty_explanation": "रिबन पर पिनों से प्रहार डॉट मैट्रिक्स प्रिंटर करता है; प्लॉटर पेन की सहायता से सीधी रेखाएं खींचता है।" },
+            { "id": "hi_u5_d2", "category": "technical", "text": "बिना कागज़ के दीवार पर आवेशित गैस की रोशनी से छवि प्रक्षेपित करते हैं", "penalty_explanation": "प्लॉटर कागज़ पर स्थायी वेक्टर चित्र बनाने वाला हार्डकॉपी आउटपुट उपकरण है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Plotters draw continuous vector lines for CAD blueprints using pens; Flatbed plotters keep paper fixed while Drum plotters rotate paper on a cylinder.",
+        "hi": "प्लॉटर पेन की मदद से CAD ब्लूप्रिंट के लिए निरंतर वेक्टर रेखाएं खींचता है; फ्लैटबेड प्लॉटर में कागज़ स्थिर रहता है जबकि ड्रम प्लॉटर में सिलेंडर घूमता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Laser Page Printers: Electrostatic Operation & Trade-offs",
+          "hi": "लेज़र पेज प्रिंटर: इलेक्ट्रोस्टैटिक कार्यप्रणाली और विशेषताएं"
+        },
+        "theory": {
+          "en": "Laser printers are non-impact page printers that print an entire page at a time by bouncing a laser beam off a mirror onto a photosensitive electrostatic drum. They operate quietly at high speeds (around 30 pages per minute), deliver high-resolution water-resistant text, and offer a low printing cost per page for high-volume jobs. However, laser printers have a higher upfront purchase price, require warm-up time before printing, are bulkier than inkjets, and carry expensive toner and drum replacement costs.",
+          "hi": "लेज़र प्रिंटर नॉन-इम्पैक्ट पेज प्रिंटर हैं जो एक बार में पूरा पृष्ठ प्रिंट करते हैं; ये लेज़र बीम को दर्पण से परावर्तित कर इलेक्ट्रोस्टैटिक ड्रम पर डालते हैं जिससे सूखा टोनर कागज़ पर चिपकता है। ये बहुत शांत रहते हुए लगभग 30 पृष्ठ प्रति मिनट की तेज़ गति से उच्च-रिज़ॉल्यूशन और जल-प्रतिरोधी (water-resistant) प्रिंट देते हैं तथा प्रति पृष्ठ लागत कम रखते हैं। हालांकि, इनकी शुरुआती कीमत अधिक होती है, शुरू होने से पहले गर्म होने (warm-up) का समय लगता है, और टोनर व ड्रम बदलना महंगा पड़ता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Laser Page Printer: Electrostatic Drum Mechanism</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Laser &amp; Mirror</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Reflects Beam Image</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Electrostatic Drum</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Attracts Dry Toner</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Page Output</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">~30 PPM | Waterproof</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Warm-Up Needed</tspan><tspan x=\"120\" dy=\"1.2em\">Quiet Operation</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Non-Impact</tspan><tspan x=\"300\" dy=\"1.2em\">Costly Toner/Drum</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Low Page Cost</tspan><tspan x=\"480\" dy=\"1.2em\">High Volume</tspan></text></svg>",
+          "caption": {
+            "en": "Non-impact laser page printer pipeline showing laser beam reflection onto an electrostatic drum for high-speed water-resistant output.",
+            "hi": "नॉन-इम्पैक्ट लेज़र पेज प्रिंटर प्रक्रिया जो दर्पण और इलेक्ट्रोस्टैटिक ड्रम के माध्यम से तेज़ और जल-प्रतिरोधी प्रिंटिंग दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how laser printers produce fast, water-resistant hardcopy pages.",
+          "hint": "Start with non-impact laser printers, describe directing a laser beam via a mirror, mention onto an electrostatic drum, and conclude with printing water-resistant pages at high speed.",
+          "target_sequence": [
+            { "id": "en_u6_t1", "text": "Non-impact laser printers", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u6_t2", "text": "direct a laser beam off a mirror", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u6_t3", "text": "onto an electrostatic toner drum", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u6_t4", "text": "to print water-resistant pages at high speed", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u6_d1", "category": "conceptual", "text": "produce loud hammering noises by striking carbon paper forms", "penalty_explanation": "Laser printers are quiet non-impact devices; noisy mechanical striking occurs in impact dot matrix and drum printers." },
+            { "id": "en_u6_d2", "category": "technical", "text": "smudge immediately if touched by water or damp fingers", "penalty_explanation": "Laser toner is fused onto paper and is not sensitive to water, unlike liquid inkjet ink." }
+          ]
+        },
+        "hi": {
+          "prompt": "लेज़र प्रिंटर द्वारा तेज़ गति से जल-प्रतिरोधी पृष्ठ प्रिंट करने की कार्यप्रणाली को सही क्रम में व्यवस्थित करें।",
+          "hint": "नॉन-इम्पैक्ट लेज़र प्रिंटर से शुरुआत करें, दर्पण से लेज़र बीम परावर्तित करने का उल्लेख करें, इलेक्ट्रोस्टैटिक टोनर ड्रम का संदर्भ दें, और जल-प्रतिरोधी पृष्ठ प्रिंट करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u6_t1", "text": "नॉन-इम्पैक्ट लेज़र प्रिंटर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u6_t2", "text": "दर्पण से लेज़र बीम परावर्तित करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u6_t3", "text": "इलेक्ट्रोस्टैटिक टोनर ड्रम के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u6_t4", "text": "तेज़ गति से जल-प्रतिरोधी पृष्ठ प्रिंट करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u6_d1", "category": "conceptual", "text": "कार्बन कॉपी कागज़ पर हथौड़ों से चोट करके बहुत अधिक शोर करते हैं", "penalty_explanation": "लेज़र प्रिंटर शांत नॉन-इम्पैक्ट प्रिंटर हैं; हथौड़े या पिन से चोट इम्पैक्ट प्रिंटरों में होती है।" },
+            { "id": "hi_u6_d2", "category": "technical", "text": "पानी की एक बूंद गिरते ही तुरंत स्याही फैलाकर खराब हो जाते हैं", "penalty_explanation": "लेज़र प्रिंटर का टोनर पानी के प्रति संवेदनशील नहीं होता, इसलिए प्रिंट पानी से नहीं फैलता।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Laser printers are quiet non-impact page printers (~30 PPM) producing sharp, waterproof output at low per-page cost, despite warm-up time and pricey toner/drums.",
+        "hi": "लेज़र प्रिंटर शांत नॉन-इम्पैक्ट पेज प्रिंटर (~30 PPM) हैं जो कम प्रति-पृष्ठ लागत पर स्पष्ट और जल-प्रतिरोधी प्रिंट देते हैं, हालांकि इनका टोनर महंगा होता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Inkjet Character Printers: Ionized Droplet Precision",
+          "hi": "इंकजेट कैरेक्टर प्रिंटर: आयनित स्याही बूंदों की सटीकता"
+        },
+        "theory": {
+          "en": "Inkjet printers are non-impact character printers that create images by spraying tiny ionized droplets of liquid ink from printhead nozzles onto paper, guided precisely by magnetized deflection plates. Capable of resolutions up to 1440 x 720 dots per inch (dpi), inkjets excel at printing vivid color photographs and smooth graphics at a low initial purchase cost without requiring prior training. Their drawbacks include slower speeds than laser printers, expensive ink cartridges, printhead clogging, and vulnerability to smudging from water or highlighters.",
+          "hi": "इंकजेट प्रिंटर नॉन-इम्पैक्ट कैरेक्टर प्रिंटर हैं जो प्रिंटहेड के सूक्ष्म नोजल से तरल स्याही की आयनित बूंदों का छिड़काव करते हैं, जिन्हें चुंबकीय प्लेटों द्वारा सटीकता से कागज़ पर निर्देशित किया जाता है। 1440 x 720 डॉट्स प्रति इंच (dpi) तक के रिज़ॉल्यूशन के साथ ये रंगीन फोटो और बारीक चित्र कम शुरुआती कीमत पर आसानी से प्रिंट करते हैं। हालांकि, इनकी गति लेज़र प्रिंटर से धीमी होती है, स्याही कार्ट्रिज महंगे होते हैं, नोजल जाम होने का खतरा रहता है और इनके प्रिंट पर हाइलाइटर या पानी लगने से स्याही फैल सकती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Inkjet Printer: Ionized Liquid Droplet Spray</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Nozzle Printhead</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Ionized Ink Drops</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Magnetized Plates</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Guides Droplet Path</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Color Photo Print</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Up to 1440x720 DPI</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Low Printer Cost</tspan><tspan x=\"120\" dy=\"1.2em\">Clogging Risk</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Precise Dots</tspan><tspan x=\"300\" dy=\"1.2em\">Quiet Printing</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Vivid Graphics</tspan><tspan x=\"480\" dy=\"1.2em\">Highlighter Smudge</tspan></text></svg>",
+          "caption": {
+            "en": "Inkjet droplet steering pipeline using magnetized plates to guide ionized liquid ink onto paper at resolutions up to 1440x720 DPI.",
+            "hi": "इंकजेट बूंद नियंत्रण प्रणाली जो चुंबकीय प्लेटों की मदद से आयनित तरल स्याही को 1440x720 DPI तक के रिज़ॉल्यूशन पर कागज़ पर निर्देशित करती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how inkjet printers form detailed color graphics on paper.",
+          "hint": "Start with non-impact inkjet printers, describe spraying ionized ink droplets, mention through nozzles and magnetized plates, and conclude with creating vivid color graphics at high DPI.",
+          "target_sequence": [
+            { "id": "en_u7_t1", "text": "Non-impact inkjet printers", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u7_t2", "text": "spray ionized liquid ink droplets", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u7_t3", "text": "through nozzles guided by magnetized plates", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u7_t4", "text": "to produce vivid color graphics at high DPI", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u7_d1", "category": "conceptual", "text": "melt dry powdered toner onto drums using high-temperature rollers", "penalty_explanation": "Fusing dry powdered toner via electrostatic drums is how laser printers work; inkjets spray liquid ink droplets." },
+            { "id": "en_u7_d2", "category": "technical", "text": "resist highlighter markers without ever smudging wet ink lines", "penalty_explanation": "Inkjet printouts use liquid ink that can smudge if marked with highlighters or exposed to moisture." }
+          ]
+        },
+        "hi": {
+          "prompt": "इंकजेट प्रिंटर द्वारा रंगीन ग्राफिक्स और फोटो प्रिंट करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "नॉन-इम्पैक्ट इंकजेट प्रिंटर से शुरुआत करें, आयनित तरल स्याही छिड़कने का उल्लेख करें, नोजल और चुंबकीय प्लेटों का संदर्भ दें, और उच्च DPI पर रंगीन ग्राफिक्स बनाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u7_t1", "text": "नॉन-इम्पैक्ट इंकजेट प्रिंटर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u7_t2", "text": "आयनित तरल स्याही की बूंदें छिड़ककर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u7_t3", "text": "नोजल और चुंबकीय प्लेटों के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u7_t4", "text": "उच्च DPI पर सजीव रंगीन ग्राफिक्स बनाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u7_d1", "category": "conceptual", "text": "इलेक्ट्रोस्टैटिक ड्रम पर सूखा टोनर पाउडर गर्म करके पिघलाते हैं", "penalty_explanation": "सूखे टोनर पाउडर का उपयोग लेज़र प्रिंटर में होता है; इंकजेट प्रिंटर तरल स्याही की बूंदें छिड़कते हैं।" },
+            { "id": "hi_u7_d2", "category": "technical", "text": "प्रिंटआउट पर हाइलाइटर चलाने से कभी भी स्याही नहीं फैलने देते", "penalty_explanation": "इंकजेट प्रिंटआउट तरल स्याही से बनते हैं, इसलिए उन पर हाइलाइटर या मार्कर चलाने से स्याही फैल सकती है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Inkjet printers spray ionized liquid ink guided by magnetized plates up to 1440x720 DPI for vibrant color prints, though cartridges are costly and printheads can clog.",
+        "hi": "इंकजेट प्रिंटर चुंबकीय प्लेटों से निर्देशित आयनित स्याही बूंदों द्वारा 1440x720 DPI तक के रंगीन फोटो प्रिंट करते हैं, परंतु इनके कार्ट्रिज महंगे होते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Dot Matrix Impact Printers: Needle Matrix & Multi-Part Forms",
+          "hi": "डॉट मैट्रिक्स इम्पैक्ट प्रिंटर: पिन मैट्रिक्स और कार्बन कॉपी"
+        },
+        "theory": {
+          "en": "Dot Matrix printers are heavy-duty electro-mechanical impact character printers that form letters as dot patterns. Their printhead contains a grid of tiny metal needles—typically arranged in 5 x 7 or 9 x 7 rows and columns—that strike against an inked ribbon onto paper. Because they use physical impact, they can print multi-part carbon forms, handle continuous tractor-fed paper for long banners, require zero warm-up time, and keep per-page costs very low, though they are noisy, slow, and produce lower print quality.",
+          "hi": "डॉट मैट्रिक्स प्रिंटर भारी-भरकम इलेक्ट्रो-मैकेनिकल इम्पैक्ट कैरेक्टर प्रिंटर हैं जो बिंदुओं के पैटर्न से अक्षर बनाते हैं। इनके प्रिंटहेड में धातु की सूक्ष्म सुइयों (पिनों) का जाल होता है—आमतौर पर 5 x 7 या 9 x 7 की पंक्तियों और स्तंभों में—जो स्याही लगे रिबन पर प्रहार करके कागज़ पर छाप छोड़ती हैं। भौतिक दबाव के कारण ये कार्बन कॉपी (multi-part forms) और निरंतर कागज़ पर लंबे बैनर सस्ते में प्रिंट कर सकते हैं, हालांकि ये बहुत शोर करते हैं और इनकी गति व गुणवत्ता कम होती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Dot Matrix Printer: Electro-Mechanical Pin Impact</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Needle Printhead</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">5x7 or 9x7 Pin Grid</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Inked Ribbon</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Physical Pin Strike</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Multi-Part Paper</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Carbon Copies &amp; Banners</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Zero Warm-Up</tspan><tspan x=\"120\" dy=\"1.2em\">Heavy Duty</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Noisy Impact</tspan><tspan x=\"300\" dy=\"1.2em\">Character-by-Char</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Low Page Cost</tspan><tspan x=\"480\" dy=\"1.2em\">Continuous Feed</tspan></text></svg>",
+          "caption": {
+            "en": "Electro-mechanical impact mechanism of a Dot Matrix printer using 5x7 or 9x7 needle matrices striking an ink ribbon to create multi-part forms.",
+            "hi": "डॉट मैट्रिक्स प्रिंटर की इलेक्ट्रो-मैकेनिकल कार्यप्रणाली जो 5x7 या 9x7 पिन मैट्रिक्स से रिबन पर प्रहार करके कार्बन कॉपी तैयार करती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how dot matrix printers produce multi-part carbon copies.",
+          "hint": "Start with dot matrix impact printers, describe striking tiny needle pins, mention against an inked ribbon onto continuous paper, and conclude with printing low-cost multi-part carbon forms.",
+          "target_sequence": [
+            { "id": "en_u8_t1", "text": "Dot matrix impact printers", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u8_t2", "text": "strike tiny needle pins", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u8_t3", "text": "against an inked ribbon onto continuous paper", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u8_t4", "text": "to print low-cost multi-part carbon forms", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u8_d1", "category": "conceptual", "text": "operate in complete silence without touching the paper sheet", "penalty_explanation": "Dot matrix printers use an electro-mechanical striking mechanism that makes them noisy during operation." },
+            { "id": "en_u8_d2", "category": "technical", "text": "print thirty full laser pages per minute with photo-grade glossy finish", "penalty_explanation": "Printing 30 pages per minute is a feature of laser page printers; dot matrix printers print slowly character by character." }
+          ]
+        },
+        "hi": {
+          "prompt": "डॉट मैट्रिक्स प्रिंटर द्वारा कार्बन कॉपी फॉर्म प्रिंट करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "डॉट मैट्रिक्स इम्पैक्ट प्रिंटर से शुरुआत करें, सूक्ष्म पिनों से प्रहार करने का उल्लेख करें, स्याही वाले रिबन और निरंतर कागज़ का संदर्भ दें, और सस्ते कार्बन फॉर्म प्रिंट करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u8_t1", "text": "डॉट मैट्रिक्स इम्पैक्ट प्रिंटर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u8_t2", "text": "सूक्ष्म धातु की पिनों से प्रहार करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u8_t3", "text": "स्याही वाले रिबन और निरंतर कागज़ पर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u8_t4", "text": "कम लागत में कार्बन कॉपी फॉर्म प्रिंट करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u8_d1", "category": "conceptual", "text": "कागज़ को छुए बिना पूर्ण शांति के साथ काम करते हैं", "penalty_explanation": "डॉट मैट्रिक्स प्रिंटर रिबन पर यांत्रिक चोट करते हैं, जिससे चलते समय काफी शोर होता है।" },
+            { "id": "hi_u8_d2", "category": "technical", "text": "एक मिनट में तीस पूरे लेज़र पेज और रंगीन फोटो प्रिंट करते हैं", "penalty_explanation": "30 पृष्ठ प्रति मिनट की गति लेज़र प्रिंटर की विशेषता है; डॉट मैट्रिक्स एक-एक अक्षर धीमी गति से प्रिंट करता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Dot Matrix printers use 5x7 or 9x7 needle matrices striking an ink ribbon to print continuous banners and multi-part carbon copies cheaply, though loudly and slowly.",
+        "hi": "डॉट मैट्रिक्स प्रिंटर 5x7 या 9x7 पिन मैट्रिक्स से रिबन पर प्रहार करके सस्ते में कार्बन कॉपी और बैनर प्रिंट करते हैं, हालांकि ये धीमे और शोर करने वाले होते हैं।"
+      }
+    }
+  ]
+}
