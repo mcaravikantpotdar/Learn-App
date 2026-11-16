@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 9",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 2: Basic Concepts of Operating System - Part 3",
+      "hi": "इकाई 2: ऑपरेटिंग सिस्टम की बुनियादी अवधारणाएं - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Windows Explorer Architecture & Navigation Panes",
+          "hi": "विंडोज एक्सप्लोरर संरचना और नेविगेशन पैन"
+        },
+        "theory": {
+          "en": "Windows Explorer (also known as File Explorer) is a built-in operating system tool used to browse, organize, and search files, folders, and storage drives. Its window layout includes a Title Bar at the top, Back and Forward navigation buttons, an Address Bar showing the current folder path, a Search Box, a Menu Bar, and a Toolbar. The main workspace splits into two panes: the left Navigation Pane displaying a tree of drives and folders, and the right Details Pane showing the contents of whichever drive or folder is selected on the left.",
+          "hi": "विंडोज एक्सप्लोरर (जिसे फाइल एक्सप्लोरर भी कहा जाता है) ऑपरेटिंग सिस्टम का एक महत्वपूर्ण हिस्सा है, जिसका उपयोग कंप्यूटर में मौजूद फाइलों, फोल्डरों और ड्राइव को देखने और व्यवस्थित करने के लिए किया जाता है। इसके प्रमुख भागों में सबसे ऊपर टाइटल बार, बैक और फॉरवर्ड बटन, वर्तमान पथ दिखाने वाला एड्रेस बार, सर्च बॉक्स, मेन्यू बार और टूलबार शामिल हैं। मुख्य कार्यक्षेत्र दो भागों में बंटा होता है: बायां पैन (नेविगेशन पैन) जहाँ ड्राइव और फोल्डरों की सूची दिखती है, तथा दायां पैन जो बाईं ओर चुने गए फोल्डर या ड्राइव के अंदर की सामग्री प्रदर्शित करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Windows Explorer Interface &amp; Dual-Pane Layout</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Top Control Bars</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Address, Search &amp; Nav</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Left Navigation</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Drives &amp; Folder Tree</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Right Content Pane</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Selected Item Details</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Path Location</tspan><tspan x=\"120\" dy=\"1.2em\">Quick Search</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Local Disks (C: D:)</tspan><tspan x=\"300\" dy=\"1.2em\">Folder Hierarchy</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Files &amp; Subfolders</tspan><tspan x=\"480\" dy=\"1.2em\">Live Preview</tspan></text></svg>",
+          "caption": {
+            "en": "Windows Explorer architecture linking top path/search bars with the left Navigation Pane and right content display pane.",
+            "hi": "विंडोज एक्सप्लोरर की संरचना जो ऊपरी एड्रेस और सर्च बार को बाएं नेविगेशन पैन और दाएं सामग्री पैन से जोड़ती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Windows Explorer organizes and displays system files.",
+          "hint": "Start with Windows Explorer, describe linking the navigation tree and content pane, mention alongside address and search bars, and conclude with simplifying file and folder browsing.",
+          "target_sequence": [
+            { "id": "en_u9_t1", "text": "Windows Explorer", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u9_t2", "text": "links the navigation tree and content pane", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u9_t3", "text": "alongside address and search bars", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u9_t4", "text": "to simplify drive and folder browsing", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u9_d1", "category": "conceptual", "text": "connects directly to external internet websites like a web browser", "penalty_explanation": "Windows Explorer browses local files, folders, and drives on your computer; Internet Explorer is used for browsing websites." },
+            { "id": "en_u9_d2", "category": "technical", "text": "hides all local hard drives permanently from the left pane", "penalty_explanation": "The left Navigation Pane specifically lists local hard drives and folders so users can select and inspect them." }
+          ]
+        },
+        "hi": {
+          "prompt": "विंडोज एक्सप्लोरर द्वारा ड्राइव और फोल्डर ब्राउज़ करने की कार्यप्रणाली को सही क्रम में व्यवस्थित करें।",
+          "hint": "विंडोज एक्सप्लोरर से शुरुआत करें, नेविगेशन ट्री और सामग्री पैन को जोड़ने का उल्लेख करें, एड्रेस और सर्च बार का संदर्भ दें, और फोल्डर ब्राउज़िंग आसान बनाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u9_t1", "text": "विंडोज एक्सप्लोरर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u9_t2", "text": "नेविगेशन ट्री और सामग्री पैन को जोड़कर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u9_t3", "text": "एड्रेस और सर्च बार के साथ", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u9_t4", "text": "ड्राइव और फोल्डर ब्राउज़ करना आसान बनाता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u9_d1", "category": "conceptual", "text": "इंटरनेट वेबसाइटों को खोलने वाले मुख्य वेब ब्राउज़र की तरह काम करता है", "penalty_explanation": "विंडोज एक्सप्लोरर कंप्यूटर के अंदर की फाइलों और फोल्डरों को देखने के लिए है, वेबसाइटों के लिए इंटरनेट एक्सप्लोरर का उपयोग होता है।" },
+            { "id": "hi_u9_d2", "category": "technical", "text": "बाएं पैन से सभी लोकल हार्ड ड्राइव को हमेशा के लिए छिपा देता है", "penalty_explanation": "बायां नेविगेशन पैन सभी ड्राइव और फोल्डरों को दिखाता है ताकि आप उन्हें चुन सकें।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Windows Explorer manages local files using an Address Bar, Search Box, left Navigation Pane (drives/folders), and right Details Pane (contents).",
+        "hi": "विंडोज एक्सप्लोरर एड्रेस बार, सर्च बॉक्स, बाएं नेविगेशन पैन (ड्राइव/फोल्डर) और दाएं पैन (सामग्री) की मदद से फाइलों का प्रबंधन करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Windows Explorer Layout Views",
+          "hi": "विंडोज एक्सप्लोरर के लेआउट व्यू (Views)"
+        },
+        "theory": {
+          "en": "Windows Explorer offers five distinct layout views to customize how files and folders appear on screen. Icons view (Small, Medium, Large, and Extra Large) displays items as rows of visual icons with names. Tiles view arranges icons in rows accompanied by file type and storage size details. List view presents a compact column of names with small icons on the left. Details view organizes items into table rows displaying columns for name, size, file type, and date modified. Content view is used by default during searches, displaying icons with key file properties underneath.",
+          "hi": "विंडोज एक्सप्लोरर स्क्रीन पर फाइलों और फोल्डरों को अलग-अलग रूपों में देखने के लिए पांच मुख्य व्यू प्रदान करता है। आइकन व्यू (छोटा, मध्यम, बड़ा और अतिरिक्त बड़ा) वस्तुओं को नाम और आइकन की पंक्तियों में दिखाता है। टाइल्स व्यू आइकन के साथ फाइल का प्रकार और आकार भी दर्शाता है। लिस्ट व्यू बाईं ओर छोटे आइकन के साथ नामों की संक्षिप्त सूची दिखाता है। डिटेल्स व्यू एक तालिका (टेबल) की पंक्तियों में नाम, आकार, प्रकार और संशोधन तिथि दिखाता है। कंटेंट व्यू मुख्य रूप से फाइल खोजते समय उपयोग होता है, जो आइकन के नीचे मुख्य गुण प्रदर्शित करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Five Windows Explorer Display Views</text><rect x=\"45\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"92\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">1. Icons</text><text x=\"92\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Small to XL</text><rect x=\"150\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"197\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">2. Tiles</text><text x=\"197\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Name, Type, Size</text><rect x=\"255\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"302\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">3. List</text><text x=\"302\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Compact Columns</text><rect x=\"360\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"407\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">4. Details</text><text x=\"407\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Tabular Columns</text><rect x=\"465\" y=\"75\" width=\"95\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"512\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">5. Content</text><text x=\"512\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Search Default</text><line x1=\"92\" y1=\"130\" x2=\"92\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"197\" y1=\"130\" x2=\"197\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"302\" y1=\"130\" x2=\"302\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"407\" y1=\"130\" x2=\"407\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><line x1=\"512\" y1=\"130\" x2=\"512\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"92\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"92\" dy=\"0\">Image Preview</tspan><tspan x=\"92\" dy=\"1.2em\">Grid Rows</tspan></text><text x=\"197\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"197\" dy=\"0\">Side Info</tspan><tspan x=\"197\" dy=\"1.2em\">Disk Space</tspan></text><text x=\"302\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"302\" dy=\"0\">Many Files</tspan><tspan x=\"302\" dy=\"1.2em\">Quick Scan</tspan></text><text x=\"407\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"407\" dy=\"0\">Date Modified</tspan><tspan x=\"407\" dy=\"1.2em\">Sortable Data</tspan></text><text x=\"512\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"512\" dy=\"0\">Search Results</tspan><tspan x=\"512\" dy=\"1.2em\">Stacked Metadata</tspan></text></svg>",
+          "caption": {
+            "en": "Comparison of the five Windows Explorer display views: Icons, Tiles, List, Details table rows, and Content search layout.",
+            "hi": "विंडोज एक्सप्लोरर के पांच डिस्प्ले व्यू की तुलना: आइकन, टाइल्स, लिस्ट, डिटेल्स तालिका और कंटेंट खोज लेआउट।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Explorer layout views organize file metadata on screen.",
+          "hint": "Start with Windows Explorer views, describe arranging files into icons lists or tables, mention across folder and search windows, and conclude with displaying file sizes and modified dates.",
+          "target_sequence": [
+            { "id": "en_u10_t1", "text": "Windows Explorer views", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u10_t2", "text": "arrange items into icons lists or tables", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u10_t3", "text": "across folder and search windows", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u10_t4", "text": "to display file sizes and modified dates", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u10_d1", "category": "conceptual", "text": "convert all video files into plain text spreadsheets automatically", "penalty_explanation": "Explorer views change only the visual layout and displayed metadata on screen; they do not alter actual file formats." },
+            { "id": "en_u10_d2", "category": "technical", "text": "permanently delete files whenever Details view is selected", "penalty_explanation": "Selecting Details view simply organizes items into a table showing size and date modified without deleting anything." }
+          ]
+        },
+        "hi": {
+          "prompt": "विंडोज एक्सप्लोरर व्यू द्वारा फाइलों की जानकारी व्यवस्थित करने के क्रम को सही ढंग से सजाएं।",
+          "hint": "विंडोज एक्सप्लोरर व्यू से शुरुआत करें, आइकन सूची या तालिका में सजाने का उल्लेख करें, फोल्डर और सर्च विंडो का संदर्भ दें, और फाइल का आकार व तिथि दिखाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u10_t1", "text": "विंडोज एक्सप्लोरर व्यू", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u10_t2", "text": "फाइलों को आइकन सूची या तालिका में सजाकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u10_t3", "text": "फोल्डर और सर्च विंडो के भीतर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u10_t4", "text": "फाइल का आकार और संशोधन तिथि दिखाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u10_d1", "category": "conceptual", "text": "सभी वीडियो फाइलों को अपने आप साधारण टेक्स्ट में बदल देते हैं", "penalty_explanation": "एक्सप्लोरर व्यू केवल स्क्रीन पर दिखने का तरीका बदलते हैं, वे फाइल का वास्तविक प्रकार नहीं बदलते।" },
+            { "id": "hi_u10_d2", "category": "technical", "text": "डिटेल्स व्यू चुनते ही सभी फोल्डरों को स्थायी रूप से मिटा देते हैं", "penalty_explanation": "डिटेल्स व्यू केवल एक तालिका के रूप में फाइल के गुण दिखाता है, यह फाइलें डिलीट नहीं करता।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Explorer organizes items through five views: Icons (grid sizes), Tiles (type/size), List (compact columns), Details (tabular metadata), and Content (search results).",
+        "hi": "एक्सप्लोरर पांच व्यू प्रदान करता है: आइकन, टाइल्स (प्रकार/आकार), लिस्ट (संक्षिप्त सूची), डिटेल्स (तालिका विवरण), और कंटेंट (खोज परिणाम)।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Managing Files, Folders & Clipboard Operations",
+          "hi": "फाइल और फोल्डर प्रबंधन तथा क्लिपबोर्ड संचालन"
+        },
+        "theory": {
+          "en": "A file stores data, information, or program commands, whereas a folder (or directory) acts as a container for organizing multiple files and subfolders. Right-clicking opens context menus to create a New Folder, Rename an existing item, or Delete items to the Recycle Bin. File transfers use a temporary memory area called the Clipboard: choosing Cut followed by Paste moves an item from its original location to a new destination, whereas choosing Copy followed by Paste creates a duplicate while keeping the original intact.",
+          "hi": "फाइल कंप्यूटर में डेटा, सूचना या प्रोग्राम कमांड सहेजने वाली इकाई है, जबकि फोल्डर (या डायरेक्टरी) फाइलों और उप-फोल्डरों को व्यवस्थित रखने का स्थान है। राइट-क्लिक मेन्यू से आप नया फोल्डर बना सकते हैं, किसी फाइल या फोल्डर का नाम बदल सकते हैं (Rename), या उसे डिलीट कर सकते हैं। फाइलों को स्थानांतरित करने के लिए क्लिपबोर्ड नामक अस्थायी मेमोरी का उपयोग होता है: कट (Cut) और पेस्ट (Paste) करने से फाइल पुराने स्थान से हटकर नए स्थान पर चली जाती है, जबकि कॉपी (Copy) और पेस्ट (Paste) करने से मूल फाइल सुरक्षित रहते हुए उसकी एक प्रतिलिपि बन जाती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Clipboard File Operations: Cut vs. Copy &amp; Paste</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Cut + Paste</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Moves Item Completely</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">System Clipboard</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Temp Memory Buffer</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Copy + Paste</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Duplicates Original</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#fbbf24\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#fbbf24\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"375,102 383,98 383,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Leaves Origin</tspan><tspan x=\"120\" dy=\"1.2em\">Single Instance</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Holds Queued Data</tspan><tspan x=\"300\" dy=\"1.2em\">Between Folders</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Keeps Original</tspan><tspan x=\"480\" dy=\"1.2em\">Two Instances</tspan></text></svg>",
+          "caption": {
+            "en": "Temporary Clipboard memory staging contrasting Cut + Paste (relocating a file) against Copy + Paste (retaining both original and duplicate).",
+            "hi": "अस्थायी क्लिपबोर्ड मेमोरी जो कट और पेस्ट (फाइल स्थानांतरित करना) तथा कॉपी और पेस्ट (मूल और प्रतिलिपि दोनों रखना) के अंतर को दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how the Clipboard transfers or duplicates files between folders.",
+          "hint": "Start with the system clipboard, describe storing cut or copied items temporarily, mention during folder transfers, and conclude with moving or duplicating files with Paste.",
+          "target_sequence": [
+            { "id": "en_u11_t1", "text": "The system clipboard", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u11_t2", "text": "stores cut or copied items temporarily", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u11_t3", "text": "during directory transfers", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u11_t4", "text": "to move or duplicate files with Paste", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u11_d1", "category": "conceptual", "text": "leaves two identical copies behind whenever Cut and Paste is executed", "penalty_explanation": "Cut removes the item from its original location and moves it to the new destination; Copy creates two identical instances." },
+            { "id": "en_u11_d2", "category": "technical", "text": "forbids renaming any folder once created on the desktop", "penalty_explanation": "Any user-created folder or file can be renamed anytime via right-click Rename." }
+          ]
+        },
+        "hi": {
+          "prompt": "क्लिपबोर्ड द्वारा फाइलों को स्थानांतरित या कॉपी करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "सिस्टम क्लिपबोर्ड से शुरुआत करें, कट या कॉपी किए गए डेटा को अस्थायी रूप से रखने का उल्लेख करें, फोल्डर स्थानांतरण का संदर्भ दें, और पेस्ट द्वारा फाइल मूव या कॉपी करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u11_t1", "text": "सिस्टम क्लिपबोर्ड", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u11_t2", "text": "कट या कॉपी किए गए डेटा को अस्थायी रूप से रखकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u11_t3", "text": "फोल्डर स्थानांतरण के दौरान", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u11_t4", "text": "पेस्ट कमांड से फाइल मूव या कॉपी करता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u11_d1", "category": "conceptual", "text": "कट और पेस्ट करने पर पुराने स्थान पर भी फाइल की एक कॉपी छोड़ देता है", "penalty_explanation": "कट करने से फाइल पुराने स्थान से हटकर नए स्थान पर जाती है; दो प्रतियां केवल कॉपी करने से बनती हैं।" },
+            { "id": "hi_u11_d2", "category": "technical", "text": "एक बार फोल्डर बनने के बाद उसका नाम बदलने से रोक देता है", "penalty_explanation": "राइट-क्लिक करके रीनेम (Rename) विकल्प से किसी भी फाइल या फोल्डर का नाम बदला जा सकता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Folders organize files; the temporary Clipboard supports Cut + Paste (relocates the file) and Copy + Paste (duplicates the file while keeping the original).",
+        "hi": "फोल्डर फाइलों को व्यवस्थित रखते हैं; क्लिपबोर्ड कट + पेस्ट (फाइल स्थानांतरित करना) और कॉपी + पेस्ट (मूल फाइल सुरक्षित रखकर प्रतिलिपि बनाना) संभव बनाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Window Anatomy & Control States",
+          "hi": "विंडो की संरचना और नियंत्रण स्थितियां"
+        },
+        "theory": {
+          "en": "Every open program, file, or folder appears inside a rectangular screen frame called a window. Standard window components include the Title Bar at the top (showing the document/program name), Menu Bar, Toolbar, Scrollbars for viewing hidden content, and draggable borders for resizing. The upper-right corner of the Title Bar houses essential state buttons: Minimize (hides the window onto the taskbar without closing it), Maximize (enlarges the window to fill the entire screen), Restore (returns a maximized window to its previous size), and Close (terminates the program or document).",
+          "hi": "प्रत्येक खुला हुआ प्रोग्राम, फाइल या फोल्डर स्क्रीन पर एक आयताकार फ्रेम में दिखाई देता है जिसे विंडो कहते हैं। विंडो के मुख्य भागों में सबसे ऊपर टाइटल बार (प्रोग्राम और दस्तावेज़ का नाम दिखाने वाला), मेन्यू बार, टूलबार, छिपी सामग्री देखने के लिए स्क्रॉलबार और आकार बदलने योग्य किनारे शामिल हैं। टाइटल बार के ऊपरी दाएं कोने में नियंत्रण बटन होते हैं: मिनिमाइज (विंडो को बंद किए बिना टास्कबार पर छिपाना), मैक्सिमाइज (विंडो को पूरी स्क्रीन पर बड़ा करना), रिस्टोर (बड़ी विंडो को वापस पुराने आकार में लाना), और क्लोज (प्रोग्राम या फाइल बंद करना)।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Title Bar Window Control States</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Minimize (-)</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Hide to Taskbar</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Maximize ([])</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Fill Full Screen</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Restore</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Previous Size</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Close (X)</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Exit Program</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Still Running</tspan><tspan x=\"102\" dy=\"1.2em\">Click to Reopen</tspan></text><text x=\"232\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Maximum Focus</tspan><tspan x=\"232\" dy=\"1.2em\">Edge to Edge</tspan></text><text x=\"362\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Normal Frame</tspan><tspan x=\"362\" dy=\"1.2em\">Side-by-Side</tspan></text><text x=\"495\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Prompts Save</tspan><tspan x=\"495\" dy=\"1.2em\">Ends Session</tspan></text></svg>",
+          "caption": {
+            "en": "Title bar control buttons enabling Minimize (taskbar hiding), Maximize (full-screen expansion), Restore (prior window size), and Close (termination).",
+            "hi": "टाइटल बार के नियंत्रण बटन जो मिनिमाइज (टास्कबार पर छिपाना), मैक्सिमाइज (पूरी स्क्रीन), रिस्टोर (पुराना आकार) और क्लोज (बंद करना) दर्शाते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Title Bar control buttons adjust active application windows.",
+          "hint": "Start with Title bar control buttons, describe minimizing maximizing or closing frames, mention in the upper-right window corner, and conclude with managing active screen workspaces.",
+          "target_sequence": [
+            { "id": "en_u12_t1", "text": "Title bar control buttons", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u12_t2", "text": "minimize maximize or close frames", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u12_t3", "text": "from the upper-right window corner", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u12_t4", "text": "to manage active screen workspaces", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u12_d1", "category": "conceptual", "text": "permanently uninstall the software whenever Minimize is clicked", "penalty_explanation": "Minimizing simply hides an active window onto the bottom taskbar while keeping the program running in the background." },
+            { "id": "en_u12_d2", "category": "technical", "text": "shrink the window down to a tiny dot when Maximize is pressed", "penalty_explanation": "Maximize enlarges the window to occupy the entire monitor screen." }
+          ]
+        },
+        "hi": {
+          "prompt": "टाइटल बार के नियंत्रण बटनों द्वारा विंडो के आकार और स्थिति को नियंत्रित करने के क्रम को व्यवस्थित करें।",
+          "hint": "टाइटल बार नियंत्रण बटन से शुरुआत करें, मिनिमाइज मैक्सिमाइज या क्लोज करने का उल्लेख करें, विंडो के ऊपरी दाएं कोने का संदर्भ दें, और स्क्रीन कार्यक्षेत्र प्रबंधित करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u12_t1", "text": "टाइटल बार नियंत्रण बटन", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u12_t2", "text": "विंडो को मिनिमाइज मैक्सिमाइज या क्लोज करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u12_t3", "text": "ऊपरी दाएं कोने से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u12_t4", "text": "सक्रिय स्क्रीन कार्यक्षेत्र प्रबंधित करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u12_d1", "category": "conceptual", "text": "मिनिमाइज दबाते ही सॉफ्टवेयर को कंप्यूटर से हमेशा के लिए हटा देते हैं", "penalty_explanation": "मिनिमाइज करने से विंडो बंद नहीं होती, बल्कि केवल टास्कबार पर अस्थायी रूप से छिप जाती है।" },
+            { "id": "hi_u12_d2", "category": "technical", "text": "मैक्सिमाइज दबाने पर विंडो को सिकोड़कर एक बिंदु बना देते हैं", "penalty_explanation": "मैक्सिमाइज बटन विंडो को बड़ा करके पूरी स्क्रीन पर फैला देता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Title Bar buttons control window states: Minimize hides the window on the taskbar without closing it, Maximize fills the screen, Restore reverts size, and Close exits.",
+        "hi": "टाइटल बार बटन विंडो नियंत्रित करते हैं: मिनिमाइज टास्कबार पर छिपाता है, मैक्सिमाइज पूरी स्क्रीन भरता है, रिस्टोर पुराना आकार लाता है, और क्लोज बंद करता है।"
+      }
+    }
+  ]
+}
