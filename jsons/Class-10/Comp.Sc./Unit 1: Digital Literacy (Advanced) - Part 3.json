@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 1: Digital Literacy (Advanced) - Part 3",
+      "hi": "इकाई 1: डिजिटल साक्षरता (उन्नत) - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Drum Line Printers: High-Speed Embossed Cylinder Printing",
+          "hi": "ड्रम लाइन प्रिंटर: उच्च-गति उभरा हुआ सिलेंडर मुद्रण"
+        },
+        "theory": {
+          "en": "Drum printers are high-speed impact line printers capable of printing an entire line of text at once, reaching speeds of 300 to 2000 lines per minute (lpm). A large cylindrical drum embossed with complete character sets around its circumference spins continuously in front of a wide inked ribbon and paper. As the desired character rotates into position, a hammer strikes the paper from behind against the ribbon and embossed character, requiring one full drum revolution per line. While fast and capable of producing multiple carbon copies, drum printers are noisy, expensive to maintain, cannot print graphics, and are restricted to predefined embossed fonts.",
+          "hi": "ड्रम प्रिंटर उच्च-गति वाले इम्पैक्ट लाइन प्रिंटर हैं जो एक बार में पूरी पंक्ति प्रिंट करते हैं और 300 से 2000 लाइन प्रति मिनट (lpm) की गति से कार्य करते हैं। इसमें चौड़े स्याही वाले रिबन और कागज़ के सामने एक बड़ा बेलनाकार ड्रम तेज़ी से घूमता है, जिसकी सतह पर अक्षरों के सेट उभरे (embossed) होते हैं। जैसे ही वांछित अक्षर सही स्थान पर आता है, पीछे से एक हथौड़ा कागज़ को रिबन और अक्षर पर दबाता है, जिससे प्रत्येक पंक्ति के लिए ड्रम का एक पूरा चक्कर लगता है। ये तेज़ हैं और कार्बन कॉपी निकालते हैं, पर शोर करते हैं, महंगे हैं और ग्राफिक्स प्रिंट नहीं कर सकते।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Drum Line Printer: High-Speed Embossed Cylinder</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Embossed Drum</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Fixed Raised Characters</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Hammer &amp; Ribbon</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Strikes Paper Line</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Line Output</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">300 to 2000 LPM</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">1 Turn = 1 Line</tspan><tspan x=\"120\" dy=\"1.2em\">No Graphics</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Impact Mechanism</tspan><tspan x=\"300\" dy=\"1.2em\">Noisy Operation</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Multiple Copies</tspan><tspan x=\"480\" dy=\"1.2em\">Bulk Text Speed</tspan></text></svg>",
+          "caption": {
+            "en": "High-speed drum line printer architecture combining a spinning embossed character cylinder with rear hammers and an inked ribbon.",
+            "hi": "उच्च-गति ड्रम लाइन प्रिंटर संरचना जिसमें उभरे हुए अक्षरों वाला घूमता सिलेंडर, हथौड़े और स्याही वाला रिबन शामिल है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how drum line printers achieve high-speed text output.",
+          "hint": "Start with impact drum line printers, describe striking paper against an inked ribbon, mention across a spinning embossed character cylinder, and conclude with printing hundreds of text lines per minute.",
+          "target_sequence": [
+            { "id": "en_u9_t1", "text": "Impact drum line printers", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u9_t2", "text": "strike paper against an inked ribbon", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u9_t3", "text": "across a spinning embossed character cylinder", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u9_t4", "text": "to print hundreds of text lines per minute", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u9_d1", "category": "conceptual", "text": "draw detailed multi-color architectural charts and photographs easily", "penalty_explanation": "Drum printers are restricted to predefined embossed text characters and cannot print graphics or charts." },
+            { "id": "en_u9_d2", "category": "technical", "text": "spray microscopic ionized ink droplets silently onto glossy paper", "penalty_explanation": "Spraying ionized ink droplets silently is how non-impact inkjet printers operate; drum printers use noisy mechanical hammers." }
+          ]
+        },
+        "hi": {
+          "prompt": "ड्रम लाइन प्रिंटर द्वारा तेज़ गति से पाठ प्रिंट करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "इम्पैक्ट ड्रम लाइन प्रिंटर से शुरुआत करें, स्याही वाले रिबन पर कागज़ दबाने का उल्लेख करें, घूमते उभरे अक्षरों वाले सिलेंडर का संदर्भ दें, और प्रति मिनट सैकड़ों पंक्तियां प्रिंट करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u9_t1", "text": "इम्पैक्ट ड्रम लाइन प्रिंटर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u9_t2", "text": "स्याही वाले रिबन पर कागज़ दबाकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u9_t3", "text": "घूमते हुए उभरे अक्षरों वाले सिलेंडर पर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u9_t4", "text": "प्रति मिनट सैकड़ों पंक्तियां प्रिंट करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u9_d1", "category": "conceptual", "text": "रंगीन फोटो और जटिल इंजीनियरिंग चार्ट आसानी से प्रिंट करते हैं", "penalty_explanation": "ड्रम प्रिंटर केवल ड्रम पर उभरे हुए पूर्व-निर्धारित अक्षर ही छाप सकते हैं, ये ग्राफिक्स या चित्र नहीं बना सकते।" },
+            { "id": "hi_u9_d2", "category": "technical", "text": "बिना किसी आवाज़ के सूक्ष्म आयनित स्याही की बूंदें छिड़कते हैं", "penalty_explanation": "आयनित स्याही छिड़कना इंकजेट प्रिंटर का काम है; ड्रम प्रिंटर यांत्रिक हथौड़ों से चोट करते हैं और शोर करते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Drum printers are fast impact line printers (300–2000 LPM) that hammer paper against a spinning embossed cylinder, but they are noisy and cannot print graphics.",
+        "hi": "ड्रम प्रिंटर तेज़ इम्पैक्ट लाइन प्रिंटर (300–2000 LPM) हैं जो घूमते उभरे सिलेंडर पर चोट करके पंक्तियां छापते हैं, पर ये शोर करते हैं और ग्राफिक्स नहीं छाप सकते।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Fax Machines: Optical Document Digitization & Transmission",
+          "hi": "फैक्स मशीन: प्रकाशीय दस्तावेज़ डिजिटलीकरण और संचरण"
+        },
+        "theory": {
+          "en": "A Fax machine is a telecommunication device that sends and receives printed text or images across telephone lines. To transmit a document, an internal optical scanner digitizes the physical page and converts it into electronic signals sent over the telephone network to a receiving fax machine, computer, or online fax service. Today, standalone fax units are largely integrated into multifunction devices that combine printing, scanning, copying, and faxing for business and personal correspondence.",
+          "hi": "फैक्स (Fax) मशीन एक दूरसंचार उपकरण है जो टेलीफोन लाइनों के माध्यम से मुद्रित पृष्ठों या चित्रों को भेजता और प्राप्त करता है। दस्तावेज़ भेजने के लिए इसका आंतरिक ऑप्टिकल स्कैनर भौतिक पृष्ठ को डिजिटल रूप में बदलता है और टेलीफोन नेटवर्क पर इलेक्ट्रॉनिक सिग्नल के रूप में दूसरे फैक्स मशीन या कंप्यूटर पर भेजता है। आजकल अलग फैक्स मशीनों के बजाय ऐसे मल्टीफंक्शन उपकरण अधिक उपयोग होते हैं जिनमें प्रिंटिंग, स्कैनिंग, कॉपी और फैक्स की सुविधाएं एक साथ होती हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Fax Transmission: Optical Scan &amp; Phone Line Delivery</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Optical Scanner</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Digitizes Paper Page</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Telephone Lines</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Electronic Signals</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Remote Receiver</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Prints Exact Copy</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Text &amp; Images</tspan><tspan x=\"120\" dy=\"1.2em\">Internal Sensor</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Telecom Link</tspan><tspan x=\"300\" dy=\"1.2em\">Fax Protocol</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Multifunction</tspan><tspan x=\"480\" dy=\"1.2em\">Office Delivery</tspan></text></svg>",
+          "caption": {
+            "en": "Fax machine communication pipeline digitizing paper pages via an optical scanner and sending electronic signals across telephone lines.",
+            "hi": "फैक्स मशीन संचार प्रणाली जो ऑप्टिकल स्कैनर से पृष्ठ को डिजिटल बनाकर टेलीफोन लाइनों द्वारा इलेक्ट्रॉनिक सिग्नल भेजती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how a fax machine transmits physical documents over telephone lines.",
+          "hint": "Start with a fax machine, describe digitizing printed pages with an optical scanner, mention sending electronic signals over telephone lines, and conclude with delivering remote copies to receiving offices.",
+          "target_sequence": [
+            { "id": "en_u10_t1", "text": "A fax machine", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u10_t2", "text": "digitizes printed pages with an optical scanner", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u10_t3", "text": "to transmit electronic signals over telephone lines", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u10_t4", "text": "and deliver remote document copies", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u10_d1", "category": "conceptual", "text": "physically shoots paper sheets through hollow underground air tubes", "penalty_explanation": "Fax machines digitize images into electronic signals sent over telephone lines; physical paper stays at the sender's machine." },
+            { "id": "en_u10_d2", "category": "technical", "text": "converts spoken music tracks into stereo sound waves for headphones", "penalty_explanation": "Converting audio signals into sound waves is the function of speakers; fax machines transmit scanned visual documents." }
+          ]
+        },
+        "hi": {
+          "prompt": "फैक्स मशीन द्वारा टेलीफोन लाइनों पर दस्तावेज़ भेजने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक फैक्स मशीन से शुरुआत करें, ऑप्टिकल स्कैनर से पृष्ठ को डिजिटल बनाने का उल्लेख करें, टेलीफोन लाइनों पर इलेक्ट्रॉनिक सिग्नल भेजने का संदर्भ दें, और दूरस्थ प्रतियां पहुंचाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u10_t1", "text": "एक फैक्स मशीन", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u10_t2", "text": "ऑप्टिकल स्कैनर से पृष्ठ को डिजिटल बनाकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u10_t3", "text": "टेलीफोन लाइनों पर इलेक्ट्रॉनिक सिग्नल भेजकर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u10_t4", "text": "दूरस्थ कार्यालयों तक दस्तावेज़ पहुंचाती है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u10_d1", "category": "conceptual", "text": "असली कागज़ की शीट को भूमिगत हवा के पाइप से दूसरे शहर भेजती है", "penalty_explanation": "फैक्स मशीन कागज़ को स्कैन करके इलेक्ट्रॉनिक सिग्नल के रूप में टेलीफोन लाइन से भेजती है।" },
+            { "id": "hi_u10_d2", "category": "technical", "text": "कंप्यूटर साउंड कार्ड से संगीत लेकर ध्वनि तरंगें उत्पन्न करती है", "penalty_explanation": "ध्वनि तरंगें उत्पन्न करना स्पीकर का कार्य है; फैक्स मशीन दस्तावेज़ और चित्र भेजती है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Fax machines digitize pages using an internal optical scanner and send electronic signals over telephone lines, often integrated into multifunction office devices.",
+        "hi": "फैक्स मशीन आंतरिक ऑप्टिकल स्कैनर से पृष्ठ को डिजिटल बनाकर टेलीफोन लाइनों पर इलेक्ट्रॉनिक सिग्नल भेजती है और आजकल मल्टीफंक्शन प्रिंटर का हिस्सा होती है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Computer Speakers: Sound Card Audio Conversion & Setup",
+          "hi": "कंप्यूटर स्पीकर: साउंड कार्ड ऑडियो रूपांतरण और सेटअप"
+        },
+        "theory": {
+          "en": "Speakers are audio output devices that receive electrical audio signals from the computer's sound card and convert
