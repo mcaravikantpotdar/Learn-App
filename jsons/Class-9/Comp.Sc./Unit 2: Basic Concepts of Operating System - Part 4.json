@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 9",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 2: Basic Concepts of Operating System - Part 4",
+      "hi": "इकाई 2: ऑपरेटिंग सिस्टम की बुनियादी अवधारणाएं - भाग 4"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Text & Graphics Accessories: Notepad, WordPad & MS Paint",
+          "hi": "टेक्स्ट और ग्राफिक्स एक्सेसरीज: नोटपैड, वर्डपैड और एमएस पेंट"
+        },
+        "theory": {
+          "en": "Microsoft Windows includes built-in utility programs under the Accessories menu for everyday text and graphics tasks. Notepad is a lightweight generic plain-text editor supporting basic word wrap and saving files with the .txt extension. WordPad offers richer document creation and formatting capabilities for letters, notes, and posters without the complexity of a full word processor. MS Paint is a bitmap drawing and coloring application used to create, edit, and print digital pictures saved in formats like .jpg, .gif, or .bmp.",
+          "hi": "माइक्रोसॉफ्ट विंडोज में रोजमर्रा के टेक्स्ट और ग्राफिक्स कार्यों के लिए एक्सेसरीज (Accessories) मेन्यू के अंतर्गत उपयोगी प्रोग्राम शामिल होते हैं। नोटपैड एक साधारण टेक्स्ट एडिटर है जो बुनियादी वर्ड रैप की सुविधा देता है और फाइलों को .txt एक्सटेंशन के साथ सहेजता है। वर्डपैड पत्र, नोट्स और पोस्टर जैसे दस्तावेज़ बनाने और फॉर्मेट करने की सुविधा देता है। एमएस पेंट (MS Paint) एक ड्राइंग और कलरिंग प्रोग्राम है जिसका उपयोग चित्र बनाने, रंग भरने और उन्हें .jpg, .gif या .bmp फॉर्मेट में सहेजने व प्रिंट करने के लिए किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Windows Accessories: Notepad, WordPad &amp; MS Paint</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Notepad (.txt)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Plain Text &amp; Word Wrap</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">WordPad</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Formatted Letters &amp; Notes</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">MS Paint</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Draw &amp; Color (.jpg/.bmp)</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Minimal Editor</tspan><tspan x=\"120\" dy=\"1.2em\">Unformatted Code</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Rich Text</tspan><tspan x=\"300\" dy=\"1.2em\">Posters &amp; Docs</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Digital Canvas</tspan><tspan x=\"480\" dy=\"1.2em\">Save &amp; Print Art</tspan></text></svg>",
+          "caption": {
+            "en": "Built-in Windows Accessories comparing plain-text Notepad, formatted WordPad documents, and bitmap drawing in MS Paint.",
+            "hi": "विंडोज की अंतर्निहित एक्सेसरीज जो सादे टेक्स्ट वाले नोटपैड, फॉर्मेटिंग वाले वर्डपैड और चित्रकारी वाले एमएस पेंट को दर्शाती हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how built-in Windows Accessories support everyday text and graphics tasks.",
+          "hint": "Start with built-in Windows accessories, describe supporting plain text formatting and drawing, mention through Notepad WordPad and MS Paint, and conclude with creating everyday files without external software.",
+          "target_sequence": [
+            { "id": "en_u13_t1", "text": "Built-in Windows accessories", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u13_t2", "text": "support plain text formatting and drawing", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u13_t3", "text": "through Notepad WordPad and MS Paint", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u13_t4", "text": "to create everyday files without extra software", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u13_d1", "category": "conceptual", "text": "save all Notepad plain text notes exclusively as executable video files", "penalty_explanation": "Notepad is a plain-text editor that saves documents with the .txt file extension, not as video files." },
+            { "id": "en_u13_d2", "category": "technical", "text": "require installing third-party hardware cards before drawing lines in MS Paint", "penalty_explanation": "MS Paint is pre-installed with Windows and works directly with standard mouse and keyboard input." }
+          ]
+        },
+        "hi": {
+          "prompt": "विंडोज एक्सेसरीज द्वारा दैनिक टेक्स्ट और चित्रकारी कार्यों में सहायता करने के क्रम को व्यवस्थित करें।",
+          "hint": "अंतर्निहित विंडोज एक्सेसरीज से शुरुआत करें, टेक्स्ट फॉर्मेटिंग और चित्रकारी का उल्लेख करें, नोटपैड वर्डपैड और पेंट का संदर्भ दें, और बिना अतिरिक्त सॉफ्टवेयर के फाइल बनाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u13_t1", "text": "अंतर्निहित विंडोज एक्सेसरीज", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u13_t2", "text": "टेक्स्ट फॉर्मेटिंग और चित्रकारी को संभव बनाकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u13_t3", "text": "नोटपैड वर्डपैड और एमएस पेंट द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u13_t4", "text": "बिना अतिरिक्त सॉफ्टवेयर के फाइलें तैयार कराती हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u13_d1", "category": "conceptual", "text": "नोटपैड की सभी फाइलों को केवल वीडियो फिल्म के रूप में सहेजती हैं", "penalty_explanation": "नोटपैड एक साधारण टेक्स्ट एडिटर है जो फाइलों को .txt एक्सटेंशन के साथ सहेजता है।" },
+            { "id": "hi_u13_d2", "category": "technical", "text": "एमएस पेंट में रेखा खींचने के लिए बाहरी प्रिंटर का होना अनिवार्य करती हैं", "penalty_explanation": "एमएस पेंट विंडोज में पहले से उपलब्ध एक ड्राइंग सॉफ्टवेयर है जो सीधे स्क्रीन पर काम करता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Windows Accessories provide Notepad (.txt) for plain text, WordPad for formatted notes and letters, and MS Paint (.jpg, .gif, .bmp) for digital drawing.",
+        "hi": "विंडोज एक्सेसरीज में सादे टेक्स्ट के लिए नोटपैड (.txt), दस्तावेज़ों के लिए वर्डपैड, और डिजिटल चित्रकारी के लिए एमएस पेंट (.jpg, .gif, .bmp) शामिल हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Utility Tools & Personalization: Calculator, Wallpapers & Screensavers",
+          "hi": "यूटिलिटी टूल्स और पर्सनलाइजेशन: कैलकुलेटर, वॉलपेपर और स्क्रीनसेवर"
+        },
+        "theory": {
+          "en": "The Windows Calculator (launched via the Start menu or typing calc in the Run dialog) performs arithmetic operations such as addition, subtraction, multiplication, and division. Users personalize their workspace by changing the Desktop Background (Wallpaper), which displays a static .jpg or .gif picture behind desktop icons. A Screensaver is an animated software program that activates automatically after the computer sits idle for a set wait time, originally designed to prevent static images from burning into the phosphor coating of older CRT monitors.",
+          "hi": "विंडोज कैलकुलेटर (जिसे स्टार्ट मेन्यू या रन बॉक्स में calc टाइप करके खोला जाता है) जोड़, घटाव, गुणा और भाग जैसी गणितीय गणनाएं करता है। उपयोगकर्ता डेस्कटॉप बैकग्राउंड या वॉलपेपर बदलकर स्क्रीन को आकर्षक बना सकते हैं, जो आइकन के पीछे .jpg या .gif चित्र दिखाता है। स्क्रीनसेवर एक एनिमेटेड सॉफ्टवेयर प्रोग्राम है जो कंप्यूटर के एक निश्चित समय तक निष्क्रिय रहने पर स्वतः चालू हो जाता है; इसे मूल रूप से पुराने सीआरटी मॉनिटरों की फॉस्फोर परत को स्थायी छवि जलने (burn-in) से बचाने के लिए बनाया गया था।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Desktop Utilities: Calculator, Wallpaper &amp; Screensaver</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Calculator (calc)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Arithmetic Operations</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Desktop Wallpaper</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Static .jpg / .gif Image</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Screensaver</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Idle Screen Protection</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#fbbf24\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Add, Sub, Mul, Div</tspan><tspan x=\"120\" dy=\"1.2em\">Run Box: calc</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Custom Backdrop</tspan><tspan x=\"300\" dy=\"1.2em\">Behind Icons</tspan></text><text x=\"480\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Timed Idle Trigger</tspan><tspan x=\"480\" dy=\"1.2em\">Prevents Burn-In</tspan></text></svg>",
+          "caption": {
+            "en": "Desktop personalization and math utilities distinguishing the Calculator app, static desktop wallpapers, and idle-activated screensavers.",
+            "hi": "डेस्कटॉप पर्सनलाइजेशन और उपयोगिता उपकरण जो कैलकुलेटर ऐप, स्थिर वॉलपेपर और निष्क्रिय समय पर चलने वाले स्क्रीनसेवर को दर्शाते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how an animated screensaver protects computer monitors during idle periods.",
+          "hint": "Start with an animated screensaver program, describe launching automatically, mention after a set idle wait time, and conclude with protecting older monitor screens from image burn-in.",
+          "target_sequence": [
+            { "id": "en_u14_t1", "text": "An animated screensaver program", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u14_t2", "text": "activates automatically on screen", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u14_t3", "text": "after a set idle wait duration", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u14_t4", "text": "to prevent monitor phosphor burn-in", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u14_d1", "category": "conceptual", "text": "performs complex division and multiplication instead of the Calculator", "penalty_explanation": "Mathematical calculations are performed by the Calculator utility (calc), whereas a screensaver displays idle animations." },
+            { "id": "en_u14_d2", "category": "technical", "text": "deletes the desktop wallpaper permanently whenever the mouse stops moving", "penalty_explanation": "Screensavers temporarily overlay animations while idle and return immediately to your desktop wallpaper when you move the mouse." }
+          ]
+        },
+        "hi": {
+          "prompt": "स्क्रीनसेवर प्रोग्राम द्वारा कंप्यूटर मॉनिटर की सुरक्षा करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक एनिमेटेड स्क्रीनसेवर से शुरुआत करें, स्वतः सक्रिय होने का उल्लेख करें, निश्चित निष्क्रिय प्रतीक्षा समय का संदर्भ दें, और मॉनिटर स्क्रीन को बर्न-इन से बचाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u14_t1", "text": "एक एनिमेटेड स्क्रीनसेवर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u14_t2", "text": "स्क्रीन पर स्वतः सक्रिय होकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u14_t3", "text": "निश्चित निष्क्रिय प्रतीक्षा समय के बाद", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u14_t4", "text": "मॉनिटर स्क्रीन को बर्न-इन से बचाता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u14_d1", "category": "conceptual", "text": "कैलकुलेटर की जगह जोड़ घटाव और भाग के सवाल हल करता है", "penalty_explanation": "गणितीय गणनाओं के लिए विंडोज कैलकुलेटर (calc) का उपयोग किया जाता है, स्क्रीनसेवर एनिमेशन दिखाने के लिए है।" },
+            { "id": "hi_u14_d2", "category": "technical", "text": "माउस रुकते ही डेस्कटॉप वॉलपेपर को हमेशा के लिए मिटा देता है", "penalty_explanation": "स्क्रीनसेवर केवल निष्क्रिय समय के दौरान चलता है और माउस हिलाने पर वापस आपका वॉलपेपर दिखाता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Calculator (calc) handles arithmetic, Desktop Wallpaper customizes background images (.jpg/.gif), and Screensavers run animated graphics during idle time to prevent screen burn-in.",
+        "hi": "कैलकुलेटर (calc) गणितीय गणना करता है, वॉलपेपर डेस्कटॉप पृष्ठभूमि (.jpg/.gif) बदलता है, और स्क्रीनसेवर निष्क्रिय समय में चलकर स्क्रीन बर्न-इन रोकता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Windows Control Panel Administration",
+          "hi": "विंडोज कंट्रोल पैनल प्रशासन"
+        },
+        "theory": {
+          "en": "The Control Panel is a centralized administrative software module in Microsoft Windows used to configure and manage core operating system settings. Through the Control Panel, users and administrators control user accounts and passwords, customize mouse and keyboard behavior, adjust display and sound settings, configure network and power options, manage parental controls, and safely install or uninstall software programs.",
+          "hi": "कंट्रोल पैनल (Control Panel) माइक्रोसॉफ्ट विंडोज का एक केंद्रीय प्रशासनिक सॉफ्टवेयर मॉड्यूल है, जिसका उपयोग ऑपरेटिंग सिस्टम की लगभग सभी सेटिंग्स को कॉन्फ़िगर और प्रबंधित करने के लिए किया जाता है। कंट्रोल पैनल के माध्यम से उपयोगकर्ता खाते और पासवर्ड, माउस और कीबोर्ड की कार्यप्रणाली, डिस्प्ले और साउंड सेटिंग्स, नेटवर्क और पावर विकल्प, पैरेंटल कंट्रोल तथा सॉफ्टवेयर प्रोग्रामों को इंस्टॉल या अनइंस्टॉल किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Windows Control Panel Central Configuration</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Users &amp; Security</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Accounts &amp; Passwords</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Hardware &amp; Sound</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Mouse, Display &amp; Audio</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Programs &amp; Net</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Install, Remove &amp; Wi-Fi</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Parental Controls</tspan><tspan x=\"120\" dy=\"1.2em\">Login Protection</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Device Options</tspan><tspan x=\"300\" dy=\"1.2em\">Power &amp; Display</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Software Setup</tspan><tspan x=\"480\" dy=\"1.2em\">Network Settings</tspan></text></svg>",
+          "caption": {
+            "en": "Administrative categories managed inside the Windows Control Panel including user accounts, hardware devices, display/sound, and software installation.",
+            "hi": "विंडोज कंट्रोल पैनल के अंतर्गत प्रबंधित प्रशासनिक श्रेणियां जिनमें उपयोगकर्ता खाते, हार्डवेयर, डिस्प्ले/साउंड और सॉफ्टवेयर इंस्टॉलेशन शामिल हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence detailing how the Windows Control Panel administers computer settings.",
+          "hint": "Start with the Windows Control Panel, describe configuring hardware accounts and programs, mention through centralized administrative settings, and conclude with customizing operating system behavior.",
+          "target_sequence": [
+            { "id": "en_u15_t1", "text": "The Windows Control Panel", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u15_t2", "text": "configures hardware accounts and programs", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u15_t3", "text": "through centralized administrative settings", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u15_t4", "text": "to customize operating system behavior", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u15_d1", "category": "conceptual", "text": "serves exclusively as a canvas for painting digital watercolor portraits", "penalty_explanation": "Drawing and painting pictures is performed in MS Paint; the Control Panel manages system settings and hardware." },
+            { "id": "en_u15_d2", "category": "technical", "text": "blocks users from ever changing passwords or removing old software", "penalty_explanation": "The Control Panel specifically provides tools to update user passwords and install or uninstall applications." }
+          ]
+        },
+        "hi": {
+          "prompt": "विंडोज कंट्रोल पैनल द्वारा सिस्टम सेटिंग्स को नियंत्रित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "विंडोज कंट्रोल पैनल से शुरुआत करें, हार्डवेयर खाते और प्रोग्राम सेट करने का उल्लेख करें, केंद्रीय प्रशासनिक सेटिंग्स का संदर्भ दें, और ऑपरेटिंग सिस्टम अनुकूलित करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u15_t1", "text": "विंडोज कंट्रोल पैनल", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u15_t2", "text": "हार्डवेयर खाते और प्रोग्राम सेट करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u15_t3", "text": "केंद्रीय प्रशासनिक सेटिंग्स के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u15_t4", "text": "ऑपरेटिंग सिस्टम की कार्यप्रणाली अनुकूलित करता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u15_d1", "category": "conceptual", "text": "केवल डिजिटल रंग भरने और चित्र बनाने का एक ड्राइंग बोर्ड है", "penalty_explanation": "चित्रकारी के लिए एमएस पेंट का उपयोग होता है; कंट्रोल पैनल कंप्यूटर की मुख्य सेटिंग्स प्रबंधित करता है।" },
+            { "id": "hi_u15_d2", "category": "technical", "text": "उपयोगकर्ताओं को पासवर्ड बदलने या पुराने प्रोग्राम हटाने से रोकता है", "penalty_explanation": "कंट्रोल पैनल के माध्यम से ही पासवर्ड बदले जाते हैं और अनावश्यक प्रोग्राम हटाए जाते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The Control Panel is Windows' administrative hub for configuring hardware devices, user accounts, passwords, display, sound, network, and program installation.",
+        "hi": "कंट्रोल पैनल विंडोज का प्रशासनिक केंद्र है जहाँ हार्डवेयर, यूजर अकाउंट, पासवर्ड, डिस्प्ले, साउंड, नेटवर्क और प्रोग्राम इंस्टॉलेशन सेट किए जाते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Mouse Button Functions & Interaction Mechanics",
+          "hi": "माउस बटन के कार्य और संचालन प्रक्रिया"
+        },
+        "theory": {
+          "en": "A standard computer mouse features two main buttons and a central scroll wheel to control the screen pointer. Pressing the Left Button once (a normal click) selects items, highlights text, or drags objects. Clicking the Left Button twice rapidly within roughly half a second (a double-click) opens or executes files, folders, and software programs. Pressing the Right Button (right-click) opens context-sensitive pop-up menus tailored to the selected item, while rotating the central Scroll Wheel smoothly moves active document windows up and down.",
+          "hi": "एक मानक कंप्यूटर माउस में स्क्रीन पॉइंटर को नियंत्रित करने के लिए दो मुख्य बटन और बीच में एक स्क्रॉल व्हील होता है। बाएं बटन (Left Button) को एक बार दबाने (सामान्य क्लिक) से आइकन चुने जाते हैं, टेक्स्ट हाईलाइट होता है या वस्तुओं को ड्रैग किया जाता है। बाएं बटन को लगभग आधे सेकंड के भीतर दो बार तेज़ी से दबाने (डबल-क्लिक) से कोई भी फाइल, फोल्डर या प्रोग्राम खुल जाता है। दाएं बटन (Right Button) को दबाने से चुनी गई वस्तु से संबंधित शॉर्टकट पॉप-अप मेन्यू खुलता है, जबकि बीच के स्क्रॉल व्हील को घुमाने से विंडो के पृष्ठ ऊपर-नीचे स्क्रॉल होते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Standard Mouse Button Actions &amp; Pointer Control</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Left Click</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Select &amp; Drag</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Double Click</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Open &amp; Execute</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Right Click</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Context Menu</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Scroll Wheel</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Page Navigation</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Single Press</tspan><tspan x=\"102\" dy=\"1.2em\">Highlight Text</tspan></text><text x=\"232\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">2x Rapid Tap</tspan><tspan x=\"232\" dy=\"1.2em\">Launch Files</tspan></text><text x=\"362\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Pop-Up Options</tspan><tspan x=\"362\" dy=\"1.2em\">Copy &amp; Rename</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Up &amp; Down</tspan><tspan x=\"495\" dy=\"1.2em\">No Scrollbar Aim</tspan></text></svg>",
+          "caption": {
+            "en": "Four primary mouse interaction mechanics mapping Left-click selection, rapid Double-click opening, Right-click menus, and Scroll Wheel movement.",
+            "hi": "माउस के चार प्रमुख कार्य जो बाएं क्लिक (चयन), डबल-क्लिक (फाइल खोलना), दाएं क्लिक (मेन्यू) और स्क्रॉल व्हील संचालन को दर्शाते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence detailing how standard mouse buttons and the scroll wheel control graphical interfaces.",
+          "hint": "Start with standard computer mice, describe selecting opening and scrolling items, mention using left right and wheel controls, and conclude with navigating graphical windows smoothly.",
+          "target_sequence": [
+            { "id": "en_u16_t1", "text": "Standard computer mice", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u16_t2", "text": "select open and scroll items", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u16_t3", "text": "using left right and wheel controls", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u16_t4", "text": "to navigate graphical windows smoothly", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u16_d1", "category": "conceptual", "text": "open context pop-up menus whenever the rubber scroll wheel is unplugged", "penalty_explanation": "Context-sensitive pop-up menus are opened by pressing the right mouse button." },
+            { "id": "en_u16_d2", "category": "technical", "text": "require waiting ten full seconds between clicks to execute a double-click", "penalty_explanation": "A double-click requires pressing the left button twice rapidly within roughly half a second." }
+          ]
+        },
+        "hi": {
+          "prompt": "माउस के बटनों और स्क्रॉल व्हील द्वारा ग्राफिकल विंडोज को संचालित करने के क्रम को व्यवस्थित करें।",
+          "hint": "मानक कंप्यूटर माउस से शुरुआत करें, वस्तुओं को चुनने खोलने और स्क्रॉल करने का उल्लेख करें, बाएं दाएं और व्हील नियंत्रण का संदर्भ दें, और ग्राफिकल विंडो चलाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u16_t1", "text": "मानक कंप्यूटर माउस", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u16_t2", "text": "वस्तुओं को चुनकर खोलकर और स्क्रॉल करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u16_t3", "text": "बाएं दाएं और व्हील नियंत्रणों द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u16_t4", "text": "ग्राफिकल विंडोज को सुगमता से चलाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u16_d1", "category": "conceptual", "text": "माउस का तार निकालने पर स्क्रीन पर शॉर्टकट पॉप-अप मेन्यू खोल देते हैं", "penalty_explanation": "शॉर्टकट या कॉन्टेक्स्ट मेन्यू माउस के दाएं बटन (Right Button) को दबाने से खुलता है।" },
+            { "id": "hi_u16_d2", "category": "technical", "text": "डबल-क्लिक करने के लिए दोनों क्लिक के बीच दस सेकंड रुकना अनिवार्य करते हैं", "penalty_explanation": "डबल-क्लिक के लिए बाएं बटन को लगभग आधे सेकंड के भीतर तेज़ी से दो बार दबाना होता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Left-click selects or drags, rapid Double-click opens files/apps, Right-click opens context menus, and the Scroll Wheel moves active pages up and down.",
+        "hi": "लेफ्ट-क्लिक चुनता/ड्रैग करता है, तेज़ डबल-क्लिक फाइलें खोलता है, राइट-क्लिक कॉन्टेक्स्ट मेन्यू दिखाता है, और स्क्रॉल व्हील पेज ऊपर-नीचे करता है।"
+      }
+    }
+  ]
+}
