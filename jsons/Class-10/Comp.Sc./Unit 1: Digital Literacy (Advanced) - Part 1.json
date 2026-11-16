@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 1: Digital Literacy (Advanced) - Part 1",
+      "hi": "इकाई 1: डिजिटल साक्षरता (उन्नत) - भाग 1"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Overhead Projector (OHP) Optical Architecture",
+          "hi": "ओवरहेड प्रोजेक्टर (OHP) की प्रकाशीय संरचना"
+        },
+        "theory": {
+          "en": "An Overhead Projector (OHP) is an optical projection machine that projects writing or images drawn on transparent plastic sheets onto a wall or screen. Inside the base box, a bright lamp generates light while a reflector behind it directs the beam forward through a condenser onto a 45-degree base mirror. A cooling blower prevents the lamp from overheating. The 45-degree mirror redirects the horizontal light beam vertically upward through a glass projection stage equipped with a Fresnel lens, passing through the transparency into an upper objective lens, focusing knob, and top mirror that projects the magnified image onto the screen.",
+          "hi": "ओवरहेड प्रोजेक्टर (OHP) एक प्रकाशीय मशीन है जो पारदर्शी प्लास्टिक शीट (ट्रांसपेरेंसी) पर लिखे पाठ या चित्रों को दीवार या स्क्रीन पर बड़ा करके दिखाती है। इसके निचले बॉक्स में एक तेज लैंप प्रकाश उत्पन्न करता है, जिसके पीछे लगा परावर्तक (रिफ्लेक्टर) प्रकाश को कंडेंसर के माध्यम से 45-डिग्री के आधार दर्पण (बेस मिरर) पर केंद्रित करता है, जबकि कूलिंग ब्लोअर गर्मी को नियंत्रित रखता है। यह 45-डिग्री दर्पण प्रकाश को ऊपर की ओर कांच के प्रोजेक्शन स्टेज और फ्रेस्नेल लेंस (Fresnel lens) से गुजारता है, जहाँ से छवि ऊपरी ऑब्जेक्टिव लेंस और शीर्ष दर्पण से होकर स्क्रीन पर प्रक्षेपित होती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Overhead Projector (OHP) Optical Ray Path</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Lamp &amp; Blower</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Reflector &amp; Fan</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">45&deg; Base Mirror</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Redirects Upward</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Fresnel Stage</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Glass &amp; Sheet</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Upper Head</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Objective &amp; Screen</text><line x1=\"160\" y1=\"102\" x2=\"175\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"175,102 169,98 169,106\" fill=\"#38bdf8\"/><line x1=\"290\" y1=\"102\" x2=\"305\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"305,102 299,98 299,106\" fill=\"#4ade80\"/><line x1=\"420\" y1=\"102\" x2=\"435\" y2=\"102\" stroke=\"#c084fc\" stroke-width=\"2\"/><polygon points=\"435,102 429,98 429,106\" fill=\"#c084fc\"/><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Condenser Focus</tspan><tspan x=\"102\" dy=\"1.2em\">Heat Cooling</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">90&deg; Beam Turn</tspan><tspan x=\"232\" dy=\"1.2em\">Base Optics</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Transparency</tspan><tspan x=\"362\" dy=\"1.2em\">Magnifies Light</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Focus Knob</tspan><tspan x=\"495\" dy=\"1.2em\">Wall Display</tspan></text></svg>",
+          "caption": {
+            "en": "Internal optical path of an Overhead Projector showing light traveling from the base lamp through the 45-degree mirror, Fresnel stage, and upper lens onto a screen.",
+            "hi": "ओवरहेड प्रोजेक्टर का आंतरिक प्रकाशीय पथ जो बेस लैंप से 45-डिग्री दर्पण, फ्रेस्नेल स्टेज और ऊपरी लेंस के माध्यम से स्क्रीन पर छवि प्रक्षेपित होते दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how an overhead projector routes light to display transparency images on a screen.",
+          "hint": "Start with the overhead projector optics, describe reflecting lamp light upward, mention through the 45-degree mirror and Fresnel stage, and conclude with projecting magnified transparency images onto a screen.",
+          "target_sequence": [
+            { "id": "en_u1_t1", "text": "The overhead projector optics", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u1_t2", "text": "redirect bright lamp light upward", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u1_t3", "text": "through the base mirror and Fresnel stage", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u1_t4", "text": "to project magnified transparency images onto a screen", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u1_d1", "category": "conceptual", "text": "burn holes through plastic transparency sheets without using any lens", "penalty_explanation": "A cooling blower dissipates heat while the Fresnel and objective lenses focus light safely onto the screen." },
+            { "id": "en_u1_d2", "category": "technical", "text": "spray liquid ink droplets onto wall surfaces to form text", "penalty_explanation": "Overhead projectors use optical light and mirrors rather than spraying ink droplets like inkjet printers." }
+          ]
+        },
+        "hi": {
+          "prompt": "ओवरहेड प्रोजेक्टर द्वारा प्रकाश को मोड़कर स्क्रीन पर छवि दिखाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "ओवरहेड प्रोजेक्टर की प्रकाश प्रणाली से शुरुआत करें, लैंप के प्रकाश को ऊपर मोड़ने का उल्लेख करें, आधार दर्पण और फ्रेस्नेल स्टेज का संदर्भ दें, और स्क्रीन पर छवि दिखाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u1_t1", "text": "ओवरहेड प्रोजेक्टर की प्रकाश प्रणाली", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u1_t2", "text": "तेज लैंप प्रकाश को ऊपर मोड़कर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u1_t3", "text": "आधार दर्पण और फ्रेस्नेल स्टेज के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u1_t4", "text": "स्क्रीन पर स्पष्ट छवि प्रक्षेपित करती है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u1_d1", "category": "conceptual", "text": "बिना किसी लेंस के प्लास्टिक शीट में छेद करके आग लगा देती है", "penalty_explanation": "कूलिंग ब्लोअर गर्मी को नियंत्रित रखता है और फ्रेस्नेल लेंस प्रकाश को सुरक्षित रूप से स्क्रीन पर केंद्रित करता है।" },
+            { "id": "hi_u1_d2", "category": "technical", "text": "दीवार पर तरल स्याही की बूंदें छिड़ककर अक्षर छापती है", "penalty_explanation": "ओवरहेड प्रोजेक्टर प्रकाशीय दर्पणों और लेंस का उपयोग करता है, इंकजेट प्रिंटर की तरह स्याही नहीं छिड़कता।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "An OHP uses a lamp, reflector, condenser, cooling blower, 45-degree mirror, Fresnel lens stage, and upper lens/mirror assembly to project transparencies.",
+        "hi": "ओवरहेड प्रोजेक्टर ट्रांसपेरेंसी दिखाने के लिए लैंप, रिफ्लेक्टर, कंडेंसर, कूलिंग ब्लोअर, 45-डिग्री दर्पण, फ्रेस्नेल स्टेज और ऊपरी लेंस का उपयोग करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Safe Handling & Classroom Operation of OHPs",
+          "hi": "ओवरहेड प्रोजेक्टर का सुरक्षित संचालन और रखरखाव"
+        },
+        "theory": {
+          "en": "Proper handling extends the lifespan of an Overhead Projector and ensures classroom safety. Instead of switching the projector off repeatedly between slides—which shortens bulb life—presenters cover the transparency with an opaque piece of cardboard or paper. Always carry spare bulbs and wear protective gloves when replacing a burnt-out bulb, as hot glass looks identical to cold glass. Position the projector on a low table to the presenter's writing hand side while facing the audience, tape the power cord to the floor to prevent tripping, and store transparencies in a labeled sturdy container.",
+          "hi": "सही संचालन और सावधानी से ओवरहेड प्रोजेक्टर का जीवनकाल बढ़ता है और कक्षा में सुरक्षा बनी रहती है। स्लाइड बदलने के बीच प्रोजेक्टर को बार-बार बंद करने के बजाय—जिससे बल्ब जल्दी खराब हो सकता है—ट्रांसपेरेंसी को अपारदर्शी कार्डबोर्ड या कागज़ से ढक देना चाहिए। अतिरिक्त बल्ब साथ रखें और गर्म बल्ब बदलते समय दस्ताने पहनें, क्योंकि गर्म कांच भी ठंडे कांच जैसा ही दिखता है। प्रोजेक्टर को अपने लिखने वाले हाथ की ओर कम ऊंचाई वाली मेज पर रखें, बिजली के तार को फर्श पर टेप से चिपकाएं ताकि कोई ठोकर खाकर न गिरे, और ट्रांसपेरेंसी शीट को लेबल लगे मजबूत बॉक्स में सुरक्षित रखें।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">OHP Safe Handling &amp; Presentation Best Practices</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Opaque Cover</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Protects Bulb Life</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Gloves &amp; Bulb</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Hot Glass Safety</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Low Side Table</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Face Audience</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Cord &amp; Box</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Tape Floor &amp; Store</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Cardboard Mask</tspan><tspan x=\"102\" dy=\"1.2em\">Avoids Power Cycle</tspan></text><text x=\"232\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Spare Lamp</tspan><tspan x=\"232\" dy=\"1.2em\">Prevent Burns</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Writing Hand</tspan><tspan x=\"362\" dy=\"1.2em\">Unblocked View</tspan></text><text x=\"495\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Trip Prevention</tspan><tspan x=\"495\" dy=\"1.2em\">Labeled Archive</tspan></text></svg>",
+          "caption": {
+            "en": "Essential OHP handling rules covering opaque slide masking, insulated bulb replacement, ergonomic positioning, cord taping, and labeled storage.",
+            "hi": "ओवरहेड प्रोजेक्टर संचालन के आवश्यक नियम जिनमें अपारदर्शी कार्ड से ढकना, दस्तानों से बल्ब बदलना, सही स्थान और तार को टेप से चिपकाना शामिल है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how presenters safely manage an overhead projector during lessons.",
+          "hint": "Start with careful classroom presenters, describe masking transparencies and taping power cords, mention during active projector sessions, and conclude with protecting bulbs and preventing accidents.",
+          "target_sequence": [
+            { "id": "en_u2_t1", "text": "Careful classroom presenters", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u2_t2", "text": "mask transparencies and tape power cords", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u2_t3", "text": "during active overhead projector sessions", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u2_t4", "text": "to extend bulb life and prevent tripping", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u2_d1", "category": "conceptual", "text": "grab hot projector bulbs with bare wet hands immediately after use", "penalty_explanation": "Hot projector glass looks identical to cold glass, so presenters must always wear protective gloves when changing bulbs." },
+            { "id": "en_u2_d2", "category": "technical", "text": "switch the projector power on and off every ten seconds to cool the lamp", "penalty_explanation": "Repeatedly turning the projector off and on causes the bulb to burn out sooner; use an opaque cover between slides instead." }
+          ]
+        },
+        "hi": {
+          "prompt": "कक्षा में ओवरहेड प्रोजेक्टर का सुरक्षित संचालन करने के तरीकों को सही क्रम में व्यवस्थित करें।",
+          "hint": "सतर्क प्रस्तुतकर्ता से शुरुआत करें, शीट को ढकने और तार चिपकाने का उल्लेख करें, प्रोजेक्टर सत्र के दौरान का संदर्भ दें, और बल्ब बचाने व दुर्घटना रोकने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u2_t1", "text": "सतर्क प्रस्तुतकर्ता", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u2_t2", "text": "शीट को ढककर और बिजली का तार टेप करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u2_t3", "text": "सक्रिय प्रोजेक्टर सत्र के दौरान", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u2_t4", "text": "बल्ब की आयु बढ़ाते हैं और ठोकर लगने से बचाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u2_d1", "category": "conceptual", "text": "प्रोजेक्टर बंद होते ही गर्म बल्ब को नंगे हाथों से पकड़कर बाहर निकालते हैं", "penalty_explanation": "गर्म कांच भी ठंडे कांच जैसा ही दिखता है, इसलिए बल्ब बदलते समय हमेशा सुरक्षा दस्ताने पहनने चाहिए।" },
+            { "id": "hi_u2_d2", "category": "technical", "text": "लैंप को ठंडा रखने के लिए हर दस सेकंड में प्रोजेक्टर को चालू और बंद करते हैं", "penalty_explanation": "प्रोजेक्टर को बार-बार बंद करने से बल्ब जल्दी फ्यूज हो जाता है; इसकी जगह अपारदर्शी कार्ड से शीट ढकनी चाहिए।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Protect OHP bulbs by covering slides with opaque cardboard instead of frequent power-offs, wear gloves for hot bulbs, tape floor cords, and store sheets in labeled boxes.",
+        "hi": "बार-बार बंद करने के बजाय शीट को अपारदर्शी कार्ड से ढकें, गर्म बल्ब के लिए दस्ताने पहनें, तार को फर्श पर टेप करें और शीट को लेबल लगे बॉक्स में रखें।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "LED & LCD Digital Display Technologies",
+          "hi": "एलईडी (LED) और एलसीडी (LCD) डिजिटल डिस्प्ले तकनीकें"
+        },
+        "theory": {
+          "en": "A Light Emitting Diode (LED), invented by Nick Holonyak in 1962, is a compact p-n junction semiconductor light source occupying less than 1 square millimeter that saves electricity and is used in bulbs, traffic signals, vehicles, and mobile displays. A Liquid Crystal Display (LCD) is a slim, lightweight flat-panel screen that replaced bulky CRT monitors, connecting via HDMI, DVI, or VGA cables. LCDs consume only microwatts of power and provide sharp contrast and high resolutions, though they require an external backlight source and operate within a limited temperature range.",
+          "hi": "लाइट एमिटिंग डायोड (LED), जिसका आविष्कार 1962 में निक होलोनिक ने किया था, एक छोटा p-n जंक्शन सेमीकंडक्टर प्रकाश स्रोत है जो 1 वर्ग मिलीमीटर से कम जगह घेरता है और बिजली बचाते हुए बल्ब, ट्रैफिक सिग्नल, वाहनों तथा मोबाइल स्क्रीन में काम आता है। लिक्विड क्रिस्टल डिस्प्ले (LCD) एक पतली और हल्की फ्लैट स्क्रीन है जिसने भारी सीआरटी मॉनिटरों की जगह ली है और यह HDMI, DVI या VGA केबल से जुड़ती है। LCD अत्यंत कम बिजली (माइक्रोवाट) खर्च करती है और उच्च रिज़ॉल्यूशन व कंट्रास्ट देती है, हालांकि इसे अलग प्रकाश स्रोत (बैकलाइट) की आवश्यकता होती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Digital Screens: Semiconductor LED vs. Flat-Panel LCD</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">LED (Light Emitting Diode)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">p-n Junction | &lt; 1 mm&sup2; | 1962</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">LCD (Liquid Crystal Display)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Microwatt Power | HDMI &amp; DVI</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Low Cost</tspan><tspan x=\"100\" dy=\"1.2em\">Traffic &amp; Bulbs</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Controlled Light</tspan><tspan x=\"225\" dy=\"1.2em\">Microcontroller</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Sharp Contrast</tspan><tspan x=\"375\" dy=\"1.2em\">Slim &amp; Light</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Needs Backlight</tspan><tspan x=\"500\" dy=\"1.2em\">Temp Sensitive</tspan></text></svg>",
+          "caption": {
+            "en": "Comparison between p-n junction LED semiconductor emitters and ultra-low-power flat-panel LCD monitors using HDMI and DVI connections.",
+            "hi": "सेमीकंडक्टर LED प्रकाश स्रोत और अत्यंत कम बिजली खर्च करने वाले फ्लैट-पैनल LCD मॉनिटर (HDMI और DVI कनेक्शन) की तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence highlighting the key advantages of flat-panel LCD monitors over traditional CRT screens.",
+          "hint": "Start with thin flat-panel LCD monitors, describe consuming microwatts of electrical power, mention through HDMI and DVI video connections, and conclude with delivering high-resolution sharp contrast images.",
+          "target_sequence": [
+            { "id": "en_u3_t1", "text": "Thin flat-panel LCD monitors", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u3_t2", "text": "consume minimal electrical power", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u3_t3", "text": "through HDMI and DVI connections", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u3_t4", "text": "to deliver high-resolution sharp contrast images", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u3_d1", "category": "conceptual", "text": "generate internal light without needing any external backlight source", "penalty_explanation": "A key limitation of LCD panels is that liquid crystals do not emit light themselves and require an additional light source." },
+            { "id": "en_u3_d2", "category": "technical", "text": "weigh more than heavy vacuum-tube CRT monitors on office desks", "penalty_explanation": "LCD panels are significantly thinner and lighter than bulky glass CRT displays." }
+          ]
+        },
+        "hi": {
+          "prompt": "पतले फ्लैट-पैनल LCD मॉनिटर की कार्यक्षमता और लाभों को दर्शाने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "पतले फ्लैट-पैनल LCD मॉनिटर से शुरुआत करें, कम बिजली खर्च करने का उल्लेख करें, HDMI और DVI केबल का संदर्भ दें, और उच्च-रिज़ॉल्यूशन स्पष्ट छवि देने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u3_t1", "text": "पतले फ्लैट-पैनल LCD मॉनिटर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u3_t2", "text": "अत्यंत कम बिजली खर्च करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u3_t3", "text": "HDMI और DVI केबल के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u3_t4", "text": "उच्च-रिज़ॉल्यूशन और स्पष्ट छवि प्रदान करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u3_d1", "category": "conceptual", "text": "बिना किसी बाहरी प्रकाश स्रोत के स्वयं तेज रोशनी उत्पन्न करते हैं", "penalty_explanation": "LCD डिस्प्ले की एक प्रमुख सीमा यह है कि इसे छवि दिखाने के लिए अतिरिक्त प्रकाश स्रोत (बैकलाइट) की आवश्यकता होती है।" },
+            { "id": "hi_u3_d2", "category": "technical", "text": "पुराने वैक्यूम-ट्यूब सीआरटी मॉनिटर से भी अधिक भारी होते हैं", "penalty_explanation": "LCD मॉनिटर पुराने सीआरटी मॉनिटर की तुलना में बहुत पतले और हल्के होते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "LEDs are compact p-n junction semiconductor light emitters (<1 mm²), whereas LCDs are slim, microwatt-efficient flat panels requiring an external light source.",
+        "hi": "LED सूक्ष्म p-n जंक्शन सेमीकंडक्टर प्रकाश स्रोत हैं, जबकि LCD पतले और कम बिजली वाले फ्लैट पैनल हैं जिन्हें अतिरिक्त प्रकाश स्रोत की आवश्यकता होती है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Plasma Display Panels: Structure, Strengths & Trade-offs",
+          "hi": "प्लाज्मा डिस्प्ले पैनल: संरचना, लाभ और सीमाएं"
+        },
+        "theory": {
+          "en": "A Plasma Display Panel is a slim widescreen (16:9) flat display in which each screen pixel is illuminated by a tiny cell of electrically charged gas, similar to a microscopic neon light. Plasma screens are brighter than LCDs and offer wide viewing angles, superior contrast ratios, minimal motion blur, and 16.77 million colors for HDTV signals. However, plasma technology suffers from higher power consumption, heavy glass fragility, shorter lifespan without backlight repair, altitude sensitivity, and potential screen burn-in.",
+          "hi": "प्लाज्मा डिस्प्ले एक पतला वाइडस्क्रीन (16:9) फ्लैट पैनल है जिसमें स्क्रीन का प्रत्येक पिक्सल विद्युत आवेशित गैस (प्लाज्मा) की एक नन्हीं कोशिका से प्रकाशित होता है। प्लाज्मा स्क्रीन एलसीडी की तुलना में अधिक चमकीली होती हैं तथा चौड़े व्यूइंग एंगल, बेहतरीन कंट्रास्ट, कम मोशन ब्लर और HDTV सिग्नल के साथ 1.67 करोड़ (16.77 million) रंग प्रदर्शित करती हैं। हालांकि, इनमें अधिक बिजली की खपत, कांच की नाजुकता, कम जीवनकाल, अधिक ऊंचाई पर कार्यक्षमता प्रभावित होने और स्क्रीन बर्न-इन जैसी सीमाएं होती हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Plasma Display Panels: Charged Gas Cells &amp; Trade-offs</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Plasma Strengths</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">16.77M Colors | Wide Angle</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Plasma Limitations</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">High Power | Burn-In Risk</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">16:9 Widescreen</tspan><tspan x=\"100\" dy=\"1.2em\">HDTV Ready</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Charged Gas</tspan><tspan x=\"225\" dy=\"1.2em\">Low Motion Blur</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Fragile Glass</tspan><tspan x=\"375\" dy=\"1.2em\">High Cost</tspan></text><text x=\"500\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Shorter Life</tspan><tspan x=\"500\" dy=\"1.2em\">Altitude Issue</tspan></text></svg>",
+          "caption": {
+            "en": "Plasma display architecture balancing 16.77 million colors and wide viewing angles against high power usage, fragility, and burn-in risk.",
+            "hi": "प्लाज्मा डिस्प्ले संरचना जो 1.67 करोड़ रंगों और चौड़े व्यूइंग एंगल के लाभों की तुलना अधिक बिजली खपत और स्क्रीन बर्न-इन की सीमाओं से करती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how a Plasma display generates vibrant widescreen images.",
+          "hint": "Start with a plasma display panel, describe illuminating individual pixels, mention using tiny cells of charged gas, and conclude with rendering 16.77 million colors across wide viewing angles.",
+          "target_sequence": [
+            { "id": "en_u4_t1", "text": "A plasma display panel", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u4_t2", "text": "illuminates individual screen pixels", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u4_t3", "text": "using tiny cells of charged gas", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u4_t4", "text": "to render rich colors across wide viewing angles", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u4_d1", "category": "conceptual", "text": "consumes less electricity than tiny microwatt LCD watch screens", "penalty_explanation": "Plasma displays draw significantly higher electrical power than energy-efficient LCD panels." },
+            { "id": "en_u4_d2", "category": "technical", "text": "eliminates all risk of screen burn-in or glass panel damage", "penalty_explanation": "Plasma panels are fragile, expensive, and susceptible to permanent screen burn-in from static images." }
+          ]
+        },
+        "hi": {
+          "prompt": "प्लाज्मा डिस्प्ले पैनल द्वारा रंगीन वाइडस्क्रीन छवियां बनाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "प्लाज्मा डिस्प्ले पैनल से शुरुआत करें, प्रत्येक पिक्सल को प्रकाशित करने का उल्लेख करें, आवेशित गैस की कोशिकाओं का संदर्भ दें, और चौड़े व्यूइंग एंगल पर रंग दिखाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u4_t1", "text": "प्लाज्मा डिस्प्ले पैनल", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u4_t2", "text": "प्रत्येक स्क्रीन पिक्सल को प्रकाशित करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u4_t3", "text": "विद्युत आवेशित गैस की सूक्ष्म कोशिकाओं द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u4_t4", "text": "चौड़े व्यूइंग एंगल पर सजीव रंग दिखाता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u4_d1", "category": "conceptual", "text": "छोटी एलसीडी घड़ी की स्क्रीन से भी कम बिजली खर्च करता है", "penalty_explanation": "प्लाज्मा डिस्प्ले की एक मुख्य कमी यह है कि यह अधिक बिजली की खपत करता है।" },
+            { "id": "hi_u4_d2", "category": "technical", "text": "स्क्रीन बर्न-इन और कांच टूटने के सभी खतरों को पूरी तरह खत्म कर देता है", "penalty_explanation": "प्लाज्मा स्क्रीन बहुत नाजुक होती हैं और उनमें स्थायी बर्न-इन तथा क्षति का खतरा रहता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Plasma displays illuminate pixels with charged gas to deliver 16.77 million colors, high contrast, and wide viewing angles, but suffer from high power use, fragility, and burn-in.",
+        "hi": "प्लाज्मा डिस्प्ले आवेशित गैस से पिक्सल चमकाकर 1.67 करोड़ रंग और चौड़ा व्यूइंग एंगल देता है, परंतु अधिक बिजली खर्च करता है और बर्न-इन के प्रति संवेदनशील है।"
+      }
+    }
+  ]
+}
