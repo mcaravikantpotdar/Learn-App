@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 2: Network and Internet Concepts - Part 1",
+      "hi": "इकाई 2: नेटवर्क और इंटरनेट अवधारणाएं - भाग 1"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Network Fundamentals & Transmission Media",
+          "hi": "नेटवर्क के मूल सिद्धांत और ट्रांसमिशन माध्यम"
+        },
+        "theory": {
+          "en": "A computer network is a group of two or more computers linked together to share hardware and software resources, exchange files, and enable rapid communication. By contrast, a computer not connected to any network is called a standalone computer. Networked systems transmit data across physical and wireless media including cables, telephone lines, radio waves, satellites, and infrared light beams.",
+          "hi": "कंप्यूटर नेटवर्क दो या दो से अधिक कंप्यूटरों का एक समूह है जो संसाधनों को साझा करने, फाइलों का आदान-प्रदान करने और त्वरित संचार करने के लिए आपस में जुड़े होते हैं। इसके विपरीत, जो कंप्यूटर किसी नेटवर्क से नहीं जुड़ा होता उसे स्टैंडअलोन कंप्यूटर (Standalone Computer) कहा जाता है। नेटवर्क में डेटा भेजने के लिए केबल, टेलीफोन लाइन, रेडियो तरंगों, उपग्रहों (सैटेलाइट) या इन्फ्रारेड प्रकाश किरणों जैसे माध्यमों का उपयोग किया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Networked Systems vs. Standalone Computer</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Standalone PC</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Isolated | Unlinked</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Transmission Links</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Cables, Radio &amp; Satellites</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Computer Network</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Shared Files &amp; Hardware</text><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><polygon points=\"375,102 383,98 383,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">No File Sharing</tspan><tspan x=\"120\" dy=\"1.2em\">Single System</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Phone &amp; Infrared</tspan><tspan x=\"300\" dy=\"1.2em\">Data Channels</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">2+ Computers</tspan><tspan x=\"480\" dy=\"1.2em\">Printer &amp; Data Share</tspan></text></svg>",
+          "caption": {
+            "en": "Comparison between an isolated standalone computer and a connected computer network sharing resources over wired and wireless media.",
+            "hi": "एक अलग-थलग स्टैंडअलोन कंप्यूटर और तारयुक्त व वायरलेस माध्यमों से संसाधन साझा करने वाले कंप्यूटर नेटवर्क की तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how computer networks connect multiple systems to share resources.",
+          "hint": "Start with a computer network, describe linking two or more computers, mention through cables radio waves or satellites, and conclude with sharing files and hardware resources.",
+          "target_sequence": [
+            { "id": "en_u1_t1", "text": "A computer network", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u1_t2", "text": "links two or more computers", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u1_t3", "text": "through cables radio waves or satellites", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u1_t4", "text": "to share files and hardware resources", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u1_d1", "category": "conceptual", "text": "isolates every standalone computer so zero data can ever move", "penalty_explanation": "Networking connects computers to exchange data and share resources, whereas an unlinked computer is called a standalone system." },
+            { "id": "en_u1_d2", "category": "technical", "text": "transports physical paper folders through hollow water pipes", "penalty_explanation": "Computer networks transmit electronic data signals via cables, telephone lines, radio waves, satellites, or infrared beams." }
+          ]
+        },
+        "hi": {
+          "prompt": "कंप्यूटर नेटवर्क द्वारा संसाधनों को साझा करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक कंप्यूटर नेटवर्क से शुरुआत करें, दो या अधिक कंप्यूटरों को जोड़ने का उल्लेख करें, केबल रेडियो तरंगों या उपग्रहों का संदर्भ दें, और फाइलें व हार्डवेयर साझा करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u1_t1", "text": "एक कंप्यूटर नेटवर्क", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u1_t2", "text": "दो या अधिक कंप्यूटरों को जोड़कर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u1_t3", "text": "केबल रेडियो तरंगों या उपग्रहों के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u1_t4", "text": "फाइलें और हार्डवेयर संसाधन साझा करता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u1_d1", "category": "conceptual", "text": "प्रत्येक कंप्यूटर को अलग-थलग करके डेटा भेजने से रोकता है", "penalty_explanation": "नेटवर्किंग का मुख्य उद्देश्य कंप्यूटरों को जोड़कर डेटा और संसाधन साझा करना है; बिना जुड़े कंप्यूटर को स्टैंडअलोन कहते हैं।" },
+            { "id": "hi_u1_d2", "category": "technical", "text": "पानी की पाइपों के जरिए कागज़ की फाइलें एक कमरे से दूसरे कमरे भेजता है", "penalty_explanation": "नेटवर्क इलेक्ट्रॉनिक सिग्नलों को केबल, टेलीफोन लाइन, रेडियो तरंगों या उपग्रह के माध्यम से भेजता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "A network links two or more computers via cables, phone lines, radio waves, satellites, or infrared to share resources; an unlinked PC is a standalone computer.",
+        "hi": "नेटवर्क केबल, फोन लाइन, रेडियो तरंगों, उपग्रह या इन्फ्रारेड से दो या अधिक कंप्यूटरों को जोड़कर संसाधन साझा करता है; बिना जुड़ा कंप्यूटर स्टैंडअलोन कहलाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Core Network Hardware: Clients, Servers, NIC, Switch & Router",
+          "hi": "मुख्य नेटवर्क हार्डवेयर: क्लाइंट, सर्वर, NIC, स्विच और राउटर"
+        },
+        "theory": {
+          "en": "Building a functional network requires specialized hardware components. Client (or node) workstations connect to a powerful central Server that controls resources and manages shared files. Every computer requires a wired or wireless Network Interface Card (NIC), which provides a unique node address for communication. A Hub or Switch connects multiple devices together, duplicating or directing data packets across ports, while a Router analyzes and forwards data packets between separate networks.",
+          "hi": "एक कार्यशील नेटवर्क बनाने के लिए विशेष हार्डवेयर घटकों की आवश्यकता होती है। क्लाइंट (या नोड) कंप्यूटर एक शक्तिशाली केंद्रीय सर्वर से जुड़ते हैं जो सभी संसाधनों और साझा फाइलों को नियंत्रित करता है। प्रत्येक कंप्यूटर में वायर्ड या वायरलेस नेटवर्क इंटरफेस कार्ड (NIC) लगा होता है जो हर डिवाइस को एक विशिष्ट नोड एड्रेस देता है। हब या स्विच कई उपकरणों को एक साथ जोड़कर डेटा पैकेट साझा करता है, जबकि राउटर डेटा पैकेट का विश्लेषण करके उन्हें एक नेटवर्क से दूसरे नेटवर्क तक पहुंचाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Core Network Components &amp; Packet Flow</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Client &amp; NIC</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Node Address</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Hub / Switch</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Multi-Port Link</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Central Server</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Controls Nodes</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Router</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Inter-Network Path</text><line x1=\"160\" y1=\"102\" x2=\"175\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"290\" y1=\"102\" x2=\"305\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"420\" y1=\"102\" x2=\"435\" y2=\"102\" stroke=\"#c084fc\" stroke-width=\"2\"/><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Wired / Wi-Fi</tspan><tspan x=\"102\" dy=\"1.2em\">Workstation</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Packet Sharing</tspan><tspan x=\"232\" dy=\"1.2em\">Local Ports</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Shared Storage</tspan><tspan x=\"362\" dy=\"1.2em\">Resource Host</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Forwards Data</tspan><tspan x=\"495\" dy=\"1.2em\">External Links</tspan></text></svg>",
+          "caption": {
+            "en": "Essential networking hardware connecting Client workstations via NICs and Switches to a central Server and external Router.",
+            "hi": "प्रमुख नेटवर्किंग हार्डवेयर जो क्लाइंट कंप्यूटरों को NIC और स्विच के माध्यम से केंद्रीय सर्वर और बाहरी राउटर से जोड़ता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how a router directs network traffic between separate networks.",
+          "hint": "Start with a network router, describe receiving analyzing and forwarding data packets, mention across connected switches and transmission lines, and conclude with guiding information between separate networks.",
+          "target_sequence": [
+            { "id": "en_u2_t1", "text": "A network router", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u2_t2", "text": "analyzes and forwards data packets", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u2_t3", "text": "across linked switches and transmission lines", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u2_t4", "text": "to route information between separate networks", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u2_d1", "category": "conceptual", "text": "replaces the internal Network Interface Card inside every client monitor", "penalty_explanation": "A Network Interface Card (NIC) is a circuit board installed inside each computer to give it a unique node address." },
+            { "id": "en_u2_d2", "category": "technical", "text": "blocks all client computers from ever accessing central server files", "penalty_explanation": "Routers, switches, and NICs work together to enable clients to access shared server files and external networks." }
+          ]
+        },
+        "hi": {
+          "prompt": "नेटवर्क राउटर द्वारा विभिन्न नेटवर्कों के बीच डेटा पैकेट भेजने की कार्यप्रणाली को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक नेटवर्क राउटर से शुरुआत करें, डेटा पैकेट का विश्लेषण और अग्रेषण करने का उल्लेख करें, जुड़े स्विच और ट्रांसमिशन लाइनों का संदर्भ दें, और अलग नेटवर्कों के बीच डेटा पहुंचाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u2_t1", "text": "एक नेटवर्क राउटर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u2_t2", "text": "डेटा पैकेट का विश्लेषण और अग्रेषण करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u2_t3", "text": "जुड़े स्विच और ट्रांसमिशन लाइनों के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u2_t4", "text": "अलग-अलग नेटवर्कों के बीच सूचना पहुंचाता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u2_d1", "category": "conceptual", "text": "प्रत्येक क्लाइंट कंप्यूटर के अंदर लगे नेटवर्क इंटरफेस कार्ड को हटा देता है", "penalty_explanation": "नेटवर्क इंटरफेस कार्ड (NIC) प्रत्येक क्लाइंट और सर्वर कंप्यूटर में लगा होता है जो उसे नोड एड्रेस देता है।" },
+            { "id": "hi_u2_d2", "category": "technical", "text": "सभी क्लाइंट कंप्यूटरों को सर्वर की फाइलें खोलने से पूरी तरह रोक देता है", "penalty_explanation": "राउटर, स्विच और NIC मिलकर क्लाइंट को सर्वर और बाहरी नेटवर्कों से जोड़ते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Clients connect to a central Server using unique-address NICs and multi-port Hubs/Switches, while a Router forwards data packets between separate networks.",
+        "hi": "क्लाइंट कंप्यूटर विशिष्ट एड्रेस वाले NIC और हब/स्विच के जरिए केंद्रीय सर्वर से जुड़ते हैं, जबकि राउटर अलग-अलग नेटवर्कों के बीच डेटा पैकेट भेजता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Personal & Local Networks: PAN vs. LAN",
+          "hi": "व्यक्तिगत और स्थानीय नेटवर्क: PAN बनाम LAN"
+        },
+        "theory": {
+          "en": "Networks are classified by their geographic coverage area. A Personal Area Network (PAN) connects an individual's personal gadgets—such as laptops, smartphones, PDAs, and printers—within a very short range of about 10 meters (30 feet) inside a room or small office. A Local Area Network (LAN) links computers within a single building, school, or office up to a mile, offering high speeds from 10 Mbps to 10 Gbps over twisted-pair, coaxial, or fiber-optic cables (or Wi-Fi) using bus, ring, or star topologies.",
+          "hi": "नेटवर्कों को उनके भौगोलिक क्षेत्र के आधार पर वर्गीकृत किया जाता है। पर्सनल एरिया नेटवर्क (PAN) किसी व्यक्ति के निजी उपकरणों—जैसे लैपटॉप, स्मार्टफोन और प्रिंटर—को एक कमरे या छोटे कार्यालय में लगभग 10 मीटर (30 फीट) के दायरे में जोड़ता है। लोकल एरिया नेटवर्क (LAN) एक ही इमारत, स्कूल या ऑफिस के कंप्यूटरों को एक मील तक के क्षेत्र में जोड़ता है; यह ट्विस्टेड-पेयर, कोएक्सियल या फाइबर-ऑप्टिक केबल (या वाई-फाई) और बस, रिंग या स्टार टोपोलॉजी के साथ 10 Mbps से 10 Gbps की तेज़ गति प्रदान करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Short-Range Networks: PAN (~10m) vs. LAN (Building)</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">PAN (Personal Area)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">~10 Meters | Individual Gadgets</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">LAN (Local Area)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Office/School | 10 Mbps - 10 Gbps</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Phone &amp; Laptop</tspan><tspan x=\"100\" dy=\"1.2em\">30 Feet Radius</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Wired / Wi-Fi</tspan><tspan x=\"225\" dy=\"1.2em\">Single User</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Bus, Ring, Star</tspan><tspan x=\"375\" dy=\"1.2em\">Fiber &amp; Coaxial</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Under 1 Mile</tspan><tspan x=\"500\" dy=\"1.2em\">Shared Printers</tspan></text></svg>",
+          "caption": {
+            "en": "Comparison contrasting a 10-meter single-user Personal Area Network (PAN) with a high-speed building-wide Local Area Network (LAN).",
+            "hi": "10 मीटर दायरे वाले व्यक्तिगत नेटवर्क (PAN) और तेज़ गति वाले इमारत-स्तरीय लोकल एरिया नेटवर्क (LAN) की तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how a Local Area Network (LAN) operates within an office or school.",
+          "hint": "Start with a Local Area Network, describe connecting computers and shared printers, mention within a single office or school building, and conclude with delivering high-speed communication.",
+          "target_sequence": [
+            { "id": "en_u3_t1", "text": "A Local Area Network", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u3_t2", "text": "connects computers and shared printers", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u3_t3", "text": "within a single office or school building", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u3_t4", "text": "to provide fast local resource sharing", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u3_d1", "category": "conceptual", "text": "spans across entire oceans and continents using deep-sea cables", "penalty_explanation": "Connecting countries and continents across vast distances is a Wide Area Network (WAN); a LAN covers a single building." },
+            { "id": "en_u3_d2", "category": "technical", "text": "operates strictly slower than ten bits per hour without any cables or Wi-Fi", "penalty_explanation": "LANs operate at high speeds between 10 Mbps and 10 Gbps over wired cables or wireless Wi-Fi." }
+          ]
+        },
+        "hi": {
+          "prompt": "लोकल एरिया नेटवर्क (LAN) द्वारा कार्यालय या स्कूल में कार्य करने की प्रणाली को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक लोकल एरिया नेटवर्क से शुरुआत करें, कंप्यूटरों और साझा प्रिंटरों को जोड़ने का उल्लेख करें, एक ही कार्यालय या स्कूल की इमारत का संदर्भ दें, और तेज़ स्थानीय संसाधन साझाकरण पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u3_t1", "text": "एक लोकल एरिया नेटवर्क", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u3_t2", "text": "कंप्यूटरों और साझा प्रिंटरों को जोड़कर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u3_t3", "text": "एक ही कार्यालय या स्कूल की इमारत में", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u3_t4", "text": "तेज़ स्थानीय संसाधन साझाकरण प्रदान करता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u3_d1", "category": "conceptual", "text": "समुद्रों और महाद्वीपों के पार पूरे विश्व के देशों को आपस में जोड़ता है", "penalty_explanation": "देशों और महाद्वीपों को जोड़ने वाला नेटवर्क वाइड एरिया नेटवर्क (WAN) होता है; LAN एक इमारत तक सीमित रहता है।" },
+            { "id": "hi_u3_d2", "category": "technical", "text": "बिना किसी केबल या वाई-फाई के अत्यंत धीमी गति से चलता है", "penalty_explanation": "LAN वायर्ड केबल या वायरलेस वाई-फाई के माध्यम से 10 Mbps से 10 Gbps की तेज़ गति देता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "A PAN links personal devices within ~10 meters, whereas a LAN connects a building or campus up to a mile at 10 Mbps to 10 Gbps using bus, ring, or star topologies.",
+        "hi": "PAN लगभग 10 मीटर में निजी उपकरणों को जोड़ता है, जबकि LAN एक इमारत में 10 Mbps से 10 Gbps गति पर बस, रिंग या स्टार टोपोलॉजी से कंप्यूटर जोड़ता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Regional & Global Networks: MAN vs. WAN",
+          "hi": "क्षेत्रीय और वैश्विक नेटवर्क: MAN बनाम WAN"
+        },
+        "theory": {
+          "en": "For larger geographic distances, networks expand into MAN and WAN architectures. A Metropolitan Area Network (MAN) spans 5 to 50 kilometers across a university campus, town, or entire city—such as Cable TV and high-speed DSL telephone networks—acting as a regional backbone. A Wide Area Network (WAN) interconnects multiple LANs and MANs across cities, countries, and continents using telephone lines, satellites, microwave links, and routers, with the global Internet serving as the largest WAN.",
+          "hi": "बड़े भौगोलिक क्षेत्रों को जोड़ने के लिए नेटवर्क MAN और WAN संरचनाओं में विस्तारित होते हैं। मेट्रोपॉलिटन एरिया नेटवर्क (MAN) किसी विश्वविद्यालय परिसर, कस्बे या पूरे शहर में 5 से 50 किलोमीटर तक फैला होता है—जैसे केबल टीवी और शहर का हाई-स्पीड DSL नेटवर्क। वाइड एरिया नेटवर्क (WAN) शहरों, देशों और महाद्वीपों के पार कई LAN और MAN को टेलीफोन लाइनों, उपग्रहों (सैटेलाइट), माइक्रोवेव और राउटरों के माध्यम से जोड़ता है, जिसका सबसे बड़ा उदाहरण विश्वव्यापी इंटरनेट है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Large-Scale Networks: City MAN vs. Global WAN</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">MAN (Metropolitan Area)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">5 - 50 km | City &amp; Cable TV</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">WAN (Wide Area)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Countries &amp; Continents | Internet</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Campus &amp; Town</tspan><tspan x=\"100\" dy=\"1.2em\">DSL Networks</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">WAN Backbone</tspan><tspan x=\"225\" dy=\"1.2em\">Regional Share</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Satellites</tspan><tspan x=\"375\" dy=\"1.2em\">Microwave Links</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Links LANs/MANs</tspan><tspan x=\"500\" dy=\"1.2em\">Gateway Routers</tspan></text></svg>",
+          "caption": {
+            "en": "Geographic scale comparison between a city-wide Metropolitan Area Network (5–50 km) and a global Wide Area Network (WAN).",
+            "hi": "शहर-स्तरीय मेट्रोपॉलिटन एरिया नेटवर्क (5-50 किमी) और वैश्विक वाइड एरिया नेटवर्क (WAN) के भौगोलिक विस्तार की तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how a Wide Area Network (WAN) connects distant regions globally.",
+          "hint": "Start with a Wide Area Network, describe linking multiple LANs and MANs, mention via satellites microwave links and routers, and conclude with enabling global communication across continents.",
+          "target_sequence": [
+            { "id": "en_u4_t1", "text": "A Wide Area Network", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u4_t2", "text": "interconnects multiple LANs and MANs", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u4_t3", "text": "via satellites microwave links and routers", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u4_t4", "text": "to enable global communication across continents", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u4_d1", "category": "conceptual", "text": "remains strictly restricted to a single desk within ten meters", "penalty_explanation": "A 10-meter personal radius defines a Personal Area Network (PAN), whereas a WAN spans countries and continents." },
+            { "id": "en_u4_d2", "category": "technical", "text": "operates without using any routers telephone lines or satellites", "penalty_explanation": "WANs rely on long-distance media such as satellites, microwave links, telephone lines, and gateway routers." }
+          ]
+        },
+        "hi": {
+          "prompt": "वाइड एरिया नेटवर्क (WAN) द्वारा महाद्वीपों के पार वैश्विक संचार स्थापित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक वाइड एरिया नेटवर्क से शुरुआत करें, कई LAN और MAN को जोड़ने का उल्लेख करें, उपग्रहों माइक्रोवेव और राउटर का संदर्भ दें, और वैश्विक संचार सक्षम करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u4_t1", "text": "एक वाइड एरिया नेटवर्क", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u4_t2", "text": "कई LAN और MAN को आपस में जोड़कर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u4_t3", "text": "उपग्रहों माइक्रोवेव और राउटर के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u4_t4", "text": "महाद्वीपों के पार वैश्विक संचार सक्षम बनाता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u4_d1", "category": "conceptual", "text": "केवल एक मेज पर दस मीटर के छोटे दायरे तक सीमित रहता है", "penalty_explanation": "दस मीटर का दायरा पर्सनल एरिया नेटवर्क (PAN) का होता है, जबकि WAN देशों और महाद्वीपों तक फैला होता है।" },
+            { "id": "hi_u4_d2", "category": "technical", "text": "बिना किसी राउटर टेलीफोन लाइन या उपग्रह के काम करता है", "penalty_explanation": "WAN लंबी दूरी के संचार के लिए उपग्रह, माइक्रोवेव, टेलीफोन लाइन और राउटर का उपयोग करता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "A MAN covers a 5–50 km city or campus (e.g., Cable TV), while a WAN spans countries and continents via satellites and routers, with the Internet as the largest WAN.",
+        "hi": "MAN 5-50 किमी के शहर या परिसर (जैसे केबल टीवी) को जोड़ता है, जबकि WAN उपग्रहों और राउटर से देशों व महाद्वीपों को जोड़ता है, जिसका उदाहरण इंटरनेट है।"
+      }
+    }
+  ]
+}
