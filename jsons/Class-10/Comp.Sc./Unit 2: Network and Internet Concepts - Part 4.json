@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 2: Network and Internet Concepts - Part 4",
+      "hi": "इकाई 2: नेटवर्क और इंटरनेट अवधारणाएं - भाग 4"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "E-Mail Architecture & Protocols (SMTP, POP, IMAP)",
+          "hi": "ई-मेल संरचना और प्रोटोकॉल (SMTP, POP, IMAP)"
+        },
+        "theory": {
+          "en": "Electronic Mail (E-Mail) is one of the most widely used Internet features, enabling users to send and receive digital messages globally. E-Mail relies on specialized communication protocols within the TCP/IP suite: Simple Mail Transfer Protocol (SMTP) transmits outgoing messages from the sender to a mail server, whereas Post Office Protocol (POP) or Internet Message Access Protocol (IMAP) retrieves incoming messages from the mail server to the recipient's inbox.",
+          "hi": "इलेक्ट्रॉनिक मेल (E-Mail) इंटरनेट की सबसे लोकप्रिय सुविधाओं में से एक है, जो दुनिया भर में किसी भी ई-मेल पते पर संदेश भेजने और प्राप्त करने की सुविधा देती है। ई-मेल TCP/IP सुइट के अंतर्गत विशेष प्रोटोकॉल पर कार्य करता है: सिंपल मेल ट्रांसफर प्रोटोकॉल (SMTP) संदेश भेजने के लिए उपयोग होता है, जबकि पोस्ट ऑफिस प्रोटोकॉल (POP) या इंटरनेट मैसेज एक्सेस प्रोटोकॉल (IMAP) मेल सर्वर से संदेश प्राप्त करने के लिए उपयोग किए जाते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">E-Mail Protocol Pipeline: SMTP vs. POP / IMAP</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">SMTP Protocol</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Sends Outgoing Mail</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Webmail Server</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Stores &amp; Routes Mail</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">POP / IMAP</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Retrieves Inbox Mail</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#fbbf24\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#fbbf24\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Sender Client</tspan><tspan x=\"120\" dy=\"1.2em\">Mail Dispatch</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">TCP/IP Suite</tspan><tspan x=\"300\" dy=\"1.2em\">Gmail &amp; Yahoo</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Recipient Inbox</tspan><tspan x=\"480\" dy=\"1.2em\">Message Fetch</tspan></text></svg>",
+          "caption": {
+            "en": "Dual-protocol electronic mail pipeline using SMTP to dispatch outgoing messages and POP or IMAP to retrieve incoming messages from mail servers.",
+            "hi": "ई-मेल प्रोटोकॉल प्रणाली जो संदेश भेजने के लिए SMTP और मेल सर्वर से संदेश प्राप्त करने के लिए POP या IMAP का उपयोग करती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how email protocols coordinate sending and receiving messages.",
+          "hint": "Start with electronic mail protocols, describe sending messages via SMTP and retrieving via POP or IMAP, mention across TCP/IP mail servers, and conclude with delivering digital messages globally.",
+          "target_sequence": [
+            { "id": "en_u13_t1", "text": "Electronic mail protocols", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u13_t2", "text": "send via SMTP and retrieve via POP or IMAP", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u13_t3", "text": "across TCP/IP mail servers", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u13_t4", "text": "to deliver digital messages globally", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u13_d1", "category": "conceptual", "text": "use SMTP to download incoming mail while POP transmits outgoing messages", "penalty_explanation": "SMTP is used strictly to send outgoing mail, whereas POP and IMAP retrieve incoming messages from a mail server." },
+            { "id": "en_u13_d2", "category": "technical", "text": "require physical postal stamps before transmitting text across the Internet", "penalty_explanation": "Electronic mail transmits digital data packets electronically over the Internet without physical stamps or paper." }
+          ]
+        },
+        "hi": {
+          "prompt": "ई-मेल प्रोटोकॉल द्वारा संदेश भेजने और प्राप्त करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "ई-मेल प्रोटोकॉल से शुरुआत करें, SMTP से भेजने और POP या IMAP से प्राप्त करने का उल्लेख करें, TCP/IP मेल सर्वर का संदर्भ दें, और वैश्विक स्तर पर संदेश पहुंचाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u13_t1", "text": "ई-मेल प्रोटोकॉल", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u13_t2", "text": "SMTP से संदेश भेजकर और POP या IMAP से प्राप्त करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u13_t3", "text": "TCP/IP मेल सर्वर के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u13_t4", "text": "वैश्विक स्तर पर डिजिटल संदेश पहुंचाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u13_d1", "category": "conceptual", "text": "संदेश प्राप्त करने के लिए SMTP और भेजने के लिए POP का उपयोग करते हैं", "penalty_explanation": "SMTP का उपयोग संदेश भेजने के लिए किया जाता है, जबकि POP और IMAP सर्वर से संदेश प्राप्त करते हैं।" },
+            { "id": "hi_u13_d2", "category": "technical", "text": "इंटरनेट पर संदेश भेजने से पहले असली डाक टिकट चिपकाना अनिवार्य करते हैं", "penalty_explanation": "ई-मेल पूरी तरह इलेक्ट्रॉनिक माध्यम से संदेश भेजता है, इसमें भौतिक डाक टिकट की आवश्यकता नहीं होती।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "E-Mail runs on the TCP/IP suite using SMTP to send outgoing messages and POP or IMAP to retrieve incoming mail from servers.",
+        "hi": "ई-मेल TCP/IP प्रोटोकॉल सुइट पर काम करता है, जिसमें संदेश भेजने के लिए SMTP तथा सर्वर से संदेश प्राप्त करने के लिए POP या IMAP का उपयोग होता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "E-Mail Address Structure & Messaging Terminology",
+          "hi": "ई-मेल पते की संरचना और प्रमुख शब्दावली"
+        },
+        "theory": {
+          "en": "Every email user has a unique address divided into two parts separated by the @ symbol: username@host (for example, in ramulak48@yahoo.in, ramulak48 is the unique username and yahoo.in is the host service provider). Common email features include the Address Book for saving contacts, Attachments for sending files, Reply and Forward for responding or passing messages along, CC (Carbon Copy) and BCC (Blind Carbon Copy) for multi-recipient copying, and Bounced notices when an undeliverable message returns.",
+          "hi": "प्रत्येक ई-मेल उपयोगकर्ता का एक विशिष्ट पता होता है जो @ चिह्न से दो भागों में बंटा होता है: username@host (जैसे ramulak48@yahoo.in में ramulak48 यूजरनेम है और yahoo.in ई-मेल सेवा प्रदाता होस्ट है)। ई-मेल की प्रमुख शब्दावली में संपर्क सहेजने के लिए एड्रेस बुक, फाइलें भेजने के लिए अटैचमेंट्स, उत्तर देने या आगे भेजने के लिए रिप्लाई व फॉरवर्ड, एक से अधिक लोगों को प्रतिलिपि भेजने के लिए CC व BCC, तथा संदेश न पहुंचने पर वापस लौटने वाले बाउंस्ड (Bounced) संदेश शामिल हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">E-Mail Address Anatomy (username@host) &amp; Tools</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Username Part</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Unique Account ID</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">@ Host Domain</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Mail Service Provider</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Mail Controls</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">CC, BCC &amp; Attachments</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Before @ Symbol</tspan><tspan x=\"120\" dy=\"1.2em\">Personal Identifier</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">After @ Symbol</tspan><tspan x=\"300\" dy=\"1.2em\">gmail / yahoo</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Reply &amp; Forward</tspan><tspan x=\"480\" dy=\"1.2em\">Address Book</tspan></text></svg>",
+          "caption": {
+            "en": "Structural breakdown of an email address (username@host) paired with core messaging features like CC, BCC, Attachments, and Address Book.",
+            "hi": "ई-मेल पते (username@host) की संरचना और CC, BCC, अटैचमेंट्स तथा एड्रेस बुक जैसी मुख्य ई-मेल सुविधाओं का विवरण।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining the two-part structure of an email address.",
+          "hint": "Start with a valid email address, describe combining a unique username and host domain, mention separated by the @ symbol, and conclude with identifying both user and service provider.",
+          "target_sequence": [
+            { "id": "en_u14_t1", "text": "A valid email address", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u14_t2", "text": "combines a unique username and host domain", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u14_t3", "text": "separated by the @ symbol", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u14_t4", "text": "to identify both user and service provider", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u14_d1", "category": "conceptual", "text": "allows ten million strangers to share the exact same username on Gmail", "penalty_explanation": "Every email username before @host must be unique so messages route to the right person." },
+            { "id": "en_u14_d2", "category": "technical", "text": "forbids attaching any documents or saving contacts in an Address Book", "penalty_explanation": "Webmail services include an Address Book for saving contacts and Attachment tools for sending files." }
+          ]
+        },
+        "hi": {
+          "prompt": "ई-मेल पते के दोनों भागों और उनकी भूमिका को दर्शाने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक मान्य ई-मेल पता से शुरुआत करें, विशिष्ट यूजरनेम और होस्ट डोमेन को जोड़ने का उल्लेख करें, @ चिह्न का संदर्भ दें, और उपयोगकर्ता व सेवा प्रदाता की पहचान करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u14_t1", "text": "एक मान्य ई-मेल पता", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u14_t2", "text": "विशिष्ट यूजरनेम और होस्ट डोमेन को जोड़कर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u14_t3", "text": "@ चिह्न के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u14_t4", "text": "उपयोगकर्ता और सेवा प्रदाता की पहचान कराता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u14_d1", "category": "conceptual", "text": "एक ही होस्ट पर लाखों लोगों को एक जैसा यूजरनेम रखने की अनुमति देता है", "penalty_explanation": "सही व्यक्ति तक संदेश पहुंचाने के लिए @ से पहले का यूजरनेम प्रत्येक खाताधारक के लिए विशिष्ट (unique) होना अनिवार्य है।" },
+            { "id": "hi_u14_d2", "category": "technical", "text": "संदेश के साथ कोई फाइल जोड़ने या एड्रेस बुक में संपर्क सहेजने से रोकता है", "penalty_explanation": "ई-मेल सेवाओं में संपर्क सहेजने के लिए एड्रेस बुक और फाइलें भेजने के लिए अटैचमेंट सुविधा उपलब्ध होती है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "An email address follows the username@host format, supported by features like Address Book, Attachments, Reply, Forward, CC, BCC, and Bounced alerts.",
+        "hi": "ई-मेल पता username@host के रूप में होता है, और इसमें एड्रेस बुक, अटैचमेंट्स, रिप्लाई, फॉरवर्ड, CC, BCC तथा बाउंस्ड संदेश जैसी सुविधाएं होती हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Creating & Securing a Webmail Account",
+          "hi": "वेबमेल खाता बनाना और सुरक्षित रखना"
+        },
+        "theory": {
+          "en": "Free webmail accounts can be registered on providers such as Gmail (gmail.com), Yahoo Mail (yahoo.com), Hotmail, or Rediffmail. To register, open the provider's site in a browser, click Sign Up or Create Account, enter your first and last name, choose an available unique username, and set a strong password of at least 8 characters combining letters and numbers. Completing verification details such as birth date, gender, and recovery mobile number finalizes your account.",
+          "hi": "निःशुल्क वेबमेल खाते जीमेल (gmail.com), याहू मेल (yahoo.com), हॉटमेल या रेडिफमेल पर बनाए जा सकते हैं। नया खाता बनाने के लिए ब्राउज़र में वेबसाइट खोलें, Sign Up या Create Account पर क्लिक करें, अपना नाम दर्ज करें, एक उपलब्ध विशिष्ट यूजरनेम चुनें, और अक्षरों व अंकों को मिलाकर कम से कम 8 अक्षरों का मजबूत पासवर्ड बनाएं। जन्मतिथि, लिंग और रिकवरी मोबाइल नंबर भरने के बाद आपका ई-मेल खाता सक्रिय हो जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Webmail Account Registration &amp; Security Steps</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">1. Sign Up</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Open Mail Portal</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">2. Username</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Check Availability</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">3. Password</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">8+ Letters &amp; Digits</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">4. Recovery</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Phone &amp; Profile</text><line x1=\"160\" y1=\"102\" x2=\"175\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"290\" y1=\"102\" x2=\"305\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"420\" y1=\"102\" x2=\"435\" y2=\"102\" stroke=\"#c084fc\" stroke-width=\"2\"/><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Create Account</tspan><tspan x=\"102\" dy=\"1.2em\">First &amp; Last Name</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Unique Address</tspan><tspan x=\"232\" dy=\"1.2em\">Note Down ID</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Re-Enter Confirm</tspan><tspan x=\"362\" dy=\"1.2em\">Hard to Guess</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">DOB &amp; Mobile</tspan><tspan x=\"495\" dy=\"1.2em\">Inbox Ready</tspan></text></svg>",
+          "caption": {
+            "en": "Four-step webmail registration workflow covering account sign-up, unique username selection, strong 8-character password creation, and recovery setup.",
+            "hi": "वेबमेल खाता पंजीकरण के चार चरण: साइन-अप, विशिष्ट यूजरनेम चयन, 8-अक्षरों का मजबूत पासवर्ड और रिकवरी विवरण।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how new users register and secure a webmail account.",
+          "hint": "Start with new webmail users, describe selecting a unique username and strong password, mention during online account registration, and conclude with protecting personal email access.",
+          "target_sequence": [
+            { "id": "en_u15_t1", "text": "New webmail users", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u15_t2", "text": "select a unique username and strong password", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u15_t3", "text": "during online account registration", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u15_t4", "text": "to secure personal email access", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u15_d1", "category": "conceptual", "text": "use simple two-letter passwords like ab so hackers can guess easily", "penalty_explanation": "Passwords should contain at least 8 characters combining letters and numbers to prevent unauthorized guessing." },
+            { "id": "en_u15_d2", "category": "technical", "text": "must mail handwritten paper forms by post before opening Gmail", "penalty_explanation": "Webmail registration is completed directly online in a web browser by filling out the digital sign-up form." }
+          ]
+        },
+        "hi": {
+          "prompt": "नए उपयोगकर्ताओं द्वारा वेबमेल खाता बनाने और सुरक्षित करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "नए वेबमेल उपयोगकर्ता से शुरुआत करें, विशिष्ट यूजरनेम और मजबूत पासवर्ड चुनने का उल्लेख करें, ऑनलाइन खाता पंजीकरण का संदर्भ दें, और व्यक्तिगत ई-मेल सुरक्षित करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u15_t1", "text": "नए वेबमेल उपयोगकर्ता", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u15_t2", "text": "विशिष्ट यूजरनेम और मजबूत पासवर्ड चुनकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u15_t3", "text": "ऑनलाइन खाता पंजीकरण के दौरान", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u15_t4", "text": "व्यक्तिगत ई-मेल पहुंच सुरक्षित बनाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u15_d1", "category": "conceptual", "text": "केवल दो अक्षरों का आसान पासवर्ड रखते हैं ताकि कोई भी खाता खोल सके", "penalty_explanation": "खाते की सुरक्षा के लिए अक्षरों और अंकों को मिलाकर कम से कम 8 अक्षरों का मजबूत पासवर्ड बनाना चाहिए।" },
+            { "id": "hi_u15_d2", "category": "technical", "text": "जीमेल खाता खोलने के लिए डाकघर से कागज़ का फॉर्म भेजना अनिवार्य करते हैं", "penalty_explanation": "वेबमेल खाता सीधे इंटरनेट ब्राउज़र में ऑनलाइन साइन-अप फॉर्म भरकर बनाया जाता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Creating a webmail account requires choosing a unique username, setting an 8+ character alphanumeric password, and providing recovery contact details.",
+        "hi": "वेबमेल खाता बनाने के लिए एक विशिष्ट यूजरनेम, अक्षरों व अंकों वाला 8+ अक्षरों का मजबूत पासवर्ड और रिकवरी मोबाइल नंबर दर्ज करना होता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Composing, Sending & Managing E-Mail Communications",
+          "hi": "ई-मेल संदेश लिखना, भेजना और प्रबंधन करना"
+        },
+        "theory": {
+          "en": "To send an email after signing into your inbox, click Compose or Write Mail, enter the recipient's email address in the To field, add a clear Subject title, type the message body, and click Send. Electronic mail offers four major advantages over traditional post: it is inexpensive regardless of distance or recipient count, fast (arriving within minutes), convenient (stored safely until the recipient reads it), and permanent (keeping searchable records of sent and received messages).",
+          "hi": "अपने इनबॉक्स में साइन-इन करने के बाद ई-मेल भेजने के लिए Compose या Write Mail पर क्लिक करें, प्राप्तकर्ता का ई-मेल पता दर्ज करें, स्पष्ट विषय (Subject) लिखें, संदेश की मुख्य सामग्री टाइप करें और Send बटन दबाएं। पारंपरिक डाक की तुलना में ई-मेल के चार प्रमुख लाभ हैं: यह दूरी या प्राप्तकर्ताओं की संख्या की परवाह किए बिना सस्ता है, अत्यंत तेज़ (मिनटों में पहुंचने वाला) है, सुविधाजनक (प्राप्तकर्ता के पढ़ने तक सुरक्षित रहने वाला) है, और संदेशों का स्थायी रिकॉर्ड रखता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Composing E-Mail &amp; Core Communication Advantages</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Compose Workflow</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">To | Subject | Body | Send</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Key E-Mail Advantages</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Cheap, Fast, Convenient, Permanent</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Recipient Address</tspan><tspan x=\"100\" dy=\"1.2em\">Message Title</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Write Content</tspan><tspan x=\"225\" dy=\"1.2em\">Click Send</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Any Distance</tspan><tspan x=\"375\" dy=\"1.2em\">Minutes Delivery</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Stored Safely</tspan><tspan x=\"500\" dy=\"1.2em\">Archive Record</tspan></text></svg>",
+          "caption": {
+            "en": "Email composition workflow (To, Subject, Body, Send) paired with its four primary advantages: low cost, speed, convenience, and permanent records.",
+            "hi": "ई-मेल लिखने के चरण (To, Subject, Body, Send) और इसके चार प्रमुख लाभ: कम लागत, तेज़ गति, सुविधा और स्थायी रिकॉर्ड।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how users compose and send electronic mail messages.",
+          "hint": "Start with signed-in webmail users, describe entering the recipient address subject and message body, mention inside the Compose window, and conclude with sending fast permanent communications.",
+          "target_sequence": [
+            { "id": "en_u16_t1", "text": "Signed-in webmail users", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u16_t2", "text": "enter the recipient address subject and message body", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u16_t3", "text": "inside the Compose window", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u16_t4", "text": "to send fast permanent communications", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u16_d1", "category": "conceptual", "text": "pay extra international postage stamps for every kilometer of distance", "penalty_explanation": "Sending an email costs the same regardless of geographic distance or the number of recipients." },
+            { "id": "en_u16_d2", "category": "technical", "text": "lose the message forever unless the recipient reads it within two seconds", "penalty_explanation": "Emails are conveniently stored on the mail server until the recipient is ready to open and read them." }
+          ]
+        },
+        "hi": {
+          "prompt": "वेबमेल उपयोगकर्ताओं द्वारा ई-मेल लिखने और भेजने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "साइन-इन किए हुए उपयोगकर्ता से शुरुआत करें, प्राप्तकर्ता का पता विषय और संदेश लिखने का उल्लेख करें, Compose विंडो का संदर्भ दें, और तेज़ व स्थायी संदेश भेजने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u16_t1", "text": "साइन-इन किए हुए उपयोगकर्ता", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u16_t2", "text": "प्राप्तकर्ता का पता विषय और संदेश लिखकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u16_t3", "text": "Compose विंडो के भीतर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u16_t4", "text": "तेज़ और स्थायी इलेक्ट्रॉनिक संदेश भेजते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u16_d1", "category": "conceptual", "text": "प्रत्येक किलोमीटर की दूरी के हिसाब से महंगा अंतरराष्ट्रीय डाक शुल्क चुकाते हैं", "penalty_explanation": "ई-मेल भेजने का खर्च दूरी या प्राप्तकर्ताओं की संख्या से प्रभावित नहीं होता, यह अत्यंत सस्ता माध्यम है।" },
+            { "id": "hi_u16_d2", "category": "technical", "text": "यदि प्राप्तकर्ता दो सेकंड में संदेश न पढ़े तो ई-मेल को हमेशा के लिए खो देते हैं", "penalty_explanation": "ई-मेल संदेश सर्वर पर सुरक्षित रहता है जब तक कि प्राप्तकर्ता उसे खोलकर पढ़ न ले।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Composing an email requires entering the recipient address, subject, and body before clicking Send, delivering cheap, fast, convenient, and permanent records.",
+        "hi": "ई-मेल भेजने के लिए प्राप्तकर्ता का पता, विषय और संदेश लिखकर Send दबाया जाता है, जो सस्ता, तेज़, सुविधाजनक और स्थायी रिकॉर्ड प्रदान करता है।"
+      }
+    }
+  ]
+}
