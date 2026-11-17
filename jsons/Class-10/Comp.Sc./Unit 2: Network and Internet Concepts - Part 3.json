@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 2: Network and Internet Concepts - Part 3",
+      "hi": "इकाई 2: नेटवर्क और इंटरनेट अवधारणाएं - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "World Wide Web Navigation: Browsers, URLs & Hyperlinks",
+          "hi": "वर्ल्ड वाइड वेब नेविगेशन: ब्राउज़र, URL और हाइपरलिंक"
+        },
+        "theory": {
+          "en": "A web browser is an application software designed to retrieve, present, and traverse information resources on the World Wide Web. Users access specific web pages, images, or videos by typing a unique web address called a Uniform Resource Locator (URL) into the browser's address bar. Once a page loads, clickable hyperlinks embedded in text or graphics allow users to jump seamlessly to related web resources.",
+          "hi": "वेब ब्राउज़र एक एप्लिकेशन सॉफ्टवेयर है जिसे वर्ल्ड वाइड वेब (WWW) पर उपलब्ध सूचना संसाधनों को प्राप्त करने, प्रदर्शित करने और उन पर नेविगेट करने के लिए बनाया गया है। उपयोगकर्ता ब्राउज़र के एड्रेस बार में यूनिफॉर्म रिसोर्स लोकेटर (URL) नामक विशिष्ट वेब पता टाइप करके किसी भी वेब पेज, चित्र या वीडियो तक पहुंच सकते हैं। पेज खुलने के बाद, उसमें मौजूद क्लिक करने योग्य हाइपरलिंक उपयोगकर्ताओं को आसानी से संबंधित वेब पेजों पर जाने की सुविधा देते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Browser Navigation: URL &amp; Hyperlink Flow</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Address Bar URL</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Uniform Resource Locator</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Browser App</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Retrieves &amp; Displays</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Hyperlink Jump</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Connected Web Pages</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Unique Address</tspan><tspan x=\"120\" dy=\"1.2em\">Target Location</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Text, Images, Video</tspan><tspan x=\"300\" dy=\"1.2em\">WWW Client</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">One-Click Traversal</tspan><tspan x=\"480\" dy=\"1.2em\">Related Content</tspan></text></svg>",
+          "caption": {
+            "en": "Browser navigation pipeline showing how entering a Uniform Resource Locator (URL) retrieves WWW content and enables hyperlink traversal.",
+            "hi": "वेब ब्राउज़र नेविगेशन प्रक्रिया जो दर्शाती है कि यूनिफॉर्म रिसोर्स लोकेटर (URL) दर्ज करने से वेब सामग्री खुलती है और हाइपरलिंक से अन्य पेजों पर जाया जाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how a web browser accesses and navigates resources on the World Wide Web.",
+          "hint": "Start with a web browser application, describe retrieving and displaying web pages, mention using URL addresses and clickable hyperlinks, and conclude with navigating resources across the World Wide Web.",
+          "target_sequence": [
+            { "id": "en_u9_t1", "text": "A web browser application", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u9_t2", "text": "retrieves and displays web pages", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u9_t3", "text": "using URL addresses and clickable hyperlinks", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u9_t4", "text": "to navigate resources on the World Wide Web", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u9_d1", "category": "conceptual", "text": "functions strictly as an offline hardware driver for local dot matrix printers", "penalty_explanation": "A web browser is application software designed to retrieve and view online resources across the World Wide Web." },
+            { "id": "en_u9_d2", "category": "technical", "text": "disables all clickable hyperlinks so users can only view a single static page", "penalty_explanation": "Hyperlinks embedded in web resources specifically enable users to jump easily to related pages." }
+          ]
+        },
+        "hi": {
+          "prompt": "वेब ब्राउज़र द्वारा वर्ल्ड वाइड वेब पर संसाधनों को खोलने और नेविगेट करने के क्रम को व्यवस्थित करें।",
+          "hint": "एक वेब ब्राउज़र सॉफ्टवेयर से शुरुआत करें, वेब पेज प्राप्त करने और दिखाने का उल्लेख करें, URL पते और क्लिक करने योग्य हाइपरलिंक का संदर्भ दें, और वर्ल्ड वाइड वेब पर नेविगेट करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u9_t1", "text": "एक वेब ब्राउज़र सॉफ्टवेयर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u9_t2", "text": "वेब पेजों को प्राप्त और प्रदर्शित करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u9_t3", "text": "URL पते और क्लिक करने योग्य हाइपरलिंक द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u9_t4", "text": "वर्ल्ड वाइड वेब पर संसाधनों को नेविगेट कराता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u9_d1", "category": "conceptual", "text": "केवल लोकल डॉट मैट्रिक्स प्रिंटर चलाने वाला एक ऑफलाइन हार्डवेयर ड्राइवर है", "penalty_explanation": "वेब ब्राउज़र एक एप्लिकेशन सॉफ्टवेयर है जो इंटरनेट और वर्ल्ड वाइड वेब की सामग्री को खोलता है।" },
+            { "id": "hi_u9_d2", "category": "technical", "text": "सभी हाइपरलिंक को निष्क्रिय कर देता है ताकि उपयोगकर्ता दूसरे पेज पर न जा सकें", "penalty_explanation": "वेब पेजों में मौजूद हाइपरलिंक उपयोगकर्ताओं को संबंधित वेब संसाधनों तक आसानी से पहुंचाने के लिए होते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "A web browser retrieves and displays Internet content using Uniform Resource Locators (URLs) in the address bar and clickable hyperlinks to move between pages.",
+        "hi": "वेब ब्राउज़र एड्रेस बार में यूनिफॉर्म रिसोर्स लोकेटर (URL) और क्लिक करने योग्य हाइपरलिंक का उपयोग करके वर्ल्ड वाइड वेब के संसाधनों को प्रदर्शित करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Comparing Web Browsers: Chrome, Firefox, Opera & IE",
+          "hi": "वेब ब्राउज़र की तुलना: क्रोम, फायरफॉक्स, ओपेरा और इंटरनेट एक्सप्लोरर"
+        },
+        "theory": {
+          "en": "Different graphical web browsers offer distinct architectural strengths and trade-offs. Google Chrome (released in 2008 on Chromium) isolates each open tab in a security sandbox, includes Incognito private browsing, and translates pages automatically, though it consumes substantial RAM. Mozilla Firefox offers fast download tracking, pop-up blocking, and session recovery after crashes, though it lacks ActiveX support and uses significant memory. Opera provides a compact footprint with website compression suited for handheld devices, while Internet Explorer came pre-installed with Windows since 1995 for legacy compatibility.",
+          "hi": "विभिन्न ग्राफिकल वेब ब्राउज़र अपनी अलग-अलग तकनीकी विशेषताएं और सीमाएं रखते हैं। गूगल क्रोम (2008 में क्रोमियम पर जारी) प्रत्येक टैब को सुरक्षा सैंडबॉक्स में अलग रखता है, इनकॉग्निटो निजी ब्राउज़िंग और स्वचालित अनुवाद देता है, हालांकि यह अधिक रैम (RAM) खर्च करता है। मोज़िला फायरफॉक्स तेज़ डाउनलोड सूची, पॉप-अप ब्लॉकर और क्रैश के बाद टैब रिकवरी देता है, लेकिन ActiveX का समर्थन नहीं करता। ओपेरा अपने छोटे आकार और वेबसाइट कम्प्रेशन के कारण हैंडहेल्ड उपकरणों के लिए उपयुक्त है, जबकि इंटरनेट एक्सप्लोरर 1995 से विंडोज के साथ पहले से इंस्टॉल आता था।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Web Browser Architectures &amp; Key Features</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Google Chrome</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Sandbox &amp; Incognito</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Mozilla Firefox</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Session Recovery</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Opera Browser</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Compact &amp; Mobile</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Internet Explorer</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Pre-Installed Win</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Auto-Translate</tspan><tspan x=\"102\" dy=\"1.2em\">High RAM Use</tspan></text><text x=\"232\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Popup Blocker</tspan><tspan x=\"232\" dy=\"1.2em\">No ActiveX</tspan></text><text x=\"362\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Page Compress</tspan><tspan x=\"362\" dy=\"1.2em\">No Add-Ons</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">ActiveX Apps</tspan><tspan x=\"495\" dy=\"1.2em\">Security Risks</tspan></text></svg>",
+          "caption": {
+            "en": "Feature comparison contrasting Google Chrome sandboxing, Mozilla Firefox session recovery, Opera mobile compression, and Internet Explorer Windows integration.",
+            "hi": "प्रमुख वेब ब्राउज़र की तुलना: गूगल क्रोम की सैंडबॉक्सिंग, मोज़िला फायरफॉक्स की टैब रिकवरी, ओपेरा का मोबाइल कम्प्रेशन और इंटरनेट एक्सप्लोरर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Google Chrome isolates open websites to protect user security.",
+          "hint": "Start with the Google Chrome browser, describe isolating each open website tab, mention inside an independent security sandbox, and conclude with preventing malicious code from crashing other tabs.",
+          "target_sequence": [
+            { "id": "en_u10_t1", "text": "The Google Chrome browser", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u10_t2", "text": "isolates each open website tab", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u10_t3", "text": "inside an independent security sandbox", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u10_t4", "text": "to stop malicious code from affecting other tabs", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u10_d1", "category": "conceptual", "text": "uses zero computer RAM even when fifty heavy video tabs open at once", "penalty_explanation": "Running separate processes for open tabs is a key reason Google Chrome uses substantial system memory (RAM)." },
+            { "id": "en_u10_d2", "category": "technical", "text": "forces all open tabs to crash immediately whenever a single webpage fails", "penalty_explanation": "Process sandboxing ensures that if one website tab crashes, other open tabs remain unaffected." }
+          ]
+        },
+        "hi": {
+          "prompt": "गूगल क्रोम द्वारा खुले हुए वेब पेजों को सुरक्षित रखने की कार्यप्रणाली को सही क्रम में व्यवस्थित करें।",
+          "hint": "गूगल क्रोम ब्राउज़र से शुरुआत करें, प्रत्येक खुले वेबसाइट टैब को अलग रखने का उल्लेख करें, स्वतंत्र सुरक्षा सैंडबॉक्स का संदर्भ दें, और अन्य टैब को सुरक्षित रखने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u10_t1", "text": "गूगल क्रोम ब्राउज़र", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u10_t2", "text": "प्रत्येक खुले वेबसाइट टैब को अलग रखकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u10_t3", "text": "स्वतंत्र सुरक्षा सैंडबॉक्स के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u10_t4", "text": "दुर्भावनापूर्ण कोड को अन्य टैब पर असर डालने से रोकता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u10_d1", "category": "conceptual", "text": "पचास टैब एक साथ खोलने पर भी कंप्यूटर की बिल्कुल भी रैम (RAM) खर्च नहीं करता", "penalty_explanation": "प्रत्येक टैब को अलग प्रोसेस के रूप में चलाने के कारण गूगल क्रोम काफी अधिक रैम का उपयोग करता है।" },
+            { "id": "hi_u10_d2", "category": "technical", "text": "एक वेबसाइट क्रैश होते ही कंप्यूटर के सभी खुले टैब तुरंत बंद कर देता है", "penalty_explanation": "सैंडबॉक्सिंग तकनीक के कारण यदि एक साइट क्रैश हो जाए, तो भी अन्य खुले टैब प्रभावित नहीं होते।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Chrome features process sandboxing and Incognito mode; Firefox offers popup blocking and session recovery; Opera excels in compact compression; IE provided Windows integration.",
+        "hi": "क्रोम सैंडबॉक्सिंग और इनकॉग्निटो देता है; फायरफॉक्स पॉप-अप ब्लॉकर और सेशन रिकवरी देता है; ओपेरा कॉम्पैक्ट कम्प्रेशन में श्रेष्ठ है; IE विंडोज के साथ जुड़ा था।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Search Engine Mechanics: Web Crawlers & Indexing",
+          "hi": "सर्च इंजन कार्यप्रणाली: वेब क्रॉलर और इंडेक्सिंग"
+        },
+        "theory": {
+          "en": "Search engines help users locate specific websites, images, maps, and answers across billions of pages on the World Wide Web. Automated programs called web crawlers continuously scan public websites, examine their text to extract important keywords, and organize them into a massive searchable index. When users type specific keywords into a search box, the search engine ignores minor stop words (like the, and, to) and rapidly returns matching indexed web pages.",
+          "hi": "सर्च इंजन उपयोगकर्ताओं को वर्ल्ड वाइड वेब पर मौजूद अरबों वेबसाइटों में से सटीक जानकारी, चित्र, मानचित्र और उत्तर खोजने में मदद करते हैं। वेब क्रॉलर (web crawler) नामक स्वचालित कंप्यूटर प्रोग्राम लगातार वेबसाइटों को स्कैन करते हैं, उनकी सामग्री से मुख्य कीवर्ड निकालते हैं और उन्हें एक विशाल इंडेक्स (सूची) में व्यवस्थित करते हैं। जब उपयोगकर्ता सर्च बॉक्स में विशिष्ट कीवर्ड टाइप करते हैं, तो सर्च इंजन सामान्य सहायक शब्दों (जैसे the, and, to) को अनदेखा कर संबंधित वेब पेजों की सूची दिखाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Search Engine Pipeline: Crawling, Indexing &amp; Query</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">1. Web Crawler</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Scans Billions of Sites</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">2. Keyword Index</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Catalogs Page Topics</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">3. Search Results</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Matches User Query</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Automated Bot</tspan><tspan x=\"120\" dy=\"1.2em\">Extracts Terms</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Fast Retrieval</tspan><tspan x=\"300\" dy=\"1.2em\">Ignores Stop Words</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Websites &amp; Maps</tspan><tspan x=\"480\" dy=\"1.2em\">Relevant Links</tspan></text></svg>",
+          "caption": {
+            "en": "Search engine architecture showing automated web crawlers scanning websites, indexing keywords, and matching user queries.",
+            "hi": "सर्च इंजन संरचना जो वेब क्रॉलर द्वारा वेबसाइटों को स्कैन करने, कीवर्ड इंडेक्स बनाने और उपयोगकर्ता की खोज का मिलान करने की प्रक्रिया दर्शाती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how automated web crawlers enable fast search engine results.",
+          "hint": "Start with automated web crawlers, describe scanning billions of websites to extract keywords, mention into a searchable search engine index, and conclude with matching user queries rapidly.",
+          "target_sequence": [
+            { "id": "en_u11_t1", "text": "Automated web crawlers", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u11_t2", "text": "scan websites to extract and organize keywords", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u11_t3", "text": "into a massive searchable index", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u11_t4", "text": "to match user search queries rapidly", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u11_d1", "category": "conceptual", "text": "require users to capitalize every single letter or searches fail completely", "penalty_explanation": "Search engines generally do not require specific capitalization or punctuation and ignore minor words like the and to." },
+            { "id": "en_u11_d2", "category": "technical", "text": "manually print out paper phonebooks before displaying any website links", "penalty_explanation": "Web crawlers operate electronically in software to index digital pages and return instant online results." }
+          ]
+        },
+        "hi": {
+          "prompt": "स्वचालित वेब क्रॉलर द्वारा सर्च इंजन के लिए जानकारी सूचीबद्ध करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "स्वचालित वेब क्रॉलर से शुरुआत करें, वेबसाइटों को स्कैन कर कीवर्ड निकालने का उल्लेख करें, विशाल खोज योग्य इंडेक्स का संदर्भ दें, और उपयोगकर्ता के प्रश्नों से मिलान करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u11_t1", "text": "स्वचालित वेब क्रॉलर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u11_t2", "text": "वेबसाइटों को स्कैन कर कीवर्ड निकालते हुए", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u11_t3", "text": "एक विशाल खोज योग्य इंडेक्स के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u11_t4", "text": "उपयोगकर्ता के प्रश्नों का त्वरित मिलान करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u11_d1", "category": "conceptual", "text": "प्रत्येक अक्षर को बड़े (Capital) रूप में टाइप करना अनिवार्य बनाते हैं", "penalty_explanation": "सर्च इंजन में बड़े अक्षरों या विराम चिह्नों की आवश्यकता नहीं होती और यह छोटे सहायक शब्दों को अनदेखा कर देता है।" },
+            { "id": "hi_u11_d2", "category": "technical", "text": "कोई भी लिंक दिखाने से पहले कागज़ की टेलीफोन डायरेक्टरी छापते हैं", "penalty_explanation": "वेब क्रॉलर स्वचालित सॉफ्टवेयर प्रोग्राम हैं जो डिजिटल रूप से वेबसाइटों को इंडेक्स करके तुरंत परिणाम देते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Search engines deploy web crawlers to scan sites and index keywords, ignoring minor stop words and capitalization to return relevant links quickly.",
+        "hi": "सर्च इंजन वेबसाइटों को स्कैन करने और कीवर्ड इंडेक्स बनाने के लिए वेब क्रॉलर का उपयोग करते हैं, और छोटे शब्दों को अनदेखा कर तेज़ी से सटीक लिंक दिखाते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Searching the Web: Google, Yahoo & Bing Workflows",
+          "hi": "वेब पर खोज: गूगल, याहू और बिंग की कार्यप्रणाली"
+        },
+        "theory": {
+          "en": "To search the Internet effectively, users open a search engine such as Google, Yahoo, or Microsoft Bing, enter specific keywords or synonyms into the search box, and press Enter or click Search to review matching links. Google leads global web search; Yahoo provides both email and web search powered by Google and Bing services; and Microsoft Bing serves as the default search engine on Windows PCs, allowing signed-in users to manage search history and earn Bing Rewards points.",
+          "hi": "इंटरनेट पर प्रभावी ढंग से खोज करने के लिए उपयोगकर्ता गूगल, याहू या माइक्रोसॉफ्ट बिंग जैसे सर्च इंजन खोलते हैं, सर्च बॉक्स में सटीक कीवर्ड टाइप करते हैं और एंटर दबाकर परिणाम देखते हैं। गूगल विश्व का अग्रणी सर्च इंजन है; याहू ई-मेल के साथ-साथ गूगल और बिंग द्वारा संचालित खोज सेवाएं प्रदान करता है; और माइक्रोसॉफ्ट बिंग विंडोज पीसी पर डिफ़ॉल्ट सर्च इंजन है, जहाँ साइन-इन करके खोज इतिहास सहेजा जा सकता है और बिंग रिवॉर्ड्स अंक अर्जित किए जा सकते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Major Web Search Engines: Google, Yahoo &amp; Bing</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Google Search</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Crawler &amp; Keyword Index</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Yahoo Portal</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Mail &amp; Partner Search</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Microsoft Bing</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Windows Default &amp; Rewards</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#fbbf24\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Global Leader</tspan><tspan x=\"120\" dy=\"1.2em\">Maps &amp; Images</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">News &amp; Webmail</tspan><tspan x=\"300\" dy=\"1.2em\">Google/Bing Engine</tspan></text><text x=\"480\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Search History</tspan><tspan x=\"480\" dy=\"1.2em\">Account Points</tspan></text></svg>",
+          "caption": {
+            "en": "Comparison of major search platforms including Google's global web index, Yahoo's integrated mail/search portal, and Microsoft Bing's Windows integration.",
+            "hi": "प्रमुख सर्च प्लेटफार्मों की तुलना: गूगल का वैश्विक इंडेक्स, याहू का एकीकृत मेल और खोज पोर्टल, तथा माइक्रोसॉफ्ट बिंग की विंडोज सुविधाएं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how users find relevant online articles using search engines.",
+          "hint": "Start with online internet users, describe entering specific topic keywords, mention into Google Yahoo or Bing search boxes, and conclude with retrieving ranked lists of relevant websites.",
+          "target_sequence": [
+            { "id": "en_u12_t1", "text": "Online internet users", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u12_t2", "text": "enter specific topic keywords", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u12_t3", "text": "into Google Yahoo or Bing search boxes", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u12_t4", "text": "to retrieve lists of relevant websites", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u12_d1", "category": "conceptual", "text": "must type full twenty-page essays into the search box instead of concise keywords", "penalty_explanation": "Effective searching relies on entering a few specific, relevant keywords or synonyms rather than long paragraphs." },
+            { "id": "en_u12_d2", "category": "technical", "text": "lose all ability to view search history when signing into a Microsoft Bing account", "penalty_explanation": "Signing into Bing with a Microsoft account specifically lets users view and edit their search history and earn rewards points." }
+          ]
+        },
+        "hi": {
+          "prompt": "सर्च इंजन के माध्यम से प्रासंगिक वेबसाइटें खोजने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "इंटरनेट उपयोगकर्ता से शुरुआत करें, सटीक विषय कीवर्ड दर्ज करने का उल्लेख करें, गूगल याहू या बिंग सर्च बॉक्स का संदर्भ दें, और प्रासंगिक वेबसाइटों की सूची प्राप्त करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u12_t1", "text": "इंटरनेट उपयोगकर्ता", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u12_t2", "text": "सटीक विषय कीवर्ड दर्ज करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u12_t3", "text": "गूगल याहू या बिंग सर्च बॉक्स में", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u12_t4", "text": "प्रासंगिक वेबसाइटों की सूची प्राप्त करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u12_d1", "category": "conceptual", "text": "सर्च बॉक्स में संक्षिप्त कीवर्ड के बजाय बीस पन्नों का पूरा निबंध टाइप करते हैं", "penalty_explanation": "सटीक परिणाम पाने के लिए सर्च बॉक्स में केवल कुछ मुख्य और प्रासंगिक कीवर्ड टाइप किए जाते हैं।" },
+            { "id": "hi_u12_d2", "category": "technical", "text": "माइक्रोसॉफ्ट बिंग में साइन इन करने पर अपना पिछला खोज इतिहास हमेशा के लिए खो देते हैं", "penalty_explanation": "बिंग में साइन इन करने से उपयोगकर्ता अपना खोज इतिहास देख व संपादित कर सकते हैं और रिवॉर्ड अंक कमा सकते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Users find information by entering concise keywords into Google, Yahoo, or Bing—with Bing offering default Windows integration, history tracking, and rewards.",
+        "hi": "उपयोगकर्ता गूगल, याहू या बिंग में संक्षिप्त कीवर्ड डालकर जानकारी खोजते हैं—जहाँ बिंग विंडोज के साथ इतिहास प्रबंधन और रिवॉर्ड्स अंक भी देता है।"
+      }
+    }
+  ]
+}
