@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 2: Network and Internet Concepts - Part 2",
+      "hi": "इकाई 2: नेटवर्क और इंटरनेट अवधारणाएं - भाग 2"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Comparative Matrix: LAN, MAN & WAN Trade-offs",
+          "hi": "नेटवर्क तुलना: LAN, MAN और WAN के तकनीकी अंतर"
+        },
+        "theory": {
+          "en": "Comparing LAN, MAN, and WAN highlights clear engineering trade-offs across scale and performance. Local Area Networks (LAN) are privately owned, easy to design and maintain, and deliver high transmission speeds with short propagation delay, high fault tolerance, and low congestion. Metropolitan Area Networks (MAN) cover towns or cities under private or public ownership with moderate speed and propagation delay. Wide Area Networks (WAN) span countries and continents, making design and maintenance difficult while experiencing longer propagation delays, lower speeds, reduced fault tolerance, and higher network congestion.",
+          "hi": "LAN, MAN और WAN की तुलना करने पर आकार और प्रदर्शन के बीच स्पष्ट तकनीकी अंतर दिखाई देते हैं। लोकल एरिया नेटवर्क (LAN) निजी स्वामित्व वाले होते हैं, जिन्हें डिज़ाइन और अनुरक्षित करना आसान है; ये कम विलंब (propagation delay), उच्च गति, अधिक दोष सहिष्णुता (fault tolerance) और कम भीड़भाड़ (congestion) प्रदान करते हैं। मेट्रोपॉलिटन एरिया नेटवर्क (MAN) शहरों या कस्बों में निजी या सार्वजनिक स्वामित्व के तहत मध्यम गति और मध्यम विलंब के साथ कार्य करते हैं। वाइड एरिया नेटवर्क (WAN) देशों और महाद्वीपों तक फैले होते हैं, जिनका रखरखाव कठिन है और इनमें अधिक विलंब, कम गति, कम दोष सहिष्णुता तथा अधिक नेटवर्क भीड़भाड़ होती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Network Comparison: Speed, Delay &amp; Congestion</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">LAN (Local)</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">High Speed | Low Delay</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">MAN (City)</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Moderate Speed &amp; Delay</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">WAN (Global)</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Long Delay | High Traffic</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#fbbf24\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Private Owner</tspan><tspan x=\"120\" dy=\"1.2em\">High Tolerance</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Public / Private</tspan><tspan x=\"300\" dy=\"1.2em\">Town &amp; City Grid</tspan></text><text x=\"480\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Complex Setup</tspan><tspan x=\"480\" dy=\"1.2em\">More Congestion</tspan></text></svg>",
+          "caption": {
+            "en": "Comparative network performance matrix contrasting LAN, MAN, and WAN across speed, propagation delay, fault tolerance, and congestion.",
+            "hi": "नेटवर्क प्रदर्शन तुलना मैट्रिक्स जो गति, संचरण विलंब, दोष सहिष्णुता और भीड़भाड़ के आधार पर LAN, MAN और WAN का अंतर दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining why Local Area Networks outperform Wide Area Networks in local speed and delay.",
+          "hint": "Start with a Local Area Network, describe delivering higher transmission speeds with shorter delay, mention within a private building environment, and conclude with minimizing network congestion.",
+          "target_sequence": [
+            { "id": "en_u5_t1", "text": "A Local Area Network", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u5_t2", "text": "delivers higher speed and shorter delay", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u5_t3", "text": "within a private building environment", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u5_t4", "text": "to minimize network congestion", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u5_d1", "category": "conceptual", "text": "experiences longer propagation delays than intercontinental satellite WAN links", "penalty_explanation": "Because a LAN covers a small local area, its propagation delay is short, whereas a WAN has a long propagation delay." },
+            { "id": "en_u5_d2", "category": "technical", "text": "requires public government ownership to operate inside a single school", "penalty_explanation": "Local Area Networks in schools, colleges, and offices are privately owned and easy to maintain." }
+          ]
+        },
+        "hi": {
+          "prompt": "लोकल एरिया नेटवर्क (LAN) के गति और विलंब संबंधी लाभों को दर्शाने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक लोकल एरिया नेटवर्क से शुरुआत करें, उच्च गति और कम विलंब देने का उल्लेख करें, निजी इमारत के वातावरण का संदर्भ दें, और नेटवर्क भीड़भाड़ कम करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u5_t1", "text": "एक लोकल एरिया नेटवर्क", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u5_t2", "text": "उच्च गति और कम संचरण विलंब देकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u5_t3", "text": "निजी इमारत के सीमित क्षेत्र में", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u5_t4", "text": "नेटवर्क भीड़भाड़ को न्यूनतम रखता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u5_d1", "category": "conceptual", "text": "महाद्वीपों के पार जुड़े सैटेलाइट WAN से भी अधिक संचरण विलंब करता है", "penalty_explanation": "छोटे भौगोलिक क्षेत्र के कारण LAN में विलंब बहुत कम होता है, जबकि WAN में अधिक विलंब होता है।" },
+            { "id": "hi_u5_d2", "category": "technical", "text": "किसी स्कूल के अंदर चलाने के लिए सार्वजनिक सरकारी स्वामित्व अनिवार्य करता है", "penalty_explanation": "स्कूल या कार्यालय के LAN निजी स्वामित्व वाले होते हैं और इनका रखरखाव आसान होता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "LAN offers high speed, short delay, and low congestion under private ownership; MAN provides moderate city-wide metrics; WAN faces long delays and higher congestion.",
+        "hi": "LAN निजी स्वामित्व में उच्च गति, कम विलंब और कम भीड़भाड़ देता है; MAN शहर में मध्यम प्रदर्शन करता है; WAN में अधिक विलंब और भीड़भाड़ होती है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Network Benefits vs. Operational Risks",
+          "hi": "नेटवर्क के लाभ बनाम परिचालन जोखिम"
+        },
+        "theory": {
+          "en": "Computer networks deliver major organizational advantages: sharing central files, software, and expensive hardware like printers; enabling rapid electronic communication; maintaining continuous file integrity; and simplifying centralized server backups to recover mistakenly deleted work. At the same time, networks introduce operational risks: central server or network failures can halt all connected workstations, computer viruses can spread rapidly across shared nodes, hackers pose security threats to sensitive data, and large-scale cabling and management incur high costs.",
+          "hi": "कंप्यूटर नेटवर्क संगठनों को महत्वपूर्ण लाभ प्रदान करते हैं: केंद्रीय फाइलों, सॉफ्टवेयर और प्रिंटर जैसे महंगे हार्डवेयर को साझा करना, त्वरित इलेक्ट्रॉनिक संचार, फाइल अखंडता बनाए रखना और गलती से डिलीट हुए कार्य को पुनः प्राप्त करने के लिए केंद्रीय सर्वर बैकअप लेना। दूसरी ओर, नेटवर्क में कुछ जोखिम भी होते हैं: केंद्रीय सर्वर या नेटवर्क खराब होने पर सभी जुड़े कंप्यूटर प्रभावित हो सकते हैं, वायरस तेज़ी से फैल सकते हैं, हैकिंग से डेटा असुरक्षित हो सकता है, तथा बड़े नेटवर्क की केबलिंग और प्रबंधन महंगा होता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Computer Networks: Core Advantages vs. Risks</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Network Advantages</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Shared Printers &amp; Central Backup</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Network Disadvantages</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Server Failure &amp; Virus Spread</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Cost Effective</tspan><tspan x=\"100\" dy=\"1.2em\">Fast Messaging</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">File Integrity</tspan><tspan x=\"225\" dy=\"1.2em\">Data Recovery</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Hacking Threat</tspan><tspan x=\"375\" dy=\"1.2em\">Security Need</tspan></text><text x=\"500\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">High Cable Cost</tspan><tspan x=\"500\" dy=\"1.2em\">Tough Admin</tspan></text></svg>",
+          "caption": {
+            "en": "Operational balance of computer networks weighing resource sharing and centralized server backup against server failure, virus spread, and security risks.",
+            "hi": "कंप्यूटर नेटवर्क का संतुलन जो संसाधन साझाकरण और केंद्रीय बैकअप के लाभों की तुलना सर्वर विफलता, वायरस प्रसार और सुरक्षा जोखिमों से करता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how central network servers protect data while introducing operational risks.",
+          "hint": "Start with central network servers, describe sharing files and automating backups, mention across connected office workstations, and conclude with reducing hardware costs despite virus and failure risks.",
+          "target_sequence": [
+            { "id": "en_u6_t1", "text": "Central network servers", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u6_t2", "text": "share files and automate backups", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u6_t3", "text": "across connected office workstations", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u6_t4", "text": "to cut hardware costs despite failure risks", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u6_d1", "category": "conceptual", "text": "guarantee that computer viruses can never spread between linked PCs", "penalty_explanation": "Because files and drives are shared across the network, a virus can spread more easily between connected workstations." },
+            { "id": "en_u6_d2", "category": "technical", "text": "require buying a separate laser printer for every single desk", "penalty_explanation": "Networking is cost-effective precisely because multiple users can share a single printer across the network." }
+          ]
+        },
+        "hi": {
+          "prompt": "केंद्रीय नेटवर्क सर्वर द्वारा फाइल साझाकरण और बैकअप प्रदान करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "केंद्रीय नेटवर्क सर्वर से शुरुआत करें, फाइलें साझा करने और बैकअप लेने का उल्लेख करें, जुड़े कार्यस्थलों का संदर्भ दें, और हार्डवेयर लागत कम करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u6_t1", "text": "केंद्रीय नेटवर्क सर्वर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u6_t2", "text": "फाइलें साझा करके और बैकअप लेकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u6_t3", "text": "जुड़े हुए कार्यालय कार्यस्थलों के बीच", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u6_t4", "text": "हार्डवेयर लागत कम करके कार्य आसान बनाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u6_d1", "category": "conceptual", "text": "यह सुनिश्चित करते हैं कि जुड़े कंप्यूटरों में कभी वायरस न फैल सके", "penalty_explanation": "नेटवर्क पर फाइल साझा होने के कारण वायरस एक कंप्यूटर से दूसरे कंप्यूटर में आसानी से फैल सकता है।" },
+            { "id": "hi_u6_d2", "category": "technical", "text": "प्रत्येक मेज के लिए अलग-अलग प्रिंटर खरीदना अनिवार्य कर देते हैं", "penalty_explanation": "नेटवर्क से एक ही प्रिंटर को सभी उपयोगकर्ता साझा कर सकते हैं, जिससे लागत कम होती है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Networks save costs by sharing printers, files, and central backups, but require strong security because server failure, hacking, and viruses can affect all nodes.",
+        "hi": "नेटवर्क प्रिंटर, फाइल और केंद्रीय बैकअप साझा करके लागत बचाते हैं, परंतु सर्वर विफलता, हैकिंग और वायरस से सभी कंप्यूटर प्रभावित हो सकते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Internet Architecture & TCP/IP Packet Routing",
+          "hi": "इंटरनेट संरचना और TCP/IP पैकेट रूटिंग"
+        },
+        "theory": {
+          "en": "The term Internet is short for internetworking—a massive global system linking countless smaller LAN, MAN, and WAN networks through specialized hardware and software. It operates using the TCP/IP protocol suite, where IP serves as the addressing protocol that assigns unique destinations to data packets. As Tim Berners-Lee explained with his postcard analogy, each networked computer reads the destination address on a data packet and forwards it down the appropriate cable so it reaches anywhere in the world in under a second.",
+          "hi": "इंटरनेट (Internet) शब्द इंटरनेटवर्किंग का संक्षिप्त रूप है—यह अनगिनत छोटे LAN, MAN और WAN नेटवर्कों को उपयुक्त हार्डवेयर और सॉफ्टवेयर के माध्यम से जोड़ने वाला विशाल वैश्विक तंत्र है। यह TCP/IP प्रोटोकॉल सुइट पर काम करता है, जहाँ IP एड्रेसिंग प्रोटोकॉल प्रत्येक डेटा पैकेट को विशिष्ट गंतव्य पता देता है। टिम बर्नर्स-ली के पोस्टकार्ड उदाहरण के अनुसार, नेटवर्क से जुड़ा प्रत्येक कंप्यूटर पैकेट पर लिखे पते को पढ़कर उसे सही केबल पर आगे भेजता है, जिससे सूचना एक सेकंड से भी कम समय में दुनिया के किसी भी कोने तक पहुंच जाती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Internetworking: TCP/IP Packet Addressing &amp; Routing</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">IP Addressing</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Packet Destination Tag</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">TCP/IP Suite</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Global Network Standard</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Sub-Second Delivery</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">LAN/MAN/WAN Mesh</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Postcard Analogy</tspan><tspan x=\"120\" dy=\"1.2em\">Target Locator</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Internetworking</tspan><tspan x=\"300\" dy=\"1.2em\">Common Rules</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Worldwide Reach</tspan><tspan x=\"480\" dy=\"1.2em\">Fast Routing</tspan></text></svg>",
+          "caption": {
+            "en": "Global internetworking model showing IP-addressed data packets routed across interconnected LAN, MAN, and WAN networks via TCP/IP.",
+            "hi": "वैश्विक इंटरनेटवर्किंग मॉडल जो TCP/IP के माध्यम से LAN, MAN और WAN नेटवर्कों के पार IP पते वाले डेटा पैकेट की रूटिंग दर्शाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how the Internet routes data packets across global networks.",
+          "hint": "Start with the global Internet, describe routing IP-addressed data packets, mention across interconnected LAN MAN and WAN networks, and conclude with delivering worldwide information in under a second.",
+          "target_sequence": [
+            { "id": "en_u7_t1", "text": "The global Internet", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u7_t2", "text": "routes IP-addressed data packets", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u7_t3", "text": "across interconnected LAN MAN and WAN networks", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u7_t4", "text": "to deliver information worldwide in under a second", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u7_d1", "category": "conceptual", "text": "operates as a single isolated computer disconnected from any phone or cable lines", "penalty_explanation": "Internet stands for internetworking—a global group of connected LAN, MAN, and WAN networks." },
+            { "id": "en_u7_d2", "category": "technical", "text": "delivers electronic packets without using TCP/IP addressing standards", "penalty_explanation": "The Internet functions using the TCP/IP protocol suite with IP serving as the core addressing protocol." }
+          ]
+        },
+        "hi": {
+          "prompt": "इंटरनेट द्वारा वैश्विक नेटवर्कों के पार डेटा पैकेट पहुंचाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "वैश्विक इंटरनेट से शुरुआत करें, IP पते वाले डेटा पैकेट भेजने का उल्लेख करें, जुड़े हुए LAN MAN और WAN नेटवर्कों का संदर्भ दें, और एक सेकंड से कम समय में सूचना पहुंचाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u7_t1", "text": "वैश्विक इंटरनेट", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u7_t2", "text": "IP पते वाले डेटा पैकेट को भेजकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u7_t3", "text": "जुड़े हुए LAN MAN और WAN नेटवर्कों के पार", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u7_t4", "text": "एक सेकंड से कम समय में सूचना पहुंचाता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u7_d1", "category": "conceptual", "text": "केवल एक अकेले स्टैंडअलोन कंप्यूटर की तरह बिना किसी नेटवर्क के काम करता है", "penalty_explanation": "इंटरनेट का अर्थ इंटरनेटवर्किंग है, जो दुनिया भर के LAN, MAN और WAN नेटवर्कों को आपस में जोड़ता है।" },
+            { "id": "hi_u7_d2", "category": "technical", "text": "बिना TCP/IP एड्रेसिंग नियमों के अंधाधुंध डेटा पैकेट फेंकता है", "penalty_explanation": "इंटरनेट TCP/IP प्रोटोकॉल सुइट और IP एड्रेसिंग प्रणाली के माध्यम से सटीक रूप से डेटा पहुंचाता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The Internet (internetworking) connects LANs, MANs, and WANs globally via the TCP/IP protocol suite, routing IP-addressed packets to destinations in under a second.",
+        "hi": "इंटरनेट (इंटरनेटवर्किंग) TCP/IP प्रोटोकॉल सुइट द्वारा विश्व स्तर पर LAN, MAN और WAN को जोड़ता है और IP पते वाले पैकेट एक सेकंड से कम में पहुंचाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "History of the Internet & Online Services",
+          "hi": "इंटरनेट का इतिहास और प्रमुख ऑनलाइन सेवाएं"
+        },
+        "theory": {
+          "en": "The history of the Internet began in 1969 when defense engineers at the University of California, Los Angeles (UCLA) transmitted the first instant computer-to-computer message to Stanford University. Today, the World Wide Web provides vast global information (weather, stock prices, crop production, airline schedules) and powers essential digital services including Internet Banking, Online Shopping (e-commerce), Online Ticket Booking, Bill Payments, and E-mail, though users must guard against personal information theft and computer viruses.",
+          "hi": "इंटरनेट का इतिहास वर्ष 1969 में शुरू हुआ जब लॉस एंजिल्स (UCLA) के रक्षा इंजीनियरों ने कंप्यूटर के माध्यम से स्टैनफोर्ड विश्वविद्यालय को पहला त्वरित संदेश भेजा। आज वर्ल्ड वाइड वेब मौसम, शेयर बाजार, फसल उत्पादन और एयरलाइन यातायात जैसी विशाल जानकारी प्रदान करता है तथा इंटरनेट बैंकिंग, ऑनलाइन शॉपिंग (ई-कॉमर्स), टिकट बुकिंग, बिल भुगतान और ई-मेल जैसी सेवाएं संभव बनाता है, हालांकि उपयोगकर्ताओं को व्यक्तिगत जानकारी की चोरी और कंप्यूटर वायरस से सावधान रहना चाहिए।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Internet Evolution: 1969 Origin to Digital Services</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">1969 Milestone</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">UCLA to Stanford Link</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">E-Commerce &amp; Web</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Banking, Tickets &amp; Info</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Online Threats</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Theft &amp; Viruses</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#f87171\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#f87171\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Defense Engineers</tspan><tspan x=\"120\" dy=\"1.2em\">First Message</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Online Shopping</tspan><tspan x=\"300\" dy=\"1.2em\">Instant Global Chat</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Privacy Risk</tspan><tspan x=\"480\" dy=\"1.2em\">System Crashes</tspan></text></svg>",
+          "caption": {
+            "en": "Internet progression from the 1969 UCLA-Stanford message to global e-commerce and banking services alongside security threats.",
+            "hi": "1969 के UCLA-स्टैनफोर्ड संदेश से लेकर आधुनिक ई-कॉमर्स व बैंकिंग सेवाओं और सुरक्षा जोखिमों तक इंटरनेट का विकास।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence tracing the evolution of the Internet into a global platform for digital services.",
+          "hint": "Start with the modern Internet, describe evolving from the 1969 UCLA-Stanford message, mention across global communication channels, and conclude with powering banking e-commerce and information access.",
+          "target_sequence": [
+            { "id": "en_u8_t1", "text": "The modern Internet", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u8_t2", "text": "evolved from the 1969 UCLA-Stanford message", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u8_t3", "text": "across global communication channels", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u8_t4", "text": "to power banking e-commerce and information access", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u8_d1", "category": "conceptual", "text": "protects connected computers completely from all virus attacks and data theft", "penalty_explanation": "Computers connected to the Internet face real risks of personal information theft and virus attacks that can crash systems." },
+            { "id": "en_u8_d2", "category": "technical", "text": "forbids users from booking airline tickets or paying utility bills online", "penalty_explanation": "Online ticket booking, bill payments, internet banking, and e-commerce are primary services enabled by the Internet." }
+          ]
+        },
+        "hi": {
+          "prompt": "इंटरनेट के ऐतिहासिक विकास और आधुनिक डिजिटल सेवाओं को दर्शाने वाले वाक्य को सही क्रम में व्यवस्थित करें।",
+          "hint": "आधुनिक इंटरनेट से शुरुआत करें, 1969 के UCLA-स्टैनफोर्ड संदेश से विकसित होने का उल्लेख करें, वैश्विक संचार माध्यमों का संदर्भ दें, और बैंकिंग व ई-कॉमर्स पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u8_t1", "text": "आधुनिक इंटरनेट", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u8_t2", "text": "1969 के UCLA-स्टैनफोर्ड संदेश से विकसित होकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u8_t3", "text": "वैश्विक संचार माध्यमों के जरिए", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u8_t4", "text": "बैंकिंग ई-कॉमर्स और सूचना सेवाएं प्रदान करता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u8_d1", "category": "conceptual", "text": "जुड़े हुए कंप्यूटरों को वायरस और डेटा चोरी से शत-प्रतिशत सुरक्षित रखता है", "penalty_explanation": "इंटरनेट से जुड़े कंप्यूटरों पर वायरस के हमले और व्यक्तिगत जानकारी चोरी होने का खतरा बना रहता है।" },
+            { "id": "hi_u8_d2", "category": "technical", "text": "ऑनलाइन टिकट बुकिंग और बिल भुगतान करने पर पूरी तरह रोक लगाता है", "penalty_explanation": "इंटरनेट बैंकिंग, ऑनलाइन टिकट बुकिंग और बिल भुगतान इंटरनेट की प्रमुख सुविधाएं हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Beginning with a 1969 UCLA-Stanford message, the Internet now enables instant communication, banking, e-commerce, and research, despite virus and privacy risks.",
+        "hi": "1969 के UCLA-स्टैनफोर्ड संदेश से शुरू होकर इंटरनेट आज त्वरित संचार, बैंकिंग, ई-कॉमर्स और जानकारी प्रदान करता है, हालांकि वायरस व गोपनीयता के जोखिम भी हैं।"
+      }
+    }
+  ]
+}
