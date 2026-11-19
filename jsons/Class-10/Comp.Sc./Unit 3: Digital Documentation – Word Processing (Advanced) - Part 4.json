@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 3: Digital Documentation – Word Processing (Advanced) - Part 4",
+      "hi": "इकाई 3: डिजिटल दस्तावेज़ीकरण – वर्ड प्रोसेसिंग (उन्नत) - भाग 4"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Page Borders & Word/Paragraph Shading",
+          "hi": "पृष्ठ बॉर्डर और शब्द व पैराग्राफ शेडिंग"
+        },
+        "theory": {
+          "en": "Borders and shading in MS Word let you frame and highlight text or pages cleanly. Page Borders (under Page Layout > Page Background) add decorative line styles, colors, widths, or clip-art borders around a page, section, or document. Shading (on the Home tab in the Paragraph group) fills background color behind selected words, paragraphs, or pages using Theme Colors or Standard Colors (which stay fixed even if theme colors change).",
+          "hi": "एमएस वर्ड में बॉर्डर और शेडिंग से पाठ या पृष्ठों को आकर्षक ढंग से हाइलाइट किया जा सकता है। पेज बॉर्डर (Page Layout > Page Background के अंतर्गत) पृष्ठ, अनुभाग या पूरे दस्तावेज़ के चारों ओर लाइन शैली, रंग, चौड़ाई या क्लिप-आर्ट बॉर्डर लगाते हैं। शेडिंग (Home टैब के Paragraph समूह में) चुने हुए शब्दों, पैराग्राफ या पृष्ठ के पीछे थीम रंग या मानक रंग (Standard Colors, जो थीम बदलने पर भी नहीं बदलते) भरती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Word Formatting: Page Borders &amp; Paragraph Shading</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Page Borders Dialog</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Style, Color, Width &amp; Art</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Text &amp; Page Shading</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Theme &amp; Standard Colors</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Page Layout</tspan><tspan x=\"100\" dy=\"1.2em\">Apply Scope</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Line or Art</tspan><tspan x=\"225\" dy=\"1.2em\">Custom Width</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Home Paragraph</tspan><tspan x=\"375\" dy=\"1.2em\">Word or Block</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Fixed Standard</tspan><tspan x=\"500\" dy=\"1.2em\">More Colors</tspan></text></svg>",
+          "caption": {
+            "en": "Contrast between Page Borders (line/art framing around pages or sections) and Shading fills behind selected words or paragraphs.",
+            "hi": "पृष्ठ बॉर्डर (लाइन या कलात्मक किनारा) और चुने हुए शब्दों या पैराग्राफ के पीछे शेडिंग रंग भरने की तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how borders and shading frame and highlight Word content.",
+          "hint": "Start with Borders and shading features, describe framing pages and coloring backgrounds, mention across words paragraphs or pages, and conclude with highlighting selected document sections clearly.",
+          "target_sequence": [
+            { "id": "en_u13_t1", "text": "Borders and shading features", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u13_t2", "text": "frame edges and color backgrounds", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u13_t3", "text": "across words paragraphs or pages", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u13_t4", "text": "to highlight selected document sections", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u13_d1", "category": "conceptual", "text": "force Standard Colors to shift randomly every time theme colors change", "penalty_explanation": "Standard Colors do not change when you change the theme colors for a document." },
+            { "id": "en_u13_d2", "category": "technical", "text": "prohibit adding clip-art border graphics around any document page", "penalty_explanation": "In the Borders and Shading dialog, you can choose clip-art border graphics under Art alongside line styles." }
+          ]
+        },
+        "hi": {
+          "prompt": "बॉर्डर और शेडिंग द्वारा दस्तावेज़ के भागों को सजाने और हाइलाइट करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "बॉर्डर और शेडिंग सुविधाओं से शुरुआत करें, किनारों को सजाने और पृष्ठभूमि रंगने का उल्लेख करें, शब्दों पैराग्राफ या पृष्ठों का संदर्भ दें, और चुने हुए भागों को स्पष्ट दिखाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u13_t1", "text": "बॉर्डर और शेडिंग सुविधाएं", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u13_t2", "text": "किनारों को सजाकर और पृष्ठभूमि रंगकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u13_t3", "text": "शब्दों पैराग्राफ या पृष्ठों पर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u13_t4", "text": "चयनित दस्तावेज़ भागों को स्पष्ट दिखाती हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u13_d1", "category": "conceptual", "text": "थीम रंग बदलते ही मानक रंगों (Standard Colors) को अपने आप बदल देती हैं", "penalty_explanation": "दस्तावेज़ के थीम रंग बदलने पर भी मानक रंग (Standard Colors) नहीं बदलते।" },
+            { "id": "hi_u13_d2", "category": "technical", "text": "पृष्ठ के चारों ओर क्लिप-आर्ट बॉर्डर चित्र लगाने से रोकती हैं", "penalty_explanation": "बॉर्डर और शेडिंग डायलॉग में Art विकल्प से क्लिप-आर्ट बॉर्डर भी लगाया जा सकता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Page Borders frame pages/sections with lines or art, while Shading fills Theme or Standard colors behind words, paragraphs, or pages.",
+        "hi": "पेज बॉर्डर लाइन या आर्ट से पृष्ठ/अनुभाग सजाता है, जबकि शेडिंग शब्दों, पैराग्राफ या पृष्ठ के पीछे थीम या मानक रंग भरता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Format Painter Formatting Transfer",
+          "hi": "फॉर्मेट पेंटर द्वारा फॉर्मेटिंग स्थानांतरण"
+        },
+        "theory": {
+          "en": "Format Painter lets you copy formatting already applied to text or a graphic and apply it quickly elsewhere in your document. Select the formatted text or graphic, single-click Format Painter in the Clipboard group on the Home tab (or press Ctrl+Shift+C), click the target text or graphic to apply the format, and press Esc or click Format Painter again to stop.",
+          "hi": "फॉर्मेट पेंटर (Format Painter) दस्तावेज़ में किसी पाठ या चित्र पर लगी फॉर्मेटिंग को कॉपी करके अन्यत्र तेज़ी से लागू करने की सुविधा देता है। फॉर्मेट वाले पाठ या चित्र को चुनें, Home टैब के Clipboard समूह में Format Painter पर एक बार क्लिक करें (या Ctrl+Shift+C दबाएं), लक्ष्य पाठ या चित्र पर क्लिक करके फॉर्मेट लागू करें, और रोकने के लिए Esc दबाएं या दोबारा क्लिक करें।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Format Painter Workflow: Copy &amp; Apply Styles</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">1. Select Styled</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Text or Graphic</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">2. Paintbrush Tool</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Ctrl + Shift + C</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">3. Paint Target</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Click &amp; Press Esc</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Existing Style</tspan><tspan x=\"120\" dy=\"1.2em\">Source Format</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Home Clipboard</tspan><tspan x=\"300\" dy=\"1.2em\">Brush Pointer</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Fast Consistency</tspan><tspan x=\"480\" dy=\"1.2em\">Exit Mode</tspan></text></svg>",
+          "caption": {
+            "en": "Format Painter steps: selecting styled text or graphics, activating the paintbrush tool (or Ctrl+Shift+C), applying to target text, and pressing Esc to exit.",
+            "hi": "फॉर्मेट पेंटर के चरण: फॉर्मेटेड पाठ या चित्र चुनना, ब्रश टूल या Ctrl+Shift+C चलाना, लक्ष्य पर लगाना और Esc से रोकना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Format Painter copies and applies existing formatting quickly.",
+          "hint": "Start with Format Painter, describe copying formatting from styled text or graphics, mention via the Home tab or Ctrl+Shift+C, and conclude with applying consistent formatting elsewhere.",
+          "target_sequence": [
+            { "id": "en_u14_t1", "text": "Format Painter", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u14_t2", "text": "copies formatting from styled text or graphics", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u14_t3", "text": "via the Home tab or Ctrl+Shift+C", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u14_t4", "text": "to apply matching styles to other text", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u14_d1", "category": "conceptual", "text": "deletes every word in the document whenever you press Esc to stop", "penalty_explanation": "Pressing Esc or clicking Format Painter again simply stops the formatting brush mode without deleting text." },
+            { "id": "en_u14_d2", "category": "technical", "text": "changes the pointer into a magnifying glass that only searches text", "penalty_explanation": "Clicking Format Painter turns the pointer into a paintbrush icon used to copy and apply formatting." }
+          ]
+        },
+        "hi": {
+          "prompt": "फॉर्मेट पेंटर द्वारा पहले से लगी फॉर्मेटिंग को अन्यत्र लागू करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "फॉर्मेट पेंटर से शुरुआत करें, चुने हुए पाठ या चित्र से फॉर्मेटिंग कॉपी करने का उल्लेख करें, Home टैब या Ctrl+Shift+C का संदर्भ दें, और अन्य पाठ पर लगाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u14_t1", "text": "फॉर्मेट पेंटर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u14_t2", "text": "पहले से सजे पाठ या चित्र से फॉर्मेटिंग कॉपी करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u14_t3", "text": "Home टैब या Ctrl+Shift+C द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u14_t4", "text": "अन्य पाठ पर समान शैली तेज़ी से लागू करता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u14_d1", "category": "conceptual", "text": "रोकने के लिए Esc दबाते ही दस्तावेज़ के सभी शब्दों को मिटा देता है", "penalty_explanation": "Esc दबाने या दोबारा क्लिक करने से केवल फॉर्मेट पेंटर मोड बंद होता है, पाठ नहीं मिटता।" },
+            { "id": "hi_u14_d2", "category": "technical", "text": "पॉइंटर को आवर्धक लेंस में बदल देता है जो केवल शब्द खोजता है", "penalty_explanation": "Format Painter चुनने पर पॉइंटर पेंटब्रश आइकन में बदल जाता है ताकि फॉर्मेटिंग कॉपी व लागू की जा सके।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Format Painter (Home tab or Ctrl+Shift+C) turns the pointer into a paintbrush to copy and apply formatting; press Esc to stop.",
+        "hi": "फॉर्मेट पेंटर (Home टैब या Ctrl+Shift+C) पेंटब्रश से फॉर्मेटिंग कॉपी कर अन्यत्र लगाता है; Esc दबाकर इसे रोका जाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Find & Replace Across Long Documents",
+          "hi": "लंबे दस्तावेज़ों में फाइंड (Find) और रिप्लेस (Replace)"
+        },
+        "theory": {
+          "en": "In longer documents, Find and Replace saves time when locating or updating words and phrases. Clicking Home > Find opens the Navigation Pane on the left: typing a word highlights matches in yellow in the document, shows previews in the pane, and lets you jump through occurrences (highlighting clears when the pane closes). To replace text, click Home > Replace, enter Find what and Replace with text, and choose Replace, Find Next, or Replace All.",
+          "hi": "लंबे दस्तावेज़ों में किसी शब्द या वाक्यांश को खोजने या बदलने में Find और Replace समय बचाता है। Home > Find क्लिक करने पर बाईं ओर Navigation Pane खुलता है: शब्द टाइप करने पर दस्तावेज़ में वह पीले रंग में हाइलाइट होता है और पैन में झलक दिखती है (पैन बंद करने पर हाइलाइट हट जाता है)। शब्द बदलने के लिए Home > Replace चुनें, Find what और Replace with लिखें, और Replace, Find Next या Replace All दबाएं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Editing Tools: Navigation Pane Find &amp; Replace Dialog</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Home &rarr; Find (Nav Pane)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Yellow Highlight &amp; Previews</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Home &rarr; Replace Dialog</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Find What &rarr; Replace With</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Left Pane</tspan><tspan x=\"100\" dy=\"1.2em\">Jump Matches</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Close Pane</tspan><tspan x=\"225\" dy=\"1.2em\">Clears Mark</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Find Next</tspan><tspan x=\"375\" dy=\"1.2em\">Single Replace</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Replace All</tspan><tspan x=\"500\" dy=\"1.2em\">Batch Update</tspan></text></svg>",
+          "caption": {
+            "en": "Finding matches in yellow via the Navigation Pane and updating words using Find What, Replace With, and Replace All in the Replace dialog.",
+            "hi": "Navigation Pane द्वारा शब्दों को पीले रंग में खोजने और Replace डायलॉग से Find What व Replace With द्वारा बदलने की प्रक्रिया।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Find and Replace locates and updates words in a Word document.",
+          "hint": "Start with Find and Replace tools, describe highlighting matches and swapping words, mention through the Navigation Pane and Replace dialog, and conclude with editing long documents efficiently.",
+          "target_sequence": [
+            { "id": "en_u15_t1", "text": "Find and Replace tools", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u15_t2", "text": "highlight matches and swap chosen words", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u15_t3", "text": "through the Navigation Pane and Replace box", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u15_t4", "text": "to update long documents efficiently", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u15_d1", "category": "conceptual", "text": "require reading every single page manually because search cannot jump to matches", "penalty_explanation": "The Navigation Pane shows result previews and lets you click or use arrows to jump directly to match locations." },
+            { "id": "en_u15_d2", "category": "technical", "text": "offer only a single replacement button with no Replace All option", "penalty_explanation": "The Find and Replace dialog provides Replace, Replace All, and Find Next controls." }
+          ]
+        },
+        "hi": {
+          "prompt": "लंबे दस्तावेज़ में Find और Replace द्वारा शब्दों को खोजने और बदलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "Find और Replace सुविधाओं से शुरुआत करें, शब्दों को हाइलाइट करने और बदलने का उल्लेख करें, Navigation Pane और Replace बॉक्स का संदर्भ दें, और लंबे दस्तावेज़ तेज़ी से संपादित करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u15_t1", "text": "Find और Replace सुविधाएं", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u15_t2", "text": "शब्दों को हाइलाइट करके और बदलकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u15_t3", "text": "Navigation Pane और Replace बॉक्स द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u15_t4", "text": "लंबे दस्तावेज़ों को तेज़ी से संपादित करती हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u15_d1", "category": "conceptual", "text": "खोज परिणामों तक सीधे जाने की सुविधा नहीं देतीं, हर पृष्ठ खुद पढ़ना पड़ता है", "penalty_explanation": "Navigation Pane में परिणाम की झलक दिखती है और तीरों या क्लिक से सीधे उस स्थान पर जाया जा सकता है।" },
+            { "id": "hi_u15_d2", "category": "technical", "text": "एक साथ सभी शब्द बदलने के लिए Replace All का विकल्प नहीं देतीं", "penalty_explanation": "Find and Replace डायलॉग में Replace, Find Next और Replace All तीनों विकल्प उपलब्ध होते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Home > Find opens the Navigation Pane to highlight matches in yellow, while Home > Replace updates single or all matches via Find what and Replace with.",
+        "hi": "Home > Find से Navigation Pane में शब्द पीले दिखते हैं, जबकि Home > Replace से Find what व Replace with द्वारा शब्द बदले जाते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Creating Tables & Navigating Cells",
+          "hi": "तालिका (Table) बनाना और सेल में नेविगेट करना"
+        },
+        "theory": {
+          "en": "Tables organize information into rows and columns in MS Word and can be created in three ways on the Insert tab: dragging over the Table grid button, specifying rows, columns, and AutoFit behavior in the Insert Table dialog, or sketching custom borders with the Draw Table pencil. Inserting a table adds Design and Layout ribbon tabs; click inside any cell to type, and move across cells using Tab, Shift+Tab, or arrow keys.",
+          "hi": "तालिकाएं एमएस वर्ड में जानकारी को पंक्तियों और स्तंभों (rows and columns) में व्यवस्थित करती हैं। Insert टैब पर तालिका बनाने की तीन विधियां हैं: Table ग्रिड बटन पर माउस घुमाना, Insert Table डायलॉग में पंक्ति-स्तंभ व AutoFit चुनना, या Draw Table पेंसिल से रेखाएं खींचना। तालिका बनते ही Design और Layout टैब खुलते हैं; सेल में क्लिक करके लिखें और Tab, Shift+Tab या एरो कुंजियों से आगे-पीछे जाएं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Creating &amp; Navigating Tables in MS Word</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Grid &amp; Dialog</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Insert &rarr; Table Grid</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Draw Table Pencil</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Custom Rows &amp; Cols</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Design &amp; Layout</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Tab / Shift+Tab Move</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Rows &amp; Columns</tspan><tspan x=\"120\" dy=\"1.2em\">AutoFit Options</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Pencil Pointer</tspan><tspan x=\"300\" dy=\"1.2em\">Flexible Heights</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Table Tools</tspan><tspan x=\"480\" dy=\"1.2em\">Arrow Keys</tspan></text></svg>",
+          "caption": {
+            "en": "Three table creation methods (grid, Insert Table dialog, Draw Table pencil) plus Design/Layout tools and Tab/Shift+Tab cell navigation.",
+            "hi": "तालिका बनाने की तीन विधियां (ग्रिड, Insert Table डायलॉग, Draw Table पेंसिल) तथा Design/Layout टैब और Tab से सेल में जाना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how users build and navigate tables in MS Word.",
+          "hint": "Start with Word table tools, describe creating rows and columns and moving across cells, mention via Insert Table or Draw Table, and conclude with organizing tabular data clearly.",
+          "target_sequence": [
+            { "id": "en_u16_t1", "text": "Word table tools", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u16_t2", "text": "build rows and columns and move via Tab", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u16_t3", "text": "through Insert Table or Draw Table", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u16_t4", "text": "to organize tabular data clearly", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u16_d1", "category": "conceptual", "text": "require using Shift+Tab to move forward while Tab deletes the entire table", "penalty_explanation": "Pressing Tab moves to the next cell, Shift+Tab moves to the previous cell, and arrow keys also navigate cells." },
+            { "id": "en_u16_d2", "category": "technical", "text": "hide both Design and Layout tabs whenever a table is inserted", "penalty_explanation": "Inserting a table displays two new tabs—Design and Layout—on the ribbon for formatting and layout." }
+          ]
+        },
+        "hi": {
+          "prompt": "एमएस वर्ड में तालिका बनाने और सेल में आने-जाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "वर्ड तालिका उपकरणों से शुरुआत करें, पंक्ति-स्तंभ बनाने और Tab से चलने का उल्लेख करें, Insert Table या Draw Table का संदर्भ दें, और जानकारी व्यवस्थित करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u16_t1", "text": "वर्ड तालिका उपकरण", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u16_t2", "text": "पंक्ति-स्तंभ बनाकर और Tab से आगे बढ़कर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u16_t3", "text": "Insert Table या Draw Table द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u16_t4", "text": "जानकारी को तालिका में व्यवस्थित करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u16_d1", "category": "conceptual", "text": "अगले सेल में जाने के लिए Tab दबाने पर पूरी तालिका मिट जाती है", "penalty_explanation": "अगले सेल में जाने के लिए Tab और पिछले सेल में जाने के लिए Shift+Tab कुंजी का उपयोग होता है।" },
+            { "id": "hi_u16_d2", "category": "technical", "text": "तालिका बनते ही रिबन से Design और Layout दोनों टैब गायब हो जाते हैं", "penalty_explanation": "तालिका जोड़ने पर रिबन में Design और Layout दो नए टैब दिखाई देते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Create tables via Table grid, Insert Table, or Draw Table on the Insert tab, format via Design/Layout tabs, and navigate cells with Tab, Shift+Tab, or arrows.",
+        "hi": "Insert टैब के ग्रिड, Insert Table या Draw Table से तालिका बनाएं, Design/Layout से सजाएं, और Tab/Shift+Tab या एरो से सेल बदलें।"
+      }
+    }
+  ]
+}
