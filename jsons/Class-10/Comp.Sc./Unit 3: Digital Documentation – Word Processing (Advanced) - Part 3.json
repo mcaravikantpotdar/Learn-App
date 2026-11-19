@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 3: Digital Documentation – Word Processing (Advanced) - Part 3",
+      "hi": "इकाई 3: डिजिटल दस्तावेज़ीकरण – वर्ड प्रोसेसिंग (उन्नत) - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Watermarks, Page Color & Fill Effects",
+          "hi": "वॉटरमार्क, पेज कलर और फिल इफेक्ट्स"
+        },
+        "theory": {
+          "en": "MS Word lets you add background elements across multiple pages to indicate document status or enhance appearance. Watermarks place faint text (such as Draft, Confidential, or Do Not Copy) or custom text/logos behind document text. Under the Page Layout tab in the Page Background group, Page Color applies theme or standard colors, while Fill Effects adds gradients, textures, or patterns.",
+          "hi": "एमएस वर्ड में दस्तावेज़ की स्थिति दर्शाने या पृष्ठ को आकर्षक बनाने के लिए पृष्ठभूमि तत्व जोड़े जा सकते हैं। वॉटरमार्क (Watermark) पाठ के पीछे हल्का पाठ (जैसे Draft, Confidential या Do Not Copy) या कस्टम लोगो दिखाता है। Page Layout टैब के Page Background समूह में Page Color से थीम या मानक रंग भरे जा सकते हैं, जबकि Fill Effects से ग्रेडिएंट, टेक्सचर या पैटर्न जोड़े जाते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Page Background: Watermarks, Page Color &amp; Fill Effects</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Watermark</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Draft &amp; Confidential</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Page Color</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Theme &amp; Standard</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Fill Effects</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Gradient &amp; Texture</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Behind Text</tspan><tspan x=\"120\" dy=\"1.2em\">Custom Text/Logo</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Page Layout Tab</tspan><tspan x=\"300\" dy=\"1.2em\">Page Background</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Patterns &amp; Shades</tspan><tspan x=\"480\" dy=\"1.2em\">Rich Backdrop</tspan></text></svg>",
+          "caption": {
+            "en": "Background customization in MS Word using status watermarks, page colors, and gradient/texture fill effects.",
+            "hi": "एमएस वर्ड में स्थिति वॉटरमार्क, पेज कलर और ग्रेडिएंट व टेक्सचर फिल इफेक्ट्स द्वारा पृष्ठभूमि सजावट।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how watermarks and page fill effects customize document backgrounds.",
+          "hint": "Start with document watermarks and fill effects, describe placing faint status labels and gradients, mention across multiple Word pages, and conclude with marking document status and style.",
+          "target_sequence": [
+            { "id": "en_u9_t1", "text": "Document watermarks and fill effects", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u9_t2", "text": "place faint status labels and gradients", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u9_t3", "text": "across multiple Word pages", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u9_t4", "text": "to indicate confidentiality and background style", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u9_d1", "category": "conceptual", "text": "print bold opaque black blocks that cover every word of text completely", "penalty_explanation": "Watermarks are very light text or symbols printed behind document text so words remain readable." },
+            { "id": "en_u9_d2", "category": "technical", "text": "prevent adding custom text such as Draft or Confidential on pages", "penalty_explanation": "Word provides ready-made watermarks like Confidential and Do Not Copy plus Custom Text watermarks." }
+          ]
+        },
+        "hi": {
+          "prompt": "वॉटरमार्क और फिल इफेक्ट्स द्वारा दस्तावेज़ पृष्ठभूमि सजाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "दस्तावेज़ वॉटरमार्क और फिल इफेक्ट्स से शुरुआत करें, हल्के स्थिति लेबल और ग्रेडिएंट लगाने का उल्लेख करें, कई पृष्ठों पर का संदर्भ दें, और गोपनीयता व शैली दर्शाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u9_t1", "text": "दस्तावेज़ वॉटरमार्क और फिल इफेक्ट्स", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u9_t2", "text": "हल्के स्थिति लेबल और ग्रेडिएंट लगाकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u9_t3", "text": "कई वर्ड पृष्ठों पर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u9_t4", "text": "गोपनीयता और पृष्ठभूमि शैली दर्शाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u9_d1", "category": "conceptual", "text": "गहरे काले रंग से पूरे पाठ को ढक देते हैं ताकि कुछ भी पढ़ा न जा सके", "penalty_explanation": "वॉटरमार्क अत्यंत हल्का पाठ या चिह्न होता है जो पाठ के पीछे छपता है ताकि लिखावट स्पष्ट दिखे।" },
+            { "id": "hi_u9_d2", "category": "technical", "text": "Draft या Confidential जैसे कस्टम वॉटरमार्क जोड़ने से रोकते हैं", "penalty_explanation": "वर्ड में Confidential और Do Not Copy के साथ कस्टम टेक्स्ट वॉटरमार्क जोड़ने की सुविधा मिलती है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Watermarks place light status text or logos behind text, while Page Color and Fill Effects add colors, gradients, textures, or patterns.",
+        "hi": "वॉटरमार्क पाठ के पीछे हल्का स्थिति चिह्न दिखाता है, जबकि Page Color और Fill Effects रंग, ग्रेडिएंट, टेक्सचर या पैटर्न जोड़ते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Superscript & Subscript Notation",
+          "hi": "सुपरस्क्रिप्ट और सबस्क्रिप्ट लेखन"
+        },
+        "theory": {
+          "en": "Superscript and subscript format characters smaller than normal text above or below the baseline, commonly used in mathematical notation, footnotes, and endnotes. On the Font tab, selecting a character like 2 in CO2 and clicking Superscript raises it above the line, whereas clicking Subscript lowers it below the line as a subscript.",
+          "hi": "सुपरस्क्रिप्ट और सबस्क्रिप्ट सामान्य पाठ से छोटे अक्षरों को मुख्य रेखा से ऊपर या नीचे लिखने की सुविधा देते हैं, जिनका उपयोग गणितीय संकेतों, फुटनोट और एंडनोट में होता है। Font टैब पर CO2 में 2 चुनकर Superscript दबाने से वह ऊपर चला जाता है, जबकि Subscript दबाने से वह नीचे की ओर सबस्क्रिप्ट के रूप में दिखता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Font Tab Scripts: Superscript vs. Subscript</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Superscript (Above Line)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Smaller Raised Character</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Subscript (Below Line)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Smaller Lowered Character</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Exponents</tspan><tspan x=\"100\" dy=\"1.2em\">Footnotes</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Font Tab</tspan><tspan x=\"225\" dy=\"1.2em\">Select Digit</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Formulas</tspan><tspan x=\"375\" dy=\"1.2em\">Endnotes</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Font Tab</tspan><tspan x=\"500\" dy=\"1.2em\">Lowered Text</tspan></text></svg>",
+          "caption": {
+            "en": "Contrast between Superscript (raised smaller characters above the baseline) and Subscript (lowered smaller characters below the baseline) on the Font tab.",
+            "hi": "Font टैब पर सुपरस्क्रिप्ट (रेखा से ऊपर छोटे अक्षर) और सबस्क्रिप्ट (रेखा से नीचे छोटे अक्षर) के बीच अंतर।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how superscript and subscript format characters relative to the text line.",
+          "hint": "Start with superscript and subscript tools, describe placing smaller characters above or below text, mention from the Font tab, and conclude with formatting math and notes cleanly.",
+          "target_sequence": [
+            { "id": "en_u10_t1", "text": "Superscript and subscript tools", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u10_t2", "text": "place smaller characters above or below text", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u10_t3", "text": "from the Font tab", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u10_t4", "text": "to format math notations and notes", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u10_d1", "category": "conceptual", "text": "make subscript characters twice as tall as a full page banner", "penalty_explanation": "Superscript and subscript characters appear smaller than standard text, positioned above or below the baseline." },
+            { "id": "en_u10_d2", "category": "technical", "text": "permanently delete every number typed on the page when clicked", "penalty_explanation": "Clicking Superscript or Subscript formats the selected character rather than deleting numbers." }
+          ]
+        },
+        "hi": {
+          "prompt": "सुपरस्क्रिप्ट और सबस्क्रिप्ट द्वारा अक्षरों को मुख्य रेखा से ऊपर या नीचे लिखने के क्रम को व्यवस्थित करें।",
+          "hint": "सुपरस्क्रिप्ट और सबस्क्रिप्ट विकल्पों से शुरुआत करें, छोटे अक्षरों को ऊपर या नीचे रखने का उल्लेख करें, Font टैब का संदर्भ दें, और गणितीय संकेतों व नोट्स पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u10_t1", "text": "सुपरस्क्रिप्ट और सबस्क्रिप्ट विकल्प", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u10_t2", "text": "छोटे अक्षरों को ऊपर या नीचे रखकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u10_t3", "text": "Font टैब के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u10_t4", "text": "गणितीय संकेतों और नोट्स को व्यवस्थित करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u10_d1", "category": "conceptual", "text": "सबस्क्रिप्ट अक्षरों को पूरे पृष्ठ के बैनर से भी दोगुना बड़ा कर देते हैं", "penalty_explanation": "सुपरस्क्रिप्ट और सबस्क्रिप्ट अक्षर सामान्य पाठ से छोटे होते हैं और रेखा से ऊपर या नीचे दिखते हैं।" },
+            { "id": "hi_u10_d2", "category": "technical", "text": "क्लिक करते ही पृष्ठ पर लिखी सभी संख्याओं को स्थायी रूप से मिटा देते हैं", "penalty_explanation": "सुपरस्क्रिप्ट या सबस्क्रिप्ट दबाने से चुने हुए अक्षर की स्थिति बदलती है, संख्याएं नहीं मिटतीं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "On the Font tab, Superscript raises smaller characters above the line and Subscript lowers them below the line for math notation and notes.",
+        "hi": "Font टैब पर सुपरस्क्रिप्ट छोटे अक्षरों को रेखा से ऊपर और सबस्क्रिप्ट नीचे करके गणितीय संकेतों व नोट्स को स्पष्ट बनाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Inserting Special Symbols & Characters",
+          "hi": "विशेष चिह्न (Symbols) और कैरेक्टर जोड़ना"
+        },
+        "theory": {
+          "en": "MS Word lets you insert characters beyond standard keyboard letters, digits, and punctuation marks—including currency signs, mathematical/Greek symbols, and foreign letters. To insert a symbol, place the cursor at the insertion point, click the Symbol command in the Symbols group on the Insert tab, pick a recent or menu symbol (or open More Symbols), and insert it directly into your text.",
+          "hi": "एमएस वर्ड कीबोर्ड के सामान्य अक्षरों, अंकों और विराम चिह्नों से परे विशेष कैरेक्टर—जैसे मुद्रा चिह्न, गणितीय या यूनानी प्रतीक और अन्य भाषाओं के अक्षर—जोड़ने की सुविधा देता है। चिह्न जोड़ने के लिए कर्सर को सही स्थान पर रखें, Insert टैब के Symbols समूह में Symbol बटन दबाएं, सूची से चिह्न चुनें (या More Symbols खोलें) और सीधे पाठ में डालें।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Inserting Special Symbols via Insert Tab</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Insert &rarr; Symbol</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Symbols Group Button</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Symbol Menu</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Recent &amp; More Symbols</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Cursor Insertion</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Direct Text Placement</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Set Pointer</tspan><tspan x=\"120\" dy=\"1.2em\">Open Command</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Math &amp; Currency</tspan><tspan x=\"300\" dy=\"1.2em\">Special Characters</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Inline Entry</tspan><tspan x=\"480\" dy=\"1.2em\">Like Any Letter</tspan></text></svg>",
+          "caption": {
+            "en": "Steps to insert special symbols and characters at the cursor position from the Insert tab Symbol menu.",
+            "hi": "Insert टैब के Symbol मेन्यू से कर्सर के स्थान पर विशेष चिह्न और कैरेक्टर डालने के चरण।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how users insert special characters not found on a standard keyboard.",
+          "hint": "Start with Word users, describe selecting symbols from the Insert menu, mention at the current insertion pointer, and conclude with adding special signs and letters to text.",
+          "target_sequence": [
+            { "id": "en_u11_t1", "text": "Word users", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u11_t2", "text": "select symbols from the Insert menu", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u11_t3", "text": "at the current insertion pointer", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u11_t4", "text": "to add special signs and characters inline", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u11_d1", "category": "conceptual", "text": "restrict documents strictly to twenty-six letters with zero symbols", "penalty_explanation": "Word allows adding characters beyond the 26 alphabet letters, numbers, and basic punctuation marks." },
+            { "id": "en_u11_d2", "category": "technical", "text": "require soldering extra physical keys onto the keyboard hardware", "penalty_explanation": "Special symbols are chosen digitally through the Symbol command on the Insert tab." }
+          ]
+        },
+        "hi": {
+          "prompt": "कीबोर्ड पर न मिलने वाले विशेष चिह्नों को दस्तावेज़ में डालने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "वर्ड उपयोगकर्ता से शुरुआत करें, Insert मेन्यू से चिह्न चुनने का उल्लेख करें, वर्तमान कर्सर स्थिति का संदर्भ दें, और विशेष चिह्न जोड़ने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u11_t1", "text": "वर्ड उपयोगकर्ता", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u11_t2", "text": "Insert मेन्यू से चिह्न चुनकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u11_t3", "text": "वर्तमान कर्सर के स्थान पर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u11_t4", "text": "विशेष प्रतीक और कैरेक्टर सीधे जोड़ते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u11_d1", "category": "conceptual", "text": "दस्तावेज़ को केवल साधारण अक्षरों तक सीमित रखते हैं और कोई चिह्न नहीं जोड़ते", "penalty_explanation": "वर्ड कीबोर्ड के सामान्य अक्षरों व अंकों के अतिरिक्त विशेष चिह्न और विदेशी अक्षर जोड़ने की सुविधा देता है।" },
+            { "id": "hi_u11_d2", "category": "technical", "text": "विशेष चिह्न लिखने के लिए कीबोर्ड हार्डवेयर में नए बटन जोड़ने पड़ते हैं", "penalty_explanation": "विशेष चिह्न Insert टैब के Symbol विकल्प द्वारा सीधे सॉफ्टवेयर से चुने जाते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Click Symbol in the Symbols group on the Insert tab to place special characters, math symbols, or foreign letters directly at the cursor.",
+        "hi": "Insert टैब के Symbols समूह में Symbol चुनकर गणितीय प्रतीक, मुद्रा चिह्न या विशेष अक्षर सीधे कर्सर पर डालें।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Bullets, Numbering & Paragraph Alignment",
+          "hi": "बुलेट्स, नंबरिंग और पैराग्राफ एलाइनमेंट"
+        },
+        "theory": {
+          "en": "On the Home tab under the Paragraph group, Bullets and Numbering format lists quickly or build lists automatically when you start a paragraph with an asterisk or number. Paragraph alignment controls edge orientation across left-aligned, right-aligned, centered, or justified text (which aligns evenly along both left and right margins), alongside font styles (bold, italic, underline) and grow/shrink font sizing.",
+          "hi": "Home टैब के Paragraph समूह में Bullets और Numbering से सूचियां तेज़ी से बनाई जा सकती हैं, या तारांक (*) या संख्या से पैराग्राफ शुरू करने पर स्वतः सूची बन जाती है। एलाइनमेंट (Alignment) पैराग्राफ के किनारों को बाएं (Left), दाएं (Right), बीच (Center) या दोनों ओर समान (Justified) रूप से संरेखित करता है, साथ ही बोल्ड, इटैलिक, अंडरलाइन और फॉन्ट आकार घटाने-बढ़ाने की सुविधा भी मिलती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Home Tab Paragraph Tools: Lists &amp; Text Alignment</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Bullets &amp; Numbers</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Manual &amp; Auto Lists</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Text Alignment</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Left, Center, Right, Justify</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Font Emphasis</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Bold, Italic, Underline</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Bullet Library</tspan><tspan x=\"120\" dy=\"1.2em\">Number Styles</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Even Margins</tspan><tspan x=\"300\" dy=\"1.2em\">Edge Control</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Grow / Shrink</tspan><tspan x=\"480\" dy=\"1.2em\">Clear Hierarchy</tspan></text></svg>",
+          "caption": {
+            "en": "Home tab formatting controls for bulleted/numbered lists, left/center/right/justified alignment, and bold/italic/underline font emphasis.",
+            "hi": "Home टैब के नियंत्रण जो बुलेट व नंबर सूचियां, एलाइनमेंट (Left, Center, Right, Justify) और बोल्ड/इटैलिक/अंडरलाइन दर्शाते हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how list styles and alignment organize paragraphs in Word.",
+          "hint": "Start with Bullets Numbering and Alignment, describe structuring lists and paragraph edges, mention on the Home tab, and conclude with aligning text evenly along margins.",
+          "target_sequence": [
+            { "id": "en_u12_t1", "text": "Bullets Numbering and Alignment", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u12_t2", "text": "structure lists and paragraph edges", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u12_t3", "text": "from the Home tab", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u12_t4", "text": "to align text cleanly along margins", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u12_d1", "category": "conceptual", "text": "make Justified text jagged on both left and right edges randomly", "penalty_explanation": "Justified text aligns evenly along both the left and right margins." },
+            { "id": "en_u12_d2", "category": "technical", "text": "forbid typing asterisks or numbers to start a list automatically", "penalty_explanation": "Starting a paragraph with an asterisk or number can automatically create a list in Word." }
+          ]
+        },
+        "hi": {
+          "prompt": "बुलेट्स, नंबरिंग और एलाइनमेंट द्वारा पैराग्राफ व्यवस्थित करने की प्रक्रिया को सही क्रम में सजाएं।",
+          "hint": "बुलेट्स नंबरिंग और एलाइनमेंट से शुरुआत करें, सूचियों और किनारों को व्यवस्थित करने का उल्लेख करें, Home टैब का संदर्भ दें, और मार्जिन के अनुसार संरेखित करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u12_t1", "text": "बुलेट्स नंबरिंग और एलाइनमेंट", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u12_t2", "text": "सूचियों और पैराग्राफ किनारों को सजाकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u12_t3", "text": "Home टैब के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u12_t4", "text": "पाठ को मार्जिन के अनुसार संरेखित करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u12_d1", "category": "conceptual", "text": "Justified पाठ को बाएं और दाएं दोनों किनारों पर बेतरतीब ढंग से असमान बना देते हैं", "penalty_explanation": "Justified एलाइनमेंट पाठ को बाएं और दाएं दोनों मार्जिन के साथ समान रूप से संरेखित करता है।" },
+            { "id": "hi_u12_d2", "category": "technical", "text": "तारांक या संख्या से पैराग्राफ शुरू करने पर स्वतः सूची बनने से रोकते हैं", "penalty_explanation": "पैराग्राफ को तारांक (*) या संख्या से शुरू करने पर वर्ड में स्वतः सूची बन सकती है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Bullets and Numbering build lists (manually or automatically), while Left, Right, Center, and Justified alignment control paragraph edges.",
+        "hi": "बुलेट्स और नंबरिंग से सूचियां बनती हैं, जबकि Left, Right, Center और Justified एलाइनमेंट पैराग्राफ के किनारों को संरेखित करते हैं।"
+      }
+    }
+  ]
+}
