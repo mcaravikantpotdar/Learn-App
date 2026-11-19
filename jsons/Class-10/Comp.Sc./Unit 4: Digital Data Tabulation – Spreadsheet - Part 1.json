@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 4: Digital Data Tabulation – Spreadsheet - Part 1",
+      "hi": "इकाई 4: डिजिटल डेटा सारणीकरण – स्प्रेडशीट - भाग 1"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Spreadsheets, Workbooks & Launching MS Excel",
+          "hi": "स्प्रेडशीट, वर्कबुक और एमएस एक्सेल शुरू करना"
+        },
+        "theory": {
+          "en": "Microsoft Excel is a spreadsheet program in Microsoft Office used to perform mathematical, statistical, trigonometric, and financial calculations and build charts without manual paper-and-pencil work. A spreadsheet appears as a grid of rows and columns whose intersections are cells, and each worksheet holds 1,048,576 rows by 16,384 columns. A workbook is an Excel file containing one or more worksheets (created as a blank worksheet or from templates), launched via Start > All Programs > Microsoft Office > Microsoft Excel or via the Start search box.",
+          "hi": "माइक्रोसॉफ्ट एक्सेल माइक्रोसॉफ्ट ऑफिस का एक स्प्रेडशीट प्रोग्राम है, जिसका उपयोग कागज़-पेंसिल की मैनुअल गणना के बिना गणितीय, सांख्यिकीय, त्रिकोणमितीय व वित्तीय गणनाएं करने और चार्ट बनाने के लिए किया जाता है। स्प्रेडशीट पंक्तियों और स्तंभों के जाल के रूप में दिखती है जिनके प्रतिच्छेदन को सेल कहते हैं, और प्रत्येक वर्कशीट में 1,048,576 पंक्तियां तथा 16,384 स्तंभ होते हैं। वर्कबुक एक्सेल फाइल होती है जिसमें एक या अधिक वर्कशीट होती हैं, जिसे Start मेन्यू या सर्च बॉक्स से एक्सेल खोलकर बनाया जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">MS Excel: Spreadsheets, Workbooks &amp; Launch Flow</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Launch Excel</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Start Menu or Search</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Worksheet Grid</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">1048576 Rows x 16384 Cols</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Workbook File</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Sheets &amp; Templates</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">All Programs</tspan><tspan x=\"120\" dy=\"1.2em\">Type Excel + Enter</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Row x Column</tspan><tspan x=\"300\" dy=\"1.2em\">Cells Store Data</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Blank or Template</tspan><tspan x=\"480\" dy=\"1.2em\">Charts &amp; Budgets</tspan></text></svg>",
+          "caption": {
+            "en": "Launching MS Excel and organizing row-and-column worksheets (1,048,576 rows by 16,384 columns) inside a workbook.",
+            "hi": "एमएस एक्सेल खोलना और वर्कबुक के भीतर पंक्ति-स्तंभ वर्कशीट (1,048,576 पंक्तियां व 16,384 स्तंभ) व्यवस्थित करना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Excel workbooks organize rows and columns for calculations.",
+          "hint": "Start with Excel workbooks and sheets, describe arranging rows and columns into cells, mention across large worksheet grids, and conclude with computing reliable numbers and charts.",
+          "target_sequence": [
+            { "id": "en_u1_t1", "text": "Excel workbooks and sheets", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u1_t2", "text": "arrange rows and columns into cells", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u1_t3", "text": "across multi-sheet grid tables", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u1_t4", "text": "to compute accurate data and charts", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u1_d1", "category": "conceptual", "text": "define a cell as the space outside every row and column grid", "penalty_explanation": "A cell is the intersection where a row and column meet in a worksheet grid." },
+            { "id": "en_u1_d2", "category": "technical", "text": "force every user to calculate budgets manually with pen and paper", "penalty_explanation": "Electronic spreadsheets automate mathematical, statistical, trigonometric, and financial calculations without manual paper work." }
+          ]
+        },
+        "hi": {
+          "prompt": "एक्सेल वर्कबुक और वर्कशीट द्वारा पंक्ति-स्तंभ में गणना करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक्सेल वर्कबुक और शीट से शुरुआत करें, पंक्ति व स्तंभ से सेल बनाने का उल्लेख करें, ग्रिड तालिका का संदर्भ दें, और सटीक गणना व चार्ट बनाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u1_t1", "text": "एक्सेल वर्कबुक और शीट", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u1_t2", "text": "पंक्ति और स्तंभ से सेल बनाकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u1_t3", "text": "विशाल ग्रिड तालिका के रूप में", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u1_t4", "text": "सटीक गणनाएं और चार्ट तैयार करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u1_d1", "category": "conceptual", "text": "सेल को पंक्ति और स्तंभ के प्रतिच्छेदन के बजाय बाहर का खाली स्थान मानते हैं", "penalty_explanation": "पंक्ति और स्तंभ के आपस में काटने से बनने वाले खाने को सेल (Cell) कहा जाता है।" },
+            { "id": "hi_u1_d2", "category": "technical", "text": "सभी बजट और गणनाओं को कागज़-पेंसिल से हाथ से हल करना अनिवार्य करते हैं", "penalty_explanation": "स्प्रेडशीट सॉफ्टवेयर कागज़-पेंसिल की मैनुअल गणना के बिना तेज़ और सटीक परिणाम देता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "A workbook holds worksheets (1,048,576 rows by 16,384 columns) made of row-column cells to perform fast calculations and charts.",
+        "hi": "वर्कबुक में वर्कशीट (1,048,576 पंक्तियां व 16,384 स्तंभ) होती हैं जिनके सेलों से तेज़ गणनाएं और चार्ट बनाए जाते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "MS Excel Window Components: Ribbon, Formula Bar & Name Box",
+          "hi": "एमएस एक्सेल विंडो के घटक: रिबन, फॉर्मूला बार और नेम बॉक्स"
+        },
+        "theory": {
+          "en": "The MS Excel window organizes tools across clear bars and panels: the Quick Access Toolbar sits above the File menu (with Save, Undo, Redo, and customization options), the Title Bar shows the workbook name (such as Book1), and the Ribbon contains tabs, command groups, and dialog box launchers. Left of the Formula Bar, the Name Box displays the active cell address and jumps to a cell (such as A5) when typed and followed by Enter; the Formula Bar displays and edits active cell entries (toggled via View > Formula Bar), while the Status Bar at the bottom shows summary stats like sum and average.",
+          "hi": "एमएस एक्सेल विंडो में उपकरण व्यवस्थित पट्टियों में होते हैं: File मेन्यू के ऊपर Quick Access Toolbar में Save, Undo, Redo व अन्य बटन होते हैं, Title Bar पर वर्कबुक का नाम दिखता है, और Ribbon में टैब व कमांड समूह होते हैं। Formula Bar के बाईं ओर Name Box सक्रिय सेल का पता दिखाता है और A5 लिखकर Enter दबाने पर उस सेल पर ले जाता है; Formula Bar सक्रिय सेल का डेटा दिखाता व बदलता है (जिसे View टैब से दिखाया या छिपाया जा सकता है), और नीचे Status Bar योग व औसत जैसी जानकारी देता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Excel Window UI: Toolbar, Name Box, Formula &amp; Status Bars</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Quick Toolbar</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Save, Undo, Redo</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Ribbon &amp; Tabs</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Command Groups</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Name &amp; Formula</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">A5 Jump &amp; Edit</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Status Bar</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Sum, Avg, Min/Max</text><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">Above File Menu</tspan><tspan x=\"102\" dy=\"1.2em\">Customizable</tspan></text><text x=\"232\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Title Bar Name</tspan><tspan x=\"232\" dy=\"1.2em\">Group Launchers</tspan></text><text x=\"362\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">View Tab Toggle</tspan><tspan x=\"362\" dy=\"1.2em\">Active Cell Entry</tspan></text><text x=\"495\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Bottom Strip</tspan><tspan x=\"495\" dy=\"1.2em\">Right-Click Menu</tspan></text></svg>",
+          "caption": {
+            "en": "Key MS Excel window elements including Quick Access Toolbar, Ribbon tabs, Name Box and Formula Bar, and bottom Status Bar.",
+            "hi": "एमएस एक्सेल विंडो के प्रमुख भाग जिनमें क्विक एक्सेस टूलबार, रिबन टैब, नेम व फॉर्मूला बार और स्टेटस बार शामिल हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how the Name Box and Formula Bar inspect and edit active cells.",
+          "hint": "Start with the Name Box and Formula Bar, describe showing cell addresses and editing entries, mention inside the Excel window, and conclude with jumping to cells and viewing cell content.",
+          "target_sequence": [
+            { "id": "en_u2_t1", "text": "The Name Box and Formula Bar", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u2_t2", "text": "show cell addresses and edit entries", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u2_t3", "text": "inside the active Excel window", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u2_t4", "text": "to jump to cells and view content", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u2_d1", "category": "conceptual", "text": "prevent typing A5 and pressing Enter in the Name Box to move to cell A5", "penalty_explanation": "Typing a cell address like A5 in the Name Box and pressing Enter moves directly to that cell." },
+            { "id": "en_u2_d2", "category": "technical", "text": "hide every command group on the Ribbon permanently when clicked", "penalty_explanation": "Clicking a tab name on the Ribbon displays its command groups, and dialog box launchers sit in group corners." }
+          ]
+        },
+        "hi": {
+          "prompt": "नेम बॉक्स और फॉर्मूला बार द्वारा सक्रिय सेल का पता देखने और डेटा संपादित करने के क्रम को व्यवस्थित करें।",
+          "hint": "नेम बॉक्स और फॉर्मूला बार से शुरुआत करें, सेल का पता दिखाने और डेटा बदलने का उल्लेख करें, एक्सेल विंडो के भीतर का संदर्भ दें, और सेल पर जाने व सामग्री देखने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u2_t1", "text": "नेम बॉक्स और फॉर्मूला बार", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u2_t2", "text": "सेल का पता दिखाकर और डेटा बदलकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u2_t3", "text": "सक्रिय एक्सेल विंडो के भीतर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u2_t4", "text": "वांछित सेल पर ले जाते और सामग्री दिखाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u2_d1", "category": "conceptual", "text": "नेम बॉक्स में A5 लिखकर Enter दबाने पर भी A5 सेल पर जाने से रोकते हैं", "penalty_explanation": "नेम बॉक्स में A5 टाइप करके Enter दबाने से सीधे सेल A5 पर पहुंचा जा सकता है।" },
+            { "id": "hi_u2_d2", "category": "technical", "text": "क्लिक करने पर रिबन के सभी कमांड समूहों को हमेशा के लिए गायब कर देते हैं", "penalty_explanation": "रिबन पर टैब का नाम क्लिक करने से उससे जुड़े कमांड समूह दिखाई देते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "The Name Box shows and jumps to active cell addresses (like A5 + Enter), the Formula Bar displays/edits cell content, and the Status Bar summarizes numbers.",
+        "hi": "नेम बॉक्स सक्रिय सेल दिखाता व A5 + Enter से ले जाता है, फॉर्मूला बार डेटा दिखाता/बदलता है, और स्टेटस बार योग-औसत दिखाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Worksheet Navigation, Selection & Editing Controls",
+          "hi": "वर्कशीट नेविगेशन, चयन और संपादन नियंत्रण"
+        },
+        "theory": {
+          "en": "You can navigate a worksheet using arrow keys or Tab for adjacent cells, Page Up/Page Down for screens, Home for row start, Ctrl+Home for cell A1, Ctrl+End for the worksheet end, Ctrl+Right/Down Arrow for row/column ends, and Ctrl+G to go to a specific cell. Drag with the left mouse button to select a range; type or press F2 (or double-click / use the Formula Bar) to edit; erase one character with Backspace or clear cell entries with Delete; and click Home > Wrap Text so long text fits without overlapping neighboring cells.",
+          "hi": "वर्कशीट में एरो कुंजियों या Tab से पास के सेल में, Page Up/Down से एक स्क्रीन ऊपर-नीचे, Home से पंक्ति की शुरुआत में, Ctrl+Home से सेल A1 पर, Ctrl+End से शीट के अंत में, Ctrl+Right/Down Arrow से अंतिम छोर पर और Ctrl+G से किसी खास सेल पर जाया जा सकता है। रेंज चुनने के लिए बायां बटन दबाकर ड्रैग करें; संपादन के लिए F2 दबाएं या डबल-क्लिक करें; एक अक्षर मिटाने को Backspace व सेल डेटा मिटाने को Delete दबाएं; और लंबा पाठ अगली सेल में न फैले इसके लिए Wrap Text दबाएं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Worksheet Keys, Range Selection, Edit &amp; Wrap Text</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Navigation Keys</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Ctrl+Home, Ctrl+End, Ctrl+G</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Select &amp; Edit</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Drag Range, F2, Tab</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Clear &amp; Wrap Text</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Backspace, Delete, Wrap</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Arrows &amp; PgUp/Dn</tspan><tspan x=\"120\" dy=\"1.2em\">Home &amp; Row/Col End</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Double-Click Edit</tspan><tspan x=\"300\" dy=\"1.2em\">Formula Bar Entry</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Prevent Overlap</tspan><tspan x=\"480\" dy=\"1.2em\">Home Alignment Tab</tspan></text></svg>",
+          "caption": {
+            "en": "Navigation shortcuts (Ctrl+Home, Ctrl+End, Ctrl+G, arrows), cell editing (F2, Backspace, Delete), and Wrap Text formatting in Excel.",
+            "hi": "एक्सेल में नेविगेशन शॉर्टकट (Ctrl+Home, Ctrl+End, Ctrl+G), सेल संपादन (F2, Backspace, Delete) और Wrap Text सुविधा।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how shortcuts and Wrap Text keep worksheet entry and editing fast.",
+          "hint": "Start with Excel keyboard shortcuts and Wrap Text, describe jumping to cells and fitting long text, mention across worksheet ranges, and conclude with editing cells cleanly without overlap.",
+          "target_sequence": [
+            { "id": "en_u3_t1", "text": "Excel shortcuts and Wrap Text", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u3_t2", "text": "move across cells and fit long text", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u3_t3", "text": "across selected worksheet ranges", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u3_t4", "text": "to edit data cleanly without overlap", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u3_d1", "category": "conceptual", "text": "use Ctrl+Home to jump to the bottom-right end instead of cell A1", "penalty_explanation": "Ctrl+Home moves to the top-left corner (cell A1), whereas Ctrl+End moves to the bottom of the worksheet." },
+            { "id": "en_u3_d2", "category": "technical", "text": "use Backspace to erase an entire multi-cell range while Delete adds one letter", "penalty_explanation": "Backspace erases one character at a time in the active cell, while Delete clears cell entries." }
+          ]
+        },
+        "hi": {
+          "prompt": "शॉर्टकट और Wrap Text द्वारा वर्कशीट में तेज़ नेविगेशन और संपादन करने के क्रम को व्यवस्थित करें।",
+          "hint": "एक्सेल शॉर्टकट और Wrap Text से शुरुआत करें, सेलों पर जाने और लंबा पाठ समायोजित करने का उल्लेख करें, वर्कशीट रेंज का संदर्भ दें, और बिना फैलाव के संपादन करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u3_t1", "text": "एक्सेल शॉर्टकट और Wrap Text", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u3_t2", "text": "सेलों पर जाकर और लंबा पाठ समायोजित करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u3_t3", "text": "चयनित वर्कशीट रेंज के भीतर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u3_t4", "text": "बिना फैलाव के डेटा संपादन सुगम बनाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u3_d1", "category": "conceptual", "text": "Ctrl+Home दबाने पर सेल A1 के बजाय शीट के अंतिम छोर पर ले जाते हैं", "penalty_explanation": "Ctrl+Home से शीट की शुरुआत यानी सेल A1 पर जाते हैं, जबकि Ctrl+End से वर्कशीट के अंत में जाते हैं।" },
+            { "id": "hi_u3_d2", "category": "technical", "text": "Backspace से पूरी रेंज मिटाते हैं और Delete से केवल एक अक्षर जोड़ते हैं", "penalty_explanation": "Backspace सक्रिय सेल का एक-एक अक्षर मिटाता है, जबकि Delete कुंजी सेल की प्रविष्टि मिटाती है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Use Ctrl+Home (A1), Ctrl+End, Ctrl+G, and arrows to navigate; F2 or Formula Bar to edit; Backspace/Delete to clear; and Wrap Text to prevent text overlap.",
+        "hi": "नेविगेशन के लिए Ctrl+Home (A1), Ctrl+End, Ctrl+G व एरो, संपादन के लिए F2, और ओवरलैप रोकने के लिए Wrap Text उपयोग करें।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Creating, Saving, Printing & Closing Workbooks",
+          "hi": "वर्कबुक बनाना, सेव करना, प्रिंट करना और बंद करना"
+        },
+        "theory": {
+          "en": "Create a new blank workbook via File > New > Blank Workbook or Ctrl+N. Save a workbook via File > Save or Save As by choosing a folder, typing a file name in the File Name box, and clicking Save. For printing, use File > Print or Ctrl+P to set the printer, page range, and number of copies while checking Print Preview; to close Excel, click File > Exit, the title bar Close button, or press Alt+F4 and choose Save, Don't Save, or Cancel if prompted.",
+          "hi": "नई खाली वर्कबुक बनाने के लिए File > New > Blank Workbook चुनें या Ctrl+N दबाएं। फाइल सेव करने के लिए File > Save या Save As चुनें, फोल्डर व File Name बॉक्स में नाम लिखें और Save दबाएं। प्रिंट करने के लिए File > Print या Ctrl+P से प्रिंटर, पेज रेंज व प्रतियां चुनें और Print Preview देखें; बंद करने के लिए File > Exit, शीर्ष Close बटन या Alt+F4 दबाएं और पूछे जाने पर Save, Don't Save या Cancel चुनें।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Workbook Lifecycle: New, Save As, Print &amp; Exit</text><rect x=\"45\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"102\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">New (Ctrl+N)</text><text x=\"102\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Blank Workbook</text><rect x=\"175\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"232\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Save As</text><text x=\"232\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Folder &amp; File Name</text><rect x=\"305\" y=\"75\" width=\"115\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"362\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Print (Ctrl+P)</text><text x=\"362\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Copies &amp; Preview</text><rect x=\"435\" y=\"75\" width=\"120\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"495\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Exit (Alt+F4)</text><text x=\"495\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"10\" text-anchor=\"middle\" dominant-baseline=\"central\">Save Prompt Check</text><line x1=\"160\" y1=\"102\" x2=\"175\" y2=\"102\" stroke=\"#fbbf24\" stroke-width=\"2\"/><line x1=\"290\" y1=\"102\" x2=\"305\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"420\" y1=\"102\" x2=\"435\" y2=\"102\" stroke=\"#f87171\" stroke-width=\"2\"/><line x1=\"102\" y1=\"130\" x2=\"102\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"232\" y1=\"130\" x2=\"232\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"362\" y1=\"130\" x2=\"362\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"495\" y1=\"130\" x2=\"495\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"102\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"102\" dy=\"0\">File &rarr; New</tspan><tspan x=\"102\" dy=\"1.2em\">Start Sheet</tspan></text><text x=\"232\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"232\" dy=\"0\">Pick Folder</tspan><tspan x=\"232\" dy=\"1.2em\">Click Save</tspan></text><text x=\"362\" y=\"172\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"362\" dy=\"0\">Page Range</tspan><tspan x=\"362\" dy=\"1.2em\">Collate &amp; Zoom</tspan></text><text x=\"495\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"495\" dy=\"0\">Don't Save / Cancel</tspan><tspan x=\"495\" dy=\"1.2em\">File &rarr; Exit</tspan></text></svg>",
+          "caption": {
+            "en": "Workbook workflow covering Ctrl+N creation, Save As folder/file naming, Ctrl+P Print/Preview options, and Alt+F4 save confirmation on exit.",
+            "hi": "वर्कबुक कार्यप्रणाली: Ctrl+N से निर्माण, Save As से सेव करना, Ctrl+P से प्रिंट/प्रीव्यू और Alt+F4 से बंद करने पर सेव पुष्टि।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how users save, preview, and safely close an Excel workbook.",
+          "hint": "Start with Excel workbook workflows, describe naming files and checking print preview, mention via Save As Print and Exit, and conclude with protecting changes before closing.",
+          "target_sequence": [
+            { "id": "en_u4_t1", "text": "Excel workbook workflows", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u4_t2", "text": "name files and check print preview", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u4_t3", "text": "via Save As Print and Exit", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u4_t4", "text": "to keep changes safe before closing", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u4_d1", "category": "conceptual", "text": "exit Excel immediately without ever asking to save unsaved changes", "penalty_explanation": "Excel prompts you to save changes with Save, Don't Save, or Cancel before exiting when edits are unsaved." },
+            { "id": "en_u4_d2", "category": "technical", "text": "use Ctrl+P to create a brand-new blank workbook instead of printing", "penalty_explanation": "Ctrl+N creates a new blank workbook, whereas Ctrl+P opens the Print dialog and preview." }
+          ]
+        },
+        "hi": {
+          "prompt": "एक्सेल वर्कबुक को सेव करने, प्रिंट प्रीव्यू देखने और सुरक्षित बंद करने के क्रम को व्यवस्थित करें।",
+          "hint": "एक्सेल वर्कबुक प्रक्रिया से शुरुआत करें, फाइल नाम लिखने व प्रीव्यू देखने का उल्लेख करें, Save As Print और Exit का संदर्भ दें, और बदलाव सुरक्षित रखने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u4_t1", "text": "एक्सेल वर्कबुक प्रक्रिया", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u4_t2", "text": "फाइल नाम लिखकर और प्रीव्यू देखकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u4_t3", "text": "Save As Print और Exit द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u4_t4", "text": "बंद करने से पहले बदलाव सुरक्षित रखती है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u4_d1", "category": "conceptual", "text": "बिना सेव किए बदलाव पूछे ही एक्सेल को तुरंत बंद कर देती है", "penalty_explanation": "असेव्ड बदलाव होने पर एक्सेल बंद करने से पहले Save, Don't Save या Cancel का विकल्प पूछता है।" },
+            { "id": "hi_u4_d2", "category": "technical", "text": "प्रिंट करने के बजाय नई खाली वर्कबुक बनाने के लिए Ctrl+P दबाते हैं", "penalty_explanation": "नई वर्कबुक के लिए Ctrl+N और प्रिंट व प्रीव्यू के लिए Ctrl+P का उपयोग होता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Create via Ctrl+N, save via Save As (folder + name), print/preview via Ctrl+P, and close via File > Exit or Alt+F4 while saving changes.",
+        "hi": "Ctrl+N से नई शीट बनाएं, Save As से सेव करें, Ctrl+P से प्रिंट/प्रीव्यू करें, और Alt+F4 या File > Exit से बदलाव सेव कर बंद करें।"
+      }
+    }
+  ]
+}
