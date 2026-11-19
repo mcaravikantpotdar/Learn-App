@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 4: Digital Data Tabulation – Spreadsheet - Part 3",
+      "hi": "इकाई 4: डिजिटल डेटा सारणीकरण – स्प्रेडशीट - भाग 3"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Writing Formulas & Arithmetic Operators",
+          "hi": "सूत्र लिखना और अंकगणितीय ऑपरेटर"
+        },
+        "theory": {
+          "en": "In Excel, a formula is an expression that calculates a cell's value and always begins with an equal sign (=). Arithmetic operators include addition (+), subtraction (-), multiplication (*), and division (/); Excel evaluates expressions in parentheses first, such as =A1*(A2+A3). Formulas can be edited in the Formula bar, and dividing a number by 0 or an empty cell produces the #DIV/0! error.",
+          "hi": "एक्सेल में सूत्र (formula) एक व्यंजक है जो किसी सेल का मान परिकलित करता है और हमेशा बराबर चिह्न (=) से शुरू होता है। अंकगणितीय ऑपरेटरों में जोड़ (+), घटाव (-), गुणा (*) और भाग (/) शामिल हैं; एक्सेल कोष्ठक के भीतर के भाग को पहले हल करता है, जैसे =A1*(A2+A3)। सूत्रों को फॉर्मूला बार में बदला जा सकता है, और किसी संख्या को 0 या खाली सेल से भाग देने पर #DIV/0! त्रुटि दिखती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Excel Formulas: = Prefix, Operators &amp; #DIV/0! Error</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">= Formula Start</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">+, -, *, / Operators</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Parentheses First</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">=A1*(A2+A3)</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">#DIV/0! Error</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Divide by 0 or Blank</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#f87171\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Formula Bar Edit</tspan><tspan x=\"120\" dy=\"1.2em\">Press Enter Key</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Inner Grouping</tspan><tspan x=\"300\" dy=\"1.2em\">Calculated First</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Zero Denominator</tspan><tspan x=\"480\" dy=\"1.2em\">Check Divisor</tspan></text></svg>",
+          "caption": {
+            "en": "Writing Excel formulas starting with =, evaluating parentheses first, editing in the Formula bar, and encountering #DIV/0! on zero or blank division.",
+            "hi": "= से सूत्र लिखना, पहले कोष्ठक हल करना, फॉर्मूला बार से बदलना और 0 या खाली सेल से भाग देने पर #DIV/0! त्रुटि आना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Excel formulas begin with = and evaluate arithmetic expressions.",
+          "hint": "Start with Excel formulas, describe starting with = and computing operators, mention across referenced cells and parentheses, and conclude with calculating accurate results or #DIV/0! on zero.",
+          "target_sequence": [
+            { "id": "en_u9_t1", "text": "Excel formulas", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u9_t2", "text": "start with = and apply arithmetic operators", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u9_t3", "text": "across cell addresses and parentheses", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u9_t4", "text": "to compute values or show #DIV/0! on zero", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u9_d1", "category": "conceptual", "text": "treat dividing by zero or an empty cell as a valid finite number", "penalty_explanation": "Dividing by 0 or an empty cell in an Excel formula displays the #DIV/0! error." },
+            { "id": "en_u9_d2", "category": "technical", "text": "ignore parentheses completely and never evaluate grouped expressions first", "penalty_explanation": "In expressions like =A1*(A2+A3), Excel calculates the part inside parentheses first." }
+          ]
+        },
+        "hi": {
+          "prompt": "एक्सेल सूत्रों द्वारा = से शुरू होकर अंकगणितीय गणना करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक्सेल सूत्रों से शुरुआत करें, = लगाकर ऑपरेटर चलाने का उल्लेख करें, सेल पतों और कोष्ठक का संदर्भ दें, और मान निकालने या #DIV/0! दिखाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u9_t1", "text": "एक्सेल सूत्र", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u9_t2", "text": "= से शुरू होकर ऑपरेटरों द्वारा", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u9_t3", "text": "सेल पतों और कोष्ठक के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u9_t4", "text": "मान निकालते हैं या शून्य पर #DIV/0! दिखाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u9_d1", "category": "conceptual", "text": "0 या खाली सेल से भाग देने पर भी सामान्य वैध संख्या दिखाते हैं", "penalty_explanation": "किसी संख्या को 0 या खाली सेल से भाग देने पर एक्सेल #DIV/0! त्रुटि प्रदर्शित करता है।" },
+            { "id": "hi_u9_d2", "category": "technical", "text": "कोष्ठक को पूरी तरह अनदेखा करते हैं और भीतर के भाग को पहले हल नहीं करते", "penalty_explanation": "=A1*(A2+A3) जैसे सूत्र में एक्सेल पहले कोष्ठक (A2+A3) को हल करके फिर A1 से गुणा करता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Start formulas with =, use +, -, *, / (evaluating parentheses first), edit in the Formula bar, and watch for #DIV/0! when dividing by 0 or a blank cell.",
+        "hi": "सूत्र = से शुरू करें, +, -, *, / ऑपरेटर (पहले कोष्ठक) लगाएं, फॉर्मूला बार से बदलें, और 0 या खाली सेल से भाग पर #DIV/0! जानें।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Relative Cell Referencing",
+          "hi": "सापेक्ष सेल संदर्भ (Relative Cell Referencing)"
+        },
+        "theory": {
+          "en": "Cell referencing uses cell addresses or ranges to calculate formula results in a worksheet. Relative reference is the default referencing style in MS Excel: when you copy or drag the fill handle of a formula to another cell, its cell addresses adjust automatically according to the new cell position—for example, copying =B2+C2 from row 2 to row 3 updates it to =B3+C3.",
+          "hi": "सेल संदर्भ (Cell Reference) वर्कशीट में सूत्र की गणना के लिए सेल पते या रेंज का उपयोग करने की विधि है। सापेक्ष संदर्भ (Relative Reference) एमएस एक्सेल में डिफ़ॉल्ट रूप से लागू होता है: जब किसी सूत्र को कॉपी किया जाता है या फिल हैंडल खींचा जाता है, तो नए सेल स्थान के अनुसार सेल पते अपने आप बदल जाते हैं—जैसे =B2+C2 को अगली पंक्ति में कॉपी करने पर वह =B3+C3 बन जाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Relative Cell Reference: Position-Based Shift</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Row 2 Formula</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">=B2 + C2</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Copy / Drag Down</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Default Excel Mode</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Row 3 Formula</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">=B3 + C3</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Relative Address</tspan><tspan x=\"120\" dy=\"1.2em\">Current Row</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">No $ Lock</tspan><tspan x=\"300\" dy=\"1.2em\">Auto-Adjusts</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Shifted Row</tspan><tspan x=\"480\" dy=\"1.2em\">Same Offset</tspan></text></svg>",
+          "caption": {
+            "en": "Relative cell referencing adjusts addresses automatically when copied down—for example, =B2+C2 becomes =B3+C3 on the next row.",
+            "hi": "सापेक्ष सेल संदर्भ कॉपी करने पर पते को अपने आप बदलता है—जैसे =B2+C2 अगली पंक्ति में =B3+C3 बन जाता है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how default relative cell references update when copied to other cells.",
+          "hint": "Start with Relative cell references, describe adjusting cell addresses automatically, mention when copied to multiple cells, and conclude with matching the new cell position.",
+          "target_sequence": [
+            { "id": "en_u10_t1", "text": "Relative cell references", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u10_t2", "text": "adjust cell addresses automatically", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u10_t3", "text": "when copied across worksheet cells", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u10_t4", "text": "to match each new cell position", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u10_d1", "category": "conceptual", "text": "freeze every single address with dollar signs so nothing ever changes", "penalty_explanation": "Relative references update automatically based on cell position; locking addresses with $ is Absolute referencing." },
+            { "id": "en_u10_d2", "category": "technical", "text": "are never used by default in Microsoft Excel formulas", "penalty_explanation": "Relative reference is used by default in MS Excel when you write normal cell formulas like =B2+C2." }
+          ]
+        },
+        "hi": {
+          "prompt": "सापेक्ष सेल संदर्भ द्वारा कॉपी करने पर सेल पतों के बदलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "सापेक्ष सेल संदर्भ से शुरुआत करें, सेल पतों को अपने आप बदलने का उल्लेख करें, कई सेलों में कॉपी करने का संदर्भ दें, और नए सेल स्थान के अनुरूप होने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u10_t1", "text": "सापेक्ष सेल संदर्भ", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u10_t2", "text": "सेल पतों को स्वतः बदलकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u10_t3", "text": "अन्य सेलों में कॉपी किए जाने पर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u10_t4", "text": "नए सेल स्थान के अनुसार समायोजित होते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u10_d1", "category": "conceptual", "text": "डॉलर चिह्न से हर पते को स्थिर रखते हैं ताकि कभी कोई बदलाव न हो", "penalty_explanation": "सापेक्ष संदर्भ स्थान के अनुसार बदलता है; डॉलर ($) से पते को स्थिर रखना एब्सोल्यूट संदर्भ कहलाता है।" },
+            { "id": "hi_u10_d2", "category": "technical", "text": "एमएस एक्सेल के सूत्रों में डिफ़ॉल्ट रूप से कभी उपयोग नहीं होते", "penalty_explanation": "एमएस एक्सेल में सापेक्ष संदर्भ डिफ़ॉल्ट रूप से लागू होता है, जैसे =B2+C2 से =B3+C3 बनना।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Relative referencing is Excel's default and shifts cell addresses by position when copied—turning =B2+C2 into =B3+C3 on the next row.",
+        "hi": "सापेक्ष संदर्भ एक्सेल में डिफ़ॉल्ट होता है और कॉपी करने पर पते बदलता है—जैसे =B2+C2 से =B3+C3 बनना।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Absolute & Mixed Cell Referencing",
+          "hi": "निरपेक्ष (Absolute) और मिश्रित (Mixed) सेल संदर्भ"
+        },
+        "theory": {
+          "en": "When you want a row, column, or cell address to stay constant while copying a formula, Excel uses the dollar sign ($). Absolute Reference locks both column and row with $ signs (such as =$A$1+B1 copied to =$A$1+B2, keeping $A$1 fixed). Mixed Reference combines relative and absolute referencing by placing $ on either the column or the row (such as =A1+B$1 copied to =A2+B$1, where A1 shifts to A2 while B$1 stays fixed).",
+          "hi": "जब सूत्र को कॉपी करते समय किसी पंक्ति, स्तंभ या सेल के पते को स्थिर रखना हो, तो डॉलर चिह्न ($) का उपयोग किया जाता है। निरपेक्ष संदर्भ (Absolute Reference) में स्तंभ और पंक्ति दोनों के आगे $ लगता है (जैसे =$A$1+B1 को नीचे कॉपी करने पर =$A$1+B2 बनता है और $A$1 स्थिर रहता है)। मिश्रित संदर्भ (Mixed Reference) में सापेक्ष और निरपेक्ष दोनों का मेल होता है, जहाँ $ केवल पंक्ति या स्तंभ के आगे लगता है (जैसे =A1+B$1 से =A2+B$1)।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Dollar ($) Locking: Absolute vs. Mixed References</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Absolute Reference ($A$1)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">=$A$1+B1 &rarr; =$A$1+B2</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Mixed Reference (B$1)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">=A1+B$1 &rarr; =A2+B$1</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Fixed Row &amp; Col</tspan><tspan x=\"100\" dy=\"1.2em\">Constant Target</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Both $ Signs</tspan><tspan x=\"225\" dy=\"1.2em\">Unchanged Copy</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Relative + Fixed</tspan><tspan x=\"375\" dy=\"1.2em\">A1 &rarr; A2 Shifts</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Single $ Sign</tspan><tspan x=\"500\" dy=\"1.2em\">B$1 Stays Put</tspan></text></svg>",
+          "caption": {
+            "en": "Using the dollar ($) sign in Absolute references (=$A$1+B1) and Mixed references (=A1+B$1) when copying formulas across cells.",
+            "hi": "सूत्र कॉपी करते समय डॉलर ($) चिह्न से निरपेक्ष संदर्भ (=$A$1+B1) और मिश्रित संदर्भ (=A1+B$1) का उपयोग।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how dollar signs lock addresses in absolute and mixed references.",
+          "hint": "Start with Dollar sign references, describe keeping rows or columns constant, mention during formula copying across cells, and conclude with combining fixed and relative coordinates cleanly.",
+          "target_sequence": [
+            { "id": "en_u11_t1", "text": "Dollar sign references", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u11_t2", "text": "keep rows or columns constant", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u11_t3", "text": "when copying formulas across cells", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u11_t4", "text": "to support absolute and mixed locks", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u11_d1", "category": "conceptual", "text": "change =$A$1 into =$B$2 and =$C$3 every time you drag down", "penalty_explanation": "In an absolute reference like =$A$1, the address stays constant even when the formula is copied to another cell." },
+            { "id": "en_u11_d2", "category": "technical", "text": "forbid putting a dollar sign on either a row or column in mixed references", "penalty_explanation": "Mixed reference combines relative and absolute referencing by using $ for either a column or a row, as in =A1+B$1." }
+          ]
+        },
+        "hi": {
+          "prompt": "निरपेक्ष और मिश्रित संदर्भ में डॉलर ($) चिह्न द्वारा पते स्थिर रखने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "डॉलर चिह्न संदर्भ से शुरुआत करें, पंक्ति या स्तंभ को स्थिर रखने का उल्लेख करें, सूत्र कॉपी करने का संदर्भ दें, और निरपेक्ष व मिश्रित लॉक बनाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u11_t1", "text": "डॉलर चिह्न संदर्भ", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u11_t2", "text": "पंक्ति या स्तंभ को स्थिर रखकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u11_t3", "text": "अन्य सेलों में सूत्र कॉपी करते समय", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u11_t4", "text": "निरपेक्ष और मिश्रित संदर्भ को संभव बनाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u11_d1", "category": "conceptual", "text": "नीचे खींचने पर =$A$1 को बदलकर =$B$2 और =$C$3 कर देते हैं", "penalty_explanation": "निरपेक्ष संदर्भ (जैसे =$A$1) में सूत्र कॉपी करने पर भी सेल का पता नहीं बदलता।" },
+            { "id": "hi_u11_d2", "category": "technical", "text": "मिश्रित संदर्भ में पंक्ति या स्तंभ के आगे $ लगाने से रोकते हैं", "penalty_explanation": "मिश्रित संदर्भ सापेक्ष और निरपेक्ष का मेल है, जिसमें $ किसी पंक्ति या स्तंभ के आगे लगता है जैसे =A1+B$1।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Absolute references lock both column and row with $ (=$A$1+B1), while Mixed references lock only one part (=A1+B$1) and let the other shift.",
+        "hi": "निरपेक्ष संदर्भ में दोनों ओर $ लगता है (=$A$1+B1), जबकि मिश्रित संदर्भ में एक भाग स्थिर रहता है (=A1+B$1) और दूसरा बदलता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Statistical Aggregates: SUM() & AVERAGE()",
+          "hi": "सांख्यिकीय फलन: SUM() और AVERAGE()"
+        },
+        "theory": {
+          "en": "Functions are predefined formulas built into Excel and categorized under the Formulas tab Function Library. SUM() calculates the total of numbers in a range—for example, typing =SUM(A1:A5) in cell A6 and pressing Enter adds cells A1 through A5. AVERAGE() is a built-in statistical function that computes the arithmetic mean of values in a range, such as =AVERAGE(A1:A5), displaying the result when you press Enter.",
+          "hi": "फंक्शन (Functions) एक्सेल में पहले से बने सूत्र हैं जो Formulas टैब की Function Library में मिलते हैं। SUM() किसी रेंज की संख्याओं का कुल योग निकालता है—जैसे A6 में =SUM(A1:A5) लिखकर Enter दबाने पर A1 से A5 का योग आता है। AVERAGE() एक सांख्यिकीय फंक्शन है जो रेंज के मानों का औसत निकालता है, जैसे =AVERAGE(A1:A5) लिखकर Enter दबाने पर औसत परिणाम दिखता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Statistical Functions: SUM() Total &amp; AVERAGE() Mean</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">SUM(A1:A5)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Total Sum of Range</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">AVERAGE(A1:A5)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Arithmetic Average</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Formula Box</tspan><tspan x=\"100\" dy=\"1.2em\">Press Enter</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Adds A1:A5</tspan><tspan x=\"225\" dy=\"1.2em\">100..400 = 1100</tspan></text><text x=\"375\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Statistical Set</tspan><tspan x=\"375\" dy=\"1.2em\">Built-In Rule</tspan></text><text x=\"500\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Mean of A1:A5</tspan><tspan x=\"500\" dy=\"1.2em\">100..400 = 220</tspan></text></svg>",
+          "caption": {
+            "en": "Using =SUM(A1:A5) to add range values and =AVERAGE(A1:A5) to calculate their average in Excel.",
+            "hi": "एक्सेल में =SUM(A1:A5) से कुल योग और =AVERAGE(A1:A5) से औसत निकालने का उदाहरण।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how SUM() and AVERAGE() calculate totals and averages across cell ranges.",
+          "hint": "Start with SUM and AVERAGE functions, describe calculating totals and averages, mention over a worksheet cell range, and conclude with displaying results when Enter is pressed.",
+          "target_sequence": [
+            { "id": "en_u12_t1", "text": "SUM and AVERAGE functions", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u12_t2", "text": "compute totals and averages", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u12_t3", "text": "across a selected cell range", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u12_t4", "text": "to show results after pressing Enter", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u12_d1", "category": "conceptual", "text": "require typing a separate addition operator between every single cell in A1:A100", "penalty_explanation": "Predefined functions like =SUM(A1:A5) and =AVERAGE(A1:A5) summarize a range cleanly without manual repetition." },
+            { "id": "en_u12_d2", "category": "technical", "text": "hide results forever even after pressing Enter in the formula box", "penalty_explanation": "After typing the formula in the formula box and pressing Enter, the calculated sum or average appears in the cell." }
+          ]
+        },
+        "hi": {
+          "prompt": "SUM() और AVERAGE() फंक्शन द्वारा सेल रेंज का योग और औसत निकालने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "SUM और AVERAGE फंक्शन से शुरुआत करें, योग और औसत निकालने का उल्लेख करें, चयनित सेल रेंज का संदर्भ दें, और Enter दबाने पर परिणाम दिखने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u12_t1", "text": "SUM और AVERAGE फंक्शन", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u12_t2", "text": "योग और औसत निकालकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u12_t3", "text": "चयनित सेल रेंज के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u12_t4", "text": "Enter दबाने पर गणना परिणाम दिखाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u12_d1", "category": "conceptual", "text": "सौ सेलों का योग करने के लिए हर सेल के बीच अलग से + चिह्न लिखना अनिवार्य करते हैं", "penalty_explanation": "=SUM(A1:A5) और =AVERAGE(A1:A5) जैसे फंक्शन पूरी रेंज पर एक साथ काम करते हैं।" },
+            { "id": "hi_u12_d2", "category": "technical", "text": "फॉर्मूला बॉक्स में Enter दबाने के बाद भी परिणाम को हमेशा छिपाए रखते हैं", "penalty_explanation": "सूत्र लिखकर Enter दबाने पर स्क्रीन पर योग या औसत का मान दिखाई देता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Use =SUM(A1:A5) for range totals and =AVERAGE(A1:A5) for range averages, pressing Enter to display the result.",
+        "hi": "रेंज के कुल योग के लिए =SUM(A1:A5) और औसत के लिए =AVERAGE(A1:A5) लिखकर Enter दबाएं।"
+      }
+    }
+  ]
+}
