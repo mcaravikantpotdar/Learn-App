@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 4: Digital Data Tabulation – Spreadsheet - Part 4",
+      "hi": "इकाई 4: डिजिटल डेटा सारणीकरण – स्प्रेडशीट - भाग 4"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Boundary Functions: MIN() & MAX()",
+          "hi": "सीमा मान फलन: MIN() और MAX()"
+        },
+        "theory": {
+          "en": "Excel's statistical MIN() and MAX() functions find the smallest and largest numeric values in a selected range—such as =MIN(A1:A5) and =MAX(A1:A5). Both functions ignore empty cells, text entries, and the logical values TRUE and FALSE when evaluating numeric boundaries.",
+          "hi": "एक्सेल के सांख्यिकीय MIN() और MAX() फंक्शन चुनी गई रेंज में सबसे छोटा और सबसे बड़ा संख्यात्मक मान बताते हैं—जैसे =MIN(A1:A5) और =MAX(A1:A5)। ये दोनों फंक्शन संख्याओं की जांच करते समय खाली सेलों, पाठ और तार्किक मानों (TRUE और FALSE) को अनदेखा कर देते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Boundary Functions: MIN() Lowest &amp; MAX() Highest</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">MIN(A1:A5)</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Smallest Numeric Value</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">MAX(A1:A5)</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Largest Numeric Value</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Lowest Number</tspan><tspan x=\"100\" dy=\"1.2em\">Range Scan</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Skips Blanks</tspan><tspan x=\"225\" dy=\"1.2em\">Ignores Text</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Highest Number</tspan><tspan x=\"375\" dy=\"1.2em\">Range Scan</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Ignores TRUE/FALSE</tspan><tspan x=\"500\" dy=\"1.2em\">Press Enter</tspan></text></svg>",
+          "caption": {
+            "en": "Finding smallest and largest numbers in a range with MIN() and MAX() while ignoring blanks, text, and TRUE/FALSE values.",
+            "hi": "MIN() और MAX() द्वारा रेंज का सबसे छोटा व बड़ा अंक निकालना तथा खाली सेल, टेक्स्ट और TRUE/FALSE को अनदेखा करना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how MIN() and MAX() locate numeric extremes in a range.",
+          "hint": "Start with MIN and MAX functions, describe returning smallest and largest numbers, mention across a selected cell range, and conclude with ignoring blanks text and logical values.",
+          "target_sequence": [
+            { "id": "en_u13_t1", "text": "MIN and MAX functions", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u13_t2", "text": "return smallest and largest numbers", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u13_t3", "text": "across a numeric cell range", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u13_t4", "text": "to find extremes while skipping blanks and text", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u13_d1", "category": "conceptual", "text": "treat every empty cell inside a range as negative one billion", "penalty_explanation": "MIN and MAX ignore empty cells, logical values TRUE and FALSE, and text values." },
+            { "id": "en_u13_d2", "category": "technical", "text": "require typing a separate function for every single cell instead of a range", "penalty_explanation": "Functions like =MIN(A1:A5) and =MAX(A1:A5) evaluate an entire cell range together." }
+          ]
+        },
+        "hi": {
+          "prompt": "MIN() और MAX() फंक्शन द्वारा रेंज का न्यूनतम व अधिकतम मान निकालने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "MIN और MAX फंक्शन से शुरुआत करें, सबसे छोटी व बड़ी संख्या निकालने का उल्लेख करें, संख्यात्मक सेल रेंज का संदर्भ दें, और खाली सेल व टेक्स्ट को अनदेखा करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u13_t1", "text": "MIN और MAX फंक्शन", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u13_t2", "text": "सबसे छोटी और सबसे बड़ी संख्या निकालकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u13_t3", "text": "संख्यात्मक सेल रेंज के भीतर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u13_t4", "text": "खाली सेल व टेक्स्ट को अनदेखा कर सीमा मान देते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u13_d1", "category": "conceptual", "text": "रेंज के भीतर हर खाली सेल को शून्य से भी बहुत छोटा ऋणात्मक मान लेते हैं", "penalty_explanation": "MIN और MAX खाली सेलों, टेक्स्ट तथा तार्किक मानों (TRUE और FALSE) को अनदेखा करते हैं।" },
+            { "id": "hi_u13_d2", "category": "technical", "text": "रेंज के बजाय प्रत्येक सेल के लिए अलग-अलग फंक्शन लिखना अनिवार्य करते हैं", "penalty_explanation": "=MIN(A1:A5) और =MAX(A1:A5) पूरी रेंज पर एक साथ गणना करते हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "MIN() returns the smallest number and MAX() returns the largest number in a range while ignoring empty cells, text, and TRUE/FALSE.",
+        "hi": "MIN() सबसे छोटा और MAX() सबसे बड़ा अंक बताता है, जबकि खाली सेल, टेक्स्ट और TRUE/FALSE अनदेखे रहते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Conditional Logic with the IF() Function",
+          "hi": "IF() फंक्शन द्वारा तार्किक निर्णय (Conditional Logic)"
+        },
+        "theory": {
+          "en": "The IF() function performs a logical test and returns one result when TRUE and another when FALSE, using the syntax IF(logical_test, value_if_true, value_if_false). For example, =IF(A1>=70,\"Pass\",\"Fail\") returns \"Pass\" for scores of 70 or above and \"Fail\" below 70, and multiple conditions can be tested by nesting IF() functions or combining IF() with logical functions like AND and OR.",
+          "hi": "IF() फंक्शन एक तार्किक परीक्षण (logical test) करता है और TRUE होने पर एक मान तथा FALSE होने पर दूसरा मान देता है; इसका रूप IF(logical_test, value_if_true, value_if_false) होता है। उदाहरण के लिए, =IF(A1>=70,\"Pass\",\"Fail\") 70 या अधिक अंक पर \"Pass\" और उससे कम पर \"Fail\" देता है, तथा नेस्टेड IF या AND व OR के साथ एक से अधिक शर्तें जांची जा सकती हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Excel IF() Logic: Condition Test &amp; TRUE / FALSE Branching</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Logical Test</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">A1 &gt;= 70 | AND / OR</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">If TRUE Result</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Returns \"Pass\"</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">If FALSE Result</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Returns \"Fail\"</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#f87171\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Condition Check</tspan><tspan x=\"120\" dy=\"1.2em\">Nested IF Ready</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Condition Met</tspan><tspan x=\"300\" dy=\"1.2em\">First Value</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Condition Failed</tspan><tspan x=\"480\" dy=\"1.2em\">Second Value</tspan></text></svg>",
+          "caption": {
+            "en": "How IF() evaluates a logical test and returns either the TRUE value or FALSE value, including compound conditions with AND, OR, or nested IF().",
+            "hi": "IF() द्वारा तार्किक शर्त जांचकर TRUE या FALSE मान देना, और AND, OR व नेस्टेड IF से एकाधिक शर्तें जांचना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how the IF() function returns outcomes based on logical conditions.",
+          "hint": "Start with The IF function, describe testing logical conditions with AND or OR, mention inside Excel cell formulas, and conclude with returning TRUE or FALSE values.",
+          "target_sequence": [
+            { "id": "en_u14_t1", "text": "The IF function", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u14_t2", "text": "tests logical conditions with AND or OR", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u14_t3", "text": "inside Excel worksheet formulas", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u14_t4", "text": "to return TRUE or FALSE outcomes", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u14_d1", "category": "conceptual", "text": "can never test more than one condition even if you nest IF or use AND/OR", "penalty_explanation": "More than one condition can be tested by nesting IF functions or combining IF with logical functions like AND and OR." },
+            { "id": "en_u14_d2", "category": "technical", "text": "deletes the entire worksheet row whenever a logical test evaluates to TRUE", "penalty_explanation": "IF returns its designated value_if_true when TRUE and value_if_false when FALSE; it does not delete rows." }
+          ]
+        },
+        "hi": {
+          "prompt": "IF() फंक्शन द्वारा तार्किक शर्तों के आधार पर परिणाम देने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "IF फंक्शन से शुरुआत करें, AND या OR से शर्त जांचने का उल्लेख करें, एक्सेल सूत्रों के भीतर का संदर्भ दें, और TRUE या FALSE मान देने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u14_t1", "text": "IF फंक्शन", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u14_t2", "text": "AND या OR से तार्किक शर्त जांचकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u14_t3", "text": "एक्सेल वर्कशीट सूत्रों के भीतर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u14_t4", "text": "TRUE या FALSE का परिणाम देता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u14_d1", "category": "conceptual", "text": "नेस्टेड IF या AND व OR लगाने पर भी एक से अधिक शर्तें कभी नहीं जांच सकता", "penalty_explanation": "नेस्टेड IF या AND व OR जैसे तार्किक फंक्शनों के साथ एक से अधिक शर्तों का परीक्षण किया जा सकता है।" },
+            { "id": "hi_u14_d2", "category": "technical", "text": "शर्त TRUE होने पर पूरी वर्कशीट पंक्ति को हटा देता है", "penalty_explanation": "शर्त TRUE होने पर पहला मान और FALSE होने पर दूसरा मान मिलता है; इससे पंक्ति नहीं हटती।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "IF(logical_test, value_if_true, value_if_false) returns one value when TRUE and another when FALSE, supporting nested IFs and AND/OR.",
+        "hi": "IF(logical_test, value_if_true, value_if_false) TRUE या FALSE पर मान देता है और नेस्टेड IF व AND/OR का समर्थन करता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Creating & Managing Worksheet Tables",
+          "hi": "वर्कशीट में तालिका (Table) बनाना और प्रबंधित करना"
+        },
+        "theory": {
+          "en": "In a worksheet table, rows run horizontally, columns run vertically, and each intersection where a row and column cross is a cell holding data. To turn a selected range into a table in Excel, click Insert > Table (or press Ctrl+T), verify the cell reference in the Create Table dialog, check \"My table has heading row\" if headers exist, and click OK to easily sort, filter, and format data.",
+          "hi": "वर्कशीट तालिका में पंक्तियां क्षैतिज, स्तंभ ऊर्ध्वाधर होते हैं और पंक्ति व स्तंभ के प्रतिच्छेदन से बनने वाला खाना सेल कहलाता है जिसमें डेटा रहता है। चयनित रेंज को तालिका बनाने के लिए Insert > Table चुनें (या Ctrl+T दबाएं), Create Table डायलॉग में सेल संदर्भ देखें, शीर्षक पंक्ति होने पर \"My table has heading row\" चुनें और OK दबाकर डेटा को छांटना, फ़िल्टर व फॉर्मेट करना आसान बनाएं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Worksheet Tables: Grid Cells, Ctrl+T &amp; Headers</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Rows, Cols &amp; Cell</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Horizontal &amp; Vertical</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Insert &rarr; Table</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Shortcut Ctrl + T</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Heading &amp; Filter</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Sort, Filter &amp; Format</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Row x Column</tspan><tspan x=\"120\" dy=\"1.2em\">Stores Data</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Select Range</tspan><tspan x=\"300\" dy=\"1.2em\">Create Table Box</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">My Table Has</tspan><tspan x=\"480\" dy=\"1.2em\">Heading Row</tspan></text></svg>",
+          "caption": {
+            "en": "Creating an Excel table from a selected range via Insert > Table (Ctrl+T), setting the heading row option, and managing data.",
+            "hi": "चयनित रेंज से Insert > Table (Ctrl+T) द्वारा तालिका बनाना, शीर्षक पंक्ति चुनना और डेटा व्यवस्थित करना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how users create an Excel table to sort and filter worksheet data.",
+          "hint": "Start with Excel table creation, describe selecting a range and checking heading rows, mention via Insert Table or Ctrl+T, and conclude with sorting filtering and formatting data easily.",
+          "target_sequence": [
+            { "id": "en_u15_t1", "text": "Excel table creation", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u15_t2", "text": "selects a range and checks heading rows", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u15_t3", "text": "via Insert Table or Ctrl+T", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u15_t4", "text": "to sort filter and format data easily", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u15_d1", "category": "conceptual", "text": "define a column as a horizontal line while a row runs vertically", "penalty_explanation": "A row is a horizontal line in a table and a column is a vertical line; their intersection forms a cell." },
+            { "id": "en_u15_d2", "category": "technical", "text": "make sorting and filtering related sheet data impossible once converted to a table", "penalty_explanation": "Tables in Excel make it easy to sort, filter, and format related data within a sheet." }
+          ]
+        },
+        "hi": {
+          "prompt": "एक्सेल में तालिका बनाकर डेटा को छांटने, फ़िल्टर व फॉर्मेट करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक्सेल तालिका निर्माण से शुरुआत करें, रेंज चुनने व शीर्षक पंक्ति जांचने का उल्लेख करें, Insert Table या Ctrl+T का संदर्भ दें, और डेटा छांटने व फ़िल्टर करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u15_t1", "text": "एक्सेल तालिका निर्माण", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u15_t2", "text": "रेंज चुनकर और शीर्षक पंक्ति जांचकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u15_t3", "text": "Insert Table या Ctrl+T द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u15_t4", "text": "डेटा को छांटना फ़िल्टर व फॉर्मेट करना आसान बनाता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u15_d1", "category": "conceptual", "text": "स्तंभ को क्षैतिज रेखा और पंक्ति को ऊर्ध्वाधर रेखा मानते हैं", "penalty_explanation": "तालिका में पंक्ति क्षैतिज रेखा और स्तंभ ऊर्ध्वाधर रेखा होती है, जिनके मिलने से सेल बनता है।" },
+            { "id": "hi_u15_d2", "category": "technical", "text": "तालिका बनाने के बाद शीट के डेटा को छांटना या फ़िल्टर करना असंभव कर देता है", "penalty_explanation": "एक्सेल तालिका से शीट के डेटा को छांटना (sort), फ़िल्टर करना और फॉर्मेट करना आसान हो जाता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Select a range and press Ctrl+T (or Insert > Table), set the heading row option, and click OK to sort, filter, and format data easily.",
+        "hi": "रेंज चुनकर Ctrl+T (या Insert > Table) दबाएं, शीर्षक पंक्ति चुनें और OK दबाकर डेटा को छांटें व फ़िल्टर करें।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Chart Elements, Pie Charts & Column Charts",
+          "hi": "चार्ट के घटक, पाई चार्ट और कॉलम चार्ट"
+        },
+        "theory": {
+          "en": "Charts represent worksheet numbers pictorially so comparisons and highs/lows are easy to grasp. Key chart elements include chart area, data marker/point, data series, x/y axis, tick mark, plot area, gridlines, chart text, and legend. A Pie Chart shows how parts contribute to a whole in a compact space, while a Column Chart displays vertical bars along an axis to compare values across categories.",
+          "hi": "चार्ट वर्कशीट के आंकड़ों को चित्रात्मक रूप में दिखाते हैं ताकि तुलना और उच्च-निम्न मान आसानी से समझ आएं। चार्ट के प्रमुख घटकों में चार्ट क्षेत्र, डेटा मार्कर/पॉइंट, डेटा सीरीज, x व y अक्ष, टिक मार्क, प्लॉट एरिया, ग्रिडलाइन्स, चार्ट टेक्स्ट और लेजेंड शामिल हैं। पाई चार्ट (Pie Chart) संपूर्ण के हिस्सों का योगदान दिखाता है, जबकि कॉलम चार्ट (Column Chart) विभिन्न श्रेणियों के मानों की तुलना के लिए ऊर्ध्वाधर स्तंभ दिखाता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Excel Charts: Elements, Pie Whole &amp; Column Categories</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Chart Elements</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Axis, Legend, Gridlines</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Pie Chart</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Values Add to Whole</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Column Chart</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Vertical Category Bars</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#c084fc\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Plot &amp; Markers</tspan><tspan x=\"120\" dy=\"1.2em\">Chart Title/Ticks</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Compact View</tspan><tspan x=\"300\" dy=\"1.2em\">2-D &amp; 3-D Pie</tspan></text><text x=\"480\" y=\"172\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Compare Groups</tspan><tspan x=\"480\" dy=\"1.2em\">Left Axis Values</tspan></text></svg>",
+          "caption": {
+            "en": "Key chart elements (axis, legend, plot area, markers, gridlines) alongside Pie charts for whole-part shares and Column charts for category comparisons.",
+            "hi": "चार्ट के प्रमुख तत्व (अक्ष, लेजेंड, प्लॉट एरिया, मार्कर, ग्रिडलाइन्स) तथा पाई चार्ट और कॉलम चार्ट की भूमिका।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Pie and Column charts visualize worksheet numbers.",
+          "hint": "Start with Pie and Column charts, describe showing parts of a whole and category bars, mention on selected Excel data, and conclude with making comparisons clear visually.",
+          "target_sequence": [
+            { "id": "en_u16_t1", "text": "Pie and Column charts", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u16_t2", "text": "show whole shares and vertical category bars", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u16_t3", "text": "from selected worksheet data", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u16_t4", "text": "to make comparisons easy to see", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u16_d1", "category": "conceptual", "text": "define the legend as a secret password needed to open a workbook", "penalty_explanation": "A legend is a key identifying patterns, colors, or symbols for a chart's data series." },
+            { "id": "en_u16_d2", "category": "technical", "text": "use a Column chart when you want vertical bars comparing categories", "penalty_explanation": "A Column chart uses vertical bars with axis values on the left to compare values across categories." }
+          ]
+        },
+        "hi": {
+          "prompt": "पाई चार्ट और कॉलम चार्ट द्वारा वर्कशीट के आंकड़ों को चित्र रूप में दिखाने के क्रम को व्यवस्थित करें।",
+          "hint": "पाई और कॉलम चार्ट से शुरुआत करें, संपूर्ण हिस्से व ऊर्ध्वाधर स्तंभ दिखाने का उल्लेख करें, चयनित डेटा पर का संदर्भ दें, और तुलना आसान बनाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u16_t1", "text": "पाई और कॉलम चार्ट", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u16_t2", "text": "संपूर्ण हिस्सा और श्रेणी स्तंभ दिखाकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u16_t3", "text": "चयनित वर्कशीट डेटा से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u16_t4", "text": "आंकड़ों की तुलना को स्पष्ट बनाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u16_d1", "category": "conceptual", "text": "लेजेंड (Legend) को वर्कबुक खोलने वाला गुप्त पासवर्ड मानते हैं", "penalty_explanation": "लेजेंड (Legend) वह संकेत कुंजी है जो चार्ट की डेटा सीरीज के रंगों, पैटर्न या प्रतीकों को पहचानती है।" },
+            { "id": "hi_u16_d2", "category": "technical", "text": "कॉलम चार्ट का उपयोग केवल अक्षरों की गिनती करने के लिए करते हैं", "penalty_explanation": "कॉलम चार्ट विभिन्न श्रेणियों के मानों की तुलना करने के लिए ऊर्ध्वाधर स्तंभ दिखाता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Charts use elements like axes, legend, markers, plot area, and gridlines; Pie charts show parts of a whole and Column charts compare categories.",
+        "hi": "चार्ट में अक्ष, लेजेंड, मार्कर व ग्रिडलाइन्स होते हैं; पाई चार्ट संपूर्ण के हिस्से और कॉलम चार्ट श्रेणियों की तुलना दिखाता है।"
+      }
+    }
+  ]
+}
