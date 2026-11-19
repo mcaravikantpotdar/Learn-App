@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 3: Digital Documentation – Word Processing (Advanced) - Part 5",
+      "hi": "इकाई 3: डिजिटल दस्तावेज़ीकरण – वर्ड प्रोसेसिंग (उन्नत) - भाग 5"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Inserting & Deleting Rows, Columns, Cells & Tables",
+          "hi": "तालिका में पंक्ति, स्तंभ, सेल और तालिका जोड़ना व हटाना"
+        },
+        "theory": {
+          "en": "After creating a table, you can modify its structure using the Layout tab (Rows and Columns group) or right-click menu. Add columns left or right, add rows above or below, or insert individual cells (choosing Shift cells right, Shift cells down, Insert entire row, or Insert entire column). To remove items, select Delete > Delete Columns, Delete Rows, Delete Table, or Delete Cells (choosing Shift cells left, Shift cells up, Delete entire row, or Delete entire column).",
+          "hi": "तालिका बनने के बाद Layout टैब (Rows and Columns समूह) या राइट-क्लिक मेन्यू से उसकी संरचना बदली जा सकती है। बाएं-दाएं स्तंभ, ऊपर-नीचे पंक्तियां या नए सेल जोड़े जा सकते हैं (Shift cells right, Shift cells down, पूरा स्तंभ या पूरी पंक्ति चुनकर)। हटाने के लिए Delete > Delete Columns, Delete Rows, Delete Table या Delete Cells चुनें (Shift cells left, Shift cells up, पूरी पंक्ति या पूरा स्तंभ चुनकर)।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Table Structure Edits: Insert &amp; Delete Operations</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Insert Rows/Cols</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Left, Right, Above, Below</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Insert / Delete Cell</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Shift Right/Down/Left/Up</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Delete Row/Col/Table</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Layout Tab or Right-Click</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#f87171\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Expand Grid</tspan><tspan x=\"120\" dy=\"1.2em\">New Records</tspan></text><text x=\"300\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Cell Shift Mode</tspan><tspan x=\"300\" dy=\"1.2em\">Single Cell Edit</tspan></text><text x=\"480\" y=\"172\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Remove Rows</tspan><tspan x=\"480\" dy=\"1.2em\">Drop Table</tspan></text></svg>",
+          "caption": {
+            "en": "Inserting rows, columns, and cells with shift options and deleting columns, rows, cells, or entire tables via Layout or right-click.",
+            "hi": "Layout टैब या राइट-क्लिक से पंक्ति, स्तंभ व सेल जोड़ने (शिफ्ट विकल्पों सहित) और पंक्ति, स्तंभ, सेल या तालिका हटाने की प्रक्रिया।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how users insert or remove table rows, columns, and cells.",
+          "hint": "Start with Word table controls, describe adding or deleting rows columns and cells, mention via the Layout tab or right-click menu, and conclude with updating table structure with shift options.",
+          "target_sequence": [
+            { "id": "en_u17_t1", "text": "Word table controls", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u17_t2", "text": "add or delete rows columns and cells", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u17_t3", "text": "via the Layout tab or right-click menu", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u17_t4", "text": "to reshape tables using shift options", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u17_d1", "category": "conceptual", "text": "make deleting a single row permanently erase every file on the computer", "penalty_explanation": "Deleting a row, column, cell, or table only removes that selected table element inside the document." },
+            { "id": "en_u17_d2", "category": "technical", "text": "provide zero option to insert a row above or below a selected row", "penalty_explanation": "Both the Layout tab (Insert Above / Insert Below) and right-click menu let you insert rows above or below." }
+          ]
+        },
+        "hi": {
+          "prompt": "तालिका में पंक्ति, स्तंभ और सेल जोड़ने या हटाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "वर्ड तालिका नियंत्रणों से शुरुआत करें, पंक्ति स्तंभ और सेल जोड़ने या हटाने का उल्लेख करें, Layout टैब या राइट-क्लिक मेन्यू का संदर्भ दें, और शिफ्ट विकल्पों से तालिका बदलने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u17_t1", "text": "वर्ड तालिका नियंत्रण", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u17_t2", "text": "पंक्ति स्तंभ और सेल जोड़कर या हटाकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u17_t3", "text": "Layout टैब या राइट-क्लिक मेन्यू से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u17_t4", "text": "शिफ्ट विकल्पों द्वारा तालिका की संरचना बदलते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u17_d1", "category": "conceptual", "text": "एक पंक्ति हटाने पर कंप्यूटर की सभी फाइलें हमेशा के लिए मिट जाती हैं", "penalty_explanation": "Delete विकल्प केवल चुनी हुई पंक्ति, स्तंभ, सेल या तालिका को हटाता है, कंप्यूटर की फाइलों को नहीं।" },
+            { "id": "hi_u17_d2", "category": "technical", "text": "चुनी हुई पंक्ति के ऊपर या नीचे नई पंक्ति जोड़ने का कोई विकल्प नहीं देते", "penalty_explanation": "Layout टैब और राइट-क्लिक मेन्यू दोनों से पंक्ति के ऊपर (Insert Rows Above) या नीचे (Insert Rows Below) नई पंक्ति जुड़ती है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Use the Layout tab or right-click menu to insert/delete rows, columns, cells (with shift options), or the entire table.",
+        "hi": "Layout टैब या राइट-क्लिक से पंक्ति, स्तंभ, सेल (शिफ्ट विकल्पों सहित) जोड़ें या हटाएं, या पूरी तालिका डिलीट करें।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Table Properties, Alignment & Row/Column Sizing",
+          "hi": "टेबल प्रॉपर्टीज, एलाइनमेंट और पंक्ति व स्तंभ का आकार"
+        },
+        "theory": {
+          "en": "To fine-tune table positioning and dimensions, select a table, row, column, or cell and open Table Properties via Layout > Properties or by right-clicking and choosing Table Properties. Under the Table tab, align the table Left, Center, or Right; under the Row, Column, and Cell tabs, check Specify height or width and enter exact measurements before clicking OK.",
+          "hi": "तालिका की स्थिति और आकार को सटीक बनाने के लिए तालिका, पंक्ति, स्तंभ या सेल में क्लिक करके Layout > Properties या राइट-क्लिक से Table Properties खोलें। Table टैब में तालिका को Left, Center या Right संरेखित करें, और Row, Column तथा Cell टैब में Specify height या चौड़ाई चुनकर मान दर्ज करें व OK दबाएं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Table Properties: Alignment &amp; Exact Cell Dimensions</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Table Alignment</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Left, Center &amp; Right</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Row / Col / Cell Size</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Specify Height &amp; Width</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Layout &rarr; Properties</tspan><tspan x=\"100\" dy=\"1.2em\">Right-Click Menu</tspan></text><text x=\"225\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Page Position</tspan><tspan x=\"225\" dy=\"1.2em\">Table Tab</tspan></text><text x=\"375\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Row Tab Height</tspan><tspan x=\"375\" dy=\"1.2em\">Check Box Value</tspan></text><text x=\"500\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Column &amp; Cell</tspan><tspan x=\"500\" dy=\"1.2em\">Click OK</tspan></text></svg>",
+          "caption": {
+            "en": "Configuring table alignment (Left, Center, Right) and row height, column width, or cell size inside Table Properties.",
+            "hi": "Table Properties के माध्यम से तालिका एलाइनमेंट (Left, Center, Right) और पंक्ति, स्तंभ व सेल का आकार निर्धारित करना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Table Properties adjusts table alignment and cell sizing.",
+          "hint": "Start with Table Properties options, describe setting alignment and row or column sizes, mention via the Layout tab or right-click, and conclude with formatting tables neatly on the page.",
+          "target_sequence": [
+            { "id": "en_u18_t1", "text": "Table Properties options", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u18_t2", "text": "set alignment and row or column sizes", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u18_t3", "text": "via Layout Properties or right-click", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u18_t4", "text": "to position and size tables cleanly", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u18_d1", "category": "conceptual", "text": "prevent changing row height column width or table alignment ever", "penalty_explanation": "Table Properties lets you align tables Left, Center, or Right and specify exact row height, column width, and cell size." },
+            { "id": "en_u18_d2", "category": "technical", "text": "require reinstalling Microsoft Word before resizing a single table row", "penalty_explanation": "You resize a row, column, or cell directly in Table Properties by checking Specify height/width and clicking OK." }
+          ]
+        },
+        "hi": {
+          "prompt": "Table Properties द्वारा तालिका का एलाइनमेंट और पंक्ति-स्तंभ का आकार बदलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "Table Properties विकल्पों से शुरुआत करें, एलाइनमेंट और पंक्ति-स्तंभ आकार तय करने का उल्लेख करें, Layout या राइट-क्लिक का संदर्भ दें, और तालिका को व्यवस्थित बनाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u18_t1", "text": "Table Properties विकल्प", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u18_t2", "text": "एलाइनमेंट और पंक्ति या स्तंभ का आकार तय करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u18_t3", "text": "Layout Properties या राइट-क्लिक द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u18_t4", "text": "तालिका की स्थिति और माप व्यवस्थित करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u18_d1", "category": "conceptual", "text": "तालिका के एलाइनमेंट या पंक्ति-स्तंभ के आकार को बदलने से रोकते हैं", "penalty_explanation": "Table Properties से तालिका को Left, Center या Right किया जा सकता है और पंक्ति, स्तंभ व सेल का आकार बदला जा सकता है।" },
+            { "id": "hi_u18_d2", "category": "technical", "text": "एक पंक्ति की ऊंचाई बदलने के लिए पूरा एमएस वर्ड दोबारा इंस्टॉल करना पड़ता है", "penalty_explanation": "पंक्ति, स्तंभ या सेल का आकार सीधे Table Properties में मान दर्ज करके और OK दबाकर बदला जाता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Open Table Properties (Layout > Properties or right-click) to align tables Left/Center/Right and set row height, column width, or cell size.",
+        "hi": "तालिका को Left/Center/Right करने और पंक्ति, स्तंभ या सेल का आकार तय करने के लिए Table Properties खोलें।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Merging & Splitting Table Cells",
+          "hi": "तालिका के सेलों को मर्ज (Merge) और स्प्लिट (Split) करना"
+        },
+        "theory": {
+          "en": "Word allows combining or dividing table cells to improve table layout. Merging Cells combines two or more selected cells into a single cell and merges their data: select the cells, open the Layout tab, and click Merge Cells in the Merge group. Splitting Cells divides a single cell into two or more cells: select the cell, click Split Cells on the Layout tab, enter the desired number of rows and columns in the Split Cells dialog box, and click OK.",
+          "hi": "तालिका को बेहतर रूप देने के लिए सेलों को जोड़ा या विभाजित किया जा सकता है। Merging Cells दो या अधिक चुने हुए सेलों को मिलाकर एक सेल बनाता है और डेटा जोड़ता है: सेल चुनें, Layout टैब खोलें और Merge समूह में Merge Cells दबाएं। Splitting Cells एक सेल को दो या अधिक सेलों में बांटता है: सेल चुनें, Layout टैब पर Split Cells दबाएं, डायलॉग बॉक्स में पंक्तियों व स्तंभों की संख्या लिखें और OK दबाएं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Table Merge Group: Merging vs. Splitting Cells</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Merge Cells</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Multiple Cells &rarr; One Cell</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Split Cells</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">One Cell &rarr; Rows &amp; Cols</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Select Group</tspan><tspan x=\"100\" dy=\"1.2em\">Layout &rarr; Merge</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Combined Data</tspan><tspan x=\"225\" dy=\"1.2em\">Cleaner Header</tspan></text><text x=\"375\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Pick Single Cell</tspan><tspan x=\"375\" dy=\"1.2em\">Layout &rarr; Split</tspan></text><text x=\"500\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Set Row/Col Count</tspan><tspan x=\"500\" dy=\"1.2em\">Click OK</tspan></text></svg>",
+          "caption": {
+            "en": "Contrasting Merge Cells (combining selected cells into one) with Split Cells (dividing one cell into specified rows and columns) on the Layout tab.",
+            "hi": "Layout टैब पर Merge Cells (कई सेलों को एक करना) और Split Cells (एक सेल को पंक्ति व स्तंभ में बांटना) की तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how merging and splitting cells reshape table layouts in Word.",
+          "hint": "Start with Merge Cells and Split Cells, describe combining or dividing table cells, mention on the Layout tab, and conclude with customizing table structure cleanly.",
+          "target_sequence": [
+            { "id": "en_u19_t1", "text": "Merge Cells and Split Cells", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u19_t2", "text": "combine or divide table cells", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u19_t3", "text": "from the Layout tab Merge group", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u19_t4", "text": "to customize table cell layouts", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u19_d1", "category": "conceptual", "text": "mean splitting a cell merges ten separate Word files into one PDF", "penalty_explanation": "Splitting a cell divides a single table cell into two or more rows and columns; merging combines multiple cells into one." },
+            { "id": "en_u19_d2", "category": "technical", "text": "never ask how many rows and columns you want in Split Cells", "penalty_explanation": "Clicking Split Cells opens a dialog box where you enter the number of rows and columns and click OK." }
+          ]
+        },
+        "hi": {
+          "prompt": "तालिका में सेलों को मर्ज और स्प्लिट करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "Merge Cells और Split Cells से शुरुआत करें, सेलों को जोड़ने या बांटने का उल्लेख करें, Layout टैब के Merge समूह का संदर्भ दें, और तालिका लेआउट बनाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u19_t1", "text": "Merge Cells और Split Cells", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u19_t2", "text": "तालिका के सेलों को जोड़कर या बांटकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u19_t3", "text": "Layout टैब के Merge समूह से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u19_t4", "text": "तालिका की संरचना को बेहतर बनाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u19_d1", "category": "conceptual", "text": "का अर्थ सेल बांटने के बजाय दस अलग वर्ड फाइलों को जोड़ना होता है", "penalty_explanation": "सेल को स्प्लिट करने से एक सेल कई सेलों में बंटता है, जबकि मर्ज करने से कई सेल जुड़कर एक बनते हैं।" },
+            { "id": "hi_u19_d2", "category": "technical", "text": "Split Cells दबाने पर पंक्तियों और स्तंभों की संख्या पूछने वाला बॉक्स नहीं खुलता", "penalty_explanation": "Split Cells दबाने पर डायलॉग बॉक्स खुलता है जहाँ पंक्तियों और स्तंभों की संख्या लिखकर OK दबाया जाता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Merge Cells combines selected cells into one cell, while Split Cells divides a cell into specified rows and columns on the Layout tab.",
+        "hi": "Merge Cells चुने हुए सेलों को मिलाकर एक करता है, जबकि Split Cells एक सेल को पंक्ति व स्तंभ में बांटता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Mail Merge: Main Document, Data Source & Wizard",
+          "hi": "मेल मर्ज (Mail Merge): मुख्य दस्तावेज़, डेटा स्रोत और विज़ार्ड"
+        },
+        "theory": {
+          "en": "Mail Merge lets you send the same letter or document to many recipients at different addresses without retyping the body each time. It combines two core components: the Main Document (containing text and graphics identical for every copy) and the Data Source or data file (storing individual recipient details like name, address, city, pin, and phone). Using the Mailings tab step-by-step wizard, you select document type and starting document, type/customize/save a recipient list, insert merge fields, preview records, and complete the merge.",
+          "hi": "मेल मर्ज (Mail Merge) से एक ही पत्र या दस्तावेज़ को अलग-अलग पतों पर कई लोगों को बिना बार-बार टाइप किए भेजा जा सकता है। इसके दो मुख्य भाग होते हैं: Main Document (जिसमें हर प्रति के लिए समान पाठ व चित्र होते हैं) और Data Source या डेटा फाइल (जिसमें नाम, पता, शहर, पिन व फोन जैसी व्यक्तिगत जानकारी होती है)। Mailings टैब के स्टेप-बाय-स्टेप विज़ार्ड से आप प्राप्तकर्ता सूची बनाते हैं, मर्ज फील्ड डालते हैं, प्रीव्यू देखते हैं और मर्ज पूरा करते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">MS Word Mail Merge Pipeline &amp; Core Components</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Main Document</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Shared Letter Body</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Data Source</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Names &amp; Addresses</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Merged Letters</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Preview &amp; Complete</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Same Text/Art</tspan><tspan x=\"120\" dy=\"1.2em\">Insert Merge Field</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Data File List</tspan><tspan x=\"300\" dy=\"1.2em\">Customize Fields</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Mailings Wizard</tspan><tspan x=\"480\" dy=\"1.2em\">Saves Time</tspan></text></svg>",
+          "caption": {
+            "en": "Mail Merge workflow combining a Main Document and a Data Source via merge fields, record preview, and merge completion.",
+            "hi": "मेल मर्ज प्रणाली जो Main Document और Data Source को मर्ज फील्ड, प्रीव्यू और पूर्ण मर्ज के माध्यम से जोड़ती है।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Mail Merge generates personalized letters for many recipients.",
+          "hint": "Start with Word Mail Merge, describe combining a main document and data source, mention using merge fields and preview steps, and conclude with sending letters to many recipients quickly.",
+          "target_sequence": [
+            { "id": "en_u20_t1", "text": "Word Mail Merge", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u20_t2", "text": "combines a main document and data source", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u20_t3", "text": "using merge fields and wizard steps", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u20_t4", "text": "to send personalized letters efficiently", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u20_d1", "category": "conceptual", "text": "forces you to retype the entire letter body separately for every single address", "penalty_explanation": "Mail Merge avoids retyping the letter content repeatedly by merging recipient details from the data source into the main document." },
+            { "id": "en_u20_d2", "category": "technical", "text": "stores recipient names and addresses inside the main document rather than a data source", "penalty_explanation": "Individual recipient details like name, address, city, pin, and phone are stored in the Data Source (data file)." }
+          ]
+        },
+        "hi": {
+          "prompt": "मेल मर्ज द्वारा अनेक प्राप्तकर्ताओं के लिए पत्र तैयार करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "वर्ड मेल मर्ज से शुरुआत करें, मुख्य दस्तावेज़ और डेटा स्रोत को जोड़ने का उल्लेख करें, मर्ज फील्ड और विज़ार्ड चरणों का संदर्भ दें, और अनेक लोगों को पत्र भेजने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u20_t1", "text": "वर्ड मेल मर्ज", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u20_t2", "text": "मुख्य दस्तावेज़ और डेटा स्रोत को जोड़कर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u20_t3", "text": "मर्ज फील्ड और विज़ार्ड चरणों द्वारा", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u20_t4", "text": "अनेक लोगों को आसानी से पत्र भेजता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u20_d1", "category": "conceptual", "text": "प्रत्येक पते के लिए पूरे पत्र की सामग्री को बार-बार नए सिरे से टाइप कराता है", "penalty_explanation": "मेल मर्ज बार-बार पत्र टाइप करने की समस्या को हल करता है और एक ही पत्र को कई पतों पर भेजता है।" },
+            { "id": "hi_u20_d2", "category": "technical", "text": "व्यक्तिगत पते डेटा स्रोत के बजाय केवल मुख्य दस्तावेज़ में ही रखता है", "penalty_explanation": "नाम, पता, शहर व पिन जैसी व्यक्तिगत जानकारी डेटा स्रोत (Data Source / डेटा फाइल) में सहेजी जाती है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Mail Merge combines a Main Document (shared content) with a Data Source (recipient details) via the Mailings wizard to produce personalized letters fast.",
+        "hi": "मेल मर्ज Main Document (समान सामग्री) और Data Source (व्यक्तिगत विवरण) को जोड़कर अनेक लोगों के लिए पत्र तैयार करता है।"
+      }
+    }
+  ]
+}
