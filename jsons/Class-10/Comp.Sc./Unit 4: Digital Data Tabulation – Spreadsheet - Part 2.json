@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 4: Digital Data Tabulation – Spreadsheet - Part 2",
+      "hi": "इकाई 4: डिजिटल डेटा सारणीकरण – स्प्रेडशीट - भाग 2"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Date & Time Fields and Functions in Excel",
+          "hi": "एक्सेल में दिनांक व समय फील्ड और फंक्शन"
+        },
+        "theory": {
+          "en": "Excel lets you insert updatable date fields using Alt+Shift+D, right-click Edit Field to format dates or times in the Field dialog, and use built-in functions from the Formulas tab Function Library (Date & Time). DATE(year,month,day) builds a date from parts, TIME(hour,minute,second) builds a time, TODAY() returns today's date, NOW() returns current date and time, and NETWORKDAYS counts whole workdays between dates.",
+          "hi": "एक्सेल में Alt+Shift+D से अपडेट होने वाला दिनांक फील्ड जोड़ा जा सकता है, राइट-क्लिक Edit Field से दिनांक/समय प्रारूप बदला जा सकता है, और Formulas टैब की Function Library (Date & Time) से फंक्शन चुने जा सकते हैं। DATE() वर्ष-माह-दिन से दिनांक बनाता है, TIME() घंटे-मिनट-सेकंड से समय बनाता है, TODAY() आज की तारीख देता है, NOW() वर्तमान तारीख व समय देता है, और NETWORKDAYS कार्यदिवसों की गणना करता है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Date &amp; Time Controls: Alt+Shift+D &amp; Function Library</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Alt + Shift + D</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Updatable Date Field</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">TODAY() &amp; NOW()</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Current Date &amp; Time</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Function Library</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">DATE, TIME, NETWORKDAYS</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Right-Click Edit</tspan><tspan x=\"120\" dy=\"1.2em\">Field Formats</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Live Date Stamp</tspan><tspan x=\"300\" dy=\"1.2em\">Clock + Calendar</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Formulas Tab</tspan><tspan x=\"480\" dy=\"1.2em\">Workday Count</tspan></text></svg>",
+          "caption": {
+            "en": "Inserting updatable dates with Alt+Shift+D and using Date & Time functions including TODAY(), NOW(), DATE(), TIME(), and NETWORKDAYS.",
+            "hi": "Alt+Shift+D से अपडेट होने वाली तारीख डालना और TODAY(), NOW(), DATE(), TIME() व NETWORKDAYS जैसे फंक्शन का उपयोग।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Excel date and time functions and fields manage dates in sheets.",
+          "hint": "Start with Excel date tools, describe inserting dates and returning current values, mention via Alt+Shift+D and Date & Time functions, and conclude with tracking dates and workdays accurately.",
+          "target_sequence": [
+            { "id": "en_u5_t1", "text": "Excel date tools", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u5_t2", "text": "insert fields and return current values", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u5_t3", "text": "via Alt+Shift+D and Date & Time functions", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u5_t4", "text": "to track dates and workdays accurately", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u5_d1", "category": "conceptual", "text": "require learning every single one of thousands of obscure functions by heart", "penalty_explanation": "There is no need to learn every single function; you pick needed functions by category from the Function Library." },
+            { "id": "en_u5_d2", "category": "technical", "text": "make NOW() return only a plain text word instead of current date and time", "penalty_explanation": "NOW() returns the current date and time, while TODAY() returns today's date." }
+          ]
+        },
+        "hi": {
+          "prompt": "एक्सेल में दिनांक व समय फील्ड और फंक्शन द्वारा तिथियां प्रबंधित करने के क्रम को व्यवस्थित करें।",
+          "hint": "एक्सेल दिनांक उपकरणों से शुरुआत करें, फील्ड जोड़ने और वर्तमान मान देने का उल्लेख करें, Alt+Shift+D और Date & Time फंक्शन का संदर्भ दें, और तिथियों व कार्यदिवसों की गणना पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u5_t1", "text": "एक्सेल दिनांक उपकरण", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u5_t2", "text": "फील्ड जोड़कर और वर्तमान मान देकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u5_t3", "text": "Alt+Shift+D और Date & Time फंक्शन से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u5_t4", "text": "तिथियों और कार्यदिवसों की सटीक गणना करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u5_d1", "category": "conceptual", "text": "सैकड़ों कठिन फंक्शनों को बिना देखे कंठस्थ करना अनिवार्य बनाते हैं", "penalty_explanation": "हर फंक्शन याद रखने की जरूरत नहीं होती; Function Library से आवश्यक श्रेणी का फंक्शन चुना जाता है।" },
+            { "id": "hi_u5_d2", "category": "technical", "text": "NOW() से तारीख और समय के बजाय केवल सामान्य शब्द दिखाते हैं", "penalty_explanation": "NOW() वर्तमान तारीख व समय दिखाता है, जबकि TODAY() आज की तारीख लौटाता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Use Alt+Shift+D for updatable date fields, TODAY() for today's date, NOW() for date and time, and Function Library Date & Time tools like NETWORKDAYS.",
+        "hi": "अपडेट होने वाली तारीख के लिए Alt+Shift+D, TODAY(), NOW() और Date & Time फंक्शन लाइब्रेरी का उपयोग करें।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Data Series & Auto Fill Handle Mechanics",
+          "hi": "डेटा सीरीज और ऑटो फिल हैंडल की कार्यप्रणाली"
+        },
+        "theory": {
+          "en": "Excel fills ranges and generates data series quickly using the Fill Handle (+), the small square at the lower-right corner of a selection, or Ctrl+D after selecting with Shift+Down. Entering two starting numbers or months (such as 100 and 101, or January and February), selecting both, and dragging the Fill Handle extends the series automatically. Right-dragging the Fill Handle opens options including Fill Series, Linear Trend, and Growth Trend (such as 1, 2, 4, 8 or doubling from 5 to 10).",
+          "hi": "एक्सेल में चयन के निचले-दाएं कोने पर स्थित फिल हैंडल (+) को खींचकर या Shift+Down के बाद Ctrl+D दबाकर रेंज भरी और सीरीज बनाई जा सकती है। दो शुरुआती संख्याएं या महीने (जैसे 100 और 101, या January और February) चुनकर फिल हैंडल खींचने से सीरीज स्वतः बनती है। दाएं बटन से फिल हैंडल खींचने पर Fill Series, Linear Trend और Growth Trend (जैसे 1, 2, 4, 8) जैसे विकल्प मिलते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Auto Fill Handle: Series, Months &amp; Growth Trend</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Copy &amp; Ctrl+D</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Single Cell Drag</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Number &amp; Month</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">100, 101 | Jan, Feb</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Right-Drag Menu</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Growth &amp; Linear Trend</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Repeats Value</tspan><tspan x=\"120\" dy=\"1.2em\">Shift + Down</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Two Seed Cells</tspan><tspan x=\"300\" dy=\"1.2em\">Auto Sequence</tspan></text><text x=\"480\" y=\"172\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">1, 2, 4, 8, 16...</tspan><tspan x=\"480\" dy=\"1.2em\">Step Multiplier</tspan></text></svg>",
+          "caption": {
+            "en": "Generating series and ranges using the Fill Handle (+), Ctrl+D, two-cell seeds (numbers or months), and right-click Growth Trend.",
+            "hi": "फिल हैंडल (+), Ctrl+D, दो शुरुआती सेलों (संख्या या महीने) और राइट-क्लिक Growth Trend से सीरीज बनाना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how the Fill Handle generates number and month series in Excel.",
+          "hint": "Start with the Excel Fill Handle, describe dragging two seeded cells or using Ctrl+D, mention across target worksheet cells, and conclude with generating number or month series automatically.",
+          "target_sequence": [
+            { "id": "en_u6_t1", "text": "The Excel Fill Handle", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u6_t2", "text": "drags two seeded cells or uses Ctrl+D", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u6_t3", "text": "across selected worksheet cells", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u6_t4", "text": "to build number and month series fast", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u6_d1", "category": "conceptual", "text": "require typing every single month from January to December manually by hand", "penalty_explanation": "Entering January and February in two cells, selecting both, and dragging the Fill Handle creates the months series automatically." },
+            { "id": "en_u6_d2", "category": "technical", "text": "sit at the top-left corner of the monitor outside the spreadsheet grid", "penalty_explanation": "The Fill Handle (+) appears at the lower-right corner of the selected cell or range." }
+          ]
+        },
+        "hi": {
+          "prompt": "फिल हैंडल द्वारा संख्या और महीनों की सीरीज बनाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक्सेल फिल हैंडल से शुरुआत करें, दो शुरुआती सेल खींचने या Ctrl+D का उल्लेख करें, चयनित सेलों पर का संदर्भ दें, और संख्या व महीने की सीरीज बनाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u6_t1", "text": "एक्सेल फिल हैंडल", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u6_t2", "text": "दो शुरुआती सेल खींचकर या Ctrl+D से", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u6_t3", "text": "चयनित वर्कशीट सेलों पर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u6_t4", "text": "संख्या और महीनों की सीरीज तेज़ी से बनाता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u6_d1", "category": "conceptual", "text": "जनवरी से दिसंबर तक हर महीने का नाम स्वयं हाथ से टाइप करना अनिवार्य करता है", "penalty_explanation": "दो सेलों में जनवरी और फरवरी लिखकर दोनों को चुनें और फिल हैंडल खींचें तो महीनों की सीरीज अपने आप बन जाती है।" },
+            { "id": "hi_u6_d2", "category": "technical", "text": "स्प्रेडशीट ग्रिड के बाहर मॉनिटर के ऊपरी-बाएं कोने में दिखाई देता है", "penalty_explanation": "फिल हैंडल (+) चयनित सेल या रेंज के निचले-दाएं कोने पर दिखता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Drag the Fill Handle (+) or press Ctrl+D to fill ranges; seed two values or months to auto-fill series, or right-drag for Growth/Linear Trend.",
+        "hi": "फिल हैंडल (+) खींचें या Ctrl+D दबाएं; दो मानों से सीरीज बनाएं या दाएं बटन से Growth/Linear Trend चुनें।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Font Styling, Cell Color, Borders & Text Alignment",
+          "hi": "फॉन्ट शैली, सेल रंग, बॉर्डर और टेक्स्ट एलाइनमेंट"
+        },
+        "theory": {
+          "en": "On the Home tab, Font and Alignment tools format cell text and appearance: choose font family, size (default around 11 or 12), increase/decrease size buttons, Bold, Italic, Underline, and Font Color (Theme, Standard, or More Colors). You can also set Cell Color (background fill) and Cell Borders, and align text horizontally (Left, Centre, Right) or vertically (Top, Middle, Bottom).",
+          "hi": "Home टैब के Font और Alignment टूल से सेल के पाठ व रूप को सजाया जा सकता है: फॉन्ट प्रकार, आकार (आमतौर पर 11 या 12), आकार घटाने-बढ़ाने के बटन, Bold, Italic, Underline और Font Color (Theme, Standard या More Colors) चुनें। साथ ही सेल की पृष्ठभूमि का रंग (Cell Color) व बॉर्डर (Cell Border) बदलें और टेक्स्ट को क्षैतिज (Left, Centre, Right) व ऊर्ध्वाधर (Top, Middle, Bottom) संरेखित करें।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Home Tab Formatting: Font, Colors, Borders &amp; Alignment</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Font &amp; Size</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">B, I, U &amp; Grow/Shrink</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Color &amp; Border</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Text, Fill &amp; Cell Edge</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Cell Alignment</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Top/Mid/Bot &amp; L/C/R</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Empty Cell Ready</tspan><tspan x=\"120\" dy=\"1.2em\">Installed Fonts</tspan></text><text x=\"300\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Theme &amp; Standard</tspan><tspan x=\"300\" dy=\"1.2em\">Default No Border</tspan></text><text x=\"480\" y=\"172\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Horizontal &amp; Vert</tspan><tspan x=\"480\" dy=\"1.2em\">Clean Layout</tspan></text></svg>",
+          "caption": {
+            "en": "Formatting controls on the Home tab for font face/size/color, cell background and borders, and horizontal/vertical alignment.",
+            "hi": "Home टैब के फॉर्मेटिंग टूल: फॉन्ट आकार/रंग, सेल पृष्ठभूमि व बॉर्डर, और क्षैतिज व ऊर्ध्वाधर एलाइनमेंट।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Home tab formatting tools style cell text, colors, and alignment.",
+          "hint": "Start with Home tab formatting tools, describe adjusting font colors borders and alignment, mention on selected worksheet cells, and conclude with making spreadsheet data clear and readable.",
+          "target_sequence": [
+            { "id": "en_u7_t1", "text": "Home tab formatting tools", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u7_t2", "text": "style font colors borders and alignment", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u7_t3", "text": "on selected worksheet cells", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u7_t4", "text": "to keep spreadsheet data clear and neat", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u7_d1", "category": "conceptual", "text": "add heavy black borders around every single cell by default automatically", "penalty_explanation": "By default, a cell does not have a border until you select a border type from the Cell Border dropdown." },
+            { "id": "en_u7_d2", "category": "technical", "text": "offer only Left alignment with no Center Right Top or Middle options", "penalty_explanation": "Excel provides horizontal alignment (Left, Centre, Right) as well as vertical alignment (Top, Middle, Bottom)." }
+          ]
+        },
+        "hi": {
+          "prompt": "Home टैब के टूल द्वारा सेल का फॉन्ट, रंग, बॉर्डर और एलाइनमेंट बदलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "Home टैब फॉर्मेटिंग टूल से शुरुआत करें, फॉन्ट रंग बॉर्डर व एलाइनमेंट बदलने का उल्लेख करें, चयनित सेलों पर का संदर्भ दें, और डेटा को स्पष्ट व सुंदर बनाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u7_t1", "text": "Home टैब फॉर्मेटिंग टूल", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u7_t2", "text": "फॉन्ट रंग बॉर्डर और एलाइनमेंट बदलकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u7_t3", "text": "चयनित वर्कशीट सेलों पर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u7_t4", "text": "स्प्रेडशीट डेटा को स्पष्ट और व्यवस्थित बनाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u7_d1", "category": "conceptual", "text": "डिफ़ॉल्ट रूप से प्रत्येक सेल के चारों ओर मोटा काला बॉर्डर पहले से लगा रखते हैं", "penalty_explanation": "डिफ़ॉल्ट रूप से किसी सेल में बॉर्डर नहीं होता; बॉर्डर लगाने के लिए सेल बॉर्डर विकल्प चुनना पड़ता है।" },
+            { "id": "hi_u7_d2", "category": "technical", "text": "केवल Left एलाइनमेंट देते हैं और Centre Right Top या Middle नहीं देते", "penalty_explanation": "एक्सेल में Left, Centre, Right और Top, Middle, Bottom सभी एलाइनमेंट विकल्प उपलब्ध हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Use Home > Font and Alignment to set font type/size/color, B/I/U, cell fill/borders, and Top/Middle/Bottom + Left/Centre/Right alignment.",
+        "hi": "Home > Font और Alignment से फॉन्ट, रंग, B/I/U, सेल बॉर्डर तथा क्षैतिज व ऊर्ध्वाधर एलाइनमेंट सेट करें।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Inserting & Deleting Cells, Rows, and Columns",
+          "hi": "वर्कशीट में सेल, पंक्ति और स्तंभ जोड़ना व हटाना"
+        },
+        "theory": {
+          "en": "To add blank space in an existing worksheet, select target cells, rows, or columns and choose Insert > Insert Cells in the Home tab Cells group: pick Shift Cells Right, Shift Cells Down (default), Entire Row, or Entire Column and click OK. To remove unwanted cells, rows, or columns along with their contents and formatting, select them and choose Delete > Delete Cells, choosing Shift Cells Left (default), Shift Cells Up, Entire Row, or Entire Column.",
+          "hi": "मौजूदा वर्कशीट में खाली जगह जोड़ने के लिए सेल, पंक्ति या स्तंभ चुनकर Home के Cells समूह में Insert > Insert Cells चुनें: Shift Cells Right, Shift Cells Down (डिफ़ॉल्ट), Entire Row या Entire Column चुनकर OK दबाएं। अनावश्यक सेल, पंक्ति या स्तंभ को डेटा व फॉर्मेट सहित हटाने के लिए उन्हें चुनें और Delete > Delete Cells से Shift Cells Left (डिफ़ॉल्ट), Shift Cells Up, Entire Row या Entire Column चुनें।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Worksheet Cells Group: Insert &amp; Delete Shifts</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Insert Cells Dialog</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Shift Right / Down (Default)</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Delete Cells Dialog</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Shift Left (Default) / Up</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#f87171\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#f87171\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Make Room</tspan><tspan x=\"100\" dy=\"1.2em\">Blank Cells</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Entire Row</tspan><tspan x=\"225\" dy=\"1.2em\">Entire Column</tspan></text><text x=\"375\" y=\"167\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Closes Gaps</tspan><tspan x=\"375\" dy=\"1.2em\">Shifts Entries</tspan></text><text x=\"500\" y=\"202\" fill=\"#f87171\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Entire Row</tspan><tspan x=\"500\" dy=\"1.2em\">Entire Column</tspan></text></svg>",
+          "caption": {
+            "en": "Inserting blank cells/rows/columns (Shift Right/Down) and deleting cell selections (Shift Left/Up) in the Home tab Cells group.",
+            "hi": "Home के Cells समूह से सेल, पंक्ति व स्तंभ जोड़ने (Shift Right/Down) और हटाने (Shift Left/Up) की प्रक्रिया।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Excel shifts neighboring entries when inserting or deleting cells.",
+          "hint": "Start with Excel cell edit options, describe shifting cells to insert or close gaps, mention in the Home Cells group, and conclude with updating rows columns or cells cleanly.",
+          "target_sequence": [
+            { "id": "en_u8_t1", "text": "Excel cell edit options", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u8_t2", "text": "shift cells to make room or close gaps", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u8_t3", "text": "in the Home tab Cells group", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u8_t4", "text": "to update rows columns and cells cleanly", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u8_d1", "category": "conceptual", "text": "leave empty blank holes permanently wherever a cell or row is deleted", "penalty_explanation": "When you delete a cell, row, or column, Excel shifts surrounding entries to fill the gap." },
+            { "id": "en_u8_d2", "category": "technical", "text": "make Shift Cells Down the default delete option instead of Shift Cells Left", "penalty_explanation": "Shift Cells Down is the default option when inserting cells, whereas Shift Cells Left is the default when deleting cells." }
+          ]
+        },
+        "hi": {
+          "prompt": "सेल जोड़ने या हटाने पर एक्सेल द्वारा आसपास के डेटा को खिसकाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक्सेल सेल संपादन विकल्पों से शुरुआत करें, जगह बनाने या खाली स्थान भरने का उल्लेख करें, Home के Cells समूह का संदर्भ दें, और पंक्ति-स्तंभ व सेल व्यवस्थित करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u8_t1", "text": "एक्सेल सेल संपादन विकल्प", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u8_t2", "text": "जगह बनाकर या खाली स्थान भरकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u8_t3", "text": "Home के Cells समूह से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u8_t4", "text": "पंक्ति स्तंभ और सेल को सुव्यवस्थित करते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u8_d1", "category": "conceptual", "text": "सेल या पंक्ति हटाने पर वहाँ हमेशा के लिए खाली छेद छोड़ देते हैं", "penalty_explanation": "सेल, पंक्ति या स्तंभ हटाने पर एक्सेल पास के सेलों को खिसकाकर खाली स्थान भर देता है।" },
+            { "id": "hi_u8_d2", "category": "technical", "text": "हटाते समय Shift Cells Left के बजाय Shift Cells Down डिफ़ॉल्ट रखते हैं", "penalty_explanation": "जोड़ते समय Shift Cells Down और हटाते समय Shift Cells Left डिफ़ॉल्ट विकल्प होता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Insert cells/rows/columns (Shift Cells Down default) or delete them (Shift Cells Left default) from Home > Cells.",
+        "hi": "Home > Cells से Shift Cells Down (डिफ़ॉल्ट) से जोड़ें और Shift Cells Left (डिफ़ॉल्ट) से हटाएं।"
+      }
+    }
+  ]
+}
