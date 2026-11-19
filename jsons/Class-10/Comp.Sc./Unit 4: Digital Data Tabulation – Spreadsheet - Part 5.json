@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 4: Digital Data Tabulation – Spreadsheet - Part 5",
+      "hi": "इकाई 4: डिजिटल डेटा सारणीकरण – स्प्रेडशीट - भाग 5"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Line Charts & Horizontal Bar Charts",
+          "hi": "लाइन चार्ट और क्षैतिज बार चार्ट"
+        },
+        "theory": {
+          "en": "Line Charts display trends over time or across categories using connected data points along text labels, dates, or numeric labels on the horizontal axis. Bar Charts represent worksheet data using horizontal bars with the axis values displayed along the bottom of the graph.",
+          "hi": "लाइन चार्ट (Line Chart) क्षैतिज अक्ष पर टेक्स्ट लेबल, तिथियों या संख्याओं के माध्यम से समय या श्रेणियों के अनुसार रुझान (trends) दिखाते हैं। बार चार्ट (Bar Chart) स्प्रेडशीट डेटा को क्षैतिज पट्टियों (horizontal bars) में दर्शाते हैं, जिनमें अक्ष के मान ग्राफ के नीचे प्रदर्शित होते हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Excel Chart Types: Line Trends &amp; Horizontal Bar Graphs</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Line Chart</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Trends Over Time / Labels</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Bar Chart</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Horizontal Bars | Bottom Axis</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">2-D &amp; 3-D Line</tspan><tspan x=\"100\" dy=\"1.2em\">Insert Line Tab</tspan></text><text x=\"225\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Dates &amp; Years</tspan><tspan x=\"225\" dy=\"1.2em\">Change Pattern</tspan></text><text x=\"375\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Sideways Bars</tspan><tspan x=\"375\" dy=\"1.2em\">2-D / 3-D Bar</tspan></text><text x=\"500\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Value Axis Below</tspan><tspan x=\"500\" dy=\"1.2em\">Easy Comparison</tspan></text></svg>",
+          "caption": {
+            "en": "Contrasting Line charts (tracking trends over time or labels) with horizontal Bar charts (displaying value axis labels along the bottom).",
+            "hi": "लाइन चार्ट (समय या लेबल के अनुसार रुझान) और क्षैतिज बार चार्ट (नीचे मान अक्ष सहित पट्टियां) की तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Line and Bar charts display worksheet trends and values.",
+          "hint": "Start with Line and Bar charts, describe plotting trends and horizontal bars, mention from selected worksheet data, and conclude with showing time changes and bottom axis values.",
+          "target_sequence": [
+            { "id": "en_u17_t1", "text": "Line and Bar charts", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u17_t2", "text": "plot trends and horizontal bars", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u17_t3", "text": "from selected worksheet data", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u17_t4", "text": "to show time trends and bottom axis values", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u17_d1", "category": "conceptual", "text": "place the axis values of a Bar chart floating in outer space above the ceiling", "penalty_explanation": "In a Bar chart, horizontal bars are paired with axis values displayed along the bottom of the graph." },
+            { "id": "en_u17_d2", "category": "technical", "text": "prevent displaying trends over time when data includes years or dates", "penalty_explanation": "Line charts are specifically used to display trends over time across text labels, dates, or numeric labels." }
+          ]
+        },
+        "hi": {
+          "prompt": "लाइन चार्ट और बार चार्ट द्वारा वर्कशीट के रुझान और मान दिखाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "लाइन और बार चार्ट से शुरुआत करें, रुझान व क्षैतिज पट्टियां दिखाने का उल्लेख करें, चयनित डेटा का संदर्भ दें, और समय के बदलाव व नीचे के मान दिखाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u17_t1", "text": "लाइन और बार चार्ट", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u17_t2", "text": "रुझान और क्षैतिज पट्टियां दिखाकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u17_t3", "text": "चयनित वर्कशीट डेटा से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u17_t4", "text": "समय के रुझान और नीचे के अक्ष मान दर्शाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u17_d1", "category": "conceptual", "text": "बार चार्ट के अक्ष मानों को ग्राफ के नीचे दिखाने के बजाय छत के ऊपर रखते हैं", "penalty_explanation": "बार चार्ट में क्षैतिज बार दिखाई देते हैं और उनके अक्ष के मान ग्राफ के नीचे प्रदर्शित होते हैं।" },
+            { "id": "hi_u17_d2", "category": "technical", "text": "तिथियों या वर्षों के डेटा में समय के अनुसार रुझान दिखाने से रोकते हैं", "penalty_explanation": "लाइन चार्ट का उपयोग समय के साथ होने वाले बदलावों या रुझानों को दिखाने के लिए किया जाता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Line charts display trends over time or labels, while Bar charts use horizontal bars with axis values shown along the bottom.",
+        "hi": "लाइन चार्ट समय या लेबल के अनुसार रुझान दिखाता है, जबकि बार चार्ट क्षैतिज बार व नीचे अक्ष मान दिखाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Area Charts & Scientific Scatter (XY) Charts",
+          "hi": "एरिया चार्ट और वैज्ञानिक स्कैटर (XY) चार्ट"
+        },
+        "theory": {
+          "en": "An Area Chart is a line chart whose region below each line is filled with color, and a stacked area chart shows each value's contribution to a total over time. A Scatter Chart (XY chart) plots scientific XY data to examine whether a relationship exists between variable X and variable Y.",
+          "hi": "एरिया चार्ट (Area Chart) एक ऐसा लाइन चार्ट है जिसके नीचे का क्षेत्र रंगों से भरा होता है, और स्टैक्ड एरिया चार्ट समय के साथ कुल योग में प्रत्येक मान का योगदान दिखाता है। स्कैटर चार्ट (Scatter / XY Chart) वैज्ञानिक XY डेटा दिखाता है और यह जांचने में मदद करता है कि चर X और चर Y के बीच संबंध है या नहीं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Area Fills &amp; Scatter (XY) Variable Relationships</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Area Chart</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Color Below Line | Stacked Total</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Scatter (XY) Chart</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Scientific X vs. Y Relation</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Shaded Lines</tspan><tspan x=\"100\" dy=\"1.2em\">2-D / 3-D Area</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Part of Total</tspan><tspan x=\"225\" dy=\"1.2em\">Over Time</tspan></text><text x=\"375\" y=\"167\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">XY Coordinates</tspan><tspan x=\"375\" dy=\"1.2em\">Insert Scatter</tspan></text><text x=\"500\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Variable Link</tspan><tspan x=\"500\" dy=\"1.2em\">Data Analysis</tspan></text></svg>",
+          "caption": {
+            "en": "Contrasting Area charts (colored fills below lines and stacked totals over time) with Scatter/XY charts for scientific X-Y variable relationships.",
+            "hi": "एरिया चार्ट (रेखा के नीचे रंग व कुल योग में योगदान) और स्कैटर चार्ट (वैज्ञानिक X और Y संबंध) की तुलना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Area and Scatter charts visualize stacked totals and X-Y relationships.",
+          "hint": "Start with Area and Scatter charts, describe filling areas and plotting XY pairs, mention across worksheet series, and conclude with showing total shares and variable relationships.",
+          "target_sequence": [
+            { "id": "en_u18_t1", "text": "Area and Scatter charts", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u18_t2", "text": "fill line regions and plot XY pairs", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u18_t3", "text": "across numeric worksheet series", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u18_t4", "text": "to show total share and X-Y links", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u18_d1", "category": "conceptual", "text": "leave the space below every line completely transparent with zero fill", "penalty_explanation": "An Area chart is a line chart with the areas below the lines filled with colors." },
+            { "id": "en_u18_d2", "category": "technical", "text": "prohibit checking whether a relationship exists between variables X and Y", "penalty_explanation": "Scatter (XY) charts show scientific XY data and are often used to find out if there is a relationship between variables X and Y." }
+          ]
+        },
+        "hi": {
+          "prompt": "एरिया चार्ट और स्कैटर चार्ट द्वारा कुल योगदान और X-Y संबंध दिखाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "एरिया और स्कैटर चार्ट से शुरुआत करें, क्षेत्र भरने व XY बिंदु दिखाने का उल्लेख करें, वर्कशीट डेटा का संदर्भ दें, और कुल योगदान व X-Y संबंध दर्शाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u18_t1", "text": "एरिया और स्कैटर चार्ट", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u18_t2", "text": "रेखा के नीचे रंग भरकर और XY मान दिखाकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u18_t3", "text": "वर्कशीट के आंकड़ों पर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u18_t4", "text": "कुल में योगदान और X-Y संबंध दर्शाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u18_d1", "category": "conceptual", "text": "रेखा के नीचे के पूरे क्षेत्र को बिना किसी रंग के पूरी तरह खाली छोड़ते हैं", "penalty_explanation": "एरिया चार्ट एक लाइन चार्ट है जिसके नीचे के क्षेत्रों को रंगों से भरा जाता है।" },
+            { "id": "hi_u18_d2", "category": "technical", "text": "चर X और चर Y के बीच संबंध की जांच करने से रोकते हैं", "penalty_explanation": "स्कैटर (XY) चार्ट वैज्ञानिक XY डेटा दिखाता है और चर X व Y के बीच संबंध जानने में मदद करता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Area charts fill regions below lines (stacked area shows contribution to a total over time), while Scatter (XY) charts test X-Y relationships.",
+        "hi": "एरिया चार्ट रेखा के नीचे रंग भरता है (स्टैक्ड कुल में योगदान दिखाता है), जबकि स्कैटर (XY) चार्ट X-Y संबंध दर्शाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Enabling the Developer Tab & Recording Macros",
+          "hi": "डेवलपर टैब सक्रिय करना और मैक्रो (Macro) रिकॉर्ड करना"
+        },
+        "theory": {
+          "en": "A macro groups a series of commands so you can automate repeated steps and save time. Because the Developer tab is hidden by default, display it via File > Options > Customize Ribbon > check Developer under Main Tabs > OK. Then plan your steps and click Record Macro in the Developer Code group: enter a macro name (starting with a letter, no spaces or cell references, not case-sensitive), optional Shortcut Key, and Description before clicking OK.",
+          "hi": "मैक्रो (Macro) कमांडों का ऐसा समूह है जो बार-बार दोहराए जाने वाले कार्यों को स्वचालित करके समय बचाता है। चूंकि Developer टैब डिफ़ॉल्ट रूप से नहीं दिखता, इसे File > Options > Customize Ribbon > Main Tabs में Developer चुनकर और OK दबाकर लाएं। फिर चरणों की योजना बनाकर Developer के Code समूह में Record Macro चुनें: नाम लिखें (पहला अक्षर अक्षर हो, रिक्त स्थान या सेल संदर्भ न हो), शॉर्टकट कुंजी व विवरण भरें और OK दबाएं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Recording Excel Macros: Developer Tab &amp; Setup Box</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Show Developer</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Customize Ribbon</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Plan &amp; Name</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Letter Start | No Space</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Shortcut &amp; Desc</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Record Macro Box</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">File &rarr; Options</tspan><tspan x=\"120\" dy=\"1.2em\">Main Tabs Check</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">No Cell Ref Name</tspan><tspan x=\"300\" dy=\"1.2em\">Case-Insensitive</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Code Group</tspan><tspan x=\"480\" dy=\"1.2em\">Click OK</tspan></text></svg>",
+          "caption": {
+            "en": "Enabling the Developer tab via Customize Ribbon and configuring Macro Name, Shortcut Key, and Description in Record Macro.",
+            "hi": "Customize Ribbon से Developer टैब दिखाना और Record Macro में नाम, शॉर्टकट कुंजी व विवरण भरना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how users enable the Developer tab and configure a new macro.",
+          "hint": "Start with Excel macro setup, describe enabling Developer and naming macros, mention in Customize Ribbon and Record Macro, and conclude with automating repeated steps cleanly.",
+          "target_sequence": [
+            { "id": "en_u19_t1", "text": "Excel macro setup", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u19_t2", "text": "shows Developer and names valid macros", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u19_t3", "text": "in Customize Ribbon and Record Macro", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u19_t4", "text": "to automate repeated commands cleanly", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u19_d1", "category": "conceptual", "text": "require starting a macro name with spaces and cell references like A1", "penalty_explanation": "The first character of a macro name must be a letter and cannot contain spaces or cell references." },
+            { "id": "en_u19_d2", "category": "technical", "text": "display the Developer tab by default without ever opening Options", "penalty_explanation": "The Developer tab does not appear by default; you enable it via File > Options > Customize Ribbon." }
+          ]
+        },
+        "hi": {
+          "prompt": "एक्सेल में Developer टैब सक्रिय करके नया मैक्रो सेट करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "एक्सेल मैक्रो सेटअप से शुरुआत करें, Developer दिखाने और नाम लिखने का उल्लेख करें, Customize Ribbon व Record Macro का संदर्भ दें, और बार-बार होने वाले कार्य स्वचालित करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u19_t1", "text": "एक्सेल मैक्रो सेटअप", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u19_t2", "text": "Developer दिखाकर और मान्य नाम लिखकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u19_t3", "text": "Customize Ribbon और Record Macro में", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u19_t4", "text": "दोहराए जाने वाले कार्यों को स्वचालित करता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u19_d1", "category": "conceptual", "text": "मैक्रो का नाम रिक्त स्थान या A1 जैसे सेल संदर्भ से शुरू करना अनिवार्य करता है", "penalty_explanation": "मैक्रो के नाम का पहला अक्षर अंग्रेजी अक्षर होना चाहिए और उसमें स्पेस या सेल संदर्भ नहीं होना चाहिए।" },
+            { "id": "hi_u19_d2", "category": "technical", "text": "बिना Options खोले डिफ़ॉल्ट रूप से Developer टैब पहले से ही दिखाता है", "penalty_explanation": "Developer टैब डिफ़ॉल्ट रूप से नहीं दिखता; इसे File > Options > Customize Ribbon से सक्रिय किया जाता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Enable Developer under File > Options > Customize Ribbon, then use Record Macro with a letter-first non-space name and optional shortcut.",
+        "hi": "File > Options > Customize Ribbon से Developer सक्रिय करें और अक्षर से शुरू होने वाले मान्य नाम से Record Macro चलाएं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Storing, Stopping & Running Recorded Macros",
+          "hi": "रिकॉर्ड किए गए मैक्रो को सहेजना, रोकना और चलाना"
+        },
+        "theory": {
+          "en": "In Store Macro In, choose This Workbook (saves in the current workbook), New Workbook (available in new workbooks during the current Excel session), or Personal Macro Workbook (available whenever you use Excel across worksheets). After clicking OK and performing your actions, click Stop Recording in the Developer Code group to finish and run the macro whenever needed.",
+          "hi": "Store Macro In सूची में This Workbook (वर्तमान वर्कबुक में सहेजता है), New Workbook (वर्तमान सत्र की नई वर्कबुकों के लिए) या Personal Macro Workbook (एक्सेल के हर उपयोग व शीट में उपलब्ध) चुनें। OK दबाकर कार्य पूरा करने के बाद Developer के Code समूह में Stop Recording चुनें और आवश्यकता पड़ने पर मैक्रो चलाएं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Macro Storage Scope, Stop Recording &amp; Playback</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">This &amp; New Book</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Current File or Session</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Personal Macro</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Any Excel Sheet Always</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Stop Recording</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Code Group | Replay</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#c084fc\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Store Macro In</tspan><tspan x=\"120\" dy=\"1.2em\">Scoped Reuse</tspan></text><text x=\"300\" y=\"202\" fill=\"#c084fc\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Global Access</tspan><tspan x=\"300\" dy=\"1.2em\">Whenever Used</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Ends Recording</tspan><tspan x=\"480\" dy=\"1.2em\">Run On Demand</tspan></text></svg>",
+          "caption": {
+            "en": "Choosing where to store macros (This Workbook, New Workbook, Personal Macro Workbook), clicking Stop Recording, and replaying commands.",
+            "hi": "मैक्रो सहेजने का स्थान चुनना (This Workbook, New Workbook, Personal Macro Workbook), Stop Recording दबाना और चलाना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how users store, stop, and replay recorded Excel macros.",
+          "hint": "Start with Recorded Excel macros, describe choosing storage scope and stopping recording, mention in the Developer tab, and conclude with replaying command steps whenever needed.",
+          "target_sequence": [
+            { "id": "en_u20_t1", "text": "Recorded Excel macros", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u20_t2", "text": "pick storage scope and stop recording", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u20_t3", "text": "from the Developer Code group", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u20_t4", "text": "to replay saved steps whenever needed", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u20_d1", "category": "conceptual", "text": "make Personal Macro Workbook usable only inside one single cell", "penalty_explanation": "Personal Macro Workbook makes a macro available whenever you use Excel, regardless of which worksheet you are using." },
+            { "id": "en_u20_d2", "category": "technical", "text": "keep recording keystrokes forever even after Stop Recording is clicked", "penalty_explanation": "Choosing Stop Recording in the Code group of the Developer tab stops recording keystrokes so the macro is complete." }
+          ]
+        },
+        "hi": {
+          "prompt": "रिकॉर्ड किए गए एक्सेल मैक्रो को सहेजने, रोकने और चलाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "रिकॉर्ड किए गए मैक्रो से शुरुआत करें, संग्रहण विकल्प चुनने व रिकॉर्डिंग रोकने का उल्लेख करें, Developer के Code समूह का संदर्भ दें, और आवश्यकता पड़ने पर चलाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u20_t1", "text": "रिकॉर्ड किए गए मैक्रो", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u20_t2", "text": "संग्रहण विकल्प चुनकर और रिकॉर्डिंग रोककर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u20_t3", "text": "Developer के Code समूह से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u20_t4", "text": "आवश्यकता पड़ने पर चरणों को दोहराते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u20_d1", "category": "conceptual", "text": "Personal Macro Workbook को केवल एक ही सेल तक सीमित रखते हैं", "penalty_explanation": "Personal Macro Workbook चुनने से मैक्रो हर वर्कशीट और एक्सेल के उपयोग के समय उपलब्ध रहता है।" },
+            { "id": "hi_u20_d2", "category": "technical", "text": "Stop Recording दबाने के बाद भी कीबोर्ड की हर गतिविधि हमेशा रिकॉर्ड करते रहते हैं", "penalty_explanation": "Developer के Code समूह में Stop Recording चुनने पर कीस्ट्रोक रिकॉर्ड होना बंद हो जाता है और मैक्रो पूरा हो जाता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Store macros in This Workbook, New Workbook, or Personal Macro Workbook, click Stop Recording to finish, and run them anytime to save time.",
+        "hi": "This Workbook, New Workbook या Personal Macro Workbook में मैक्रो रखें, Stop Recording से पूरा करें और कभी भी चलाएं।"
+      }
+    }
+  ]
+}
