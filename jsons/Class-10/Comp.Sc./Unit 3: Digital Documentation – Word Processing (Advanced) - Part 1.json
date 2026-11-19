@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "class": "Class 10",
+    "subject": "Computer Science",
+    "chapter_title": {
+      "en": "Unit 3: Digital Documentation – Word Processing (Advanced) - Part 1",
+      "hi": "इकाई 3: डिजिटल दस्तावेज़ीकरण – वर्ड प्रोसेसिंग (उन्नत) - भाग 1"
+    },
+    "scoring_model": {
+      "dual_language_mastery_max": 20
+    }
+  },
+  "learning_units": [
+    {
+      "instruction": {
+        "title": {
+          "en": "Word Processing Tools & MS Word Overview",
+          "hi": "वर्ड प्रोसेसिंग उपकरण और एमएस वर्ड का परिचय"
+        },
+        "theory": {
+          "en": "Microsoft Word is an application software developed by Microsoft Inc. used to create and edit professional documents such as letters, reports, forms, business cards, templates, booklets, and resumes. Word processing refers to typing, editing, and formatting textual information on a computer. Common word processing tools include MS Word, WordPad, Notepad, and WordStar.",
+          "hi": "माइक्रोसॉफ्ट वर्ड (Microsoft Word) माइक्रोसॉफ्ट द्वारा विकसित एक एप्लिकेशन सॉफ्टवेयर है, जिसका उपयोग पत्र, रिपोर्ट, फॉर्म, बिजनेस कार्ड, टेम्पलेट, बुकलेट और रिज्यूमे जैसे व्यावसायिक दस्तावेज़ बनाने व संपादित करने के लिए किया जाता है। कंप्यूटर पर पाठ को टाइप करने, संपादित करने और फॉर्मेट करने का कार्य वर्ड प्रोसेसिंग कहलाता है। प्रमुख वर्ड प्रोसेसिंग सॉफ्टवेयर में एमएस वर्ड, वर्डपैड, नोटपैड और वर्डस्टार शामिल हैं।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Word Processing Tools &amp; MS Word Document Creation</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Word Processors</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">MS Word, WordPad, Notepad</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Text Processing</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Type, Edit &amp; Format</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Professional Output</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Letters, Reports, Resumes</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">WordStar Also</tspan><tspan x=\"120\" dy=\"1.2em\">App Software</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Textual Data</tspan><tspan x=\"300\" dy=\"1.2em\">Document Layout</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Forms &amp; Cards</tspan><tspan x=\"480\" dy=\"1.2em\">Booklets &amp; Docs</tspan></text></svg>",
+          "caption": {
+            "en": "Overview of word processing software such as MS Word, WordPad, Notepad, and WordStar for typing, editing, and formatting professional documents.",
+            "hi": "व्यावसायिक दस्तावेज़ टाइप करने, संपादित करने और फॉर्मेट करने के लिए एमएस वर्ड, वर्डपैड, नोटपैड और वर्डस्टार जैसे वर्ड प्रोसेसिंग सॉफ्टवेयर का परिचय।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Microsoft Word produces polished documents.",
+          "hint": "Start with Microsoft Word software, describe typing editing and formatting text, mention inside structured document layouts, and conclude with creating letters reports and resumes.",
+          "target_sequence": [
+            { "id": "en_u1_t1", "text": "Microsoft Word software", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u1_t2", "text": "types edits and formats text", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u1_t3", "text": "inside structured document pages", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u1_t4", "text": "to create letters reports and resumes", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u1_d1", "category": "conceptual", "text": "operates exclusively as a hardware motherboard inside the CPU tower", "penalty_explanation": "Microsoft Word is word processing application software, not a physical circuit board inside the CPU." },
+            { "id": "en_u1_d2", "category": "technical", "text": "prevents users from editing or formatting typed letters and reports", "penalty_explanation": "Word processing specifically enables typing, editing, deleting, and formatting text such as letters and reports." }
+          ]
+        },
+        "hi": {
+          "prompt": "माइक्रोसॉफ्ट वर्ड द्वारा दस्तावेज़ तैयार करने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "माइक्रोसॉफ्ट वर्ड सॉफ्टवेयर से शुरुआत करें, पाठ टाइप संपादित और फॉर्मेट करने का उल्लेख करें, दस्तावेज़ पृष्ठों का संदर्भ दें, और पत्र रिपोर्ट व रिज्यूमे बनाने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u1_t1", "text": "माइक्रोसॉफ्ट वर्ड सॉफ्टवेयर", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u1_t2", "text": "पाठ टाइप संपादित और फॉर्मेट करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u1_t3", "text": "व्यवस्थित दस्तावेज़ पृष्ठों पर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u1_t4", "text": "पत्र रिपोर्ट और रिज्यूमे तैयार करता है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u1_d1", "category": "conceptual", "text": "केवल सीपीयू के अंदर लगने वाला एक भौतिक मदरबोर्ड हार्डवेयर है", "penalty_explanation": "माइक्रोसॉफ्ट वर्ड एक एप्लिकेशन सॉफ्टवेयर है, कोई भौतिक हार्डवेयर पुर्जा नहीं।" },
+            { "id": "hi_u1_d2", "category": "technical", "text": "टाइप किए गए पत्र और रिपोर्ट में किसी भी प्रकार के संपादन या फॉर्मेटिंग से रोकता है", "penalty_explanation": "वर्ड प्रोसेसिंग का मुख्य कार्य ही पाठ को टाइप करना, संपादित करना और फॉर्मेट करना है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "MS Word is word processing software (alongside WordPad, Notepad, and WordStar) used to type, edit, and format letters, reports, forms, and resumes.",
+        "hi": "एमएस वर्ड (वर्डपैड, नोटपैड और वर्डस्टार के साथ) एक वर्ड प्रोसेसिंग सॉफ्टवेयर है जिससे पत्र, रिपोर्ट, फॉर्म और रिज्यूमे टाइप, संपादित व फॉर्मेट किए जाते हैं।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Core Word Processing Capabilities & Object Linking",
+          "hi": "वर्ड प्रोसेसिंग की प्रमुख क्षमताएं और ऑब्जेक्ट लिंकिंग"
+        },
+        "theory": {
+          "en": "MS Word offers extensive document features beyond basic typing: formatting styles (bold, italics, underline, colors, shading), structured tables, online help, and compatibility with laser, inkjet, and dot matrix printers. It also supports object linking (inserting sound, video, pictures, photographs, and sheets), sending documents via email, find and replace, spelling and grammar checks, auto-correct, bookmarks, and merging files created in Word or other programs.",
+          "hi": "एमएस वर्ड सामान्य टाइपिंग के अलावा कई उन्नत सुविधाएं देता है: बोल्ड, इटैलिक, अंडरलाइन, रंग व शेडिंग जैसी फॉर्मेटिंग, तालिकाएं (tables), ऑनलाइन सहायता तथा लेज़र, इंकजेट और डॉट मैट्रिक्स प्रिंटरों का समर्थन। इसमें ऑब्जेक्ट लिंकिंग (ध्वनि, मूवी, चित्र, फोटो और शीट जोड़ना), ई-मेल से दस्तावेज़ भेजना, फाइंड व रिप्लेस, स्पेलिंग व ग्रामर जांच, ऑटो-करेक्ट, बुकमार्क और विभिन्न फाइलों को मर्ज करने की सुविधा भी होती है।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Advanced Capabilities of MS Word Processing</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Format &amp; Tables</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Bold, Italic, Shading</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Object Linking</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Sound, Video, Sheets</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Review &amp; Merge</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Spell, Grammar, Mail</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Structured Grids</tspan><tspan x=\"120\" dy=\"1.2em\">Printer Support</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Photos &amp; Charts</tspan><tspan x=\"300\" dy=\"1.2em\">Rich Media</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">AutoCorrect</tspan><tspan x=\"480\" dy=\"1.2em\">File Merging</tspan></text></svg>",
+          "caption": {
+            "en": "MS Word capabilities combining text formatting and tables with object linking (sound, video, pictures, sheets), spell/grammar checks, and file merging.",
+            "hi": "एमएस वर्ड की क्षमताएं जिनमें फॉर्मेटिंग व तालिकाएं, ऑब्जेक्ट लिंकिंग (ध्वनि, वीडियो, चित्र, शीट), स्पेलिंग/ग्रामर जांच और फाइल मर्जिंग शामिल हैं।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how object linking and editing tools enrich Word documents.",
+          "hint": "Start with MS Word editing tools, describe linking media objects and checking spelling, mention inside rich text documents, and conclude with sharing and merging files easily.",
+          "target_sequence": [
+            { "id": "en_u2_t1", "text": "MS Word editing tools", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u2_t2", "text": "link media objects and check spelling", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u2_t3", "text": "inside formatted text documents", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u2_t4", "text": "to merge and share files easily", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u2_d1", "category": "conceptual", "text": "forbid inserting pictures sound clips or tables into any Word document", "penalty_explanation": "MS Word provides object linking to insert sound, video, pictures, and sheets, along with tables for data." },
+            { "id": "en_u2_d2", "category": "technical", "text": "remove all spelling grammar and auto-correct checks from documents", "penalty_explanation": "MS Word includes spelling checks, grammar checking, auto-correct, bookmarks, and find and replace." }
+          ]
+        },
+        "hi": {
+          "prompt": "एमएस वर्ड की ऑब्जेक्ट लिंकिंग और संपादन सुविधाओं द्वारा दस्तावेज़ समृद्ध करने के क्रम को व्यवस्थित करें।",
+          "hint": "एमएस वर्ड संपादन उपकरणों से शुरुआत करें, मीडिया ऑब्जेक्ट जोड़ने और स्पेलिंग जांचने का उल्लेख करें, फॉर्मेट किए गए दस्तावेज़ों का संदर्भ दें, और फाइलों को मर्ज व साझा करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u2_t1", "text": "एमएस वर्ड संपादन उपकरण", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u2_t2", "text": "मीडिया ऑब्जेक्ट जोड़कर और स्पेलिंग जांचकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u2_t3", "text": "फॉर्मेट किए गए दस्तावेज़ों के भीतर", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u2_t4", "text": "फाइलों को मर्ज और साझा करना आसान बनाते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u2_d1", "category": "conceptual", "text": "दस्तावेज़ में चित्र ध्वनि या तालिका जोड़ने पर पूरी तरह रोक लगाते हैं", "penalty_explanation": "ऑब्जेक्ट लिंकिंग से ध्वनि, मूवी, चित्र व शीट जोड़े जा सकते हैं और तालिकाओं से जानकारी व्यवस्थित की जाती है।" },
+            { "id": "hi_u2_d2", "category": "technical", "text": "दस्तावेज़ से स्पेलिंग जांच ग्रामर जांच और ऑटो-करेक्ट हटा देते हैं", "penalty_explanation": "एमएस वर्ड में स्पेलिंग व ग्रामर जांच, ऑटो-करेक्ट, बुकमार्क तथा फाइंड व रिप्लेस जैसी सुविधाएं उपलब्ध हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "MS Word supports formatting, tables, object linking (sound, movie, pictures, sheets), email transfer, spelling/grammar checks, auto-correct, and merging files.",
+        "hi": "एमएस वर्ड फॉर्मेटिंग, तालिकाओं, ऑब्जेक्ट लिंकिंग (ध्वनि, मूवी, चित्र, शीट), ई-मेल भेजने, स्पेलिंग/ग्रामर जांच और फाइल मर्ज करने की सुविधा देता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Creating Documents & Built-In / Online Templates",
+          "hi": "दस्तावेज़ बनाना और अंतर्निहित व ऑनलाइन टेम्पलेट"
+        },
+        "theory": {
+          "en": "Templates in MS Word provide readymade layouts and formatted elements—such as cover pages, resumes, cover letters, agendas, business cards, and faxes—so users can start quickly without designing from scratch. To create a resume using a template, click the Office button or File tab, choose New, select Resumes and Cover Letters under templates, pick a preferred design style, download or create it, customize the necessary details, and save the finished document.",
+          "hi": "एमएस वर्ड के टेम्पलेट तैयार लेआउट और फॉर्मेट किए गए तत्व—जैसे कवर पेज, रिज्यूमे, कवर लेटर, एजेंडा, बिजनेस कार्ड और फैक्स—प्रदान करते हैं। टेम्पलेट से रिज्यूमे बनाने के लिए ऑफिस बटन या File टैब पर क्लिक करें, New चुनें, टेम्पलेट्स में Resumes and Cover Letters चुनें, मनपसंद शैली चुनकर डाउनलोड या क्रिएट करें, आवश्यक जानकारी बदलें और दस्तावेज़ को सेव करें।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Creating a Document Using MS Word Templates</text><rect x=\"45\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"120\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">File / New</text><text x=\"120\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Select Template Style</text><rect x=\"225\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"95\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Edit Details</text><text x=\"300\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Customize Content</text><rect x=\"405\" y=\"75\" width=\"150\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"480\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Save Resume</text><text x=\"480\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">Store Finished File</text><line x1=\"195\" y1=\"102\" x2=\"225\" y2=\"102\" stroke=\"#38bdf8\" stroke-width=\"2\"/><polygon points=\"225,102 217,98 217,106\" fill=\"#38bdf8\"/><line x1=\"375\" y1=\"102\" x2=\"405\" y2=\"102\" stroke=\"#4ade80\" stroke-width=\"2\"/><polygon points=\"405,102 397,98 397,106\" fill=\"#4ade80\"/><line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"190\" stroke=\"#38bdf8\" stroke-width=\"1.5\"/><line x1=\"480\" y1=\"130\" x2=\"480\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><text x=\"120\" y=\"172\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"120\" dy=\"0\">Resumes &amp; Letters</tspan><tspan x=\"120\" dy=\"1.2em\">Built-In &amp; Online</tspan></text><text x=\"300\" y=\"202\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"300\" dy=\"0\">Fill Information</tspan><tspan x=\"300\" dy=\"1.2em\">Make Changes</tspan></text><text x=\"480\" y=\"172\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"480\" dy=\"0\">Business Cards</tspan><tspan x=\"480\" dy=\"1.2em\">Cover Pages</tspan></text></svg>",
+          "caption": {
+            "en": "Workflow for creating a document from MS Word templates (resumes, cover letters, agendas, business cards), editing details, and saving.",
+            "hi": "एमएस वर्ड टेम्पलेट (रिज्यूमे, कवर लेटर, एजेंडा, बिजनेस कार्ड) से दस्तावेज़ बनाने, जानकारी बदलने और सेव करने की प्रक्रिया।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how Word templates speed up creating formatted documents like resumes.",
+          "hint": "Start with Word template galleries, describe providing readymade formatted layouts, mention through File New selection, and conclude with editing and saving resumes easily.",
+          "target_sequence": [
+            { "id": "en_u3_t1", "text": "Word template galleries", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u3_t2", "text": "provide readymade formatted layouts", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u3_t3", "text": "through File New selection", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u3_t4", "text": "to edit and save resumes easily", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u3_d1", "category": "conceptual", "text": "erase all text automatically before you can save a completed resume", "penalty_explanation": "After filling in required information in a template, you save the document to keep your customized resume." },
+            { "id": "en_u3_d2", "category": "technical", "text": "offer zero pre-designed styles for resumes cover letters or agendas", "penalty_explanation": "MS Word provides a wide selection of templates including resumes, cover letters, agendas, business cards, and faxes." }
+          ]
+        },
+        "hi": {
+          "prompt": "एमएस वर्ड टेम्पलेट द्वारा रिज्यूमे जैसे दस्तावेज़ तेजी से बनाने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "वर्ड टेम्पलेट गैलरी से शुरुआत करें, तैयार फॉर्मेट लेआउट देने का उल्लेख करें, File New चयन का संदर्भ दें, और रिज्यूमे संपादित व सेव करने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u3_t1", "text": "वर्ड टेम्पलेट गैलरी", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u3_t2", "text": "तैयार फॉर्मेट लेआउट प्रदान करके", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u3_t3", "text": "File New विकल्प के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u3_t4", "text": "रिज्यूमे संपादित और सेव करना आसान बनाती है", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u3_d1", "category": "conceptual", "text": "पूरा रिज्यूमे लिखने के बाद सेव करने से पहले सारा लिखा पाठ मिटा देती है", "penalty_explanation": "आवश्यक जानकारी भरने के बाद दस्तावेज़ को सेव किया जाता है ताकि आपका रिज्यूमे सुरक्षित रहे।" },
+            { "id": "hi_u3_d2", "category": "technical", "text": "रिज्यूमे कवर लेटर या एजेंडा के लिए कोई तैयार डिज़ाइन नहीं देती", "penalty_explanation": "एमएस वर्ड में रिज्यूमे, कवर लेटर, एजेंडा, बिजनेस कार्ड और फैक्स के अनेक तैयार टेम्पलेट उपलब्ध हैं।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Templates in MS Word (accessed via File/Office button > New) supply readymade designs for resumes, cover letters, agendas, and cards that you edit and save.",
+        "hi": "एमएस वर्ड के टेम्पलेट (File/ऑफिस बटन > New से) रिज्यूमे, कवर लेटर, एजेंडा और कार्ड के तैयार लेआउट देते हैं जिन्हें संपादित करके सेव किया जाता है।"
+      }
+    },
+    {
+      "instruction": {
+        "title": {
+          "en": "Saving & Opening Documents in MS Word",
+          "hi": "एमएस वर्ड में दस्तावेज़ सेव करना और खोलना"
+        },
+        "theory": {
+          "en": "To save a document in MS Word, click the Office button or File tab, select Save from the menu, enter a descriptive file name in the Save dialog box, and click Save. To open an existing document later, click the Office button or File tab, choose Open (or select from recent documents), locate the saved file on disk in the Open dialog box, click its name, and click Open to load it onto the screen.",
+          "hi": "एमएस वर्ड में फाइल सेव करने के लिए ऑफिस बटन या File टैब पर क्लिक करें, Save विकल्प चुनें, सेव डायलॉग बॉक्स में फाइल का नाम टाइप करें और Save बटन दबाएं। पहले से सेव की गई फाइल खोलने के लिए ऑफिस बटन या File टैब से Open चुनें, Open डायलॉग बॉक्स में डिस्क पर सहेजी गई फाइल खोजें, उसका नाम क्लिक करें और Open बटन दबाकर उसे स्क्रीन पर खोलें।"
+        },
+        "media": {
+          "type": "svg",
+          "svg_code": "<svg viewBox=\"0 0 600 240\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"240\" rx=\"10\" fill=\"#0f172a\"/><rect x=\"40\" y=\"20\" width=\"520\" height=\"35\" rx=\"6\" fill=\"#1e293b\" stroke=\"#38bdf8\"/><text x=\"300\" y=\"38\" fill=\"#38bdf8\" font-family=\"monospace\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\">Saving to Disk &amp; Opening Saved Word Files</text><rect x=\"45\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"162\" y=\"95\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Saving a Document</text><text x=\"162\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">File / Office &rarr; Save &rarr; Name</text><rect x=\"320\" y=\"75\" width=\"235\" height=\"55\" rx=\"6\" fill=\"#1e293b\" stroke=\"#334155\"/><text x=\"437\" y=\"95\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\">Opening a Document</text><text x=\"437\" y=\"115\" fill=\"#94a3b8\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\" dominant-baseline=\"central\">File / Office &rarr; Open &rarr; Select</text><line x1=\"100\" y1=\"130\" x2=\"100\" y2=\"155\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"225\" y1=\"130\" x2=\"225\" y2=\"190\" stroke=\"#4ade80\" stroke-width=\"1.5\"/><line x1=\"375\" y1=\"130\" x2=\"375\" y2=\"155\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"190\" stroke=\"#fbbf24\" stroke-width=\"1.5\"/><text x=\"100\" y=\"167\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"100\" dy=\"0\">Dialog Box</tspan><tspan x=\"100\" dy=\"1.2em\">Type File Name</tspan></text><text x=\"225\" y=\"202\" fill=\"#4ade80\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"225\" dy=\"0\">Click Save</tspan><tspan x=\"225\" dy=\"1.2em\">Stores on Disk</tspan></text><text x=\"375\" y=\"167\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"375\" dy=\"0\">Saved List</tspan><tspan x=\"375\" dy=\"1.2em\">Pick Document</tspan></text><text x=\"500\" y=\"202\" fill=\"#fbbf24\" font-family=\"monospace\" font-size=\"11\" text-anchor=\"middle\"><tspan x=\"500\" dy=\"0\">Click Open</tspan><tspan x=\"500\" dy=\"1.2em\">Loads on Screen</tspan></text></svg>",
+          "caption": {
+            "en": "File storage and retrieval steps in MS Word: entering a file name in the Save dialog and selecting a saved document in the Open dialog.",
+            "hi": "एमएस वर्ड में फाइल सहेजने और खोलने के चरण: Save डायलॉग में नाम दर्ज करना और Open डायलॉग से फाइल चुनना।"
+          }
+        }
+      },
+      "challenges": {
+        "en": {
+          "prompt": "Reconstruct the sentence explaining how users save a new file and reopen it from disk later.",
+          "hint": "Start with MS Word users, describe naming files in Save and choosing files in Open, mention through the File or Office menu, and conclude with storing and viewing documents on screen.",
+          "target_sequence": [
+            { "id": "en_u4_t1", "text": "MS Word users", "role_hint": "Tile 1: Core Subject or Component" },
+            { "id": "en_u4_t2", "text": "name files in Save and pick files in Open", "role_hint": "Tile 2: Primary Action or Mechanism" },
+            { "id": "en_u4_t3", "text": "through the File or Office menu", "role_hint": "Tile 3: Operational Path or Context" },
+            { "id": "en_u4_t4", "text": "to store and view documents on screen", "role_hint": "Tile 4: Direct System Outcome" }
+          ],
+          "distractors": [
+            { "id": "en_u4_d1", "category": "conceptual", "text": "can never reopen a saved document once the Save button is clicked", "penalty_explanation": "Saved documents remain on disk and can be opened anytime via the Open command." },
+            { "id": "en_u4_d2", "category": "technical", "text": "bypass naming files completely when saving to a disk location", "penalty_explanation": "Saving a file displays a dialog box where you type the file name before clicking Save." }
+          ]
+        },
+        "hi": {
+          "prompt": "एमएस वर्ड में फाइल सेव करने और डिस्क से दोबारा खोलने की प्रक्रिया को सही क्रम में व्यवस्थित करें।",
+          "hint": "एमएस वर्ड उपयोगकर्ता से शुरुआत करें, Save में नाम लिखने और Open से फाइल चुनने का उल्लेख करें, File या Office मेन्यू का संदर्भ दें, और दस्तावेज़ सहेजने व खोलने पर समाप्त करें।",
+          "target_sequence": [
+            { "id": "hi_u4_t1", "text": "एमएस वर्ड उपयोगकर्ता", "role_hint": "ब्लॉक 1: मुख्य घटक या विषय" },
+            { "id": "hi_u4_t2", "text": "Save में नाम लिखकर और Open से फाइल चुनकर", "role_hint": "ब्लॉक 2: प्राथमिक कार्य या क्रिया" },
+            { "id": "hi_u4_t3", "text": "File या Office मेन्यू के माध्यम से", "role_hint": "ब्लॉक 3: परिचालन माध्यम या संदर्भ" },
+            { "id": "hi_u4_t4", "text": "दस्तावेज़ को डिस्क में सहेजते और स्क्रीन पर खोलते हैं", "role_hint": "ब्लॉक 4: मुख्य प्रणाली परिणाम" }
+          ],
+          "distractors": [
+            { "id": "hi_u4_d1", "category": "conceptual", "text": "Save बटन दबाने के बाद सेव की गई फाइल को कभी दोबारा नहीं खोल सकते", "penalty_explanation": "डिस्क में सेव की गई फाइल को Open कमांड के माध्यम से कभी भी दोबारा खोला जा सकता है।" },
+            { "id": "hi_u4_d2", "category": "technical", "text": "फाइल सेव करते समय बिना नाम दिए ही अपने आप अंतिम फाइल बना लेते हैं", "penalty_explanation": "फाइल सेव करते समय डायलॉग बॉक्स में फाइल का नाम टाइप करके Save बटन दबाना होता है।" }
+          ]
+        }
+      },
+      "key_takeaway": {
+        "en": "Click File/Office > Save, type a file name, and click Save to store a document; click File/Office > Open and choose the file to load it from disk.",
+        "hi": "फाइल सहेजने के लिए File/Office > Save में नाम लिखकर Save दबाएं, और खोलने के लिए File/Office > Open से फाइल चुनें।"
+      }
+    }
+  ]
+}
